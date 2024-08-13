@@ -8,3 +8,34 @@ Open Source carbon accounting for cities
 ### [CityCatalyst Readme](https://github.com/Open-Earth-Foundation/CityCatalyst/tree/develop/app#citycatalyst)
 
 ### [CityCatalyst API documentation & wiki](https://github.com/Open-Earth-Foundation/CityCatalyst/wiki)
+
+
+## Local Development: Set up steps
+
+#### Database
+
+You have to create a Postgres database user:
+
+```bash
+createuser ccglobal
+```
+
+```bash
+createdb ccglobal -O ccglobal
+```
+
+#### Configuration
+
+Copy `dev.env` to `.env` and edit it to match your configuration.
+
+```bash
+cp dev.env .env
+```
+
+#### Start Mage-ai
+
+```bash
+docker compose up
+```
+
+Navigate to http://localhost:6789
