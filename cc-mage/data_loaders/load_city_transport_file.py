@@ -17,9 +17,10 @@ def load_from_s3_bucket(*args, **kwargs):
     config_profile = 'default'
 
     city_name = kwargs['city_name']
+    country_name = kwargs['country']
     
     bucket_name = 'test-global-api'
-    object_key = f'''files/google_eie/argentina/{city_name}/{city_name}-transportation.csv'''
+    object_key = f'''files/google_eie/{country_name}/{city_name}/{city_name}-transportation.csv'''
 
     return S3.with_config(ConfigFileLoader(config_path, config_profile)).load(
         bucket_name,

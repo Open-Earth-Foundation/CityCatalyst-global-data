@@ -16,4 +16,4 @@ SELECT  'Google EIE' AS source_name,
         null as emissions_factor_id, 
         null as geometry_type,
         null as geometry_value  
-FROM {{ df_1 }}
+FROM {{ df_1 }};

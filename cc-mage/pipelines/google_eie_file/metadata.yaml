@@ -52,7 +52,9 @@ blocks:
     file_source:
       path: data_exporters/import_city_transport_staging.py
   downstream_blocks:
-  - update_city_transport_target
+  - update_city_transport_emissions
+  - update_city_transport_activity
+  - update_city_transport_gpcmethod
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -73,6 +75,57 @@ blocks:
     dbt: {}
     disable_query_preprocessing: false
     export_write_policy: append
+    file_path: data_loaders/update_city_transport_emissions.sql
+    file_source:
+      path: data_loaders/update_city_transport_emissions.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - drop_city_transport_staging
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_city_transport_emissions
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks:
+  - import_city_transport_staging
+  uuid: update_city_transport_emissions
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - drop_city_transport_staging
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_city_transport_activity
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks:
+  - import_city_transport_staging
+  uuid: update_city_transport_activity
+- all_upstream_blocks_executed: false
+  color: grey
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
     limit: 1000
     use_raw_sql: true
   downstream_blocks: []
@@ -80,14 +133,40 @@ blocks:
   executor_type: local_python
   has_callback: false
   language: sql
-  name: update_city_transport_target
+  name: drop_city_transport_staging
   retry_config: null
   status: updated
+  timeout: null
+  type: custom
+  upstream_blocks:
+  - update_city_transport_activity
+  - update_city_transport_gpcmethod
+  - update_city_transport_emissions
+  uuid: drop_city_transport_staging
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - drop_city_transport_staging
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_city_transport_gpcmethod
+  retry_config: null
+  status: executed
   timeout: null
   type: data_loader
   upstream_blocks:
   - import_city_transport_staging
-  uuid: update_city_transport_target
+  uuid: update_city_transport_gpcmethod
 - all_upstream_blocks_executed: true
   color: null
   configuration:
@@ -155,6 +234,7 @@ type: python
 uuid: google_eie_file
 variables:
   city_name: cordoba
+  country: argentina
   locode: AR CBA
 variables_dir: /home/src/mage_data/cc-mage
 widgets: []
