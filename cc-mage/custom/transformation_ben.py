@@ -39,6 +39,7 @@ def merge_and_calculate_emissions(data, data_2):
     # applying a filter to select only the interested fuels
     df = df[df['subcategory'].isin(['Wood/Wood Waste', 'Charcoal', 'Liquefied Petroleum Gases', 'Jet Kerosene'])]
     df.reset_index(drop=True, inplace=True)
+    
 
     # from IEA: 1 tep = 41.868 GJ = 39.68 MBtu = 11.63 MWh
     # raw data: TEP 
@@ -56,7 +57,7 @@ def merge_and_calculate_emissions(data, data_2):
     df['emissions_value'] = df['activity_value'] * df['emissionfactor_value']
 
     # Drop extra columns
-    df = df.drop(columns=['user_type', 'subcategory', 'activity_units', 'emissionfactor_value', 'activity_units'])
+    df = df.drop(columns=['user_type'])
 
     # Add columns and values
     df.loc[:, 'emissions_units'] = 'kg'

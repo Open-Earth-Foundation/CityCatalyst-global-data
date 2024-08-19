@@ -1,1 +1,1 @@
-DROP TABLE  modelled.emissions_staging;
+DROP TABLE IF EXISTS modelled.emissions_staging;
