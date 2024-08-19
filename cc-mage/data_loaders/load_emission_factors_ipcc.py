@@ -22,8 +22,8 @@ def load_from_s3_bucket(*args, **kwargs):
     config_path = path.join(get_repo_path(), 'io_config.yaml')
     config_profile = 'default'
 
-    bucket_name = 'global-api-raw-data'
-    object_key = 'local/argentina/IPCC_EF_2006/energy_EF_Argentina.xlsx'
+    bucket_name = kwargs['bucket_name']
+    object_key = 'files/ipcc/energy_EF_Argentina.xlsx'
 
     # Load the file as a binary stream
     s3 = S3.with_config(ConfigFileLoader(config_path, config_profile))
