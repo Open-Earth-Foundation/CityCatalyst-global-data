@@ -118,13 +118,13 @@ blocks:
   upstream_blocks:
   - import_city_transport_staging
   uuid: update_city_transport_activity
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: grey
   configuration:
     data_provider: postgres
     data_provider_profile: default
     dbt: {}
-    disable_query_preprocessing: false
+    disable_query_preprocessing: true
     export_write_policy: append
     limit: 1000
     use_raw_sql: true
@@ -135,7 +135,7 @@ blocks:
   language: sql
   name: drop_city_transport_staging
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: custom
   upstream_blocks:
@@ -181,12 +181,12 @@ blocks:
   language: python
   name: load_city_residential_file
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: data_loader
   upstream_blocks: []
   uuid: load_city_residential_file
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: duckdb
@@ -233,6 +233,7 @@ tags: []
 type: python
 uuid: google_eie_file
 variables:
+  bucket_name: test-global-api
   city_name: cordoba
   country: argentina
   locode: AR CBA

@@ -1,16 +1,8 @@
-CREATE TABLE IF NOT EXISTS modelled.gpc_methodology (
-    gpcmethod_id UUID PRIMARY KEY,
-    methodology_name TEXT,
-    methodology_description TEXT,
-    gpc_reference_number TEXT,
-    scope int
-);
-
 INSERT INTO modelled.gpc_methodology 
     (gpcmethod_id, methodology_name, methodology_description, gpc_reference_number, scope)
 SELECT DISTINCT
-    (MD5(CONCAT_WS('-', 'II.1.1', 'Induced activity'))::UUID) AS gpcmethod_id,
-    method_name as methodology_name,
+    (MD5(CONCAT_WS('-', 'II.1.1', 'induced-activity'))::UUID) AS gpcmethod_id,
+    'induced-activity' as methodology_name,
     '50% inbound, 50% outbound, and 100% in-boundary trips' AS methodology_description,
     gpc_reference_number,
     1 as scope
