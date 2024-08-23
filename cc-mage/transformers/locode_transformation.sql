@@ -1,6 +1,6 @@
 -- Step 1: Create Index on geometry_value if it does not exist
 --CREATE INDEX IF NOT EXISTS idx_geom_emissions_staging ON raw_data.emissions_staging USING GIST (geometry_value);
-DROP TABLE modelled.emissions_staging_full;
+DROP TABLE IF EXISTS modelled.emissions_staging_full;
 
 CREATE TABLE modelled.emissions_staging_full AS
 WITH emissions_ct AS (

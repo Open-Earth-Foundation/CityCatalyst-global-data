@@ -12,6 +12,7 @@ INSERT INTO modelled.emissions (
     emissionfactor_id,
     activity_id,
     activity_value,
+    spatial_granularity,
     geometry_type,
     geometry,
     geometry_id
@@ -30,6 +31,7 @@ SELECT
     emissionfactor_id,
     activity_id,
     activity_value,
+    'city' as spatial_granularity,
     geometry_type,
     a.geometry,
     geometry_id
@@ -50,6 +52,7 @@ ON CONFLICT (emissions_id) DO UPDATE SET
     emissionfactor_id = EXCLUDED.emissionfactor_id,
     activity_id = EXCLUDED.activity_id,
     activity_value = EXCLUDED.activity_value,
+    spatial_granularity = EXCLUDED.spatial_granularity,
     geometry_type = EXCLUDED.geometry_type,
     geometry = EXCLUDED.geometry,
     geometry_id = EXCLUDED.geometry_id;
