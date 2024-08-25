@@ -3,10 +3,7 @@
 template = """
 # %s
 
-
-def transform(inputfile, outputfile):
-    pass
-
+from transform_logic import transform
 
 if __name__ == "__main__":
     import sys
