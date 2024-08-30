@@ -3,7 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 .idea
-cache/ 
+cache/
 /cache/
 
 # C extensions
@@ -174,5 +174,4 @@ scratch*
 *secrets*.json
 your-first-project
 
-# raw data 
-raw_data/*/extracted/*
+my_db.*

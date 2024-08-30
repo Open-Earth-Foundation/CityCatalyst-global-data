@@ -249,12 +249,12 @@ blocks:
   language: sql
   name: ct_country_code_lookup
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: transformer
   upstream_blocks: []
   uuid: ct_country_code_lookup
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     data_provider: postgres
@@ -279,7 +279,7 @@ blocks:
   - emissions_staging_ct
   - ct_country_code_lookup
   uuid: locode_transformation
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     data_provider: postgres
@@ -321,7 +321,7 @@ blocks:
   language: sql
   name: update_city_oil_gpcmethod
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: data_exporter
   upstream_blocks:

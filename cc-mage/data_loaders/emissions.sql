@@ -12,6 +12,7 @@ CREATE TABLE IF NOT EXISTS modelled.emissions (
 	emissionfactor_id uuid NULL,
 	activity_id uuid NULL,
 	activity_value text NULL,
+	spatial_granularity text NOT NULL,
 	geometry_type text NULL,
 	geometry public.geometry NULL,
 	geometry_id text NULL

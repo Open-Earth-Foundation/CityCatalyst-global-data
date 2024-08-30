@@ -21,4 +21,7 @@ SELECT 	ST_GeoHash(ST_Centroid(st_geomfromtext(geometry)),20) AS city_id,
 FROM 	osm )  a
 WHERE 	city_order = 1;
 
+ALTER TABLE modelled.city_polygon
+ADD CONSTRAINT uq_locode UNIQUE (locode);
+
 CREATE INDEX IF NOT EXISTS idx_city_geom ON modelled.city_polygon USING GIST (geometry);
