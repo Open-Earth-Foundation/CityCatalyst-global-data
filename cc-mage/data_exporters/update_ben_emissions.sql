@@ -29,6 +29,7 @@ INSERT INTO modelled.emissions (
     emissionfactor_id,
     activity_id,
     activity_value,
+    spatial_granularity,
     geometry_type,
     geometry,
     geometry_id
@@ -46,7 +47,8 @@ SELECT	(MD5(CONCAT_WS('-', actor_id, emissions_year, gpc_reference_number, gpcme
 		emissionfactor_id,
 		activity_id,
 		activity_value,
-		geometry_type,
+        'country' as spatial_granularity,
+		null as geometry_type,
 		null as geometry,
 		null as geometry_id
 FROM 	emissions
@@ -63,6 +65,7 @@ ON CONFLICT (emissions_id) DO UPDATE SET
     emissionfactor_id = EXCLUDED.emissionfactor_id,
     activity_id = EXCLUDED.activity_id,
     activity_value = EXCLUDED.activity_value,
+    spatial_granularity = EXCLUDED.spatial_granularity,
     geometry_type = EXCLUDED.geometry_type,
     geometry = EXCLUDED.geometry,
     geometry_id = EXCLUDED.geometry_id;

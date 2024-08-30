@@ -2,73 +2,87 @@ blocks:
 - all_upstream_blocks_executed: true
   color: null
   configuration:
-    data_provider: postgres
+    data_provider: duckdb
     data_provider_profile: default
-    dbt: {}
-    disable_query_preprocessing: false
     export_write_policy: append
-    limit: 1000
-    use_raw_sql: true
-  downstream_blocks: []
+  downstream_blocks:
+  - transform_brazil_cities
   executor_config: null
   executor_type: local_python
   has_callback: false
-  language: sql
-  name: activity_subcategory
+  language: python
+  name: load_brazil_unlocodes
   retry_config: null
   status: updated
   timeout: null
   type: data_loader
   upstream_blocks: []
-  uuid: activity_subcategory
+  uuid: load_brazil_unlocodes
 - all_upstream_blocks_executed: true
   color: null
+  configuration: {}
+  downstream_blocks:
+  - transform_brazil_cities
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_brazil_cities
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_brazil_cities
+- all_upstream_blocks_executed: false
+  color: null
   configuration:
-    data_provider: postgres
+    data_provider: duckdb
     data_provider_profile: default
     dbt: {}
     disable_query_preprocessing: false
     export_write_policy: append
     limit: 1000
     use_raw_sql: true
-  downstream_blocks: []
+  downstream_blocks:
+  - update_brazil_cities
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: sql
-  name: emissions
+  name: transform_brazil_cities
   retry_config: null
   status: executed
   timeout: null
-  type: data_loader
-  upstream_blocks: []
-  uuid: emissions
-- all_upstream_blocks_executed: true
+  type: transformer
+  upstream_blocks:
+  - load_brazil_cities
+  - load_brazil_unlocodes
+  uuid: transform_brazil_cities
+- all_upstream_blocks_executed: false
   color: null
   configuration:
-    data_provider: postgres
+    data_provider: duckdb
     data_provider_profile: default
-    dbt: {}
-    disable_query_preprocessing: false
     export_write_policy: append
-    file_path: data_loaders/gpc_methodology.sql
+    file_path: data_exporters/update_brazil_cities.py
     file_source:
-      path: data_loaders/gpc_methodology.sql
-    limit: 1000
-    use_raw_sql: true
-  downstream_blocks: []
+      path: data_exporters/update_brazil_cities.py
+  downstream_blocks:
+  - upsert_brazil_cities
   executor_config: null
   executor_type: local_python
   has_callback: false
-  language: sql
-  name: gpc_methodology
+  language: python
+  name: update_brazil_cities
   retry_config: null
   status: executed
   timeout: null
-  type: data_loader
-  upstream_blocks: []
-  uuid: gpc_methodology
-- all_upstream_blocks_executed: true
+  type: data_exporter
+  upstream_blocks:
+  - transform_brazil_cities
+  uuid: update_brazil_cities
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: postgres
@@ -83,70 +97,26 @@ blocks:
   executor_type: local_python
   has_callback: false
   language: sql
-  name: city_polygon
+  name: upsert_brazil_cities
   retry_config: null
   status: executed
   timeout: null
   type: data_loader
-  upstream_blocks: []
-  uuid: city_polygon
-- all_upstream_blocks_executed: true
-  color: null
-  configuration:
-    data_provider: postgres
-    data_provider_profile: default
-    dbt: {}
-    disable_query_preprocessing: false
-    export_write_policy: append
-    limit: 1000
-    use_raw_sql: true
-  downstream_blocks: []
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: sql
-  name: emissionsfactor
-  retry_config: null
-  status: executed
-  timeout: null
-  type: data_loader
-  upstream_blocks: []
-  uuid: emissionsfactor
-- all_upstream_blocks_executed: true
-  color: null
-  configuration:
-    data_provider: postgres
-    data_provider_profile: default
-    dbt: {}
-    disable_query_preprocessing: false
-    export_write_policy: append
-    limit: 1000
-    use_raw_sql: true
-  downstream_blocks: []
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: sql
-  name: global_warming_potential
-  retry_config: null
-  status: updated
-  timeout: null
-  type: data_loader
-  upstream_blocks: []
-  uuid: global_warming_potential
+  upstream_blocks:
+  - update_brazil_cities
+  uuid: upsert_brazil_cities
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
 conditionals: []
-created_at: '2024-08-18 15:06:18.819327+00:00'
+created_at: '2024-08-23 12:41:17.711412+00:00'
 data_integration: null
-description: Create table statements, these should also be included in the migration
-  files
+description: This provides the geospatial data for cities
 executor_config: {}
 executor_count: 1
 executor_type: null
 extensions: {}
-name: db_create_table
+name: overturemaps_city_boundary
 notification_config: {}
 remote_variables_dir: null
 retry_config: {}
@@ -156,6 +126,9 @@ settings:
 spark_config: {}
 tags: []
 type: python
-uuid: db_create_table
+uuid: overturemaps_city_boundary
+variables:
+  bucket_name: test-global-api
+  object_key: files/overturemaps/br_city_polygons.json
 variables_dir: /home/src/mage_data/cc-mage
 widgets: []
