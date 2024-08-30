@@ -15,8 +15,6 @@ if __name__ == "__main__":
 
     generated_script = transform(inputfile, user_provided_context, verbose)
 
-    # print(generated_script)
-
     # Write the generated script to a file
     with open("generated_script.py", "w") as file:
         file.write(generated_script)

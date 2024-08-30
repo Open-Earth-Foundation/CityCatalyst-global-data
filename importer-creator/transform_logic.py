@@ -146,17 +146,6 @@ def load_datafile_into_df(file_path):
 def transform(file_path, user_provided_context, verbose):
     # Transformation logic
 
-    # with open(input_file, "r") as input_file, open(output_file, "w") as output_file:
-
-    # # Ensure the directory exists
-    # output_dir = os.path.dirname(outputfile)
-    # if output_dir:
-    #     os.makedirs(output_dir, exist_ok=True)
-
-    # df = load_datafile_into_df(input_file)
-
-    # data_file = input_file.read()
-
     # Create pandas dataframe agent
     def create_agent(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
 
@@ -236,8 +225,6 @@ def transform(file_path, user_provided_context, verbose):
         extracted_data = state["agent"].invoke(prompt)
 
         return {"extracted_data": extracted_data.get("output")}
-        # return fake data to check if looping works
-        # return {"extracted_data": {'output':'2'}}
 
     def reasoning_agent(state: AgentState) -> dict:
         print("\nREASONING AGENT\n")
@@ -297,9 +284,6 @@ def transform(file_path, user_provided_context, verbose):
         # Invoke code agent with custom prompt
         response = state["coding_agent"].invoke(prompt)
 
-        # print("\n\nCHECK OUTPUT CODE GENERATION\n\n")
-        # print(response.get("output"))
-
         return {"generated_code": response.get("output")}
 
     def code_reasoning_agent(state: AgentState) -> dict:
@@ -329,14 +313,9 @@ def transform(file_path, user_provided_context, verbose):
             """
         response = state["coding_agent"].invoke(prompt)
 
-        # print("\n\nCHECK OUTPUT CODE REASONING\n\n")
-        # print(response.get("output"))
-
         if "APPROVED" in response.get("output"):
-            # print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!DONE!!!!!!!!!!!!!!!!!!!!!!!!!!!")
             return {"final_code_output": state["generated_code"]}
         else:
-            # print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!CONTINUE!!!!!!!!!!!!!!!!!!!!!!!!!!!")
             return {
                 "code_reasoning_agent_feedback": response.get("output"),
                 "code_reasoning_agent_iterations": state[
@@ -348,7 +327,6 @@ def transform(file_path, user_provided_context, verbose):
     # Define the conditional edge
     def should_extraction_continue(state: AgentState) -> str:
         if state.get("final_output"):
-            # return "end"
             return "code_generatoin_agent"
         return "extraction_agent"
 
@@ -382,7 +360,6 @@ def transform(file_path, user_provided_context, verbose):
             should_extraction_continue,
             {
                 "extraction_agent": "extraction_agent",
-                # "end": END,
                 "code_generatoin_agent": "code_generation_agent",
             },
         )
@@ -508,7 +485,6 @@ def transform(file_path, user_provided_context, verbose):
         verbose=verbose,
     )
 
-    # transformed_data = data.upper()  # Example logic: convert text to uppercase
     generated_script = state.get("final_code_output")
 
     return generated_script
