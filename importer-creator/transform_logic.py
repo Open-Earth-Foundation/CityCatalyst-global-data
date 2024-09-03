@@ -193,12 +193,17 @@ def transform(file_path, user_provided_context, verbose):
                 - nuber of rows and columns
                     * are the number of columns consistent throughout the rows? Or is there a mismatch?
                 - column names
+                    * what are the column names?
                     * is the same naming convention used?
                     * are there spaces before or after the names that could lead to issues?
                 - which columns contain dates? The name of the column could be an indicator but check also for values inside the rows
                 - data types of each column
                 - any missing values
                 - additional potential formatting issues with the original file
+                    * especially if the file contains additional text information that is not part of the actual data but 
+                    data that is added manually on top of the actual rows e.g. meta data.
+                    * especially if the file contains additional text information that is not part of the actual data but
+                    data that is added below the actual rows e.g. footnotes.
 
             Give thoughts about how to solve these issues based on your analysis.
             """
@@ -452,12 +457,16 @@ def transform(file_path, user_provided_context, verbose):
         Based on the original dataframe, and the summary which provides you with insights about the data and potential formatting issues, 
         create a python script which generates a better formatted pandas dataframe with clearly ordered and named columns. E.g., if the previous agent found that there are formatting issues, 
         try to solve them so that the original data stays intact, but the dataframe is properly formatted. 
+        The new script must only focus on the actual data which can be displayed as rows and columns in a pandas dataframe.
+        E.g. if there is meta data above the actual data in the original file, the script should not include this meta data in the final .csv output.
+        Also if there is meta data below the actual data in the original file like footnotes, the script should not include this meta data in the final .csv output.
 
         The script must have the following:
         - code to load the original file into a pandas dataframe 'df',
         - a dict variable "extracted_data" = { ... } with the the extracted data from the previous agent,
         - a new pandas dataframe 'df_new' as a copy of the original dataframe 'df'
         - for the new dataframe 'df_new' do the following:
+            * if there are no proper clumns names, create new columns based on the first row of the dataframe,
             * normalize column names to 'lower case' and strip them of any leading or trailing white spaces,
             * convert any date columns to a valid datetime format based on the available data. 
             Automatically infer the format from the available data. E.g. use the extracted value 'temporal_resolution' as a guiding point. 
