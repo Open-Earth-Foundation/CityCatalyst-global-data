@@ -181,11 +181,11 @@ def transform(file_path, user_provided_context, verbose):
         print("\nSUMMARY AGENT\n")
 
         prompt = f"""
-            Provide a detailed summary of this DataFrame {state['pandas_df']}. 
-            Include information about its structure, data types, basic statistics, and any notable patterns or insights.
 
-            Your task is to analyze the supplied python dataframe 'df': {state['pandas_df']}. 
             This is the user provided context: {state['user_provided_context']}.
+            Provide a detailed summary of this DataFrame {state['pandas_df']}. 
+            This is the path to the original data file: {state['file_path']}.
+            Include information about its structure, data types, basic statistics, and any notable patterns or insights.
             
             1. First give a general summary about the content of the data.
 
@@ -215,7 +215,7 @@ def transform(file_path, user_provided_context, verbose):
     def extraction_agent(state: AgentState) -> dict:
         print("\nEXTRACTION AGENT\n")
 
-        print("\n", state["reasoning_agent_feedback"], "\n")
+        # print("\n", state["reasoning_agent_feedback"], "\n")
 
         # Agent logic to extract specific data
         prompt = f"""
@@ -223,6 +223,8 @@ def transform(file_path, user_provided_context, verbose):
             This is the user provided context: {state['user_provided_context']},
             This is your task: {state['task']},
             This is the summary of the previous agent: {state['summary']}.
+            This is the orgignal dataframe 'df': {state['pandas_df']}. 
+            This is the path to the original data file: {state['file_path']}.
 
             If you have received feedback from the reasoning agent, you find it here: {state['reasoning_agent_feedback']}
             If feedback is available, pay special attention to this feedback and incorporate into your data extracation process.
@@ -244,12 +246,13 @@ def transform(file_path, user_provided_context, verbose):
         prompt = f"""
             Your task is to check and verify the output of a previous agent. You have access to the following information:
             1. the original pandas dataframe: {state['pandas_df']},
-            2. the summary and detailed description of this dataframe provided by the previous agent: {state['summary']},
-            3. the original task: {state['task']},
-            4. the extracted data of the previous agent: {state['extracted_data']},
+            2. the path to the original data file: {state['file_path']}.
+            3. the summary and detailed description of this dataframe provided by the previous agent: {state['summary']},
+            4. the original task: {state['task']},
+            5. the extracted data of the previous agent: {state['extracted_data']},
                 - this contains only a json without further explanations. Only check if the values are correctly extracted.
-            5. the provided context: {state['context']},
-            6. the user provided context: {state['user_provided_context']}.
+            6. the provided context: {state['context']},
+            7. the user provided context: {state['user_provided_context']}.
 
             If you have given previous feedback to the extraction agent, you find it here: {state['reasoning_agent_feedback']}
             If you have given feedback, check the extracted data of the agent against your feedback. 
@@ -418,6 +421,8 @@ def transform(file_path, user_provided_context, verbose):
             final_code_output="",
         )
 
+        print(app.get_graph().draw_ascii())
+
         result = app.invoke(inputs)
 
         return result
@@ -454,6 +459,8 @@ def transform(file_path, user_provided_context, verbose):
         - summary and detailed description of this dataframe provided by the previous agent
         - the extracted data of the previous agent
 
+        Do not delete any empty columns. Keep the original data intact. If rows have data for certain columns, keep them!
+
         Based on the original dataframe, and the summary which provides you with insights about the data and potential formatting issues, 
         create a python script which generates a better formatted pandas dataframe with clearly ordered and named columns. E.g., if the previous agent found that there are formatting issues, 
         try to solve them so that the original data stays intact, but the dataframe is properly formatted. 
@@ -466,6 +473,8 @@ def transform(file_path, user_provided_context, verbose):
         - a dict variable "extracted_data" = { ... } with the the extracted data from the previous agent,
         - a new pandas dataframe 'df_new' as a copy of the original dataframe 'df'
         - for the new dataframe 'df_new' do the following:
+            * keep the original values of each row
+                try to fix format or data type issues but preserve the original data as much as possible,
             * if there are no proper clumns names, create new columns based on the first row of the dataframe,
             * normalize column names to 'lower case' and strip them of any leading or trailing white spaces,
             * convert any date columns to a valid datetime format based on the available data. 
