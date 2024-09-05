@@ -1,5 +1,31 @@
 # agent_tasks.py
 
+# Description for the task of the summary agent
+task_summary_agent = """
+Provide a detailed summary of the provided DataFrame 'df'.
+Include information about its structure, data types, basic statistics, and any notable patterns or insights.
+    
+1. First give a general summary about the content of the data.
+
+2. Then describe the format of the dataframe in detail. Pay special attention to the following points:
+    - nuber of rows and columns
+        * are the number of columns consistent throughout the rows? Or is there a mismatch?
+    - column names
+        * what are the column names?
+        * is the same naming convention used?
+        * are there spaces before or after the names that could lead to issues?
+    - which columns contain dates? The name of the column could be an indicator but check also for values inside the rows
+    - data types of each column
+    - any missing values
+    - additional potential formatting issues with the original file
+        * especially if the file contains additional text information that is not part of the actual data but 
+        data that is added manually on top of the actual rows e.g. meta data.
+        * especially if the file contains additional text information that is not part of the actual data but
+        data that is added below the actual rows e.g. footnotes.
+
+Give thoughts about how to solve these issues based on your analysis.
+"""
+
 # Description for the task of the extraction agent
 task_extraction_agent = """
 Your task is to extract the following data from the provided dataframe 'df'.
