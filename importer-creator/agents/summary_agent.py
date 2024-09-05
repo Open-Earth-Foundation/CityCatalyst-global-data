@@ -10,10 +10,10 @@ def summary_agent(state: AgentState) -> dict:
     {task_summary_agent}
         
     ### Additional information ###
-    This is the user provided context: {state['user_provided_context']}.
-    This is the path to the original data file: {state['file_path']}.  
+    This is the user provided context: {state.get('user_provided_context')}.
+    This is the path to the original data file: {state.get('file_path')}.  
     """
 
     # Invoke summary agent with custom prompt
-    summary = state["agent"].invoke(prompt)
+    summary = state.get("agent").invoke(prompt)
     return {"summary": summary.get("output")}
