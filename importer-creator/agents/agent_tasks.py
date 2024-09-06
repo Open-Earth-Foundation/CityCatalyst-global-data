@@ -27,7 +27,7 @@ Give thoughts about how to solve these issues based on your analysis.
 """
 
 # Description for the task of the extraction agent
-task_extraction_agent = """
+task_extraction_agent_keyval = """
 Your task is to extract the following data from the provided dataframe 'df':
 
 1. What is the region that the data is associated with? 
@@ -61,7 +61,7 @@ You return a valid JSON schema like the following:
 task_reasoning_agent = f"""
 Your task is to check and verify the output of a previous extraction agent. 
 The task of the previous extraction agent was:
-{task_extraction_agent}
+{task_extraction_agent_keyval}
 
             
 If you approve, return 'APPROVED'. If not, return 'FEEDBACK: [Your feedback here]'

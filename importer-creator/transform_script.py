@@ -19,8 +19,11 @@ if __name__ == "__main__":
     print("verbose: ", verbose)
     print("show_graph: ", show_graph)
 
-    generated_script = transform(full_path, context_user_provided, verbose, show_graph)
+    state = transform(full_path, context_user_provided, verbose, show_graph)
+    with open("final_state.txt", "w") as file:
+        file.write(state)
 
-    # Write the generated script to a file
-    with open("generated_script.py", "w") as file:
-        file.write(generated_script)
+    # generated_script = transform(full_path, context_user_provided, verbose, show_graph)
+    # # Write the generated script to a file
+    # with open("generated_script.py", "w") as file:
+    #     file.write(generated_script)
