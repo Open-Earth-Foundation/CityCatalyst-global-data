@@ -19,11 +19,11 @@ def reasoning_agent(state: AgentState) -> dict:
     {task_reasoning_agent}
 
     ### Additional information ###
-    This is the user provided context: {state.get('user_provided_context')},
-    This is the provided context for sectors and sub-sectors to be used: {state.get('context')},
+    This is the user provided context: {state.get('context_user_provided')},
+    This is the provided context for sectors and subsectors to be used: {state.get('context_sector_subsector')},
     This is the summary of the previous agent: {state.get('summary')}.
     This is the path to the original data file: {state.get('file_path')}.
-    This is the extracted data of the previous agent: {state.get('extracted_data')}, which only contains a json without further explanations. Only check if the values are correctly extracted.
+    This is the extracted data of the previous agent with explanation: {state.get('extracted_data')}.
 
     If you have given previous feedback to the extraction agent, you find it here: {state.get('reasoning_agent_feedback')}
     If you have given feedback, check the extracted data of the agent against your feedback. 

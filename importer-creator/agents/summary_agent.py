@@ -10,7 +10,7 @@ def summary_agent(state: AgentState) -> dict:
     {task_summary_agent}
         
     ### Additional information ###
-    This is the user provided context: {state.get('user_provided_context')}.
+    This is the user provided context: {state.get('context_user_provided')}.
     This is the path to the original data file: {state.get('file_path')}.  
     """
 

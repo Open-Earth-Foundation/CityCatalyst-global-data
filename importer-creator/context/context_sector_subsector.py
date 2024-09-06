@@ -1,6 +1,6 @@
-# context_data.py
+# context_sector_subsector.py
 
-sector_sub_sector_context = """
+context_sector_subsector = """
 The following gives an overview of the different GPC sectors, subsectors and what they are associated with.
 
 There are 3 sectors to choose from:

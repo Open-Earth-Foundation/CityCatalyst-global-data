@@ -3,7 +3,10 @@ from utils.agent_creation import create_agent, create_coding_agent
 from utils.data_loader import load_datafile_into_df
 from workflow.graph_definition import create_workflow
 
-from context.context_data import sector_sub_sector_context
+from context.context_sector_subsector import context_sector_subsector
+from context.context_activity_values_transportation import (
+    context_activity_values_transportation,
+)
 
 from utils.graph_renderer import render_graph
 
@@ -15,17 +18,14 @@ load_dotenv()
 
 # Function to run the workflow and process the dataframe
 def process_datafile(
-    user_provided_context: str,
+    context_user_provided: str,
     file_path: str,
-    verbose: bool = True,
-    show_graph: bool = True,
+    verbose: bool,
+    show_graph: bool,
 ):
 
     # Load the datafile into a dataframe
     df = load_datafile_into_df(file_path)
-
-    # Get context
-    context = (sector_sub_sector_context,)
 
     # Create the agents
     agent = create_agent(df, verbose)
@@ -33,20 +33,24 @@ def process_datafile(
 
     # Create the workflow and render the graph
     app = create_workflow()
-    if show_graph == True:
+    if show_graph:
         render_graph(app)
 
     inputs = AgentState(
         agent=agent,
         coding_agent=coding_agent,
-        context=context,
-        user_provided_context=user_provided_context,
+        context_user_provided=context_user_provided,
+        context_sector_subsector=context_sector_subsector,
+        context_activity_values_transportation=context_activity_values_transportation,
         file_path=file_path,
         summary="",
-        extracted_data={},
+        extracted_data="",
+        structured_extracted_data={},
         reasoning_agent_feedback="",
         final_output={},
         reasoning_agent_iterations=0,
+        extracted_data_actval_transportation="",
+        structured_extracted_data_actval_transportation={},
         generated_code="",
         code_reasoning_agent_feedback="",
         code_reasoning_agent_iterations=0,
@@ -58,10 +62,10 @@ def process_datafile(
 
 
 # Main function to call
-def transform(file_path, user_provided_context, verbose, show_graph):
+def transform(file_path, context_user_provided, verbose, show_graph):
 
     state = process_datafile(
-        user_provided_context=user_provided_context,
+        context_user_provided=context_user_provided,
         file_path=file_path,
         verbose=verbose,
         show_graph=show_graph,

@@ -28,10 +28,16 @@ Give thoughts about how to solve these issues based on your analysis.
 
 # Description for the task of the extraction agent
 task_extraction_agent = """
-Your task is to extract the following data from the provided dataframe 'df'.
+Your task is to extract the following data from the provided dataframe 'df':
+
 1. What is the region that the data is associated with? 
     - Be specific. E.g. if only a country is mentioned, then the region is the country. 
     - If a city or a region (e.g. a state) is mentioned, use the specific city or region. 
+    - If multiple regions are mentioned (e.g. different cities, states or countries), 
+    use the most specific region that captures all mentioned regions. 
+    E.g. 'global' for multiple countries of different continents or 'Europe' for multiple regions in europe 
+    or 'Argentina' for multiple regions or cities in Argentina and so on.
+    Name the biggest region that captures all mentioned regions in the data file and that is most specific at the same time.
 2. What is the temporal resolution of the data? Are the data points ordered by days, weeks, month or years?
 3. What is the associated sector according to Greenhouse Gas Protocol for Cities (GPC)
 4. What is the accociated sub-sector according to Greenhouse Gas Protocol for Cities (GPC)
@@ -39,13 +45,15 @@ Your task is to extract the following data from the provided dataframe 'df'.
 For valid sectors and sub-sectors, refer to the provided context.
 Specifically take the user provided context into account.
 
-You return only a valid JSON schema without any additional text or hints like:
+### RETURN FORMAT ###
+You return the explanation why you extracted certain data and the values for it.
+You return a valid JSON schema like the following:
 
 {
-    "region": string,
-    "temporal_resolution": string,
-    "sector": string,
-    "sub-sector": string
+    "region": extracted_value,
+    "temporal_resolution": extracted_value,
+    "sector": extracted_value,
+    "sub_sector": extracted_value
 }
 """
 
@@ -57,6 +65,18 @@ The task of the previous extraction agent was:
 
             
 If you approve, return 'APPROVED'. If not, return 'FEEDBACK: [Your feedback here]'
+"""
+
+# Description for the task of the extraction agent structured output
+task_extraction_agent_structured_output = """
+Your task is to provide structured output in JSON format.
+"""
+
+# Description for the task of the extraction agent for activity values for transportation
+task_extraction_agent_actval_transportation = f"""
+Your task is to extract the following data from the provided dataframe 'df':
+
+What are the specific activity values for the sector 'Transportation'?
 """
 
 # Description for the task of the code generation agent

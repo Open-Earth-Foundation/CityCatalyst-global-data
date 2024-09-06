@@ -7,7 +7,7 @@ if __name__ == "__main__":
     import os
 
     inputfile = sys.argv[1]
-    user_provided_context = sys.argv[2]
+    context_user_provided = sys.argv[2]
     verbose = sys.argv[3]
     show_graph = sys.argv[4]
 
@@ -15,11 +15,11 @@ if __name__ == "__main__":
 
     print("inputfile: ", inputfile)
     print("full_path: ", full_path)
-    print("user_provided_context: ", user_provided_context)
+    print("user_provided_context: ", context_user_provided)
     print("verbose: ", verbose)
     print("show_graph: ", show_graph)
 
-    generated_script = transform(full_path, user_provided_context, verbose, show_graph)
+    generated_script = transform(full_path, context_user_provided, verbose, show_graph)
 
     # Write the generated script to a file
     with open("generated_script.py", "w") as file:

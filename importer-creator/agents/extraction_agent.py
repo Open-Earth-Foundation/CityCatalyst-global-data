@@ -5,16 +5,14 @@ from agents.agent_tasks import task_extraction_agent
 def extraction_agent(state: AgentState) -> dict:
     print("\nEXTRACTION AGENT\n")
 
-    print(state.get("reasoning_agent_feedback"))
-
     # Agent logic to extract specific data
     prompt = f"""
     ### Task ###
     {task_extraction_agent}
 
     ### Additional information ###
-    This is the user provided context: {state.get('user_provided_context')},
-    This is the provided context for sectors and sub-sectors to be used: {state.get('context')},
+    This is the user provided context: {state.get("context_user_provided")},
+    This is the provided context for sectors and sub-sectors to be used: {state.get('context_sector_subsector')},
     This is the summary of the previous agent: {state.get('summary')}.
     This is the path to the original data file: {state.get('file_path')}.
 
@@ -22,6 +20,6 @@ def extraction_agent(state: AgentState) -> dict:
     If feedback is available, pay special attention to this feedback and incorporate into your data extracation process.
     """
 
-    extracted_data = state.get("agent").invoke(prompt)
+    result = state.get("agent").invoke(prompt)
 
-    return {"extracted_data": extracted_data.get("output")}
+    return {"extracted_data": result.get("output")}
