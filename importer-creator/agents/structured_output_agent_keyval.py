@@ -2,7 +2,7 @@ from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 
 from state.agent_state import AgentState
-from agents.agent_tasks import task_extraction_agent_structured_output
+from agents.agent_tasks import task_structured_output_agent_keyval
 
 load_dotenv()
 
@@ -38,17 +38,17 @@ llm = ChatOpenAI(model=model, temperature=0)
 structured_llm = llm.with_structured_output(json_schema)
 
 
-def extraction_agent_structured_output(state: AgentState) -> dict:
+def structured_output_agent_keyval(state: AgentState) -> dict:
     print("\nEXTRACTION AGENT STRUCTURED OUTPUT\n")
 
     prompt = f"""
     ### Task ###
-    {task_extraction_agent_structured_output}
+    {task_structured_output_agent_keyval}
 
     ### Additional information ###
-    This is the extracted data of the previous agent: {state.get('extracted_data')}.
+    This is the extracted data of the previous agent: {state.get("approved_extracted_data_keyval")}.
     """
 
     # Invoke summary agent with custom prompt
     result = structured_llm.invoke(prompt)
-    return {"structured_extracted_data": result}
+    return {"structured_data_keyval": result}

@@ -68,7 +68,7 @@ If you approve, return 'APPROVED'. If not, return 'FEEDBACK: [Your feedback here
 """
 
 # Description for the task of the extraction agent structured output
-task_extraction_agent_structured_output = """
+task_structured_output_agent_keyval = """
 Your task is to provide structured output in JSON format.
 """
 

@@ -5,7 +5,7 @@ from agents.default_agent import default_agent
 from agents.summary_agent import summary_agent
 from agents.extraction_agent_keyval import extraction_agent_keyval
 from agents.reasoning_agent_keyval import reasoning_agent_keyval
-from agents.extraction_agent_structured_output import extraction_agent_structured_output
+from agents.structured_output_agent_keyval import structured_output_agent_keyval
 from agents.extraction_agent_actval_transportation import (
     extraction_agent_actval_transportation,
 )
@@ -19,7 +19,7 @@ from agents.code_reasoning_agent import code_reasoning_agent
 # Define the conditional edge
 def should_extraction_continue(state: AgentState) -> str:
     if state.get("approved_extracted_data_keyval"):
-        return "extraction_agent_structured_output"
+        return "structured_output_agent_keyval"
         # router(state)
         # return "code_generation_agent"
     return "extraction_agent_keyval"
@@ -74,9 +74,7 @@ def create_workflow():
     workflow.add_node("summary_agent", summary_agent)
     workflow.add_node("extraction_agent_keyval", extraction_agent_keyval)
     workflow.add_node("reasoning_agent_keyval", reasoning_agent_keyval)
-    workflow.add_node(
-        "extraction_agent_structured_output", extraction_agent_structured_output
-    )
+    workflow.add_node("structured_output_agent_keyval", structured_output_agent_keyval)
     workflow.add_node("extraction_agent_actval_stationary_energy", default_agent)
     workflow.add_node(
         "extraction_agent_actval_transportation", extraction_agent_actval_transportation
@@ -101,7 +99,7 @@ def create_workflow():
         "reasoning_agent_keyval",
         should_extraction_continue,
         {
-            "extraction_agent_structured_output": "extraction_agent_structured_output",
+            "structured_output_agent_keyval": "structured_output_agent_keyval",
             "extraction_agent_keyval": "extraction_agent_keyval",
         },
     )
