@@ -18,6 +18,7 @@ def create_agent(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
         df,
         verbose=verbose,
         agent_type="tool-calling",
+        prefix="You are a professional data scientist who is specialized in analyzing and extracting data from complex dataframes.",
         allow_dangerous_code=True,
     )
 
@@ -35,5 +36,6 @@ def create_coding_agent(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
         verbose=verbose,
         agent_type="tool-calling",
         # max_iterations=5, # this value can be adapted to speed up the process but potentially decrease accuracy
+        prefix="You are a professional software engineer who is specialized in creating functional python scripts.",
         allow_dangerous_code=True,
     )
