@@ -1,13 +1,11 @@
 from state.agent_state import AgentState
 
-# from agents.agent_tasks import
 
-
-def extraction_reasoning_agent_actval_transportation(state: AgentState) -> dict:
-    print("\nEXTRACTION REASONING AGENT ACTIVITY VALUES TRANSPORTATION\n")
+def reasoning_agent_actval_transportation(state: AgentState) -> dict:
+    print("\nREASONING AGENT ACTIVITY VALUES TRANSPORTATION\n")
 
     # Check if the iteration limit has been reached
-    if state.get("extraction_reasoning_agent_actval_transportation_iterations") >= 0:
+    if state.get("iterator_reasoning_agent_actval_transportation") >= 0:
         print(
             "\nIteration limit reached. Automatically approving the extracted activity values for 'Transportion' sector.\n"
         )
@@ -28,7 +26,7 @@ def extraction_reasoning_agent_actval_transportation(state: AgentState) -> dict:
     This is the path to the original data file: {state.get('file_path')}.
     This is the extracted activity data for sector 'Transportation' of the previous agent with explanation: {state.get("extracted_data_actval_transportation")}.
     
-    If you have given previous feedback to the extraction agent for activity values for sector 'Transportation', you find it here: {state.get("extracted_data_actval_transportation_feedback")}
+    If you have given previous feedback to the extraction agent for activity values for sector 'Transportation', you find it here: {state.get("feedback_extracted_data_actval_transportation")}
     If you have given feedback, check the extracted data of the agent against your feedback. 
     If the extracted data aligns with your provided feedback, accept the answer. Othwerwise, provide new feedback.
     """
@@ -36,7 +34,7 @@ def extraction_reasoning_agent_actval_transportation(state: AgentState) -> dict:
     # Invoke summary agent with custom prompt
     response = state.get("agent").invoke(prompt)
 
-    print(response.get("output"))
+    # print(response.get("output"))
 
     if "APPROVED" in response.get("output"):
         return {
@@ -46,9 +44,9 @@ def extraction_reasoning_agent_actval_transportation(state: AgentState) -> dict:
         }
     else:
         return {
-            "extracted_data_actval_transportation_feedback": response.get("output"),
-            "extraction_reasoning_agent_actval_transportation_iterations": state.get(
-                "extraction_reasoning_agent_actval_transportation_iterations"
+            "feedback_extracted_data_actval_transportation": response.get("output"),
+            "iterator_reasoning_agent_actval_transportation": state.get(
+                "iterator_reasoning_agent_actval_transportation"
             )
             + 1,
         }

@@ -9,8 +9,8 @@ from agents.structured_output_agent_keyval import structured_output_agent_keyval
 from agents.extraction_agent_actval_transportation import (
     extraction_agent_actval_transportation,
 )
-from agents.extraction_reasoning_agent_actval_transportation import (
-    extraction_reasoning_agent_actval_transportation,
+from agents.reasoning_agent_actval_transportation import (
+    reasoning_agent_actval_transportation,
 )
 from agents.code_generation_agent import code_generation_agent
 from agents.code_reasoning_agent import code_reasoning_agent
@@ -76,12 +76,16 @@ def create_workflow():
     workflow.add_node("reasoning_agent_keyval", reasoning_agent_keyval)
     workflow.add_node("structured_output_agent_keyval", structured_output_agent_keyval)
     workflow.add_node("extraction_agent_actval_stationary_energy", default_agent)
-    workflow.add_node("extraction_agent_actval_stationary_energy", default_agent)
     workflow.add_node(
-        "extraction_reasoning_agent_actval_transportation",
-        extraction_reasoning_agent_actval_transportation,
+        "extraction_agent_actval_transportation",
+        extraction_agent_actval_transportation,
     )
     workflow.add_node("extraction_agent_actval_waste", default_agent)
+    workflow.add_node(
+        "reasoning_agent_actval_transportation",
+        reasoning_agent_actval_transportation,
+    )
+
     # workflow.add_node("code_generation_agent", code_generation_agent)
     # workflow.add_node("code_reasoning_agent", code_reasoning_agent)
 
@@ -104,7 +108,7 @@ def create_workflow():
 
     # Add conditional edge
     workflow.add_conditional_edges(
-        "extraction_agent_structured_output",
+        "structured_output_agent_keyval",
         router,
         {
             "extraction_agent_actval_stationary_energy": "extraction_agent_actval_stationary_energy",
@@ -116,12 +120,12 @@ def create_workflow():
 
     workflow.add_edge(
         "extraction_agent_actval_transportation",
-        "extraction_reasoning_agent_actval_transportation",
+        "reasoning_agent_actval_transportation",
     )
 
     # Add conditional edge
     workflow.add_conditional_edges(
-        "extraction_reasoning_agent_actval_transportation",
+        "reasoning_agent_actval_transportation",
         should_extraction_actval_transportation_continue,
         {
             "extraction_agent_actval_transportation": "extraction_agent_actval_transportation",
