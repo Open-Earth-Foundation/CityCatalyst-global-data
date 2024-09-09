@@ -58,7 +58,7 @@ You return a valid JSON schema like the following:
 """
 
 # Description for the task of the reasoning agent
-task_reasoning_agent = f"""
+task_reasoning_agent_keyval = f"""
 Your task is to check and verify the output of a previous extraction agent. 
 The task of the previous extraction agent was:
 {task_extraction_agent_keyval}

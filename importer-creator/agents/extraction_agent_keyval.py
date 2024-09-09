@@ -20,6 +20,6 @@ def extraction_agent_keyval(state: AgentState) -> dict:
     If feedback is available, pay special attention to this feedback and incorporate into your data extracation process.
     """
 
-    result = state.get("agent").invoke(prompt)
+    response = state.get("agent").invoke(prompt)
 
-    return {"extracted_data_keyval": result.get("output")}
+    return {"extracted_data_keyval": response.get("output")}
