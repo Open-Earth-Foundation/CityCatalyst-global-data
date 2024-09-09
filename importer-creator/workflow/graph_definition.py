@@ -32,11 +32,11 @@ def router(state: AgentState) -> str:
     If no matching sector or sub-sector is extracted, the workflow ends.
     """
 
-    structured_extracted_data = state.get("structured_extracted_data")
-    sector = structured_extracted_data.get("sector")
-    sub_sector = structured_extracted_data.get("sub_sector")
+    structured_data_keyval = state.get("structured_data_keyval")
+    sector = structured_data_keyval.get("sector")
+    sub_sector = structured_data_keyval.get("sub_sector")
 
-    print(f"structured_extracted_data: {structured_extracted_data}")
+    print(f"structured_extracted_data: {structured_data_keyval}")
     print(f"sector: {sector}")
     print(f"sub_sector: {sub_sector}")
 
@@ -76,9 +76,7 @@ def create_workflow():
     workflow.add_node("reasoning_agent_keyval", reasoning_agent_keyval)
     workflow.add_node("structured_output_agent_keyval", structured_output_agent_keyval)
     workflow.add_node("extraction_agent_actval_stationary_energy", default_agent)
-    workflow.add_node(
-        "extraction_agent_actval_transportation", extraction_agent_actval_transportation
-    )
+    workflow.add_node("extraction_agent_actval_stationary_energy", default_agent)
     workflow.add_node(
         "extraction_reasoning_agent_actval_transportation",
         extraction_reasoning_agent_actval_transportation,

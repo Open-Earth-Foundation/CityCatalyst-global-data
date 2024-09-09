@@ -50,5 +50,5 @@ def structured_output_agent_keyval(state: AgentState) -> dict:
     """
 
     # Invoke summary agent with custom prompt
-    result = structured_llm.invoke(prompt)
-    return {"structured_data_keyval": result}
+    response = structured_llm.invoke(prompt)
+    return {"structured_data_keyval": response}
