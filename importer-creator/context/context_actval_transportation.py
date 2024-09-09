@@ -18,29 +18,19 @@ These activity values are used to calculate the environmental impact of the sect
 Below are examples of activity values for each subsector:
 
 1. **On-road**:
-    - Fuel sales within city boundaries
-        * This can consist of gasoline, diesel, and other fuels used by vehicles within the city sold by local gas stations in retail (usually to end-users) or sold by distributors to businesses.
-        * Positive examples are: 
-            + Volume sold (e.g. in liters, gallons, etc.) of gasoline, diesel, CNG (compressed natural gas), and other fuels.
-            + ...
-        * Negative examples (not activity values) are:
-            + Revenue made by selling fuels
-            + ...
-            
+- Fuel sales within city boundaries (GPC reference number: II.1.1, Scope: 1)
+    * This can consist of gasoline, diesel, and other fuels used by vehicles for example sold by local gas stations in retail (usually to end-users) or sold by distributors to businesses.
+
 2. **Railways**:
-    - Passenger-kilometers
-        * This is the number of kilometers traveled by passengers on trains.
-        * Examples are:
-            + Number of passenger-kilometers traveled by train.
-            + ...
-        * Negative examples (not activity values) are:
-            + Revenue made by passenger sales
-            + ...
-    - Freight-tonne-kilometers
-        * This is the number of kilometers traveled by freight (goods) on trains.
-        * Examples are:
-            + Number of freight-tonne-kilometers traveled by train.
-            + ...
+
+3. **Waterborne navigation**:
+
+4. **Aviation**:
+
+5. **Off-road**:
+- Fuel sales for off-road vehicles within city boundaries (GPC reference number: II.5.1, Scope: 1)
+    * This can consist of gasoline, diesel, and other fuels used by off-road vehicles for example used for construction, agriculture, or other off-road activities.
+
 """
 
 # COMMENTS
@@ -48,4 +38,32 @@ Below are examples of activity values for each subsector:
 If we count fuel sales by retail and distributors cant this appear double e.g. when a distributor sells to a retail station and then the retail station sells to the end user?
 Can we add negative examples for each activity value? E.g. values that might appear to be activity values but are not?
 Maybe revenue (like EUR or $) or something similar?
+"""
+
+"""
+1. **On-road**:
+- Fuel sales within city boundaries
+    * This can consist of gasoline, diesel, and other fuels used by vehicles within the city sold by local gas stations in retail (usually to end-users) or sold by distributors to businesses.
+    * Positive examples are: 
+        + Volume sold (e.g. in liters, gallons, etc.) of gasoline, diesel, CNG (compressed natural gas), and other fuels.
+        + Kilometers traveled by vehicles within the city.
+        + 
+    * Negative examples (not activity values) are:
+        + Revenue made by selling fuels
+        + ...
+        
+2. **Railways**:
+- Passenger-kilometers
+    * This is the number of kilometers traveled by passengers on trains.
+    * Examples are:
+        + Number of passenger-kilometers traveled by train.
+        + ...
+    * Negative examples (not activity values) are:
+        + Revenue made by passenger sales
+        + ...
+- Freight-tonne-kilometers
+    * This is the number of kilometers traveled by freight (goods) on trains.
+    * Examples are:
+        + Number of freight-tonne-kilometers traveled by train.
+        + ...
 """
