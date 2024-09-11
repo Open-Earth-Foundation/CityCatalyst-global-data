@@ -33,6 +33,7 @@ fuel_to_gpc = {
     "Aviation Gasoline": ["II.4.1"],
     "Motor Gasoline/Petrol": ["II.1.1", "II.2.1", "II.3.1", "II.5.1"],
     "On-Road Diesel Fuel": ["II.1.1", "II.2.1", "II.3.1", "II.5.1"],
+    "Off-Road Diesel Fuel": ["II.5.1"],  # check with Mau
     "Residual Fuel Oil": ["II.1.1", "II.2.1", "II.3.1", "II.5.1"],
     "Liquefied Petroleum Gases (LPG)": [
         "II.1.1",

@@ -17,7 +17,7 @@ def extraction_agent_keyval(state: AgentState) -> dict:
     This is the path to the original data file: {state.get('file_path')}.
 
     If you have received feedback from the reasoning agent, you find it here: {state.get("feedback_extracted_data_keyval")}.
-    If feedback is available, pay special attention to this feedback and incorporate into your data extracation process.
+    If feedback is available, pay special attention to this feedback and incorporate into your data extraction process.
     """
 
     response = state.get("agent").invoke(prompt)

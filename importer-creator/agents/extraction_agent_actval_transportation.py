@@ -17,36 +17,65 @@ from context.mappings.mappings_transportation import (
 # This is the summary of the previous agent: {state.get('summary')}.
 # </summary>
 
+# Output a list of python dictionaries. Each dictionary inside the corresponds to a row in the dataframe 'df'. Each dictionary should contain the following key-value pairs:
+#    {[{
+#     "rownumber": "value",
+#     "gpc_sector": "value",
+#     "gpc_reference_number": "value",
+#     "activity_name": "value",
+#     "activity_value": "value"
+#    },
+#    {...}]}
+
+# Once you extracted the data, create a python script. This script must contain:
+#     a. a dictionary that maps the activities to the corresponding GPC reference numbers
+#     b. the new dataframe 'df_new' that contains all the data of the original dataframe 'df'
+#     c. in each row the corresponding GPC reference number as a new column for each individual activity value. Each row can only be associated with one GPC reference number.
+#     d. the correct GPC naming convention has been used where applicable and available
+#     e. the activity value has been added as a new column
+#     f. the unit of the activity value has been added as a new column
+# Do not use sample data for this task but only use the entire provided dataframe 'df'.
+# <code>
+# [Your generated python script]
+# </code>
+# This is the mapping of fuel names to standard names that we are using in GPC (IPCC standard): {fuel_mapping}.
+
 
 def extraction_agent_actval_transportation(state: AgentState) -> dict:
     print("\nEXTRACTION AGENT ACTIVITY VALUES TRANSPORTATION\n")
 
     prompt = f"""
-Your goal is to find the activity values for the 'Transportation' sector within the provided dataframe 'df'.
-Once you found the activity values, map a GPC reference number to each activity value based on the provided context below.
-Different rows can correspond to different GPC reference numbers based on the acitivities they represent but each row can only be associated with one GPC reference number.
-Follow these instructions carefully:
+Your goal is to extract activities of the 'Transportation' sector from the provided dataframe 'df'.
+An activity consists of:
+    - a specific activity value
+    - a unit of measurement (e.g. liters, kilometers, cubic meter, etc.)
+    - a GPC reference number
+Each single row in the dataframe 'df' consists of a unique activity.
+Each single row in the dataframe 'df' can be of a different subsector of the 'Transportation' sector.
+To identify the GPC reference number, you need to understand to entire context of the activity. Use the provided context below marked with <additional_information> tags.
+Each row can only be associated with one GPC reference number. If you are uncertain about the GPC reference number, leave it empty.
+Make sure to carefully inspect every single data row and to take all the information of that row into account when making a decision.
 
-1. You are already provided with a dataframe 'df' containing various data. The dataframe will be presented in the following format:
+Follow these instructions carefully:
+1. You are already provided with the dataframe 'df' containing the activities.
 
 2. To complete this task:
-   a. Look for a column in the dataframe that represents sectors or categories. If no column is clearly labeled, you may need to infer the required data based on the format of the dataframe.
-   b. Find the corresponding activity values for those row(s) and add the relevant GPC reference number based on the provided context.
-
-3. Refer to the additional additional information in <additional_information> tags, especially the <context_activity_values_transportation> tags and <gpc_mappings> tags.
-
+    a. Think step-by-step for each row in the dataframe 'df'. This means for each row, consider the activity and the context like vehicle type, scope and so on. Do not assume that the different rows are related.
+    b. Identify columns in the dataframe that represent activities and activity values as well as columns that give information about the sector (e.g. public, agriculture, construction, and so on) of this activity. 
+    c. Find the corresponding activity values for those rows
+    d. For the activity check first the gpc mappings transportation below marked with <gpc_mappings_transportation> tags to know which GPC reference numbers could be applied.
+    d. Then check the provided context for the sector 'Transportation' below marked with <context_activity_values_transportation> tags to identify the correct GPC reference number based on the exmples given. Pay special attention to vehicles mentioned in the context to guide you.
+    f. Add the relevant GPC reference number based on the provided context. 
+   
 4. Present your findings in the following format:
    <answer>
-   Output a list of python dictionaries. Each dictionary inside the corresponds to a row in the dataframe 'df'. Each dictionary should contain the following key-value pairs:
-   {[{
-    "rownumber": "value",
-    "gpc_sector": "value",
-    "gpc_reference_number": "value",
-    "activity_name": "value",
-    "activity_value": "value"  
-   },
-   {...}]}
-   </answer>
+    <reasoning>
+    [Your reasoning for extracting the data and mapping the GPC reference number]
+    </reasoning>
+    <list>
+    [List with entries of extracted data corresponding the dataframe 'df'. Each entry should contain the following key-value pairs: 'rownumber', 'activity_name', 'activity_value', 'unit', 'gpc_reference_number'. The list must contain an entry for each row in the dataframe 'df'.]
+    </list>
+   </answer> 
 
 5. You are given additional information that is helpful in completing your task:
 
@@ -55,21 +84,28 @@ Follow these instructions carefully:
         This is the user provided context: {state.get("context_user_provided")}
         </user_provided_context>
         <context_activity_values_transportation>
-        This is the provided context for avtivity values specifically for the sector 'Transportation': {state.get("context_actval_transportation")},
+        This is the provided context for avtivities specifically for the sector 'Transportation': {state.get("context_actval_transportation")}.
+        Use this information for guidance on the correct GPC reference number especially when multiple GPC reference numbers are possible for an activity value. 
+        Remember that each row in the dataframe 'df' can have a different subsector and therefore a different GPC reference number.
         </context_activity_values_transportation>
         <file_path>
         This is the path to the original data file: {state.get('file_path')}.
         </file_path>
         <gpc_mappings>
+        Use the following information to identify the GPC reference number for an activity value and to understand the different fuel types.
         This is the provided context for Greenhouse Gas Protocol for Cities (GPC) mappings: {gpc_mappings}.
-        This is the mapping of fuel names to standard names that we are using in GPC (IPCC standard): {fuel_mapping}.
-        Use this information to identify the GPC reference number for an activity value and to understand the different fuel types.
             <gpc_mappings_transportation>
             This is the provided context for mapping transportation activities to Greenhouse Gas Protocol for Cities (GPC) reference numbers.
-            This is the mapping of fuel names to GPC reference numbers: {fuel_to_gpc}.
-            This is the mapping of transport types to GPC reference numbers: {transport_type_to_gpc}.
+            This is the mapping of fuel names to possible GPC reference numbers: {fuel_to_gpc}.
+            This is the mapping of transport types to possible GPC reference numbers: {transport_type_to_gpc}.
             </gpc_mappings_transportation>
         </gpc_mappings>
+        <feedback>
+        <feedback>
+        If you have received feedback from the reasoning agent, you find it here: {state.get("feedback_extracted_data_actval_transportation")}.
+        If feedback is available, pay special attention to this feedback and incorporate into your data extraction process.
+        If the extracted data aligns with your provided feedback, accept the answer. Othwerwise, provide new feedback.
+        </feedback></feedback>
     </additional_information>
 
 Remember to base your response solely on the information provided in the dataframe and additional information. Do not make assumptions or use external knowledge.
