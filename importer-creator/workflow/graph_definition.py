@@ -20,8 +20,6 @@ from agents.code_reasoning_agent import code_reasoning_agent
 def should_extraction_continue(state: AgentState) -> str:
     if state.get("approved_extracted_data_keyval"):
         return "structured_output_agent_keyval"
-        # router(state)
-        # return "code_generation_agent"
     return "extraction_agent_keyval"
 
 
@@ -36,9 +34,9 @@ def router(state: AgentState) -> str:
     sector = structured_data_keyval.get("sector")
     sub_sector = structured_data_keyval.get("sub_sector")
 
-    print(f"structured_extracted_data: {structured_data_keyval}")
-    print(f"sector: {sector}")
-    print(f"sub_sector: {sub_sector}")
+    # print(f"structured_extracted_data: {structured_data_keyval}")
+    # print(f"sector: {sector}")
+    # print(f"sub_sector: {sub_sector}")
 
     match sector:
         case "Stationary Energy":

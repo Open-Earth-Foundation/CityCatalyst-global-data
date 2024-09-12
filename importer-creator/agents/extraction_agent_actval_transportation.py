@@ -45,26 +45,27 @@ def extraction_agent_actval_transportation(state: AgentState) -> dict:
     print("\nEXTRACTION AGENT ACTIVITY VALUES TRANSPORTATION\n")
 
     prompt = f"""
-Your goal is to extract activities of the 'Transportation' sector from the provided dataframe 'df'.
-An activity consists of:
+Your goal is to extract activity data of the 'Transportation' sector from the provided dataframe 'df'.
+An activity data consists of:
     - a specific activity value
     - a unit of measurement (e.g. liters, kilometers, cubic meter, etc.)
     - a GPC reference number
-Each single row in the dataframe 'df' consists of a unique activity.
+Each single row in the dataframe 'df' contains unique activity data.
 Each single row in the dataframe 'df' can be of a different subsector of the 'Transportation' sector.
-To identify the GPC reference number, you need to understand to entire context of the activity. Use the provided context below marked with <additional_information> tags.
-Each row can only be associated with one GPC reference number. If you are uncertain about the GPC reference number, leave it empty.
+To identify the GPC reference number, you need to understand to entire context of the activity data. Use the provided context below marked with <additional_information> tags.
+Each row can only be associated with one GPC reference number.
 Make sure to carefully inspect every single data row and to take all the information of that row into account when making a decision.
 
 Follow these instructions carefully:
 1. You are already provided with the dataframe 'df' containing the activities.
 
 2. To complete this task:
-    a. Think step-by-step for each row in the dataframe 'df'. This means for each row, consider the activity and the context like vehicle type, scope and so on. Do not assume that the different rows are related.
-    b. Identify columns in the dataframe that represent activities and activity values as well as columns that give information about the sector (e.g. public, agriculture, construction, and so on) of this activity. 
+    a. Think step-by-step for each row in the dataframe 'df'. This means for each row, consider the activity data and the context like vehicle type, scope and so on. Do not assume that the different rows are related.
+    b. Identify columns in the dataframe that represent activity data and activity values as well as columns that give information about the sector (e.g. public, agriculture, construction, and so on) of this activity. 
     c. Find the corresponding activity values for those rows
-    d. For the activity check first the gpc mappings transportation below marked with <gpc_mappings_transportation> tags to know which GPC reference numbers could be applied.
-    d. Then check the provided context for the sector 'Transportation' below marked with <context_activity_values_transportation> tags to identify the correct GPC reference number based on the exmples given. Pay special attention to vehicles mentioned in the context to guide you.
+    d. First inspect the general gpc mappings within <gpc_mappings> tags below, to understand the general GPC reference numbers and their structure.
+    d. Then for the activity data, check the gpc mappings for transportation marked with <gpc_mappings_transportation> tags below, to know which GPC reference numbers could be applied.
+    e. Then check the provided context for the sector 'Transportation' marked with <context_activity_values_transportation> tags below, to identify the correct GPC reference number based on the further contecxt given in that document. Pay special attention to vehicles and keywords mentioned in this document to guide you.
     f. Add the relevant GPC reference number based on the provided context. 
    
 4. Present your findings in the following format:
@@ -101,11 +102,10 @@ Follow these instructions carefully:
             </gpc_mappings_transportation>
         </gpc_mappings>
         <feedback>
-        <feedback>
         If you have received feedback from the reasoning agent, you find it here: {state.get("feedback_extracted_data_actval_transportation")}.
         If feedback is available, pay special attention to this feedback and incorporate into your data extraction process.
         If the extracted data aligns with your provided feedback, accept the answer. Othwerwise, provide new feedback.
-        </feedback></feedback>
+        </feedback>
     </additional_information>
 
 Remember to base your response solely on the information provided in the dataframe and additional information. Do not make assumptions or use external knowledge.

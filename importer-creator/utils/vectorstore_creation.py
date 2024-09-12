@@ -6,41 +6,43 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-text_splitter = RecursiveCharacterTextSplitter(
-    # Set a really small chunk size, just to show.
-    chunk_size=800,
-    chunk_overlap=100,
-    length_function=len,
-    is_separator_regex=False,
-)
 
-file_path = "../files/GPC_Full_MASTER_RW_v7.pdf"
+def create_vectorstore():
+    print("\nCreating Vector Store\n")
 
-# Load PDF file
-loader = PyPDFLoader(file_path)
+    text_splitter = RecursiveCharacterTextSplitter(
+        # Set a really small chunk size, just to show.
+        chunk_size=800,
+        chunk_overlap=100,
+        length_function=len,
+        is_separator_regex=False,
+    )
 
-# Split PDF using text splitter
-pages = loader.load_and_split(text_splitter)
+    file_path = "./files/GPC_Full_MASTER_RW_v7.pdf"
 
-# Create embeddings model
-embeddings = OpenAIEmbeddings(
-    model="text-embedding-3-large",
-)
+    # Load PDF file
+    loader = PyPDFLoader(file_path)
 
-# Create Chroma vector store
-vector_store = Chroma(
-    collection_name="GPC_Full_MASTER_RW_v7",
-    embedding_function=embeddings,
-    persist_directory="../chroma_langchain_db",
-)
+    # Split PDF using text splitter
+    pages = loader.load_and_split(text_splitter)
 
-# Add documents to vector store
-vector_store.add_documents(pages)
+    # Create embeddings model
+    embeddings = OpenAIEmbeddings(
+        model="text-embedding-3-large",
+    )
 
-print(vector_store.similarity_search("What is GPC"))
+    # Create Chroma vector store
+    vector_store = Chroma(
+        collection_name="GPC_Full_MASTER_RW_v7",
+        embedding_function=embeddings,
+        persist_directory="./chroma_langchain_db",
+    )
 
-# Create Chroma vector database
-# vector_db = Chroma.from_documents(pages, embeddings)
+    # Add documents to vector store
+    vector_store.add_documents(pages)
+
+    print(f"\nVector Store created with {len(vector_store.get())} documents.\n")
 
 
-# print(vector_db.similarity_search("What is GPC"))
+if __name__ == "__main__":
+    create_vectorstore()

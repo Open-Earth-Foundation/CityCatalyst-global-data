@@ -7,6 +7,7 @@ load_dotenv()
 
 def load_vectorstore():
     print("\nLoading vector store\n")
+
     # Create embeddings model
     embeddings = OpenAIEmbeddings(
         model="text-embedding-3-large",
@@ -16,7 +17,8 @@ def load_vectorstore():
     vector_store = Chroma(
         collection_name="GPC_Full_MASTER_RW_v7",
         embedding_function=embeddings,
-        persist_directory="../chroma_langchain_db",
+        persist_directory="./chroma_langchain_db",
     )
+    print(f"\nVector Store loaded with: {len(vector_store.get())} documents\n")
 
     return vector_store

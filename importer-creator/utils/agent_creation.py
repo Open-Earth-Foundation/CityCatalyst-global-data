@@ -3,14 +3,9 @@ from langchain_openai import ChatOpenAI
 from langchain_anthropic import ChatAnthropic
 from langchain.agents import AgentExecutor
 from langchain_experimental.agents import create_pandas_dataframe_agent
-
-
-# import sys
-# import os
-
-# sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from utils.retriever_loader import load_retriever
-from langchain.agents import Tool
+from langchain_core.tools import StructuredTool
+from pydantic import BaseModel, Field
 
 model = "gpt-4o-2024-08-06"
 
@@ -29,12 +24,17 @@ def create_agent(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
         prefix="""
     You are a professional data scientist who is specialized in analyzing and extracting data from complex dataframes.
         
+    You have access to one main tool:
+    1. A Python REPL tool for data analysis, which can be used to manipulate and query the DataFrame 'df'
+
+    When using the Python REPL tool:
     Use the following code to print the entire length of the dataframe:
-    <code>
-    pd.set_option('display.max_rows', None)  # Show all rows
-    pd.set_option('display.max_columns', None)  # Show all columns 
-    </code>
-    Do not just use df.head() to make assumptions over the content of the entire dataframe.
+    - Use the following code to print the entire length of the dataframe:
+        <code>
+        pd.set_option('display.max_rows', None)  # Show all rows
+        pd.set_option('display.max_columns', None)  # Show all columns 
+        </code>
+    - Do not just use df.head() to make assumptions over the content of the entire dataframe.
     """,
         allow_dangerous_code=True,
     )
@@ -54,17 +54,26 @@ def create_coding_agent(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
         agent_type="tool-calling",
         # max_iterations=5, # this value can be adapted to speed up the process but potentially decrease accuracy
         prefix="""
-        You are a professional software engineer who is specialized in creating functional python scripts.
+    You are a professional software engineer who is specialized in creating functional python scripts.
 
-        Use the following code to print the entire length of the dataframe:
+    You have access to one main tool:
+    1. A Python REPL tool for data analysis, which can be used to manipulate and query the DataFrame 'df'
+
+    When using the Python REPL tool:
+    Use the following code to print the entire length of the dataframe:
+    - Use the following code to print the entire length of the dataframe:
         <code>
         pd.set_option('display.max_rows', None)  # Show all rows
         pd.set_option('display.max_columns', None)  # Show all columns 
         </code>
-        Do not just use df.head() to make assumptions over the content of the entire dataframe.
-        """,
+    - Do not just use df.head() to make assumptions over the content of the entire dataframe.
+    """,
         allow_dangerous_code=True,
     )
+
+
+class RetrieverInput(BaseModel):
+    query: str = Field(..., description="The query to send to the retriever")
 
 
 # Create pandas dataframe agent with rag capabilities
@@ -72,11 +81,21 @@ def create_agent_with_rag(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
 
     retriever = load_retriever()
 
+    def retriever_func(query: str) -> str:
+        return retriever.invoke(query)
+
     # Create a tool for the retriever
-    retriever_tool = Tool(
+    retriever_tool = StructuredTool(
         name="Retriever",
-        func=lambda x: retriever.invoke(str(x)),
-        description="Use this tool to retrieve information from the GPC Master document to enrich the context regarding any tasks related to the dataframe 'df'.",
+        func=retriever_func,
+        args_schema=RetrieverInput,
+        description="""
+    Use this tool to retrieve information from the GPC Master document to enrich the context regarding any tasks related to the data file. Also use this tool for analysis you are doing on the data file related to sectors, subsectors, scopes, activity data, emission values and so on.
+        
+    E.g., on inputs like: "What is the associated sector according to Greenhouse Gas Protocol for Cities (GPC)" you can provide relevant information about sectors and subsectors from the GPC Master document.
+    E.g., on inputs like: "Your goal is to extract activity data of the Transportation sector from the provided dataframe 'df'." you can provide relevant information about this specific sector, subsectors, scopes and common activity data from the GPC Master document.
+    E.g., on inputs like: "What is the GPC reference number for the activity 'Fuel consumption of diesel vehicles'?" you can provide the GPC reference number for this specific activity.
+    """,
     )
 
     # Initialize the LLM

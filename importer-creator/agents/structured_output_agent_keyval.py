@@ -39,7 +39,7 @@ structured_llm = llm.with_structured_output(json_schema)
 
 
 def structured_output_agent_keyval(state: AgentState) -> dict:
-    print("\nEXTRACTION AGENT STRUCTURED OUTPUT\n")
+    print("\nSTRUCTURED OUTPUT AGENT KEYVAL\n")
 
     prompt = f"""
     ### Task ###
