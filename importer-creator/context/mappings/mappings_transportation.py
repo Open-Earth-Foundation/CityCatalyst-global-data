@@ -29,6 +29,16 @@ fuel_mapping = {
 
 # mapping fuel names to gpc_refno
 fuel_to_gpc = {
+    "__doc__": """
+    This is the mapping of fuel names to possible GPC reference numbers. Use this mapping to identify possible GPC reference numbers based on the fuel names in the data.
+
+    E.g. if the fuel name in the data is 'Motor Gasoline/Petrol', the possible GPC reference numbers are ['II.1.1', 'II.2.1', 'II.3.1', 'II.5.1'].
+    E.g. if the fuel name in the data is 'Jet Kerosene', the only possible GPC reference numbers are ['II.4.1'].
+
+    This gives you a guide on a possible pre-assignment of GPC reference numbers based on the fuel names in the data. In cases where multiple GPC reference numbers are possible for a fuel name, use further provided context to identify the correct GPC reference number.
+   
+    Note: The names are exmaple names and can vary in the data. Use your best judgement to find semantically similar names in the data.
+    """,
     "Jet Kerosene": ["II.4.1"],
     "Aviation Gasoline": ["II.4.1"],
     "Motor Gasoline/Petrol": ["II.1.1", "II.2.1", "II.3.1", "II.5.1"],
@@ -71,6 +81,17 @@ fuel_to_gpc = {
 
 # mapping transport types to gpc_refno
 transport_type_to_gpc = {
+    "__doc__": """
+    This is the mapping of transportation types to possible GPC reference numbers. Use this mapping to identify possible GPC reference numbers based on the transportation types in the data.
+
+    E.g. if the transport type in the data is 'Rail', the only possible GPC reference number is ['II.2.1'].
+    E.g. if the transport type in the data is 'Agriculture Equipment', the only possible GPC reference number is ['II.5.1'].
+    E.g. if the transport type in the data is 'Medium-Duty Truck', the possible GPC reference numbers are ['II.1.1', 'II.5.1'].
+
+    This gives you a guide on a possible pre-assignment of GPC reference numbers based on the transport types in the data. In cases where multiple GPC reference numbers are possible for a transport type, use further provided context to identify the correct GPC reference number.
+    
+    Note: The names are exmaple names and can vary in the data. Use your best judgement to find semantically similar names in the data.
+    """,
     "Rail": ["II.2.1"],
     "Agriculture Equipment": ["II.5.1"],
     "Forestry Equipment": ["II.5.1"],
@@ -94,8 +115,8 @@ transport_type_to_gpc = {
     "HGV - Type Unknown": ["II.1.1"],
     "Sea tanker": ["II.3.1"],
     "Cargo ship": ["II.3.1"],
-    "Medium-Duty Truck5": ["II.1.1", "II.5.1"],
-    "Heavy-Duty Truck5": ["II.1.1", "II.5.1"],
+    "Medium-Duty Truck": ["II.1.1", "II.5.1"],
+    "Heavy-Duty Truck": ["II.1.1", "II.5.1"],
     "Waterborne Craft": ["II.3.1"],
     "Medium-Duty Truck": ["II.1.1", "II.5.1"],
     "Heavy-Duty Truck": ["II.1.1", "II.5.1"],

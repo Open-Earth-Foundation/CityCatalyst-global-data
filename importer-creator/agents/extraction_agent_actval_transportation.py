@@ -66,16 +66,20 @@ Follow these instructions carefully:
     d. First inspect the general gpc mappings within <gpc_mappings> tags below, to understand the general GPC reference numbers and their structure.
     d. Then for the activity data, check the gpc mappings for transportation marked with <gpc_mappings_transportation> tags below, to know which GPC reference numbers could be applied.
     e. Then check the provided context for the sector 'Transportation' marked with <context_activity_values_transportation> tags below, to identify the correct GPC reference number based on the further contecxt given in that document. Pay special attention to vehicles and keywords mentioned in this document to guide you.
-    f. Add the relevant GPC reference number based on the provided context. 
+    f. Create a python script. This python script must contain the following:
+        - a dictionary that maps the activity data to the corresponding GPC reference numbers. Make sure to include a mapping for all GPC reference numbers that you have identified in the data and assigned.
+        - a new dataframe 'df_new' that contains all the data of the original dataframe 'df' as a copy. Make further manipulations on this new dataframe 'df_new'.
+        - add to the new dataframe 'df_new' 3 new columns 'activity_name', 'activity_value'. Fill these columns with the existing data extracted data from the dataframe 'df'.
+        - add to the new dataframe 'df_new' 1 new colum 'gpc_reference_number'. Fill this column with the GPC reference number you have identified for the activity data.
    
 4. Present your findings in the following format:
    <answer>
     <reasoning>
-    [Your reasoning for extracting the data and mapping the GPC reference number]
+    [Your reasoning for extracting the data and mapping the GPC reference number. Make sure to include the reasoning for each GPC reference number you assign to the activity data.]
     </reasoning>
-    <list>
-    [List with entries of extracted data corresponding the dataframe 'df'. Each entry should contain the following key-value pairs: 'rownumber', 'activity_name', 'activity_value', 'unit', 'gpc_reference_number'. The list must contain an entry for each row in the dataframe 'df'.]
-    </list>
+    <code>
+    [Your generated python script]
+    </code>
    </answer> 
 
 5. You are given additional information that is helpful in completing your task:
