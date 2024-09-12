@@ -1,5 +1,9 @@
 from state.agent_state import AgentState
-from utils.agent_creation import create_agent, create_coding_agent
+from utils.agent_creation import (
+    create_agent,
+    create_coding_agent,
+    create_agent_with_rag,
+)
 from utils.data_loader import load_datafile_into_df
 from workflow.graph_definition import create_workflow
 
@@ -34,7 +38,8 @@ def process_datafile(
     df = load_datafile_into_df(file_path)
 
     # Create the agents
-    agent = create_agent(df, verbose)
+    # agent = create_agent(df, verbose)
+    agent = create_agent_with_rag(df, verbose)
     agent_code = create_coding_agent(df, verbose)
 
     # Create the workflow and render the graph
