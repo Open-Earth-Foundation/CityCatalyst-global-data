@@ -90,11 +90,12 @@ def create_agent_with_rag(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
         func=retriever_func,
         args_schema=RetrieverInput,
         description="""
-    Use this tool to retrieve information from the GPC Master document to enrich the context regarding any tasks related to the data file. Also use this tool for analysis you are doing on the data file related to sectors, subsectors, scopes, activity data, emission values and so on.
-        
-    E.g., on inputs like: "What is the associated sector according to Greenhouse Gas Protocol for Cities (GPC)" you can provide relevant information about sectors and subsectors from the GPC Master document.
-    E.g., on inputs like: "Your goal is to extract activity data of the Transportation sector from the provided dataframe 'df'." you can provide relevant information about this specific sector, subsectors, scopes and common activity data from the GPC Master document.
-    E.g., on inputs like: "What is the GPC reference number for the activity 'Fuel consumption of diesel vehicles'?" you can provide the GPC reference number for this specific activity.
+    Use this tool to retrieve information from the GPC Master document to enrich the context regarding any tasks related to the data file. 
+    Also use this tool for all analysis you are doing on the data file related to sectors, subsectors, scopes, activity data, emission values and so on.
+    
+    On inputs like: "What is the associated sector according to Greenhouse Gas Protocol for Cities (GPC)" you can provide relevant information about sectors and subsectors from the GPC Master document.
+    On inputs like: "Your goal is to extract activity data of the Transportation sector from the provided dataframe 'df'." you can provide relevant information about this specific sector, subsectors, scopes and common activity data from the GPC Master document.
+    E.g. use this tool when trying to identify the correct scope of activity data based on specific sectors.
     """,
     )
 

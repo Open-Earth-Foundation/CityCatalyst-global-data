@@ -74,6 +74,10 @@ class AgentState(TypedDict):
     feedback_extracted_data_keyval: Annotated[
         str, "Feedback from the key-value reasoning agent"
     ]
+    feedback_extracted_data_actval_stationary_energy_transportation: Annotated[
+        str,
+        "Feedback from the reasoning agent for the extracted specific activity values from the data file for the sector 'Stationary Energy' and 'Transportation'",
+    ]
     feedback_extracted_data_actval_stationary_energy: Annotated[
         str,
         "Feedback from the reasoning agent for the extracted specific activity values from the data file for the sector 'Stationary Energy'",

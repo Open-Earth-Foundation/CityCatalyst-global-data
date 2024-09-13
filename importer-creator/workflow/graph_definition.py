@@ -6,6 +6,9 @@ from agents.summary_agent import summary_agent
 from agents.extraction_agent_keyval import extraction_agent_keyval
 from agents.reasoning_agent_keyval import reasoning_agent_keyval
 from agents.structured_output_agent_keyval import structured_output_agent_keyval
+from agents.extraction_agent_actval_stationary_energy_transportation import (
+    extraction_agent_actval_stationary_energy_transportation,
+)
 from agents.extraction_agent_actval_transportation import (
     extraction_agent_actval_transportation,
 )
@@ -40,9 +43,12 @@ def router(state: AgentState) -> str:
 
     match sector:
         case "Stationary Energy":
-            return "extraction_agent_actval_stationary_energy"
+            # return "extraction_agent_actval_stationary_energy"
+            # return "extraction_agent_actval_transportation"  # temporary for testing
+            return "extraction_agent_actval_stationary_energy_transportation"
         case "Transportation":
-            return "extraction_agent_actval_transportation"
+            # return "extraction_agent_actval_transportation"
+            return "extraction_agent_actval_stationary_energy_transportation"
         case "Waste":
             return "extraction_agent_actval_waste"
         case _:
@@ -54,7 +60,8 @@ def router(state: AgentState) -> str:
 def should_extraction_actval_transportation_continue(state: AgentState) -> str:
     if state.get("approved_extracted_data_actval_transportation"):
         return END
-    return "extraction_agent_actval_transportation"
+    # return "extraction_agent_actval_transportation"
+    return "extraction_agent_actval_stationary_energy_transportation"
 
 
 # Define the conditional edge
@@ -73,10 +80,14 @@ def create_workflow():
     workflow.add_node("extraction_agent_keyval", extraction_agent_keyval)
     workflow.add_node("reasoning_agent_keyval", reasoning_agent_keyval)
     workflow.add_node("structured_output_agent_keyval", structured_output_agent_keyval)
-    workflow.add_node("extraction_agent_actval_stationary_energy", default_agent)
+    # workflow.add_node("extraction_agent_actval_stationary_energy", default_agent)
+    # workflow.add_node(
+    #     "extraction_agent_actval_transportation",
+    #     extraction_agent_actval_transportation,
+    # )
     workflow.add_node(
-        "extraction_agent_actval_transportation",
-        extraction_agent_actval_transportation,
+        "extraction_agent_actval_stationary_energy_transportation",
+        extraction_agent_actval_stationary_energy_transportation,
     )
     workflow.add_node("extraction_agent_actval_waste", default_agent)
     workflow.add_node(
@@ -109,15 +120,17 @@ def create_workflow():
         "structured_output_agent_keyval",
         router,
         {
-            "extraction_agent_actval_stationary_energy": "extraction_agent_actval_stationary_energy",
-            "extraction_agent_actval_transportation": "extraction_agent_actval_transportation",
+            # "extraction_agent_actval_stationary_energy": "extraction_agent_actval_stationary_energy",
+            # "extraction_agent_actval_transportation": "extraction_agent_actval_transportation",
+            "extraction_agent_actval_stationary_energy_transportation": "extraction_agent_actval_stationary_energy_transportation",
             "extraction_agent_actval_waste": "extraction_agent_actval_waste",
             END: END,
         },
     )
 
     workflow.add_edge(
-        "extraction_agent_actval_transportation",
+        # "extraction_agent_actval_transportation",
+        "extraction_agent_actval_stationary_energy_transportation",
         "reasoning_agent_actval_transportation",
     )
 
@@ -126,7 +139,8 @@ def create_workflow():
         "reasoning_agent_actval_transportation",
         should_extraction_actval_transportation_continue,
         {
-            "extraction_agent_actval_transportation": "extraction_agent_actval_transportation",
+            # "extraction_agent_actval_transportation": "extraction_agent_actval_transportation",
+            "extraction_agent_actval_stationary_energy_transportation": "extraction_agent_actval_stationary_energy_transportation",
             END: END,
         },
     )

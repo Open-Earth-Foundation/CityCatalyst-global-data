@@ -80,6 +80,7 @@ def process_datafile(
         approved_generated_code="",
         # feedback (output from reasoning agent)
         feedback_extracted_data_keyval="",
+        feedback_extracted_data_actval_stationary_energy_transportation="",
         feedback_extracted_data_actval_stationary_energy="",
         feedback_extracted_data_actval_transportation="",
         feedback_extracted_data_actval_waste="",

@@ -37,13 +37,12 @@ fuel_to_gpc = {
 
     This gives you a guide on a possible pre-assignment of GPC reference numbers based on the fuel names in the data. In cases where multiple GPC reference numbers are possible for a fuel name, use further provided context to identify the correct GPC reference number.
    
-    Note: The names are exmaple names and can vary in the data. Use your best judgement to find semantically similar names in the data.
+    Note: The names are exmaple names and can vary in the data. The names could also be in a different language depending on the data file. Use your best judgement to find semantically similar names in the data.
     """,
     "Jet Kerosene": ["II.4.1"],
     "Aviation Gasoline": ["II.4.1"],
     "Motor Gasoline/Petrol": ["II.1.1", "II.2.1", "II.3.1", "II.5.1"],
     "On-Road Diesel Fuel": ["II.1.1", "II.2.1", "II.3.1", "II.5.1"],
-    "Off-Road Diesel Fuel": ["II.5.1"],  # check with Mau
     "Residual Fuel Oil": ["II.1.1", "II.2.1", "II.3.1", "II.5.1"],
     "Liquefied Petroleum Gases (LPG)": [
         "II.1.1",
@@ -77,6 +76,8 @@ fuel_to_gpc = {
     "Biodiesel (100%)": ["II.1.1", "II.2.1", "II.3.1", "II.5.1"],
     "Bioethanol3": ["II.1.1", "II.2.1", "II.3.1", "II.5.1"],
     "Biodiesel ME3": ["II.1.1", "II.2.1", "II.3.1", "II.5.1"],
+    # Check with Mau
+    "Off-Road Diesel Fuel": ["II.5.1"],
 }
 
 # mapping transport types to gpc_refno
@@ -90,7 +91,7 @@ transport_type_to_gpc = {
 
     This gives you a guide on a possible pre-assignment of GPC reference numbers based on the transport types in the data. In cases where multiple GPC reference numbers are possible for a transport type, use further provided context to identify the correct GPC reference number.
     
-    Note: The names are exmaple names and can vary in the data. Use your best judgement to find semantically similar names in the data.
+    Note: The names are exmaple names and can vary in the data. The names could also be in a different language depending on the data file. Use your best judgement to find semantically similar names in the data.
     """,
     "Rail": ["II.2.1"],
     "Agriculture Equipment": ["II.5.1"],
@@ -143,4 +144,7 @@ transport_type_to_gpc = {
     "Air - International1": ["II.4.1"],
     "Taxi": ["II.1.1"],
     "Average Ferry": ["II.3.1"],
+    # Confirm with Mau
+    "Public Transport Bus": ["II.1.1"],
+    "Public Transport Rail": ["II.2.2"],
 }
