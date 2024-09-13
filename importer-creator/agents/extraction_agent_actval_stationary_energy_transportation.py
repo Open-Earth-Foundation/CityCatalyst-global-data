@@ -32,13 +32,16 @@ Follow these instructions carefully:
     a. Load the entire dataframe 'df'. This means load all the rows and do not use df.head() to only inspect the first few rows.
     b. Think step-by-step for each row in the dataframe 'df'. This means for each row, consider the activity data and the context like vehicle type, scope and so on. Do not assume that the different rows are related.
     c. Identify columns in the dataframe that represent activity data and activity values as well as columns that give information about the sector (e.g. public, agriculture, construction, energy consumption and so on) of this activity. 
+    d. Then if you have identified a column that contains the relevant information about how the activity data is being used:
+        - print out the unique values of this column
+        - make sure to include every unique value in your answer
     d. Find the corresponding activity values for those rows
     e. First inspect the general gpc mappings within <gpc_mappings> tags below, to understand the general GPC reference numbers and their structure.
     f. Then for the activity data, check the gpc mappings for 'Stationay Energy' and 'Transportation' marked with <gpc_mappings_sector> tags below, to know which GPC reference numbers could be applied.
     g. Then check the provided context for the sector 'Stationary Energy' and 'Transportation' marked with <context_activity_values_sector> tags below, to identify the correct GPC reference number based on the further contecxt given in that document. Pay special attention to vehicles and keywords mentioned in this document to guide you.
     h. Create a python script. This python script must contain the following:
         - code to load the .csv file into a pandas dataframe 'df'. The path to the .csv file is provided in the additional information.
-        - a dictionary that maps the activity data to the corresponding GPC reference numbers. Make sure to include a mapping for all GPC reference numbers that you have identified in the data and assigned. Include a category for 'Other' if you have identified activity data that does not fit into any of the provided categories and set the GPC reference number to 'undefined'.
+        - a dictionary that maps the activity data to the corresponding GPC reference numbers. Make sure to include a mapping for all GPC reference numbers that you have identified in the data and assigned. Include a category for 'Other' if you have identified activity data that does not fit into any of the provided categories and set the GPC reference number to 'undefined'. Make sure to include a mapping for every single sector identified.
         - a new dataframe 'df_new' that contains all the data of the original dataframe 'df' as a copy. Make further manipulations on this new dataframe 'df_new'.
         - add to the new dataframe 'df_new' 3 new columns 'activity_name', 'activity_value' and 'activity_unit'. Fill these columns with the existing data extracted data from the dataframe 'df'.
         - add to the new dataframe 'df_new' 1 new colum 'gpc_reference_number'. Fill this column with the GPC reference number you have identified for the activity data.
