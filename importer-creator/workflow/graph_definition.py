@@ -9,14 +9,18 @@ from agents.structured_output_agent_keyval import structured_output_agent_keyval
 from agents.extraction_agent_actval_stationary_energy_transportation import (
     extraction_agent_actval_stationary_energy_transportation,
 )
-from agents.extraction_agent_actval_transportation import (
-    extraction_agent_actval_transportation,
+from agents.reasoning_agent_actval_stationary_energy_transportation import (
+    reasoning_agent_actval_stationary_energy_transportation,
 )
-from agents.reasoning_agent_actval_transportation import (
-    reasoning_agent_actval_transportation,
-)
-from agents.code_generation_agent import code_generation_agent
-from agents.code_reasoning_agent import code_reasoning_agent
+
+# from agents.extraction_agent_actval_transportation import (
+#     extraction_agent_actval_transportation,
+# )
+# from agents.reasoning_agent_actval_transportation import (
+#     reasoning_agent_actval_transportation,
+# )
+# from agents.code_generation_agent import code_generation_agent
+# from agents.code_reasoning_agent import code_reasoning_agent
 
 
 # Define the conditional edge
@@ -57,18 +61,20 @@ def router(state: AgentState) -> str:
 
 
 # Define the conditional edge
-def should_extraction_actval_transportation_continue(state: AgentState) -> str:
-    if state.get("approved_extracted_data_actval_transportation"):
+def should_extraction_actval_stationary_energy_transportation_continue(
+    state: AgentState,
+) -> str:
+    if state.get("approved_extracted_data_actval_stationary_energy_transportation"):
         return END
     # return "extraction_agent_actval_transportation"
     return "extraction_agent_actval_stationary_energy_transportation"
 
 
 # Define the conditional edge
-def should_code_continue(state: AgentState) -> str:
-    if state.get("final_code_output"):
-        return "router"
-    return "code_generation_agent"
+# def should_code_continue(state: AgentState) -> str:
+#     if state.get("final_code_output"):
+#         return "router"
+#     return "code_generation_agent"
 
 
 # Define the graph
@@ -91,9 +97,13 @@ def create_workflow():
     )
     workflow.add_node("extraction_agent_actval_waste", default_agent)
     workflow.add_node(
-        "reasoning_agent_actval_transportation",
-        reasoning_agent_actval_transportation,
+        "reasoning_agent_actval_stationary_energy_transportation",
+        reasoning_agent_actval_stationary_energy_transportation,
     )
+    # workflow.add_node(
+    #     "reasoning_agent_actval_transportation",
+    #     reasoning_agent_actval_transportation,
+    # )
 
     # workflow.add_node("code_generation_agent", code_generation_agent)
     # workflow.add_node("code_reasoning_agent", code_reasoning_agent)
@@ -131,13 +141,13 @@ def create_workflow():
     workflow.add_edge(
         # "extraction_agent_actval_transportation",
         "extraction_agent_actval_stationary_energy_transportation",
-        "reasoning_agent_actval_transportation",
+        "reasoning_agent_actval_stationary_energy_transportation",
     )
 
     # Add conditional edge
     workflow.add_conditional_edges(
-        "reasoning_agent_actval_transportation",
-        should_extraction_actval_transportation_continue,
+        "reasoning_agent_actval_stationary_energy_transportation",
+        should_extraction_actval_stationary_energy_transportation_continue,
         {
             # "extraction_agent_actval_transportation": "extraction_agent_actval_transportation",
             "extraction_agent_actval_stationary_energy_transportation": "extraction_agent_actval_stationary_energy_transportation",

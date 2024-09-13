@@ -24,14 +24,18 @@ class AgentState(TypedDict):
     extracted_data_keyval: Annotated[
         str, "Extracted key-value data from the data file with explanations"
     ]
-    extracted_data_actval_stationary_energy: Annotated[
+    extracted_data_actval_stationary_energy_transportation: Annotated[
         str,
-        "Extracted specific activity values from the data file for the sector 'Stationary Energy' with exlanations",
+        "Extracted specific activity values from the data file for the sector 'Stationary Energy' and 'Transportation' with exlanations",
     ]
-    extracted_data_actval_transportation: Annotated[
-        str,
-        "Extracted specific activity values from the data file for the sector 'Transportation' with exlanations",
-    ]
+    # extracted_data_actval_stationary_energy: Annotated[
+    #     str,
+    #     "Extracted specific activity values from the data file for the sector 'Stationary Energy' with exlanations",
+    # ]
+    # extracted_data_actval_transportation: Annotated[
+    #     str,
+    #     "Extracted specific activity values from the data file for the sector 'Transportation' with exlanations",
+    # ]
     extracted_data_actval_waste: Annotated[
         str,
         "Extracted specific activity values from the data file for the sector 'Waste' with exlanations",
@@ -55,14 +59,18 @@ class AgentState(TypedDict):
     approved_extracted_data_keyval: Annotated[
         str, "Approved extracted key-value data from the data file with explanations"
     ]
-    approved_extracted_data_actval_stationary_energy: Annotated[
+    approved_extracted_data_actval_stationary_energy_transportation: Annotated[
         str,
-        "Approved extracted specific activity values for sector 'Stationary Energy' with explanations",
+        "Approved extracted specific activity values for sector 'Stationary Energy' and 'Transportation' with explanations",
     ]
-    approved_extracted_data_actval_transportation: Annotated[
-        str,
-        "Approved extracted specific activity values for sector 'Transportation' with explanations",
-    ]
+    # approved_extracted_data_actval_stationary_energy: Annotated[
+    #     str,
+    #     "Approved extracted specific activity values for sector 'Stationary Energy' with explanations",
+    # ]
+    # approved_extracted_data_actval_transportation: Annotated[
+    #     str,
+    #     "Approved extracted specific activity values for sector 'Transportation' with explanations",
+    # ]
     approved_extracted_data_actval_waste: Annotated[
         str,
         "Approved extracted specific activity values for sector 'Waste' with explanations",
@@ -78,14 +86,14 @@ class AgentState(TypedDict):
         str,
         "Feedback from the reasoning agent for the extracted specific activity values from the data file for the sector 'Stationary Energy' and 'Transportation'",
     ]
-    feedback_extracted_data_actval_stationary_energy: Annotated[
-        str,
-        "Feedback from the reasoning agent for the extracted specific activity values from the data file for the sector 'Stationary Energy'",
-    ]
-    feedback_extracted_data_actval_transportation: Annotated[
-        str,
-        "Feedback from the reasoning agent for the extracted specific activity values from the data file for the sector 'Transportation'",
-    ]
+    # feedback_extracted_data_actval_stationary_energy: Annotated[
+    #     str,
+    #     "Feedback from the reasoning agent for the extracted specific activity values from the data file for the sector 'Stationary Energy'",
+    # ]
+    # feedback_extracted_data_actval_transportation: Annotated[
+    #     str,
+    #     "Feedback from the reasoning agent for the extracted specific activity values from the data file for the sector 'Transportation'",
+    # ]
     feedback_extracted_data_actval_waste: Annotated[
         str,
         "Feedback from the reasoning agent for the extracted specific activity values from the data file for the sector 'Waste'",
@@ -94,14 +102,18 @@ class AgentState(TypedDict):
     iterator_reasoning_agent_keyval: Annotated[
         int, "Number of iterations by the reasoning agent"
     ]
-    iterator_reasoning_agent_actval_stationary_energy: Annotated[
+    iterator_reasoning_agent_actval_stationary_energy_transportation: Annotated[
         int,
-        "Number of iterations by the reasoning agent for extracted activity values of stationary energy",
+        "Number of iterations by the reasoning agent for extracted activity values of stationary energy and transportation",
     ]
-    iterator_reasoning_agent_actval_transportation: Annotated[
-        int,
-        "Number of iterations by the reasoning agent for extracted activity values of transportation",
-    ]
+    # iterator_reasoning_agent_actval_stationary_energy: Annotated[
+    #     int,
+    #     "Number of iterations by the reasoning agent for extracted activity values of stationary energy",
+    # ]
+    # iterator_reasoning_agent_actval_transportation: Annotated[
+    #     int,
+    #     "Number of iterations by the reasoning agent for extracted activity values of transportation",
+    # ]
     iterator_reasoning_agent_actval_waste: Annotated[
         int,
         "Number of iterations by the reasoning agent for extracted activity values of waste",

@@ -29,13 +29,14 @@ Follow these instructions carefully:
 1. You are already provided with the dataframe 'df' containing the activities.
 
 2. To complete this task:
-    a. Think step-by-step for each row in the dataframe 'df'. This means for each row, consider the activity data and the context like vehicle type, scope and so on. Do not assume that the different rows are related.
-    b. Identify columns in the dataframe that represent activity data and activity values as well as columns that give information about the sector (e.g. public, agriculture, construction, energy consumption and so on) of this activity. 
-    c. Find the corresponding activity values for those rows
-    d. First inspect the general gpc mappings within <gpc_mappings> tags below, to understand the general GPC reference numbers and their structure.
-    d. Then for the activity data, check the gpc mappings for 'Stationay Energy' and 'Transportation' marked with <gpc_mappings_sector> tags below, to know which GPC reference numbers could be applied.
-    e. Then check the provided context for the sector 'Stationary Energy' and 'Transportation' marked with <context_activity_values_sector> tags below, to identify the correct GPC reference number based on the further contecxt given in that document. Pay special attention to vehicles and keywords mentioned in this document to guide you.
-    f. Create a python script. This python script must contain the following:
+    a. Load the entire dataframe 'df'. This means load all the rows and do not use df.head() to only inspect the first few rows.
+    b. Think step-by-step for each row in the dataframe 'df'. This means for each row, consider the activity data and the context like vehicle type, scope and so on. Do not assume that the different rows are related.
+    c. Identify columns in the dataframe that represent activity data and activity values as well as columns that give information about the sector (e.g. public, agriculture, construction, energy consumption and so on) of this activity. 
+    d. Find the corresponding activity values for those rows
+    e. First inspect the general gpc mappings within <gpc_mappings> tags below, to understand the general GPC reference numbers and their structure.
+    f. Then for the activity data, check the gpc mappings for 'Stationay Energy' and 'Transportation' marked with <gpc_mappings_sector> tags below, to know which GPC reference numbers could be applied.
+    g. Then check the provided context for the sector 'Stationary Energy' and 'Transportation' marked with <context_activity_values_sector> tags below, to identify the correct GPC reference number based on the further contecxt given in that document. Pay special attention to vehicles and keywords mentioned in this document to guide you.
+    h. Create a python script. This python script must contain the following:
         - code to load the .csv file into a pandas dataframe 'df'. The path to the .csv file is provided in the additional information.
         - a dictionary that maps the activity data to the corresponding GPC reference numbers. Make sure to include a mapping for all GPC reference numbers that you have identified in the data and assigned. Include a category for 'Other' if you have identified activity data that does not fit into any of the provided categories and set the GPC reference number to 'undefined'.
         - a new dataframe 'df_new' that contains all the data of the original dataframe 'df' as a copy. Make further manipulations on this new dataframe 'df_new'.
@@ -74,12 +75,10 @@ Follow these instructions carefully:
         <file_path>
         This is the path to the original data file: {state.get('file_path')}.
         </file_path>
-        
         <feedback>
         If you have received feedback from the reasoning agent, you find it here: {state.get("feedback_extracted_data_actval_stationary_energy_transportation")}.
         If feedback is available, pay special attention to this feedback and incorporate into your data extraction process.
         </feedback>
-        
     </additional_information>
 
     4. Present your answer in the following format:
@@ -100,4 +99,6 @@ Follow these instructions carefully:
 
     print(response.get("output"))
 
-    return {"extracted_data_actval_transportation": response.get("output")}
+    return {
+        "extracted_data_actval_stationary_energy_transportation": response.get("output")
+    }

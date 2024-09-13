@@ -24,7 +24,6 @@ def reasoning_agent_keyval(state: AgentState) -> dict:
     This is the extracted data of the previous agent with explanation: {state.get("extracted_data_keyval")}.
 
     If you have given previous feedback to the extraction agent, you find it here: {state.get("feedback_extracted_data_keyval")}
-    If you have given feedback, check the extracted data of the agent against your feedback. 
     If the extracted data aligns with your provided feedback, accept the answer. Othwerwise, provide new feedback.
     """
 

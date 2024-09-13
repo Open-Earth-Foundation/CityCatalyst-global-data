@@ -63,8 +63,9 @@ def process_datafile(
         summary="",
         # extracted data (output from extraction agents)
         extracted_data_keyval="",
-        extracted_data_actval_stationary_energy="",
-        extracted_data_actval_transportation="",
+        extracted_data_actval_stationary_energy_transportation="",
+        # extracted_data_actval_stationary_energy="",
+        # extracted_data_actval_transportation="",
         extracted_data_actval_waste="",
         # structured output data (output from structured output agents)
         structured_data_keyval={},
@@ -74,21 +75,23 @@ def process_datafile(
         structured_code={},
         # approved data (output from reasoning agent)
         approved_extracted_data_keyval="",
-        approved_extracted_data_actval_stationary_energy="",
-        approved_extracted_data_actval_transportation="",
+        approved_extracted_data_actval_stationary_energy_transportation="",
+        # approved_extracted_data_actval_stationary_energy="",
+        # approved_extracted_data_actval_transportation="",
         approved_extracted_data_actval_waste="",
         approved_generated_code="",
         # feedback (output from reasoning agent)
         feedback_extracted_data_keyval="",
         feedback_extracted_data_actval_stationary_energy_transportation="",
-        feedback_extracted_data_actval_stationary_energy="",
-        feedback_extracted_data_actval_transportation="",
+        # feedback_extracted_data_actval_stationary_energy="",
+        # feedback_extracted_data_actval_transportation="",
         feedback_extracted_data_actval_waste="",
         feedback_code_generation="",
         # iterators (for reasoning agents)
         iterator_reasoning_agent_keyval=0,
-        iterator_reasoning_agent_actval_stationary_energy=0,
-        iterator_reasoning_agent_actval_transportation=0,
+        iterator_reasoning_agent_actval_stationary_energy_transportation=0,
+        # iterator_reasoning_agent_actval_stationary_energy=0,
+        # iterator_reasoning_agent_actval_transportation=0,
         iterator_reasoning_agent_actval_waste=0,
         iterator_reasoning_agent_code=0,
         # generated code (output from code generation agent)
