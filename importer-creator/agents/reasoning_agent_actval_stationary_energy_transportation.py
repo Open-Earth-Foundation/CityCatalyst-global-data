@@ -82,8 +82,6 @@ def reasoning_agent_actval_stationary_energy_transportation(state: AgentState) -
     # Invoke summary agent with custom prompt
     response = state.get("agent").invoke(prompt)
 
-    # print(response.get("output"))
-
     if "APPROVED" in response.get("output"):
         return {
             "approved_extracted_data_actval_stationary_energy_transportation": state.get(

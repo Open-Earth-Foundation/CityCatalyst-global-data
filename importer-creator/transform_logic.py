@@ -68,10 +68,11 @@ def process_datafile(
         # extracted_data_actval_transportation="",
         extracted_data_actval_waste="",
         # structured output data (output from structured output agents)
-        structured_data_keyval={},
-        structured_data_actval_stationary_energy={},
-        structured_data_actval_transportation={},
-        structured_data_actval_waste={},
+        structured_output_keyval={},
+        structured_output_stationary_energy_transportation={},
+        # structured_data_actval_stationary_energy={},
+        # structured_data_actval_transportation={},
+        structured_output_actval_waste={},
         structured_code={},
         # approved data (output from reasoning agent)
         approved_extracted_data_keyval="",
@@ -114,7 +115,9 @@ def transform(file_path, context_user_provided, verbose, show_graph):
     )
 
     # generated_script = state.get("final_code_output")
-    # return generated_script
-    print("\n\n\nFINAL STATE\n\n\n")
+
     # print(state)
-    return repr(state)
+    # return generated_script and reasoning json
+    final_output = state.get("structured_output_stationary_energy_transportation")
+    print(final_output)
+    return final_output

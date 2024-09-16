@@ -40,18 +40,22 @@ class AgentState(TypedDict):
         str,
         "Extracted specific activity values from the data file for the sector 'Waste' with exlanations",
     ]
-    structured_data_keyval: Annotated[
+    structured_output_keyval: Annotated[
         dict, "Structured extracted key-value data from the data file"
     ]
-    structured_data_actval_stationary_energy: Annotated[
+    structured_output_stationary_energy_transportation: Annotated[
         dict,
-        "Structured extracted activity values from the data file for sector 'Stationary Energy'",
+        "Structured output from the data file for sector 'Stationary Energy' and 'Transportation'",
     ]
-    structured_data_actval_transportation: Annotated[
-        dict,
-        "Structured extracted activity values from the data file for sector 'Transportation'",
-    ]
-    structured_data_actval_waste: Annotated[
+    # structured_data_actval_stationary_energy: Annotated[
+    #     dict,
+    #     "Structured extracted activity values from the data file for sector 'Stationary Energy'",
+    # ]
+    # structured_data_actval_transportation: Annotated[
+    #     dict,
+    #     "Structured extracted activity values from the data file for sector 'Transportation'",
+    # ]
+    structured_output_actval_waste: Annotated[
         dict,
         "Structured extracted activity values from the data file for sector 'Waste'",
     ]

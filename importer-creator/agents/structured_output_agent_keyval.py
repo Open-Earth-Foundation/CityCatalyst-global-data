@@ -6,7 +6,7 @@ from agents.agent_tasks import task_structured_output_agent_keyval
 
 load_dotenv()
 
-model = "gpt-4o"
+model = "gpt-4o-mini"
 
 json_schema = {
     "title": "extracted_data",
@@ -51,4 +51,4 @@ def structured_output_agent_keyval(state: AgentState) -> dict:
 
     # Invoke summary agent with custom prompt
     response = structured_llm.invoke(prompt)
-    return {"structured_data_keyval": response}
+    return {"structured_output_keyval": response}

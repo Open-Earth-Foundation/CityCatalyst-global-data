@@ -12,6 +12,10 @@ from agents.extraction_agent_actval_stationary_energy_transportation import (
 from agents.reasoning_agent_actval_stationary_energy_transportation import (
     reasoning_agent_actval_stationary_energy_transportation,
 )
+from agents.structured_output_actval_stationary_energy_transportation import (
+    structured_output_actval_stationary_energy_transportation,
+)
+
 
 # from agents.extraction_agent_actval_transportation import (
 #     extraction_agent_actval_transportation,
@@ -37,13 +41,9 @@ def router(state: AgentState) -> str:
     If no matching sector or sub-sector is extracted, the workflow ends.
     """
 
-    structured_data_keyval = state.get("structured_data_keyval")
-    sector = structured_data_keyval.get("sector")
-    sub_sector = structured_data_keyval.get("sub_sector")
-
-    # print(f"structured_extracted_data: {structured_data_keyval}")
-    # print(f"sector: {sector}")
-    # print(f"sub_sector: {sub_sector}")
+    structured_output_keyval = state.get("structured_output_keyval")
+    sector = structured_output_keyval.get("sector")
+    sub_sector = structured_output_keyval.get("sub_sector")
 
     match sector:
         case "Stationary Energy":
@@ -65,7 +65,7 @@ def should_extraction_actval_stationary_energy_transportation_continue(
     state: AgentState,
 ) -> str:
     if state.get("approved_extracted_data_actval_stationary_energy_transportation"):
-        return END
+        return "structured_output_actval_stationary_energy_transportation"
     # return "extraction_agent_actval_transportation"
     return "extraction_agent_actval_stationary_energy_transportation"
 
@@ -99,6 +99,10 @@ def create_workflow():
     workflow.add_node(
         "reasoning_agent_actval_stationary_energy_transportation",
         reasoning_agent_actval_stationary_energy_transportation,
+    )
+    workflow.add_node(
+        "structured_output_actval_stationary_energy_transportation",
+        structured_output_actval_stationary_energy_transportation,
     )
     # workflow.add_node(
     #     "reasoning_agent_actval_transportation",
@@ -151,9 +155,11 @@ def create_workflow():
         {
             # "extraction_agent_actval_transportation": "extraction_agent_actval_transportation",
             "extraction_agent_actval_stationary_energy_transportation": "extraction_agent_actval_stationary_energy_transportation",
-            END: END,
+            "structured_output_actval_stationary_energy_transportation": "structured_output_actval_stationary_energy_transportation",
         },
     )
+
+    workflow.add_edge("structured_output_actval_stationary_energy_transportation", END)
 
     # workflow.add_edge("code_generation_agent", "code_reasoning_agent")
 

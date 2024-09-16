@@ -19,9 +19,22 @@ if __name__ == "__main__":
     print("verbose: ", verbose)
     print("show_graph: ", show_graph)
 
-    state = transform(full_path, context_user_provided, verbose, show_graph)
-    with open("final_state.txt", "w") as file:
-        file.write(state)
+    final_output = transform(full_path, context_user_provided, verbose, show_graph)
+    print(final_output)
+
+    print("\n\n\nFINAL OUTPUT\n\n\n")
+
+    code = final_output.get("code")
+    reasoning = final_output.get("reasoning")
+
+    # Create a script and reasoning file
+    print("\nGET CODE\n")
+    with open("./generated/generated_script.py", "w") as file:
+        file.write(code)
+
+    print("\nGET REASONING\n")
+    with open("./generated/generated_reasoning.md", "w") as file:
+        file.write(reasoning)
 
     # generated_script = transform(full_path, context_user_provided, verbose, show_graph)
     # # Write the generated script to a file

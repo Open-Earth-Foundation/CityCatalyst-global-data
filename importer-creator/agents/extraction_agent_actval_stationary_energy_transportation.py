@@ -47,7 +47,7 @@ Follow these instructions carefully:
         - add to the new dataframe 'df_new' 1 new colum 'gpc_reference_number'. Fill this column with the GPC reference number you have identified for the activity data.
         - finally add code to output a new .csv file 'formatted.csv' containing the new dataframe 'df_new' with the added columns.
         - IMORTANT: 
-            - The code must contain comments.
+            - The code must contain python comments like '# This is a comment'.
             - The code must be executable and must not contain any code errors.
             - The final dataframe 'df_new' must contain all the data of the original dataframe 'df' and the added columns. If rows could not be assigned a GPC reference number, set the GPC reference number to 'undefined' according to the mapping. These rows must still be included in the final dataframe 'df_new'.
 
@@ -85,22 +85,22 @@ Follow these instructions carefully:
     </additional_information>
 
     4. Present your answer in the following format:
-    <answer>
-        <reasoning>
-        [Your reasoning for extracting the data and mapping the GPC reference number. Make sure to include the reasoning for each GPC reference number you assign to the activity data.]
-        </reasoning>
-        <code>
-        [Your generated python script]
-        </code>
-    </answer> 
+        - Give all your detailed reasoning inside the <reasoning> tags.
+        - Provide only the python script inside the <code> tags.
+        <answer>
+            <reasoning>
+            [Your detailed reasoning for extracting the data and mapping the GPC reference number. Make sure to include the reasoning for each GPC reference number you assign to the activity data.]
+            </reasoning>
+            <code>
+            [Your generated python script]
+            </code>
+        </answer>
 
     Remember to base your response solely on the information provided in the dataframe and additional information. Do not make assumptions or use external knowledge.
     """
 
     # Invoke summary agent with custom prompt
     response = state.get("agent").invoke(prompt)
-
-    print(response.get("output"))
 
     return {
         "extracted_data_actval_stationary_energy_transportation": response.get("output")
