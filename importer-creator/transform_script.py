@@ -20,19 +20,17 @@ if __name__ == "__main__":
     print("show_graph: ", show_graph)
 
     final_output = transform(full_path, context_user_provided, verbose, show_graph)
-    print(final_output)
-
-    print("\n\n\nFINAL OUTPUT\n\n\n")
+    print("\n\n\nGET FINAL OUTPUT\n\n\n")
 
     code = final_output.get("code")
     reasoning = final_output.get("reasoning")
 
     # Create a script and reasoning file
-    print("\nGET CODE\n")
+    print("\nCREATE CODE FILE\n")
     with open("./generated/generated_script.py", "w") as file:
         file.write(code)
 
-    print("\nGET REASONING\n")
+    print("\nCREATE MARKDOWN FILE\n")
     with open("./generated/generated_reasoning.md", "w") as file:
         file.write(reasoning)
 
