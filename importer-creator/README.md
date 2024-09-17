@@ -42,13 +42,14 @@ To set up a Python virtual environment and install the dependencies specified in
 
 The script can be run by the following command:
 
-`python transform_script.py "inputfile" "Additional user info" verbose`
+`python transform_script.py "inputfile" "Additional user info" verbose show_graph`
 
 The parameters are:
 
 - "inputfile": the name of the input file e.g. "input_1.csv"
 - "Additional user info": Meta information about the file, e.g. information provided by the uploader of the file
 - "verbose": Either 'true' or 'false'. On 'true' will output all the textout of the agents
+- "show_graph": Either 'true' or 'false'. On 'true' will show the graph
 
 # Input
 
@@ -56,12 +57,14 @@ Currently the script accepts .csv, .xls or .xlsx
 
 # Output
 
-The script will output two files:
+The script will output three files:
 
 - generated_script.py
   This is the pthon code which is doing the transformation and which can be processed for downstream tasks
 - formatted.csv
   This is the formatted input file, transformed based on the `generated_script.py`
+- generated_reasoning.py
+  This is a markdown file with the reasoning of the model, to check the assumptions.
 
 # Current limitations
 
@@ -70,4 +73,4 @@ Limitations:
 - There are no steps for any preprocessing of the data before loading into a pandas dataframe. This can cause issues, if
   a) the datafile is very poorly formatted so that it cannot be meaningfully loaded into a dataframe and connections (columns vs. rows) get lost or altered which is especially true for .xls and .xlsx files
   b) e.g. a .csv file had additional data on top of the actual data rows (e.g. added meta data). Then it cannot be parsed into a pandas dataframe
-- The extraction of the data currently assumes that one datafile is containing data to one sector/ sub-sector exclusively. Lifting this limitation could lead to more false-positives.
+- The extraction of the data currently assumes that one datafile is containing data to either stationary energy and/or transportation or waste.
