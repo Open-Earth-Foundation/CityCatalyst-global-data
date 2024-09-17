@@ -19,11 +19,8 @@ def load_from_s3_bucket(*args, **kwargs):
     config_path = path.join(get_repo_path(), 'io_config.yaml')
     config_profile = 'default'
 
-    city_name = kwargs['city_name']
-    country_name = kwargs['country']
-    
     bucket_name = kwargs['bucket_name']
-    object_key = f'''files/google_eie/{country_name}/{city_name}/{city_name}-buildings.csv'''
+    object_key = 'files/CURB/CURBCountryTransportContextData.csv'
 
     return S3.with_config(ConfigFileLoader(config_path, config_profile)).load(
         bucket_name,
