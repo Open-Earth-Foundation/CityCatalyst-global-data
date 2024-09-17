@@ -48,54 +48,54 @@ def process_datafile(
         render_graph(app)
 
     inputs = AgentState(
-        # file path
+        ### file path
         file_path=file_path,
-        # agents
+        ### agents
         agent=agent,
         agent_code=agent_code,
-        # contexts
+        ### contexts
         context_user_provided=context_user_provided,
         context_sector_subsector=context_sector_subsector,
         context_actval_stationary_energy=context_actval_stationary_energy,
         context_actval_transportation=context_actval_transportation,
         context_actval_waste=context_actval_waste,
-        # summary ()
+        ### summary
         summary="",
-        # extracted data (output from extraction agents)
+        ### extracted data (output from extraction agents)
         extracted_data_keyval="",
-        extracted_data_actval_stationary_energy_transportation="",
+        extracted_gpc_mapping_stationary_energy_transportation="",
         # extracted_data_actval_stationary_energy="",
         # extracted_data_actval_transportation="",
         extracted_data_actval_waste="",
-        # structured output data (output from structured output agents)
+        ### structured output data (output from structured output agents)
         structured_output_keyval={},
         structured_output_stationary_energy_transportation={},
         # structured_data_actval_stationary_energy={},
         # structured_data_actval_transportation={},
         structured_output_actval_waste={},
         structured_code={},
-        # approved data (output from reasoning agent)
+        ### approved data (output from reasoning agent)
         approved_extracted_data_keyval="",
-        approved_extracted_data_actval_stationary_energy_transportation="",
+        approved_extracted_gpc_mapping_stationary_energy_transportation="",
         # approved_extracted_data_actval_stationary_energy="",
         # approved_extracted_data_actval_transportation="",
         approved_extracted_data_actval_waste="",
         approved_generated_code="",
-        # feedback (output from reasoning agent)
+        ### feedback (output from reasoning agent)
         feedback_extracted_data_keyval="",
-        feedback_extracted_data_actval_stationary_energy_transportation="",
+        feedback_extracted_gpc_mapping_stationary_energy_transportation="",
         # feedback_extracted_data_actval_stationary_energy="",
         # feedback_extracted_data_actval_transportation="",
         feedback_extracted_data_actval_waste="",
-        feedback_code_generation="",
-        # iterators (for reasoning agents)
+        feedback_code_generation_actval_stationary_energy_transportation="",
+        ### iterators (for reasoning agents)
         iterator_reasoning_agent_keyval=0,
-        iterator_reasoning_agent_actval_stationary_energy_transportation=0,
+        iterator_reasoning_agent_gpc_mapping_stationary_energy_transportation=0,
         # iterator_reasoning_agent_actval_stationary_energy=0,
         # iterator_reasoning_agent_actval_transportation=0,
         iterator_reasoning_agent_actval_waste=0,
-        iterator_reasoning_agent_code=0,
-        # generated code (output from code generation agent)
+        iterator_reasoning_agent_code_generation_actval_stationary_energy_transportation=0,
+        ### generated code (output from code generation agent)
         generated_code="",
         final_code_output="",
     )

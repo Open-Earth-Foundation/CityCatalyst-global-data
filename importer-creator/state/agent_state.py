@@ -24,9 +24,9 @@ class AgentState(TypedDict):
     extracted_data_keyval: Annotated[
         str, "Extracted key-value data from the data file with explanations"
     ]
-    extracted_data_actval_stationary_energy_transportation: Annotated[
+    extracted_gpc_mapping_stationary_energy_transportation: Annotated[
         str,
-        "Extracted specific activity values from the data file for the sector 'Stationary Energy' and 'Transportation' with exlanations",
+        "Extracted gpc mapping values from the data file for the sector 'Stationary Energy' and 'Transportation' with exlanations",
     ]
     # extracted_data_actval_stationary_energy: Annotated[
     #     str,
@@ -63,7 +63,7 @@ class AgentState(TypedDict):
     approved_extracted_data_keyval: Annotated[
         str, "Approved extracted key-value data from the data file with explanations"
     ]
-    approved_extracted_data_actval_stationary_energy_transportation: Annotated[
+    approved_extracted_gpc_mapping_stationary_energy_transportation: Annotated[
         str,
         "Approved extracted specific activity values for sector 'Stationary Energy' and 'Transportation' with explanations",
     ]
@@ -86,7 +86,7 @@ class AgentState(TypedDict):
     feedback_extracted_data_keyval: Annotated[
         str, "Feedback from the key-value reasoning agent"
     ]
-    feedback_extracted_data_actval_stationary_energy_transportation: Annotated[
+    feedback_extracted_gpc_mapping_stationary_energy_transportation: Annotated[
         str,
         "Feedback from the reasoning agent for the extracted specific activity values from the data file for the sector 'Stationary Energy' and 'Transportation'",
     ]
@@ -102,11 +102,14 @@ class AgentState(TypedDict):
         str,
         "Feedback from the reasoning agent for the extracted specific activity values from the data file for the sector 'Waste'",
     ]
-    feedback_code_generation: Annotated[str, "Feedback from the code reasoning agent"]
+    feedback_code_generation_actval_stationary_energy_transportation: Annotated[
+        str,
+        "Feedback from the code reasoning agent for stationart energy and transportation",
+    ]
     iterator_reasoning_agent_keyval: Annotated[
         int, "Number of iterations by the reasoning agent"
     ]
-    iterator_reasoning_agent_actval_stationary_energy_transportation: Annotated[
+    iterator_reasoning_agent_gpc_mapping_stationary_energy_transportation: Annotated[
         int,
         "Number of iterations by the reasoning agent for extracted activity values of stationary energy and transportation",
     ]
@@ -122,8 +125,9 @@ class AgentState(TypedDict):
         int,
         "Number of iterations by the reasoning agent for extracted activity values of waste",
     ]
-    iterator_reasoning_agent_code: Annotated[
-        int, "Number of iterations by the code reasoning agent"
+    iterator_reasoning_agent_code_generation_actval_stationary_energy_transportation: Annotated[
+        int,
+        "Number of iterations by the code reasoning agent for stationary energy and transportation",
     ]
     generated_code: Annotated[str, "Generated code"]
     final_code_output: Annotated[str, "Final code output"]

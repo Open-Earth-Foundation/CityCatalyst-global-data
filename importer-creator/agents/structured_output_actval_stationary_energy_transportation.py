@@ -36,13 +36,24 @@ def structured_output_actval_stationary_energy_transportation(
     prompt = f"""
     Your task is to provide structured output in JSON format based on the output of a previous agent.
 
-    1. Output the text within <code> tags inside the "code" key of the JSON object as executable python code. Only include the final code output without any xml tags.
-    2. Output the text within <reasoning> tags inside the "reasoning" key of the JSON object as markdown text. Only include the final markdown text output without any xml tags.
+    1. Output the text within <code> tags as executable python code within <final_code_output> tags below. Only include the final code output without any xml tags.
+    2. Output the text within <reasoning> tags as markdown text. Combine all the reasonings between <reasoning> tags into a final markdown text. Do not create a summary but create a detailed collections of the individual reasonings. Only include the final markdown text output without any xml tags.
 
     <additional_information>
-        <output_previous_agent>
-        This is the output of the previous agent: {state.get("approved_extracted_data_actval_stationary_energy_transportation")}.
-        </output_previous_agent>
+        <final_code_output>
+        This is the final code output: {state.get("final_code_output")}.
+        </final_code_output>
+        <reasoning>
+            <reasoning_gpc_mappings>
+            This is the reasoning for the created gpc mappings: {state.get("approved_extracted_gpc_mapping_stationary_energy_transportation")}.
+            </reasoning_gpc_mappings>
+            <reasoning_activity_values>
+            This is the reasoning for extracting the activity values: EMPTY
+            </reasoning_activity_values>
+            <reasoning_emission_value_conversion>
+            This is the reasoning for the emission value conversions: EMPTY
+            </reasoning_emission_value_conversion>
+        </reasoning>
     </additional_information>
     """
 
