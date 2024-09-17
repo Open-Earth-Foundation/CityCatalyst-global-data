@@ -114,10 +114,5 @@ def transform(file_path, context_user_provided, verbose, show_graph):
         show_graph=show_graph,
     )
 
-    # generated_script = state.get("final_code_output")
-
-    # print(state)
-    # return generated_script and reasoning json
     final_output = state.get("structured_output_stationary_energy_transportation")
-    print(final_output)
     return final_output

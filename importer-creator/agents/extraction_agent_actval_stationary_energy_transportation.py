@@ -40,14 +40,20 @@ Follow these instructions carefully:
     f. Then for the activity data, check the gpc mappings for 'Stationay Energy' and 'Transportation' marked with <gpc_mappings_sector> tags below, to know which GPC reference numbers could be applied.
     g. Then check the provided context for the sector 'Stationary Energy' and 'Transportation' marked with <context_activity_values_sector> tags below, to identify the correct GPC reference number based on the further contecxt given in that document. Pay special attention to vehicles and keywords mentioned in this document to guide you.
     h. Create a python script. This python script must contain the following:
-        - code to load the .csv file into a pandas dataframe 'df'. The path to the .csv file is provided in the additional information.
-        - a dictionary that maps the activity data to the corresponding GPC reference numbers. Make sure to include a mapping for all GPC reference numbers that you have identified in the data and assigned. Include a category for 'Other' if you have identified activity data that does not fit into any of the provided categories and set the GPC reference number to 'undefined'. Make sure to include a mapping for every single sector identified.
-        - a new dataframe 'df_new' that contains all the data of the original dataframe 'df' as a copy. Make further manipulations on this new dataframe 'df_new'.
-        - add to the new dataframe 'df_new' 3 new columns 'activity_name', 'activity_value' and 'activity_unit'. Fill these columns with the existing data extracted data from the dataframe 'df'.
-        - add to the new dataframe 'df_new' 1 new colum 'gpc_reference_number'. Fill this column with the GPC reference number you have identified for the activity data.
-        - finally add code to output a new .csv file 'formatted.csv' containing the new dataframe 'df_new' with the added columns.
-        - IMORTANT: 
-            - The code must contain python comments like '# This is a comment'.
+        1. a dictionary variable "extracted_keyval_data" = { ... } with the the extracted data 'region' and 'temporal_resolution' from the previous agent. You find the data below within the <extracted_keyval_data> tags.
+        2. a dictionary that maps the activity data to the corresponding GPC reference numbers. Make sure to include a mapping for all GPC reference numbers that you have identified in the data and assigned. Include a category for 'Other' if you have identified activity data that does not fit into any of the provided categories and set the GPC reference number to 'undefined'. Make sure to include a mapping for every single sector identified.
+        3. code to load the .csv file into a pandas dataframe 'df' using "encoding='utf-8'". When loading the datafile, define the correct seperator being used e.g. ',' or ';'. The path to the .csv file is provided in the additional information.
+        4. a new dataframe 'df_new' that contains all the data of the original dataframe 'df' as a copy. Make further manipulations on this new dataframe 'df_new'.
+        5. normalized column names to 'lower case', strip them of any leading or trailing white spaces and replace any white spaces with underscores '_'.
+        6. convert any date columns to a valid datetime format based on the available data.
+            - automatically infer the format from the available data. E.g. use the extracted keyvalues within <extracted_keyval_data> tags and specifically the value 'temporal_resolution' as a guiding point.
+            - pay attention to columns that might not be clearly labeled as 'date' or 'dates' or similar.
+        7. add to the new dataframe 'df_new' 2 new columns 'region' and 'temporal_resolution'. Fill these columns with the extracted key value data from the <extracted_keyval_data> tags.
+        8. add to the new dataframe 'df_new' 3 new columns 'activity_name', 'activity_value' and 'activity_unit'. Fill these columns with the existing data extracted data from the dataframe 'df'.
+        9. add to the new dataframe 'df_new' 1 new colum 'gpc_reference_number'. Fill this column with the GPC reference number you have identified for the activity data.
+        10. finally add code to output a new .csv file 'formatted.csv' containing the new dataframe 'df_new' with the added columns.
+        11. IMORTANT: 
+            - The code must contain python comments.
             - The code must be executable and must not contain any code errors.
             - The final dataframe 'df_new' must contain all the data of the original dataframe 'df' and the added columns. If rows could not be assigned a GPC reference number, set the GPC reference number to 'undefined' according to the mapping. These rows must still be included in the final dataframe 'df_new'.
 
@@ -73,8 +79,10 @@ Follow these instructions carefully:
         <context_activity_values_sector>
         This is the provided context for avtivities specifically for the sector 'Transportation': {state.get("context_actval_transportation")}.
         Use this information for guidance on the correct GPC reference number especially when multiple GPC reference numbers are possible for an activity value. 
-        Remember that each row in the dataframe 'df' can have a different subsector and scope and therefore a different GPC reference number.
         </context_activity_values_sector>
+        <extracted_keyval_data>
+        This is the extracted key-value data from the previous agent: {state.get("structured_output_keyval")}.
+        </extracted_keyval_data>
         <file_path>
         This is the path to the original data file: {state.get('file_path')}.
         </file_path>

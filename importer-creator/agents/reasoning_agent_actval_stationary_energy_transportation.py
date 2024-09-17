@@ -9,6 +9,10 @@ from context.mappings.mappings_stationary_energy import (
     stationary_energy_scope_2_subsector_to_gpc,
 )
 
+# e. Perform test on the extracted data. The test are as follows:
+#     - Check if the activity values are all non-negative. If not, provide specific feedback to the previous agent stating the exact row.
+#     - Check if the activity values are all numeric. If not, provide specific feedback to the previous agent stating the exact row.
+
 
 def reasoning_agent_actval_stationary_energy_transportation(state: AgentState) -> dict:
     print("\nREASONING AGENT ACTIVITY VALUES STATIONARY ENERGY TRANSPORTATION\n")
@@ -26,11 +30,9 @@ def reasoning_agent_actval_stationary_energy_transportation(state: AgentState) -
         a. Load the entire dataframe 'df'. This means load all the rows and do not use df.head() to only inspect the first few rows.
         b. Think step-by-step for each row in the dataframe 'df'. This means for each row, consider the activity data and the context like vehicle type, scope and so on. Do not assume that the different rows are related.
         c. Check the reasoning of the previous agent. This can be found within the <reasoning> tags in the output of the previous agent within <extracted_data_actval_stationary_energy_transportation> tags. 
-        d. Verify the mapping that the previous agent had done. The mapping is found within the <code> tags output of the previous agent within <extracted_data_actval_stationary_energy_transportation> tags. Check if the previous agent has missed any sectors that are in the datafile but that do not have any mapping or if there is mislabeled data.  For this, check the all unique values in that identified column of the datafile.
-        e. Perform test on the extracted data. The test are as follows:
-            - Check if the activity values are all non-negative. If not, provide specific feedback to the previous agent stating the exact row.
-            - Check if the activity values are all numeric. If not, provide specific feedback to the previous agent stating the exact row.
-        e. If you approve, return 'APPROVED'. If not, return 'FEEDBACK: [Your feedback here]'.
+        d. Verify the 2 mappings that the previous agent had done. The mappings are found within the <code> tags output of the previous agent. Check if the previous agent has missed any values that are in the datafile but that do not have any mapping or if there is mislabeled data.  For this, check the all unique values in that identified column of the datafile.
+        e. Run the code and make sure that the code runs without any errors. If you encounter any errors, provide feedback to the previous agent.
+        f. If you approve, return 'APPROVED'. If not, return 'FEEDBACK: [Your feedback here]'.
         
     3. You are given additional information that is helpful in completing your task:
     <additional_information>
@@ -68,7 +70,7 @@ def reasoning_agent_actval_stationary_energy_transportation(state: AgentState) -
     # Check if the iteration limit has been reached
     if (
         state.get("iterator_reasoning_agent_actval_stationary_energy_transportation")
-        >= 1
+        >= 3
     ):
         print(
             "\nIteration limit reached. Automatically approving the extracted activity values for 'Stationary Energy' and 'Transportion' sector.\n"
