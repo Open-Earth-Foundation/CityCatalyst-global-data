@@ -132,3 +132,13 @@ def create_agent_with_rag(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
         extra_tools=[retriever_tool],
         allow_dangerous_code=True,
     )
+
+
+# Create pandas dataframe agent
+def create_structured_output_agent(json_schema: object, verbose: bool) -> AgentExecutor:
+
+    # Initialize the LLM
+    llm = ChatOpenAI(model=model, temperature=0, verbose=verbose)
+    structured_llm = llm.with_structured_output(json_schema)
+
+    return structured_llm
