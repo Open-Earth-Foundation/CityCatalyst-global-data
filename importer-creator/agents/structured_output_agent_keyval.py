@@ -1,10 +1,5 @@
-from dotenv import load_dotenv
 from state.agent_state import AgentState
 from utils.agent_creation import create_structured_output_agent
-
-load_dotenv()
-
-model = "gpt-4o-mini"
 
 json_schema = {
     "title": "extracted_data",

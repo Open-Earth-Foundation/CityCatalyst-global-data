@@ -7,11 +7,11 @@ from utils.retriever_loader import load_retriever
 from langchain_core.tools import StructuredTool
 from pydantic import BaseModel, Field
 
-model = "gpt-4o-2024-08-06"
-
 
 # Create pandas dataframe agent
 def create_agent(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
+
+    model = "gpt-4o-2024-08-06"
 
     # Initialize the LLM
     llm = ChatOpenAI(model=model, temperature=0)
@@ -43,6 +43,8 @@ def create_agent(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
 # Create agent for code generation
 def create_coding_agent(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
 
+    model = "gpt-4o-2024-08-06"
+
     # Initialize the LLM
     llm = ChatOpenAI(model=model, temperature=0)
     # llm = ChatAnthropic(model="claude-3-5-sonnet-20240620", temperature=0)
@@ -52,7 +54,6 @@ def create_coding_agent(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
         df,
         verbose=verbose,
         agent_type="tool-calling",
-        # max_iterations=5, # this value can be adapted to speed up the process but potentially decrease accuracy
         prefix="""
     You are a professional software engineer who is specialized in creating functional python scripts.
 
@@ -78,6 +79,8 @@ class RetrieverInput(BaseModel):
 
 # Create pandas dataframe agent with rag capabilities
 def create_agent_with_rag(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
+
+    model = "gpt-4o-2024-08-06"
 
     retriever = load_retriever()
 
@@ -136,6 +139,8 @@ def create_agent_with_rag(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
 
 # Create pandas dataframe agent
 def create_structured_output_agent(json_schema: object, verbose: bool) -> AgentExecutor:
+
+    model = "gpt-4o-mini"
 
     # Initialize the LLM
     llm = ChatOpenAI(model=model, temperature=0, verbose=verbose)
