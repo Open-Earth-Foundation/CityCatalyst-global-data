@@ -13,7 +13,6 @@ def create_vectorstore():
     text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=2000,
         chunk_overlap=200,
-        # length_function=len,
         is_separator_regex=False,
     )
 
@@ -40,7 +39,7 @@ def create_vectorstore():
     # Add documents to vector store
     vector_store.add_documents(pages)
 
-    print(f"\nVector Store created with {len(vector_store.get())} documents.\n")
+    print(f"\nVector Store created with {len(vector_store.get()["documents"])} documents.\n")
 
 
 if __name__ == "__main__":
