@@ -8,18 +8,18 @@ class AgentState(TypedDict):
     agent: Annotated[AgentExecutor, "The pre-instantiated agent"]
     agent_code: Annotated[AgentExecutor, "The pre-instantiated coding agent"]
     context_user_provided: Annotated[str, "The user provided context"]
-    context_sector_subsector: Annotated[
-        str, "The context of the gpc sectors and subsectors"
-    ]
-    context_actval_stationary_energy: Annotated[
-        str, "The context of the activity values for the sector 'Stationary Energy'"
-    ]
-    context_actval_transportation: Annotated[
-        str, "The context of the activity values for the sector 'Transportation'"
-    ]
-    context_actval_waste: Annotated[
-        str, "The context of the activity values for the sector 'Waste'"
-    ]
+    # context_sector_subsector: Annotated[
+    #     str, "The context of the gpc sectors and subsectors"
+    # ]
+    # context_actval_stationary_energy: Annotated[
+    #     str, "The context of the activity values for the sector 'Stationary Energy'"
+    # ]
+    # context_actval_transportation: Annotated[
+    #     str, "The context of the activity values for the sector 'Transportation'"
+    # ]
+    # context_actval_waste: Annotated[
+    #     str, "The context of the activity values for the sector 'Waste'"
+    # ]
     summary: Annotated[str, "Summary and detailed description of the data file"]
     extracted_data_keyval: Annotated[
         str, "Extracted key-value data from the data file with explanations"
