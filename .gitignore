@@ -137,6 +137,8 @@ mage_ai/server/data/files/**
 default_repo
 instance_metadata.json
 ~/.mage_data
+importer-creator/files/**
+importer-creator/generated/**
 
 # test notebook
 test.ipynb

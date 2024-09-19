@@ -1,20 +1,40 @@
-# generated_script.py
+# transform_script.py
 
 from transform_logic import transform
 
 if __name__ == "__main__":
     import sys
+    import os
 
     inputfile = sys.argv[1]
-    user_provided_context = sys.argv[2]
+    context_user_provided = sys.argv[2]
     verbose = sys.argv[3]
+    show_graph = sys.argv[4]
+
+    full_path = os.path.join("./files/", inputfile)
 
     print("inputfile: ", inputfile)
-    print("user_provided_context: ", user_provided_context)
+    print("full_path: ", full_path)
+    print("user_provided_context: ", context_user_provided)
     print("verbose: ", verbose)
+    print("show_graph: ", show_graph)
 
-    generated_script = transform(inputfile, user_provided_context, verbose)
+    final_output = transform(full_path, context_user_provided, verbose, show_graph)
+    print("\n\n\nGET FINAL OUTPUT\n\n\n")
 
-    # Write the generated script to a file
-    with open("generated_script.py", "w") as file:
-        file.write(generated_script)
+    code = final_output.get("code")
+    reasoning = final_output.get("reasoning")
+
+    # Create a script and reasoning file
+    print("\nCREATE CODE FILE\n")
+    with open("./generated/generated_script.py", "w") as file:
+        file.write(code)
+
+    print("\nCREATE MARKDOWN FILE\n")
+    with open("./generated/generated_reasoning.md", "w") as file:
+        file.write(reasoning)
+
+    # generated_script = transform(full_path, context_user_provided, verbose, show_graph)
+    # # Write the generated script to a file
+    # with open("generated_script.py", "w") as file:
+    #     file.write(generated_script)
