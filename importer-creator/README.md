@@ -32,11 +32,13 @@ To set up a Python virtual environment and install the dependencies specified in
 
 5. Install the required packages by running the following command:
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+The script is using Python 3.12.4.
 
-   This will install all the packages listed in the `requirements.txt` file into your virtual environment.
+```bash
+pip install -r requirements.txt
+```
+
+This will install all the packages listed in the `requirements.txt` file into your virtual environment.
 
 # Running the script
 

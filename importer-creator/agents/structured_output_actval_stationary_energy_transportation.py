@@ -1,10 +1,5 @@
-from langchain_openai import ChatOpenAI
 from state.agent_state import AgentState
-from dotenv import load_dotenv
-
-load_dotenv()
-
-model = "gpt-4o-mini"
+from utils.agent_creation import create_structured_output_agent
 
 json_schema = {
     "title": "structured_output_actval_stationary_energy_transportation",
@@ -23,15 +18,13 @@ json_schema = {
     "required": ["code", "reasoning"],
 }
 
-# Initialize the LLM
-llm = ChatOpenAI(model=model, temperature=0)
-structured_llm = llm.with_structured_output(json_schema)
-
 
 def structured_output_actval_stationary_energy_transportation(
     state: AgentState,
 ) -> dict:
     print("\nSTRUCTURED OUTPUT ACTVAL STATIONARY ENERGY TRANSPORTATION\n")
+
+    agent = create_structured_output_agent(json_schema, verbose=state.get("verbose"))
 
     prompt = f"""
     Your task is to provide structured output in JSON format based on the output of a previous agent.
@@ -58,5 +51,5 @@ def structured_output_actval_stationary_energy_transportation(
     """
 
     # Invoke summary agent with custom prompt
-    response = structured_llm.invoke(prompt)
+    response = agent.invoke(prompt)
     return {"structured_output_stationary_energy_transportation": response}

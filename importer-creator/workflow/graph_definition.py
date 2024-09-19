@@ -25,14 +25,6 @@ from agents.reasoning_agent_code_generation_stationary_energy_transportation imp
 )
 
 
-# from agents.extraction_agent_actval_transportation import (
-#     extraction_agent_actval_transportation,
-# )
-# from agents.reasoning_agent_actval_transportation import (
-#     reasoning_agent_actval_transportation,
-# )
-
-
 # Define the conditional edge
 def should_extraction_continue(state: AgentState) -> str:
     if state.get("approved_extracted_data_keyval"):
@@ -49,7 +41,6 @@ def router(state: AgentState) -> str:
 
     structured_output_keyval = state.get("structured_output_keyval")
     sector = structured_output_keyval.get("sector")
-    sub_sector = structured_output_keyval.get("sub_sector")
 
     match sector:
         case "Stationary Energy":
@@ -85,13 +76,6 @@ def should_codegeneration_stationary_energy_transportation_continue(
     return "code_generation_agent_actval_stationary_energy_transportation"
 
 
-# Define the conditional edge
-# def should_code_continue(state: AgentState) -> str:
-#     if state.get("final_code_output"):
-#         return "router"
-#     return "code_generation_agent"
-
-
 # Define the graph
 def create_workflow():
     workflow = StateGraph(AgentState)
@@ -101,11 +85,6 @@ def create_workflow():
     workflow.add_node("extraction_agent_keyval", extraction_agent_keyval)
     workflow.add_node("reasoning_agent_keyval", reasoning_agent_keyval)
     workflow.add_node("structured_output_agent_keyval", structured_output_agent_keyval)
-    # workflow.add_node("extraction_agent_actval_stationary_energy", default_agent)
-    # workflow.add_node(
-    #     "extraction_agent_actval_transportation",
-    #     extraction_agent_actval_transportation,
-    # )
     workflow.add_node(
         "extraction_agent_gpc_mapping_stationary_energy_transportation",
         extraction_agent_gpc_mapping_stationary_energy_transportation,
@@ -127,13 +106,6 @@ def create_workflow():
         "structured_output_actval_stationary_energy_transportation",
         structured_output_actval_stationary_energy_transportation,
     )
-    # workflow.add_node(
-    #     "reasoning_agent_actval_transportation",
-    #     reasoning_agent_actval_transportation,
-    # )
-
-    # workflow.add_node("code_generation_agent", code_generation_agent)
-    # workflow.add_node("code_reasoning_agent", code_reasoning_agent)
 
     # Set the entrypoint
     workflow.set_entry_point("summary_agent")
@@ -157,18 +129,15 @@ def create_workflow():
         "structured_output_agent_keyval",
         router,
         {
-            # "extraction_agent_actval_stationary_energy": "extraction_agent_actval_stationary_energy",
-            # "extraction_agent_actval_transportation": "extraction_agent_actval_transportation",
-            "extraction_agent_gpc_mapping_stationary_energy_transportation": "extraction_agent_gpc_mapping_stationary_energy_transportation",
+            "extraction_agent_actval_stationary_energy_transportation": "extraction_agent_actval_stationary_energy_transportation",
             "extraction_agent_actval_waste": "extraction_agent_actval_waste",
             END: END,
         },
     )
 
     workflow.add_edge(
-        # "extraction_agent_actval_transportation",
-        "extraction_agent_gpc_mapping_stationary_energy_transportation",
-        "reasoning_agent_gpc_mapping_stationary_energy_transportation",
+        "extraction_agent_actval_stationary_energy_transportation",
+        "reasoning_agent_actval_stationary_energy_transportation",
     )
 
     # Add conditional edge
@@ -176,40 +145,11 @@ def create_workflow():
         "reasoning_agent_gpc_mapping_stationary_energy_transportation",
         should_extraction_gpc_mapping_stationary_energy_transportation_continue,
         {
-            # "extraction_agent_actval_transportation": "extraction_agent_actval_transportation",
-            "extraction_agent_gpc_mapping_stationary_energy_transportation": "extraction_agent_gpc_mapping_stationary_energy_transportation",
-            "code_generation_agent_actval_stationary_energy_transportation": "code_generation_agent_actval_stationary_energy_transportation",
-        },
-    )
-
-    workflow.add_edge(
-        "code_generation_agent_actval_stationary_energy_transportation",
-        "reasoning_agent_code_generation_stationary_energy_transportation",
-    )
-
-    # Add conditional edge
-    workflow.add_conditional_edges(
-        "reasoning_agent_code_generation_stationary_energy_transportation",
-        should_codegeneration_stationary_energy_transportation_continue,
-        {
-            # "extraction_agent_actval_transportation": "extraction_agent_actval_transportation",
-            "code_generation_agent_actval_stationary_energy_transportation": "code_generation_agent_actval_stationary_energy_transportation",
+            "extraction_agent_actval_stationary_energy_transportation": "extraction_agent_actval_stationary_energy_transportation",
             "structured_output_actval_stationary_energy_transportation": "structured_output_actval_stationary_energy_transportation",
         },
     )
 
     workflow.add_edge("structured_output_actval_stationary_energy_transportation", END)
-
-    # workflow.add_edge("code_generation_agent", "code_reasoning_agent")
-
-    # Add conditional edge
-    # workflow.add_conditional_edges(
-    #     "code_reasoning_agent",
-    #     should_code_continue,
-    #     {
-    #         "code_generation_agent": "code_generation_agent",
-    #         END: END,
-    #     },
-    # )
 
     return workflow.compile()

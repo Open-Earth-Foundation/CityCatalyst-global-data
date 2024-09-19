@@ -36,13 +36,13 @@ blocks:
   language: sql
   name: transform_city_transport
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: transformer
   upstream_blocks:
   - load_city_transport_file
   uuid: transform_city_transport
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: duckdb
@@ -52,9 +52,7 @@ blocks:
     file_source:
       path: data_exporters/import_city_transport_staging.py
   downstream_blocks:
-  - update_city_transport_emissions
-  - update_city_transport_activity
-  - update_city_transport_gpcmethod
+  - raw_data_google_emissions
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -67,7 +65,59 @@ blocks:
   upstream_blocks:
   - transform_city_transport
   uuid: import_city_transport_staging
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - update_city_transport_emissions
+  - update_city_transport_activity
+  - update_city_transport_gpcmethod
+  - update_city_transport_ef
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: raw_data_google_emissions
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - import_city_transport_staging
+  - export_google_curb
+  - export_google_ipcc_ef_staging
+  uuid: raw_data_google_emissions
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_city_transport_ef
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_loader
+  upstream_blocks:
+  - raw_data_google_emissions
+  uuid: update_city_transport_ef
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: postgres
@@ -88,13 +138,13 @@ blocks:
   language: sql
   name: update_city_transport_emissions
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: data_loader
   upstream_blocks:
-  - import_city_transport_staging
+  - raw_data_google_emissions
   uuid: update_city_transport_emissions
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: postgres
@@ -116,7 +166,7 @@ blocks:
   timeout: null
   type: data_loader
   upstream_blocks:
-  - import_city_transport_staging
+  - raw_data_google_emissions
   uuid: update_city_transport_activity
 - all_upstream_blocks_executed: false
   color: grey
@@ -143,7 +193,7 @@ blocks:
   - update_city_transport_gpcmethod
   - update_city_transport_emissions
   uuid: drop_city_transport_staging
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: postgres
@@ -161,11 +211,11 @@ blocks:
   language: sql
   name: update_city_transport_gpcmethod
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: data_loader
   upstream_blocks:
-  - import_city_transport_staging
+  - raw_data_google_emissions
   uuid: update_city_transport_gpcmethod
 - all_upstream_blocks_executed: true
   color: null
@@ -174,19 +224,52 @@ blocks:
     data_provider_profile: default
     export_write_policy: append
   downstream_blocks:
-  - transform_city_residential
+  - export_google_curb
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: load_city_residential_file
+  name: load_curb_transport
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: data_loader
   upstream_blocks: []
-  uuid: load_city_residential_file
-- all_upstream_blocks_executed: false
+  uuid: load_curb_transport
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - raw_data_google_emissions
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: export_google_curb
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_curb_transport
+  uuid: export_google_curb
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - transform_google_ef
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_google_ipcc_ef
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_google_ipcc_ef
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     data_provider: duckdb
@@ -196,19 +279,40 @@ blocks:
     export_write_policy: append
     limit: 1000
     use_raw_sql: true
-  downstream_blocks: []
+  downstream_blocks:
+  - export_google_ipcc_ef_staging
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: sql
-  name: transform_city_residential
+  name: transform_google_ef
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: transformer
   upstream_blocks:
-  - load_city_residential_file
-  uuid: transform_city_residential
+  - load_google_ipcc_ef
+  uuid: transform_google_ef
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: duckdb
+    data_provider_profile: default
+    export_write_policy: append
+  downstream_blocks:
+  - raw_data_google_emissions
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: export_google_ipcc_ef_staging
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - transform_google_ef
+  uuid: export_google_ipcc_ef_staging
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}

@@ -7,7 +7,7 @@ SELECT DISTINCT
     gpc_reference_number,
     1 as scope
 FROM 
-    modelled.emissions_staging
+    raw_data.google_emissions
 ON CONFLICT (gpcmethod_id)
 DO UPDATE SET 
     methodology_name = EXCLUDED.methodology_name,

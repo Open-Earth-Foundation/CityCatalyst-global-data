@@ -66,11 +66,6 @@ The task of the previous extraction agent was:
 If you approve, return 'APPROVED'. If not, return 'FEEDBACK: [Your feedback here]'
 """
 
-# Description for the task of the extraction agent structured output
-task_structured_output_agent_keyval = """
-Your task is to provide structured output in JSON format.
-"""
-
 # Description for the task of the extraction agent for activity values for transportation
 task_extraction_agent_actval_transportation = f"""
 Your task is to extract the following data from the provided dataframe 'df':
