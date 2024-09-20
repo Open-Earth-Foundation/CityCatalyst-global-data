@@ -1,5 +1,6 @@
 # transform_script.py
 
+import json
 from transform_logic import transform
 
 if __name__ == "__main__":
@@ -19,20 +20,20 @@ if __name__ == "__main__":
     print("verbose: ", verbose)
     print("show_graph: ", show_graph)
 
-    final_output = transform(full_path, context_user_provided, verbose, show_graph)
-    print("\n\n\nGET FINAL OUTPUT\n\n\n")
+    state = transform(full_path, context_user_provided, verbose, show_graph)
+    # print("\n\n\nGET FINAL OUTPUT\n\n\n")
 
-    code = final_output.get("code")
-    reasoning = final_output.get("reasoning")
+    # code = final_output.get("code")
+    # reasoning = final_output.get("reasoning")
 
     # Create a script and reasoning file
-    print("\nCREATE CODE FILE\n")
-    with open("./generated/generated_script.py", "w") as file:
-        file.write(code)
+    print("\nWRITE FINAL STATE TO FILE\n")
+    with open("./generated/final_state.txt", "w") as file:
+        json.dump(state, file, indent=4)
 
-    print("\nCREATE MARKDOWN FILE\n")
-    with open("./generated/generated_reasoning.md", "w") as file:
-        file.write(reasoning)
+    # print("\nCREATE MARKDOWN FILE\n")
+    # with open("./generated/generated_reasoning.md", "w") as file:
+    #     file.write(reasoning)
 
     # generated_script = transform(full_path, context_user_provided, verbose, show_graph)
     # # Write the generated script to a file

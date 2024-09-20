@@ -12,8 +12,8 @@ from agents.extraction_agent_gpc_mapping_stationary_energy_transportation import
 from agents.reasoning_agent_gpc_mapping_stationary_energy_transportation import (
     reasoning_agent_gpc_mapping_stationary_energy_transportation,
 )
-from agents.structured_output_actval_stationary_energy_transportation import (
-    structured_output_actval_stationary_energy_transportation,
+from agents.structured_output_agent_stationary_energy_transportation import (
+    structured_output_agent_stationary_energy_transportation,
 )
 
 from agents.code_generation_agent_actval_stationary_energy_transportation import (
@@ -23,6 +23,8 @@ from agents.code_generation_agent_actval_stationary_energy_transportation import
 from agents.reasoning_agent_code_generation_stationary_energy_transportation import (
     reasoning_agent_code_generation_stationary_energy_transportation,
 )
+
+from agents.create_output_files_agent import create_output_files_agent
 
 
 # Define the conditional edge
@@ -67,8 +69,26 @@ def should_codegeneration_stationary_energy_transportation_continue(
     state: AgentState,
 ) -> str:
     if state.get("final_code_output"):
-        return "structured_output_actval_stationary_energy_transportation"
+        return "structured_output_agent_stationary_energy_transportation"
     return "code_generation_agent_actval_stationary_energy_transportation"
+
+
+def user_interaction(state: AgentState) -> AgentState:
+    message = """
+    Please check the created files 'generated_reasoning.md' and 'generated_script.py' in the folder '/generated'.
+
+    If you are satisfied with the generated reasoning and code, please type 'END' in all caps to finish the script. 
+    Otherwise, provide feedback. Be as specific as possible. 
+
+    1. Type 'END' to finish the script.
+    2. Provide feedback to adjust the reasoning and code.
+        
+    Submit your response by pressing 'Enter'.
+    """
+    feedback_user_input = input(message)
+
+    state["feedback_user_input"] = feedback_user_input
+    return state
 
 
 # Define the graph
@@ -98,9 +118,13 @@ def create_workflow():
         reasoning_agent_code_generation_stationary_energy_transportation,
     )
     workflow.add_node(
-        "structured_output_actval_stationary_energy_transportation",
-        structured_output_actval_stationary_energy_transportation,
+        "structured_output_agent_stationary_energy_transportation",
+        structured_output_agent_stationary_energy_transportation,
     )
+
+    workflow.add_node("user_interaction", user_interaction)
+
+    workflow.add_node("create_output_files_agent", create_output_files_agent)
 
     # Set the entrypoint
     workflow.set_entry_point("summary_agent")
@@ -157,10 +181,17 @@ def create_workflow():
         {
             # "extraction_agent_actval_transportation": "extraction_agent_actval_transportation",
             "code_generation_agent_actval_stationary_energy_transportation": "code_generation_agent_actval_stationary_energy_transportation",
-            "structured_output_actval_stationary_energy_transportation": "structured_output_actval_stationary_energy_transportation",
+            "structured_output_agent_stationary_energy_transportation": "structured_output_agent_stationary_energy_transportation",
         },
     )
 
-    workflow.add_edge("structured_output_actval_stationary_energy_transportation", END)
+    workflow.add_edge(
+        "structured_output_agent_stationary_energy_transportation",
+        "create_output_files_agent",
+    )
+
+    workflow.add_edge("create_output_files_agent", "user_interaction")
+
+    workflow.add_edge("user_interaction", END)
 
     return workflow.compile()

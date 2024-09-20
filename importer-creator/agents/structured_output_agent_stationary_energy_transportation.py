@@ -2,7 +2,7 @@ from state.agent_state import AgentState
 from utils.agent_creation import create_structured_output_agent
 
 json_schema = {
-    "title": "structured_output_actval_stationary_energy_transportation",
+    "title": "structured_output_agent_stationary_energy_transportation",
     "description": "The structured output for the extracted activity data from the data file (code and reasoning)",
     "type": "object",
     "properties": {
@@ -19,10 +19,10 @@ json_schema = {
 }
 
 
-def structured_output_actval_stationary_energy_transportation(
+def structured_output_agent_stationary_energy_transportation(
     state: AgentState,
 ) -> dict:
-    print("\nSTRUCTURED OUTPUT ACTVAL STATIONARY ENERGY TRANSPORTATION\n")
+    print("\nSTRUCTURED OUTPUT AGENT STATIONARY ENERGY TRANSPORTATION\n")
 
     agent = create_structured_output_agent(json_schema, verbose=state.get("verbose"))
 
