@@ -1,10 +1,10 @@
 from state.agent_state import AgentState
 
 
-def code_generation_agent_actval_stationary_energy_transportation(
+def code_generation_agent_stationary_energy_transportation(
     state: AgentState,
 ) -> dict:
-    print("\nCODE GENERATION AGENT ACTIVITY VALUES STATIONARY ENERGY TRANSPORTATION\n")
+    print("\nCODE GENERATION AGENT STATIONARY ENERGY TRANSPORTATION\n")
 
     prompt = f"""
 Your goal is to create a runnable python script. 
