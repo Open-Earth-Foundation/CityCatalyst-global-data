@@ -106,7 +106,7 @@ class AgentState(TypedDict):
         str,
         "Feedback from the code reasoning agent for stationart energy and transportation",
     ]
-    feedback_user_input: Annotated[str, "Feedback from the user"]
+    feedback_hitl: Annotated[str, "Feedback from the user"]
     iterator_reasoning_agent_keyval: Annotated[
         int, "Number of iterations by the reasoning agent"
     ]

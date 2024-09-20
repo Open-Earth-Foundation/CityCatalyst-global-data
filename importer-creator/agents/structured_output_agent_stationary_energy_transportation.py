@@ -30,7 +30,7 @@ def structured_output_agent_stationary_energy_transportation(
     Your task is to provide structured output in JSON format based on the output of a previous agent.
 
     1. Output the text within <code> tags as executable python code within <final_code_output> tags below. Only include the final code output without any xml tags.
-    2. Output the text within <reasoning> tags as markdown text. Combine all the reasonings between <reasoning> tags into a final markdown text. Do not create a summary but create a detailed collections of the individual reasonings. Only include the final markdown text output without any xml tags.
+    2. Output the text within <reasoning> tags as markdown text. Combine all the reasonings between <reasoning> tags into a final markdown text. Also include the content of <feedback_human-in-the-loop> tags in a seperate section of the reasoning if available. Do not create a summary but create a detailed collections of the individual reasonings. Only include the final markdown text output without any xml tags.
 
     <additional_information>
         <final_code_output>
@@ -46,6 +46,11 @@ def structured_output_agent_stationary_energy_transportation(
             <reasoning_emission_value_conversion>
             This is the reasoning for the emission value conversions: EMPTY
             </reasoning_emission_value_conversion>
+            <feedback>
+            <feedback_human-in-the-loop>
+            If the user has provided feedback at the end of the entire data pipeline from the human-in-the-loop agent, you find it here: {state.get("feedback_hitl")}.
+            </feedback_human-in-the-loop>
+            </feedback>
         </reasoning>
     </additional_information>
     """

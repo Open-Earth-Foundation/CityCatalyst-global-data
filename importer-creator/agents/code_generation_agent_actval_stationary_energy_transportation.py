@@ -12,9 +12,12 @@ Your inputs are the dataframe 'df' and extracted data provided in the <additiona
 
 Follow these instructions carefully:
 1. Think step-by-step for each each of your tasks
-2. You are already provided with the dataframe 'df' containing the activities.
 
-3. To complete this task:
+2. Consider the human-in-the-loop feedback provided in the <feedback_human-in-the-loop> tags below if available. This is the most important feedback to consider for your data extraction process. Rank this specific human-in-the-loop feedback highest in your considerations and make sure to incorporate it into your thinking.
+
+3. You are already provided with the dataframe 'df' containing the activities.
+
+4. To complete this task:
     a. Load the entire dataframe 'df'. This means load all the rows and do not use df.head() to only inspect the first few rows.
     b. Create a python script. This python script must contain the following:
         1. a dictionary variable "extracted_keyval_data" = { ... } with the the extracted data 'region' and 'temporal_resolution' from the previous agent. You find the data below within the <extracted_keyval_data> tags.
@@ -34,7 +37,7 @@ Follow these instructions carefully:
             - The code must be executable and must not contain any code errors.
             - The final dataframe 'df_new' must contain all the data of the original dataframe 'df' and the added columns. If rows could not be assigned a GPC reference number, set the GPC reference number to 'undefined' according to the mapping. These rows must still be included in the final dataframe 'df_new'.
 
-4. Present your answer in the following format:
+5. Present your answer in the following format:
     - Provide only the python script inside the <code> tags.
     <answer>
         <code>
@@ -42,7 +45,7 @@ Follow these instructions carefully:
         </code>
     </answer>
 
-5. You are given additional information that is helpful in completing your task:
+6. You are given additional information that is helpful in completing your task:
 
     <additional_information>
         <extracted_keyval_data>
@@ -55,8 +58,14 @@ Follow these instructions carefully:
         This is the path to the original data file: {state.get('file_path')}.
         </file_path>
         <feedback>
-        If you have received feedback from the reasoning agent, you find it here: {state.get("feedback_code_generation_actval_stationary_energy_transportation")}.
-        If feedback is available, pay special attention to this feedback and incorporate into your data extraction process.
+            <feedback_human-in-the-loop>
+            If the user has provided feedback at the end of the entire data pipeline from the human-in-the-loop agent, you find it here: {state.get("feedback_hitl")}.
+            This is the most important feedback to consider for your data extraction process. Rank this specific human-in-the-loop feedback highest in your considerations and make sure to incorporate it into your thinking.
+            </feedback_human-in-the-loop>
+            <feedback_reasoning_agent>
+            If you have received feedback from the reasoning agent, you find it here: {state.get("feedback_code_generation_actval_stationary_energy_transportation")}.
+            If feedback is available, pay special attention to this feedback and incorporate into your data extraction process.
+            </feedback_reasoning_agent>
         </feedback>
     </additional_information>
 """

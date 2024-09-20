@@ -26,6 +26,8 @@ from agents.reasoning_agent_code_generation_stationary_energy_transportation imp
 
 from agents.create_output_files_agent import create_output_files_agent
 
+from agents.hitl_agent import hitl_agent
+
 
 # Define the conditional edge
 def should_extraction_continue(state: AgentState) -> str:
@@ -73,22 +75,21 @@ def should_codegeneration_stationary_energy_transportation_continue(
     return "code_generation_agent_actval_stationary_energy_transportation"
 
 
-def user_interaction(state: AgentState) -> AgentState:
-    message = """
-    Please check the created files 'generated_reasoning.md' and 'generated_script.py' in the folder '/generated'.
+def has_user_provided_feedback(
+    state: AgentState,
+) -> str:
 
-    If you are satisfied with the generated reasoning and code, please type 'END' in all caps to finish the script. 
-    Otherwise, provide feedback. Be as specific as possible. 
+    feedback: str = state.get("feedback_hitl")
 
-    1. Type 'END' to finish the script.
-    2. Provide feedback to adjust the reasoning and code.
-        
-    Submit your response by pressing 'Enter'.
-    """
-    feedback_user_input = input(message)
-
-    state["feedback_user_input"] = feedback_user_input
-    return state
+    if feedback == "":
+        print(
+            "\nNo clear command provided. Please either submit 'END' to end the workflow or provide detailed feedback.\n"
+        )
+        return "hitl_agent"
+    elif feedback == "END":
+        return END
+    else:
+        return "extraction_agent_gpc_mapping_stationary_energy_transportation"
 
 
 # Define the graph
@@ -122,7 +123,7 @@ def create_workflow():
         structured_output_agent_stationary_energy_transportation,
     )
 
-    workflow.add_node("user_interaction", user_interaction)
+    workflow.add_node("hitl_agent", hitl_agent)
 
     workflow.add_node("create_output_files_agent", create_output_files_agent)
 
@@ -190,8 +191,17 @@ def create_workflow():
         "create_output_files_agent",
     )
 
-    workflow.add_edge("create_output_files_agent", "user_interaction")
+    workflow.add_edge("create_output_files_agent", "hitl_agent")
 
-    workflow.add_edge("user_interaction", END)
+    # Add conditional edge
+    workflow.add_conditional_edges(
+        "hitl_agent",
+        has_user_provided_feedback,
+        {
+            "hitl_agent": "hitl_agent",
+            "extraction_agent_gpc_mapping_stationary_energy_transportation": "extraction_agent_gpc_mapping_stationary_energy_transportation",
+            END: END,
+        },
+    )
 
     return workflow.compile()

@@ -28,9 +28,11 @@ Use the additional provided information below marked with <additional_informatio
 Follow these instructions carefully:
 1. Think step-by-step for each row in the dataframe 'df'. This means for each row, consider the activity data and the context like vehicle type, scope and so on. Do not assume that the different rows are related.
 
-2. You are already provided with the dataframe 'df' containing the activities.
+2. Consider the human-in-the-loop feedback provided in the <feedback_human-in-the-loop> tags below if available. This is the most important feedback to consider for your data extraction process. Rank this specific human-in-the-loop feedback highest in your considerations and make sure to incorporate it into your thinking.
 
-3. To complete this task:
+3. You are already provided with the dataframe 'df' containing the activities.
+
+4. To complete this task:
     a. Load the entire dataframe 'df'. This means load all the rows and do not use df.head() to only inspect the first few rows.    
     b. Identify columns in the dataframe that represent activity data and activity values as well as columns that provide context for the activity data (for example what vehicle type, what building type, who it was sold to like public sector, agriculture sector, energy consumption and so on) of this activity. 
     c. Then if you have identified a column that contains the relevant information about how the activity data is being used:
@@ -41,7 +43,7 @@ Follow these instructions carefully:
     f. Then check the provided context for the sector 'Stationary Energy' and 'Transportation' marked with <context_activity_values_sector> tags below, to identify the correct GPC reference number based on the further context given in that document.
     g. Make sure, to only assign one GPC reference number per row.
 
-4. Present your answer in the following format:
+5. Present your answer in the following format:
     - Give all your detailed reasoning inside the <reasoning> tags.
     - Provide only the created mapping as JSON inside the <mapping> tags.
     <answer>
@@ -53,7 +55,7 @@ Follow these instructions carefully:
         </mapping>
     </answer>
     
-5. You are given additional information that is helpful in completing your task:
+6. You are given additional information that is helpful in completing your task:
 
     <additional_information>
         <gpc_master_document>
@@ -83,8 +85,14 @@ Follow these instructions carefully:
         This is the path to the original data file: {state.get('file_path')}.
         </file_path>
         <feedback>
-        If you have received feedback from the reasoning agent, you find it here: {state.get("feedback_extracted_gpc_mapping_stationary_energy_transportation")}.
-        If feedback is available, pay special attention to this feedback and incorporate into your data extraction process.
+            <feedback_human-in-the-loop>
+            If the user has provided feedback at the end of the entire data pipeline from the human-in-the-loop agent, you find it here: {state.get("feedback_hitl")}.
+            This is the most important feedback to consider for your data extraction process. Rank this specific human-in-the-loop feedback highest in your considerations and make sure to incorporate it into your thinking.
+            </feedback_human-in-the-loop>
+            <feedback_reasoning_agent>
+            If you have received feedback from the reasoning agent, you find it here: {state.get("feedback_extracted_gpc_mapping_stationary_energy_transportation")}.
+            If feedback is available, pay special attention to this feedback and incorporate into your data extraction process.
+            </feedback_reasoning_agent>
         </feedback>
     </additional_information>
 

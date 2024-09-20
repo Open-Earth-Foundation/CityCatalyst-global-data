@@ -61,7 +61,7 @@ def process_datafile(
         feedback_extracted_gpc_mapping_stationary_energy_transportation="",
         feedback_extracted_data_actval_waste="",
         feedback_code_generation_actval_stationary_energy_transportation="",
-        feedback_user_input="",
+        feedback_hitl="",
         ### iterators (for reasoning agents)
         iterator_reasoning_agent_keyval=0,
         iterator_reasoning_agent_gpc_mapping_stationary_energy_transportation=0,
@@ -86,5 +86,4 @@ def transform(file_path, context_user_provided, verbose, show_graph):
         show_graph=show_graph,
     )
 
-    # final_output = state.get("structured_output_stationary_energy_transportation")
     return state
