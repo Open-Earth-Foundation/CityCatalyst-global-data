@@ -33,6 +33,8 @@ def process_datafile(
         render_graph(app)
 
     inputs = AgentState(
+        ### dataframe
+        df=df,
         ### file path
         file_path=file_path,
         ### agents
@@ -44,9 +46,11 @@ def process_datafile(
         summary="",
         ### extracted data (output from extraction agents)
         extracted_data_keyval="",
-        extracted_gpc_mapping_stationary_energy_transportation="",
         extracted_actval_stationary_energy_transportation="",
+        extracted_gpc_mapping_stationary_energy_transportation="",
         extracted_data_actval_waste="",
+        ### transformations (output from transformation agents)
+        transformations_stationary_energy_transportation="",
         ### structured output data (output from structured output agents)
         structured_output_keyval={},
         structured_output_stationary_energy_transportation={},
@@ -71,6 +75,8 @@ def process_datafile(
         ### generated code (output from code generation agent)
         generated_code="",
         final_code_output="",
+        ### verbose
+        verbose=verbose,
     )
 
     result = app.invoke(inputs)

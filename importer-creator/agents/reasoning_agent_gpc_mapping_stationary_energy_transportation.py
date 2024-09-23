@@ -40,16 +40,19 @@ Follow these instructions carefully:
     If you approve, return 'APPROVED'. If not, return 'FEEDBACK: [Your feedback here]'.
     
 6. You are given additional information that is helpful in completing your task:
-    <additional_information> 
+    <additional_information>
+        <file_path>
+        This is the path to the original data file: {state.get('file_path')}.
+        </file_path>
+        <user_provided_context>
+        This is the user provided context: {state.get("context_user_provided")}
+        </user_provided_context>
         <extracted_gpc_mapping_stationary_energy_transportation>
         The output of the previous agent is this: {state.get("extracted_gpc_mapping_stationary_energy_transportation")}.
         </extracted_gpc_mapping_stationary_energy_transportation>
         <gpc_master_document>
         You are provided with a retriever tool "Retriever" to retrieve information from the GPC Master document. Use this document every time to enrich your context.
         </gpc_master_document>
-        <user_provided_context>
-        This is the user provided context: {state.get("context_user_provided")}
-        </user_provided_context>
         <gpc_mappings>
         The following information provides context to identify the GPC reference number for an activity value.
         This is the provided general context for Greenhouse Gas Protocol for Cities (GPC) mappings: {gpc_mappings}.
@@ -65,9 +68,6 @@ Follow these instructions carefully:
         Use this information for guidance on the correct GPC reference number especially when multiple GPC reference numbers are possible for an activity value. 
         Remember that each row in the dataframe 'df' can have a different subsector and scope and therefore a different GPC reference number.
         </context_activity_values_sector>
-        <file_path>
-        This is the path to the original data file: {state.get('file_path')}.
-        </file_path>
         <feedback>
             <feedback_human-in-the-loop>
             If the user has provided feedback at the end of the entire data pipeline from the human-in-the-loop agent, you find it here: {state.get("feedback_hitl")}.
@@ -86,7 +86,7 @@ Follow these instructions carefully:
         state.get(
             "iterator_reasoning_agent_gpc_mapping_stationary_energy_transportation"
         )
-        >= 3
+        >= 0
     ):
         print(
             "\nIteration limit reached. Automatically approving the extracted gpc mappings for 'Stationary Energy' and 'Transportion' sector.\n"

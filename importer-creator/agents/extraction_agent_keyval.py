@@ -38,6 +38,9 @@ Follow these instructions carefully:
 
 5. You are given additional information that is helpful in completing your task:
     <additional_information>
+        <file_path>
+        This is the path to the original data file: {state.get('file_path')}.
+        </file_path>
         <gpc_master_document>
         You are provided with a retriever tool "Retriever" to retrieve information from the GPC Master document. Use this document every time to enrich your context.
         </gpc_master_document>
@@ -50,9 +53,6 @@ Follow these instructions carefully:
         <summary>
         This is the summary of the dataset: {state.get('summary')}.
         </summary>
-        <file_path>
-        This is the path to the original data file: {state.get('file_path')}.
-        </file_path>
         <feedback>
         If you have received feedback from the reasoning agent, you find it here: {state.get("feedback_extracted_data_keyval")}.
         If feedback is available, pay special attention to this feedback and incorporate into your data extraction process.

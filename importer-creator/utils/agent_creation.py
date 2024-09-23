@@ -28,9 +28,14 @@ def create_agent(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
     1. A Python REPL tool for data analysis, which can be used to manipulate and query the DataFrame 'df'
 
     When using the Python REPL tool:
+    - make sure to always import all necessary libraries at the beginning of your code. Especially always import pandas.
+        <code>
+        import pandas as pd
+        </code>
     Use the following code to print the entire length of the dataframe:
     - Use the following code to print the entire length of the dataframe:
         <code>
+        import pandas as pd
         pd.set_option('display.max_rows', None)  # Show all rows
         pd.set_option('display.max_columns', None)  # Show all columns 
         </code>
@@ -61,9 +66,14 @@ def create_coding_agent(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
     1. A Python REPL tool for data analysis, which can be used to manipulate and query the DataFrame 'df'
 
     When using the Python REPL tool:
+    - make sure to always import all necessary libraries at the beginning of your code. Especially always import pandas.
+        <code>
+        import pandas as pd
+        </code>
     Use the following code to print the entire length of the dataframe:
     - Use the following code to print the entire length of the dataframe:
         <code>
+        import pandas as pd
         pd.set_option('display.max_rows', None)  # Show all rows
         pd.set_option('display.max_columns', None)  # Show all columns 
         </code>
@@ -118,9 +128,14 @@ def create_agent_with_rag(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
     2. A Retriever tool for fetching relevant information from a Chroma database
 
     When using the Python REPL tool:
+    - make sure to always import all necessary libraries at the beginning of your code. Especially always import pandas.
+        <code>
+        import pandas as pd
+        </code>
     Use the following code to print the entire length of the dataframe:
     - Use the following code to print the entire length of the dataframe:
         <code>
+        import pandas as pd
         pd.set_option('display.max_rows', None)  # Show all rows
         pd.set_option('display.max_columns', None)  # Show all columns 
         </code>

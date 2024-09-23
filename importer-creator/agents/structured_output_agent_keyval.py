@@ -30,8 +30,6 @@ json_schema = {
 def structured_output_agent_keyval(state: AgentState) -> dict:
     print("\nSTRUCTURED OUTPUT AGENT KEYVAL\n")
 
-    agent = create_structured_output_agent(json_schema, verbose=state.get("verbose"))
-
     prompt = f"""
     ### Task ###
     Your task is to provide structured output in JSON format.
@@ -40,6 +38,8 @@ def structured_output_agent_keyval(state: AgentState) -> dict:
     This is the extracted data of the previous agent: {state.get("approved_extracted_data_keyval")}.
     You find the information in the <extracted_data_keyval> tags in the output of the previous agent.
     """
+
+    agent = create_structured_output_agent(json_schema, verbose=state.get("verbose"))
 
     # Invoke summary agent with custom prompt
     response = agent.invoke(prompt)

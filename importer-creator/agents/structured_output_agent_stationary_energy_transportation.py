@@ -41,10 +41,10 @@ def structured_output_agent_stationary_energy_transportation(
             This is the reasoning for the created gpc mappings: {state.get("approved_extracted_gpc_mapping_stationary_energy_transportation")}.
             </reasoning_gpc_mappings>
             <reasoning_activity_values>
-            This is the reasoning for extracting the activity values: EMPTY
+            This is the reasoning for extracting the activity values: {state.get("extracted_actval_stationary_energy_transportation")}.
             </reasoning_activity_values>
             <reasoning_emission_value_conversion>
-            This is the reasoning for the emission value conversions: EMPTY
+            This is the reasoning for the emission value conversions: {state.get("transformations_stationary_energy_transportation")}.
             </reasoning_emission_value_conversion>
             <feedback>
             <feedback_human-in-the-loop>

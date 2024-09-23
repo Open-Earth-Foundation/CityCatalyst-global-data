@@ -3,10 +3,12 @@
 from langchain.prompts import PromptTemplate
 
 
-def create_prompt(goal: str, step_4: str, step_5: str, step_6: str) -> str:
+def create_prompt(
+    task: str, completion_steps: str, answer_format: str, additional_information: str
+) -> str:
 
     template = """
-    {goal} 
+    {task} 
 
     Use the additional provided information below marked with <additional_information> tags.
 
@@ -18,28 +20,32 @@ def create_prompt(goal: str, step_4: str, step_5: str, step_6: str) -> str:
     3. You are already provided with the dataframe 'df' containing the activities.
 
     4. To complete this task: 
-        {step_4}
+        {completion_steps}
 
     5. Present your answer in the following format: 
-        {step_5}
+        {answer_format}
 
     6. You are given additional information that is helpful in completing your task:
-        <additional_information>
-            {step_6}
-        </additional_information>
+        {additional_information}
 
     Remember to base your response solely on the information provided in the dataframe and additional information. Do not make assumptions or use external knowledge.
     """
 
     prompt_template = PromptTemplate(
-        input_variables=["goal", "step_4", "step_5", "step_6"], template=template
+        input_variables=[
+            "task",
+            "completion_steps",
+            "answer_format",
+            "additional_information",
+        ],
+        template=template,
     )
 
     prompt = prompt_template.format(
-        goal=goal,
-        step_4=step_4,
-        step_5=step_5,
-        step_6=step_6,
+        task=task,
+        completion_steps=completion_steps,
+        answer_format=answer_format,
+        additional_information=additional_information,
     )
 
     return prompt

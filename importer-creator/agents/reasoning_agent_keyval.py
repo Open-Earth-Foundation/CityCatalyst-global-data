@@ -6,7 +6,7 @@ def reasoning_agent_keyval(state: AgentState) -> dict:
     print("\nEXTRACTION REASONING AGENT\n")
 
     # Check if the iteration limit has been reached
-    if state.get("iterator_reasoning_agent_keyval") >= 5:
+    if state.get("iterator_reasoning_agent_keyval") >= 0:
         print(
             "\nIteration limit reached. Automatically approving the extraction agent's output.\n"
         )
@@ -29,6 +29,9 @@ Follow these instructions carefully:
 
 5. You are given additional information that is helpful in completing your task:
     <additional_information>
+        <file_path>
+        This is the path to the original data file: {state.get('file_path')}.
+        </file_path>
         <extracted_data_keyval>
         This is the extracted data of the previous extraction agent with explanation: {state.get("extracted_data_keyval")}.
         <extracted_data_keyval/>
@@ -44,9 +47,6 @@ Follow these instructions carefully:
         <summary>
         This is the summary of the dataset: {state.get('summary')}.
         </summary>
-        <file_path>
-        This is the path to the original data file: {state.get('file_path')}.
-        </file_path>
         <feedback>
         If you have received feedback from the reasoning agent, you find it here: {state.get("feedback_extracted_data_keyval")}.
         If feedback is available, pay special attention to this feedback and incorporate into your data extraction process.

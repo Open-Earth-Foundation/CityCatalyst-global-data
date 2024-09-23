@@ -48,15 +48,15 @@ Follow these instructions carefully:
 6. You are given additional information that is helpful in completing your task:
 
     <additional_information>
+        <file_path>
+        This is the path to the original data file: {state.get('file_path')}.
+        </file_path>
         <extracted_keyval_data>
         This is the extracted key-value data from the previous agent: {state.get("structured_output_keyval")}.
         </extracted_keyval_data>
         <extracted_gpc_mapping_stationary_energy_transportation>
         This is the extracted gpc mapping data from the previous agent: {state.get("approved_extracted_gpc_mapping_stationary_energy_transportation")}.
-        </extracted_gpc_mapping_stationary_energy_transportation>
-        <file_path>
-        This is the path to the original data file: {state.get('file_path')}.
-        </file_path>
+        </extracted_gpc_mapping_stationary_energy_transportation> 
         <feedback>
             <feedback_human-in-the-loop>
             If the user has provided feedback at the end of the entire data pipeline from the human-in-the-loop agent, you find it here: {state.get("feedback_hitl")}.

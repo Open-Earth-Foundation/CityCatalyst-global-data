@@ -1,9 +1,11 @@
+import pandas as pd
 from typing import TypedDict, Annotated
 from langchain.agents import AgentExecutor
 
 
 # Define the state
 class AgentState(TypedDict):
+    df: Annotated[pd.DataFrame, "The pandas dataframe"]
     file_path: Annotated[str, "The file path of the original data file"]
     agent: Annotated[AgentExecutor, "The pre-instantiated agent"]
     agent_code: Annotated[AgentExecutor, "The pre-instantiated coding agent"]
@@ -12,17 +14,21 @@ class AgentState(TypedDict):
     extracted_data_keyval: Annotated[
         str, "Extracted key-value data from the data file with explanations"
     ]
-    extracted_gpc_mapping_stationary_energy_transportation: Annotated[
-        str,
-        "Extracted gpc mapping values from the data file for the sector 'Stationary Energy' and 'Transportation' with exlanations",
-    ]
     extracted_actval_stationary_energy_transportation: Annotated[
         str,
         "Extracted specific activity values from the data file for the sector 'Stationary Energy' and 'Transportation' with exlanations",
     ]
+    extracted_gpc_mapping_stationary_energy_transportation: Annotated[
+        str,
+        "Extracted gpc mapping values from the data file for the sector 'Stationary Energy' and 'Transportation' with exlanations",
+    ]
     extracted_data_actval_waste: Annotated[
         str,
         "Extracted specific activity values from the data file for the sector 'Waste' with exlanations",
+    ]
+    transformations_stationary_energy_transportation: Annotated[
+        str,
+        "The transformed activity data to emissions data for the sector 'Stationary Energy' and 'Transportation' with exlanations",
     ]
     structured_output_keyval: Annotated[
         dict, "Structured extracted key-value data from the data file"
@@ -84,3 +90,4 @@ class AgentState(TypedDict):
     ]
     generated_code: Annotated[str, "Generated code"]
     final_code_output: Annotated[str, "Final code output"]
+    verbose: Annotated[bool, "Verbose mode"]

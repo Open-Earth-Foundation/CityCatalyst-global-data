@@ -29,15 +29,15 @@ Follow these instructions carefully:
     
 5. You are given additional information that is helpful in completing your task:
 <additional_information>
+    <file_path>
+    This is the path to the original data file: {state.get('file_path')}.
+    </file_path>
     <extracted_keyval_data>
     This is the extracted key-value data from the previous agent: {state.get("structured_output_keyval")}.
     </extracted_keyval_data>
     <extracted_gpc_mapping_stationary_energy_transportation>
     This is the extracted activity data from the previous agent: {state.get("approved_extracted_gpc_mapping_stationary_energy_transportation")}.
     </extracted_gpc_mapping_stationary_energy_transportation>
-    <file_path>
-    This is the path to the original data file: {state.get('file_path')}.
-    </file_path>
     <feedback>
         <feedback_human-in-the-loop>
         If the user has provided feedback at the end of the entire data pipeline from the human-in-the-loop agent, you find it here: {state.get("feedback_hitl")}.
@@ -56,7 +56,7 @@ Follow these instructions carefully:
         state.get(
             "iterator_reasoning_agent_code_generation_actval_stationary_energy_transportation"
         )
-        >= 3
+        >= 0
     ):
         print(
             "\nIteration limit reached. Automatically approving the generated code for 'Stationary Energy' and 'Transportion' sector.\n"

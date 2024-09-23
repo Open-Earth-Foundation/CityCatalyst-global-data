@@ -86,7 +86,6 @@ transport_type_to_gpc = {
     "__doc__": """
     This is the mapping of transportation types to possible GPC reference numbers. Use this mapping to identify all possible GPC reference numbers based on the transportation types in the data.
     
-
     E.g. if the transport type in the data is 'Rail', the only possible GPC reference number is ['II.2.1'].
     E.g. if the transport type in the data is 'Agriculture Equipment', the only possible GPC reference number is ['II.5.1'].
     E.g. if the transport type in the data is 'Medium-Duty Truck', the possible GPC reference numbers are ['II.1.1', 'II.5.1'].

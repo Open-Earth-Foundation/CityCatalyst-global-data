@@ -6,14 +6,21 @@ from agents.summary_agent import summary_agent
 from agents.extraction_agent_keyval import extraction_agent_keyval
 from agents.reasoning_agent_keyval import reasoning_agent_keyval
 from agents.structured_output_agent_keyval import structured_output_agent_keyval
+
+
+from agents.extraction_agent_actval_stationary_energy_transportation import (
+    extraction_agent_actval_stationary_energy_transportation,
+)
+
 from agents.extraction_agent_gpc_mapping_stationary_energy_transportation import (
     extraction_agent_gpc_mapping_stationary_energy_transportation,
 )
 from agents.reasoning_agent_gpc_mapping_stationary_energy_transportation import (
     reasoning_agent_gpc_mapping_stationary_energy_transportation,
 )
-from agents.structured_output_agent_stationary_energy_transportation import (
-    structured_output_agent_stationary_energy_transportation,
+
+from agents.transformation_agent_stationary_energy_transportation import (
+    transformation_agent_stationary_energy_transportation,
 )
 
 from agents.code_generation_agent_stationary_energy_transportation import (
@@ -22,6 +29,10 @@ from agents.code_generation_agent_stationary_energy_transportation import (
 
 from agents.reasoning_agent_code_generation_stationary_energy_transportation import (
     reasoning_agent_code_generation_stationary_energy_transportation,
+)
+
+from agents.structured_output_agent_stationary_energy_transportation import (
+    structured_output_agent_stationary_energy_transportation,
 )
 
 from agents.create_output_files_agent import create_output_files_agent
@@ -48,9 +59,9 @@ def router(state: AgentState) -> str:
 
     match sector:
         case "Stationary Energy":
-            return "extraction_agent_gpc_mapping_stationary_energy_transportation"
+            return "extraction_agent_actval_stationary_energy_transportation"
         case "Transportation":
-            return "extraction_agent_gpc_mapping_stationary_energy_transportation"
+            return "extraction_agent_actval_stationary_energy_transportation"
         case "Waste":
             return "extraction_agent_actval_waste"
         case _:
@@ -63,7 +74,7 @@ def should_extraction_gpc_mapping_stationary_energy_transportation_continue(
     state: AgentState,
 ) -> str:
     if state.get("approved_extracted_gpc_mapping_stationary_energy_transportation"):
-        return "code_generation_agent_stationary_energy_transportation"
+        return "transformation_agent_stationary_energy_transportation"
     return "extraction_agent_gpc_mapping_stationary_energy_transportation"
 
 
@@ -89,7 +100,7 @@ def has_user_provided_feedback(
     elif feedback == "END":
         return END
     else:
-        return "extraction_agent_gpc_mapping_stationary_energy_transportation"
+        return "extraction_agent_actval_stationary_energy_transportation"
 
 
 # Define the graph
@@ -102,6 +113,10 @@ def create_workflow():
     workflow.add_node("reasoning_agent_keyval", reasoning_agent_keyval)
     workflow.add_node("structured_output_agent_keyval", structured_output_agent_keyval)
     workflow.add_node(
+        "extraction_agent_actval_stationary_energy_transportation",
+        extraction_agent_actval_stationary_energy_transportation,
+    )
+    workflow.add_node(
         "extraction_agent_gpc_mapping_stationary_energy_transportation",
         extraction_agent_gpc_mapping_stationary_energy_transportation,
     )
@@ -109,6 +124,10 @@ def create_workflow():
     workflow.add_node(
         "reasoning_agent_gpc_mapping_stationary_energy_transportation",
         reasoning_agent_gpc_mapping_stationary_energy_transportation,
+    )
+    workflow.add_node(
+        "transformation_agent_stationary_energy_transportation",
+        transformation_agent_stationary_energy_transportation,
     )
     workflow.add_node(
         "code_generation_agent_stationary_energy_transportation",
@@ -149,10 +168,15 @@ def create_workflow():
         "structured_output_agent_keyval",
         router,
         {
-            "extraction_agent_gpc_mapping_stationary_energy_transportation": "extraction_agent_gpc_mapping_stationary_energy_transportation",
+            "extraction_agent_actval_stationary_energy_transportation": "extraction_agent_actval_stationary_energy_transportation",
             "extraction_agent_actval_waste": "extraction_agent_actval_waste",
             END: END,
         },
+    )
+
+    workflow.add_edge(
+        "extraction_agent_actval_stationary_energy_transportation",
+        "extraction_agent_gpc_mapping_stationary_energy_transportation",
     )
 
     workflow.add_edge(
@@ -166,8 +190,13 @@ def create_workflow():
         should_extraction_gpc_mapping_stationary_energy_transportation_continue,
         {
             "extraction_agent_gpc_mapping_stationary_energy_transportation": "extraction_agent_gpc_mapping_stationary_energy_transportation",
-            "code_generation_agent_stationary_energy_transportation": "code_generation_agent_stationary_energy_transportation",
+            "transformation_agent_stationary_energy_transportation": "transformation_agent_stationary_energy_transportation",
         },
+    )
+
+    workflow.add_edge(
+        "transformation_agent_stationary_energy_transportation",
+        END,  # "code_generation_agent_stationary_energy_transportation",
     )
 
     workflow.add_edge(
@@ -198,7 +227,7 @@ def create_workflow():
         has_user_provided_feedback,
         {
             "hitl_agent": "hitl_agent",
-            "extraction_agent_gpc_mapping_stationary_energy_transportation": "extraction_agent_gpc_mapping_stationary_energy_transportation",
+            "extraction_agent_actval_stationary_energy_transportation": "extraction_agent_actval_stationary_energy_transportation",
             END: END,
         },
     )
