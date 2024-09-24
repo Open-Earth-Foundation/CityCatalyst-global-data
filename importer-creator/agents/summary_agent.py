@@ -12,9 +12,8 @@ Include information about its structure, data types, basic statistics, and any n
 """
     completion_steps = """
 a. Give a general summary about the content of the data. 
-b. Then describe the format of the dataframe in detail. Pay special attention to the following points:
+b. Then describe the format of the dataframe in detail. Give answer to the following points:
     - nuber of rows and columns
-        * are the number of columns consistent throughout the rows? Or is there a mismatch?
     - column names
         * what are the column names?
         * is the same naming convention used?
@@ -22,11 +21,7 @@ b. Then describe the format of the dataframe in detail. Pay special attention to
     - which columns contain dates? The name of the column could be an indicator but check also for values inside the rows
     - data types of each column
     - any missing values
-    - additional potential formatting issues with the original file
-        * especially if the file contains additional text information that is not part of the actual data but 
-        data that is added manually on top of the actual rows e.g. meta data.
-        * especially if the file contains additional text information that is not part of the actual data but
-        data that is added below the actual rows e.g. footnotes.
+    - any other notable patterns or insights
 c. Provide detailed suggestions for improvements based on your analysis.
 """
     answer_format = """
