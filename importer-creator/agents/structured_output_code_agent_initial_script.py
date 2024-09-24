@@ -23,9 +23,13 @@ def structured_output_code_agent_initial_script(state: AgentState) -> dict:
     print("\nSTRUCTURED OUTPUT CODE AGENT INITIAL SCRIPT\n")
 
     prompt = f"""
-    Your task is to provide structured output in JSON format.
+    Your task is to provide structured output in JSON format. 
+    For the reasoning include both the key points of the summary and the reasoning for creating the python script but keep them in seperate sections divided by headers.
 
     <additional_information>
+        <summary>
+        This is the summary of the dataset: {state.get('summary')}.
+        </summary>
         <code_initial_script>
         This is the initial python script with reasoning: {state.get("code_initial_script")}.
         </code_initial_script>

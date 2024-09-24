@@ -16,7 +16,9 @@ from agents.create_output_files_agent_initial_script import (
 
 from agents.extraction_agent_keyval import extraction_agent_keyval
 from agents.reasoning_agent_keyval import reasoning_agent_keyval
+from agents.code_generation_agent_keyval import code_generation_agent_keyval
 from agents.structured_output_agent_keyval import structured_output_agent_keyval
+from agents.create_output_files_agent_keyval import create_output_files_agent_keyval
 
 
 from agents.extraction_agent_actval_stationary_energy_transportation import (
@@ -54,7 +56,7 @@ from agents.hitl_agent import hitl_agent
 # Define the conditional edge
 def should_extraction_continue(state: AgentState) -> str:
     if state.get("approved_extracted_data_keyval"):
-        return "structured_output_agent_keyval"
+        return "code_generation_agent_keyval"
     return "extraction_agent_keyval"
 
 
@@ -65,8 +67,10 @@ def router(state: AgentState) -> str:
     If no matching sector or sub-sector is extracted, the workflow ends.
     """
 
-    structured_output_keyval = state.get("structured_output_keyval")
-    sector = structured_output_keyval.get("sector")
+    structured_output_code_keyval = state.get("structured_output_code_keyval")[
+        "extracted_data"
+    ]
+    sector = structured_output_code_keyval.get("sector")
 
     match sector:
         case "Stationary Energy":
@@ -119,6 +123,8 @@ def create_workflow():
     workflow = StateGraph(AgentState)
 
     # Add nodes to the graph
+
+    # Initial script
     workflow.add_node("summary_agent", summary_agent)
 
     workflow.add_node(
@@ -133,9 +139,15 @@ def create_workflow():
         create_output_files_agent_initial_script,
     )
 
+    # Keyval extraction
     workflow.add_node("extraction_agent_keyval", extraction_agent_keyval)
     workflow.add_node("reasoning_agent_keyval", reasoning_agent_keyval)
+    workflow.add_node("code_generation_agent_keyval", code_generation_agent_keyval)
     workflow.add_node("structured_output_agent_keyval", structured_output_agent_keyval)
+    workflow.add_node(
+        "create_output_files_agent_keyval", create_output_files_agent_keyval
+    )
+
     workflow.add_node(
         "extraction_agent_actval_stationary_energy_transportation",
         extraction_agent_actval_stationary_energy_transportation,
@@ -181,13 +193,14 @@ def create_workflow():
         "structured_output_code_agent_initial_script",
     )
 
+    # Adding edges to allow parallel execution
     workflow.add_edge(
         "structured_output_code_agent_initial_script",
         "create_output_files_agent_initial_script",
     )
-
     workflow.add_edge(
-        "create_output_files_agent_initial_script", "extraction_agent_keyval"
+        "structured_output_code_agent_initial_script",
+        "extraction_agent_keyval",
     )
 
     workflow.add_edge("extraction_agent_keyval", "reasoning_agent_keyval")
@@ -197,9 +210,14 @@ def create_workflow():
         "reasoning_agent_keyval",
         should_extraction_continue,
         {
-            "structured_output_agent_keyval": "structured_output_agent_keyval",
+            "code_generation_agent_keyval": "code_generation_agent_keyval",
             "extraction_agent_keyval": "extraction_agent_keyval",
         },
+    )
+
+    workflow.add_edge("code_generation_agent_keyval", "structured_output_agent_keyval")
+    workflow.add_edge(
+        "structured_output_agent_keyval", "create_output_files_agent_keyval"
     )
 
     # Add conditional edge
