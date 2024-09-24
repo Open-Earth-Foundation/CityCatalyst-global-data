@@ -9,8 +9,8 @@ def create_output_files_agent(state: AgentState):
         "reasoning"
     ]
 
-    with open("./generated/generated_script.py", "w") as file:
+    with open("./generated/generated_script.py", "w", encoding="utf-8") as file:
         file.write(code)
 
-    with open("./generated/generated_reasoning.md", "w") as file:
+    with open("./generated/generated_reasoning.md", "w", encoding="utf-8") as file:
         file.write(reasoning)

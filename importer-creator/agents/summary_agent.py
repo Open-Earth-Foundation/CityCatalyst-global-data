@@ -16,11 +16,12 @@ b. Then describe the format of the dataframe in detail. Give answer to the follo
     - nuber of rows and columns
     - column names
         * what are the column names?
-        * is the same naming convention used?
         * are there spaces before or after the names that could lead to issues?
+        * are there any special characters in the column names that could lead to issues? If so, consider a proper encoding for reading the file into a pandas dataframe so that the special characters are read correctly.
     - which columns contain dates? The name of the column could be an indicator but check also for values inside the rows
     - data types of each column
     - any missing values
+    - are there empty columns or unnecessary columns like double index columns that can be removed?
     - any other notable patterns or insights
 c. Provide detailed suggestions for improvements based on your analysis.
 """

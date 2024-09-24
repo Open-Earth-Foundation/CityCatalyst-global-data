@@ -16,10 +16,13 @@ Your inputs are the original dataframe 'df' and a summary with information about
     completion_steps = """
 a. Inspect the information given below in <summary> tags
 b. Create a python script. This python script must contain the following:
-    1. code to load the .csv file into a pandas dataframe 'df' using "encoding='utf-8'". When loading the datafile, define the correct seperator being used e.g. ',' or ';'. The path to the .csv file is provided in the additional information under <file_path> tags.
+    1. code to load the .csv file into a pandas dataframe 'df' 
+        - Use a correct encoding, so that special characters are displayed correctly based on the findings in <summary> tags. 
+        - When loading the datafile, define the correct seperator being used e.g. ',' or ';' and so on.
+        - The path to the .csv file is provided in the additional information under <file_path> tags.
     2. a new dataframe 'df_new' that contains all the data of the original dataframe 'df' as a copy using 'df_new = df.copy(). Make all further manipulations on this new dataframe 'df_new'.
     3. normalized column names for 'df_new' where names are converted to 'lower case', strip them of any leading or trailing white spaces and replace any white spaces with underscores '_'.
-    4. convert any date columns to a valid datetime format based on the available data.
+    4. converted date columns to a valid datetime format based on the available data using 'pd.to_datetime'.
         - pay attention to columns that might not be clearly labeled as 'date' or 'dates' or similar and refer to the provided summary in the <summary> tags.
     5. finally add code to output a new .csv file 'initially_formatted.csv' containing the new dataframe 'df_new' with the changes made above.
     6. IMORTANT: 
