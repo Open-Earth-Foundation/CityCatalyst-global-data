@@ -21,7 +21,7 @@ Identify the columns in the dataframe that represent activity data and present y
     completion_steps = """
 a. Load the entire dataframe 'df'. This means load all the rows and do not use df.head() to only inspect the first few rows.    
 b. Identify columns in the dataframe that represent activity data and activity values.
-c. Inspect those columns. If now activity unit is provided, infer the correct unit based on the context of the activity data using standard SI units.
+c. Inspect those columns. If no activity unit is provided, infer the correct unit based on the context of the activity data using standard SI units.
 """
     answer_format = """
 - Give all your detailed reasoning inside the <reasoning> tags.
@@ -35,6 +35,7 @@ c. Inspect those columns. If now activity unit is provided, infer the correct un
     </columns>
 </answer>
 """
+    # todo: remove file path
     additional_information = f"""
 </additional_information>
     <file_path>
