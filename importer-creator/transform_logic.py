@@ -52,6 +52,7 @@ def process_datafile(
         ### transformations (output from transformation agents)
         transformations_stationary_energy_transportation="",
         ### structured output data (output from structured output agents)
+        structured_output_code_initial_script={},
         structured_output_keyval={},
         structured_output_stationary_energy_transportation={},
         structured_output_actval_waste={},
@@ -73,6 +74,7 @@ def process_datafile(
         iterator_reasoning_agent_actval_waste=0,
         iterator_reasoning_agent_code_generation_actval_stationary_energy_transportation=0,
         ### generated code (output from code generation agent)
+        code_initial_script="",
         generated_code="",
         final_code_output="",
         ### verbose

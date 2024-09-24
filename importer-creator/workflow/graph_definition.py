@@ -3,6 +3,17 @@ from state.agent_state import AgentState
 
 from agents.default_agent import default_agent
 from agents.summary_agent import summary_agent
+
+from agents.code_generation_agent_initial_script import (
+    code_generation_agent_initial_script,
+)
+from agents.structured_output_code_agent_initial_script import (
+    structured_output_code_agent_initial_script,
+)
+from agents.create_output_files_agent_initial_script import (
+    create_output_files_agent_initial_script,
+)
+
 from agents.extraction_agent_keyval import extraction_agent_keyval
 from agents.reasoning_agent_keyval import reasoning_agent_keyval
 from agents.structured_output_agent_keyval import structured_output_agent_keyval
@@ -109,6 +120,19 @@ def create_workflow():
 
     # Add nodes to the graph
     workflow.add_node("summary_agent", summary_agent)
+
+    workflow.add_node(
+        "code_generation_agent_initial_script", code_generation_agent_initial_script
+    )
+    workflow.add_node(
+        "structured_output_code_agent_initial_script",
+        structured_output_code_agent_initial_script,
+    )
+    workflow.add_node(
+        "create_output_files_agent_initial_script",
+        create_output_files_agent_initial_script,
+    )
+
     workflow.add_node("extraction_agent_keyval", extraction_agent_keyval)
     workflow.add_node("reasoning_agent_keyval", reasoning_agent_keyval)
     workflow.add_node("structured_output_agent_keyval", structured_output_agent_keyval)
@@ -150,7 +174,22 @@ def create_workflow():
     workflow.set_entry_point("summary_agent")
 
     # Add edge to end the workflow after summary
-    workflow.add_edge("summary_agent", "extraction_agent_keyval")
+    workflow.add_edge("summary_agent", "code_generation_agent_initial_script")
+
+    workflow.add_edge(
+        "code_generation_agent_initial_script",
+        "structured_output_code_agent_initial_script",
+    )
+
+    workflow.add_edge(
+        "structured_output_code_agent_initial_script",
+        "create_output_files_agent_initial_script",
+    )
+
+    workflow.add_edge(
+        "create_output_files_agent_initial_script", "extraction_agent_keyval"
+    )
+
     workflow.add_edge("extraction_agent_keyval", "reasoning_agent_keyval")
 
     # Add conditional edge

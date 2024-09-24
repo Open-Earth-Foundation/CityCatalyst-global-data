@@ -8,7 +8,7 @@ from langchain_core.tools import StructuredTool
 from pydantic import BaseModel, Field
 
 
-# Create pandas dataframe agent
+# Create pandas dataframe agent without rag capabilities
 def create_agent(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
 
     model = "gpt-4o-2024-08-06"
