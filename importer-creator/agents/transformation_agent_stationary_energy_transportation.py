@@ -19,11 +19,14 @@ a. Inspect the identified activity values provided in <extracted_activity_data_s
 b. Inspect the identified gpc mappings provided in <extracted_gpc_mapping_stationary_energy_transportation> tags.    
 c. Inspect the provided context for transformation methodologies for the 'Stationary Energy' sector and 'Transportation' sector provided in the <methodologies> tags below.
 d. Inspect the provided dictionary of emission factors in the <emission_factors> tags below.
-e. Based on the provided contet for methodologies and emission factors, calculate the emission values for the given activity data.
+e. Based on the provided context for methodologies and emission factors: 
+    - decide which methodology from the <methodologies> tags below to use and which emission factor from <emission_factor> tags to apply
+    - your answer must include a mapping for all activity data.
+    - remember that each activity data could need a different methodology and different emission factor 
 """
     answer_format = """
 - Give all your detailed reasoning inside the <reasoning> tags.
-- Provide only the created mapping as JSON inside the <mapping> tags.
+- Provide the transformations that need to be applied in the <transformations> tags.
 <answer>
     <reasoning>
     [Your detailed reasoning for creating the GPC reference number mappings. Make sure to include the reasoning for each GPC reference number you assign to the activity data]

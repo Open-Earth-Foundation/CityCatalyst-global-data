@@ -21,6 +21,7 @@ context_methodologies = {
     - units: The units for the input values.
     - default_value: The default emission factor value to be used for the calculation.
     - default_units: The default units for the default emission factor value which is normally used for the calculation.
+    - formula: The formula to calculate the emissions from the activity data. It is encoded in LaTeX format.
     
     E.g. if the activity data is related to fuel combustion consumption for 'Stationary Energy' sector and the identified GPC reference number is 'I.2.1', the fuel type (i) and building type (j) is needed. 
     The activity value is typically in the units of TJ, kg, or m3.
