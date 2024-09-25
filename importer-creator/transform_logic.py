@@ -54,6 +54,7 @@ def process_datafile(
         ### structured output data (output from structured output agents)
         structured_output_code_initial_script={},
         structured_output_code_keyval={},
+        structured_output_code_actval_stationary_energy_transportation={},
         structured_output_stationary_energy_transportation={},
         structured_output_actval_waste={},
         structured_code={},
@@ -76,6 +77,7 @@ def process_datafile(
         ### generated code (output from code generation agent)
         code_initial_script="",
         code_keyval_script="",
+        code_actval_stationary_energy_transportation_script="",
         generated_code="",
         final_code_output="",
         ### verbose

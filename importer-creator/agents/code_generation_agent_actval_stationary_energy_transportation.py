@@ -2,33 +2,32 @@ from state.agent_state import AgentState
 from utils.create_prompt import create_prompt
 from utils.agent_creation import create_coding_agent
 
-# Path to initial script
-path = "./generated/initial_script/generated_initial_script.py"
+# Path to prior script in pipeline
+path = "./generated/keyval_script/generated_keyval_script.py"
 
-# Load the script
+# Load the prior script
 with open(path, "r", encoding="utf-8") as file:
-    initial_script = file.read()
+    prior_script = file.read()
 
 
-def code_generation_agent_keyval(
+def code_generation_agent_actval_stationay_energy_transportation(
     state: AgentState,
 ) -> dict:
-    print("\nCODE GENERATION AGENT KEYVAL\n")
+    print("\nCODE GENERATION AGENT ACTVAL STATIONARY ENERGY TRANSPORTATION\n")
 
     task = """
 Your task is to create a runnable python script.
-Your inputs are the previously created python script 'initial_script.py' below inside <initial_script> tags as well as the extracted key-value data inside the <extracted_data_keyval> tags.
+Your inputs are the previously created python script 'generated_keyval_script.py' below inside <prior_script> tags as well as the extracted activity values data inside the <extracted_data_actval> tags.
 """
 
     completion_steps = """
-a. Inspect the extracted key-value data inside the <extracted_data_keyval> tags.
-b. Inspect the provided python script inside the <initial_script> tags.
+a. Inspect the extracted activity data inside the <extracted_data_actval> tags.
+b. Inspect the provided python script inside the <prior_script> tags.
 c. Create a python script. This python script must contain the following:
-    1. the original code of the initial script provided in the <initial_script> tags. You make your changes to this script.
-    2. a dictionary variable "extracted_keyval_data" = { ... } in the top level of the code below the imports, with the the extracted data 'region', 'temporal_resolution', 'sector' and 'subsector'. You find the data below within the <extracted_keyval_data> tags.
-    3. add to the dataframe 'df_new' 4 new columns 'region', 'temporal_resolution', 'sector' and 'subsector'. Fill these columns with the extracted key value data from the <extracted_keyval_data> tags.
-    4. finally replace the existing name for exporting the new .csv file from 'initially_formatted.csv' to 'added_keyval.csv'.
-    5. IMORTANT: 
+    1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script.
+    2. add to the new dataframe 'df_new' 3 new columns 'activity_name', 'activity_value' and 'activity_unit'. Fill these columns with the information provided within <extracted_data_actval> tags.
+    3. finally replace the existing name for exporting the new .csv file from 'added_keyval.csv' to 'added_activity_data.csv'.
+    4. IMORTANT: 
         - The code must contain python comments.
         - The code must be executable and must not contain any code errors.
         - The new script must contain all the content of the initial script in addition to the added data.
@@ -51,12 +50,12 @@ c. Create a python script. This python script must contain the following:
         <file_path>
         This is the path to the original data file: {state.get('file_path')}.
         </file_path>
-        <extracted_data_keyval>
-        This is the extracted key-value data from the previous agent: {state.get("approved_extracted_data_keyval")}.
-        </extracted_data_keyval>
-        <initial_script>
-        This is the initial script provided: {initial_script}.
-        </initial_script>
+        <extracted_data_actval>
+        This is the extracted activity data: {state.get("extracted_actval_stationary_energy_transportation")}.
+        </extracted_data_actval>
+        <prior_script>
+        This is the prior script provided: {prior_script}.
+        <prior_script>
         <feedback>
             <feedback_human-in-the-loop>
             If the user has provided feedback at the end of the entire data pipeline from the human-in-the-loop agent, you find it here: {state.get("feedback_hitl")}.
@@ -76,4 +75,6 @@ c. Create a python script. This python script must contain the following:
     # Invoke summary agent with custom prompt
     response = agent.invoke(prompt)
 
-    return {"code_keyval_script": response.get("output")}
+    return {
+        "code_actval_stationary_energy_transportation_script": response.get("output")
+    }

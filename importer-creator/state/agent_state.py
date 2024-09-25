@@ -37,6 +37,10 @@ class AgentState(TypedDict):
         dict,
         "Structured output for reasoning, code and extracted key-value data from the data file",
     ]
+    structured_output_code_actval_stationary_energy_transportation: Annotated[
+        dict,
+        "Structured output for reasoning and code for extracted activity values from the data file for the sector 'Stationary Energy' and 'Transportation",
+    ]
     structured_output_stationary_energy_transportation: Annotated[
         dict,
         "Structured output from the data file for sector 'Stationary Energy' and 'Transportation'",
@@ -94,6 +98,9 @@ class AgentState(TypedDict):
     ]
     code_initial_script: Annotated[str, "Initial code script"]
     code_keyval_script: Annotated[str, "Key-value code script"]
+    code_actval_stationary_energy_transportation_script: Annotated[
+        str, "Activity value code script"
+    ]
     generated_code: Annotated[str, "Generated code"]
     final_code_output: Annotated[str, "Final code output"]
     verbose: Annotated[bool, "Verbose mode"]

@@ -14,16 +14,27 @@ from agents.create_output_files_agent_initial_script import (
     create_output_files_agent_initial_script,
 )
 
+# Import for keyval extraction
 from agents.extraction_agent_keyval import extraction_agent_keyval
 from agents.reasoning_agent_keyval import reasoning_agent_keyval
 from agents.code_generation_agent_keyval import code_generation_agent_keyval
 from agents.structured_output_agent_keyval import structured_output_agent_keyval
 from agents.create_output_files_agent_keyval import create_output_files_agent_keyval
 
-
+# Imports for activity values
 from agents.extraction_agent_actval_stationary_energy_transportation import (
     extraction_agent_actval_stationary_energy_transportation,
 )
+from agents.code_generation_agent_actval_stationary_energy_transportation import (
+    code_generation_agent_actval_stationay_energy_transportation,
+)
+from agents.structured_output_agent_actval_stationary_energy_transportation import (
+    structured_output_agent_actval_stationary_energy_transportation,
+)
+from agents.create_output_files_agent_actval_stationary_energy_transportation import (
+    create_output_files_agent_actval_stationary_energy_transportation,
+)
+
 
 from agents.extraction_agent_gpc_mapping_stationary_energy_transportation import (
     extraction_agent_gpc_mapping_stationary_energy_transportation,
@@ -148,10 +159,25 @@ def create_workflow():
         "create_output_files_agent_keyval", create_output_files_agent_keyval
     )
 
+    # Activity values extraction
     workflow.add_node(
         "extraction_agent_actval_stationary_energy_transportation",
         extraction_agent_actval_stationary_energy_transportation,
     )
+    workflow.add_node(
+        "code_generation_agent_actval_stationay_energy_transportation",
+        code_generation_agent_actval_stationay_energy_transportation,
+    )
+    workflow.add_node(
+        "structured_output_agent_actval_stationary_energy_transportation",
+        structured_output_agent_actval_stationary_energy_transportation,
+    )
+    workflow.add_node(
+        "create_output_files_agent_actval_stationary_energy_transportation",
+        create_output_files_agent_actval_stationary_energy_transportation,
+    )
+
+    # GPC mapping extraction
     workflow.add_node(
         "extraction_agent_gpc_mapping_stationary_energy_transportation",
         extraction_agent_gpc_mapping_stationary_energy_transportation,
@@ -193,11 +219,12 @@ def create_workflow():
         "structured_output_code_agent_initial_script",
     )
 
-    # Adding edges to allow parallel execution
+    # # Parallel execution 1
     workflow.add_edge(
         "structured_output_code_agent_initial_script",
         "create_output_files_agent_initial_script",
     )
+    # Parallel execution 2
     workflow.add_edge(
         "structured_output_code_agent_initial_script",
         "extraction_agent_keyval",
@@ -233,6 +260,21 @@ def create_workflow():
 
     workflow.add_edge(
         "extraction_agent_actval_stationary_energy_transportation",
+        "code_generation_agent_actval_stationay_energy_transportation",
+    )
+
+    workflow.add_edge(
+        "code_generation_agent_actval_stationay_energy_transportation",
+        "structured_output_agent_actval_stationary_energy_transportation",
+    )
+    # Parallel execution 1
+    workflow.add_edge(
+        "structured_output_agent_actval_stationary_energy_transportation",
+        "create_output_files_agent_actval_stationary_energy_transportation",
+    )
+    # Parallel execution 2
+    workflow.add_edge(
+        "structured_output_agent_actval_stationary_energy_transportation",
         "extraction_agent_gpc_mapping_stationary_energy_transportation",
     )
 
