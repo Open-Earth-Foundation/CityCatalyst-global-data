@@ -10,13 +10,14 @@ def extraction_agent_actval_stationary_energy_transportation(
     print("\nEXTRACTION AGENT ACTVAL STATIONARY ENERGY TRANSPORTATION\n")
 
     task = """
-Your goal is to identify the activity data for the 'Stationary Energy' sector and 'Transportation' sector from the provided dataframe 'df'.
+Your goal is to identify the activity data for the 'Stationary Energy' sector and 'Transportation' sector from the original data file 'df' that you are provided with.
 Each single row in the dataframe 'df' contains unique activity data.
-Activity data consists of:
+Activity data typically consists of:
     - The activity name
     - The activity value
     - The activity unit
-Identify the columns in the dataframe that represent activity data and present your detailed reasoning for this.
+Identify the columns in the original datafile that represent activity data and present your detailed reasoning for this. 
+Depending on the datafile, not all activty data may be present. For example units could be missing. In such cases, infer the correct unit based on the context of the activity data using standard SI units. 
 """
     completion_steps = """
 a. Load the entire dataframe 'df'. This means load all the rows and do not use df.head() to only inspect the first few rows.    
@@ -38,22 +39,16 @@ c. Inspect those columns. If no activity unit is provided, infer the correct uni
     # todo: remove file path
     additional_information = f"""
 </additional_information>
-    <file_path>
-    This is the path to the original data file: {state.get('file_path')}.
-    </file_path>
-    <gpc_master_document>
-    You are provided with a retriever tool "Retriever" to retrieve information from the GPC Master document. Use this document every time to enrich your context.
-    </gpc_master_document>
     <user_provided_context>
     This is the user provided context: {state.get("context_user_provided")}.
     </user_provided_context>
+    <gpc_master_document>
+    You are provided with a retriever tool "Retriever" to retrieve information from the GPC Master document. Use this document every time to enrich your context.
+    </gpc_master_document>
     <context_activity_values_sector>
     This is the provided context for activities specifically for the sector 'Transportation': {context_actval_transportation}.
     Use this information for finding the correct columns about activity data. 
     </context_activity_values_sector>
-    <extracted_keyval_data>
-    This is the extracted key-value data: {state.get("structured_output_keyval")}.
-    </extracted_keyval_data>
     <feedback>
         <feedback_human-in-the-loop>
         If the user has provided feedback at the end of the entire data pipeline from the human-in-the-loop agent, you find it here: {state.get("feedback_hitl")}.
@@ -70,4 +65,6 @@ c. Inspect those columns. If no activity unit is provided, infer the correct uni
     # Invoke summary agent with custom prompt
     response = state.get("agent").invoke(prompt)
 
-    return {"extracted_actval_stationary_energy_transportation": response.get("output")}
+    return {
+        "extracted_data_actval_stationary_energy_transportation": response.get("output")
+    }

@@ -46,15 +46,15 @@ def structured_output_agent_keyval(state: AgentState) -> dict:
     print("\nSTRUCTURED OUTPUT AGENT KEYVAL\n")
 
     prompt = f"""
-    Your task is to provide structured output in JSON format. For the reasoning include both the reasoning for extracting the key-value data and for creating the python script but keep them in seperate sections divided by headers.
+    Your task is to provide structured output in JSON format. For the reasoning include both the reasoning for extracting the key-value data and reasoning for creating the python script but keep them in seperate sections divided by headers.
 
     <additional_information>
         <extracted_data>
         This is the extracted key-value data from the previous agent with reasoning: {state.get("approved_extracted_data_keyval")}.
         </extracted_data>
-        <code_initial_script>
-        This is the initial python script with reasoning: {state.get("code_keyval_script")}.
-        </code_initial_script>
+        <code_script>
+        This is the generated python script with reasoning: {state.get("code_keyval_script")}.
+        </code_script>
     </additional_information>
     """
 

@@ -14,7 +14,7 @@ class AgentState(TypedDict):
     extracted_data_keyval: Annotated[
         str, "Extracted key-value data from the data file with explanations"
     ]
-    extracted_actval_stationary_energy_transportation: Annotated[
+    extracted_data_actval_stationary_energy_transportation: Annotated[
         str,
         "Extracted specific activity values from the data file for the sector 'Stationary Energy' and 'Transportation' with exlanations",
     ]

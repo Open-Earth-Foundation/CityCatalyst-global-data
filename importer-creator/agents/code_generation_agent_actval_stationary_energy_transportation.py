@@ -2,18 +2,22 @@ from state.agent_state import AgentState
 from utils.create_prompt import create_prompt
 from utils.agent_creation import create_coding_agent
 
-# Path to prior script in pipeline
-path = "./generated/keyval_script/generated_keyval_script.py"
 
-# Load the prior script
-with open(path, "r", encoding="utf-8") as file:
-    prior_script = file.read()
+def load_script(path: str) -> str:
+    with open(path, "r", encoding="utf-8") as file:
+        script = file.read()
+
+    return script
 
 
 def code_generation_agent_actval_stationay_energy_transportation(
     state: AgentState,
 ) -> dict:
     print("\nCODE GENERATION AGENT ACTVAL STATIONARY ENERGY TRANSPORTATION\n")
+
+    # Path to prior script in pipeline
+    path = "./generated/keyval_script/generated_keyval_script.py"
+    prior_script = load_script(path)
 
     task = """
 Your task is to create a runnable python script.
@@ -25,7 +29,8 @@ a. Inspect the extracted activity data inside the <extracted_data_actval> tags.
 b. Inspect the provided python script inside the <prior_script> tags.
 c. Create a python script. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script.
-    2. add to the new dataframe 'df_new' 3 new columns 'activity_name', 'activity_value' and 'activity_unit'. Fill these columns with the information provided within <extracted_data_actval> tags.
+    2. add to the new dataframe 'df_new' 3 new columns 'activity_name', 'activity_value' and 'activity_unit'. 
+    3. fill these newly created columns with the information provided within <extracted_data_actval> tags.
     3. finally replace the existing name for exporting the new .csv file from 'added_keyval.csv' to 'added_activity_data.csv'.
     4. IMORTANT: 
         - The code must contain python comments.
@@ -51,7 +56,7 @@ c. Create a python script. This python script must contain the following:
         This is the path to the original data file: {state.get('file_path')}.
         </file_path>
         <extracted_data_actval>
-        This is the extracted activity data: {state.get("extracted_actval_stationary_energy_transportation")}.
+        This is the extracted activity data: {state.get("extracted_data_actval_stationary_energy_transportation")}.
         </extracted_data_actval>
         <prior_script>
         This is the prior script provided: {prior_script}.

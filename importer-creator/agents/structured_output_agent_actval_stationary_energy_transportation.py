@@ -25,15 +25,15 @@ def structured_output_agent_actval_stationary_energy_transportation(
     print("\nSTRUCTURED OUTPUT AGENT ACTVAL STATIONARY ENERGY TRANSPORTATION\n")
 
     prompt = f"""
-    Your task is to provide structured output in JSON format. For the reasoning include both the reasoning for extracting the key-value data and for creating the python script but keep them in seperate sections divided by headers.
+    Your task is to provide structured output in JSON format. For the reasoning include both the reasoning for extracting the activity data and reasoning for creating the python script but keep them in seperate sections divided by headers.
 
     <additional_information>
         <extracted_data>
-        This is the extracted key-value data from the previous agent with reasoning: {state.get("approved_extracted_data_keyval")}.
+        This is the extracted activity data with reasoning: {state.get("extracted_data_actval_stationary_energy_transportation")}.
         </extracted_data>
-        <prior_script>
-        This is the prior python script with reasoning: {state.get("code_actval_stationary_energy_transportation_script")}.
-        </prior_script>
+        <code_script>
+        This is the python script with reasoning: {state.get("code_actval_stationary_energy_transportation_script")}.
+        </code_script>
     </additional_information>
     """
 

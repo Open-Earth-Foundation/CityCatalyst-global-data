@@ -2,18 +2,22 @@ from state.agent_state import AgentState
 from utils.create_prompt import create_prompt
 from utils.agent_creation import create_coding_agent
 
-# Path to initial script
-path = "./generated/initial_script/generated_initial_script.py"
 
-# Load the script
-with open(path, "r", encoding="utf-8") as file:
-    initial_script = file.read()
+def load_script(path: str) -> str:
+    with open(path, "r", encoding="utf-8") as file:
+        script = file.read()
+
+    return script
 
 
 def code_generation_agent_keyval(
     state: AgentState,
 ) -> dict:
     print("\nCODE GENERATION AGENT KEYVAL\n")
+
+    # Path to initial script
+    path = "./generated/initial_script/generated_initial_script.py"
+    prior_script = load_script(path)
 
     task = """
 Your task is to create a runnable python script.
@@ -54,9 +58,9 @@ c. Create a python script. This python script must contain the following:
         <extracted_data_keyval>
         This is the extracted key-value data from the previous agent: {state.get("approved_extracted_data_keyval")}.
         </extracted_data_keyval>
-        <initial_script>
-        This is the initial script provided: {initial_script}.
-        </initial_script>
+        <prior_script>
+        This is the initial script provided: {prior_script}.
+        </prior_script>
         <feedback>
             <feedback_human-in-the-loop>
             If the user has provided feedback at the end of the entire data pipeline from the human-in-the-loop agent, you find it here: {state.get("feedback_hitl")}.

@@ -46,7 +46,7 @@ def process_datafile(
         summary="",
         ### extracted data (output from extraction agents)
         extracted_data_keyval="",
-        extracted_actval_stationary_energy_transportation="",
+        extracted_data_actval_stationary_energy_transportation="",
         extracted_gpc_mapping_stationary_energy_transportation="",
         extracted_data_actval_waste="",
         ### transformations (output from transformation agents)
