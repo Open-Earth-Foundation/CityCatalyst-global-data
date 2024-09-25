@@ -53,8 +53,17 @@ from agents.create_output_files_agent_gpc_refno_stationary_energy_transportation
 )
 
 # Imports for transformation of activity values to emissions data
-from agents.transformation_agent_stationary_energy_transportation import (
-    transformation_agent_stationary_energy_transportation,
+from agents.extraction_agent_transformations_stationary_energy_transportation import (
+    extraction_agent_transformations_stationary_energy_transportation,
+)
+from agents.code_generation_agent_transformation_stationary_energy_transportation import (
+    code_generation_agent_transformation_stationay_energy_transportation,
+)
+from agents.structured_output_agent_transformation_stationary_energy_transportation import (
+    structured_output_agent_transformation_stationary_energy_transportation,
+)
+from agents.create_output_files_agent_transformation_stationary_energy_transportation import (
+    create_output_files_agent_transformation_stationary_energy_transportation,
 )
 
 from agents.code_generation_agent_stationary_energy_transportation import (
@@ -212,9 +221,22 @@ def create_workflow():
 
     # Transformation of activity values to emissions data
     workflow.add_node(
-        "transformation_agent_stationary_energy_transportation",
-        transformation_agent_stationary_energy_transportation,
+        "extraction_agent_transformations_stationary_energy_transportation",
+        extraction_agent_transformations_stationary_energy_transportation,
     )
+    workflow.add_node(
+        "code_generation_agent_transformation_stationay_energy_transportation",
+        code_generation_agent_transformation_stationay_energy_transportation,
+    )
+    workflow.add_node(
+        "structured_output_agent_transformation_stationary_energy_transportation",
+        structured_output_agent_transformation_stationary_energy_transportation,
+    )
+    workflow.add_node(
+        "create_output_files_agent_transformation_stationary_energy_transportation",
+        create_output_files_agent_transformation_stationary_energy_transportation,
+    )
+
     workflow.add_node(
         "code_generation_agent_stationary_energy_transportation",
         code_generation_agent_stationary_energy_transportation,
@@ -329,12 +351,25 @@ def create_workflow():
     # Parallel execution 2
     workflow.add_edge(
         "structured_output_agent_gpc_refno_stationary_energy_transportation",
-        "transformation_agent_stationary_energy_transportation",
+        "extraction_agent_transformations_stationary_energy_transportation",
     )
 
     workflow.add_edge(
-        "transformation_agent_stationary_energy_transportation",
-        END,  # "code_generation_agent_stationary_energy_transportation",
+        "extraction_agent_transformations_stationary_energy_transportation",
+        "code_generation_agent_transformation_stationay_energy_transportation",  # "code_generation_agent_stationary_energy_transportation",
+    )
+    workflow.add_edge(
+        "code_generation_agent_transformation_stationay_energy_transportation",
+        "structured_output_agent_transformation_stationary_energy_transportation",
+    )
+    # Parallel execution 1
+    workflow.add_edge(
+        "structured_output_agent_transformation_stationary_energy_transportation",
+        "create_output_files_agent_transformation_stationary_energy_transportation",
+    )
+    # Parallel execution 2
+    workflow.add_edge(
+        "structured_output_agent_transformation_stationary_energy_transportation", END
     )
 
     workflow.add_edge(

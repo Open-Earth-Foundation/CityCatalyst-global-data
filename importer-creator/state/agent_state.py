@@ -26,9 +26,9 @@ class AgentState(TypedDict):
         str,
         "Extracted specific activity values from the data file for the sector 'Waste' with exlanations",
     ]
-    transformations_stationary_energy_transportation: Annotated[
+    extracted_transformations_stationary_energy_transportation: Annotated[
         str,
-        "The transformed activity data to emissions data for the sector 'Stationary Energy' and 'Transportation' with exlanations",
+        "The extracted transformed activity data to emissions data for the sector 'Stationary Energy' and 'Transportation' with exlanations",
     ]
     structured_output_code_initial_script: Annotated[
         dict, "Structured output for reasoning and initial code script"
@@ -44,6 +44,10 @@ class AgentState(TypedDict):
     structured_output_code_gpc_refno_stationary_energy_transportation: Annotated[
         dict,
         "Structured output for reasoning and code for extracted GPC reference numbers from the data file for the sector 'Stationary Energy' and 'Transportation'",
+    ]
+    structured_output_code_transformation_stationary_energy_transportation: Annotated[
+        dict,
+        "Structured output for reasoning and code for extracted transformations from the data file for the sector 'Stationary Energy' and 'Transportation'",
     ]
     # structured_output_stationary_energy_transportation: Annotated[
     #     dict,
@@ -108,6 +112,9 @@ class AgentState(TypedDict):
     code_gpc_refno_stationary_energy_transportation_script: Annotated[
         str, "GPC reference number code script"
     ]
-    generated_code: Annotated[str, "Generated code"]
-    final_code_output: Annotated[str, "Final code output"]
+    code_transformations_stationary_energy_transportation_script: Annotated[
+        str, "Transformations code script"
+    ]
+    # generated_code: Annotated[str, "Generated code"]
+    # final_code_output: Annotated[str, "Final code output"]
     verbose: Annotated[bool, "Verbose mode"]

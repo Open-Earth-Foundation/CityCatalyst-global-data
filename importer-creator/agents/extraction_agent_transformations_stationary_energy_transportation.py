@@ -5,10 +5,10 @@ from context.context_methodologies import context_methodologies
 from context.context_emission_factors import context_emission_factors
 
 
-def transformation_agent_stationary_energy_transportation(
+def extraction_agent_transformations_stationary_energy_transportation(
     state: AgentState,
 ) -> dict:
-    print("\nTRANSFORMATION AGENT STATIONARY ENERGY TRANSPORTATION\n")
+    print("\nEXTRACTION AGENT TRANSFORMATIONS STATIONARY ENERGY TRANSPORTATION\n")
 
     task = """
 Your task is to create a transformation from activity data to emission values. 
@@ -72,4 +72,8 @@ e. Based on the provided context for methodologies and emission factors:
     # Invoke summary agent with custom prompt
     response = state.get("agent").invoke(prompt)
 
-    return {"transformations_stationary_energy_transportation": response.get("output")}
+    return {
+        "extracted_transformations_stationary_energy_transportation": response.get(
+            "output"
+        )
+    }
