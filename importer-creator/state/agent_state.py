@@ -41,15 +41,19 @@ class AgentState(TypedDict):
         dict,
         "Structured output for reasoning and code for extracted activity values from the data file for the sector 'Stationary Energy' and 'Transportation",
     ]
-    structured_output_stationary_energy_transportation: Annotated[
+    structured_output_code_gpc_refno_stationary_energy_transportation: Annotated[
         dict,
-        "Structured output from the data file for sector 'Stationary Energy' and 'Transportation'",
+        "Structured output for reasoning and code for extracted GPC reference numbers from the data file for the sector 'Stationary Energy' and 'Transportation'",
     ]
+    # structured_output_stationary_energy_transportation: Annotated[
+    #     dict,
+    #     "Structured output from the data file for sector 'Stationary Energy' and 'Transportation'",
+    # ]
     structured_output_actval_waste: Annotated[
         dict,
         "Structured extracted activity values from the data file for sector 'Waste'",
     ]
-    structured_code: Annotated[dict, "Structured generated code"]
+    # structured_code: Annotated[dict, "Structured generated code"]
     approved_extracted_data_keyval: Annotated[
         str, "Approved extracted key-value data from the data file with explanations"
     ]
@@ -100,6 +104,9 @@ class AgentState(TypedDict):
     code_keyval_script: Annotated[str, "Key-value code script"]
     code_actval_stationary_energy_transportation_script: Annotated[
         str, "Activity value code script"
+    ]
+    code_gpc_refno_stationary_energy_transportation_script: Annotated[
+        str, "GPC reference number code script"
     ]
     generated_code: Annotated[str, "Generated code"]
     final_code_output: Annotated[str, "Final code output"]

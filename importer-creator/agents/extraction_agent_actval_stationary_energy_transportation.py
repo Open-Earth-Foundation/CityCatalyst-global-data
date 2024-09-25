@@ -13,7 +13,7 @@ def extraction_agent_actval_stationary_energy_transportation(
 Your goal is to identify the activity data for the 'Stationary Energy' sector and 'Transportation' sector from the original data file 'df' that you are provided with.
 Each single row in the dataframe 'df' contains unique activity data.
 Activity data typically consists of:
-    - The activity name
+    - The activity name or activity type (e.g. fuel consumption, electricity consumption, generally energy consumption, vehicle kilometers travelled, and so on)
     - The activity value
     - The activity unit
 Identify the columns in the original datafile that represent activity data and present your detailed reasoning for this. 
@@ -21,8 +21,9 @@ Depending on the datafile, not all activty data may be present. For example unit
 """
     completion_steps = """
 a. Load the entire dataframe 'df'. This means load all the rows and do not use df.head() to only inspect the first few rows.    
-b. Identify columns in the dataframe that represent activity data and activity values.
+b. Identify columns in the dataframe that represent activity data.
 c. Inspect those columns. If no activity unit is provided, infer the correct unit based on the context of the activity data using standard SI units.
+d. For the identified activity type column print out the unique values like 'fuel consumption', 'electricity consumption' and so on.
 """
     answer_format = """
 - Give all your detailed reasoning inside the <reasoning> tags.

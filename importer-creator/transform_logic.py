@@ -55,9 +55,10 @@ def process_datafile(
         structured_output_code_initial_script={},
         structured_output_code_keyval={},
         structured_output_code_actval_stationary_energy_transportation={},
-        structured_output_stationary_energy_transportation={},
+        structured_output_code_gpc_refno_stationary_energy_transportation={},
+        # structured_output_stationary_energy_transportation={},
         structured_output_actval_waste={},
-        structured_code={},
+        # structured_code={},
         ### approved data (output from reasoning agent)
         approved_extracted_data_keyval="",
         approved_extracted_gpc_mapping_stationary_energy_transportation="",
@@ -78,6 +79,7 @@ def process_datafile(
         code_initial_script="",
         code_keyval_script="",
         code_actval_stationary_energy_transportation_script="",
+        code_gpc_refno_stationary_energy_transportation_script="",
         generated_code="",
         final_code_output="",
         ### verbose

@@ -35,14 +35,24 @@ from agents.create_output_files_agent_actval_stationary_energy_transportation im
     create_output_files_agent_actval_stationary_energy_transportation,
 )
 
-
+# Imports for GPC mapping
 from agents.extraction_agent_gpc_mapping_stationary_energy_transportation import (
     extraction_agent_gpc_mapping_stationary_energy_transportation,
 )
 from agents.reasoning_agent_gpc_mapping_stationary_energy_transportation import (
     reasoning_agent_gpc_mapping_stationary_energy_transportation,
 )
+from agents.code_generation_agent_gpc_mapping_stationary_energy_transportation import (
+    code_generation_agent_gpc_mapping_stationay_energy_transportation,
+)
+from agents.structured_output_agent_gpc_refno_stationary_energy_transportation import (
+    structured_output_agent_gpc_refno_stationary_energy_transportation,
+)
+from agents.create_output_files_agent_gpc_refno_stationary_energy_transportation import (
+    create_output_files_agent_gpc_refno_stationary_energy_transportation,
+)
 
+# Imports for transformation of activity values to emissions data
 from agents.transformation_agent_stationary_energy_transportation import (
     transformation_agent_stationary_energy_transportation,
 )
@@ -100,7 +110,7 @@ def should_extraction_gpc_mapping_stationary_energy_transportation_continue(
     state: AgentState,
 ) -> str:
     if state.get("approved_extracted_gpc_mapping_stationary_energy_transportation"):
-        return "transformation_agent_stationary_energy_transportation"
+        return "code_generation_agent_gpc_mapping_stationay_energy_transportation"
     return "extraction_agent_gpc_mapping_stationary_energy_transportation"
 
 
@@ -187,6 +197,20 @@ def create_workflow():
         "reasoning_agent_gpc_mapping_stationary_energy_transportation",
         reasoning_agent_gpc_mapping_stationary_energy_transportation,
     )
+    workflow.add_node(
+        "code_generation_agent_gpc_mapping_stationay_energy_transportation",
+        code_generation_agent_gpc_mapping_stationay_energy_transportation,
+    )
+    workflow.add_node(
+        "structured_output_agent_gpc_refno_stationary_energy_transportation",
+        structured_output_agent_gpc_refno_stationary_energy_transportation,
+    )
+    workflow.add_node(
+        "create_output_files_agent_gpc_refno_stationary_energy_transportation",
+        create_output_files_agent_gpc_refno_stationary_energy_transportation,
+    )
+
+    # Transformation of activity values to emissions data
     workflow.add_node(
         "transformation_agent_stationary_energy_transportation",
         transformation_agent_stationary_energy_transportation,
@@ -289,8 +313,23 @@ def create_workflow():
         should_extraction_gpc_mapping_stationary_energy_transportation_continue,
         {
             "extraction_agent_gpc_mapping_stationary_energy_transportation": "extraction_agent_gpc_mapping_stationary_energy_transportation",
-            "transformation_agent_stationary_energy_transportation": "transformation_agent_stationary_energy_transportation",
+            "code_generation_agent_gpc_mapping_stationay_energy_transportation": "code_generation_agent_gpc_mapping_stationay_energy_transportation",
         },
+    )
+
+    workflow.add_edge(
+        "code_generation_agent_gpc_mapping_stationay_energy_transportation",
+        "structured_output_agent_gpc_refno_stationary_energy_transportation",
+    )
+    # Parallel execution 1
+    workflow.add_edge(
+        "structured_output_agent_gpc_refno_stationary_energy_transportation",
+        "create_output_files_agent_gpc_refno_stationary_energy_transportation",
+    )
+    # Parallel execution 2
+    workflow.add_edge(
+        "structured_output_agent_gpc_refno_stationary_energy_transportation",
+        "transformation_agent_stationary_energy_transportation",
     )
 
     workflow.add_edge(

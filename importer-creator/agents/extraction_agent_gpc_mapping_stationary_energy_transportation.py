@@ -19,7 +19,7 @@ def extraction_agent_gpc_mapping_stationary_energy_transportation(
     print("\nEXTRACTION AGENT GPC MAPPING STATIONARY ENERGY TRANSPORTATION\n")
 
     task = """
-Your goal is to create a mapping dictionary that helps mapping activity data to gpc reference numbers for the two sectors 'Stationary Energy' sector and 'Transportation' sector from the provided dataframe 'df'.
+Your task is to create a mapping dictionary that helps mapping activity data to gpc reference numbers for the two sectors 'Stationary Energy' sector and 'Transportation' sector from the provided dataframe 'df'.
 Each activity data can be of a different subsector of the 'Stationary Energy' sector or 'Transportation' sector and therefore can have a different gpc reference number.
 Each activity data only be associated with one GPC reference number. Never map multiple GPC reference numbers to the same activity data.
 To identify the GPC reference number, you need to understand to entire context of the activity data. Additinal columns that provide context on the activity data help in determining the GPC reference number.
@@ -30,6 +30,8 @@ b. Identify columns that provide context for the activity data (for example what
 c. Then if you have identified a column that contains the relevant information about how the activity data is being used:
     1. print out the unique values of these columns
     2. make sure to include every unique value in your answer
+d. Inspect the provided activity data inside the <activity_data> tags below, to understand the activity data that needs to be mapped
+    - Especially pay attention to the different activity types like 'fuel consumption', 'electricity consumption' and so on as those influence the mapping. 
 d. Inspect the general gpc mappings within <gpc_mappings> tags below, to understand the general GPC reference numbers and their structure.
 e. Then for the identified activity data, check the gpc mappings for 'Stationay Energy' and 'Transportation' marked with <gpc_mappings_sector> tags below, to know which GPC reference numbers could be applied.
 f. Then check the provided context for the sector 'Stationary Energy' and 'Transportation' marked with <context_activity_values_sector> tags below, to identify the correct GPC reference number based on the further context given in that document.
@@ -49,9 +51,6 @@ g. Make sure, to only assign one GPC reference number per activity data. Do NOT 
 """
     additional_information = f"""
 <additional_information>
-    <file_path>
-    This is the path to the original data file: {state.get('file_path')}.
-    </file_path>
     <user_provided_context>
     This is the user provided context: {state.get("context_user_provided")}
     </user_provided_context>
@@ -59,7 +58,7 @@ g. Make sure, to only assign one GPC reference number per activity data. Do NOT 
     You are provided with a retriever tool "Retriever" to retrieve information from the GPC Master document. Use this document every time to enrich your context.
     </gpc_master_document>
     <activity_data>
-    This is the provided activity data: {state.get("extracted_actval_stationary_energy_transportation")}.
+    This is the provided activity data: {state.get("extracted_data_actval_stationary_energy_transportation")}.
     </activity_data>
     <gpc_mappings>
     The following information provides context to identify the GPC reference number for an activity value.
