@@ -51,6 +51,9 @@ g. Make sure, to only assign one GPC reference number per activity data. Do NOT 
 """
     additional_information = f"""
 <additional_information>
+    <file_path>
+    This is the path to the original data file: {state.get('file_path')}.
+    </file_path>
     <user_provided_context>
     This is the user provided context: {state.get("context_user_provided")}
     </user_provided_context>

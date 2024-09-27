@@ -10,5 +10,5 @@ def default_agent(state: AgentState) -> dict:
     """
 
     # Invoke summary agent with custom prompt
-    summary = state.get("agent").invoke(prompt)
-    return {"summary": summary.get("output")}
+    # summary = state.get("agent").invoke(prompt)
+    # return {"summary": summary.get("output")}

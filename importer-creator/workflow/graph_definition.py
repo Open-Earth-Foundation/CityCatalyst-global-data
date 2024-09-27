@@ -2,6 +2,8 @@ from langgraph.graph import StateGraph, END
 from state.agent_state import AgentState
 
 from agents.default_agent import default_agent
+
+# Import for summary
 from agents.summary_agent import summary_agent
 
 from agents.code_generation_agent_initial_script import (
@@ -133,19 +135,16 @@ def should_codegeneration_stationary_energy_transportation_continue(
 
 def has_user_provided_feedback(
     state: AgentState,
+    return_node: str,
+    next_node: str,
 ) -> str:
 
     feedback: str = state.get("feedback_hitl")
 
-    if feedback == "":
-        print(
-            "\nNo clear command provided. Please either submit 'END' to end the workflow or provide detailed feedback.\n"
-        )
-        return "hitl_agent"
-    elif feedback == "END":
-        return END
+    if feedback == "NO FEEDBACK":
+        return next_node
     else:
-        return "extraction_agent_actval_stationary_energy_transportation"
+        return return_node
 
 
 # Define the graph
@@ -251,6 +250,7 @@ def create_workflow():
     )
 
     workflow.add_node("hitl_agent", hitl_agent)
+    workflow.add_node("hitl_agent_2", hitl_agent)
 
     workflow.add_node("create_output_files_agent", create_output_files_agent)
 
@@ -273,7 +273,23 @@ def create_workflow():
     # Parallel execution 2
     workflow.add_edge(
         "structured_output_code_agent_initial_script",
-        "extraction_agent_keyval",
+        "hitl_agent",
+    )
+
+    workflow.add_edge("create_output_files_agent", "hitl_agent")
+
+    # Add conditional edge
+    workflow.add_conditional_edges(
+        "hitl_agent",
+        lambda state: has_user_provided_feedback(
+            state,
+            return_node="summary_agent",
+            next_node="extraction_agent_keyval",
+        ),
+        {
+            "summary_agent": "summary_agent",
+            "extraction_agent_keyval": "extraction_agent_keyval",
+        },
     )
 
     workflow.add_edge("extraction_agent_keyval", "reasoning_agent_keyval")
@@ -293,9 +309,27 @@ def create_workflow():
         "structured_output_agent_keyval", "create_output_files_agent_keyval"
     )
 
+    workflow.add_edge("structured_output_agent_keyval", "hitl_agent_2")
+
+    workflow.add_node("router", default_agent)
+
     # Add conditional edge
     workflow.add_conditional_edges(
-        "structured_output_agent_keyval",
+        "hitl_agent_2",
+        lambda state: has_user_provided_feedback(
+            state,
+            return_node="extraction_agent_keyval",
+            next_node="router",
+        ),
+        {
+            "extraction_agent_keyval": "extraction_agent_keyval",
+            "router": "router",
+        },
+    )
+
+    # Add conditional edge
+    workflow.add_conditional_edges(
+        "router",
         router,
         {
             "extraction_agent_actval_stationary_energy_transportation": "extraction_agent_actval_stationary_energy_transportation",
@@ -390,19 +424,6 @@ def create_workflow():
     workflow.add_edge(
         "structured_output_agent_stationary_energy_transportation",
         "create_output_files_agent",
-    )
-
-    workflow.add_edge("create_output_files_agent", "hitl_agent")
-
-    # Add conditional edge
-    workflow.add_conditional_edges(
-        "hitl_agent",
-        has_user_provided_feedback,
-        {
-            "hitl_agent": "hitl_agent",
-            "extraction_agent_actval_stationary_energy_transportation": "extraction_agent_actval_stationary_energy_transportation",
-            END: END,
-        },
     )
 
     return workflow.compile()

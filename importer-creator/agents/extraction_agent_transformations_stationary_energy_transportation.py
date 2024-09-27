@@ -14,17 +14,14 @@ def extraction_agent_transformations_stationary_energy_transportation(
     print("\nEXTRACTION AGENT TRANSFORMATIONS STATIONARY ENERGY TRANSPORTATION\n")
 
     # Skip this step for now
-    return {"extracted_transformations_stationary_energy_transportation": {}("output")}
+    # return {"extracted_transformations_stationary_energy_transportation": "PASS"}
 
     # Filter the emission factors based on the provided filters of region
     df = load_datafile_into_df("./emission_factors/emission_factors_vAI.csv")
 
     structured_output_keyval = state.get("structured_output_code_keyval")
-    print(f"Structured output key-value data: {structured_output_keyval}")
     extracted_keyval_data = structured_output_keyval["extracted_data"]
-    print(f"Extracted key-value data: {extracted_keyval_data}")
     region = extracted_keyval_data["region"]
-    print(f"Region: {region}")
 
     # Filter the emission factors based on the provided region and drop duplicates
     filters = {"actor_name": region}
@@ -41,7 +38,7 @@ c. Inspect the identified gpc mappings provided in <extracted_gpc_mapping_statio
 d. Inspect the provided context for transformation methodologies for the 'Stationary Energy' sector and 'Transportation' sector provided in the <methodologies> tags below.
 e. Inspect the provided dictionary of emission factors in the <emission_factors> tags below.
 f. Based on the provided context for methodologies and emission factors: 
-    - decide which methodology from the <methodologies> tags below to use and which emission factor from <emission_factor> tags to apply
+    - decide which methodology from the <methodologies> tags below to use and which emission factor from <emission_factor> tags to apply. If you cannot find the correct emissions factor, you can use the placeholder value of 1.0.
     - your answer must include a mapping for all activity data.
     - remember that each activity data could need a different methodology and different emission factor 
 """
@@ -59,6 +56,9 @@ f. Based on the provided context for methodologies and emission factors:
 """
     additional_information = f"""
 <additional_information>
+    <file_path>
+    This is the path to the original data file: {state.get('file_path')}.
+    </file_path>
     <user_provided_context>
     This is the user provided context: {state.get("context_user_provided")}
     </user_provided_context>
@@ -75,7 +75,7 @@ f. Based on the provided context for methodologies and emission factors:
     This is the dictionary of different methodologies for the 'Stationary Energy' sector and 'Transportation' sector: {context_methodologies}
     </methodologies>
     <emission_factors>
-    This is the provided dictionary of emission factors: {filtered_emission_factors}.
+    This is the provided dataframe containing emission factors: {filtered_emission_factors}.
     Use this dataframe to search for the correct emission factors based on the description, GPC reference number, methodology, gas type, units and the most current year if multiple values of multiple years are given.
     </emission_factors>
     <feedback>

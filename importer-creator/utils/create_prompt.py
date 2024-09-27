@@ -17,7 +17,7 @@ def create_prompt(
 
     2. Consider the human-in-the-loop feedback provided in the <feedback_human-in-the-loop> tags below if available. This is the most important feedback to consider for your data extraction process. Rank this specific human-in-the-loop feedback highest in your considerations and make sure to incorporate it into your thinking.
 
-    3. You are already provided with the dataframe 'df' containing the activities.
+    3. You are already provided with the dataframe 'df' of the original datafile.
 
     4. To complete this task: 
         {completion_steps}
