@@ -20,7 +20,7 @@ Identify the columns in the original datafile that represent activity data and p
 Depending on the datafile, not all activty data may be present. For example units could be missing. In such cases, infer the correct unit based on the context of the activity data using standard SI units. 
 """
     completion_steps = """
-a. Load the entire dataframe 'df'. This means load all the rows and do not use df.head() to only inspect the first few rows.    
+a. Inspect the dataframe 'df' that you are already provided with. This means print out all the rows and do not use df.head() to only inspect the first few rows.    
 b. Identify columns in the dataframe that represent activity data.
 c. Inspect those columns. If no activity unit is provided, infer the correct unit based on the context of the activity data using standard SI units.
 d. For the identified activity type column print out the unique values like 'fuel consumption', 'electricity consumption' and so on.

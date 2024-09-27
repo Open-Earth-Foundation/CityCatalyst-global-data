@@ -25,7 +25,7 @@ Each activity data only be associated with one GPC reference number. Never map m
 To identify the GPC reference number, you need to understand to entire context of the activity data. Additinal columns that provide context on the activity data help in determining the GPC reference number.
 """
     completion_steps = """
-a. Load the entire dataframe 'df'. This means load all the rows and do not use df.head() to only inspect the first few rows.    
+a. Inspect the dataframe 'df' that you are already provided with. This means print out all the rows and do not use df.head() to only inspect the first few rows.    
 b. Identify columns that provide context for the activity data (for example what vehicle type, what building type, who it was sold to like public sector, agriculture sector, energy consumption and so on) of this activity. 
 c. Then if you have identified a column that contains the relevant information about how the activity data is being used:
     1. print out the unique values of these columns

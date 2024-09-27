@@ -4,22 +4,43 @@ from utils.create_prompt import create_prompt
 from context.context_methodologies import context_methodologies
 from context.context_emission_factors import context_emission_factors
 
+from utils.data_loader import load_datafile_into_df
+from utils.filter_emission_factors import filter_data
+
 
 def extraction_agent_transformations_stationary_energy_transportation(
     state: AgentState,
 ) -> dict:
     print("\nEXTRACTION AGENT TRANSFORMATIONS STATIONARY ENERGY TRANSPORTATION\n")
 
+    # Skip this step for now
+    return {"extracted_transformations_stationary_energy_transportation": {}("output")}
+
+    # Filter the emission factors based on the provided filters of region
+    df = load_datafile_into_df("./emission_factors/emission_factors_vAI.csv")
+
+    structured_output_keyval = state.get("structured_output_code_keyval")
+    print(f"Structured output key-value data: {structured_output_keyval}")
+    extracted_keyval_data = structured_output_keyval["extracted_data"]
+    print(f"Extracted key-value data: {extracted_keyval_data}")
+    region = extracted_keyval_data["region"]
+    print(f"Region: {region}")
+
+    # Filter the emission factors based on the provided region and drop duplicates
+    filters = {"actor_name": region}
+    filtered_emission_factors = filter_data(df, filters).drop_duplicates()
+
     task = """
 Your task is to create a transformation from activity data to emission values. 
 For each identified activity data, you need to transform it into emission values bases on a specific methodology. The different methodologies for the 'Stationary Energy' sector and 'Transportation' sector are provided in the context below under <additional_information> tags.
 """
     completion_steps = """
-a. Inspect the identified activity values provided in <extracted_data_actval_stationary_energy_transportation> tags. 
-b. Inspect the identified gpc mappings provided in <extracted_gpc_mapping_stationary_energy_transportation> tags.    
-c. Inspect the provided context for transformation methodologies for the 'Stationary Energy' sector and 'Transportation' sector provided in the <methodologies> tags below.
-d. Inspect the provided dictionary of emission factors in the <emission_factors> tags below.
-e. Based on the provided context for methodologies and emission factors: 
+a. Inspect the dataframe 'df' that you are already provided with. This means print out all the rows and do not use df.head() to only inspect the first few rows.    
+b. Inspect the identified activity values provided in <extracted_data_actval_stationary_energy_transportation> tags. 
+c. Inspect the identified gpc mappings provided in <extracted_gpc_mapping_stationary_energy_transportation> tags.    
+d. Inspect the provided context for transformation methodologies for the 'Stationary Energy' sector and 'Transportation' sector provided in the <methodologies> tags below.
+e. Inspect the provided dictionary of emission factors in the <emission_factors> tags below.
+f. Based on the provided context for methodologies and emission factors: 
     - decide which methodology from the <methodologies> tags below to use and which emission factor from <emission_factor> tags to apply
     - your answer must include a mapping for all activity data.
     - remember that each activity data could need a different methodology and different emission factor 
@@ -54,7 +75,8 @@ e. Based on the provided context for methodologies and emission factors:
     This is the dictionary of different methodologies for the 'Stationary Energy' sector and 'Transportation' sector: {context_methodologies}
     </methodologies>
     <emission_factors>
-    This is the provided dictionary of emission factors: {context_emission_factors}.
+    This is the provided dictionary of emission factors: {filtered_emission_factors}.
+    Use this dataframe to search for the correct emission factors based on the description, GPC reference number, methodology, gas type, units and the most current year if multiple values of multiple years are given.
     </emission_factors>
     <feedback>
         <feedback_human-in-the-loop>

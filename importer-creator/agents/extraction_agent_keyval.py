@@ -2,22 +2,28 @@ from state.agent_state import AgentState
 from utils.create_prompt import create_prompt
 from utils.agent_creation import create_agent_with_rag
 from context.context_sector_subsector import context_sector_subsector
+from utils.data_loader import load_datafile_into_df
 
 
 def extraction_agent_keyval(state: AgentState) -> dict:
     print("\nEXTRACTION AGENT KEYVAL\n")
 
+    # Get ipcc conform regions
+    ipcc_regions = load_datafile_into_df("./emission_factors/emission_factors_vAI.csv")[
+        "actor_name"
+    ].unique()
+
     task = """
 Your task is to extract key-value pairs from the provided dataframe 'df'.
 """
 
-    completion_steps = """
-a. Load the entire dataframe 'df'. This means load all the rows and do not use df.head() to only inspect the first few rows.  
+    completion_steps = f"""
+a. Inspect the dataframe 'df' that you are already provided with. This means print out all the rows and do not use df.head() to only inspect the first few rows.  
 b. Identify the region that the data is associated with.
-    - Be specific. E.g. if only a country is mentioned, then the region is the country. 
-    - If a city or a region (e.g. a state) is mentioned, use the specific city or region. 
-    - If multiple regions are mentioned (e.g. different cities, states or countries), use the most specific region that captures all mentioned regions. E.g. 'global' for multiple countries of different continents or 'Europe' for multiple regions in europe or 'Argentina' for multiple regions or cities in Argentina and so on.
-    Name the biggest region that captures all mentioned regions in the data file and that is most specific at the same time.
+    - Be specific. E.g. if only a country is mentioned, then the region is the country e.g. 'Argentina' or 'Finland' and so on. 
+    - If a region (e.g. a state) is mentioned, use the specific region e.g. 'British Columbia' or 'Saskatchewan' and so on.
+    - If multiple regions are mentioned (e.g. different states or countries), use 'world' as the region if the data contains multiple countries or use the country name if the data contains multiple regions inside that country. 
+    This is a list of possible regions which you have to choose one single region from: {ipcc_regions}.
 c. Identify the temporal resolution of the data for example if the datapoints are ordered by days, weeks, month or years.
 d. Identify the associated sector according to Greenhouse Gas Protocol for Cities (GPC). Check the additional information provided below within <context_sector_subsector> tags to identify the correct sector based on the provided context.
 e. Identify the accociated sub-sector according to Greenhouse Gas Protocol for Cities (GPC). Check the additional information provided below within <context_sector_subsector> tags to identify the correct sub-sector based on the provided context.
