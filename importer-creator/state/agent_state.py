@@ -118,3 +118,4 @@ class AgentState(TypedDict):
     # generated_code: Annotated[str, "Generated code"]
     # final_code_output: Annotated[str, "Final code output"]
     verbose: Annotated[bool, "Verbose mode"]
+    hitl: Annotated[bool, "Human-in-the-loop flag"]

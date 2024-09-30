@@ -1,6 +1,7 @@
 # transform_script.py
 
 import json
+import pandas as pd
 from langchain.agents.agent import AgentExecutor
 from transform_logic import transform
 
@@ -8,10 +9,12 @@ if __name__ == "__main__":
     import sys
     import os
 
-    inputfile = sys.argv[1]
-    context_user_provided = sys.argv[2]
-    verbose = sys.argv[3]
-    show_graph = sys.argv[4]
+    # Get the command line arguments and handling boolean values
+    inputfile: str = sys.argv[1]
+    context_user_provided: str = sys.argv[2]
+    verbose: bool = sys.argv[3] in ["True", "true"]
+    show_graph: bool = sys.argv[4] in ["True", "true"]
+    hitl: bool = sys.argv[5] in ["True", "true"]
 
     full_path = os.path.join("./files/", inputfile)
 
@@ -20,14 +23,18 @@ if __name__ == "__main__":
     print("user_provided_context: ", context_user_provided)
     print("verbose: ", verbose)
     print("show_graph: ", show_graph)
+    print("hitl: ", hitl)
 
-    state = transform(full_path, context_user_provided, verbose, show_graph)
+    state = transform(full_path, context_user_provided, verbose, show_graph, hitl)
 
     # Custom encoder to handle non-serializable objects
     def custom_encoder(obj):
         # Convert complex object to string
         if isinstance(obj, AgentExecutor):
             return str(obj)
+        # Convert pandas DataFrame to a dictionary or list
+        if isinstance(obj, pd.DataFrame):
+            return obj.to_dict(orient="records")
         raise TypeError(
             f"Object of type {obj.__class__.__name__} is not JSON serializable"
         )

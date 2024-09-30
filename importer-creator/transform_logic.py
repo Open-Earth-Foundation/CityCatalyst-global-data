@@ -18,6 +18,7 @@ def process_datafile(
     file_path: str,
     verbose: bool,
     show_graph: bool,
+    hitl: bool,
 ):
 
     # Load the datafile into a dataframe
@@ -56,9 +57,7 @@ def process_datafile(
         structured_output_code_actval_stationary_energy_transportation={},
         structured_output_code_gpc_refno_stationary_energy_transportation={},
         structured_output_code_transformation_stationary_energy_transportation={},
-        # structured_output_stationary_energy_transportation={},
         structured_output_actval_waste={},
-        # structured_code={},
         ### approved data (output from reasoning agent)
         approved_extracted_data_keyval="",
         approved_extracted_gpc_mapping_stationary_energy_transportation="",
@@ -81,10 +80,10 @@ def process_datafile(
         code_actval_stationary_energy_transportation_script="",
         code_gpc_refno_stationary_energy_transportation_script="",
         code_transformations_stationary_energy_transportation_script="",
-        # generated_code="",
-        # final_code_output="",
         ### verbose
         verbose=verbose,
+        ### hitl
+        hitl=hitl,
     )
 
     result = app.invoke(inputs)
@@ -92,13 +91,14 @@ def process_datafile(
 
 
 # Main function to call
-def transform(file_path, context_user_provided, verbose, show_graph):
+def transform(file_path, context_user_provided, verbose, show_graph, hitl):
 
     state = process_datafile(
         context_user_provided=context_user_provided,
         file_path=file_path,
         verbose=verbose,
         show_graph=show_graph,
+        hitl=hitl,
     )
 
     return state
