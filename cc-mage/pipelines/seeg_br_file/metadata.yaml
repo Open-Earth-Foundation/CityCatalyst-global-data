@@ -96,6 +96,7 @@ blocks:
     export_write_policy: append
   downstream_blocks:
   - update_seeg_sector_emissions
+  - update_see_sector_activity
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -123,9 +124,32 @@ blocks:
   executor_type: local_python
   has_callback: false
   language: sql
-  name: update_seeg_sector_emissions
+  name: update_see_sector_activity
   retry_config: null
   status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks:
+  - update_seeg_sector_staging
+  uuid: update_see_sector_activity
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_seeg_sector_emissions
+  retry_config: null
+  status: updated
   timeout: null
   type: data_loader
   upstream_blocks:

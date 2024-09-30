@@ -1,6 +1,10 @@
 WITH seeg_sector_raw_data AS (
 SELECT 
     emission_sector,
+    case when emission_sector = 'Energy' then general_activity 
+        when emission_sector = 'Agriculture' then issuer_subcategory
+        when emission_sector = 'Land Use Change and Forestry' then issuer_subcategory
+    else null end as activity_name,
     issuer_category,
     issuer_subcategory,
     product_or_system,
@@ -44,6 +48,7 @@ INNER JOIN
 SELECT 
     gpc_mapping AS gpc_reference_number,
     gas_name,
+    activity_name,
     emissions_units,
     city,
     region,
@@ -60,6 +65,7 @@ FROM
 GROUP BY 
     gpc_mapping, 
     gas_name, 
+    activity_name,
     emissions_units, 
     city, 
     region

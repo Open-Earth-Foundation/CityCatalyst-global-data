@@ -2,6 +2,7 @@ WITH seeg_city_emissions AS (
     SELECT 
         gpc_reference_number,
         gas_name,
+        activity_name,
         locode,
         city_id,
         emissions_2015,
@@ -25,6 +26,7 @@ WITH seeg_city_emissions AS (
 seeg_city_emissions_year AS (
     SELECT 
         gpc_reference_number,
+        activity_name,
         gas_name,
         locode,
         city_id,
@@ -35,6 +37,7 @@ seeg_city_emissions_year AS (
         (SELECT 
             gpc_reference_number,
             gas_name,
+            activity_name,
             locode,
             city_id,
             emissions_2015,
@@ -50,6 +53,7 @@ seeg_city_emissions_year AS (
         GROUP BY 
             gpc_reference_number,
             gas_name,
+            activity_name,
             locode,
             city_id,
             emissions_2015,
@@ -79,13 +83,13 @@ INSERT INTO modelled.emissions
      gas_name, emissions_value, emissions_units, emissions_year, emissionfactor_id, 
      spatial_granularity, geometry_type, geometry)
 SELECT 
-    (MD5(CONCAT_WS('-', 'SEEG', gpc_reference_number, locode, emissions_year, gas_name))::UUID) AS emissions_id,
+    (MD5(CONCAT_WS('-', 'SEEG', gpc_reference_number, locode,activity_name,emissions_year, gas_name))::UUID) AS emissions_id,
     'SEEG' AS datasource_name,
     gpc_reference_number,
     locode AS actor_id,
     city_id,
     NULL::UUID AS gpcmethod_id,
-    NULL::UUID AS activity_id,
+    (MD5(CONCAT_WS('-', activity_name))::UUID) AS activity_id,
     NULL AS activity_value,
     gas_name,
     emissions_value,
