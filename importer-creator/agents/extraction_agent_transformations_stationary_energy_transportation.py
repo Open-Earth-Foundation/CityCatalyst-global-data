@@ -1,11 +1,11 @@
 from state.agent_state import AgentState
+from utils.agent_creation import create_agent_with_rag_and_csv_filter
 from utils.create_prompt import create_prompt
 
 from context.context_methodologies import context_methodologies
-from context.context_emission_factors import context_emission_factors
 
-from utils.data_loader import load_datafile_into_df
-from utils.filter_emission_factors import filter_data
+# from utils.data_loader import load_datafile_into_df
+# from utils.filter_emission_factors import filter_data
 
 
 def extraction_agent_transformations_stationary_energy_transportation(
@@ -17,15 +17,15 @@ def extraction_agent_transformations_stationary_energy_transportation(
     # return {"extracted_transformations_stationary_energy_transportation": "PASS"}
 
     # Filter the emission factors based on the provided filters of region
-    df = load_datafile_into_df("./emission_factors/emission_factors_vAI.csv")
+    # df = load_datafile_into_df("./emission_factors/emission_factors_vAI.csv")
 
-    structured_output_keyval = state.get("structured_output_code_keyval")
-    extracted_keyval_data = structured_output_keyval["extracted_data"]
-    region = extracted_keyval_data["region"]
+    # structured_output_keyval = state.get("structured_output_code_keyval")
+    # extracted_keyval_data = structured_output_keyval["extracted_data"]
+    # region = extracted_keyval_data["region"]
 
-    # Filter the emission factors based on the provided region and drop duplicates
-    filters = {"actor_name": region}
-    filtered_emission_factors = filter_data(df, filters).drop_duplicates()
+    # # Filter the emission factors based on the provided region and drop duplicates
+    # filters = {"actor_name": region}
+    # filtered_emission_factors = filter_data(df, filters).drop_duplicates()
 
     task = """
 Your task is to create a transformation from activity data to emission values. 
@@ -75,7 +75,7 @@ f. Based on the provided context for methodologies and emission factors:
     This is the dictionary of different methodologies for the 'Stationary Energy' sector and 'Transportation' sector: {context_methodologies}
     </methodologies>
     <emission_factors>
-    This is the provided dataframe containing emission factors: {filtered_emission_factors}.
+    You are provided with a tool 'FilterData'. Use it to filter the emission factors based on filter criteria like region and gpc reference numbers and others. 
     Use this dataframe to search for the correct emission factors based on the description, GPC reference number, methodology, gas type, units and the most current year if multiple values of multiple years are given.
     </emission_factors>
     <feedback>
@@ -86,16 +86,24 @@ f. Based on the provided context for methodologies and emission factors:
     </feedback>
 </additional_information>
 """
+    # Create the agent
+    agent = create_agent_with_rag_and_csv_filter(state.get("df"), state.get("verbose"))
 
     prompt = create_prompt(
         task, completion_steps, answer_format, additional_information
     )
 
     # Invoke summary agent with custom prompt
-    response = state.get("agent").invoke(prompt)
+    # response = state.get("agent").invoke(prompt)
+    response = agent.invoke(prompt)
 
     return {
         "extracted_transformations_stationary_energy_transportation": response.get(
             "output"
         )
     }
+
+    # <emission_factors>
+    # This is the provided dataframe containing emission factors: {filtered_emission_factors}.
+    # Use this dataframe to search for the correct emission factors based on the description, GPC reference number, methodology, gas type, units and the most current year if multiple values of multiple years are given.
+    # </emission_factors>

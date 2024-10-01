@@ -13,7 +13,7 @@ def extraction_agent_actval_stationary_energy_transportation(
 Your goal is to identify the activity data for the 'Stationary Energy' sector and 'Transportation' sector from the original data file 'df' that you are provided with.
 Each single row in the dataframe 'df' contains unique activity data.
 Activity data typically consists of:
-    - The activity name and/or activity type. This can be an activity like fuel consumption, electricity consumption, generally energy consumption, vehicle kilometers travelled, and so on. Additionlly it can be how the fuel, energy, .... is consumed e.g. b a specific vehicle type, building type, or sector. Both information togehter provide the context for the activity data.
+    - The activity name and/or activity type. This can be an activity like fuel consumption, electricity consumption, generally energy consumption, vehicle kilometers travelled, and so on. Additionlly it can be the domain, in which the activity (like fuel consumption, energy consumption, and so on) is being used like a specific vehicle type or building type. Both information togehter provide the context for the activity data.
     - The activity value
     - The activity unit
 Identify the columns in the original datafile that represent activity data and present your detailed reasoning for this. 
