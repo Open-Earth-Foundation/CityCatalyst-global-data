@@ -150,7 +150,7 @@ def create_agent_with_rag(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
     """,
         extra_tools=[retriever_tool],
         allow_dangerous_code=True,
-        include_df_in_prompt=False,  # test this performance
+        # include_df_in_prompt=False,  # test this performance
     )
 
 
