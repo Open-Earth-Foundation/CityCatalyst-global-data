@@ -10,42 +10,37 @@ white_list_mapping = {
     """,
 
     "fuel sales": {
-        [
-            "period",
-            "city",
-            "product",
-            "operator",
-            "fuel type",
-            "distribution channel",
-            "volume",
-            "units",
-            "transport_type",
-            "coordinates"
-            "location"
-        ]
+        "period": "datetime",
+        "city": "string",
+        "product": "string",
+        "operator": "string",
+        "fuel type": "string",
+        "distribution channel": "string",
+        "volume": "float",
+        "units": "string",
+        "transport_type": "string",
+        "coordinates": "float",
+        "location": "string"
     },
     "fuel consumption": {
-        [
-            "period",
-            "city",
-            "product",
-            "operator",
-            "fuel type",
-            "final user",
-            "volume",
-            "units",
-            "location"
-        ]
+        "period": "datetime",
+        "city": "string",
+        "product": "string",
+        "operator": "string",
+        "fuel type": "string",
+        "final user": "string",
+        "volume": "float",
+        "units": "string",
+        "location": "string"
     },
     "energy consumption": {
-        [
-            "date",
-            "region",
-            "energy type",
-            "operator",
-            "final users",
-            "units",
-            "location"
-        ]
+        "date": "datetime",
+        "region": "string",
+        "energy type": "string",
+        "operator": "string",
+        "final users": "string",
+        "energy consumed": "float",
+        "units": "string",
+        "location": "string"
     }
 }
