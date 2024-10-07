@@ -11,17 +11,25 @@ scope_mappings = {
     
     "1": [
         "Combustion of fuels",
-        "Consumption of fuels"
+        "Consumption of fuels",
+        "Fuggitive emissions",
+        "Inboundary trips",
+        "Trips within the city boundary",
+        "Waste disposed within the city",
+        "Waste treated biologically within the city",
+        "Waste treated within the city",
     ],
     "2": [
         "Grid-supplied energy like electricity, heat, cold and steam",
+        "Grid energy consumed",
         "Energy consumption"
     ],
     "3": [
         "Transmission and distribution losses from purchased electricity",
         "Transmission and distribution losses from grid-supplied energy",
         "Transboundary journeys",
-        "waste disposed outside the city",
-        "waste treated biologically outside the city"
+        "Waste disposed outside the city",
+        "Waste treated biologically outside the city",
+        "Waste treated outside the city"
     ],
 }
