@@ -42,6 +42,8 @@ def create_agent(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
         </code>
     - Do not just use df.head() to make assumptions over the content of the entire dataframe.
     """,
+        suffix="",
+        include_df_in_prompt=False,
         allow_dangerous_code=True,
     )
 
