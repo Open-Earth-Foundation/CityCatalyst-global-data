@@ -20,6 +20,20 @@ I.1.1,Population,313.0,75%,762.7039417279424,Spearman,0.5973614405163958,Moderat
 I.1.1,Area,313.0,75%,4680464.686503246,Pearson,0.10263464136247995,Very Weak Correlation
 I.1.1,Area,313.0,75%,4680464.686503246,Spearman,0.31199155002010054,Weak Correlation
 I.1.1,emissions,313.0,75%,1512901766.6666663,,,
+I.1.1,GDP,313.0,IQR,0.01008544207426089,Pearson,0.37719912322756205,Weak Correlation
+I.1.1,GDP,313.0,IQR,0.01008544207426089,Spearman,0.39922510615940776,Weak Correlation
+I.1.1,Population,313.0,IQR,642.420669992226,Pearson,0.5248894075625674,Moderate Correlation
+I.1.1,Population,313.0,IQR,642.420669992226,Spearman,0.5973614405163958,Moderate Correlation
+I.1.1,Area,313.0,IQR,4122976.709223515,Pearson,0.10263464136247995,Very Weak Correlation
+I.1.1,Area,313.0,IQR,4122976.709223515,Spearman,0.31199155002010054,Weak Correlation
+I.1.1,emissions,313.0,IQR,1290941829.3303208,,,
+I.1.1,emissions,313.0,lower_bound,-1714452806.6591358,,,
+I.1.1,Area,313.0,lower_bound,-5626977.086555541,Pearson,0.10263464136247995,Very Weak Correlation
+I.1.1,Area,313.0,lower_bound,-5626977.086555541,Spearman,0.31199155002010054,Weak Correlation
+I.1.1,Population,313.0,lower_bound,-843.3477332526224,Pearson,0.5248894075625674,Moderate Correlation
+I.1.1,Population,313.0,lower_bound,-843.3477332526224,Spearman,0.5973614405163958,Moderate Correlation
+I.1.1,GDP,313.0,lower_bound,-0.011515392673041953,Pearson,0.37719912322756205,Weak Correlation
+I.1.1,GDP,313.0,lower_bound,-0.011515392673041953,Spearman,0.39922510615940776,Weak Correlation
 I.1.1,GDP,313.0,max,1.6744116555691038,Pearson,0.37719912322756205,Weak Correlation
 I.1.1,GDP,313.0,max,1.6744116555691038,Spearman,0.39922510615940776,Weak Correlation
 I.1.1,Population,313.0,max,2057.6740166627046,Pearson,0.5248894075625674,Moderate Correlation
@@ -48,6 +62,13 @@ I.1.1,Population,313.0,std,432.28662711142294,Spearman,0.5973614405163958,Modera
 I.1.1,Area,313.0,std,3817999.9477137057,Pearson,0.10263464136247995,Very Weak Correlation
 I.1.1,Area,313.0,std,3817999.9477137057,Spearman,0.31199155002010054,Weak Correlation
 I.1.1,emissions,313.0,std,1975743123.2504685,,,
+I.1.1,GDP,313.0,upper_bound,0.028826375624001612,Pearson,0.37719912322756205,Weak Correlation
+I.1.1,GDP,313.0,upper_bound,0.028826375624001612,Spearman,0.39922510615940776,Weak Correlation
+I.1.1,Population,313.0,upper_bound,1726.3349467162811,Pearson,0.5248894075625674,Moderate Correlation
+I.1.1,Population,313.0,upper_bound,1726.3349467162811,Spearman,0.5973614405163958,Moderate Correlation
+I.1.1,Area,313.0,upper_bound,10864929.750338519,Pearson,0.10263464136247995,Very Weak Correlation
+I.1.1,Area,313.0,upper_bound,10864929.750338519,Spearman,0.31199155002010054,Weak Correlation
+I.1.1,emissions,313.0,upper_bound,3449314510.6621475,,,
 I.1.2,GDP,311.0,25%,0.0036742643758711216,Pearson,0.31489766256006774,Weak Correlation
 I.1.2,GDP,311.0,25%,0.0036742643758711216,Spearman,0.2548880057295546,Very Weak Correlation
 I.1.2,Population,311.0,25%,125.4510040572874,Pearson,0.5216116400430909,Moderate Correlation
@@ -69,6 +90,20 @@ I.1.2,Population,311.0,75%,882.0042595038642,Spearman,0.630753761120495,Moderate
 I.1.2,Area,311.0,75%,5088569.155223453,Pearson,0.3206655426356173,Weak Correlation
 I.1.2,Area,311.0,75%,5088569.155223453,Spearman,0.5320009103368358,Moderate Correlation
 I.1.2,emissions,311.0,75%,1718802095.092242,,,
+I.1.2,GDP,311.0,IQR,0.017494584267703502,Pearson,0.31489766256006774,Weak Correlation
+I.1.2,GDP,311.0,IQR,0.017494584267703502,Spearman,0.2548880057295546,Very Weak Correlation
+I.1.2,Population,311.0,IQR,756.5532554465768,Pearson,0.5216116400430909,Moderate Correlation
+I.1.2,Population,311.0,IQR,756.5532554465768,Spearman,0.630753761120495,Moderate Correlation
+I.1.2,Area,311.0,IQR,4565454.041018707,Pearson,0.3206655426356173,Weak Correlation
+I.1.2,Area,311.0,IQR,4565454.041018707,Spearman,0.5320009103368358,Moderate Correlation
+I.1.2,emissions,311.0,IQR,1381709002.218726,,,
+I.1.2,emissions,311.0,lower_bound,-1735470410.4545727,,,
+I.1.2,Area,311.0,lower_bound,-6325065.947323314,Pearson,0.3206655426356173,Weak Correlation
+I.1.2,Area,311.0,lower_bound,-6325065.947323314,Spearman,0.5320009103368358,Moderate Correlation
+I.1.2,Population,311.0,lower_bound,-1009.3788791125779,Pearson,0.5216116400430909,Moderate Correlation
+I.1.2,Population,311.0,lower_bound,-1009.3788791125779,Spearman,0.630753761120495,Moderate Correlation
+I.1.2,GDP,311.0,lower_bound,-0.02256761202568413,Pearson,0.31489766256006774,Weak Correlation
+I.1.2,GDP,311.0,lower_bound,-0.02256761202568413,Spearman,0.2548880057295546,Very Weak Correlation
 I.1.2,GDP,311.0,max,0.5382035732449694,Pearson,0.31489766256006774,Weak Correlation
 I.1.2,GDP,311.0,max,0.5382035732449694,Spearman,0.2548880057295546,Very Weak Correlation
 I.1.2,Population,311.0,max,3516.5033006112767,Pearson,0.5216116400430909,Moderate Correlation
@@ -97,6 +132,13 @@ I.1.2,Population,311.0,std,602.3682072459526,Spearman,0.630753761120495,Moderate
 I.1.2,Area,311.0,std,4538569.093148654,Pearson,0.3206655426356173,Weak Correlation
 I.1.2,Area,311.0,std,4538569.093148654,Spearman,0.5320009103368358,Moderate Correlation
 I.1.2,emissions,311.0,std,2310396879.526945,,,
+I.1.2,GDP,311.0,upper_bound,0.04741072504512987,Pearson,0.31489766256006774,Weak Correlation
+I.1.2,GDP,311.0,upper_bound,0.04741072504512987,Spearman,0.2548880057295546,Very Weak Correlation
+I.1.2,Population,311.0,upper_bound,2016.8341426737295,Pearson,0.5216116400430909,Moderate Correlation
+I.1.2,Population,311.0,upper_bound,2016.8341426737295,Spearman,0.630753761120495,Moderate Correlation
+I.1.2,Area,311.0,upper_bound,11936750.216751514,Pearson,0.3206655426356173,Weak Correlation
+I.1.2,Area,311.0,upper_bound,11936750.216751514,Spearman,0.5320009103368358,Moderate Correlation
+I.1.2,emissions,311.0,upper_bound,3791365598.420331,,,
 I.1.3,GDP,161.0,25%,0.00038575990299225877,Pearson,0.2432394791065418,Very Weak Correlation
 I.1.3,GDP,161.0,25%,0.00038575990299225877,Spearman,0.08580957268949543,Negligible or No Correlation
 I.1.3,Population,161.0,25%,19.629975275872987,Pearson,0.45859915057722467,Weak Correlation
@@ -118,6 +160,20 @@ I.1.3,Population,161.0,75%,82.32451726380341,Spearman,0.6857884788737781,Moderat
 I.1.3,Area,161.0,75%,537290.0674107142,Pearson,0.1670589524472404,Very Weak Correlation
 I.1.3,Area,161.0,75%,537290.0674107142,Spearman,0.34688899897317776,Weak Correlation
 I.1.3,emissions,161.0,75%,235212015.59534812,,,
+I.1.3,GDP,161.0,IQR,0.0033529346926280384,Pearson,0.2432394791065418,Very Weak Correlation
+I.1.3,GDP,161.0,IQR,0.0033529346926280384,Spearman,0.08580957268949543,Negligible or No Correlation
+I.1.3,Population,161.0,IQR,62.69454198793043,Pearson,0.45859915057722467,Weak Correlation
+I.1.3,Population,161.0,IQR,62.69454198793043,Spearman,0.6857884788737781,Moderate Correlation
+I.1.3,Area,161.0,IQR,470182.9808435552,Pearson,0.1670589524472404,Very Weak Correlation
+I.1.3,Area,161.0,IQR,470182.9808435552,Spearman,0.34688899897317776,Weak Correlation
+I.1.3,emissions,161.0,IQR,205761649.38069677,,,
+I.1.3,emissions,161.0,lower_bound,-279192107.8563938,,,
+I.1.3,Area,161.0,lower_bound,-638167.3846981737,Pearson,0.1670589524472404,Very Weak Correlation
+I.1.3,Area,161.0,lower_bound,-638167.3846981737,Spearman,0.34688899897317776,Weak Correlation
+I.1.3,Population,161.0,lower_bound,-74.41183770602265,Pearson,0.45859915057722467,Weak Correlation
+I.1.3,Population,161.0,lower_bound,-74.41183770602265,Spearman,0.6857884788737781,Moderate Correlation
+I.1.3,GDP,161.0,lower_bound,-0.004643642135949799,Pearson,0.2432394791065418,Very Weak Correlation
+I.1.3,GDP,161.0,lower_bound,-0.004643642135949799,Spearman,0.08580957268949543,Negligible or No Correlation
 I.1.3,GDP,161.0,max,0.08489496170089958,Pearson,0.2432394791065418,Very Weak Correlation
 I.1.3,GDP,161.0,max,0.08489496170089958,Spearman,0.08580957268949543,Negligible or No Correlation
 I.1.3,Population,161.0,max,315.94614474657646,Pearson,0.45859915057722467,Weak Correlation
@@ -146,6 +202,13 @@ I.1.3,Population,161.0,std,50.27208753129121,Spearman,0.6857884788737781,Moderat
 I.1.3,Area,161.0,std,693623.3877962307,Pearson,0.1670589524472404,Very Weak Correlation
 I.1.3,Area,161.0,std,693623.3877962307,Spearman,0.34688899897317776,Weak Correlation
 I.1.3,emissions,161.0,std,152236092.91648966,,,
+I.1.3,GDP,161.0,upper_bound,0.008768096634562355,Pearson,0.2432394791065418,Very Weak Correlation
+I.1.3,GDP,161.0,upper_bound,0.008768096634562355,Spearman,0.08580957268949543,Negligible or No Correlation
+I.1.3,Population,161.0,upper_bound,176.36633024569906,Pearson,0.45859915057722467,Weak Correlation
+I.1.3,Population,161.0,upper_bound,176.36633024569906,Spearman,0.6857884788737781,Moderate Correlation
+I.1.3,Area,161.0,upper_bound,1242564.538676047,Pearson,0.1670589524472404,Very Weak Correlation
+I.1.3,Area,161.0,upper_bound,1242564.538676047,Spearman,0.34688899897317776,Weak Correlation
+I.1.3,emissions,161.0,upper_bound,543854489.6663933,,,
 I.2.1,GDP,309.0,25%,0.002108154090966404,Pearson,0.3613888518134596,Weak Correlation
 I.2.1,GDP,309.0,25%,0.002108154090966404,Spearman,0.48451672372746407,Weak Correlation
 I.2.1,Population,309.0,25%,57.065520946104975,Pearson,0.22289486218692883,Very Weak Correlation
@@ -167,6 +230,20 @@ I.2.1,Population,309.0,75%,688.0293252143979,Spearman,0.222380849539989,Very Wea
 I.2.1,Area,309.0,75%,4029571.70112004,Pearson,-0.09306268511614237,Negligible or No Correlation
 I.2.1,Area,309.0,75%,4029571.70112004,Spearman,0.09438887383870495,Negligible or No Correlation
 I.2.1,emissions,309.0,75%,941821966.9560001,,,
+I.2.1,GDP,309.0,IQR,0.009057209133091217,Pearson,0.3613888518134596,Weak Correlation
+I.2.1,GDP,309.0,IQR,0.009057209133091217,Spearman,0.48451672372746407,Weak Correlation
+I.2.1,Population,309.0,IQR,630.963804268293,Pearson,0.22289486218692883,Very Weak Correlation
+I.2.1,Population,309.0,IQR,630.963804268293,Spearman,0.222380849539989,Very Weak Correlation
+I.2.1,Area,309.0,IQR,3780452.1998807164,Pearson,-0.09306268511614237,Negligible or No Correlation
+I.2.1,Area,309.0,IQR,3780452.1998807164,Spearman,0.09438887383870495,Negligible or No Correlation
+I.2.1,emissions,309.0,IQR,796066144.5271716,,,
+I.2.1,emissions,309.0,lower_bound,-1048343394.3619289,,,
+I.2.1,Area,309.0,lower_bound,-5421558.798581752,Pearson,-0.09306268511614237,Negligible or No Correlation
+I.2.1,Area,309.0,lower_bound,-5421558.798581752,Spearman,0.09438887383870495,Negligible or No Correlation
+I.2.1,Population,309.0,lower_bound,-889.3801854563345,Pearson,0.22289486218692883,Very Weak Correlation
+I.2.1,Population,309.0,lower_bound,-889.3801854563345,Spearman,0.222380849539989,Very Weak Correlation
+I.2.1,GDP,309.0,lower_bound,-0.011477659608670423,Pearson,0.3613888518134596,Weak Correlation
+I.2.1,GDP,309.0,lower_bound,-0.011477659608670423,Spearman,0.48451672372746407,Weak Correlation
 I.2.1,GDP,309.0,max,0.5538187051687388,Pearson,0.3613888518134596,Weak Correlation
 I.2.1,GDP,309.0,max,0.5538187051687388,Spearman,0.48451672372746407,Weak Correlation
 I.2.1,Population,309.0,max,2881.9962867548184,Pearson,0.22289486218692883,Very Weak Correlation
@@ -195,6 +272,13 @@ I.2.1,Population,309.0,std,572.3456884597593,Spearman,0.222380849539989,Very Wea
 I.2.1,Area,309.0,std,3367997.004016746,Pearson,-0.09306268511614237,Negligible or No Correlation
 I.2.1,Area,309.0,std,3367997.004016746,Spearman,0.09438887383870495,Negligible or No Correlation
 I.2.1,emissions,309.0,std,1086737818.7640674,,,
+I.2.1,GDP,309.0,upper_bound,0.024751176923694447,Pearson,0.3613888518134596,Weak Correlation
+I.2.1,GDP,309.0,upper_bound,0.024751176923694447,Spearman,0.48451672372746407,Weak Correlation
+I.2.1,Population,309.0,upper_bound,1634.4750316168374,Pearson,0.22289486218692883,Very Weak Correlation
+I.2.1,Population,309.0,upper_bound,1634.4750316168374,Spearman,0.222380849539989,Very Weak Correlation
+I.2.1,Area,309.0,upper_bound,9700250.000941115,Pearson,-0.09306268511614237,Negligible or No Correlation
+I.2.1,Area,309.0,upper_bound,9700250.000941115,Spearman,0.09438887383870495,Negligible or No Correlation
+I.2.1,emissions,309.0,upper_bound,2135921183.7467575,,,
 I.2.2,GDP,313.0,25%,0.005477520310192024,Pearson,0.3247914081378931,Weak Correlation
 I.2.2,GDP,313.0,25%,0.005477520310192024,Spearman,0.37907160674895957,Weak Correlation
 I.2.2,Population,313.0,25%,172.72738842144702,Pearson,0.32975234887296156,Weak Correlation
@@ -216,6 +300,20 @@ I.2.2,Population,313.0,75%,1637.5342137246078,Spearman,0.2582116099246478,Very W
 I.2.2,Area,313.0,75%,9492314.750531921,Pearson,0.10100887684920615,Very Weak Correlation
 I.2.2,Area,313.0,75%,9492314.750531921,Spearman,0.15653247742555743,Very Weak Correlation
 I.2.2,emissions,313.0,75%,2817642415.123436,,,
+I.2.2,GDP,313.0,IQR,0.0307497521000654,Pearson,0.3247914081378931,Weak Correlation
+I.2.2,GDP,313.0,IQR,0.0307497521000654,Spearman,0.37907160674895957,Weak Correlation
+I.2.2,Population,313.0,IQR,1464.8068253031606,Pearson,0.32975234887296156,Weak Correlation
+I.2.2,Population,313.0,IQR,1464.8068253031606,Spearman,0.2582116099246478,Very Weak Correlation
+I.2.2,Area,313.0,IQR,8817094.98530336,Pearson,0.10100887684920615,Very Weak Correlation
+I.2.2,Area,313.0,IQR,8817094.98530336,Spearman,0.15653247742555743,Very Weak Correlation
+I.2.2,emissions,313.0,IQR,2370248074.513563,,,
+I.2.2,emissions,313.0,lower_bound,-3107977771.160472,,,
+I.2.2,Area,313.0,lower_bound,-12550422.712726478,Pearson,0.10100887684920615,Very Weak Correlation
+I.2.2,Area,313.0,lower_bound,-12550422.712726478,Spearman,0.15653247742555743,Very Weak Correlation
+I.2.2,Population,313.0,lower_bound,-2024.482849533294,Pearson,0.32975234887296156,Weak Correlation
+I.2.2,Population,313.0,lower_bound,-2024.482849533294,Spearman,0.2582116099246478,Very Weak Correlation
+I.2.2,GDP,313.0,lower_bound,-0.04064710783990608,Pearson,0.3247914081378931,Weak Correlation
+I.2.2,GDP,313.0,lower_bound,-0.04064710783990608,Spearman,0.37907160674895957,Weak Correlation
 I.2.2,GDP,313.0,max,0.8152068720988698,Pearson,0.3247914081378931,Weak Correlation
 I.2.2,GDP,313.0,max,0.8152068720988698,Spearman,0.37907160674895957,Weak Correlation
 I.2.2,Population,313.0,max,24083.33809402022,Pearson,0.32975234887296156,Weak Correlation
@@ -244,6 +342,13 @@ I.2.2,Population,313.0,std,4012.5266080542046,Spearman,0.2582116099246478,Very W
 I.2.2,Area,313.0,std,24105780.538037647,Pearson,0.10100887684920615,Very Weak Correlation
 I.2.2,Area,313.0,std,24105780.538037647,Spearman,0.15653247742555743,Very Weak Correlation
 I.2.2,emissions,313.0,std,4079681289.37346,,,
+I.2.2,GDP,313.0,upper_bound,0.08235190056035552,Pearson,0.3247914081378931,Weak Correlation
+I.2.2,GDP,313.0,upper_bound,0.08235190056035552,Spearman,0.37907160674895957,Weak Correlation
+I.2.2,Population,313.0,upper_bound,3834.7444516793485,Pearson,0.32975234887296156,Weak Correlation
+I.2.2,Population,313.0,upper_bound,3834.7444516793485,Spearman,0.2582116099246478,Very Weak Correlation
+I.2.2,Area,313.0,upper_bound,22717957.228486963,Pearson,0.10100887684920615,Very Weak Correlation
+I.2.2,Area,313.0,upper_bound,22717957.228486963,Spearman,0.15653247742555743,Very Weak Correlation
+I.2.2,emissions,313.0,upper_bound,6373014526.893781,,,
 I.2.3,GDP,161.0,25%,0.0005327179550033488,Pearson,0.28879685428493906,Very Weak Correlation
 I.2.3,GDP,161.0,25%,0.0005327179550033488,Spearman,0.17281398041426185,Very Weak Correlation
 I.2.3,Population,161.0,25%,15.289652176262843,Pearson,0.3434034657685323,Weak Correlation
@@ -265,6 +370,20 @@ I.2.3,Population,161.0,75%,112.38500615405965,Spearman,0.4347965499216178,Weak C
 I.2.3,Area,161.0,75%,989266.7975766659,Pearson,-0.1361912447043196,Very Weak Correlation
 I.2.3,Area,161.0,75%,989266.7975766659,Spearman,0.0166997211705646,Negligible or No Correlation
 I.2.3,emissions,161.0,75%,276634056.2382949,,,
+I.2.3,GDP,161.0,IQR,0.003511809296317533,Pearson,0.28879685428493906,Very Weak Correlation
+I.2.3,GDP,161.0,IQR,0.003511809296317533,Spearman,0.17281398041426185,Very Weak Correlation
+I.2.3,Population,161.0,IQR,97.0953539777968,Pearson,0.3434034657685323,Weak Correlation
+I.2.3,Population,161.0,IQR,97.0953539777968,Spearman,0.4347965499216178,Weak Correlation
+I.2.3,Area,161.0,IQR,916388.6716896687,Pearson,-0.1361912447043196,Very Weak Correlation
+I.2.3,Area,161.0,IQR,916388.6716896687,Spearman,0.0166997211705646,Negligible or No Correlation
+I.2.3,emissions,161.0,IQR,242064126.83237582,,,
+I.2.3,emissions,161.0,lower_bound,-328526260.8426447,,,
+I.2.3,Area,161.0,lower_bound,-1301704.8816475058,Pearson,-0.1361912447043196,Very Weak Correlation
+I.2.3,Area,161.0,lower_bound,-1301704.8816475058,Spearman,0.0166997211705646,Negligible or No Correlation
+I.2.3,Population,161.0,lower_bound,-130.35337879043237,Pearson,0.3434034657685323,Weak Correlation
+I.2.3,Population,161.0,lower_bound,-130.35337879043237,Spearman,0.4347965499216178,Weak Correlation
+I.2.3,GDP,161.0,lower_bound,-0.00473499598947295,Pearson,0.28879685428493906,Very Weak Correlation
+I.2.3,GDP,161.0,lower_bound,-0.00473499598947295,Spearman,0.17281398041426185,Very Weak Correlation
 I.2.3,GDP,161.0,max,0.1287764363802299,Pearson,0.28879685428493906,Very Weak Correlation
 I.2.3,GDP,161.0,max,0.1287764363802299,Spearman,0.17281398041426185,Very Weak Correlation
 I.2.3,Population,161.0,max,2868.867921193518,Pearson,0.3434034657685323,Weak Correlation
@@ -293,6 +412,13 @@ I.2.3,Population,161.0,std,383.1171823897971,Spearman,0.4347965499216178,Weak Co
 I.2.3,Area,161.0,std,1546427.2527191623,Pearson,-0.1361912447043196,Very Weak Correlation
 I.2.3,Area,161.0,std,1546427.2527191623,Spearman,0.0166997211705646,Negligible or No Correlation
 I.2.3,emissions,161.0,std,247658778.30083483,,,
+I.2.3,GDP,161.0,upper_bound,0.009312241195797181,Pearson,0.28879685428493906,Very Weak Correlation
+I.2.3,GDP,161.0,upper_bound,0.009312241195797181,Spearman,0.17281398041426185,Very Weak Correlation
+I.2.3,Population,161.0,upper_bound,258.0280371207549,Pearson,0.3434034657685323,Weak Correlation
+I.2.3,Population,161.0,upper_bound,258.0280371207549,Spearman,0.4347965499216178,Weak Correlation
+I.2.3,Area,161.0,upper_bound,2363849.805111169,Pearson,-0.1361912447043196,Very Weak Correlation
+I.2.3,Area,161.0,upper_bound,2363849.805111169,Spearman,0.0166997211705646,Negligible or No Correlation
+I.2.3,emissions,161.0,upper_bound,639730246.4868586,,,
 I.3.1,GDP,254.0,25%,0.0020379174828958607,Pearson,0.29579678235853946,Very Weak Correlation
 I.3.1,GDP,254.0,25%,0.0020379174828958607,Spearman,0.4141341928332163,Weak Correlation
 I.3.1,Population,254.0,25%,76.43567009554485,Pearson,0.43183150366411527,Weak Correlation
@@ -314,6 +440,20 @@ I.3.1,Population,254.0,75%,502.61907530352437,Spearman,0.5958817700492633,Modera
 I.3.1,Area,254.0,75%,2212952.275816117,Pearson,0.33328867650468946,Weak Correlation
 I.3.1,Area,254.0,75%,2212952.275816117,Spearman,0.553356554989221,Moderate Correlation
 I.3.1,emissions,254.0,75%,1285225786.4373493,,,
+I.3.1,GDP,254.0,IQR,0.017910589827929355,Pearson,0.29579678235853946,Very Weak Correlation
+I.3.1,GDP,254.0,IQR,0.017910589827929355,Spearman,0.4141341928332163,Weak Correlation
+I.3.1,Population,254.0,IQR,426.1834052079795,Pearson,0.43183150366411527,Weak Correlation
+I.3.1,Population,254.0,IQR,426.1834052079795,Spearman,0.5958817700492633,Moderate Correlation
+I.3.1,Area,254.0,IQR,1935867.843404209,Pearson,0.33328867650468946,Weak Correlation
+I.3.1,Area,254.0,IQR,1935867.843404209,Spearman,0.553356554989221,Moderate Correlation
+I.3.1,emissions,254.0,IQR,1101794080.96787,,,
+I.3.1,emissions,254.0,lower_bound,-1469259415.9823258,,,
+I.3.1,Area,254.0,lower_bound,-2626717.3326944057,Pearson,0.33328867650468946,Weak Correlation
+I.3.1,Area,254.0,lower_bound,-2626717.3326944057,Spearman,0.553356554989221,Moderate Correlation
+I.3.1,Population,254.0,lower_bound,-562.8394377164244,Pearson,0.43183150366411527,Weak Correlation
+I.3.1,Population,254.0,lower_bound,-562.8394377164244,Spearman,0.5958817700492633,Moderate Correlation
+I.3.1,GDP,254.0,lower_bound,-0.02482796725899817,Pearson,0.29579678235853946,Very Weak Correlation
+I.3.1,GDP,254.0,lower_bound,-0.02482796725899817,Spearman,0.4141341928332163,Weak Correlation
 I.3.1,GDP,254.0,max,0.38816756980644734,Pearson,0.29579678235853946,Very Weak Correlation
 I.3.1,GDP,254.0,max,0.38816756980644734,Spearman,0.4141341928332163,Weak Correlation
 I.3.1,Population,254.0,max,5522.034755467579,Pearson,0.43183150366411527,Weak Correlation
@@ -342,6 +482,13 @@ I.3.1,Population,254.0,std,508.2696153893233,Spearman,0.5958817700492633,Moderat
 I.3.1,Area,254.0,std,10293406.98558633,Pearson,0.33328867650468946,Weak Correlation
 I.3.1,Area,254.0,std,10293406.98558633,Spearman,0.553356554989221,Moderate Correlation
 I.3.1,emissions,254.0,std,1364592463.4901662,,,
+I.3.1,GDP,254.0,upper_bound,0.04681439205271924,Pearson,0.29579678235853946,Very Weak Correlation
+I.3.1,GDP,254.0,upper_bound,0.04681439205271924,Spearman,0.4141341928332163,Weak Correlation
+I.3.1,Population,254.0,upper_bound,1141.8941831154937,Pearson,0.43183150366411527,Weak Correlation
+I.3.1,Population,254.0,upper_bound,1141.8941831154937,Spearman,0.5958817700492633,Moderate Correlation
+I.3.1,Area,254.0,upper_bound,5116754.04092243,Pearson,0.33328867650468946,Weak Correlation
+I.3.1,Area,254.0,upper_bound,5116754.04092243,Spearman,0.553356554989221,Moderate Correlation
+I.3.1,emissions,254.0,upper_bound,2937916907.8891544,,,
 I.3.2,GDP,250.0,25%,0.0009839706471620967,Pearson,0.25373572492028285,Very Weak Correlation
 I.3.2,GDP,250.0,25%,0.0009839706471620967,Spearman,0.23085267913585159,Very Weak Correlation
 I.3.2,Population,250.0,25%,36.38288189091763,Pearson,0.5162368936702639,Moderate Correlation
@@ -363,6 +510,20 @@ I.3.2,Population,250.0,75%,287.1901662767711,Spearman,0.6124482593488239,Moderat
 I.3.2,Area,250.0,75%,1154002.7743622998,Pearson,0.46545285930708047,Weak Correlation
 I.3.2,Area,250.0,75%,1154002.7743622998,Spearman,0.6412066360746838,Moderate Correlation
 I.3.2,emissions,250.0,75%,938992175.1196196,,,
+I.3.2,GDP,250.0,IQR,0.013785346159054617,Pearson,0.25373572492028285,Very Weak Correlation
+I.3.2,GDP,250.0,IQR,0.013785346159054617,Spearman,0.23085267913585159,Very Weak Correlation
+I.3.2,Population,250.0,IQR,250.80728438585345,Pearson,0.5162368936702639,Moderate Correlation
+I.3.2,Population,250.0,IQR,250.80728438585345,Spearman,0.6124482593488239,Moderate Correlation
+I.3.2,Area,250.0,IQR,987873.7591563016,Pearson,0.46545285930708047,Weak Correlation
+I.3.2,Area,250.0,IQR,987873.7591563016,Spearman,0.6412066360746838,Moderate Correlation
+I.3.2,emissions,250.0,IQR,859904186.2113861,,,
+I.3.2,emissions,250.0,lower_bound,-1210768290.4088454,,,
+I.3.2,Area,250.0,lower_bound,-1315681.6235284542,Pearson,0.46545285930708047,Weak Correlation
+I.3.2,Area,250.0,lower_bound,-1315681.6235284542,Spearman,0.6412066360746838,Moderate Correlation
+I.3.2,Population,250.0,lower_bound,-339.82804468786253,Pearson,0.5162368936702639,Moderate Correlation
+I.3.2,Population,250.0,lower_bound,-339.82804468786253,Spearman,0.6124482593488239,Moderate Correlation
+I.3.2,GDP,250.0,lower_bound,-0.01969404859141983,Pearson,0.25373572492028285,Very Weak Correlation
+I.3.2,GDP,250.0,lower_bound,-0.01969404859141983,Spearman,0.23085267913585159,Very Weak Correlation
 I.3.2,GDP,250.0,max,0.2393443361269686,Pearson,0.25373572492028285,Very Weak Correlation
 I.3.2,GDP,250.0,max,0.2393443361269686,Spearman,0.23085267913585159,Very Weak Correlation
 I.3.2,Population,250.0,max,3696.5560848069267,Pearson,0.5162368936702639,Moderate Correlation
@@ -391,6 +552,13 @@ I.3.2,Population,250.0,std,479.3712352731196,Spearman,0.6124482593488239,Moderat
 I.3.2,Area,250.0,std,4044564.636193006,Pearson,0.46545285930708047,Weak Correlation
 I.3.2,Area,250.0,std,4044564.636193006,Spearman,0.6412066360746838,Moderate Correlation
 I.3.2,emissions,250.0,std,1301304254.4085047,,,
+I.3.2,GDP,250.0,upper_bound,0.03544733604479864,Pearson,0.25373572492028285,Very Weak Correlation
+I.3.2,GDP,250.0,upper_bound,0.03544733604479864,Spearman,0.23085267913585159,Very Weak Correlation
+I.3.2,Population,250.0,upper_bound,663.4010928555513,Pearson,0.5162368936702639,Moderate Correlation
+I.3.2,Population,250.0,upper_bound,663.4010928555513,Spearman,0.6124482593488239,Moderate Correlation
+I.3.2,Area,250.0,upper_bound,2635813.413096752,Pearson,0.46545285930708047,Weak Correlation
+I.3.2,Area,250.0,upper_bound,2635813.413096752,Spearman,0.6412066360746838,Moderate Correlation
+I.3.2,emissions,250.0,upper_bound,2228848454.436699,,,
 I.3.3,GDP,128.0,25%,0.0001153735825449935,Pearson,0.18401132403536086,Very Weak Correlation
 I.3.3,GDP,128.0,25%,0.0001153735825449935,Spearman,0.02645087823454447,Negligible or No Correlation
 I.3.3,Population,128.0,25%,4.615958236379014,Pearson,0.4259835992178981,Weak Correlation
@@ -412,6 +580,20 @@ I.3.3,Population,128.0,75%,20.344234849780385,Spearman,0.6737049060476891,Modera
 I.3.3,Area,128.0,75%,172615.9361165138,Pearson,0.4024070168312496,Weak Correlation
 I.3.3,Area,128.0,75%,172615.9361165138,Spearman,0.5222162706133969,Moderate Correlation
 I.3.3,emissions,128.0,75%,54780951.09206304,,,
+I.3.3,GDP,128.0,IQR,0.0023010835393367586,Pearson,0.18401132403536086,Very Weak Correlation
+I.3.3,GDP,128.0,IQR,0.0023010835393367586,Spearman,0.02645087823454447,Negligible or No Correlation
+I.3.3,Population,128.0,IQR,15.72827661340137,Pearson,0.4259835992178981,Weak Correlation
+I.3.3,Population,128.0,IQR,15.72827661340137,Spearman,0.6737049060476891,Moderate Correlation
+I.3.3,Area,128.0,IQR,160397.17994649496,Pearson,0.4024070168312496,Weak Correlation
+I.3.3,Area,128.0,IQR,160397.17994649496,Spearman,0.5222162706133969,Moderate Correlation
+I.3.3,emissions,128.0,IQR,48646246.09034628,,,
+I.3.3,emissions,128.0,lower_bound,-66834664.13380265,,,
+I.3.3,Area,128.0,lower_bound,-228377.01374972358,Pearson,0.4024070168312496,Weak Correlation
+I.3.3,Area,128.0,lower_bound,-228377.01374972358,Spearman,0.5222162706133969,Moderate Correlation
+I.3.3,Population,128.0,lower_bound,-18.97645668372304,Pearson,0.4259835992178981,Weak Correlation
+I.3.3,Population,128.0,lower_bound,-18.97645668372304,Spearman,0.6737049060476891,Moderate Correlation
+I.3.3,GDP,128.0,lower_bound,-0.003336251726460145,Pearson,0.18401132403536086,Very Weak Correlation
+I.3.3,GDP,128.0,lower_bound,-0.003336251726460145,Spearman,0.02645087823454447,Negligible or No Correlation
 I.3.3,GDP,128.0,max,0.022915947075986348,Pearson,0.18401132403536086,Very Weak Correlation
 I.3.3,GDP,128.0,max,0.022915947075986348,Spearman,0.02645087823454447,Negligible or No Correlation
 I.3.3,Population,128.0,max,521.9532915075031,Pearson,0.4259835992178981,Weak Correlation
@@ -440,6 +622,13 @@ I.3.3,Population,128.0,std,67.0386664813675,Spearman,0.6737049060476891,Moderate
 I.3.3,Area,128.0,std,225633.66001778326,Pearson,0.4024070168312496,Weak Correlation
 I.3.3,Area,128.0,std,225633.66001778326,Spearman,0.5222162706133969,Moderate Correlation
 I.3.3,emissions,128.0,std,124424336.1274924,,,
+I.3.3,GDP,128.0,upper_bound,0.0058680824308868906,Pearson,0.18401132403536086,Very Weak Correlation
+I.3.3,GDP,128.0,upper_bound,0.0058680824308868906,Spearman,0.02645087823454447,Negligible or No Correlation
+I.3.3,Population,128.0,upper_bound,43.936649769882436,Pearson,0.4259835992178981,Weak Correlation
+I.3.3,Population,128.0,upper_bound,43.936649769882436,Spearman,0.6737049060476891,Moderate Correlation
+I.3.3,Area,128.0,upper_bound,413211.7060362562,Pearson,0.4024070168312496,Weak Correlation
+I.3.3,Area,128.0,upper_bound,413211.7060362562,Spearman,0.5222162706133969,Moderate Correlation
+I.3.3,emissions,128.0,upper_bound,127750320.22758245,,,
 I.4.1,GDP,84.0,25%,0.0001574148125812468,Pearson,0.048018808269198444,Negligible or No Correlation
 I.4.1,GDP,84.0,25%,0.0001574148125812468,Spearman,0.04454322720665117,Negligible or No Correlation
 I.4.1,Population,84.0,25%,2.9297308821423744,Pearson,0.09217918491040289,Negligible or No Correlation
@@ -461,6 +650,20 @@ I.4.1,Population,84.0,75%,453.0534910041388,Spearman,0.215293492361474,Very Weak
 I.4.1,Area,84.0,75%,1123608.6776859504,Pearson,0.03048657625100595,Negligible or No Correlation
 I.4.1,Area,84.0,75%,1123608.6776859504,Spearman,0.05128472211929339,Negligible or No Correlation
 I.4.1,emissions,84.0,75%,928662947.5241927,,,
+I.4.1,GDP,84.0,IQR,0.0066576551528839,Pearson,0.048018808269198444,Negligible or No Correlation
+I.4.1,GDP,84.0,IQR,0.0066576551528839,Spearman,0.04454322720665117,Negligible or No Correlation
+I.4.1,Population,84.0,IQR,450.1237601219964,Pearson,0.09217918491040289,Negligible or No Correlation
+I.4.1,Population,84.0,IQR,450.1237601219964,Spearman,0.215293492361474,Very Weak Correlation
+I.4.1,Area,84.0,IQR,1108512.6497744755,Pearson,0.03048657625100595,Negligible or No Correlation
+I.4.1,Area,84.0,IQR,1108512.6497744755,Spearman,0.05128472211929339,Negligible or No Correlation
+I.4.1,emissions,84.0,IQR,909761369.4936005,,,
+I.4.1,emissions,84.0,lower_bound,-1345740476.2098086,,,
+I.4.1,Area,84.0,lower_bound,-1647672.9467502383,Pearson,0.03048657625100595,Negligible or No Correlation
+I.4.1,Area,84.0,lower_bound,-1647672.9467502383,Spearman,0.05128472211929339,Negligible or No Correlation
+I.4.1,Population,84.0,lower_bound,-672.2559093008522,Pearson,0.09217918491040289,Negligible or No Correlation
+I.4.1,Population,84.0,lower_bound,-672.2559093008522,Spearman,0.215293492361474,Very Weak Correlation
+I.4.1,GDP,84.0,lower_bound,-0.009829067916744604,Pearson,0.048018808269198444,Negligible or No Correlation
+I.4.1,GDP,84.0,lower_bound,-0.009829067916744604,Spearman,0.04454322720665117,Negligible or No Correlation
 I.4.1,GDP,84.0,max,0.46770671016112264,Pearson,0.048018808269198444,Negligible or No Correlation
 I.4.1,GDP,84.0,max,0.46770671016112264,Spearman,0.04454322720665117,Negligible or No Correlation
 I.4.1,Population,84.0,max,15154.55044693136,Pearson,0.09217918491040289,Negligible or No Correlation
@@ -489,6 +692,13 @@ I.4.1,Population,84.0,std,1729.1507884194318,Spearman,0.215293492361474,Very Wea
 I.4.1,Area,84.0,std,48920066.257912226,Pearson,0.03048657625100595,Negligible or No Correlation
 I.4.1,Area,84.0,std,48920066.257912226,Spearman,0.05128472211929339,Negligible or No Correlation
 I.4.1,emissions,84.0,std,1515497907.3228335,,,
+I.4.1,GDP,84.0,upper_bound,0.016801552694791,Pearson,0.048018808269198444,Negligible or No Correlation
+I.4.1,GDP,84.0,upper_bound,0.016801552694791,Spearman,0.04454322720665117,Negligible or No Correlation
+I.4.1,Population,84.0,upper_bound,1128.2391311871334,Pearson,0.09217918491040289,Negligible or No Correlation
+I.4.1,Population,84.0,upper_bound,1128.2391311871334,Spearman,0.215293492361474,Very Weak Correlation
+I.4.1,Area,84.0,upper_bound,2786377.6523476634,Pearson,0.03048657625100595,Negligible or No Correlation
+I.4.1,Area,84.0,upper_bound,2786377.6523476634,Spearman,0.05128472211929339,Negligible or No Correlation
+I.4.1,emissions,84.0,upper_bound,2293305001.7645936,,,
 I.4.2,GDP,47.0,25%,4.617854800504255e-06,Pearson,0.4169229664683758,Weak Correlation
 I.4.2,GDP,47.0,25%,4.617854800504255e-06,Spearman,0.26585718460167423,Very Weak Correlation
 I.4.2,Population,47.0,25%,0.1795049279140658,Pearson,0.09665713615659371,Negligible or No Correlation
@@ -510,6 +720,20 @@ I.4.2,Population,47.0,75%,4.34640820451135,Spearman,0.010060711205022032,Negligi
 I.4.2,Area,47.0,75%,62027.03634363436,Pearson,-0.04149495825818807,Negligible or No Correlation
 I.4.2,Area,47.0,75%,62027.03634363436,Spearman,-0.11852734415356533,Very Weak Correlation
 I.4.2,emissions,47.0,75%,8235299.972962346,,,
+I.4.2,GDP,47.0,IQR,6.699542396065272e-05,Pearson,0.4169229664683758,Weak Correlation
+I.4.2,GDP,47.0,IQR,6.699542396065272e-05,Spearman,0.26585718460167423,Very Weak Correlation
+I.4.2,Population,47.0,IQR,4.166903276597284,Pearson,0.09665713615659371,Negligible or No Correlation
+I.4.2,Population,47.0,IQR,4.166903276597284,Spearman,0.010060711205022032,Negligible or No Correlation
+I.4.2,Area,47.0,IQR,61151.58239451448,Pearson,-0.04149495825818807,Negligible or No Correlation
+I.4.2,Area,47.0,IQR,61151.58239451448,Spearman,-0.11852734415356533,Very Weak Correlation
+I.4.2,emissions,47.0,IQR,7671275.226227146,,,
+I.4.2,emissions,47.0,lower_bound,-10942888.092605518,,,
+I.4.2,Area,47.0,lower_bound,-90851.91964265185,Pearson,-0.04149495825818807,Negligible or No Correlation
+I.4.2,Area,47.0,lower_bound,-90851.91964265185,Spearman,-0.11852734415356533,Very Weak Correlation
+I.4.2,Population,47.0,lower_bound,-6.07084998698186,Pearson,0.09665713615659371,Negligible or No Correlation
+I.4.2,Population,47.0,lower_bound,-6.07084998698186,Spearman,0.010060711205022032,Negligible or No Correlation
+I.4.2,GDP,47.0,lower_bound,-9.587528114047483e-05,Pearson,0.4169229664683758,Weak Correlation
+I.4.2,GDP,47.0,lower_bound,-9.587528114047483e-05,Spearman,0.26585718460167423,Very Weak Correlation
 I.4.2,GDP,47.0,max,0.0056764027917956626,Pearson,0.4169229664683758,Weak Correlation
 I.4.2,GDP,47.0,max,0.0056764027917956626,Spearman,0.26585718460167423,Very Weak Correlation
 I.4.2,Population,47.0,max,260.7232653310187,Pearson,0.09665713615659371,Negligible or No Correlation
@@ -538,6 +762,13 @@ I.4.2,Population,47.0,std,41.430122829444265,Spearman,0.010060711205022032,Negli
 I.4.2,Area,47.0,std,521002.1743539307,Pearson,-0.04149495825818807,Negligible or No Correlation
 I.4.2,Area,47.0,std,521002.1743539307,Spearman,-0.11852734415356533,Very Weak Correlation
 I.4.2,emissions,47.0,std,90168552.06230064,,,
+I.4.2,GDP,47.0,upper_bound,0.00017210641470213607,Pearson,0.4169229664683758,Weak Correlation
+I.4.2,GDP,47.0,upper_bound,0.00017210641470213607,Spearman,0.26585718460167423,Very Weak Correlation
+I.4.2,Population,47.0,upper_bound,10.596763119407276,Pearson,0.09665713615659371,Negligible or No Correlation
+I.4.2,Population,47.0,upper_bound,10.596763119407276,Spearman,0.010060711205022032,Negligible or No Correlation
+I.4.2,Area,47.0,upper_bound,153754.4099354061,Pearson,-0.04149495825818807,Negligible or No Correlation
+I.4.2,Area,47.0,upper_bound,153754.4099354061,Spearman,-0.11852734415356533,Very Weak Correlation
+I.4.2,emissions,47.0,upper_bound,19742212.812303066,,,
 I.4.3,GDP,12.0,25%,3.02596569179453e-07,Pearson,-0.4015800351551825,Weak Correlation
 I.4.3,GDP,12.0,25%,3.02596569179453e-07,Spearman,-0.28021058733533855,Very Weak Correlation
 I.4.3,Population,12.0,25%,0.013634194600454556,Pearson,-0.29960828547901097,Very Weak Correlation
@@ -559,6 +790,20 @@ I.4.3,Population,12.0,75%,0.04689239694591949,Spearman,-0.22767110220996253,Very
 I.4.3,Area,12.0,75%,197.04610951008647,Pearson,-0.33411994057586575,Weak Correlation
 I.4.3,Area,12.0,75%,197.04610951008647,Spearman,0.12565388414768006,Very Weak Correlation
 I.4.3,emissions,12.0,75%,136750.0,,,
+I.4.3,GDP,12.0,IQR,5.015141764614248e-06,Pearson,-0.4015800351551825,Weak Correlation
+I.4.3,GDP,12.0,IQR,5.015141764614248e-06,Spearman,-0.28021058733533855,Very Weak Correlation
+I.4.3,Population,12.0,IQR,0.033258202345464935,Pearson,-0.29960828547901097,Very Weak Correlation
+I.4.3,Population,12.0,IQR,0.033258202345464935,Spearman,-0.22767110220996253,Very Weak Correlation
+I.4.3,Area,12.0,IQR,101.84361160188618,Pearson,-0.33411994057586575,Weak Correlation
+I.4.3,Area,12.0,IQR,101.84361160188618,Spearman,0.12565388414768006,Very Weak Correlation
+I.4.3,emissions,12.0,IQR,117782.49703504957,,,
+I.4.3,emissions,12.0,lower_bound,-157706.2425876239,,,
+I.4.3,Area,12.0,lower_bound,-57.56291949462897,Pearson,-0.33411994057586575,Weak Correlation
+I.4.3,Area,12.0,lower_bound,-57.56291949462897,Spearman,0.12565388414768006,Very Weak Correlation
+I.4.3,Population,12.0,lower_bound,-0.036253108917742846,Pearson,-0.29960828547901097,Very Weak Correlation
+I.4.3,Population,12.0,lower_bound,-0.036253108917742846,Spearman,-0.22767110220996253,Very Weak Correlation
+I.4.3,GDP,12.0,lower_bound,-7.220116077741919e-06,Pearson,-0.4015800351551825,Weak Correlation
+I.4.3,GDP,12.0,lower_bound,-7.220116077741919e-06,Spearman,-0.28021058733533855,Very Weak Correlation
 I.4.3,GDP,12.0,max,0.0011214678734273041,Pearson,-0.4015800351551825,Weak Correlation
 I.4.3,GDP,12.0,max,0.0011214678734273041,Spearman,-0.28021058733533855,Very Weak Correlation
 I.4.3,Population,12.0,max,57.67924685933482,Pearson,-0.29960828547901097,Very Weak Correlation
@@ -587,6 +832,13 @@ I.4.3,Population,12.0,std,16.640618988750084,Spearman,-0.22767110220996253,Very 
 I.4.3,Area,12.0,std,14895.549191445036,Pearson,-0.33411994057586575,Weak Correlation
 I.4.3,Area,12.0,std,14895.549191445036,Spearman,0.12565388414768006,Very Weak Correlation
 I.4.3,emissions,12.0,std,6527682.83958354,,,
+I.4.3,GDP,12.0,upper_bound,1.2840450980715073e-05,Pearson,-0.4015800351551825,Weak Correlation
+I.4.3,GDP,12.0,upper_bound,1.2840450980715073e-05,Spearman,-0.28021058733533855,Very Weak Correlation
+I.4.3,Population,12.0,upper_bound,0.0967797004641169,Pearson,-0.29960828547901097,Very Weak Correlation
+I.4.3,Population,12.0,upper_bound,0.0967797004641169,Spearman,-0.22767110220996253,Very Weak Correlation
+I.4.3,Area,12.0,upper_bound,349.8115269129157,Pearson,-0.33411994057586575,Weak Correlation
+I.4.3,Area,12.0,upper_bound,349.8115269129157,Spearman,0.12565388414768006,Very Weak Correlation
+I.4.3,emissions,12.0,upper_bound,313423.74555257434,,,
 I.4.4,GDP,208.0,25%,0.0012730123873743373,Pearson,0.0977438688363614,Negligible or No Correlation
 I.4.4,GDP,208.0,25%,0.0012730123873743373,Spearman,-0.016759381688470677,Negligible or No Correlation
 I.4.4,Population,208.0,25%,69.89515132570602,Pearson,0.3015446574748423,Weak Correlation
@@ -608,6 +860,20 @@ I.4.4,Population,208.0,75%,855.0542031411909,Spearman,0.4416061715827316,Weak Co
 I.4.4,Area,208.0,75%,4689454.729175303,Pearson,-0.02429785724807927,Negligible or No Correlation
 I.4.4,Area,208.0,75%,4689454.729175303,Spearman,0.22344886195144067,Very Weak Correlation
 I.4.4,emissions,208.0,75%,3178271531.0952535,,,
+I.4.4,GDP,208.0,IQR,0.021233039513293337,Pearson,0.0977438688363614,Negligible or No Correlation
+I.4.4,GDP,208.0,IQR,0.021233039513293337,Spearman,-0.016759381688470677,Negligible or No Correlation
+I.4.4,Population,208.0,IQR,785.1590518154849,Pearson,0.3015446574748423,Weak Correlation
+I.4.4,Population,208.0,IQR,785.1590518154849,Spearman,0.4416061715827316,Weak Correlation
+I.4.4,Area,208.0,IQR,4394407.323286978,Pearson,-0.02429785724807927,Negligible or No Correlation
+I.4.4,Area,208.0,IQR,4394407.323286978,Spearman,0.22344886195144067,Very Weak Correlation
+I.4.4,emissions,208.0,IQR,3019009534.3547873,,,
+I.4.4,emissions,208.0,lower_bound,-4369252304.791715,,,
+I.4.4,Area,208.0,lower_bound,-6296563.579042141,Pearson,-0.02429785724807927,Negligible or No Correlation
+I.4.4,Area,208.0,lower_bound,-6296563.579042141,Spearman,0.22344886195144067,Very Weak Correlation
+I.4.4,Population,208.0,lower_bound,-1107.8434263975214,Pearson,0.3015446574748423,Weak Correlation
+I.4.4,Population,208.0,lower_bound,-1107.8434263975214,Spearman,0.4416061715827316,Weak Correlation
+I.4.4,GDP,208.0,lower_bound,-0.03057654688256567,Pearson,0.0977438688363614,Negligible or No Correlation
+I.4.4,GDP,208.0,lower_bound,-0.03057654688256567,Spearman,-0.016759381688470677,Negligible or No Correlation
 I.4.4,GDP,208.0,max,4.899333472915648,Pearson,0.0977438688363614,Negligible or No Correlation
 I.4.4,GDP,208.0,max,4.899333472915648,Spearman,-0.016759381688470677,Negligible or No Correlation
 I.4.4,Population,208.0,max,24406.713309659724,Pearson,0.3015446574748423,Weak Correlation
@@ -636,6 +902,13 @@ I.4.4,Population,208.0,std,2852.9725774354633,Spearman,0.4416061715827316,Weak C
 I.4.4,Area,208.0,std,39665569.76009653,Pearson,-0.02429785724807927,Negligible or No Correlation
 I.4.4,Area,208.0,std,39665569.76009653,Spearman,0.22344886195144067,Very Weak Correlation
 I.4.4,emissions,208.0,std,3965941184.030745,,,
+I.4.4,GDP,208.0,upper_bound,0.05435561117060768,Pearson,0.0977438688363614,Negligible or No Correlation
+I.4.4,GDP,208.0,upper_bound,0.05435561117060768,Spearman,-0.016759381688470677,Negligible or No Correlation
+I.4.4,Population,208.0,upper_bound,2032.792780864418,Pearson,0.3015446574748423,Weak Correlation
+I.4.4,Population,208.0,upper_bound,2032.792780864418,Spearman,0.4416061715827316,Weak Correlation
+I.4.4,Area,208.0,upper_bound,11281065.71410577,Pearson,-0.02429785724807927,Negligible or No Correlation
+I.4.4,Area,208.0,upper_bound,11281065.71410577,Spearman,0.22344886195144067,Very Weak Correlation
+I.4.4,emissions,208.0,upper_bound,7706785832.627434,,,
 I.5.1,GDP,82.0,25%,3.657191506735608e-06,Pearson,0.10225006819974312,Very Weak Correlation
 I.5.1,GDP,82.0,25%,3.657191506735608e-06,Spearman,-0.11951523464389097,Very Weak Correlation
 I.5.1,Population,82.0,25%,0.1294881715173284,Pearson,-0.1763743994845444,Very Weak Correlation
@@ -657,6 +930,20 @@ I.5.1,Population,82.0,75%,22.104103123720915,Spearman,-0.09480999366799313,Negli
 I.5.1,Area,82.0,75%,46599.30437561183,Pearson,0.32248236256869767,Weak Correlation
 I.5.1,Area,82.0,75%,46599.30437561183,Spearman,0.4031081734043327,Weak Correlation
 I.5.1,emissions,82.0,75%,102399817.2334339,,,
+I.5.1,GDP,82.0,IQR,0.000491818774376234,Pearson,0.10225006819974312,Very Weak Correlation
+I.5.1,GDP,82.0,IQR,0.000491818774376234,Spearman,-0.11951523464389097,Very Weak Correlation
+I.5.1,Population,82.0,IQR,21.974614952203588,Pearson,-0.1763743994845444,Very Weak Correlation
+I.5.1,Population,82.0,IQR,21.974614952203588,Spearman,-0.09480999366799313,Negligible or No Correlation
+I.5.1,Area,82.0,IQR,45666.8663590829,Pearson,0.32248236256869767,Weak Correlation
+I.5.1,Area,82.0,IQR,45666.8663590829,Spearman,0.4031081734043327,Weak Correlation
+I.5.1,emissions,82.0,IQR,101786124.88019548,,,
+I.5.1,emissions,82.0,lower_bound,-152065494.96705478,,,
+I.5.1,Area,82.0,lower_bound,-67567.86152209544,Pearson,0.32248236256869767,Weak Correlation
+I.5.1,Area,82.0,lower_bound,-67567.86152209544,Spearman,0.4031081734043327,Weak Correlation
+I.5.1,Population,82.0,lower_bound,-32.832434256788055,Pearson,-0.1763743994845444,Very Weak Correlation
+I.5.1,Population,82.0,lower_bound,-32.832434256788055,Spearman,-0.09480999366799313,Negligible or No Correlation
+I.5.1,GDP,82.0,lower_bound,-0.0007340709700576155,Pearson,0.10225006819974312,Very Weak Correlation
+I.5.1,GDP,82.0,lower_bound,-0.0007340709700576155,Spearman,-0.11951523464389097,Very Weak Correlation
 I.5.1,GDP,82.0,max,0.016461548693583426,Pearson,0.10225006819974312,Very Weak Correlation
 I.5.1,GDP,82.0,max,0.016461548693583426,Spearman,-0.11951523464389097,Very Weak Correlation
 I.5.1,Population,82.0,max,159.82086903961243,Pearson,-0.1763743994845444,Very Weak Correlation
@@ -685,6 +972,13 @@ I.5.1,Population,82.0,std,41.00757147108263,Spearman,-0.09480999366799313,Neglig
 I.5.1,Area,82.0,std,333313.7558352231,Pearson,0.32248236256869767,Weak Correlation
 I.5.1,Area,82.0,std,333313.7558352231,Spearman,0.4031081734043327,Weak Correlation
 I.5.1,emissions,82.0,std,104060575.43969576,,,
+I.5.1,GDP,82.0,upper_bound,0.0012332041274473208,Pearson,0.10225006819974312,Very Weak Correlation
+I.5.1,GDP,82.0,upper_bound,0.0012332041274473208,Spearman,-0.11951523464389097,Very Weak Correlation
+I.5.1,Population,82.0,upper_bound,55.066025552026304,Pearson,-0.1763743994845444,Very Weak Correlation
+I.5.1,Population,82.0,upper_bound,55.066025552026304,Spearman,-0.09480999366799313,Negligible or No Correlation
+I.5.1,Area,82.0,upper_bound,115099.60391423618,Pearson,0.32248236256869767,Weak Correlation
+I.5.1,Area,82.0,upper_bound,115099.60391423618,Spearman,0.4031081734043327,Weak Correlation
+I.5.1,emissions,82.0,upper_bound,255079004.55372712,,,
 I.5.2,GDP,108.0,25%,1.6687814691926456e-06,Pearson,-0.024347661812303696,Negligible or No Correlation
 I.5.2,GDP,108.0,25%,1.6687814691926456e-06,Spearman,0.008097918121646295,Negligible or No Correlation
 I.5.2,Population,108.0,25%,0.05692070429251499,Pearson,0.0048502431149529835,Negligible or No Correlation
@@ -706,6 +1000,20 @@ I.5.2,Population,108.0,75%,5.616116044450319,Spearman,0.04000419284896215,Neglig
 I.5.2,Area,108.0,75%,20285.299921216603,Pearson,0.6925647157279196,Moderate Correlation
 I.5.2,Area,108.0,75%,20285.299921216603,Spearman,0.6085755193027621,Moderate Correlation
 I.5.2,emissions,108.0,75%,7036740.2293,,,
+I.5.2,GDP,108.0,IQR,0.00011813733223644168,Pearson,-0.024347661812303696,Negligible or No Correlation
+I.5.2,GDP,108.0,IQR,0.00011813733223644168,Spearman,0.008097918121646295,Negligible or No Correlation
+I.5.2,Population,108.0,IQR,5.559195340157804,Pearson,0.0048502431149529835,Negligible or No Correlation
+I.5.2,Population,108.0,IQR,5.559195340157804,Spearman,0.04000419284896215,Negligible or No Correlation
+I.5.2,Area,108.0,IQR,19949.12079794792,Pearson,0.6925647157279196,Moderate Correlation
+I.5.2,Area,108.0,IQR,19949.12079794792,Spearman,0.6085755193027621,Moderate Correlation
+I.5.2,emissions,108.0,IQR,6732981.702736628,,,
+I.5.2,emissions,108.0,lower_bound,-9795714.027541572,,,
+I.5.2,Area,108.0,lower_bound,-29587.50207365319,Pearson,0.6925647157279196,Moderate Correlation
+I.5.2,Area,108.0,lower_bound,-29587.50207365319,Spearman,0.6085755193027621,Moderate Correlation
+I.5.2,Population,108.0,lower_bound,-8.28187230594419,Pearson,0.0048502431149529835,Negligible or No Correlation
+I.5.2,Population,108.0,lower_bound,-8.28187230594419,Spearman,0.04000419284896215,Negligible or No Correlation
+I.5.2,GDP,108.0,lower_bound,-0.00017553721688546987,Pearson,-0.024347661812303696,Negligible or No Correlation
+I.5.2,GDP,108.0,lower_bound,-0.00017553721688546987,Spearman,0.008097918121646295,Negligible or No Correlation
 I.5.2,GDP,108.0,max,0.013533395500241876,Pearson,-0.024347661812303696,Negligible or No Correlation
 I.5.2,GDP,108.0,max,0.013533395500241876,Spearman,0.008097918121646295,Negligible or No Correlation
 I.5.2,Population,108.0,max,116.9593848814841,Pearson,0.0048502431149529835,Negligible or No Correlation
@@ -734,6 +1042,13 @@ I.5.2,Population,108.0,std,30.971952914747927,Spearman,0.04000419284896215,Negli
 I.5.2,Area,108.0,std,38069.050746922665,Pearson,0.6925647157279196,Moderate Correlation
 I.5.2,Area,108.0,std,38069.050746922665,Spearman,0.6085755193027621,Moderate Correlation
 I.5.2,emissions,108.0,std,77330555.64036012,,,
+I.5.2,GDP,108.0,upper_bound,0.00029701211206029684,Pearson,-0.024347661812303696,Negligible or No Correlation
+I.5.2,GDP,108.0,upper_bound,0.00029701211206029684,Spearman,0.008097918121646295,Negligible or No Correlation
+I.5.2,Population,108.0,upper_bound,13.954909054687025,Pearson,0.0048502431149529835,Negligible or No Correlation
+I.5.2,Population,108.0,upper_bound,13.954909054687025,Spearman,0.04000419284896215,Negligible or No Correlation
+I.5.2,Area,108.0,upper_bound,50208.98111813848,Pearson,0.6925647157279196,Moderate Correlation
+I.5.2,Area,108.0,upper_bound,50208.98111813848,Spearman,0.6085755193027621,Moderate Correlation
+I.5.2,emissions,108.0,upper_bound,17136212.783404943,,,
 I.5.3,GDP,62.0,25%,1.7580144897255654e-07,Pearson,-0.07474815776477253,Negligible or No Correlation
 I.5.3,GDP,62.0,25%,1.7580144897255654e-07,Spearman,0.06079302932078324,Negligible or No Correlation
 I.5.3,Population,62.0,25%,0.00802266850171752,Pearson,0.12145642039800086,Very Weak Correlation
@@ -755,6 +1070,20 @@ I.5.3,Population,62.0,75%,1.6149053188807807,Spearman,0.13961169640521437,Very W
 I.5.3,Area,62.0,75%,1824.425411815425,Pearson,0.7707337222115617,Strong Correlation
 I.5.3,Area,62.0,75%,1824.425411815425,Spearman,0.8367579775741557,Strong Correlation
 I.5.3,emissions,62.0,75%,7505172.04190453,,,
+I.5.3,GDP,62.0,IQR,0.00011672458059478585,Pearson,-0.07474815776477253,Negligible or No Correlation
+I.5.3,GDP,62.0,IQR,0.00011672458059478585,Spearman,0.06079302932078324,Negligible or No Correlation
+I.5.3,Population,62.0,IQR,1.6068826503790632,Pearson,0.12145642039800086,Very Weak Correlation
+I.5.3,Population,62.0,IQR,1.6068826503790632,Spearman,0.13961169640521437,Very Weak Correlation
+I.5.3,Area,62.0,IQR,1771.7188729780792,Pearson,0.7707337222115617,Strong Correlation
+I.5.3,Area,62.0,IQR,1771.7188729780792,Spearman,0.8367579775741557,Strong Correlation
+I.5.3,emissions,62.0,IQR,7435490.073509324,,,
+I.5.3,emissions,62.0,lower_bound,-11083553.141868781,,,
+I.5.3,Area,62.0,lower_bound,-2604.871770629773,Pearson,0.7707337222115617,Strong Correlation
+I.5.3,Area,62.0,lower_bound,-2604.871770629773,Spearman,0.8367579775741557,Strong Correlation
+I.5.3,Population,62.0,lower_bound,-2.4023013070668773,Pearson,0.12145642039800086,Very Weak Correlation
+I.5.3,Population,62.0,lower_bound,-2.4023013070668773,Spearman,0.13961169640521437,Very Weak Correlation
+I.5.3,GDP,62.0,lower_bound,-0.0001749110694432062,Pearson,-0.07474815776477253,Negligible or No Correlation
+I.5.3,GDP,62.0,lower_bound,-0.0001749110694432062,Spearman,0.06079302932078324,Negligible or No Correlation
 I.5.3,GDP,62.0,max,0.0012734151160018177,Pearson,-0.07474815776477253,Negligible or No Correlation
 I.5.3,GDP,62.0,max,0.0012734151160018177,Spearman,0.06079302932078324,Negligible or No Correlation
 I.5.3,Population,62.0,max,10.72668738384325,Pearson,0.12145642039800086,Very Weak Correlation
@@ -783,6 +1112,13 @@ I.5.3,Population,62.0,std,2.778440461064694,Spearman,0.13961169640521437,Very We
 I.5.3,Area,62.0,std,1395.533966998903,Pearson,0.7707337222115617,Strong Correlation
 I.5.3,Area,62.0,std,1395.533966998903,Spearman,0.8367579775741557,Strong Correlation
 I.5.3,emissions,62.0,std,6700812.967947871,,,
+I.5.3,GDP,62.0,upper_bound,0.0002919872529359372,Pearson,-0.07474815776477253,Negligible or No Correlation
+I.5.3,GDP,62.0,upper_bound,0.0002919872529359372,Spearman,0.06079302932078324,Negligible or No Correlation
+I.5.3,Population,62.0,upper_bound,4.0252292944493755,Pearson,0.12145642039800086,Very Weak Correlation
+I.5.3,Population,62.0,upper_bound,4.0252292944493755,Spearman,0.13961169640521437,Very Weak Correlation
+I.5.3,Area,62.0,upper_bound,4482.003721282544,Pearson,0.7707337222115617,Strong Correlation
+I.5.3,Area,62.0,upper_bound,4482.003721282544,Spearman,0.8367579775741557,Strong Correlation
+I.5.3,emissions,62.0,upper_bound,18658407.152168516,,,
 I.6.1,GDP,43.0,25%,7.707508003993893e-06,Pearson,0.19104388703163996,Very Weak Correlation
 I.6.1,GDP,43.0,25%,7.707508003993893e-06,Spearman,0.1741986636194503,Very Weak Correlation
 I.6.1,Population,43.0,25%,0.0736559047033849,Pearson,0.023391833454374004,Negligible or No Correlation
@@ -804,6 +1140,20 @@ I.6.1,Population,43.0,75%,16.588001627308163,Spearman,-0.1143202326483952,Very W
 I.6.1,Area,43.0,75%,125677.77842382944,Pearson,-0.09887969172752345,Negligible or No Correlation
 I.6.1,Area,43.0,75%,125677.77842382944,Spearman,-0.45185019085790384,Weak Correlation
 I.6.1,emissions,43.0,75%,64602080.48454353,,,
+I.6.1,GDP,43.0,IQR,0.0004956198606253557,Pearson,0.19104388703163996,Very Weak Correlation
+I.6.1,GDP,43.0,IQR,0.0004956198606253557,Spearman,0.1741986636194503,Very Weak Correlation
+I.6.1,Population,43.0,IQR,16.514345722604777,Pearson,0.023391833454374004,Negligible or No Correlation
+I.6.1,Population,43.0,IQR,16.514345722604777,Spearman,-0.1143202326483952,Very Weak Correlation
+I.6.1,Area,43.0,IQR,125318.38960032648,Pearson,-0.09887969172752345,Negligible or No Correlation
+I.6.1,Area,43.0,IQR,125318.38960032648,Spearman,-0.45185019085790384,Weak Correlation
+I.6.1,emissions,43.0,IQR,64131287.81689453,,,
+I.6.1,emissions,43.0,lower_bound,-95726139.0576928,,,
+I.6.1,Area,43.0,lower_bound,-187618.19557698676,Pearson,-0.09887969172752345,Negligible or No Correlation
+I.6.1,Area,43.0,lower_bound,-187618.19557698676,Spearman,-0.45185019085790384,Weak Correlation
+I.6.1,Population,43.0,lower_bound,-24.69786267920378,Pearson,0.023391833454374004,Negligible or No Correlation
+I.6.1,Population,43.0,lower_bound,-24.69786267920378,Spearman,-0.1143202326483952,Very Weak Correlation
+I.6.1,GDP,43.0,lower_bound,-0.0007357222829340395,Pearson,0.19104388703163996,Very Weak Correlation
+I.6.1,GDP,43.0,lower_bound,-0.0007357222829340395,Spearman,0.1741986636194503,Very Weak Correlation
 I.6.1,GDP,43.0,max,0.005192954879720959,Pearson,0.19104388703163996,Very Weak Correlation
 I.6.1,GDP,43.0,max,0.005192954879720959,Spearman,0.1741986636194503,Very Weak Correlation
 I.6.1,Population,43.0,max,254.4664661531787,Pearson,0.023391833454374004,Negligible or No Correlation
@@ -832,6 +1182,13 @@ I.6.1,Population,43.0,std,65.09630628640505,Spearman,-0.1143202326483952,Very We
 I.6.1,Area,43.0,std,438684.08386413514,Pearson,-0.09887969172752345,Negligible or No Correlation
 I.6.1,Area,43.0,std,438684.08386413514,Spearman,-0.45185019085790384,Weak Correlation
 I.6.1,emissions,43.0,std,343915132.6476914,,,
+I.6.1,GDP,43.0,upper_bound,0.001246757159567383,Pearson,0.19104388703163996,Very Weak Correlation
+I.6.1,GDP,43.0,upper_bound,0.001246757159567383,Spearman,0.1741986636194503,Very Weak Correlation
+I.6.1,Population,43.0,upper_bound,41.359520211215326,Pearson,0.023391833454374004,Negligible or No Correlation
+I.6.1,Population,43.0,upper_bound,41.359520211215326,Spearman,-0.1143202326483952,Very Weak Correlation
+I.6.1,Area,43.0,upper_bound,313655.36282431916,Pearson,-0.09887969172752345,Negligible or No Correlation
+I.6.1,Area,43.0,upper_bound,313655.36282431916,Spearman,-0.45185019085790384,Weak Correlation
+I.6.1,emissions,43.0,upper_bound,160799012.20988533,,,
 I.6.2,GDP,33.0,25%,0.002540132339269441,Pearson,0.3535738829642868,Weak Correlation
 I.6.2,GDP,33.0,25%,0.002540132339269441,Spearman,0.4445558635058277,Weak Correlation
 I.6.2,Population,33.0,25%,27.761104910381547,Pearson,0.3716333270542583,Weak Correlation
@@ -853,6 +1210,20 @@ I.6.2,Population,33.0,75%,248.20779572126008,Spearman,0.39625637307229983,Weak C
 I.6.2,Area,33.0,75%,424768.22810590634,Pearson,0.5718128811963709,Moderate Correlation
 I.6.2,Area,33.0,75%,424768.22810590634,Spearman,0.7739831445737188,Strong Correlation
 I.6.2,emissions,33.0,75%,1138324000.0,,,
+I.6.2,GDP,33.0,IQR,0.025947311632292587,Pearson,0.3535738829642868,Weak Correlation
+I.6.2,GDP,33.0,IQR,0.025947311632292587,Spearman,0.4445558635058277,Weak Correlation
+I.6.2,Population,33.0,IQR,220.44669081087852,Pearson,0.3716333270542583,Weak Correlation
+I.6.2,Population,33.0,IQR,220.44669081087852,Spearman,0.39625637307229983,Weak Correlation
+I.6.2,Area,33.0,IQR,283833.1572076287,Pearson,0.5718128811963709,Moderate Correlation
+I.6.2,Area,33.0,IQR,283833.1572076287,Spearman,0.7739831445737188,Strong Correlation
+I.6.2,emissions,33.0,IQR,1025305347.9452533,,,
+I.6.2,emissions,33.0,lower_bound,-1424939369.863133,,,
+I.6.2,Area,33.0,lower_bound,-284814.6649131655,Pearson,0.5718128811963709,Moderate Correlation
+I.6.2,Area,33.0,lower_bound,-284814.6649131655,Spearman,0.7739831445737188,Strong Correlation
+I.6.2,Population,33.0,lower_bound,-302.9089313059362,Pearson,0.3716333270542583,Weak Correlation
+I.6.2,Population,33.0,lower_bound,-302.9089313059362,Spearman,0.39625637307229983,Weak Correlation
+I.6.2,GDP,33.0,lower_bound,-0.036380835109169445,Pearson,0.3535738829642868,Weak Correlation
+I.6.2,GDP,33.0,lower_bound,-0.036380835109169445,Spearman,0.4445558635058277,Weak Correlation
 I.6.2,GDP,33.0,max,0.08163084319263092,Pearson,0.3535738829642868,Weak Correlation
 I.6.2,GDP,33.0,max,0.08163084319263092,Spearman,0.4445558635058277,Weak Correlation
 I.6.2,Population,33.0,max,545.069811256966,Pearson,0.3716333270542583,Weak Correlation
@@ -881,6 +1252,13 @@ I.6.2,Population,33.0,std,173.03150722055653,Spearman,0.39625637307229983,Weak C
 I.6.2,Area,33.0,std,558483.8413883995,Pearson,0.5718128811963709,Moderate Correlation
 I.6.2,Area,33.0,std,558483.8413883995,Spearman,0.7739831445737188,Strong Correlation
 I.6.2,emissions,33.0,std,747861981.6840473,,,
+I.6.2,GDP,33.0,upper_bound,0.06740841142000091,Pearson,0.3535738829642868,Weak Correlation
+I.6.2,GDP,33.0,upper_bound,0.06740841142000091,Spearman,0.4445558635058277,Weak Correlation
+I.6.2,Population,33.0,upper_bound,578.8778319375779,Pearson,0.3716333270542583,Weak Correlation
+I.6.2,Population,33.0,upper_bound,578.8778319375779,Spearman,0.39625637307229983,Weak Correlation
+I.6.2,Area,33.0,upper_bound,850517.9639173495,Pearson,0.5718128811963709,Moderate Correlation
+I.6.2,Area,33.0,upper_bound,850517.9639173495,Spearman,0.7739831445737188,Strong Correlation
+I.6.2,emissions,33.0,upper_bound,2676282021.91788,,,
 I.6.3,GDP,20.0,25%,0.0002551645067856292,Pearson,0.40100860605412564,Weak Correlation
 I.6.3,GDP,20.0,25%,0.0002551645067856292,Spearman,0.6844678934591084,Moderate Correlation
 I.6.3,Population,20.0,25%,1.810728481158522,Pearson,0.35134608778419707,Weak Correlation
@@ -902,6 +1280,20 @@ I.6.3,Population,20.0,75%,16.714783012084705,Spearman,0.6220384042754755,Moderat
 I.6.3,Area,20.0,75%,39967.92485079041,Pearson,0.5947131017637479,Moderate Correlation
 I.6.3,Area,20.0,75%,39967.92485079041,Spearman,0.7080160346370746,Strong Correlation
 I.6.3,emissions,20.0,75%,87737902.20454201,,,
+I.6.3,GDP,20.0,IQR,0.001495013281025086,Pearson,0.40100860605412564,Weak Correlation
+I.6.3,GDP,20.0,IQR,0.001495013281025086,Spearman,0.6844678934591084,Moderate Correlation
+I.6.3,Population,20.0,IQR,14.904054530926183,Pearson,0.35134608778419707,Weak Correlation
+I.6.3,Population,20.0,IQR,14.904054530926183,Spearman,0.6220384042754755,Moderate Correlation
+I.6.3,Area,20.0,IQR,35937.55759109982,Pearson,0.5947131017637479,Moderate Correlation
+I.6.3,Area,20.0,IQR,35937.55759109982,Spearman,0.7080160346370746,Strong Correlation
+I.6.3,emissions,20.0,IQR,79872870.78030795,,,
+I.6.3,emissions,20.0,lower_bound,-111944274.74622786,,,
+I.6.3,Area,20.0,lower_bound,-49875.96912695915,Pearson,0.5947131017637479,Moderate Correlation
+I.6.3,Area,20.0,lower_bound,-49875.96912695915,Spearman,0.7080160346370746,Strong Correlation
+I.6.3,Population,20.0,lower_bound,-20.545353315230756,Pearson,0.35134608778419707,Weak Correlation
+I.6.3,Population,20.0,lower_bound,-20.545353315230756,Spearman,0.6220384042754755,Moderate Correlation
+I.6.3,GDP,20.0,lower_bound,-0.0019873554147519998,Pearson,0.40100860605412564,Weak Correlation
+I.6.3,GDP,20.0,lower_bound,-0.0019873554147519998,Spearman,0.6844678934591084,Moderate Correlation
 I.6.3,GDP,20.0,max,0.007680995479043854,Pearson,0.40100860605412564,Weak Correlation
 I.6.3,GDP,20.0,max,0.007680995479043854,Spearman,0.6844678934591084,Moderate Correlation
 I.6.3,Population,20.0,max,69.14349327737321,Pearson,0.35134608778419707,Weak Correlation
@@ -930,13 +1322,23 @@ I.6.3,Population,20.0,std,18.639948748547663,Spearman,0.6220384042754755,Moderat
 I.6.3,Area,20.0,std,45873.02788273875,Pearson,0.5947131017637479,Moderate Correlation
 I.6.3,Area,20.0,std,45873.02788273875,Spearman,0.7080160346370746,Strong Correlation
 I.6.3,emissions,20.0,std,81308886.54300213,,,
+I.6.3,GDP,20.0,upper_bound,0.003992697709348344,Pearson,0.40100860605412564,Weak Correlation
+I.6.3,GDP,20.0,upper_bound,0.003992697709348344,Spearman,0.6844678934591084,Moderate Correlation
+I.6.3,Population,20.0,upper_bound,39.070864808473985,Pearson,0.35134608778419707,Weak Correlation
+I.6.3,Population,20.0,upper_bound,39.070864808473985,Spearman,0.6220384042754755,Moderate Correlation
+I.6.3,Area,20.0,upper_bound,93874.26123744015,Pearson,0.5947131017637479,Moderate Correlation
+I.6.3,Area,20.0,upper_bound,93874.26123744015,Spearman,0.7080160346370746,Strong Correlation
+I.6.3,emissions,20.0,upper_bound,207547208.37500393,,,
 I.7.1,emissions,1.0,25%,12111805.0,,,
 I.7.1,emissions,1.0,50%,12111805.0,,,
 I.7.1,emissions,1.0,75%,12111805.0,,,
+I.7.1,emissions,1.0,IQR,0.0,,,
+I.7.1,emissions,1.0,lower_bound,12111805.0,,,
 I.7.1,emissions,1.0,max,12111805.0,,,
 I.7.1,emissions,1.0,mean,12111805.0,,,
 I.7.1,emissions,1.0,min,12111805.0,,,
 I.7.1,emissions,1.0,std,,,,
+I.7.1,emissions,1.0,upper_bound,12111805.0,,,
 I.8.1,GDP,245.0,25%,0.0001498596224784312,Pearson,-0.17378046567409508,Very Weak Correlation
 I.8.1,GDP,245.0,25%,0.0001498596224784312,Spearman,0.07960586510384687,Negligible or No Correlation
 I.8.1,Population,245.0,25%,5.672695849101582,Pearson,-0.023197978298215675,Negligible or No Correlation
@@ -958,6 +1360,20 @@ I.8.1,Population,245.0,75%,49.86367923315682,Spearman,0.13327539620503842,Very W
 I.8.1,Area,245.0,75%,218368.11872296265,Pearson,-0.018313799435549574,Negligible or No Correlation
 I.8.1,Area,245.0,75%,218368.11872296265,Spearman,0.0703499929476278,Negligible or No Correlation
 I.8.1,emissions,245.0,75%,99948652.28747112,,,
+I.8.1,GDP,245.0,IQR,0.0005131980626160155,Pearson,-0.17378046567409508,Very Weak Correlation
+I.8.1,GDP,245.0,IQR,0.0005131980626160155,Spearman,0.07960586510384687,Negligible or No Correlation
+I.8.1,Population,245.0,IQR,44.190983384055244,Pearson,-0.023197978298215675,Negligible or No Correlation
+I.8.1,Population,245.0,IQR,44.190983384055244,Spearman,0.13327539620503842,Very Weak Correlation
+I.8.1,Area,245.0,IQR,194657.47081162911,Pearson,-0.018313799435549574,Negligible or No Correlation
+I.8.1,Area,245.0,IQR,194657.47081162911,Spearman,0.0703499929476278,Negligible or No Correlation
+I.8.1,emissions,245.0,IQR,85559652.28747112,,,
+I.8.1,emissions,245.0,lower_bound,-113950478.43120667,,,
+I.8.1,Area,245.0,lower_bound,-268275.55830611015,Pearson,-0.018313799435549574,Negligible or No Correlation
+I.8.1,Area,245.0,lower_bound,-268275.55830611015,Spearman,0.0703499929476278,Negligible or No Correlation
+I.8.1,Population,245.0,lower_bound,-60.613779226981286,Pearson,-0.023197978298215675,Negligible or No Correlation
+I.8.1,Population,245.0,lower_bound,-60.613779226981286,Spearman,0.13327539620503842,Very Weak Correlation
+I.8.1,GDP,245.0,lower_bound,-0.0006199374714455921,Pearson,-0.17378046567409508,Very Weak Correlation
+I.8.1,GDP,245.0,lower_bound,-0.0006199374714455921,Spearman,0.07960586510384687,Negligible or No Correlation
 I.8.1,GDP,245.0,max,0.14142912605775362,Pearson,-0.17378046567409508,Very Weak Correlation
 I.8.1,GDP,245.0,max,0.14142912605775362,Spearman,0.07960586510384687,Negligible or No Correlation
 I.8.1,Population,245.0,max,694.3709288327143,Pearson,-0.023197978298215675,Negligible or No Correlation
@@ -986,6 +1402,13 @@ I.8.1,Population,245.0,std,68.12030121814541,Spearman,0.13327539620503842,Very W
 I.8.1,Area,245.0,std,460433.9876637125,Pearson,-0.018313799435549574,Negligible or No Correlation
 I.8.1,Area,245.0,std,460433.9876637125,Spearman,0.0703499929476278,Negligible or No Correlation
 I.8.1,emissions,245.0,std,85320452.82295068,,,
+I.8.1,GDP,245.0,upper_bound,0.00143285477901847,Pearson,-0.17378046567409508,Very Weak Correlation
+I.8.1,GDP,245.0,upper_bound,0.00143285477901847,Spearman,0.07960586510384687,Negligible or No Correlation
+I.8.1,Population,245.0,upper_bound,116.1501543092397,Pearson,-0.023197978298215675,Negligible or No Correlation
+I.8.1,Population,245.0,upper_bound,116.1501543092397,Spearman,0.13327539620503842,Very Weak Correlation
+I.8.1,Area,245.0,upper_bound,510354.32494040637,Pearson,-0.018313799435549574,Negligible or No Correlation
+I.8.1,Area,245.0,upper_bound,510354.32494040637,Spearman,0.0703499929476278,Negligible or No Correlation
+I.8.1,emissions,245.0,upper_bound,228288130.7186778,,,
 II.1.1,GDP,313.0,25%,0.011117376880994624,Pearson,0.29178849320410094,Very Weak Correlation
 II.1.1,GDP,313.0,25%,0.011117376880994624,Spearman,0.3396831627269198,Weak Correlation
 II.1.1,Population,313.0,25%,677.771350278132,Pearson,0.6272580530814416,Moderate Correlation
@@ -1007,6 +1430,20 @@ II.1.1,Population,313.0,75%,2055.2247772346354,Spearman,0.8057327570360456,Stron
 II.1.1,Area,313.0,75%,10005020.379746836,Pearson,0.49564466944391233,Weak Correlation
 II.1.1,Area,313.0,75%,10005020.379746836,Spearman,0.8412820576464719,Strong Correlation
 II.1.1,emissions,313.0,75%,5021791576.270174,,,
+II.1.1,GDP,313.0,IQR,0.06218935354153239,Pearson,0.29178849320410094,Very Weak Correlation
+II.1.1,GDP,313.0,IQR,0.06218935354153239,Spearman,0.3396831627269198,Weak Correlation
+II.1.1,Population,313.0,IQR,1377.4534269565033,Pearson,0.6272580530814416,Moderate Correlation
+II.1.1,Population,313.0,IQR,1377.4534269565033,Spearman,0.8057327570360456,Strong Correlation
+II.1.1,Area,313.0,IQR,6921510.38054304,Pearson,0.49564466944391233,Weak Correlation
+II.1.1,Area,313.0,IQR,6921510.38054304,Spearman,0.8412820576464719,Strong Correlation
+II.1.1,emissions,313.0,IQR,3708954035.43097,,,
+II.1.1,emissions,313.0,lower_bound,-4250593512.307252,,,
+II.1.1,Area,313.0,lower_bound,-7298755.5716107655,Pearson,0.49564466944391233,Weak Correlation
+II.1.1,Area,313.0,lower_bound,-7298755.5716107655,Spearman,0.8412820576464719,Strong Correlation
+II.1.1,Population,313.0,lower_bound,-1388.4087901566231,Pearson,0.6272580530814416,Moderate Correlation
+II.1.1,Population,313.0,lower_bound,-1388.4087901566231,Spearman,0.8057327570360456,Strong Correlation
+II.1.1,GDP,313.0,lower_bound,-0.08216665343130397,Pearson,0.29178849320410094,Very Weak Correlation
+II.1.1,GDP,313.0,lower_bound,-0.08216665343130397,Spearman,0.3396831627269198,Weak Correlation
 II.1.1,GDP,313.0,max,2.2420307857472825,Pearson,0.29178849320410094,Very Weak Correlation
 II.1.1,GDP,313.0,max,2.2420307857472825,Spearman,0.3396831627269198,Weak Correlation
 II.1.1,Population,313.0,max,7263.8079435663085,Pearson,0.6272580530814416,Moderate Correlation
@@ -1035,6 +1472,13 @@ II.1.1,Population,313.0,std,1125.243157491957,Spearman,0.8057327570360456,Strong
 II.1.1,Area,313.0,std,5043905.771317545,Pearson,0.49564466944391233,Weak Correlation
 II.1.1,Area,313.0,std,5043905.771317545,Spearman,0.8412820576464719,Strong Correlation
 II.1.1,emissions,313.0,std,3589523891.540438,,,
+II.1.1,GDP,313.0,upper_bound,0.1665907607348256,Pearson,0.29178849320410094,Very Weak Correlation
+II.1.1,GDP,313.0,upper_bound,0.1665907607348256,Spearman,0.3396831627269198,Weak Correlation
+II.1.1,Population,313.0,upper_bound,4121.404917669391,Pearson,0.6272580530814416,Moderate Correlation
+II.1.1,Population,313.0,upper_bound,4121.404917669391,Spearman,0.8057327570360456,Strong Correlation
+II.1.1,Area,313.0,upper_bound,20387285.950561397,Pearson,0.49564466944391233,Weak Correlation
+II.1.1,Area,313.0,upper_bound,20387285.950561397,Spearman,0.8412820576464719,Strong Correlation
+II.1.1,emissions,313.0,upper_bound,10585222629.41663,,,
 II.1.2,GDP,101.0,25%,2.0748222046839678e-06,Pearson,0.3734085597253684,Weak Correlation
 II.1.2,GDP,101.0,25%,2.0748222046839678e-06,Spearman,0.4192105413125329,Weak Correlation
 II.1.2,Population,101.0,25%,0.06002877128045856,Pearson,0.1245644365828172,Very Weak Correlation
@@ -1056,6 +1500,20 @@ II.1.2,Population,101.0,75%,2.330770169760123,Spearman,0.04224966570017709,Negli
 II.1.2,Area,101.0,75%,11206.402415345752,Pearson,-0.04185757363250691,Negligible or No Correlation
 II.1.2,Area,101.0,75%,11206.402415345752,Spearman,-0.2126434843640184,Very Weak Correlation
 II.1.2,emissions,101.0,75%,7937781.5489700055,,,
+II.1.2,GDP,101.0,IQR,5.9246670155052594e-05,Pearson,0.3734085597253684,Weak Correlation
+II.1.2,GDP,101.0,IQR,5.9246670155052594e-05,Spearman,0.4192105413125329,Weak Correlation
+II.1.2,Population,101.0,IQR,2.2707413984796645,Pearson,0.1245644365828172,Very Weak Correlation
+II.1.2,Population,101.0,IQR,2.2707413984796645,Spearman,0.04224966570017709,Negligible or No Correlation
+II.1.2,Area,101.0,IQR,11080.497918041376,Pearson,-0.04185757363250691,Negligible or No Correlation
+II.1.2,Area,101.0,IQR,11080.497918041376,Spearman,-0.2126434843640184,Very Weak Correlation
+II.1.2,emissions,101.0,IQR,7796570.898051606,,,
+II.1.2,emissions,101.0,lower_bound,-11553645.696159009,,,
+II.1.2,Area,101.0,lower_bound,-16494.842379757683,Pearson,-0.04185757363250691,Negligible or No Correlation
+II.1.2,Area,101.0,lower_bound,-16494.842379757683,Spearman,-0.2126434843640184,Very Weak Correlation
+II.1.2,Population,101.0,lower_bound,-3.346083326439038,Pearson,0.1245644365828172,Very Weak Correlation
+II.1.2,Population,101.0,lower_bound,-3.346083326439038,Spearman,0.04224966570017709,Negligible or No Correlation
+II.1.2,GDP,101.0,lower_bound,-8.679518302789492e-05,Pearson,0.3734085597253684,Weak Correlation
+II.1.2,GDP,101.0,lower_bound,-8.679518302789492e-05,Spearman,0.4192105413125329,Weak Correlation
 II.1.2,GDP,101.0,max,0.0013513956760420863,Pearson,0.3734085597253684,Weak Correlation
 II.1.2,GDP,101.0,max,0.0013513956760420863,Spearman,0.4192105413125329,Weak Correlation
 II.1.2,Population,101.0,max,69.4721837298444,Pearson,0.1245644365828172,Very Weak Correlation
@@ -1084,6 +1542,13 @@ II.1.2,Population,101.0,std,11.927605638707679,Spearman,0.04224966570017709,Negl
 II.1.2,Area,101.0,std,106176.22650329275,Pearson,-0.04185757363250691,Negligible or No Correlation
 II.1.2,Area,101.0,std,106176.22650329275,Spearman,-0.2126434843640184,Very Weak Correlation
 II.1.2,emissions,101.0,std,20561495.114166953,,,
+II.1.2,GDP,101.0,upper_bound,0.00015019149759231545,Pearson,0.3734085597253684,Weak Correlation
+II.1.2,GDP,101.0,upper_bound,0.00015019149759231545,Spearman,0.4192105413125329,Weak Correlation
+II.1.2,Population,101.0,upper_bound,5.73688226747962,Pearson,0.1245644365828172,Very Weak Correlation
+II.1.2,Population,101.0,upper_bound,5.73688226747962,Spearman,0.04224966570017709,Negligible or No Correlation
+II.1.2,Area,101.0,upper_bound,27827.149292407812,Pearson,-0.04185757363250691,Negligible or No Correlation
+II.1.2,Area,101.0,upper_bound,27827.149292407812,Spearman,-0.2126434843640184,Very Weak Correlation
+II.1.2,emissions,101.0,upper_bound,19632637.896047413,,,
 II.1.3,GDP,91.0,25%,1.0865481950864407e-06,Pearson,0.29590170887345896,Very Weak Correlation
 II.1.3,GDP,91.0,25%,1.0865481950864407e-06,Spearman,0.24908713853428502,Very Weak Correlation
 II.1.3,Population,91.0,25%,0.05476235327252667,Pearson,0.23299814046097317,Very Weak Correlation
@@ -1105,6 +1570,20 @@ II.1.3,Population,91.0,75%,479.2263103671758,Spearman,0.07056949624004194,Neglig
 II.1.3,Area,91.0,75%,6180786.678508829,Pearson,-0.4084566100610155,Weak Correlation
 II.1.3,Area,91.0,75%,6180786.678508829,Spearman,-0.2960648499758972,Very Weak Correlation
 II.1.3,emissions,91.0,75%,352101306.19326854,,,
+II.1.3,GDP,91.0,IQR,0.003213906201568228,Pearson,0.29590170887345896,Very Weak Correlation
+II.1.3,GDP,91.0,IQR,0.003213906201568228,Spearman,0.24908713853428502,Very Weak Correlation
+II.1.3,Population,91.0,IQR,479.1715480139033,Pearson,0.23299814046097317,Very Weak Correlation
+II.1.3,Population,91.0,IQR,479.1715480139033,Spearman,0.07056949624004194,Negligible or No Correlation
+II.1.3,Area,91.0,IQR,6180674.971136118,Pearson,-0.4084566100610155,Weak Correlation
+II.1.3,Area,91.0,IQR,6180674.971136118,Spearman,-0.2960648499758972,Very Weak Correlation
+II.1.3,emissions,91.0,IQR,351989483.49215615,,,
+II.1.3,emissions,91.0,lower_bound,-527872402.53712183,,,
+II.1.3,Area,91.0,lower_bound,-9270900.749331467,Pearson,-0.4084566100610155,Weak Correlation
+II.1.3,Area,91.0,lower_bound,-9270900.749331467,Spearman,-0.2960648499758972,Very Weak Correlation
+II.1.3,Population,91.0,lower_bound,-718.7025596675825,Pearson,0.23299814046097317,Very Weak Correlation
+II.1.3,Population,91.0,lower_bound,-718.7025596675825,Spearman,0.07056949624004194,Negligible or No Correlation
+II.1.3,GDP,91.0,lower_bound,-0.004819772754157256,Pearson,0.29590170887345896,Very Weak Correlation
+II.1.3,GDP,91.0,lower_bound,-0.004819772754157256,Spearman,0.24908713853428502,Very Weak Correlation
 II.1.3,GDP,91.0,max,0.12195628006210446,Pearson,0.29590170887345896,Very Weak Correlation
 II.1.3,GDP,91.0,max,0.12195628006210446,Spearman,0.24908713853428502,Very Weak Correlation
 II.1.3,Population,91.0,max,1704.6668153332264,Pearson,0.23299814046097317,Very Weak Correlation
@@ -1133,6 +1612,13 @@ II.1.3,Population,91.0,std,535.4647161208012,Spearman,0.07056949624004194,Neglig
 II.1.3,Area,91.0,std,5172200.750220205,Pearson,-0.4084566100610155,Weak Correlation
 II.1.3,Area,91.0,std,5172200.750220205,Spearman,-0.2960648499758972,Very Weak Correlation
 II.1.3,emissions,91.0,std,1338909512.6524222,,,
+II.1.3,GDP,91.0,upper_bound,0.008035852052115657,Pearson,0.29590170887345896,Very Weak Correlation
+II.1.3,GDP,91.0,upper_bound,0.008035852052115657,Spearman,0.24908713853428502,Very Weak Correlation
+II.1.3,Population,91.0,upper_bound,1197.9836323880309,Pearson,0.23299814046097317,Very Weak Correlation
+II.1.3,Population,91.0,upper_bound,1197.9836323880309,Spearman,0.07056949624004194,Negligible or No Correlation
+II.1.3,Area,91.0,upper_bound,15451799.135213006,Pearson,-0.4084566100610155,Weak Correlation
+II.1.3,Area,91.0,upper_bound,15451799.135213006,Spearman,-0.2960648499758972,Very Weak Correlation
+II.1.3,emissions,91.0,upper_bound,880085531.4315028,,,
 II.2.1,GDP,204.0,25%,2.96528374445736e-05,Pearson,0.25098527956425687,Very Weak Correlation
 II.2.1,GDP,204.0,25%,2.96528374445736e-05,Spearman,0.4281162601838626,Weak Correlation
 II.2.1,Population,204.0,25%,1.2312278743552836,Pearson,0.16908648137407026,Very Weak Correlation
@@ -1154,6 +1640,20 @@ II.2.1,Population,204.0,75%,22.67200611305565,Spearman,0.1973218428649485,Very W
 II.2.1,Area,204.0,75%,107080.18925831895,Pearson,0.11043587881911203,Very Weak Correlation
 II.2.1,Area,204.0,75%,107080.18925831895,Spearman,0.2706484976154348,Very Weak Correlation
 II.2.1,emissions,204.0,75%,30142130.933245003,,,
+II.2.1,GDP,204.0,IQR,0.0003178899004749127,Pearson,0.25098527956425687,Very Weak Correlation
+II.2.1,GDP,204.0,IQR,0.0003178899004749127,Spearman,0.4281162601838626,Weak Correlation
+II.2.1,Population,204.0,IQR,21.440778238700368,Pearson,0.16908648137407026,Very Weak Correlation
+II.2.1,Population,204.0,IQR,21.440778238700368,Spearman,0.1973218428649485,Very Weak Correlation
+II.2.1,Area,204.0,IQR,102934.01573009083,Pearson,0.11043587881911203,Very Weak Correlation
+II.2.1,Area,204.0,IQR,102934.01573009083,Spearman,0.2706484976154348,Very Weak Correlation
+II.2.1,emissions,204.0,IQR,26513169.6996893,,,
+II.2.1,emissions,204.0,lower_bound,-36140793.315978244,,,
+II.2.1,Area,204.0,lower_bound,-150254.8500669081,Pearson,0.11043587881911203,Very Weak Correlation
+II.2.1,Area,204.0,lower_bound,-150254.8500669081,Spearman,0.2706484976154348,Very Weak Correlation
+II.2.1,Population,204.0,lower_bound,-30.929939483695264,Pearson,0.16908648137407026,Very Weak Correlation
+II.2.1,Population,204.0,lower_bound,-30.929939483695264,Spearman,0.1973218428649485,Very Weak Correlation
+II.2.1,GDP,204.0,lower_bound,-0.0004471820132677954,Pearson,0.25098527956425687,Very Weak Correlation
+II.2.1,GDP,204.0,lower_bound,-0.0004471820132677954,Spearman,0.4281162601838626,Weak Correlation
 II.2.1,GDP,204.0,max,0.011660504751538623,Pearson,0.25098527956425687,Very Weak Correlation
 II.2.1,GDP,204.0,max,0.011660504751538623,Spearman,0.4281162601838626,Weak Correlation
 II.2.1,Population,204.0,max,115.02671767714669,Pearson,0.16908648137407026,Very Weak Correlation
@@ -1182,6 +1682,13 @@ II.2.1,Population,204.0,std,23.23783342153127,Spearman,0.1973218428649485,Very W
 II.2.1,Area,204.0,std,115670.14305015917,Pearson,0.11043587881911203,Very Weak Correlation
 II.2.1,Area,204.0,std,115670.14305015917,Spearman,0.2706484976154348,Very Weak Correlation
 II.2.1,emissions,204.0,std,93027335.18979648,,,
+II.2.1,GDP,204.0,upper_bound,0.0008243775886318553,Pearson,0.25098527956425687,Very Weak Correlation
+II.2.1,GDP,204.0,upper_bound,0.0008243775886318553,Spearman,0.4281162601838626,Weak Correlation
+II.2.1,Population,204.0,upper_bound,54.8331734711062,Pearson,0.16908648137407026,Very Weak Correlation
+II.2.1,Population,204.0,upper_bound,54.8331734711062,Spearman,0.1973218428649485,Very Weak Correlation
+II.2.1,Area,204.0,upper_bound,261481.2128534552,Pearson,0.11043587881911203,Very Weak Correlation
+II.2.1,Area,204.0,upper_bound,261481.2128534552,Spearman,0.2706484976154348,Very Weak Correlation
+II.2.1,emissions,204.0,upper_bound,69911885.48277895,,,
 II.2.2,GDP,236.0,25%,0.0002567930513477841,Pearson,0.38036314401299093,Weak Correlation
 II.2.2,GDP,236.0,25%,0.0002567930513477841,Spearman,0.3882554117967198,Weak Correlation
 II.2.2,Population,236.0,25%,8.408273305877547,Pearson,0.4206963414051494,Weak Correlation
@@ -1203,6 +1710,20 @@ II.2.2,Population,236.0,75%,86.35556818112302,Spearman,0.36153904974563833,Weak 
 II.2.2,Area,236.0,75%,547181.0797111749,Pearson,0.021987820783849185,Negligible or No Correlation
 II.2.2,Area,236.0,75%,547181.0797111749,Spearman,0.162404126138513,Very Weak Correlation
 II.2.2,emissions,236.0,75%,108832292.736625,,,
+II.2.2,GDP,236.0,IQR,0.0012363876140380232,Pearson,0.38036314401299093,Weak Correlation
+II.2.2,GDP,236.0,IQR,0.0012363876140380232,Spearman,0.3882554117967198,Weak Correlation
+II.2.2,Population,236.0,IQR,77.94729487524548,Pearson,0.4206963414051494,Weak Correlation
+II.2.2,Population,236.0,IQR,77.94729487524548,Spearman,0.36153904974563833,Weak Correlation
+II.2.2,Area,236.0,IQR,506202.93358061375,Pearson,0.021987820783849185,Negligible or No Correlation
+II.2.2,Area,236.0,IQR,506202.93358061375,Spearman,0.162404126138513,Very Weak Correlation
+II.2.2,emissions,236.0,IQR,83704327.70016496,,,
+II.2.2,emissions,236.0,lower_bound,-100428526.51378739,,,
+II.2.2,Area,236.0,lower_bound,-718326.2542403594,Pearson,0.021987820783849185,Negligible or No Correlation
+II.2.2,Area,236.0,lower_bound,-718326.2542403594,Spearman,0.162404126138513,Very Weak Correlation
+II.2.2,Population,236.0,lower_bound,-108.51266900699068,Pearson,0.4206963414051494,Weak Correlation
+II.2.2,Population,236.0,lower_bound,-108.51266900699068,Spearman,0.36153904974563833,Weak Correlation
+II.2.2,GDP,236.0,lower_bound,-0.0015977883697092508,Pearson,0.38036314401299093,Weak Correlation
+II.2.2,GDP,236.0,lower_bound,-0.0015977883697092508,Spearman,0.3882554117967198,Weak Correlation
 II.2.2,GDP,236.0,max,0.03514820382069507,Pearson,0.38036314401299093,Weak Correlation
 II.2.2,GDP,236.0,max,0.03514820382069507,Spearman,0.3882554117967198,Weak Correlation
 II.2.2,Population,236.0,max,1926.1407333458785,Pearson,0.4206963414051494,Weak Correlation
@@ -1231,6 +1752,13 @@ II.2.2,Population,236.0,std,182.68435503581634,Spearman,0.36153904974563833,Weak
 II.2.2,Area,236.0,std,768570.6449794122,Pearson,0.021987820783849185,Negligible or No Correlation
 II.2.2,Area,236.0,std,768570.6449794122,Spearman,0.162404126138513,Very Weak Correlation
 II.2.2,emissions,236.0,std,411213884.2389915,,,
+II.2.2,GDP,236.0,upper_bound,0.0033477620864428423,Pearson,0.38036314401299093,Weak Correlation
+II.2.2,GDP,236.0,upper_bound,0.0033477620864428423,Spearman,0.3882554117967198,Weak Correlation
+II.2.2,Population,236.0,upper_bound,203.27651049399122,Pearson,0.4206963414051494,Weak Correlation
+II.2.2,Population,236.0,upper_bound,203.27651049399122,Spearman,0.36153904974563833,Weak Correlation
+II.2.2,Area,236.0,upper_bound,1306485.4800820956,Pearson,0.021987820783849185,Negligible or No Correlation
+II.2.2,Area,236.0,upper_bound,1306485.4800820956,Spearman,0.162404126138513,Very Weak Correlation
+II.2.2,emissions,236.0,upper_bound,234388784.28687245,,,
 II.2.3,GDP,145.0,25%,3.194955877504537e-05,Pearson,0.28940707433682744,Very Weak Correlation
 II.2.3,GDP,145.0,25%,3.194955877504537e-05,Spearman,0.2891388410571568,Very Weak Correlation
 II.2.3,Population,145.0,25%,1.0755583213070052,Pearson,0.3270908682458207,Weak Correlation
@@ -1252,6 +1780,20 @@ II.2.3,Population,145.0,75%,15.24452758380586,Spearman,0.1591501601632601,Very W
 II.2.3,Area,145.0,75%,96263.88861391936,Pearson,-0.27450290894229706,Very Weak Correlation
 II.2.3,Area,145.0,75%,96263.88861391936,Spearman,-0.184316115979506,Very Weak Correlation
 II.2.3,emissions,145.0,75%,35384845.52319879,,,
+II.2.3,GDP,145.0,IQR,0.0006352653584875787,Pearson,0.28940707433682744,Very Weak Correlation
+II.2.3,GDP,145.0,IQR,0.0006352653584875787,Spearman,0.2891388410571568,Very Weak Correlation
+II.2.3,Population,145.0,IQR,14.168969262498855,Pearson,0.3270908682458207,Weak Correlation
+II.2.3,Population,145.0,IQR,14.168969262498855,Spearman,0.1591501601632601,Very Weak Correlation
+II.2.3,Area,145.0,IQR,90830.14737810513,Pearson,-0.27450290894229706,Very Weak Correlation
+II.2.3,Area,145.0,IQR,90830.14737810513,Spearman,-0.184316115979506,Very Weak Correlation
+II.2.3,emissions,145.0,IQR,33765473.22501471,,,
+II.2.3,emissions,145.0,lower_bound,-49028837.53933798,,,
+II.2.3,Area,145.0,lower_bound,-130811.47983134346,Pearson,-0.27450290894229706,Very Weak Correlation
+II.2.3,Area,145.0,lower_bound,-130811.47983134346,Spearman,-0.184316115979506,Very Weak Correlation
+II.2.3,Population,145.0,lower_bound,-20.177895572441276,Pearson,0.3270908682458207,Weak Correlation
+II.2.3,Population,145.0,lower_bound,-20.177895572441276,Spearman,0.1591501601632601,Very Weak Correlation
+II.2.3,GDP,145.0,lower_bound,-0.0009209484789563226,Pearson,0.28940707433682744,Very Weak Correlation
+II.2.3,GDP,145.0,lower_bound,-0.0009209484789563226,Spearman,0.2891388410571568,Very Weak Correlation
 II.2.3,GDP,145.0,max,0.009714492086296506,Pearson,0.28940707433682744,Very Weak Correlation
 II.2.3,GDP,145.0,max,0.009714492086296506,Spearman,0.2891388410571568,Very Weak Correlation
 II.2.3,Population,145.0,max,588.9667524019898,Pearson,0.3270908682458207,Weak Correlation
@@ -1280,6 +1822,13 @@ II.2.3,Population,145.0,std,154.3661366662868,Spearman,0.1591501601632601,Very W
 II.2.3,Area,145.0,std,1134528.6084755175,Pearson,-0.27450290894229706,Very Weak Correlation
 II.2.3,Area,145.0,std,1134528.6084755175,Spearman,-0.184316115979506,Very Weak Correlation
 II.2.3,emissions,145.0,std,78040538.62871304,,,
+II.2.3,GDP,145.0,upper_bound,0.0016201129549939922,Pearson,0.28940707433682744,Very Weak Correlation
+II.2.3,GDP,145.0,upper_bound,0.0016201129549939922,Spearman,0.2891388410571568,Very Weak Correlation
+II.2.3,Population,145.0,upper_bound,36.49798147755414,Pearson,0.3270908682458207,Weak Correlation
+II.2.3,Population,145.0,upper_bound,36.49798147755414,Spearman,0.1591501601632601,Very Weak Correlation
+II.2.3,Area,145.0,upper_bound,232509.10968107707,Pearson,-0.27450290894229706,Very Weak Correlation
+II.2.3,Area,145.0,upper_bound,232509.10968107707,Spearman,-0.184316115979506,Very Weak Correlation
+II.2.3,emissions,145.0,upper_bound,86033055.36072084,,,
 II.3.1,GDP,135.0,25%,3.4037723689704354e-05,Pearson,0.36962636613644045,Weak Correlation
 II.3.1,GDP,135.0,25%,3.4037723689704354e-05,Spearman,0.24327201565580636,Very Weak Correlation
 II.3.1,Population,135.0,25%,1.5246940446901163,Pearson,0.17331250409693288,Very Weak Correlation
@@ -1301,6 +1850,20 @@ II.3.1,Population,135.0,75%,35.93578303254914,Spearman,0.2399425900568445,Very W
 II.3.1,Area,135.0,75%,149665.60220744647,Pearson,0.13061377470829597,Very Weak Correlation
 II.3.1,Area,135.0,75%,149665.60220744647,Spearman,0.20045146820406093,Very Weak Correlation
 II.3.1,emissions,135.0,75%,76670993.67513436,,,
+II.3.1,GDP,135.0,IQR,0.0004769522717452018,Pearson,0.36962636613644045,Weak Correlation
+II.3.1,GDP,135.0,IQR,0.0004769522717452018,Spearman,0.24327201565580636,Very Weak Correlation
+II.3.1,Population,135.0,IQR,34.411088987859024,Pearson,0.17331250409693288,Very Weak Correlation
+II.3.1,Population,135.0,IQR,34.411088987859024,Spearman,0.2399425900568445,Very Weak Correlation
+II.3.1,Area,135.0,IQR,146676.94680588646,Pearson,0.13061377470829597,Very Weak Correlation
+II.3.1,Area,135.0,IQR,146676.94680588646,Spearman,0.20045146820406093,Very Weak Correlation
+II.3.1,emissions,135.0,IQR,74617790.97435306,,,
+II.3.1,emissions,135.0,lower_bound,-109873483.76074828,,,
+II.3.1,Area,135.0,lower_bound,-217026.76480726968,Pearson,0.13061377470829597,Very Weak Correlation
+II.3.1,Area,135.0,lower_bound,-217026.76480726968,Spearman,0.20045146820406093,Very Weak Correlation
+II.3.1,Population,135.0,lower_bound,-50.091939437098425,Pearson,0.17331250409693288,Very Weak Correlation
+II.3.1,Population,135.0,lower_bound,-50.091939437098425,Spearman,0.2399425900568445,Very Weak Correlation
+II.3.1,GDP,135.0,lower_bound,-0.0006813906839280984,Pearson,0.36962636613644045,Weak Correlation
+II.3.1,GDP,135.0,lower_bound,-0.0006813906839280984,Spearman,0.24327201565580636,Very Weak Correlation
 II.3.1,GDP,135.0,max,0.03767407532611794,Pearson,0.36962636613644045,Weak Correlation
 II.3.1,GDP,135.0,max,0.03767407532611794,Spearman,0.24327201565580636,Very Weak Correlation
 II.3.1,Population,135.0,max,922.3543370153459,Pearson,0.17331250409693288,Very Weak Correlation
@@ -1329,13 +1892,23 @@ II.3.1,Population,135.0,std,165.83696131817868,Spearman,0.2399425900568445,Very 
 II.3.1,Area,135.0,std,856681.6491454918,Pearson,0.13061377470829597,Very Weak Correlation
 II.3.1,Area,135.0,std,856681.6491454918,Spearman,0.20045146820406093,Very Weak Correlation
 II.3.1,emissions,135.0,std,108906624.85444881,,,
+II.3.1,GDP,135.0,upper_bound,0.0012264184030527088,Pearson,0.36962636613644045,Weak Correlation
+II.3.1,GDP,135.0,upper_bound,0.0012264184030527088,Spearman,0.24327201565580636,Very Weak Correlation
+II.3.1,Population,135.0,upper_bound,87.55241651433768,Pearson,0.17331250409693288,Very Weak Correlation
+II.3.1,Population,135.0,upper_bound,87.55241651433768,Spearman,0.2399425900568445,Very Weak Correlation
+II.3.1,Area,135.0,upper_bound,369681.02241627616,Pearson,0.13061377470829597,Very Weak Correlation
+II.3.1,Area,135.0,upper_bound,369681.02241627616,Spearman,0.20045146820406093,Very Weak Correlation
+II.3.1,emissions,135.0,upper_bound,188597680.13666394,,,
 II.3.2,emissions,4.0,25%,111550.53290580015,,,
 II.3.2,emissions,4.0,50%,182980.1422205334,,,
 II.3.2,emissions,4.0,75%,256353.25507499996,,,
+II.3.2,emissions,4.0,IQR,144802.7221691998,,,
+II.3.2,emissions,4.0,lower_bound,-105653.55034799955,,,
 II.3.2,emissions,4.0,max,294433.73069999996,,,
 II.3.2,emissions,4.0,mean,184923.6457602667,,,
 II.3.2,emissions,4.0,min,79300.56790000001,,,
 II.3.2,emissions,4.0,std,100863.40680449129,,,
+II.3.2,emissions,4.0,upper_bound,473557.3383287997,,,
 II.3.3,GDP,72.0,25%,9.205556378806651e-05,Pearson,0.14776405086468036,Very Weak Correlation
 II.3.3,GDP,72.0,25%,9.205556378806651e-05,Spearman,0.021693160290262744,Negligible or No Correlation
 II.3.3,Population,72.0,25%,20.381449254308404,Pearson,0.2974371539890186,Very Weak Correlation
@@ -1357,6 +1930,20 @@ II.3.3,Population,72.0,75%,160.04980181416192,Spearman,0.3001736503465418,Weak C
 II.3.3,Area,72.0,75%,389742.2198501479,Pearson,0.4326067909957648,Weak Correlation
 II.3.3,Area,72.0,75%,389742.2198501479,Spearman,0.600520373130798,Moderate Correlation
 II.3.3,emissions,72.0,75%,323711516.00725627,,,
+II.3.3,GDP,72.0,IQR,0.004687228133424459,Pearson,0.14776405086468036,Very Weak Correlation
+II.3.3,GDP,72.0,IQR,0.004687228133424459,Spearman,0.021693160290262744,Negligible or No Correlation
+II.3.3,Population,72.0,IQR,139.66835255985353,Pearson,0.2974371539890186,Very Weak Correlation
+II.3.3,Population,72.0,IQR,139.66835255985353,Spearman,0.3001736503465418,Weak Correlation
+II.3.3,Area,72.0,IQR,321261.1832674417,Pearson,0.4326067909957648,Weak Correlation
+II.3.3,Area,72.0,IQR,321261.1832674417,Spearman,0.600520373130798,Moderate Correlation
+II.3.3,emissions,72.0,IQR,315273754.4761618,,,
+II.3.3,emissions,72.0,lower_bound,-464472870.1831482,,,
+II.3.3,Area,72.0,lower_bound,-413410.73831845634,Pearson,0.4326067909957648,Weak Correlation
+II.3.3,Area,72.0,lower_bound,-413410.73831845634,Spearman,0.600520373130798,Moderate Correlation
+II.3.3,Population,72.0,lower_bound,-189.1210795854719,Pearson,0.2974371539890186,Very Weak Correlation
+II.3.3,Population,72.0,lower_bound,-189.1210795854719,Spearman,0.3001736503465418,Weak Correlation
+II.3.3,GDP,72.0,lower_bound,-0.006938786636348622,Pearson,0.14776405086468036,Very Weak Correlation
+II.3.3,GDP,72.0,lower_bound,-0.006938786636348622,Spearman,0.021693160290262744,Negligible or No Correlation
 II.3.3,GDP,72.0,max,0.22909391459609976,Pearson,0.14776405086468036,Very Weak Correlation
 II.3.3,GDP,72.0,max,0.22909391459609976,Spearman,0.021693160290262744,Negligible or No Correlation
 II.3.3,Population,72.0,max,2024.3634253923506,Pearson,0.2974371539890186,Very Weak Correlation
@@ -1385,6 +1972,13 @@ II.3.3,Population,72.0,std,450.7081731799981,Spearman,0.3001736503465418,Weak Co
 II.3.3,Area,72.0,std,5062648.960306913,Pearson,0.4326067909957648,Weak Correlation
 II.3.3,Area,72.0,std,5062648.960306913,Spearman,0.600520373130798,Moderate Correlation
 II.3.3,emissions,72.0,std,1152267529.0268452,,,
+II.3.3,GDP,72.0,upper_bound,0.011810125897349213,Pearson,0.14776405086468036,Very Weak Correlation
+II.3.3,GDP,72.0,upper_bound,0.011810125897349213,Spearman,0.021693160290262744,Negligible or No Correlation
+II.3.3,Population,72.0,upper_bound,369.55233065394225,Pearson,0.2974371539890186,Very Weak Correlation
+II.3.3,Population,72.0,upper_bound,369.55233065394225,Spearman,0.3001736503465418,Weak Correlation
+II.3.3,Area,72.0,upper_bound,871633.9947513104,Pearson,0.4326067909957648,Weak Correlation
+II.3.3,Area,72.0,upper_bound,871633.9947513104,Spearman,0.600520373130798,Moderate Correlation
+II.3.3,emissions,72.0,upper_bound,796622147.721499,,,
 II.4.1,GDP,84.0,25%,9.467449620415377e-06,Pearson,0.26905566846140255,Very Weak Correlation
 II.4.1,GDP,84.0,25%,9.467449620415377e-06,Spearman,0.25940364506637825,Very Weak Correlation
 II.4.1,Population,84.0,25%,0.8348988860342546,Pearson,0.2730359333935545,Very Weak Correlation
@@ -1406,6 +2000,20 @@ II.4.1,Population,84.0,75%,53.402603206491584,Spearman,0.31241459905967217,Weak 
 II.4.1,Area,84.0,75%,314134.3591494639,Pearson,0.011049487432069783,Negligible or No Correlation
 II.4.1,Area,84.0,75%,314134.3591494639,Spearman,0.10855259289979051,Very Weak Correlation
 II.4.1,emissions,84.0,75%,154642915.22397798,,,
+II.4.1,GDP,84.0,IQR,0.0009076787876055307,Pearson,0.26905566846140255,Very Weak Correlation
+II.4.1,GDP,84.0,IQR,0.0009076787876055307,Spearman,0.25940364506637825,Very Weak Correlation
+II.4.1,Population,84.0,IQR,52.56770432045733,Pearson,0.2730359333935545,Very Weak Correlation
+II.4.1,Population,84.0,IQR,52.56770432045733,Spearman,0.31241459905967217,Weak Correlation
+II.4.1,Area,84.0,IQR,311067.6352683965,Pearson,0.011049487432069783,Negligible or No Correlation
+II.4.1,Area,84.0,IQR,311067.6352683965,Spearman,0.10855259289979051,Very Weak Correlation
+II.4.1,emissions,84.0,IQR,150641614.90552008,,,
+II.4.1,emissions,84.0,lower_bound,-221961122.03982222,,,
+II.4.1,Area,84.0,lower_bound,-463534.72902152746,Pearson,0.011049487432069783,Negligible or No Correlation
+II.4.1,Area,84.0,lower_bound,-463534.72902152746,Spearman,0.10855259289979051,Very Weak Correlation
+II.4.1,Population,84.0,lower_bound,-78.01665759465175,Pearson,0.2730359333935545,Very Weak Correlation
+II.4.1,Population,84.0,lower_bound,-78.01665759465175,Spearman,0.31241459905967217,Weak Correlation
+II.4.1,GDP,84.0,lower_bound,-0.0013520507317878808,Pearson,0.26905566846140255,Very Weak Correlation
+II.4.1,GDP,84.0,lower_bound,-0.0013520507317878808,Spearman,0.25940364506637825,Very Weak Correlation
 II.4.1,GDP,84.0,max,0.027925252989880404,Pearson,0.26905566846140255,Very Weak Correlation
 II.4.1,GDP,84.0,max,0.027925252989880404,Spearman,0.25940364506637825,Very Weak Correlation
 II.4.1,Population,84.0,max,638.2407764229578,Pearson,0.2730359333935545,Very Weak Correlation
@@ -1434,13 +2042,23 @@ II.4.1,Population,84.0,std,131.416580963144,Spearman,0.31241459905967217,Weak Co
 II.4.1,Area,84.0,std,307707.9574253278,Pearson,0.011049487432069783,Negligible or No Correlation
 II.4.1,Area,84.0,std,307707.9574253278,Spearman,0.10855259289979051,Very Weak Correlation
 II.4.1,emissions,84.0,std,397356154.4359401,,,
+II.4.1,GDP,84.0,upper_bound,0.0022786644186342424,Pearson,0.26905566846140255,Very Weak Correlation
+II.4.1,GDP,84.0,upper_bound,0.0022786644186342424,Spearman,0.25940364506637825,Very Weak Correlation
+II.4.1,Population,84.0,upper_bound,132.25415968717758,Pearson,0.2730359333935545,Very Weak Correlation
+II.4.1,Population,84.0,upper_bound,132.25415968717758,Spearman,0.31241459905967217,Weak Correlation
+II.4.1,Area,84.0,upper_bound,780735.8120520588,Pearson,0.011049487432069783,Negligible or No Correlation
+II.4.1,Area,84.0,upper_bound,780735.8120520588,Spearman,0.10855259289979051,Very Weak Correlation
+II.4.1,emissions,84.0,upper_bound,380605337.5822581,,,
 II.4.2,emissions,4.0,25%,4301724.535054464,,,
 II.4.2,emissions,4.0,50%,4737310.28414,,,
 II.4.2,emissions,4.0,75%,5128775.741235,,,
+II.4.2,emissions,4.0,IQR,827051.2061805362,,,
+II.4.2,emissions,4.0,lower_bound,3061147.7257836596,,,
 II.4.2,emissions,4.0,max,6087394.393499999,,,
 II.4.2,emissions,4.0,mean,4693189.992149464,,,
 II.4.2,emissions,4.0,min,3210745.006817855,,,
 II.4.2,emissions,4.0,std,1176957.7901828596,,,
+II.4.2,emissions,4.0,upper_bound,6369352.550505804,,,
 II.4.3,GDP,123.0,25%,0.0027006342602494933,Pearson,0.19485149233857926,Very Weak Correlation
 II.4.3,GDP,123.0,25%,0.0027006342602494933,Spearman,0.4693793646548615,Weak Correlation
 II.4.3,Population,123.0,25%,75.46101477819789,Pearson,0.398561834289774,Weak Correlation
@@ -1462,6 +2080,20 @@ II.4.3,Population,123.0,75%,466.37939178590045,Spearman,0.6259259406070771,Moder
 II.4.3,Area,123.0,75%,2351030.8073661514,Pearson,0.1836028008468976,Very Weak Correlation
 II.4.3,Area,123.0,75%,2351030.8073661514,Spearman,0.44255726151758096,Weak Correlation
 II.4.3,emissions,123.0,75%,1693695095.5095253,,,
+II.4.3,GDP,123.0,IQR,0.016293932747333963,Pearson,0.19485149233857926,Very Weak Correlation
+II.4.3,GDP,123.0,IQR,0.016293932747333963,Spearman,0.4693793646548615,Weak Correlation
+II.4.3,Population,123.0,IQR,390.9183770077026,Pearson,0.398561834289774,Weak Correlation
+II.4.3,Population,123.0,IQR,390.9183770077026,Spearman,0.6259259406070771,Moderate Correlation
+II.4.3,Area,123.0,IQR,2176476.7681079665,Pearson,0.1836028008468976,Very Weak Correlation
+II.4.3,Area,123.0,IQR,2176476.7681079665,Spearman,0.44255726151758096,Weak Correlation
+II.4.3,emissions,123.0,IQR,1460350855.4093301,,,
+II.4.3,emissions,123.0,lower_bound,-1957182043.0138,,,
+II.4.3,Area,123.0,lower_bound,-3090161.112903765,Pearson,0.1836028008468976,Very Weak Correlation
+II.4.3,Area,123.0,lower_bound,-3090161.112903765,Spearman,0.44255726151758096,Weak Correlation
+II.4.3,Population,123.0,lower_bound,-510.9165507333561,Pearson,0.398561834289774,Weak Correlation
+II.4.3,Population,123.0,lower_bound,-510.9165507333561,Spearman,0.6259259406070771,Moderate Correlation
+II.4.3,GDP,123.0,lower_bound,-0.02174026486075145,Pearson,0.19485149233857926,Very Weak Correlation
+II.4.3,GDP,123.0,lower_bound,-0.02174026486075145,Spearman,0.4693793646548615,Weak Correlation
 II.4.3,GDP,123.0,max,0.5703566095722682,Pearson,0.19485149233857926,Very Weak Correlation
 II.4.3,GDP,123.0,max,0.5703566095722682,Spearman,0.4693793646548615,Weak Correlation
 II.4.3,Population,123.0,max,4955.465971711696,Pearson,0.398561834289774,Weak Correlation
@@ -1490,6 +2122,13 @@ II.4.3,Population,123.0,std,803.4988131860013,Spearman,0.6259259406070771,Modera
 II.4.3,Area,123.0,std,3354013.97721404,Pearson,0.1836028008468976,Very Weak Correlation
 II.4.3,Area,123.0,std,3354013.97721404,Spearman,0.44255726151758096,Weak Correlation
 II.4.3,emissions,123.0,std,3451421676.5202756,,,
+II.4.3,GDP,123.0,upper_bound,0.0434354661285844,Pearson,0.19485149233857926,Very Weak Correlation
+II.4.3,GDP,123.0,upper_bound,0.0434354661285844,Spearman,0.4693793646548615,Weak Correlation
+II.4.3,Population,123.0,upper_bound,1052.7569572974544,Pearson,0.398561834289774,Weak Correlation
+II.4.3,Population,123.0,upper_bound,1052.7569572974544,Spearman,0.6259259406070771,Moderate Correlation
+II.4.3,Area,123.0,upper_bound,5615745.959528102,Pearson,0.1836028008468976,Very Weak Correlation
+II.4.3,Area,123.0,upper_bound,5615745.959528102,Spearman,0.44255726151758096,Weak Correlation
+II.4.3,emissions,123.0,upper_bound,3884221378.6235204,,,
 II.5.1,GDP,91.0,25%,7.430837260750253e-05,Pearson,0.3135957338395193,Weak Correlation
 II.5.1,GDP,91.0,25%,7.430837260750253e-05,Spearman,0.3705495644080815,Weak Correlation
 II.5.1,Population,91.0,25%,5.763815929858607,Pearson,0.05083519662257133,Negligible or No Correlation
@@ -1511,6 +2150,20 @@ II.5.1,Population,91.0,75%,37.17164451263834,Spearman,0.2941246735044913,Very We
 II.5.1,Area,91.0,75%,169247.7200472206,Pearson,0.2460196825545768,Very Weak Correlation
 II.5.1,Area,91.0,75%,169247.7200472206,Spearman,0.43066251833038366,Weak Correlation
 II.5.1,emissions,91.0,75%,102511000.0,,,
+II.5.1,GDP,91.0,IQR,0.00041957097995667697,Pearson,0.3135957338395193,Weak Correlation
+II.5.1,GDP,91.0,IQR,0.00041957097995667697,Spearman,0.3705495644080815,Weak Correlation
+II.5.1,Population,91.0,IQR,31.40782858277973,Pearson,0.05083519662257133,Negligible or No Correlation
+II.5.1,Population,91.0,IQR,31.40782858277973,Spearman,0.2941246735044913,Very Weak Correlation
+II.5.1,Area,91.0,IQR,139445.1834681376,Pearson,0.2460196825545768,Very Weak Correlation
+II.5.1,Area,91.0,IQR,139445.1834681376,Spearman,0.43066251833038366,Weak Correlation
+II.5.1,emissions,91.0,IQR,95563045.17607437,,,
+II.5.1,emissions,91.0,lower_bound,-136396612.94018593,,,
+II.5.1,Area,91.0,lower_bound,-179365.2386231234,Pearson,0.2460196825545768,Very Weak Correlation
+II.5.1,Area,91.0,lower_bound,-179365.2386231234,Spearman,0.43066251833038366,Weak Correlation
+II.5.1,Population,91.0,lower_bound,-41.347926944310984,Pearson,0.05083519662257133,Negligible or No Correlation
+II.5.1,Population,91.0,lower_bound,-41.347926944310984,Spearman,0.2941246735044913,Very Weak Correlation
+II.5.1,GDP,91.0,lower_bound,-0.000555048097327513,Pearson,0.3135957338395193,Weak Correlation
+II.5.1,GDP,91.0,lower_bound,-0.000555048097327513,Spearman,0.3705495644080815,Weak Correlation
 II.5.1,GDP,91.0,max,0.004085132368574495,Pearson,0.3135957338395193,Weak Correlation
 II.5.1,GDP,91.0,max,0.004085132368574495,Spearman,0.3705495644080815,Weak Correlation
 II.5.1,Population,91.0,max,205.20349062735312,Pearson,0.05083519662257133,Negligible or No Correlation
@@ -1539,13 +2192,23 @@ II.5.1,Population,91.0,std,52.983307688490704,Spearman,0.2941246735044913,Very W
 II.5.1,Area,91.0,std,197839.81130150123,Pearson,0.2460196825545768,Very Weak Correlation
 II.5.1,Area,91.0,std,197839.81130150123,Spearman,0.43066251833038366,Weak Correlation
 II.5.1,emissions,91.0,std,96693955.13089904,,,
+II.5.1,GDP,91.0,upper_bound,0.0011232358224991948,Pearson,0.3135957338395193,Weak Correlation
+II.5.1,GDP,91.0,upper_bound,0.0011232358224991948,Spearman,0.3705495644080815,Weak Correlation
+II.5.1,Population,91.0,upper_bound,84.28338738680793,Pearson,0.05083519662257133,Negligible or No Correlation
+II.5.1,Population,91.0,upper_bound,84.28338738680793,Spearman,0.2941246735044913,Very Weak Correlation
+II.5.1,Area,91.0,upper_bound,378415.495249427,Pearson,0.2460196825545768,Very Weak Correlation
+II.5.1,Area,91.0,upper_bound,378415.495249427,Spearman,0.43066251833038366,Weak Correlation
+II.5.1,emissions,91.0,upper_bound,245855567.76411155,,,
 II.5.3,emissions,2.0,25%,494014.00000000006,,,
 II.5.3,emissions,2.0,50%,963860.0000000001,,,
 II.5.3,emissions,2.0,75%,1433706.0000000002,,,
+II.5.3,emissions,2.0,IQR,939692.0000000002,,,
+II.5.3,emissions,2.0,lower_bound,-915524.0000000005,,,
 II.5.3,emissions,2.0,max,1903552.0000000002,,,
 II.5.3,emissions,2.0,mean,963860.0000000001,,,
 II.5.3,emissions,2.0,min,24168.0,,,
 II.5.3,emissions,2.0,std,1328925.1708534986,,,
+II.5.3,emissions,2.0,upper_bound,2843244.000000001,,,
 III.1.1,GDP,150.0,25%,0.0007086368132205929,Pearson,-0.04123213410506555,Negligible or No Correlation
 III.1.1,GDP,150.0,25%,0.0007086368132205929,Spearman,-0.15589192725793827,Very Weak Correlation
 III.1.1,Population,150.0,25%,38.17464563615191,Pearson,0.44666225700718987,Weak Correlation
@@ -1567,6 +2230,20 @@ III.1.1,Population,150.0,75%,217.77847010867677,Spearman,0.5911118894424519,Mode
 III.1.1,Area,150.0,75%,764157.4071064568,Pearson,0.38054521718002865,Weak Correlation
 III.1.1,Area,150.0,75%,764157.4071064568,Spearman,0.5039344274936532,Moderate Correlation
 III.1.1,emissions,150.0,75%,1111881800.1119623,,,
+III.1.1,GDP,150.0,IQR,0.028476606347756714,Pearson,-0.04123213410506555,Negligible or No Correlation
+III.1.1,GDP,150.0,IQR,0.028476606347756714,Spearman,-0.15589192725793827,Very Weak Correlation
+III.1.1,Population,150.0,IQR,179.60382447252488,Pearson,0.44666225700718987,Weak Correlation
+III.1.1,Population,150.0,IQR,179.60382447252488,Spearman,0.5911118894424519,Moderate Correlation
+III.1.1,Area,150.0,IQR,658837.7024060575,Pearson,0.38054521718002865,Weak Correlation
+III.1.1,Area,150.0,IQR,658837.7024060575,Spearman,0.5039344274936532,Moderate Correlation
+III.1.1,emissions,150.0,IQR,922286777.6585569,,,
+III.1.1,emissions,150.0,lower_bound,-1193835144.03443,,,
+III.1.1,Area,150.0,lower_bound,-882936.8489086869,Pearson,0.38054521718002865,Weak Correlation
+III.1.1,Area,150.0,lower_bound,-882936.8489086869,Spearman,0.5039344274936532,Moderate Correlation
+III.1.1,Population,150.0,lower_bound,-231.23109107263542,Pearson,0.44666225700718987,Weak Correlation
+III.1.1,Population,150.0,lower_bound,-231.23109107263542,Spearman,0.5911118894424519,Moderate Correlation
+III.1.1,GDP,150.0,lower_bound,-0.04200627270841448,Pearson,-0.04123213410506555,Negligible or No Correlation
+III.1.1,GDP,150.0,lower_bound,-0.04200627270841448,Spearman,-0.15589192725793827,Very Weak Correlation
 III.1.1,GDP,150.0,max,0.14845813959581947,Pearson,-0.04123213410506555,Negligible or No Correlation
 III.1.1,GDP,150.0,max,0.14845813959581947,Spearman,-0.15589192725793827,Very Weak Correlation
 III.1.1,Population,150.0,max,1821.8686747482895,Pearson,0.44666225700718987,Weak Correlation
@@ -1595,6 +2272,13 @@ III.1.1,Population,150.0,std,241.3332630400121,Spearman,0.5911118894424519,Moder
 III.1.1,Area,150.0,std,909961.5056024469,Pearson,0.38054521718002865,Weak Correlation
 III.1.1,Area,150.0,std,909961.5056024469,Spearman,0.5039344274936532,Moderate Correlation
 III.1.1,emissions,150.0,std,1054046987.4708105,,,
+III.1.1,GDP,150.0,upper_bound,0.07190015268261238,Pearson,-0.04123213410506555,Negligible or No Correlation
+III.1.1,GDP,150.0,upper_bound,0.07190015268261238,Spearman,-0.15589192725793827,Very Weak Correlation
+III.1.1,Population,150.0,upper_bound,487.1842068174641,Pearson,0.44666225700718987,Weak Correlation
+III.1.1,Population,150.0,upper_bound,487.1842068174641,Spearman,0.5911118894424519,Moderate Correlation
+III.1.1,Area,150.0,upper_bound,1752413.960715543,Pearson,0.38054521718002865,Weak Correlation
+III.1.1,Area,150.0,upper_bound,1752413.960715543,Spearman,0.5039344274936532,Moderate Correlation
+III.1.1,emissions,150.0,upper_bound,2495311966.5997977,,,
 III.1.2,GDP,208.0,25%,0.0014389032407253963,Pearson,0.20294856867846933,Very Weak Correlation
 III.1.2,GDP,208.0,25%,0.0014389032407253963,Spearman,0.16973311300050586,Very Weak Correlation
 III.1.2,Population,208.0,25%,84.69433033964798,Pearson,0.3371060886293754,Weak Correlation
@@ -1616,6 +2300,20 @@ III.1.2,Population,208.0,75%,487.8723185663051,Spearman,0.5204611178595413,Moder
 III.1.2,Area,208.0,75%,2873018.588240945,Pearson,0.012093171262881376,Negligible or No Correlation
 III.1.2,Area,208.0,75%,2873018.588240945,Spearman,0.13973794804941764,Very Weak Correlation
 III.1.2,emissions,208.0,75%,1227072327.5560403,,,
+III.1.2,GDP,208.0,IQR,0.012469202733773128,Pearson,0.20294856867846933,Very Weak Correlation
+III.1.2,GDP,208.0,IQR,0.012469202733773128,Spearman,0.16973311300050586,Very Weak Correlation
+III.1.2,Population,208.0,IQR,403.17798822665713,Pearson,0.3371060886293754,Weak Correlation
+III.1.2,Population,208.0,IQR,403.17798822665713,Spearman,0.5204611178595413,Moderate Correlation
+III.1.2,Area,208.0,IQR,2627389.8406871287,Pearson,0.012093171262881376,Negligible or No Correlation
+III.1.2,Area,208.0,IQR,2627389.8406871287,Spearman,0.13973794804941764,Very Weak Correlation
+III.1.2,emissions,208.0,IQR,1114718474.5950992,,,
+III.1.2,emissions,208.0,lower_bound,-1559723858.9317076,,,
+III.1.2,Area,208.0,lower_bound,-3695456.013476877,Pearson,0.012093171262881376,Negligible or No Correlation
+III.1.2,Area,208.0,lower_bound,-3695456.013476877,Spearman,0.13973794804941764,Very Weak Correlation
+III.1.2,Population,208.0,lower_bound,-520.0726520003377,Pearson,0.3371060886293754,Weak Correlation
+III.1.2,Population,208.0,lower_bound,-520.0726520003377,Spearman,0.5204611178595413,Moderate Correlation
+III.1.2,GDP,208.0,lower_bound,-0.017264900859934297,Pearson,0.20294856867846933,Very Weak Correlation
+III.1.2,GDP,208.0,lower_bound,-0.017264900859934297,Spearman,0.16973311300050586,Very Weak Correlation
 III.1.2,GDP,208.0,max,1.1755572772834713,Pearson,0.20294856867846933,Very Weak Correlation
 III.1.2,GDP,208.0,max,1.1755572772834713,Spearman,0.16973311300050586,Very Weak Correlation
 III.1.2,Population,208.0,max,3813.324714676817,Pearson,0.3371060886293754,Weak Correlation
@@ -1644,6 +2342,13 @@ III.1.2,Population,208.0,std,632.9768532945934,Spearman,0.5204611178595413,Moder
 III.1.2,Area,208.0,std,4835408.234894596,Pearson,0.012093171262881376,Negligible or No Correlation
 III.1.2,Area,208.0,std,4835408.234894596,Spearman,0.13973794804941764,Very Weak Correlation
 III.1.2,emissions,208.0,std,997090627.2579578,,,
+III.1.2,GDP,208.0,upper_bound,0.03261191007515822,Pearson,0.20294856867846933,Very Weak Correlation
+III.1.2,GDP,208.0,upper_bound,0.03261191007515822,Spearman,0.16973311300050586,Very Weak Correlation
+III.1.2,Population,208.0,upper_bound,1092.6393009062908,Pearson,0.3371060886293754,Weak Correlation
+III.1.2,Population,208.0,upper_bound,1092.6393009062908,Spearman,0.5204611178595413,Moderate Correlation
+III.1.2,Area,208.0,upper_bound,6814103.349271638,Pearson,0.012093171262881376,Negligible or No Correlation
+III.1.2,Area,208.0,upper_bound,6814103.349271638,Spearman,0.13973794804941764,Very Weak Correlation
+III.1.2,emissions,208.0,upper_bound,2899150039.448689,,,
 III.1.3,GDP,21.0,25%,5.593223183358021e-05,Pearson,0.23729191983288736,Very Weak Correlation
 III.1.3,GDP,21.0,25%,5.593223183358021e-05,Spearman,-0.16623376623376623,Very Weak Correlation
 III.1.3,Population,21.0,25%,2.106049958890462,Pearson,-0.15255912986378756,Very Weak Correlation
@@ -1665,6 +2370,20 @@ III.1.3,Population,21.0,75%,52.55274668247719,Spearman,-0.2721663021101631,Very 
 III.1.3,Area,21.0,75%,245444.7333750838,Pearson,0.22124458491846086,Very Weak Correlation
 III.1.3,Area,21.0,75%,245444.7333750838,Spearman,0.777911175905468,Strong Correlation
 III.1.3,emissions,21.0,75%,196827040.5881472,,,
+III.1.3,GDP,21.0,IQR,0.0019698151187279613,Pearson,0.23729191983288736,Very Weak Correlation
+III.1.3,GDP,21.0,IQR,0.0019698151187279613,Spearman,-0.16623376623376623,Very Weak Correlation
+III.1.3,Population,21.0,IQR,50.44669672358673,Pearson,-0.15255912986378756,Very Weak Correlation
+III.1.3,Population,21.0,IQR,50.44669672358673,Spearman,-0.2721663021101631,Very Weak Correlation
+III.1.3,Area,21.0,IQR,234577.34893444352,Pearson,0.22124458491846086,Very Weak Correlation
+III.1.3,Area,21.0,IQR,234577.34893444352,Spearman,0.777911175905468,Strong Correlation
+III.1.3,emissions,21.0,IQR,184730301.39355925,,,
+III.1.3,emissions,21.0,lower_bound,-264998712.89575094,,,
+III.1.3,Area,21.0,lower_bound,-340998.638961025,Pearson,0.22124458491846086,Very Weak Correlation
+III.1.3,Area,21.0,lower_bound,-340998.638961025,Spearman,0.777911175905468,Strong Correlation
+III.1.3,Population,21.0,lower_bound,-73.56399512648963,Pearson,-0.15255912986378756,Very Weak Correlation
+III.1.3,Population,21.0,lower_bound,-73.56399512648963,Spearman,-0.2721663021101631,Very Weak Correlation
+III.1.3,GDP,21.0,lower_bound,-0.0028987904462583615,Pearson,0.23729191983288736,Very Weak Correlation
+III.1.3,GDP,21.0,lower_bound,-0.0028987904462583615,Spearman,-0.16623376623376623,Very Weak Correlation
 III.1.3,GDP,21.0,max,0.02161167528944744,Pearson,0.23729191983288736,Very Weak Correlation
 III.1.3,GDP,21.0,max,0.02161167528944744,Spearman,-0.16623376623376623,Very Weak Correlation
 III.1.3,Population,21.0,max,215.60549001186843,Pearson,-0.15255912986378756,Very Weak Correlation
@@ -1693,6 +2412,13 @@ III.1.3,Population,21.0,std,65.46498865199581,Spearman,-0.2721663021101631,Very 
 III.1.3,Area,21.0,std,146398.10221586967,Pearson,0.22124458491846086,Very Weak Correlation
 III.1.3,Area,21.0,std,146398.10221586967,Spearman,0.777911175905468,Strong Correlation
 III.1.3,emissions,21.0,std,161648846.75852132,,,
+III.1.3,GDP,21.0,upper_bound,0.004980470028653483,Pearson,0.23729191983288736,Very Weak Correlation
+III.1.3,GDP,21.0,upper_bound,0.004980470028653483,Spearman,-0.16623376623376623,Very Weak Correlation
+III.1.3,Population,21.0,upper_bound,128.2227917678573,Pearson,-0.15255912986378756,Very Weak Correlation
+III.1.3,Population,21.0,upper_bound,128.2227917678573,Spearman,-0.2721663021101631,Very Weak Correlation
+III.1.3,Area,21.0,upper_bound,597310.756776749,Pearson,0.22124458491846086,Very Weak Correlation
+III.1.3,Area,21.0,upper_bound,597310.756776749,Spearman,0.777911175905468,Strong Correlation
+III.1.3,emissions,21.0,upper_bound,473922492.6784861,,,
 III.2.1,GDP,101.0,25%,5.253211948790897e-06,Pearson,-0.04961561488173268,Negligible or No Correlation
 III.2.1,GDP,101.0,25%,5.253211948790897e-06,Spearman,-0.15187130893644102,Very Weak Correlation
 III.2.1,Population,101.0,25%,0.19722416156265818,Pearson,0.08624245735448079,Negligible or No Correlation
@@ -1714,6 +2440,20 @@ III.2.1,Population,101.0,75%,8.520744652450766,Spearman,0.09036744535648522,Negl
 III.2.1,Area,101.0,75%,36079.29966590957,Pearson,-0.012720843456610488,Negligible or No Correlation
 III.2.1,Area,101.0,75%,36079.29966590957,Spearman,0.08146388900977118,Negligible or No Correlation
 III.2.1,emissions,101.0,75%,26252083.399999995,,,
+III.2.1,GDP,101.0,IQR,0.00024210697252602373,Pearson,-0.04961561488173268,Negligible or No Correlation
+III.2.1,GDP,101.0,IQR,0.00024210697252602373,Spearman,-0.15187130893644102,Very Weak Correlation
+III.2.1,Population,101.0,IQR,8.323520490888107,Pearson,0.08624245735448079,Negligible or No Correlation
+III.2.1,Population,101.0,IQR,8.323520490888107,Spearman,0.09036744535648522,Negligible or No Correlation
+III.2.1,Area,101.0,IQR,35139.005226153975,Pearson,-0.012720843456610488,Negligible or No Correlation
+III.2.1,Area,101.0,IQR,35139.005226153975,Spearman,0.08146388900977118,Negligible or No Correlation
+III.2.1,emissions,101.0,IQR,25554551.399999995,,,
+III.2.1,emissions,101.0,lower_bound,-37634295.099999994,,,
+III.2.1,Area,101.0,lower_bound,-51768.21339947537,Pearson,-0.012720843456610488,Negligible or No Correlation
+III.2.1,Area,101.0,lower_bound,-51768.21339947537,Spearman,0.08146388900977118,Negligible or No Correlation
+III.2.1,Population,101.0,lower_bound,-12.288056574769502,Pearson,0.08624245735448079,Negligible or No Correlation
+III.2.1,Population,101.0,lower_bound,-12.288056574769502,Spearman,0.09036744535648522,Negligible or No Correlation
+III.2.1,GDP,101.0,lower_bound,-0.00035790724684024467,Pearson,-0.04961561488173268,Negligible or No Correlation
+III.2.1,GDP,101.0,lower_bound,-0.00035790724684024467,Spearman,-0.15187130893644102,Very Weak Correlation
 III.2.1,GDP,101.0,max,0.002693295036322853,Pearson,-0.04961561488173268,Negligible or No Correlation
 III.2.1,GDP,101.0,max,0.002693295036322853,Spearman,-0.15187130893644102,Very Weak Correlation
 III.2.1,Population,101.0,max,102.44272499999998,Pearson,0.08624245735448079,Negligible or No Correlation
@@ -1742,6 +2482,13 @@ III.2.1,Population,101.0,std,11.600990145852082,Spearman,0.09036744535648522,Neg
 III.2.1,Area,101.0,std,68449.29118917104,Pearson,-0.012720843456610488,Negligible or No Correlation
 III.2.1,Area,101.0,std,68449.29118917104,Spearman,0.08146388900977118,Negligible or No Correlation
 III.2.1,emissions,101.0,std,41359657.054896414,,,
+III.2.1,GDP,101.0,upper_bound,0.0006105206432638502,Pearson,-0.04961561488173268,Negligible or No Correlation
+III.2.1,GDP,101.0,upper_bound,0.0006105206432638502,Spearman,-0.15187130893644102,Very Weak Correlation
+III.2.1,Population,101.0,upper_bound,21.006025388782927,Pearson,0.08624245735448079,Negligible or No Correlation
+III.2.1,Population,101.0,upper_bound,21.006025388782927,Spearman,0.09036744535648522,Negligible or No Correlation
+III.2.1,Area,101.0,upper_bound,88787.80750514055,Pearson,-0.012720843456610488,Negligible or No Correlation
+III.2.1,Area,101.0,upper_bound,88787.80750514055,Spearman,0.08146388900977118,Negligible or No Correlation
+III.2.1,emissions,101.0,upper_bound,64583910.499999985,,,
 III.2.2,GDP,93.0,25%,4.297004201320415e-06,Pearson,-0.023176954727791205,Negligible or No Correlation
 III.2.2,GDP,93.0,25%,4.297004201320415e-06,Spearman,-0.06705215277191644,Negligible or No Correlation
 III.2.2,Population,93.0,25%,0.5546496599871967,Pearson,0.16214326235668838,Very Weak Correlation
@@ -1763,6 +2510,20 @@ III.2.2,Population,93.0,75%,11.518414134340526,Spearman,0.09506505156639128,Negl
 III.2.2,Area,93.0,75%,59747.73311784511,Pearson,0.12984864251276582,Very Weak Correlation
 III.2.2,Area,93.0,75%,59747.73311784511,Spearman,0.14474657955609277,Very Weak Correlation
 III.2.2,emissions,93.0,75%,15396000.0,,,
+III.2.2,GDP,93.0,IQR,0.0003223213858853203,Pearson,-0.023176954727791205,Negligible or No Correlation
+III.2.2,GDP,93.0,IQR,0.0003223213858853203,Spearman,-0.06705215277191644,Negligible or No Correlation
+III.2.2,Population,93.0,IQR,10.96376447435333,Pearson,0.16214326235668838,Very Weak Correlation
+III.2.2,Population,93.0,IQR,10.96376447435333,Spearman,0.09506505156639128,Negligible or No Correlation
+III.2.2,Area,93.0,IQR,57322.06645117845,Pearson,0.12984864251276582,Very Weak Correlation
+III.2.2,Area,93.0,IQR,57322.06645117845,Spearman,0.14474657955609277,Very Weak Correlation
+III.2.2,emissions,93.0,IQR,14777112.567,,,
+III.2.2,emissions,93.0,lower_bound,-21546781.4175,,,
+III.2.2,Area,93.0,lower_bound,-83557.433010101,Pearson,0.12984864251276582,Very Weak Correlation
+III.2.2,Area,93.0,lower_bound,-83557.433010101,Spearman,0.14474657955609277,Very Weak Correlation
+III.2.2,Population,93.0,lower_bound,-15.890997051542799,Pearson,0.16214326235668838,Very Weak Correlation
+III.2.2,Population,93.0,lower_bound,-15.890997051542799,Spearman,0.09506505156639128,Negligible or No Correlation
+III.2.2,GDP,93.0,lower_bound,-0.0004791850746266601,Pearson,-0.023176954727791205,Negligible or No Correlation
+III.2.2,GDP,93.0,lower_bound,-0.0004791850746266601,Spearman,-0.06705215277191644,Negligible or No Correlation
 III.2.2,GDP,93.0,max,0.0023102380952380952,Pearson,-0.023176954727791205,Negligible or No Correlation
 III.2.2,GDP,93.0,max,0.0023102380952380952,Spearman,-0.06705215277191644,Negligible or No Correlation
 III.2.2,Population,93.0,max,58.7846738321147,Pearson,0.16214326235668838,Very Weak Correlation
@@ -1791,6 +2552,13 @@ III.2.2,Population,93.0,std,10.8260684876069,Spearman,0.09506505156639128,Neglig
 III.2.2,Area,93.0,std,97754.43472041943,Pearson,0.12984864251276582,Very Weak Correlation
 III.2.2,Area,93.0,std,97754.43472041943,Spearman,0.14474657955609277,Very Weak Correlation
 III.2.2,emissions,93.0,std,23257624.599284038,,,
+III.2.2,GDP,93.0,upper_bound,0.0008101004689146211,Pearson,-0.023176954727791205,Negligible or No Correlation
+III.2.2,GDP,93.0,upper_bound,0.0008101004689146211,Spearman,-0.06705215277191644,Negligible or No Correlation
+III.2.2,Population,93.0,upper_bound,27.96406084587052,Pearson,0.16214326235668838,Very Weak Correlation
+III.2.2,Population,93.0,upper_bound,27.96406084587052,Spearman,0.09506505156639128,Negligible or No Correlation
+III.2.2,Area,93.0,upper_bound,145730.8327946128,Pearson,0.12984864251276582,Very Weak Correlation
+III.2.2,Area,93.0,upper_bound,145730.8327946128,Spearman,0.14474657955609277,Very Weak Correlation
+III.2.2,emissions,93.0,upper_bound,37561668.8505,,,
 III.2.3,GDP,11.0,25%,0.00014493723320099707,Pearson,0.7378932140066679,Strong Correlation
 III.2.3,GDP,11.0,25%,0.00014493723320099707,Spearman,0.8545454545454546,Strong Correlation
 III.2.3,Population,11.0,25%,7.949278655441097,Pearson,0.6546502728098499,Moderate Correlation
@@ -1812,6 +2580,20 @@ III.2.3,Population,11.0,75%,11.921587915304272,Spearman,0.8181818181818182,Stron
 III.2.3,Area,11.0,75%,191923.7931372549,Pearson,0.4514872045041492,Weak Correlation
 III.2.3,Area,11.0,75%,191923.7931372549,Spearman,-0.31065294709760827,Weak Correlation
 III.2.3,emissions,11.0,75%,21431448.5,,,
+III.2.3,GDP,11.0,IQR,3.514734688683162e-05,Pearson,0.7378932140066679,Strong Correlation
+III.2.3,GDP,11.0,IQR,3.514734688683162e-05,Spearman,0.8545454545454546,Strong Correlation
+III.2.3,Population,11.0,IQR,3.9723092598631755,Pearson,0.6546502728098499,Moderate Correlation
+III.2.3,Population,11.0,IQR,3.9723092598631755,Spearman,0.8181818181818182,Strong Correlation
+III.2.3,Area,11.0,IQR,122272.11407444929,Pearson,0.4514872045041492,Weak Correlation
+III.2.3,Area,11.0,IQR,122272.11407444929,Spearman,-0.31065294709760827,Weak Correlation
+III.2.3,emissions,11.0,IQR,11042010.1,,,
+III.2.3,emissions,11.0,lower_bound,-6173576.749999998,,,
+III.2.3,Area,11.0,lower_bound,-113756.49204886833,Pearson,0.4514872045041492,Weak Correlation
+III.2.3,Area,11.0,lower_bound,-113756.49204886833,Spearman,-0.31065294709760827,Weak Correlation
+III.2.3,GDP,11.0,lower_bound,9.221621287074965e-05,Pearson,0.7378932140066679,Strong Correlation
+III.2.3,GDP,11.0,lower_bound,9.221621287074965e-05,Spearman,0.8545454545454546,Strong Correlation
+III.2.3,Population,11.0,lower_bound,1.9908147656463333,Pearson,0.6546502728098499,Moderate Correlation
+III.2.3,Population,11.0,lower_bound,1.9908147656463333,Spearman,0.8181818181818182,Strong Correlation
 III.2.3,GDP,11.0,max,0.00023712571552003456,Pearson,0.7378932140066679,Strong Correlation
 III.2.3,GDP,11.0,max,0.00023712571552003456,Spearman,0.8545454545454546,Strong Correlation
 III.2.3,Population,11.0,max,14.444371631306204,Pearson,0.6546502728098499,Moderate Correlation
@@ -1840,6 +2622,13 @@ III.2.3,Population,11.0,std,2.9440275409788286,Spearman,0.8181818181818182,Stron
 III.2.3,Area,11.0,std,83315.26841893308,Pearson,0.4514872045041492,Weak Correlation
 III.2.3,Area,11.0,std,83315.26841893308,Spearman,-0.31065294709760827,Weak Correlation
 III.2.3,emissions,11.0,std,15738646.835478682,,,
+III.2.3,GDP,11.0,upper_bound,0.00023280560041807612,Pearson,0.7378932140066679,Strong Correlation
+III.2.3,GDP,11.0,upper_bound,0.00023280560041807612,Spearman,0.8545454545454546,Strong Correlation
+III.2.3,Population,11.0,upper_bound,17.880051805099036,Pearson,0.6546502728098499,Moderate Correlation
+III.2.3,Population,11.0,upper_bound,17.880051805099036,Spearman,0.8181818181818182,Strong Correlation
+III.2.3,Area,11.0,upper_bound,375331.9642489288,Pearson,0.4514872045041492,Weak Correlation
+III.2.3,Area,11.0,upper_bound,375331.9642489288,Spearman,-0.31065294709760827,Weak Correlation
+III.2.3,emissions,11.0,upper_bound,37994463.65,,,
 III.3.1,GDP,89.0,25%,3.7744924982944224e-06,Pearson,0.29093933974292013,Very Weak Correlation
 III.3.1,GDP,89.0,25%,3.7744924982944224e-06,Spearman,0.3895180820355593,Weak Correlation
 III.3.1,Population,89.0,25%,0.13291182724726672,Pearson,0.2063717194013878,Very Weak Correlation
@@ -1861,6 +2650,20 @@ III.3.1,Population,89.0,75%,37.51276548104701,Spearman,0.22177012621245548,Very 
 III.3.1,Area,89.0,75%,151390.5029052294,Pearson,0.03285752508722497,Negligible or No Correlation
 III.3.1,Area,89.0,75%,151390.5029052294,Spearman,0.025009614004109938,Negligible or No Correlation
 III.3.1,emissions,89.0,75%,83362425.0,,,
+III.3.1,GDP,89.0,IQR,0.0007891257135999007,Pearson,0.29093933974292013,Very Weak Correlation
+III.3.1,GDP,89.0,IQR,0.0007891257135999007,Spearman,0.3895180820355593,Weak Correlation
+III.3.1,Population,89.0,IQR,37.37985365379974,Pearson,0.2063717194013878,Very Weak Correlation
+III.3.1,Population,89.0,IQR,37.37985365379974,Spearman,0.22177012621245548,Very Weak Correlation
+III.3.1,Area,89.0,IQR,150764.7009250314,Pearson,0.03285752508722497,Negligible or No Correlation
+III.3.1,Area,89.0,IQR,150764.7009250314,Spearman,0.025009614004109938,Negligible or No Correlation
+III.3.1,emissions,89.0,IQR,82932659.31744,,,
+III.3.1,emissions,89.0,lower_bound,-123969223.29360001,,,
+III.3.1,Area,89.0,lower_bound,-225521.24940734907,Pearson,0.03285752508722497,Negligible or No Correlation
+III.3.1,Area,89.0,lower_bound,-225521.24940734907,Spearman,0.025009614004109938,Negligible or No Correlation
+III.3.1,Population,89.0,lower_bound,-55.93686865345234,Pearson,0.2063717194013878,Very Weak Correlation
+III.3.1,Population,89.0,lower_bound,-55.93686865345234,Spearman,0.22177012621245548,Very Weak Correlation
+III.3.1,GDP,89.0,lower_bound,-0.0011799140779015567,Pearson,0.29093933974292013,Very Weak Correlation
+III.3.1,GDP,89.0,lower_bound,-0.0011799140779015567,Spearman,0.3895180820355593,Weak Correlation
 III.3.1,GDP,89.0,max,0.1051175476085758,Pearson,0.29093933974292013,Very Weak Correlation
 III.3.1,GDP,89.0,max,0.1051175476085758,Spearman,0.3895180820355593,Weak Correlation
 III.3.1,Population,89.0,max,209.32478377572323,Pearson,0.2063717194013878,Very Weak Correlation
@@ -1889,6 +2692,13 @@ III.3.1,Population,89.0,std,44.08356854891067,Spearman,0.22177012621245548,Very 
 III.3.1,Area,89.0,std,329082.6969116565,Pearson,0.03285752508722497,Negligible or No Correlation
 III.3.1,Area,89.0,std,329082.6969116565,Spearman,0.025009614004109938,Negligible or No Correlation
 III.3.1,emissions,89.0,std,243580373.6993527,,,
+III.3.1,GDP,89.0,upper_bound,0.001976588776498046,Pearson,0.29093933974292013,Very Weak Correlation
+III.3.1,GDP,89.0,upper_bound,0.001976588776498046,Spearman,0.3895180820355593,Weak Correlation
+III.3.1,Population,89.0,upper_bound,93.58254596174663,Pearson,0.2063717194013878,Very Weak Correlation
+III.3.1,Population,89.0,upper_bound,93.58254596174663,Spearman,0.22177012621245548,Very Weak Correlation
+III.3.1,Area,89.0,upper_bound,377537.5542927765,Pearson,0.03285752508722497,Negligible or No Correlation
+III.3.1,Area,89.0,upper_bound,377537.5542927765,Spearman,0.025009614004109938,Negligible or No Correlation
+III.3.1,emissions,89.0,upper_bound,207761413.97616,,,
 III.3.2,GDP,74.0,25%,7.651848748112602e-06,Pearson,0.40138703223032607,Weak Correlation
 III.3.2,GDP,74.0,25%,7.651848748112602e-06,Spearman,0.5098907697099364,Moderate Correlation
 III.3.2,Population,74.0,25%,0.3214916198451123,Pearson,0.0009444966533033432,Negligible or No Correlation
@@ -1910,6 +2720,20 @@ III.3.2,Population,74.0,75%,93.07140000512436,Spearman,0.027543191929418342,Negl
 III.3.2,Area,74.0,75%,395945.3164556962,Pearson,-0.007081026774542235,Negligible or No Correlation
 III.3.2,Area,74.0,75%,395945.3164556962,Spearman,-0.010335816388736626,Negligible or No Correlation
 III.3.2,emissions,74.0,75%,171930254.00031137,,,
+III.3.2,GDP,74.0,IQR,0.0005243360982409793,Pearson,0.40138703223032607,Weak Correlation
+III.3.2,GDP,74.0,IQR,0.0005243360982409793,Spearman,0.5098907697099364,Moderate Correlation
+III.3.2,Population,74.0,IQR,92.74990838527924,Pearson,0.0009444966533033432,Negligible or No Correlation
+III.3.2,Population,74.0,IQR,92.74990838527924,Spearman,0.027543191929418342,Negligible or No Correlation
+III.3.2,Area,74.0,IQR,394114.24855461484,Pearson,-0.007081026774542235,Negligible or No Correlation
+III.3.2,Area,74.0,IQR,394114.24855461484,Spearman,-0.010335816388736626,Negligible or No Correlation
+III.3.2,emissions,74.0,IQR,171210978.54532117,,,
+III.3.2,emissions,74.0,lower_bound,-256097192.36299154,,,
+III.3.2,Area,74.0,lower_bound,-589340.304930841,Pearson,-0.007081026774542235,Negligible or No Correlation
+III.3.2,Area,74.0,lower_bound,-589340.304930841,Spearman,-0.010335816388736626,Negligible or No Correlation
+III.3.2,Population,74.0,lower_bound,-138.80337095807374,Pearson,0.0009444966533033432,Negligible or No Correlation
+III.3.2,Population,74.0,lower_bound,-138.80337095807374,Spearman,0.027543191929418342,Negligible or No Correlation
+III.3.2,GDP,74.0,lower_bound,-0.0007788522986133563,Pearson,0.40138703223032607,Weak Correlation
+III.3.2,GDP,74.0,lower_bound,-0.0007788522986133563,Spearman,0.5098907697099364,Moderate Correlation
 III.3.2,GDP,74.0,max,0.01452494202036247,Pearson,0.40138703223032607,Weak Correlation
 III.3.2,GDP,74.0,max,0.01452494202036247,Spearman,0.5098907697099364,Moderate Correlation
 III.3.2,Population,74.0,max,448.19501350357444,Pearson,0.0009444966533033432,Negligible or No Correlation
@@ -1938,6 +2762,13 @@ III.3.2,Population,74.0,std,117.26962347297557,Spearman,0.027543191929418342,Neg
 III.3.2,Area,74.0,std,1261641.2661523519,Pearson,-0.007081026774542235,Negligible or No Correlation
 III.3.2,Area,74.0,std,1261641.2661523519,Spearman,-0.010335816388736626,Negligible or No Correlation
 III.3.2,emissions,74.0,std,403351390.5932159,,,
+III.3.2,GDP,74.0,upper_bound,0.0013184920943505609,Pearson,0.40138703223032607,Weak Correlation
+III.3.2,GDP,74.0,upper_bound,0.0013184920943505609,Spearman,0.5098907697099364,Moderate Correlation
+III.3.2,Population,74.0,upper_bound,232.19626258304322,Pearson,0.0009444966533033432,Negligible or No Correlation
+III.3.2,Population,74.0,upper_bound,232.19626258304322,Spearman,0.027543191929418342,Negligible or No Correlation
+III.3.2,Area,74.0,upper_bound,987116.6892876185,Pearson,-0.007081026774542235,Negligible or No Correlation
+III.3.2,Area,74.0,upper_bound,987116.6892876185,Spearman,-0.010335816388736626,Negligible or No Correlation
+III.3.2,emissions,74.0,upper_bound,428746721.8182931,,,
 III.4.1,GDP,261.0,25%,0.00015323416242350477,Pearson,0.054358977430300444,Negligible or No Correlation
 III.4.1,GDP,261.0,25%,0.00015323416242350477,Spearman,-0.02391275075657138,Negligible or No Correlation
 III.4.1,Population,261.0,25%,10.783144647272088,Pearson,0.6634517121393043,Moderate Correlation
@@ -1959,6 +2790,20 @@ III.4.1,Population,261.0,75%,36.93693235560347,Spearman,0.7748634630334088,Stron
 III.4.1,Area,261.0,75%,237426.406195185,Pearson,0.2365087876785706,Very Weak Correlation
 III.4.1,Area,261.0,75%,237426.406195185,Spearman,0.4498144311843396,Weak Correlation
 III.4.1,emissions,261.0,75%,147756728.3262946,,,
+III.4.1,GDP,261.0,IQR,0.0040258950594773985,Pearson,0.054358977430300444,Negligible or No Correlation
+III.4.1,GDP,261.0,IQR,0.0040258950594773985,Spearman,-0.02391275075657138,Negligible or No Correlation
+III.4.1,Population,261.0,IQR,26.15378770833138,Pearson,0.6634517121393043,Moderate Correlation
+III.4.1,Population,261.0,IQR,26.15378770833138,Spearman,0.7748634630334088,Strong Correlation
+III.4.1,Area,261.0,IQR,193568.75216393502,Pearson,0.2365087876785706,Very Weak Correlation
+III.4.1,Area,261.0,IQR,193568.75216393502,Spearman,0.4498144311843396,Weak Correlation
+III.4.1,emissions,261.0,IQR,130625417.25253563,,,
+III.4.1,emissions,261.0,lower_bound,-178806814.80504447,,,
+III.4.1,Area,261.0,lower_bound,-246495.47421465255,Pearson,0.2365087876785706,Very Weak Correlation
+III.4.1,Area,261.0,lower_bound,-246495.47421465255,Spearman,0.4498144311843396,Weak Correlation
+III.4.1,Population,261.0,lower_bound,-28.44753691522498,Pearson,0.6634517121393043,Moderate Correlation
+III.4.1,Population,261.0,lower_bound,-28.44753691522498,Spearman,0.7748634630334088,Strong Correlation
+III.4.1,GDP,261.0,lower_bound,-0.005885608426792593,Pearson,0.054358977430300444,Negligible or No Correlation
+III.4.1,GDP,261.0,lower_bound,-0.005885608426792593,Spearman,-0.02391275075657138,Negligible or No Correlation
 III.4.1,GDP,261.0,max,0.22640969022752108,Pearson,0.054358977430300444,Negligible or No Correlation
 III.4.1,GDP,261.0,max,0.22640969022752108,Spearman,-0.02391275075657138,Negligible or No Correlation
 III.4.1,Population,261.0,max,373.6500164398619,Pearson,0.6634517121393043,Moderate Correlation
@@ -1987,6 +2832,13 @@ III.4.1,Population,261.0,std,46.34384369789477,Spearman,0.7748634630334088,Stron
 III.4.1,Area,261.0,std,460981.1575617307,Pearson,0.2365087876785706,Very Weak Correlation
 III.4.1,Area,261.0,std,460981.1575617307,Spearman,0.4498144311843396,Weak Correlation
 III.4.1,emissions,261.0,std,516366487.70212805,,,
+III.4.1,GDP,261.0,upper_bound,0.010217971811117001,Pearson,0.054358977430300444,Negligible or No Correlation
+III.4.1,GDP,261.0,upper_bound,0.010217971811117001,Spearman,-0.02391275075657138,Negligible or No Correlation
+III.4.1,Population,261.0,upper_bound,76.16761391810053,Pearson,0.6634517121393043,Moderate Correlation
+III.4.1,Population,261.0,upper_bound,76.16761391810053,Spearman,0.7748634630334088,Strong Correlation
+III.4.1,Area,261.0,upper_bound,527779.5344410875,Pearson,0.2365087876785706,Very Weak Correlation
+III.4.1,Area,261.0,upper_bound,527779.5344410875,Spearman,0.4498144311843396,Weak Correlation
+III.4.1,emissions,261.0,upper_bound,343694854.20509803,,,
 III.4.2,GDP,105.0,25%,5.6602411063836905e-05,Pearson,0.0896016570108117,Negligible or No Correlation
 III.4.2,GDP,105.0,25%,5.6602411063836905e-05,Spearman,-0.035533034452938386,Negligible or No Correlation
 III.4.2,Population,105.0,25%,12.62857411609764,Pearson,0.48570099238743103,Weak Correlation
@@ -2008,6 +2860,20 @@ III.4.2,Population,105.0,75%,44.59607542857144,Spearman,0.7539796383820107,Stron
 III.4.2,Area,105.0,75%,561538.4615384615,Pearson,0.30034200872851907,Weak Correlation
 III.4.2,Area,105.0,75%,561538.4615384615,Spearman,0.6130881952553074,Moderate Correlation
 III.4.2,emissions,105.0,75%,283170464.53131294,,,
+III.4.2,GDP,105.0,IQR,0.0038694838002286723,Pearson,0.0896016570108117,Negligible or No Correlation
+III.4.2,GDP,105.0,IQR,0.0038694838002286723,Spearman,-0.035533034452938386,Negligible or No Correlation
+III.4.2,Population,105.0,IQR,31.9675013124738,Pearson,0.48570099238743103,Weak Correlation
+III.4.2,Population,105.0,IQR,31.9675013124738,Spearman,0.7539796383820107,Strong Correlation
+III.4.2,Area,105.0,IQR,466917.055391642,Pearson,0.30034200872851907,Weak Correlation
+III.4.2,Area,105.0,IQR,466917.055391642,Spearman,0.6130881952553074,Moderate Correlation
+III.4.2,emissions,105.0,IQR,277875081.01438624,,,
+III.4.2,emissions,105.0,lower_bound,-411517238.0046527,,,
+III.4.2,Area,105.0,lower_bound,-605754.1769406435,Pearson,0.30034200872851907,Weak Correlation
+III.4.2,Area,105.0,lower_bound,-605754.1769406435,Spearman,0.6130881952553074,Moderate Correlation
+III.4.2,Population,105.0,lower_bound,-35.32267785261306,Pearson,0.48570099238743103,Weak Correlation
+III.4.2,Population,105.0,lower_bound,-35.32267785261306,Spearman,0.7539796383820107,Strong Correlation
+III.4.2,GDP,105.0,lower_bound,-0.005747623289279172,Pearson,0.0896016570108117,Negligible or No Correlation
+III.4.2,GDP,105.0,lower_bound,-0.005747623289279172,Spearman,-0.035533034452938386,Negligible or No Correlation
 III.4.2,GDP,105.0,max,0.18389137717925436,Pearson,0.0896016570108117,Negligible or No Correlation
 III.4.2,GDP,105.0,max,0.18389137717925436,Spearman,-0.035533034452938386,Negligible or No Correlation
 III.4.2,Population,105.0,max,365.25415118946887,Pearson,0.48570099238743103,Weak Correlation
@@ -2036,6 +2902,13 @@ III.4.2,Population,105.0,std,46.20260509286861,Spearman,0.7539796383820107,Stron
 III.4.2,Area,105.0,std,573909.8315856904,Pearson,0.30034200872851907,Weak Correlation
 III.4.2,Area,105.0,std,573909.8315856904,Spearman,0.6130881952553074,Moderate Correlation
 III.4.2,emissions,105.0,std,177192243.94423476,,,
+III.4.2,GDP,105.0,upper_bound,0.009730311911635519,Pearson,0.0896016570108117,Negligible or No Correlation
+III.4.2,GDP,105.0,upper_bound,0.009730311911635519,Spearman,-0.035533034452938386,Negligible or No Correlation
+III.4.2,Population,105.0,upper_bound,92.54732739728215,Pearson,0.48570099238743103,Weak Correlation
+III.4.2,Population,105.0,upper_bound,92.54732739728215,Spearman,0.7539796383820107,Strong Correlation
+III.4.2,Area,105.0,upper_bound,1261914.0446259244,Pearson,0.30034200872851907,Weak Correlation
+III.4.2,Area,105.0,upper_bound,1261914.0446259244,Spearman,0.6130881952553074,Moderate Correlation
+III.4.2,emissions,105.0,upper_bound,699983086.0528923,,,
 III.4.3,GDP,33.0,25%,1.1519374369498417e-05,Pearson,-0.19684564097659582,Very Weak Correlation
 III.4.3,GDP,33.0,25%,1.1519374369498417e-05,Spearman,0.1293242277571028,Very Weak Correlation
 III.4.3,Population,33.0,25%,2.631442362139498,Pearson,-0.021007461910316046,Negligible or No Correlation
@@ -2057,6 +2930,20 @@ III.4.3,Population,33.0,75%,53.95226563354271,Spearman,-0.04849498395564625,Negl
 III.4.3,Area,33.0,75%,278085.92516426276,Pearson,-0.14684863120948574,Very Weak Correlation
 III.4.3,Area,33.0,75%,278085.92516426276,Spearman,-0.1125234576144347,Very Weak Correlation
 III.4.3,emissions,33.0,75%,34776094.293239705,,,
+III.4.3,GDP,33.0,IQR,0.00033995405530963643,Pearson,-0.19684564097659582,Very Weak Correlation
+III.4.3,GDP,33.0,IQR,0.00033995405530963643,Spearman,0.1293242277571028,Very Weak Correlation
+III.4.3,Population,33.0,IQR,51.32082327140321,Pearson,-0.021007461910316046,Negligible or No Correlation
+III.4.3,Population,33.0,IQR,51.32082327140321,Spearman,-0.04849498395564625,Negligible or No Correlation
+III.4.3,Area,33.0,IQR,265751.24904724146,Pearson,-0.14684863120948574,Very Weak Correlation
+III.4.3,Area,33.0,IQR,265751.24904724146,Spearman,-0.1125234576144347,Very Weak Correlation
+III.4.3,emissions,33.0,IQR,29363398.536974248,,,
+III.4.3,emissions,33.0,lower_bound,-38632402.049195915,,,
+III.4.3,Area,33.0,lower_bound,-386292.1974538409,Pearson,-0.14684863120948574,Very Weak Correlation
+III.4.3,Area,33.0,lower_bound,-386292.1974538409,Spearman,-0.1125234576144347,Very Weak Correlation
+III.4.3,Population,33.0,lower_bound,-74.34979254496533,Pearson,-0.021007461910316046,Negligible or No Correlation
+III.4.3,Population,33.0,lower_bound,-74.34979254496533,Spearman,-0.04849498395564625,Negligible or No Correlation
+III.4.3,GDP,33.0,lower_bound,-0.0004984117085949563,Pearson,-0.19684564097659582,Very Weak Correlation
+III.4.3,GDP,33.0,lower_bound,-0.0004984117085949563,Spearman,0.1293242277571028,Very Weak Correlation
 III.4.3,GDP,33.0,max,0.00038169766664446377,Pearson,-0.19684564097659582,Very Weak Correlation
 III.4.3,GDP,33.0,max,0.00038169766664446377,Spearman,0.1293242277571028,Very Weak Correlation
 III.4.3,Population,33.0,max,64.0863891347862,Pearson,-0.021007461910316046,Negligible or No Correlation
@@ -2085,6 +2972,13 @@ III.4.3,Population,33.0,std,25.59124238899447,Spearman,-0.04849498395564625,Negl
 III.4.3,Area,33.0,std,132553.181979519,Pearson,-0.14684863120948574,Very Weak Correlation
 III.4.3,Area,33.0,std,132553.181979519,Spearman,-0.1125234576144347,Very Weak Correlation
 III.4.3,emissions,33.0,std,16145559.7468496,,,
+III.4.3,GDP,33.0,upper_bound,0.0008614045126435895,Pearson,-0.19684564097659582,Very Weak Correlation
+III.4.3,GDP,33.0,upper_bound,0.0008614045126435895,Spearman,0.1293242277571028,Very Weak Correlation
+III.4.3,Population,33.0,upper_bound,130.93350054064751,Pearson,-0.021007461910316046,Negligible or No Correlation
+III.4.3,Population,33.0,upper_bound,130.93350054064751,Spearman,-0.04849498395564625,Negligible or No Correlation
+III.4.3,Area,33.0,upper_bound,676712.798735125,Pearson,-0.14684863120948574,Very Weak Correlation
+III.4.3,Area,33.0,upper_bound,676712.798735125,Spearman,-0.1125234576144347,Very Weak Correlation
+III.4.3,emissions,33.0,upper_bound,78821192.09870107,,,
 IV.1,GDP,62.0,25%,5.200307703876318e-05,Pearson,-0.21072051134629688,Very Weak Correlation
 IV.1,GDP,62.0,25%,5.200307703876318e-05,Spearman,-0.2521782926215058,Very Weak Correlation
 IV.1,Population,62.0,25%,4.518879156786772,Pearson,0.12123970470585282,Very Weak Correlation
@@ -2106,6 +3000,20 @@ IV.1,Population,62.0,75%,801.1344733653904,Spearman,0.04631075295895239,Negligib
 IV.1,Area,62.0,75%,766779.6488045015,Pearson,0.5972391979499275,Moderate Correlation
 IV.1,Area,62.0,75%,766779.6488045015,Spearman,0.6291182888604191,Moderate Correlation
 IV.1,emissions,62.0,75%,1760250000.0,,,
+IV.1,GDP,62.0,IQR,0.022603296502295624,Pearson,-0.21072051134629688,Very Weak Correlation
+IV.1,GDP,62.0,IQR,0.022603296502295624,Spearman,-0.2521782926215058,Very Weak Correlation
+IV.1,Population,62.0,IQR,796.6155942086036,Pearson,0.12123970470585282,Very Weak Correlation
+IV.1,Population,62.0,IQR,796.6155942086036,Spearman,0.04631075295895239,Negligible or No Correlation
+IV.1,Area,62.0,IQR,739721.5977659852,Pearson,0.5972391979499275,Moderate Correlation
+IV.1,Area,62.0,IQR,739721.5977659852,Spearman,0.6291182888604191,Moderate Correlation
+IV.1,emissions,62.0,IQR,1756487560.0,,,
+IV.1,emissions,62.0,lower_bound,-2630968900.0,,,
+IV.1,Area,62.0,lower_bound,-1082524.3456104617,Pearson,0.5972391979499275,Moderate Correlation
+IV.1,Area,62.0,lower_bound,-1082524.3456104617,Spearman,0.6291182888604191,Moderate Correlation
+IV.1,Population,62.0,lower_bound,-1190.4045121561187,Pearson,0.12123970470585282,Very Weak Correlation
+IV.1,Population,62.0,lower_bound,-1190.4045121561187,Spearman,0.04631075295895239,Negligible or No Correlation
+IV.1,GDP,62.0,lower_bound,-0.03385294167640467,Pearson,-0.21072051134629688,Very Weak Correlation
+IV.1,GDP,62.0,lower_bound,-0.03385294167640467,Spearman,-0.2521782926215058,Very Weak Correlation
 IV.1,GDP,62.0,max,0.08132115626671658,Pearson,-0.21072051134629688,Very Weak Correlation
 IV.1,GDP,62.0,max,0.08132115626671658,Spearman,-0.2521782926215058,Very Weak Correlation
 IV.1,Population,62.0,max,2139.653754020917,Pearson,0.12123970470585282,Very Weak Correlation
@@ -2134,6 +3042,13 @@ IV.1,Population,62.0,std,565.5694875198868,Spearman,0.04631075295895239,Negligib
 IV.1,Area,62.0,std,746079.3770929518,Pearson,0.5972391979499275,Moderate Correlation
 IV.1,Area,62.0,std,746079.3770929518,Spearman,0.6291182888604191,Moderate Correlation
 IV.1,emissions,62.0,std,877931065.8843697,,,
+IV.1,GDP,62.0,upper_bound,0.05656024433277783,Pearson,-0.21072051134629688,Very Weak Correlation
+IV.1,GDP,62.0,upper_bound,0.05656024433277783,Spearman,-0.2521782926215058,Very Weak Correlation
+IV.1,Population,62.0,upper_bound,1996.057864678296,Pearson,0.12123970470585282,Very Weak Correlation
+IV.1,Population,62.0,upper_bound,1996.057864678296,Spearman,0.04631075295895239,Negligible or No Correlation
+IV.1,Area,62.0,upper_bound,1876362.0454534795,Pearson,0.5972391979499275,Moderate Correlation
+IV.1,Area,62.0,upper_bound,1876362.0454534795,Spearman,0.6291182888604191,Moderate Correlation
+IV.1,emissions,62.0,upper_bound,4394981340.0,,,
 IV.2,GDP,69.0,25%,0.000669013736909298,Pearson,0.21811193195906586,Very Weak Correlation
 IV.2,GDP,69.0,25%,0.000669013736909298,Spearman,0.3159356218214771,Weak Correlation
 IV.2,Population,69.0,25%,12.227620385049267,Pearson,0.35364334804678865,Weak Correlation
@@ -2155,6 +3070,20 @@ IV.2,Population,69.0,75%,341.7999372844154,Spearman,0.34626134936997094,Weak Cor
 IV.2,Area,69.0,75%,1156235.4957800342,Pearson,0.3012482306068291,Weak Correlation
 IV.2,Area,69.0,75%,1156235.4957800342,Spearman,0.4228567621770886,Weak Correlation
 IV.2,emissions,69.0,75%,713305110.0053045,,,
+IV.2,GDP,69.0,IQR,0.005739678075185894,Pearson,0.21811193195906586,Very Weak Correlation
+IV.2,GDP,69.0,IQR,0.005739678075185894,Spearman,0.3159356218214771,Weak Correlation
+IV.2,Population,69.0,IQR,329.5723168993662,Pearson,0.35364334804678865,Weak Correlation
+IV.2,Population,69.0,IQR,329.5723168993662,Spearman,0.34626134936997094,Weak Correlation
+IV.2,Area,69.0,IQR,1090379.7910432857,Pearson,0.3012482306068291,Weak Correlation
+IV.2,Area,69.0,IQR,1090379.7910432857,Spearman,0.4228567621770886,Weak Correlation
+IV.2,emissions,69.0,IQR,634014841.5022593,,,
+IV.2,emissions,69.0,lower_bound,-871731993.7503437,,,
+IV.2,Area,69.0,lower_bound,-1569713.9818281801,Pearson,0.3012482306068291,Weak Correlation
+IV.2,Area,69.0,lower_bound,-1569713.9818281801,Spearman,0.4228567621770886,Weak Correlation
+IV.2,Population,69.0,lower_bound,-482.13085496400004,Pearson,0.35364334804678865,Weak Correlation
+IV.2,Population,69.0,lower_bound,-482.13085496400004,Spearman,0.34626134936997094,Weak Correlation
+IV.2,GDP,69.0,lower_bound,-0.007940503375869542,Pearson,0.21811193195906586,Very Weak Correlation
+IV.2,GDP,69.0,lower_bound,-0.007940503375869542,Spearman,0.3159356218214771,Weak Correlation
 IV.2,GDP,69.0,max,0.010900714996647118,Pearson,0.21811193195906586,Very Weak Correlation
 IV.2,GDP,69.0,max,0.010900714996647118,Spearman,0.3159356218214771,Weak Correlation
 IV.2,Population,69.0,max,517.8565897563917,Pearson,0.35364334804678865,Weak Correlation
@@ -2183,6 +3112,13 @@ IV.2,Population,69.0,std,164.485170758507,Spearman,0.34626134936997094,Weak Corr
 IV.2,Area,69.0,std,813407.36745396,Pearson,0.3012482306068291,Weak Correlation
 IV.2,Area,69.0,std,813407.36745396,Spearman,0.4228567621770886,Weak Correlation
 IV.2,emissions,69.0,std,1275513156.553622,,,
+IV.2,GDP,69.0,upper_bound,0.015018208924874033,Pearson,0.21811193195906586,Very Weak Correlation
+IV.2,GDP,69.0,upper_bound,0.015018208924874033,Spearman,0.3159356218214771,Weak Correlation
+IV.2,Population,69.0,upper_bound,836.1584126334646,Pearson,0.35364334804678865,Weak Correlation
+IV.2,Population,69.0,upper_bound,836.1584126334646,Spearman,0.34626134936997094,Weak Correlation
+IV.2,Area,69.0,upper_bound,2791805.182344963,Pearson,0.3012482306068291,Weak Correlation
+IV.2,Area,69.0,upper_bound,2791805.182344963,Spearman,0.4228567621770886,Weak Correlation
+IV.2,emissions,69.0,upper_bound,1664327372.2586932,,,
 V.1,GDP,88.0,25%,2.1185034556322703e-05,Pearson,0.016200609868600908,Negligible or No Correlation
 V.1,GDP,88.0,25%,2.1185034556322703e-05,Spearman,-0.061793028145567905,Negligible or No Correlation
 V.1,Population,88.0,25%,0.7183970797836611,Pearson,0.21366467055844154,Very Weak Correlation
@@ -2204,6 +3140,20 @@ V.1,Population,88.0,75%,17.79423584966238,Spearman,0.20934555250805637,Very Weak
 V.1,Area,88.0,75%,51471.06243133308,Pearson,0.6812490980058201,Moderate Correlation
 V.1,Area,88.0,75%,51471.06243133308,Spearman,0.6761811732163647,Moderate Correlation
 V.1,emissions,88.0,75%,64787929.456263326,,,
+V.1,GDP,88.0,IQR,0.00091927886752587,Pearson,0.016200609868600908,Negligible or No Correlation
+V.1,GDP,88.0,IQR,0.00091927886752587,Spearman,-0.061793028145567905,Negligible or No Correlation
+V.1,Population,88.0,IQR,17.075838769878718,Pearson,0.21366467055844154,Very Weak Correlation
+V.1,Population,88.0,IQR,17.075838769878718,Spearman,0.20934555250805637,Very Weak Correlation
+V.1,Area,88.0,IQR,47832.14150876306,Pearson,0.6812490980058201,Moderate Correlation
+V.1,Area,88.0,IQR,47832.14150876306,Spearman,0.6761811732163647,Moderate Correlation
+V.1,emissions,88.0,IQR,62216836.95753461,,,
+V.1,emissions,88.0,lower_bound,-90754162.9375732,,,
+V.1,Area,88.0,lower_bound,-68109.29134057456,Pearson,0.6812490980058201,Moderate Correlation
+V.1,Area,88.0,lower_bound,-68109.29134057456,Spearman,0.6761811732163647,Moderate Correlation
+V.1,Population,88.0,lower_bound,-24.89536107503442,Pearson,0.21366467055844154,Very Weak Correlation
+V.1,Population,88.0,lower_bound,-24.89536107503442,Spearman,0.20934555250805637,Very Weak Correlation
+V.1,GDP,88.0,lower_bound,-0.0013577332667324823,Pearson,0.016200609868600908,Negligible or No Correlation
+V.1,GDP,88.0,lower_bound,-0.0013577332667324823,Spearman,-0.061793028145567905,Negligible or No Correlation
 V.1,GDP,88.0,max,0.01975123566037736,Pearson,0.016200609868600908,Negligible or No Correlation
 V.1,GDP,88.0,max,0.01975123566037736,Spearman,-0.061793028145567905,Negligible or No Correlation
 V.1,Population,88.0,max,368.1087731810239,Pearson,0.21366467055844154,Very Weak Correlation
@@ -2232,6 +3182,13 @@ V.1,Population,88.0,std,106.5830456369458,Spearman,0.20934555250805637,Very Weak
 V.1,Area,88.0,std,68408.85325623023,Pearson,0.6812490980058201,Moderate Correlation
 V.1,Area,88.0,std,68408.85325623023,Spearman,0.6761811732163647,Moderate Correlation
 V.1,emissions,88.0,std,177394880.84739962,,,
+V.1,GDP,88.0,upper_bound,0.0023193822033709976,Pearson,0.016200609868600908,Negligible or No Correlation
+V.1,GDP,88.0,upper_bound,0.0023193822033709976,Spearman,-0.061793028145567905,Negligible or No Correlation
+V.1,Population,88.0,upper_bound,43.40799400448046,Pearson,0.21366467055844154,Very Weak Correlation
+V.1,Population,88.0,upper_bound,43.40799400448046,Spearman,0.20934555250805637,Very Weak Correlation
+V.1,Area,88.0,upper_bound,123219.27469447766,Pearson,0.6812490980058201,Moderate Correlation
+V.1,Area,88.0,upper_bound,123219.27469447766,Spearman,0.6761811732163647,Moderate Correlation
+V.1,emissions,88.0,upper_bound,158113184.89256525,,,
 V.2,GDP,26.0,25%,3.189943273472197e-05,Pearson,0.21120998954550238,Very Weak Correlation
 V.2,GDP,26.0,25%,3.189943273472197e-05,Spearman,0.2627887429115691,Very Weak Correlation
 V.2,Population,26.0,25%,1.6470094338891343,Pearson,-0.035689618353598594,Negligible or No Correlation
@@ -2253,6 +3210,20 @@ V.2,Population,26.0,75%,21.996408529494012,Spearman,-0.15292511277308848,Very We
 V.2,Area,26.0,75%,119415.70119978956,Pearson,0.09955254235791525,Negligible or No Correlation
 V.2,Area,26.0,75%,119415.70119978956,Spearman,-0.14014647122479326,Very Weak Correlation
 V.2,emissions,26.0,75%,52034172.860274576,,,
+V.2,GDP,26.0,IQR,0.0003365901794352585,Pearson,0.21120998954550238,Very Weak Correlation
+V.2,GDP,26.0,IQR,0.0003365901794352585,Spearman,0.2627887429115691,Very Weak Correlation
+V.2,Population,26.0,IQR,20.349399095604877,Pearson,-0.035689618353598594,Negligible or No Correlation
+V.2,Population,26.0,IQR,20.349399095604877,Spearman,-0.15292511277308848,Very Weak Correlation
+V.2,Area,26.0,IQR,112613.92460175588,Pearson,0.09955254235791525,Negligible or No Correlation
+V.2,Area,26.0,IQR,112613.92460175588,Spearman,-0.14014647122479326,Very Weak Correlation
+V.2,emissions,26.0,IQR,48851652.696874574,,,
+V.2,emissions,26.0,lower_bound,-70094958.88191187,,,
+V.2,Area,26.0,lower_bound,-162119.11030460012,Pearson,0.09955254235791525,Negligible or No Correlation
+V.2,Area,26.0,lower_bound,-162119.11030460012,Spearman,-0.14014647122479326,Very Weak Correlation
+V.2,Population,26.0,lower_bound,-28.87708920951818,Pearson,-0.035689618353598594,Negligible or No Correlation
+V.2,Population,26.0,lower_bound,-28.87708920951818,Spearman,-0.15292511277308848,Very Weak Correlation
+V.2,GDP,26.0,lower_bound,-0.0004729858364181658,Pearson,0.21120998954550238,Very Weak Correlation
+V.2,GDP,26.0,lower_bound,-0.0004729858364181658,Spearman,0.2627887429115691,Very Weak Correlation
 V.2,GDP,26.0,max,0.012997091489280008,Pearson,0.21120998954550238,Very Weak Correlation
 V.2,GDP,26.0,max,0.012997091489280008,Spearman,0.2627887429115691,Very Weak Correlation
 V.2,Population,26.0,max,341.9685217605933,Pearson,-0.035689618353598594,Negligible or No Correlation
@@ -2281,6 +3252,13 @@ V.2,Population,26.0,std,72.59840984647049,Spearman,-0.15292511277308848,Very Wea
 V.2,Area,26.0,std,242845.028420012,Pearson,0.09955254235791525,Negligible or No Correlation
 V.2,Area,26.0,std,242845.028420012,Spearman,-0.14014647122479326,Very Weak Correlation
 V.2,emissions,26.0,std,35497918.09107685,,,
+V.2,GDP,26.0,upper_bound,0.0008733748813228682,Pearson,0.21120998954550238,Very Weak Correlation
+V.2,GDP,26.0,upper_bound,0.0008733748813228682,Spearman,0.2627887429115691,Very Weak Correlation
+V.2,Population,26.0,upper_bound,52.520507172901326,Pearson,-0.035689618353598594,Negligible or No Correlation
+V.2,Population,26.0,upper_bound,52.520507172901326,Spearman,-0.15292511277308848,Very Weak Correlation
+V.2,Area,26.0,upper_bound,288336.58810242335,Pearson,0.09955254235791525,Negligible or No Correlation
+V.2,Area,26.0,upper_bound,288336.58810242335,Spearman,-0.14014647122479326,Very Weak Correlation
+V.2,emissions,26.0,upper_bound,125311651.90558645,,,
 V.3,GDP,84.0,25%,4.7393977339940467e-07,Pearson,0.31472762634922485,Weak Correlation
 V.3,GDP,84.0,25%,4.7393977339940467e-07,Spearman,0.5630199762656873,Moderate Correlation
 V.3,Population,84.0,25%,0.0072107660094882006,Pearson,0.2954625311498462,Very Weak Correlation
@@ -2302,6 +3280,20 @@ V.3,Population,84.0,75%,2.731984026702105,Spearman,0.30316536229995666,Weak Corr
 V.3,Area,84.0,75%,14355.907989408763,Pearson,0.6067276465235729,Moderate Correlation
 V.3,Area,84.0,75%,14355.907989408763,Spearman,0.6470306098608223,Moderate Correlation
 V.3,emissions,84.0,75%,10127483.958225682,,,
+V.3,GDP,84.0,IQR,8.32761772857861e-05,Pearson,0.31472762634922485,Weak Correlation
+V.3,GDP,84.0,IQR,8.32761772857861e-05,Spearman,0.5630199762656873,Moderate Correlation
+V.3,Population,84.0,IQR,2.724773260692617,Pearson,0.2954625311498462,Very Weak Correlation
+V.3,Population,84.0,IQR,2.724773260692617,Spearman,0.30316536229995666,Weak Correlation
+V.3,Area,84.0,IQR,14323.599454621379,Pearson,0.6067276465235729,Moderate Correlation
+V.3,Area,84.0,IQR,14323.599454621379,Spearman,0.6470306098608223,Moderate Correlation
+V.3,emissions,84.0,IQR,10096570.904233182,,,
+V.3,emissions,84.0,lower_bound,-15113943.302357273,,,
+V.3,Area,84.0,lower_bound,-21453.090647144687,Pearson,0.6067276465235729,Moderate Correlation
+V.3,Area,84.0,lower_bound,-21453.090647144687,Spearman,0.6470306098608223,Moderate Correlation
+V.3,Population,84.0,lower_bound,-4.0799491250294375,Pearson,0.2954625311498462,Very Weak Correlation
+V.3,Population,84.0,lower_bound,-4.0799491250294375,Spearman,0.30316536229995666,Weak Correlation
+V.3,GDP,84.0,lower_bound,-0.00012444032615527975,Pearson,0.31472762634922485,Weak Correlation
+V.3,GDP,84.0,lower_bound,-0.00012444032615527975,Spearman,0.5630199762656873,Moderate Correlation
 V.3,GDP,84.0,max,0.0050271932072834934,Pearson,0.31472762634922485,Weak Correlation
 V.3,GDP,84.0,max,0.0050271932072834934,Spearman,0.5630199762656873,Moderate Correlation
 V.3,Population,84.0,max,174.67464642088905,Pearson,0.2954625311498462,Very Weak Correlation
@@ -2330,6 +3322,13 @@ V.3,Population,84.0,std,46.926954518556975,Spearman,0.30316536229995666,Weak Cor
 V.3,Area,84.0,std,38385.928955951575,Pearson,0.6067276465235729,Moderate Correlation
 V.3,Area,84.0,std,38385.928955951575,Spearman,0.6470306098608223,Moderate Correlation
 V.3,emissions,84.0,std,92000347.97305623,,,
+V.3,GDP,84.0,upper_bound,0.00020866438298786465,Pearson,0.31472762634922485,Weak Correlation
+V.3,GDP,84.0,upper_bound,0.00020866438298786465,Spearman,0.5630199762656873,Moderate Correlation
+V.3,Population,84.0,upper_bound,6.819143917741031,Pearson,0.2954625311498462,Very Weak Correlation
+V.3,Population,84.0,upper_bound,6.819143917741031,Spearman,0.30316536229995666,Weak Correlation
+V.3,Area,84.0,upper_bound,35841.30717134083,Pearson,0.6067276465235729,Moderate Correlation
+V.3,Area,84.0,upper_bound,35841.30717134083,Spearman,0.6470306098608223,Moderate Correlation
+V.3,emissions,84.0,upper_bound,25272340.314575456,,,
 VI.1,GDP,42.0,25%,0.0008601267800923072,Pearson,-0.07971953811369333,Negligible or No Correlation
 VI.1,GDP,42.0,25%,0.0008601267800923072,Spearman,0.23316314432230126,Very Weak Correlation
 VI.1,Population,42.0,25%,41.055686511357536,Pearson,-0.5285044494114758,Moderate Correlation
@@ -2351,6 +3350,20 @@ VI.1,Population,42.0,75%,2435.161381550961,Spearman,-0.27300352520281357,Very We
 VI.1,Area,42.0,75%,28112303.929337356,Pearson,-0.8640717326303405,Strong Correlation
 VI.1,Area,42.0,75%,28112303.929337356,Spearman,-0.6197067154909706,Moderate Correlation
 VI.1,emissions,42.0,75%,735136747.7521719,,,
+VI.1,GDP,42.0,IQR,0.007331296999002818,Pearson,-0.07971953811369333,Negligible or No Correlation
+VI.1,GDP,42.0,IQR,0.007331296999002818,Spearman,0.23316314432230126,Very Weak Correlation
+VI.1,Population,42.0,IQR,2394.1056950396032,Pearson,-0.5285044494114758,Moderate Correlation
+VI.1,Population,42.0,IQR,2394.1056950396032,Spearman,-0.27300352520281357,Very Weak Correlation
+VI.1,Area,42.0,IQR,27932807.587582458,Pearson,-0.8640717326303405,Strong Correlation
+VI.1,Area,42.0,IQR,27932807.587582458,Spearman,-0.6197067154909706,Moderate Correlation
+VI.1,emissions,42.0,IQR,674420616.9029826,,,
+VI.1,emissions,42.0,lower_bound,-950914794.5052845,,,
+VI.1,Area,42.0,lower_bound,-41719715.03961879,Pearson,-0.8640717326303405,Strong Correlation
+VI.1,Area,42.0,lower_bound,-41719715.03961879,Spearman,-0.6197067154909706,Moderate Correlation
+VI.1,Population,42.0,lower_bound,-3550.102856048047,Pearson,-0.5285044494114758,Moderate Correlation
+VI.1,Population,42.0,lower_bound,-3550.102856048047,Spearman,-0.27300352520281357,Very Weak Correlation
+VI.1,GDP,42.0,lower_bound,-0.010136818718411919,Pearson,-0.07971953811369333,Negligible or No Correlation
+VI.1,GDP,42.0,lower_bound,-0.010136818718411919,Spearman,0.23316314432230126,Very Weak Correlation
 VI.1,GDP,42.0,max,0.012252349184775965,Pearson,-0.07971953811369333,Negligible or No Correlation
 VI.1,GDP,42.0,max,0.012252349184775965,Spearman,0.23316314432230126,Very Weak Correlation
 VI.1,Population,42.0,max,4671.6648858410545,Pearson,-0.5285044494114758,Moderate Correlation
@@ -2379,3 +3392,10 @@ VI.1,Population,42.0,std,1664.8442228257588,Spearman,-0.27300352520281357,Very W
 VI.1,Area,42.0,std,17787573.666277405,Pearson,-0.8640717326303405,Strong Correlation
 VI.1,Area,42.0,std,17787573.666277405,Spearman,-0.6197067154909706,Moderate Correlation
 VI.1,emissions,42.0,std,1654996515.3454878,,,
+VI.1,GDP,42.0,upper_bound,0.01918836927759935,Pearson,-0.07971953811369333,Negligible or No Correlation
+VI.1,GDP,42.0,upper_bound,0.01918836927759935,Spearman,0.23316314432230126,Very Weak Correlation
+VI.1,Population,42.0,upper_bound,6026.319924110366,Pearson,-0.5285044494114758,Moderate Correlation
+VI.1,Population,42.0,upper_bound,6026.319924110366,Spearman,-0.27300352520281357,Very Weak Correlation
+VI.1,Area,42.0,upper_bound,70011515.31071104,Pearson,-0.8640717326303405,Strong Correlation
+VI.1,Area,42.0,upper_bound,70011515.31071104,Spearman,-0.6197067154909706,Moderate Correlation
+VI.1,emissions,42.0,upper_bound,1746767673.1066456,,,
