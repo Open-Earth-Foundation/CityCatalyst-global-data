@@ -24,11 +24,12 @@ b. Create a python script. This python script must contain the following:
     3. normalized column names for 'df_new' where names are converted to 'lower case', strip them of any leading or trailing white spaces and replace any white spaces with underscores '_'.
     4. converted date columns to a valid datetime format based on the available data using 'pd.to_datetime'.
         - pay attention to columns that might not be clearly labeled as 'date' or 'dates' or similar and refer to the provided summary in the <summary> tags.
-    5. finally add code to output a new .csv file 'initially_formatted.csv' containing the new dataframe 'df_new' with the changes made above.
+    5. add code to output a new .csv file 'initially_formatted.csv' containing the new dataframe 'df_new' with the changes made above. The seperator must be comma seperated ','.
     6. IMORTANT: 
         - The code must contain python comments.
         - The code must be executable and must not contain any code errors.
         - The final dataframe 'df_new' must contain all the data rows of the original dataframe 'df'.
+c. Execute the code to create the new .csv file 'initially_formatted.csv'. The full path for creating the new file is '.generated/initial_script/initially_formatted.csv'.
 """
 
     answer_format = """

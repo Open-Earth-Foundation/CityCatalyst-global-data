@@ -3,6 +3,15 @@ from state.agent_state import AgentState
 
 from agents.default_agent import default_agent
 
+# Import for initial script
+from agents.initial_script.setup_agent_initial_script import setup_agent_initial_script
+from agents.initial_script.delete_cols_agent_initial_script import (
+    delete_cols_agent_initial_script,
+)
+from agents.initial_script.datatypes_agent_initial_script import (
+    datatypes_agent_initial_script,
+)
+
 # Import for summary
 from agents.summary_agent import summary_agent
 
@@ -144,6 +153,17 @@ def create_workflow():
 
     # Initial script
     workflow.add_node("summary_agent", summary_agent)
+    workflow.add_node("setup_agent_initial_script", setup_agent_initial_script)
+    workflow.add_node(
+        "delete_cols_agent_initial_script", delete_cols_agent_initial_script
+    )
+    workflow.add_node("datatypes_agent_initial_script", datatypes_agent_initial_script)
+
+    workflow.add_edge("setup_agent_initial_script", "delete_cols_agent_initial_script")
+    workflow.add_edge(
+        "delete_cols_agent_initial_script", "datatypes_agent_initial_script"
+    )
+    workflow.add_edge("datatypes_agent_initial_script", END)
 
     workflow.add_node(
         "code_generation_agent_initial_script", code_generation_agent_initial_script
@@ -234,7 +254,8 @@ def create_workflow():
     workflow.add_node("hitl_agent_5", hitl_agent)
 
     # Set the entrypoint
-    workflow.set_entry_point("summary_agent")
+    # workflow.set_entry_point("summary_agent")
+    workflow.set_entry_point("setup_agent_initial_script")
 
     # Add edge to end the workflow after summary
     workflow.add_edge("summary_agent", "code_generation_agent_initial_script")

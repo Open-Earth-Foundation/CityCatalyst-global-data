@@ -83,6 +83,8 @@ def create_coding_agent(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
     - Do not just use df.head() to make assumptions over the content of the entire dataframe.
     """,
         allow_dangerous_code=True,
+        suffix="",
+        include_df_in_prompt=False,
     )
 
 
