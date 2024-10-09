@@ -22,11 +22,11 @@ def process_datafile(
 ):
 
     # Load the datafile into a dataframe
-    df = load_datafile_into_df(file_path)
+    # df = load_datafile_into_df(file_path)
 
     # Create the agents
-    agent = create_agent_with_rag(df, verbose)
-    agent_code = create_coding_agent(df, verbose)
+    # agent = create_agent_with_rag(df, verbose)
+    # agent_code = create_coding_agent(df, verbose)
 
     # Create the workflow and render the graph
     app = create_workflow()
@@ -35,12 +35,12 @@ def process_datafile(
 
     inputs = AgentState(
         ### dataframe
-        df=df,
+        # df=df,
         ### file path
         file_path=file_path,
         ### agents
-        agent=agent,
-        agent_code=agent_code,
+        # agent=agent,
+        # agent_code=agent_code,
         ### contexts
         context_user_provided=context_user_provided,
         ### summary

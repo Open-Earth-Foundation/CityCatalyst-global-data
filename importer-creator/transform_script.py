@@ -1,31 +1,46 @@
 # transform_script.py
-
+import sys
+import os
+import argparse
 import json
 import pandas as pd
 from langchain.agents.agent import AgentExecutor
 from transform_logic import transform
 
 if __name__ == "__main__":
-    import sys
-    import os
 
-    # Get the command line arguments and handling boolean values
-    inputfile: str = sys.argv[1]
-    context_user_provided: str = sys.argv[2]
-    verbose: bool = sys.argv[3] in ["True", "true"]
-    show_graph: bool = sys.argv[4] in ["True", "true"]
-    hitl: bool = sys.argv[5] in ["True", "true"]
+    # Set up argument parser
+    parser = argparse.ArgumentParser(
+        description="Transform script with optional flags."
+    )
 
-    full_path = os.path.join("./files/", inputfile)
+    # Required arguments
+    parser.add_argument("inputfile", type=str, help="Input file name")
+    parser.add_argument(
+        "context_user_provided", type=str, help="Context provided by the user"
+    )
 
-    print("\ninputfile: ", inputfile)
+    # Optional flags
+    parser.add_argument("--verbose", action="store_true", help="Enable verbose mode")
+    parser.add_argument("--show-graph", action="store_true", help="Show graph option")
+    parser.add_argument("--hitl", action="store_true", help="Enable human-in-the-loop")
+
+    # Parse arguments
+    args = parser.parse_args()
+
+    # Resolve file path
+    full_path = os.path.join("./files/", args.inputfile)
+
+    print("\ninputfile: ", args.inputfile)
     print("full_path: ", full_path)
-    print("user_provided_context: ", context_user_provided)
-    print("verbose: ", verbose)
-    print("show_graph: ", show_graph)
-    print("hitl: ", hitl)
+    print("user_provided_context: ", args.context_user_provided)
+    print("verbose: ", args.verbose)
+    print("show_graph: ", args.show_graph)
+    print("hitl: ", args.hitl)
 
-    state = transform(full_path, context_user_provided, verbose, show_graph, hitl)
+    state = transform(
+        full_path, args.context_user_provided, args.verbose, args.show_graph, args.hitl
+    )
 
     # Custom encoder to handle non-serializable objects
     def custom_encoder(obj):

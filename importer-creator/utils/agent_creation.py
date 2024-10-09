@@ -73,14 +73,15 @@ def create_coding_agent(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
         <code>
         import pandas as pd
         </code>
-    Use the following code to print the entire length of the dataframe:
-    - Use the following code to print the entire length of the dataframe:
+    - Use the following code every time you are asked to inspect the dataframe 'df':
         <code>
         import pandas as pd
         pd.set_option('display.max_rows', None)  # Show all rows
         pd.set_option('display.max_columns', None)  # Show all columns 
         </code>
-    - Do not just use df.head() to make assumptions over the content of the entire dataframe.
+    - Do not just use df.head() to make assumptions over the content of the entire dataframe. This will only print the first 5 rows. You must always inspect the entire dataframe which means all rows and all columns.
+    - Do not use print statements in your code.
+    - When you are tasked to output valid JSON format, do not include any additional commentary or explanation. Do not surround the JSON ooutput with any code block markers or tags like ```json```.
     """,
         allow_dangerous_code=True,
         suffix="",
