@@ -5,18 +5,17 @@ import pandas as pd
 from state.agent_state import AgentState
 from utils.create_prompt import create_prompt
 from utils.agent_creation import create_coding_agent
+from context.mappings.mappings_scope import scope_mappings
 
 
-def extract_region_agent_step_2(
+def extract_scope_agent_step_4(
     state: AgentState,
 ):
-    print("\nEXTRACT REGION AGENT STEP 2\n")
+    print("\nEXTRACT SCOPE AGENT STEP 4\n")
 
     # Load the output files of initial script
-    input_path_csv = "./generated/initial_script/final/generated_final_output.csv"
-    input_path_script = (
-        "./generated/initial_script/final/generated_script_final_output.py"
-    )
+    input_path_csv = "./generated/step_3/final/generated_final_output.csv"
+    input_path_script = "./generated/step_3/final/generated_script_final_output.py"
 
     # Load the csv file into the dataframe
     df = pd.read_csv(input_path_csv, encoding="utf-8")
@@ -25,27 +24,29 @@ def extract_region_agent_step_2(
         script = file.read()
 
     # Define the output paths
-    output_path_csv = "./generated/step_2/steps/extracted_region.csv"
-    output_path_script = "./generated/step_2/steps/generated_script_extracted_region.py"
+    output_path_csv = "./generated/step_4/steps/extracted_scope.csv"
+    output_path_script = "./generated/step_4/steps/generated_script_extracted_scope.py"
     output_path_markdown = (
-        "./generated/step_2/steps/generated_markdown_extracted_region.md"
+        "./generated/step_4/steps/generated_markdown_extracted_scope.md"
     )
 
     task = """
-Your task is to extract the region from the provided python pandas dataframe based on instructions below. You will also create a runnable python script.
-Your inputs are the dataframe 'df', the prior script provided below inside <prior_script> tags and the user provided context in <user_context> tags.
+Your task is to extract the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) 'scope' from the provided python pandas dataframe based on the instructions below. You will also create a runnable python script.
+Your inputs are the dataframe 'df', the prior script provided below inside <prior_script> tags, the user provided context in <user_context> tags and additional context for identidying the GPC scope in <context_scope> tags. 
 """
 
     completion_steps = f"""
 a. Inspect the csv file provided under this path: {input_path_csv}. You are provided with a pandas dataframe 'df' based on this csv file. Base your further analysis only on this dataframe. This is already an updated dataframe.
 b. Inspect the user provided context in <user_context> tags.
-c. Inspect the provided python script under <prior_script> tags.
-d. Determine the region of the data based on the content of the dataframe 'df' and the user provided context. If the region (e.g., a certain country or city) is named in the dataframe 'df' per row, use this value. If no region is mentioned in the dataframe 'df', use the user provided context to determine the region.
-e. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
+c. Inspect the additional context for identifying the GPC scope in <context_scope> tags.
+d. Inspect the provided python script under <prior_script> tags.
+e. Determine the GPC scope based on the content of the dataframe 'df', the user provided context in <user_context> tags and the additional context provided within <context_scope> tags. Each row in the dataframe 'df' should be assigned a GPC scope based on the provided context. To do this you need to inspect the dataframe 'df' row by row and assign each row a GPC scope based on the information provided in that row.
+f. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
-    2. add a column 'actor_name' to the dataframe 'df_new' with the extracted region data.
-    3. finally replace the existing name for exporting the new .csv file to {output_path_csv} containing the new dataframe 'df_new' with the changes made above. The new csv file must be comma seperated ','. The file must use 'encoding="utf-8"'.
-    4. IMORTANT: 
+    2. a mapping dictionary for the GPC scope based on your prior analysis.
+    3. add a column 'scope' to the dataframe 'df_new' and apply a GPC scope to each row of the 'df' based on the created mapping dictionary.
+    4. finally replace the existing name for exporting the new .csv file to {output_path_csv} containing the new dataframe 'df_new' with the changes made above. The new csv file must be comma seperated ','. The file must use 'encoding="utf-8"'.
+    5. IMORTANT: 
         - The code must contain python comments.
         - The code must be executable and must not contain any code errors.
         - The new script must contain all the content of the initial script in addition to the added data.
@@ -64,6 +65,9 @@ Ensure that the output is valid JSON and does not include any additional comment
     <user_context>
     This is the user context provided: {state.get("user_context")}. Give this information high priority in your considerations.
     </user_context>
+    <context_scope>
+    This is the additional context provided for identifying the activities: {scope_mappings}.
+    </context_scope>
     <prior_script>
     This is the prior script provided: {script}.
     </prior_script>
@@ -98,6 +102,7 @@ Ensure that the output is valid JSON and does not include any additional comment
         except json.JSONDecodeError as e:
             print(f"JSON decoding failed: {e}")
             sys.exit(1)
+            # return {"reasoning": response_output.strip(), "code": None}
 
     # Parse the agent's response
     output = parse_agent_response(response_output)

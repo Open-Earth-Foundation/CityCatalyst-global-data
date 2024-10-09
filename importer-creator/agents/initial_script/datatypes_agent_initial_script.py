@@ -5,6 +5,10 @@ import pandas as pd
 from state.agent_state import AgentState
 from utils.create_prompt import create_prompt
 from utils.agent_creation import create_coding_agent
+from context.mappings.mappings_white_list import white_list_mapping
+
+
+### TODO: how to handle different decimal seperators like '.' and ','?
 
 
 def datatypes_agent_initial_script(state: AgentState):
@@ -31,15 +35,17 @@ def datatypes_agent_initial_script(state: AgentState):
     )
 
     task = """
-Your task is to inspect and correect the datatypes of columns of the provided DataFrame 'df'. You will also create a runnable python script.
-Your inputs are the dataframe 'df' and the prior script provided below inside <prior_script> tags.
+Your task is to inspect and correct the datatypes of columns of the provided DataFrame 'df'. You will also create a runnable python script.
+Your inputs are the dataframe 'df', the prior script provided below inside <prior_script> tags and further context for choosing the correct datatypes provided below in <white_list> tags.
 """
     completion_steps = f"""
 a. Inspect the csv file provided under this path: {input_path_csv}. You are provided with a pandas dataframe 'df' based on this csv file. Base your further analysis only on this dataframe. This is already an updated dataframe.
 b. Inspect the datatypes of each column in the dataframe 'df' and output a list of suggested corrections. 
-c. Inspect the columns in the dataframe 'df' that contain dates and temporal data. Check if those columns have the correct datatype for dates.
-d. Inspect the provided python script under <prior_script> tags.
-d. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
+c. Inspect the provided python script under <prior_script> tags.
+d. Inspect the columns in the dataframe 'df' that contain dates and temporal data. Check if those columns have the correct datatype for dates. 
+e. Determine the correct datatypes for the other columns. Use the provided context in <white_list> tags to determine the correct datatypes for each column.
+    - If you enounter a numeric column, analyze the decimal seperator that is being used and make sure the numbers are interpreted correctly.
+f. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script.
     2. corrected datatypes for the columns in the dataframe 'df_new' based on your prior analysis.
     3. converted date columns to a valid datetime format based on the available data using 'pd.to_datetime' and based on your prior analysis.
@@ -60,6 +66,9 @@ Ensure that the output is valid JSON and does not include any additional comment
 """
     additional_information = f"""
 <additional_information>
+    <white_list>
+    This list provides information on datatypes for each column type: {white_list_mapping}.
+    </white_list>
     <prior_script>
     This is the prior script provided: {script}.
     </prior_script>

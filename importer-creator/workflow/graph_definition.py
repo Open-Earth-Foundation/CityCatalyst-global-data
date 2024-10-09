@@ -16,7 +16,9 @@ from agents.initial_script.create_final_output_agent_initial_script import (
 )
 
 # Import for step 2
-from agents.step_2.extract_region_agent_step_2 import extract_region_agent_step_2
+from agents.step_2.extract_actor_name_agent_step_2 import (
+    extract_actor_name_agent_step_2,
+)
 from agents.step_2.extract_sector_agent_step_2 import extract_sector_agent_step_2
 from agents.step_2.extract_sub_sector_agent_step_2 import (
     extract_sub_sector_agent_step_2,
@@ -35,6 +37,13 @@ from agents.step_3.extract_activity_value_agent_step_3 import (
 from agents.step_3.extract_activity_unit_agent_step_3 import (
     extract_activity_unit_agent_step_3,
 )
+from agents.step_3.create_final_output_agent_step_3 import (
+    create_final_output_agent_step_3,
+)
+
+# Import for step 4
+from agents.step_4.extract_scope_agent_step_4 import extract_scope_agent_step_4
+from agents.step_4.extract_gpc_refno_agent_step_4 import extract_gpc_refno_agent_step_4
 
 # Import for summary
 from agents.summary_agent import summary_agent
@@ -195,11 +204,13 @@ def create_workflow():
         "datatypes_agent_initial_script", "create_final_output_agent_initial_script"
     )
     workflow.add_edge(
-        "create_final_output_agent_initial_script", "extract_region_agent_step_2"
+        "create_final_output_agent_initial_script", "extract_actor_name_agent_step_2"
     )
 
     # Step 2
-    workflow.add_node("extract_region_agent_step_2", extract_region_agent_step_2)
+    workflow.add_node(
+        "extract_actor_name_agent_step_2", extract_actor_name_agent_step_2
+    )
     workflow.add_node("extract_sector_agent_step_2", extract_sector_agent_step_2)
     workflow.add_node(
         "extract_sub_sector_agent_step_2", extract_sub_sector_agent_step_2
@@ -208,7 +219,7 @@ def create_workflow():
         "create_final_output_agent_step_2", create_final_output_agent_step_2
     )
 
-    workflow.add_edge("extract_region_agent_step_2", "extract_sector_agent_step_2")
+    workflow.add_edge("extract_actor_name_agent_step_2", "extract_sector_agent_step_2")
     workflow.add_edge("extract_sector_agent_step_2", "extract_sub_sector_agent_step_2")
     workflow.add_edge(
         "extract_sub_sector_agent_step_2", "create_final_output_agent_step_2"
@@ -227,6 +238,9 @@ def create_workflow():
     workflow.add_node(
         "extract_activity_unit_agent_step_3", extract_activity_unit_agent_step_3
     )
+    workflow.add_node(
+        "create_final_output_agent_step_3", create_final_output_agent_step_3
+    )
 
     workflow.add_edge(
         "extract_activity_name_agent_step_3", "extract_activity_value_agent_step_3"
@@ -234,7 +248,17 @@ def create_workflow():
     workflow.add_edge(
         "extract_activity_value_agent_step_3", "extract_activity_unit_agent_step_3"
     )
-    workflow.add_edge("extract_activity_unit_agent_step_3", END)
+    workflow.add_edge(
+        "extract_activity_unit_agent_step_3", "create_final_output_agent_step_3"
+    )
+
+    # Step 4
+    workflow.add_node("extract_scope_agent_step_4", extract_scope_agent_step_4)
+    workflow.add_node("extract_gpc_refno_agent_step_4", extract_gpc_refno_agent_step_4)
+
+    workflow.add_edge("create_final_output_agent_step_3", "extract_scope_agent_step_4")
+    workflow.add_edge("extract_scope_agent_step_4", "extract_gpc_refno_agent_step_4")
+    workflow.add_edge("extract_gpc_refno_agent_step_4", END)
 
     ### Below old flow
     workflow.add_node(

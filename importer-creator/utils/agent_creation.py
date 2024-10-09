@@ -87,7 +87,7 @@ def create_coding_agent(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
         suffix="""
     Make sure that all your generated output of e.g. reasoning and python code uses UTF-8 encoding. Convert special characters to UTF-8 encoding.        
     """,
-        include_df_in_prompt=False,
+        include_df_in_prompt=True,
     )
 
 

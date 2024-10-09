@@ -35,7 +35,7 @@ def extract_activity_name_agent_step_3(
     )
 
     task = """
-Your task is to extract the Greenhouse Gas protocoll for cities (GPC) 'activity name' from the provided python pandas dataframe based on the instructions below. You will also create a runnable python script.
+Your task is to extract the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) 'activity name' from the provided python pandas dataframe based on the instructions below. You will also create a runnable python script.
 Your inputs are the dataframe 'df', the prior script provided below inside <prior_script> tags, the user provided context in <user_context> tags and additional context for identidying activities in <context_activities> tags. 
 """
 

@@ -2,7 +2,7 @@
 
 white_list_mapping = {
     "__doc__": """
-    This dictionary maps the most common activity data types 'fuel_sales', 'fuel_consumption' and 'energy_consumption' and the important columns to conserve in a dataframe.
+    This dictionary maps the most common Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) activity data types 'fuel_sales', 'fuel_consumption' and 'energy_consumption' and the important columns to conserve in a dataframe.
     Each activity data type has a description of what kind of data falls into that respective category and a list of columns with their data type and description.
 
     Instructions for the LLM:
@@ -20,7 +20,7 @@ white_list_mapping = {
         "description": "Mapping of columns relevant for fuel sales data, which typically includes sales of products like diesel or gasoline. Common variations may include ...",
         "period": {
             "data_type": "datetime",
-            "description": "The period of time the data refers to",
+            "description": "The period of time the data refers to like a date column with days, months, or years and similar",
         },
         "city": {
             "data_type": "string",

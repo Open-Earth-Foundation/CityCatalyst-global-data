@@ -6,7 +6,7 @@ from state.agent_state import AgentState
 from utils.create_prompt import create_prompt
 from utils.agent_creation import create_coding_agent
 
-from context.context_sub_sector import context_sub_sector
+from context.mappings.mappings_sub_sector import sub_sector_mapping
 
 
 def extract_sub_sector_agent_step_2(
@@ -34,7 +34,7 @@ def extract_sub_sector_agent_step_2(
     )
 
     task = """
-Your task is to extract the Greenhouse Gas protocol for cities (GPC) sub-sector from the provided python pandas dataframe based on instructions below. You will also create a runnable python script.
+Your task is to extract the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) sub-sector from the provided python pandas dataframe based on instructions below. You will also create a runnable python script.
 Your inputs are the dataframe 'df', the prior script provided below inside <prior_script> tags, the user provided context in <user_context> tags and additional context for identidying the GPC sub-sector in <context_sub_sector> tags.
 """
 
@@ -69,7 +69,7 @@ Ensure that the output is valid JSON and does not include any additional comment
     This is the user context provided: {state.get("user_context")}. Give this information high priority in your considerations.
     </user_context>
     <context_sub_sector>
-    This is the additional context provided for identifying the GPC sub-sector: {context_sub_sector}.
+    This is the additional context provided for identifying the GPC sub-sector: {sub_sector_mapping}.
     </context_sub_sector>
     <prior_script>
     This is the prior script provided: {script}.

@@ -2,38 +2,38 @@ import shutil
 from state.agent_state import AgentState
 
 
-def create_final_output_agent_step_2(state: AgentState):
-    print("\nCREATE FINAL OUTPUT AGENT STEP 2\n")
+def create_final_output_agent_step_3(state: AgentState):
+    print("\nCREATE FINAL OUTPUT AGENT STEP 3\n")
 
     # Load the previously created markdown files
-    input_path_markdown_extracted_actor_name = (
-        "./generated/step_2/steps/generated_markdown_extracted_actor_name.md"
+    input_path_markdown_extracted_activity_name = (
+        "./generated/step_3/steps/generated_markdown_extracted_activity_name.md"
     )
     input_path_markdown_extracted_sector = (
-        "./generated/step_2/steps/generated_markdown_extracted_sector.md"
+        "./generated/step_3/steps/generated_markdown_extracted_activity_value.md"
     )
     input_path_markdown_extracted_sub_sector = (
-        "./generated/step_2/steps/generated_markdown_extracted_sub_sector.md"
+        "./generated/step_3/steps/generated_markdown_extracted_activity_unit.md"
     )
 
     # Load the last created python script
     input_path_last_script = (
-        "./generated/step_2/steps/generated_script_extracted_sub_sector.py"
+        "./generated/step_3/steps/generated_script_extracted_activity_unit.py"
     )
 
     # Load the last created csv file
-    input_path_last_csv = "./generated/step_2/steps/extracted_sub_sector.csv"
+    input_path_last_csv = "./generated/step_3/steps/extracted_activity_unit.csv"
 
     # Define output paths
-    output_path_markdown = "./generated/step_2/final/generated_markdown_final_output.md"
-    output_path_script = "./generated/step_2/final/generated_script_final_output.py"
-    output_path_csv = "./generated/step_2/final/generated_final_output.csv"
+    output_path_markdown = "./generated/step_3/final/generated_markdown_final_output.md"
+    output_path_script = "./generated/step_3/final/generated_script_final_output.py"
+    output_path_csv = "./generated/step_3/final/generated_final_output.csv"
 
     # Combine markdown files into one final markdown output
     with open(output_path_markdown, "w", encoding="utf-8") as outfile:
         outfile.write(f"# Report initial formatting\n\n")
         for markdown_file in [
-            input_path_markdown_extracted_actor_name,
+            input_path_markdown_extracted_activity_name,
             input_path_markdown_extracted_sector,
             input_path_markdown_extracted_sub_sector,
         ]:
