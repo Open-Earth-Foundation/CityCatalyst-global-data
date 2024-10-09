@@ -1,10 +1,5 @@
 # context_actval_transportation.py
 
-# - Fuel sales within city boundaries (GPC reference number: II.1.1, Scope: 1)
-#     * This can consist of gasoline, diesel, and other fuels used by vehicles for example sold by local gas stations (usually to end-users) or sold by distributors to businesses.
-#     * Keywords: on-road, transportation, freight, sold to public, etc.
-#     * Vehicles: including electric and fuelpowered cars, taxis, buses, etc.
-
 context_actval_transportation = """
 The following provides context for the activities for the sector 'Transportation'.
 Each of these subsectors has a unique set of activities and keywords that can help identifying the correct GPC referecnce number. 

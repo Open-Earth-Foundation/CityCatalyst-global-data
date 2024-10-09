@@ -42,9 +42,10 @@ gpc_mappings = {
     - '3' represents Scope 3 emissions, which are emissions from transmission and distribution losses from grid-supplied energy consumption
 
     There are certain assumptions made, that will always apply to the GPC reference numbers:
-    - Combustion or consumption of fuels is always considered to be scope 1 emissions
+    - Combustion of fuels or consumption of fuels is always considered to be scope 1 emissions.
     - Grid-supplied energy like electricity, heat, cold and steam is always considered to be scope 2 emissions
     Those assumptions are to be followed over all other mappings you are provided with. 
+    - Each activity data can only be associated with one single GPC reference number, and it can never be associated with multiple GPC reference numbers.
 
     Example entries:
     - "I.1.1": Represents emissions within the sector 'Stationary Energy' and the subsector 'Residential Buildings' from fuel combustion within the city boundary (Scope 1)

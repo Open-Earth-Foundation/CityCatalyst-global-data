@@ -30,7 +30,8 @@ fuel_mapping = {
 # mapping fuel names to gpc_refno
 fuel_to_gpc = {
     "__doc__": """
-    This is the mapping of fuel names to possible GPC reference numbers. Use this mapping to identify possible GPC reference numbers based on the fuel names in the data.
+    This is the mapping of fuel names to possible GPC reference numbers. Use this mapping to identify all possible GPC reference numbers based on the fuel names in the data. 
+    You will need to combine this mapping with other information to identify a single correct GPC reference number.
 
     E.g. if the fuel name in the data is 'Motor Gasoline/Petrol', the possible GPC reference numbers are ['II.1.1', 'II.2.1', 'II.3.1', 'II.5.1'].
     E.g. if the fuel name in the data is 'Jet Kerosene', the only possible GPC reference numbers are ['II.4.1'].
@@ -83,8 +84,8 @@ fuel_to_gpc = {
 # mapping transport types to gpc_refno
 transport_type_to_gpc = {
     "__doc__": """
-    This is the mapping of transportation types to possible GPC reference numbers. Use this mapping to identify possible GPC reference numbers based on the transportation types in the data.
-
+    This is the mapping of transportation types to possible GPC reference numbers. Use this mapping to identify all possible GPC reference numbers based on the transportation types in the data.
+    
     E.g. if the transport type in the data is 'Rail', the only possible GPC reference number is ['II.2.1'].
     E.g. if the transport type in the data is 'Agriculture Equipment', the only possible GPC reference number is ['II.5.1'].
     E.g. if the transport type in the data is 'Medium-Duty Truck', the possible GPC reference numbers are ['II.1.1', 'II.5.1'].
