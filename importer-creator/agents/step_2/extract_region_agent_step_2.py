@@ -19,9 +19,9 @@ def extract_region_agent_step_2(
     )
 
     # Load the csv file into the dataframe
-    df = pd.read_csv(input_path_csv)
+    df = pd.read_csv(input_path_csv, encoding="utf-8")
     # Load the script
-    with open(input_path_script, "r") as file:
+    with open(input_path_script, "r", encoding="utf-8") as file:
         script = file.read()
 
     # Define the output paths
@@ -44,7 +44,7 @@ d. Determine the region of the data based on the content of the dataframe 'df' a
 e. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
     2. add a column 'actor_name' to the dataframe 'df_new' with the extracted region data.
-    3. finally replace the existing name for exporting the new .csv file to {output_path_csv} containing the new dataframe 'df_new' with the changes made above. The new csv file must be comma seperated ','. 
+    3. finally replace the existing name for exporting the new .csv file to {output_path_csv} containing the new dataframe 'df_new' with the changes made above. The new csv file must be comma seperated ','. The file must use 'encoding="utf-8"'.
     4. IMORTANT: 
         - The code must contain python comments.
         - The code must be executable and must not contain any code errors.
@@ -98,14 +98,13 @@ Ensure that the output is valid JSON and does not include any additional comment
         except json.JSONDecodeError as e:
             print(f"JSON decoding failed: {e}")
             sys.exit(1)
-            # return {"reasoning": response_output.strip(), "code": None}
 
     # Parse the agent's response
     output = parse_agent_response(response_output)
 
     # Save the reasoning to a Markdown file
     if output.get("reasoning"):
-        with open(output_path_markdown, "w") as markdown_file:
+        with open(output_path_markdown, "w", encoding="utf-8") as markdown_file:
             markdown_file.write(f"# Reasoning\n\n{output['reasoning']}")
     else:
         print("No reasoning was found in the agent's response.")
@@ -114,7 +113,7 @@ Ensure that the output is valid JSON and does not include any additional comment
     # Save the generated code to a Python file
     if output.get("code"):
 
-        with open(output_path_script, "w") as script_file:
+        with open(output_path_script, "w", encoding="utf-8") as script_file:
             script_file.write(output["code"])
 
         # Run the generated Python script
@@ -127,5 +126,3 @@ Ensure that the output is valid JSON and does not include any additional comment
     else:
         print("No Python code was found in the agent's response.")
         sys.exit(1)
-
-    # return {"code_initial_script": response_output}

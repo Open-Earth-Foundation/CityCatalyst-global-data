@@ -17,9 +17,9 @@ def datatypes_agent_initial_script(state: AgentState):
     )
 
     # Load the csv file into the dataframe
-    df = pd.read_csv(input_path_csv)
+    df = pd.read_csv(input_path_csv, encoding="utf-8")
     # Load the script
-    with open(input_path_script, "r") as file:
+    with open(input_path_script, "r", encoding="utf-8") as file:
         script = file.read()
 
     output_path_csv = "./generated/initial_script/steps/formatted_datatypes.csv"
@@ -44,7 +44,7 @@ d. Create a python script based on the script provided within <prior_script> tag
     2. corrected datatypes for the columns in the dataframe 'df_new' based on your prior analysis.
     3. converted date columns to a valid datetime format based on the available data using 'pd.to_datetime' and based on your prior analysis.
         - pay attention to columns that might not be clearly labeled as 'date' or 'dates' or similar but that still contain dates and temporal data.
-    4. finally replace the existing name for exporting the new .csv file to {output_path_csv} containing the new dataframe 'df_new' with the changes made above. The new csv file must be comma seperated ','. 
+    4. finally replace the existing name for exporting the new .csv file to {output_path_csv} containing the new dataframe 'df_new' with the changes made above. The new csv file must be comma seperated ','. The file must use 'encoding="utf-8"'.
     5. IMORTANT: 
         - The code must contain python comments.
         - The code must be executable and must not contain any code errors.
@@ -100,7 +100,7 @@ Ensure that the output is valid JSON and does not include any additional comment
 
     # Save the reasoning to a Markdown file
     if output.get("reasoning"):
-        with open(output_path_markdown, "w") as markdown_file:
+        with open(output_path_markdown, "w", encoding="utf-8") as markdown_file:
             markdown_file.write(f"# Reasoning\n\n{output['reasoning']}")
     else:
         print("No reasoning was found in the agent's response.")
@@ -108,7 +108,7 @@ Ensure that the output is valid JSON and does not include any additional comment
 
     if output.get("code"):
         # Save the generated code to a Python file
-        with open(output_path_script, "w") as script_file:
+        with open(output_path_script, "w", encoding="utf-8") as script_file:
             script_file.write(output["code"])
 
         # Run the generated Python script

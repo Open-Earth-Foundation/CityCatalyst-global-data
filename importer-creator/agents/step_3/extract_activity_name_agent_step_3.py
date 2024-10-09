@@ -20,9 +20,9 @@ def extract_activity_name_agent_step_3(
     input_path_script = "./generated/step_2/final/generated_script_final_output.py"
 
     # Load the csv file into the dataframe
-    df = pd.read_csv(input_path_csv)
+    df = pd.read_csv(input_path_csv, encoding="utf-8")
     # Load the script
-    with open(input_path_script, "r") as file:
+    with open(input_path_script, "r", encoding="utf-8") as file:
         script = file.read()
 
     # Define the output paths
@@ -49,7 +49,7 @@ f. Create a python script based on the script provided within <prior_script> tag
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
     2. a mapping dictionary for the GPC 'activity name' based on your prior analysis.
     3. add a column 'activity_name' to the dataframe 'df_new' with the extracted 'activity_name' which applies a GPC 'activity name' to each row of the 'df' based on the created mapping dictionary.
-    4. finally replace the existing name for exporting the new .csv file to {output_path_csv} containing the new dataframe 'df_new' with the changes made above. The new csv file must be comma seperated ','. 
+    4. finally replace the existing name for exporting the new .csv file to {output_path_csv} containing the new dataframe 'df_new' with the changes made above. The new csv file must be comma seperated ','. The file must use 'encoding="utf-8"'.
     5. IMORTANT: 
         - The code must contain python comments.
         - The code must be executable and must not contain any code errors.
@@ -113,7 +113,7 @@ Ensure that the output is valid JSON and does not include any additional comment
 
     # Save the reasoning to a Markdown file
     if output.get("reasoning"):
-        with open(output_path_markdown, "w") as markdown_file:
+        with open(output_path_markdown, "w", encoding="utf-8") as markdown_file:
             markdown_file.write(f"# Reasoning\n\n{output['reasoning']}")
     else:
         print("No reasoning was found in the agent's response.")
@@ -122,7 +122,7 @@ Ensure that the output is valid JSON and does not include any additional comment
     # Save the generated code to a Python file
     if output.get("code"):
 
-        with open(output_path_script, "w") as script_file:
+        with open(output_path_script, "w", encoding="utf-8") as script_file:
             script_file.write(output["code"])
 
         # Run the generated Python script

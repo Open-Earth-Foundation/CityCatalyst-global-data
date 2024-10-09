@@ -34,14 +34,14 @@ def create_final_output_agent_initial_script(state: AgentState):
     output_path_csv = "./generated/initial_script/final/generated_final_output.csv"
 
     # Combine markdown files into one final markdown output
-    with open(output_path_markdown, "w") as outfile:
+    with open(output_path_markdown, "w", encoding="utf-8") as outfile:
         outfile.write(f"# Report initial formatting\n\n")
         for markdown_file in [
             input_path_markdown_initially,
             input_path_markdown_deleted_columns,
             input_path_markdown_datatypes,
         ]:
-            with open(markdown_file, "r") as infile:
+            with open(markdown_file, "r", encoding="utf-8") as infile:
                 content = infile.read()
                 outfile.write(content)
                 outfile.write(f"\n\n*{infile.name}*")

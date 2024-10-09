@@ -5,6 +5,7 @@ import pandas as pd
 from state.agent_state import AgentState
 from utils.create_prompt import create_prompt
 from utils.agent_creation import create_coding_agent
+from context.mappings.mappings_white_list import white_list_mapping
 
 
 def delete_cols_agent_initial_script(
@@ -17,9 +18,9 @@ def delete_cols_agent_initial_script(
     input_path_script = "./generated/initial_script/steps/generated_script_initially.py"
 
     # Load the dataframe and the script
-    df = pd.read_csv(input_path_csv)
+    df = pd.read_csv(input_path_csv, encoding="utf-8")
     # Load the script
-    with open(input_path_script, "r") as file:
+    with open(input_path_script, "r", encoding="utf-8") as file:
         script = file.read()
 
     # Define the output paths
@@ -34,19 +35,19 @@ def delete_cols_agent_initial_script(
     # Create the prompt
     task = """
 Your task is to inspect the dataframe 'df' and to delete all unnecessary columns based on the provided information below. You will also create a runnable python script.
-Your inputs are the dataframe 'df' and information about which columns are necessary and cannot be deleted (positive list). Also you are provided with user provided context about the datafile. You find this information below under <additional_information> tags.
+Your inputs are the dataframe 'df' and information about which columns are necessary and cannot be deleted (white list). Also you are provided with user provided context about the datafile. You find this information below under <additional_information> tags.
 """
 
     completion_steps = f"""
 a. Inspect the csv file provided under this path: {input_path_csv}. You are provided with a pandas dataframe 'df' based on this csv file. Base your further analysis only on this dataframe. This is already an updated dataframe.
-b. Inspect the positive list of columns that cannot be deleted provided under <positive_list> tags.
+b. Inspect the white list of columns that cannot be deleted provided under <white_list> tags.
 c. Inpect the user provided context about the datafile under <user_context> tags.
 d. Inspect the provided python script under <prior_script> tags.
-e. Based on the positive list, the provided user context and the provided dataframe 'df', output a list of columns that are not necessary and can be deleted.
+e. Based on the white list, the provided user context and the provided dataframe 'df', output a list of columns that are not necessary and can be deleted.
 f. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
-    2. delete all columns from the dataframe 'df_new' that are not necessary based on your analysis of the positive list provided under <positive_list> tags. If you are in doubt about a certain column, do not delete it.
-    3. finally replace the existing name for exporting the new .csv file to {output_path_csv} containing the new dataframe 'df_new' with the changes made above. The new csv file must be comma seperated ','. 
+    2. delete all columns from the dataframe 'df_new' that are not necessary based on your analysis of the white list provided under <white_list> tags. If you are in doubt about a certain column, do not delete it.
+    3. finally replace the existing name for exporting the new .csv file to {output_path_csv} containing the new dataframe 'df_new' with the changes made above. The new csv file must be comma seperated ','. The file must use 'encoding="utf-8"'.
     4. IMORTANT: 
         - The code must contain python comments.
         - The code must be executable and must not contain any code errors.
@@ -67,9 +68,9 @@ Ensure that the output is valid JSON and does not include any additional comment
     <user_context>
     This is the user provided context about the datafile: {state.get("user_context")}. Give this information high priority in your considerations.
     </user_context>
-    <positive_list>
-    This is the positive list of columns with descriptions. Use this to define which columns are not necessary and can be deleted: {state.get("positive_list")}.
-    </positive_list>
+    <white_list>
+    This is the white list of columns with descriptions. Use this to define which columns are not necessary and can be deleted: {white_list_mapping}.
+    </white_list>
     <prior_script>
     This is the prior script provided: {script}.
     </prior_script>
@@ -111,7 +112,7 @@ Ensure that the output is valid JSON and does not include any additional comment
 
     # Save the reasoning to a Markdown file
     if output.get("reasoning"):
-        with open(output_path_markdown, "w") as markdown_file:
+        with open(output_path_markdown, "w", encoding="utf-8") as markdown_file:
             markdown_file.write(f"# Reasoning\n\n{output['reasoning']}")
     else:
         print("No reasoning was found in the agent's response.")
@@ -119,7 +120,7 @@ Ensure that the output is valid JSON and does not include any additional comment
 
     if output.get("code"):
         # Save the generated code to a Python file
-        with open(output_path_script, "w") as script_file:
+        with open(output_path_script, "w", encoding="utf-8") as script_file:
             script_file.write(output["code"])
 
         # Run the generated Python script

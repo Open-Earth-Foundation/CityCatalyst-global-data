@@ -16,7 +16,7 @@ def setup_agent_initial_script(
     input_path_csv = state.get("file_path")
 
     # Load the input CSV file into a pandas dataframe
-    df = pd.read_csv(input_path_csv)
+    df = pd.read_csv(input_path_csv, encoding="utf-8")
 
     # Define the output paths for the generated files
     output_path_csv = "./generated/initial_script/steps/formatted_initially.csv"
@@ -41,7 +41,7 @@ b. Create a python script. This python script must contain the following:
         - The path to the .csv file is provided in the additional information below under <file_path> tags.
     2. a new dataframe 'df_new' that contains all the data of the original dataframe 'df' as a copy using 'df_new = df.copy(). Make all further manipulations on this new dataframe 'df_new'.
     3. normalized column names for 'df_new' where names are converted to 'lower case', strip them of any leading or trailing white spaces and replace any white spaces with underscores '_'.
-    4. add code to output a new .csv file {output_path_csv} containing the new dataframe 'df_new' with the changes made above. The new csv file must be comma seperated ','.
+    4. add code to output a new .csv file {output_path_csv} containing the new dataframe 'df_new' with the changes made above. The new csv file must be comma seperated ','. The file must use 'encoding="utf-8"'.
     6. IMORTANT: 
         - The code must contain python comments.
         - The code must be executable and must not contain any code errors.
@@ -100,7 +100,7 @@ Ensure that the output is valid JSON and does not include any additional comment
 
     # Save the reasoning to a Markdown file
     if output.get("reasoning"):
-        with open(output_path_markdown, "w") as markdown_file:
+        with open(output_path_markdown, "w", encoding="utf-8") as markdown_file:
             markdown_file.write(f"# Reasoning\n\n{output['reasoning']}")
     else:
         print("No reasoning was found in the agent's response.")
@@ -109,7 +109,7 @@ Ensure that the output is valid JSON and does not include any additional comment
     # Save the generated code to a Python file
     if output.get("code"):
 
-        with open(output_path_script, "w") as script_file:
+        with open(output_path_script, "w", encoding="utf-8") as script_file:
             script_file.write(output["code"])
 
         # Run the generated Python script

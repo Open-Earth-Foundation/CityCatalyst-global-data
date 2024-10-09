@@ -84,7 +84,9 @@ def create_coding_agent(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
     - When you are tasked to output valid JSON format, do not include any additional commentary or explanation. Do not surround the JSON ooutput with any code block markers or tags like ```json```.
     """,
         allow_dangerous_code=True,
-        suffix="",
+        suffix="""
+    Make sure that all your generated output of e.g. reasoning and python code uses UTF-8 encoding. Convert special characters to UTF-8 encoding.        
+    """,
         include_df_in_prompt=False,
     )
 
