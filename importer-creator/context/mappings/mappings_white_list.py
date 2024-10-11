@@ -4,6 +4,8 @@ white_list_mapping = {
     "__doc__": """
     This dictionary maps the most common Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) activity data types 'fuel_sales', 'fuel_consumption' and 'electricity_consumption' and the important columns to conserve in a dataframe.
     Each activity data type has a description of what kind of data falls into that respective category and a list of columns with their data type and description.
+    Each dataset con only be associated with on of the activity data types. This means, that only the described columns of one of the activity data types can be conserved in the dataframe.
+    Do not mix columns of different activity data types in the same dataframe.
 
     Instructions for the LLM:
     - Names in datasets may not match these names below exactly but can be identified by their descriptions or examples.
@@ -17,6 +19,7 @@ white_list_mapping = {
     The names given in this dictionary are indicative and can be changed according to the specific dataset.
     """,
     "fuel_sales": {
+        "description": "This activity data type refers to data related to the sale of fuels (like propane, diesel, natural gases and so on).",  # Please check and improve @ Mau
         "period": {
             "data_type": "datetime",
             "description": "The period of time the data refers to",
@@ -82,6 +85,7 @@ white_list_mapping = {
         },
     },
     "fuel_consumption": {
+        "description": "This activity data type refers to data related to the consumption of fuels (like propane, diesel, natural gases and so on). E.g. burning those fuels or similar",  # Please check and improve @ Mau
         "period": {
             "data_type": "datetime",
             "description": "The period of time the data refers to",
@@ -142,6 +146,7 @@ white_list_mapping = {
         },
     },
     "electricity_consumption": {
+        "description": "This activity data type refers to data related to the consumption of electricity (electric energy)",  # Please check and improve @ Mau
         "date": {
             "data_type": "datetime",
             "description": "The period of time the data refers to",
@@ -182,9 +187,9 @@ white_list_mapping = {
                 "Power Plants",
             ],
         },
-        "final_users": {
+        "final_user": {
             "data_type": "string",
-            "description": "The final users of the energy or the sector where the energy was consumed",
+            "description": "The final user of the energy or the sector where the energy was consumed",
             "examples": ["residential", "commercial", "transportation"],
         },
         "electricity_consumed": {
