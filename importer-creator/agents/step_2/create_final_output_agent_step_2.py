@@ -15,10 +15,10 @@ def create_final_output_agent_step_2(state: AgentState):
     input_path_markdown_extracted_sub_sector = (
         "./generated/step_2/steps/generated_markdown_extracted_sub_sector.md"
     )
-    input_path_markdown_extracted_sub_sector = (
+    input_path_markdown_extracted_scope = (
         "./generated/step_2/steps/generated_markdown_extracted_scope.md"
     )
-    input_path_markdown_extracted_sub_sector = (
+    input_path_markdown_extracted_gpc_refno = (
         "./generated/step_2/steps/generated_markdown_extracted_gpc_refno.md"
     )
 
@@ -36,11 +36,13 @@ def create_final_output_agent_step_2(state: AgentState):
 
     # Combine markdown files into one final markdown output
     with open(output_path_markdown, "w", encoding="utf-8") as outfile:
-        outfile.write(f"# Report initial formatting\n\n")
+        outfile.write(f"# Report step 2\n\n")
         for markdown_file in [
             input_path_markdown_extracted_actor_name,
             input_path_markdown_extracted_sector,
             input_path_markdown_extracted_sub_sector,
+            input_path_markdown_extracted_scope,
+            input_path_markdown_extracted_gpc_refno,
         ]:
             with open(markdown_file, "r", encoding="utf-8") as infile:
                 content = infile.read()

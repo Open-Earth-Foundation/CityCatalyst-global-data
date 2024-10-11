@@ -31,7 +31,7 @@ def create_final_output_agent_step_3(state: AgentState):
 
     # Combine markdown files into one final markdown output
     with open(output_path_markdown, "w", encoding="utf-8") as outfile:
-        outfile.write(f"# Report initial formatting\n\n")
+        outfile.write(f"# Report step 3\n\n")
         for markdown_file in [
             input_path_markdown_extracted_activity_name,
             input_path_markdown_extracted_sector,
