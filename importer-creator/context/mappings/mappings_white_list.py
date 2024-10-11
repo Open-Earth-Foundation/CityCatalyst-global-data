@@ -44,7 +44,7 @@ white_list_mapping = {
         },
         "user type": {
             "data_type": "string",
-            "description": "Categorizes the different sectors or channels through which fuel is distributed or sold in the city", #improve this description distribution and consumption
+            "description": "Classifies the different sectors, users or channels through which fuel is sold, consumed or distributed in the city",
             "examples": ["fuel sales in gas stations", "Service stations, storage and distribution", "Freight transport"]
         },
         "volume": {
@@ -91,7 +91,7 @@ white_list_mapping = {
         },
         "final user": {
             "data_type": "string",
-            "description": "The final user of the fuel or the user type of the fuel",
+            "description": "The final user of the fuel or the sector where the fuel was consumed",
             "examples": ["residential", "commercial", "transportation", "industrial"]
         },
         "industry type": {
@@ -129,12 +129,7 @@ white_list_mapping = {
         "locode": {
             "data_type": "string",
             "description": "The location code of the region where the data was collected or where the energy was consumed, according to the UN/LOCODE standard",
-            "examples": ["US CA", "AR BUE", "BR SPO"]
-        },
-        "energy type": {   
-            "description": "The type of energy consumed, this can be also energy sources",
-            "data_type": "string",
-            "examples": ["electricity", "electric power", "heating", "steam", "cooling"]
+            "examples": ["US CA", "AR-BUE", "BRSPO"]
         },
         "operator": {
             "data_type": "string",
@@ -153,22 +148,22 @@ white_list_mapping = {
         },
         "final users": {
             "data_type": "string",
-            "description": "The final users of the energy, e.g. residential, commercial, transportation, etc.",
+            "description": "The final users of the energy or the sector where the energy was consumed",
             "examples": ["residential", "commercial", "transportation"]
         },
-        "energy consumed": {    ## 
+        "electricity consumed": {    
             "data_type": "float",
-            "description": "The amount of energy consumed. This can be also final consumption or consumption",
+            "description": "The amount of electricity consumed. This can be also final consumption or consumption",
             "examples": [1000, 20000, 300.9]
         },
         "units": {
             "data_type": "string",
-            "description": "The units in which the energy consumed is measured",
+            "description": "The units in which the electricity consumed is measured",
             "examples": ["kWh", "MWh", "GWh", "Joules"]
         },
         "location": {
             "data_type": "string",
-            "description": "The location where the energy was consumed",
+            "description": "The location where the electricity was consumed",
             "examples": ["Av. Corrientes 1234, Buenos Aires", "Av. Paulista 1234, Sao Paulo"]
         }
     }
