@@ -40,7 +40,8 @@ Your task is to inspect and correct the datatypes of columns of the provided Dat
 Your inputs are the dataframe 'df', the prior script provided below inside <prior_script> tags and further context for choosing the correct datatypes provided below in <white_list> tags.
 """
     completion_steps = f"""
-a. Inspect the csv file provided under this path: {input_path_csv}. You are provided with a pandas dataframe 'df' based on this csv file. Base your further analysis only on this dataframe. This is already an updated dataframe.
+a. Inspect the csv file provided under this path: {input_path_csv}. You are provided with a pandas dataframe 'df' based on this csv file. Base your further analysis only on this dataframe. This is already an updated dataframe based on the python script under <prior_script> tags.
+    - do not try to attempt loading the csv file provided in the script provided under <prior_script> tags. The csv file provided in the prior script is just the loading of the initial csv file but you will work with an already updated file provided under this path: {input_path_csv}.
 b. Inspect the datatypes of each column in the dataframe 'df' and output a list of suggested corrections. 
 c. Inspect the provided python script under <prior_script> tags.
 d. Inspect the columns in the dataframe 'df' that contain dates and temporal data. Check if those columns have the correct datatype for dates. 

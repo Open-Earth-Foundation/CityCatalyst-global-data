@@ -40,7 +40,8 @@ Your inputs are the dataframe 'df', the prior script provided below inside <prio
 """
 
     completion_steps = f"""
-a. Inspect the csv file provided under this path: {input_path_csv}. You are provided with a pandas dataframe 'df' based on this csv file. Base your further analysis only on this dataframe. This is already an updated dataframe.
+a. Inspect the csv file provided under this path: {input_path_csv}. You are provided with a pandas dataframe 'df' based on this csv file. Base your further analysis only on this dataframe. This is already an updated dataframe based on the python script under <prior_script> tags.
+    - do not try to attempt loading the csv file provided in the script provided under <prior_script> tags. The csv file provided in the prior script is just the loading of the initial csv file but you will work with an already updated file provided under this path: {input_path_csv}.
 b. Inspect the user provided context in <user_context> tags.
 c. Inspect the provided python script under <prior_script> tags.
 d. Determine the region of the data based on the content of the dataframe 'df' and the user provided context. If the region (e.g., a certain country or city) is named in the dataframe 'df' per row, use this value. If no region is mentioned in the dataframe 'df', use the user provided context within <user_context> tags below, to determine the region.

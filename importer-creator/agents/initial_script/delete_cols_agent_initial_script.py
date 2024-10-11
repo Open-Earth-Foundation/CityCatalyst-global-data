@@ -40,7 +40,8 @@ Your inputs are the dataframe 'df' and information about which columns are neces
 """
 
     completion_steps = f"""
-a. Inspect the csv file provided under this path: {input_path_csv}. You are provided with a pandas dataframe 'df' based on this csv file. Base your further analysis only on this dataframe. This is already an updated dataframe.
+a. Inspect the csv file provided under this path: {input_path_csv}. You are provided with a pandas dataframe 'df' based on this csv file. Base your further analysis only on this dataframe. This is already an updated dataframe based on the python script under <prior_script> tags.
+    - do not try to attempt loading the csv file provided in the script provided under <prior_script> tags. The csv file provided in the prior script is just the loading of the initial csv file but you will work with an already updated file provided under this path: {input_path_csv}.
 b. Inspect the white list of columns that cannot be deleted provided under <white_list> tags.
 c. Inpect the user provided context about the datafile under <user_context> tags.
 d. Inspect the provided python script under <prior_script> tags.
@@ -109,7 +110,6 @@ Ensure that the output is valid JSON and does not include any additional comment
         except json.JSONDecodeError as e:
             print(f"JSON decoding failed: {e}")
             sys.exit(1)
-            # return {"reasoning": response_output.strip(), "code": None}
 
     # Parse the agent's response
     output = parse_agent_response(cleaned_response_output)
@@ -138,5 +138,3 @@ Ensure that the output is valid JSON and does not include any additional comment
     else:
         print("No Python code was found in the agent's response.")
         sys.exit(1)
-
-    # return {"code_initial_script": response.get("output")}
