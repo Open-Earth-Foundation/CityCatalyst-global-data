@@ -44,8 +44,6 @@ from agents.step_3.create_final_output_agent_step_3 import (
 )
 
 # Import for step 4
-# from agents.step_4.extract_scope_agent_step_4 import extract_scope_agent_step_4
-# from agents.step_4.extract_gpc_refno_agent_step_4 import extract_gpc_refno_agent_step_4
 
 # Import for summary
 from agents.summary_agent import summary_agent
@@ -261,12 +259,6 @@ def create_workflow():
     workflow.add_edge("create_final_output_agent_step_3", END)
 
     # Step 4
-    # workflow.add_node("extract_scope_agent_step_4", extract_scope_agent_step_4)
-    # workflow.add_node("extract_gpc_refno_agent_step_4", extract_gpc_refno_agent_step_4)
-
-    # workflow.add_edge("create_final_output_agent_step_3", "extract_scope_agent_step_4")
-    # workflow.add_edge("extract_scope_agent_step_4", "extract_gpc_refno_agent_step_4")
-    # workflow.add_edge("extract_gpc_refno_agent_step_4", END)
 
     ### Below old flow
     workflow.add_node(

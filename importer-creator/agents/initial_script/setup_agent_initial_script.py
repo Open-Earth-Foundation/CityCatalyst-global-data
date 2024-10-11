@@ -126,5 +126,3 @@ Ensure that the output is valid JSON and does not include any additional comment
     else:
         print("No Python code was found in the agent's response.")
         sys.exit(1)
-
-    # return {"code_initial_script": response_output}
