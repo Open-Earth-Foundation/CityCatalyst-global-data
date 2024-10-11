@@ -239,8 +239,16 @@ def create_agent_with_rag_and_csv_filter(
         args_schema=FilterDataInput,
         description="""
 Use this tool to filter the DataFrame 'df' based on specific criteria.
-Provide filters in the format 'column1=value1, column2=value2'.
+Always provide filters for 'actor_name' and 'gpc_refno' in the format 'actor_name=value1, gpc_refno=value2'.
 This tool helps you retrieve emission factors without overloading the context window.
+Retrieve the value for 'actor_name' and 'gpc_refno' from the provided context of the data and the region, that the data is associated with.
+E.g. if the region is Brasil, set 'actor_name=Brasil'.
+E.g. if the gpc reference number is 'I.1.1', set 'gpc_refno=I.1.1'.
+
+First try the specific filters from the context of the data.
+Then, if you do not retrieve any data for the given filters, use filter 'actor_name=world' but keep the filter value for 'gpc_refno' and retry.
+
+If you still do not retrieve any data, use value 1.0 as a default value for the emission factor.
 """,
     )
 

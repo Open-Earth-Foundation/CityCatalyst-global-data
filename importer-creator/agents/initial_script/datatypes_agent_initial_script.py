@@ -102,7 +102,6 @@ Ensure that the output is valid JSON and does not include any additional comment
         except json.JSONDecodeError as e:
             print(f"JSON decoding failed: {e}")
             sys.exit(1)
-            # return {"reasoning": response_output.strip(), "code": None}
 
     # Parse the agent's response
     output = parse_agent_response(response_output)
@@ -130,5 +129,3 @@ Ensure that the output is valid JSON and does not include any additional comment
     else:
         print("No Python code was found in the agent's response.")
         sys.exit(1)
-
-    # return {"summary": response.get("output")}

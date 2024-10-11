@@ -60,7 +60,7 @@ f. Based on the provided context for methodologies and emission factors:
     This is the path to the original data file: {state.get('file_path')}.
     </file_path>
     <user_provided_context>
-    This is the user provided context: {state.get("context_user_provided")}
+    This is the user provided context: {state.get("context_user_provided")}. Take the region of the data for filtering from this information.
     </user_provided_context>
     <gpc_master_document>
     You are provided with a retriever tool "Retriever" to retrieve information from the GPC Master document. Use this document every time to enrich your context.
