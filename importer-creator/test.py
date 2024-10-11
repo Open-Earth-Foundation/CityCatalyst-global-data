@@ -1,17 +1,17 @@
-from utils.agent_creation import create_agent_with_rag_and_csv_filter
+def clean_json_output(output: str) -> str:
+    # Check if the output starts and ends with the markdown-style code block
+    if output.startswith("```json") and output.endswith("```"):
+        # Remove the first and last lines containing the code block tags
+        output = output[
+            7:-3
+        ].strip()  # Remove "```json" and "```" and strip any extra spaces
+    return output
 
-# Create the agent
-agent = create_agent_with_rag_and_csv_filter(verbose=True)
 
-# Define a test query
-test_query = """
-Please find the emission factors where actor_name is world and 'gpc_refno' is 'I.1.1' and the gas is CO2 adn the unit is 'kg/m3'
-Use the FilterData tool to retrieve this information.
-"""
+# Example usage
+llm_output = """```json
+{"key": "value"}
+```"""
 
-# Run the agent on the test query
-response = agent.invoke(test_query)
-
-# Print the agent's response
-print("\nAgent's Response:")
-print(response)
+cleaned_output = clean_json_output(llm_output)
+print(cleaned_output)

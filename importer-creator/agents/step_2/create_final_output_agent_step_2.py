@@ -15,14 +15,19 @@ def create_final_output_agent_step_2(state: AgentState):
     input_path_markdown_extracted_sub_sector = (
         "./generated/step_2/steps/generated_markdown_extracted_sub_sector.md"
     )
+    input_path_markdown_extracted_sub_sector = (
+        "./generated/step_2/steps/generated_markdown_extracted_scope.md"
+    )
+    input_path_markdown_extracted_sub_sector = (
+        "./generated/step_2/steps/generated_markdown_extracted_gpc_refno.md"
+    )
 
     # Load the last created python script
     input_path_last_script = (
-        "./generated/step_2/steps/generated_script_extracted_sub_sector.py"
+        "./generated/step_2/steps/generated_script_extracted_gpc_refno.py"
     )
-
     # Load the last created csv file
-    input_path_last_csv = "./generated/step_2/steps/extracted_sub_sector.csv"
+    input_path_last_csv = "./generated/step_2/steps/extracted_gpc_refno.csv"
 
     # Define output paths
     output_path_markdown = "./generated/step_2/final/generated_markdown_final_output.md"

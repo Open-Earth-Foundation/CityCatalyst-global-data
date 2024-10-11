@@ -5,6 +5,7 @@ import pandas as pd
 from state.agent_state import AgentState
 from utils.create_prompt import create_prompt
 from utils.agent_creation import create_coding_agent
+from utils.json_output_cleaner import clean_json_output
 
 # Placeholder for real import
 context_activities = ""
@@ -67,7 +68,7 @@ Ensure that the output is valid JSON and does not include any additional comment
     additional_information = f"""
 <additional_information>
     <user_context>
-    This is the user context provided: {state.get("user_context")}. Give this information high priority in your considerations.
+    This is the user context provided: {state.get("context_user_provided")}. Give this information high priority in your considerations.
     </user_context>
     <context_activities>
     This is the additional context provided for identifying the activities: {context_activities}.
@@ -95,21 +96,23 @@ Ensure that the output is valid JSON and does not include any additional comment
     response = agent.invoke(prompt)
     response_output = response.get("output")
 
+    # Check and potentially clean the JSON output by removing ```json``` code block markers
+    cleaned_response_output = clean_json_output(response_output)
+
     ### Code below for extracting the code from the agent's response and running it - creating the csv file ###
     # Function to parse the JSON response from the agent
-    def parse_agent_response(response_output):
+    def parse_agent_response(response):
         try:
-            response_dict = json.loads(response_output)
+            response_dict = json.loads(response)
             reasoning = response_dict.get("reasoning", "").strip()
             code = response_dict.get("code", "").strip()
             return {"reasoning": reasoning, "code": code}
         except json.JSONDecodeError as e:
             print(f"JSON decoding failed: {e}")
             sys.exit(1)
-            # return {"reasoning": response_output.strip(), "code": None}
 
     # Parse the agent's response
-    output = parse_agent_response(response_output)
+    output = parse_agent_response(cleaned_response_output)
 
     # Save the reasoning to a Markdown file
     if output.get("reasoning"):
@@ -126,6 +129,7 @@ Ensure that the output is valid JSON and does not include any additional comment
             script_file.write(output["code"])
 
         # Run the generated Python script
+        print("Attempting to run the generated script...")
         try:
             result = subprocess.run([sys.executable, output_path_script], check=True)
             print("The generated script was executed successfully.")
