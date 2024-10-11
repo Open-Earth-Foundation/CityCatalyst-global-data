@@ -47,6 +47,7 @@ c. Inspect the provided python script under <prior_script> tags.
 d. Inspect the columns in the dataframe 'df' that contain dates and temporal data. Check if those columns have the correct datatype for dates. 
 e. Determine the correct datatypes for the other columns. Use the provided context in <white_list> tags to determine the correct datatypes for each column.
     - If you enounter a numeric column, analyze the decimal seperator that is being used and make sure the numbers are interpreted correctly.
+    - If you encounter numbers with decimal seperators, make sure to convert them to use '.' as the decimal seperator. The numbers never contain thousands separators.
 f. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script.
     2. corrected datatypes for the columns in the dataframe 'df_new' based on your prior analysis.
