@@ -49,7 +49,9 @@ e. Based on the white list, the provided user context and the provided dataframe
 f. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
     2. delete all columns from the dataframe 'df_new' that are not necessary based on your analysis of the white list provided under <white_list> tags. If you are in doubt about a certain column, do not delete it.
-    3. finally replace the existing name for exporting the new .csv file to {output_path_csv} containing the new dataframe 'df_new' with the changes made above. The new csv file must be comma seperated ','. The file must use 'encoding="utf-8"'.
+    3. finally:
+        - replace the output path for exporting the new .csv file 'df_new.to_csv' with {output_path_csv} so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma seperated ','. The .csv file must use 'encoding="utf-8"'.
+        - NEVER replace the input path for loading the original .csv file 'df = pd.read_csv'.
     4. IMORTANT: 
         - The code must contain python comments.
         - The code must be executable and must not contain any code errors.

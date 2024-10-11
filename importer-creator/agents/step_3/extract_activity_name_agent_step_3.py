@@ -51,7 +51,9 @@ f. Create a python script based on the script provided within <prior_script> tag
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
     2. a mapping dictionary for the GPC 'activity name' based on your prior analysis.
     3. add a column 'activity_name' to the dataframe 'df_new' with the extracted 'activity_name' which applies a GPC 'activity name' to each row of the 'df' based on the created mapping dictionary.
-    4. finally replace the existing name for exporting the new .csv file to {output_path_csv} containing the new dataframe 'df_new' with the changes made above. The new csv file must be comma seperated ','. The file must use 'encoding="utf-8"'.
+    4. finally:
+        - replace the output path for exporting the new .csv file 'df_new.to_csv' with {output_path_csv} so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma seperated ','. The .csv file must use 'encoding="utf-8"'.
+        - NEVER replace the input path for loading the original .csv file 'df = pd.read_csv'.
     5. IMORTANT: 
         - The code must contain python comments.
         - The code must be executable and must not contain any code errors.

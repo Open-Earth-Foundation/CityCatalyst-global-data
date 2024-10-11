@@ -53,7 +53,9 @@ f. Create a python script based on the script provided within <prior_script> tag
     2. corrected datatypes for the columns in the dataframe 'df_new' based on your prior analysis.
     3. converted date columns to a valid datetime format based on the available data using 'pd.to_datetime' and based on your prior analysis.
         - pay attention to columns that might not be clearly labeled as 'date' or 'dates' or similar but that still contain dates and temporal data.
-    4. finally replace the existing name for exporting the new .csv file to {output_path_csv} containing the new dataframe 'df_new' with the changes made above. The new csv file must be comma seperated ','. The file must use 'encoding="utf-8"'.
+    4. finally:
+        - replace the output path for exporting the new .csv file 'df_new.to_csv' with {output_path_csv} so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma seperated ','. The .csv file must use 'encoding="utf-8"'.
+        - NEVER replace the input path for loading the original .csv file 'df = pd.read_csv'.
     5. IMORTANT: 
         - The code must contain python comments.
         - The code must be executable and must not contain any code errors.

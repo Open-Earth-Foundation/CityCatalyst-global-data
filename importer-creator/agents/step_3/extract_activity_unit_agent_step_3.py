@@ -52,7 +52,9 @@ e. Determine the GPC 'activity unit' based on the content of the dataframe 'df',
 f. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
     2. add a column 'activity_value' to the dataframe 'df_new' with the extracted GPC 'activity_value' based on your prior analysis.
-    3. finally replace the existing name for exporting the new .csv file to {output_path_csv} containing the new dataframe 'df_new' with the changes made above. The new csv file must be comma seperated ','. The file must use 'encoding="utf-8"'.
+    3. finally:
+        - replace the output path for exporting the new .csv file 'df_new.to_csv' with {output_path_csv} so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma seperated ','. The .csv file must use 'encoding="utf-8"'.
+        - NEVER replace the input path for loading the original .csv file 'df = pd.read_csv'.
     4. IMORTANT: 
         - The code must contain python comments.
         - The code must be executable and must not contain any code errors.
