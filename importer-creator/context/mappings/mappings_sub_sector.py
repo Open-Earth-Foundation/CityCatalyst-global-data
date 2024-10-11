@@ -32,7 +32,7 @@ sub_sector_mapping = {
             },
             "Manufacturing industries and construction": {
                 "description": """Emissions from fuel combustion in manufacturing industries and construction activities, including the use of furnaces, boilers, and machinery for production processes.
-                Also, includes emissions from electricity consumption in manufacturing industries and construction activities."""   
+                Also, includes emissions from electricity consumption in manufacturing industries and construction activities."""
             },
             "Energy industries": {
                 "description": """Emissions from energy generation facilities within the city boundary, including power plants that supply electricity and heat to the grid. It covers activities like electricity generation, petroleum refining, and the manufacture of solid fuels.
@@ -51,8 +51,8 @@ sub_sector_mapping = {
             },
             "Fugitive emissions from oil and natural gas systems": {
                 "description": """Fugitive emissions released during the production, processing, storage, and distribution of oil and natural gas. This includes venting, flaring, and leaks from equipment and pipelines."""
-            }
-        }
+            },
+        },
     },
     "transportation": {
         "description": """Transportation covers all journeys by road, rail, water and air, including inter-city and international travel. 
@@ -80,8 +80,8 @@ sub_sector_mapping = {
             "Off-road": {
                 "description": """Emissions from fuel combustion in vehicles and equipment used off-road, such as construction machinery, agricultural equipment, and recreational vehicles.
                 This subsector also includes emissions from electricity consumption for off-road operations."""
-            }
-        }
+            },
+        },
     },
     "waste": {
         "description": """Waste disposal and treatment produces GHG emissions through aerobic or anaerobic decomposition, or incineration. 
@@ -101,8 +101,8 @@ sub_sector_mapping = {
             },
             "Wastewater treatment and discharge": {
                 "description": """Emissions from the treatment of domestic and industrial wastewater, including methane and nitrous oxide produced during the treatment process and from sludge management."""
-            }
-        }
+            },
+        },
     },
     "industrial_process_and_product_use": {
         "description": """GHG emissions are produced from a wide variety of non-energy related industrial activities. 
@@ -119,8 +119,8 @@ sub_sector_mapping = {
                 "description": """Focuses on emissions that arise from the use of products containing GHGs within the city boundary. 
                 These include substances like refrigerants, aerosol propellants, and fire suppression agents that release GHGs during their usage, maintenance, or disposal. 
                 This subsector captures the non-energy emissions that result from the physical or chemical properties of these products."""
-            }
-        }
+            },
+        },
     },
     "agriculture_forestry_and_land_use": {
         "description": """Emissions and removals from the Agriculture, Forestry and Other Land Use (AFOLU) sector are produced through a variety of pathways, 
@@ -135,16 +135,7 @@ sub_sector_mapping = {
             },
             "Aggregate sources": {
                 "description": """Emissions from non-CO2 sources such as fertilizer application, burning of agricultural residues, and rice cultivation, which release nitrous oxide and methane."""
-            }
-        }
-    }
-
-
-
-
-
-
-
-
-
+            },
+        },
+    },
 }

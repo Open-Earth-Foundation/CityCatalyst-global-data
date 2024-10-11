@@ -12,7 +12,10 @@ activity_mappings = {
     - Names in the lists are indicative and can be changed according to the specific dataset.
 
     Examples:
-    - fuel sales:{
+    # Describe here what input would result in this output. As an example what I did in gpc mappings: 
+    # - "I.1.1": Represents emissions within the sector 'Stationary Energy' and the subsector 'Residential Buildings' from fuel combustion within the city boundary (Scope 1)
+    # The idea is to guide the model. E.g. this is the required output (which you have below) if you encounter this input (as an example above the goc mappings)
+    - fuel_sales:{
         "gpc_reference_number": 'II.1.1',
         "activity_names": 'fuel sold',
         "activity_subcategories1": {
@@ -23,7 +26,7 @@ activity_mappings = {
             "name": 'Gas stations'}
         }
     }
-    - fuel sales:{
+    - fuel_sales:{
         "gpc_reference_number": 'I.1.2',
         "activity_names": 'electricity consumption',
         "activity_subcategories1": {
@@ -38,40 +41,146 @@ activity_mappings = {
     The names given in this dictionary are indicative and can be changed according to the specific dataset.
     """,
     "fuel_sales": {
-        "gpc_reference_number": ['II.1.1','II.2.1','II.3.1','II.4.1','II.5.1'], 
-        "activity_names": ['fuel sales', 'fuel sold'], 
+        "gpc_reference_number": {
+            "values": ["II.1.1", "II.2.1", "II.3.1", "II.4.1", "II.5.1"],
+            "description": "These are the only possible GPC reference numbers for the activity data type fuel sales",  # I added this example
+        },
+        "activity_names": ["fuel sales", "fuel sold"],
+        # can the activity name be one of those? To me both are pretty much the same. Should this be an example list like 'it could be fuel sales or fuel sold'?
+        # Then it would be better to habe only one value here and give this value a description like
+        # "activity_names": {
+        #   "type": "fuel_sales",
+        #   "description": "This activity is about selling fuels.......etc.",
+        # This approach (to describe it for the LLM) is always better than to list multiple similar values without any further information
+        # The difference here is above to the GPC reference numbers where we list all possible values and not giving similar values as examples
         "activity_subcatogories1": {
             "type": "fuel_type",
-            "name": ['diesel', 'petrol', 'gasoline', 'kerosene', 'jet fuel', 'biofuel', 'ethanol', 'biodiesel', 'LPG', 'CNG', 'LNG', 'coal', 'fuel oil', 'natural gas', 'biogas', 'wood', 'charcoal', 'peat', 'waste', 'biomass']
+            "name": [
+                "diesel",
+                "petrol",
+                "gasoline",
+                "kerosene",
+                "jet fuel",
+                "biofuel",
+                "ethanol",
+                "biodiesel",
+                "LPG",
+                "CNG",
+                "LNG",
+                "coal",
+                "fuel oil",
+                "natural gas",
+                "biogas",
+                "wood",
+                "charcoal",
+                "peat",
+                "waste",
+                "biomass",
+            ],
         },
         "activity_subcatogories2": {
             "type": "user_type",
-            "name": ["Gas stations", "Service stations, storage and distribution", "Freight transport", "Agriculture", "Public transport", "Vessels", "Aircraft", "Trains", "Railways", "Cars", "Motorcycles", "Buses", "Trucks", "Other"]
-        }
+            "name": [
+                "Gas stations",
+                "Service stations, storage and distribution",
+                "Freight transport",
+                "Agriculture",
+                "Public transport",
+                "Vessels",
+                "Aircraft",
+                "Trains",
+                "Railways",
+                "Cars",
+                "Motorcycles",
+                "Buses",
+                "Trucks",
+                "Other",
+            ],
+        },
     },
     "fuel_consumption": {
-        "gpc_reference_number": ['I.1.1','I.2.1','I.3.1','I.4.1','I.5.1', 'I.6.1'],
-        "activity_names": ['fuel consumption', 'fuel consumed'],
+        "gpc_reference_number": ["I.1.1", "I.2.1", "I.3.1", "I.4.1", "I.5.1", "I.6.1"],
+        "activity_names": ["fuel consumption", "fuel consumed"],
         "activity_subcatogories1": {
             "type": "fuel_type",
-            "name": ['diesel', 'petrol', 'gasoline', 'kerosene', 'jet fuel', 'biofuel', 'ethanol', 'biodiesel', 'LPG', 'CNG', 'LNG', 'coal', 'fuel oil', 'natural gas', 'biogas', 'wood', 'charcoal', 'peat', 'waste', 'biomass']
+            "name": [
+                "diesel",
+                "petrol",
+                "gasoline",
+                "kerosene",
+                "jet fuel",
+                "biofuel",
+                "ethanol",
+                "biodiesel",
+                "LPG",
+                "CNG",
+                "LNG",
+                "coal",
+                "fuel oil",
+                "natural gas",
+                "biogas",
+                "wood",
+                "charcoal",
+                "peat",
+                "waste",
+                "biomass",
+            ],
         },
         "activity_subcatogories2": {
             "type": "user_type",
-            "name": ['all', 'commercial', 'residential', 'industrial', 'public', 'agricultural', 'other']
-        }
+            "name": [
+                "all",
+                "commercial",
+                "residential",
+                "industrial",
+                "public",
+                "agricultural",
+                "other",
+            ],
+        },
     },
     "electricity_consumption": {
-        "gpc_reference_number": ['I.1.2','I.2.2','I.3.2','I.4.2','I.5.2', 'I.6.2', 'II.1.2','II.2.2','II.3.2','II.4.2','II.5.2'],
-        "activity_names": ['electricity consumption', 'electricity consumed', 'consumption'],
+        "gpc_reference_number": [
+            "I.1.2",
+            "I.2.2",
+            "I.3.2",
+            "I.4.2",
+            "I.5.2",
+            "I.6.2",
+            "II.1.2",
+            "II.2.2",
+            "II.3.2",
+            "II.4.2",
+            "II.5.2",
+        ],
+        "activity_names": [
+            "electricity consumption",
+            "electricity consumed",
+            "consumption",
+        ],
         "activity_subcatogories1": {
             "type": "electricity_type",
-            "name": ['electricity', 'grip-energy supply', 'renewable electricity', 'non-renewable electricity']
+            "name": [
+                "electricity",
+                "grip-energy supply",
+                "renewable electricity",
+                "non-renewable electricity",
+            ],
         },
         "activity_subcatogories2": {
             "type": "user_type",
-            "name": ['all', 'commercial', 'residential', 'industrial', 'public', 'agricultural', 'other', 'transportation', 'on-road', 'trains']
-        }
-    }
+            "name": [
+                "all",
+                "commercial",
+                "residential",
+                "industrial",
+                "public",
+                "agricultural",
+                "other",
+                "transportation",
+                "on-road",
+                "trains",
+            ],
+        },
+    },
 }
-    

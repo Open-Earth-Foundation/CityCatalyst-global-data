@@ -16,16 +16,13 @@ sector_mapping = {
     The names used in this dictionary are indicative and can be adapted based on specific datasets.
     """,
     "stationary_energy": {
-        "description": """Stationary energy sources are one of the largest contributors to a city's GHG emissions. 
-        These emissions come from the combustion of fuel in residential, commercial and institutional buildings and facilities and manufacturing industries and construction, 
+        "description": """These emissions come from the combustion of fuels (e.g. propane, diesel, oil, natural gas, and others) in residential, commercial and institutional buildings and facilities and manufacturing industries and construction, 
         as well as power plants to generate grid-supplied energy. This sector also includes fugitive emissions, which typically occur during extraction, transformation, 
         and transportation of primary fossil fuels."""
     },
     "transportation": {
         "description": """Transportation covers all journeys by road, rail, water and air, including inter-city and international travel. 
-        GHG emissions are produced directly by the combustion of fuel or indirectly by the use of grid-supplied electricity. 
-        Collecting accurate data for transportation activities, calculating emissions and allocating these emissions to cities can be a particularly challenging process. 
-        To accommodate variations in data availability, existing transportation models, and inventory purposes, the GPC offers additional flexibility in calculating emissions from transportation.""",
+        GHG emissions are produced directly by the combustion of fuel or indirectly by the use of grid-supplied electricity.""",
     },
     "waste": {
         "description": """The waste sector generates GHG emissions from various disposal and treatment processes, including solid waste disposal, biological treatment, incineration or open burning and wastewater. 
