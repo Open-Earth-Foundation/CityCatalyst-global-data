@@ -15,7 +15,7 @@ sub_sector_mapping = {
 
     The names provided in this dictionary are indicative and can be adjusted to match dataset terminology.
     """,
-    "stationary_energy": {
+    "Stationary Energy": {
         "description": """Stationary energy sources are one of the largest contributors to a city's GHG emissions.
         These emissions come from the combustion of fuel in residential, commercial and institutional buildings, 
         and manufacturing industries and construction, as well as power plants to generate grid-supplied energy.
@@ -54,7 +54,7 @@ sub_sector_mapping = {
             },
         },
     },
-    "transportation": {
+    "Transportation": {
         "description": """Transportation covers all journeys by road, rail, water and air, including inter-city and international travel. 
         GHG emissions are produced directly by the combustion of fuel or indirectly by the use of grid-supplied electricity. 
         Collecting accurate data for transportation activities, calculating emissions and allocating these emissions to cities can be a particularly challenging process. 
@@ -83,7 +83,7 @@ sub_sector_mapping = {
             },
         },
     },
-    "waste": {
+    "Waste": {
         "description": """Waste disposal and treatment produces GHG emissions through aerobic or anaerobic decomposition, or incineration. 
         GHG emissions from solid waste shall be calculated by disposal route, namely landfill, biological treatment and incineration and open burning. 
         If methane is recovered from solid waste or wastewater treatment facilities as an energy source, it shall be reported under Stationary Energy. 
@@ -104,7 +104,7 @@ sub_sector_mapping = {
             },
         },
     },
-    "industrial_process_and_product_use": {
+    "Industrial Processes and Product Use": {
         "description": """GHG emissions are produced from a wide variety of non-energy related industrial activities. 
         The main emission sources are releases from industrial processes that chemically or physically transform materials (e.g., the blast furnace in the iron and steel industry, 
         and ammonia and other chemical products manufactured from fossil fuels and used as chemical feedstock). 
@@ -122,7 +122,7 @@ sub_sector_mapping = {
             },
         },
     },
-    "agriculture_forestry_and_land_use": {
+    "Agriculture, Forestry and Other Land Use": {
         "description": """Emissions and removals from the Agriculture, Forestry and Other Land Use (AFOLU) sector are produced through a variety of pathways, 
         including livestock (enteric fermentation and manure management), land use and land use change (e.g., forested land being cleared for cropland or settlements), 
         and aggregate sources and non-CO2 emission sources on land (e.g., fertilizer application and rice cultivation).""",
