@@ -28,10 +28,12 @@ sector_mapping = {
         To accommodate variations in data availability, existing transportation models, and inventory purposes, the GPC offers additional flexibility in calculating emissions from transportation.""",
     },
     "waste": {
-        "description": """Waste disposal and treatment produces GHG emissions through aerobic or anaerobic decomposition, or incineration. 
-        GHG emissions from solid waste shall be calculated by disposal route, namely landfill, biological treatment and incineration and open burning. 
-        If methane is recovered from solid waste or wastewater treatment facilities as an energy source, it shall be reported under Stationary Energy. 
-        Similarly, emissions from incineration with energy recovery are reported under Stationary Energy.""",
+        "description": """The waste sector generates GHG emissions from various disposal and treatment processes, including solid waste disposal, biological treatment, incineration or open burning and wastewater. 
+        Emissions from solid waste disposal arise primarily from anaerobic decomposition in landfills, which releases methane (CH4). 
+        Biological treatment, such as composting or anaerobic digestion, can produce methane and carbon dioxide (CO2) depending on the process conditions. 
+        Incineration and open burning of waste release CO2, methane, and nitrous oxide (N2O). 
+        If methane is captured and used as an energy source from solid waste or wastewater treatment facilities, it is reported under Stationary Energy, as are emissions from incineration with energy recovery. 
+        Additionally, this sector accounts for emissions from wastewater treatment processes, covering both domestic and industrial sources.""",
     },
     "industrial_process_and_product_use": {
         "description": """GHG emissions are produced from a wide variety of non-energy related industrial activities. 
