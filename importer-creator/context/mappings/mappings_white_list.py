@@ -19,7 +19,8 @@ white_list_mapping = {
     The names given in this dictionary are indicative and can be changed according to the specific dataset.
     """,
     "fuel_sales": {
-        "description": "This activity data type refers to data related to the sale of fuels (like propane, diesel, natural gases and so on).",  # Please check and improve @ Mau
+        # Please check description and improve maybe for all 3 @ Mau
+        "description": "This activity data type refers to data related to the sale of fuels (like propane, diesel, natural gases and so on).",
         "period": {
             "data_type": "datetime",
             "description": "The period of time the data refers to",
@@ -97,7 +98,7 @@ white_list_mapping = {
                 "2020 January",
             ],
         },
-        "city": {
+        "city": {  # difference to 'region' below in electricity_consumption @ Mau?
             "data_type": "string",
             "description": "The city where the data was collected or where the fuel was consumed",
             "examples": ["New York", "Mendoza", "Sao Paulo"],
@@ -158,7 +159,7 @@ white_list_mapping = {
                 "2020 January",
             ],
         },
-        "region": {
+        "region": {  # does this include countries? @ Mau Also
             "data_type": "string",
             "description": "The region where the data was collected or where the energy was consumed",
             "examples": ["California", "Buenos Aires", "Sao Paulo"],
