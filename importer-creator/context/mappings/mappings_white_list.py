@@ -2,25 +2,33 @@
 
 white_list_mapping = {
     "__doc__": """
-    This dictionary maps the most common Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) activity data types 'fuel_sales', 'fuel_consumption' and 'electricity_consumption' and the important columns to conserve in a dataframe.
-    Each activity data type has a description of what kind of data falls into that respective category and a list of columns with their data type and description.
-    Each dataset con only be associated with on of the activity data types. This means, that only the described columns of one of the activity data types can be conserved in the dataframe.
-    Do not mix columns of different activity data types in the same dataframe.
+    This dictionary maps the most common Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) 'activity data types' 'fuel_sales', 'fuel_consumption' and 'electricity_consumption' and the important columns to conserve in a dataframe. It is possible, that not all columns are present in the dataset.
+    Each 'activity data type' has a description of what kind of data falls into that respective category and a list of columns with their data types and descriptions.
+    Each dataset con only be associated with one of the 'activity data types'. This means, that only the described columns of one of the 'activity data types' can be conserved in the dataframe.
+    Do not mix columns of different 'activity data types' in the same dataframe. 
+
+    Hint:
+    There are generally two types of energy sources: fuels - which contain all sorts of ligquid and gas fuels - and energy - which refers to electric energy. 
+    The terminlogy of 'energy' never refers to either fuel sales or fuel consumption.
 
     Instructions for the LLM:
     - Names in datasets may not match these names below exactly but can be identified by their descriptions or examples.
     - Focus on identifying semantically similar terms, synonyms, or variations in dataset names.
     - The column names in this dictionary represent common terms. If a dataset uses different terminology for a concept (e.g., 'energy source' instead of 'energy type'), map accordingly.
 
+    Important:
+    If you are unsure about the 'activity data type' of the dataset, or the mapping of the columns and which ones to delete, do not delete any columns.
+    
     Examples:
-    - from fuel sales datasets, we need to conserve the following columns: 'period', 'city', 'product', 'operator', 'user type', 'volume', 'units', 'coordinates', 'location'
-    - from electricity consumption datasets, we need to conserve the following columns: 'date', 'region', 'energy type', 'final users', 'energy consumed', 'units', 'location'
+    - a dataset about fuel sales maps to the 'fuel_sales' 'activity data type' and should conserve the columns 'period', 'city', 'locode', 'product', 'operator', 'user_type', 'volume', 'units', 'coordinates', 'location'
+    - a dataset about fuel consumption maps to the 'fuel_consumption' 'activity data type' and should conserve the columns 'period', 'city', 'product', 'operator', 'final_user', 'industry_type', 'volume', 'units', 'location'
+    - a dataset about energy consumption maps to the 'electricity_consumption' 'activity data type' because electricity is considered energy and should conserve the columns 'date', 'region', 'locode', 'operator', 'facility_name', 'industry_type', 'final_user', 'electricity_consumed', 'units', 'location'
 
     The names given in this dictionary are indicative and can be changed according to the specific dataset.
     """,
     "fuel_sales": {
         # Please check description and improve maybe for all 3 @ Mau
-        "description": "This activity data type refers to data related to the sale of fuels (like propane, diesel, natural gases and so on).",
+        "description": "This 'activity data type' refers to data related to the sale of fuels (like propane, diesel, natural gases and so on).",
         "period": {
             "data_type": "datetime",
             "description": "The period of time the data refers to",
@@ -86,7 +94,7 @@ white_list_mapping = {
         },
     },
     "fuel_consumption": {
-        "description": "This activity data type refers to data related to the consumption of fuels (like propane, diesel, natural gases and so on). E.g. burning those fuels or similar",  # Please check and improve @ Mau
+        "description": "This 'activity data type' refers to data related to the consumption of fuels (like propane, diesel, natural gases and so on). E.g. burning those fuels or similar",  # Please check and improve @ Mau
         "period": {
             "data_type": "datetime",
             "description": "The period of time the data refers to",
@@ -147,7 +155,7 @@ white_list_mapping = {
         },
     },
     "electricity_consumption": {
-        "description": "This activity data type refers to data related to the consumption of electricity (electric energy)",  # Please check and improve @ Mau
+        "description": "This 'activity data type' refers to data related to the consumption of electricity (electric energy)",  # Please check and improve @ Mau
         "date": {
             "data_type": "datetime",
             "description": "The period of time the data refers to",
