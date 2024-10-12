@@ -6,9 +6,7 @@ from state.agent_state import AgentState
 from utils.create_prompt import create_prompt
 from utils.agent_creation import create_coding_agent
 from utils.json_output_cleaner import clean_json_output
-
-# Placeholder for real import
-context_activities = {}
+from context.mappings.mappings_activities import activity_mappings
 
 
 def extract_activity_unit_agent_step_3(
@@ -75,7 +73,7 @@ Ensure that the output is valid JSON and does not include any additional comment
 This is the user context provided: {state.get("context_user_provided")}. Give this information high priority in your considerations.
 </user_context>
 <context_activities>
-This is the additional context provided for identifying the activities: {json.dumps(context_activities, indent=4)}.
+This is the additional context provided for identifying the activities: {json.dumps(activity_mappings, indent=4)}.
 </context_activities>
 <prior_script>
 This is the prior script provided: {script}.
