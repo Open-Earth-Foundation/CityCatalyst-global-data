@@ -41,9 +41,10 @@ activity_mappings = {
     The names given in this dictionary are indicative and can be changed according to the specific dataset.
     """,
     "fuel_sales": {
+        "description": "",  # description needed for each key
         "gpc_reference_number": {
-            "values": ["II.1.1", "II.2.1", "II.3.1", "II.4.1", "II.5.1"],
             "description": "These are the only possible GPC reference numbers for the activity data type fuel sales",  # I added this example
+            "values": ["II.1.1", "II.2.1", "II.3.1", "II.4.1", "II.5.1"],
         },
         "activity_names": ["fuel sales", "fuel sold"],
         # can the activity name be one of those? To me both are pretty much the same. Should this be an example list like 'it could be fuel sales or fuel sold'?
@@ -54,6 +55,7 @@ activity_mappings = {
         # This approach (to describe it for the LLM) is always better than to list multiple similar values without any further information
         # The difference here is above to the GPC reference numbers where we list all possible values and not giving similar values as examples
         "activity_subcatogories1": {
+            "description": "",  # description needed for each key
             "type": "fuel_type",
             "name": [
                 "diesel",
@@ -79,6 +81,7 @@ activity_mappings = {
             ],
         },
         "activity_subcatogories2": {
+            "description": "",  # description needed for each key
             "type": "user_type",
             "name": [
                 "Gas stations",
@@ -99,6 +102,7 @@ activity_mappings = {
         },
     },
     "fuel_consumption": {
+        "description": "",  # description needed for each key
         "gpc_reference_number": ["I.1.1", "I.2.1", "I.3.1", "I.4.1", "I.5.1", "I.6.1"],
         "activity_names": ["fuel consumption", "fuel consumed"],
         "activity_subcatogories1": {
@@ -140,6 +144,7 @@ activity_mappings = {
         },
     },
     "electricity_consumption": {
+        "description": "",  # description needed for each key
         "gpc_reference_number": [
             "I.1.2",
             "I.2.2",

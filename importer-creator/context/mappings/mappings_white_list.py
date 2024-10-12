@@ -71,7 +71,7 @@ white_list_mapping = {
         },
         "volume": {
             "data_type": "float",
-            "description": "The volume of fuel sold",
+            "description": "The volume or amount of fuel sold",
             "examples": [1000, 20000, 300.9],
         },
         "units": {
