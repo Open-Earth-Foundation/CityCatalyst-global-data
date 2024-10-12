@@ -52,14 +52,14 @@ f. Create a python script based on the script provided within <prior_script> tag
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script.
     2. corrected datatypes for the columns in the dataframe 'df_new' based on your prior analysis.
     3. converted date columns to a valid datetime format based on the available data using 'pd.to_datetime' and based on your prior analysis.
-        - pay attention to columns that might not be clearly labeled as 'date' or 'dates' or similar but that still contain dates and temporal data.
+    - pay attention to columns that might not be clearly labeled as 'date' or 'dates' or similar but that still contain dates and temporal data.
     4. finally:
-        - replace the output path for exporting the new .csv file 'df_new.to_csv' with {output_path_csv} so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma seperated ','. The .csv file must use 'encoding="utf-8"'.
-        - NEVER replace the input path for loading the original .csv file 'df = pd.read_csv'.
+    - replace the output path for exporting the new .csv file 'df_new.to_csv' with {output_path_csv} so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma seperated ','. The .csv file must use 'encoding="utf-8"'.
+    - NEVER replace the input path for loading the original .csv file 'df = pd.read_csv'.
     5. IMORTANT: 
-        - The code must contain python comments.
-        - The code must be executable and must not contain any code errors.
-        - The new script must contain all the content of the initial script in addition to the added data.
+    - The code must contain python comments.
+    - The code must be executable and must not contain any code errors.
+    - The new script must contain all the content of the initial script in addition to the added data.
 """
     answer_format = """
 Your output must be provided in JSON format. Provide all detailed reasoning and the pure executable Python code in the following JSON format:
@@ -71,18 +71,18 @@ Ensure that the output is valid JSON and does not include any additional comment
 """
     additional_information = f"""
 <additional_information>
-    <white_list>
-    This list provides information on datatypes for each column type: {white_list_mapping}.
-    </white_list>
-    <prior_script>
-    This is the prior script provided: {script}.
-    </prior_script>
-    <feedback>
-        <feedback_human-in-the-loop>
-        If the user has provided feedback at the end of the entire data pipeline from the human-in-the-loop agent, you find it here: {state.get("feedback_hitl")}.
-        This is the most important feedback to consider for your data extraction process. Rank this specific human-in-the-loop feedback highest in your considerations and make sure to incorporate it into your thinking.
-        </feedback_human-in-the-loop>
-    </feedback>
+<white_list>
+This list provides information on datatypes for each column type: {json.dumps(white_list_mapping, indent=4)}
+</white_list>
+<prior_script>
+This is the prior script provided: {script}
+</prior_script>
+<feedback>
+<feedback_human-in-the-loop>
+If the user has provided feedback at the end of the entire data pipeline from the human-in-the-loop agent, you find it here: {state.get("feedback_hitl")}
+This is the most important feedback to consider for your data extraction process. Rank this specific human-in-the-loop feedback highest in your considerations and make sure to incorporate it into your thinking.
+</feedback_human-in-the-loop>
+</feedback>
 </additional_information>
 """
 

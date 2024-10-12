@@ -36,19 +36,19 @@ Your inputs are the original unformatted dataframe 'df'.
     completion_steps = f"""
 a. Inspect the pandas dataframe 'df'.
 b. Create a python script. This python script must contain the following:
-    1. code to load the original .csv file 'df = pd.read_csv' with the path provided under <file_path> tags below into a pandas dataframe 'df' 
-        - Use a correct encoding, so that special characters are displayed correctly based on the findings in <summary> tags. 
-        - When loading the datafile, define the correct seperator being used e.g. ',' or ';' and so on.
-        - The path to the .csv file is provided in the additional information below under <file_path> tags.
-    2. a new dataframe 'df_new' that contains all the data of the original dataframe 'df' as a copy using 'df_new = df.copy(). Make all further manipulations on this new dataframe 'df_new'.
-    3. normalized column names for 'df_new' where names are converted to 'lower case', strip them of any leading or trailing white spaces and replace any white spaces with underscores '_'.
-    4. finally:
-        - add code to output a new .csv file 'df_new.to_csv' with {output_path_csv} so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma seperated ','. The .csv file must use 'encoding="utf-8"'.
-        - NEVER replace the input path for loading the original .csv file 'df = pd.read_csv'.
-    6. IMORTANT: 
-        - The code must contain python comments.
-        - The code must be executable and must not contain any code errors.
-        - The final dataframe 'df_new' must contain all the data rows of the original dataframe 'df'.
+1. code to load the original .csv file 'df = pd.read_csv' with the path provided under <file_path> tags below into a pandas dataframe 'df' 
+    - Use a correct encoding, so that special characters are displayed correctly based on the findings in <summary> tags. 
+    - When loading the datafile, define the correct seperator being used e.g. ',' or ';' and so on.
+    - The path to the .csv file is provided in the additional information below under <file_path> tags.
+2. a new dataframe 'df_new' that contains all the data of the original dataframe 'df' as a copy using 'df_new = df.copy(). Make all further manipulations on this new dataframe 'df_new'.
+3. normalized column names for 'df_new' where names are converted to 'lower case', strip them of any leading or trailing white spaces and replace any white spaces with underscores '_'.
+4. finally:
+    - add code to output a new .csv file 'df_new.to_csv' with {output_path_csv} so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma seperated ','. The .csv file must use 'encoding="utf-8"'.
+    - NEVER replace the input path for loading the original .csv file 'df = pd.read_csv'.
+6. IMORTANT: 
+    - The code must contain python comments.
+    - The code must be executable and must not contain any code errors.
+    - The final dataframe 'df_new' must contain all the data rows of the original dataframe 'df'.
 """
 
     answer_format = """
@@ -62,15 +62,15 @@ Ensure that the output is valid JSON and does not include any additional comment
 
     additional_information = f"""
 <additional_information>
-    <file_path>
-    This is the path to the original data file: {state.get('file_path')}.
-    </file_path>
-    <feedback>
-        <feedback_human-in-the-loop>
-        If the user has provided feedback at the end of the entire data pipeline from the human-in-the-loop agent, you find it here: {state.get("feedback_hitl")}.
-        This is the most important feedback to consider for your data extraction process. Rank this specific human-in-the-loop feedback highest in your considerations and make sure to incorporate it into your thinking.
-        </feedback_human-in-the-loop>
-    </feedback>
+<file_path>
+This is the path to the original data file: {state.get('file_path')}.
+</file_path>
+<feedback>
+<feedback_human-in-the-loop>
+If the user has provided feedback at the end of the entire data pipeline from the human-in-the-loop agent, you find it here: {state.get("feedback_hitl")}.
+This is the most important feedback to consider for your data extraction process. Rank this specific human-in-the-loop feedback highest in your considerations and make sure to incorporate it into your thinking.
+</feedback_human-in-the-loop>
+</feedback>
 </additional_information>
 """
 

@@ -50,12 +50,12 @@ f. Create a python script based on the script provided within <prior_script> tag
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
     2. delete all columns from the dataframe 'df_new' that are not necessary based on your analysis of the white list provided under <white_list> tags. If you are in doubt about a certain column, do not delete it.
     3. finally:
-        - replace the output path for exporting the new .csv file 'df_new.to_csv' with {output_path_csv} so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma seperated ','. The .csv file must use 'encoding="utf-8"'.
-        - NEVER replace the input path for loading the original .csv file 'df = pd.read_csv'.
+    - replace the output path for exporting the new .csv file 'df_new.to_csv' with {output_path_csv} so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma seperated ','. The .csv file must use 'encoding="utf-8"'.
+    - NEVER replace the input path for loading the original .csv file 'df = pd.read_csv'.
     4. IMORTANT: 
-        - The code must contain python comments.
-        - The code must be executable and must not contain any code errors.
-        - The new script must contain all the content of the initial script in addition to the added data.
+    - The code must contain python comments.
+    - The code must be executable and must not contain any code errors.
+    - The new script must contain all the content of the initial script in addition to the added data.
 """
 
     answer_format = """
@@ -69,21 +69,25 @@ Ensure that the output is valid JSON and does not include any additional comment
 
     additional_information = f"""
 <additional_information>
-    <user_context>
-    This is the user provided context about the datafile: {state.get("context_user_provided")}. Give this information high priority in your considerations.
-    </user_context>
-    <white_list>
-    This is the white list of columns with descriptions. Use this to define which columns are not necessary and can be deleted: {white_list_mapping}.
-    </white_list>
-    <prior_script>
-    This is the prior script provided: {script}.
-    </prior_script>
-    <feedback>
-        <feedback_human-in-the-loop>
-        If the user has provided feedback at the end of the entire data pipeline from the human-in-the-loop agent, you find it here: {state.get("feedback_hitl")}.
-        This is the most important feedback to consider for your data extraction process. Rank this specific human-in-the-loop feedback highest in your considerations and make sure to incorporate it into your thinking.
-        </feedback_human-in-the-loop>
-    </feedback>
+<user_context>
+This is the user provided context about the datafile: {state.get("context_user_provided")}. Give this information high priority in your considerations.
+</user_context>
+<white_list>
+This is the white list of columns with descriptions. Use this to define which columns are not necessary and can be deleted: {json.dumps(white_list_mapping, indent=4)}
+</white_list>
+<prior_script>
+This is the prior python script provided:
+    
+```python
+{script}
+```
+</prior_script>
+<feedback>
+<feedback_human-in-the-loop>
+If the user has provided feedback at the end of the entire data pipeline from the human-in-the-loop agent, you find it here: {state.get("feedback_hitl")}.
+This is the most important feedback to consider for your data extraction process. Rank this specific human-in-the-loop feedback highest in your considerations and make sure to incorporate it into your thinking.
+</feedback_human-in-the-loop>
+</feedback>
 </additional_information>
 """
 

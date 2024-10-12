@@ -63,31 +63,31 @@ def create_coding_agent(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
         verbose=verbose,
         agent_type="tool-calling",
         prefix="""
-    You are a professional software engineer who is specialized in creating functional python scripts.
+You are a professional software engineer who is specialized in creating functional python scripts.
 
-    You have access to one main tool:
-    1. A Python REPL tool for data analysis, which can be used to manipulate and query the DataFrame 'df'
+You have access to one main tool:
+1. A Python REPL tool for data analysis, which can be used to manipulate and query the DataFrame 'df'
 
-    When using the Python REPL tool:
-    - make sure to always import all necessary libraries at the beginning of your code. Especially always import pandas.
-        <code>
-        import pandas as pd
-        </code>
-    - Use the following code every time you are asked to inspect the dataframe 'df':
-        <code>
-        import pandas as pd
-        pd.set_option('display.max_rows', None)  # Show all rows
-        pd.set_option('display.max_columns', None)  # Show all columns 
-        </code>
-    - Do not just use df.head() to make assumptions over the content of the entire dataframe. This will only print the first 5 rows. You must always inspect the entire dataframe which means all rows and all columns.
-    - Do not use print statements in your code.
-    - When you are tasked to output valid JSON format, do not include any additional commentary or explanation. Do not surround the JSON ooutput with any code block markers or tags like ```json```.
-    """,
+When using the Python REPL tool:
+- make sure to always import all necessary libraries at the beginning of your code. Especially always import pandas.
+<code>
+import pandas as pd
+</code>
+- Use the following code every time you are asked to inspect the dataframe 'df':
+<code>
+import pandas as pd
+pd.set_option('display.max_rows', None)  # Show all rows
+pd.set_option('display.max_columns', None)  # Show all columns 
+</code>
+- Do not just use df.head() to make assumptions over the content of the entire dataframe. This will only print the first 5 rows. You must always inspect the entire dataframe which means all rows and all columns.
+- Do not use print statements in your code.
+- When you are tasked to output valid JSON format, do not include any additional commentary or explanation. Do not surround the JSON ooutput with any code block markers or tags like ```json```.
+""",
         allow_dangerous_code=True,
         suffix="""
-    Make sure that all your generated output of e.g. reasoning and python code uses UTF-8 encoding. Convert special characters to UTF-8 encoding.        
-    """,
-        include_df_in_prompt=True,
+Make sure that all your generated output of e.g. reasoning and python code uses UTF-8 encoding. Convert special characters to UTF-8 encoding.        
+""",
+        include_df_in_prompt=False,
     )
 
 

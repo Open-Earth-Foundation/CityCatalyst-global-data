@@ -51,12 +51,12 @@ f. Create a python script based on the script provided within <prior_script> tag
     2. a mapping dictionary for the GPC reference number based on your prior analysis.
     3. add a column 'gpc_refno' to the dataframe 'df_new' and apply a GPC reference number to each row of the 'df' based on the created mapping dictionary.
     4. finally:
-        - replace the output path for exporting the new .csv file 'df_new.to_csv' with {output_path_csv} so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma seperated ','. The .csv file must use 'encoding="utf-8"'.
-        - NEVER replace the input path for loading the original .csv file 'df = pd.read_csv'.
+    - replace the output path for exporting the new .csv file 'df_new.to_csv' with {output_path_csv} so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma seperated ','. The .csv file must use 'encoding="utf-8"'.
+    - NEVER replace the input path for loading the original .csv file 'df = pd.read_csv'.
     5. IMORTANT: 
-        - The code must contain python comments.
-        - The code must be executable and must not contain any code errors.
-        - The new script must contain all the content of the initial script in addition to the added data.
+    - The code must contain python comments.
+    - The code must be executable and must not contain any code errors.
+    - The new script must contain all the content of the initial script in addition to the added data.
 """
 
     answer_format = """
@@ -69,21 +69,21 @@ Ensure that the output is valid JSON and does not include any additional comment
 """
     additional_information = f"""
 <additional_information>
-    <user_context>
-    This is the user context provided: {state.get("context_user_provided")}. Give this information high priority in your considerations.
-    </user_context>
-    <context_gpc_refno>
-    This is the additional context provided for identifying the activities: {gpc_mappings}.
-    </context_gpc_refno>
-    <prior_script>
-    This is the prior script provided: {script}.
-    </prior_script>
-    <feedback>
-        <feedback_human-in-the-loop>
-        If the user has provided feedback at the end of the entire data pipeline from the human-in-the-loop agent, you find it here: {state.get("feedback_hitl")}.
-        This is the most important feedback to consider for your data extraction process. Rank this specific human-in-the-loop feedback highest in your considerations and make sure to incorporate it into your thinking.
-        </feedback_human-in-the-loop>
-    </feedback>
+<user_context>
+This is the user context provided: {state.get("context_user_provided")}. Give this information high priority in your considerations.
+</user_context>
+<context_gpc_refno>
+This is the additional context provided for identifying the activities: {json.dumps(gpc_mappings, indent=4)}
+</context_gpc_refno>
+<prior_script>
+This is the prior script provided: {script}.
+</prior_script>
+<feedback>
+<feedback_human-in-the-loop>
+If the user has provided feedback at the end of the entire data pipeline from the human-in-the-loop agent, you find it here: {state.get("feedback_hitl")}.
+This is the most important feedback to consider for your data extraction process. Rank this specific human-in-the-loop feedback highest in your considerations and make sure to incorporate it into your thinking.
+</feedback_human-in-the-loop>
+</feedback>
 </additional_information>
 """
 
