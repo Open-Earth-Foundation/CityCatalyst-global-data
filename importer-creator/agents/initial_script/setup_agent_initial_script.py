@@ -52,7 +52,7 @@ b. Create a python script. This python script must contain the following:
 """
 
     answer_format = """
-Your output must be provided in JSON format. Provide all detailed reasoning and the pure executable Python code in the following JSON format:
+Your output must be provided in JSON format. Provide all detailed reasoning in a structured and human readable way (e.g. using sub headers, bulletpoints and numbered lists) and the pure executable Python code in the following JSON format:
 {
     "reasoning": "Your detailed reasoning here...",
     "code": "Your pure executable Python code here..."
