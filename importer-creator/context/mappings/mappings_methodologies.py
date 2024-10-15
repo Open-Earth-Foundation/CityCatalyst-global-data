@@ -2,8 +2,9 @@
 
 # @ Mau: Please check the mapping and
 # how it is best to structure based on the information we have extracted until here like GPC number, activities and so on.
+# what names do we need to use for the keys e.g. input_values and so on so thetyt align with the activities mappings?
 
-context_methodologies = {
+methodologies_mapping = {
     "__doc__": """
     This is the dictionary of different methodologies for the 'Stationary Energy' sector and 'Transportation' sector.
     It is used to provide context for choosing the correct methodology and for making transformations from activity data to emission values.

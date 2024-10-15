@@ -5,6 +5,12 @@ activity_mappings = {
     This dictionary maps the most common Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) activity data types 'fuel_sales', 'fuel_consumption' and 'electricity_consumption' and the corresponding "activity_names" and "activity_subcategories".
     Each activity data type has a list of GPC reference numbers that apply for each activity type, and the corresponding activity names and subcategories of each activity type.
 
+    Each activity data type has the following keys:
+    - description: A brief description of the activity data type.
+    - gpc_refno: The GPC reference numbers associated with the activity data type.
+    - activity_name: The standardized activity name for the activity data type..... # add examples here e.g. fuel sold, diesel sold,...
+    - ....
+
     Instructions for the LLM:
     - Names in datasets may not match these names below exactly but can be identified by the GPC reference number and options in the lists.
     - Focus on identifying semantically similar terms, synonyms, or variations in dataset names.
@@ -16,7 +22,7 @@ activity_mappings = {
     # - "I.1.1": Represents emissions within the sector 'Stationary Energy' and the subsector 'Residential Buildings' from fuel combustion within the city boundary (Scope 1)
     # The idea is to guide the model. E.g. this is the required output (which you have below) if you encounter this input (as an example above the goc mappings)
     - fuel_sales:{
-        "gpc_reference_number": 'II.1.1',
+        "gpc_refno": 'II.1.1',
         "activity_names": 'fuel sold',
         "activity_subcategories1": {
             "type": 'fuel_type',
@@ -27,7 +33,7 @@ activity_mappings = {
         }
     }
     - fuel_sales:{
-        "gpc_reference_number": 'I.1.2',
+        "gpc_refno": 'I.1.2',
         "activity_names": 'electricity consumption',
         "activity_subcategories1": {
             "type": 'electricity_type',
@@ -42,11 +48,11 @@ activity_mappings = {
     """,
     "fuel_sales": {
         "description": "",  # description needed for each key
-        "gpc_reference_number": {
+        "gpc_refno": {
             "description": "These are the only possible GPC reference numbers for the activity data type fuel sales",  # I added this example
             "values": ["II.1.1", "II.2.1", "II.3.1", "II.4.1", "II.5.1"],
         },
-        "activity_names": ["fuel sales", "fuel sold"],
+        "activity_name": ["fuel_sales"],  # have a standardized activity name
         # can the activity name be one of those? To me both are pretty much the same. Should this be an example list like 'it could be fuel sales or fuel sold'?
         # Then it would be better to habe only one value here and give this value a description like
         # "activity_names": {
@@ -103,7 +109,7 @@ activity_mappings = {
     },
     "fuel_consumption": {
         "description": "",  # description needed for each key
-        "gpc_reference_number": ["I.1.1", "I.2.1", "I.3.1", "I.4.1", "I.5.1", "I.6.1"],
+        "gpc_refno": ["I.1.1", "I.2.1", "I.3.1", "I.4.1", "I.5.1", "I.6.1"],
         "activity_names": ["fuel consumption", "fuel consumed"],
         "activity_subcatogories1": {
             "type": "fuel_type",
@@ -145,7 +151,7 @@ activity_mappings = {
     },
     "electricity_consumption": {
         "description": "",  # description needed for each key
-        "gpc_reference_number": [
+        "gpc_refno": [
             "I.1.2",
             "I.2.2",
             "I.3.2",
