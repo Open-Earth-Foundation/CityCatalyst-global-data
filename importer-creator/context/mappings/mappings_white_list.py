@@ -2,14 +2,12 @@
 
 white_list_mapping = {
     "__doc__": """
-    This dictionary maps the most common Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) 'activity data types' 'fuel_sales', 'fuel_consumption' and 'electricity_consumption' and the important columns to conserve in a dataframe. It is possible, that not all columns are present in the dataset.
-    Each 'activity data type' has a description of what kind of data falls into that respective category and a list of columns with their data types and descriptions.
-    Each dataset con only be associated with one of the 'activity data types'. This means, that only the described columns of one of the 'activity data types' can be conserved in the dataframe.
-    Do not mix columns of different 'activity data types' in the same dataframe. 
+    This dictionary maps the most common Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) and the columns of interest to conserve in a dataframe. It is possible, that not all columns are present in the dataset.
+    Each column name has a description of what kind of data falls into that respective column, the data type, and examples of the data.
 
     Hint:
-    There are generally two types of energy sources: fuels - which contain all sorts of ligquid and gas fuels - and energy - which refers to electric energy. 
-    The terminlogy of 'energy' never refers to either fuel sales or fuel consumption.
+    There are generally two types of energy sources: fuels - which contain all sorts of liquid and gas fuels - and energy - which refers to electric energy. 
+    The terminology of 'energy' never refers to either fuel sales or fuel consumption.
 
     Instructions for the LLM:
     - Names in datasets may not match these names below exactly but can be identified by their descriptions or examples.
@@ -17,18 +15,17 @@ white_list_mapping = {
     - The column names in this dictionary represent common terms. If a dataset uses different terminology for a concept (e.g., 'energy source' instead of 'energy type'), map accordingly.
 
     Important:
-    If you are unsure about the 'activity data type' of the dataset, or the mapping of the columns and which ones to delete, do not delete any columns.
+    If you are unsure about the mapping of the columns and which ones to delete, do not delete any columns.
     
     Examples:
-    - a dataset about fuel sales maps to the 'fuel_sales' 'activity data type' and should conserve the columns 'period', 'city', 'locode', 'product', 'operator', 'user_type', 'volume', 'units', 'coordinates', 'location'
-    - a dataset about fuel consumption maps to the 'fuel_consumption' 'activity data type' and should conserve the columns 'period', 'city', 'product', 'operator', 'final_user', 'industry_type', 'volume', 'units', 'location'
-    - a dataset about energy consumption maps to the 'electricity_consumption' 'activity data type' because electricity is considered energy and should conserve the columns 'date', 'region', 'locode', 'operator', 'facility_name', 'industry_type', 'final_user', 'electricity_consumed', 'units', 'location'
+    ## now I'm not sure about the examples 
+    - A dataset about fuel sales maps to the 'fuel_sales' 'activity data type' and should conserve the columns 'period', 'city', 'locode', 'product', 'operator', 'user_type', 'volume', 'units', 'coordinates', 'location'
+    - A dataset about fuel consumption maps to the 'fuel_consumption' 'activity data type' and should conserve the columns 'period', 'city', 'product', 'operator', 'final_user', 'industry_type', 'volume', 'units', 'location'
+    - A dataset about energy consumption maps to the 'electricity_consumption' 'activity data type' because electricity is considered energy and should conserve the columns 'date', 'region', 'locode', 'operator', 'facility_name', 'industry_type', 'final_user', 'electricity_consumed', 'units', 'location'
 
     The names given in this dictionary are indicative and can be changed according to the specific dataset.
     """,
-    "fuel_sales": {
-        # Please check description and improve maybe for all 3 @ Mau
-        "description": "This 'activity data type' refers to data related to the sale of fuels (like propane, diesel, natural gases and so on).",
+    "columns": {  
         "period": {
             "data_type": "datetime",
             "description": "The period of time the data refers to",
@@ -37,187 +34,110 @@ white_list_mapping = {
                 "2020-01-01 00:00:00",
                 "2020",
                 "2020-01",
-                "2020 January",
-            ],
+                "2020 January"
+            ]
+        },
+        "region": {  
+            "data_type": "string",
+            "description": "The region where the data was collected, where the energy or fuel was consumed, or where the fuel was sold",
+            "examples": [
+                "California", 
+                "Buenos Aires", 
+                "Argentina"
+            ]
         },
         "city": {
             "data_type": "string",
-            "description": "The city where the data was collected or where the fuel was sold",
-            "examples": ["New York", "Mendoza", "Sao Paulo"],
+            "description": "The city where the data was collected, where the energy or fuel was consumed, or where the fuel was sold",
+            "examples": [
+                "New York", 
+                "Mendoza", 
+                "Sao Paulo"
+            ]
         },
         "locode": {
             "data_type": "string",
             "description": "The location code of the city where the data was collected or where the fuel was sold, according to the UN/LOCODE standard",
-            "examples": ["US NYC", "AR-MZA", "BRSPO"],
+            "examples": [
+                "US NYC", 
+                "AR-MZA", 
+                "BRSPO",
+                "AR"
+            ]
+        },
+        "coordinates": {
+            "data_type": "float",
+            "description": "The coordinates of the location where the fuel was sold or consumed, also where the energy was consumed (latitude, longitude)",
+            "examples": [
+                -34.61, 
+                -58.38
+            ]
+        },
+        "location": {
+            "data_type": "string",
+            "description": "The location where the fuel was sold or consumed, also where the energy was consumed",
+            "examples": [
+                "Av. Corrientes 1234, Buenos Aires",
+                "Av. Paulista 1234, Sao Paulo"
+            ]
         },
         "product": {
             "data_type": "string",
-            "description": "The product sold (fuel type)",
-            "examples": ["diesel", "petrol", "gasoline"],
+            "description": "The name of the product sold or consumed (fuel type or electricity)",
+            "examples": [
+                "diesel", 
+                "petrol", 
+                "gasoline", 
+                "electricity"
+            ]
         },
         "operator": {
             "data_type": "string",
-            "description": "The company or entity that sold the fuel. This can be also the company that distributes the fuel",
-            "examples": ["YPF", "Shell", "Petrobras"],
+            "description": "The company or entity that sold or distributes the fuel. This can also be the company that provides the electricity",
+            "examples": [
+                "YPF", 
+                "Shell", 
+                "Petrobras",
+                "Edenor"
+            ]
         },
         "user_type": {
             "data_type": "string",
-            "description": "Classifies the different sectors, users or channels through which fuel is sold, consumed or distributed in the city",
+            "description": "This category classifies the various sectors, users, or channels through which fuel is sold, consumed, or distributed within the city. It encompasses both the final consumers of fuel and the sectors where the fuel is utilized. This also includes end-users who consume electricity from the grid, those who utilize the electricity, and the specific sectors where the electricity is ultimately consumed.",
             "examples": [
                 "fuel sales in gas stations",
                 "Service stations, storage and distribution",
                 "Freight transport",
-            ],
+                "Residential",
+                "Commercial",
+                "Power Plants"
+            ]
         },
         "volume": {
             "data_type": "float",
             "description": "The volume or amount of fuel sold",
-            "examples": [1000, 20000, 300.9],
+            "examples": [
+                1000, 
+                20000, 
+                300.9
+            ]
         },
         "units": {
             "data_type": "string",
-            "description": "The units in which the volume of fuel is measured",
-            "examples": ["liters", "gallons", "cubic meters", "L", "m3", "gal"],
-        },
-        "coordinates": {
-            "data_type": "float",
-            "description": "The coordinates of the location where the fuel was sold (latitude, longitude)",
-            "examples": [-34.61, -58.38],
-        },
-        "location": {
-            "data_type": "string",
-            "description": "The location where the fuel was sold",
+            "description": "The units in which the volume of fuel is measured or the electricity consumption is quantified",
             "examples": [
-                "Av. Corrientes 1234, Buenos Aires",
-                "Av. Paulista 1234, Sao Paulo",
-            ],
-        },
-    },
-    "fuel_consumption": {
-        "description": "This 'activity data type' refers to data related to the consumption of fuels (like propane, diesel, natural gases and so on). E.g. burning those fuels or similar",  # Please check and improve @ Mau
-        "period": {
-            "data_type": "datetime",
-            "description": "The period of time the data refers to",
-            "examples": [
-                "2020-01-01",
-                "2020-01-01 00:00:00",
-                "2020",
-                "2020-01",
-                "2020 January",
-            ],
-        },
-        "city": {  # difference to 'region' below in electricity_consumption @ Mau?
-            "data_type": "string",
-            "description": "The city where the data was collected or where the fuel was consumed",
-            "examples": ["New York", "Mendoza", "Sao Paulo"],
-        },
-        "product": {
-            "data_type": "string",
-            "description": "The fuel consumed (fuel type)",
-            "examples": ["natural gas", "gasoline", "diesel"],
-        },
-        "operator": {
-            "data_type": "string",
-            "description": "The company or entity that distributes the fuel",
-            "examples": ["Metrogas", "Edenor", "Petrobras"],
-        },
-        "final_user": {
-            "data_type": "string",
-            "description": "The final user of the fuel or the sector where the fuel was consumed",
-            "examples": ["residential", "commercial", "transportation", "industrial"],
-        },
-        "industry_type": {
-            "data_type": "string",
-            "description": "The type of industry where the fuel was consumed",
-            "examples": [
-                "Energy Industry",
-                "Petroleum and Natural Gas Systems",
-                "Power Plants",
-            ],
-        },
-        "volume": {
-            "data_type": "float",
-            "description": "The volume of fuel consumed",
-            "examples": [1000, 20000, 300.9],
-        },
-        "units": {
-            "data_type": "string",
-            "description": "The units in which the volume of fuel is measured",
-            "examples": ["liters", "gallons", "cubic meters", "L", "m3", "gal"],
-        },
-        "location": {
-            "data_type": "string",
-            "description": "The location where the fuel was consumed",
-            "examples": [
-                "Av. Corrientes 1234, Buenos Aires",
-                "Av. Paulista 1234, Sao Paulo",
-            ],
-        },
-    },
-    "electricity_consumption": {
-        "description": "This 'activity data type' refers to data related to the consumption of electricity (electric energy)",  # Please check and improve @ Mau
-        "date": {
-            "data_type": "datetime",
-            "description": "The period of time the data refers to",
-            "examples": [
-                "2020-01-01",
-                "2020-01-01 00:00:00",
-                "2020",
-                "2020-01",
-                "2020 January",
-            ],
-        },
-        "region": {  # does this include countries? @ Mau Also
-            "data_type": "string",
-            "description": "The region where the data was collected or where the energy was consumed",
-            "examples": ["California", "Buenos Aires", "Sao Paulo"],
-        },
-        "locode": {
-            "data_type": "string",
-            "description": "The location code of the region where the data was collected or where the energy was consumed, according to the UN/LOCODE standard",
-            "examples": ["US CA", "AR-BUE", "BRSPO"],
-        },
-        "operator": {
-            "data_type": "string",
-            "description": "The company or entity that distributes the energy",
-            "examples": ["Edison", "Enel", "AES"],
-        },
-        "facility_name": {
-            "data_type": "string",
-            "description": "The name of the facility where the fuel was consumed",
-            "examples": ["Hospital de Clinicas", "Casa Rosada", "Estadio Monumental"],
-        },
-        "industry_type": {
-            "data_type": "string",
-            "description": "The type of industry where the fuel was consumed",
-            "examples": [
-                "Energy Industry",
-                "Petroleum and Natural Gas Systems",
-                "Power Plants",
-            ],
-        },
-        "final_user": {
-            "data_type": "string",
-            "description": "The final user of the energy or the sector where the energy was consumed",
-            "examples": ["residential", "commercial", "transportation"],
-        },
-        "electricity_consumed": {
-            "data_type": "float",
-            "description": "The amount of electricity consumed. This can be also final consumption or consumption",
-            "examples": [1000, 20000, 300.9],
-        },
-        "units": {
-            "data_type": "string",
-            "description": "The units in which the electricity consumed is measured",
-            "examples": ["kWh", "MWh", "GWh", "Joules"],
-        },
-        "location": {
-            "data_type": "string",
-            "description": "The location where the electricity was consumed",
-            "examples": [
-                "Av. Corrientes 1234, Buenos Aires",
-                "Av. Paulista 1234, Sao Paulo",
-            ],
-        },
-    },
+                "liters", 
+                "gallons", 
+                "cubic meters", 
+                "L", 
+                "m3", 
+                "gal",
+                "kWh",
+                "MWh",
+                "kilojoules",
+                "kilowatts",
+                "TEP"
+            ]
+        }
+    }
 }
