@@ -1,0 +1,125 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - import_bechmark_data
+  - applying_benchmark
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: benchmark_file_read_s3
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: benchmark_file_read_s3
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: import_bechmark_data
+  retry_config: null
+  status: failed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - benchmark_file_read_s3
+  uuid: import_bechmark_data
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - applying_gwp
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: loading_emissions_data
+  retry_config: null
+  status: failed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: loading_emissions_data
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - applying_gwp
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: loading_gwp
+  retry_config: null
+  status: failed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: loading_gwp
+- all_upstream_blocks_executed: false
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - applying_benchmark
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: applying_gwp
+  retry_config: null
+  status: failed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - loading_gwp
+  - loading_emissions_data
+  uuid: applying_gwp
+- all_upstream_blocks_executed: false
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: applying_benchmark
+  retry_config: null
+  status: failed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - applying_gwp
+  - benchmark_file_read_s3
+  uuid: applying_benchmark
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2024-10-14 16:13:46.681156+00:00'
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: benchmark
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: benchmark
+variables_dir: /home/src/mage_data/cc-mage
+widgets: []
