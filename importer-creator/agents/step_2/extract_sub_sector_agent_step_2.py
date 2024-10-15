@@ -39,8 +39,8 @@ Your inputs are the dataframe 'df', the prior script provided below inside <prio
 """
 
     completion_steps = f"""
-a. Inspect the csv file provided under this path: {input_path_csv}. You are provided with a pandas dataframe 'df' based on this csv file. Base your further analysis only on this dataframe. This is already an updated dataframe based on the python script under <prior_script> tags.
-    - NEVER load the csv file provided in the script under <prior_script> tags from the line 'df = pd.read_csv'. You will work with the updated dataframe 'df' provided under this path: {input_path_csv}.
+a. Inspect the .csv file provided under this path: {input_path_csv}. You are provided with a pandas dataframe 'df' based on this .csv file. Base your further analysis only on this dataframe 'df'. This is already an updated dataframe based on the python script under <prior_script> tags.
+    - NEVER load the .csv file saved in the 'input_path' variable which is provided in the script under <prior_script> tags. 
 b. Inspect the user provided context in <user_context> tags.
 c. Inspect the additional context for identifying the GPC sub-sector in <context_sub_sector> tags.
 d. Inspect the provided python script under <prior_script> tags.
@@ -50,12 +50,15 @@ f. Create a python script based on the script provided within <prior_script> tag
     2. a mapping dictionary for the GPC sub-sector based on your prior analysis. 
     3. add a column 'subsector_name' to the dataframe 'df_new' which applies a GPC sub-sector to each row of the 'df' based on the created mapping dictionary.
     4. finally:
-    - replace the output path for exporting the new .csv file 'df_new.to_csv' with {output_path_csv} so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma seperated ','. The .csv file must use 'encoding="utf-8"'.
-    - NEVER replace the input path for loading the original .csv file 'df = pd.read_csv'.
-    5. IMORTANT: 
+    - add code to output a new .csv file 'df_new.to_csv' so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma seperated ','. The .csv file must use 'encoding="utf-8"'.
+    - the output path for the new .csv is this: {output_path_csv} 
+    - store the new path to the new .csv file in the updated variable named 'output_path'.
+    
+    IMORTANT: 
     - The code must contain python comments.
     - The code must be executable and must not contain any code errors.
     - The new script must contain all the content of the initial script in addition to the added data.
+    - NEVER replace the variable 'input_path' in the script. 
 """
 
     answer_format = """

@@ -40,8 +40,8 @@ Your task is to inspect and correct the datatypes of columns of the provided Dat
 Your inputs are the dataframe 'df', the prior script provided below inside <prior_script> tags and further context for choosing the correct datatypes provided below in <white_list> tags.
 """
     completion_steps = f"""
-a. Inspect the csv file provided under this path: {input_path_csv}. You are provided with a pandas dataframe 'df' based on this csv file. Base your further analysis only on this dataframe. This is already an updated dataframe based on the python script under <prior_script> tags.
-    - NEVER load the csv file provided in the script under <prior_script> tags from the line 'df = pd.read_csv'. You will work with the updated dataframe 'df' provided under this path: {input_path_csv}.
+a. Inspect the .csv file provided under this path: {input_path_csv}. You are provided with a pandas dataframe 'df' based on this .csv file. Base your further analysis only on this dataframe 'df'. This is already an updated dataframe based on the python script under <prior_script> tags.
+    - NEVER load the .csv file saved in the 'input_path' variable which is provided in the script under <prior_script> tags. 
 b. Inspect the datatypes of each column in the dataframe 'df' and output a list of suggested corrections. 
 c. Inspect the provided python script under <prior_script> tags.
 d. Inspect the columns in the dataframe 'df' that contain dates and temporal data. Check if those columns have the correct datatype for dates. 
@@ -54,12 +54,15 @@ f. Create a python script based on the script provided within <prior_script> tag
     3. converted date columns to a valid datetime format based on the available data using 'pd.to_datetime' and based on your prior analysis.
     - pay attention to columns that might not be clearly labeled as 'date' or 'dates' or similar but that still contain dates and temporal data.
     4. finally:
-    - replace the output path for exporting the new .csv file 'df_new.to_csv' with {output_path_csv} so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma seperated ','. The .csv file must use 'encoding="utf-8"'.
-    - NEVER replace the input path for loading the original .csv file 'df = pd.read_csv'.
-    5. IMORTANT: 
+    - add code to output a new .csv file 'df_new.to_csv' so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma seperated ','. The .csv file must use 'encoding="utf-8"'.
+    - the output path for the new .csv is this: {output_path_csv} 
+    - store the new path to the new .csv file in the updated variable named 'output_path'.
+    
+    IMORTANT: 
     - The code must contain python comments.
     - The code must be executable and must not contain any code errors.
     - The new script must contain all the content of the initial script in addition to the added data.
+    - NEVER replace the variable 'input_path' in the script. 
 """
     answer_format = """
 Your output must be provided in JSON format. Provide all detailed reasoning in a structured and human readable way (e.g. using sub headers, bulletpoints and numbered lists) and the pure executable Python code in the following JSON format:
