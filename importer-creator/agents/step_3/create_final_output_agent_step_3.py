@@ -15,14 +15,17 @@ def create_final_output_agent_step_3(state: AgentState):
     input_path_markdown_extracted_sub_sector = (
         "./generated/step_3/steps/generated_markdown_extracted_activity_unit.md"
     )
-
+    input_path_markdown_extracted_activity_subcategory_1 = "./generated/step_3/steps/generated_markdown_extracted_activity_subcategory_1.md"
+    input_path_markdown_extracted_activity_subcategory_2 = "./generated/step_3/steps/generated_markdown_extracted_activity_subcategory_2.md"
     # Load the last created python script
     input_path_last_script = (
-        "./generated/step_3/steps/generated_script_extracted_activity_unit.py"
+        "./generated/step_3/steps/generated_script_extracted_activity_subcategory_2.py"
     )
 
     # Load the last created csv file
-    input_path_last_csv = "./generated/step_3/steps/extracted_activity_unit.csv"
+    input_path_last_csv = (
+        "./generated/step_3/steps/extracted_activity_subcategory_2.csv"
+    )
 
     # Define output paths
     output_path_markdown = "./generated/step_3/final/generated_markdown_final_output.md"
@@ -36,6 +39,8 @@ def create_final_output_agent_step_3(state: AgentState):
             input_path_markdown_extracted_activity_name,
             input_path_markdown_extracted_sector,
             input_path_markdown_extracted_sub_sector,
+            input_path_markdown_extracted_activity_subcategory_1,
+            input_path_markdown_extracted_activity_subcategory_2,
         ]:
             with open(markdown_file, "r", encoding="utf-8") as infile:
                 content = infile.read()

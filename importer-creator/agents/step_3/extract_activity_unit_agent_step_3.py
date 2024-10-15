@@ -36,17 +36,17 @@ def extract_activity_unit_agent_step_3(
     )
 
     task = """
-Your task is to extract the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) 'activity unit' (the unit of measurement like liters, cubic meters and so on) from the provided python pandas dataframe based on the instructions below. You will also create a runnable python script.
+Your task is to extract the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) 'activity unit' (e.g. the unit of measurement like liters, cubic meters and so on) from the provided python pandas dataframe based on the instructions below. You will also create a runnable python script.
 Your inputs are the dataframe 'df', the prior script provided below inside <prior_script> tags, the user provided context in <user_context> tags and additional context for identidying activities in <context_activities> tags. 
 """
 
     completion_steps = f"""
 a. Inspect the csv file provided under this path: {input_path_csv}. You are provided with a pandas dataframe 'df' based on this csv file. Base your further analysis only on this dataframe. This is already an updated dataframe based on the python script under <prior_script> tags.
-    - do not try to attempt loading the csv file provided in the script provided under <prior_script> tags. The csv file provided in the prior script is just the loading of the initial csv file but you will work with an already updated file provided under this path: {input_path_csv}.
+    - NEVER load the csv file provided in the script under <prior_script> tags from the line 'df = pd.read_csv'. You will work with the updated dataframe 'df' provided under this path: {input_path_csv}.
 b. Inspect the user provided context in <user_context> tags.
 c. Inspect the additional context for identifying the GPC activities in <context_activities> tags.
 d. Inspect the provided python script under <prior_script> tags.
-e. Determine the GPC 'activity unit' based on the content of the dataframe 'df', the user provided context in <user_context> tags and the additional context provided within <context_activities> tags. Each row in the dataframe 'df' should be assigned a GPC 'activity unit' based on the provided context. To do this you need to inspect the dataframe 'df' row by row and assign each row a GPC 'activity unit' based on the information provided in this row.
+e. Determine the GPC 'activity unit' based on the content of the dataframe 'df', the user provided context in <user_context> tags and the additional context provided within <context_activities> tags. Each row in the dataframe 'df' should be assigned a GPC 'activity unit' based on the provided context. To do this you need to inspect the dataframe 'df' row by row and assign each row a GPC 'activity unit' based on the information provided in that row.
 f. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
     2. add a column 'activity_value' to the dataframe 'df_new' with the extracted GPC 'activity_value' based on your prior analysis.

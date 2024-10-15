@@ -9,15 +9,15 @@ from utils.json_output_cleaner import clean_json_output
 from context.mappings.mappings_activities import activity_mappings
 
 
-def extract_activity_value_agent_step_3(
+def extract_activity_subcategory_2_step_3(
     state: AgentState,
 ):
-    print("\nEXTRACT ACTIVITY VALUE AGENT STEP 3\n")
+    print("\nEXTRACT ACTIVITY SUBCATEGORY 2 STEP 3\n")
 
     # Load the output files of initial script
-    input_path_csv = "./generated/step_3/steps/extracted_activity_name.csv"
+    input_path_csv = "./generated/step_3/steps/extracted_activity_subcategory_1.csv"
     input_path_script = (
-        "./generated/step_3/steps/generated_script_extracted_activity_name.py"
+        "./generated/step_3/steps/generated_script_extracted_activity_subcategory_1.py"
     )
 
     # Load the csv file into the dataframe
@@ -27,16 +27,15 @@ def extract_activity_value_agent_step_3(
         script = file.read()
 
     # Define the output paths
-    output_path_csv = "./generated/step_3/steps/extracted_activity_value.csv"
+    output_path_csv = "./generated/step_3/steps/extracted_activity_subcategory_2.csv"
     output_path_script = (
-        "./generated/step_3/steps/generated_script_extracted_activity_value.py"
+        "./generated/step_3/steps/generated_script_extracted_activity_subcategory_2.py"
     )
-    output_path_markdown = (
-        "./generated/step_3/steps/generated_markdown_extracted_activity_value.md"
-    )
+    output_path_markdown = "./generated/step_3/steps/generated_markdown_extracted_activity_subcategory_2.md"
 
     task = """
-Your task is to extract the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) 'activity value' (e.g. the number that describes how much fuel was sold, energy consumed and so on)from the provided python pandas dataframe based on the instructions below. You will also create a runnable python script.
+Your task is to extract the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) 'activity_subcategory_type2' and 'activity_subcategory_typename2' from the provided python pandas dataframe based on the instructions below. You will also create a runnable python script.
+These values are a more detailed description of the activity name. It consists of a specific type 'activity_subcategory_type2' and name 'activity_subcategory_typename2', that further categorizes the activity. The possible values for both fields are provided in the 'activity_subcategories2' key of the 'activity_mappings' dictionary within <context_activities> tags.
 Your inputs are the dataframe 'df', the prior script provided below inside <prior_script> tags, the user provided context in <user_context> tags and additional context for identidying activities in <context_activities> tags. 
 """
 
@@ -46,14 +45,17 @@ a. Inspect the csv file provided under this path: {input_path_csv}. You are prov
 b. Inspect the user provided context in <user_context> tags.
 c. Inspect the additional context for identifying the GPC activities in <context_activities> tags.
 d. Inspect the provided python script under <prior_script> tags.
-e. Determine the GPC 'activity value' based on the content of the dataframe 'df', the user provided context in <user_context> tags and the additional context provided within <context_activities> tags. Each row in the dataframe 'df' should be assigned a GPC 'activity value' based on the provided context. To do this you need to inspect the dataframe 'df' row by row and assign each row a GPC 'activity value' based on the information provided in that row.
-f. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
+e. Determine the GPC 'activity_subcategory_type2' based on the content of the dataframe 'df', the user provided context in <user_context> tags and the additional context provided within <context_activities> tags. Each row in the dataframe 'df' should be assigned a GPC 'activity_subcategory_type2' based on the provided context. To do this you need to inspect the dataframe 'df' row by row and assign each row a  GPC 'activity_subcategory_type2' based on the information provided in this row.
+f. Determine the GPC 'activity_subcategory_typename2' based on the content of the dataframe 'df', the user provided context in <user_context> tags and the additional context provided within <context_activities> tags. Each row in the dataframe 'df' should be assigned a GPC 'activity_subcategory_typename2' based on the provided context. To do this you need to inspect the dataframe 'df' row by row and assign each row a GPC 'activity_subcategory_typename2' based on the information provided in that row.
+g. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
-    2. add a column 'activity_value' to the dataframe 'df_new' with the extracted GPC 'activity_value' based on your prior analysis.
-    3. finally:
+    2. add a column 'activity_subcategory_type2' to the dataframe 'df_new' with the extracted GPC 'activity_subcategory_type2' based on your prior analysis.
+    3. a mapping dictionary for the GPC 'activity_subcategory_typenname2' based on your prior analysis.
+    4. add a column 'activity_subcategory_typenname2' to the dataframe 'df_new' which applies a mapping for the GPC 'activity_subcategory_typenname2' to each row of the 'df' based on the created mapping dictionary.
+    5. finally:
     - replace the output path for exporting the new .csv file 'df_new.to_csv' with {output_path_csv} so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma seperated ','. The .csv file must use 'encoding="utf-8"'.
     - NEVER replace the input path for loading the original .csv file 'df = pd.read_csv'.
-    4. IMORTANT: 
+    6. IMORTANT: 
     - The code must contain python comments.
     - The code must be executable and must not contain any code errors.
     - The new script must contain all the content of the initial script in addition to the added data.

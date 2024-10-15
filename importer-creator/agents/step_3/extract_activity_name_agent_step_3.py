@@ -40,15 +40,16 @@ Your inputs are the dataframe 'df', the prior script provided below inside <prio
 
     completion_steps = f"""
 a. Inspect the csv file provided under this path: {input_path_csv}. You are provided with a pandas dataframe 'df' based on this csv file. Base your further analysis only on this dataframe. This is already an updated dataframe based on the python script under <prior_script> tags.
-    - do not try to attempt loading the csv file provided in the script provided under <prior_script> tags. The csv file provided in the prior script is just the loading of the initial csv file but you will work with an already updated file provided under this path: {input_path_csv}.
+    - NEVER load the csv file provided in the script under <prior_script> tags from the line 'df = pd.read_csv'. You will work with the updated dataframe 'df' provided under this path: {input_path_csv}.
 b. Inspect the user provided context in <user_context> tags.
 c. Inspect the additional context for identifying the GPC activities in <context_activities> tags.
 d. Inspect the provided python script under <prior_script> tags.
-e. Determine the GPC 'activity name' based on the content of the dataframe 'df', the user provided context in <user_context> tags and the additional context provided within <context_activities> tags. Each row in the dataframe 'df' should be assigned a GPC 'activity name' based on the provided context. To do this you need to inspect the dataframe 'df' row by row and assign each row a GPC 'activity name' based on the information provided in this row.
+e. Determine the GPC 'activity name' based on the content of the dataframe 'df', the user provided context in <user_context> tags and the additional context provided within <context_activities> tags. Each row in the dataframe 'df' should be assigned a GPC 'activity name' based on the provided context. To do this you need to inspect the dataframe 'df' row by row and assign each row a GPC 'activity name' based on the information provided in that row.
+    - Specifically inspect the colum 'gpc_refno' of the dataframe 'df'. This column helps in prefiltering the possible activity data types based on the GPC reference numbers within the provided context in <context_activities> tags.
 f. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
     2. a mapping dictionary for the GPC 'activity name' based on your prior analysis.
-    3. add a column 'activity_name' to the dataframe 'df_new' with the extracted 'activity_name' which applies a GPC 'activity name' to each row of the 'df' based on the created mapping dictionary.
+    3. add a column 'activity_name' to the dataframe 'df_new' which applies a mapping for the GPC 'activity name' to each row of the 'df' based on the created mapping dictionary.
     4. finally:
     - replace the output path for exporting the new .csv file 'df_new.to_csv' with {output_path_csv} so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma seperated ','. The .csv file must use 'encoding="utf-8"'.
     - NEVER replace the input path for loading the original .csv file 'df = pd.read_csv'.

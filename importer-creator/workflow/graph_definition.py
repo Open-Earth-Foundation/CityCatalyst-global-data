@@ -42,6 +42,12 @@ from agents.step_3.extract_activity_unit_agent_step_3 import (
 from agents.step_3.create_final_output_agent_step_3 import (
     create_final_output_agent_step_3,
 )
+from agents.step_3.extract_activity_subcategory_1_step_3 import (
+    extract_activity_subcategory_1_step_3,
+)
+from agents.step_3.extract_activity_subcategory_2_step_3 import (
+    extract_activity_subcategory_2_step_3,
+)
 
 # Import for step 4
 
@@ -246,6 +252,12 @@ def create_workflow():
     workflow.add_node(
         "create_final_output_agent_step_3", create_final_output_agent_step_3
     )
+    workflow.add_node(
+        "extract_activity_subcategory_1_step_3", extract_activity_subcategory_1_step_3
+    )
+    workflow.add_node(
+        "extract_activity_subcategory_2_step_3", extract_activity_subcategory_2_step_3
+    )
 
     workflow.add_edge(
         "extract_activity_name_agent_step_3", "extract_activity_value_agent_step_3"
@@ -254,7 +266,13 @@ def create_workflow():
         "extract_activity_value_agent_step_3", "extract_activity_unit_agent_step_3"
     )
     workflow.add_edge(
-        "extract_activity_unit_agent_step_3", "create_final_output_agent_step_3"
+        "extract_activity_unit_agent_step_3", "extract_activity_subcategory_1_step_3"
+    )
+    workflow.add_edge(
+        "extract_activity_subcategory_1_step_3", "extract_activity_subcategory_2_step_3"
+    )
+    workflow.add_edge(
+        "extract_activity_subcategory_2_step_3", "create_final_output_agent_step_3"
     )
     workflow.add_edge("create_final_output_agent_step_3", END)
 

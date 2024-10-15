@@ -38,7 +38,7 @@ Your inputs are the dataframe 'df', the prior script provided below inside <prio
 
     completion_steps = f"""
 a. Inspect the csv file provided under this path: {input_path_csv}. You are provided with a pandas dataframe 'df' based on this csv file. Base your further analysis only on this dataframe. This is already an updated dataframe based on the python script under <prior_script> tags.
-    - do not try to attempt loading the csv file provided in the script provided under <prior_script> tags. The csv file provided in the prior script is just the loading of the initial csv file but you will work with an already updated file provided under this path: {input_path_csv}.
+    - NEVER load the csv file provided in the script under <prior_script> tags from the line 'df = pd.read_csv'. You will work with the updated dataframe 'df' provided under this path: {input_path_csv}.
 b. Inspect the user provided context in <user_context> tags.
 c. Inspect the additional context for identifying the GPC sector in <context_sector> tags.
 d. Inspect the provided python script under <prior_script> tags.

@@ -57,7 +57,7 @@ activity_mappings = {
         "activity_subcatogories1": {
             "description": "",  # description needed for each key
             "type": "fuel_type",
-            "name": [
+            "name": [  # is this a (complete) standardized list of names to use and choose from or is this an example list?
                 "diesel",
                 "petrol",
                 "gasoline",
