@@ -7,9 +7,9 @@ activity_mappings = {
 
     Each activity name has the following keys:
     - description: Contains a brief description of the activity being referred to.
-    - gpc_refno: Contains a list of GPC reference numbers that apply to the activity.
-    - activity_subcategories1: Contains the subcategories related to the activity. It includes the type of subcategory and the name of it.
-    - activity_subcategories2: Contains the subcategories related to the activity. It includes the type of subcategory and the name of it.
+    - gpc_refno: Contains a list of possible GPC reference numbers that can apply to the activity.
+    - activity_subcategories1: Contains the subcategories related to the activity. It includes the type and the name of the subcategory.
+    - activity_subcategories2: Contains the subcategories related to the activity. It includes the type and the name of the subcategory.
 
     Instructions for the LLM:
     - Names in datasets may not match these names below exactly but can be identified by the GPC reference number and options in the lists.
@@ -27,7 +27,7 @@ activity_mappings = {
     "activity_names": {
         "description": "Contains the name of the actions or activities that generate greenhouse gas emissions",
         "names": {
-            "fuel combustion": {
+            "fuel_combustion": {
                 "description": "It refers to the process of burning fuel to produce energy, typically in the form of heat, electricity, or mechanical power. This activity occurs in various sectors, including transportation, industrial operations, power generation, and residential heating.",
                 "gpc_refno": [
                     "I.1.1",
@@ -119,7 +119,7 @@ activity_mappings = {
                     ],
                 },
             },
-            "electricity consumption": {
+            "electricity_consumption": {
                 "description": "It refers to the amount of electricity consumed by a user or a group of users. This activity occurs in various sectors, including residential, commercial, industrial, and transportation.",
                 "gpc_refno": [
                     "I.1.2",
@@ -135,7 +135,7 @@ activity_mappings = {
                     "II.5.2",
                 ],
                 "activity_subcategories1": {
-                    "description": "",
+                    "description": "Contains the type of electricity consumed",
                     "type": "electricity_type",
                     "name": [
                         "grid-energy supply",
