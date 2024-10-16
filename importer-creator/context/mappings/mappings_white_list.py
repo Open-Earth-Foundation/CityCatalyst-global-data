@@ -67,9 +67,9 @@ white_list_mapping = {
             "description": "The city where the data was collected, that the activity data (e.g. energy consumption or fuel consumption) is associated with",
             "examples": ["New York", "Bariloche", "Sao Paulo"],
         },
-        "locode": {  
+        "locode": {
             "data_type": "string",
-            "description": "The location code of the city where the data was collected, that the activity data (e.g. energy consumption or fuel consumption) is associated with, according to the UN/LOCODE standard",
+            "description": "The location code of the city where the data was collected, that the activity data (e.g. energy consumption or fuel consumption) is associated with, according to the UN/LOCODE standard which has a 2 letter code for the country and a 5 letter code for the country and city",
             "examples": ["USNYC", "AR-BRC", "BR SAO", "USCAL", "ARTUC", "AR"],
         },
         "coordinates": {
@@ -125,6 +125,11 @@ white_list_mapping = {
                 "Kilowatts (kW)",
                 "Tonne of Oil Equivalent (TEP)",
             ],
+        },
+        "source": {
+            "data_type": "string",
+            "description": "The source of the data, which could be an organization, a publication, a database, or any other entity that provides the data",
+            "examples": ["EIA", "BP Statistical Review", "IEA", "Local government"],
         },
     },
 }
