@@ -71,7 +71,7 @@ Ensure that the output is valid JSON and does not include any additional comment
     additional_information = f"""
 <additional_information>
 <user_context>
-This is the user context provided: {state.get("context_user_provided")}. Give this information high priority in your considerations.
+This is the user context provided: {state.get("user_input")}. Give this information high priority in your considerations.
 </user_context>
 <prior_script>
 This is the prior script provided: {script}.

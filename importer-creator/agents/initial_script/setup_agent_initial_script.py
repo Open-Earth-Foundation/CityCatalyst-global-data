@@ -14,7 +14,7 @@ def setup_agent_initial_script(
     print("\nSETUP AGENT INITIAL SCRIPT\n")
 
     # Get the input path for the CSV file passed from the user
-    input_path_csv = state.get("file_path")
+    input_path_csv = state.get("full_path")
 
     # Load the input CSV file into a pandas dataframe
     df = pd.read_csv(input_path_csv, encoding="utf-8")
@@ -65,7 +65,7 @@ Ensure that the output is valid JSON and does not include any additional comment
     additional_information = f"""
 <additional_information>
 <file_path>
-This is the path to the original data file: {state.get('file_path')}.
+This is the path to the original data file: {state.get("full_path")}.
 </file_path>
 <feedback>
 <feedback_human-in-the-loop>

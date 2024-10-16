@@ -29,7 +29,7 @@ def reasoning_agent_actval_transportation(state: AgentState) -> dict:
     3. You are given additional information that is helpful in completing your task:
     <additional_information>
         <user_provided_context>
-        This is the user provided context: {state.get("context_user_provided")}
+        This is the user provided context: {state.get("user_input")}
         </user_provided_context>
         <context_activity_values_transportation>
         This is the provided context for avtivities specifically for the sector 'Transportation': {state.get("context_actval_transportation")}.

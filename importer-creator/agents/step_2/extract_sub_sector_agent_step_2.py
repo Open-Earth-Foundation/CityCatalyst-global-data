@@ -72,7 +72,7 @@ Ensure that the output is valid JSON and does not include any additional comment
     additional_information = f"""
 <additional_information>
 <user_context>
-This is the user context provided: {state.get("context_user_provided")}. Give this information high priority in your considerations.
+This is the user context provided: {state.get("user_input")}. Give this information high priority in your considerations.
 </user_context>
 <context_sub_sector>
 This is the additional context provided for identifying the GPC sub-sector: {json.dumps(sub_sector_mapping, indent=4)}.

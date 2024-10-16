@@ -45,7 +45,7 @@ Follow these instructions carefully:
         This is the path to the original data file: {state.get('file_path')}.
         </file_path>
         <user_provided_context>
-        This is the user provided context: {state.get("context_user_provided")}
+        This is the user provided context: {state.get("user_input")}
         </user_provided_context>
         <extracted_gpc_mapping_stationary_energy_transportation>
         The output of the previous agent is this: {state.get("extracted_gpc_mapping_stationary_energy_transportation")}.

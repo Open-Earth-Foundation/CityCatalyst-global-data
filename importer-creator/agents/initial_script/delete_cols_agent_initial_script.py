@@ -73,7 +73,7 @@ Ensure that the output is valid JSON and does not include any additional comment
     additional_information = f"""
 <additional_information>
 <user_context>
-This is the user provided context about the datafile: {state.get("context_user_provided")}. Give this information high priority in your considerations.
+This is the user provided context about the datafile: {state.get("user_input")}. Give this information high priority in your considerations.
 </user_context>
 <white_list>
 This is the white list of columns with descriptions. Use this to define which columns are not necessary and can be deleted: {json.dumps(white_list_mapping, indent=4)}

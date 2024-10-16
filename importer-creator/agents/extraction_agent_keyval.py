@@ -48,7 +48,7 @@ e. Identify the accociated sub-sector according to Greenhouse Gas Protocol for C
     This is the path to the original data file: {state.get('file_path')}.
     </file_path>
     <user_provided_context>
-    This is the user provided context: {state.get("context_user_provided")}
+    This is the user provided context: {state.get("user_input")}
     </user_provided_context>
     <gpc_master_document>
     You are provided with a retriever tool "Retriever" to retrieve information from the GPC Master document. Use this document every time to enrich your context.

@@ -14,8 +14,9 @@ load_dotenv()
 
 # Function to run the workflow and process the dataframe
 def process_datafile(
-    context_user_provided: str,
-    file_path: str,
+    full_path: str,
+    datasouce_name: str,
+    user_input: str,
     verbose: bool,
     show_graph: bool,
     hitl: bool,
@@ -37,12 +38,13 @@ def process_datafile(
         ### dataframe
         # df=df,
         ### file path
-        file_path=file_path,
+        full_path=full_path,
         ### agents
         # agent=agent,
         # agent_code=agent_code,
         ### contexts
-        context_user_provided=context_user_provided,
+        datasouce_name=datasouce_name,
+        user_input=user_input,
         ### summary
         # summary="",
         ### extracted data (output from extraction agents)
@@ -91,11 +93,12 @@ def process_datafile(
 
 
 # Main function to call
-def transform(file_path, context_user_provided, verbose, show_graph, hitl):
+def transform(full_path, datasouce_name, user_input, verbose, show_graph, hitl):
 
     state = process_datafile(
-        context_user_provided=context_user_provided,
-        file_path=file_path,
+        full_path=full_path,
+        datasouce_name=datasouce_name,
+        user_input=user_input,
         verbose=verbose,
         show_graph=show_graph,
         hitl=hitl,

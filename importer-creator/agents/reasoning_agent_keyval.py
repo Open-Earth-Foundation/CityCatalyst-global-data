@@ -39,7 +39,7 @@ Follow these instructions carefully:
         You are provided with a retriever tool "Retriever" to retrieve information from the GPC Master document. Use this document every time to enrich your context.
         </gpc_master_document>
         <user_provided_context>
-        This is the user provided context: {state.get("context_user_provided")}
+        This is the user provided context: {state.get("user_input")}
         </user_provided_context>
         <context_sector_subsector>
         This is the provided context for sectors and sub-sectors to be used: {context_sector_subsector},

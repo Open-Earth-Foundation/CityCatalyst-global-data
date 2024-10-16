@@ -72,7 +72,7 @@ Ensure that the output is valid JSON and does not include any additional comment
     additional_information = f"""
 <additional_information>
 <user_context>
-This is the user context provided: {state.get("context_user_provided")}. Give this information high priority in your considerations.
+This is the user context provided: {state.get("user_input")}. Give this information high priority in your considerations.
 </user_context>
 <context_scope>
 This is the additional context provided for identifying the activities: {json.dumps(scope_mappings, indent=4)}

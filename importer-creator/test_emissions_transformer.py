@@ -1,10 +1,5 @@
-# from utils.agent_creation import (
-#     create_coding_agent,
-#     create_agent_with_rag,
-# )
 from utils.data_loader import load_datafile_into_df
 
-# from workflow.graph_definition import create_workflow
 from utils.graph_renderer import render_graph
 from dotenv import load_dotenv
 
@@ -22,7 +17,7 @@ load_dotenv()
 
 # Function to run the workflow and process the dataframe
 def process_datafile(
-    context_user_provided: str,
+    user_input: str,
     file_path: str,
     verbose: bool,
     show_graph: bool,
@@ -66,7 +61,7 @@ def process_datafile(
         # agent=agent,
         # agent_code=agent_code,
         ### contexts
-        context_user_provided=context_user_provided,
+        user_input=user_input,
         ### summary
         summary="",
         ### extracted data (output from extraction agents)
@@ -120,10 +115,10 @@ def process_datafile(
 
 
 # Main function to call
-def transform(file_path, context_user_provided, verbose, show_graph, hitl):
+def transform(file_path, user_input, verbose, show_graph, hitl):
 
     state = process_datafile(
-        context_user_provided=context_user_provided,
+        user_input=user_input,
         file_path=file_path,
         verbose=verbose,
         show_graph=show_graph,
@@ -136,7 +131,7 @@ def transform(file_path, context_user_provided, verbose, show_graph, hitl):
 if __name__ == "__main__":
     transform(
         file_path="./files/raw_enargas_gas_consumption_AR.csv",
-        context_user_provided="""
+        user_input="""
         This is a dataset about gas consumptions in the region (actor_name) of Argentina for the gpc sectors 'Stationary Energy' and 'Transportation'
         """,
         verbose=True,

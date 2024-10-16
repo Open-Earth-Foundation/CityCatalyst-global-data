@@ -44,7 +44,7 @@ c. Provide detailed suggestions for improvements based on your analysis.
     This is the path to the original data file: {state.get('file_path')}.
     </file_path>
     <user_provided_context>
-    This is the user provided context: {state.get("context_user_provided")}
+    This is the user provided context: {state.get("user_input")}
     </user_provided_context>
 </additional_information>
 """

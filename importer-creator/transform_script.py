@@ -1,5 +1,5 @@
 # transform_script.py
-import sys
+
 import os
 import argparse
 import json
@@ -15,9 +15,15 @@ if __name__ == "__main__":
     )
 
     # Required arguments
-    parser.add_argument("inputfile", type=str, help="Input file name")
     parser.add_argument(
-        "context_user_provided", type=str, help="Context provided by the user"
+        "--input-file", type=str, required=True, help="Input file name/path"
+    )
+    # Required optional arguments
+    parser.add_argument(
+        "--datasource-name", type=str, required=True, help="Name of the data source"
+    )
+    parser.add_argument(
+        "--user-input", type=str, required=True, help="Context provided by the user"
     )
 
     # Optional flags
@@ -29,17 +35,23 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # Resolve file path
-    full_path = os.path.join("./files/", args.inputfile)
+    full_path = os.path.join("./files/", args.input_file)
 
-    print("\ninputfile: ", args.inputfile)
+    print("\ninputfile: ", args.input_file)
     print("full_path: ", full_path)
-    print("user_provided_context: ", args.context_user_provided)
+    print("datasource_name: ", args.datasource_name)
+    print("user_input: ", args.user_input)
     print("verbose: ", args.verbose)
     print("show_graph: ", args.show_graph)
     print("hitl: ", args.hitl)
 
     state = transform(
-        full_path, args.context_user_provided, args.verbose, args.show_graph, args.hitl
+        full_path,
+        args.datasource_name,
+        args.user_input,
+        args.verbose,
+        args.show_graph,
+        args.hitl,
     )
 
     # Custom encoder to handle non-serializable objects
