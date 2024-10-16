@@ -67,10 +67,10 @@ white_list_mapping = {
             "description": "The city where the data was collected, that the activity data (e.g. energy consumption or fuel consumption) is associated with",
             "examples": ["New York", "Bariloche", "Sao Paulo"],
         },
-        "locode": {  # UN/LOCODE is either 2 or 5 letters and can refer to a country or a city. Description might need to be adjusted and examples e.g. 'USNY'
+        "locode": {  
             "data_type": "string",
             "description": "The location code of the city where the data was collected, that the activity data (e.g. energy consumption or fuel consumption) is associated with, according to the UN/LOCODE standard",
-            "examples": ["USNY", "AR-BRC", "BR SAO", "USCAL", "ARTUC", "AR"],
+            "examples": ["USNYC", "AR-BRC", "BR SAO", "USCAL", "ARTUC", "AR"],
         },
         "coordinates": {
             "data_type": "float",
