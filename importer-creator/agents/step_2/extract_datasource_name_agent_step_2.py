@@ -7,16 +7,22 @@ from utils.create_prompt import create_prompt
 from utils.agent_creation import create_coding_agent
 from utils.json_output_cleaner import clean_json_output
 
+### Agent Description ###
+# This agent extracts the 'datasource_name' from the provided context for the datasource name.
 
-def extract_actor_name_agent_step_2(
+### Questions ###
+# Will the data source ever be given inside the csv file or could we assume that it will always only be provided in the user input?
+
+
+def extract_datasource_name_agent_step_2(
     state: AgentState,
 ):
-    print("\nEXTRACT REGION AGENT STEP 2\n")
+    print("\nEXTRACT DATGASOURCE NAME AGENT STEP 2\n")
 
     # Load the output files of initial script
-    input_path_csv = "./generated/step_2/steps/extracted_datasource_name.csv"
+    input_path_csv = "./generated/initial_script/final/generated_final_output.csv"
     input_path_script = (
-        "./generated/step_2/steps/generated_script_extracted_datasource_name.py"
+        "./generated/initial_script/final/generated_script_final_output.py"
     )
 
     # Load the csv file into the dataframe
@@ -26,28 +32,26 @@ def extract_actor_name_agent_step_2(
         script = file.read()
 
     # Define the output paths
-    output_path_csv = "./generated/step_2/steps/extracted_actor_name.csv"
+    output_path_csv = "./generated/step_2/steps/extracted_datasource_name.csv"
     output_path_script = (
-        "./generated/step_2/steps/generated_script_extracted_actor_name.py"
+        "./generated/step_2/steps/generated_script_extracted_datasource_name.py"
     )
     output_path_markdown = (
-        "./generated/step_2/steps/generated_markdown_extracted_actor_name.md"
+        "./generated/step_2/steps/generated_markdown_extracted_datasource_name.md"
     )
 
     task = """
-Your task is to extract the region from the provided python pandas dataframe based on instructions below. You will also create a runnable python script.
-Your inputs are the dataframe 'df', the prior script provided below inside <prior_script> tags and the user provided context in <user_context> tags.
+Your task is to extract the 'datasource_name' from the provided input under <datasource_name_context> tags. You will also create a runnable python script.
+Your inputs are the prior script provided below inside <prior_script> tags and the provided context in <datasource_name_context> tags.
 """
 
     completion_steps = f"""
-a. Inspect the .csv file provided under this path: {input_path_csv}. You are provided with a pandas dataframe 'df' based on this .csv file. Base your further analysis only on this dataframe 'df'. This is already an updated dataframe based on the python script under <prior_script> tags.
-    - NEVER load the .csv file saved in the 'input_path' variable which is provided in the script under <prior_script> tags. 
-b. Inspect the user provided context in <user_context> tags.
-c. Inspect the provided python script under <prior_script> tags.
-d. Determine the region of the data based on the content of the dataframe 'df' and the user provided context. If the region (e.g., a certain country or city) is named in the dataframe 'df' per row, use this value. If no region is mentioned in the dataframe 'df', use the user provided context within <user_context> tags below, to determine the region.
-e. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
+a. Inspect the provided context for the 'datasouce_name' in <datasource_name_context> tags.
+b. Inspect the provided python script under <prior_script> tags.
+c. Determine the 'datasource_name' of the data file based on the provided context in <datasource_name_context> tags.
+d. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
-    2. add a column 'actor_name' to the dataframe 'df_new' with the extracted region data.
+    2. add a column 'datasource_name' to the dataframe 'df_new' with the extracted 'datasource_name'.
     3. finally:
     - add code to output a new .csv file 'df_new.to_csv' so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma seperated ','. The .csv file must use 'encoding="utf-8"'.
     - the output path for the new .csv is this: {output_path_csv} 
@@ -70,9 +74,9 @@ Ensure that the output is valid JSON and does not include any additional comment
 """
     additional_information = f"""
 <additional_information>
-<user_context>
-This is the user context provided: {state.get("user_input")}. Give this information high priority in your considerations.
-</user_context>
+<datasource_name_context>
+This is the context provided for the datasource name: {state.get("datasource_name")}. Give this information high priority in your considerations.
+<datasource_name_context>
 <prior_script>
 This is the prior script provided: {script}.
 </prior_script>

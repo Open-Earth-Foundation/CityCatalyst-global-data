@@ -15,8 +15,10 @@ def extract_sector_agent_step_2(
     print("\nEXTRACT SECTOR AGENT STEP 2\n")
 
     # Load the output files of initial script
-    input_path_csv = "./generated/step_2/steps/extracted_region.csv"
-    input_path_script = "./generated/step_2/steps/generated_script_extracted_region.py"
+    input_path_csv = "./generated/step_2/steps/extracted_actor_name.csv"
+    input_path_script = (
+        "./generated/step_2/steps/generated_script_extracted_actor_name.py"
+    )
 
     # Load the csv file into the dataframe
     df = pd.read_csv(input_path_csv, encoding="utf-8")

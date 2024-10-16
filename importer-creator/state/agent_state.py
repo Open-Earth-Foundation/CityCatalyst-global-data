@@ -1,6 +1,7 @@
 import pandas as pd
 from typing import TypedDict, Annotated
-from langchain.agents import AgentExecutor
+
+# from langchain.agents import AgentExecutor
 
 
 # Define the state
@@ -9,6 +10,7 @@ class AgentState(TypedDict):
     full_path: Annotated[str, "The file path of the original data file"]
     # agent: Annotated[AgentExecutor, "The pre-instantiated agent"]
     # agent_code: Annotated[AgentExecutor, "The pre-instantiated coding agent"]
+    datasource_name: Annotated[str, "The datasource name"]
     user_input: Annotated[str, "The user provided context"]
     # summary: Annotated[str, "Summary and detailed description of the data file"]
     # extracted_data_keyval: Annotated[

@@ -16,6 +16,9 @@ from agents.initial_script.create_final_output_agent_initial_script import (
 )
 
 # Import for step 2
+from agents.step_2.extract_datasource_name_agent_step_2 import (
+    extract_datasource_name_agent_step_2,
+)
 from agents.step_2.extract_actor_name_agent_step_2 import (
     extract_actor_name_agent_step_2,
 )
@@ -210,10 +213,14 @@ def create_workflow():
         "datatypes_agent_initial_script", "create_final_output_agent_initial_script"
     )
     workflow.add_edge(
-        "create_final_output_agent_initial_script", "extract_actor_name_agent_step_2"
+        "create_final_output_agent_initial_script",
+        "extract_datasource_name_agent_step_2",
     )
 
     # Step 2
+    workflow.add_node(
+        "extract_datasource_name_agent_step_2", extract_datasource_name_agent_step_2
+    )
     workflow.add_node(
         "extract_actor_name_agent_step_2", extract_actor_name_agent_step_2
     )
@@ -227,6 +234,9 @@ def create_workflow():
     workflow.add_node("extract_scope_agent_step_2", extract_scope_agent_step_2)
     workflow.add_node("extract_gpc_refno_agent_step_2", extract_gpc_refno_agent_step_2)
 
+    workflow.add_edge(
+        "extract_datasource_name_agent_step_2", "extract_actor_name_agent_step_2"
+    )
     workflow.add_edge("extract_actor_name_agent_step_2", "extract_sector_agent_step_2")
     workflow.add_edge("extract_sector_agent_step_2", "extract_sub_sector_agent_step_2")
 

@@ -6,6 +6,9 @@ def create_final_output_agent_step_2(state: AgentState):
     print("\nCREATE FINAL OUTPUT AGENT STEP 2\n")
 
     # Load the previously created markdown files
+    input_path_markdown_extracted_datasource_name = (
+        "./generated/step_2/steps/generated_markdown_extracted_datasource_name.md"
+    )
     input_path_markdown_extracted_actor_name = (
         "./generated/step_2/steps/generated_markdown_extracted_actor_name.md"
     )
@@ -38,6 +41,7 @@ def create_final_output_agent_step_2(state: AgentState):
     with open(output_path_markdown, "w", encoding="utf-8") as outfile:
         outfile.write(f"# Report step 2\n\n")
         for markdown_file in [
+            input_path_markdown_extracted_datasource_name,
             input_path_markdown_extracted_actor_name,
             input_path_markdown_extracted_sector,
             input_path_markdown_extracted_sub_sector,
