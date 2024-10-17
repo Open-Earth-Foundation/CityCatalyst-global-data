@@ -44,8 +44,11 @@ a. Inspect the .csv file provided under this path: {input_path_csv}. You are pro
 b. Inspect the user provided context in <user_context> tags.
 c. Inspect the additional context for identifying the GPC scope in <context_gpc_refno> tags.
 d. Inspect the provided python script under <prior_script> tags.
-e. Determine the GPC reference number based on the content of the dataframe 'df', the user provided context in <user_context> tags and the additional context provided within <context_gpc_refno> tags. Each row in the dataframe 'df' should be assigned a GPC reference number based on the provided context. To do this you need to inspect the dataframe 'df' row by row and assign each row a GPC reference number based on the information provided in that row.
-    - Specifically, for each row, inspect the provided 'sector_name' column, 'subsector_name' column and 'scope' column. The GPC reference number is a combination of those according to the information provided in the <context_gpc_refno> tags.
+e. Identify columns in the dataframe 'df' that help to determine the GPC reference number based on the content of the dataframe 'df', the user provided context in <user_context> tags and the additional context provided within <context_gpc_refno> tags. 
+- Specifically, for each row, inspect the provided 'sector_name' column, 'subsector_name' column and 'scope' column. The GPC reference number is a combination of those according to the information provided in the <context_gpc_refno> tags.
+- Print out the unique values of these identified columns to make sure to include every unique value in your answer.
+- Each row in the dataframe 'df' should be assigned a GPC reference number based on the provided context. 
+- To do this you need to inspect the dataframe 'df' row by row and assign each row a GPC reference number based on the information provided in that row.
 f. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
     2. a mapping dictionary for the GPC reference number based on your prior analysis.

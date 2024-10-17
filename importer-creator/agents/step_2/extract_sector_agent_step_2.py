@@ -37,14 +37,16 @@ def extract_sector_agent_step_2(
 Your task is to extract the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) sector from the provided python pandas dataframe based on instructions below. You will also create a runnable python script.
 Your inputs are the dataframe 'df', the prior script provided below inside <prior_script> tags, the user provided context in <user_context> tags and additional context for identidying the GPC sector in <context_sector> tags.
 """
-
     completion_steps = f"""
 a. Inspect the .csv file provided under this path: {input_path_csv}. You are provided with a pandas dataframe 'df' based on this .csv file. Base your further analysis only on this dataframe 'df'. This is already an updated dataframe based on the python script under <prior_script> tags.
     - NEVER load the .csv file saved in the 'input_path' variable which is provided in the script under <prior_script> tags. 
 b. Inspect the user provided context in <user_context> tags.
 c. Inspect the additional context for identifying the GPC sector in <context_sector> tags.
 d. Inspect the provided python script under <prior_script> tags.
-e. Determine the GPC sector based on the content of the dataframe 'df', the user provided context in <user_context> tags and the additional context provided within <context_sector> tags. Each row in the dataframe 'df' should be assigned a GPC sector based on the provided context. To do this you need to work row by row and assign each row a GPC sector based on the information provided in this row.
+e. Identify columns in the dataframe 'df' that help to determine the GPC sector based on the content of the dataframe 'df', the user provided context in <user_context> tags and the additional context provided within <context_sector> tags. 
+- Print out the unique values of these identified columns to make sure to include every unique value in your answer.
+- Each row in the dataframe 'df' should be assigned a GPC sector based on the provided context. 
+- To do this you need to work row by row and assign each row a GPC sector based on the information provided in this row.
 f. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
     2. a mapping dictionary for the GPC sector based on your prior analysis. 

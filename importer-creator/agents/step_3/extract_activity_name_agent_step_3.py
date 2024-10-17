@@ -44,8 +44,11 @@ a. Inspect the .csv file provided under this path: {input_path_csv}. You are pro
 b. Inspect the user provided context in <user_context> tags.
 c. Inspect the additional context for identifying the GPC activities in <context_activities> tags.
 d. Inspect the provided python script under <prior_script> tags.
-e. Determine the GPC 'activity name' based on the content of the dataframe 'df', the user provided context in <user_context> tags and the additional context provided within <context_activities> tags. Each row in the dataframe 'df' should be assigned a GPC 'activity name' based on the provided context. To do this you need to inspect the dataframe 'df' row by row and assign each row a GPC 'activity name' based on the information provided in that row.
-    - Specifically inspect the colum 'gpc_refno' of the dataframe 'df'. This column helps in prefiltering the possible activity data types based on the GPC reference numbers within the provided context in <context_activities> tags.
+e. Identify columns in the dataframe 'df' that help to determine the GPC 'activity name' based on the content of the dataframe 'df', the user provided context in <user_context> tags and the additional context provided within <context_activities> tags. 
+- Specifically inspect the colum 'gpc_refno' of the dataframe 'df'. This column helps in prefiltering the possible activity data types based on the GPC reference numbers within the provided context in <context_activities> tags.
+- Print out the unique values of these identified columns to make sure to include every unique value in your answer.
+- Each row in the dataframe 'df' should be assigned a GPC 'activity name' based on the provided context. 
+- To do this you need to inspect the dataframe 'df' row by row and assign each row a GPC 'activity name' based on the information provided in that row.
 f. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
     2. a mapping dictionary for the GPC 'activity name' based on your prior analysis.

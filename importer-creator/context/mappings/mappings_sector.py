@@ -10,8 +10,8 @@ sector_mapping = {
     - This dictionary helps identify and map these GPC sectors.
 
     Examples:
-    - For Stationary Energy data, emissions come from fuel combustion and other energy sources.
-    - For Transportation data, emissions come from fuel combustion during road, rail, water, or air journeys.
+    - Activity data related to e.g. fuel combustion or electricity consumption for commercial buildings are mapped to Stationary Energy.
+    - Activity data related to e.g. fuel combusiton, fuel sales or electricity consumption during road, rail, water, or air journeys are mapped to Transportation.
 
     The names used in this dictionary are indicative and can be adapted based on specific datasets.
     """,

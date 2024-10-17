@@ -44,11 +44,14 @@ a. Inspect the .csv file provided under this path: {input_path_csv}. You are pro
 b. Inspect the user provided context in <user_context> tags.
 c. Inspect the additional context for identifying the GPC scope in <context_scope> tags.
 d. Inspect the provided python script under <prior_script> tags.
-e. Determine the GPC scope based on the content of the dataframe 'df', the user provided context in <user_context> tags and the additional context provided within <context_scope> tags. Each row in the dataframe 'df' should be assigned a GPC scope based on the provided context. To do this you need to inspect the dataframe 'df' row by row and assign each row a GPC scope based on the information provided in that row.
+e. Identify columns in the dataframe 'df' that help to determine the GPC scope based on the content of the dataframe 'df', the user provided context in <user_context> tags and the additional context provided within <context_scope> tags. 
+- Print out the unique values of these identified columns to make sure to include every unique value in your answer.
+- Each row in the dataframe 'df' should be assigned a GPC scope based on the provided context. 
+- To do this you need to inspect the dataframe 'df' row by row and assign each row a GPC scope based on the information provided in that row.
 f. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
     2. a mapping dictionary for the GPC scope based on your prior analysis.
-    3. add a column 'scope' to the dataframe 'df_new' and apply a GPC scope to each row of the 'df' based on the created mapping dictionary.
+    3. add a column 'scope' to the dataframe 'df_new' with datatype 'int' using '.astype(int)' and apply a GPC scope to each row of the 'df' based on the created mapping dictionary.
     4. finally:
     - add code to output a new .csv file 'df_new.to_csv' so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma seperated ','. The .csv file must use 'encoding="utf-8"'.
     - the output path for the new .csv is this: {output_path_csv} 

@@ -45,8 +45,13 @@ a. Inspect the .csv file provided under this path: {input_path_csv}. You are pro
 b. Inspect the user provided context in <user_context> tags.
 c. Inspect the additional context for identifying the GPC activities in <context_activities> tags.
 d. Inspect the provided python script under <prior_script> tags.
-e. Determine the GPC 'activity_subcategory_type1' based on the content of the dataframe 'df', the user provided context in <user_context> tags and the additional context provided within <context_activities> tags. Each row in the dataframe 'df' should be assigned a GPC 'activity_subcategory_type1' based on the provided context. To do this you need to inspect the dataframe 'df' row by row and assign each row a  GPC 'activity_subcategory_type1' based on the information provided in this row.
-f. Determine the GPC 'activity_subcategory_typename1' based on the content of the dataframe 'df', the user provided context in <user_context> tags and the additional context provided within <context_activities> tags. Each row in the dataframe 'df' should be assigned a GPC 'activity_subcategory_typename1' based on the provided context. To do this you need to inspect the dataframe 'df' row by row and assign each row a GPC 'activity_subcategory_typename1' based on the information provided in that row.
+e. Determine the GPC 'activity_subcategory_type1' based on the content of the dataframe 'df', the user provided context in <user_context> tags and the additional context provided within <context_activities> tags. 
+- Each row in the dataframe 'df' should be assigned a GPC 'activity_subcategory_type1' based on the provided context. 
+- To do this you need to inspect the dataframe 'df' row by row and assign each row a  GPC 'activity_subcategory_type1' based on the information provided in this row.
+f. Identify columns in the dataframe 'df' that help to determine the GPC 'activity_subcategory_typename1' based on the content of the dataframe 'df', the user provided context in <user_context> tags and the additional context provided within <context_activities> tags. 
+- Print out the unique values of these identified columns to make sure to include every unique value in your answer.
+- Each row in the dataframe 'df' should be assigned a GPC 'activity_subcategory_typename1' based on the provided context. 
+- To do this you need to inspect the dataframe 'df' row by row and assign each row a GPC 'activity_subcategory_typename1' based on the information provided in that row.
 g. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
     2. add a column 'activity_subcategory_type1' to the dataframe 'df_new' with the extracted GPC 'activity_subcategory_type1' based on your prior analysis.

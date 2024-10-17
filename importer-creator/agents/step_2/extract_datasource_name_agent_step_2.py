@@ -12,6 +12,7 @@ from utils.json_output_cleaner import clean_json_output
 
 ### Questions ###
 # Will the data source ever be given inside the csv file or could we assume that it will always only be provided in the user input?
+# ANSWER: it could also be in the file (see UAE file)
 
 
 def extract_datasource_name_agent_step_2(
