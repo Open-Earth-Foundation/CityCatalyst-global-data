@@ -7,17 +7,17 @@ from utils.create_prompt import create_prompt
 from utils.agent_creation import create_coding_agent
 from utils.json_output_cleaner import clean_json_output
 
-### Agent Description ###
-# This agent extracts the 'datasource_name' from the provided context for the datasource name.
-
-### Questions ###
-# Will the data source ever be given inside the csv file or could we assume that it will always only be provided in the user input?
-# ANSWER: it could also be in the file (see UAE file)
-
 
 def extract_datasource_name_agent_step_2(
     state: AgentState,
 ):
+    """
+    This function extracts the 'datasource_name' from the provided context for the datasource name or based on the content of the dataframe 'df'.
+
+    Inputs for extracting the 'datasource_name':
+        dataframe 'df': pd.DataFrame - The dataframe containing the data.
+        datasource_name_context: str - The context provided for the datasource name by the user
+    """
     print("\nEXTRACT DATGASOURCE NAME AGENT STEP 2\n")
 
     # Load the output files of initial script
@@ -43,13 +43,13 @@ def extract_datasource_name_agent_step_2(
 
     task = """
 Your task is to extract the 'datasource_name' from the provided input under <datasource_name_context> tags. You will also create a runnable python script.
-Your inputs are the prior script provided below inside <prior_script> tags and the provided context in <datasource_name_context> tags.
+Your inputs are the dataframe 'df', the prior script provided below inside <prior_script> tags and the provided context in <datasource_name_context> tags.
 """
 
     completion_steps = f"""
 a. Inspect the provided context for the 'datasouce_name' in <datasource_name_context> tags.
 b. Inspect the provided python script under <prior_script> tags.
-c. Determine the 'datasource_name' of the data file based on the provided context in <datasource_name_context> tags.
+c. Determine the 'datasource_name' of the data file based on the provided context in <datasource_name_context> tags or based on the content of the provided dataframe 'df'.
 d. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
     2. add a column 'datasource_name' to the dataframe 'df_new' with the extracted 'datasource_name'.
