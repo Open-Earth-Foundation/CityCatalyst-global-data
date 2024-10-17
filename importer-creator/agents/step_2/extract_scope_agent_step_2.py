@@ -44,7 +44,7 @@ a. Inspect the .csv file provided under this path: {input_path_csv}. You are pro
 b. Inspect the user provided context in <user_context> tags.
 c. Inspect the additional context for identifying the GPC scope in <context_scope> tags.
 d. Inspect the provided python script under <prior_script> tags.
-e. Identify columns in the dataframe 'df' that help to determine the GPC scope based on the content of the dataframe 'df', the user provided context in <user_context> tags and the additional context provided within <context_scope> tags. 
+e. Identify columns in the dataframe 'df' that help to determine the GPC scope.
 - Print out the unique values of these identified columns to make sure to include every unique value in your answer.
 - Each row in the dataframe 'df' should be assigned a GPC scope based on the provided context. 
 - To do this you need to inspect the dataframe 'df' row by row and assign each row a GPC scope based on the information provided in that row.

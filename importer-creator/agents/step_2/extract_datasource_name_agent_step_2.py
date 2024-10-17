@@ -18,7 +18,7 @@ def extract_datasource_name_agent_step_2(
         dataframe 'df': pd.DataFrame - The dataframe containing the data.
         datasource_name_context: str - The context provided for the datasource name by the user
     """
-    print("\nEXTRACT DATGASOURCE NAME AGENT STEP 2\n")
+    print("\nEXTRACT DATASOURCE NAME AGENT STEP 2\n")
 
     # Load the output files of initial script
     input_path_csv = "./generated/initial_script/final/generated_final_output.csv"

@@ -3,17 +3,14 @@
 sub_sector_mapping = {
     "__doc__": """
     This dictionary maps Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) sub-sectors to their respective GPC sectors, providing a clear overview of possible GPC sub-sectors based on GPC sector selection. 
-
+    
     Instructions for the LLM:
-    - The GPC sector already pre-selects the possible GPC sub-sectors.
+    - The selected GPC sector already pre-selects the possible GPC sub-sectors.
     - GPC sub-sectors may be named differently in datasets, so focus on the descriptions to match semantically similar terms or variations in names.
     - This dictionary helps identify and map these GPC sub-sectors.
     
-    Example:
-    - For the "Stationary Energy" GPC sector, the GPC sub-sectors may include "Residential buildings" or "Energy industries".
-    - For the "Transportation" GPC sector, the GPC sub-sectors may include "On-road" or "Aviation".
-
-    The names provided in this dictionary are indicative and can be adjusted to match dataset terminology.
+    Example 1: The current row was assigned the GPC sector "Stationary Energy". The GPC sub-sectors may only include one of "Residential buildings", "Commercial and institutional buildings and facilities", "Manufacturing industries and construction", "Energy industries", "Agriculture, forestry, and fishing activities", "Non-specified sources", "Fugitive emissions from mining, processing, storage, and transportation of coal" or "Fugitive emissions from oil and natural gas systems". The data contains the channel 'residential' which indicates usage for residential buildings. Based on this dictionary, this maps to the sub-sector "Residential buildings".
+    Example 2: The current row was assigned the GPC sector "Transportation". The GPC sub-sectors may only include on of "On-road", "Railways", "Waterborne navigation", "Aviation" or "Off-road". The data contains the channel 'agriculture' which indicates usage for agricultural vehicles. Based on this dictionary, this maps to the sub-sector "Off-road".
     """,
     "Stationary Energy": {
         "description": """Stationary energy sources are one of the largest contributors to a city's GHG emissions.

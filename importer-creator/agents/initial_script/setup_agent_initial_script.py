@@ -42,6 +42,7 @@ b. Create a python script. This python script must contain the following:
         - The path to the .csv file is provided in the additional information below under <file_path> tags. Store the path in a variable 'input_path'.
     2. a new dataframe 'df_new' that contains all the data of the original dataframe 'df' as a copy using 'df_new = df.copy(). Make all further manipulations on this new dataframe 'df_new'.
     3. normalized column names for 'df_new' where names are converted to 'lower case', strip them of any leading or trailing white spaces and replace any white spaces with underscores '_'.
+    4. normalized row entries for 'df_new' where all string entries are stripped of any leading or trailing white spaces using 'df_new.map(lambda x: x.strip() if isinstance(x, str) else x)'
     4. finally:
         - add code to output a new .csv file 'df_new.to_csv' with {output_path_csv} so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma seperated ','. The .csv file must use 'encoding="utf-8"'.
         - store the path to the new .csv file in a variable 'output_path'.

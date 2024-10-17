@@ -43,7 +43,7 @@ a. Inspect the .csv file provided under this path: {input_path_csv}. You are pro
 b. Inspect the user provided context in <user_context> tags.
 c. Inspect the additional context for identifying the GPC sector in <context_sector> tags.
 d. Inspect the provided python script under <prior_script> tags.
-e. Identify columns in the dataframe 'df' that help to determine the GPC sector based on the content of the dataframe 'df', the user provided context in <user_context> tags and the additional context provided within <context_sector> tags. 
+e. Identify columns in the dataframe 'df' that help to determine the GPC sector.
 - Print out the unique values of these identified columns to make sure to include every unique value in your answer.
 - Each row in the dataframe 'df' should be assigned a GPC sector based on the provided context. 
 - To do this you need to work row by row and assign each row a GPC sector based on the information provided in this row.

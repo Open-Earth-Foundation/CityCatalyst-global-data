@@ -44,11 +44,12 @@ a. Inspect the .csv file provided under this path: {input_path_csv}. You are pro
 b. Inspect the user provided context in <user_context> tags.
 c. Inspect the additional context for identifying the GPC sub-sector in <context_sub_sector> tags.
 d. Inspect the provided python script under <prior_script> tags.
-e. Identify columns in the dataframe 'df' that help to determine the GPC sub-sector based on the content of the dataframe 'df', the user provided context in <user_context> tags and the additional context provided within <context_sub_sector> tags. 
+e. Inspect for each row the values of the 'sector_name' column. The possible GPC sub-sector depends on the provided GPC sector.
+f. Identify further columns in the dataframe 'df' that help to determine the GPC sub-sector. 
 - Print out the unique values of these identified columns to make sure to include every unique value in your answer.
 - Each row in the dataframe 'df' should be assigned a GPC sub-sector based on the provided context. 
 - To do this you need to work row by row and assign each row a GPC sub-sector based on the information provided in this row.
-f. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
+g. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
     2. a mapping dictionary for the GPC sub-sector based on your prior analysis. 
     3. add a column 'subsector_name' to the dataframe 'df_new' which applies a GPC sub-sector to each row of the 'df' based on the created mapping dictionary.

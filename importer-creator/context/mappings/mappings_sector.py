@@ -4,16 +4,18 @@ sector_mapping = {
     "__doc__": """
     This dictionary provides an overview of different Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) sectors along with their descriptions.
     It is designed to help identify the correct sector when working with Greenhouse Gas (GHG) emission data in various domains like energy, transportation, waste, industrial processes, and agriculture.
+    When deciding on the sector, consider the entire context of a given activity. Keywords like 'agriculture' do not necessarily mean that the activity belongs to the Agriculture, Forestry and Other Land Use sector,
+    but could be related to fuel consumption of agricultural verhicles. 
 
     Instructions for the LLM:
     - Sectors may be named differently in datasets, so focus on the descriptions to match semantically similar terms or variations in names.
     - This dictionary helps identify and map these GPC sectors.
 
     Examples:
-    - Activity data related to e.g. fuel combustion or electricity consumption for commercial buildings are mapped to Stationary Energy.
-    - Activity data related to e.g. fuel combusiton, fuel sales or electricity consumption during road, rail, water, or air journeys are mapped to Transportation.
-
-    The names used in this dictionary are indicative and can be adapted based on specific datasets.
+    - Fuel sales for agricultural vehicles belong to the Transport sector
+    - Electricity consumption in office buildings belongs to the Stationary Energy sector
+    - Fuel combustion in industrial facilities belongs to Stationary Energy sector
+    - Raising cattle for dairy or meat production or converting forest land to cropland for agricultural purposes belongs to the Agriculture, Forestry and Other Land Use sector
     """,
     "Stationary Energy": {
         "description": """These emissions come from the combustion of fuels (e.g. propane, diesel, oil, natural gas, and others) in residential, commercial and institutional buildings and facilities and manufacturing industries and construction, 
