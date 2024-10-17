@@ -50,7 +50,7 @@ b. Create a python script. This python script must contain the following:
         - The code must contain python comments.
         - The code must be executable and must not contain any code errors.
         - The new script must contain all the content of the initial script in addition to the added data.
-        - NEVER replace the variable 'input_path' in the script. 
+        - **NEVER** replace the variable 'input_path' in the script. 
 """
 
     answer_format = """

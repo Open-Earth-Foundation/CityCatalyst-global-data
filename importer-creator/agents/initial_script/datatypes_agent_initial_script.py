@@ -62,7 +62,7 @@ f. Create a python script based on the script provided within <prior_script> tag
     - The code must contain python comments.
     - The code must be executable and must not contain any code errors.
     - The new script must contain all the content of the initial script in addition to the added data.
-    - NEVER replace the variable 'input_path' in the script. 
+    - **NEVER** replace the variable 'input_path' in the script loaded from <prior_script> tags.
 """
     answer_format = """
 Your output must be provided in JSON format. Provide all detailed reasoning in a structured and human readable way (e.g. using sub headers, bulletpoints and numbered lists) and the pure executable Python code in the following JSON format:
