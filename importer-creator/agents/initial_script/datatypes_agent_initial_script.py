@@ -56,7 +56,7 @@ Your inputs are:
 """
     completion_steps = f"""
 a. Inspect the .csv file provided under <input_path> tags below. You are provided with a pandas dataframe 'df' based on this .csv file. Base your further analysis only on this dataframe 'df'. This is already an updated dataframe based on the python script under <prior_script> tags.
-    - NEVER load the .csv file saved in the 'original_path' variable which is provided in the script under <prior_script> tags. 
+    - NEVER load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags. 
 b. Inspect the datatypes of each column in the dataframe 'df' and output a list of suggested corrections. 
 c. Inspect the provided python script under <prior_script> tags.
 d. Inspect the columns in the dataframe 'df' that contain dates and temporal data. Check if those columns have the correct datatype for dates. 

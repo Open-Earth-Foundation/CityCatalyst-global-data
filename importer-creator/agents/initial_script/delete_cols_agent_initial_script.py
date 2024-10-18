@@ -58,7 +58,7 @@ Your inputs are:
 
     completion_steps = f"""
 a. Inspect the .csv file provided under <input_path> tags below. You are provided with a pandas dataframe 'df' based on this .csv file. Base your further analysis only on this dataframe 'df'. This is already an updated dataframe based on the python script under <prior_script> tags below.
-    - NEVER load the .csv file saved in the 'original_path' variable which is provided in the script under <prior_script> tags. 
+    - NEVER load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags. 
 b. Inspect the white list of columns that cannot be deleted provided under <white_list> tags.
 c. Inspect the user provided context about the datafile under <user_context> tags.
 d. Inspect the provided python script under <prior_script> tags.
