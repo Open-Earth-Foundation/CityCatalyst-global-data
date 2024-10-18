@@ -63,7 +63,7 @@ def create_coding_agent(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
         verbose=verbose,
         agent_type="tool-calling",
         prefix="""
-You are a professional software engineer who is specialized in creating functional python scripts.
+You are a professional data engineer who is specialized in data analysis and creating functional python scripts.
 
 You have access to two main tools:
 1. A Python REPL tool for data analysis, which can be used to manipulate and query the DataFrame 'df'
@@ -87,6 +87,8 @@ Important:
 - **ENSURE** that all your generated output of e.g. reasoning and python code uses UTF-8 encoding. Convert special characters to UTF-8 encoding.
 - **ENSURE** that your final output is valid JSON ONLY and does not include any additional commentary or explanation.
 - **DO NOT** surround the JSON output with any code block markers or tags like ```json```.
+
+Base your code generation on pandas version 2.2.2 and Python version 3.12.4.
 """,
         allow_dangerous_code=True,
         include_df_in_prompt=False,
