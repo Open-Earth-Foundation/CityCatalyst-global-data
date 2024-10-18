@@ -11,6 +11,13 @@ from utils.json_output_cleaner import clean_json_output
 def setup_agent_initial_script(
     state: AgentState,
 ):
+    """
+    This agent is responsible for setting up the initial script for the data pipeline and is performing some preformatting tasks on the input data.
+
+    Inputs:
+        path to original csv file: str - The path to the original csv file provided by the user.
+        dataframe 'df': pd.DataFrame - The dataframe loaded from the original path.
+    """
     print("\nSETUP AGENT INITIAL SCRIPT\n")
 
     # Get the input path for the CSV file passed from the user
@@ -30,28 +37,54 @@ def setup_agent_initial_script(
 
     task = """
 Your task is to reformat a python pandas dataframe. You will do reformating based on below instructions and create a runnable python script.
-Your inputs are the original unformatted dataframe 'df'.
+Your inputs are:
+- the path to the original .csv file provided by the user under XML <file_path> tags below.
+- the original unformatted dataframe 'df' loaded from the original .csv file.
 """
 
     completion_steps = f"""
-a. Inspect the pandas dataframe 'df'.
-b. Create a python script. This python script must contain the following:
-    1. code to load the original .csv file 'df = pd.read_csv' with the path provided under <file_path> tags below into a pandas dataframe 'df'. 
-        - Use a correct encoding, so that special characters are displayed correctly based on the findings in <summary> tags. 
-        - When loading the datafile, define the correct seperator being used e.g. ',' or ';' and so on.
-        - The path to the .csv file is provided in the additional information below under <file_path> tags. Store the path in a variable 'input_path'.
-    2. a new dataframe 'df_new' that contains all the data of the original dataframe 'df' as a copy using 'df_new = df.copy(). Make all further manipulations on this new dataframe 'df_new'.
+a. Inspect the provided path to the original .csv file under XML <file_path> tags below.
+b. Inspect the provided pandas dataframe 'df'.
+c. Create a python script. This python script must contain the following:
+    1. code to load the original .csv file provided under into a pandas dataframe 'df'. 
+    - Use a correct encoding, so that potential special characters are displayed correctly. 
+    - When loading the datafile, define the correct separator being used e.g. ',' or ';'.
+    - Store the path of the orignal .csv file in a variable 'input_path'.
+    - Use the following code snippet:
+    ```python
+    input_path = ...
+    df = pd.read_csv(input_path, encoding=..., sep=...)
+    ```
+    2. a new dataframe 'df_new' that contains all the data of the original dataframe 'df'. Make all further manipulations on this new dataframe 'df_new'.
+    - Use the following code snippet:
+    ```python
+    df_new = df.copy()
+    ```
     3. normalized column names for 'df_new' where names are converted to 'lower case', strip them of any leading or trailing white spaces and replace any white spaces with underscores '_'.
-    4. normalized row entries for 'df_new' where all string entries are stripped of any leading or trailing white spaces using 'df_new.map(lambda x: x.strip() if isinstance(x, str) else x)'
-    4. finally:
-        - add code to output a new .csv file 'df_new.to_csv' with {output_path_csv} so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma seperated ','. The .csv file must use 'encoding="utf-8"'.
-        - store the path to the new .csv file in a variable 'output_path'.
+    - Use the following code snippet:
+    ```python
+    df_new.columns = df_new.columns.str.lower().str.strip().str.replace(' ', '_')
+    ```
+    4. normalized row entries for 'df_new' where all string entries are stripped of any leading or trailing white spaces.
+    - Use the following code snippet ensuring only .map is used (not .applymap) as .applymap is deprecated since pandas version 2.1.0:
+    ```python
+    # pandas.DataFrame.applymap is deprecated since pandas version 2.1.0
+    df_new = df_new.map(lambda x: x.strip() if isinstance(x, str) else x)
+    ```
+    5. finally:
+    - add code to output a new .csv file with the output path given below under XML <output_path> tags so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma separated ','. The .csv file must use 'encoding="utf-8"'.
+    - store the path to the new .csv file in a variable 'output_path'.
+    - Use the following code snippet:
+    ```python
+    output_path = ...
+    df_new.to_csv(output_path, encoding='utf-8', sep=',', index=False)
+    ```
 
-    IMORTANT: 
-        - The code must contain python comments.
-        - The code must be executable and must not contain any code errors.
-        - The new script must contain all the content of the initial script in addition to the added data.
-        - **NEVER** replace the variable 'input_path' in the script. 
+    IMPORTANT: 
+    - The code must contain python comments.
+    - The code must be executable and must not contain any code errors.
+    - The new script must contain all the content of the initial script in addition to the added data.
+    - **NEVER** replace the variable 'input_path' in the script. 
 """
 
     answer_format = """
@@ -68,12 +101,9 @@ Ensure that the output is valid JSON and does not include any additional comment
 <file_path>
 This is the path to the original data file: {state.get("full_path")}.
 </file_path>
-<feedback>
-<feedback_human-in-the-loop>
-If the user has provided feedback at the end of the entire data pipeline from the human-in-the-loop agent, you find it here: {state.get("feedback_hitl")}.
-This is the most important feedback to consider for your data extraction process. Rank this specific human-in-the-loop feedback highest in your considerations and make sure to incorporate it into your thinking.
-</feedback_human-in-the-loop>
-</feedback>
+<output_path>
+The output path for the new .csv file is this: {output_path_csv}.
+</output_path>
 </additional_information>
 """
 
@@ -117,6 +147,7 @@ This is the most important feedback to consider for your data extraction process
     # Save the generated code to a Python file
     if output.get("code"):
 
+        print("Create the script...")
         with open(output_path_script, "w", encoding="utf-8") as script_file:
             script_file.write(output["code"])
 
