@@ -1,6 +1,9 @@
 from langgraph.graph import StateGraph, END
 from state.agent_state import AgentState
 
+# For debugging only
+perform_steps = {"step_2": True, "step_3": False, "step_4": False}
+
 # Import for initial script
 from agents.initial_script.setup_agent_initial_script import setup_agent_initial_script
 from agents.initial_script.delete_cols_agent_initial_script import (
@@ -73,9 +76,7 @@ def has_user_provided_feedback(
 def create_workflow():
     workflow = StateGraph(AgentState)
 
-    # Add nodes to the graph
-
-    # Initial script
+    # Add nodes for the initial script
     workflow.add_node("setup_agent_initial_script", setup_agent_initial_script)
     workflow.add_node(
         "delete_cols_agent_initial_script", delete_cols_agent_initial_script
@@ -93,83 +94,113 @@ def create_workflow():
     workflow.add_edge(
         "datatypes_agent_initial_script", "create_final_output_agent_initial_script"
     )
-    workflow.add_edge(
-        "create_final_output_agent_initial_script",
-        "extract_datasource_name_agent_step_2",
-    )
 
     # Step 2
-    workflow.add_node(
-        "extract_datasource_name_agent_step_2", extract_datasource_name_agent_step_2
-    )
-    workflow.add_node(
-        "extract_actor_name_agent_step_2", extract_actor_name_agent_step_2
-    )
-    workflow.add_node("extract_sector_agent_step_2", extract_sector_agent_step_2)
-    workflow.add_node(
-        "extract_sub_sector_agent_step_2", extract_sub_sector_agent_step_2
-    )
-    workflow.add_node(
-        "create_final_output_agent_step_2", create_final_output_agent_step_2
-    )
-    workflow.add_node("extract_scope_agent_step_2", extract_scope_agent_step_2)
-    workflow.add_node("extract_gpc_refno_agent_step_2", extract_gpc_refno_agent_step_2)
+    if perform_steps["step_2"]:
+        workflow.add_node(
+            "extract_datasource_name_agent_step_2", extract_datasource_name_agent_step_2
+        )
+        workflow.add_node(
+            "extract_actor_name_agent_step_2", extract_actor_name_agent_step_2
+        )
+        workflow.add_node("extract_sector_agent_step_2", extract_sector_agent_step_2)
+        workflow.add_node(
+            "extract_sub_sector_agent_step_2", extract_sub_sector_agent_step_2
+        )
+        workflow.add_node(
+            "create_final_output_agent_step_2", create_final_output_agent_step_2
+        )
+        workflow.add_node("extract_scope_agent_step_2", extract_scope_agent_step_2)
+        workflow.add_node(
+            "extract_gpc_refno_agent_step_2", extract_gpc_refno_agent_step_2
+        )
 
-    workflow.add_edge(
-        "extract_datasource_name_agent_step_2", "extract_actor_name_agent_step_2"
-    )
-    workflow.add_edge("extract_actor_name_agent_step_2", "extract_sector_agent_step_2")
-    workflow.add_edge("extract_sector_agent_step_2", "extract_sub_sector_agent_step_2")
+        # Step 2 edges
+        workflow.add_edge(
+            "create_final_output_agent_initial_script",
+            "extract_datasource_name_agent_step_2",
+        )
+        workflow.add_edge(
+            "extract_datasource_name_agent_step_2", "extract_actor_name_agent_step_2"
+        )
+        workflow.add_edge(
+            "extract_actor_name_agent_step_2", "extract_sector_agent_step_2"
+        )
+        workflow.add_edge(
+            "extract_sector_agent_step_2", "extract_sub_sector_agent_step_2"
+        )
+        workflow.add_edge(
+            "extract_sub_sector_agent_step_2", "extract_scope_agent_step_2"
+        )
+        workflow.add_edge(
+            "extract_scope_agent_step_2", "extract_gpc_refno_agent_step_2"
+        )
+        workflow.add_edge(
+            "extract_gpc_refno_agent_step_2", "create_final_output_agent_step_2"
+        )
 
-    workflow.add_edge("extract_sub_sector_agent_step_2", "extract_scope_agent_step_2")
-    workflow.add_edge("extract_scope_agent_step_2", "extract_gpc_refno_agent_step_2")
-    workflow.add_edge(
-        "extract_gpc_refno_agent_step_2", "create_final_output_agent_step_2"
-    )
-    workflow.add_edge(
-        "create_final_output_agent_step_2", "extract_activity_name_agent_step_3"
-    )
+        # Only add step 3 edges if perform_steps["step_3"] is True
+        if perform_steps["step_3"]:
+            workflow.add_edge(
+                "create_final_output_agent_step_2",
+                "extract_activity_name_agent_step_3",
+            )
+    else:
+        workflow.add_edge("create_final_output_agent_initial_script", END)
 
     # Step 3
-    workflow.add_node(
-        "extract_activity_name_agent_step_3", extract_activity_name_agent_step_3
-    )
-    workflow.add_node(
-        "extract_activity_value_agent_step_3", extract_activity_value_agent_step_3
-    )
-    workflow.add_node(
-        "extract_activity_unit_agent_step_3", extract_activity_unit_agent_step_3
-    )
-    workflow.add_node(
-        "create_final_output_agent_step_3", create_final_output_agent_step_3
-    )
-    workflow.add_node(
-        "extract_activity_subcategory_1_step_3", extract_activity_subcategory_1_step_3
-    )
-    workflow.add_node(
-        "extract_activity_subcategory_2_step_3", extract_activity_subcategory_2_step_3
-    )
+    if perform_steps["step_3"]:
+        workflow.add_node(
+            "extract_activity_name_agent_step_3", extract_activity_name_agent_step_3
+        )
+        workflow.add_node(
+            "extract_activity_value_agent_step_3", extract_activity_value_agent_step_3
+        )
+        workflow.add_node(
+            "extract_activity_unit_agent_step_3", extract_activity_unit_agent_step_3
+        )
+        workflow.add_node(
+            "create_final_output_agent_step_3", create_final_output_agent_step_3
+        )
+        workflow.add_node(
+            "extract_activity_subcategory_1_step_3",
+            extract_activity_subcategory_1_step_3,
+        )
+        workflow.add_node(
+            "extract_activity_subcategory_2_step_3",
+            extract_activity_subcategory_2_step_3,
+        )
 
-    workflow.add_edge(
-        "extract_activity_name_agent_step_3", "extract_activity_value_agent_step_3"
-    )
-    workflow.add_edge(
-        "extract_activity_value_agent_step_3", "extract_activity_unit_agent_step_3"
-    )
-    workflow.add_edge(
-        "extract_activity_unit_agent_step_3", "extract_activity_subcategory_1_step_3"
-    )
-    workflow.add_edge(
-        "extract_activity_subcategory_1_step_3", "extract_activity_subcategory_2_step_3"
-    )
-    workflow.add_edge(
-        "extract_activity_subcategory_2_step_3", "create_final_output_agent_step_3"
-    )
-    workflow.add_edge("create_final_output_agent_step_3", END)
+        # Step 3 edges
+        workflow.add_edge(
+            "extract_activity_name_agent_step_3", "extract_activity_value_agent_step_3"
+        )
+        workflow.add_edge(
+            "extract_activity_value_agent_step_3", "extract_activity_unit_agent_step_3"
+        )
+        workflow.add_edge(
+            "extract_activity_unit_agent_step_3",
+            "extract_activity_subcategory_1_step_3",
+        )
+        workflow.add_edge(
+            "extract_activity_subcategory_1_step_3",
+            "extract_activity_subcategory_2_step_3",
+        )
+        workflow.add_edge(
+            "extract_activity_subcategory_2_step_3", "create_final_output_agent_step_3"
+        )
+    else:
+        if perform_steps["step_2"]:
+            workflow.add_edge("create_final_output_agent_step_2", END)
+        else:
+            workflow.add_edge("create_final_output_agent_initial_script", END)
 
-    # Step 4
+    # Step 4 placeholder logic
+    if perform_steps["step_4"]:
+        # Add Step 4 logic here when ready
+        pass
 
-    # Set the entrypoint
+    # Set the entry point
     workflow.set_entry_point("setup_agent_initial_script")
 
     return workflow.compile()
