@@ -55,18 +55,19 @@ Your inputs are:
 """
 
     completion_steps = f"""
-a. Inspect the provided context for the 'datasource_name' in <datasource_name_context> tags.
-b. Inspect the provided python script under <prior_script> tags.
-c. Determine the 'datasource_name' of the data file based on the provided context in <datasource_name_context> tags or based on the content of the provided dataframe 'df'.
-d. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
+a. Inspect the .csv file provided under <input_path> tags below. You are provided with a pandas dataframe 'df' based on this .csv file. Base your further analysis only on this dataframe 'df'. This is already an updated dataframe based on the python script under <prior_script> tags below.
+    - NEVER load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.  
+b. Inspect the provided context for the 'datasource_name' in <datasource_name_context> tags for identifying the datasource name.
+c. Inspect the provided python script under <prior_script> tags.
+d. Determine the 'datasource_name' of the data file based on the provided context in <datasource_name_context> tags or based on the content of the provided dataframe 'df'.
+e. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
     2. add a column 'datasource_name' to the dataframe 'df_new' with the extracted 'datasource_name'.
     3. finally:
     - add code to output a new .csv file 'df_new.to_csv' so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma seperated ','. The .csv file must use 'encoding="utf-8"'.
-    - the output path for the new .csv is given in <output_path> tags below.
-    - store the new path to the new .csv file in the updated variable named 'output_path'.
+    - store the new path given in <output_path> tags below in the updated variable named 'output_path' for exporting the new .csv file.
     
-    IMORTANT: 
+    IMPORTANT: 
     - The code must contain python comments.
     - The code must be executable and must not contain any code errors.
     - The new script must contain all the content of the initial script in addition to the added data.

@@ -57,7 +57,7 @@ Your inputs are:
     completion_steps = f"""
 a. Inspect the .csv file provided under <input_path> tags below. You are provided with a pandas dataframe 'df' based on this .csv file. Base your further analysis only on this dataframe 'df'. This is already an updated dataframe based on the python script under <prior_script> tags below.
     - NEVER load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.  
-b. Inspect the user provided context in <user_context> tags.
+b. Inspect the user provided context in <user_context> tags for identifying the associated region of the dataset.
 c. Inspect the provided python script under <prior_script> tags.
 d. Determine the region of the data based on the content of the dataframe 'df' and the user provided context. If the region (e.g., a certain country or city) is named in the dataframe 'df' per row, use this value. If no region is mentioned in the dataframe 'df', use the user provided context within <user_context> tags below, to determine the region.
 e. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
@@ -65,10 +65,9 @@ e. Create a python script based on the script provided within <prior_script> tag
     2. add a column 'actor_name' to the dataframe 'df_new' with the extracted region data.
     3. finally:
     - add code to output a new .csv file 'df_new.to_csv' so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma seperated ','. The .csv file must use 'encoding="utf-8"'.
-    - the output path for the new .csv is given in <output_path> tags below.
-    - store the new path to the new .csv file in the updated variable named 'output_path'.
+    - store the new path given in <output_path> tags below in the updated variable named 'output_path' for exporting the new .csv file.
     
-    IMORTANT: 
+    IMPORTANT: 
     - The code must contain python comments.
     - The code must be executable and must not contain any code errors.
     - The new script must contain all the content of the initial script in addition to the added data.

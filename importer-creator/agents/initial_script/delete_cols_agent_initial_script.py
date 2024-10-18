@@ -68,8 +68,7 @@ f. Create a python script based on the script provided within <prior_script> tag
     2. delete all columns from the dataframe 'df_new' that are not necessary, based on your analysis of the white list provided under <white_list> tags below. If you are in doubt about a certain column, do not delete it and flag it for further inspection in your reasoning.
     3. finally:
     - add code to output a new .csv file 'df_new.to_csv' so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma separated ','. The .csv file must use 'encoding="utf-8"'.
-    - the output path for the new .csv is given in <output_path> tags below. 
-    - store the output path provided under <output_path> tags below to the new .csv file in the updated variable named 'output_path'.
+    - store the new path given in <output_path> tags below in the updated variable named 'output_path' for exporting the new .csv file.
     
     IMPORTANT: 
     - The code must contain python comments.

@@ -77,8 +77,7 @@ f. Create a python script based on the script provided within <prior_script> tag
     ```
     4. finally:
     - add code to output a new .csv file 'df_new.to_csv' so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma seperated ','. The .csv file must use 'encoding="utf-8"'.
-    - the output path for the new .csv is given in <output_path> tags below.
-    - store the new path to the new .csv file in the updated variable named 'output_path'.
+    - store the new path given in <output_path> tags below in the updated variable named 'output_path' for exporting the new .csv file.
     
     IMPORTANT: 
     - The code must contain python comments.
