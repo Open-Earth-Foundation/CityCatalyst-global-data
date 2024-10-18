@@ -72,7 +72,8 @@ f. Create a python script based on the script provided within <prior_script> tag
     3. converted date columns to valid datetime data type based on your prior analysis.
     - Use the following code snippet:
     ```python
-    pd.to_datetime(..., format='...', errors='coerce')
+    format = '...'
+    pd.to_datetime(..., format=format, errors='coerce')
     ```
     4. finally:
     - add code to output a new .csv file 'df_new.to_csv' so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma seperated ','. The .csv file must use 'encoding="utf-8"'.
