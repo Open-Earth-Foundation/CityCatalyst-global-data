@@ -15,16 +15,17 @@ def setup_agent_initial_script(
     This agent is responsible for setting up the initial script for the data pipeline and is performing some preformatting tasks on the input data.
 
     Inputs:
-        path to original csv file: str - The path to the original csv file provided by the user.
-        dataframe 'df': pd.DataFrame - The dataframe loaded from the original path.
+        Original path to original csv file.
+        The dataframe loaded from the original path.
+        Output path for the generated files.
     """
     print("\nSETUP AGENT INITIAL SCRIPT\n")
 
-    # Get the input path for the CSV file passed from the user
-    input_path_csv = state.get("full_path")
+    # Get the original path for the CSV file passed from the user
+    original_path_csv = state.get("full_path")
 
-    # Load the input CSV file into a pandas dataframe
-    df = pd.read_csv(input_path_csv, encoding="utf-8")
+    # Load the original CSV file into a pandas dataframe
+    df = pd.read_csv(original_path_csv, encoding="utf-8")
 
     # Define the output paths for the generated files
     output_path_csv = "./generated/initial_script/steps/formatted_initially.csv"
@@ -38,22 +39,23 @@ def setup_agent_initial_script(
     task = """
 Your task is to reformat a python pandas dataframe. You will do reformating based on below instructions and create a runnable python script.
 Your inputs are:
-- the path to the original .csv file provided by the user under XML <file_path> tags below.
+- the path to the original .csv file provided by the user under <original_path> tags below.
 - the original unformatted dataframe 'df' loaded from the original .csv file.
+- the output path for the new .csv file under <output_path> tags below.
 """
 
     completion_steps = f"""
-a. Inspect the provided path to the original .csv file under XML <file_path> tags below.
+a. Inspect the provided path to the original .csv file under <original_path> tags below.
 b. Inspect the provided pandas dataframe 'df'.
 c. Create a python script. This python script must contain the following:
     1. code to load the original .csv file provided under into a pandas dataframe 'df'. 
     - Use a correct encoding, so that potential special characters are displayed correctly. 
     - When loading the datafile, define the correct separator being used e.g. ',' or ';'.
-    - Store the path of the orignal .csv file in a variable 'input_path'.
+    - Store the path of the orignal .csv file in a variable 'original_path'.
     - Use the following code snippet:
     ```python
-    input_path = ...
-    df = pd.read_csv(input_path, encoding=..., sep=...)
+    original_path = ...
+    df = pd.read_csv(original_path, encoding=..., sep=...)
     ```
     2. a new dataframe 'df_new' that contains all the data of the original dataframe 'df'. Make all further manipulations on this new dataframe 'df_new'.
     - Use the following code snippet:
@@ -69,10 +71,11 @@ c. Create a python script. This python script must contain the following:
     - Use the following code snippet ensuring only .map is used (not .applymap) as .applymap is deprecated since pandas version 2.1.0:
     ```python
     # pandas.DataFrame.applymap is deprecated since pandas version 2.1.0
+    # The official pandas documentation recommends using .map instead of .applymap for elementwise operations on the entire dataframe
     df_new = df_new.map(lambda x: x.strip() if isinstance(x, str) else x)
     ```
     5. finally:
-    - add code to output a new .csv file with the output path given below under XML <output_path> tags so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma separated ','. The .csv file must use 'encoding="utf-8"'.
+    - add code to output a new .csv file with the output path given below under <output_path> tags so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma separated ','. The .csv file must use 'encoding="utf-8"'.
     - store the path to the new .csv file in a variable 'output_path'.
     - Use the following code snippet:
     ```python
@@ -84,7 +87,7 @@ c. Create a python script. This python script must contain the following:
     - The code must contain python comments.
     - The code must be executable and must not contain any code errors.
     - The new script must contain all the content of the initial script in addition to the added data.
-    - **NEVER** replace the variable 'input_path' in the script. 
+    - **NEVER** replace the variable 'original_path' in the script. 
 """
 
     answer_format = """
@@ -93,14 +96,14 @@ Your output must be provided in JSON format. Provide all detailed reasoning in a
     "reasoning": "Your detailed reasoning here...",
     "code": "Your pure executable Python code here..."
 }
-Ensure that the output is valid JSON and does not include any additional commentary or explanation. Do not surround the JSON ooutput with any code block markers or tags like ```json```.
+Ensure that the output is valid JSON and does not include any additional commentary or explanation. Do not surround the JSON output with any code block markers or tags like ```json```.
 """
 
     additional_information = f"""
 <additional_information>
-<file_path>
+<original_path>
 This is the path to the original data file: {state.get("full_path")}.
-</file_path>
+</original_path>
 <output_path>
 The output path for the new .csv file is this: {output_path_csv}.
 </output_path>
