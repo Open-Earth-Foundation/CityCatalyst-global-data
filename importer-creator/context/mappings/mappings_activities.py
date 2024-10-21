@@ -1,5 +1,9 @@
 # Python dictionary to map the activity types with the GPC reference numbers and the activities names and subcategories
 
+# transportatin
+# subcategory type 2 is specific vehicel type like car, taxi, whatever. If not found its generally on-road
+# commercial buildings: always general commercial buildings unless specific building type is mentioned like street lighting or istitutional building
+
 activity_mappings = {
     "__doc__": """
     This dictionary maps the most common activity names related to actions that generate greenhouse gas emissions and their corresponding subcategories, which include additional information to understand the activity (for example, the fuel type or the end user of the electricity).
