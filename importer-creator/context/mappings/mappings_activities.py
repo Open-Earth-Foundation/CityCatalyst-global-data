@@ -18,7 +18,7 @@ activity_mappings = {
     - Names in the lists are indicative and can be changed according to the specific dataset.
 
     Examples:
-    - If the dataset contains data from fuel sales in the transportation sector, the activity name would be 'fuel combustion' and the subcategories would be "fuel type": "diesel" and "user type": "gas stations".
+    - If the dataset contains data from diesel sales with a GPC reference number "I.1.1" in the transportation sector, the activity name would be 'fuel combustion' and the subcategories would be "fuel type": "diesel" and "user type": "gas stations".
     - If the dataset contains data from electricity consumption in residential buildings, the activity name would be 'electricity consumption' and the subcategories would be "electricity type": "grid-energy supply" and "user type": "residential buildings".
     - If the dataser contains data from fuel consumption in industrial facilities, the activity name would be 'fuel combustion' and the subcategories would be "fuel type": "natural gas" and "user type": "industrial facilities".
 
@@ -89,6 +89,7 @@ activity_mappings = {
                 "activity_subcategories2": {
                     "description": "It refers to the type of user that is using the fuel. This can be a residential building, commercial building, industrial facility, or any transportation sector.",
                     "type": "user_type",
+                    # This mapping will not work properly as the different names are too similar e.g. Trains and Railways. How are they different?
                     "name": [
                         "Residential buildings",
                         "Commercial buildings",
@@ -107,12 +108,14 @@ activity_mappings = {
                         "Trains",
                         "Railways",
                         "Cars",
-                        "Motorcycles" "Buses",
+                        "Motorcycles",
+                        "Buses",
                         "Trucks",
                         "Off-road vehicles",
                         "Fishing mobile combustion",
                         "Emergency vehicles",
-                        "Service vehicles" "Gas stations",
+                        "Service vehicles",
+                        "Gas stations",
                         "Service stations, storage and distribution",
                         "Vessels",
                         "Aircraft",
@@ -146,6 +149,7 @@ activity_mappings = {
                 "activity_subcategories2": {
                     "description": "It refers to the type of user that is using the electricity. This can be a residential building, commercial building, industrial facility, or any transportation sector.",
                     "type": "user_type",
+                    # This mapping will not work properly as the different names are too similar e.g. Trains and Railways. How are they different?
                     "name": [
                         "Residential buildings",
                         "Commercial buildings",
