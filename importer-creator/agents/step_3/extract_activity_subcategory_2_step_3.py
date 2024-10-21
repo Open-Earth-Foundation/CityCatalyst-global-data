@@ -9,6 +9,7 @@ from utils.json_output_cleaner import clean_json_output
 from context.mappings.mappings_activities import activity_mappings
 
 
+# TODO: Consider splitting this into two agents for type and name
 def extract_activity_subcategory_2_step_3(
     state: AgentState,
 ):
@@ -79,7 +80,7 @@ g. Create a python script based on the script provided within <prior_script> tag
     - add code to output a new .csv file 'df_new.to_csv' so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma seperated ','. The .csv file must use 'encoding="utf-8"'.
     - store the new path given in <output_path> tags below in the updated variable named 'output_path' for exporting the new .csv file.
     
-    IMORTANT: 
+    IMPORTANT: 
     - The code must contain python comments.
     - The code must be executable and must not contain any code errors.
     - The new script must contain all the content of the initial script in addition to the added data.
@@ -92,7 +93,7 @@ Your output must be provided in JSON format. Provide all detailed reasoning in a
     "reasoning": "Your detailed reasoning here...",
     "code": "Your pure executable Python code here..."
 }
-Ensure that the output is valid JSON and does not include any additional commentary or explanation. Do not surround the JSON ooutput with any code block markers or tags like ```json```.
+Ensure that the output is valid JSON and does not include any additional commentary or explanation. Do not surround the JSON output with any code block markers or tags like ```json```.
 """
     additional_information = f"""
 <additional_information>
