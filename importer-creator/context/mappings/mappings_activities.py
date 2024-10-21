@@ -18,9 +18,9 @@ activity_mappings = {
     - Names in the lists are indicative and can be changed according to the specific dataset.
 
     Examples:
-    - If the dataset contains data from diesel sales with a GPC reference number "I.1.1" in the transportation sector, the activity name would be 'fuel combustion' and the subcategories would be "fuel type": "diesel" and "user type": "gas stations".
+    - If the dataset contains data from diesel sales with a GPC reference number "I.1.1" in the transportation sector, the activity name would be 'fuel combustion' and the subcategories would be "fuel type": "diesel".
     - If the dataset contains data from electricity consumption in residential buildings, the activity name would be 'electricity consumption' and the subcategories would be "electricity type": "grid-energy supply" and "user type": "residential buildings".
-    - If the dataser contains data from fuel consumption in industrial facilities, the activity name would be 'fuel combustion' and the subcategories would be "fuel type": "natural gas" and "user type": "industrial facilities".
+    - If the dataset contains data from consumption of natural gases in industrial facilities, the activity name would be 'fuel combustion' and the subcategories would be "fuel type": "natural gas" and "user type": "industrial facilities".
 
     The names given in this dictionary are indicative and can be changed according to the specific dataset.
     """,
