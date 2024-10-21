@@ -88,7 +88,7 @@ Ensure that the output is valid JSON and does not include any additional comment
 This is the input path to the .csv file created by the prior agent: {input_path_csv}
 </input_path>
 <datasource_name_context>
-This is the context provided for the datasource name: {state.get("datasource_name")}. Give this information high priority in your considerations.
+This is the context provided for the datasource name from the user: {state.get("datasource_name")}. If there are conflicting values between different sources, use this user context as the highest priority.
 </datasource_name_context>
 <prior_script>
 This is the prior script provided: {script}.

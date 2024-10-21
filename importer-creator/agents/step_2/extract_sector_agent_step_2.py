@@ -94,7 +94,7 @@ Ensure that the output is valid JSON and does not include any additional comment
 This is the input path to the .csv file created by the prior agent: {input_path_csv}
 </input_path>
 <user_context>
-This is the user context provided: {state.get("user_input")}. Give this information high priority in your considerations.
+This is the user context provided: {state.get("user_input")}. If there are conflicting values between different sources, use this user context as the highest priority.
 </user_context>
 <context_sector>
 This is the additional context provided for identifying the sector: {json.dumps(sector_mapping, indent=4)}

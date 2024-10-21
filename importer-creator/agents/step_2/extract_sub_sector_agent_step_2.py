@@ -13,7 +13,7 @@ def extract_sub_sector_agent_step_2(
     state: AgentState,
 ):
     """
-    This agent extracts the GPC 'sub_sector' based on the content of the dataframe 'df' and the provided user context.
+    This agent extracts the GPC 'sub_sector' based on the content of the dataframe 'df', the provided user context and a mapping dictionary for the sub-sectors.
 
     Inputs:
         Input path to the csv file created by the prior agent.
@@ -95,7 +95,7 @@ Ensure that the output is valid JSON and does not include any additional comment
 This is the input path to the .csv file created by the prior agent: {input_path_csv}
 </input_path>
 <user_context>
-This is the user context provided: {state.get("user_input")}. Give this information high priority in your considerations.
+This is the user context provided: {state.get("user_input")}. If there are conflicting values between different sources, use this user context as the highest priority.
 </user_context>
 <context_sub_sector>
 This is the additional context provided for identifying the GPC sub-sector: {json.dumps(sub_sector_mapping, indent=4)}.
