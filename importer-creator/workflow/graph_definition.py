@@ -2,7 +2,7 @@ from langgraph.graph import StateGraph, END
 from state.agent_state import AgentState
 
 # For debugging only
-perform_steps = {"step_2": True, "step_3": False, "step_4": False}
+perform_steps = {"step_2": True, "step_3": True, "step_4": True}
 
 # Import for initial script
 from agents.initial_script.setup_agent_initial_script import setup_agent_initial_script
@@ -54,7 +54,11 @@ from agents.step_3.extract_activity_subcategory_2_step_3 import (
 )
 
 # Import for step 4
+from agents.step_4.extract_methodology_name_agent_step_4 import (
+    extract_methodology_name_agent_step_4,
+)
 
+# Import for Human-in-the-Loop (HITL) agent
 from agents.hitl_agent import hitl_agent
 
 
@@ -189,16 +193,35 @@ def create_workflow():
         workflow.add_edge(
             "extract_activity_subcategory_2_step_3", "create_final_output_agent_step_3"
         )
+
+        # Only add step 4 edges if perform_steps["step_4"] is True
+        if perform_steps["step_4"]:
+            workflow.add_edge(
+                "create_final_output_agent_step_3",
+                "extract_methodology_name_agent_step_4",
+            )
+
     else:
         if perform_steps["step_2"]:
             workflow.add_edge("create_final_output_agent_step_2", END)
         else:
             workflow.add_edge("create_final_output_agent_initial_script", END)
 
-    # Step 4 placeholder logic
+    # Step 4
     if perform_steps["step_4"]:
-        # Add Step 4 logic here when ready
-        pass
+        workflow.add_node(
+            "extract_methodology_name_agent_step_4",
+            extract_methodology_name_agent_step_4,
+        )
+        workflow.add_edge("extract_methodology_name_agent_step_4", END)
+
+    else:
+        if perform_steps["step_3"]:
+            workflow.add_edge("create_final_output_agent_step_3", END)
+        elif perform_steps["step_2"]:
+            workflow.add_edge("create_final_output_agent_step_2", END)
+        else:
+            workflow.add_edge("create_final_output_agent_initial_script", END)
 
     # Set the entry point
     workflow.set_entry_point("setup_agent_initial_script")
