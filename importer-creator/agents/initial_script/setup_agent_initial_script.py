@@ -28,13 +28,9 @@ def setup_agent_initial_script(
     df = pd.read_csv(original_path_csv, encoding="utf-8")
 
     # Define the output paths for the generated files
-    output_path_csv = "./generated/initial_script/steps/formatted_initially.csv"
-    output_path_script = (
-        "./generated/initial_script/steps/generated_script_initially.py"
-    )
-    output_path_markdown = (
-        "./generated/initial_script/steps/generated_markdown_initially.md"
-    )
+    output_path_csv = "./generated/initial_script/steps/1_initially.csv"
+    output_path_script = "./generated/initial_script/steps/1_initially.py"
+    output_path_markdown = "./generated/initial_script/steps/1_initially.md"
 
     task = """
 Your task is to reformat a python pandas dataframe. You will do reformating based on below instructions and create a runnable python script.
@@ -66,6 +62,14 @@ c. Create a python script. This python script must contain the following:
     - Use the following code snippet:
     ```python
     df_new.columns = df_new.columns.str.lower().str.strip().str.replace(' ', '_')
+    ```
+    - **ATTENTION**: If after renaming the columns, 2 or more columns would end up having the same name, index them with suffixes '_b', '_c' and so on for every repeated name to make them unique. This can happen when there is e.g. the column 'EXAMPLE', 'Example' and 'example' in the original dataframe. This should result in 'example', 'example_b' and 'example_c' respectively in the new dataframe.
+    - Use the following code snippet:
+    ```python
+    cols = pd.Series(df_new.columns)
+    for dup in cols[cols.duplicated()].unique():
+        cols[cols[cols == dup].index.values.tolist()] = [dup + '_' + chr(i) for i in range(97, 97 + sum(cols == dup))]
+    df_new.columns = cols
     ```
     4. normalized row entries for 'df_new' where all string entries are stripped of any leading or trailing white spaces.
     - Use the following code snippet ensuring only .map is used (not .applymap) as .applymap is deprecated since pandas version 2.1.0:

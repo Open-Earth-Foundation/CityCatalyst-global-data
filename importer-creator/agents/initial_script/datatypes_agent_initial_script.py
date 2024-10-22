@@ -26,10 +26,8 @@ def datatypes_agent_initial_script(state: AgentState):
     print("\nFIX DATATYPES AGENT INITIAL SCRIPT\n")
 
     # Load the previously created formatted csv file into a pandas dataframe
-    input_path_csv = "./generated/initial_script/steps/formatted_deleted_columns.csv"
-    input_path_script = (
-        "./generated/initial_script/steps/generated_script_deleted_columns.py"
-    )
+    input_path_csv = "./generated/initial_script/steps/2_deleted_columns.csv"
+    input_path_script = "./generated/initial_script/steps/2_deleted_columns.py"
 
     # Load the csv file into the dataframe
     df = pd.read_csv(input_path_csv, encoding="utf-8")
@@ -37,13 +35,9 @@ def datatypes_agent_initial_script(state: AgentState):
     with open(input_path_script, "r", encoding="utf-8") as file:
         script = file.read()
 
-    output_path_csv = "./generated/initial_script/steps/formatted_datatypes.csv"
-    output_path_script = (
-        "./generated/initial_script/steps/generated_script_datatypes.py"
-    )
-    output_path_markdown = (
-        "./generated/initial_script/steps/generated_markdown_datatypes.md"
-    )
+    output_path_csv = "./generated/initial_script/steps/3_datatypes.csv"
+    output_path_script = "./generated/initial_script/steps/3_datatypes.py"
+    output_path_markdown = "./generated/initial_script/steps/3_datatypes.md"
 
     task = """
 Your task is to inspect and correct the datatypes of columns of the provided DataFrame 'df'. You will also create a runnable python script.
@@ -102,7 +96,11 @@ This is the input path to the .csv file created by the prior agent: {input_path_
 This list provides information on datatypes for each column type: {json.dumps(white_list_mapping, indent=4)}
 </white_list>
 <prior_script>
-This is the prior script provided: {script}
+This is the prior python script provided:
+    
+```python
+{script}
+```
 </prior_script>
 <output_path>
 This is the output path for the new .csv file: {output_path_csv}

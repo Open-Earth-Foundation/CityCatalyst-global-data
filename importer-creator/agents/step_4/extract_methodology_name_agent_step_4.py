@@ -94,7 +94,11 @@ This is the input path to the .csv file created by the prior agent: {input_path_
 This is the mapping provided for identifying the methodolgy name: {json.dumps(methodologies_mapping, indent=4)}
 </mappings_methodologies>
 <prior_script>
-This is the prior script provided: {script}.
+This is the prior python script provided:
+    
+```python
+{script}
+```
 </prior_script>
 <output_path>
 This is the output path for the new .csv file: {output_path_csv}

@@ -100,7 +100,11 @@ This is the user context provided: {state.get("user_input")}. If there are confl
 This is the additional context provided for identifying the activities: {json.dumps(scope_mappings, indent=4)}
 </context_scope>
 <prior_script>
-This is the prior script provided: {script}.
+This is the prior python script provided:
+    
+```python
+{script}
+```
 </prior_script>
 <output_path>
 This is the output path for the new .csv file: {output_path_csv}

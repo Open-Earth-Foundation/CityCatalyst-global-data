@@ -24,10 +24,8 @@ def extract_datasource_name_agent_step_2(
     print("\nEXTRACT DATASOURCE NAME AGENT STEP 2\n")
 
     # Load the output files of initial script
-    input_path_csv = "./generated/initial_script/final/generated_final_output.csv"
-    input_path_script = (
-        "./generated/initial_script/final/generated_script_final_output.py"
-    )
+    input_path_csv = "./generated/initial_script/final/final_output.csv"
+    input_path_script = "./generated/initial_script/final/final_output.py"
 
     # Load the csv file into the dataframe
     df = pd.read_csv(input_path_csv, encoding="utf-8")
@@ -91,7 +89,11 @@ This is the input path to the .csv file created by the prior agent: {input_path_
 This is the context provided for the datasource name from the user: {state.get("datasource_name")}. If there are conflicting values between different sources, use this user context as the highest priority.
 </datasource_name_context>
 <prior_script>
-This is the prior script provided: {script}.
+This is the prior python script provided:
+    
+```python
+{script}
+```
 </prior_script>
 <output_path>
 This is the output path for the new .csv file: {output_path_csv}

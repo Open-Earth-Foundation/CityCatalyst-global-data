@@ -6,32 +6,22 @@ def create_final_output_agent_initial_script(state: AgentState):
     print("\nCREATE FINAL OUTPUT AGENT INITIAL SCRIPT\n")
 
     # Load the previously created markdown files
-    input_path_markdown_initially = (
-        "./generated/initial_script/steps/generated_markdown_initially.md"
-    )
+    input_path_markdown_initially = "./generated/initial_script/steps/1_initially.md"
     input_path_markdown_deleted_columns = (
-        "./generated/initial_script/steps/generated_markdown_deleted_columns.md"
+        "./generated/initial_script/steps/2_deleted_columns.md"
     )
-    input_path_markdown_datatypes = (
-        "./generated/initial_script/steps/generated_markdown_datatypes.md"
-    )
+    input_path_markdown_datatypes = "./generated/initial_script/steps/3_datatypes.md"
 
     # Load the last created python script
-    input_path_last_script = (
-        "./generated/initial_script/steps/generated_script_datatypes.py"
-    )
+    input_path_last_script = "./generated/initial_script/steps/3_datatypes.py"
 
     # Load the last created csv file
-    input_path_last_csv = "./generated/initial_script/steps/formatted_datatypes.csv"
+    input_path_last_csv = "./generated/initial_script/steps/3_datatypes.csv"
 
     # Define output paths
-    output_path_markdown = (
-        "./generated/initial_script/final/generated_markdown_final_output.md"
-    )
-    output_path_script = (
-        "./generated/initial_script/final/generated_script_final_output.py"
-    )
-    output_path_csv = "./generated/initial_script/final/generated_final_output.csv"
+    output_path_markdown = "./generated/initial_script/final/final_output.md"
+    output_path_script = "./generated/initial_script/final/final_output.py"
+    output_path_csv = "./generated/initial_script/final/final_output.csv"
 
     # Combine markdown files into one final markdown output
     with open(output_path_markdown, "w", encoding="utf-8") as outfile:

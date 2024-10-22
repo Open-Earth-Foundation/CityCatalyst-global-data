@@ -91,7 +91,11 @@ This is the input path to the .csv file created by the prior agent: {input_path_
 This is the additional context provided for identifying the activities: {json.dumps(gpc_mappings, indent=4)}
 </context_gpc_refno>
 <prior_script>
-This is the prior script provided: {script}.
+This is the prior python script provided:
+    
+```python
+{script}
+```
 </prior_script>
 <output_path>
 This is the output path for the new .csv file: {output_path_csv}
