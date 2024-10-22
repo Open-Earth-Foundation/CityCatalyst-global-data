@@ -1,15 +1,18 @@
 # Python dictionary to map scopes to their corresponding activities
 
+# fuel sales are fuel combustion
+
 scope_mappings = {
     "__doc__": """
     This dictionary maps the GPC scope numbers from Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) to their corresponding activities.
 
     Instructions for the LLM:
-    - Combustion or consumption of fuels like diesel, methane or propane is always considered to be scope 1 emissions
+    - Combustion or consumption of fuels like diesel, methane, propane, oil, liquified petroleum gas, etc. is always considered to be scope 1 emissions. Fuel sales are also considered to be scope 1 emissions.
     - Grid-supplied energy and energy consumed like electricity, heat, cold and steam is always considered to be scope 2 emissions
 
     Examples:
     - Combustion of fuels for cars is assigned to scope 1
+    - Data about fuel sales like selling of oils for usage in products are assigned to scope 1
     - Grid-supplied energy like electricity for office buildings is assigned to scope 2
     """,
     "1": {
@@ -23,6 +26,8 @@ scope_mappings = {
             "Waste disposed within the city",
             "Waste treated biologically within the city",
             "Waste treated within the city",
+            "Fuel sales",
+            "Fuel distribution",
         ],
     },
     "2": {
