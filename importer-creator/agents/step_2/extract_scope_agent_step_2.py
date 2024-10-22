@@ -58,7 +58,7 @@ Your inputs are:
     completion_steps = f"""
 a. Inspect the .csv file provided under <input_path> tags below. You are provided with a pandas dataframe 'df' based on this .csv file. Base your further analysis only on this dataframe 'df'. This is already an updated dataframe based on the python script under <prior_script> tags below.
     - NEVER load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags. 
-b. Inspect the user provided context in <user_context> tags below for information regarding the type of activity like fuel combustion or energy consumption.
+b. Inspect the user provided context in <user_context> tags below for information regarding the type of activity e.g. if the dataset is about fuel sales or fuel combustion which would map to scope 1 or e.g. is it about energy consumption which would map to scope 2.
 c. Inspect the additional context for identifying the GPC scope in <context_scope> tags below.
 d. Inspect the provided python script under <prior_script> tags below.
 e. Identify columns in the dataframe 'df' that help to determine the GPC scope. Especially look for columns that contain information about the type of activity like fuel combustion or energy conumption.

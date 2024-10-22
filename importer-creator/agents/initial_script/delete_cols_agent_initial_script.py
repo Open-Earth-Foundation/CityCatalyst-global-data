@@ -56,9 +56,9 @@ a. Inspect the .csv file provided under <input_path> tags below. You are provide
 b. Inspect the white list of columns that cannot be deleted provided under <white_list> tags.
 c. Inspect the provided python script under <prior_script> tags.
 d. Output a list of columns that are not necessary and can be deleted based on: 
-- the white list provided under <white_list> tags below
+- the white list provided under <white_list> tags below,
 - the provided dataframe 'df', 
-- columns that are completely empty, contain only missing values or other not useful data.
+- columns that are completely empty or only contain missing values.
 - If you are in doubt about a certain column, do not delete it and flag it for further inspection in your reasoning.
 e. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
