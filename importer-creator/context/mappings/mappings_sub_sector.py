@@ -10,14 +10,10 @@ sub_sector_mapping = {
     - This dictionary helps identify and map these GPC sub-sectors.
     
     Example 1: The current row was assigned the GPC sector "Stationary Energy". The GPC sub-sectors may only include one of "Residential buildings", "Commercial and institutional buildings and facilities", "Manufacturing industries and construction", "Energy industries", "Agriculture, forestry, and fishing activities", "Non-specified sources", "Fugitive emissions from mining, processing, storage, and transportation of coal" or "Fugitive emissions from oil and natural gas systems". The data contains the channel 'residential' which indicates usage for residential buildings. Based on this dictionary, this maps to the sub-sector "Residential buildings".
-    Example 2: The current row was assigned the GPC sector "Transportation". The GPC sub-sectors may only include on of "On-road", "Railways", "Waterborne navigation", "Aviation" or "Off-road". The data contains the channel 'agriculture' which indicates usage for agricultural vehicles. Based on this dictionary, this maps to the sub-sector "Off-road".
+    Example 2: The current row was assigned the GPC sector "Transportation". The GPC sub-sectors may only include on of "On-road", "Railways", "Waterborne navigation", "Aviation" or "Off-road". The data inside the row contains contextual data related to 'agriculture' which indicates usage for agricultural vehicles. Based on this dictionary, this maps to the sub-sector "Off-road".
+    Example 3: The current row was assigned the GPC sector "Transportation". The GPC sub-sectors may only include on of "On-road", "Railways", "Waterborne navigation", "Aviation" or "Off-road". The data inside the row contains contextual data related to 'ship fuels' which indicates usage for ships. Based on this dictionary, this maps to the sub-sector "Waterborne navigation".
     """,
     "Stationary Energy": {
-        "description": """Stationary energy sources are one of the largest contributors to a city's GHG emissions.
-        These emissions come from the combustion of fuel in residential, commercial and institutional buildings, 
-        and manufacturing industries and construction, as well as power plants to generate grid-supplied energy.
-        This sector also includes fugitive emissions, which typically occur during extraction, transformation, 
-        and transportation of primary fossil fuels.""",
         "subsectors": {
             "Residential buildings": {
                 "description": """Emissions from the combustion of fuels used in residential buildings, such as natural gas, heating oil, and other fuels for heating, cooking, and other household activities. 
@@ -52,11 +48,6 @@ sub_sector_mapping = {
         },
     },
     "Transportation": {
-        "description": """Transportation covers all journeys by road, rail, water and air, including inter-city and international travel. 
-        GHG emissions are produced directly by the combustion of fuel or indirectly by the use of grid-supplied electricity. 
-        Collecting accurate data for transportation activities, calculating emissions and allocating these emissions to cities can be a particularly challenging process. 
-        To accommodate variations in data availability, existing transportation models, and inventory purposes, 
-        the GPC offers additional flexibility in calculating emissions from transportation.""",
         "subsectors": {
             "On-road": {
                 "description": """Emissions from fuel combustion in on-road vehicles, including cars, trucks, buses, and motorcycles used for personal and commercial travel within the city boundary. 
@@ -81,10 +72,6 @@ sub_sector_mapping = {
         },
     },
     "Waste": {
-        "description": """Waste disposal and treatment produces GHG emissions through aerobic or anaerobic decomposition, or incineration. 
-        GHG emissions from solid waste shall be calculated by disposal route, namely landfill, biological treatment and incineration and open burning. 
-        If methane is recovered from solid waste or wastewater treatment facilities as an energy source, it shall be reported under Stationary Energy. 
-        Similarly, emissions from incineration with energy recovery are reported under Stationary Energy.""",
         "subsectors": {
             "Disposal of solid waste": {
                 "description": """Emissions from the decomposition of organic waste in landfills, where methane is released as waste breaks down anaerobically. 
@@ -102,11 +89,6 @@ sub_sector_mapping = {
         },
     },
     "Industrial Processes and Product Use": {
-        "description": """GHG emissions are produced from a wide variety of non-energy related industrial activities. 
-        The main emission sources are releases from industrial processes that chemically or physically transform materials (e.g., the blast furnace in the iron and steel industry, 
-        and ammonia and other chemical products manufactured from fossil fuels and used as chemical feedstock). 
-        During these processes many different GHGs can be produced. 
-        In addition, certain products used by industry and end-consumers, such as refrigerants, foams or aerosol cans, also contain GHGs which can be released during use and disposal.""",
         "subsectors": {
             "Industrial processes": {
                 "description": """Emissions from industrial activities that chemically or physically transform materials, such as the production of cement, iron and steel, chemicals, and other products. 
@@ -120,9 +102,6 @@ sub_sector_mapping = {
         },
     },
     "Agriculture, Forestry and Other Land Use": {
-        "description": """Emissions and removals from the Agriculture, Forestry and Other Land Use (AFOLU) sector are produced through a variety of pathways, 
-        including livestock (enteric fermentation and manure management), land use and land use change (e.g., forested land being cleared for cropland or settlements), 
-        and aggregate sources and non-CO2 emission sources on land (e.g., fertilizer application and rice cultivation).""",
         "subsectors": {
             "Livestock": {
                 "description": """Emissions from enteric fermentation in ruminants and manure management systems, which release methane as part of the digestive process and decomposition of organic material."""

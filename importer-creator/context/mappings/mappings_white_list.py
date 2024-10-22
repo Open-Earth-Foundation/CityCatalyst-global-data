@@ -12,9 +12,6 @@ white_list_mapping = {
     - Focus on identifying semantically similar terms, synonyms, or variations in dataset names.
     - The column names in this dictionary represent common terms. Map semantically similar terms to the keys below, even if the names differ (e.g., 'energy source' vs. 'energy type').
 
-    Important:
-    If you are unsure about deleting a column, do not delete that columns.
-
     Example 1:
     - a dataset from Mendoza city has the following list of input columns ['Period', 'Operator', 'Registration Number', 'Brand/Flag', 'Deregistration Date', 'Tax ID', 'Business Type', 'Address', 'Locality', 'Province', 'Product', 'Marketing/Distribution Channel', 'Price without Taxes', 'Price with Taxes', 'Volume', 'Pump Price', 'No Movements', 'Exempt', 'Price without taxes', 'Price with taxes', 'Pump price'], 
     but the columns to conserve are ['Period', 'Operator', 'Address', 'Province', 'Product', 'Marketing/Distribution Channel', 'Volume']
