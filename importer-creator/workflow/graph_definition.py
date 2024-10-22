@@ -2,7 +2,7 @@ from langgraph.graph import StateGraph, END
 from state.agent_state import AgentState
 
 # For debugging only
-perform_steps = {"step_2": True, "step_3": True, "step_4": True}
+perform_steps = {"step_2": True, "step_3": False, "step_4": False}
 
 # Import for initial script
 from agents.initial_script.setup_agent_initial_script import setup_agent_initial_script
@@ -19,6 +19,9 @@ from agents.initial_script.create_final_output_agent_initial_script import (
 # Import for step 2
 from agents.step_2.extract_datasource_name_agent_step_2 import (
     extract_datasource_name_agent_step_2,
+)
+from agents.step_2.extract_emissions_year_agent_step_2 import (
+    extract_emissions_year_agent_step_2,
 )
 from agents.step_2.extract_actor_name_agent_step_2 import (
     extract_actor_name_agent_step_2,
@@ -105,6 +108,9 @@ def create_workflow():
             "extract_datasource_name_agent_step_2", extract_datasource_name_agent_step_2
         )
         workflow.add_node(
+            "extract_emissions_year_agent_step_2", extract_emissions_year_agent_step_2
+        )
+        workflow.add_node(
             "extract_actor_name_agent_step_2", extract_actor_name_agent_step_2
         )
         workflow.add_node("extract_sector_agent_step_2", extract_sector_agent_step_2)
@@ -125,7 +131,12 @@ def create_workflow():
             "extract_datasource_name_agent_step_2",
         )
         workflow.add_edge(
-            "extract_datasource_name_agent_step_2", "extract_actor_name_agent_step_2"
+            "extract_datasource_name_agent_step_2",
+            "extract_emissions_year_agent_step_2",
+        )
+
+        workflow.add_edge(
+            "extract_emissions_year_agent_step_2", "extract_actor_name_agent_step_2"
         )
         workflow.add_edge(
             "extract_actor_name_agent_step_2", "extract_sector_agent_step_2"
