@@ -2,66 +2,19 @@ blocks:
 - all_upstream_blocks_executed: true
   color: null
   configuration: {}
-  downstream_blocks: []
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: markdown
-  name: SEEG Data Pipeline
-  retry_config: null
-  status: updated
-  timeout: null
-  type: markdown
-  upstream_blocks: []
-  uuid: seeg_data_pipeline
-- all_upstream_blocks_executed: true
-  color: null
-  configuration: {}
   downstream_blocks:
-  - transform_seeg_to_gpc
+  - adapta_transform_metadata
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: load_seeg_s3
+  name: adapta_indicator_metadata
   retry_config: null
   status: executed
   timeout: null
   type: data_loader
   upstream_blocks: []
-  uuid: load_seeg_s3
-- all_upstream_blocks_executed: true
-  color: null
-  configuration: {}
-  downstream_blocks:
-  - transform_seeg_to_gpc
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: load_seeg_to_ipcc
-  retry_config: null
-  status: executed
-  timeout: null
-  type: data_loader
-  upstream_blocks: []
-  uuid: load_seeg_to_ipcc
-- all_upstream_blocks_executed: true
-  color: null
-  configuration: {}
-  downstream_blocks:
-  - transform_seeg_to_gpc
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: load_ipcc_to_gpc
-  retry_config: null
-  status: executed
-  timeout: null
-  type: data_loader
-  upstream_blocks: []
-  uuid: load_ipcc_to_gpc
+  uuid: adapta_indicator_metadata
 - all_upstream_blocks_executed: true
   color: null
   configuration:
@@ -73,21 +26,63 @@ blocks:
     limit: 1000
     use_raw_sql: true
   downstream_blocks:
-  - update_seeg_sector_staging
+  - adapta_transform_indicator
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: sql
-  name: transform_seeg_to_gpc
+  name: adapta_transform_metadata
   retry_config: null
   status: updated
   timeout: null
   type: transformer
   upstream_blocks:
-  - load_ipcc_to_gpc
-  - load_seeg_s3
-  - load_seeg_to_ipcc
-  uuid: transform_seeg_to_gpc
+  - adapta_indicator_metadata
+  uuid: adapta_transform_metadata
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_path: data_loaders/raw_adapta_indicator.py
+    file_source:
+      path: data_loaders/raw_adapta_indicator.py
+  downstream_blocks:
+  - adapta_transform_indicator
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: raw_adapta_indicator
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: raw_adapta_indicator
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: duckdb
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - load_adapta_indicator_staging
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: adapta_transform_indicator
+  retry_config: null
+  status: failed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - raw_adapta_indicator
+  - adapta_transform_metadata
+  uuid: adapta_transform_indicator
 - all_upstream_blocks_executed: false
   color: null
   configuration:
@@ -95,20 +90,20 @@ blocks:
     data_provider_profile: default
     export_write_policy: append
   downstream_blocks:
-  - update_seeg_sector_emissions
-  - update_see_sector_activity
+  - load_adapta_impactchain
+  - load_adapt_impactchain_indicator
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: update_seeg_sector_staging
+  name: load_adapta_indicator_staging
   retry_config: null
   status: executed
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - transform_seeg_to_gpc
-  uuid: update_seeg_sector_staging
+  - adapta_transform_indicator
+  uuid: load_adapta_indicator_staging
 - all_upstream_blocks_executed: false
   color: null
   configuration:
@@ -117,6 +112,9 @@ blocks:
     dbt: {}
     disable_query_preprocessing: false
     export_write_policy: append
+    file_path: data_loaders/load_adapta_impactchain.sql
+    file_source:
+      path: data_loaders/load_adapta_impactchain.sql
     limit: 1000
     use_raw_sql: true
   downstream_blocks: []
@@ -124,14 +122,14 @@ blocks:
   executor_type: local_python
   has_callback: false
   language: sql
-  name: update_see_sector_activity
+  name: load_adapta_impactchain
   retry_config: null
   status: executed
   timeout: null
   type: data_loader
   upstream_blocks:
-  - update_seeg_sector_staging
-  uuid: update_see_sector_activity
+  - load_adapta_indicator_staging
+  uuid: load_adapta_impactchain
 - all_upstream_blocks_executed: false
   color: null
   configuration:
@@ -147,26 +145,26 @@ blocks:
   executor_type: local_python
   has_callback: false
   language: sql
-  name: update_seeg_sector_emissions
+  name: load_adapt_impactchain_indicator
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: data_loader
   upstream_blocks:
-  - update_seeg_sector_staging
-  uuid: update_seeg_sector_emissions
+  - load_adapta_indicator_staging
+  uuid: load_adapt_impactchain_indicator
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
 conditionals: []
-created_at: '2024-08-26 16:19:58.518427+00:00'
+created_at: '2024-10-21 16:08:21.408536+00:00'
 data_integration: null
-description: The Brazil emissions data
+description: This populates standard risk assessment based on Adapta Brazil data
 executor_config: {}
 executor_count: 1
 executor_type: null
 extensions: {}
-name: seeg_br_file
+name: ccra_br_adapta
 notification_config: {}
 remote_variables_dir: null
 retry_config: {}
@@ -176,9 +174,6 @@ settings:
 spark_config: {}
 tags: []
 type: python
-uuid: seeg_br_file
-variables:
-  bucket_name: test-global-api
-  object_key: files/seeg/seeg_city_emissions/setor_de_emissão=Energia/*.parquet
+uuid: ccra_br_adapta
 variables_dir: /home/src/mage_data/cc-mage
 widgets: []
