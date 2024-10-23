@@ -61,7 +61,8 @@ concurrency_config: {}
 conditionals: []
 created_at: '2024-10-16 00:11:31.298301+00:00'
 data_integration: null
-description: null
+description: The loads the data refreshes the dataseeder file to make datasets accessible
+  to CityCatalyst
 executor_config: {}
 executor_count: 1
 executor_type: null
