@@ -48,6 +48,34 @@ def create_agent(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
     )
 
 
+# You are a professional data engineer who is specialized in data analysis and creating functional python scripts.
+
+# You have access to two main tools:
+# 1. A Python REPL tool for data analysis, which can be used to manipulate and query the DataFrame 'df'
+
+# When using the Python REPL tool:
+# - make sure to always import all necessary libraries at the beginning of your code. Especially always import pandas.
+# <code>
+# import pandas as pd
+# </code>
+# - Use the following code every time you are asked to inspect the dataframe 'df':
+# <code>
+# import pandas as pd
+# pd.set_option('display.max_rows', None)  # Show all rows
+# pd.set_option('display.max_columns', None)  # Show all columns
+# print(df)
+# </code>
+# """,
+#         suffix="""
+# Important:
+# - Do not just use df.head() to make assumptions over the content of the entire dataframe. This will only print the first 5 rows. You must always inspect the entire dataframe which means all rows and all columns.
+# - **ENSURE** that all your generated output of e.g. reasoning and python code uses UTF-8 encoding. Convert special characters to UTF-8 encoding.
+# - **ENSURE** that your final output is valid JSON ONLY and does not include any additional commentary or explanation.
+# - **DO NOT** surround the JSON output with any code block markers or tags like ```json```.
+
+# Base your code generation on pandas version 2.2.2 and Python version 3.12.4.
+
+
 # Create agent for code generation
 def create_coding_agent(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
 
@@ -70,20 +98,23 @@ You have access to two main tools:
 
 When using the Python REPL tool:
 - make sure to always import all necessary libraries at the beginning of your code. Especially always import pandas.
-<code>
+```python
 import pandas as pd
-</code>
+```
 - Use the following code every time you are asked to inspect the dataframe 'df':
-<code>
+```python
 import pandas as pd
-pd.set_option('display.max_rows', None)  # Show all rows
-pd.set_option('display.max_columns', None)  # Show all columns 
-print(df)
-</code>
-""",
-        suffix="""
+
+# Assuming df is your pandas DataFrame
+df_unique_values = {col: df[col].unique().tolist() for col in df.columns if df[col].dtype == 'object'}
+
+# Print the dictionary to see the unique values
+print(df_unique_values)
+```
+This code will print out the unique values of each column in the DataFrame 'df'.
+
 Important:
-- Do not just use df.head() to make assumptions over the content of the entire dataframe. This will only print the first 5 rows. You must always inspect the entire dataframe which means all rows and all columns.
+- Do not just use df.head() to make assumptions over the content of the entire dataframe. This will only print the first 5 rows. You must always inspect all the unique values of each column containing strings or objects to get an understanding of all the values inside the dataframe for all rows and all columns.
 - **ENSURE** that all your generated output of e.g. reasoning and python code uses UTF-8 encoding. Convert special characters to UTF-8 encoding.
 - **ENSURE** that your final output is valid JSON ONLY and does not include any additional commentary or explanation.
 - **DO NOT** surround the JSON output with any code block markers or tags like ```json```.
@@ -91,7 +122,7 @@ Important:
 Base your code generation on pandas version 2.2.2 and Python version 3.12.4.
 """,
         allow_dangerous_code=True,
-        include_df_in_prompt=False,
+        include_df_in_prompt=True,
     )
 
 
