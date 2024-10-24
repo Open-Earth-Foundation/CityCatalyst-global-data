@@ -105,7 +105,6 @@ import pandas as pd
 ```python
 import pandas as pd
 
-# Assuming df is your pandas DataFrame
 df_unique_values = {col: df[col].unique().tolist() for col in df.columns if df[col].dtype == 'object'}
 
 # Print the dictionary to see the unique values
