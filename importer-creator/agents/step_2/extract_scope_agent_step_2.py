@@ -7,6 +7,7 @@ from utils.create_prompt import create_prompt
 from utils.agent_creation import create_coding_agent
 from context.mappings.mappings_scope import scope_mappings
 from utils.json_output_cleaner import clean_json_output
+from utils.create_descriptive_stats_prompt import create_descriptive_stats_prompt
 
 
 def extract_scope_agent_step_2(
@@ -26,23 +27,20 @@ def extract_scope_agent_step_2(
     print("\nEXTRACT SCOPE AGENT STEP 2\n")
 
     # Load the output files of initial script
-    input_path_csv = "./generated/step_2/steps/extracted_sub_sector.csv"
-    input_path_script = (
-        "./generated/step_2/steps/generated_script_extracted_sub_sector.py"
-    )
+    input_path_csv = "./generated/step_2/steps/5_sub_sector.csv"
+    input_path_script = "./generated/step_2/steps/5_sub_sector.py"
 
     # Load the csv file into the dataframe
     df = pd.read_csv(input_path_csv, encoding="utf-8")
+    descriptive_statistics = create_descriptive_stats_prompt(df)
     # Load the script
     with open(input_path_script, "r", encoding="utf-8") as file:
         script = file.read()
 
     # Define the output paths
-    output_path_csv = "./generated/step_2/steps/extracted_scope.csv"
-    output_path_script = "./generated/step_2/steps/generated_script_extracted_scope.py"
-    output_path_markdown = (
-        "./generated/step_2/steps/generated_markdown_extracted_scope.md"
-    )
+    output_path_csv = "./generated/step_2/steps/6_scope.csv"
+    output_path_script = "./generated/step_2/steps/6_scope.py"
+    output_path_markdown = "./generated/step_2/steps/6_scope.md"
 
     task = """
 Your task is to extract the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) 'scope' from the provided python pandas dataframe based on the instructions below. You will also create a runnable python script.
@@ -120,7 +118,7 @@ This is the output path for the new .csv file: {output_path_csv}
     agent = create_coding_agent(df, state.get("verbose"))
 
     # Invoke summary agent with custom prompt
-    response = agent.invoke(prompt)
+    response = agent.invoke(descriptive_statistics + prompt)
     response_output = response.get("output")
 
     # Check and potentially clean the JSON output by removing ```json``` code block markers

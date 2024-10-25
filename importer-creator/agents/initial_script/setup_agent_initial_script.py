@@ -62,13 +62,11 @@ c. Create a python script. This python script must contain the following:
     df_new = df.copy()
     ```
     3. normalized column names for 'df_new' where names are converted to 'lower case', strip them of any leading or trailing white spaces and replace any white spaces with underscores '_'.
+    - **ATTENTION**: If after renaming the columns, 2 or more columns would end up having the same name, index them with suffixes '_a', '_b' and so on for every repeated name to make them unique. This can happen when there is e.g. the column 'EXAMPLE', 'Example' and 'example' in the original dataframe. This should result in 'example_a', 'example_b' and 'example_c' respectively in the new dataframe.
     - Use the following code snippet:
     ```python
     df_new.columns = df_new.columns.str.lower().str.strip().str.replace(' ', '_')
-    ```
-    - **ATTENTION**: If after renaming the columns, 2 or more columns would end up having the same name, index them with suffixes '_b', '_c' and so on for every repeated name to make them unique. This can happen when there is e.g. the column 'EXAMPLE', 'Example' and 'example' in the original dataframe. This should result in 'example', 'example_b' and 'example_c' respectively in the new dataframe.
-    - Use the following code snippet:
-    ```python
+
     cols = pd.Series(df_new.columns)
     for dup in cols[cols.duplicated()].unique():
         cols[cols[cols == dup].index.values.tolist()] = [dup + '_' + chr(i) for i in range(97, 97 + sum(cols == dup))]

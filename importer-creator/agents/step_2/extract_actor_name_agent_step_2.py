@@ -6,6 +6,7 @@ from state.agent_state import AgentState
 from utils.create_prompt import create_prompt
 from utils.agent_creation import create_coding_agent
 from utils.json_output_cleaner import clean_json_output
+from utils.create_descriptive_stats_prompt import create_descriptive_stats_prompt
 
 
 def extract_actor_name_agent_step_2(
@@ -24,25 +25,21 @@ def extract_actor_name_agent_step_2(
     print("\nEXTRACT ACTOR NAME AGENT STEP 2\n")
 
     # Load the output files of initial script
-    input_path_csv = "./generated/step_2/steps/extracted_emissions_year.csv"
-    input_path_script = (
-        "./generated/step_2/steps/generated_script_extracted_emissions_year.py"
-    )
+    input_path_csv = "./generated/step_2/steps/2_emissions_year.csv"
+    input_path_script = "./generated/step_2/steps/2_emissions_year.py"
 
     # Load the csv file into the dataframe
     df = pd.read_csv(input_path_csv, encoding="utf-8")
+    descriptive_statistics = create_descriptive_stats_prompt(df)
+
     # Load the script
     with open(input_path_script, "r", encoding="utf-8") as file:
         script = file.read()
 
     # Define the output paths
-    output_path_csv = "./generated/step_2/steps/extracted_actor_name.csv"
-    output_path_script = (
-        "./generated/step_2/steps/generated_script_extracted_actor_name.py"
-    )
-    output_path_markdown = (
-        "./generated/step_2/steps/generated_markdown_extracted_actor_name.md"
-    )
+    output_path_csv = "./generated/step_2/steps/3_actor_name.csv"
+    output_path_script = "./generated/step_2/steps/3_actor_name.py"
+    output_path_markdown = "./generated/step_2/steps/3_actor_name.md"
 
     task = """
 Your task is to extract the region from the provided python pandas dataframe based on instructions below. You will also create a runnable python script.
@@ -111,7 +108,7 @@ This is the output path for the new .csv file: {output_path_csv}
     agent = create_coding_agent(df, state.get("verbose"))
 
     # Invoke summary agent with custom prompt
-    response = agent.invoke(prompt)
+    response = agent.invoke(descriptive_statistics + prompt)
     response_output = response.get("output")
 
     # Check and potentially clean the JSON output by removing ```json``` code block markers

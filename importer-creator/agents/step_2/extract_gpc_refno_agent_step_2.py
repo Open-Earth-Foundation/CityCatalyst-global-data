@@ -7,6 +7,7 @@ from utils.create_prompt import create_prompt
 from utils.agent_creation import create_coding_agent
 from context.mappings.mappings_gpc import gpc_mappings
 from utils.json_output_cleaner import clean_json_output
+from utils.create_descriptive_stats_prompt import create_descriptive_stats_prompt
 
 
 def extract_gpc_refno_agent_step_2(
@@ -25,23 +26,20 @@ def extract_gpc_refno_agent_step_2(
     print("\nEXTRACT GPC REFNO AGENT STEP 2\n")
 
     # Load the output files of initial script
-    input_path_csv = "./generated/step_2/steps/extracted_scope.csv"
-    input_path_script = "./generated/step_2/steps/generated_script_extracted_scope.py"
+    input_path_csv = "./generated/step_2/steps/6_scope.csv"
+    input_path_script = "./generated/step_2/steps/6_scope.py"
 
     # Load the csv file into the dataframe
     df = pd.read_csv(input_path_csv, encoding="utf-8")
+    descriptive_statistics = create_descriptive_stats_prompt(df)
     # Load the script
     with open(input_path_script, "r", encoding="utf-8") as file:
         script = file.read()
 
     # Define the output paths
-    output_path_csv = "./generated/step_2/steps/extracted_gpc_refno.csv"
-    output_path_script = (
-        "./generated/step_2/steps/generated_script_extracted_gpc_refno.py"
-    )
-    output_path_markdown = (
-        "./generated/step_2/steps/generated_markdown_extracted_gpc_refno.md"
-    )
+    output_path_csv = "./generated/step_2/steps/7_gpc_refno.csv"
+    output_path_script = "./generated/step_2/steps/7_gpc_refno.py"
+    output_path_markdown = "./generated/step_2/steps/7_gpc_refno.md"
 
     task = """
 Your task is to extract the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) 'gpc_refno' (GPC reference number) from the provided python pandas dataframe based on the instructions below. You will also create a runnable python script.
@@ -112,7 +110,7 @@ This is the output path for the new .csv file: {output_path_csv}
     agent = create_coding_agent(df, state.get("verbose"))
 
     # Invoke summary agent with custom prompt
-    response = agent.invoke(prompt)
+    response = agent.invoke(descriptive_statistics + prompt)
     response_output = response.get("output")
 
     # Check and potentially clean the JSON output by removing ```json``` code block markers
@@ -129,7 +127,6 @@ This is the output path for the new .csv file: {output_path_csv}
         except json.JSONDecodeError as e:
             print(f"JSON decoding failed: {e}")
             sys.exit(1)
-            # return {"reasoning": response_output.strip(), "code": None}
 
     # Parse the agent's response
     output = parse_agent_response(cleaned_response_output)
