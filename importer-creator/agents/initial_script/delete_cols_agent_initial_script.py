@@ -30,6 +30,12 @@ def delete_cols_agent_initial_script(
 
     # Load the dataframe and the script
     df = pd.read_csv(input_path_csv, encoding="utf-8", sep=",", decimal=".")
+
+    ### Manual prefiltering of empty columns
+    # Drop columns that are completely empty (i.e., all values are NaN)
+    # empty_columns = df.columns[df.isna().all()]
+    # df_cleaned = df.drop(empty_columns, axis=1)
+
     # Load the script
     with open(input_path_script, "r", encoding="utf-8") as file:
         script = file.read()
@@ -53,13 +59,13 @@ Your inputs are:
     completion_steps = f"""
 a. Inspect the .csv file provided under <input_path> tags below. You are provided with a pandas dataframe 'df' based on this .csv file. Base your further analysis only on this dataframe 'df'. This is already an updated dataframe based on the python script under <prior_script> tags below.
     - NEVER load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags. 
+    - Inspect the unique values in each column of the dataframe 'df' containing the datatype dtype == 'object'. This is important to understand the different values in each column. 
 b. Inspect the white list of columns that cannot be deleted provided under <white_list> tags.
-c. Inspect the provided python script under <prior_script> tags.
-d. Output a list of columns that are not necessary and can be deleted based on: 
-- the white list provided under <white_list> tags below,
-- the provided dataframe 'df', 
-- columns that are completely empty or only contain missing values.
+c. Output a list of columns that are not necessary and can be deleted:
+- for each column in the dataframe 'df', inspect the unique values of that column and compare them based on semantic similarity to the white list provided under <white_list> tags below
+- drop all columns from the dataframe 'df' which are empty using "df.dropna(axis=1, how='all')". Include this step in your reasoning.
 - If you are in doubt about a certain column, do not delete it and flag it for further inspection in your reasoning.
+d. Inspect the provided python script under <prior_script> tags.
 e. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
     2. delete all columns from the dataframe 'df_new' that are not necessary, based on your analysis of the white list provided under <white_list> tags below. 
@@ -89,7 +95,8 @@ Ensure that the output is valid JSON and does not include any additional comment
 This is the input path to the .csv file created by the prior agent: {input_path_csv}
 </input_path>
 <white_list>
-This is the white list of columns with descriptions. Use this to define which columns are not necessary and can be deleted: {json.dumps(white_list_mapping, indent=4)}
+This is the white list of columns with descriptions. For each key, inspecht the description and the examples and use them as reference for deciding on which columns to delete. Include a reference to the descriptions and examples in your reasoning.
+Use this to define which columns are not necessary and can be deleted: {json.dumps(white_list_mapping, indent=4)}
 </white_list>
 <prior_script>
 This is the prior python script provided:

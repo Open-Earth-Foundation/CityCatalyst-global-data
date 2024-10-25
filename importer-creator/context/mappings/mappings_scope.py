@@ -9,6 +9,7 @@ scope_mappings = {
     Instructions for the LLM:
     - Combustion or consumption of fuels like diesel, methane, propane, oil, liquified petroleum gas, etc. is always considered to be scope 1 emissions. Fuel sales are also considered to be scope 1 emissions.
     - Grid-supplied energy and energy consumed like electricity, heat, cold and steam is always considered to be scope 2 emissions
+    - The GPC sector like 'Stationary Energy' or 'Transportation' **DO NOT** define the scope of emissions. This means that e.g. 'Stationary Energy' does not mean the data is automatically about energy consumption and therefore scope 2 emissions. Transportation does not mean the data is automatically about fuel combustion and therefore scope 1 emissions. The scope is only defined by the activity itself and where it takes place or how it is being used.
 
     Examples:
     - Combustion of fuels for cars is assigned to scope 1
@@ -16,7 +17,7 @@ scope_mappings = {
     - Grid-supplied energy like electricity for office buildings is assigned to scope 2
     """,
     "1": {
-        "description": "Scope 1 emissions are direct emissions from sources located within the city boundary.",
+        "description": "Scope 1 emissions are direct emissions from sources located within the city boundary. Examples for possible acitivies are given in the 'examples' key.",
         "examples": [
             "Combustion of fuels",
             "Consumption of fuels",
@@ -31,7 +32,7 @@ scope_mappings = {
         ],
     },
     "2": {
-        "description": "Scope 2 emissions are indirect emissions resulting from the consumption of grid-supplied electricity, heat, steam, and/or cooling within the city boundary.",
+        "description": "Scope 2 emissions are indirect emissions resulting from the consumption of grid-supplied electricity, heat, steam, and/or cooling within the city boundary. Examples for possible acitivies are given in the 'examples' key.",
         "examples": [
             "Grid-supplied energy like electricity, heat, cold and steam",
             "Grid energy consumed",
@@ -39,7 +40,7 @@ scope_mappings = {
         ],
     },
     "3": {
-        "description": "Scope 3 emissions are all other indirect emissions that occur outside the city boundary as a result of activities taking place within the city.",
+        "description": "Scope 3 emissions are all other indirect emissions that occur outside the city boundary as a result of activities taking place within the city. Examples for possible acitivies are given in the 'examples' key.",
         "examples": [
             "Transmission and distribution losses from purchased electricity",
             "Transmission and distribution losses from grid-supplied energy",

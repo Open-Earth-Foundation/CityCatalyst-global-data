@@ -59,6 +59,7 @@ a. Inspect the .csv file provided under <input_path> tags below. You are provide
 b. Inspect the additional context for identifying the GPC scope in <context_gpc_refno> tags.
 c. Inspect the provided python script under <prior_script> tags.
 d. Inspect for each row the values of the 'sector_name' column, 'subsector_name' column and 'scope' column. The GPC reference number is a combination of those according to the information provided in the <context_gpc_refno> tags.
+    - If any of the values in the 'sector_name', 'subsector_name' or 'scope' columns are 'None' or missing, apply the value 'None' for the the GPC reference number.
 e. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
     2. a mapping dictionary for the GPC reference number based on your prior analysis in step 'd'.

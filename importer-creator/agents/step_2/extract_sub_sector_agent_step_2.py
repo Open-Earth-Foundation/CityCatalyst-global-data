@@ -58,16 +58,18 @@ Your inputs are:
     completion_steps = f"""
 a. Inspect the .csv file provided under <input_path> tags below. You are provided with a pandas dataframe 'df' based on this .csv file. Base your further analysis only on this dataframe 'df'. This is already an updated dataframe based on the python script under <prior_script> tags below.
     - NEVER load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags below.
-b. Inspect the user provided context in <user_context> tags for information about the GPC sub-sector if available.
+b. Inspect the user provided context in <user_context> tags for information about the GPC sub-sectors present in the dataset.
 c. Inspect the additional context for identifying the GPC sub-sector in <context_sub_sector> tags.
-d. Inspect the provided python script under <prior_script> tags.
-e. Inspect for each row the values of the 'sector_name' column. The possible GPC sub-sector depends on the provided GPC sector. Consider only possible GPC sub-sectors based on the provided GPC sector.
-f. Identify further columns in the dataframe 'df' that help to determine the GPC sub-sector using the provided context in <context_sub_sector> tags below. These might be columns containing information about how and where the emissions occur, e.g. energy consumption in buildings or fuel combustion of certain vehicles like cars, ships or trains and others which indicate the relevant GPC sub-sector.
+d. Identify further columns in the dataframe 'df' that help to determine the GPC sub-sector using the provided context in <context_sub_sector> tags below. These might be columns containing information about how and where the emissions occur, e.g. energy consumption in buildings or fuel combustion of certain vehicles like cars, ships, planes, trains and others which indicate the relevant GPC sub-sector.
 - Print out the unique values of these identified columns to make sure that all unique values are accounted for in your answer.
-- Each row in the dataframe 'df' should be assigned a GPC sub-sector based on the provided context. 
+e. Create a nested mapping dictionary that links the unique values of the column 'sector_name' and the unique values of the identified further columns that help identifying the GPC sub-sectors based on the provided context in <context_sub_sector> tags. The GPC sub-sector must be linked to the GPC sector and additional identified columns.
+- Inspect the values of the column 'sector_name' and print out the unique values of this column. The possible values for the GPC sub-sector depend on the provided GPC sector. 
+- If the column 'sector_name' contains the value 'None', apply the same value 'None' the GPC sub-sector and flag this in your reasoning.
+- The mapping should be a tuple of the form ('sector_name', 'further_column_a_value', 'furhter_column_b_value', ...) as key and the GPC sub-sector as value, where further_column_a and further_column_b are possible columns that help to identify the GPC sub-sector.
+f. Inspect the provided python script under <prior_script> tags.
 g. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
-    2. a mapping dictionary for the GPC sub-sector based on your prior analysis in step 'f'.
+    2. a mapping dictionary for the GPC sub-sector based on your prior analysis.
     3. add a column 'subsector_name' to the dataframe 'df_new' which applies a GPC sub-sector to each row of 'df_new' based on the created mapping dictionary.
     4. finally:
     - add code to output a new .csv file 'df_new.to_csv' so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma separated ','. The .csv file must use 'encoding="utf-8"'.

@@ -52,14 +52,14 @@ Your inputs are:
 a. Inspect the .csv file provided under <input_path> tags below. You are provided with a pandas dataframe 'df' based on this .csv file. Base your further analysis only on this dataframe 'df'. This is already an updated dataframe based on the python script under <prior_script> tags.
     - NEVER load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags. 
 b. Inspect the datatypes of each column in the dataframe 'df' and output a list of suggested corrections. 
-c. Inspect the provided python script under <prior_script> tags.
-d. Inspect the columns in the dataframe 'df' that contain dates and temporal data. Check if those columns have the correct datatype for dates. 
+c. Inspect the columns in the dataframe 'df' that contain dates and temporal data. Check if those columns have the correct datatype for dates. 
     - determine the format being used e.g. '%Y' for '2023' or '%Y-%m' for '2023-10' or '%Y-%m-%d' for '2023-10-18'.
     - infer the format if it's not explicitly provided.
     - pay attention to columns that might not be clearly labeled as 'date' or 'dates' or similar but that still contain dates and temporal data. Those can be identified by numbers resembling years, months, days, etc.
-e. Determine the correct datatypes for the other columns. Use the provided context in <white_list> tags to determine the correct datatypes for each column.
+d. Determine the correct datatypes for the other columns. Use the provided context in <white_list> tags to determine the correct datatypes for each column.
     - If you enounter a numeric column, analyze the decimal seperator that is being used and make sure the numbers are interpreted correctly.
     - If a decimal seperator other than '.' is being used, make sure to convert the numbers using '.' as the decimal seperator. The numbers never contain thousands separators.
+e. Inspect the provided python script under <prior_script> tags.
 f. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script.
     2. corrected datatypes for the columns in the dataframe 'df_new' based on your prior analysis.

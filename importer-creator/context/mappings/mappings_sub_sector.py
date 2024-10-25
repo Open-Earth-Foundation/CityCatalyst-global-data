@@ -12,6 +12,7 @@ sub_sector_mapping = {
     Example 1: The current row was assigned the GPC sector "Stationary Energy". The GPC sub-sectors may only include one of "Residential buildings", "Commercial and institutional buildings and facilities", "Manufacturing industries and construction", "Energy industries", "Agriculture, forestry, and fishing activities", "Non-specified sources", "Fugitive emissions from mining, processing, storage, and transportation of coal" or "Fugitive emissions from oil and natural gas systems". The data contains the channel 'residential' which indicates usage for residential buildings. Based on this dictionary, this maps to the sub-sector "Residential buildings".
     Example 2: The current row was assigned the GPC sector "Transportation". The GPC sub-sectors may only include on of "On-road", "Railways", "Waterborne navigation", "Aviation" or "Off-road". The data inside the row contains contextual data related to 'agriculture' which indicates usage for agricultural vehicles. Based on this dictionary, this maps to the sub-sector "Off-road".
     Example 3: The current row was assigned the GPC sector "Transportation". The GPC sub-sectors may only include on of "On-road", "Railways", "Waterborne navigation", "Aviation" or "Off-road". The data inside the row contains contextual data related to 'ship fuels' which indicates usage for ships. Based on this dictionary, this maps to the sub-sector "Waterborne navigation".
+    Example 4: The current row was assigned the GPC sector "Transportation". The GPC sub-sectors may only include on of "On-road", "Railways", "Waterborne navigation", "Aviation" or "Off-road". The data inside the row contains contextual data related to 'Jet fuel' which indicates usage for airplanes. Based on this dictionary, this maps to the sub-sector "Aviation".
     """,
     "Stationary Energy": {
         "subsectors": {
@@ -63,7 +64,8 @@ sub_sector_mapping = {
             },
             "Aviation": {
                 "description": """Emissions from fuel combustion in aircraft, including domestic flights and flights departing from airports that serve the city, even if the airport is located outside the city boundary.
-                This subsector also includes emissions from electricity consumption for airport operations."""
+                This subsector also includes emissions from electricity consumption for airport operations. Typical keywords are 'Jet fuel', 'Kerosene' or 'Aircraft' but can also include semantically similar words. 
+                All activities related to airplanes, air travel and aviation operations should be assigned to this subsector."""
             },
             "Off-road": {
                 "description": """Emissions from fuel combustion in vehicles and equipment used off-road, such as construction machinery, agricultural equipment, and recreational vehicles.
