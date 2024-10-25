@@ -7,7 +7,7 @@ from utils.create_prompt import create_prompt
 from utils.agent_creation import create_coding_agent
 from context.mappings.mappings_white_list import white_list_mapping
 from utils.json_output_cleaner import clean_json_output
-
+from utils.create_descriptive_stats_prompt import create_descriptive_stats_prompt
 
 ### TODO: how to handle different decimal seperators like '.' and ','?
 
@@ -31,6 +31,7 @@ def datatypes_agent_initial_script(state: AgentState):
 
     # Load the csv file into the dataframe
     df = pd.read_csv(input_path_csv, encoding="utf-8")
+    descriptive_statistics = create_descriptive_stats_prompt(df)
     # Load the script
     with open(input_path_script, "r", encoding="utf-8") as file:
         script = file.read()
@@ -115,7 +116,7 @@ This is the output path for the new .csv file: {output_path_csv}
     agent = create_coding_agent(df, state.get("verbose"))
 
     # Invoke summary agent with custom prompt
-    response = agent.invoke(prompt)
+    response = agent.invoke(descriptive_statistics + prompt)
     response_output = response.get("output")
 
     # Check and potentially clean the JSON output by removing ```json``` code block markers

@@ -7,6 +7,7 @@ from utils.create_prompt import create_prompt
 from utils.agent_creation import create_coding_agent
 from context.mappings.mappings_white_list import white_list_mapping
 from utils.json_output_cleaner import clean_json_output
+from utils.create_descriptive_stats_prompt import create_descriptive_stats_prompt
 
 
 def delete_cols_agent_initial_script(
@@ -30,6 +31,7 @@ def delete_cols_agent_initial_script(
 
     # Load the dataframe and the script
     df = pd.read_csv(input_path_csv, encoding="utf-8", sep=",", decimal=".")
+    descriptive_statistics = create_descriptive_stats_prompt(df)
 
     ### Manual prefiltering of empty columns
     # Drop columns that are completely empty (i.e., all values are NaN)
@@ -119,7 +121,7 @@ This is the output path for the new .csv file: {output_path_csv}
     agent = create_coding_agent(df, state.get("verbose"))
 
     # Invoke summary agent with custom prompt
-    response = agent.invoke(prompt)
+    response = agent.invoke(descriptive_statistics + prompt)
     response_output = response.get("output")
 
     # Check and potentially clean the JSON output by removing ```json``` code block markers

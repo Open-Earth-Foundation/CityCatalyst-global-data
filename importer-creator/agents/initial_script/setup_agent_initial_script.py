@@ -6,6 +6,7 @@ from state.agent_state import AgentState
 from utils.create_prompt import create_prompt
 from utils.agent_creation import create_coding_agent
 from utils.json_output_cleaner import clean_json_output
+from utils.create_descriptive_stats_prompt import create_descriptive_stats_prompt
 
 
 def setup_agent_initial_script(
@@ -26,6 +27,8 @@ def setup_agent_initial_script(
 
     # Load the original CSV file into a pandas dataframe
     df = pd.read_csv(original_path_csv, encoding="utf-8")
+
+    descriptive_statistics = create_descriptive_stats_prompt(df)
 
     # Define the output paths for the generated files
     output_path_csv = "./generated/initial_script/steps/1_initially.csv"
@@ -115,14 +118,17 @@ The output path for the new .csv file is this: {output_path_csv}.
 """
 
     prompt = create_prompt(
-        task, completion_steps, answer_format, additional_information
+        task,
+        completion_steps,
+        answer_format,
+        additional_information,
     )
 
     # Create agent
     agent = create_coding_agent(df, state.get("verbose"))
 
     # Invoke summary agent with custom prompt
-    response = agent.invoke(prompt)
+    response = agent.invoke(descriptive_statistics + prompt)
     response_output = response.get("output")
 
     # Check and potentially clean the JSON output by removing ```json``` code block markers
