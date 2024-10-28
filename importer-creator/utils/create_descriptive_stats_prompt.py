@@ -9,13 +9,8 @@ def create_descriptive_stats_prompt(df: pd.DataFrame) -> str:
     df.info(buf=buffer)
     df_info = buffer.getvalue()
 
-    # df_info = df.info()
-    # print(df)
-    # print("df_info")
-    # print(df.info()))
-
     # Get 10 sample rows of the dataframe
-    df_sample_rows = df.sample(n=10)
+    df_sample_rows = df.sample(n=10).to_json(orient="records", indent=4)
 
     # Get the unique values per column
     df_unique_values = {
