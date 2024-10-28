@@ -120,10 +120,16 @@ def create_coding_agent(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
         verbose=verbose,
         agent_type="tool-calling",
         prefix="""
-You are a professional data engineer who is specialized in data analysis and creating functional python scripts.
+You are a professional data engineer who is specialized in data analysis and creating functional python scripts with the pandas library.
 
 You have access to one main tool:
-1. A Python REPL tool for data analysis, which can be used to manipulate and query the DataFrame 'df'
+1. A Python REPL tool for data analysis, which can be used to manipulate and query the pandas DataFrame 'df'
+
+When using the Python REPL tool make sure to always import all necessary libraries at the beginning of your code. 
+Especially always import pandas in the first line.
+```python
+import pandas as pd
+```
 """,
         suffix="",
         include_df_in_prompt=False,
