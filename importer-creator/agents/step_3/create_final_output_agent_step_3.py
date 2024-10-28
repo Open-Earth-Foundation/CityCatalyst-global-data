@@ -7,16 +7,20 @@ def create_final_output_agent_step_3(state: AgentState):
 
     # Load the previously created markdown files
     input_path_markdown_extracted_activity_name = (
-        "./generated/step_3/steps/generated_markdown_extracted_activity_name.md"
+        "./generated/step_3/steps/1_activity_name.md"
     )
     input_path_markdown_extracted_sector = (
-        "./generated/step_3/steps/generated_markdown_extracted_activity_value.md"
+        "./generated/step_3/steps/2_activity_value.md"
     )
     input_path_markdown_extracted_sub_sector = (
-        "./generated/step_3/steps/generated_markdown_extracted_activity_unit.md"
+        "./generated/step_3/steps/3_activity_unit.md"
     )
-    input_path_markdown_extracted_activity_subcategory_1 = "./generated/step_3/steps/generated_markdown_extracted_activity_subcategory_1.md"
-    input_path_markdown_extracted_activity_subcategory_2 = "./generated/step_3/steps/generated_markdown_extracted_activity_subcategory_2.md"
+    input_path_markdown_extracted_activity_subcategory_1 = (
+        "./generated/step_3/steps/4_activity_subcategory_1.md"
+    )
+    input_path_markdown_extracted_activity_subcategory_2 = (
+        "./generated/step_3/steps/5_activity_subcategory_2.md"
+    )
     # Load the last created python script
     input_path_last_script = (
         "./generated/step_3/steps/generated_script_extracted_activity_subcategory_2.py"

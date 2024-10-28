@@ -27,10 +27,8 @@ def extract_activity_subcategory_2_step_3(
     print("\nEXTRACT ACTIVITY SUBCATEGORY 2 STEP 3\n")
 
     # Load the output files of initial script
-    input_path_csv = "./generated/step_3/steps/extracted_activity_subcategory_1.csv"
-    input_path_script = (
-        "./generated/step_3/steps/generated_script_extracted_activity_subcategory_1.py"
-    )
+    input_path_csv = "./generated/step_3/steps/4_activity_subcategory_1.csv"
+    input_path_script = "./generated/step_3/steps/4_activity_subcategory_1.py"
 
     # Load the csv file into the dataframe
     df = pd.read_csv(input_path_csv, encoding="utf-8")
@@ -39,11 +37,9 @@ def extract_activity_subcategory_2_step_3(
         script = file.read()
 
     # Define the output paths
-    output_path_csv = "./generated/step_3/steps/extracted_activity_subcategory_2.csv"
-    output_path_script = (
-        "./generated/step_3/steps/generated_script_extracted_activity_subcategory_2.py"
-    )
-    output_path_markdown = "./generated/step_3/steps/generated_markdown_extracted_activity_subcategory_2.md"
+    output_path_csv = "./generated/step_3/steps/5_activity_subcategory_2.csv"
+    output_path_script = "./generated/step_3/steps/5_activity_subcategory_2.py"
+    output_path_markdown = "./generated/step_3/steps/5_activity_subcategory_2.md"
 
     task = """
 Your task is to extract the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) 'activity_subcategory_type2' and 'activity_subcategory_typename2' from the provided python pandas dataframe based on the instructions below. You will also create a runnable python script.

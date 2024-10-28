@@ -7,33 +7,25 @@ def create_final_output_agent_step_2(state: AgentState):
 
     # Load the previously created markdown files
     input_path_markdown_extracted_datasource_name = (
-        "./generated/step_2/steps/generated_markdown_extracted_datasource_name.md"
+        "./generated/step_2/steps/1_datasource_name.md"
     )
     input_path_markdown_extracted_emissions_year = (
-        "./generated/step_2/steps/generated_markdown_extracted_emissions_year.md"
+        "./generated/step_2/steps/2_emissions_year.md"
     )
     input_path_markdown_extracted_actor_name = (
-        "./generated/step_2/steps/generated_markdown_extracted_actor_name.md"
+        "./generated/step_2/steps/3_actor_name.md"
     )
-    input_path_markdown_extracted_sector = (
-        "./generated/step_2/steps/generated_markdown_extracted_sector.md"
-    )
+    input_path_markdown_extracted_sector = "./generated/step_2/steps/4_sector.md"
     input_path_markdown_extracted_sub_sector = (
-        "./generated/step_2/steps/generated_markdown_extracted_sub_sector.md"
+        "./generated/step_2/steps/5_sub_sector.md"
     )
-    input_path_markdown_extracted_scope = (
-        "./generated/step_2/steps/generated_markdown_extracted_scope.md"
-    )
-    input_path_markdown_extracted_gpc_refno = (
-        "./generated/step_2/steps/generated_markdown_extracted_gpc_refno.md"
-    )
+    input_path_markdown_extracted_scope = "./generated/step_2/steps/6_scope.md"
+    input_path_markdown_extracted_gpc_refno = "./generated/step_2/steps/7_gpc_refno.md"
 
     # Load the last created python script
-    input_path_last_script = (
-        "./generated/step_2/steps/generated_script_extracted_gpc_refno.py"
-    )
+    input_path_last_script = "./generated/step_2/steps/7_gpc_refno.py"
     # Load the last created csv file
-    input_path_last_csv = "./generated/step_2/steps/extracted_gpc_refno.csv"
+    input_path_last_csv = "./generated/step_2/steps/7_gpc_refno.csv"
 
     # Define output paths
     output_path_markdown = "./generated/step_2/final/generated_markdown_final_output.md"

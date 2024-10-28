@@ -24,10 +24,8 @@ def extract_activity_value_agent_step_3(
     print("\nEXTRACT ACTIVITY VALUE AGENT STEP 3\n")
 
     # Load the output files of initial script
-    input_path_csv = "./generated/step_3/steps/extracted_activity_name.csv"
-    input_path_script = (
-        "./generated/step_3/steps/generated_script_extracted_activity_name.py"
-    )
+    input_path_csv = "./generated/step_3/steps/1_activity_name.csv"
+    input_path_script = "./generated/step_3/steps/1_activity_name.py"
 
     # Load the csv file into the dataframe
     df = pd.read_csv(input_path_csv, encoding="utf-8")
@@ -36,13 +34,9 @@ def extract_activity_value_agent_step_3(
         script = file.read()
 
     # Define the output paths
-    output_path_csv = "./generated/step_3/steps/extracted_activity_value.csv"
-    output_path_script = (
-        "./generated/step_3/steps/generated_script_extracted_activity_value.py"
-    )
-    output_path_markdown = (
-        "./generated/step_3/steps/generated_markdown_extracted_activity_value.md"
-    )
+    output_path_csv = "./generated/step_3/steps/2_activity_value.csv"
+    output_path_script = "./generated/step_3/steps/2_activity_value.py"
+    output_path_markdown = "./generated/step_3/steps/2_activity_value.md"
 
     task = """
 Your task is to extract the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) 'activity value' (e.g. the number that describes how much fuel was sold, energy consumed and so on) from the provided python pandas dataframe based on the instructions below. You will also create a runnable python script.

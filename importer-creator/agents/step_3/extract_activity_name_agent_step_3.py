@@ -36,13 +36,9 @@ def extract_activity_name_agent_step_3(
         script = file.read()
 
     # Define the output paths
-    output_path_csv = "./generated/step_3/steps/extracted_activity_name.csv"
-    output_path_script = (
-        "./generated/step_3/steps/generated_script_extracted_activity_name.py"
-    )
-    output_path_markdown = (
-        "./generated/step_3/steps/generated_markdown_extracted_activity_name.md"
-    )
+    output_path_csv = "./generated/step_3/steps/1_activity_name.csv"
+    output_path_script = "./generated/step_3/steps/1_activity_name.py"
+    output_path_markdown = "./generated/step_3/steps/1_activity_name.md"
 
     task = """
 Your task is to extract the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) 'activity name' from the provided python pandas dataframe based on the instructions below. You will also create a runnable python script.
