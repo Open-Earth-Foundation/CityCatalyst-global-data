@@ -26,9 +26,9 @@ def setup_agent_initial_script(
     original_path_csv = state.get("full_path")
 
     # Load the original CSV file into a pandas dataframe
-    df = pd.read_csv(original_path_csv, encoding="utf-8")
+    df_original = pd.read_csv(original_path_csv, encoding="utf-8")
 
-    descriptive_statistics = create_descriptive_stats_prompt(df)
+    descriptive_statistics = create_descriptive_stats_prompt(df_original)
 
     # Define the output paths for the generated files
     output_path_csv = "./generated/initial_script/steps/1_initially.csv"
@@ -39,27 +39,27 @@ def setup_agent_initial_script(
 Your task is to reformat a python pandas dataframe. You will do reformating based on below instructions and create a runnable python script.
 Your inputs are:
 - the path to the original .csv file provided by the user under <original_path> tags below.
-- the original unformatted dataframe 'df' loaded from the original .csv file.
+- the original unformatted dataframe 'df_original' loaded from the original .csv file.
 - the output path for the new .csv file under <output_path> tags below.
 """
 
     completion_steps = f"""
-a. Inspect the provided path to the original .csv file under <original_path> tags below.
-b. Inspect the provided pandas dataframe 'df'.
+a. Inspect the .csv file provided under <original_path> tags below. This is the original unformatted data.
+b. Inspect the provided original pandas dataframe 'df_original'.
 c. Create a python script. This python script must contain the following:
-    1. code to load the original .csv file provided under into a pandas dataframe 'df'. 
+    1. code to load the original .csv file provided under into a pandas dataframe 'df_original'. 
     - Use a correct encoding, so that potential special characters are displayed correctly. 
     - When loading the datafile, define the correct separator being used e.g. ',' or ';'.
     - Store the path of the orignal .csv file in a variable 'original_path'.
     - Use the following code snippet:
     ```python
     original_path = ...
-    df = pd.read_csv(original_path, encoding=..., sep=...)
+    df_original = pd.read_csv(original_path, encoding=..., sep=...)
     ```
-    2. a new dataframe 'df_new' that contains all the data of the original dataframe 'df'. Make all further manipulations on this new dataframe 'df_new'.
+    2. a new dataframe 'df_new' that contains all the data of the original dataframe 'df_original'. Make all further manipulations on this new dataframe 'df_new'.
     - Use the following code snippet:
     ```python
-    df_new = df.copy()
+    df_new = df_original.copy()
     ```
     3. normalized column names for 'df_new' where names are converted to 'lower case', strip them of any leading or trailing white spaces and replace any white spaces with underscores '_'.
     - **ATTENTION**: If after renaming the columns, 2 or more columns would end up having the same name, index them with suffixes '_a', '_b' and so on for every repeated name to make them unique. This can happen when there is e.g. the column 'EXAMPLE', 'Example' and 'example' in the original dataframe. This should result in 'example_a', 'example_b' and 'example_c' respectively in the new dataframe.
@@ -89,7 +89,7 @@ c. Create a python script. This python script must contain the following:
     ```
 
     IMPORTANT: 
-    - The code must contain python comments.
+    - The code must contain python comments explaining the code.
     - The code must be executable and must not contain any code errors.
     - The new script must contain all the content of the initial script in addition to the added data.
     - **NEVER** replace the variable 'original_path' in the script. 
@@ -123,7 +123,7 @@ The output path for the new .csv file is this: {output_path_csv}.
     )
 
     # Create agent
-    agent = create_coding_agent(df, state.get("verbose"))
+    agent = create_coding_agent(df_original, state.get("verbose"))
 
     # Invoke summary agent with custom prompt
     response = agent.invoke(descriptive_statistics + prompt)

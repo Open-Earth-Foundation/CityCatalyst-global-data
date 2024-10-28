@@ -19,12 +19,12 @@ def create_descriptive_stats_prompt(df: pd.DataFrame) -> str:
         if df[col].dtype == "object"
     }
 
+    #     The following are 10 sample rows of the dataframe. Use it to get a more detailed understanding of the content of the dataset. This is just sample data. Do not use it to make assumptions on the entire dataset:
+    # {df_sample_rows}
+
     prompt = f"""
 The following is are the data types and null value counts for each column. Use it for understanding the general structure of the dataset:
 {df_info}
-
-The following are 10 sample rows of the dataframe. Use it to get a more detailed understanding of the content of the dataset. This is just sample data. Do not use it to make assumptions on the entire dataset: 
-{df_sample_rows}
 
 The following are the unique values per column containing 'object' data types (text, strings). Use it to understand the different values per column and to make sure to always include all unique values in your answers:
 {json.dumps(df_unique_values, indent=4)}
