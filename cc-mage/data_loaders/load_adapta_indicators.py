@@ -1,3 +1,4 @@
+import pandas as pd
 from mage_ai.settings.repo import get_repo_path
 from mage_ai.io.config import ConfigFileLoader
 from mage_ai.io.s3 import S3
@@ -22,15 +23,24 @@ def load_from_s3_bucket(*args, **kwargs):
     bucket_name = kwargs['bucket_name']
     object_key = 'files/ccra/adapta_brazil/adapta_city_api_response.csv'
 
-    return S3.with_config(ConfigFileLoader(config_path, config_profile)).load(
+    df = S3.with_config(ConfigFileLoader(config_path, config_profile)).load(
         bucket_name,
         object_key,
     )
+    
+    filtered_df = df[df['indicator_name'].isin(['Índice de precipitação-evapotranspiração padronizado', 'Dias consecutivos secos'])]
+    # 5 is for food security
+    #filtered_df = df[df['indicator_id'].isin([5049, 5048])]
+
+    return filtered_df
 
 
 @test
 def test_output(output, *args) -> None:
     """
-    Template code for testing the output of the block.
+    Test that we get both the indicator names
     """
-    assert output is not None, 'The output is undefined'
+    unique_indicators = output['indicator_name'].unique()
+    assert len(unique_indicators) == 2, (
+        f"Expected 2 unique indicator names, but found {len(unique_indicators)}: {unique_indicators}"
+    )

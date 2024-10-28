@@ -33,7 +33,7 @@ blocks:
   language: sql
   name: adapta_transform_metadata
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: transformer
   upstream_blocks:
@@ -58,7 +58,7 @@ blocks:
   type: data_loader
   upstream_blocks: []
   uuid: raw_adapta_indicator
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     data_provider: duckdb
@@ -76,14 +76,14 @@ blocks:
   language: sql
   name: adapta_transform_indicator
   retry_config: null
-  status: failed
+  status: executed
   timeout: null
   type: transformer
   upstream_blocks:
   - raw_adapta_indicator
   - adapta_transform_metadata
   uuid: adapta_transform_indicator
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     data_provider: duckdb
@@ -91,7 +91,7 @@ blocks:
     export_write_policy: append
   downstream_blocks:
   - load_adapta_impactchain
-  - load_adapt_impactchain_indicator
+  - load_adapt_riskassessment
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -104,7 +104,7 @@ blocks:
   upstream_blocks:
   - adapta_transform_indicator
   uuid: load_adapta_indicator_staging
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     data_provider: postgres
@@ -130,7 +130,7 @@ blocks:
   upstream_blocks:
   - load_adapta_indicator_staging
   uuid: load_adapta_impactchain
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     data_provider: postgres
@@ -138,6 +138,9 @@ blocks:
     dbt: {}
     disable_query_preprocessing: false
     export_write_policy: append
+    file_path: data_loaders/load_adapt_riskassessment.sql
+    file_source:
+      path: data_loaders/load_adapt_riskassessment.sql
     limit: 1000
     use_raw_sql: true
   downstream_blocks: []
@@ -145,14 +148,14 @@ blocks:
   executor_type: local_python
   has_callback: false
   language: sql
-  name: load_adapt_impactchain_indicator
+  name: load_adapt_riskassessment
   retry_config: null
   status: executed
   timeout: null
   type: data_loader
   upstream_blocks:
   - load_adapta_indicator_staging
-  uuid: load_adapt_impactchain_indicator
+  uuid: load_adapt_riskassessment
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
@@ -175,5 +178,7 @@ spark_config: {}
 tags: []
 type: python
 uuid: ccra_br_adapta
+variables:
+  bucket_name: test-global-api
 variables_dir: /home/src/mage_data/cc-mage
 widgets: []
