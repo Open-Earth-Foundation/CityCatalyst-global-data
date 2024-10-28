@@ -325,7 +325,7 @@ executor_config: {}
 executor_count: 1
 executor_type: null
 extensions: {}
-name: google_eie_file
+name: ghgi_google_eie
 notification_config: {}
 remote_variables_dir: null
 retry_config: {}
@@ -335,7 +335,7 @@ settings:
 spark_config: {}
 tags: []
 type: python
-uuid: google_eie_file
+uuid: ghgi_google_eie
 variables:
   bucket_name: test-global-api
   city_name: cordoba

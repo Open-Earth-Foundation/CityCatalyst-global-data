@@ -240,12 +240,12 @@ concurrency_config: {}
 conditionals: []
 created_at: '2024-07-01 16:25:12.592377+00:00'
 data_integration: null
-description: Argentina national data
+description: Argentina national energy data
 executor_config: {}
 executor_count: 1
 executor_type: null
 extensions: {}
-name: ben_ar_update
+name: ghgi_ben_ar
 notification_config: {}
 remote_variables_dir: null
 retry_config: {}
@@ -255,7 +255,7 @@ settings:
 spark_config: {}
 tags: []
 type: python
-uuid: ben_ar_update
+uuid: ghgi_ben_ar
 variables:
   bucket_name: test-global-api
 variables_dir: /home/src/mage_data/cc-mage

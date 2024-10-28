@@ -338,7 +338,7 @@ executor_config: {}
 executor_count: 1
 executor_type: null
 extensions: {}
-name: oil_and_gas_refining_climate_trace
+name: ghgi_climate_trace_oil_and_gas_refining
 notification_config: {}
 remote_variables_dir: null
 retry_config: {}
@@ -348,7 +348,7 @@ settings:
 spark_config: {}
 tags: []
 type: python
-uuid: oil_and_gas_refining_climate_trace
+uuid: ghgi_climate_trace_oil_and_gas_refining
 variables:
   bucket_name: global-api-raw-data
 variables_dir: /home/src/mage_data/cc-mage
