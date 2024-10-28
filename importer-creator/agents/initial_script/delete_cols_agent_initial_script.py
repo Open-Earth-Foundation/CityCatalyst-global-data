@@ -8,6 +8,7 @@ from utils.agent_creation import create_coding_agent
 from context.mappings.mappings_white_list import white_list_mapping
 from utils.json_output_cleaner import clean_json_output
 from utils.create_descriptive_stats_prompt import create_descriptive_stats_prompt
+from utils.output_path_updater import update_output_path
 
 
 def delete_cols_agent_initial_script(
@@ -33,11 +34,6 @@ def delete_cols_agent_initial_script(
     df = pd.read_csv(input_path_csv, encoding="utf-8", sep=",", decimal=".")
     descriptive_statistics = create_descriptive_stats_prompt(df)
 
-    ### Manual prefiltering of empty columns
-    # Drop columns that are completely empty (i.e., all values are NaN)
-    # empty_columns = df.columns[df.isna().all()]
-    # df_cleaned = df.drop(empty_columns, axis=1)
-
     # Load the script
     with open(input_path_script, "r", encoding="utf-8") as file:
         script = file.read()
@@ -46,6 +42,10 @@ def delete_cols_agent_initial_script(
     output_path_csv = "./generated/initial_script/steps/2_deleted_columns.csv"
     output_path_script = "./generated/initial_script/steps/2_deleted_columns.py"
     output_path_markdown = "./generated/initial_script/steps/2_deleted_columns.md"
+
+    # a. Inspect the .csv file provided under <input_path> tags below. You are provided with a pandas dataframe 'df' based on this .csv file. Base your further analysis only on this dataframe 'df'. This is already an updated dataframe based on the python script under <prior_script> tags below.
+    # - NEVER load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.
+    # - Inspect the unique values in each column of the dataframe 'df' containing the datatype dtype == 'object'. This is important to understand the different values in each column.
 
     # Create the prompt
     task = """
@@ -59,27 +59,23 @@ Your inputs are:
 """
 
     completion_steps = f"""
-a. Inspect the .csv file provided under <input_path> tags below. You are provided with a pandas dataframe 'df' based on this .csv file. Base your further analysis only on this dataframe 'df'. This is already an updated dataframe based on the python script under <prior_script> tags below.
-    - NEVER load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags. 
-    - Inspect the unique values in each column of the dataframe 'df' containing the datatype dtype == 'object'. This is important to understand the different values in each column. 
+a. Inspect the provided pandas dataframe 'df'. Base your further analysis only on this dataframe 'df'. This dataframe is the result of running the python script provided under <prior_script> tags below and loading the resulting .csv file into a pandas dataframe.
 b. Inspect the white list of columns that cannot be deleted provided under <white_list> tags.
 c. Output a list of columns that are not necessary and can be deleted:
 - for each column in the dataframe 'df', inspect the unique values of that column and compare them based on semantic similarity to the white list provided under <white_list> tags below
 - drop all columns from the dataframe 'df' which are empty using "df.dropna(axis=1, how='all')". Include this step in your reasoning.
 - If you are in doubt about a certain column, do not delete it and flag it for further inspection in your reasoning.
 d. Inspect the provided python script under <prior_script> tags.
-e. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
-    1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
+e. Update the provided python script in <prior_script> tags below. This python script must contain the following:
+    1. the original code of the prior script provided in the <prior_script> tags below. You make your changes to this script. 
     2. delete all columns from the dataframe 'df_new' that are not necessary, based on your analysis of the white list provided under <white_list> tags below. 
-    3. finally:
-    - add code to output a new .csv file 'df_new.to_csv' so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma separated ','. The .csv file must use 'encoding="utf-8"'.
-    - store the new path given in <output_path> tags below in the updated variable named 'output_path' for exporting the new .csv file.
+    3. Insert the new code at the bottom of the script and before the final final output to csv, to keep the chronological order of the script.
     
     IMPORTANT: 
+    - **DO NOT** load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags below. You only work with the dataframe 'df' you are already provided with.
     - The code must contain python comments.
     - The code must be executable and must not contain any code errors.
-    - The new script must contain all the content of the initial script in addition to the added data.
-    - **NEVER** replace the variable 'original_path' in the script loaded from <prior_script> tags.  
+    - The new script must contain all the content of the initial script in addition to the added data..  
 """
 
     answer_format = """
@@ -93,9 +89,6 @@ Ensure that the output is valid JSON and does not include any additional comment
 
     additional_information = f"""
 <additional_information>
-<input_path>
-This is the input path to the .csv file created by the prior agent: {input_path_csv}
-</input_path>
 <white_list>
 This is the white list of columns with descriptions. For each key, inspecht the description and the examples and use them as reference for deciding on which columns to delete. Include a reference to the descriptions and examples in your reasoning.
 Use this to define which columns are not necessary and can be deleted: {json.dumps(white_list_mapping, indent=4)}
@@ -107,9 +100,6 @@ This is the prior python script provided:
 {script}
 ```
 </prior_script>
-<output_path>
-This is the output path for the new .csv file: {output_path_csv}
-</output_path>
 </additional_information>
 """
 
@@ -151,10 +141,14 @@ This is the output path for the new .csv file: {output_path_csv}
         sys.exit(1)
 
     if output.get("code"):
+        print("Update output path...")
+        # Update the generated code to replace the 'output_path' dynamically
+        updated_code = update_output_path(output["code"], output_path_csv)
+
         print("Create the script...")
         # Save the generated code to a Python file
         with open(output_path_script, "w", encoding="utf-8") as script_file:
-            script_file.write(output["code"])
+            script_file.write(updated_code)
 
         # Run the generated Python script
         print("Attempting to run the generated script...")

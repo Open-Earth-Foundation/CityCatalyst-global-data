@@ -2,7 +2,7 @@ from langgraph.graph import StateGraph, END
 from state.agent_state import AgentState
 
 # For debugging only
-perform_steps = {"step_2": True, "step_3": False, "step_4": False}
+perform_steps = {"step_2": False, "step_3": False, "step_4": False}
 
 # Import for initial script
 from agents.initial_script.setup_agent_initial_script import setup_agent_initial_script

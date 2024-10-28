@@ -8,8 +8,7 @@ from utils.agent_creation import create_coding_agent
 from context.mappings.mappings_white_list import white_list_mapping
 from utils.json_output_cleaner import clean_json_output
 from utils.create_descriptive_stats_prompt import create_descriptive_stats_prompt
-
-### TODO: how to handle different decimal seperators like '.' and ','?
+from utils.output_path_updater import update_output_path
 
 
 def datatypes_agent_initial_script(state: AgentState):
@@ -50,8 +49,7 @@ Your inputs are:
 - the output path for the new .csv file under <output_path> tags below.
 """
     completion_steps = f"""
-a. Inspect the .csv file provided under <input_path> tags below. You are provided with a pandas dataframe 'df' based on this .csv file. Base your further analysis only on this dataframe 'df'. This is already an updated dataframe based on the python script under <prior_script> tags.
-    - NEVER load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags. 
+a. Inspect the provided pandas dataframe 'df'. Base your further analysis only on this dataframe 'df'. This dataframe is the result of running the python script provided under <prior_script> tags below and loading the resulting .csv file into a pandas dataframe.
 b. Inspect the datatypes of each column in the dataframe 'df' and output a list of suggested corrections. 
 c. Inspect the columns in the dataframe 'df' that contain dates and temporal data. Check if those columns have the correct datatype for dates. 
     - determine the format being used e.g. '%Y' for '2023' or '%Y-%m' for '2023-10' or '%Y-%m-%d' for '2023-10-18'.
@@ -61,7 +59,7 @@ d. Determine the correct datatypes for the other columns. Use the provided conte
     - If you enounter a numeric column, analyze the decimal seperator that is being used and make sure the numbers are interpreted correctly.
     - If a decimal seperator other than '.' is being used, make sure to convert the numbers using '.' as the decimal seperator. The numbers never contain thousands separators.
 e. Inspect the provided python script under <prior_script> tags.
-f. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
+f. Update the provided python script in <prior_script> tags below. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script.
     2. corrected datatypes for the columns in the dataframe 'df_new' based on your prior analysis.
     3. converted date columns to valid datetime data type based on your prior analysis.
@@ -70,15 +68,13 @@ f. Create a python script based on the script provided within <prior_script> tag
     format = '...'
     pd.to_datetime(..., format=format, errors='coerce')
     ```
-    4. finally:
-    - add code to output a new .csv file 'df_new.to_csv' so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma seperated ','. The .csv file must use 'encoding="utf-8"'.
-    - store the new path given in <output_path> tags below in the updated variable named 'output_path' for exporting the new .csv file.
+    4. Insert the new code at the bottom of the script and before the final final output to csv, to keep the chronological order of the script.
     
     IMPORTANT: 
+    - **DO NOT** load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags below. You only work with the dataframe 'df' you are already provided with.
     - The code must contain python comments.
     - The code must be executable and must not contain any code errors.
     - The new script must contain all the content of the initial script in addition to the added data.
-    - **NEVER** replace the variable 'original_path' in the script loaded from <prior_script> tags.
 """
     answer_format = """
 Your output must be provided in JSON format. Provide all detailed reasoning in a structured and human readable way (e.g. using sub headers, bulletpoints and numbered lists) and the pure executable Python code in the following JSON format:
@@ -90,9 +86,6 @@ Ensure that the output is valid JSON and does not include any additional comment
 """
     additional_information = f"""
 <additional_information>
-<input_path>
-This is the input path to the .csv file created by the prior agent: {input_path_csv}
-</input_path>
 <white_list>
 This list provides information on datatypes for each column type: {json.dumps(white_list_mapping, indent=4)}
 </white_list>
@@ -103,9 +96,6 @@ This is the prior python script provided:
 {script}
 ```
 </prior_script>
-<output_path>
-This is the output path for the new .csv file: {output_path_csv}
-</output_path>
 </additional_information>
 """
 
@@ -146,10 +136,14 @@ This is the output path for the new .csv file: {output_path_csv}
         sys.exit(1)
 
     if output.get("code"):
+        print("Update output path...")
+        # Update the generated code to replace the 'output_path' dynamically
+        updated_code = update_output_path(output["code"], output_path_csv)
+
         print("Create the script...")
         # Save the generated code to a Python file
         with open(output_path_script, "w", encoding="utf-8") as script_file:
-            script_file.write(output["code"])
+            script_file.write(updated_code)
 
         # Run the generated Python script
         print("Attempting to run the generated script...")
