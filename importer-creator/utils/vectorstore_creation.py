@@ -39,7 +39,9 @@ def create_vectorstore():
     # Add documents to vector store
     vector_store.add_documents(pages)
 
-    print(f"\nVector Store created with {len(vector_store.get()["documents"])} documents.\n")
+    print(
+        f"\nVector Store created with {len(vector_store.get()['documents'])} documents.\n"
+    )
 
 
 if __name__ == "__main__":

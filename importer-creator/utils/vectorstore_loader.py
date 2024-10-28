@@ -23,7 +23,9 @@ def load_vectorstore():
         )
 
         if vector_store.get()["documents"]:
-            print(f"\nVector Store loaded with: {len(vector_store.get()["documents"])} documents\n")
+            print(
+                f"\nVector Store loaded with: {len(vector_store.get()['documents'])} documents\n"
+            )
             return vector_store
         else:
             print(f"\nVector Store is empty. Ending script.\n")
