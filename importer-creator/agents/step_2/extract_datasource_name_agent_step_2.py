@@ -67,6 +67,7 @@ e. Update the provided python script in <prior_script> tags below. This python s
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
     2. add a column 'datasource_name' to the dataframe 'df_new' with the extracted 'datasource_name'.
     3. Insert the new code at the bottom of the script and before the final output to csv, to keep the chronological order of the script.
+    4. **ONLY** insert the new code and **NEVER** overwrite or change the existing code.
 
     
     IMPORTANT: 

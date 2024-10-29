@@ -66,6 +66,7 @@ d. Create a python script based on the script provided within <prior_script> tag
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
     2. add a column 'activity_unit' to the dataframe 'df_new' with the extracted GPC 'activity_unit' based on your prior analysis.
     3. Insert the new code at the bottom of the script and before the final output to csv, to keep the chronological order of the script.
+    4. **ONLY** insert the new code and **NEVER** overwrite or change the existing code.
 
     
     IMPORTANT: 

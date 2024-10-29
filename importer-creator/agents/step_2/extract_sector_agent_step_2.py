@@ -74,6 +74,7 @@ f. Update the provided python script in <prior_script> tags below. This python s
     2. a mapping dictionary for the GPC sector based on your prior analysis in step 'd'.
     3. add a column 'sector_name' to the dataframe 'df_new' which applies a GPC sector to each row of 'df_new' based on the created mapping dictionary.
     4. Insert the new code at the bottom of the script and before the final output to csv, to keep the chronological order of the script.
+    5. **ONLY** insert the new code and **NEVER** overwrite or change the existing code.
 
     
     IMPORTANT: 

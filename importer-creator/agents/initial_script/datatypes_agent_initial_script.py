@@ -81,6 +81,7 @@ f. Update the provided python script in <prior_script> tags below. This python s
     pd.to_datetime(..., format=format, errors='coerce')
     ```
     4. Insert the new code at the bottom of the script and before the final output to csv, to keep the chronological order of the script.
+    5. **ONLY** insert the new code and **NEVER** overwrite or change the existing code.
     
     IMPORTANT: 
     - **DO NOT** load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags below. You only work with the dataframe 'df' you are already provided with.

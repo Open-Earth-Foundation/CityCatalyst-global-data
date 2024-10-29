@@ -69,6 +69,7 @@ e. Update the provided python script in <prior_script> tags below. This python s
     1. the original code of the prior script provided in the <prior_script> tags below. You make your changes to this script. 
     2. delete all columns from the dataframe 'df_new' that are not necessary, based on your analysis of the white list provided under <white_list> tags below. 
     3. Insert the new code at the bottom of the script and before the final output to csv, to keep the chronological order of the script.
+    4. **ONLY** insert the new code and **NEVER** overwrite or change the existing code.
     
     IMPORTANT: 
     - **DO NOT** load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags below. You only work with the dataframe 'df' you are already provided with.

@@ -82,6 +82,7 @@ g. Create a python script based on the script provided within <prior_script> tag
     4. a mapping dictionary for the GPC 'activity_subcategory_typenname2' based on your prior analysis in step 'f'.
     5. add a column 'activity_subcategory_typenname2' to the dataframe 'df_new' which applies a mapping for the GPC 'activity_subcategory_typenname2' to each row of 'df_new' based on the created mapping dictionary.
     6. Insert the new code at the bottom of the script and before the final output to csv, to keep the chronological order of the script.
+    7. **ONLY** insert the new code and **NEVER** overwrite or change the existing code.
 
     
     IMPORTANT: 
