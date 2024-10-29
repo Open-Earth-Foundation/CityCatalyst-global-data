@@ -48,13 +48,9 @@ def delete_cols_agent_initial_script(
     output_path_script = "./generated/initial_script/steps/2_deleted_columns.py"
     output_path_markdown = "./generated/initial_script/steps/2_deleted_columns.md"
 
-    # a. Inspect the .csv file provided under <input_path> tags below. You are provided with a pandas dataframe 'df' based on this .csv file. Base your further analysis only on this dataframe 'df'. This is already an updated dataframe based on the python script under <prior_script> tags below.
-    # - NEVER load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.
-    # - Inspect the unique values in each column of the dataframe 'df' containing the datatype dtype == 'object'. This is important to understand the different values in each column.
-
     # Create the prompt
     task = """
-Your task is to inspect the dataframe 'df' and to delete all unnecessary columns based on the provided information below. You will also create a runnable python script.
+Your task is to inspect the dataframe 'df' and to keep all necessary columns based on the provided information in <white_list> tags below. You will also create a runnable python script.
 Your inputs are:
 - the input path to the .csv file created by the prior agent under <input_path> tags below.
 - the dataframe 'df' loaded from the .csv file created by the prior agent.
@@ -66,7 +62,7 @@ Your inputs are:
 a. Inspect the .csv file provided under <input_path> tags below. The dataframe 'df' you are provided with is the result of running the python script under <prior_script> tags below on this input .csv file.
     - Load the .csv file into a pandas dataframe 'df' using the path provided under <input_path> tags and 'df = pd.read_csv(input_path, encoding="utf-8", sep=",")'.
     - **NEVER** load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.  
-b. Inspect the white list of columns that cannot be deleted provided under <white_list> tags.
+b. Inspect the white list of columns which are necessary under <white_list> tags.
 c. Output a list of columns that are not necessary and can be deleted. Unnecessary columns are columns that are empty or which are not included in the white list provided under <white_list> tags. Make sure to not attempt to delete the same column multiple times, e.g. because it is empty and it is not in the white list. If you are in doubt about a certain column, do not delete it and flag it for further inspection in your reasoning.
 d. Inspect the provided python script under <prior_script> tags.
 e. Update the provided python script in <prior_script> tags below. This python script must contain the following:
@@ -96,8 +92,8 @@ Ensure that the output is valid JSON and does not include any additional comment
 This is the input path to the .csv file created by the prior agent: {input_path_csv}
 </input_path>
 <white_list>
-This is the white list of columns with descriptions. For each key, inspecht the description and the examples and use them as reference for deciding on which columns to delete. Include a reference to the descriptions and examples in your reasoning.
-Use this to define which columns are not necessary and can be deleted: {json.dumps(white_list_mapping, indent=4)}
+This is the white list of columns with descriptions. For each column name, inspect the description and the examples and use them as reference for deciding on which columns to keep. Include a reference to the descriptions and examples in your reasoning.
+This whitelist contains the necessary columns: {json.dumps(white_list_mapping, indent=4)}
 </white_list>
 <prior_script>
 This is the prior python script provided:
@@ -151,19 +147,123 @@ This is the prior python script provided:
         # Update the generated code to replace the 'output_path' dynamically
         updated_code = update_output_path(output["code"], output_path_csv)
 
-        print("Create the script...")
-        # Save the generated code to a Python file
-        with open(output_path_script, "w", encoding="utf-8") as script_file:
-            script_file.write(updated_code)
+        # Create a code error
+        updated_code = (
+            updated_code
+            + "This is a faulty comment at the end of the code and needs to be removed!"
+        )
 
-        # Run the generated Python script
-        print("Attempting to run the generated script...")
-        try:
-            result = subprocess.run([sys.executable, output_path_script], check=True)
-            print("The generated script was executed successfully.")
-        except subprocess.CalledProcessError as e:
-            print(f"An error occurred while executing the script: {e}")
+        # Initialize attempt counter
+        max_attempts = 5
+        attempt = 0
+        success = False
+
+        while not success and attempt < max_attempts:
+            attempt += 1
+            print(f"\nAttempt {attempt}: Running the script...")
+
+            # Save the updated code to the script file
+            with open(output_path_script, "w", encoding="utf-8") as script_file:
+                script_file.write(updated_code)
+
+            # Try running the script
+            try:
+                result = subprocess.run(
+                    [sys.executable, output_path_script],
+                    capture_output=True,
+                    text=True,
+                    check=True,
+                )
+                print("The script was executed successfully.")
+                success = True
+            except subprocess.CalledProcessError as e:
+                print(f"An error occurred while executing the script: {e}")
+                print("Standard output:")
+                print(e.stdout)
+                print("Standard error:")
+                print(e.stderr)
+
+                if attempt >= max_attempts:
+                    print("Maximum number of attempts reached. Exiting.")
+                    sys.exit(1)
+
+                # Prepare the prompt to fix the code
+                fix_prompt = f"""
+Your task is to fix the following Python code, which produced an error when run.
+
+The code is:
+```python
+{updated_code}
+```
+
+The error message is:
+{e.stderr}
+
+Please provide the corrected code and a description of the fix.
+
+
+Your output must be provided in JSON format. Provide all detailed reasoning in a structured and human readable way (e.g. using sub headers, bulletpoints and numbered lists) and the pure executable Python code in the following JSON format:
+{{
+    "reasoning": "Your detailed description here...",
+    "code": "Your corrected code here..."
+}}
+Ensure that the output is valid JSON and does not include any additional commentary or explanation. Do not surround the JSON output with any code block markers or tags like ```json```.
+"""
+                # Invoke the agent to fix the code
+                fix_response = agent.invoke(fix_prompt)
+                fix_response_output = fix_response.get("output")
+
+                # Use the structured output agent to parse the fix response
+                structured_fix_output = structured_output_agent.invoke(
+                    fix_response_output
+                )
+
+                # Parse the response
+                try:
+                    # Convert the pydantic object to JSON string
+                    fix_response_json = structured_fix_output.json()
+                    # Load the JSON string into a dictionary
+                    fix_response_dict = json.loads(fix_response_json)
+                    description_of_fix = fix_response_dict.get("reasoning", "")
+                    fixed_code = fix_response_dict.get("code", "")
+                except json.JSONDecodeError as e_json:
+                    print(f"JSON decoding failed: {e_json}")
+                    sys.exit(1)
+
+                if not fixed_code:
+                    print("No fixed code was found in the agent's response.")
+                    sys.exit(1)
+
+                # Update the code for the next attempt
+                updated_code = fixed_code
+
+                # Append the description of the fix to the Markdown file
+                with open(output_path_markdown, "a", encoding="utf-8") as markdown_file:
+                    markdown_file.write(
+                        f"\n\n# Fix Attempt {attempt}\n\n{description_of_fix}"
+                    )
+
+        if not success:
+            print("Failed to execute the script after multiple attempts.")
             sys.exit(1)
+
     else:
         print("No Python code was found in the agent's response.")
         sys.exit(1)
+
+    #     print("Create the script...")
+    #     # Save the generated code to a Python file
+    #     with open(output_path_script, "w", encoding="utf-8") as script_file:
+    #         script_file.write(updated_code)
+
+    #     # Run the generated Python script
+    #     print("Attempting to run the generated script...")
+    #     try:
+    #         result = subprocess.run([sys.executable, output_path_script], check=True)
+    #         print("The generated script was executed successfully.")
+    #     except subprocess.CalledProcessError as e:
+    #         print(f"An error occurred while executing the script: {e}")
+    #         sys.exit(1)
+    # else:
+    #     print("No Python code was found in the agent's response.")
+    #     sys.exit(1)
