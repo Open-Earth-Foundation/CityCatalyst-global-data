@@ -4,9 +4,8 @@ import json
 import pandas as pd
 from state.agent_state import AgentState
 from utils.create_prompt import create_prompt
-from utils.agent_creation import create_coding_agent
+from utils.agent_factory import AgentFactory
 from context.mappings.mappings_white_list import white_list_mapping
-from utils.json_output_cleaner import clean_json_output
 from utils.create_descriptive_stats_prompt import create_descriptive_stats_prompt
 from utils.output_path_updater import update_output_path
 
@@ -23,12 +22,25 @@ def datatypes_agent_initial_script(state: AgentState):
     """
     print("\nFIX DATATYPES AGENT INITIAL SCRIPT\n")
 
+    # Get pre-initialized agents from the AgentFactory
+    structured_output_agent = AgentFactory.get_structured_output_agent(
+        state.get("verbose")
+    )
+    # agent = AgentFactory.get_coding_agent(df_original, state.get("verbose"))
+
     # Load the previously created formatted csv file into a pandas dataframe
     input_path_csv = "./generated/initial_script/steps/2_deleted_columns.csv"
     input_path_script = "./generated/initial_script/steps/2_deleted_columns.py"
 
     # Load the csv file into the dataframe
     df = pd.read_csv(input_path_csv, encoding="utf-8")
+
+    # Get pre-initialized agents from the AgentFactory
+    structured_output_agent = AgentFactory.get_structured_output_agent(
+        state.get("verbose")
+    )
+    agent = AgentFactory.get_coding_agent(df, state.get("verbose"))
+
     descriptive_statistics = create_descriptive_stats_prompt(df)
     # Load the script
     with open(input_path_script, "r", encoding="utf-8") as file:
@@ -48,6 +60,7 @@ Your inputs are:
 """
     completion_steps = f"""
 a. Inspect the .csv file provided under <input_path> tags below. The dataframe 'df' you are provided with is the result of running the python script under <prior_script> tags below on this input .csv file.
+    - Load the .csv file into a pandas dataframe 'df' using the path provided under <input_path> tags and 'df = pd.read_csv(input_path, encoding="utf-8", sep=",")'.
     - NEVER load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.  
 b. Inspect the datatypes of each column in the dataframe 'df' and output a list of suggested corrections. 
 c. Inspect the columns in the dataframe 'df' that contain dates and temporal data. Check if those columns have the correct datatype for dates. 
@@ -67,7 +80,7 @@ f. Update the provided python script in <prior_script> tags below. This python s
     format = '...'
     pd.to_datetime(..., format=format, errors='coerce')
     ```
-    4. Insert the new code at the bottom of the script and before the final final output to csv, to keep the chronological order of the script.
+    4. Insert the new code at the bottom of the script and before the final output to csv, to keep the chronological order of the script.
     
     IMPORTANT: 
     - **DO NOT** load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags below. You only work with the dataframe 'df' you are already provided with.
@@ -105,20 +118,21 @@ This is the prior python script provided:
         task, completion_steps, answer_format, additional_information
     )
 
-    agent = create_coding_agent(df, state.get("verbose"))
-
     # Invoke summary agent with custom prompt
     response = agent.invoke(descriptive_statistics + prompt)
     response_output = response.get("output")
 
-    # Check and potentially clean the JSON output by removing ```json``` code block markers
-    cleaned_response_output = clean_json_output(response_output)
+    # Invoke the new structured output agent with the parsing task
+    structured_output = structured_output_agent.invoke(response_output)
 
     ### Code below for extracting the code from the agent's response and running it - creating the csv file ###
     # Function to parse the JSON response from the agent
     def parse_agent_response(response):
         try:
-            response_dict = json.loads(response)
+            # Load the pydantic object into JSON
+            response_json = response.json()
+            # Load the JSON into a dictionary
+            response_dict = json.loads(response_json)
             reasoning = response_dict.get("reasoning", "").strip()
             code = response_dict.get("code", "").strip()
             return {"reasoning": reasoning, "code": code}
@@ -127,7 +141,7 @@ This is the prior python script provided:
             sys.exit(1)
 
     # Parse the agent's response
-    output = parse_agent_response(cleaned_response_output)
+    output = parse_agent_response(structured_output)
 
     # Save the reasoning to a Markdown file
     if output.get("reasoning"):

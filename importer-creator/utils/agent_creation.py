@@ -2,8 +2,7 @@ import pandas as pd
 from langchain_openai import ChatOpenAI
 from langchain.agents import AgentExecutor
 from langchain_experimental.agents import create_pandas_dataframe_agent
-from langchain_core.tools import StructuredTool
-from pydantic import BaseModel, Field
+from langchain_core.pydantic_v1 import BaseModel, Field
 
 
 # Create agent for code generation
@@ -110,3 +109,19 @@ Important:
         include_df_in_prompt=False,
         extra_tools=[output_tool],
     )
+
+
+# Define input schema for structured output
+class GenerateOutputInput(BaseModel):
+    reasoning: str = Field(..., description="Your detailed reasoning here...")
+    code: str = Field(..., description="Your pure executable Python code here...")
+
+
+# Create the agent for JSON output
+def llm_with_structured_output(verbose: bool) -> AgentExecutor:
+
+    model = "gpt-4o-mini"
+
+    llm = ChatOpenAI(model=model, temperature=0, verbose=verbose)
+    structured_llm = llm.with_structured_output(GenerateOutputInput)
+    return structured_llm

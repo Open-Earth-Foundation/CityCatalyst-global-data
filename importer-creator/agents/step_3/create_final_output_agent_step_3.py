@@ -22,14 +22,10 @@ def create_final_output_agent_step_3(state: AgentState):
         "./generated/step_3/steps/5_activity_subcategory_2.md"
     )
     # Load the last created python script
-    input_path_last_script = (
-        "./generated/step_3/steps/generated_script_extracted_activity_subcategory_2.py"
-    )
+    input_path_last_script = "./generated/step_3/steps/5_activity_subcategory_2.py"
 
     # Load the last created csv file
-    input_path_last_csv = (
-        "./generated/step_3/steps/extracted_activity_subcategory_2.csv"
-    )
+    input_path_last_csv = "./generated/step_3/steps/5_activity_subcategory_2.csv"
 
     # Define output paths
     output_path_markdown = "./generated/step_3/final/generated_markdown_final_output.md"

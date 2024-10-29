@@ -3,9 +3,8 @@ import subprocess
 import json
 import pandas as pd
 from state.agent_state import AgentState
+from utils.agent_factory import AgentFactory
 from utils.create_prompt import create_prompt
-from utils.agent_creation import create_coding_agent
-from utils.json_output_cleaner import clean_json_output
 from utils.create_descriptive_stats_prompt import create_descriptive_stats_prompt
 
 
@@ -27,6 +26,12 @@ def setup_agent_initial_script(
 
     # Load the original CSV file into a pandas dataframe
     df_original = pd.read_csv(original_path_csv, encoding="utf-8")
+
+    # Get pre-initialized agents from the AgentFactory
+    structured_output_agent = AgentFactory.get_structured_output_agent(
+        state.get("verbose")
+    )
+    agent = AgentFactory.get_coding_agent(df_original, state.get("verbose"))
 
     descriptive_statistics = create_descriptive_stats_prompt(df_original)
 
@@ -122,21 +127,21 @@ The output path for the new .csv file is this: {output_path_csv}.
         additional_information,
     )
 
-    # Create agent
-    agent = create_coding_agent(df_original, state.get("verbose"))
-
     # Invoke summary agent with custom prompt
     response = agent.invoke(descriptive_statistics + prompt)
     response_output = response.get("output")
 
-    # Check and potentially clean the JSON output by removing ```json``` code block markers
-    cleaned_response_output = clean_json_output(response_output)
+    # Invoke the new structured output agent with the parsing task
+    structured_output = structured_output_agent.invoke(response_output)
 
     ### Code below for extracting the code from the agent's response and running it - creating the csv file ###
     # Function to parse the JSON response from the agent
     def parse_agent_response(response):
         try:
-            response_dict = json.loads(response)
+            # Load the pydantic object into JSON
+            response_json = response.json()
+            # Load the JSON into a dictionary
+            response_dict = json.loads(response_json)
             reasoning = response_dict.get("reasoning", "").strip()
             code = response_dict.get("code", "").strip()
             return {"reasoning": reasoning, "code": code}
@@ -145,7 +150,7 @@ The output path for the new .csv file is this: {output_path_csv}.
             sys.exit(1)
 
     # Parse the agent's response
-    output = parse_agent_response(cleaned_response_output)
+    output = parse_agent_response(structured_output)
 
     # Save the reasoning to a Markdown file
     if output.get("reasoning"):

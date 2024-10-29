@@ -1,6 +1,6 @@
 @echo off
 
-set x=10  REM Number of times to run the command
+set x=3  REM Number of times to run the command
 
 for /l %%i in (1,1,%x%) do (
   echo Run #%%i
