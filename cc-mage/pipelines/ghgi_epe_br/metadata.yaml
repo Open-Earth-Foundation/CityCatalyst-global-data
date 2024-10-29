@@ -1,0 +1,320 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - load_rawdata_br_epe
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_epe_brazil
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_epe_brazil
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_rawdata_br_epe
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_epe_brazil
+  uuid: load_rawdata_br_epe
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_path: data_loaders/load_ibge_scaling_commericial.py
+    file_source:
+      path: data_loaders/load_ibge_scaling_commericial.py
+  downstream_blocks:
+  - transform_nonresidential_factors
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_ibge_scaling_commericial
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_ibge_scaling_commericial
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - transform_nonresidential_factors
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_ibge_scaling_industrial
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_ibge_scaling_industrial
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - transform_nonresidential_factors
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_ibge_scaling_agri
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_ibge_scaling_agri
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - transform_nonresidential_factors
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_ibge_scaling_residential
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_ibge_scaling_residential
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - transform_nonresidential_factors
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_ibge_res_state
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_ibge_res_state
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: duckdb
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - load_ibge_scaling_factors
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: transform_nonresidential_factors
+  retry_config: null
+  status: updated
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_ibge_scaling_agri
+  - load_ibge_scaling_industrial
+  - load_ibge_scaling_commericial
+  - load_ibge_scaling_residential
+  - load_ibge_res_state
+  uuid: transform_nonresidential_factors
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: duckdb
+    data_provider_profile: default
+    export_write_policy: append
+  downstream_blocks:
+  - update_epe_modelled_staging
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_ibge_scaling_factors
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - transform_nonresidential_factors
+  uuid: load_ibge_scaling_factors
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - load_rawdata_br_elec_ef
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_br_elec_ef
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_br_elec_ef
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - update_epe_modelled_staging
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_rawdata_br_elec_ef
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_br_elec_ef
+  uuid: load_rawdata_br_elec_ef
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - update_epe_activity
+  - load_epe_emissionfactor
+  - load_epe_emissions
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_epe_modelled_staging
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_loader
+  upstream_blocks:
+  - load_rawdata_br_elec_ef
+  - load_ibge_scaling_factors
+  uuid: update_epe_modelled_staging
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_epe_activity
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_loader
+  upstream_blocks:
+  - update_epe_modelled_staging
+  uuid: update_epe_activity
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: load_epe_emissionfactor
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_loader
+  upstream_blocks:
+  - update_epe_modelled_staging
+  uuid: load_epe_emissionfactor
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: load_epe_emissions
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks:
+  - update_epe_modelled_staging
+  uuid: load_epe_emissions
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2024-10-28 17:47:24.453438+00:00'
+data_integration: null
+description: This is energy consumption activity data for Brazil by sector at the
+  state level.
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: ghgi_epe_br
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: ghgi_epe_br
+variables:
+  bucket_name: test-global-api
+variables_dir: /home/src/mage_data/cc-mage
+widgets: []
