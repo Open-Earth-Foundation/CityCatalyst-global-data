@@ -58,7 +58,8 @@ Your inputs are:
 
     completion_steps = f"""
 a. Inspect the .csv file provided under <input_path> tags below. The dataframe 'df' you are provided with is the result of running the python script under <prior_script> tags below on this input .csv file.
-    - NEVER load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.  
+    - Load the .csv file into a pandas dataframe 'df' using the path provided under <input_path> tags and 'df = pd.read_csv(input_path, encoding="utf-8", sep=",")'.
+    - **NEVER** load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.  
 b. Inspect the user provided context in <user_context> tags for identifying possible information about the year of the data.
 c. Determine the year of the data based on the content of the dataframe 'df' and the user provided context. 
 - if the dataframe 'df' contains a date column, extract only the year of this date.

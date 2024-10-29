@@ -61,7 +61,7 @@ Your inputs are:
     completion_steps = f"""
 a. Inspect the .csv file provided under <input_path> tags below. The dataframe 'df' you are provided with is the result of running the python script under <prior_script> tags below on this input .csv file.
     - Load the .csv file into a pandas dataframe 'df' using the path provided under <input_path> tags and 'df = pd.read_csv(input_path, encoding="utf-8", sep=",")'.
-    - NEVER load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.  
+    - **NEVER** load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.  
 b. Inspect the datatypes of each column in the dataframe 'df' and output a list of suggested corrections. 
 c. Inspect the columns in the dataframe 'df' that contain dates and temporal data. Check if those columns have the correct datatype for dates. 
     - determine the format being used e.g. '%Y' for '2023' or '%Y-%m' for '2023-10' or '%Y-%m-%d' for '2023-10-18'.

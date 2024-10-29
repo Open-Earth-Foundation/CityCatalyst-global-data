@@ -61,7 +61,7 @@ Your inputs are:
     completion_steps = f"""
 a. Inspect the .csv file provided under <input_path> tags below. The dataframe 'df' you are provided with is the result of running the python script under <prior_script> tags below on this input .csv file.
     - Load the .csv file into a pandas dataframe 'df' using the path provided under <input_path> tags and 'df = pd.read_csv(input_path, encoding="utf-8", sep=",")'.
-    - NEVER load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.  
+    - **NEVER** load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.  
 b. Inspect the user provided context in <user_context> tags for information about the GPC sub-sectors present in the dataset.
 c. Inspect the additional context for identifying the GPC sub-sector in <context_sub_sector> tags.
 d. Identify further columns in the dataframe 'df' that help to determine the GPC sub-sector using the provided context in <context_sub_sector> tags below. These might be columns containing information about how and where the emissions occur, e.g. energy consumption in buildings or fuel combustion of certain vehicles like cars, ships, planes, trains and others which indicate the relevant GPC sub-sector.

@@ -61,17 +61,17 @@ Your inputs are:
     completion_steps = f"""
 a. Inspect the .csv file provided under <input_path> tags below. The dataframe 'df' you are provided with is the result of running the python script under <prior_script> tags below on this input .csv file.
     - Load the .csv file into a pandas dataframe 'df' using the path provided under <input_path> tags and 'df = pd.read_csv(input_path, encoding="utf-8", sep=",")'.
-    - NEVER load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.  
+    - **NEVER** load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.  
 b. Inspect the user provided context in <user_context> tags below for information regarding the type of activity e.g. if the dataset is about fuel sales or fuel combustion which would map to scope 1 or e.g. is it about energy consumption which would map to scope 2.
 c. Inspect the additional context for identifying the GPC scope in <context_scope> tags below.
-d. Inspect the provided python script under <prior_script> tags below.
-e. Identify columns in the dataframe 'df' that help to determine the GPC scope. Especially look for columns that contain information about the type of activity like fuel combustion or energy conumption.
+d. Identify columns in the dataframe 'df' that help to determine the GPC scope. Especially look for columns that contain information about the type of activity like fuel combustion or energy conumption.
 - Print out the unique values of these identified columns to make sure that all unique values are accounted for in your answer.
 - Each row in the dataframe 'df' should be assigned a GPC scope based on the provided context. 
 - To do this you need to inspect the dataframe 'df' row by row and assign each row a GPC scope based on the information provided in that row.
+e. Inspect the provided python script under <prior_script> tags below.
 f. Update the provided python script in <prior_script> tags below. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
-    2. a mapping dictionary for the GPC scope based on your prior analysis in step 'e'.
+    2. a mapping dictionary for the GPC scope based on your prior analysis in step 'd'.
     3. add a column 'scope' to the dataframe 'df_new' with datatype 'int' using '.astype(int)' and apply a GPC scope to each row of 'df_new' based on the created mapping dictionary.
     4. Insert the new code at the bottom of the script and before the final output to csv, to keep the chronological order of the script.
 

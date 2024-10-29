@@ -56,12 +56,12 @@ Your inputs are:
     completion_steps = f"""
 a. Inspect the .csv file provided under <input_path> tags below. The dataframe 'df' you are provided with is the result of running the python script under <prior_script> tags below on this input .csv file.
     - Load the .csv file into a pandas dataframe 'df' using the path provided under <input_path> tags and 'df = pd.read_csv(input_path, encoding="utf-8", sep=",")'.
-    - NEVER load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.  
-d. Inspect the provided python script under <prior_script> tags.
-c. Determine the GPC 'activity unit' based on the content of the dataframe 'df'. Each row in the dataframe 'df' should be assigned a GPC 'activity unit' based on the provided context. 
+    - **NEVER** load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.  
+b. Determine the GPC 'activity unit' based on the content of the dataframe 'df'. Each row in the dataframe 'df' should be assigned a GPC 'activity unit' based on the provided context. 
 - To do this you need to inspect the dataframe 'df' row by row and assign each row a GPC 'activity unit' based on the information provided in that row.
 - The GPC 'activity unit' is the unit of measurement for the value inside 'activity_value' column of 'df' (e.g. liters, cubic meters, m3, gallons, kWh, etc.).
 - If an 'activity unit' cannot be determined based on context, infer the 'activity unit' and flag this in your reasoning output. 
+c. Inspect the provided python script under <prior_script> tags.
 d. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
     2. add a column 'activity_unit' to the dataframe 'df_new' with the extracted GPC 'activity_unit' based on your prior analysis.

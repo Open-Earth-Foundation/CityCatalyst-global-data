@@ -65,7 +65,7 @@ Your inputs are:
     completion_steps = f"""
 a. Inspect the .csv file provided under <input_path> tags below. The dataframe 'df' you are provided with is the result of running the python script under <prior_script> tags below on this input .csv file.
     - Load the .csv file into a pandas dataframe 'df' using the path provided under <input_path> tags and 'df = pd.read_csv(input_path, encoding="utf-8", sep=",")'.
-    - NEVER load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.  
+    - **NEVER** load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.  
 b. Inspect the white list of columns that cannot be deleted provided under <white_list> tags.
 c. Output a list of columns that are not necessary and can be deleted. Unnecessary columns are columns that are empty or which are not included in the white list provided under <white_list> tags. Make sure to not attempt to delete the same column multiple times, e.g. because it is empty and it is not in the white list. If you are in doubt about a certain column, do not delete it and flag it for further inspection in your reasoning.
 d. Inspect the provided python script under <prior_script> tags.

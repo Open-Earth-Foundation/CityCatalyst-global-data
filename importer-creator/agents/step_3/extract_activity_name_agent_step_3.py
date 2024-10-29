@@ -60,16 +60,16 @@ Your inputs are:
     completion_steps = f"""
 a. Inspect the .csv file provided under <input_path> tags below. The dataframe 'df' you are provided with is the result of running the python script under <prior_script> tags below on this input .csv file.
     - Load the .csv file into a pandas dataframe 'df' using the path provided under <input_path> tags and 'df = pd.read_csv(input_path, encoding="utf-8", sep=",")'.
-    - NEVER load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.  
+    - **NEVER** load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.  
 b. Inspect the mapping for identifying the GPC 'activity name' in <mappings_activities> tags.
-c. Inspect the provided python script under <prior_script> tags.
-d. Inspect the column 'gpc_refno' of the dataframe 'df'. This column determines the correct GPC 'activity name' based on the GPC reference numbers within the provided mapping in <mappings_activities> tags. If no matching GPC reference number is found in a row, return a default value 'unknown'.
+c. Inspect the column 'gpc_refno' of the dataframe 'df'. This column determines the correct GPC 'activity name' based on the GPC reference numbers within the provided mapping in <mappings_activities> tags. If no matching GPC reference number is found in a row, return a default value 'unknown'.
 - Print out the unique values of these identified columns to make sure to include every unique value in your answer.
 - Each row in the dataframe 'df' should be assigned a GPC 'activity name' based on the GPC reference number. 
 - To do this you need to inspect the dataframe 'df' row by row and assign each row a GPC 'activity name' based on the information provided in that row.
+d. Inspect the provided python script under <prior_script> tags.
 e. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
-    2. a mapping dictionary for the GPC 'activity name' based on your prior analysis in step 'e'. The mapping should map between the GPC 'activity name' and the GPC reference number.
+    2. a mapping dictionary for the GPC 'activity name' based on your prior analysis in step 'c'. The mapping should map between the GPC 'activity name' and the GPC reference number.
     3. add a column 'activity_name' to the dataframe 'df_new' which applies a mapping for the GPC 'activity name' to each row of 'df_new' based on the created mapping dictionary.
     4. Insert the new code at the bottom of the script and before the final output to csv, to keep the chronological order of the script.
 

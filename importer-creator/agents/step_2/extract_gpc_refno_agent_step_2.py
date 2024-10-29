@@ -59,14 +59,14 @@ Your inputs are:
     completion_steps = f"""
 a. Inspect the .csv file provided under <input_path> tags below. The dataframe 'df' you are provided with is the result of running the python script under <prior_script> tags below on this input .csv file.
     - Load the .csv file into a pandas dataframe 'df' using the path provided under <input_path> tags and 'df = pd.read_csv(input_path, encoding="utf-8", sep=",")'.
-    - NEVER load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.  
+    - **NEVER** load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.  
 b. Inspect the additional context for identifying the GPC scope in <context_gpc_refno> tags.
-c. Inspect the provided python script under <prior_script> tags.
-d. Inspect for each row the values of the 'sector_name' column, 'subsector_name' column and 'scope' column. The GPC reference number is a combination of those according to the information provided in the <context_gpc_refno> tags.
+c. Inspect for each row the values of the 'sector_name' column, 'subsector_name' column and 'scope' column. The GPC reference number is a combination of those according to the information provided in the <context_gpc_refno> tags.
     - If any of the values in the 'sector_name', 'subsector_name' or 'scope' columns are 'None' or missing, apply the value 'None' for the the GPC reference number.
+d. Inspect the provided python script under <prior_script> tags.
 e. Update the provided python script in <prior_script> tags below. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
-    2. a mapping dictionary for the GPC reference number based on your prior analysis in step 'd'.
+    2. a mapping dictionary for the GPC reference number based on your prior analysis in step 'c'.
     3. add a column 'gpc_refno' to the dataframe 'df_new' and apply a GPC reference number to each row of 'df_new' based on the created mapping dictionary.
     4. Insert the new code at the bottom of the script and before the final output to csv, to keep the chronological order of the script.
 

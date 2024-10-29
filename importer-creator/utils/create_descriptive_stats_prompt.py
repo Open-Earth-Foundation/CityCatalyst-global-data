@@ -23,10 +23,12 @@ def create_descriptive_stats_prompt(df: pd.DataFrame) -> str:
     # {df_sample_rows}
 
     prompt = f"""
-The following is are the data types and null value counts for each column. Use it for understanding the general structure of the dataset:
+The following are the column names, data types and null value counts for each column of the provided dataframe 'df'. Use it for understanding the general structure of the dataset:
 {df_info}
 
-The following are the unique values per column containing 'object' data types (text, strings). Use it to understand the different values per column and to make sure to always include all unique values in your answers:
+The following are the unique values per column containing 'object' data types (text, strings) of the provided dataframe 'df'. Use it to understand the different values per column and to make sure to always include all unique values in your answers:
 {json.dumps(df_unique_values, indent=4)}
+
+Use this provided information anytime you need information about the columns, data types, and unique values of columns in the dataset.
 """
     return prompt

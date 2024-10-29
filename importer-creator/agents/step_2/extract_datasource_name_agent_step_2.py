@@ -59,10 +59,10 @@ Your inputs are:
     completion_steps = f"""
 a. Inspect the .csv file provided under <input_path> tags below. The dataframe 'df' you are provided with is the result of running the python script under <prior_script> tags below on this input .csv file.
     - Load the .csv file into a pandas dataframe 'df' using the path provided under <input_path> tags and 'df = pd.read_csv(input_path, encoding="utf-8", sep=",")'.
-    - NEVER load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.  
+    - **NEVER** load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.  
 b. Inspect the provided context for the 'datasource_name' in <datasource_name_context> tags for identifying the datasource name.
-c. Inspect the provided python script under <prior_script> tags.
-d. Determine the 'datasource_name' of the data file based on the provided context in <datasource_name_context> tags or based on the content of the provided dataframe 'df'.
+c. Determine the 'datasource_name' of the data file based on the provided context in <datasource_name_context> tags or based on the content of the provided dataframe 'df'.
+d. Inspect the provided python script under <prior_script> tags.
 e. Update the provided python script in <prior_script> tags below. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
     2. add a column 'datasource_name' to the dataframe 'df_new' with the extracted 'datasource_name'.

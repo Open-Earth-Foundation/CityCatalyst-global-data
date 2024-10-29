@@ -61,8 +61,8 @@ a. Inspect the .csv file provided under <input_path> tags below. The dataframe '
     - Load the .csv file into a pandas dataframe 'df' using the path provided under <input_path> tags and 'df = pd.read_csv(input_path, encoding="utf-8", sep=",")'.
     - NEVER load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.  
 b. Inspect the user provided context in <user_context> tags for identifying the associated region of the dataset.
-c. Inspect the provided python script under <prior_script> tags.
-d. Determine the region of the data based on the content of the dataframe 'df' and the user provided context. If the region (e.g., a certain country or city) is named in the dataframe 'df' per row, use this value. If no region is mentioned in the dataframe 'df', use the user provided context within <user_context> tags below, to determine the region.
+c. Determine the region of the data based on the content of the dataframe 'df' and the user provided context. If the region (e.g., a certain country or city) is named in the dataframe 'df' per row, use this value. If no region is mentioned in the dataframe 'df', use the user provided context within <user_context> tags below, to determine the region.
+d. Inspect the provided python script under <prior_script> tags.
 e. Update the provided python script in <prior_script> tags below. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
     2. add a column 'actor_name' to the dataframe 'df_new' with the extracted region data.
