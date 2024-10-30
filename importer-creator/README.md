@@ -42,37 +42,41 @@ This will install all the packages listed in the `requirements.txt` file into yo
 
 # Running the script
 
-The script can be run by the following command:
-
-`python transform_script.py "inputfile" "Additional user info" verbose show_graph`
-
 The parameters are:
 
-- "inputfile": the name of the input file e.g. "input_1.csv"
-- "Additional user info": Meta information about the file, e.g. information provided by the uploader of the file
-- "verbose": Either 'true' or 'false'. On 'true' will output all the textout of the agents
-- "show_graph": Either 'true' or 'false'. On 'true' will show the graph
+flags:
+--input-file
+--datasource-name
+--user-input
+--verbose
+--show-graph
+--hitl
+
+The script can be run by the following command:
+
+`python transform_script.py --input-file FILENAME --datasource-name DATASOURCE --user-input CONTEXT --verbose --show-graph --hitl`
+
+--input-file is required. The script will be looking for the file name inside /files folder
+--datasource-name and --user-input are recommended to pass in as much information about the dataset as available
+--verbose will enable LLM output to the console for debugging. However debugging via LangSmith is recommended
+--show-graph will show the agent pipeline at the beginning of the script
+--hitl will enable intermediate human-in-the-loop input
+
+Example:
+
+`python transform_script.py --input-file UAE_fuel_sales.csv --datasource-name "Ministry of Energy & Infrastructure (MEAI)" --user-input "A dataset about oil and gas sales for different regions in the United Arab Emirates (UAE) for the years 2015 to 2020 provided by the Ministry of Energy & Infrastructure (MEAI)" --show-graph`
 
 # Input
 
-Currently the script accepts .csv, .xls or .xlsx
+Currently the script accepts clean .csv files with one data entry per row
 
 # Output
 
-The script will output three files:
+The script will output three files after each step:
 
-- generated_script.py
+- python script
   This is the pthon code which is doing the transformation and which can be processed for downstream tasks
-- formatted.csv
-  This is the formatted input file, transformed based on the `generated_script.py`
-- generated_reasoning.py
+- csv file
+  This is the formatted input file after the step, transformed based on the python script
+- markdown file
   This is a markdown file with the reasoning of the model, to check the assumptions.
-
-# Current limitations
-
-Limitations:
-
-- There are no steps for any preprocessing of the data before loading into a pandas dataframe. This can cause issues, if
-  a) the datafile is very poorly formatted so that it cannot be meaningfully loaded into a dataframe and connections (columns vs. rows) get lost or altered which is especially true for .xls and .xlsx files
-  b) e.g. a .csv file had additional data on top of the actual data rows (e.g. added meta data). Then it cannot be parsed into a pandas dataframe
-- The extraction of the data currently assumes that one datafile is containing data to either stationary energy and/or transportation or waste.
