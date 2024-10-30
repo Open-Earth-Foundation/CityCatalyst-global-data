@@ -28,9 +28,9 @@ def create_final_output_agent_step_3(state: AgentState):
     input_path_last_csv = "./generated/step_3/steps/5_activity_subcategory_2.csv"
 
     # Define output paths
-    output_path_markdown = "./generated/step_3/final/generated_markdown_final_output.md"
-    output_path_script = "./generated/step_3/final/generated_script_final_output.py"
-    output_path_csv = "./generated/step_3/final/generated_final_output.csv"
+    output_path_markdown = "./generated/step_3/final/final_output.md"
+    output_path_script = "./generated/step_3/final/final_output.py"
+    output_path_csv = "./generated/step_3/final/final_output.csv"
 
     # Combine markdown files into one final markdown output
     with open(output_path_markdown, "w", encoding="utf-8") as outfile:
