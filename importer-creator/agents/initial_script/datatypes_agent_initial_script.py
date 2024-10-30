@@ -7,7 +7,7 @@ from utils.create_prompt import create_prompt
 from utils.agent_factory import AgentFactory
 from context.mappings.mappings_white_list import white_list_mapping
 from utils.create_descriptive_stats_prompt import create_descriptive_stats_prompt
-from utils.output_path_updater import update_output_path
+from utils.file_paths_updater import update_file_paths
 
 
 def datatypes_agent_initial_script(state: AgentState):
@@ -81,7 +81,7 @@ f. Update the provided python script in <prior_script> tags below. This python s
     pd.to_datetime(..., format=format, errors='coerce')
     ```
     4. Insert the new code at the bottom of the script and before the final output to csv, to keep the chronological order of the script.
-    5. **ONLY** insert the new code and **NEVER** overwrite or change the existing code.
+    5. **ONLY** insert the new code and **NEVER** overwrite or change the existing code. **NEVER** change the variable 'original_path'.
     
     IMPORTANT: 
     - **DO NOT** load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags below. You only work with the dataframe 'df' you are already provided with.
@@ -153,9 +153,11 @@ This is the prior python script provided:
         sys.exit(1)
 
     if output.get("code"):
-        print("Update output path...")
-        # Update the generated code to replace the 'output_path' dynamically
-        updated_code = update_output_path(output["code"], output_path_csv)
+        print("Update file paths...")
+        # Update the generated code to replace the file paths dynamically
+        updated_code = update_file_paths(
+            output["code"], state.get("full_path"), output_path_csv
+        )
 
         print("Create the script...")
         # Save the generated code to a Python file

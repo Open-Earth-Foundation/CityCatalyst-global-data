@@ -7,7 +7,7 @@ from utils.create_prompt import create_prompt
 from utils.agent_factory import AgentFactory
 from context.mappings.mappings_white_list import white_list_mapping
 from utils.create_descriptive_stats_prompt import create_descriptive_stats_prompt
-from utils.output_path_updater import update_output_path
+from utils.file_paths_updater import update_file_paths
 
 
 def delete_cols_agent_initial_script(
@@ -70,7 +70,7 @@ e. Update the provided python script in <prior_script> tags below. This python s
     1. the original code of the prior script provided in the <prior_script> tags below. You make your changes to this script. 
     2. keep all necessary columns using 'df_new = df_new[necessary_columns]' where 'necessary_columns' are the list of columns to be retained based on your analysis of the white list provided under <white_list> tags below. 
     3. Insert the new code at the bottom of the script and before the final output to csv, to keep the chronological order of the script.
-    4. **ONLY** insert the new code and **NEVER** overwrite or change the existing code.
+    4. **ONLY** insert the new code and **NEVER** overwrite or change the existing code. **NEVER** change the variable 'original_path'.
     
     IMPORTANT: 
     - **DO NOT** load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags below. You only work with the dataframe 'df' you are already provided with.
@@ -142,9 +142,11 @@ Ensure that the output is valid JSON and does not include any additional comment
         sys.exit(1)
 
     if output.get("code"):
-        print("Update output path...")
-        # Update the generated code to replace the 'output_path' dynamically
-        updated_code = update_output_path(output["code"], output_path_csv)
+        print("Update file paths...")
+        # Update the generated code to replace the file paths dynamically
+        updated_code = update_file_paths(
+            output["code"], state.get("full_path"), output_path_csv
+        )
 
         print("Create the script...")
         # Save the generated code to a Python file

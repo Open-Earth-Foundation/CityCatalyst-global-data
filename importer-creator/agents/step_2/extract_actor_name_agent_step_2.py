@@ -6,7 +6,7 @@ from state.agent_state import AgentState
 from utils.create_prompt import create_prompt
 from utils.agent_factory import AgentFactory
 from utils.create_descriptive_stats_prompt import create_descriptive_stats_prompt
-from utils.output_path_updater import update_output_path
+from utils.file_paths_updater import update_file_paths
 
 
 def extract_actor_name_agent_step_2(
@@ -67,7 +67,7 @@ e. Update the provided python script in <prior_script> tags below. This python s
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
     2. add a column 'actor_name' to the dataframe 'df_new' with the extracted region data.
     3. Insert the new code at the bottom of the script and before the final output to csv, to keep the chronological order of the script.
-    4. **ONLY** insert the new code and **NEVER** overwrite or change the existing code.
+    4. **ONLY** insert the new code and **NEVER** overwrite or change the existing code. **NEVER** change the variable 'original_path'.
 
     
     IMPORTANT: 
@@ -144,7 +144,7 @@ This is the prior python script provided:
     if output.get("code"):
         print("Update output path...")
         # Update the generated code to replace the 'output_path' dynamically
-        updated_code = update_output_path(output["code"], output_path_csv)
+        updated_code = update_file_paths(output["code"], output_path_csv)
 
         print("Create the script...")
         # Save the generated code to a Python file

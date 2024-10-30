@@ -7,7 +7,7 @@ from utils.create_prompt import create_prompt
 from utils.agent_factory import AgentFactory
 from context.mappings.mappings_sub_sector import sub_sector_mapping
 from utils.create_descriptive_stats_prompt import create_descriptive_stats_prompt
-from utils.output_path_updater import update_output_path
+from utils.file_paths_updater import update_file_paths
 
 
 def extract_sub_sector_agent_step_2(
@@ -76,7 +76,7 @@ g. Update the provided python script in <prior_script> tags below. This python s
     2. a mapping dictionary for the GPC sub-sector based on your prior analysis.
     3. add a column 'subsector_name' to the dataframe 'df_new' which applies a GPC sub-sector to each row of 'df_new' based on the created mapping dictionary.
     4. Insert the new code at the bottom of the script and before the final output to csv, to keep the chronological order of the script.
-    5. **ONLY** insert the new code and **NEVER** overwrite or change the existing code.
+    5. **ONLY** insert the new code and **NEVER** overwrite or change the existing code. **NEVER** change the variable 'original_path'.
 
     
     IMPORTANT: 
@@ -156,7 +156,7 @@ This is the prior python script provided:
     if output.get("code"):
         print("Update output path...")
         # Update the generated code to replace the 'output_path' dynamically
-        updated_code = update_output_path(output["code"], output_path_csv)
+        updated_code = update_file_paths(output["code"], output_path_csv)
 
         print("Create the script...")
         # Save the generated code to a Python file

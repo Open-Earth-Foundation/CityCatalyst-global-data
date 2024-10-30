@@ -2,7 +2,7 @@ from langgraph.graph import StateGraph, END
 from state.agent_state import AgentState
 
 # For debugging only
-perform_steps = {"step_2": True, "step_3": True, "step_4": False}
+perform_steps = {"step_2": False, "step_3": False, "step_4": False}
 
 # Import for initial script
 from agents.initial_script.setup_agent_initial_script import setup_agent_initial_script
@@ -221,7 +221,7 @@ def create_workflow():
         if perform_steps["step_2"]:
             workflow.add_edge("create_final_output_agent_step_2", END)
         else:
-            workflow.add_edge("create_final_output_agent_initial_script", END)
+            workflow.add_edge("hitl_agent_initial_script", END)
 
     # Step 4
     if perform_steps["step_4"]:
@@ -237,7 +237,7 @@ def create_workflow():
         elif perform_steps["step_2"]:
             workflow.add_edge("create_final_output_agent_step_2", END)
         else:
-            workflow.add_edge("create_final_output_agent_initial_script", END)
+            workflow.add_edge("hitl_agent_initial_script", END)
 
     # Set the entry point
     workflow.set_entry_point("setup_agent_initial_script")
