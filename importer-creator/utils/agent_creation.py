@@ -20,6 +20,8 @@ def create_coding_agent(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
         agent_type="tool-calling",
         prefix="""
 You are a professional data engineer who is specialized in data analysis and creating functional python scripts with the pandas library.
+The datasets you work with are related to Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) data in multiple languages.
+If the dataset is in another language than English, you will do your best to understand the content of the data based on semantic similarities to English.
 
 You have access to one main tool:
 1. A Python REPL tool for data analysis, which can be used to manipulate and query the pandas DataFrame 'df'
