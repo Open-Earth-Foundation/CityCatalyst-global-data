@@ -2,7 +2,7 @@ from langgraph.graph import StateGraph, END
 from state.agent_state import AgentState
 
 # For debugging only
-perform_steps = {"step_2": True, "step_3": True, "step_4": False}
+perform_steps = {"step_2": True, "step_3": False, "step_4": False}
 
 # Import for initial script
 from agents.initial_script.setup_agent_initial_script import setup_agent_initial_script
@@ -15,6 +15,7 @@ from agents.initial_script.datatypes_agent_initial_script import (
 from agents.initial_script.create_final_output_agent_initial_script import (
     create_final_output_agent_initial_script,
 )
+from agents.initial_script.hitl_agent_initial_script import hitl_agent_initial_script
 
 # Import for step 2
 from agents.step_2.extract_datasource_name_agent_step_2 import (
@@ -93,6 +94,7 @@ def create_workflow():
         "create_final_output_agent_initial_script",
         create_final_output_agent_initial_script,
     )
+    workflow.add_node("hitl_agent_initial_script", hitl_agent_initial_script)
 
     workflow.add_edge("setup_agent_initial_script", "delete_cols_agent_initial_script")
     workflow.add_edge(
@@ -100,6 +102,9 @@ def create_workflow():
     )
     workflow.add_edge(
         "datatypes_agent_initial_script", "create_final_output_agent_initial_script"
+    )
+    workflow.add_edge(
+        "create_final_output_agent_initial_script", "hitl_agent_initial_script"
     )
 
     # Step 2
@@ -127,7 +132,7 @@ def create_workflow():
 
         # Step 2 edges
         workflow.add_edge(
-            "create_final_output_agent_initial_script",
+            "hitl_agent_initial_script",
             "extract_datasource_name_agent_step_2",
         )
         workflow.add_edge(
@@ -161,7 +166,7 @@ def create_workflow():
                 "extract_activity_name_agent_step_3",
             )
     else:
-        workflow.add_edge("create_final_output_agent_initial_script", END)
+        workflow.add_edge("hitl_agent_initial_script", END)
 
     # Step 3
     if perform_steps["step_3"]:
