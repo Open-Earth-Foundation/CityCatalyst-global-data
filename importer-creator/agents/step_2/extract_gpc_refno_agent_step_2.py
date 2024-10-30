@@ -62,7 +62,7 @@ a. Inspect the .csv file provided under <input_path> tags below. The dataframe '
     - **NEVER** load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.  
 b. Inspect the additional context for identifying the GPC scope in <context_gpc_refno> tags.
 c. Inspect for each row the values of the 'sector_name' column, 'subsector_name' column and 'scope' column. The GPC reference number is a combination of those according to the information provided in the <context_gpc_refno> tags.
-    - If any of the values in the 'sector_name', 'subsector_name' or 'scope' columns are 'None' or missing, apply the value 'None' for the the GPC reference number.
+    - If any of the values in the 'sector_name', 'subsector_name' or 'scope' columns are None (Python NoneType (i.e., None without quotes)) or missing, apply the value None (Python NoneType (i.e., None without quotes)) for the the GPC reference number.
 d. Inspect the provided python script under <prior_script> tags.
 e. Update the provided python script in <prior_script> tags below. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 

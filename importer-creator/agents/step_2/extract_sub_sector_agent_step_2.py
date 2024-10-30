@@ -62,14 +62,14 @@ Your inputs are:
 a. Inspect the .csv file provided under <input_path> tags below. The dataframe 'df' you are provided with is the result of running the python script under <prior_script> tags below on this input .csv file.
     - Load the .csv file into a pandas dataframe 'df' using the path provided under <input_path> tags and 'df = pd.read_csv(input_path, encoding="utf-8", sep=",")'.
     - **NEVER** load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.  
-b. Inspect the user provided context in <user_context> tags for information about the GPC sub-sectors present in the dataset.
+b. Inspect the user provided context in <user_context> tags for information about the GPC sub-sectors present in the dataset, if available.
 c. Inspect the additional context for identifying the GPC sub-sector in <context_sub_sector> tags.
 d. Identify further columns in the dataframe 'df' that help to determine the GPC sub-sector using the provided context in <context_sub_sector> tags below. These might be columns containing information about how and where the emissions occur, e.g. energy consumption in buildings or fuel combustion of certain vehicles like cars, ships, planes, trains and others which indicate the relevant GPC sub-sector.
 - Print out the unique values of these identified columns to make sure that all unique values are accounted for in your answer.
 e. Create a nested mapping dictionary that links the unique values of the column 'sector_name' and the unique values of the identified further columns that help identifying the GPC sub-sectors based on the provided context in <context_sub_sector> tags. The GPC sub-sector must be linked to the GPC sector and additional identified columns.
 - Inspect the values of the column 'sector_name' and print out the unique values of this column. The possible values for the GPC sub-sector depend on the provided GPC sector. 
-- The mapping should be a tuple of the form '('sector_name', 'further_column_a_value', 'furhter_column_b_value', ...)' as key and the GPC sub-sector as value, where further_column_a and further_column_b are possible columns that help to identify the GPC sub-sector.
-- If the column 'sector_name' contains the value 'None', apply the same value 'None' the GPC sub-sector as 'None: None' without using a tuple and flag this in your reasoning.
+- The mapping should be a tuple of the form '('sector_name', 'further_column_a_value', 'further_column_b_value', ...)' as key and the GPC sub-sector as value, where further_column_a and further_column_b are possible columns that help to identify the GPC sub-sector.
+- If the column 'sector_name' contains the value None (Python NoneType (i.e., None without quotes)), apply the same value None (Python NoneType (i.e., None without quotes)) the GPC sub-sector as 'None: None' without using a tuple and flag this in your reasoning.
 f. Inspect the provided python script under <prior_script> tags.
 g. Update the provided python script in <prior_script> tags below. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 

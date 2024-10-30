@@ -50,12 +50,13 @@ def delete_cols_agent_initial_script(
 
     # Create the prompt
     task = """
-Your task is to inspect the dataframe 'df' and to keep all necessary columns based on the provided information in <white_list> tags below. You will also create a runnable python script.
-Your inputs are:
-- the input path to the .csv file created by the prior agent under <input_path> tags below.
-- the dataframe 'df' loaded from the .csv file created by the prior agent.
-- information about which columns are necessary and cannot be deleted (white list) in <white_list> tags below.
-- the python script created by the prior agent provided below inside <prior_script> tags
+Your task is to inspect the dataframe 'df' and to retain all necessary columns based on the provided information in <white_list> tags below. You will also create a runnable python script.
+
+Inputs:
+- <input_path>: The path to the .csv file created by the prior agent.
+- df: The dataframe loaded from this .csv file.
+- <white_list>: A whitelist containing necessary columns that cannot be deleted. For each column name, inspect the description and the examples and use them as reference for deciding on which columns to keep.
+- <prior_script>: The Python script created by the prior agent.
 """
 
     completion_steps = f"""
@@ -63,11 +64,11 @@ a. Inspect the .csv file provided under <input_path> tags below. The dataframe '
     - Load the .csv file into a pandas dataframe 'df' using the path provided under <input_path> tags and 'df = pd.read_csv(input_path, encoding="utf-8", sep=",")'.
     - **NEVER** load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.  
 b. Inspect the white list of columns which are necessary under <white_list> tags.
-c. Output a list of columns that are not necessary and can be deleted. Unnecessary columns are columns that are empty or which are not included in the white list provided under <white_list> tags. Make sure to not attempt to delete the same column multiple times, e.g. because it is empty and it is not in the white list. If you are in doubt about a certain column, do not delete it and flag it for further inspection in your reasoning.
+c. Output a list of columns to retain from the datafile. Columns that must not be retained are unnecessary columns according to the whitelist provided under <white_list> tags and empty columns.
 d. Inspect the provided python script under <prior_script> tags.
 e. Update the provided python script in <prior_script> tags below. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags below. You make your changes to this script. 
-    2. delete all columns from the dataframe 'df_new' that are not necessary, based on your analysis of the white list provided under <white_list> tags below. 
+    2. keep all necessary columns using 'df_new = df_new[necessary_columns]' where 'necessary_columns' are the list of columns to be retained based on your analysis of the white list provided under <white_list> tags below. 
     3. Insert the new code at the bottom of the script and before the final output to csv, to keep the chronological order of the script.
     4. **ONLY** insert the new code and **NEVER** overwrite or change the existing code.
     
@@ -90,15 +91,12 @@ Ensure that the output is valid JSON and does not include any additional comment
     additional_information = f"""
 <additional_information>
 <input_path>
-This is the input path to the .csv file created by the prior agent: {input_path_csv}
+{input_path_csv}
 </input_path>
 <white_list>
-This is the white list of columns with descriptions. For each column name, inspect the description and the examples and use them as reference for deciding on which columns to keep. Include a reference to the descriptions and examples in your reasoning.
-This whitelist contains the necessary columns: {json.dumps(white_list_mapping, indent=4)}
+{json.dumps(white_list_mapping, indent=4)}
 </white_list>
 <prior_script>
-This is the prior python script provided:
-    
 ```python
 {script}
 ```

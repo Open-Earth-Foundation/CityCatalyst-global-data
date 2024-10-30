@@ -67,7 +67,7 @@ c. Inspect the additional context for identifying the GPC sector in <context_sec
 d. Identify columns in the dataframe 'df' that help to determine the GPC sector using the provided context in <context_sector> tags below. These might be columns containing information about how and where the emissions occur, e.g. energy consumption in buildings or fuel combustion of vehicles and others. 
 - Print out the unique values of these identified columns to make sure that all unique values are accounted for in your answer.
 - Each row in the dataframe 'df' should be assigned a GPC sector based on the provided context in that row. 
-- If you cannot clearly assign a row to one of the 5 sectors 'Stationary Energy', 'Transportation', 'Waste', 'Industrial Processes and Product Use', or 'Agriculture, Forestry and Other Land Use' as described in <context_sector>, assign the value 'None' to that row and flag this in your reasoning.
+- If you cannot clearly assign a row to one of the 5 sectors 'Stationary Energy', 'Transportation', 'Waste', 'Industrial Processes and Product Use', or 'Agriculture, Forestry and Other Land Use' as described in <context_sector>, assign the value None (Python NoneType (i.e., None without quotes)) to that row and flag this in your reasoning.
 e. Inspect the provided python script under <prior_script> tags.
 f. Update the provided python script in <prior_script> tags below. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
