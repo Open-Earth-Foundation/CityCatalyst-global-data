@@ -151,9 +151,11 @@ This is the prior python script provided:
 
     # Save the generated code to a Python file
     if output.get("code"):
-        print("Update output path...")
-        # Update the generated code to replace the 'output_path' dynamically
-        updated_code = update_file_paths(output["code"], output_path_csv)
+        print("Update file paths...")
+        # Update the generated code to replace the file paths dynamically
+        updated_code = update_file_paths(
+            output["code"], state.get("full_path"), output_path_csv
+        )
 
         print("Create the script...")
         # Save the generated code to a Python file

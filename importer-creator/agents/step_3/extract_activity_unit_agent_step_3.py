@@ -55,7 +55,7 @@ Your inputs are:
 
     completion_steps = f"""
 a. Inspect the .csv file provided under <input_path> tags below. The dataframe 'df' you are provided with is the result of running the python script under <prior_script> tags below on this input .csv file.
-    - Load the .csv file into a pandas dataframe 'df' using the path provided under <input_path> tags and 'df = pd.read_csv(input_path, encoding="utf-8", sep=",")'.
+    - When using the Python REPL tool you are provided with, load the .csv file into a pandas dataframe 'df' using the path provided under <input_path> tags and 'df = pd.read_csv(input_path, encoding="utf-8", sep=",")'. **DO NOT** add this code to the python script you are creating.
     - **NEVER** load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.  
 b. Determine the GPC 'activity unit' based on the content of the dataframe 'df'. Each row in the dataframe 'df' should be assigned a GPC 'activity unit' based on the provided context. 
 - To do this you need to inspect the dataframe 'df' row by row and assign each row a GPC 'activity unit' based on the information provided in that row.
@@ -138,9 +138,11 @@ This is the prior python script provided:
 
     # Save the generated code to a Python file
     if output.get("code"):
-        print("Update output path...")
-        # Update the generated code to replace the 'output_path' dynamically
-        updated_code = update_file_paths(output["code"], output_path_csv)
+        print("Update file paths...")
+        # Update the generated code to replace the file paths dynamically
+        updated_code = update_file_paths(
+            output["code"], state.get("full_path"), output_path_csv
+        )
 
         print("Create the script...")
         # Save the generated code to a Python file

@@ -26,8 +26,8 @@ def extract_activity_name_agent_step_3(
     print("\nEXTRACT ACTIVITY NAME AGENT STEP 3\n")
 
     # Load the output files of initial script
-    input_path_csv = "./generated/step_2/final/generated_final_output.csv"
-    input_path_script = "./generated/step_2/final/generated_script_final_output.py"
+    input_path_csv = "./generated/step_2/final/final_output.csv"
+    input_path_script = "./generated/step_2/final/final_output.py"
 
     # Load the csv file into the dataframe
     df = pd.read_csv(input_path_csv, encoding="utf-8")
@@ -59,7 +59,7 @@ Your inputs are:
 
     completion_steps = f"""
 a. Inspect the .csv file provided under <input_path> tags below. The dataframe 'df' you are provided with is the result of running the python script under <prior_script> tags below on this input .csv file.
-    - Load the .csv file into a pandas dataframe 'df' using the path provided under <input_path> tags and 'df = pd.read_csv(input_path, encoding="utf-8", sep=",")'.
+    - When using the Python REPL tool you are provided with, load the .csv file into a pandas dataframe 'df' using the path provided under <input_path> tags and 'df = pd.read_csv(input_path, encoding="utf-8", sep=",")'. **DO NOT** add this code to the python script you are creating.
     - **NEVER** load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.  
 b. Inspect the mapping for identifying the GPC 'activity name' in <mappings_activities> tags.
 c. Inspect the column 'gpc_refno' of the dataframe 'df'. This column determines the correct GPC 'activity name' based on the GPC reference numbers within the provided mapping in <mappings_activities> tags. If no matching GPC reference number is found in a row, return a default value 'unknown'.
@@ -147,9 +147,11 @@ This is the prior python script provided:
 
     # Save the generated code to a Python file
     if output.get("code"):
-        print("Update output path...")
-        # Update the generated code to replace the 'output_path' dynamically
-        updated_code = update_file_paths(output["code"], output_path_csv)
+        print("Update file paths...")
+        # Update the generated code to replace the file paths dynamically
+        updated_code = update_file_paths(
+            output["code"], state.get("full_path"), output_path_csv
+        )
 
         print("Create the script...")
         # Save the generated code to a Python file

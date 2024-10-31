@@ -61,7 +61,7 @@ Inputs:
 
     completion_steps = f"""
 a. Inspect the .csv file provided under <input_path> tags below. The dataframe 'df' you are provided with is the result of running the python script under <prior_script> tags below on this input .csv file.
-    - Load the .csv file into a pandas dataframe 'df' using the path provided under <input_path> tags and 'df = pd.read_csv(input_path, encoding="utf-8", sep=",")'.
+    - When using the Python REPL tool you are provided with, load the .csv file into a pandas dataframe 'df' using the path provided under <input_path> tags and 'df = pd.read_csv(input_path, encoding="utf-8", sep=",")'. **DO NOT** add this code to the python script you are creating.
     - **NEVER** load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.  
 b. Inspect the white list of columns which are necessary under <white_list> tags.
 c. Output a list of columns to retain from the datafile. Columns that must not be retained are unnecessary columns according to the whitelist provided under <white_list> tags and empty columns.
