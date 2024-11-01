@@ -68,7 +68,7 @@ c. Inspect the column 'gpc_refno' of the dataframe 'df'. This column determines 
 - To do this you need to inspect the dataframe 'df' row by row and assign each row a GPC 'activity name' based on the information provided in that row.
 d. Inspect the provided python script under <prior_script> tags.
 e. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
-    1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
+    1. the original code of the prior script provided in the <prior_script> tags **WITHOUT** any changes to the exisiting code. 
     2. a mapping dictionary for the GPC 'activity name' based on your prior analysis in step 'c'. The mapping should map between the GPC 'activity name' and the GPC reference number.
     3. add a column 'activity_name' to the dataframe 'df_new' which applies a mapping for the GPC 'activity name' to each row of 'df_new' based on the created mapping dictionary.
     4. Insert the new code at the bottom of the script and before the final output to csv, to keep the chronological order of the script.

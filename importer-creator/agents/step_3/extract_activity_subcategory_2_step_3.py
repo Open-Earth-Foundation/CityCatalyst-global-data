@@ -76,7 +76,7 @@ e. Identify columns in the dataframe 'df' that help to determine the GPC 'activi
 - Then map these identified columns to the 'name' key inside the 'activity_subcategories2' key of the corresponding activity name key (e.g. 'fuel_combustion' or 'electricity_consumption') inside the mapping dictionary provided within <mappings_activities> tags below for each row.
 f. Inspect the provided python script under <prior_script> tags.
 g. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
-    1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
+    1. the original code of the prior script provided in the <prior_script> tags **WITHOUT** any changes to the exisiting code. 
     2. a mapping dictionary for the GPC 'activity_subcategory_type2' based on your prior analysis.
     3. add a column 'activity_subcategory_type2' to the dataframe 'df_new' which applies a mapping for the GPC 'activity_subcategory_type2' to each row of 'df_new' based on the created mapping dictionary.
     4. a mapping dictionary for the GPC 'activity_subcategory_typenname2' based on your prior analysis in step 'f'.

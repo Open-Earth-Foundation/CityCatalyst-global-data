@@ -64,7 +64,7 @@ b. Inspect the provided context for the 'datasource_name' in <datasource_name_co
 c. Determine the 'datasource_name' of the data file based on the provided context in <datasource_name_context> tags or based on the content of the provided dataframe 'df'.
 d. Inspect the provided python script under <prior_script> tags.
 e. Update the provided python script in <prior_script> tags below. This python script must contain the following:
-    1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
+    1. the original code of the prior script provided in the <prior_script> tags **WITHOUT** any changes to the exisiting code. 
     2. add a column 'datasource_name' to the dataframe 'df_new' with the extracted 'datasource_name'.
     3. Insert the new code at the bottom of the script and before the final output to csv, to keep the chronological order of the script.
     4. **ONLY** insert the new code and **NEVER** overwrite or change the existing code. **NEVER** change the variable 'original_path'.

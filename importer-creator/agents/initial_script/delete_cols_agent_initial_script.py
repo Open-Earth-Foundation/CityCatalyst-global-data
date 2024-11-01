@@ -67,7 +67,7 @@ b. Inspect the white list of columns which are necessary under <white_list> tags
 c. Output a list of columns to retain from the datafile. Columns that must not be retained are unnecessary columns according to the whitelist provided under <white_list> tags and empty columns.
 d. Inspect the provided python script under <prior_script> tags.
 e. Update the provided python script in <prior_script> tags below. This python script must contain the following:
-    1. the original code of the prior script provided in the <prior_script> tags below. You make your changes to this script. 
+    1. the original code of the prior script provided in the <prior_script> tags **WITHOUT** any changes to the exisiting code. 
     2. keep all necessary columns using 'df_new = df_new[necessary_columns]' where 'necessary_columns' are the list of columns to be retained based on your analysis of the white list provided under <white_list> tags below. 
     3. Insert the new code at the bottom of the script and before the final output to csv, to keep the chronological order of the script.
     4. **ONLY** insert the new code and **NEVER** overwrite or change the existing code. **NEVER** change the variable 'original_path'.

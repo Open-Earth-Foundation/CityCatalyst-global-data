@@ -60,7 +60,7 @@ Your inputs are:
 
     completion_steps = f"""
 a. Inspect the .csv file provided under <input_path> tags below. The dataframe 'df' you are provided with is the result of running the python script under <prior_script> tags below on this input .csv file.
-    - Load the .csv file into a pandas dataframe 'df' using the path provided under <input_path> tags and 'df = pd.read_csv(input_path, encoding="utf-8", sep=",")'.
+    - When using the Python REPL tool you are provided with, load the .csv file into a pandas dataframe 'df' using the path provided under <input_path> tags and 'df = pd.read_csv(input_path, encoding="utf-8", sep=",")'. **DO NOT** add this code to the python script you are creating.
     - **NEVER** load the .csv file saved in the 'original_path' variable inside the script under <prior_script> tags.  
 b. Inspect the user provided context in <user_context> tags below, for information about the GPC sectors present in the dataset.
 c. Inspect the additional context for identifying the GPC sector in <context_sector> tags below.
@@ -70,7 +70,7 @@ d. Identify columns in the dataframe 'df' that help to determine the GPC sector 
 - If you cannot clearly assign a row to one of the 5 sectors 'Stationary Energy', 'Transportation', 'Waste', 'Industrial Processes and Product Use', or 'Agriculture, Forestry and Other Land Use' as described in <context_sector>, assign the value None (Python NoneType (i.e., None without quotes)) to that row and flag this in your reasoning.
 e. Inspect the provided python script under <prior_script> tags.
 f. Update the provided python script in <prior_script> tags below. This python script must contain the following:
-    1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
+    1. the original code of the prior script provided in the <prior_script> tags **WITHOUT** any changes to the exisiting code. 
     2. a mapping dictionary for the GPC sector based on your prior analysis in step 'd'.
     3. add a column 'sector_name' to the dataframe 'df_new' which applies a GPC sector to each row of 'df_new' based on the created mapping dictionary.
     4. Insert the new code at the bottom of the script and before the final output to csv, to keep the chronological order of the script.

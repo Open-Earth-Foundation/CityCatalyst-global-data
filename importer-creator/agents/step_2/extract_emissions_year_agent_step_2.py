@@ -67,7 +67,7 @@ c. Determine the year of the data based on the content of the dataframe 'df' and
 - if the year cannot be extracted from the dataframe or the user provided context, use the default value 'NaN' (Not a Number) and flag this in your reasoning.
 d. Inspect the provided python script under <prior_script> tags.
 e. Update the provided python script in <prior_script> tags below. This python script must contain the following:
-    1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
+    1. the original code of the prior script provided in the <prior_script> tags **WITHOUT** any changes to the exisiting code. 
     2. add a column 'emissions_year' to the dataframe 'df_new' with the extracted data for the year.
     3. Insert the new code at the bottom of the script and before the final output to csv, to keep the chronological order of the script.
     4. **ONLY** insert the new code and **NEVER** overwrite or change the existing code. **NEVER** change the variable 'original_path'.

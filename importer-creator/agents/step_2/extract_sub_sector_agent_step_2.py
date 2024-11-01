@@ -72,7 +72,7 @@ e. Create a nested mapping dictionary that links the unique values of the column
 - If the column 'sector_name' contains the value None (Python NoneType (i.e., None without quotes)), apply the same value None (Python NoneType (i.e., None without quotes)) the GPC sub-sector as 'None: None' without using a tuple and flag this in your reasoning.
 f. Inspect the provided python script under <prior_script> tags.
 g. Update the provided python script in <prior_script> tags below. This python script must contain the following:
-    1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
+    1. the original code of the prior script provided in the <prior_script> tags **WITHOUT** any changes to the exisiting code. 
     2. a mapping dictionary for the GPC sub-sector based on your prior analysis.
     3. add a column 'subsector_name' to the dataframe 'df_new' which applies a GPC sub-sector to each row of 'df_new' based on the created mapping dictionary.
     4. Insert the new code at the bottom of the script and before the final output to csv, to keep the chronological order of the script.

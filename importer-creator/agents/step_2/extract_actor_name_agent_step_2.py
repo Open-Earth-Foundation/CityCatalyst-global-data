@@ -64,7 +64,7 @@ b. Inspect the user provided context in <user_context> tags for identifying the 
 c. Determine the region of the data based on the content of the dataframe 'df' and the user provided context. If the region (e.g., a certain country or city) is named in the dataframe 'df' per row, use this value. If no region is mentioned in the dataframe 'df', use the user provided context within <user_context> tags below, to determine the region.
 d. Inspect the provided python script under <prior_script> tags.
 e. Update the provided python script in <prior_script> tags below. This python script must contain the following:
-    1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
+    1. the original code of the prior script provided in the <prior_script> tags **WITHOUT** any changes to the exisiting code. 
     2. add a column 'actor_name' to the dataframe 'df_new' with the extracted region data.
     3. Insert the new code at the bottom of the script and before the final output to csv, to keep the chronological order of the script.
     4. **ONLY** insert the new code and **NEVER** overwrite or change the existing code. **NEVER** change the variable 'original_path'.

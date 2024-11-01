@@ -70,7 +70,7 @@ d. Identify columns in the dataframe 'df' that help to determine the GPC scope. 
 - To do this you need to inspect the dataframe 'df' row by row and assign each row a GPC scope based on the information provided in that row.
 e. Inspect the provided python script under <prior_script> tags below.
 f. Update the provided python script in <prior_script> tags below. This python script must contain the following:
-    1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
+    1. the original code of the prior script provided in the <prior_script> tags **WITHOUT** any changes to the exisiting code. 
     2. a mapping dictionary for the GPC scope based on your prior analysis in step 'd'.
     3. add a column 'scope' to the dataframe 'df_new' with datatype 'int' using '.astype(int)' and apply a GPC scope to each row of 'df_new' based on the created mapping dictionary.
     4. Insert the new code at the bottom of the script and before the final output to csv, to keep the chronological order of the script.

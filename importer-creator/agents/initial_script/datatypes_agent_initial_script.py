@@ -72,7 +72,7 @@ d. Determine the correct datatypes for the other columns. Use the provided conte
     - If a decimal seperator other than '.' is being used, make sure to convert the numbers using '.' as the decimal seperator. The numbers never contain thousands separators.
 e. Inspect the provided python script under <prior_script> tags.
 f. Update the provided python script in <prior_script> tags below. This python script must contain the following:
-    1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script.
+    1. the original code of the prior script provided in the <prior_script> tags **WITHOUT** any changes to the exisiting code. 
     2. corrected datatypes for the columns in the dataframe 'df_new' based on your prior analysis.
     3. converted date columns to valid datetime data type based on your prior analysis.
     - Use the following code snippet:

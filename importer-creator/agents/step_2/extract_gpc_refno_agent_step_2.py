@@ -65,7 +65,7 @@ c. Inspect for each row the values of the 'sector_name' column, 'subsector_name'
     - If any of the values in the 'sector_name', 'subsector_name' or 'scope' columns are None (Python NoneType (i.e., None without quotes)) or missing, apply the value None (Python NoneType (i.e., None without quotes)) for the the GPC reference number.
 d. Inspect the provided python script under <prior_script> tags.
 e. Update the provided python script in <prior_script> tags below. This python script must contain the following:
-    1. the original code of the prior script provided in the <prior_script> tags. You make your changes to this script. 
+    1. the original code of the prior script provided in the <prior_script> tags **WITHOUT** any changes to the exisiting code. 
     2. a mapping dictionary for the GPC reference number based on your prior analysis in step 'c'.
     3. add a column 'gpc_refno' to the dataframe 'df_new' and apply a GPC reference number to each row of 'df_new' based on the created mapping dictionary.
     4. Insert the new code at the bottom of the script and before the final output to csv, to keep the chronological order of the script.
