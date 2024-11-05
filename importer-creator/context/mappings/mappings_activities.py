@@ -344,8 +344,8 @@ activity_mappings = {
                     },
                 },
             },
-            "electricity_consumption": {
-                "description": "It refers to the amount of electricity consumed by a user or a group of users. This activity occurs in various sectors, including residential, commercial, industrial, and transportation.",
+            "energy_consumption": {
+                "description": "It refers to the amount of energy consumed by a user or a group of users. This activity occurs in various sectors, including residential, commercial, industrial, and transportation.",
                 "gpc_refno": [
                     "I.1.2",
                     "I.2.2",
@@ -360,12 +360,45 @@ activity_mappings = {
                     "II.5.2",
                 ],
                 "activity_subcategories1": {
-                    "description": "Contains the type of electricity consumed.",
-                    "type": "electricity_type",
+                    "description": "Contains the type of energy consumed.",
+                    "type": "energy_type",
                     "name": [
-                        "grid-energy supply",
-                        "renewable electricity",
-                        "non-renewable electricity",
+                        {
+                            "id": "energy-usage-all",
+                            "description": "This category covers all types of energy usage, including electricity, heating, steam, and refrigeration. Use this when the specific type of energy usage is unspecified or includes multiple types."
+                        },
+                        {
+                            "id": "energy-usage-electricity",
+                            "description": "This category refers to electricity usage across various applications, including residential, commercial, industrial, and transportation sectors. Examples include power for lighting, appliances, industrial machinery, and electric vehicle charging stations."
+                        },
+                        {
+                            "id": "energy-usage-electricity-chp",
+                            "description": "This category covers electricity usage in systems with combined heat and power (CHP) generation, which produce electricity and capture usable heat in a single process. Commonly found in industrial facilities and large buildings for efficient on-site power and heating."
+                        },
+                        {
+                            "id": "energy-usage-heating",
+                            "description": "This category is specific to energy usage for heating purposes in stationary contexts. Examples include space heating in buildings, water heating, and heating for industrial processes."
+                        },
+                        {
+                            "id": "energy-usage-heating-chp",
+                            "description": "This category refers to heating within combined heat and power (CHP) systems, where both heat and electricity are generated simultaneously. Common applications include large buildings, district heating systems, and industrial facilities."
+                        },
+                        {
+                            "id": "energy-usage-steam",
+                            "description": "This category covers energy usage for steam production, typically in industrial processes and large commercial facilities. Examples include steam for heating, manufacturing processes, and sterilization in healthcare facilities."
+                        },
+                        {
+                            "id": "energy-usage-steam-chp",
+                            "description": "This category includes steam usage within combined heat and power (CHP) systems, where steam is produced alongside electricity. CHP systems utilizing steam are common in industrial facilities and district heating setups for energy efficiency."
+                        },
+                        {
+                            "id": "energy-usage-refrigeration",
+                            "description": "This category refers to energy used for refrigeration and cooling applications, primarily in stationary contexts. Examples include cooling systems in commercial buildings, industrial refrigeration units, and air conditioning systems."
+                        },
+                        {
+                            "id": "energy-usage-refrigeration-chp",
+                            "description": "This category covers refrigeration or cooling systems integrated with combined heat and power (CHP) systems. These setups are found in large facilities where waste heat from electricity generation is repurposed for cooling, such as in absorption chillers in commercial and industrial buildings."
+                        }
                     ],
                 },
                 "activity_subcategories2": {
