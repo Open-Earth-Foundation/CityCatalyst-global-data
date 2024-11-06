@@ -77,7 +77,7 @@ hazard_names as (
         WHEN _name = 'Leishmaniose Visceral' THEN 'Visceral Leishmaniasis'
         WHEN _name = 'Deslizamento de terra' THEN 'Landslide'
         WHEN _name = 'Erosão' THEN 'Erosion'
-        WHEN _name = 'Chuva' THEN 'Rain'
+        WHEN _name = 'Chuva' THEN 'Flooding'
         WHEN _name = 'Disponiblidade' THEN 'Availability'
         WHEN _name = 'Acesso' THEN 'Access'
         WHEN _name = 'Tempestade' THEN 'Storm'

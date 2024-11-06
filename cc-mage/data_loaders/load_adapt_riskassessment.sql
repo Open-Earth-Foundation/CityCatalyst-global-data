@@ -30,54 +30,96 @@ WITH adapta_indicators AS (
         country_code = 'BR'
     WHERE 
         hazard_name NOT IN ('Availability', 'Access', 'Malaria', 'American Cutaneous Leishmaniasis', 'Visceral Leishmaniasis')
+    AND 
+        LOWER(a.key_impact_name) NOT IN (SELECT lower(keyimpact_name) FROM {{ df_2 }})
 ),
-upsert AS (
-SELECT 
-    (MD5(CONCAT_WS('-', keyimpact_name, hazard_name, indicator_year, scenario_name))::UUID) AS impact_id,
-    locode AS actor_id,
-    city_name,
-    region AS region_code,
-    MAX(CASE WHEN category = 'risk' THEN indicator_value END) AS risk_score,
-    MAX(CASE WHEN category = 'hazard' THEN indicator_value END) * 
-    MAX(CASE WHEN category = 'exposure' THEN indicator_value END) *
-    MAX(CASE WHEN category = 'vulnerability' THEN indicator_value END) AS risk_score_calc,
-    MAX(CASE WHEN category = 'hazard' THEN indicator_value END) AS hazard_score,
-    MAX(CASE WHEN category = 'exposure' THEN indicator_value END) AS exposure_score,
-    MAX(CASE WHEN category = 'vulnerability' THEN indicator_value END) AS vulnerability_score,
-    MAX(CASE WHEN category = 'sensitivity' THEN indicator_value END) AS sensitivity_score,
-    MAX(CASE WHEN category = 'adaptive capacity' THEN indicator_value END) AS adaptive_capacity_score
-FROM 
-    adapta_indicators
-GROUP BY 
-    locode, city_name, region, keyimpact_name, hazard_name, indicator_year, scenario_name)
+raw_risk AS (
+    SELECT 
+        (MD5(CONCAT_WS('-', keyimpact_name, hazard_name, indicator_year, scenario_name))::UUID) AS impact_id,
+        locode AS actor_id,
+        city_name,
+        region AS region_code,
+        NULL AS risk_score,
+        0.01 + MAX(CASE WHEN category = 'hazard' THEN indicator_value END) * (0.99 - 0.01)  AS hazard_score,
+        0.01 + MAX(CASE WHEN category = 'exposure' THEN indicator_value END) * (0.99 - 0.01)  AS exposure_score,
+        0.01 + MAX(CASE WHEN category = 'vulnerability' THEN indicator_value END) * (0.99 - 0.01)  AS vulnerability_score,
+        0.01 + MAX(CASE WHEN category = 'adaptive capacity' THEN indicator_value END) * (0.99 - 0.01)  AS adaptive_capacity_score,
+        0.01 + MAX(CASE WHEN category = 'sensitivity' THEN indicator_value END) * (0.99 - 0.01)  AS sensitivity_score
+    FROM adapta_indicators
+    GROUP BY locode, city_name, region, keyimpact_name, hazard_name, indicator_year, scenario_name
+),
+risk_scores AS (
+    SELECT
+        impact_id,
+        actor_id,
+        city_name,
+        region_code,
+        hazard_score * exposure_score * vulnerability_score AS risk_score,
+        hazard_score,
+        exposure_score,
+        vulnerability_score,
+        adaptive_capacity_score,
+        sensitivity_score
+    FROM raw_risk
+),
+percentiles AS (
+    SELECT
+        PERCENTILE_CONT(0.05) WITHIN GROUP (ORDER BY risk_score) AS lower_limit,
+        PERCENTILE_CONT(0.95) WITHIN GROUP (ORDER BY risk_score) AS upper_limit
+    FROM risk_scores
+),
+risk_scaled AS (
+    SELECT
+        rs.impact_id,
+        rs.actor_id,
+        rs.city_name,
+        rs.region_code,
+        CASE
+            WHEN rs.risk_score < p.lower_limit THEN p.lower_limit
+            WHEN rs.risk_score > p.upper_limit THEN p.upper_limit
+            ELSE rs.risk_score
+        END AS adjusted_risk_score,
+        p.lower_limit as risk_lower_limit,
+        p.upper_limit as risk_upper_limit,
+        hazard_score,
+        exposure_score,
+        vulnerability_score,
+        adaptive_capacity_score,
+        sensitivity_score
+    FROM risk_scores rs
+    CROSS JOIN percentiles p
+)
 INSERT INTO modelled.ccra_riskassessment (
-			  impact_id,
-			  actor_id,
-			  city_name,
-			  region_code,
-			  risk_score,
-			  hazard_score,
-			  exposure_score,
-			  vulnerability_score,
-			  adaptive_capacity_score,
-		  sensitivity_score)	  
-SELECT    	impact_id,
-		  	actor_id,
-		  	city_name,
-		  	region_code,
-		  	risk_score,
-		  	hazard_score,
-		  	exposure_score,
-		  	vulnerability_score,
-		  	adaptive_capacity_score,
-		  	sensitivity_score
-FROM 		upsert
+    impact_id,
+    actor_id,
+    risk_score,
+    hazard_score,
+    exposure_score,
+    vulnerability_score,
+    adaptive_capacity_score,
+    sensitivity_score,
+    risk_lower_limit,
+    risk_upper_limit
+)
+SELECT 
+    impact_id,
+    actor_id,
+    0.01 + ( adjusted_risk_score - risk_lower_limit) * (0.99 - 0.01) / NULLIF( risk_upper_limit - risk_lower_limit, 0) AS risk_score,
+    hazard_score,
+    exposure_score,
+    vulnerability_score,
+    adaptive_capacity_score,
+    sensitivity_score,
+    risk_lower_limit,
+    risk_upper_limit
+FROM risk_scaled
 ON CONFLICT (impact_id, actor_id) 
 DO UPDATE SET
-		city_name = EXCLUDED.city_name,
-		region_code = EXCLUDED.region_code,
-		risk_score = EXCLUDED.risk_score,
-		hazard_score = EXCLUDED.hazard_score,
-		exposure_score = EXCLUDED.exposure_score,
-		vulnerability_score = EXCLUDED.vulnerability_score,
-		adaptive_capacity_score = EXCLUDED.adaptive_capacity_score
+    risk_score = EXCLUDED.risk_score,
+    hazard_score = EXCLUDED.hazard_score,
+    exposure_score = EXCLUDED.exposure_score,
+    vulnerability_score = EXCLUDED.vulnerability_score,
+    adaptive_capacity_score = EXCLUDED.adaptive_capacity_score,
+    sensitivity_score = EXCLUDED.sensitivity_score,
+    risk_lower_limit = EXCLUDED.risk_lower_limit,
+    risk_upper_limit = EXCLUDED.risk_upper_limit;

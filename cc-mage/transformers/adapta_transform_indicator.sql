@@ -12,7 +12,7 @@ SELECT
     indicator_level_name,
     _value indicator_value,
     _year indicator_year
-FROM {{ df_1 }} a
+FROM {{ df_2 }} a
 INNER JOIN target_indicator b 
 ON a.indicator_id = b.indicator_id
 WHERE _value >= 0

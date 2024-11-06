@@ -2,14 +2,10 @@ WITH indicator_clean AS (
     SELECT 
         TRIM(SPLIT_PART(_location, '-', 1)) AS city_name,
         TRIM(SPLIT_PART(_location, '-', 2)) AS region_code,
-        CASE WHEN "_variable" = 'Área colhida' THEN 'area dedicated to agriculture' 
-        WHEN "_variable" =  'Participação do valor adicionado bruto a preços correntes da agropecuária no valor adicionado bruto a preços correntes total' THEN 'gross value added by agriculture'
-        WHEN  "_variable" = 'Densidade demográfica' then 'population density'
-        when  "_variable" = 'Valor do rendimento nominal médio mensal per capita dos domicílios particulares permanentes' then 'average monthly per capita income'
-        END AS indicator_name,
+        indicator_name,
         variable_value::numeric AS indicator_score,
         units AS indicator_units,
-        CASE WHEN "_variable" =  'Participação do valor adicionado bruto a preços correntes da agropecuária no valor adicionado bruto a preços correntes total' THEN variable_value::numeric / 100 
+        CASE WHEN lower(units) = 'percentual' THEN variable_value::numeric / 100 
         ELSE value_scaled END AS indicator_normalized_score,       
         REPLACE(series_year, 'serie.', '')::int AS indicator_year,
         'current' AS scenario_name,
