@@ -132,7 +132,7 @@ blocks:
   language: sql
   name: transform_nonresidential_factors
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: transformer
   upstream_blocks:
@@ -142,7 +142,7 @@ blocks:
   - load_ibge_scaling_residential
   - load_ibge_res_state
   uuid: transform_nonresidential_factors
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     data_provider: duckdb
@@ -195,7 +195,7 @@ blocks:
   upstream_blocks:
   - load_br_elec_ef
   uuid: load_rawdata_br_elec_ef
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     data_provider: postgres

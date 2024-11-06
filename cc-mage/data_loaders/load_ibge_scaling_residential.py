@@ -14,7 +14,7 @@ def load_data_from_api(*args, **kwargs):
     """
     aggregate_id = 4714
     variable_id = 93
-    url = f"https://servicodados.ibge.gov.br/api/v3/agregados/{aggregate_id}/periodos/2015-2023/variaveis/{variable_id}?localidades=N6"
+    url = f"https://servicodados.ibge.gov.br/api/v3/agregados/4714/periodos/2015-2023/variaveis/93?localidades=N6"
     response = requests.get(url)
     data = response.json()
     df = pd.json_normalize(data)

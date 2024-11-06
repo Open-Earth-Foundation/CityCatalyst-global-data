@@ -15,7 +15,7 @@ SELECT
     scaling_factor_description,
     units,
     factor_year,
-    factor_value
+    factor_value::numeric/ 100 as factor_value
 FROM (
     SELECT 
         STRING_SPLIT(localidade_nome, '-')[1] AS city_name,

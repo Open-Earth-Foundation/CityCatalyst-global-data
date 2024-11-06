@@ -60,7 +60,7 @@ SELECT 		b.locode,
 			b.city_id,
 			CASE WHEN scaling_factor_description='city percentage gross value added by agriculture to state' THEN 'I.5.2'
 			when scaling_factor_description='city percentage gross value added by industrial to state' THEN 'I.3.2'
-			WHEN scaling_factor_description='city percentage of residential population state' THEN 'I.1.1'
+			WHEN scaling_factor_description='city percentage of residential population state' THEN 'I.1.2'
 			WHEN scaling_factor_description='city percentage gross value added to state' THEN 'I.2.2'
 			ELSE NULL END AS gpc_reference_number,
 			a.*
