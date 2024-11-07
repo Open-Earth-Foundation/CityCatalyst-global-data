@@ -1,0 +1,254 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - update_impactchain_indicator
+  - load_adapt_riskassessment
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: load_impactchain_indicator_lookup
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_impactchain_indicator_lookup
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    file_path: transformers/update_impactchain_indicator.sql
+    file_source:
+      path: transformers/update_impactchain_indicator.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - update_risk_assessment
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_impactchain_indicator
+  retry_config: null
+  status: updated
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_impactchain_indicator_lookup
+  uuid: update_impactchain_indicator
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_risk_assessment
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks:
+  - update_impactchain_indicator
+  uuid: update_risk_assessment
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_impactchain
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: update_impactchain
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - adapta_transform_metadata
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: adapta_indicator_metadata
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: adapta_indicator_metadata
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: duckdb
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - adapta_transform_indicator
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: adapta_transform_metadata
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - adapta_indicator_metadata
+  uuid: adapta_transform_metadata
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_path: data_loaders/raw_adapta_indicator.py
+    file_source:
+      path: data_loaders/raw_adapta_indicator.py
+  downstream_blocks:
+  - adapta_transform_indicator
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: raw_adapta_indicator
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: raw_adapta_indicator
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: duckdb
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - load_adapta_indicator_staging
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: adapta_transform_indicator
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - adapta_transform_metadata
+  - raw_adapta_indicator
+  uuid: adapta_transform_indicator
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: duckdb
+    data_provider_profile: default
+    export_write_policy: append
+  downstream_blocks:
+  - load_adapt_riskassessment
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_adapta_indicator_staging
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - adapta_transform_indicator
+  uuid: load_adapta_indicator_staging
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    file_path: data_loaders/load_adapt_riskassessment.sql
+    file_source:
+      path: data_loaders/load_adapt_riskassessment.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: load_adapt_riskassessment
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_loader
+  upstream_blocks:
+  - load_adapta_indicator_staging
+  - load_impactchain_indicator_lookup
+  uuid: load_adapt_riskassessment
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2024-10-21 16:08:21.408536+00:00'
+data_integration: null
+description: This populates standard risk assessment based on Adapta Brazil data
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: ccra_br_risk_assessment
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: ccra_br_risk_assessment
+variables:
+  bucket_name: test-global-api
+variables_dir: /home/src/mage_data/cc-mage
+widgets: []

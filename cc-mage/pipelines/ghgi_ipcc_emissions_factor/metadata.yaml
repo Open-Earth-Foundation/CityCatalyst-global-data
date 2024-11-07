@@ -25,7 +25,7 @@ executor_config: {}
 executor_count: 1
 executor_type: null
 extensions: {}
-name: ipcc_emissions_factor
+name: ghgi_ipcc_emissions_factor
 notification_config: {}
 remote_variables_dir: null
 retry_config: {}
@@ -35,7 +35,7 @@ settings:
 spark_config: {}
 tags: []
 type: python
-uuid: ipcc_emissions_factor
+uuid: ghgi_ipcc_emissions_factor
 variables:
   bucket_name: global-api-raw-data
 variables_dir: /home/src/mage_data/cc-mage

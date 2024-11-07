@@ -109,7 +109,7 @@ executor_config: {}
 executor_count: 1
 executor_type: null
 extensions: {}
-name: ingest_edgar
+name: ghgi_edgar
 notification_config: {}
 remote_variables_dir: null
 retry_config: {}
@@ -119,7 +119,7 @@ settings:
 spark_config: {}
 tags: []
 type: python
-uuid: ingest_edgar
+uuid: ghgi_edgar
 variables:
   edgar_gas: CO2
   edgar_industry: TRO
