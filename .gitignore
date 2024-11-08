@@ -107,6 +107,7 @@ celerybeat.pid
 # Environments
 .env
 .venv
+.importer-creator/
 .DS_Store
 env/
 venv/
@@ -138,7 +139,10 @@ default_repo
 instance_metadata.json
 ~/.mage_data
 importer-creator/files/**
-importer-creator/generated/**
+importer-creator/generated/**/*.py
+importer-creator/generated/**/*.csv
+importer-creator/generated/**/*.md
+importer-creator/generated/**/*.json
 
 # test notebook
 test.ipynb

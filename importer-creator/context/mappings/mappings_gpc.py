@@ -256,5 +256,7 @@ gpc_mappings = {
         "Scope": 1,
         "Description": "Emissions from aggregate sources and non-CO2 emission sources on land within the city boundary",
     },
-    "VI.1": {"Scope": 3, "Description": "Other Scope 3"},
+    "VI.1": {
+        "Scope": 3, 
+        "Description": "Other Scope 3"},
 }

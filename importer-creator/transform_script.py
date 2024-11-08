@@ -1,31 +1,58 @@
 # transform_script.py
 
+import os
+import argparse
 import json
 import pandas as pd
 from langchain.agents.agent import AgentExecutor
 from transform_logic import transform
 
 if __name__ == "__main__":
-    import sys
-    import os
 
-    # Get the command line arguments and handling boolean values
-    inputfile: str = sys.argv[1]
-    context_user_provided: str = sys.argv[2]
-    verbose: bool = sys.argv[3] in ["True", "true"]
-    show_graph: bool = sys.argv[4] in ["True", "true"]
-    hitl: bool = sys.argv[5] in ["True", "true"]
+    # Set up argument parser
+    parser = argparse.ArgumentParser(
+        description="Transform script with optional flags."
+    )
 
-    full_path = os.path.join("./files/", inputfile)
+    # Required arguments
+    parser.add_argument(
+        "--input-file", type=str, required=True, help="Input file name/path"
+    )
+    # Required optional arguments
+    parser.add_argument(
+        "--datasource-name", type=str, required=True, help="Name of the data source"
+    )
+    parser.add_argument(
+        "--user-input", type=str, required=True, help="Context provided by the user"
+    )
 
-    print("\ninputfile: ", inputfile)
+    # Optional flags
+    parser.add_argument("--verbose", action="store_true", help="Enable verbose mode")
+    parser.add_argument("--show-graph", action="store_true", help="Show graph option")
+    parser.add_argument("--hitl", action="store_true", help="Enable human-in-the-loop")
+
+    # Parse arguments
+    args = parser.parse_args()
+
+    # Resolve file path
+    full_path = os.path.join("./files/", args.input_file)
+
+    print("\ninputfile: ", args.input_file)
     print("full_path: ", full_path)
-    print("user_provided_context: ", context_user_provided)
-    print("verbose: ", verbose)
-    print("show_graph: ", show_graph)
-    print("hitl: ", hitl)
+    print("datasource_name: ", args.datasource_name)
+    print("user_input: ", args.user_input)
+    print("verbose: ", args.verbose)
+    print("show_graph: ", args.show_graph)
+    print("hitl: ", args.hitl)
 
-    state = transform(full_path, context_user_provided, verbose, show_graph, hitl)
+    state = transform(
+        full_path,
+        args.datasource_name,
+        args.user_input,
+        args.verbose,
+        args.show_graph,
+        args.hitl,
+    )
 
     # Custom encoder to handle non-serializable objects
     def custom_encoder(obj):
