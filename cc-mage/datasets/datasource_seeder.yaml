@@ -207,7 +207,7 @@
   datasource_name: Environmental Protection Agency
   dataset_name:
     en: Fugitive emissions from natural gas systems reported as Direct Emitters in the Greenhouse Gas Reporting Program (GHGRP)
-    ES: Emisiones fugitivas de los sistemas de gas natural reportadas como Emisores Directos en el Programa de Reporte de Gases de Efecto Invernadero (GHGRP)
+    es: Emisiones fugitivas de los sistemas de gas natural reportadas como Emisores Directos en el Programa de Reporte de Gases de Efecto Invernadero (GHGRP)
   dataset_description:
     en: The GHGRP, administered by the EPA, is a vital resource that compiles detailed information on GHG emissions from large-scale facilities across the U.S. This program mandates that major emitters report comprehensive annual data concerning their GHG emissions derived from various industrial activities.
     es: El GHGRP, administrado por la EPA, es un recurso vital que complia información detallada de las emisiones de GEI provenientes de fábricas de gran escala en Estados Unidos. Este programa exige que los principales emisores informen datos anuales completos sobre sus emisiones de GEI derivadas de diversas actividades industriales.
@@ -1766,6 +1766,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/source/SESCO/region/:region/:year/:gpcReferenceNumber
   gpc_reference_number: II.2.1
   scope: 1
+
 - datasource_id: e81bb333-d0a0-4621-b15f-f6f0012c2a5e
   publisher_id: cammesa
   datasource_name: CAMMESA
@@ -1805,10 +1806,10 @@
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
-    en: SEEG Residential Buildings Emissions
+    en: SEEG Emissions from Fuel Combustion in Residential Buildings
     es:
   dataset_description:
-    en: The emissions for fuel combustion are provided by sector.
+    en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides municipality level emissions from fuel combustion in residential buildings.
     es:
   source_type: Third-party
   access_type: Public
@@ -1829,7 +1830,7 @@
     es:
   methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
   transformation_description:
-    en: The transformation maps IPCC categories to the GPC framework and aggreagtes emissions based on direct city-level emissions data.
+    en: The data transformation process involves mapping IPCC categories to the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) framework. This mapping ensures a consistent classification of emissions while aggregating data based on direct city-level emissions figures. Specifically, there is a direct mapping of categories related to Stationary Energy from IPCC to GPC Scope 1 emissions.
     es:
   retrieval_method: global_api
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
@@ -1840,10 +1841,10 @@
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
-    en: SEEG Commercial Buildings Emissions
+    en: SEEG Fuel Combustion in Commercial Buildings
     es:
   dataset_description:
-    en: The emissions for fuel combustion are provided by sector.
+    en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides municipality level emissions from fuel combustion in commercial buildings.
     es:
   source_type: Third-party
   access_type: Public
@@ -1864,7 +1865,7 @@
     es:
   methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
   transformation_description:
-    en: The transformation maps IPCC categories to the GPC framework and aggregates emissions based on direct city-level data.
+    en: The data transformation process involves mapping IPCC categories to the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) framework. This mapping ensures a consistent classification of emissions while aggregating data based on direct city-level emissions figures. Specifically, there is a direct mapping of categories related to Stationary Energy from IPCC to GPC Scope 1 emissions.
     es:
   retrieval_method: global_api
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
@@ -1875,10 +1876,10 @@
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
-    en: SEEG Industrial Buildings Emissions
+    en: SEEG Fuel Combustion in Industrial Buildings
     es:
   dataset_description:
-    en: The emissions for fuel combustion are provided by sector.
+    en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides municipality level emissions from fuel combustion in industrial buildings.
     es:
   source_type: Third-party
   access_type: Public
@@ -1899,7 +1900,7 @@
     es:
   methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
   transformation_description:
-    en: The transformation maps IPCC categories to the GPC framework and calculates emissions based on direct city-level data.
+    en: The data transformation process involves mapping IPCC categories to the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) framework. This mapping ensures a consistent classification of emissions while aggregating data based on direct city-level emissions figures. Specifically, there is a direct mapping of categories related to Stationary Energy from IPCC to GPC Scope 1 emissions.
     es:
   retrieval_method: global_api
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
@@ -1910,10 +1911,10 @@
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
-    en: SEEG Energy Industry Emissions
+    en: SEEG Fuel Combustion in Energy Industry
     es:
   dataset_description:
-    en: The emissions for fuel combustion are provided by sector.
+    en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides municipality level emissions from the energy industry.
     es:
   source_type: Third-party
   access_type: Public
@@ -1934,7 +1935,7 @@
     es:
   methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
   transformation_description:
-    en: The transformation maps IPCC categories to the GPC framework and calculates emissions based on direct city-level data.
+    en: The data transformation process involves mapping IPCC categories to the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) framework. This mapping ensures a consistent classification of emissions while aggregating data based on direct city-level emissions figures. Specifically, there is a direct mapping of categories related to Stationary Energy from IPCC to GPC Scope 1 emissions.
     es:
   retrieval_method: global_api
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
@@ -1945,10 +1946,10 @@
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
-    en: SEEG agriculture, forestry and fishing activities energy emissions
+    en: SEEG Fuel Combustion in Agriculture, Forestry and Fishing
     es:
   dataset_description:
-    en: The emissions for fuel combustion are provided by sector
+    en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides municipality level emissions from agriculture, forestry and fishing activities energy emissions.
     es:
   source_type: Third-party
   access_type: Public
@@ -1969,7 +1970,7 @@
     es:
   methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
   transformation_description:
-    en: The transformation maps IPCC categories to the GPC framework and calculates emissions based on direct city-level data.
+    en: The data transformation process involves mapping IPCC categories to the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) framework. This mapping ensures a consistent classification of emissions while aggregating data based on direct city-level emissions figures. Specifically, there is a direct mapping of categories related to Stationary Energy from IPCC to GPC Scope 1 emissions.
     es:
   retrieval_method: global_api
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
@@ -1980,10 +1981,10 @@
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
-    en: SEEG fugitive emissions from oil and natural gas systems
+    en: SEEG Fugitive Emissions from Oil and Natural Gas
     es:
   dataset_description:
-    en: Emissions from fugitive emissions
+    en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides municipality level emissions from fugitive emissions from oil and natural gas systems.
     es:
   source_type: Third-party
   access_type: Public
@@ -2004,7 +2005,7 @@
     es:
   methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
   transformation_description:
-    en: The transformation maps IPCC categories to the GPC framework and calculates emissions based on direct city-level data.
+    en: The data transformation process involves mapping IPCC categories to the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) framework. This mapping ensures a consistent classification of emissions while aggregating data based on direct city-level emissions figures. Specifically, there is a direct mapping of categories related to Stationary Energy from IPCC to GPC Scope 1 emissions.
     es:
   retrieval_method: global_api
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
@@ -2015,10 +2016,10 @@
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
-    en: SEEG on-road transportation emissions
+    en: SEEG On-Road Transportation Emissions
     es:
   dataset_description:
-    en: Emissions from fuel sales for on-road transportation
+    en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides municipality level emissions from on-road transportation.
     es:
   source_type: Third-party
   access_type: Public
@@ -2039,7 +2040,7 @@
     es:
   methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
   transformation_description:
-    en: The transformation maps IPCC categories to the GPC framework and calculates emissions based on direct city-level data.
+    en: The data transformation process involves mapping IPCC categories to the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) framework. This mapping ensures a consistent classification of emissions while aggregating data based on direct city-level emissions figures. Specifically, there is a direct mapping of categories related to on-road transportation from IPCC to GPC Scope 1 emissions.
     es:
   retrieval_method: global_api
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
@@ -2050,10 +2051,10 @@
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
-    en: SEEG railway transport emissions
+    en: SEEG Railway Transport Emissions
     es:
   dataset_description:
-    en: Emissions from fuel sales for railway transportation
+    en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides municipality level emissions for railway transport.
     es:
   source_type: Third-party
   access_type: Public
@@ -2074,7 +2075,7 @@
     es:
   methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
   transformation_description:
-    en: The transformation maps IPCC categories to the GPC framework and calculates emissions based on direct city-level data.
+    en: The data transformation process involves mapping IPCC categories to the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) framework. This mapping ensures a consistent classification of emissions while aggregating data based on direct city-level emissions figures. Specifically, there is a direct mapping of categories related to railway transport from IPCC to GPC Scope 1 emissions.
     es:
   retrieval_method: global_api
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
@@ -2085,10 +2086,10 @@
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
-    en: SEEG waterborn transportation emissions
+    en: SEEG Waterborne Navigation Emissions
     es:
   dataset_description:
-    en: Emissions from fuel sales for waterborn transportation
+    en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides municipality level emissions for waterborne navigation.
     es:
   source_type: Third-party
   access_type: Public
@@ -2109,7 +2110,7 @@
     es:
   methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
   transformation_description:
-    en: The transformation maps IPCC categories to the GPC framework and calculates emissions based on direct city-level data.
+    en: The data transformation process involves mapping IPCC categories to the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) framework. This mapping ensures a consistent classification of emissions while aggregating data based on direct city-level emissions figures. Specifically, there is a direct mapping of categories related to waterborne transportation from IPCC to GPC Scope 3 emissions.
     es:
   retrieval_method: global_api
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
@@ -2120,10 +2121,10 @@
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
-    en: SEEG Air transportation emissions
+    en: SEEG Aviation Emissions
     es:
   dataset_description:
-    en: Emissions from fuel sales for air transportation
+    en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides municipality level emissions for aviation.
     es:
   source_type: Third-party
   access_type: Public
@@ -2144,7 +2145,7 @@
     es:
   methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
   transformation_description:
-    en: The transformation maps IPCC categories to the GPC framework and calculates emissions based on direct city-level data.
+    en: The data transformation process involves mapping IPCC categories to the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) framework. This mapping ensures a consistent classification of emissions while aggregating data based on direct city-level emissions figures. Specifically, there is a direct mapping of categories related to aviation from IPCC to GPC Scope 3 emissions.
     es:
   retrieval_method: global_api
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
@@ -2155,10 +2156,10 @@
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
-    en: SEEG AFOLU livestock emissions
+    en: SEEG Livestock Emissions
     es:
   dataset_description:
-    en: Emissions from livestock estimated by herd population and emission factors
+    en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides municipality level emissions for agriculture, forestry, and other land use (AFOLU) livestock emissions.
     es:
   source_type: Third-party
   access_type: Public
@@ -2179,7 +2180,7 @@
     es:
   methodology_url: https://drive.google.com/file/d/1DT9ZASVYmaBkGUI8Jn1hhl_bHQVZklq3/view
   transformation_description:
-    en: The transformation maps IPCC categories to the GPC framework and calculates emissions based on direct city-level data.
+    en: The data transformation process involves mapping IPCC categories to the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) framework. This mapping ensures a consistent classification of emissions while aggregating data based on direct city-level emissions figures. Specifically, there is a direct mapping of categories related to livestock from IPCC to GPC.
     es:
   retrieval_method: global_api
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
@@ -2190,10 +2191,10 @@
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
-    en: SEEG AFOLU land use and land change emissions
+    en: SEEG Land Use and Land Change Emissions
     es:
   dataset_description:
-    en: Emissions from land use and land change estimated by changes in carbon stocks
+    en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides municipality level emissions for agriculture, forestry, and other land use (AFOLU) land use and land change emissions.
     es:
   source_type: Third-party
   access_type: Public
@@ -2214,7 +2215,7 @@
     es:
   methodology_url: https://drive.google.com/file/d/1DT9ZASVYmaBkGUI8Jn1hhl_bHQVZklq3/view
   transformation_description:
-    en: The transformation maps IPCC categories to the GPC framework and calculates emissions based on direct city-level data.
+    en: The data transformation process involves mapping IPCC categories to the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) framework. This mapping ensures a consistent classification of emissions while aggregating data based on direct city-level emissions figures. Specifically, there is a direct mapping of categories related to land use and land change from IPCC to GPC.
     es:
   retrieval_method: global_api
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
@@ -2225,10 +2226,10 @@
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
-    en: SEEG AFOLU emissions from aggregate sources
+    en: SEEG Emissions from Aggregate Sources and Non CO2
     es:
   dataset_description:
-    en: Emissions from aggregate sources and non-CO2 emission sources on land
+    en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides municipality level emissions for aggregate sources and non-CO2 emissions.
     es:
   source_type: Third-party
   access_type: Public
@@ -2249,7 +2250,7 @@
     es:
   methodology_url: https://drive.google.com/file/d/1DT9ZASVYmaBkGUI8Jn1hhl_bHQVZklq3/view
   transformation_description:
-    en: The transformation maps IPCC categories to the GPC framework and calculates emissions based on direct city-level data.
+    en: The data transformation process involves mapping IPCC categories to the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) framework. This mapping ensures a consistent classification of emissions while aggregating data based on direct city-level emissions figures. Specifically, there is a direct mapping of categories related to aggregate sources and non-CO2 emissions from IPCC to GPC.
     es:
   retrieval_method: global_api
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
@@ -2260,10 +2261,10 @@
   publisher_id: EPE
   datasource_name: Empresa de Pesquisa Energética
   dataset_name:
-    en: Electrictiy Consumption by Sector
+    en: EPE Electrictiy Consumption in Residential Buildings
     es:
   dataset_description:
-    en: Annual electricity consumption data by sub-sector at the state level in Brazil
+    en: The Empresa de Pesquisa Energética (EPE) provides annual electricity consumption data categorized by sub-sector at the state level across Brazil.
     es:
   source_type: Third-party
   access_type: Public
@@ -2295,10 +2296,10 @@
   publisher_id: EPE
   datasource_name: Empresa de Pesquisa Energética
   dataset_name:
-    en: Electrictiy Consumption by Sector
+    en: EPE Electrictiy Consumption in Commercial Buildings
     es:
   dataset_description:
-    en: Annual electricity consumption data by sub-sector at the state level in Brazil
+    en: The Empresa de Pesquisa Energética (EPE) provides annual electricity consumption data categorized by sub-sector at the state level across Brazil.
     es:
   source_type: Third-party
   access_type: Public
@@ -2330,10 +2331,10 @@
   publisher_id: EPE
   datasource_name: Empresa de Pesquisa Energética
   dataset_name:
-    en: Electrictiy Consumption by Sector
+    en: EPE Electrictiy Consumption in Industrial Buildings
     es:
   dataset_description:
-    en: Annual electricity consumption data by sub-sector at the state level in Brazil
+    en: The Empresa de Pesquisa Energética (EPE) provides annual electricity consumption data categorized by sub-sector at the state level across Brazil.
     es:
   source_type: Third-party
   access_type: Public
@@ -2365,10 +2366,10 @@
   publisher_id: EPE
   datasource_name: Empresa de Pesquisa Energética
   dataset_name:
-    en: Electrictiy Consumption by Sector
+    en: EPE Electrictiy Consumption in Agriculture
     es:
   dataset_description:
-    en: Annual electricity consumption data by sub-sector at the state level in Brazil
+    en: The Empresa de Pesquisa Energética (EPE) provides annual electricity consumption data categorized by sub-sector at the state level across Brazil.
     es:
   source_type: Third-party
   access_type: Public
