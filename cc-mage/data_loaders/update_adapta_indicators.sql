@@ -4,7 +4,17 @@ SELECT  DISTINCT
         TRIM(SPLIT_PART("_name", '/', 2)) AS region_code,
         case when indicator_name = 'Dias consecutivos secos' then 'consecutive dry days'
         	when indicator_name = 'Índice de precipitação-evapotranspiração padronizado' then 'standardized precipitation evapotranspiration index'
-        	end AS indicator_name,
+        	when indicator_name = 'Deslizamento de terra' then 'landslide threat index'
+            when indicator_name = 'Domicílios em áreas de risco' then 'houses in risk areas'
+            when indicator_name = 'Índice de Ameaça de inundações, enxurradas e alagamentos' then 'flood threat index'
+            when indicator_name = 'Pobreza energética' then 'energy poverty'
+            when indicator_name = 'Temperatura máxima' then 'maxium temperature'
+            when indicator_name = 'Produção e comercialização de alimentos' then 'food production and marketing'
+            when indicator_name = 'Dependência da irrigação em grande escala' then 'dependence on large-scale irrigation'
+            when indicator_name= 'Densidade de estabelecimentos agropecuários' then 'density of agricultural establishments'
+            when indicator_name = 'Máxima precipitação anual em cinco dias consecutivos' then 'maximum precipitation 5 days'
+            when indicator_name = 'Precipitação total anual acima do percentil 95' then 'total precipitation'
+            end AS indicator_name,
         null::numeric AS indicator_score,
         null::numeric AS indicator_units,
         _value as indicator_normalized_score,

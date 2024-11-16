@@ -1,5 +1,5 @@
 WITH indicator_clean AS (
-    SELECT 
+    SELECT DISTINCT
         TRIM(SPLIT_PART(_location, '-', 1)) AS city_name,
         TRIM(SPLIT_PART(_location, '-', 2)) AS region_code,
         indicator_name,
