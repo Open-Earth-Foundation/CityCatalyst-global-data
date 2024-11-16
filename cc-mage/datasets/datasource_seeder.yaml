@@ -207,7 +207,7 @@
   datasource_name: Environmental Protection Agency
   dataset_name:
     en: Fugitive emissions from natural gas systems reported as Direct Emitters in the Greenhouse Gas Reporting Program (GHGRP)
-    ES: Emisiones fugitivas de los sistemas de gas natural reportadas como Emisores Directos en el Programa de Reporte de Gases de Efecto Invernadero (GHGRP)
+    es: Emisiones fugitivas de los sistemas de gas natural reportadas como Emisores Directos en el Programa de Reporte de Gases de Efecto Invernadero (GHGRP)
   dataset_description:
     en: The GHGRP, administered by the EPA, is a vital resource that compiles detailed information on GHG emissions from large-scale facilities across the U.S. This program mandates that major emitters report comprehensive annual data concerning their GHG emissions derived from various industrial activities.
     es: El GHGRP, administrado por la EPA, es un recurso vital que complia información detallada de las emisiones de GEI provenientes de fábricas de gran escala en Estados Unidos. Este programa exige que los principales emisores informen datos anuales completos sobre sus emisiones de GEI derivadas de diversas actividades industriales.
@@ -1766,6 +1766,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/source/SESCO/region/:region/:year/:gpcReferenceNumber
   gpc_reference_number: II.2.1
   scope: 1
+
 - datasource_id: e81bb333-d0a0-4621-b15f-f6f0012c2a5e
   publisher_id: cammesa
   datasource_name: CAMMESA
@@ -1803,13 +1804,13 @@
 
 - datasource_id: 45196fcf-eb15-4037-b763-33e4d33f04d6
   publisher_id: SEEG
-  datasource_name: SEEG Energy
+  datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
-    en: Annual electricity generation in power plants
-    es: Generación anual de electricidad en centrales eléctricas
+    en: SEEG Emissions from Fuel Combustion in Residential Buildings
+    es:
   dataset_description:
-    en: Local data of energy generation by power plants in Argentine provinces
-    es: Datos locales de generación de energía por centrales eléctricas en provincias argentinas
+    en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides municipality level emissions from fuel combustion in residential buildings.
+    es:
   source_type: Third-party
   access_type: Public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
@@ -1829,22 +1830,22 @@
     es:
   methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
   transformation_description:
-    en: The transformation maps IPCC categories to the GPC framework and calculates emissions based on direct city-level data.
+    en: The data transformation process involves mapping IPCC categories to the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) framework. This mapping ensures a consistent classification of emissions while aggregating data based on direct city-level emissions figures. Specifically, there is a direct mapping of categories related to Stationary Energy from IPCC to GPC Scope 1 emissions.
     es:
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:actor_id/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.1.1
   scope: 1
 
 - datasource_id: 54e965a4-3bd0-4f6a-a425-e843bb955712
   publisher_id: SEEG
-  datasource_name: SEEG Energy
+  datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
-    en: Annual electricity generation in power plants
-    es: Generación anual de electricidad en centrales eléctricas
+    en: SEEG Fuel Combustion in Commercial Buildings
+    es:
   dataset_description:
-    en: Local data of energy generation by power plants in Argentine provinces
-    es: Datos locales de generación de energía por centrales eléctricas en provincias argentinas
+    en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides municipality level emissions from fuel combustion in commercial buildings.
+    es:
   source_type: Third-party
   access_type: Public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
@@ -1864,22 +1865,22 @@
     es:
   methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
   transformation_description:
-    en: The transformation maps IPCC categories to the GPC framework and calculates emissions based on direct city-level data.
+    en: The data transformation process involves mapping IPCC categories to the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) framework. This mapping ensures a consistent classification of emissions while aggregating data based on direct city-level emissions figures. Specifically, there is a direct mapping of categories related to Stationary Energy from IPCC to GPC Scope 1 emissions.
     es:
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:actor_id/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.2.1
   scope: 1
 
 - datasource_id: 31a76645-f430-4695-a431-c173dae1d224
   publisher_id: SEEG
-  datasource_name: SEEG Energy
+  datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
-    en: Annual electricity generation in power plants
-    es: Generación anual de electricidad en centrales eléctricas
+    en: SEEG Fuel Combustion in Industrial Buildings
+    es:
   dataset_description:
-    en: Local data of energy generation by power plants in Argentine provinces
-    es: Datos locales de generación de energía por centrales eléctricas en provincias argentinas
+    en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides municipality level emissions from fuel combustion in industrial buildings.
+    es:
   source_type: Third-party
   access_type: Public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
@@ -1899,22 +1900,22 @@
     es:
   methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
   transformation_description:
-    en: The transformation maps IPCC categories to the GPC framework and calculates emissions based on direct city-level data.
+    en: The data transformation process involves mapping IPCC categories to the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) framework. This mapping ensures a consistent classification of emissions while aggregating data based on direct city-level emissions figures. Specifically, there is a direct mapping of categories related to Stationary Energy from IPCC to GPC Scope 1 emissions.
     es:
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:actor_id/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.3.1
   scope: 1
 
 - datasource_id: 165e66da-b027-40dc-8957-0657d77a93d9
   publisher_id: SEEG
-  datasource_name: SEEG Energy
+  datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
-    en: Annual electricity generation in power plants
-    es: Generación anual de electricidad en centrales eléctricas
+    en: SEEG Fuel Combustion in Energy Industry
+    es:
   dataset_description:
-    en: Local data of energy generation by power plants in Argentine provinces
-    es: Datos locales de generación de energía por centrales eléctricas en provincias argentinas
+    en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides municipality level emissions from the energy industry.
+    es:
   source_type: Third-party
   access_type: Public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
@@ -1934,22 +1935,22 @@
     es:
   methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
   transformation_description:
-    en: The transformation maps IPCC categories to the GPC framework and calculates emissions based on direct city-level data.
+    en: The data transformation process involves mapping IPCC categories to the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) framework. This mapping ensures a consistent classification of emissions while aggregating data based on direct city-level emissions figures. Specifically, there is a direct mapping of categories related to Stationary Energy from IPCC to GPC Scope 1 emissions.
     es:
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:actor_id/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.4.1
   scope: 1
 
 - datasource_id: c1a1a270-172b-49aa-bc9c-e3aa7d7620a6
   publisher_id: SEEG
-  datasource_name: SEEG Energy
+  datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
-    en: Annual electricity generation in power plants
-    es: Generación anual de electricidad en centrales eléctricas
+    en: SEEG Fuel Combustion in Agriculture, Forestry and Fishing
+    es:
   dataset_description:
-    en: Local data of energy generation by power plants in Argentine provinces
-    es: Datos locales de generación de energía por centrales eléctricas en provincias argentinas
+    en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides municipality level emissions from agriculture, forestry and fishing activities energy emissions.
+    es:
   source_type: Third-party
   access_type: Public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
@@ -1969,22 +1970,22 @@
     es:
   methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
   transformation_description:
-    en: The transformation maps IPCC categories to the GPC framework and calculates emissions based on direct city-level data.
+    en: The data transformation process involves mapping IPCC categories to the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) framework. This mapping ensures a consistent classification of emissions while aggregating data based on direct city-level emissions figures. Specifically, there is a direct mapping of categories related to Stationary Energy from IPCC to GPC Scope 1 emissions.
     es:
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:actor_id/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.5.1
   scope: 1
 
 - datasource_id: de65d76e-510f-49bf-be89-0b687a4f4553
   publisher_id: SEEG
-  datasource_name: SEEG Energy
+  datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
-    en: Annual electricity generation in power plants
-    es: Generación anual de electricidad en centrales eléctricas
+    en: SEEG Fugitive Emissions from Oil and Natural Gas
+    es:
   dataset_description:
-    en: Local data of energy generation by power plants in Argentine provinces
-    es: Datos locales de generación de energía por centrales eléctricas en provincias argentinas
+    en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides municipality level emissions from fugitive emissions from oil and natural gas systems.
+    es:
   source_type: Third-party
   access_type: Public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
@@ -2004,22 +2005,22 @@
     es:
   methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
   transformation_description:
-    en: The transformation maps IPCC categories to the GPC framework and calculates emissions based on direct city-level data.
+    en: The data transformation process involves mapping IPCC categories to the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) framework. This mapping ensures a consistent classification of emissions while aggregating data based on direct city-level emissions figures. Specifically, there is a direct mapping of categories related to Stationary Energy from IPCC to GPC Scope 1 emissions.
     es:
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:actor_id/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.8.1
   scope: 1
 
 - datasource_id: 567bcd46-f6c4-499f-9597-6240592c1e35
   publisher_id: SEEG
-  datasource_name: SEEG Energy
+  datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
-    en: Annual electricity generation in power plants
-    es: Generación anual de electricidad en centrales eléctricas
+    en: SEEG On-Road Transportation Emissions
+    es:
   dataset_description:
-    en: Local data of energy generation by power plants in Argentine provinces
-    es: Datos locales de generación de energía por centrales eléctricas en provincias argentinas
+    en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides municipality level emissions from on-road transportation.
+    es:
   source_type: Third-party
   access_type: Public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
@@ -2035,26 +2036,26 @@
   notes:
   units: kg
   methodology_description:
-    en: The methodology for calculating emissions in Brazil adheres to IPCC guidelines, classifying emissions into fuel combustion and fugitive emissions. It employs a bottom-up approach using data from the National Energy Balance (BEN) and specific emission factors to quantify CO2, CH4, and N2O emissions across various sectors, while considering state-level variations.
+    en: On-road transportation emissions are calculated by assessing the annual fuel consumption of various vehicle types, which is then multiplied by specific emission factors for each fuel type.
     es:
   methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
   transformation_description:
-    en: The transformation maps IPCC categories to the GPC framework and calculates emissions based on direct city-level data.
+    en: The data transformation process involves mapping IPCC categories to the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) framework. This mapping ensures a consistent classification of emissions while aggregating data based on direct city-level emissions figures. Specifically, there is a direct mapping of categories related to on-road transportation from IPCC to GPC Scope 1 emissions.
     es:
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:actor_id/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.1.1
   scope: 1
 
 - datasource_id: fd3bed77-1315-4b77-9ae3-1c8d9f2235ad
   publisher_id: SEEG
-  datasource_name: SEEG Energy
+  datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
-    en: Annual electricity generation in power plants
-    es: Generación anual de electricidad en centrales eléctricas
+    en: SEEG Railway Transport Emissions
+    es:
   dataset_description:
-    en: Local data of energy generation by power plants in Argentine provinces
-    es: Datos locales de generación de energía por centrales eléctricas en provincias argentinas
+    en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides municipality level emissions for railway transport.
+    es:
   source_type: Third-party
   access_type: Public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
@@ -2070,26 +2071,26 @@
   notes:
   units: kg
   methodology_description:
-    en: The methodology for calculating emissions in Brazil adheres to IPCC guidelines, classifying emissions into fuel combustion and fugitive emissions. It employs a bottom-up approach using data from the National Energy Balance (BEN) and specific emission factors to quantify CO2, CH4, and N2O emissions across various sectors, while considering state-level variations.
+    en: Railway emissions are calculated by assessing the annual fuel consumption of various railway types, which is then multiplied by specific emission factors for each fuel type.
     es:
   methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
   transformation_description:
-    en: The transformation maps IPCC categories to the GPC framework and calculates emissions based on direct city-level data.
+    en: The data transformation process involves mapping IPCC categories to the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) framework. This mapping ensures a consistent classification of emissions while aggregating data based on direct city-level emissions figures. Specifically, there is a direct mapping of categories related to railway transport from IPCC to GPC Scope 1 emissions.
     es:
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:actor_id/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.2.1
   scope: 1
 
 - datasource_id: 0f5e1940-2e66-4ffd-a0f2-d90ad300ab62
   publisher_id: SEEG
-  datasource_name: SEEG Energy
+  datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
-    en: Annual electricity generation in power plants
-    es: Generación anual de electricidad en centrales eléctricas
+    en: SEEG Waterborne Navigation Emissions
+    es:
   dataset_description:
-    en: Local data of energy generation by power plants in Argentine provinces
-    es: Datos locales de generación de energía por centrales eléctricas en provincias argentinas
+    en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides municipality level emissions for waterborne navigation.
+    es:
   source_type: Third-party
   access_type: Public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
@@ -2105,26 +2106,26 @@
   notes:
   units: kg
   methodology_description:
-    en: The methodology for calculating emissions in Brazil adheres to IPCC guidelines, classifying emissions into fuel combustion and fugitive emissions. It employs a bottom-up approach using data from the National Energy Balance (BEN) and specific emission factors to quantify CO2, CH4, and N2O emissions across various sectors, while considering state-level variations.
+    en: Waterborn transportation emissions are calculated by assessing the annual fuel consumption of various waterborn transportation types, which is then multiplied by specific emission factors for each fuel type.
     es:
   methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
   transformation_description:
-    en: The transformation maps IPCC categories to the GPC framework and calculates emissions based on direct city-level data.
+    en: The data transformation process involves mapping IPCC categories to the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) framework. This mapping ensures a consistent classification of emissions while aggregating data based on direct city-level emissions figures. Specifically, there is a direct mapping of categories related to waterborne transportation from IPCC to GPC Scope 3 emissions.
     es:
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:actor_id/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.3.3
-  scope: 1
+  scope: 3
 
 - datasource_id: 60ca4997-51a3-43de-9caa-ce5ec0d1ab19
   publisher_id: SEEG
-  datasource_name: SEEG Energy
+  datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
-    en: Annual electricity generation in power plants
-    es: Generación anual de electricidad en centrales eléctricas
+    en: SEEG Aviation Emissions
+    es:
   dataset_description:
-    en: Local data of energy generation by power plants in Argentine provinces
-    es: Datos locales de generación de energía por centrales eléctricas en provincias argentinas
+    en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides municipality level emissions for aviation.
+    es:
   source_type: Third-party
   access_type: Public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
@@ -2140,13 +2141,258 @@
   notes:
   units: kg
   methodology_description:
-    en: The methodology for calculating emissions in Brazil adheres to IPCC guidelines, classifying emissions into fuel combustion and fugitive emissions. It employs a bottom-up approach using data from the National Energy Balance (BEN) and specific emission factors to quantify CO2, CH4, and N2O emissions across various sectors, while considering state-level variations.
+    en: Air transportation emissions are calculated by assessing the annual fuel consumption of various air transportation types, which is then multiplied by specific emission factors for each fuel type.
     es:
   methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
   transformation_description:
-    en: The transformation maps IPCC categories to the GPC framework and calculates emissions based on direct city-level data.
+    en: The data transformation process involves mapping IPCC categories to the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) framework. This mapping ensures a consistent classification of emissions while aggregating data based on direct city-level emissions figures. Specifically, there is a direct mapping of categories related to aviation from IPCC to GPC Scope 3 emissions.
     es:
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:actor_id/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.4.3
+  scope: 3
+
+- datasource_id: 3da1a62f-8cff-464b-bd5e-af70213f22c8
+  publisher_id: SEEG
+  datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
+  dataset_name:
+    en: SEEG Livestock Emissions
+    es:
+  dataset_description:
+    en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides municipality level emissions for agriculture, forestry, and other land use (AFOLU) livestock emissions.
+    es:
+  source_type: Third-party
+  access_type: Public
+  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  geographical_location: BR
+  start_year: 2015
+  end_year: 2022
+  latest_accounting_year: 2022
+  frequency_of_update: annual
+  spatial_resolution: city
+  language: pt
+  accessibility:
+  data_quality: medium
+  notes:
+  units: kg
+  methodology_description:
+    en: Livestock emissions are estimated by multiplying the number of animals in each category (e.g., dairy cows, beef cattle, sheep) by emission factors specific to each animal type and production system.
+    es:
+  methodology_url: https://drive.google.com/file/d/1DT9ZASVYmaBkGUI8Jn1hhl_bHQVZklq3/view
+  transformation_description:
+    en: The data transformation process involves mapping IPCC categories to the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) framework. This mapping ensures a consistent classification of emissions while aggregating data based on direct city-level emissions figures. Specifically, there is a direct mapping of categories related to livestock from IPCC to GPC.
+    es:
+  retrieval_method: global_api
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
+  gpc_reference_number: V.1
   scope: 1
+
+- datasource_id: 56578539-5606-4fd7-88da-20a87b730af0
+  publisher_id: SEEG
+  datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
+  dataset_name:
+    en: SEEG Land Use and Land Change Emissions
+    es:
+  dataset_description:
+    en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides municipality level emissions for agriculture, forestry, and other land use (AFOLU) land use and land change emissions.
+    es:
+  source_type: Third-party
+  access_type: Public
+  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  geographical_location: BR
+  start_year: 2015
+  end_year: 2022
+  latest_accounting_year: 2022
+  frequency_of_update: annual
+  spatial_resolution: city
+  language: pt
+  accessibility:
+  data_quality: medium
+  notes:
+  units: kg
+  methodology_description:
+    en: Emissions are estimated by assessing changes in carbon stocks across different land categories (e.g., forests, croplands, grasslands) over time. The method uses a combination of satellite imagery, forest inventories, and field measurements to track changes in land cover and biomass. Emissions and removals are then calculated based on these changes in carbon stocks, accounting for both above-ground and below-ground biomass, as well as soil carbon
+    es:
+  methodology_url: https://drive.google.com/file/d/1DT9ZASVYmaBkGUI8Jn1hhl_bHQVZklq3/view
+  transformation_description:
+    en: The data transformation process involves mapping IPCC categories to the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) framework. This mapping ensures a consistent classification of emissions while aggregating data based on direct city-level emissions figures. Specifically, there is a direct mapping of categories related to land use and land change from IPCC to GPC.
+    es:
+  retrieval_method: global_api
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
+  gpc_reference_number: V.2
+  scope: 1
+
+- datasource_id: 0891f485-942c-44f8-a398-09b9d050dabc
+  publisher_id: SEEG
+  datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
+  dataset_name:
+    en: SEEG Emissions from Aggregate Sources and Non CO2
+    es:
+  dataset_description:
+    en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides municipality level emissions for aggregate sources and non-CO2 emissions.
+    es:
+  source_type: Third-party
+  access_type: Public
+  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  geographical_location: BR
+  start_year: 2015
+  end_year: 2022
+  latest_accounting_year: 2022
+  frequency_of_update: annual
+  spatial_resolution: city
+  language: pt
+  accessibility:
+  data_quality: medium
+  notes:
+  units: kg
+  methodology_description:
+    en: These emissions are estimated by assessing various sources such as biomass burning, liming, urea application, and managed soils across different land types (e.g., croplands, grasslands).
+    es:
+  methodology_url: https://drive.google.com/file/d/1DT9ZASVYmaBkGUI8Jn1hhl_bHQVZklq3/view
+  transformation_description:
+    en: The data transformation process involves mapping IPCC categories to the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) framework. This mapping ensures a consistent classification of emissions while aggregating data based on direct city-level emissions figures. Specifically, there is a direct mapping of categories related to aggregate sources and non-CO2 emissions from IPCC to GPC.
+    es:
+  retrieval_method: global_api
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
+  gpc_reference_number: V.3
+  scope: 1
+
+- datasource_id: 810d6eef-7b15-4110-85de-566fdd72ae8e
+  publisher_id: EPE
+  datasource_name: Empresa de Pesquisa Energética
+  dataset_name:
+    en: EPE Electrictiy Consumption in Residential Buildings
+    es:
+  dataset_description:
+    en: The Empresa de Pesquisa Energética (EPE) provides annual electricity consumption data categorized by sub-sector at the state level across Brazil.
+    es:
+  source_type: Third-party
+  access_type: Public
+  dataset_url: https://dashboard.epe.gov.br/apps/anuario-livro/#Apresenta%C3%A7%C3%A3o
+  geographical_location: BR
+  start_year: 2014
+  end_year: 2023
+  latest_accounting_year: 2023
+  frequency_of_update: annual
+  spatial_resolution: city
+  language: pt
+  accessibility:
+  data_quality: medium
+  notes:
+  units: kg
+  methodology_description:
+    en: Data has been aggregated from contributions by energy market agents through the Permanent Commission for Analysis and Monitoring of the Electric Energy Market (COPAM)
+    es:
+  methodology_url: https://dashboard.epe.gov.br/apps/anuario-livro/#Apresenta%C3%A7%C3%A3o
+  transformation_description:
+    en: Sectors are aligned with GPC subsectors, and state-level emissions are determined by multiplying electricity consumption by national emission factors. These state emissions are then adjusted using the IBGE resident population data.
+    es:
+  retrieval_method: global_api
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/EPE/city/:locode/:year/:gpcReferenceNumber
+  gpc_reference_number: I.1.2
+  scope: 2
+
+- datasource_id: d187ac96-1b4e-4b44-91d1-a80f6570c9ef
+  publisher_id: EPE
+  datasource_name: Empresa de Pesquisa Energética
+  dataset_name:
+    en: EPE Electrictiy Consumption in Commercial Buildings
+    es:
+  dataset_description:
+    en: The Empresa de Pesquisa Energética (EPE) provides annual electricity consumption data categorized by sub-sector at the state level across Brazil.
+    es:
+  source_type: Third-party
+  access_type: Public
+  dataset_url: https://dashboard.epe.gov.br/apps/anuario-livro/#Apresenta%C3%A7%C3%A3o
+  geographical_location: BR
+  start_year: 2014
+  end_year: 2023
+  latest_accounting_year: 2023
+  frequency_of_update: annual
+  spatial_resolution: city
+  language: pt
+  accessibility:
+  data_quality: medium
+  notes:
+  units: kg
+  methodology_description:
+    en: Data has been aggregated from contributions by energy market agents through the Permanent Commission for Analysis and Monitoring of the Electric Energy Market (COPAM)
+    es:
+  methodology_url: https://dashboard.epe.gov.br/apps/anuario-livro/#Apresenta%C3%A7%C3%A3o
+  transformation_description:
+    en: Sectors are aligned with GPC subsectors, and state-level emissions are determined by multiplying electricity consumption by national emission factors. These state emissions are then adjusted using the IBGE percentage of city gross value added at current prices to federal unit for that year.
+    es:
+  retrieval_method: global_api
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/EPE/city/:locode/:year/:gpcReferenceNumber
+  gpc_reference_number: I.2.2
+  scope: 2
+
+- datasource_id: 5d120586-9eca-4ca9-8c5e-e7c2f04c129c
+  publisher_id: EPE
+  datasource_name: Empresa de Pesquisa Energética
+  dataset_name:
+    en: EPE Electrictiy Consumption in Industrial Buildings
+    es:
+  dataset_description:
+    en: The Empresa de Pesquisa Energética (EPE) provides annual electricity consumption data categorized by sub-sector at the state level across Brazil.
+    es:
+  source_type: Third-party
+  access_type: Public
+  dataset_url: https://dashboard.epe.gov.br/apps/anuario-livro/#Apresenta%C3%A7%C3%A3o
+  geographical_location: BR
+  start_year: 2014
+  end_year: 2023
+  latest_accounting_year: 2023
+  frequency_of_update: annual
+  spatial_resolution: city
+  language: pt
+  accessibility:
+  data_quality: medium
+  notes:
+  units: kg
+  methodology_description:
+    en: Data has been aggregated from contributions by energy market agents through the Permanent Commission for Analysis and Monitoring of the Electric Energy Market (COPAM)
+    es:
+  methodology_url: https://dashboard.epe.gov.br/apps/anuario-livro/#Apresenta%C3%A7%C3%A3o
+  transformation_description:
+    en: Sectors are aligned with GPC subsectors, and state-level emissions are determined by multiplying electricity consumption by national emission factors. These state emissions are then adjusted using the IBGE percentage of city gross value added at current industry prices to federal unit.
+    es:
+  retrieval_method: global_api
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/EPE/city/:locode/:year/:gpcReferenceNumber
+  gpc_reference_number: I.3.2
+  scope: 2
+
+- datasource_id: b29e69d0-679a-4922-9745-8102c10bcbc0
+  publisher_id: EPE
+  datasource_name: Empresa de Pesquisa Energética
+  dataset_name:
+    en: EPE Electrictiy Consumption in Agriculture
+    es:
+  dataset_description:
+    en: The Empresa de Pesquisa Energética (EPE) provides annual electricity consumption data categorized by sub-sector at the state level across Brazil.
+    es:
+  source_type: Third-party
+  access_type: Public
+  dataset_url: https://dashboard.epe.gov.br/apps/anuario-livro/#Apresenta%C3%A7%C3%A3o
+  geographical_location: BR
+  start_year: 2014
+  end_year: 2023
+  latest_accounting_year: 2023
+  frequency_of_update: annual
+  spatial_resolution: city
+  language: pt
+  accessibility:
+  data_quality: medium
+  notes:
+  units: kg
+  methodology_description:
+    en: Data has been aggregated from contributions by energy market agents through the Permanent Commission for Analysis and Monitoring of the Electric Energy Market (COPAM)
+    es:
+  methodology_url: https://dashboard.epe.gov.br/apps/anuario-livro/#Apresenta%C3%A7%C3%A3o
+  transformation_description:
+    en: Sectors are aligned with GPC subsectors, and state-level emissions are determined by multiplying electricity consumption by national emission factors. These state emissions are then adjusted using the IBGE percentage of city gross value added at current agricultural prices to federal unit.
+    es:
+  retrieval_method: global_api
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/EPE/city/:locode/:year/:gpcReferenceNumber
+  gpc_reference_number: I.5.2
+  scope: 2
