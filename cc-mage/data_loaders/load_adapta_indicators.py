@@ -28,9 +28,23 @@ def load_from_s3_bucket(*args, **kwargs):
         object_key,
     )
     
-    filtered_df = df[df['indicator_name'].isin(['Índice de precipitação-evapotranspiração padronizado', 'Dias consecutivos secos'])]
+    filtered_df = df[(df['indicator_name'].isin([
+                        'Índice de precipitação-evapotranspiração padronizado', 
+                        'Dias consecutivos secos', 
+                        'Deslizamento de terra', 
+                        'Domicílios em áreas de risco',
+                        'Índice de Ameaça de inundações, enxurradas e alagamentos', 
+                        'Pobreza energética',
+                        'Temperatura máxima', 
+                        'Produção e comercialização de alimentos', 
+                        'Dependência da irrigação em grande escala',
+                        #'Densidade de estabelecimentos agropecuários',
+                        'Máxima precipitação anual em cinco dias consecutivos',
+                        'Precipitação total anual acima do percentil 95'
+                        ])) | (df['indicator_id'] == 5047)]
+
     # 5 is for food security
-    #filtered_df = df[df['indicator_id'].isin([5049, 5048])]
+    #filtered_df = df[df['indicator_id'].isin([5047])]
 
     return filtered_df
 
@@ -41,6 +55,6 @@ def test_output(output, *args) -> None:
     Test that we get both the indicator names
     """
     unique_indicators = output['indicator_name'].unique()
-    assert len(unique_indicators) == 2, (
+    assert len(unique_indicators) > 5, (
         f"Expected 2 unique indicator names, but found {len(unique_indicators)}: {unique_indicators}"
     )

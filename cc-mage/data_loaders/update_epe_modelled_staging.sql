@@ -38,7 +38,7 @@ SELECT 	CASE
         WHEN classe = 'Consumo Próprio' THEN null
         WHEN classe = 'Iluminação Pública' THEN 'I.2.2'
         WHEN classe = 'Serviço Público' THEN 'I.2.2'
-        WHEN classe = 'Residencial' THEN 'I.1.1'
+        WHEN classe = 'Residencial' THEN 'I.1.2'
         WHEN classe = 'Comercial' THEN 'I.2.2'
         WHEN classe = 'Industrial' THEN 'I.3.2'
         ELSE classe -- In case there are other categories not listed
@@ -90,7 +90,7 @@ FROM  		state_elec_emissions a
 LEFT JOIN 	epe_scaling_factor b 
 ON 			TRIM(a.region_code) = TRIM(b.region_code)
 AND 		a.gpc_reference_number =b.gpc_reference_number
-AND 		b.factor_year::int = (CASE WHEN a.gpc_reference_number = 'I.1.1' THEN 2022
-									WHEN a.consumption_year > 2021 THEN 2022
+AND 		b.factor_year::int = (CASE WHEN a.gpc_reference_number = 'I.1.2' THEN 2022
+									WHEN a.consumption_year > 2021 THEN 2021
 									ELSE a.consumption_year END)
 GROUP BY b.locode, a.region_code, b.city_id, a.gpc_reference_number, a.consumption_year, a.gas_name, (MD5(CONCAT_WS('-', 'electricity-consumption', 'MWh'))::UUID) 

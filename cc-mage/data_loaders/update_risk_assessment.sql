@@ -25,9 +25,11 @@ risk_scores AS (
 ),
 percentiles AS (
     SELECT
+        impact_id,
         PERCENTILE_CONT(0.05) WITHIN GROUP (ORDER BY risk_score) AS lower_limit,
         PERCENTILE_CONT(0.95) WITHIN GROUP (ORDER BY risk_score) AS upper_limit
     FROM risk_scores 
+    GROUP BY impact_id
 ),
 risk_scaled AS (
     SELECT
@@ -38,27 +40,28 @@ risk_scaled AS (
             WHEN rs.risk_score > p.upper_limit THEN p.upper_limit
             ELSE rs.risk_score
         END AS adjusted_risk_score,
-        p.lower_limit as risk_lower_limit,
-        p.upper_limit as risk_upper_limit,
+        p.lower_limit AS risk_lower_limit,
+        p.upper_limit AS risk_upper_limit,
         hazard_score,
         exposure_score,
         vulnerability_score,
         adaptive_capacity_score,
         sensitivity_score
     FROM risk_scores rs
-    CROSS JOIN percentiles p
+    JOIN percentiles p ON rs.impact_id = p.impact_id
 )
 INSERT INTO modelled.ccra_riskassessment (impact_id, actor_id, risk_score, hazard_score, exposure_score, vulnerability_score, adaptive_capacity_score, sensitivity_score, risk_lower_limit, risk_upper_limit)
-SELECT 	impact_id,
-		actor_id,
-		0.01 + ( adjusted_risk_score - risk_lower_limit) * (0.99 - 0.01) / NULLIF( risk_upper_limit - risk_lower_limit, 0) AS risk_score,
-		hazard_score,
-		exposure_score,
-		vulnerability_score,
-		adaptive_capacity_score::numeric as adaptive_capacity_score,
-		sensitivity_score::numeric as sensitivity_score,
-		risk_lower_limit,
-		risk_upper_limit
+SELECT 	
+        impact_id,
+        actor_id,
+        0.01 + (adjusted_risk_score - risk_lower_limit) * (0.99 - 0.01) / NULLIF(risk_upper_limit - risk_lower_limit, 0) AS risk_score,
+        hazard_score,
+        exposure_score,
+        vulnerability_score,
+        adaptive_capacity_score::numeric AS adaptive_capacity_score,
+        sensitivity_score::numeric AS sensitivity_score,
+        risk_lower_limit,
+        risk_upper_limit
 FROM 	risk_scaled
 ON CONFLICT (impact_id, actor_id) DO UPDATE SET
     risk_score = excluded.risk_score,
