@@ -2257,41 +2257,6 @@
   gpc_reference_number: V.3
   scope: 1
 
-- datasource_id: 0891f485-942c-44f8-a398-09b9d050dabc
-  publisher_id: SEEG
-  datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
-  dataset_name:
-    en: SEEG AFOLU emissions from aggregate sources
-    es:
-  dataset_description:
-    en: Emissions from aggregate sources and non-CO2 emission sources on land
-    es:
-  source_type: Third-party
-  access_type: Public
-  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
-  geographical_location: BR
-  start_year: 2015
-  end_year: 2022
-  latest_accounting_year: 2022
-  frequency_of_update: annual
-  spatial_resolution: city
-  language: pt
-  accessibility:
-  data_quality: medium
-  notes:
-  units: kg
-  methodology_description:
-    en: These emissions are estimated by assessing various sources such as biomass burning, liming, urea application, and managed soils across different land types (e.g., croplands, grasslands).
-    es:
-  methodology_url: https://drive.google.com/file/d/1DT9ZASVYmaBkGUI8Jn1hhl_bHQVZklq3/view
-  transformation_description:
-    en: The transformation maps IPCC categories to the GPC framework and calculates emissions based on direct city-level data.
-    es:
-  retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
-  gpc_reference_number: V.3
-  scope: 1
-
 - datasource_id: 810d6eef-7b15-4110-85de-566fdd72ae8e
   publisher_id: EPE
   datasource_name: Empresa de Pesquisa Energética
