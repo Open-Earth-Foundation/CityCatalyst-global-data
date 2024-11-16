@@ -6,7 +6,7 @@ INSERT INTO modelled.emissions
 SELECT 
     (MD5(CONCAT_WS('-', source_name, gpc_reference_number, actor_id, 
     (MD5(CONCAT_WS('-', activity_name,activity_units,activity_subcategory_type))::UUID),
-    emissions_year))::UUID) AS emissions_id,
+    emissions_year,gas_name))::UUID) AS emissions_id,
     source_name as datasource_name,
     gpc_reference_number,
     actor_id,
@@ -17,12 +17,12 @@ SELECT
     emissions_value,
     emissions_units,
     emissions_year,
-    emissions_factor_id::uuid as emissionfactor_id,
+    (MD5(CONCAT_WS('-', gas_name, emissionsfactor_value, 'km', (MD5(CONCAT_WS('-', activity_name, activity_units, activity_subcategory_type, 'induced-activity'))::UUID), 'IPCC', actor_id))::UUID) AS emissionfactor_id,
     'city' as spatial_granularity,
-    geometry_type,
-    geometry_value as geometry
+    null as geometry_type,
+    null as geometry
 FROM 
-    modelled.emissions_staging
+    raw_data.google_emissions
 WHERE emissions_value > 0
 ON CONFLICT ON CONSTRAINT emissions_pkey
 DO UPDATE SET 

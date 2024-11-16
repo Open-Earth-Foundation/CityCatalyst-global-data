@@ -7,7 +7,7 @@ SELECT DISTINCT
     (MD5(CONCAT_WS('-', 'II.1.1', 'induced-activity'))::UUID) AS gpcmethod_id,
     activity_subcategory_type::jsonb
 FROM 
-    modelled.emissions_staging
+    raw_data.google_emissions
 ON CONFLICT (activity_id)
 DO UPDATE SET 
     activity_name = EXCLUDED.activity_name,
