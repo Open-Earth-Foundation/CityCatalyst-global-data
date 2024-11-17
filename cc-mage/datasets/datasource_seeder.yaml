@@ -1806,7 +1806,7 @@
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
-    en: SEEG Emissions from Fuel Combustion in Residential Buildings
+    en: SEEG Fuel Combustion in Residential Buildings
     es:
   dataset_description:
     en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides municipality level emissions from fuel combustion in residential buildings.
