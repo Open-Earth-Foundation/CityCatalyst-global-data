@@ -14,6 +14,10 @@ SELECT  DISTINCT
             when indicator_name= 'Densidade de estabelecimentos agropecuários' then 'density of agricultural establishments'
             when indicator_name = 'Máxima precipitação anual em cinco dias consecutivos' then 'maximum precipitation 5 days'
             when indicator_name = 'Precipitação total anual acima do percentil 95' then 'total precipitation'
+            when indicator_name = 'Produção e comercialização' then 'production and commercialisation of food'
+            when indicator_name = 'Irrigação em grande escala' then 'dependence on large scale irrigation'
+            when trim(indicator_name) = 'Precipitação em cinco dias' then 'maximum precipitation 5 days'
+            when trim(indicator_name) = 'Precipitação total' then 'total precipitation'
             end AS indicator_name,
         null::numeric AS indicator_score,
         null::numeric AS indicator_units,

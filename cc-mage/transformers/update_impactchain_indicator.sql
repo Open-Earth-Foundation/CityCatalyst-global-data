@@ -13,7 +13,7 @@ SELECT
         ELSE b.indicator_year END AS latest_year,
         b.scenario_name,
         b.datasource
-FROM {{ df_1 }} as a
+FROM raw_data.keyimpact_hazard_indictor as a
 LEFT JOIN  modelled.ccra_indicator b 
 ON a.indicator_name = b.indicator_name AND a.datasource = b.datasource
 ),
