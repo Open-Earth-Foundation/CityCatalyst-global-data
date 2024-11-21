@@ -36,7 +36,7 @@ blocks:
   language: sql
   name: load_indicator_lookup
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: data_loader
   upstream_blocks: []
@@ -81,7 +81,7 @@ blocks:
   upstream_blocks:
   - update_adapta_indicator_staging
   uuid: update_adapta_indicators
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration: {}
   downstream_blocks:
@@ -92,13 +92,13 @@ blocks:
   language: python
   name: load_ibge_poverty_fraction
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: data_loader
   upstream_blocks:
   - load_indicator_lookup
   uuid: load_ibge_poverty_fraction
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration: {}
   downstream_blocks:
@@ -115,7 +115,7 @@ blocks:
   upstream_blocks:
   - load_ibge_poverty_fraction
   uuid: update_ibge_indicator_staging
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: postgres
@@ -191,12 +191,133 @@ blocks:
   language: sql
   name: update_ips_indicators
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: data_loader
   upstream_blocks:
   - load_ips_medical_care_db
   uuid: update_ips_indicators
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    export_write_policy: append
+  downstream_blocks:
+  - load_datasus_diiseases_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_datasus_diseases
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_datasus_diseases
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - update_datasus_indicators
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_datasus_diiseases_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_datasus_diseases
+  uuid: load_datasus_diiseases_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_datasus_indicators
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_loader
+  upstream_blocks:
+  - load_datasus_diiseases_db
+  uuid: update_datasus_indicators
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    export_write_policy: append
+  downstream_blocks:
+  - load_datosgov_health_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_datosgov_health
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_datosgov_health
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - update_datosgov_indicator
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_datosgov_health_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_datosgov_health
+  uuid: load_datosgov_health_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    file_path: transformers/update_datosgov_indicator.sql
+    file_source:
+      path: transformers/update_datosgov_indicator.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_datosgov_indicator
+  retry_config: null
+  status: updated
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_datosgov_health_db
+  uuid: update_datosgov_indicator
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}

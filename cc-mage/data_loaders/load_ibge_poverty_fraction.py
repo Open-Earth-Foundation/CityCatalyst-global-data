@@ -18,29 +18,6 @@ def process_ibge_data(url, indicator_name):
     series_year = df_series.columns[4]
     df_series.columns = ['location_id', 'location_level', 'location_level_name', 'location', 'variable_value']
     df_series[['id', 'variable', 'units']] = df_expanded[['id', 'variavel', 'unidade']].iloc[0]
-    #df_series['variable_value'] = pd.to_numeric(df_series['variable_value'], errors='coerce')
-    
-    # # Handle outliers
-    # lower_limit = df_series['variable_value'].quantile(0.05)
-    # upper_limit = df_series['variable_value'].quantile(0.95)
-
-    # df_series['variable_value_adjusted'] = np.where(df_series['variable_value'] >= upper_limit,
-    #                                        upper_limit,
-    #                                        np.where(df_series['variable_value'] <= lower_limit,
-    #                                                 lower_limit,
-    #                                                 df_series['variable_value']))
-    
-    # # Custom min-max scaling to avoid 0 and 1
-    # min_value = df_series['variable_value_adjusted'].min()
-    # max_value = df_series['variable_value_adjusted'].max()
-    # scaled_min = 0.01
-    # scaled_max = 0.99
-
-    # df_series['value_scaled'] = df_series['variable_value_adjusted'].apply(
-    #     lambda x: (
-    #         (x - min_value) / (max_value - min_value) * (scaled_max - scaled_min) + scaled_min
-    #     ) if pd.notnull(x) else None
-    # )
     df_series['series_year'] = series_year
     df_series['indicator_name'] = indicator_name
 
