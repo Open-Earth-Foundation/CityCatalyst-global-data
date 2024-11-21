@@ -18,6 +18,8 @@ SELECT  DISTINCT
             when indicator_name = 'Irrigação em grande escala' then 'dependence on large scale irrigation'
             when trim(indicator_name) = 'Precipitação em cinco dias' then 'maximum precipitation 5 days'
             when trim(indicator_name) = 'Precipitação total' then 'total precipitation'
+            when indicator_name = 'Ameaça' then 'flood threat index'
+            when indicator_name = 'Umidade Relativa' then 'relative humidity'
             end AS indicator_name,
         null::numeric AS indicator_score,
         null::numeric AS indicator_units,
@@ -39,7 +41,7 @@ upsert_data AS (
         a.city_name,
         indicator_name,
         a.indicator_score,
-        a.indicator_units,
+        'Index' as indicator_units,
         a.indicator_normalized_score,
         a.indicator_year,
         a.scenario_name,

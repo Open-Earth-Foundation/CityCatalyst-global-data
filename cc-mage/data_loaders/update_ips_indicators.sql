@@ -45,7 +45,7 @@ SELECT
     a.region_code,
     indicator_name,
     indicator_score,
-    'index' as indicator_units,
+    'Index' as indicator_units,
     0.01 + (adjusted_indicator_score - lower_limit) * (0.99 - 0.01) / NULLIF(upper_limit - lower_limit, 0) AS indicator_normalized_score,
     indicator_year,
     scenario_name,

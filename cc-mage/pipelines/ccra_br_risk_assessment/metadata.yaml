@@ -22,7 +22,7 @@ blocks:
   type: data_loader
   upstream_blocks: []
   uuid: load_impactchain_indicator_lookup
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     data_provider: postgres
