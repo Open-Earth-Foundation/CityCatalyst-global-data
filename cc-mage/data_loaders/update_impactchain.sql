@@ -5,12 +5,13 @@ SELECT 	hazard,
 FROM (
     VALUES 
     ('Drought', ARRAY['Water Resources', 'Food Security', 'Energy Security', 'Biodiversity']),
-    ('Heatwaves', ARRAY['Public Health', 'Railway Infrastructure', 'Road Infrastructure', 'Biodiversity']),
+    ('Heatwaves', ARRAY['Public Health', 'Infrastructure', 'Biodiversity', 'Energy Security']),
     ('Diseases', ARRAY['Public Health']),
-    ('Landslide', ARRAY['Geo-hydrological Disasters', 'Road Infrastructure']),
-    ('Flooding', ARRAY['Geo-hydrological Disasters', 'Railway Infrastructure', 'Road Infrastructure', 'Food Security']),
+    ('Landslide', ARRAY['Geo-hydrological Disasters', 'Infrastructure']),
+    ('Flooding', ARRAY['Geo-hydrological Disasters', 'Infrastructure', 'Food Security']),
     ('Wildfires', ARRAY['Infrastructure', 'Biodiversity']),
-    ('Sea Level Rise', ARRAY['Infrastructure'])
+    ('Sea Level Rise', ARRAY['Infrastructure']),
+    ('Erosion', ARRAY['Infrastructure'])
 ) AS t(hazard, keyimpact)
 ),
 year_assessment AS (
