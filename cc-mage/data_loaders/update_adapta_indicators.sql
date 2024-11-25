@@ -8,7 +8,7 @@ SELECT  DISTINCT
             when indicator_name = 'Domicílios em áreas de risco' then 'houses in risk areas'
             when indicator_name = 'Índice de Ameaça de inundações, enxurradas e alagamentos' then 'flood threat index'
             when indicator_name = 'Pobreza energética' then 'energy poverty'
-            when indicator_name = 'Temperatura máxima' then 'maxium temperature'
+            when indicator_name = 'Temperatura máxima' then 'maximum temperature'
             when indicator_name = 'Produção e comercialização de alimentos' then 'food production and marketing'
             when indicator_name = 'Dependência da irrigação em grande escala' then 'dependence on large-scale irrigation'
             when indicator_name= 'Densidade de estabelecimentos agropecuários' then 'density of agricultural establishments'

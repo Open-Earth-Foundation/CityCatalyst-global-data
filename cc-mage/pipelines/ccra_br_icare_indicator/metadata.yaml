@@ -2,62 +2,38 @@ blocks:
 - all_upstream_blocks_executed: true
   color: null
   configuration:
-    file_path: data_loaders/load_adapta_indicators.py
     file_source:
-      path: data_loaders/load_adapta_indicators.py
+      path: data_loaders/load_icare_sea_level.py
   downstream_blocks:
-  - update_adapta_indicator_staging
+  - load_icare_sea_level_db
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: load_adapta_indicators
+  name: load_icare_sea_level
   retry_config: null
   status: executed
   timeout: null
   type: data_loader
   upstream_blocks: []
-  uuid: load_adapta_indicators
-- all_upstream_blocks_executed: true
-  color: null
-  configuration:
-    data_provider: duckdb
-    data_provider_profile: default
-    dbt: {}
-    disable_query_preprocessing: false
-    export_write_policy: append
-    limit: 1000
-    use_raw_sql: true
-  downstream_blocks:
-  - load_ibge_poverty_fraction
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: sql
-  name: load_indicator_lookup
-  retry_config: null
-  status: updated
-  timeout: null
-  type: data_loader
-  upstream_blocks: []
-  uuid: load_indicator_lookup
+  uuid: load_icare_sea_level
 - all_upstream_blocks_executed: true
   color: null
   configuration: {}
   downstream_blocks:
-  - update_adapta_indicators
+  - update_sea_level_indicator
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: update_adapta_indicator_staging
+  name: load_icare_sea_level_db
   retry_config: null
   status: executed
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - load_adapta_indicators
-  uuid: update_adapta_indicator_staging
+  - load_icare_sea_level
+  uuid: load_icare_sea_level_db
 - all_upstream_blocks_executed: true
   color: null
   configuration:
@@ -73,265 +49,262 @@ blocks:
   executor_type: local_python
   has_callback: false
   language: sql
-  name: update_adapta_indicators
-  retry_config: null
-  status: updated
-  timeout: null
-  type: data_loader
-  upstream_blocks:
-  - update_adapta_indicator_staging
-  uuid: update_adapta_indicators
-- all_upstream_blocks_executed: false
-  color: null
-  configuration: {}
-  downstream_blocks:
-  - update_ibge_indicator_staging
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: load_ibge_poverty_fraction
+  name: update_sea_level_indicator
   retry_config: null
   status: executed
-  timeout: null
-  type: data_loader
-  upstream_blocks:
-  - load_indicator_lookup
-  uuid: load_ibge_poverty_fraction
-- all_upstream_blocks_executed: false
-  color: null
-  configuration: {}
-  downstream_blocks:
-  - update_ibge_indicators
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: update_ibge_indicator_staging
-  retry_config: null
-  status: executed
-  timeout: null
-  type: data_exporter
-  upstream_blocks:
-  - load_ibge_poverty_fraction
-  uuid: update_ibge_indicator_staging
-- all_upstream_blocks_executed: false
-  color: null
-  configuration:
-    data_provider: postgres
-    data_provider_profile: default
-    dbt: {}
-    disable_query_preprocessing: false
-    export_write_policy: append
-    limit: 1000
-    use_raw_sql: true
-  downstream_blocks: []
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: sql
-  name: update_ibge_indicators
-  retry_config: null
-  status: executed
-  timeout: null
-  type: data_loader
-  upstream_blocks:
-  - update_ibge_indicator_staging
-  uuid: update_ibge_indicators
-- all_upstream_blocks_executed: true
-  color: null
-  configuration:
-    data_provider: postgres
-    data_provider_profile: default
-    export_write_policy: append
-  downstream_blocks:
-  - load_ips_medical_care_db
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: load_ips_medical_care
-  retry_config: null
-  status: executed
-  timeout: null
-  type: data_loader
-  upstream_blocks: []
-  uuid: load_ips_medical_care
-- all_upstream_blocks_executed: true
-  color: null
-  configuration: {}
-  downstream_blocks:
-  - update_ips_indicators
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: load_ips_medical_care_db
-  retry_config: null
-  status: executed
-  timeout: null
-  type: data_exporter
-  upstream_blocks:
-  - load_ips_medical_care
-  uuid: load_ips_medical_care_db
-- all_upstream_blocks_executed: true
-  color: null
-  configuration:
-    data_provider: postgres
-    data_provider_profile: default
-    dbt: {}
-    disable_query_preprocessing: false
-    export_write_policy: append
-    limit: 1000
-    use_raw_sql: true
-  downstream_blocks: []
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: sql
-  name: update_ips_indicators
-  retry_config: null
-  status: updated
-  timeout: null
-  type: data_loader
-  upstream_blocks:
-  - load_ips_medical_care_db
-  uuid: update_ips_indicators
-- all_upstream_blocks_executed: true
-  color: null
-  configuration:
-    data_provider: postgres
-    data_provider_profile: default
-    export_write_policy: append
-  downstream_blocks:
-  - load_datasus_diiseases_db
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: load_datasus_diseases
-  retry_config: null
-  status: executed
-  timeout: null
-  type: data_loader
-  upstream_blocks: []
-  uuid: load_datasus_diseases
-- all_upstream_blocks_executed: true
-  color: null
-  configuration: {}
-  downstream_blocks:
-  - update_datasus_indicators
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: load_datasus_diiseases_db
-  retry_config: null
-  status: executed
-  timeout: null
-  type: data_exporter
-  upstream_blocks:
-  - load_datasus_diseases
-  uuid: load_datasus_diiseases_db
-- all_upstream_blocks_executed: true
-  color: null
-  configuration:
-    data_provider: postgres
-    data_provider_profile: default
-    dbt: {}
-    disable_query_preprocessing: false
-    export_write_policy: append
-    limit: 1000
-    use_raw_sql: true
-  downstream_blocks: []
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: sql
-  name: update_datasus_indicators
-  retry_config: null
-  status: updated
-  timeout: null
-  type: data_loader
-  upstream_blocks:
-  - load_datasus_diiseases_db
-  uuid: update_datasus_indicators
-- all_upstream_blocks_executed: true
-  color: null
-  configuration:
-    data_provider: postgres
-    data_provider_profile: default
-    export_write_policy: append
-  downstream_blocks:
-  - load_datosgov_health_db
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: load_datosgov_health
-  retry_config: null
-  status: executed
-  timeout: null
-  type: data_loader
-  upstream_blocks: []
-  uuid: load_datosgov_health
-- all_upstream_blocks_executed: true
-  color: null
-  configuration: {}
-  downstream_blocks:
-  - update_datosgov_indicator
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: load_datosgov_health_db
-  retry_config: null
-  status: executed
-  timeout: null
-  type: data_exporter
-  upstream_blocks:
-  - load_datosgov_health
-  uuid: load_datosgov_health_db
-- all_upstream_blocks_executed: true
-  color: null
-  configuration:
-    data_provider: postgres
-    data_provider_profile: default
-    dbt: {}
-    disable_query_preprocessing: false
-    export_write_policy: append
-    file_path: transformers/update_datosgov_indicator.sql
-    file_source:
-      path: transformers/update_datosgov_indicator.sql
-    limit: 1000
-    use_raw_sql: true
-  downstream_blocks: []
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: sql
-  name: update_datosgov_indicator
-  retry_config: null
-  status: updated
   timeout: null
   type: transformer
   upstream_blocks:
-  - load_datosgov_health_db
-  uuid: update_datosgov_indicator
+  - load_icare_sea_level_db
+  uuid: update_sea_level_indicator
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    export_write_policy: append
+  downstream_blocks:
+  - load_icare_sv_urban_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_icare_sv_urban
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_icare_sv_urban
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - update_sv_urban_indicator
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_icare_sv_urban_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_icare_sv_urban
+  uuid: load_icare_sv_urban_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_sv_urban_indicator
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_icare_sv_urban_db
+  uuid: update_sv_urban_indicator
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    export_write_policy: append
+  downstream_blocks:
+  - load_icare_biodiversity_area
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_biodiversity_area
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_biodiversity_area
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - update_biodiversity_indicator
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_icare_biodiversity_area
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_biodiversity_area
+  uuid: load_icare_biodiversity_area
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_biodiversity_indicator
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_icare_biodiversity_area
+  uuid: update_biodiversity_indicator
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    export_write_policy: append
+  downstream_blocks:
+  - load_conservation_area_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_conservation_area
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_conservation_area
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - update_conservation_indicator
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_conservation_area_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_conservation_area
+  uuid: load_conservation_area_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_conservation_indicator
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_conservation_area_db
+  uuid: update_conservation_indicator
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    export_write_policy: append
+  downstream_blocks:
+  - load_protected_area_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_protected_area
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_protected_area
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - update_protected_area_indicator
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_protected_area_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_protected_area
+  uuid: load_protected_area_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_protected_area_indicator
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_protected_area_db
+  uuid: update_protected_area_indicator
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
 conditionals: []
-created_at: '2024-10-21 12:34:41.883783+00:00'
+created_at: '2024-11-22 13:10:29.139469+00:00'
 data_integration: null
-description: This pipeline populates the indicators table, this stores all the indicator
-  with normalised scores that can be used for risk assessment. This is a mixture of
-  data providers including Adapta, IBGE, etc
+description: These are preprocessed indicators from iCare
 executor_config: {}
 executor_count: 1
 executor_type: null
 extensions: {}
-name: ccra_br_indicators
+name: ccra_br_iCare_indicator
 notification_config: {}
 remote_variables_dir: null
 retry_config: {}
@@ -341,7 +314,7 @@ settings:
 spark_config: {}
 tags: []
 type: python
-uuid: ccra_br_indicators
+uuid: ccra_br_icare_indicator
 variables:
   bucket_name: test-global-api
 variables_dir: /home/src/mage_data/cc-mage
