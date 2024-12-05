@@ -39,10 +39,10 @@ upsert_data AS (
         (MD5(CONCAT_WS('-', b.locode, indicator_name, a.datasource, a.indicator_year, a.scenario_name))::UUID) AS id,
         b.locode as actor_id, 
         a.city_name,
-        indicator_name,
+        a.indicator_normalized_score as indicator_name,
         a.indicator_score,
         'Index' as indicator_units,
-        a.indicator_normalized_score,
+        0.01 +  a.indicator_normalized_score * (0.99 - 0.01) as indicator_normalized_score,
         a.indicator_year,
         a.scenario_name,
         a.datasource

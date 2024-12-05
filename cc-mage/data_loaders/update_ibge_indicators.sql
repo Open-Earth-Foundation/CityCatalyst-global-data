@@ -52,7 +52,7 @@ SELECT
     indicator_name,
     indicator_score,
     indicator_units,
-    CASE WHEN lower(indicator_units) = 'percentual' THEN indicator_score::numeric / 100 
+    CASE WHEN lower(indicator_units) = 'percentual' THEN 0.01 + (indicator_score::numeric / 100) * (0.99 - 0.01)  
     ELSE  0.01 + (adjusted_indicator_score - lower_limit) * (0.99 - 0.01) / NULLIF(upper_limit - lower_limit, 0) end AS indicator_normalized_score,
     indicator_year,
     scenario_name,
