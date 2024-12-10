@@ -12,6 +12,7 @@ load_dotenv()
 
 # Define paths
 PATH_TO_YAML = Path("./cc-mage/datasets/datasource_seeder.yaml")
+UPDATED_YAML_PATH = Path("./cc-mage/datasets/datasource_seeder_updated.yaml")
 
 client = wrap_openai(OpenAI())
 
@@ -84,28 +85,70 @@ def read_yaml(file_path: Path) -> dict:
         return yaml.safe_load(file)
 
 
-dict_yaml = read_yaml(PATH_TO_YAML)
+def write_yaml(data: dict, file_path: Path):
+    """
+    Writes the updated YAML data back to the file.
+    """
+    with open(file_path, "w", encoding="utf-8") as file:
+        yaml.dump(
+            data, file, allow_unicode=True, sort_keys=False, default_flow_style=False
+        )
 
-for datascource in dict_yaml[:1]:
+
+def update_datasource(datasource: dict, updates: dict):
+    """
+    Updates a single datasource with the provided translations.
+
+    Args:
+        datasource (dict): The datasource to update.
+        updates (dict): The translations to apply.
+    """
+    for key, value in updates.items():
+        if key in datasource and isinstance(datasource[key], dict):
+            # Add the new language translation under the existing key
+            datasource[key][value["country_code"]] = value["translation"]
+
+
+# Read the YAML file
+datasources = read_yaml(PATH_TO_YAML)
+
+for datasource in datasources:
+    print("Now translating: ", datasource["datasource_id"])
 
     # Extract keys to translate
-    dataset_name = datascource["dataset_name"]
-    dataset_description = datascource["dataset_description"]
-    methodology_description = datascource["methodology_description"]
-    transformation_description = datascource["transformation_description"]
+    # If values are empty, default to empty dictionaries
+    dataset_name = datasource.get("dataset_name", {})
+    dataset_description = datasource.get("dataset_description", {})
+    methodology_description = datasource.get("methodology_description", {})
+    transformation_description = datasource.get("transformation_description", {})
 
     # Translate keys
     prompt = f"""
-<inputs>
-These are the current inputs:
-- dataset_name: {json.dumps(dataset_name, indent=4)}
-- dataset_description: {json.dumps(dataset_description, indent=4)}
-- methodology_description: {json.dumps(methodology_description, indent=4)}
-- transformation_description: {json.dumps(transformation_description, indent=4)}
-</inputs>
-"""
-    translation_str = get_llm_response(prompt, target_language="de")
+    <inputs>
+    These are the current inputs:
+    - dataset_name: {json.dumps(dataset_name, indent=4)}
+    - dataset_description: {json.dumps(dataset_description, indent=4)}
+    - methodology_description: {json.dumps(methodology_description, indent=4)}
+    - transformation_description: {json.dumps(transformation_description, indent=4)}
+    </inputs>
+    """
+    translation_str = get_llm_response(prompt, target_language="pt")
 
     if translation_str:
         print("Translation successful!")
-        print(translation_str)
+        # print(translation_str)
+
+        # Parse the translation string into a dictionary
+        translation_dict = json.loads(translation_str)
+
+        # Update only the current datasource
+        update_datasource(datasource, translation_dict)
+        # print("Updated YAML in place!")
+
+    else:
+        print("No output generated!")
+
+# Write all updated datasources back to the YAML file
+write_yaml(datasources, PATH_TO_YAML)
+
+print("All translations completed and YAML file updated!")
