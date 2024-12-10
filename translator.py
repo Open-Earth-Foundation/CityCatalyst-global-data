@@ -132,7 +132,7 @@ for datasource in datasources:
     - transformation_description: {json.dumps(transformation_description, indent=4)}
     </inputs>
     """
-    translation_str = get_llm_response(prompt, target_language="pt")
+    translation_str = get_llm_response(prompt, target_language="es")
 
     if translation_str:
         print("Translation successful!")

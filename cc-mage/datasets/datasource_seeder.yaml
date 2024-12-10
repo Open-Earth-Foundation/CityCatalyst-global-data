@@ -104,7 +104,7 @@
       information on GHG emissions from large-scale facilities across the U.S. This
       program mandates that major emitters report comprehensive annual data concerning
       their GHG emissions derived from various industrial activities.
-    es: El GHGRP, administrado por la EPA, es un recurso vital que complia información
+    es: El GHGRP, administrado por la EPA, es un recurso vital que compila información
       detallada de las emisiones de GEI provenientes de fábricas de gran escala en
       Estados Unidos. Este programa exige que los principales emisores informen datos
       anuales completos sobre sus emisiones de GEI derivadas de diversas actividades
@@ -186,9 +186,9 @@
   dataset_name:
     en: Solid Waste emissions by landfills as Direct Emitters reported in the Greenhouse
       Gas Reporting Program (GHGRP)
-    es: Emissiones provenientes de basura sólida dispuesta en rellenos sanitarios
-      reportados como Emisores Directos en el Programa de Reporte de Gases de Efecto
-      Invernadero (GHGRP)
+    es: Emisiones provenientes de basura sólida dispuesta en rellenos sanitarios reportados
+      como Emisores Directos en el Programa de Reporte de Gases de Efecto Invernadero
+      (GHGRP)
     pt: Emissões de resíduos sólidos por aterros como Emissores Diretos reportados
       no Programa de Relato de Gases de Efeito Estufa (GHGRP)
   dataset_description:
@@ -196,7 +196,7 @@
       information on GHG emissions from large-scale facilities across the U.S. This
       program mandates that major emitters report comprehensive annual data concerning
       their GHG emissions derived from various industrial activities.
-    es: El GHGRP, administrado por la EPA, es un recurso vital que complia información
+    es: El GHGRP, administrado por la EPA, es un recurso vital que compila información
       detallada de las emisiones de GEI provenientes de fábricas de gran escala en
       Estados Unidos. Este programa exige que los principales emisores informen datos
       anuales completos sobre sus emisiones de GEI derivadas de diversas actividades
@@ -288,7 +288,7 @@
       information on GHG emissions from large-scale facilities across the U.S. This
       program mandates that major emitters report comprehensive annual data concerning
       their GHG emissions derived from various industrial activities.
-    es: El GHGRP, administrado por la EPA, es un recurso vital que complia información
+    es: El GHGRP, administrado por la EPA, es un recurso vital que compila información
       detallada de las emisiones de GEI provenientes de fábricas de gran escala en
       Estados Unidos. Este programa exige que los principales emisores informen datos
       anuales completos sobre sus emisiones de GEI derivadas de diversas actividades
@@ -371,7 +371,7 @@
     en: Emissions from large-scale industry processes in facilities reported as Direct
       Emitters in the Greenhouse Gas Reporting Program (GHGRP)
     es: Emisiones provenientes de procesos industriales a gran escala en fábricas
-      reportadas como Emisores Derectos en el Programa de Reporte de Gases de Efecto
+      reportadas como Emisores Directos en el Programa de Reporte de Gases de Efecto
       Invernadero (GHGRP)
     pt: Emissões de processos industriais em larga escala em instalações reportadas
       como Emissores Diretos no Programa de Relato de Gases de Efeito Estufa (GHGRP)
@@ -380,7 +380,7 @@
       information on GHG emissions from large-scale facilities across the U.S. This
       program mandates that major emitters report comprehensive annual data concerning
       their GHG emissions derived from various industrial activities.
-    es: El GHGRP, administrado por la EPA, es un recurso vital que complia información
+    es: El GHGRP, administrado por la EPA, es un recurso vital que compila información
       detallada de las emisiones de GEI provenientes de fábricas de gran escala en
       Estados Unidos. Este programa exige que los principales emisores informen datos
       anuales completos sobre sus emisiones de GEI derivadas de diversas actividades
@@ -436,10 +436,10 @@
       estacionaria, las emisiones de la combustión estacionaria se agregan a las emisiones
       del proceso y las emisiones se reportan en ese grupo industrial. En los casos
       de múltiples actividades con combustión estacionaria, la actividad con mayor
-      emisión determina el principal proceso industrial, además las emisiones de combustión
-      estacionaria se suman a la actividad con mayor emisión y las demás emisiones
-      se clasifican por separado en su correspondiente proceso. Por último, las emisiones
-      de las fábricas se ajustaron para adaptarse al formato GPC.
+      emisión determina el grupo industrial, además las emisiones de combustión estacionaria
+      se suman a la actividad con mayor emisión y las demás emisiones se clasifican
+      por separado en su correspondiente proceso. Por último, las emisiones de las
+      fábricas se ajustaron para adaptarse al formato GPC.
     pt: Seguimos a categorização da EPA. A EPA classifica as instalações em nove grupos
       industriais e reporta emissões diretas de 23 processos a nível de instalação.
       As instalações frequentemente realizam múltiplos processos geradores de emissões.
@@ -462,9 +462,9 @@
   dataset_name:
     en: Emissions from incineration and open burning of solid waste in treatment plants
       reported as Direct Emitters in the Greenhouse Gas Reporting Program (GHGRP)
-    es: Emisiones provenientes la incineración y quema al aire libre de residuos sólidos
-      en plantas de tratamiento reportadas como Emisores Directos en el Program de
-      Reporte de Gases de Efecto Invernadero (GHGRP)
+    es: Emisiones provenientes de la incineración y quema al aire libre de residuos
+      sólidos en plantas de tratamiento reportadas como Emisores Directos en el Programa
+      de Reporte de Gases de Efecto Invernadero (GHGRP)
     pt: Emissões da incineração e queima a céu aberto de resíduos sólidos em plantas
       de tratamento reportadas como Emissores Diretos no Programa de Relato de Gases
       de Efeito Estufa (GHGRP)
@@ -473,10 +473,10 @@
       information on GHG emissions from large-scale facilities across the U.S. This
       program mandates that major emitters report comprehensive annual data concerning
       their GHG emissions derived from various industrial activities.
-    es: El GHGRP, administrado por la EPA, es un recurso vital que complia información
-      detallada de las emisiones de GEI provenientes de fábricas de gran escala en
-      Estados Unidos. Este programa exige que los principales emisores informen datos
-      anuales completos sobre sus emisiones de GEI derivadas de diversas actividades
+    es: El GHGRP, administrado por la EPA, es un recurso vital que compila información
+      detallada sobre las emisiones de GEI provenientes de fábricas de gran escala
+      en Estados Unidos. Este programa exige que los principales emisores informen
+      datos anuales completos sobre sus emisiones de GEI derivadas de diversas actividades
       industriales.
     pt: O GHGRP, administrado pela EPA, é um recurso vital que compila informações
       detalhadas sobre as emissões de GEE de instalações de grande escala em todo
@@ -529,10 +529,10 @@
       estacionaria, las emisiones de la combustión estacionaria se agregan a las emisiones
       del proceso y las emisiones se reportan en ese grupo industrial. En los casos
       de múltiples actividades con combustión estacionaria, la actividad con mayor
-      emisión determina el principal proceso industrial, además las emisiones de combustión
-      estacionaria se suman a la actividad con mayor emisión y las demás emisiones
-      se clasifican por separado en su correspondiente proceso. Por último, las emisiones
-      de las fábricas se ajustaron para adaptarse al formato GPC.
+      emisión determina el grupo industrial, además las emisiones de combustión estacionaria
+      se suman a la actividad con mayor emisión y las demás emisiones se clasifican
+      por separado en su correspondiente proceso. Por último, las emisiones de las
+      fábricas se ajustaron para adaptarse al formato GPC.
     pt: Seguimos a categorização da EPA. A EPA classifica as instalações em nove grupos
       industriais e reporta emissões diretas de 23 processos a nível de instalação.
       As instalações frequentemente realizam múltiplos processos geradores de emissões.
@@ -564,7 +564,7 @@
       information on GHG emissions from large-scale facilities across the U.S. This
       program mandates that major emitters report comprehensive annual data concerning
       their GHG emissions derived from various industrial activities.
-    es: El GHGRP, administrado por la EPA, es un recurso vital que complia información
+    es: El GHGRP, administrado por la EPA, es un recurso vital que compila información
       detallada de las emisiones de GEI provenientes de fábricas de gran escala en
       Estados Unidos. Este programa exige que los principales emisores informen datos
       anuales completos sobre sus emisiones de GEI derivadas de diversas actividades
@@ -657,7 +657,7 @@
       information on GHG emissions from large-scale facilities across the U.S. This
       program mandates that major emitters report comprehensive annual data concerning
       their GHG emissions derived from various industrial activities.
-    es: El GHGRP, administrado por la EPA, es un recurso vital que complia información
+    es: El GHGRP, administrado por la EPA, es un recurso vital que compila información
       detallada de las emisiones de GEI provenientes de fábricas de gran escala en
       Estados Unidos. Este programa exige que los principales emisores informen datos
       anuales completos sobre sus emisiones de GEI derivadas de diversas actividades
@@ -749,7 +749,7 @@
       information on GHG emissions from large-scale facilities across the U.S. This
       program mandates that major emitters report comprehensive annual data concerning
       their GHG emissions derived from various industrial activities.
-    es: El GHGRP, administrado por la EPA, es un recurso vital que complia información
+    es: El GHGRP, administrado por la EPA, es un recurso vital que compila información
       detallada de las emisiones de GEI provenientes de fábricas de gran escala en
       Estados Unidos. Este programa exige que los principales emisores informen datos
       anuales completos sobre sus emisiones de GEI derivadas de diversas actividades
@@ -831,8 +831,8 @@
   dataset_name:
     en: Non-specifed sources reported as Direct Emitters in the Greenhouse Gas Reporting
       Program (GHGPR)
-    es: Fuentes no específicas reportadas como Emisores Directos reportados en el
-      Programa de Informes de Gases de Efecto Invernadero (GHGPR)
+    es: Fuentes no especificadas reportadas como Emisores Directos en el Programa
+      de Informes de Gases de Efecto Invernadero (GHGPR)
     pt: Fontes não especificadas reportadas como Emissores Diretos no Programa de
       Relatório de Gases de Efeito Estufa (GHGPR)
   dataset_description:
@@ -840,11 +840,10 @@
       information on GHG emissions from large-scale facilities across the U.S. This
       program mandates that major emitters report comprehensive annual data concerning
       their GHG emissions derived from various industrial activities.
-    es: El GHGRP, administrado por la EPA, es un recurso vital que complia información
-      detallada de las emisiones de GEI provenientes de fábricas de gran escala en
-      Estados Unidos. Este programa exige que los principales emisores informen datos
-      anuales completos sobre sus emisiones de GEI derivadas de diversas actividades
-      industriales.
+    es: El GHGRP, administrado por la EPA, es un recurso vital que compila información
+      detallada sobre las emisiones de GEI de instalaciones de gran escala en Estados
+      Unidos. Este programa exige que los principales emisores informen datos anuales
+      completos sobre sus emisiones de GEI derivadas de diversas actividades industriales.
     pt: O GHGRP, administrado pela EPA, é um recurso vital que compila informações
       detalhadas sobre as emissões de GEE de instalações de grande escala em todo
       os EUA. Este programa exige que os principais emissores relatem dados anuais
@@ -896,10 +895,10 @@
       estacionaria, las emisiones de la combustión estacionaria se agregan a las emisiones
       del proceso y las emisiones se reportan en ese grupo industrial. En los casos
       de múltiples actividades con combustión estacionaria, la actividad con mayor
-      emisión determina el principal proceso industrial, además las emisiones de combustión
-      estacionaria se suman a la actividad con mayor emisión y las demás emisiones
-      se clasifican por separado en su correspondiente proceso. Por último, las emisiones
-      de las fábricas se ajustaron para adaptarse al formato GPC.
+      emisión determina el grupo industrial, además las emisiones de combustión estacionaria
+      se suman a la actividad con mayor emisión y las demás emisiones se clasifican
+      por separado en su correspondiente proceso. Por último, las emisiones de las
+      fábricas se ajustaron para adaptarse al formato GPC.
     pt: Seguimos a categorização da EPA. A EPA classifica as instalações em nove grupos
       industriais e reporta emissões diretas de 23 processos a nível de instalação.
       As instalações frequentemente realizam múltiplos processos geradores de emissões.
@@ -1112,7 +1111,7 @@
       some of the subsectors of the GPC. For this case, the reassignment was "Road
       Transport" as "II.1.1"
     es: Se realizó una reasignación de las categorías propuestas por la IEA para considerar
-      algunos de los subsectores del GPC. Para este caso la reasignación fue "Transporte
+      algunos de los subsectoras del GPC. Para este caso la reasignación fue "Transporte
       por Carretera" como "II.1.1"
     pt: Foi realizada uma reasignação das categorias propostas pela IEA para considerar
       alguns dos subsetores do GPC. Para este caso, a reasignação foi "Transporte
@@ -1189,13 +1188,16 @@
   datasource_name: International Energy Agency
   dataset_name:
     en: Residential grid energy consumption reported by the International Energy Agency
-    es: null
+    es: Consumo de energía de la red residencial reportado por la Agencia Internacional
+      de Energía
     pt: Consumo de energia da rede residencial reportado pela Agência Internacional
       de Energia
   dataset_description:
     en: Residential contains all emissions from fuel combustion in households. This
       corresponds to IPCC Source/Sink Category 1 A 4 b.
-    es: null
+    es: Residencial contiene todas las emisiones de la combustión de combustibles
+      en los hogares. Esto corresponde a la Categoría de Fuente/Sumidero 1 A 4 b del
+      IPCC.
     pt: Residencial contém todas as emissões da combustão de combustíveis em domicílios.
       Isso corresponde à Categoria de Fonte/Sumidouro 1 A 4 b do IPCC.
   source_type: third_party
@@ -1235,7 +1237,9 @@
     en: A reassignment of the categories proposed by IEA was carried out to consider
       some of the subsectors of the GPC. For this case, the reassignment was "Residential"
       as ''I.1.1''
-    es: null
+    es: Se llevó a cabo una reatribución de las categorías propuestas por la IEA para
+      considerar algunos de los subsetores del GPC. Para este caso, la reatribución
+      fue "Residencial" como ''I.1.1''.
     pt: Uma reatribuição das categorias propostas pela IEA foi realizada para considerar
       alguns dos subsetores do GPC. Para este caso, a reatribuição foi "Residencial"
       como ''I.1.1''.
@@ -1249,7 +1253,8 @@
   dataset_name:
     en: Manufacturing industries and construction grid energy consumption reported
       by the International Energy Agency
-    es: null
+    es: Consumo de energía de la red de las industrias de manufactura y construcción
+      reportado por la Agencia Internacional de Energía
     pt: Consumo de energia da rede das indústrias de manufatura e construção reportado
       pela Agência Internacional de Energia
   dataset_description:
@@ -1258,7 +1263,12 @@
       GLs include emissions from industry autoproducers generating electricity and/or
       heat in this category. IEA data lacks the specific end-use breakdown, resulting
       in unallocated autoproducers.
-    es: null
+    es: Las industrias de manufactura y construcción contribuyen a las emisiones a
+      través de la combustión de combustibles, clasificadas bajo la Categoría 1 A
+      2 del IPCC. Las Directrices de 2006 incluyen emisiones de autoprodutores de
+      la industria que generan electricidad y/o calor en esta categoría. Los datos
+      de la IEA carecen de la desagregación específica del uso final, resultando en
+      autoprodutores no asignados.
     pt: As indústrias de manufatura e construção contribuem para as emissões através
       da combustão de combustíveis, classificadas sob a Categoria 1 A 2 do IPCC. As
       Diretrizes de 2006 incluem emissões de autoprodutores da indústria que geram
@@ -1301,7 +1311,9 @@
     en: A reassignment of the categories proposed by IEA was carried out to consider
       some of the subsectors of the GPC. For this case, the reassignment was "Manufactoring
       Industries and Construction" as ''I.3.1''
-    es: null
+    es: Se realizó una reatribución de las categorías propuestas por la IEA para considerar
+      algunos de los subsetores del GPC. Para este caso, la reatribución fue "Industrias
+      de Manufactura y Construcción" como ''I.3.1''.
     pt: Foi realizada uma reatribuição das categorias propostas pela IEA para considerar
       alguns dos subsetores do GPC. Para este caso, a reatribuição foi "Indústrias
       de Manufatura e Construção" como ''I.3.1''.
@@ -1374,7 +1386,7 @@
       and Public Services" as "I.2.1"
     es: Se realizó una reasignación de las categorías propuestas por la IEA para considerar
       algunos de los subsectores del GPC. Para este caso la reasignación fue “Servicios
-      Públicos y Comerciales” según "I.2.1"
+      Públicos y Comerciales” según "I.2.1".
     pt: Foi realizada uma reasignação das categorias propostas pela IEA para considerar
       alguns dos subsectores do GPC. Para este caso, a reasignação foi "Serviços Públicos
       e Comerciais" como "I.2.1".
@@ -1697,7 +1709,7 @@
       empleando la metodología Tier 3a de la OACI, la versión 11 de la Calculadora
       de emisiones de carbono de la OACI y los datos históricos del estado de los
       vuelos de la OAG para calcular las emisiones en función del consumo de combustible,
-      incluidos CO2, CH4 y N2O, y atribuirlas. a países y aeropuertos.
+      incluidos CO2, CH4 y N2O, y atribuirlas a países y aeropuertos.
     pt: Estimativas de fontes pontuais de emissões de GEE da aviação internacional,
       empregando a metodologia Tier 3a da ICAO, a Versão 11 da Calculadora de Emissões
       de Carbono da ICAO e os Dados Históricos de Status de Voo da OAG para calcular
@@ -1782,7 +1794,7 @@
       de emisiones de carbono y los datos históricos del estado de los vuelos de la
       OAG desde enero de 2015 hasta junio de 2023, atribuyendo las emisiones completamente
       al país de origen con base en datos detallados de movimiento de aeronaves y
-      combustible. factores de consumo para estimaciones precisas.
+      factores de consumo de combustible para estimaciones precisas.
     pt: Estimativas de fontes pontuais de emissões de GEE da aviação doméstica, utilizando
       a abordagem de Nível 3a da OACI, a Metodologia do Calculador de Emissões de
       Carbono e os Dados Históricos de Status de Voo da OAG de janeiro de 2015 a junho
@@ -2035,7 +2047,7 @@
       espaciales y algoritmos de aprendizaje automático para predecir las emisiones
       de metano y óxido nitroso, considerando factores como las poblaciones de ganado,
       el tamaño del área de los corrales de engorda y las variaciones regionales en
-      las prácticas de manejo del estiércol, con Precisión validada mediante medidas
+      las prácticas de manejo del estiércol, con precisión validada mediante medidas
       estadísticas.
     pt: Estimativas de fontes pontuais de emissões de GEE de confinamentos de gado
       de corte e leite, utilizando técnicas avançadas de processamento de dados espaciais
@@ -2547,7 +2559,7 @@
     Mendoza
   dataset_name:
     en: Natural gas consumption by residential buildings in Mendoza cities
-    es: Consumo de gas natural por edificios comerciales en las ciudades en Mendoza
+    es: Consumo de gas natural por edificios residenciales en las ciudades de Mendoza
     pt: Consumo de gás natural por edifícios residenciais nas cidades de Mendoza
   dataset_description:
     en: Gas distributed by type of user, according to year reported in the Directorate
@@ -2787,12 +2799,14 @@
   datasource_name: Carbon Monitor Cities
   dataset_name:
     en: Estimation of residential energy emissions
-    es: null
+    es: Estimación de las emisiones de energía residencial
     pt: Estimativa das emissões de energia residencial
   dataset_description:
     en: Carbon Monitor Cities is a global initiative to provide real-time and historical
       data on CO2 emissions from cities around the world.
-    es: null
+    es: Carbon Monitor Cities es una iniciativa global para proporcionar datos en
+      tiempo real e históricos sobre las emisiones de CO2 de las ciudades de todo
+      el mundo.
     pt: O Carbon Monitor Cities é uma iniciativa global para fornecer dados em tempo
       real e históricos sobre as emissões de CO2 das cidades ao redor do mundo.
   source_type: third_party
@@ -2812,14 +2826,15 @@
   methodology_description:
     en: The data is based on satellite observations of CO2 concentrations and a data-driven
       model to estimate emissions.
-    es: null
+    es: Los datos se basan en observaciones satelitales de las concentraciones de
+      CO2 y en un modelo basado en datos para estimar las emisiones.
     pt: Os dados são baseados em observações de satélite das concentrações de CO2
       e em um modelo orientado a dados para estimar as emissões.
   methodology_url: https://carbonmonitor.org/
   transformation_description:
     en: Emissions data are matched to cities by name and ISO code for the region
     es: Los datos de emisiones fueron relacionados con las ciudades por nombre y código
-      ISO de la región
+      ISO de la región.
     pt: Os dados de emissões são relacionados às cidades pelo nome e código ISO da
       região.
   retrieval_method: global_api
@@ -2831,13 +2846,16 @@
   datasource_name: Carbon Monitor Cities
   dataset_name:
     en: Carbon Monitor Cities On-Road Transportation
-    es: null
+    es: Monitoreo de Carbono Ciudades Transporte por Carretera
     pt: Monitor de Carbono Cidades Transporte Rodoviário
   dataset_description:
     en: Estimation of on-road transportation emissions from Carbon Monitor. Carbon
       Monitor Cities is a global initiative to provide real-time and historical data
       on CO2 emissions from cities around the world.
-    es: null
+    es: Estimación de las emisiones de transporte por carretera del Monitoreo de Carbono.
+      Monitoreo de Carbono Ciudades es una iniciativa global para proporcionar datos
+      en tiempo real e históricos sobre las emisiones de CO2 de las ciudades de todo
+      el mundo.
     pt: Estimativa das emissões de transporte rodoviário do Monitor de Carbono. O
       Monitor de Carbono Cidades é uma iniciativa global para fornecer dados em tempo
       real e históricos sobre as emissões de CO2 das cidades ao redor do mundo.
@@ -2858,14 +2876,15 @@
   methodology_description:
     en: The data is based on satellite observations of CO2 concentrations and a data-driven
       model to estimate emissions.
-    es: null
+    es: Los datos se basan en observaciones satelitales de las concentraciones de
+      CO2 y un modelo basado en datos para estimar las emisiones.
     pt: Os dados são baseados em observações de satélite das concentrações de CO2
       e um modelo orientado a dados para estimar as emissões.
   methodology_url: https://carbonmonitor.org/
   transformation_description:
     en: Emissions data are matched to cities by name and ISO code for the region
     es: Los datos de emisiones fueron relacionados con las ciudades por nombre y código
-      ISO de la región
+      ISO de la región.
     pt: Os dados de emissões são relacionados às cidades pelo nome e código ISO da
       região.
   retrieval_method: global_api
@@ -2877,13 +2896,15 @@
   datasource_name: Carbon Monitor Cities
   dataset_name:
     en: Carbon Monitor Cities Aviation
-    es: null
+    es: Monitor de Carbono Ciudades Aviación
     pt: Monitor de Carbono Cidades Aviação
   dataset_description:
     en: Estimation of aviation emissions from Carbon Monitor. Carbon Monitor Cities
       is a global initiative to provide real-time and historical data on CO2 emissions
       from cities around the world.
-    es: null
+    es: Estimación de las emisiones de aviación del Monitor de Carbono. El Monitor
+      de Carbono Ciudades es una iniciativa global para proporcionar datos en tiempo
+      real e históricos sobre las emisiones de CO2 de las ciudades de todo el mundo.
     pt: Estimativa das emissões de aviação do Monitor de Carbono. O Monitor de Carbono
       Cidades é uma iniciativa global para fornecer dados em tempo real e históricos
       sobre as emissões de CO2 das cidades ao redor do mundo.
@@ -2904,14 +2925,15 @@
   methodology_description:
     en: The data is based on satellite observations of CO2 concentrations and a data-driven
       model to estimate emissions.
-    es: null
+    es: Los datos se basan en observaciones satelitales de las concentraciones de
+      CO2 y un modelo basado en datos para estimar las emisiones.
     pt: Os dados são baseados em observações de satélite das concentrações de CO2
       e um modelo orientado a dados para estimar as emissões.
   methodology_url: https://carbonmonitor.org/
   transformation_description:
     en: Emissions data are matched to cities by name and ISO code for the region
     es: Los datos de emisiones fueron relacionados con las ciudades por nombre y código
-      ISO de la región
+      ISO de la región.
     pt: Os dados de emissões são relacionados às cidades pelo nome e código ISO da
       região.
   retrieval_method: global_api
@@ -3019,9 +3041,9 @@
       transformation and consumption of energy in Argentina, being the main statistical
       instrument for national energy planning. The fuels included are LPG, kerosene,
       firewood charcoal.
-    es: Ben resume la información reacionada con la producción, importación, exportación,
+    es: El BEN resume la información relacionada con la producción, importación, exportación,
       transformación y consumo de energía en Argentina, siendo el principal instrumento
-      estadístico nacional para la planificación energética. Los combustibles incluídos
+      estadístico nacional para la planificación energética. Los combustibles incluidos
       son LGP, keroseno, carbón de leña.
     pt: O BEN resume as informações relacionadas à produção, importação, exportação,
       transformação e consumo de energia na Argentina, sendo o principal instrumento
@@ -3048,12 +3070,12 @@
       into caloric flows in order to compare different sources, using the calorific
       values of the different fuel sources and expressing them in Tons of Oil Equivalent
       (TEP).
-    es: Ben es una metodolodía que analiza y registra los flujos energéticos a través
-      de diferentes eventos, desde su producción hasta el consumo final, en el territorio
-      nacional durante un año específico. El flujo físico energético es convertido
-      en flujos caloricos con el fin de comparar diferentes fuentes, usando el valor
-      calorico de las diferentes fuentes de combustible y expresarlos en toneladas
-      de petróleo equivalente (TEP).
+    es: El BEN es una metodología que analiza y registra los flujos energéticos a
+      través de diferentes eventos, desde su producción hasta el consumo final, en
+      el territorio nacional durante un año específico. El flujo físico energético
+      es convertido en flujos calóricos con el fin de comparar diferentes fuentes,
+      usando el valor calórico de las diferentes fuentes de combustible y expresándolos
+      en toneladas de petróleo equivalente (TEP).
     pt: O BEN é uma metodologia que analisa e registra os fluxos de energia ao longo
       de diferentes eventos, desde sua produção até seu consumo final, em um território
       nacional durante um ano específico. Os fluxos físicos de energia são convertidos
@@ -3087,9 +3109,9 @@
       transformation and consumption of energy in Argentina, being the main statistical
       instrument for national energy planning. The fuels included are LPG, kerosene,
       firewood charcoal.
-    es: Ben resume la información reacionada con la producción, importación, exportación,
+    es: Ben resume la información relacionada con la producción, importación, exportación,
       transformación y consumo de energía en Argentina, siendo el principal instrumento
-      estadístico nacional para la planificación energética. Los combustibles incluídos
+      estadístico nacional para la planificación energética. Los combustibles incluidos
       son LGP, keroseno, carbón de leña.
     pt: O BEN resume as informações relacionadas à produção, importação, exportação,
       transformação e consumo de energia na Argentina, sendo o principal instrumento
@@ -3116,11 +3138,11 @@
       into caloric flows in order to compare different sources, using the calorific
       values of the different fuel sources and expressing them in Tons of Oil Equivalent
       (TEP).
-    es: Ben es una metodolodía que analiza y registra los flujos energéticos a través
+    es: Ben es una metodología que analiza y registra los flujos energéticos a través
       de diferentes eventos, desde su producción hasta el consumo final, en el territorio
       nacional durante un año específico. El flujo físico energético es convertido
-      en flujos caloricos con el fin de comparar diferentes fuentes, usando el valor
-      calorico de las diferentes fuentes de combustible y expresarlos en toneladas
+      en flujos calóricos con el fin de comparar diferentes fuentes, usando el valor
+      calórico de las diferentes fuentes de combustible y expresarlos en toneladas
       de petróleo equivalente (TEP).
     pt: O BEN é uma metodologia que analisa e registra os fluxos de energia ao longo
       de diferentes eventos, desde sua produção até seu consumo final, em um território
@@ -3155,9 +3177,9 @@
       transformation and consumption of energy in Argentina, being the main statistical
       instrument for national energy planning. The fuels included are LPG, kerosene,
       firewood charcoal.
-    es: Ben resume la información reacionada con la producción, importación, exportación,
+    es: Ben resume la información relacionada con la producción, importación, exportación,
       transformación y consumo de energía en Argentina, siendo el principal instrumento
-      estadístico nacional para la planificación energética. Los combustibles incluídos
+      estadístico nacional para la planificación energética. Los combustibles incluidos
       son LGP, keroseno, carbón de leña.
     pt: O BEN resume as informações relacionadas à produção, importação, exportação,
       transformação e consumo de energia na Argentina, sendo o principal instrumento
@@ -3184,11 +3206,11 @@
       into caloric flows in order to compare different sources, using the calorific
       values of the different fuel sources and expressing them in Tons of Oil Equivalent
       (TEP).
-    es: Ben es una metodolodía que analiza y registra los flujos energéticos a través
+    es: Ben es una metodología que analiza y registra los flujos energéticos a través
       de diferentes eventos, desde su producción hasta el consumo final, en el territorio
       nacional durante un año específico. El flujo físico energético es convertido
-      en flujos caloricos con el fin de comparar diferentes fuentes, usando el valor
-      calorico de las diferentes fuentes de combustible y expresarlos en toneladas
+      en flujos calóricos con el fin de comparar diferentes fuentes, usando el valor
+      calórico de las diferentes fuentes de combustible y expresarlos en toneladas
       de petróleo equivalente (TEP).
     pt: O BEN é uma metodologia que analisa e registra os fluxos de energia ao longo
       de diferentes eventos, desde sua produção até seu consumo final, em um território
@@ -3226,9 +3248,9 @@
       transformation and consumption of energy in Argentina, being the main statistical
       instrument for national energy planning. The fuels included are LPG, kerosene,
       firewood charcoal.
-    es: Ben resume la información reacionada con la producción, importación, exportación,
+    es: Ben resume la información relacionada con la producción, importación, exportación,
       transformación y consumo de energía en Argentina, siendo el principal instrumento
-      estadístico nacional para la planificación energética. Los combustibles incluídos
+      estadístico nacional para la planificación energética. Los combustibles incluidos
       son LGP, keroseno, carbón de leña.
     pt: O BEN resume as informações relacionadas à produção, importação, exportação,
       transformação e consumo de energia na Argentina, sendo o principal instrumento
@@ -3255,11 +3277,11 @@
       into caloric flows in order to compare different sources, using the calorific
       values of the different fuel sources and expressing them in Tons of Oil Equivalent
       (TEP).
-    es: Ben es una metodolodía que analiza y registra los flujos energéticos a través
+    es: Ben es una metodología que analiza y registra los flujos energéticos a través
       de diferentes eventos, desde su producción hasta el consumo final, en el territorio
       nacional durante un año específico. El flujo físico energético es convertido
-      en flujos caloricos con el fin de comparar diferentes fuentes, usando el valor
-      calorico de las diferentes fuentes de combustible y expresarlos en toneladas
+      en flujos calóricos con el fin de comparar diferentes fuentes, usando el valor
+      calórico de las diferentes fuentes de combustible y expresarlos en toneladas
       de petróleo equivalente (TEP).
     pt: O BEN é uma metodologia que analisa e registra os fluxos de energia ao longo
       de diferentes eventos, desde sua produção até seu consumo final, em um território
@@ -3293,7 +3315,7 @@
       na Argentina
   dataset_description:
     en: Volume of gas delivered by the Distributors in each province per end user
-    es: Volumne de gas entregado por los distribuidores en cada provincia por usuario
+    es: Volumen de gas entregado por los distribuidores en cada provincia por usuario
       final
     pt: Volume de gás entregue pelos distribuidores em cada província por usuário
       final
@@ -3347,7 +3369,7 @@
     pt: Dados de consumo de gás natural por edifícios comerciais na Argentina
   dataset_description:
     en: Volume of gas delivered by the Distributors in each province per end user
-    es: Volumne de gas entregado por los distribuidores en cada provincia por usuario
+    es: Volumen de gas entregado por los distribuidores en cada provincia por usuario
       final
     pt: Volume de gás entregue pelos distribuidores em cada província por usuário
       final
@@ -3403,7 +3425,7 @@
       na Argentina
   dataset_description:
     en: Volume of gas delivered by the Distributors in each province per end user
-    es: Volumne de gas entregado por los distribuidores en cada provincia por usuario
+    es: Volumen de gas entregado por los distribuidores en cada provincia por usuario
       final
     pt: Volume de gás entregue pelos distribuidores em cada província por usuário
       final
@@ -3428,7 +3450,7 @@
       parties.
     es: La fuente registra los datos utilizados en la tabla I-7 de Datos Operativos,
       contiene información de las licencias de servicio de distribución. Esta tabla
-      incluye el llamado "pase comercial", o gas entregado
+      incluye el llamado "pase comercial", o gas entregado en nombre de terceros.
     pt: A fonte registrou os dados utilizados na tabela I-7 de Dados Operacionais,
       contém informações sobre os licenciados do serviço de distribuição. Esta tabela
       inclui o chamado "desvio comercial", ou gás entregue em nome de terceiros.
@@ -3458,7 +3480,7 @@
     pt: Dados de consumo de gás natural por transporte rodoviário na Argentina
   dataset_description:
     en: Volume of gas delivered by the Distributors in each province per end user
-    es: Volumne de gas entregado por los distribuidores en cada provincia por usuario
+    es: Volumen de gas entregado por los distribuidores en cada provincia por usuario
       final
     pt: Volume de gás entregue pelos distribuidores em cada província por usuário
       final
@@ -3483,7 +3505,7 @@
       parties.
     es: La fuente registra los datos utilizados en la tabla I-7 de Datos Operativos,
       contiene información de las licencias de servicio de distribución. Esta tabla
-      incluye el llamado "pase comercial", o gas entregado
+      incluye el llamado "pase comercial", o gas entregado en nombre de terceros.
     pt: A fonte registrou os dados utilizados na tabela I-7 dos Dados Operacionais,
       contém informações sobre os licenciados do serviço de distribuição. Esta tabela
       inclui o chamado "desvio comercial", ou gás entregue em nome de terceiros.
@@ -3754,12 +3776,14 @@
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
     en: SEEG Fuel Combustion in Residential Buildings
-    es: null
+    es: SEEG Combustión de Combustibles en Edificios Residenciales
     pt: SEEG Combustão de Combustíveis em Edifícios Residenciais
   dataset_description:
     en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides
       municipality level emissions from fuel combustion in residential buildings.
-    es: null
+    es: El Sistema de Estimación de Emisión de Gases de Efecto Invernadero (SEEG)
+      proporciona emisiones a nivel municipal provenientes de la combustión de combustibles
+      en edificios residenciales.
     pt: O Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) fornece
       emissões em nível municipal provenientes da combustão de combustíveis em edifícios
       residenciais.
@@ -3783,7 +3807,12 @@
       a bottom-up approach using data from the National Energy Balance (BEN) and specific
       emission factors to quantify CO2, CH4, and N2O emissions across various sectors,
       while considering state-level variations.
-    es: null
+    es: La metodología para calcular las emisiones en Brasil se adhiere a las directrices
+      del IPCC, clasificando las emisiones en combustión de combustibles y emisiones
+      fugitivas. Utiliza un enfoque de abajo hacia arriba empleando datos del Balance
+      Energético Nacional (BEN) y factores de emisión específicos para cuantificar
+      las emisiones de CO2, CH4 y N2O en varios sectores, considerando las variaciones
+      a nivel estatal.
     pt: A metodologia para calcular as emissões no Brasil segue as diretrizes do IPCC,
       classificando as emissões em combustão de combustíveis e emissões fugitivas.
       Ela utiliza uma abordagem de baixo para cima, empregando dados do Balanço Energético
@@ -3797,7 +3826,13 @@
       data based on direct city-level emissions figures. Specifically, there is a
       direct mapping of categories related to Stationary Energy from IPCC to GPC Scope
       1 emissions.
-    es: null
+    es: El proceso de transformación de datos implica mapear las categorías del IPCC
+      al marco del Protocolo Global para Inventarios de Emisiones de Gases de Efecto
+      Invernadero a Escala Comunitaria (GPC). Este mapeo asegura una clasificación
+      consistente de las emisiones mientras agrega datos basados en cifras directas
+      de emisiones a nivel municipal. Específicamente, hay un mapeo directo de las
+      categorías relacionadas con la Energía Estacionaria del IPCC a las emisiones
+      del GPC Alcance 1.
     pt: O processo de transformação de dados envolve a mapeamento das categorias do
       IPCC para a estrutura do Protocolo Global para Inventários de Emissões de Gases
       de Efeito Estufa em Escala Comunitária (GPC). Este mapeamento garante uma classificação
@@ -3813,12 +3848,14 @@
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
     en: SEEG Fuel Combustion in Commercial Buildings
-    es: null
+    es: Combustión de Combustibles SEEG en Edificios Comerciales
     pt: Combustão de Combustíveis SEEG em Edifícios Comerciais
   dataset_description:
     en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides
       municipality level emissions from fuel combustion in commercial buildings.
-    es: null
+    es: El Sistema de Estimación de Emisión de Gases de Efecto Invernadero (SEEG)
+      proporciona datos de emisiones a nivel municipal provenientes de la combustión
+      de combustibles en edificios comerciales.
     pt: O Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) fornece
       dados de emissões a nível municipal provenientes da combustão de combustíveis
       em edifícios comerciais.
@@ -3842,7 +3879,12 @@
       a bottom-up approach using data from the National Energy Balance (BEN) and specific
       emission factors to quantify CO2, CH4, and N2O emissions across various sectors,
       while considering state-level variations.
-    es: null
+    es: La metodología para calcular las emisiones en Brasil se adhiere a las directrices
+      del IPCC, clasificando las emisiones en combustión de combustibles y emisiones
+      fugitivas. Utiliza un enfoque de abajo hacia arriba empleando datos del Balance
+      Energético Nacional (BEN) y factores de emisión específicos para cuantificar
+      las emisiones de CO2, CH4 y N2O en varios sectores, considerando las variaciones
+      a nivel estatal.
     pt: A metodologia para calcular as emissões no Brasil segue as diretrizes do IPCC,
       classificando as emissões em combustão de combustíveis e emissões fugitivas.
       Ela utiliza uma abordagem de baixo para cima, empregando dados do Balanço Energético
@@ -3856,7 +3898,12 @@
       data based on direct city-level emissions figures. Specifically, there is a
       direct mapping of categories related to Stationary Energy from IPCC to GPC Scope
       1 emissions.
-    es: null
+    es: El proceso de transformación de datos implica el mapeo de categorías del IPCC
+      al Protocolo Global para Inventarios de Emisiones de Gases de Efecto Invernadero
+      en Escala Comunitaria (GPC). Este mapeo asegura una clasificación consistente
+      de las emisiones mientras agrega datos basados en cifras directas de emisiones
+      a nivel municipal. Específicamente, hay un mapeo directo de las categorías relacionadas
+      con la Energía Estacionaria del IPCC a las emisiones del GPC Alcance 1.
     pt: O processo de transformação de dados envolve a mapeamento das categorias do
       IPCC para o Protocolo Global para Inventários de Emissões de Gases de Efeito
       Estufa em Escala Comunitária (GPC). Este mapeamento garante uma classificação
@@ -3872,12 +3919,14 @@
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
     en: SEEG Fuel Combustion in Industrial Buildings
-    es: null
+    es: SEEG Combustión de Combustibles en Edificios Industriales
     pt: SEEG Combustão de Combustíveis em Edifícios Industriais
   dataset_description:
     en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides
       municipality level emissions from fuel combustion in industrial buildings.
-    es: null
+    es: El Sistema de Estimación de Emisión de Gases de Efecto Invernadero (SEEG)
+      proporciona emisiones a nivel municipal provenientes de la combustión de combustibles
+      en edificios industriales.
     pt: O Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) fornece
       emissões em nível municipal provenientes da combustão de combustíveis em edifícios
       industriais.
@@ -3901,7 +3950,12 @@
       a bottom-up approach using data from the National Energy Balance (BEN) and specific
       emission factors to quantify CO2, CH4, and N2O emissions across various sectors,
       while considering state-level variations.
-    es: null
+    es: La metodología para calcular las emisiones en Brasil se adhiere a las directrices
+      del IPCC, clasificando las emisiones en combustión de combustibles y emisiones
+      fugitivas. Utiliza un enfoque de abajo hacia arriba empleando datos del Balance
+      Energético Nacional (BEN) y factores de emisión específicos para cuantificar
+      las emisiones de CO2, CH4 y N2O en varios sectores, considerando las variaciones
+      a nivel estatal.
     pt: A metodologia para calcular as emissões no Brasil segue as diretrizes do IPCC,
       classificando as emissões em combustão de combustíveis e emissões fugitivas.
       Ela utiliza uma abordagem de baixo para cima, empregando dados do Balanço Energético
@@ -3915,7 +3969,12 @@
       data based on direct city-level emissions figures. Specifically, there is a
       direct mapping of categories related to Stationary Energy from IPCC to GPC Scope
       1 emissions.
-    es: null
+    es: El proceso de transformación de datos implica mapear las categorías del IPCC
+      al protocolo global para inventarios de emisiones de gases de efecto invernadero
+      a escala comunitaria (GPC). Este mapeo asegura una clasificación consistente
+      de las emisiones mientras agrega datos basados en cifras directas de emisiones
+      a nivel municipal. Específicamente, hay un mapeo directo de las categorías relacionadas
+      con la Energía Estacionaria del IPCC a las emisiones del GPC Alcance 1.
     pt: O processo de transformação de dados envolve a mapeamento das categorias do
       IPCC para o protocolo global de inventários de emissões de gases de efeito estufa
       em escala comunitária (GPC). Esse mapeamento garante uma classificação consistente
@@ -3931,12 +3990,13 @@
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
     en: SEEG Fuel Combustion in Energy Industry
-    es: null
+    es: Combustión de Combustibles SEEG en la Industria de Energía
     pt: Combustão de Combustíveis SEEG na Indústria de Energia
   dataset_description:
     en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides
       municipality level emissions from the energy industry.
-    es: null
+    es: El Sistema de Estimación de Emisión de Gases de Efecto Invernadero (SEEG)
+      proporciona datos de emisiones a nivel municipal de la industria de energía.
     pt: O Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) fornece
       dados de emissões a nível municipal da indústria de energia.
   source_type: Third-party
@@ -3959,7 +4019,12 @@
       a bottom-up approach using data from the National Energy Balance (BEN) and specific
       emission factors to quantify CO2, CH4, and N2O emissions across various sectors,
       while considering state-level variations.
-    es: null
+    es: La metodología para calcular las emisiones en Brasil se adhiere a las directrices
+      del IPCC, clasificando las emisiones en combustión de combustibles y emisiones
+      fugitivas. Utiliza un enfoque de abajo hacia arriba empleando datos del Balance
+      Energético Nacional (BEN) y factores de emisión específicos para cuantificar
+      las emisiones de CO2, CH4 y N2O en varios sectores, considerando las variaciones
+      a nivel estatal.
     pt: A metodologia para calcular as emissões no Brasil segue as diretrizes do IPCC,
       classificando as emissões em combustão de combustíveis e emissões fugitivas.
       Ela utiliza uma abordagem de baixo para cima, empregando dados do Balanço Energético
@@ -3973,7 +4038,12 @@
       data based on direct city-level emissions figures. Specifically, there is a
       direct mapping of categories related to Stationary Energy from IPCC to GPC Scope
       1 emissions.
-    es: null
+    es: El proceso de transformación de datos implica mapear las categorías del IPCC
+      al Protocolo Global para Inventarios de Emisiones de Gases de Efecto Invernadero
+      a Escala Comunitaria (GPC). Este mapeo asegura una clasificación consistente
+      de las emisiones mientras agrega datos basados en cifras directas de emisiones
+      a nivel municipal. Específicamente, hay un mapeo directo de las categorías relacionadas
+      con la Energía Estacionaria del IPCC a las emisiones del GPC Alcance 1.
     pt: O processo de transformação de dados envolve a mapeamento das categorias do
       IPCC para o Protocolo Global para Inventários de Emissões de Gases de Efeito
       Estufa em Escala Comunitária (GPC). Este mapeamento garante uma classificação
@@ -3989,13 +4059,15 @@
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
     en: SEEG Fuel Combustion in Agriculture, Forestry and Fishing
-    es: null
+    es: SEEG Combustión de Combustibles en Agricultura, Silvicultura y Pesca
     pt: SEEG Combustão de Combustíveis na Agricultura, Silvicultura e Pesca
   dataset_description:
     en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides
       municipality level emissions from agriculture, forestry and fishing activities
       energy emissions.
-    es: null
+    es: El Sistema de Estimación de Emisión de Gases de Efecto Invernadero (SEEG)
+      proporciona emisiones a nivel municipal provenientes de las actividades de agricultura,
+      silvicultura y pesca.
     pt: O Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) fornece
       emissões em nível municipal provenientes das atividades de agricultura, silvicultura
       e pesca.
@@ -4019,7 +4091,12 @@
       a bottom-up approach using data from the National Energy Balance (BEN) and specific
       emission factors to quantify CO2, CH4, and N2O emissions across various sectors,
       while considering state-level variations.
-    es: null
+    es: La metodología para calcular las emisiones en Brasil se adhiere a las directrices
+      del IPCC, clasificando las emisiones en combustión de combustibles y emisiones
+      fugitivas. Utiliza un enfoque de abajo hacia arriba empleando datos del Balance
+      Energético Nacional (BEN) y factores de emisión específicos para cuantificar
+      las emisiones de CO2, CH4 y N2O en varios sectores, considerando las variaciones
+      a nivel estatal.
     pt: A metodologia para calcular as emissões no Brasil segue as diretrizes do IPCC,
       classificando as emissões em combustão de combustíveis e emissões fugitivas.
       Ela utiliza uma abordagem de baixo para cima, empregando dados do Balanço Energético
@@ -4033,7 +4110,12 @@
       data based on direct city-level emissions figures. Specifically, there is a
       direct mapping of categories related to Stationary Energy from IPCC to GPC Scope
       1 emissions.
-    es: null
+    es: El proceso de transformación de datos implica mapear las categorías del IPCC
+      al Protocolo Global para Inventarios de Emisiones de Gases de Efecto Invernadero
+      a Escala Comunitaria (GPC). Este mapeo asegura una clasificación consistente
+      de las emisiones mientras agrega datos basados en cifras directas de emisiones
+      a nivel municipal. Específicamente, hay un mapeo directo de las categorías relacionadas
+      con la Energía Estacionaria del IPCC a las emisiones del GPC Alcance 1.
     pt: O processo de transformação de dados envolve a mapeamento das categorias do
       IPCC para o Protocolo Global para Inventários de Emissões de Gases de Efeito
       Estufa em Escala Comunitária (GPC). Este mapeamento garante uma classificação
@@ -4049,13 +4131,15 @@
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
     en: SEEG Fugitive Emissions from Oil and Natural Gas
-    es: null
+    es: Emisiones Fugitivas de Petróleo y Gas Natural del SEEG
     pt: Emissões Fugitivas de Petróleo e Gás Natural do SEEG
   dataset_description:
     en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides
       municipality level emissions from fugitive emissions from oil and natural gas
       systems.
-    es: null
+    es: El Sistema de Estimación de Emisiones de Gases de Efecto Invernadero (SEEG)
+      proporciona datos de emisiones a nivel municipal provenientes de emisiones fugitivas
+      de sistemas de petróleo y gas natural.
     pt: O Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) fornece
       dados de emissões a nível municipal provenientes de emissões fugitivas de sistemas
       de petróleo e gás natural.
@@ -4079,7 +4163,12 @@
       a bottom-up approach using data from the National Energy Balance (BEN) and specific
       emission factors to quantify CO2, CH4, and N2O emissions across various sectors,
       while considering state-level variations.
-    es: null
+    es: La metodología para calcular las emisiones en Brasil se adhiere a las directrices
+      del IPCC, clasificando las emisiones en combustión de combustibles y emisiones
+      fugitivas. Utiliza un enfoque de abajo hacia arriba empleando datos del Balance
+      Energético Nacional (BEN) y factores de emisión específicos para cuantificar
+      las emisiones de CO2, CH4 y N2O en varios sectores, considerando las variaciones
+      a nivel estatal.
     pt: A metodologia para calcular as emissões no Brasil segue as diretrizes do IPCC,
       classificando as emissões em combustão de combustíveis e emissões fugitivas.
       Ela utiliza uma abordagem de baixo para cima, empregando dados do Balanço Energético
@@ -4093,7 +4182,13 @@
       data based on direct city-level emissions figures. Specifically, there is a
       direct mapping of categories related to Stationary Energy from IPCC to GPC Scope
       1 emissions.
-    es: null
+    es: El proceso de transformación de datos implica mapear las categorías del IPCC
+      al marco del Protocolo Global para Inventarios de Emisiones de Gases de Efecto
+      Invernadero a Escala Comunitaria (GPC). Este mapeo asegura una clasificación
+      consistente de las emisiones mientras agrega datos basados en cifras directas
+      de emisiones a nivel municipal. Específicamente, hay un mapeo directo de las
+      categorías relacionadas con la Energía Estacionaria del IPCC a las emisiones
+      del Alcance 1 del GPC.
     pt: O processo de transformação de dados envolve o mapeamento das categorias do
       IPCC para o protocolo global de inventários de emissões de gases de efeito estufa
       em escala comunitária (GPC). Esse mapeamento garante uma classificação consistente
@@ -4109,12 +4204,14 @@
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
     en: SEEG On-Road Transportation Emissions
-    es: null
+    es: Emisiones de Transporte por Carretera del SEEG
     pt: Emissões de Transporte Rodoviário do SEEG
   dataset_description:
     en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides
       municipality level emissions from on-road transportation.
-    es: null
+    es: El Sistema de Estimación de Emisión de Gases de Efecto Invernadero (SEEG)
+      proporciona datos de emisiones a nivel municipal provenientes del transporte
+      por carretera.
     pt: O Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) fornece
       dados de emissões a nível municipal provenientes do transporte rodoviário.
   source_type: Third-party
@@ -4135,7 +4232,9 @@
     en: On-road transportation emissions are calculated by assessing the annual fuel
       consumption of various vehicle types, which is then multiplied by specific emission
       factors for each fuel type.
-    es: null
+    es: Las emisiones de transporte por carretera se calculan evaluando el consumo
+      anual de combustible de varios tipos de vehículos, que luego se multiplica por
+      factores de emisión específicos para cada tipo de combustible.
     pt: As emissões de transporte rodoviário são calculadas avaliando o consumo anual
       de combustível de vários tipos de veículos, que é então multiplicado por fatores
       de emissão específicos para cada tipo de combustível.
@@ -4147,7 +4246,12 @@
       data based on direct city-level emissions figures. Specifically, there is a
       direct mapping of categories related to on-road transportation from IPCC to
       GPC Scope 1 emissions.
-    es: null
+    es: El proceso de transformación de datos implica mapear las categorías del IPCC
+      al Protocolo Global para Inventarios de Emisiones de Gases de Efecto Invernadero
+      a Escala Comunitaria (GPC). Este mapeo asegura una clasificación consistente
+      de las emisiones mientras agrega datos basados en cifras directas de emisiones
+      a nivel municipal. Específicamente, hay un mapeo directo de las categorías relacionadas
+      con el transporte por carretera del IPCC a las emisiones del GPC Alcance 1.
     pt: O processo de transformação de dados envolve a mapeamento das categorias do
       IPCC para o Protocolo Global para Inventários de Emissões de Gases de Efeito
       Estufa em Escala Comunitária (GPC). Este mapeamento garante uma classificação
@@ -4164,12 +4268,13 @@
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
     en: SEEG Railway Transport Emissions
-    es: null
+    es: Emisiones de Transporte Ferroviario SEEG
     pt: Emissões de Transporte Ferroviário SEEG
   dataset_description:
     en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides
       municipality level emissions for railway transport.
-    es: null
+    es: El Sistema de Estimación de Emisión de Gases de Efecto Invernadero (SEEG)
+      proporciona datos de emisiones a nivel municipal para el transporte ferroviario.
     pt: O Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) fornece
       dados de emissões a nível municipal para o transporte ferroviário.
   source_type: Third-party
@@ -4190,7 +4295,9 @@
     en: Railway emissions are calculated by assessing the annual fuel consumption
       of various railway types, which is then multiplied by specific emission factors
       for each fuel type.
-    es: null
+    es: Las emisiones ferroviarias se calculan evaluando el consumo anual de combustible
+      de varios tipos de ferrocarriles, que luego se multiplica por factores de emisión
+      específicos para cada tipo de combustible.
     pt: As emissões ferroviárias são calculadas avaliando o consumo anual de combustível
       de vários tipos de ferrovias, que é então multiplicado por fatores de emissão
       específicos para cada tipo de combustível.
@@ -4202,7 +4309,12 @@
       data based on direct city-level emissions figures. Specifically, there is a
       direct mapping of categories related to railway transport from IPCC to GPC Scope
       1 emissions.
-    es: null
+    es: El proceso de transformación de datos implica mapear las categorías del IPCC
+      al Protocolo Global para Inventarios de Emisiones de Gases de Efecto Invernadero
+      a Escala Comunitaria (GPC). Este mapeo asegura una clasificación consistente
+      de las emisiones mientras agrega datos basados en cifras directas de emisiones
+      a nivel municipal. Específicamente, hay un mapeo directo de las categorías relacionadas
+      con el transporte ferroviario del IPCC a las emisiones de Alcance 1 del GPC.
     pt: O processo de transformação de dados envolve a mapeamento das categorias do
       IPCC para o Protocolo Global para Inventários de Emissões de Gases de Efeito
       Estufa em Escala Comunitária (GPC). Este mapeamento garante uma classificação
@@ -4219,12 +4331,13 @@
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
     en: SEEG Waterborne Navigation Emissions
-    es: null
+    es: Emisiones de Navegación Acuática SEEG
     pt: Emissões de Navegação Aquática SEEG
   dataset_description:
     en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides
       municipality level emissions for waterborne navigation.
-    es: null
+    es: El Sistema de Estimación de Emisión de Gases de Efecto Invernadero (SEEG)
+      proporciona datos de emisiones a nivel municipal para la navegación acuática.
     pt: O Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) fornece
       dados de emissões a nível municipal para navegação aquática.
   source_type: Third-party
@@ -4245,7 +4358,9 @@
     en: Waterborn transportation emissions are calculated by assessing the annual
       fuel consumption of various waterborn transportation types, which is then multiplied
       by specific emission factors for each fuel type.
-    es: null
+    es: Las emisiones del transporte acuático se calculan evaluando el consumo anual
+      de combustible de varios tipos de transporte acuático, que luego se multiplica
+      por factores de emisión específicos para cada tipo de combustible.
     pt: As emissões do transporte aquático são calculadas avaliando o consumo anual
       de combustível de vários tipos de transporte aquático, que é então multiplicado
       por fatores de emissão específicos para cada tipo de combustível.
@@ -4257,7 +4372,12 @@
       data based on direct city-level emissions figures. Specifically, there is a
       direct mapping of categories related to waterborne transportation from IPCC
       to GPC Scope 3 emissions.
-    es: null
+    es: El proceso de transformación de datos implica mapear las categorías del IPCC
+      al Protocolo Global para Inventarios de Emisiones de Gases de Efecto Invernadero
+      a Escala Comunitaria (GPC). Este mapeo asegura una clasificación consistente
+      de las emisiones mientras agrega datos basados en cifras directas de emisiones
+      a nivel municipal. Específicamente, hay un mapeo directo de las categorías relacionadas
+      con el transporte acuático del IPCC a las emisiones del GPC Alcance 3.
     pt: O processo de transformação de dados envolve a mapeamento das categorias do
       IPCC para o Protocolo Global para Inventários de Emissões de Gases de Efeito
       Estufa em Escala Comunitária (GPC). Este mapeamento garante uma classificação
@@ -4273,12 +4393,13 @@
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
     en: SEEG Aviation Emissions
-    es: null
+    es: Emisiones de Aviación SEEG
     pt: Emissões de Aviação SEEG
   dataset_description:
     en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides
       municipality level emissions for aviation.
-    es: null
+    es: El Sistema de Estimación de Emisión de Gases de Efecto Invernadero (SEEG)
+      proporciona datos de emisiones a nivel municipal para la aviación.
     pt: O Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) fornece
       dados de emissões a nível municipal para a aviação.
   source_type: Third-party
@@ -4299,7 +4420,9 @@
     en: Air transportation emissions are calculated by assessing the annual fuel consumption
       of various air transportation types, which is then multiplied by specific emission
       factors for each fuel type.
-    es: null
+    es: Las emisiones del transporte aéreo se calculan evaluando el consumo anual
+      de combustible de varios tipos de transporte aéreo, que luego se multiplica
+      por factores de emisión específicos para cada tipo de combustible.
     pt: As emissões do transporte aéreo são calculadas avaliando o consumo anual de
       combustível de vários tipos de transporte aéreo, que é então multiplicado por
       fatores de emissão específicos para cada tipo de combustível.
@@ -4310,7 +4433,12 @@
       This mapping ensures a consistent classification of emissions while aggregating
       data based on direct city-level emissions figures. Specifically, there is a
       direct mapping of categories related to aviation from IPCC to GPC Scope 3 emissions.
-    es: null
+    es: El proceso de transformación de datos implica mapear las categorías del IPCC
+      al Protocolo Global para Inventarios de Emisiones de Gases de Efecto Invernadero
+      a Escala Comunitaria (GPC). Este mapeo asegura una clasificación consistente
+      de las emisiones mientras agrega datos basados en cifras directas de emisiones
+      a nivel municipal. Específicamente, hay un mapeo directo de las categorías relacionadas
+      con la aviación del IPCC a las emisiones de Alcance 3 del GPC.
     pt: O processo de transformação de dados envolve a mapeamento das categorias do
       IPCC para o Protocolo Global para Inventários de Emissões de Gases de Efeito
       Estufa em Escala Comunitária (GPC). Este mapeamento garante uma classificação
@@ -4326,13 +4454,15 @@
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
     en: SEEG Livestock Emissions
-    es: null
+    es: Emisiones de Ganado SEEG
     pt: Emissões de Gado SEEG
   dataset_description:
     en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides
       municipality level emissions for agriculture, forestry, and other land use (AFOLU)
       livestock emissions.
-    es: null
+    es: El Sistema de Estimación de Emisión de Gases de Efecto Invernadero (SEEG)
+      proporciona datos de emisiones a nivel municipal para la agricultura, la silvicultura
+      y otros usos de la tierra (AFOLU) relacionados con las emisiones de ganado.
     pt: O Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) fornece
       dados de emissões a nível municipal para a agricultura, silvicultura e outras
       utilizações da terra (AFOLU) relacionadas ao gado.
@@ -4354,7 +4484,9 @@
     en: Livestock emissions are estimated by multiplying the number of animals in
       each category (e.g., dairy cows, beef cattle, sheep) by emission factors specific
       to each animal type and production system.
-    es: null
+    es: Las emisiones de ganado se estiman multiplicando el número de animales en
+      cada categoría (por ejemplo, vacas lecheras, ganado de carne, ovejas) por factores
+      de emisión específicos para cada tipo de animal y sistema de producción.
     pt: As emissões de gado são estimadas multiplicando o número de animais em cada
       categoria (por exemplo, vacas leiteiras, gado de corte, ovelhas) pelos fatores
       de emissão específicos para cada tipo de animal e sistema de produção.
@@ -4365,7 +4497,12 @@
       This mapping ensures a consistent classification of emissions while aggregating
       data based on direct city-level emissions figures. Specifically, there is a
       direct mapping of categories related to livestock from IPCC to GPC.
-    es: null
+    es: El proceso de transformación de datos implica mapear las categorías del IPCC
+      al Protocolo Global para Inventarios de Emisiones de Gases de Efecto Invernadero
+      a Escala Comunitaria (GPC). Este mapeo garantiza una clasificación consistente
+      de las emisiones mientras agrega datos basados en cifras directas de emisiones
+      a nivel municipal. Específicamente, hay un mapeo directo de las categorías relacionadas
+      con el ganado del IPCC al GPC.
     pt: O processo de transformação de dados envolve a mapeamento das categorias do
       IPCC para o Protocolo Global para Inventários de Emissões de Gases de Efeito
       Estufa em Escala Comunitária (GPC). Este mapeamento garante uma classificação
@@ -4381,13 +4518,15 @@
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
     en: SEEG Land Use and Land Change Emissions
-    es: null
+    es: Emisiones de Uso de la Tierra y Cambio de Uso de la Tierra SEEG
     pt: Emissões de Uso da Terra e Mudança de Uso da Terra SEEG
   dataset_description:
     en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides
       municipality level emissions for agriculture, forestry, and other land use (AFOLU)
       land use and land change emissions.
-    es: null
+    es: El Sistema de Estimación de Emisión de Gases de Efecto Invernadero (SEEG)
+      proporciona emisiones a nivel municipal para la agricultura, la silvicultura
+      y otras emisiones de uso de la tierra (AFOLU) y cambio de uso de la tierra.
     pt: O Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) fornece
       emissões em nível municipal para agricultura, silvicultura e outras emissões
       de uso da terra (AFOLU) e mudança de uso da terra.
@@ -4412,7 +4551,14 @@
       to track changes in land cover and biomass. Emissions and removals are then
       calculated based on these changes in carbon stocks, accounting for both above-ground
       and below-ground biomass, as well as soil carbon
-    es: null
+    es: Las emisiones se estiman evaluando los cambios en los stocks de carbono a
+      través de diferentes categorías de tierra (por ejemplo, bosques, tierras agrícolas,
+      pastizales) a lo largo del tiempo. El método utiliza una combinación de imágenes
+      de satélite, inventarios forestales y mediciones de campo para rastrear cambios
+      en la cobertura del suelo y la biomasa. Las emisiones y las eliminaciones se
+      calculan en función de estos cambios en los stocks de carbono, teniendo en cuenta
+      tanto la biomasa sobre el suelo como la subterránea, así como el carbono del
+      suelo.
     pt: As emissões são estimadas avaliando as mudanças nos estoques de carbono em
       diferentes categorias de terra (por exemplo, florestas, terras agrícolas, pastagens)
       ao longo do tempo. O método utiliza uma combinação de imagens de satélite, inventários
@@ -4428,7 +4574,12 @@
       data based on direct city-level emissions figures. Specifically, there is a
       direct mapping of categories related to land use and land change from IPCC to
       GPC.
-    es: null
+    es: El proceso de transformación de datos implica mapear las categorías del IPCC
+      al Protocolo Global para Inventarios de Emisiones de Gases de Efecto Invernadero
+      a Escala Comunitaria (GPC). Este mapeo garantiza una clasificación consistente
+      de las emisiones mientras agrega datos basados en cifras directas de emisiones
+      a nivel municipal. Específicamente, hay un mapeo directo de las categorías relacionadas
+      con el uso de la tierra y el cambio de uso de la tierra del IPCC al GPC.
     pt: O processo de transformação de dados envolve a mapeamento das categorias do
       IPCC para o Protocolo Global para Inventários de Emissões de Gases de Efeito
       Estufa em Escala Comunitária (GPC). Este mapeamento garante uma classificação
@@ -4444,12 +4595,13 @@
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
     en: SEEG Emissions from Aggregate Sources and Non CO2
-    es: null
+    es: Emisiones del SEEG de Fuentes Agregadas y No CO2
     pt: Emissões do SEEG de Fontes Agregadas e Não CO2
   dataset_description:
     en: Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides
       municipality level emissions for aggregate sources and non-CO2 emissions.
-    es: null
+    es: El Sistema de Estimación de Emisión de Gases de Efecto Invernadero (SEEG)
+      proporciona emisiones a nivel municipal para fuentes agregadas y emisiones no-CO2.
     pt: O Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) fornece
       emissões a nível municipal para fontes agregadas e emissões não-CO2.
   source_type: Third-party
@@ -4470,7 +4622,9 @@
     en: These emissions are estimated by assessing various sources such as biomass
       burning, liming, urea application, and managed soils across different land types
       (e.g., croplands, grasslands).
-    es: null
+    es: Estas emisiones se estiman evaluando diversas fuentes como la quema de biomasa,
+      la cal, la aplicación de urea y suelos manejados en diferentes tipos de tierras
+      (por ejemplo, tierras de cultivo, pastizales).
     pt: Essas emissões são estimadas avaliando várias fontes, como queima de biomassa,
       calagem, aplicação de ureia e solos manejados em diferentes tipos de terras
       (por exemplo, terras cultiváveis, pastagens).
@@ -4482,7 +4636,12 @@
       data based on direct city-level emissions figures. Specifically, there is a
       direct mapping of categories related to aggregate sources and non-CO2 emissions
       from IPCC to GPC.
-    es: null
+    es: El proceso de transformación de datos implica mapear las categorías del IPCC
+      al Protocolo Global para Inventarios de Emisiones de Gases de Efecto Invernadero
+      a Escala Comunitaria (GPC). Este mapeo asegura una clasificación consistente
+      de las emisiones mientras agrega datos basados en cifras directas de emisiones
+      a nivel municipal. Específicamente, hay un mapeo directo de las categorías relacionadas
+      con fuentes agregadas y emisiones no-CO2 del IPCC al GPC.
     pt: O processo de transformação de dados envolve a mapeamento das categorias do
       IPCC para o Protocolo Global para Inventários de Emissões de Gases de Efeito
       Estufa em Escala Comunitária (GPC). Este mapeamento garante uma classificação
@@ -4498,12 +4657,13 @@
   datasource_name: Empresa de Pesquisa Energética
   dataset_name:
     en: EPE Electrictiy Consumption in Residential Buildings
-    es: null
+    es: Consumo de Electricidad de la EPE en Edificios Residenciales
     pt: Consumo de Eletricidade da EPE em Edifícios Residenciais
   dataset_description:
     en: The Empresa de Pesquisa Energética (EPE) provides annual electricity consumption
       data categorized by sub-sector at the state level across Brazil.
-    es: null
+    es: La Empresa de Pesquisa Energética (EPE) proporciona datos anuales de consumo
+      de electricidad categorizados por sub-sector a nivel estatal en todo Brasil.
     pt: A Empresa de Pesquisa Energética (EPE) fornece dados anuais de consumo de
       eletricidade categorizados por sub-setor em nível estadual em todo o Brasil.
   source_type: Third-party
@@ -4524,7 +4684,9 @@
     en: Data has been aggregated from contributions by energy market agents through
       the Permanent Commission for Analysis and Monitoring of the Electric Energy
       Market (COPAM)
-    es: null
+    es: Los datos han sido agregados a partir de las contribuciones de los agentes
+      del mercado de energía a través de la Comisión Permanente de Análisis y Monitoreo
+      del Mercado de Energía Eléctrica (COPAM).
     pt: Os dados foram agregados a partir das contribuições de agentes do mercado
       de energia por meio da Comissão Permanente de Análise e Monitoramento do Mercado
       de Energia Elétrica (COPAM).
@@ -4533,7 +4695,10 @@
     en: Sectors are aligned with GPC subsectors, and state-level emissions are determined
       by multiplying electricity consumption by national emission factors. These state
       emissions are then adjusted using the IBGE resident population data.
-    es: null
+    es: Los sectores están alineados con los subsistemas del GPC, y las emisiones
+      a nivel estatal se determinan multiplicando el consumo de electricidad por los
+      factores de emisión nacionales. Estas emisiones estatales se ajustan utilizando
+      los datos de población residente del IBGE.
     pt: Os setores estão alinhados com os subsistemas do GPC, e as emissões em nível
       estadual são determinadas multiplicando o consumo de eletricidade pelos fatores
       de emissão nacionais. Essas emissões estaduais são então ajustadas usando os
@@ -4547,12 +4712,13 @@
   datasource_name: Empresa de Pesquisa Energética
   dataset_name:
     en: EPE Electrictiy Consumption in Commercial Buildings
-    es: null
+    es: Consumo de Electricidad de la EPE en Edificios Comerciales
     pt: Consumo de Eletricidade da EPE em Edifícios Comerciais
   dataset_description:
     en: The Empresa de Pesquisa Energética (EPE) provides annual electricity consumption
       data categorized by sub-sector at the state level across Brazil.
-    es: null
+    es: La Empresa de Pesquisa Energética (EPE) proporciona datos anuales de consumo
+      de electricidad categorizados por sub-sector a nivel estatal en todo Brasil.
     pt: A Empresa de Pesquisa Energética (EPE) fornece dados anuais de consumo de
       eletricidade categorizados por sub-setor em nível estadual em todo o Brasil.
   source_type: Third-party
@@ -4573,7 +4739,9 @@
     en: Data has been aggregated from contributions by energy market agents through
       the Permanent Commission for Analysis and Monitoring of the Electric Energy
       Market (COPAM)
-    es: null
+    es: Los datos han sido agregados a partir de las contribuciones de los agentes
+      del mercado de energía a través de la Comisión Permanente de Análisis y Monitoreo
+      del Mercado de Energía Eléctrica (COPAM).
     pt: Os dados foram agregados a partir das contribuições de agentes do mercado
       de energia por meio da Comissão Permanente de Análise e Monitoramento do Mercado
       de Energia Elétrica (COPAM).
@@ -4583,7 +4751,11 @@
       by multiplying electricity consumption by national emission factors. These state
       emissions are then adjusted using the IBGE percentage of city gross value added
       at current prices to federal unit for that year.
-    es: null
+    es: Los sectores están alineados con los subsistemas del GPC, y las emisiones
+      a nivel estatal se determinan multiplicando el consumo de electricidad por los
+      factores de emisión nacionales. Estas emisiones estatales se ajustan utilizando
+      el porcentaje del IBGE del valor agregado bruto de la ciudad a precios corrientes
+      para la unidad federal de ese año.
     pt: Os setores estão alinhados com os subsistemas do GPC, e as emissões em nível
       estadual são determinadas multiplicando o consumo de eletricidade pelos fatores
       de emissão nacionais. Essas emissões estaduais são então ajustadas usando a
@@ -4598,12 +4770,13 @@
   datasource_name: Empresa de Pesquisa Energética
   dataset_name:
     en: EPE Electrictiy Consumption in Industrial Buildings
-    es: null
+    es: Consumo de Electricidad de la EPE en Edificios Industriales
     pt: Consumo de Eletricidade da EPE em Edifícios Industriais
   dataset_description:
     en: The Empresa de Pesquisa Energética (EPE) provides annual electricity consumption
       data categorized by sub-sector at the state level across Brazil.
-    es: null
+    es: La Empresa de Pesquisa Energética (EPE) proporciona datos anuales de consumo
+      de electricidad categorizados por sub-sector a nivel estatal en todo Brasil.
     pt: A Empresa de Pesquisa Energética (EPE) fornece dados anuais de consumo de
       eletricidade categorizados por sub-setor em nível estadual em todo o Brasil.
   source_type: Third-party
@@ -4624,7 +4797,9 @@
     en: Data has been aggregated from contributions by energy market agents through
       the Permanent Commission for Analysis and Monitoring of the Electric Energy
       Market (COPAM)
-    es: null
+    es: Los datos han sido agregados a partir de las contribuciones de los agentes
+      del mercado de energía a través de la Comisión Permanente de Análisis y Monitoreo
+      del Mercado de Energía Eléctrica (COPAM).
     pt: Os dados foram agregados a partir das contribuições de agentes do mercado
       de energia por meio da Comissão Permanente de Análise e Monitoramento do Mercado
       de Energia Elétrica (COPAM).
@@ -4634,7 +4809,11 @@
       by multiplying electricity consumption by national emission factors. These state
       emissions are then adjusted using the IBGE percentage of city gross value added
       at current industry prices to federal unit.
-    es: null
+    es: Los sectores están alineados con los subsistemas del GPC, y las emisiones
+      a nivel estatal se determinan multiplicando el consumo de electricidad por los
+      factores de emisión nacionales. Estas emisiones estatales se ajustan utilizando
+      el porcentaje del IBGE del valor agregado bruto de las ciudades a precios actuales
+      de la industria en relación con la unidad federal.
     pt: Os setores estão alinhados com os subsistemas do GPC, e as emissões em nível
       estadual são determinadas multiplicando o consumo de eletricidade pelos fatores
       de emissão nacionais. Essas emissões estaduais são então ajustadas usando a
@@ -4649,12 +4828,13 @@
   datasource_name: Empresa de Pesquisa Energética
   dataset_name:
     en: EPE Electrictiy Consumption in Agriculture
-    es: null
+    es: Consumo de Electricidad en Agricultura por la EPE
     pt: Consumo de Eletricidade na Agricultura pela EPE
   dataset_description:
     en: The Empresa de Pesquisa Energética (EPE) provides annual electricity consumption
       data categorized by sub-sector at the state level across Brazil.
-    es: null
+    es: La Empresa de Pesquisa Energética (EPE) proporciona datos anuales de consumo
+      de electricidad categorizados por sub-sector a nivel estatal en todo Brasil.
     pt: A Empresa de Pesquisa Energética (EPE) fornece dados anuais de consumo de
       eletricidade categorizados por sub-setor em nível estadual em todo o Brasil.
   source_type: Third-party
@@ -4675,7 +4855,9 @@
     en: Data has been aggregated from contributions by energy market agents through
       the Permanent Commission for Analysis and Monitoring of the Electric Energy
       Market (COPAM)
-    es: null
+    es: Los datos han sido agregados a partir de las contribuciones de los agentes
+      del mercado de energía a través de la Comisión Permanente de Análisis y Monitoreo
+      del Mercado de Energía Eléctrica (COPAM).
     pt: Os dados foram agregados a partir das contribuições de agentes do mercado
       de energia por meio da Comissão Permanente de Análise e Monitoramento do Mercado
       de Energia Elétrica (COPAM).
@@ -4685,7 +4867,11 @@
       by multiplying electricity consumption by national emission factors. These state
       emissions are then adjusted using the IBGE percentage of city gross value added
       at current agricultural prices to federal unit.
-    es: null
+    es: Los sectores están alineados con los subsistemas del GPC, y las emisiones
+      a nivel estatal se determinan multiplicando el consumo de electricidad por los
+      factores de emisión nacionales. Estas emisiones estatales se ajustan utilizando
+      el porcentaje del IBGE del valor agregado bruto de las ciudades a precios agrícolas
+      actuales en relación con la unidad federal.
     pt: Os setores estão alinhados com os subsistemas do GPC, e as emissões em nível
       estadual são determinadas multiplicando o consumo de eletricidade pelos fatores
       de emissão nacionais. Essas emissões estaduais são então ajustadas usando a
