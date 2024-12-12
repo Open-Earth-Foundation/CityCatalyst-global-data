@@ -1,12 +1,13 @@
 from openai import OpenAI
 from dotenv import load_dotenv
-from typing import Optional, Dict, List
+from typing import Optional
 import yaml
 from pathlib import Path
 import json
 from langsmith.wrappers import wrap_openai
 from langsmith import traceable
-from pydantic import BaseModel, RootModel, Field
+from pydantic import BaseModel
+import argparse
 
 load_dotenv()
 
@@ -109,46 +110,63 @@ def update_datasource(datasource: dict, updates: dict):
             datasource[key][value["country_code"]] = value["translation"]
 
 
-# Read the YAML file
-datasources = read_yaml(PATH_TO_YAML)
+def translate(target_language: str):
+    # Read the YAML file
+    datasources = read_yaml(PATH_TO_YAML)
 
-for datasource in datasources:
-    print("Now translating: ", datasource["datasource_id"])
+    for datasource in datasources:
+        print("Now translating: ", datasource["datasource_id"])
 
-    # Extract keys to translate
-    # If values are empty, default to empty dictionaries
-    dataset_name = datasource.get("dataset_name", {})
-    dataset_description = datasource.get("dataset_description", {})
-    methodology_description = datasource.get("methodology_description", {})
-    transformation_description = datasource.get("transformation_description", {})
+        # Extract keys to translate
+        # If values are empty, default to empty dictionaries
+        dataset_name = datasource.get("dataset_name")
+        dataset_description = datasource.get("dataset_description")
+        methodology_description = datasource.get("methodology_description")
+        transformation_description = datasource.get("transformation_description")
 
-    # Translate keys
-    prompt = f"""
-    <inputs>
-    These are the current inputs:
-    - dataset_name: {json.dumps(dataset_name, indent=4)}
-    - dataset_description: {json.dumps(dataset_description, indent=4)}
-    - methodology_description: {json.dumps(methodology_description, indent=4)}
-    - transformation_description: {json.dumps(transformation_description, indent=4)}
-    </inputs>
-    """
-    translation_str = get_llm_response(prompt, target_language="es")
+        # Translate keys
+        prompt = f"""
+        <inputs>
+        These are the current inputs:
+        - dataset_name: {json.dumps(dataset_name, indent=4)}
+        - dataset_description: {json.dumps(dataset_description, indent=4)}
+        - methodology_description: {json.dumps(methodology_description, indent=4)}
+        - transformation_description: {json.dumps(transformation_description, indent=4)}
+        </inputs>
+        """
+        translation_str = get_llm_response(prompt, target_language=target_language)
 
-    if translation_str:
-        print("Translation successful!")
-        # print(translation_str)
+        if translation_str:
+            print("Translation by LLM completed!")
 
-        # Parse the translation string into a dictionary
-        translation_dict = json.loads(translation_str)
+            # Parse the translation string into a dictionary
+            translation_dict = json.loads(translation_str)
 
-        # Update only the current datasource
-        update_datasource(datasource, translation_dict)
-        # print("Updated YAML in place!")
+            # Update only the current datasource
+            update_datasource(datasource, translation_dict)
 
-    else:
-        print("No output generated!")
+        else:
+            print("No output generated!")
 
-# Write all updated datasources back to the YAML file
-write_yaml(datasources, PATH_TO_YAML)
+    # Write all updated datasources back to the YAML file
+    write_yaml(datasources, PATH_TO_YAML)
 
-print("All translations completed and YAML file updated!")
+    print("All translations completed and YAML file updated!")
+
+
+if __name__ == "__main__":
+
+    parser = argparse.ArgumentParser(
+        description="Translate YAML file to chosen language"
+    )
+
+    parser.add_argument(
+        "--language",
+        type=str,
+        required=True,
+        help="The language code to translate the YAML file to, e.g. 'es' for Spanish",
+    )
+
+    args = parser.parse_args()
+
+    translate(args.language)
