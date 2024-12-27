@@ -20,6 +20,7 @@ blocks:
   configuration: {}
   downstream_blocks:
   - snis_ch4calculation
+  - snis_n2ocalculations
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -36,7 +37,7 @@ blocks:
   color: null
   configuration: {}
   downstream_blocks:
-  - snis_n2ocalculations
+  - snis_scope_assignation
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -64,7 +65,7 @@ blocks:
   timeout: null
   type: transformer
   upstream_blocks:
-  - snis_ch4calculation
+  - snis_cleaning
   uuid: snis_n2ocalculations
 - all_upstream_blocks_executed: false
   color: null
@@ -81,6 +82,7 @@ blocks:
   type: transformer
   upstream_blocks:
   - snis_n2ocalculations
+  - snis_ch4calculation
   uuid: snis_scope_assignation
 - all_upstream_blocks_executed: true
   color: null
