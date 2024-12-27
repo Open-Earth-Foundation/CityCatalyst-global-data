@@ -1,0 +1,1 @@
+What is needed is to assign the locode to each municipality and generate the ids
