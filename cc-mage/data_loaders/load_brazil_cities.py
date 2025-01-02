@@ -23,40 +23,51 @@ def load_from_s3_bucket(*args, **kwargs):
     Specify your configuration settings in 'io_config.yaml'.
     """
 
-    bucket_name = kwargs['bucket_name']
-    object_key = kwargs['object_key']
+    config_path = path.join(get_repo_path(), 'io_config.yaml')
+    config_profile = 'default'
 
-    aws_access_key_id = get_secret_value('AWS_ACCESS_KEY_ID')
-    aws_secret_access_key = get_secret_value('AWS_SECRET_ACCESS_KEY')
+    bucket_name = 'test-global-api'
+    object_key = 'files/local/brazil/br_city_boundary.parquet'
 
-    conn = duckdb.connect()
-
-    conn.execute(
-        f"""
-        CREATE SECRET (
-            TYPE 'S3',
-            KEY_ID '{aws_access_key_id}',
-            SECRET '{aws_secret_access_key}',
-            REGION 'us-east-1'
-        );
-        """
+    return S3.with_config(ConfigFileLoader(config_path, config_profile)).load(
+        bucket_name,
+        object_key,
     )
 
-    query = f"""
-        SELECT  primary_name,
-                REPLACE(region, 'BR-', '') as region,
-                osm_id,
-                geometry,
-                rnk 
-        FROM 's3://{bucket_name}/{object_key}'
-        WHERE  rnk =1
-        ;
-    """
-    
-    df = conn.execute(query).fetchdf() 
-    conn.close()
+    # bucket_name = kwargs['bucket_name']
+    # object_key = kwargs['object_key']
 
-    return df
+    # aws_access_key_id = get_secret_value('AWS_ACCESS_KEY_ID')
+    # aws_secret_access_key = get_secret_value('AWS_SECRET_ACCESS_KEY')
+
+    # conn = duckdb.connect()
+
+    # conn.execute(
+    #     f"""
+    #     CREATE SECRET (
+    #         TYPE 'S3',
+    #         KEY_ID '{aws_access_key_id}',
+    #         SECRET '{aws_secret_access_key}',
+    #         REGION 'us-east-1'
+    #     );
+    #     """
+    # )
+
+    # query = f"""
+    #     SELECT  primary_name,
+    #             REPLACE(region, 'BR-', '') as region,
+    #             osm_id,
+    #             geometry,
+    #             rnk 
+    #     FROM 's3://{bucket_name}/{object_key}'
+    #     WHERE  rnk =1
+    #     ;
+    # """
+    
+    # df = conn.execute(query).fetchdf() 
+    # conn.close()
+
+    # return df
 
 
 @test
