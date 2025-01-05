@@ -2,6 +2,7 @@ import io
 import pandas as pd
 import duckdb
 import boto3
+from sqlalchemy import create_engine
 
 from mage_ai.settings.repo import get_repo_path
 from mage_ai.io.config import ConfigFileLoader
@@ -29,10 +30,12 @@ def load_from_s3_bucket(*args, **kwargs):
     bucket_name = 'test-global-api'
     object_key = 'files/local/brazil/br_city_boundary.parquet'
 
-    return S3.with_config(ConfigFileLoader(config_path, config_profile)).load(
+    df = S3.with_config(ConfigFileLoader(config_path, config_profile)).load(
         bucket_name,
         object_key,
-    )
+    ) 
+
+    return df
 
     # bucket_name = kwargs['bucket_name']
     # object_key = kwargs['object_key']
@@ -63,7 +66,7 @@ def load_from_s3_bucket(*args, **kwargs):
     #     WHERE  rnk =1
     #     ;
     # """
-    
+
     # df = conn.execute(query).fetchdf() 
     # conn.close()
 
