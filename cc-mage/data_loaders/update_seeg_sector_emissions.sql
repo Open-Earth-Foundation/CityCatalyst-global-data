@@ -103,6 +103,7 @@ FROM
     seeg_city_emissions_year
 WHERE 
     emissions_value > 0
+AND locode IS NOT NULL
 ON CONFLICT ON CONSTRAINT emissions_pkey
 DO UPDATE SET 
     datasource_name = EXCLUDED.datasource_name,

@@ -16,8 +16,8 @@ def export_data_to_postgres(df: DataFrame, **kwargs) -> None:
 
     Docs: https://docs.mage.ai/design/data-loading#postgresql
     """
-    schema_name = 'modelled'  # Specify the name of the schema to export data to
-    table_name = 'ccra_indicator_staging'  # Specify the name of the table to export data to
+    schema_name = 'raw_data'  # Specify the name of the schema to export data to
+    table_name = 'ccra_datasus_indicator'  # Specify the name of the table to export data to
     config_path = path.join(get_repo_path(), 'io_config.yaml')
     config_profile = 'default'
 

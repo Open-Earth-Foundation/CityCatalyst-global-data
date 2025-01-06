@@ -8,12 +8,18 @@ SELECT  DISTINCT
             when indicator_name = 'Domicílios em áreas de risco' then 'houses in risk areas'
             when indicator_name = 'Índice de Ameaça de inundações, enxurradas e alagamentos' then 'flood threat index'
             when indicator_name = 'Pobreza energética' then 'energy poverty'
-            when indicator_name = 'Temperatura máxima' then 'maxium temperature'
+            when indicator_name = 'Temperatura máxima' then 'maximum temperature'
             when indicator_name = 'Produção e comercialização de alimentos' then 'food production and marketing'
             when indicator_name = 'Dependência da irrigação em grande escala' then 'dependence on large-scale irrigation'
             when indicator_name= 'Densidade de estabelecimentos agropecuários' then 'density of agricultural establishments'
             when indicator_name = 'Máxima precipitação anual em cinco dias consecutivos' then 'maximum precipitation 5 days'
             when indicator_name = 'Precipitação total anual acima do percentil 95' then 'total precipitation'
+            when indicator_name = 'Produção e comercialização' then 'production and commercialisation of food'
+            when indicator_name = 'Irrigação em grande escala' then 'dependence on large scale irrigation'
+            when trim(indicator_name) = 'Precipitação em cinco dias' then 'maximum precipitation 5 days'
+            when trim(indicator_name) = 'Precipitação total' then 'total precipitation'
+            when indicator_name = 'Ameaça' then 'flood threat index'
+            when indicator_name = 'Umidade Relativa' then 'relative humidity'
             end AS indicator_name,
         null::numeric AS indicator_score,
         null::numeric AS indicator_units,
@@ -33,10 +39,10 @@ upsert_data AS (
         (MD5(CONCAT_WS('-', b.locode, indicator_name, a.datasource, a.indicator_year, a.scenario_name))::UUID) AS id,
         b.locode as actor_id, 
         a.city_name,
-        indicator_name,
+        a.indicator_normalized_score as indicator_name,
         a.indicator_score,
-        a.indicator_units,
-        a.indicator_normalized_score,
+        'Index' as indicator_units,
+        0.01 +  a.indicator_normalized_score * (0.99 - 0.01) as indicator_normalized_score,
         a.indicator_year,
         a.scenario_name,
         a.datasource

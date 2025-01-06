@@ -20,12 +20,17 @@ def load_from_s3_bucket(*args, **kwargs):
     config_profile = 'default'
 
     bucket_name = kwargs['bucket_name']
-    object_key = 'files/seeg/mapping_ipcc_to_gpc.csv'
+    object_key = 'files/ccra/indicators/ips_brazil_nutrition_and_basic_medical_care.csv'
 
-    return S3.with_config(ConfigFileLoader(config_path, config_profile)).load(
+    df = S3.with_config(ConfigFileLoader(config_path, config_profile)).load(
         bucket_name,
         object_key,
     )
+
+    df = df[['municipality_code', 'municipality', 'state', 'region', 'capital', 'nutrition_and_basic_medical_care']]
+    df['units'] = 'index'
+
+    return df
 
 
 @test

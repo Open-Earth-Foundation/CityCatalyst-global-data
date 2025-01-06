@@ -20,7 +20,7 @@ def load_from_s3_bucket(*args, **kwargs):
     config_profile = 'default'
 
     bucket_name = kwargs['bucket_name']
-    object_key = 'files/ccra/adapta_brazil/adapta_city_api_response.csv'
+    object_key = 'files/ccra/iCare/iCare_ANA_water_security_2021.csv'
 
     return S3.with_config(ConfigFileLoader(config_path, config_profile)).load(
         bucket_name,

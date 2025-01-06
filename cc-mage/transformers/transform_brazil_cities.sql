@@ -1,46 +1,62 @@
-WITH city_comparisons AS (
+WITH region_mapping AS (
+    SELECT 'Acre' AS region_name, 'AC' AS region_code UNION ALL
+    SELECT 'Alagoas', 'AL' UNION ALL
+    SELECT 'Amapá', 'AP' UNION ALL
+    SELECT 'Amazonas', 'AM' UNION ALL
+    SELECT 'Bahia', 'BA' UNION ALL
+    SELECT 'Ceará', 'CE' UNION ALL
+    SELECT 'Distrito Federal', 'DF' UNION ALL
+    SELECT 'Espírito Santo', 'ES' UNION ALL
+    SELECT 'Goiás', 'GO' UNION ALL
+    SELECT 'Maranhão', 'MA' UNION ALL
+    SELECT 'Mato Grosso', 'MT' UNION ALL
+    SELECT 'Mato Grosso do Sul', 'MS' UNION ALL
+    SELECT 'Minas Gerais', 'MG' UNION ALL
+    SELECT 'Paraná', 'PR' UNION ALL
+    SELECT 'Paraíba', 'PB' UNION ALL
+    SELECT 'Pará', 'PA' UNION ALL
+    SELECT 'Pernambuco', 'PE' UNION ALL
+    SELECT 'Piauí', 'PI' UNION ALL
+    SELECT 'Rio de Janeiro', 'RJ' UNION ALL
+    SELECT 'Rio Grande do Norte', 'RN' UNION ALL
+    SELECT 'Rio Grande do Sul', 'RS' UNION ALL
+    SELECT 'Rondônia', 'RO' UNION ALL
+    SELECT 'Roraima', 'RR' UNION ALL
+    SELECT 'Santa Catarina', 'SC' UNION ALL
+    SELECT 'Sergipe', 'SE' UNION ALL
+    SELECT 'São Paulo', 'SP' UNION ALL
+    SELECT 'Tocantins', 'TO'
+),
+locode_data AS (
+    SELECT 
+        a.LOCODE AS locode,
+        a._Name AS city_name,
+        a.SubDiv AS region_code
+    FROM {{ df_2 }} a
+),
+city_comparison AS (
   SELECT * FROM (
     VALUES
-    ('Arês', 'RN', 'Arez', 'RN'),
-    ('Açu', 'RN', 'Assu', 'RN'),
-    ('Bocaiúva', 'MG', 'Bocaiuva', 'MG'),
-    ('Crateús', 'CE', 'osm', 'CE'),
-    ('Gracho Cardoso', 'SE', 'Graccho Cardoso', 'SE'),
-    ('Guatambú', 'SC', 'Guatambu', 'SC'),
-    ('Itapecuru Mirim', 'MA', 'Itapecuru-Mirim', 'MA'),
-    ('Januário Cicco', 'RN', 'Boa Saúde', 'RN'),
-    ('Lagoa dos Patos', 'RS', NULL, 'RS'),
-    ('Lagoa Mirim', 'RS', NULL, 'RS'),
-    ('Lajedo do Tabocal', 'BA', 'Lagedo do Tabocal', 'BA'),
-    ('Lindóia', 'SP', 'Lindoia', 'SP'),
-    ('Luís Antônio', 'SP', 'Luiz Antônio', 'SP'),
-    ('Major Isidoro', 'AL', 'Major Izidoro', 'AL'),
-    ('Maturéia', 'PB', 'Matureia', 'PB'),
-    ('Mauriti', 'CE', 'osm', 'CE'),
-    ('Olho d''Água do Borges', 'RN', 'Olho-d''Água do Borges', 'RN'), 
-    ('Paulicéia', 'SP', 'Pauliceia', 'SP'),
-    ('Pompéia', 'SP', 'Pompeia', 'SP'),
-    ('Rio do Prado', 'MG', 'osm', 'MG'),
-    ('Santa Teresinha', 'PB', 'Santa Terezinha', 'PB'),
-    ('Santa Terezinha', 'BA', 'Santa Teresinha', 'BA'),
-    ('Santo Antônio do Leverger', 'MT', 'Santo Antônio de Leverger', 'MT'),
-    ('São Caitano', 'PE', 'São Caetano', 'PE'),
-    ('São João del Rei', 'MG', 'São João del-Rei', 'MG'),
-    ('São Luis do Piauí', 'PI', 'São Luís do Piauí', 'PI')
-  ) AS t(seeg_city, seeg_region, overture_city, overture_region)
+    ('Graccho Cardoso', 'SE', 'Gracho Cardoso', 'SE'),
+    ('Amparo do São Francisco', 'SE', 'Amparo de São Francisco', 'SE'),
+    ('Barão do Monte Alto', 'MG', 'Barão de Monte Alto', 'MG'),
+    ('Santo Antônio de Leverger', 'MT', 'Santo Antônio do Leverger', 'MT'),
+    ('Atílio Vivácqua', 'ES', 'Atilio Vivacqua', 'ES'),
+    ('Santa Terezinha', 'BA', 'Santa Teresinha', 'BA')
+  ) AS t(src_city_name, src_region_code, locode_city_name, locode_region)
 )
-SELECT 		DISTINCT COALESCE(cc.seeg_city, d.primary_name) as city,
-			d.region,
-			lo.locode,
-            d.osm_id,
-			d.geometry
-FROM 		{{ df_1 }} d
-LEFT JOIN 	city_comparisons cc 
-ON 			d.primary_name = cc.overture_city
-AND 		d.region = cc.overture_region
-INNER JOIN 	{{ df_2 }} lo 
-ON 			REPLACE(LOWER(TRIM(CASE WHEN COALESCE(cc.seeg_city, d.primary_name) = 'Santa Terezinha' AND REPLACE(d.region, 'BR-', '') = 'BA' THEN 'Santa Teresinha'
-			WHEN COALESCE(cc.seeg_city, d.primary_name) = 'Amparo do São Francisco' AND REPLACE(d.region, 'BR-', '') = 'SE' THEN 'Amparo de São Francisco'
-			WHEN COALESCE(cc.seeg_city, d.primary_name) = 'Atílio Vivácqua' AND REPLACE(d.region, 'BR-', '')= 'ES' THEN 'Atilio Vivacqua' ELSE COALESCE(cc.seeg_city, d.primary_name) END )), '-', ' ') = replace(lower(trim(lo._name)), '-', ' ') 
-AND 		d.region = lo.SubDiv
-;
+SELECT 	ld.locode,		
+		bb.city_name,
+		rm.region_code,
+        bb.geom
+		--ST_GeomFromHEXWKB(bb.geom) as geometry		
+FROM {{ df_1 }} bb
+LEFT JOIN region_mapping rm 
+ON bb.region_name = rm.region_name
+LEFT JOIN city_comparison cc 
+ON bb.city_name = cc.src_city_name
+AND rm.region_code = cc.src_region_code
+LEFT JOIN locode_data ld 
+ON REPLACE(LOWER(COALESCE(cc.locode_city_name,bb.city_name)), '-', ' ') = REPLACE(LOWER(ld.city_name), '-', ' ')
+AND rm.region_code = ld.region_code
+WHERE ld.locode IS NOT NULL;  

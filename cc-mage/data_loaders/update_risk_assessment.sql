@@ -1,15 +1,34 @@
 WITH raw_risk AS (
-    SELECT 
-        impact_id,
-        actor_id,
-        NULL AS risk_score,
-        SUM(CASE WHEN category = 'hazard' THEN indicator_score * indicator_weight END) AS hazard_score,
-        SUM(CASE WHEN category = 'exposure' THEN indicator_score * indicator_weight END) AS exposure_score,
-        SUM(CASE WHEN category = 'vulnerability' THEN indicator_score * indicator_weight END) AS vulnerability_score,
-        NULL AS adaptive_capacity_score,
-        NULL AS sensitivity_score
-    FROM modelled.ccra_impactchain_indicator
-    GROUP BY impact_id, actor_id
+SELECT 
+    impact_id,
+    actor_id,
+    NULL AS risk_score,
+    SUM(
+        CASE 
+            WHEN category = 'hazard' THEN 
+                CASE 
+                    WHEN relationship = 'negative' THEN (1 - indicator_score) 
+                    ELSE indicator_score 
+                END * indicator_weight
+            ELSE 0
+        END
+    ) AS hazard_score,
+    SUM(
+        CASE 
+            WHEN category = 'exposure' THEN indicator_score * indicator_weight 
+            ELSE 0
+        END
+    ) AS exposure_score,
+    SUM(
+        CASE 
+            WHEN category = 'vulnerability' THEN indicator_score * indicator_weight 
+            ELSE 0
+        END
+    ) AS vulnerability_score,
+    NULL AS adaptive_capacity_score,
+    NULL AS sensitivity_score
+FROM modelled.ccra_impactchain_indicator
+GROUP BY impact_id, actor_id
 ),
 risk_scores AS (
     SELECT

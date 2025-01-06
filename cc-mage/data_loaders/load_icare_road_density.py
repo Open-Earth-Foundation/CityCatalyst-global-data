@@ -11,12 +11,16 @@ if 'test' not in globals():
 @data_loader
 def load_from_s3_bucket(*args, **kwargs):
     """
+    Template for loading data from a S3 bucket.
+    Specify your configuration settings in 'io_config.yaml'.
+
+    Docs: https://docs.mage.ai/design/data-loading#s3
     """
     config_path = path.join(get_repo_path(), 'io_config.yaml')
     config_profile = 'default'
 
-    bucket_name = 'test-global-api'
-    object_key = 'files/unlocode/brazil_locodes.csv'
+    bucket_name = kwargs['bucket_name']
+    object_key = 'files/ccra/iCare/iCare_MainRoad_extention.csv'
 
     return S3.with_config(ConfigFileLoader(config_path, config_profile)).load(
         bucket_name,

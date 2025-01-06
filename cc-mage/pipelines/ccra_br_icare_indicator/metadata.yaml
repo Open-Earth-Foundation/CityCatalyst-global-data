@@ -1,0 +1,676 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_loaders/load_icare_sea_level.py
+  downstream_blocks:
+  - load_icare_sea_level_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_icare_sea_level
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_icare_sea_level
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - update_sea_level_indicator
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_icare_sea_level_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_icare_sea_level
+  uuid: load_icare_sea_level_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_sea_level_indicator
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_icare_sea_level_db
+  uuid: update_sea_level_indicator
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    export_write_policy: append
+  downstream_blocks:
+  - load_icare_sv_urban_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_icare_sv_urban
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_icare_sv_urban
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - update_sv_urban_indicator
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_icare_sv_urban_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_icare_sv_urban
+  uuid: load_icare_sv_urban_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_sv_urban_indicator
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_icare_sv_urban_db
+  uuid: update_sv_urban_indicator
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    export_write_policy: append
+  downstream_blocks:
+  - load_icare_biodiversity_area
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_biodiversity_area
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_biodiversity_area
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - update_biodiversity_indicator
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_icare_biodiversity_area
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_biodiversity_area
+  uuid: load_icare_biodiversity_area
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_biodiversity_indicator
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_icare_biodiversity_area
+  uuid: update_biodiversity_indicator
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    export_write_policy: append
+  downstream_blocks:
+  - load_conservation_area_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_conservation_area
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_conservation_area
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - update_conservation_indicator
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_conservation_area_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_conservation_area
+  uuid: load_conservation_area_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_conservation_indicator
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_conservation_area_db
+  uuid: update_conservation_indicator
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    export_write_policy: append
+  downstream_blocks:
+  - load_protected_area_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_protected_area
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_protected_area
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - update_protected_area_indicator
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_protected_area_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_protected_area
+  uuid: load_protected_area_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_protected_area_indicator
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_protected_area_db
+  uuid: update_protected_area_indicator
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    export_write_policy: append
+  downstream_blocks:
+  - load_icare_water_security_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_iCare_water_security
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_icare_water_security
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - update_water_security_indicator
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_icare_water_security_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_icare_water_security
+  uuid: load_icare_water_security_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_water_security_indicator
+  retry_config: null
+  status: updated
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_icare_water_security_db
+  uuid: update_water_security_indicator
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_loaders/load_icare_age_dependants.py
+  downstream_blocks:
+  - load_icare_age_dependants_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_icare_age_dependants
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_icare_age_dependants
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_exporters/load_icare_age_dependants_db.py
+  downstream_blocks:
+  - update_age__distribution_indicator
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_icare_age_dependants_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_icare_age_dependants
+  uuid: load_icare_age_dependants_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_age_ distribution_indicator
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_icare_age_dependants_db
+  uuid: update_age__distribution_indicator
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    export_write_policy: append
+  downstream_blocks:
+  - load_icare_power_plants_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_icare_power_plants
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_icare_power_plants
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - update_power_plants_indicator
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_icare_power_plants_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_icare_power_plants
+  uuid: load_icare_power_plants_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_power_plants_indicator
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_icare_power_plants_db
+  uuid: update_power_plants_indicator
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    export_write_policy: append
+  downstream_blocks:
+  - load_icare_urban_green_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_icare_urban_green
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_icare_urban_green
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - update_urban_green_indicator
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_icare_urban_green_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_icare_urban_green
+  uuid: load_icare_urban_green_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_urban_green_indicator
+  retry_config: null
+  status: updated
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_icare_urban_green_db
+  uuid: update_urban_green_indicator
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    export_write_policy: append
+  downstream_blocks:
+  - load_icare_road_density_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_icare_road_density
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_icare_road_density
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - update_road_density_indicator
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_icare_road_density_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_icare_road_density
+  uuid: load_icare_road_density_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_road_density_indicator
+  retry_config: null
+  status: updated
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_icare_road_density_db
+  uuid: update_road_density_indicator
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    export_write_policy: append
+  downstream_blocks:
+  - load_icare_railway_density_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_icare_railway_density
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_icare_railway_density
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - update_railway_density_indicator
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_icare_railway_density_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_icare_railway_density
+  uuid: load_icare_railway_density_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_railway_density_indicator
+  retry_config: null
+  status: updated
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_icare_railway_density_db
+  uuid: update_railway_density_indicator
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2024-11-22 13:10:29.139469+00:00'
+data_integration: null
+description: These are preprocessed indicators from iCare
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: ccra_br_iCare_indicator
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: ccra_br_icare_indicator
+variables:
+  bucket_name: test-global-api
+variables_dir: /home/src/mage_data/cc-mage
+widgets: []

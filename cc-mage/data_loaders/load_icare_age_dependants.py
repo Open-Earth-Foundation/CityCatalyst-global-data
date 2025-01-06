@@ -20,7 +20,7 @@ def load_from_s3_bucket(*args, **kwargs):
     config_profile = 'default'
 
     bucket_name = kwargs['bucket_name']
-    object_key = 'files/seeg/mapping_ipcc_to_gpc.csv'
+    object_key = 'files/ccra/iCare/iCare_age_dependents_2022.csv'
 
     return S3.with_config(ConfigFileLoader(config_path, config_profile)).load(
         bucket_name,

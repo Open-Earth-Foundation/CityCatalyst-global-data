@@ -1,3 +1,4 @@
+import pandas as pd
 from mage_ai.settings.repo import get_repo_path
 from mage_ai.io.config import ConfigFileLoader
 from mage_ai.io.s3 import S3
@@ -11,21 +12,19 @@ if 'test' not in globals():
 @data_loader
 def load_from_s3_bucket(*args, **kwargs):
     """
-    Template for loading data from a S3 bucket.
-    Specify your configuration settings in 'io_config.yaml'.
-
-    Docs: https://docs.mage.ai/design/data-loading#s3
     """
     config_path = path.join(get_repo_path(), 'io_config.yaml')
     config_profile = 'default'
 
-    bucket_name = kwargs['bucket_name']
-    object_key = 'files/seeg/mapping_ipcc_to_gpc.csv'
+    bucket_name = 'test-global-api'
+    object_key = 'files/unlocode/brazil_locodes.csv'
 
-    return S3.with_config(ConfigFileLoader(config_path, config_profile)).load(
+    df = S3.with_config(ConfigFileLoader(config_path, config_profile)).load(
         bucket_name,
         object_key,
     )
+
+    return df
 
 
 @test

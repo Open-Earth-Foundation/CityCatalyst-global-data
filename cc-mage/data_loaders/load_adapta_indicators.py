@@ -38,10 +38,11 @@ def load_from_s3_bucket(*args, **kwargs):
                         'Temperatura máxima', 
                         'Produção e comercialização de alimentos', 
                         'Dependência da irrigação em grande escala',
+                        #'Produção e comercialização',
                         #'Densidade de estabelecimentos agropecuários',
                         'Máxima precipitação anual em cinco dias consecutivos',
                         'Precipitação total anual acima do percentil 95'
-                        ])) | (df['indicator_id'] == 5047)]
+                        ])) | (df['indicator_id'].isin([5047, 5006, 5018, 7548, 7549, 60003, 50028]))]
 
     # 5 is for food security
     #filtered_df = df[df['indicator_id'].isin([5047])]
