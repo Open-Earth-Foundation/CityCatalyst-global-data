@@ -122,6 +122,21 @@ blocks:
   - clinical_waste_calculation_sinir
   - incineration_calculation_sinir
   uuid: joining_solidwaste_calculation
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: markdown
+  name: TO-DO
+  retry_config: null
+  status: updated
+  timeout: null
+  type: markdown
+  upstream_blocks: []
+  uuid: to_do
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
