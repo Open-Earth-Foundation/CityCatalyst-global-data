@@ -3,25 +3,22 @@ if 'transformer' not in globals():
     from mage_ai.data_preparation.decorators import transformer
 if 'test' not in globals():
     from mage_ai.data_preparation.decorators import test
+from pandas import DataFrame
 
 
 @transformer
-def transform(data, data_2, data_3, data_4, *args, **kwargs):
-
-    # Creating dfs
-    data = pd.DataFrame(data)
-    data_2 = pd.DataFrame(data_2)
-    data_3 = pd.DataFrame(data_3)
-    data_4 = pd.DataFrame(data_4)
+def transform(data: DataFrame, data_2: DataFrame, data_3: DataFrame, data_4: DataFrame, *args, **kwargs):
 
     # concatenate the dataframes
     df_final = pd.concat([data, data_2, data_3, data_4], ignore_index=True)
 
     # Rename the total solid waste column to activity value column
-    df_final.rename(columns={'total_SW': 'activity_value'}, inplace=True)
+    df_final.rename(columns={'total_SW': 'activity_value', 'year': 'emissions_year'}, inplace=True)
 
-    # Assigning year of emissions
-    df_final['emissions_year'] = 2022
+    # Assing activity units
+    df_final['activity_units'] = 't'
+    df_final['actor_id'] = 'BR' #Note: actor_id here is the country id
+    
 
     # drop the rows with zero emissions
     df_final = df_final[df_final['emissions_value'] != 0]

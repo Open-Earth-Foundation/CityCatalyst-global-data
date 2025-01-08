@@ -51,7 +51,7 @@ def transform(data, *args, **kwargs):
     data['GPC_refno'] = np.where(data['columns_match'] == True, 'III.3.1', 'III.3.2')
 
     # create the metadata column to store the subcategory information
-    data["metadata"] = data.apply(
+    data["activity_subcategory_type"] = data.apply(
         lambda row: {
             "activity_subcategory_type1": 'waste_type',
             "activity_subcategory_typename1": 'clinical waste',
