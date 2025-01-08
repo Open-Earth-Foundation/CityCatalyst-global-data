@@ -3,146 +3,108 @@ blocks:
   color: null
   configuration: {}
   downstream_blocks:
-  - cleaning_sinir
+  - cleaning_snis
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: import_raw_sinir_from_s3
+  name: import_raw_snis_from_s3
   retry_config: null
   status: executed
   timeout: null
   type: data_loader
   upstream_blocks: []
-  uuid: import_raw_sinir_from_s3
+  uuid: import_raw_snis_from_s3
 - all_upstream_blocks_executed: true
   color: null
   configuration: {}
   downstream_blocks:
-  - solid_waste_calculation_sinir
-  - clinical_waste_calculation_sinir
-  - incineration_calculation_sinir
-  - biological_calculation_sinir
+  - ch4_calculation_snis
+  - n2o_calculation_snis
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: cleaning_sinir
+  name: cleaning_snis
   retry_config: null
   status: executed
   timeout: null
   type: transformer
   upstream_blocks:
-  - import_raw_sinir_from_s3
-  uuid: cleaning_sinir
+  - import_raw_snis_from_s3
+  uuid: cleaning_snis
 - all_upstream_blocks_executed: true
   color: null
   configuration: {}
   downstream_blocks:
-  - joining_solidwaste_calculation
+  - scope_assignation_snis
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: solid_waste_calculation_sinir
+  name: ch4_calculation_snis
   retry_config: null
   status: executed
   timeout: null
   type: transformer
   upstream_blocks:
-  - cleaning_sinir
-  uuid: solid_waste_calculation_sinir
+  - cleaning_snis
+  uuid: ch4_calculation_snis
 - all_upstream_blocks_executed: true
   color: null
   configuration: {}
   downstream_blocks:
-  - joining_solidwaste_calculation
+  - scope_assignation_snis
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: clinical_waste_calculation_sinir
+  name: n2o_calculation_snis
   retry_config: null
   status: executed
   timeout: null
   type: transformer
   upstream_blocks:
-  - cleaning_sinir
-  uuid: clinical_waste_calculation_sinir
+  - cleaning_snis
+  uuid: n2o_calculation_snis
 - all_upstream_blocks_executed: true
   color: null
   configuration: {}
   downstream_blocks:
-  - joining_solidwaste_calculation
+  - snis_staging
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: incineration_calculation_sinir
+  name: scope_assignation_snis
   retry_config: null
   status: executed
   timeout: null
   type: transformer
   upstream_blocks:
-  - cleaning_sinir
-  uuid: incineration_calculation_sinir
+  - n2o_calculation_snis
+  - ch4_calculation_snis
+  uuid: scope_assignation_snis
 - all_upstream_blocks_executed: true
   color: null
   configuration: {}
   downstream_blocks:
-  - joining_solidwaste_calculation
+  - update_snis_sector_activity
+  - update_snis_emission_factor
+  - update_snis_emissions
+  - delete_staging
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: biological_calculation_sinir
-  retry_config: null
-  status: executed
-  timeout: null
-  type: transformer
-  upstream_blocks:
-  - cleaning_sinir
-  uuid: biological_calculation_sinir
-- all_upstream_blocks_executed: true
-  color: null
-  configuration: {}
-  downstream_blocks:
-  - sinir_staging
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: joining_solidwaste_calculation
-  retry_config: null
-  status: executed
-  timeout: null
-  type: transformer
-  upstream_blocks:
-  - biological_calculation_sinir
-  - solid_waste_calculation_sinir
-  - clinical_waste_calculation_sinir
-  - incineration_calculation_sinir
-  uuid: joining_solidwaste_calculation
-- all_upstream_blocks_executed: true
-  color: null
-  configuration: {}
-  downstream_blocks:
-  - update_sinir_emissions
-  - update_sinir_emission_factors
-  - update_sinir_sector_activity
-  - delete_staging_sinir
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: sinir_staging
+  name: snis_staging
   retry_config: null
   status: executed
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - joining_solidwaste_calculation
-  uuid: sinir_staging
+  - scope_assignation_snis
+  uuid: snis_staging
 - all_upstream_blocks_executed: true
   color: null
   configuration:
@@ -158,20 +120,19 @@ blocks:
   executor_type: local_python
   has_callback: false
   language: sql
-  name: update_sinir_sector_activity
+  name: update_snis_sector_activity
   retry_config: null
   status: executed
   timeout: null
   type: data_loader
   upstream_blocks:
-  - sinir_staging
-  uuid: update_sinir_sector_activity
+  - snis_staging
+  uuid: update_snis_sector_activity
 - all_upstream_blocks_executed: true
   color: null
   configuration:
     data_provider: postgres
     data_provider_profile: default
-    data_provider_schema: public
     dbt: {}
     disable_query_preprocessing: false
     export_write_policy: append
@@ -182,40 +143,37 @@ blocks:
   executor_type: local_python
   has_callback: false
   language: sql
-  name: update_sinir_emission_factors
-  retry_config: null
-  status: executed
-  timeout: null
-  type: data_loader
-  upstream_blocks:
-  - sinir_staging
-  uuid: update_sinir_emission_factors
-- all_upstream_blocks_executed: true
-  color: null
-  configuration:
-    data_provider: postgres
-    data_provider_profile: default
-    dbt: {}
-    disable_query_preprocessing: false
-    export_write_policy: append
-    file_path: data_loaders/update_sinir_emissions.sql
-    file_source:
-      path: data_loaders/update_sinir_emissions.sql
-    limit: 1000
-    use_raw_sql: true
-  downstream_blocks: []
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: sql
-  name: update_sinir_emissions
+  name: update_snis_emission_factor
   retry_config: null
   status: updated
   timeout: null
   type: data_loader
   upstream_blocks:
-  - sinir_staging
-  uuid: update_sinir_emissions
+  - snis_staging
+  uuid: update_snis_emission_factor
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_snis_emissions
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_loader
+  upstream_blocks:
+  - snis_staging
+  uuid: update_snis_emissions
 - all_upstream_blocks_executed: true
   color: purple
   configuration:
@@ -231,26 +189,26 @@ blocks:
   executor_type: local_python
   has_callback: false
   language: sql
-  name: delete_staging_sinir
+  name: delete_staging
   retry_config: null
   status: executed
   timeout: null
   type: custom
   upstream_blocks:
-  - sinir_staging
-  uuid: delete_staging_sinir
+  - snis_staging
+  uuid: delete_staging
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
 conditionals: []
-created_at: '2025-01-06 20:07:29.159093+00:00'
+created_at: '2025-01-08 19:16:37.619592+00:00'
 data_integration: null
 description: null
 executor_config: {}
 executor_count: 1
 executor_type: null
 extensions: {}
-name: sinir_solidwaste_brasil
+name: snis_waste_water_brazil
 notification_config: {}
 remote_variables_dir: null
 retry_config: {}
@@ -260,6 +218,6 @@ settings:
 spark_config: {}
 tags: []
 type: python
-uuid: sinir_solidwaste_brasil
+uuid: snis_waste_water_brazil
 variables_dir: /home/src/mage_data/cc-mage
 widgets: []
