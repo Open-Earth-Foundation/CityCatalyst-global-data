@@ -1,0 +1,103 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: teal
+  configuration: {}
+  downstream_blocks:
+  - gpc_methodology_staging
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: gpc_methodology_info
+  retry_config: null
+  status: executed
+  timeout: null
+  type: custom
+  upstream_blocks: []
+  uuid: gpc_methodology_info
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: gpc_methodology_staging
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - gpc_methodology_info
+  uuid: gpc_methodology_staging
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - deleting_staging_gpcmethod
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_gpc_methodology
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: update_gpc_methodology
+- all_upstream_blocks_executed: true
+  color: purple
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: deleting_staging_gpcmethod
+  retry_config: null
+  status: executed
+  timeout: null
+  type: custom
+  upstream_blocks:
+  - update_gpc_methodology
+  uuid: deleting_staging_gpcmethod
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2025-01-09 13:32:48.191177+00:00'
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: gpc_methodology
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: gpc_methodology
+variables_dir: /home/src/mage_data/cc-mage
+widgets: []
