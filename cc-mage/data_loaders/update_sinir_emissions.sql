@@ -10,6 +10,7 @@ WITH sinir_staging AS (
         e.activity_name, 
         e.GPC_refno,
         e.emissions_year,
+        e.gpcmethod_id,
         c.locode,
         c.city_id
     FROM 
@@ -33,7 +34,8 @@ staging_with_activity AS (
         city_id,
         actor_name,
         emissions_value,
-        emissions_units
+        emissions_units,
+        gpcmethod_id
     FROM 
         sinir_staging
 )
@@ -48,7 +50,7 @@ SELECT DISTINCT
     GPC_refno AS gpc_reference_number,
     locode AS actor_id,
     city_id,
-    NULL::UUID AS gpcmethod_id,
+    gpcmethod_id::UUID,
     activity_id,
     activity_value,
     gas_name,

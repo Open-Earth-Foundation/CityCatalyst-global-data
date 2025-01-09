@@ -4,7 +4,7 @@ SELECT DISTINCT ON (activity_id)
     (MD5(CONCAT_WS('-', activity_name))::UUID) AS activity_id,
     replace(replace(lower(replace(activity_name, ' ', '-')), '(', ''), ')', '') AS activity_name,
     activity_units,                         
-    null::uuid AS gpcmethod_id,             
+    gpcmethod_id::UUID,             
     activity_subcategory_type::jsonb        
 FROM 
     modelled.sinir_staging
