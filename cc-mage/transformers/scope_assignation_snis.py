@@ -20,6 +20,7 @@ def transform(data: DataFrame, data_2: DataFrame, *args, **kwargs):
     df_final['III.4.1'] = df_final['emissions_value_tmp']*df_final['fraction_scope1']
     df_final['III.4.2'] = df_final['emissions_value_tmp']*df_final['fraction_scope3']
 
+
     # reformating the DataFrame
     df_final = df_final.melt(
         id_vars=['municipality_name', 'total_resident_population', 'emissionfactor_value', 'gas_name', 'emissionfactor_units', 
@@ -27,6 +28,10 @@ def transform(data: DataFrame, data_2: DataFrame, *args, **kwargs):
         value_vars=['III.4.1', 'III.4.2'], 
         var_name='GPC_refno', 
         value_name='emissions_value')
+
+    # Assign gpcmethod_id
+    df_final.loc[df_final['GPC_refno'] == 'III.4.1', 'gpcmethod_id'] = 'd08015c1-e605-233c-3244-38eabeb14e49'
+    df_final.loc[df_final['GPC_refno'] == 'III.4.2', 'gpcmethod_id'] = '73872423-5961-c665-90b0-efcae15606a5'
 
     # emissions units
     df_final['emissions_units'] = 'kg'
