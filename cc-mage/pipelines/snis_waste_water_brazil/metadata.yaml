@@ -92,7 +92,7 @@ blocks:
   - update_snis_sector_activity
   - update_snis_emission_factor
   - update_snis_emissions
-  - delete_staging
+  - deleted_snis_staging
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -189,14 +189,14 @@ blocks:
   executor_type: local_python
   has_callback: false
   language: sql
-  name: delete_staging
+  name: deleted_snis_staging
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: custom
   upstream_blocks:
   - snis_staging
-  uuid: delete_staging
+  uuid: deleted_snis_staging
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
