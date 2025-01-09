@@ -1,1 +1,1 @@
--- Docs: https://docs.mage.ai/guides/sql-blocks
+DROP TABLE IF EXISTS modelled.snis_staging;
