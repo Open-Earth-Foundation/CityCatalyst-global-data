@@ -19,7 +19,8 @@ SELECT  DISTINCT
             when trim(indicator_name) = 'Precipitação em cinco dias' then 'maximum precipitation 5 days'
             when trim(indicator_name) = 'Precipitação total' then 'total precipitation'
             when indicator_name = 'Ameaça' then 'flood threat index'
-            when indicator_name = 'Umidade Relativa' then 'relative humidity'
+            when trim(indicator_name) = 'Umidade Relativa' then 'relative humidity'
+            when indicator_name = 'Intensidade de Precipitação' then 'precipitation intensity'
             end AS indicator_name,
         null::numeric AS indicator_score,
         null::numeric AS indicator_units,
@@ -39,7 +40,7 @@ upsert_data AS (
         (MD5(CONCAT_WS('-', b.locode, indicator_name, a.datasource, a.indicator_year, a.scenario_name))::UUID) AS id,
         b.locode as actor_id, 
         a.city_name,
-        a.indicator_normalized_score as indicator_name,
+        indicator_name,
         a.indicator_score,
         'Index' as indicator_units,
         0.01 +  a.indicator_normalized_score * (0.99 - 0.01) as indicator_normalized_score,
@@ -79,6 +80,7 @@ SELECT
 FROM upsert_data
 ON CONFLICT (id) 
 DO UPDATE SET
+    indicator_name = EXCLUDED.indicator_name,
     indicator_score = EXCLUDED.indicator_score,
     indicator_units = EXCLUDED.indicator_units,
     indicator_normalized_score = EXCLUDED.indicator_normalized_score
