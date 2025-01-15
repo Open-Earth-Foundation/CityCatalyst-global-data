@@ -92,7 +92,6 @@ blocks:
   - update_snis_sector_activity
   - update_snis_emission_factor
   - update_snis_emissions
-  - deleted_snis_staging
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -115,7 +114,8 @@ blocks:
     export_write_policy: append
     limit: 1000
     use_raw_sql: true
-  downstream_blocks: []
+  downstream_blocks:
+  - deleted_snis_staging
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -138,14 +138,15 @@ blocks:
     export_write_policy: append
     limit: 1000
     use_raw_sql: true
-  downstream_blocks: []
+  downstream_blocks:
+  - deleted_snis_staging
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: sql
   name: update_snis_emission_factor
   retry_config: null
-  status: updated
+  status: failed
   timeout: null
   type: data_loader
   upstream_blocks:
@@ -161,7 +162,8 @@ blocks:
     export_write_policy: append
     limit: 1000
     use_raw_sql: true
-  downstream_blocks: []
+  downstream_blocks:
+  - deleted_snis_staging
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -174,7 +176,7 @@ blocks:
   upstream_blocks:
   - snis_staging
   uuid: update_snis_emissions
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: purple
   configuration:
     data_provider: postgres
@@ -195,7 +197,9 @@ blocks:
   timeout: null
   type: custom
   upstream_blocks:
-  - snis_staging
+  - update_snis_emissions
+  - update_snis_emission_factor
+  - update_snis_sector_activity
   uuid: deleted_snis_staging
 cache_block_output_in_memory: false
 callbacks: []

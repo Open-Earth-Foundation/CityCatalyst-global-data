@@ -130,7 +130,6 @@ blocks:
   - update_sinir_emissions
   - update_sinir_emission_factors
   - update_sinir_sector_activity
-  - delete_staging_sinir
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -153,7 +152,8 @@ blocks:
     export_write_policy: append
     limit: 1000
     use_raw_sql: true
-  downstream_blocks: []
+  downstream_blocks:
+  - delete_staging_sinir
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -177,7 +177,8 @@ blocks:
     export_write_policy: append
     limit: 1000
     use_raw_sql: true
-  downstream_blocks: []
+  downstream_blocks:
+  - delete_staging_sinir
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -203,7 +204,8 @@ blocks:
       path: data_loaders/update_sinir_emissions.sql
     limit: 1000
     use_raw_sql: true
-  downstream_blocks: []
+  downstream_blocks:
+  - delete_staging_sinir
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -216,7 +218,7 @@ blocks:
   upstream_blocks:
   - sinir_staging
   uuid: update_sinir_emissions
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: purple
   configuration:
     data_provider: postgres
@@ -237,7 +239,9 @@ blocks:
   timeout: null
   type: custom
   upstream_blocks:
-  - sinir_staging
+  - update_sinir_emissions
+  - update_sinir_emission_factors
+  - update_sinir_sector_activity
   uuid: delete_staging_sinir
 cache_block_output_in_memory: false
 callbacks: []
