@@ -1,4 +1,4 @@
-DROP TABLE country_codes;
+--DROP TABLE country_codes;
 
 CREATE TABLE IF NOT EXISTS country_codes (
     id SERIAL PRIMARY KEY,

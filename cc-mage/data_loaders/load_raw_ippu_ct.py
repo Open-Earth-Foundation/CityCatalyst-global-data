@@ -26,15 +26,15 @@ def load_from_s3_bucket(*args, **kwargs):
         f'{route}/cement_emissions_sources.csv',
         f'{route}/chemicals_emissions_sources.csv',
         f'{route}/food-beverage-tobacco_emissions_sources.csv',
-    #    f'{route}/glass_emissions_sources.csv',
-    #    f'{route}/iron-and-steel_emissions_sources.csv',
-    #    f'{route}/lime_emissions_sources.csv',
-    #    f'{route}/other-chemicals_emissions_sources.csv',
-    #    f'{route}/other-manufacturing_emissions_sources.csv',
-    #    f'{route}/other-metals_emissions_sources.csv',
-    #    f'{route}/petrochemical-steam-cracking_emissions_sources.csv',
-    #    f'{route}/pulp-and-paper_emissions_sources.csv',
-    #    f'{route}/textiles-leather-apparel_emissions_sources.csv'
+        f'{route}/glass_emissions_sources.csv',
+        f'{route}/iron-and-steel_emissions_sources.csv',
+        f'{route}/lime_emissions_sources.csv',
+        f'{route}/other-chemicals_emissions_sources.csv',
+        f'{route}/other-manufacturing_emissions_sources.csv',
+        f'{route}/other-metals_emissions_sources.csv',
+        f'{route}/petrochemical-steam-cracking_emissions_sources.csv',
+        f'{route}/pulp-and-paper_emissions_sources.csv',
+        f'{route}/textiles-leather-apparel_emissions_sources.csv'
     ]
 
     s3 = S3.with_config(ConfigFileLoader(config_path, config_profile))
