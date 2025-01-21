@@ -4542,6 +4542,86 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.2.1
   scope: 1
+- datasource_id: bfe11415-e453-4a46-b238-3836cfcb52a7
+  publisher_id: SEEG
+  datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
+  dataset_name:
+    en: SEEG Fuel Combustion in Commercial Buildings
+    es: Combustión de Combustibles SEEG en Edificios Comerciales
+    pt: Combustão de Combustíveis SEEG em Edifícios Comerciais
+  dataset_description:
+    en:
+      Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides
+      municipality level emissions from fuel combustion in commercial buildings.
+    es:
+      El Sistema de Estimación de Emisión de Gases de Efecto Invernadero (SEEG)
+      proporciona datos de emisiones a nivel municipal provenientes de la combustión
+      de combustibles en edificios comerciales.
+    pt:
+      O Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) fornece
+      dados de emissões a nível municipal provenientes da combustão de combustíveis
+      em edifícios comerciais.
+  source_type: Third-party
+  access_type: Public
+  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  geographical_location: BR
+  start_year: 2023
+  end_year: 2023
+  latest_accounting_year: 2023
+  frequency_of_update: annual
+  spatial_resolution: city
+  language: pt
+  accessibility: null
+  data_quality: medium
+  notes: null
+  units: kg
+  methodology_description:
+    en:
+      The methodology for calculating emissions in Brazil adheres to IPCC guidelines,
+      classifying emissions into fuel combustion and fugitive emissions. It employs
+      a bottom-up approach using data from the National Energy Balance (BEN) and specific
+      emission factors to quantify CO2, CH4, and N2O emissions across various sectors,
+      while considering state-level variations.
+    es:
+      La metodología para calcular las emisiones en Brasil se adhiere a las directrices
+      del IPCC, clasificando las emisiones en combustión de combustibles y emisiones
+      fugitivas. Utiliza un enfoque de abajo hacia arriba empleando datos del Balance
+      Energético Nacional (BEN) y factores de emisión específicos para cuantificar
+      las emisiones de CO2, CH4 y N2O en varios sectores, considerando las variaciones
+      a nivel estatal.
+    pt:
+      A metodologia para calcular as emissões no Brasil segue as diretrizes do IPCC,
+      classificando as emissões em combustão de combustíveis e emissões fugitivas.
+      Ela utiliza uma abordagem de baixo para cima, empregando dados do Balanço Energético
+      Nacional (BEN) e fatores de emissão específicos para quantificar as emissões
+      de CO2, CH4 e N2O em diversos setores, considerando as variações a nível estadual.
+  methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
+  transformation_description:
+    en:
+      The data transformation process involves mapping IPCC categories to the Global
+      Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) framework.
+      This mapping ensures a consistent classification of emissions while aggregating
+      data based on direct city-level emissions figures. Specifically, there is a
+      direct mapping of categories related to Stationary Energy from IPCC to GPC Scope
+      1 emissions.
+    es:
+      El proceso de transformación de datos implica el mapeo de categorías del IPCC
+      al Protocolo Global para Inventarios de Emisiones de Gases de Efecto Invernadero
+      en Escala Comunitaria (GPC). Este mapeo asegura una clasificación consistente
+      de las emisiones mientras agrega datos basados en cifras directas de emisiones
+      a nivel municipal. Específicamente, hay un mapeo directo de las categorías relacionadas
+      con la Energía Estacionaria del IPCC a las emisiones del GPC Alcance 1.
+    pt:
+      O processo de transformação de dados envolve a mapeamento das categorias do
+      IPCC para o Protocolo Global para Inventários de Emissões de Gases de Efeito
+      Estufa em Escala Comunitária (GPC). Este mapeamento garante uma classificação
+      consistente das emissões enquanto agrega dados com base em números diretos de
+      emissões a nível municipal. Especificamente, há um mapeamento direto das categorias
+      relacionadas à Energia Estacionária do IPCC para as emissões do GPC Escopo 1.
+  retrieval_method: global_api
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEGv2023/city/:locode/:year/:gpcReferenceNumber
+  gpc_reference_number: I.2.1
+  scope: 1
 - datasource_id: 31a76645-f430-4695-a431-c173dae1d224
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
