@@ -26,7 +26,8 @@ SELECT
     emissions_2019,
     emissions_2020,
     emissions_2021,
-    emissions_2022
+    emissions_2022,
+    emissions_2023
 FROM 
     {{ df_2 }} e
 LEFT JOIN 
@@ -59,7 +60,8 @@ SELECT
     SUM(emissions_2019) AS emissions_2019,
     SUM(emissions_2020) AS emissions_2020,
     SUM(emissions_2021) AS emissions_2021,
-    SUM(emissions_2022) AS emissions_2022
+    SUM(emissions_2022) AS emissions_2022,
+    SUM(emissions_2023) AS emissions_2023
 FROM 
     seeg_sector_raw_data
 GROUP BY 

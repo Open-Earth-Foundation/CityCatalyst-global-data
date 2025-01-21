@@ -179,6 +179,6 @@ type: python
 uuid: ghgi_seeg_br
 variables:
   bucket_name: test-global-api
-  object_key: files/seeg/seeg_city_emissions/setor_de_emissão=Resíduos/*.parquet
+  object_key: files/seeg/seeg_city_emissions_2023/setor_de_emissão=Resíduos/*.parquet
 variables_dir: /home/src/mage_data/cc-mage
 widgets: []
