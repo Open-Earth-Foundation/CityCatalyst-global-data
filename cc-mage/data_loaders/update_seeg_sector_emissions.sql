@@ -12,7 +12,8 @@ WITH seeg_city_emissions AS (
         emissions_2019,
         emissions_2020,
         emissions_2021,
-        emissions_2022
+        emissions_2022,
+        emissions_2023
     FROM 
         modelled.seeg_sector_emissions e 
     LEFT JOIN 
@@ -31,7 +32,7 @@ seeg_city_emissions_year AS (
         locode,
         city_id,
         year AS emissions_year,
-        emissions_value * 1000 AS emissions_value,
+        emissions_value::numeric * 1000 AS emissions_value,
         'kg' AS emissions_units
     FROM 
         (SELECT 
@@ -47,7 +48,8 @@ seeg_city_emissions_year AS (
             emissions_2019,
             emissions_2020,
             emissions_2021,
-            emissions_2022
+            emissions_2022,
+            emissions_2023
         FROM 
             seeg_city_emissions
         GROUP BY 
@@ -63,7 +65,8 @@ seeg_city_emissions_year AS (
             emissions_2019,
             emissions_2020,
             emissions_2021,
-            emissions_2022
+            emissions_2022,
+            emissions_2023
         ) AS source
     CROSS JOIN LATERAL (
         VALUES
@@ -74,7 +77,8 @@ seeg_city_emissions_year AS (
             ('2019', emissions_2019),
             ('2020', emissions_2020),
             ('2021', emissions_2021),
-            ('2022', emissions_2022)
+            ('2022', emissions_2022),
+            ('2023', emissions_2023)
     ) AS unpivoted(year, emissions_value)
 )
 INSERT INTO modelled.emissions 
@@ -83,8 +87,8 @@ INSERT INTO modelled.emissions
      gas_name, emissions_value, emissions_units, emissions_year, emissionfactor_id, 
      spatial_granularity, geometry_type, geometry)
 SELECT 
-    (MD5(CONCAT_WS('-', 'SEEG', gpc_reference_number, locode,activity_name,emissions_year, gas_name))::UUID) AS emissions_id,
-    'SEEG' AS datasource_name,
+    (MD5(CONCAT_WS('-', 'SEEGv2023', gpc_reference_number, locode,activity_name,emissions_year, gas_name))::UUID) AS emissions_id,
+    'SEEGv2023' AS datasource_name,
     gpc_reference_number,
     locode AS actor_id,
     city_id,
