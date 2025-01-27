@@ -8,7 +8,7 @@ import pandas as pd
 @transformer
 def transform(data: DataFrame, data_2: DataFrame, *args, **kwargs):
 
-    data_2 = data_2[['emissionfactor_id', 'emissionfactor_value']]
+    data = data[['emissionfactor_id', 'emissionfactor_value', 'unit_denominator', 'datasource_name', 'active_from', 'active_to']]
 
     tmp = pd.merge(data_2, data, on='emissionfactor_id')
 
@@ -18,8 +18,10 @@ def transform(data: DataFrame, data_2: DataFrame, *args, **kwargs):
     #calculate EF for grid-losses
     tmp['emissionfactor_value'] *= grid_loss
 
+    tmp['activity_value'] = pd.to_numeric(tmp['activity_value'], errors='coerce')
+
     # calculate emissions for grid-losses
-    tmp['emissions_value'] = tmp['emissions_value'] * tmp['emissionfactor_value']
+    tmp['emissions_value'] = tmp['activity_value'] * tmp['emissionfactor_value']
 
     gpc_refno = {
         'I.1.2': 'I.1.3',

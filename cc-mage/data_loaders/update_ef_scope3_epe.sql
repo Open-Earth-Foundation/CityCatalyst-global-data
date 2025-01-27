@@ -4,21 +4,20 @@ WITH ef AS (
     emissionfactor_value,
     unit_denominator, 
     activity_id, 
-    datasource_name, 
     active_from,
     active_to, 
     actor_id
-    FROM modelled.ef_staging_epe
+    FROM modelled.scope3_staging_epe
 )
 INSERT INTO modelled.emissions_factor 
     (emissionfactor_id, gas_name, emissionfactor_value, unit_denominator, activity_id, datasource_name, active_from, active_to, actor_id)
 SELECT DISTINCT
-    (MD5(CONCAT_WS('-', gas_name, emissionfactor_value, unit_denominator, activity_id::TEXT, datasource_name, actor_id))::UUID) AS emissionfactor_id,
+    (MD5(CONCAT_WS('-', gas_name, emissionfactor_value, unit_denominator, activity_id::TEXT, 'World Bank', actor_id))::UUID) AS emissionfactor_id,
     gas_name,
     emissionfactor_value,
     unit_denominator,
     activity_id::UUID,
-    datasource_name,
+    'World Bank' AS datasource_name,
     --NULL::jsonb AS metadata,
     active_from,
     active_to,
