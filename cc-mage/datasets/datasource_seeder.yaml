@@ -6661,7 +6661,7 @@
     pt: Os valores de emissão do tratamento de esgoto foram calculados utilizando a metodologia oficial do protocolo GPC (V.07), aplicando os valores padrão do IPCC (2006) para o Brasil.
   methodology_url: https://ghgprotocol.org/ghg-protocol-cities
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/source/SNIS/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SNIS/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: "III.4.1"
   scope: 1
 - datasource_id: 123f3cd5-44b0-4858-87b8-e1dd0932b27e
