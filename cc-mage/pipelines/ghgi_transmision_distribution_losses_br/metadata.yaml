@@ -1,78 +1,60 @@
 blocks:
 - all_upstream_blocks_executed: true
-  color: teal
-  configuration: {}
-  downstream_blocks: []
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: gpc_methodology_info
-  retry_config: null
-  status: executed
-  timeout: null
-  type: custom
-  upstream_blocks: []
-  uuid: gpc_methodology_info
-- all_upstream_blocks_executed: true
-  color: pink
+  color: null
   configuration: {}
   downstream_blocks:
-  - gpc_methodology_staging
+  - calculate_transmision_distribution_ef_brgov
+  - calculate_emissions_trns_dist_losses_epe
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: sector1_scope3_gpc_method
+  name: import_EF_BRGOV
   retry_config: null
   status: executed
   timeout: null
-  type: custom
+  type: data_loader
   upstream_blocks: []
-  uuid: sector1_scope3_gpc_method
+  uuid: import_ef_brgov
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_path: transformers/calculate_transmision_distribution_ef_brgov.py
+    file_source:
+      path: transformers/calculate_transmision_distribution_ef_brgov.py
+  downstream_blocks:
+  - ef_staging_epe
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: calculate_transmision_distribution_ef_brgov
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - import_ef_brgov
+  uuid: calculate_transmision_distribution_ef_brgov
 - all_upstream_blocks_executed: true
   color: null
   configuration: {}
   downstream_blocks:
-  - update_gpc_methodology
+  - update_epe_trns_dist_losses_ef
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: gpc_methodology_staging
+  name: EF_staging_epe
   retry_config: null
   status: executed
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - sector1_scope3_gpc_method
-  uuid: gpc_methodology_staging
+  - calculate_transmision_distribution_ef_brgov
+  uuid: ef_staging_epe
 - all_upstream_blocks_executed: true
   color: null
-  configuration:
-    data_provider: postgres
-    data_provider_profile: default
-    dbt: {}
-    disable_query_preprocessing: false
-    export_write_policy: append
-    limit: 1000
-    use_raw_sql: true
-  downstream_blocks:
-  - deleting_staging_gpcmethod
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: sql
-  name: update_gpc_methodology
-  retry_config: null
-  status: executed
-  timeout: null
-  type: data_loader
-  upstream_blocks:
-  - gpc_methodology_staging
-  uuid: update_gpc_methodology
-- all_upstream_blocks_executed: true
-  color: purple
   configuration:
     data_provider: postgres
     data_provider_profile: default
@@ -86,26 +68,59 @@ blocks:
   executor_type: local_python
   has_callback: false
   language: sql
-  name: deleting_staging_gpcmethod
+  name: update_epe_trns_dist_losses_ef
   retry_config: null
   status: executed
   timeout: null
-  type: custom
+  type: data_loader
   upstream_blocks:
-  - update_gpc_methodology
-  uuid: deleting_staging_gpcmethod
+  - ef_staging_epe
+  uuid: update_epe_trns_dist_losses_ef
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - calculate_emissions_trns_dist_losses_epe
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: import_activity_data_EPE
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: import_activity_data_epe
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: calculate_emissions_trns_dist_losses_epe
+  retry_config: null
+  status: updated
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - import_activity_data_epe
+  - import_ef_brgov
+  uuid: calculate_emissions_trns_dist_losses_epe
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
 conditionals: []
-created_at: '2025-01-09 13:32:48.191177+00:00'
+created_at: '2025-01-24 16:50:58.169549+00:00'
 data_integration: null
 description: null
 executor_config: {}
 executor_count: 1
 executor_type: null
 extensions: {}
-name: gpc_methodology
+name: ghgi_transmision_distribution_losses_br
 notification_config: {}
 remote_variables_dir: null
 retry_config: {}
@@ -115,6 +130,6 @@ settings:
 spark_config: {}
 tags: []
 type: python
-uuid: gpc_methodology
+uuid: ghgi_transmision_distribution_losses_br
 variables_dir: /home/src/mage_data/cc-mage
 widgets: []
