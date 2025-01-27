@@ -6640,7 +6640,7 @@
   source_type: third_party
   access_type: public
   dataset_url: https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/snis/produtos-do-snis/diagnosticos-snis
-  geographical_location: Brasil
+  geographical_location: BR
   start_year: 2022
   end_year: 2022
   latest_accounting_year: 2022
@@ -6661,7 +6661,7 @@
     pt: Os valores de emissão do tratamento de esgoto foram calculados utilizando a metodologia oficial do protocolo GPC (V.07), aplicando os valores padrão do IPCC (2006) para o Brasil.
   methodology_url: https://ghgprotocol.org/ghg-protocol-cities
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/snis/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/source/SNIS/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: "III.4.1"
   scope: 1
 - datasource_id: 123f3cd5-44b0-4858-87b8-e1dd0932b27e
@@ -6678,7 +6678,7 @@
   source_type: third_party
   access_type: public
   dataset_url: https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/snis/produtos-do-snis/diagnosticos-snis
-  geographical_location: Brasil
+  geographical_location: BR
   start_year: 2022
   end_year: 2022
   latest_accounting_year: 2022
@@ -6699,7 +6699,7 @@
     pt: Os valores de emissão do tratamento de esgoto foram calculados utilizando a metodologia oficial do protocolo GPC (V.07), aplicando os valores padrão do IPCC (2006) para o Brasil.
   methodology_url: https://ghgprotocol.org/ghg-protocol-cities
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/snis/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SNIS/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: "III.4.2"
   scope: 2
 - datasource_id: df49b122-7b26-4fd7-ba97-83a2be9ac796
@@ -6716,7 +6716,7 @@
   source_type: third_party
   access_type: public
   dataset_url: https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/snis/produtos-do-snis/diagnosticos-snis
-  geographical_location: Brasil
+  geographical_location: BR
   start_year: 2022
   end_year: 2022
   latest_accounting_year: 2022
@@ -6737,7 +6737,7 @@
     es: Los valores de emisiones por disposición de residuos sólidos se calcularon utilizando la metodología oficial de compromiso de metano del protocolo GPC (V.07) aplicando valores por defecto del IPCC (2006) para Brasil.
     pt: Os valores de emissão da disposição de resíduos sólidos foram calculados utilizando a metodologia oficial de compromisso de metano do protocolo GPC (V.07), aplicando os valores padrão do IPCC (2006) para o Brasil.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/sinir/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SINIR/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: "III.1.1"
   scope: 1
 - datasource_id: 94b54d32-87e9-4220-a1cc-cf0058917c59
@@ -6754,7 +6754,7 @@
   source_type: third_party
   access_type: public
   dataset_url: https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/snis/produtos-do-snis/diagnosticos-snis
-  geographical_location: Brasil
+  geographical_location: BR
   start_year: 2022
   end_year: 2022
   latest_accounting_year: 2022
@@ -6775,7 +6775,7 @@
     es: Los valores de emisiones por disposición de residuos sólidos se calcularon utilizando la metodología oficial de compromiso de metano del protocolo GPC (V.07) aplicando valores por defecto del IPCC (2006) para Brasil.
     pt: Os valores de emissão da disposição de resíduos sólidos foram calculados utilizando a metodologia oficial de compromisso de metano do protocolo GPC (V.07), aplicando os valores padrão do IPCC (2006) para o Brasil.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/sinir/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SINIR/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: "III.1.2"
   scope: 3
 - datasource_id: b5895e06-98c5-416d-869d-a4d43bc2ba4c
@@ -6792,7 +6792,7 @@
   source_type: third_party
   access_type: public
   dataset_url: https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/snis/produtos-do-snis/diagnosticos-snis
-  geographical_location: Brasil
+  geographical_location: BR
   start_year: 2022
   end_year: 2022
   latest_accounting_year: 2022
@@ -6813,7 +6813,7 @@
     es: Los valores de emisiones por residuos biológicos se calcularon utilizando la metodología oficial de tratamiento biológico (compostaje) del protocolo GPC (V.07) aplicando valores por defecto del IPCC (2006) para Brasil.
     pt: Os valores de emissão de resíduos biológicos foram calculados utilizando a metodologia oficial de tratamento biológico (compostagem) do protocolo GPC (V.07), aplicando os valores padrão do IPCC (2006) para o Brasil.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/sinir/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SINIR/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: "III.2.1"
   scope: 1
 - datasource_id: eff1e226-6b78-4d89-bdda-50f7f310a817
@@ -6830,7 +6830,7 @@
   source_type: third_party
   access_type: public
   dataset_url: https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/snis/produtos-do-snis/diagnosticos-snis
-  geographical_location: Brasil
+  geographical_location: BR
   start_year: 2022
   end_year: 2022
   latest_accounting_year: 2022
@@ -6851,7 +6851,7 @@
     es: Los valores de emisiones por residuos biológicos se calcularon utilizando la metodología oficial de tratamiento biológico (compostaje) del protocolo GPC (V.07) aplicando valores por defecto del IPCC (2006) para Brasil.
     pt: Os valores de emissão de resíduos biológicos foram calculados utilizando a metodologia oficial de tratamento biológico (compostagem) do protocolo GPC (V.07), aplicando os valores padrão do IPCC (2006) para o Brasil.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/sinir/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SINIR/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: "III.2.2"
   scope: 3
 - datasource_id: c5ce2727-3d05-4979-aeee-e6090e0cd47a
@@ -6868,7 +6868,7 @@
   source_type: third_party
   access_type: public
   dataset_url: https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/snis/produtos-do-snis/diagnosticos-snis
-  geographical_location: Brasil
+  geographical_location: BR
   start_year: 2022
   end_year: 2022
   latest_accounting_year: 2022
@@ -6889,7 +6889,7 @@
     es: Los valores de emisiones por residuos sólidos incinerados se calcularon utilizando la metodología oficial de incineración de residuos y quema a cielo abierto del protocolo GPC (V.07) aplicando valores por defecto del IPCC (2006) para Brasil.
     pt: Os valores de emissão de resíduos sólidos incinerados foram calculados utilizando a metodologia oficial de incineração e queima aberta de resíduos do protocolo GPC (V.07), aplicando os valores padrão do IPCC (2006) para o Brasil.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/sinir/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SINIR/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: "III.3.1"
   scope: 1
 - datasource_id: c54e92e6-13a8-41aa-ad80-a19208629777
@@ -6906,7 +6906,7 @@
   source_type: third_party
   access_type: public
   dataset_url: https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/snis/produtos-do-snis/diagnosticos-snis
-  geographical_location: Brasil
+  geographical_location: BR
   start_year: 2022
   end_year: 2022
   latest_accounting_year: 2022
@@ -6927,7 +6927,7 @@
     es: Los valores de emisiones por residuos sólidos incinerados se calcularon utilizando la metodología oficial de incineración de residuos y quema a cielo abierto del protocolo GPC (V.07) aplicando valores por defecto del IPCC (2006) para Brasil.
     pt: Os valores de emissão de resíduos sólidos incinerados foram calculados utilizando a metodologia oficial de incineração e queima aberta de resíduos do protocolo GPC (V.07), aplicando os valores padrão do IPCC (2006) para o Brasil.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/sinir/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SINIR/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: "III.3.2"
   scope: 3
 - datasource_id: be2ec3ba-10cc-4cad-b48b-33045d053de0
