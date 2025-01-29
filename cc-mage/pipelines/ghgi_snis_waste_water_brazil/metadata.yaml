@@ -212,7 +212,7 @@ executor_config: {}
 executor_count: 1
 executor_type: null
 extensions: {}
-name: snis_waste_water_brazil
+name: ghgi_snis_waste_water_brazil
 notification_config: {}
 remote_variables_dir: null
 retry_config: {}
@@ -222,6 +222,6 @@ settings:
 spark_config: {}
 tags: []
 type: python
-uuid: snis_waste_water_brazil
+uuid: ghgi_snis_waste_water_brazil
 variables_dir: /home/src/mage_data/cc-mage
 widgets: []
