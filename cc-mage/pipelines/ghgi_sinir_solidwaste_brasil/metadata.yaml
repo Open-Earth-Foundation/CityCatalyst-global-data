@@ -254,7 +254,7 @@ executor_config: {}
 executor_count: 1
 executor_type: null
 extensions: {}
-name: sinir_solidwaste_brasil
+name: ghgi_sinir_solidwaste_brasil
 notification_config: {}
 remote_variables_dir: null
 retry_config: {}
@@ -264,6 +264,6 @@ settings:
 spark_config: {}
 tags: []
 type: python
-uuid: sinir_solidwaste_brasil
+uuid: ghgi_sinir_solidwaste_brasil
 variables_dir: /home/src/mage_data/cc-mage
 widgets: []
