@@ -3,6 +3,9 @@ WITH seeg_city_emissions AS (
         gpc_reference_number,
         gas_name,
         activity_name,
+        activity_subcategory_type1, activity_subcategory_typename1,
+        activity_subcategory_type2, activity_subcategory_typename2,
+        activity_subcategory_type3, activity_subcategory_typename3,
         locode,
         city_id,
         emissions_2015,
@@ -15,7 +18,7 @@ WITH seeg_city_emissions AS (
         emissions_2022,
         emissions_2023
     FROM 
-        modelled.seeg_sector_emissions e 
+        raw_data.seeg_sector_emissions e 
     LEFT JOIN 
         modelled.city_polygon c ON 
             LOWER(TRIM(e.city)) = LOWER(TRIM(c.city_name)) AND
@@ -28,6 +31,9 @@ seeg_city_emissions_year AS (
     SELECT 
         gpc_reference_number,
         activity_name,
+        activity_subcategory_type1, activity_subcategory_typename1,
+        activity_subcategory_type2, activity_subcategory_typename2,
+        activity_subcategory_type3, activity_subcategory_typename3,
         gas_name,
         locode,
         city_id,
@@ -39,6 +45,9 @@ seeg_city_emissions_year AS (
             gpc_reference_number,
             gas_name,
             activity_name,
+            activity_subcategory_type1, activity_subcategory_typename1,
+            activity_subcategory_type2, activity_subcategory_typename2,
+            activity_subcategory_type3, activity_subcategory_typename3,
             locode,
             city_id,
             emissions_2015,
@@ -56,6 +65,9 @@ seeg_city_emissions_year AS (
             gpc_reference_number,
             gas_name,
             activity_name,
+            activity_subcategory_type1, activity_subcategory_typename1,
+            activity_subcategory_type2, activity_subcategory_typename2,
+            activity_subcategory_type3, activity_subcategory_typename3,
             locode,
             city_id,
             emissions_2015,
@@ -87,13 +99,14 @@ INSERT INTO modelled.emissions
      gas_name, emissions_value, emissions_units, emissions_year, emissionfactor_id, 
      spatial_granularity, geometry_type, geometry)
 SELECT 
-    (MD5(CONCAT_WS('-', 'SEEGv2023', gpc_reference_number, locode,activity_name,emissions_year, gas_name))::UUID) AS emissions_id,
+    (MD5(CONCAT_WS('-', 'SEEGv2023', gpc_reference_number, locode,activity_name,activity_subcategory_typename1, activity_subcategory_type2, activity_subcategory_typename2, activity_subcategory_type3, activity_subcategory_typename3,
+    emissions_year, gas_name))::UUID) AS emissions_id,
     'SEEGv2023' AS datasource_name,
     gpc_reference_number,
     locode AS actor_id,
     city_id,
     NULL::UUID AS gpcmethod_id,
-    (MD5(CONCAT_WS('-', activity_name))::UUID) AS activity_id,
+    (MD5(CONCAT_WS('-', activity_name, activity_subcategory_type1, activity_subcategory_typename1, activity_subcategory_type2, activity_subcategory_typename2, activity_subcategory_type3, activity_subcategory_typename3))::UUID) AS activity_id,
     NULL AS activity_value,
     gas_name,
     emissions_value,

@@ -80,7 +80,7 @@ blocks:
   language: sql
   name: transform_seeg_to_gpc
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: transformer
   upstream_blocks:
@@ -88,7 +88,7 @@ blocks:
   - load_seeg_s3
   - load_seeg_to_ipcc
   uuid: transform_seeg_to_gpc
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     data_provider: duckdb
@@ -109,7 +109,7 @@ blocks:
   upstream_blocks:
   - transform_seeg_to_gpc
   uuid: update_seeg_sector_staging
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     data_provider: postgres
@@ -132,7 +132,7 @@ blocks:
   upstream_blocks:
   - update_seeg_sector_staging
   uuid: update_see_sector_activity
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     data_provider: postgres
@@ -149,7 +149,7 @@ blocks:
   language: sql
   name: update_seeg_sector_emissions
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: data_loader
   upstream_blocks:
@@ -179,6 +179,6 @@ type: python
 uuid: ghgi_seeg_br
 variables:
   bucket_name: test-global-api
-  object_key: files/seeg/seeg_city_emissions_2023/setor_de_emissão=Resíduos/*.parquet
+  object_key: files/seeg/seeg_city_emissions_2023/setor_de_emissão=Agropecuária/*.parquet
 variables_dir: /home/src/mage_data/cc-mage
 widgets: []
