@@ -1,6 +1,7 @@
 import pandas as pd
 import yaml
 import requests
+import re
 import io
 import pandas as pd
 import requests
@@ -29,3 +30,20 @@ def test_output(output, *args) -> None:
     Template code for testing the output of the block.
     """
     assert output is not None, 'The output is undefined'
+
+    patterns = [
+        r"^https://ccglobal\.openearth\.dev/api/v1/source/[a-zA-Z0-9_ ]+/city/:locode/:year/:gpcReferenceNumber$",  # Pattern for v1
+        r"^https://ccglobal\.openearth\.dev/api/v0/[a-zA-Z0-9_/ ]+/city/:locode/:year/:gpcReferenceNumber$",  # Pattern for v0
+        r"^https://ccglobal\.openearth\.dev/api/v1/source/[a-zA-Z0-9_ ]+/country/:country/:year/:gpcReferenceNumber$",  # Pattern for country
+        r"^https://ccglobal\.openearth\.dev/api/v0/[a-zA-Z0-9_/ ]+/country/:country/:year/:gpcReferenceNumber$",  # Pattern for country
+        r"^https://ccglobal\.openearth\.dev/api/v1/source/[a-zA-Z0-9_ ]+/region/:region/:year/:gpcReferenceNumber$",  # Pattern for region
+        r"^https://ccglobal\.openearth\.dev/api/v0/[a-zA-Z0-9_/ ]+/region/:region/:year/:gpcReferenceNumber$"   # Pattern for region
+    ]
+
+    # Check for valid endpoints against all patterns
+    def matches_any_pattern(endpoint):
+        return any(re.match(pattern, endpoint) for pattern in patterns)
+
+    invalid_endpoints = output['api_endpoint'][~output['api_endpoint'].apply(matches_any_pattern)]
+
+    assert invalid_endpoints.empty, f'Invalid endpoints found: {invalid_endpoints.count(), invalid_endpoints.tolist()}'
