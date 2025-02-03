@@ -10,7 +10,7 @@ WITH activity_data AS (
 INSERT INTO modelled.emissions_factor 
     (emissionfactor_id, gas_name, emissionfactor_value, unit_denominator, activity_id, datasource_name, active_from, active_to, actor_id)
 SELECT DISTINCT
-    (MD5(CONCAT_WS('-', gas_name, emissionsfactor_value, unit_denominator, activity_id::TEXT, 'Climate TRACE Fall2024', actor_id))::UUID) AS emissionfactor_id,
+    (MD5(CONCAT_WS('-', gas_name, emissionsfactor_value, unit_denominator, activity_id::TEXT, 'ClimateTRACEv2024', actor_id))::UUID) AS emissionfactor_id,
     gas_name,
     emissionsfactor_value AS emissionfactor_value,
     unit_denominator,

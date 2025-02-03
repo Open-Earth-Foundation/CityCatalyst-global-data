@@ -14,6 +14,7 @@ def transform(data: DataFrame, *args, **kwargs):
     act_subcat = {
         'chemicals': {
             'activity_name': 'chemicals-production',
+            'industrial-processes-industry-type': 'industry-type-chemical-industry',
             'activity_subcategory_type1': 'industrial-processes-industry-type',
             'activity_subcategory_name1': 'industry-type-chemical-industry',
             'activity_subcategory_type2': 'industrial-processes-industry-name',
@@ -106,17 +107,25 @@ def transform(data: DataFrame, *args, **kwargs):
     }
 
     # Loop through the dictionary to create columns
+    # for industry, attributes in act_subcat.items():
+    #     for column_name, value in attributes.items():
+    #         data.loc[data['industry'] == industry, column_name] = value
+
+    # Transformations using vectorized operations this was changed to improve the performance
     for industry, attributes in act_subcat.items():
+        mask = data['industry'] == industry
         for column_name, value in attributes.items():
-            data.loc[data['industry'] == industry, column_name] = value
+            data.loc[mask, column_name] = value
 
     # create the activity_subcategory_type column to store the subcategory information
     data["activity_subcategory_type"] = data.apply(
         lambda row: {
-            "activity_subcategory_type1": row['activity_subcategory_type1'],
-            "activity_subcategory_typename1": row['activity_subcategory_name1'],
-            "activity_subcategory_type2": row['activity_subcategory_type2'],
-            "activity_subcategory_typename2": row['activity_subcategory_name2'],
+            row['activity_subcategory_type1'] : row['activity_subcategory_name1'],
+            row['activity_subcategory_type2'] : row['activity_subcategory_name2']
+            # "activity_subcategory_type1": row['activity_subcategory_type1'],
+            # "activity_subcategory_typename1": row['activity_subcategory_name1'],
+            # "activity_subcategory_type2": row['activity_subcategory_type2'],
+            # "activity_subcategory_typename2": row['activity_subcategory_name2'],
         },
         axis=1,
     )

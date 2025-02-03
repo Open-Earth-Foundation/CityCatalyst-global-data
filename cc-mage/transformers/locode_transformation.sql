@@ -5,7 +5,7 @@ DROP TABLE IF EXISTS modelled.emissions_staging_full;
 CREATE TABLE modelled.emissions_staging_full AS
 WITH emissions_ct AS (
     SELECT  
-        'Climate TRACE Fall2024' AS datasource_name,
+        'ClimateTRACEv2024' AS datasource_name,
         gpc_refno,
         b.iso2_code as country_code,
         emissions_year,

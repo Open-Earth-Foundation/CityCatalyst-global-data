@@ -19,7 +19,7 @@ INSERT INTO modelled.emissions (
 )
 SELECT 
     (MD5(CONCAT_WS('-', city_id, emissions_year, gpc_refno, gpcmethod_id, gas_name, emissionfactor_id, activity_id, geometry_id))::UUID) AS emissions_id,
-    a.datasource_name,
+    'ClimateTRACEv2024' as datasource_name,
     b.locode as actor_id,
     b.city_id,
     gpc_refno as gpc_reference_number,
