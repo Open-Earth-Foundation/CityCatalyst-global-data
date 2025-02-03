@@ -3522,7 +3522,7 @@
       como fator de escalonamento, em seguida, o fator de emissão correspondente é
       aplicado de acordo com o tipo de combustível.
   retrieval_method: global_api_downscaled_by_population
-  api_endpoint: https://ccglobal.openearth.dev/api/v0/source/BEN/country/:country/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/BEN/country/:country/:year/:gpcReferenceNumber
   gpc_reference_number: I.1.1
   scope: 1
 - datasource_id: 38918e8a-bb0a-466a-91c7-d085c8e26992
@@ -3599,7 +3599,7 @@
       como fator de escalonamento, em seguida, o fator de emissão correspondente é
       aplicado de acordo com o tipo de combustível.
   retrieval_method: global_api_downscaled_by_population
-  api_endpoint: https://ccglobal.openearth.dev/api/v0/source/BEN/country/:country/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/BEN/country/:country/:year/:gpcReferenceNumber
   gpc_reference_number: I.2.1
   scope: 1
 - datasource_id: 8bff6600-e3b3-4d1c-85b7-f1aa2edbc1f3
@@ -3676,7 +3676,7 @@
       como fator de escalonamento, em seguida, o fator de emissão correspondente é
       aplicado de acordo com o tipo de combustível.
   retrieval_method: global_api_downscaled_by_population
-  api_endpoint: https://ccglobal.openearth.dev/api/v0/source/BEN/country/:country/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/BEN/country/:country/:year/:gpcReferenceNumber
   gpc_reference_number: I.5.1
   scope: 1
 - datasource_id: 059c5cb5-98d4-4b7f-a1c2-9e94756365a4
@@ -3759,7 +3759,7 @@
       como fator de escalonamento, em seguida, o fator de emissão correspondente é
       aplicado de acordo com o tipo de combustível.
   retrieval_method: global_api_downscaled_by_population
-  api_endpoint: https://ccglobal.openearth.dev/api/v0/source/BEN/country/:country/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/BEN/country/:country/:year/:gpcReferenceNumber
   gpc_reference_number: I.3.1
   scope: 1
 - datasource_id: 96bd45c8-259b-4e41-89f1-cd4e2dbff959
@@ -6318,8 +6318,8 @@
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
   start_year: 2015
-  end_year: 2023
-  latest_accounting_year: 2023
+  end_year: 2022
+  latest_accounting_year: 2022
   frequency_of_update: annual
   spatial_resolution: city
   language: pt
@@ -6358,7 +6358,7 @@
       consistente das emissões enquanto agrega dados com base em números diretos de
       emissões a nível municipal. Especificamente, há um mapeamento direto do IPCC.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEGv2023/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: IV.1
   scope: 1
 - datasource_id: 810d6eef-7b15-4110-85de-566fdd72ae8e
@@ -7027,12 +7027,9 @@
       de Energia Elétrica (COPAM).
   methodology_url: https://dashboard.epe.gov.br/apps/anuario-livro/#Apresenta%C3%A7%C3%A3o
   transformation_description:
-    en:
-      Sectors are aligned with GPC subsectors, and state-level emissions are determined by multiplying electricity consumption by national emission factors and national grid loss percentage factor. These state emissions are then adjusted using the IBGE resident population data.
-    es:
-      Los sectores se alinean con los subsectores del GPC y las emisiones a nivel estatal se determinan multiplicando el consumo de electricidad por los factores de emisión nacionales y el factor de porcentaje de pérdida de la red nacional. Estas emisiones estatales se ajustan luego utilizando los datos de población residente del IBGE.
-    pt:
-      Os setores são alinhados com os subsetores do GPC, e as emissões em nível estadual são determinadas multiplicando o consumo de eletricidade pelos fatores de emissão nacionais e pelo fator de porcentagem de perda da rede nacional. Essas emissões estaduais são então ajustadas usando os dados da população residente do IBGE.
+    en: Sectors are aligned with GPC subsectors, and state-level emissions are determined by multiplying electricity consumption by national emission factors and national grid loss percentage factor. These state emissions are then adjusted using the IBGE resident population data.
+    es: Los sectores se alinean con los subsectores del GPC y las emisiones a nivel estatal se determinan multiplicando el consumo de electricidad por los factores de emisión nacionales y el factor de porcentaje de pérdida de la red nacional. Estas emisiones estatales se ajustan luego utilizando los datos de población residente del IBGE.
+    pt: Os setores são alinhados com os subsetores do GPC, e as emissões em nível estadual são determinadas multiplicando o consumo de eletricidade pelos fatores de emissão nacionais e pelo fator de porcentagem de perda da rede nacional. Essas emissões estaduais são então ajustadas usando os dados da população residente do IBGE.
   retrieval_method: global_api
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/EPE/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.1.3
@@ -7083,12 +7080,9 @@
       de Energia Elétrica (COPAM).
   methodology_url: https://dashboard.epe.gov.br/apps/anuario-livro/#Apresenta%C3%A7%C3%A3o
   transformation_description:
-    en:
-      Sectors are aligned with GPC subsectors, and state-level emissions are determined by multiplying electricity consumption by national emission factors and national grid loss percentage factor. These state emissions are then adjusted using the IBGE resident population data.
-    es:
-      Los sectores se alinean con los subsectores del GPC y las emisiones a nivel estatal se determinan multiplicando el consumo de electricidad por los factores de emisión nacionales y el factor de porcentaje de pérdida de la red nacional. Estas emisiones estatales se ajustan luego utilizando los datos de población residente del IBGE.
-    pt:
-      Os setores são alinhados com os subsetores do GPC, e as emissões em nível estadual são determinadas multiplicando o consumo de eletricidade pelos fatores de emissão nacionais e pelo fator de porcentagem de perda da rede nacional. Essas emissões estaduais são então ajustadas usando os dados da população residente do IBGE.
+    en: Sectors are aligned with GPC subsectors, and state-level emissions are determined by multiplying electricity consumption by national emission factors and national grid loss percentage factor. These state emissions are then adjusted using the IBGE resident population data.
+    es: Los sectores se alinean con los subsectores del GPC y las emisiones a nivel estatal se determinan multiplicando el consumo de electricidad por los factores de emisión nacionales y el factor de porcentaje de pérdida de la red nacional. Estas emisiones estatales se ajustan luego utilizando los datos de población residente del IBGE.
+    pt: Os setores são alinhados com os subsetores do GPC, e as emissões em nível estadual são determinadas multiplicando o consumo de eletricidade pelos fatores de emissão nacionais e pelo fator de porcentagem de perda da rede nacional. Essas emissões estaduais são então ajustadas usando os dados da população residente do IBGE.
   retrieval_method: global_api
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/EPE/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.2.3
@@ -7139,12 +7133,9 @@
       de Energia Elétrica (COPAM).
   methodology_url: https://dashboard.epe.gov.br/apps/anuario-livro/#Apresenta%C3%A7%C3%A3o
   transformation_description:
-    en:
-      Sectors are aligned with GPC subsectors, and state-level emissions are determined by multiplying electricity consumption by national emission factors and national grid loss percentage factor. These state emissions are then adjusted using the IBGE resident population data.
-    es:
-      Los sectores se alinean con los subsectores del GPC y las emisiones a nivel estatal se determinan multiplicando el consumo de electricidad por los factores de emisión nacionales y el factor de porcentaje de pérdida de la red nacional. Estas emisiones estatales se ajustan luego utilizando los datos de población residente del IBGE.
-    pt:
-      Os setores são alinhados com os subsetores do GPC, e as emissões em nível estadual são determinadas multiplicando o consumo de eletricidade pelos fatores de emissão nacionais e pelo fator de porcentagem de perda da rede nacional. Essas emissões estaduais são então ajustadas usando os dados da população residente do IBGE.
+    en: Sectors are aligned with GPC subsectors, and state-level emissions are determined by multiplying electricity consumption by national emission factors and national grid loss percentage factor. These state emissions are then adjusted using the IBGE resident population data.
+    es: Los sectores se alinean con los subsectores del GPC y las emisiones a nivel estatal se determinan multiplicando el consumo de electricidad por los factores de emisión nacionales y el factor de porcentaje de pérdida de la red nacional. Estas emisiones estatales se ajustan luego utilizando los datos de población residente del IBGE.
+    pt: Os setores são alinhados com os subsetores do GPC, e as emissões em nível estadual são determinadas multiplicando o consumo de eletricidade pelos fatores de emissão nacionais e pelo fator de porcentagem de perda da rede nacional. Essas emissões estaduais são então ajustadas usando os dados da população residente do IBGE.
   retrieval_method: global_api
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/EPE/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.3.3
@@ -7195,13 +7186,75 @@
       de Energia Elétrica (COPAM).
   methodology_url: https://dashboard.epe.gov.br/apps/anuario-livro/#Apresenta%C3%A7%C3%A3o
   transformation_description:
-    en:
-      Sectors are aligned with GPC subsectors, and state-level emissions are determined by multiplying electricity consumption by national emission factors and national grid loss percentage factor. These state emissions are then adjusted using the IBGE resident population data.
-    es:
-      Los sectores se alinean con los subsectores del GPC y las emisiones a nivel estatal se determinan multiplicando el consumo de electricidad por los factores de emisión nacionales y el factor de porcentaje de pérdida de la red nacional. Estas emisiones estatales se ajustan luego utilizando los datos de población residente del IBGE.
-    pt:
-      Os setores são alinhados com os subsetores do GPC, e as emissões em nível estadual são determinadas multiplicando o consumo de eletricidade pelos fatores de emissão nacionais e pelo fator de porcentagem de perda da rede nacional. Essas emissões estaduais são então ajustadas usando os dados da população residente do IBGE.
+    en: Sectors are aligned with GPC subsectors, and state-level emissions are determined by multiplying electricity consumption by national emission factors and national grid loss percentage factor. These state emissions are then adjusted using the IBGE resident population data.
+    es: Los sectores se alinean con los subsectores del GPC y las emisiones a nivel estatal se determinan multiplicando el consumo de electricidad por los factores de emisión nacionales y el factor de porcentaje de pérdida de la red nacional. Estas emisiones estatales se ajustan luego utilizando los datos de población residente del IBGE.
+    pt: Os setores são alinhados com os subsetores do GPC, e as emissões em nível estadual são determinadas multiplicando o consumo de eletricidade pelos fatores de emissão nacionais e pelo fator de porcentagem de perda da rede nacional. Essas emissões estaduais são então ajustadas usando os dados da população residente do IBGE.
   retrieval_method: global_api
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/EPE/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.5.3
   scope: 3
+- datasource_id: 7ff4766f-2d44-465f-ac30-19e8b6d07276
+  publisher_id: SEEG
+  datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
+  dataset_name:
+    en: SEEG Emissions from Industrial Processes
+    es: Emisiones del SEEG de Procesos Industriales
+    pt: Emissões do SEEG de Processos Industriais
+  dataset_description:
+    en:
+      Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides
+      municipality level emissions for aggregate sources and non-CO2 emissions.
+    es:
+      El Sistema de Estimación de Emisión de Gases de Efecto Invernadero (SEEG)
+      proporciona emisiones a nivel municipal para fuentes agregadas y emisiones no-CO2.
+    pt:
+      O Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) fornece
+      emissões a nível municipal para fontes agregadas e emissões não-CO2.
+  source_type: Third-party
+  access_type: Public
+  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  geographical_location: BR
+  start_year: 2023
+  end_year: 2023
+  latest_accounting_year: 2023
+  frequency_of_update: annual
+  spatial_resolution: city
+  language: pt
+  accessibility: null
+  data_quality: medium
+  notes: null
+  units: kg
+  methodology_description:
+    en:
+      These emissions are estimated by scaling regional and national data on industrial activity to the city level.
+      This can be difficult to disaggregate completely to the city level.
+    es:
+      Estas emisiones se estiman al escalar datos regionales y nacionales sobre la actividad industrial a nivel de la ciudad.
+      Esto puede ser difícil de desagregar completamente a nivel urbano.
+    pt:
+      Essas emissões são estimadas escalando dados regionais e nacionais sobre atividade industrial para o nível da cidade.
+      Isso pode ser difícil de desagregar completamente a nível urbano.
+  methodology_url: https://drive.google.com/file/d/1DT9ZASVYmaBkGUI8Jn1hhl_bHQVZklq3/view
+  transformation_description:
+    en:
+      The data transformation process involves mapping IPCC categories to the Global
+      Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) framework.
+      This mapping ensures a consistent classification of emissions while aggregating
+      data based on direct city-level emissions figures. Specifically, there is a
+      direct mapping from IPCC to GPC.
+    es:
+      El proceso de transformación de datos implica mapear las categorías del IPCC
+      al Protocolo Global para Inventarios de Emisiones de Gases de Efecto Invernadero
+      a Escala Comunitaria (GPC). Este mapeo asegura una clasificación consistente
+      de las emisiones mientras agrega datos basados en cifras directas de emisiones
+      a nivel municipal. Específicamente, hay un mapeo directo de las categorías relacionadas
+    pt:
+      O processo de transformação de dados envolve a mapeamento das categorias do
+      IPCC para o Protocolo Global para Inventários de Emissões de Gases de Efeito
+      Estufa em Escala Comunitária (GPC). Este mapeamento garante uma classificação
+      consistente das emissões enquanto agrega dados com base em números diretos de
+      emissões a nível municipal. Especificamente, há um mapeamento direto do IPCC.
+  retrieval_method: global_api
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEGv2023/city/:locode/:year/:gpcReferenceNumber
+  gpc_reference_number: IV.1
+  scope: 1
