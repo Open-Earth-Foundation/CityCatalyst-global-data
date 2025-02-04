@@ -1,15 +1,13 @@
-DROP TABLE IF EXISTS raw_data.country_codes;
--- AE: we need to drop the table otherwise we will insert duplicate values for the lookup 
+--DROP TABLE country_codes;
 
-
-CREATE TABLE IF NOT EXISTS raw_data.country_codes (
+CREATE TABLE IF NOT EXISTS country_codes (
     id SERIAL PRIMARY KEY,
     iso2_code CHAR(2) NOT NULL UNIQUE,
     iso3_code CHAR(3) NOT NULL UNIQUE,
     country_name VARCHAR(100) NOT NULL
 );
 
-INSERT INTO raw_data.country_codes (iso2_code, iso3_code, country_name) VALUES
+INSERT INTO country_codes (iso2_code, iso3_code, country_name) VALUES
 ('AF', 'AFG', 'Afghanistan'),
 ('AL', 'ALB', 'Albania'),
 ('DZ', 'DZA', 'Algeria'),
