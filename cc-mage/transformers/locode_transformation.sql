@@ -5,7 +5,7 @@ DROP TABLE IF EXISTS modelled.emissions_staging_full;
 CREATE TABLE modelled.emissions_staging_full AS
 WITH emissions_ct AS (
     SELECT  
-        'Climate TRACE Fall2024' AS datasource_name,
+        'ClimateTRACEv2023' AS datasource_name,
         gpc_refno,
         b.iso2_code as country_code,
         emissions_year,
@@ -34,7 +34,7 @@ SELECT
     emissions_units,
     gpcmethod_id,
     gas_name,
-    (MD5(CONCAT_WS('-', gas_name, emissionfactor_value, unit_denominator, activity_id::TEXT, 'Climate TRACE Fall2024', country_code))::UUID) AS emissionfactor_id,
+    (MD5(CONCAT_WS('-', gas_name, emissionfactor_value, unit_denominator, activity_id::TEXT, 'ClimateTRACEv2023', country_code))::UUID) AS emissionfactor_id,
     activity_id,
     activity_value,
     geometry_type,

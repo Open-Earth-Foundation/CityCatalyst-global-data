@@ -15,7 +15,7 @@ def export_data_to_postgres(df: DataFrame, **kwargs) -> None:
 
     Docs: https://docs.mage.ai/design/data-loading#postgresql
     """
-    schema_name = 'modelled'  
+    schema_name = 'raw_data'  
     table_name = 'ippu_ct_staging'  
     config_path = path.join(get_repo_path(), 'io_config.yaml')
     config_profile = 'default'

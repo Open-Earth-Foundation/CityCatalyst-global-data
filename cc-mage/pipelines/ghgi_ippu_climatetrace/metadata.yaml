@@ -109,7 +109,7 @@ blocks:
   language: sql
   name: update_ippu_ct_emission_factor
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: data_exporter
   upstream_blocks:
@@ -135,7 +135,7 @@ blocks:
   language: sql
   name: ct_country_code_lookup
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: transformer
   upstream_blocks: []
@@ -211,5 +211,7 @@ spark_config: {}
 tags: []
 type: python
 uuid: ghgi_ippu_climatetrace
+variables:
+  bucket_name: test-global-api
 variables_dir: /home/src/mage_data/cc-mage
 widgets: []

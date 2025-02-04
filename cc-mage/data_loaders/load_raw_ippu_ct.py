@@ -19,42 +19,51 @@ def load_from_s3_bucket(*args, **kwargs):
     config_path = path.join(get_repo_path(), 'io_config.yaml')
     config_profile = 'default'
 
-    bucket_name = 'test-global-api'
-    route = 'raw_data/climateTRACE'
-    object_keys = [
-        f'{route}/aluminum_emissions_sources.csv',
-        f'{route}/cement_emissions_sources.csv',
-        f'{route}/chemicals_emissions_sources.csv',
-        f'{route}/food-beverage-tobacco_emissions_sources.csv',
-        f'{route}/glass_emissions_sources.csv',
-        f'{route}/iron-and-steel_emissions_sources.csv',
-        f'{route}/lime_emissions_sources.csv',
-        f'{route}/other-chemicals_emissions_sources.csv',
-        f'{route}/other-manufacturing_emissions_sources.csv',
-        f'{route}/other-metals_emissions_sources.csv',
-        f'{route}/petrochemical-steam-cracking_emissions_sources.csv',
-        f'{route}/pulp-and-paper_emissions_sources.csv',
-        f'{route}/textiles-leather-apparel_emissions_sources.csv'
-    ]
+    bucket_name = kwargs['bucket_name']
+    object_key = 'raw_data/climateTRACE/climatetrace_ippu_brazil.csv'
 
-    s3 = S3.with_config(ConfigFileLoader(config_path, config_profile))
-    data_frames = []
+    # AE: I had some trouble running for all countries, so have just run for Brazil for now
+    return S3.with_config(ConfigFileLoader(config_path, config_profile)).load(
+        bucket_name,
+        object_key,
+    )
 
-    for object_key in object_keys:
-        file_obj = s3.client.get_object(Bucket=bucket_name, Key=object_key)['Body'].read()
-        data = pd.read_csv(BytesIO(file_obj))
-        data_frames.append(data)
+    # route = 'raw_data/climateTRACE'
 
-    # Concatenate all DataFrames into one
-    combined_data = pd.concat(data_frames, ignore_index=True)
+    # object_keys = [
+    #     f'{route}/aluminum_emissions_sources.csv'
+    #     f'{route}/cement_emissions_sources.csv',
+    #     f'{route}/chemicals_emissions_sources.csv',
+    #     f'{route}/food-beverage-tobacco_emissions_sources.csv',
+    #     f'{route}/glass_emissions_sources.csv',
+    #     f'{route}/iron-and-steel_emissions_sources.csv',
+    #     f'{route}/lime_emissions_sources.csv',
+    #     f'{route}/other-chemicals_emissions_sources.csv',
+    #     f'{route}/other-manufacturing_emissions_sources.csv',
+    #     f'{route}/other-metals_emissions_sources.csv',
+    #     f'{route}/petrochemical-steam-cracking_emissions_sources.csv',
+    #     f'{route}/pulp-and-paper_emissions_sources.csv',
+    #     f'{route}/textiles-leather-apparel_emissions_sources.csv'
+    # ]
 
-    # Ensure all columns have consistent types
-    for col in combined_data.columns:
-        if combined_data[col].dtype == 'object':
-            # Convert object columns to string to handle mixed types
-            combined_data[col] = combined_data[col].astype(str)
+    # s3 = S3.with_config(ConfigFileLoader(config_path, config_profile))
+    # data_frames = []
 
-    return combined_data
+    # for object_key in object_keys:
+    #     file_obj = s3.client.get_object(Bucket=bucket_name, Key=object_key)['Body'].read()
+    #     data = pd.read_csv(BytesIO(file_obj))
+    #     data_frames.append(data)
+
+    # # Concatenate all DataFrames into one
+    # combined_data = pd.concat(data_frames, ignore_index=True)
+
+    # # Ensure all columns have consistent types
+    # for col in combined_data.columns:
+    #     if combined_data[col].dtype == 'object':
+    #         # Convert object columns to string to handle mixed types
+    #         combined_data[col] = combined_data[col].astype(str)
+
+    # return combined_data
 
 
 @test
