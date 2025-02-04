@@ -3,181 +3,74 @@ blocks:
   color: null
   configuration: {}
   downstream_blocks:
-  - cleaning_snis
+  - cleaning_ippu_ct
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: import_raw_snis_from_s3
+  name: load_raw_ippu_ct
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: data_loader
   upstream_blocks: []
-  uuid: import_raw_snis_from_s3
-- all_upstream_blocks_executed: true
+  uuid: load_raw_ippu_ct
+- all_upstream_blocks_executed: false
   color: null
   configuration: {}
   downstream_blocks:
-  - ch4_calculation_snis
-  - n2o_calculation_snis
+  - transformation_ippu_ct
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: cleaning_snis
+  name: cleaning_ippu_ct
   retry_config: null
   status: executed
   timeout: null
   type: transformer
   upstream_blocks:
-  - import_raw_snis_from_s3
-  uuid: cleaning_snis
-- all_upstream_blocks_executed: true
+  - load_raw_ippu_ct
+  uuid: cleaning_ippu_ct
+- all_upstream_blocks_executed: false
   color: null
   configuration: {}
   downstream_blocks:
-  - scope_assignation_snis
+  - ippu_ct_staging
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: ch4_calculation_snis
+  name: transformation_ippu_ct
   retry_config: null
   status: executed
   timeout: null
   type: transformer
   upstream_blocks:
-  - cleaning_snis
-  uuid: ch4_calculation_snis
-- all_upstream_blocks_executed: true
+  - cleaning_ippu_ct
+  uuid: transformation_ippu_ct
+- all_upstream_blocks_executed: false
   color: null
   configuration: {}
   downstream_blocks:
-  - scope_assignation_snis
+  - update_ippu_ct_sector_activity
+  - update_ippu_ct_emission_factor
+  - update_ippu_ct_emissions
+  - locode_transformation
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: n2o_calculation_snis
-  retry_config: null
-  status: executed
-  timeout: null
-  type: transformer
-  upstream_blocks:
-  - cleaning_snis
-  uuid: n2o_calculation_snis
-- all_upstream_blocks_executed: true
-  color: null
-  configuration: {}
-  downstream_blocks:
-  - snis_staging
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: scope_assignation_snis
-  retry_config: null
-  status: executed
-  timeout: null
-  type: transformer
-  upstream_blocks:
-  - n2o_calculation_snis
-  - ch4_calculation_snis
-  uuid: scope_assignation_snis
-- all_upstream_blocks_executed: true
-  color: null
-  configuration: {}
-  downstream_blocks:
-  - update_snis_sector_activity
-  - update_snis_emission_factor
-  - update_snis_emissions
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: snis_staging
+  name: ippu_ct_staging
   retry_config: null
   status: executed
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - scope_assignation_snis
-  uuid: snis_staging
-- all_upstream_blocks_executed: true
-  color: null
-  configuration:
-    data_provider: postgres
-    data_provider_profile: default
-    dbt: {}
-    disable_query_preprocessing: false
-    export_write_policy: append
-    limit: 1000
-    use_raw_sql: true
-  downstream_blocks:
-  - deleted_snis_staging
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: sql
-  name: update_snis_sector_activity
-  retry_config: null
-  status: updated
-  timeout: null
-  type: data_loader
-  upstream_blocks:
-  - snis_staging
-  uuid: update_snis_sector_activity
-- all_upstream_blocks_executed: true
-  color: null
-  configuration:
-    data_provider: postgres
-    data_provider_profile: default
-    dbt: {}
-    disable_query_preprocessing: false
-    export_write_policy: append
-    limit: 1000
-    use_raw_sql: true
-  downstream_blocks:
-  - deleted_snis_staging
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: sql
-  name: update_snis_emission_factor
-  retry_config: null
-  status: failed
-  timeout: null
-  type: data_loader
-  upstream_blocks:
-  - snis_staging
-  uuid: update_snis_emission_factor
-- all_upstream_blocks_executed: true
-  color: null
-  configuration:
-    data_provider: postgres
-    data_provider_profile: default
-    dbt: {}
-    disable_query_preprocessing: false
-    export_write_policy: append
-    limit: 1000
-    use_raw_sql: true
-  downstream_blocks:
-  - deleted_snis_staging
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: sql
-  name: update_snis_emissions
-  retry_config: null
-  status: executed
-  timeout: null
-  type: data_loader
-  upstream_blocks:
-  - snis_staging
-  uuid: update_snis_emissions
+  - transformation_ippu_ct
+  uuid: ippu_ct_staging
 - all_upstream_blocks_executed: false
-  color: purple
+  color: null
   configuration:
     data_provider: postgres
     data_provider_profile: default
@@ -191,28 +84,123 @@ blocks:
   executor_type: local_python
   has_callback: false
   language: sql
-  name: deleted_snis_staging
+  name: update_ippu_ct_sector_activity
   retry_config: null
   status: executed
   timeout: null
-  type: custom
+  type: data_exporter
   upstream_blocks:
-  - update_snis_emissions
-  - update_snis_emission_factor
-  - update_snis_sector_activity
-  uuid: deleted_snis_staging
+  - ippu_ct_staging
+  uuid: update_ippu_ct_sector_activity
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_ippu_ct_emission_factor
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - ippu_ct_staging
+  uuid: update_ippu_ct_emission_factor
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    file_source:
+      path: transformers/ct_country_code_lookup.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - locode_transformation
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: ct_country_code_lookup
+  retry_config: null
+  status: updated
+  timeout: null
+  type: transformer
+  upstream_blocks: []
+  uuid: ct_country_code_lookup
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    file_source:
+      path: transformers/locode_transformation.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: locode_transformation
+  retry_config: null
+  status: updated
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - ct_country_code_lookup
+  - ippu_ct_staging
+  uuid: locode_transformation
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_ippu_ct_emissions
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - ippu_ct_staging
+  uuid: update_ippu_ct_emissions
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
 conditionals: []
-created_at: '2025-01-08 19:16:37.619592+00:00'
+created_at: '2025-01-15 14:08:55.176442+00:00'
 data_integration: null
 description: null
 executor_config: {}
 executor_count: 1
 executor_type: null
 extensions: {}
-name: snis_waste_water_brazil
+name: ghgi_ippu_climatetrace
 notification_config: {}
 remote_variables_dir: null
 retry_config: {}
@@ -222,6 +210,8 @@ settings:
 spark_config: {}
 tags: []
 type: python
-uuid: snis_waste_water_brazil
+uuid: ghgi_ippu_climatetrace
+variables:
+  bucket_name: test-global-api
 variables_dir: /home/src/mage_data/cc-mage
 widgets: []

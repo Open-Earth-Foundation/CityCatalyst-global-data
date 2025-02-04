@@ -7,7 +7,6 @@ from os import path
 if 'data_exporter' not in globals():
     from mage_ai.data_preparation.decorators import data_exporter
 
-
 @data_exporter
 def export_data_to_postgres(df: DataFrame, **kwargs) -> None:
     """
@@ -16,8 +15,8 @@ def export_data_to_postgres(df: DataFrame, **kwargs) -> None:
 
     Docs: https://docs.mage.ai/design/data-loading#postgresql
     """
-    schema_name = 'raw_data'  # Specify the name of the schema to export data to
-    table_name = 'seeg_sector_emissions'  # Specify the name of the table to export data to
+    schema_name = 'raw_data'  
+    table_name = 'ippu_ct_staging'  
     config_path = path.join(get_repo_path(), 'io_config.yaml')
     config_profile = 'default'
 
@@ -26,6 +25,6 @@ def export_data_to_postgres(df: DataFrame, **kwargs) -> None:
             df,
             schema_name,
             table_name,
-            index=False,  # Specifies whether to include index in exported table
-            if_exists='replace',  # Specify resolution policy if table name already exists
+            index=False,  
+            if_exists='replace',  
         )

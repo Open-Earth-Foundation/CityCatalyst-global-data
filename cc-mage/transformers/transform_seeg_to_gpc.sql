@@ -1,10 +1,13 @@
 WITH seeg_sector_raw_data AS (
 SELECT 
     emission_sector,
-    case when emission_sector = 'Energy' then general_activity 
-        when emission_sector = 'Agriculture' then issuer_subcategory
-        when emission_sector = 'Land Use Change and Forestry' then issuer_subcategory
-    else null end as activity_name,
+    g.activity_name,
+    g.activity_subcategory_type1,
+    g.activity_subcategory_typename1,
+    g.activity_subcategory_type2,
+    g.activity_subcategory_typename2,
+    g.activity_subcategory_type3,
+    g.activity_subcategory_typename3,
     issuer_category,
     issuer_subcategory,
     product_or_system,
@@ -26,7 +29,8 @@ SELECT
     emissions_2019,
     emissions_2020,
     emissions_2021,
-    emissions_2022
+    emissions_2022,
+    emissions_2023
 FROM 
     {{ df_2 }} e
 LEFT JOIN 
@@ -49,6 +53,12 @@ SELECT
     gpc_mapping AS gpc_reference_number,
     gas_name,
     activity_name,
+    activity_subcategory_type1,
+    activity_subcategory_typename1,
+    activity_subcategory_type2,
+    activity_subcategory_typename2,
+    activity_subcategory_type3,
+    activity_subcategory_typename3,
     emissions_units,
     city,
     region,
@@ -59,7 +69,8 @@ SELECT
     SUM(emissions_2019) AS emissions_2019,
     SUM(emissions_2020) AS emissions_2020,
     SUM(emissions_2021) AS emissions_2021,
-    SUM(emissions_2022) AS emissions_2022
+    SUM(emissions_2022) AS emissions_2022,
+    SUM(emissions_2023) AS emissions_2023
 FROM 
     seeg_sector_raw_data
 GROUP BY 
@@ -68,4 +79,10 @@ GROUP BY
     activity_name,
     emissions_units, 
     city, 
-    region
+    region,
+    activity_subcategory_type1,
+    activity_subcategory_typename1,
+    activity_subcategory_type2,
+    activity_subcategory_typename2,
+    activity_subcategory_type3,
+    activity_subcategory_typename3

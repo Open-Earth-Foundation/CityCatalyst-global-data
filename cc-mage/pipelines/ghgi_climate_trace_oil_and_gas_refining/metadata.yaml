@@ -28,7 +28,7 @@ blocks:
   language: python
   name: oil_gas_refining_read_s3
   retry_config: null
-  status: executed
+  status: failed
   timeout: null
   type: data_loader
   upstream_blocks: []
@@ -48,7 +48,7 @@ blocks:
   type: markdown
   upstream_blocks: []
   uuid: stage_1
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: teal
   configuration: {}
   downstream_blocks:
@@ -68,7 +68,7 @@ blocks:
   upstream_blocks:
   - oil_gas_refining_read_s3
   uuid: cleaning_oil_gas_refining_ct
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration: {}
   downstream_blocks: []
@@ -99,7 +99,7 @@ blocks:
   type: markdown
   upstream_blocks: []
   uuid: stage2
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: purple
   configuration: {}
   downstream_blocks:
@@ -116,7 +116,7 @@ blocks:
   upstream_blocks:
   - cleaning_oil_gas_refining_ct
   uuid: activity_oil_gas_refining_ct
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration: {}
   downstream_blocks:
@@ -133,7 +133,7 @@ blocks:
   upstream_blocks:
   - activity_oil_gas_refining_ct
   uuid: populate_activity_subcategory
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: postgres
@@ -150,13 +150,13 @@ blocks:
   language: sql
   name: update_ct_oil_activity_subcategory
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: data_loader
   upstream_blocks:
   - populate_activity_subcategory
   uuid: update_ct_oil_activity_subcategory
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: purple
   configuration: {}
   downstream_blocks:
@@ -173,7 +173,7 @@ blocks:
   upstream_blocks:
   - cleaning_oil_gas_refining_ct
   uuid: ef_oil_gas_refining_ct
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration: {}
   downstream_blocks:
@@ -190,7 +190,7 @@ blocks:
   upstream_blocks:
   - ef_oil_gas_refining_ct
   uuid: populate_emission_factor
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: postgres
@@ -213,7 +213,7 @@ blocks:
   upstream_blocks:
   - populate_emission_factor
   uuid: update_ct_oil_ef
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration: {}
   downstream_blocks:
@@ -249,12 +249,12 @@ blocks:
   language: sql
   name: ct_country_code_lookup
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: transformer
   upstream_blocks: []
   uuid: ct_country_code_lookup
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: postgres
@@ -272,14 +272,14 @@ blocks:
   language: sql
   name: locode_transformation
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: transformer
   upstream_blocks:
   - emissions_staging_ct
   - ct_country_code_lookup
   uuid: locode_transformation
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: postgres
@@ -303,7 +303,7 @@ blocks:
   - locode_transformation
   - update_city_oil_gpcmethod
   uuid: update_ct_oil_emissions
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: postgres

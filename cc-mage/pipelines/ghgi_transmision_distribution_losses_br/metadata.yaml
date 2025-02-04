@@ -2,113 +2,77 @@ blocks:
 - all_upstream_blocks_executed: true
   color: null
   configuration: {}
-  downstream_blocks: []
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: markdown
-  name: SEEG Data Pipeline
-  retry_config: null
-  status: updated
-  timeout: null
-  type: markdown
-  upstream_blocks: []
-  uuid: seeg_data_pipeline
-- all_upstream_blocks_executed: true
-  color: null
-  configuration: {}
   downstream_blocks:
-  - transform_seeg_to_gpc
+  - calculate_emissions_scope3_epe
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: load_seeg_s3
+  name: import_EF_BRGOV
   retry_config: null
   status: executed
   timeout: null
   type: data_loader
   upstream_blocks: []
-  uuid: load_seeg_s3
+  uuid: import_ef_brgov
 - all_upstream_blocks_executed: true
   color: null
   configuration: {}
   downstream_blocks:
-  - transform_seeg_to_gpc
+  - calculate_emissions_scope3_epe
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: load_seeg_to_ipcc
+  name: import_activity_data_EPE
   retry_config: null
   status: executed
   timeout: null
   type: data_loader
   upstream_blocks: []
-  uuid: load_seeg_to_ipcc
-- all_upstream_blocks_executed: true
-  color: null
-  configuration: {}
-  downstream_blocks:
-  - transform_seeg_to_gpc
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: load_ipcc_to_gpc
-  retry_config: null
-  status: executed
-  timeout: null
-  type: data_loader
-  upstream_blocks: []
-  uuid: load_ipcc_to_gpc
+  uuid: import_activity_data_epe
 - all_upstream_blocks_executed: true
   color: null
   configuration:
-    data_provider: duckdb
-    data_provider_profile: default
-    dbt: {}
-    disable_query_preprocessing: false
-    export_write_policy: append
-    limit: 1000
-    use_raw_sql: true
+    file_path: transformers/calculate_emissions_scope3_epe.py
+    file_source:
+      path: transformers/calculate_emissions_scope3_epe.py
   downstream_blocks:
-  - update_seeg_sector_staging
+  - scope3_staging_epe
   executor_config: null
   executor_type: local_python
   has_callback: false
-  language: sql
-  name: transform_seeg_to_gpc
+  language: python
+  name: calculate_emissions_scope3_epe
   retry_config: null
   status: executed
   timeout: null
   type: transformer
   upstream_blocks:
-  - load_ipcc_to_gpc
-  - load_seeg_s3
-  - load_seeg_to_ipcc
-  uuid: transform_seeg_to_gpc
+  - import_ef_brgov
+  - import_activity_data_epe
+  uuid: calculate_emissions_scope3_epe
 - all_upstream_blocks_executed: true
   color: null
   configuration:
-    data_provider: duckdb
-    data_provider_profile: default
-    export_write_policy: append
+    file_path: data_exporters/scope3_staging_epe.py
+    file_source:
+      path: data_exporters/scope3_staging_epe.py
   downstream_blocks:
-  - update_seeg_sector_emissions
-  - update_see_sector_activity
+  - update_ef_scope3_epe
+  - update_emissions_scope3_epe
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: update_seeg_sector_staging
+  name: scope3_staging_epe
   retry_config: null
   status: executed
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - transform_seeg_to_gpc
-  uuid: update_seeg_sector_staging
+  - calculate_emissions_scope3_epe
+  uuid: scope3_staging_epe
 - all_upstream_blocks_executed: true
   color: null
   configuration:
@@ -117,6 +81,9 @@ blocks:
     dbt: {}
     disable_query_preprocessing: false
     export_write_policy: append
+    file_path: data_loaders/update_ef_scope3_epe.sql
+    file_source:
+      path: data_loaders/update_ef_scope3_epe.sql
     limit: 1000
     use_raw_sql: true
   downstream_blocks: []
@@ -124,14 +91,14 @@ blocks:
   executor_type: local_python
   has_callback: false
   language: sql
-  name: update_see_sector_activity
+  name: update_ef_scope3_epe
   retry_config: null
   status: executed
   timeout: null
   type: data_loader
   upstream_blocks:
-  - update_seeg_sector_staging
-  uuid: update_see_sector_activity
+  - scope3_staging_epe
+  uuid: update_ef_scope3_epe
 - all_upstream_blocks_executed: true
   color: null
   configuration:
@@ -140,6 +107,9 @@ blocks:
     dbt: {}
     disable_query_preprocessing: false
     export_write_policy: append
+    file_path: data_loaders/update_emissions_scope3_epe.sql
+    file_source:
+      path: data_loaders/update_emissions_scope3_epe.sql
     limit: 1000
     use_raw_sql: true
   downstream_blocks: []
@@ -147,26 +117,26 @@ blocks:
   executor_type: local_python
   has_callback: false
   language: sql
-  name: update_seeg_sector_emissions
+  name: update_emissions_scope3_epe
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: data_loader
   upstream_blocks:
-  - update_seeg_sector_staging
-  uuid: update_seeg_sector_emissions
+  - scope3_staging_epe
+  uuid: update_emissions_scope3_epe
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
 conditionals: []
-created_at: '2024-08-26 16:19:58.518427+00:00'
+created_at: '2025-01-24 16:50:58.169549+00:00'
 data_integration: null
-description: The Brazil emissions data
+description: null
 executor_config: {}
 executor_count: 1
 executor_type: null
 extensions: {}
-name: ghgi_seeg_br
+name: ghgi_transmision_distribution_losses_br
 notification_config: {}
 remote_variables_dir: null
 retry_config: {}
@@ -176,9 +146,6 @@ settings:
 spark_config: {}
 tags: []
 type: python
-uuid: ghgi_seeg_br
-variables:
-  bucket_name: test-global-api
-  object_key: files/seeg/seeg_city_emissions_2023/setor_de_emissão=Agropecuária/*.parquet
+uuid: ghgi_transmision_distribution_losses_br
 variables_dir: /home/src/mage_data/cc-mage
 widgets: []

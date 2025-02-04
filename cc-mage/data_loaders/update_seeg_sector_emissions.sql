@@ -3,6 +3,9 @@ WITH seeg_city_emissions AS (
         gpc_reference_number,
         gas_name,
         activity_name,
+        activity_subcategory_type1, activity_subcategory_typename1,
+        activity_subcategory_type2, activity_subcategory_typename2,
+        activity_subcategory_type3, activity_subcategory_typename3,
         locode,
         city_id,
         emissions_2015,
@@ -12,9 +15,10 @@ WITH seeg_city_emissions AS (
         emissions_2019,
         emissions_2020,
         emissions_2021,
-        emissions_2022
+        emissions_2022,
+        emissions_2023
     FROM 
-        modelled.seeg_sector_emissions e 
+        raw_data.seeg_sector_emissions e 
     LEFT JOIN 
         modelled.city_polygon c ON 
             LOWER(TRIM(e.city)) = LOWER(TRIM(c.city_name)) AND
@@ -27,17 +31,23 @@ seeg_city_emissions_year AS (
     SELECT 
         gpc_reference_number,
         activity_name,
+        activity_subcategory_type1, activity_subcategory_typename1,
+        activity_subcategory_type2, activity_subcategory_typename2,
+        activity_subcategory_type3, activity_subcategory_typename3,
         gas_name,
         locode,
         city_id,
         year AS emissions_year,
-        emissions_value * 1000 AS emissions_value,
+        emissions_value::numeric * 1000 AS emissions_value,
         'kg' AS emissions_units
     FROM 
         (SELECT 
             gpc_reference_number,
             gas_name,
             activity_name,
+            activity_subcategory_type1, activity_subcategory_typename1,
+            activity_subcategory_type2, activity_subcategory_typename2,
+            activity_subcategory_type3, activity_subcategory_typename3,
             locode,
             city_id,
             emissions_2015,
@@ -47,13 +57,17 @@ seeg_city_emissions_year AS (
             emissions_2019,
             emissions_2020,
             emissions_2021,
-            emissions_2022
+            emissions_2022,
+            emissions_2023
         FROM 
             seeg_city_emissions
         GROUP BY 
             gpc_reference_number,
             gas_name,
             activity_name,
+            activity_subcategory_type1, activity_subcategory_typename1,
+            activity_subcategory_type2, activity_subcategory_typename2,
+            activity_subcategory_type3, activity_subcategory_typename3,
             locode,
             city_id,
             emissions_2015,
@@ -63,7 +77,8 @@ seeg_city_emissions_year AS (
             emissions_2019,
             emissions_2020,
             emissions_2021,
-            emissions_2022
+            emissions_2022,
+            emissions_2023
         ) AS source
     CROSS JOIN LATERAL (
         VALUES
@@ -74,7 +89,8 @@ seeg_city_emissions_year AS (
             ('2019', emissions_2019),
             ('2020', emissions_2020),
             ('2021', emissions_2021),
-            ('2022', emissions_2022)
+            ('2022', emissions_2022),
+            ('2023', emissions_2023)
     ) AS unpivoted(year, emissions_value)
 )
 INSERT INTO modelled.emissions 
@@ -83,13 +99,14 @@ INSERT INTO modelled.emissions
      gas_name, emissions_value, emissions_units, emissions_year, emissionfactor_id, 
      spatial_granularity, geometry_type, geometry)
 SELECT 
-    (MD5(CONCAT_WS('-', 'SEEG', gpc_reference_number, locode,activity_name,emissions_year, gas_name))::UUID) AS emissions_id,
-    'SEEG' AS datasource_name,
+    (MD5(CONCAT_WS('-', 'SEEGv2023', gpc_reference_number, locode,activity_name,activity_subcategory_typename1, activity_subcategory_type2, activity_subcategory_typename2, activity_subcategory_type3, activity_subcategory_typename3,
+    emissions_year, gas_name))::UUID) AS emissions_id,
+    'SEEGv2023' AS datasource_name,
     gpc_reference_number,
     locode AS actor_id,
     city_id,
     NULL::UUID AS gpcmethod_id,
-    (MD5(CONCAT_WS('-', activity_name))::UUID) AS activity_id,
+    (MD5(CONCAT_WS('-', activity_name, activity_subcategory_type1, activity_subcategory_typename1, activity_subcategory_type2, activity_subcategory_typename2, activity_subcategory_type3, activity_subcategory_typename3))::UUID) AS activity_id,
     NULL AS activity_value,
     gas_name,
     emissions_value,

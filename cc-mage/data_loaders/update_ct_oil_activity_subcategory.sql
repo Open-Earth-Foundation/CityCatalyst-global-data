@@ -4,7 +4,13 @@ SELECT 	(MD5(CONCAT_WS('-', activity_name, activity_units, json_build_object('fa
 		activity_name, 
 		activity_units, 
 		(MD5(CONCAT_WS('-', gpc_refno, 'custom-methodology'))::UUID) AS gpcmethod_id,
-		json_build_object('facility_type', source_type,'facility_name', source_name) as activity_subcategory_type
+		--json_build_object('facility_type', source_type,'facility_name', source_name) as activity_subcategory_type
+        json_build_object(
+        'data-source', source_name,
+        'fugitive-emissions-oil-gas-type', 'fugitive-emissions-oil-gas-type-all',
+        'fugitive-emissions-oil-gas-fugitive-type', 'type-all',
+        'fugitive-emissions-oil-gas-technology-type', replace(lower(source_type), ' ', '-')
+    ) AS activity_subcategory_type
 FROM 	modelled.activity_subcategory_staging
 ON CONFLICT (activity_id)
 DO UPDATE SET 

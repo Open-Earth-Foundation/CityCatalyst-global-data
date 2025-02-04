@@ -54,3 +54,4 @@ ON CONFLICT (id) DO UPDATE SET
 DROP TABLE IF EXISTS raw_data.icare_city_topology;
 DROP TABLE IF EXISTS raw_data.ghgi_icare_emissions_forecast_growth_rates;
 DROP TABLE IF EXISTS raw_data.icare_city_to_locode;
+DROP TABLE IF EXISTS raw_data.ghgi_icare_emissions_forecast_historical_rates;

@@ -3,103 +3,223 @@ blocks:
   color: null
   configuration: {}
   downstream_blocks:
-  - load_icare_emission_forecast_rate_db
+  - cleaning_sinir
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: load_icare_emission_forecast_rate
+  name: import_raw_sinir_from_s3
   retry_config: null
   status: executed
   timeout: null
   type: data_loader
   upstream_blocks: []
-  uuid: load_icare_emission_forecast_rate
+  uuid: import_raw_sinir_from_s3
 - all_upstream_blocks_executed: true
   color: null
   configuration: {}
   downstream_blocks:
-  - update_forecast_emission_icare
+  - solid_waste_calculation_sinir
+  - clinical_waste_calculation_sinir
+  - incineration_calculation_sinir
+  - biological_calculation_sinir
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: load_icare_emission_forecast_rate_db
+  name: cleaning_sinir
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - import_raw_sinir_from_s3
+  uuid: cleaning_sinir
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - joining_solidwaste_calculation
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: solid_waste_calculation_sinir
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - cleaning_sinir
+  uuid: solid_waste_calculation_sinir
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - joining_solidwaste_calculation
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: clinical_waste_calculation_sinir
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - cleaning_sinir
+  uuid: clinical_waste_calculation_sinir
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - joining_solidwaste_calculation
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: incineration_calculation_sinir
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - cleaning_sinir
+  uuid: incineration_calculation_sinir
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - joining_solidwaste_calculation
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: biological_calculation_sinir
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - cleaning_sinir
+  uuid: biological_calculation_sinir
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - sinir_staging
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: joining_solidwaste_calculation
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - biological_calculation_sinir
+  - solid_waste_calculation_sinir
+  - clinical_waste_calculation_sinir
+  - incineration_calculation_sinir
+  uuid: joining_solidwaste_calculation
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - update_sinir_emissions
+  - update_sinir_emission_factors
+  - update_sinir_sector_activity
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: sinir_staging
   retry_config: null
   status: executed
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - load_icare_emission_forecast_rate
-  uuid: load_icare_emission_forecast_rate_db
+  - joining_solidwaste_calculation
+  uuid: sinir_staging
 - all_upstream_blocks_executed: true
   color: null
-  configuration: {}
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
   downstream_blocks:
-  - load_icare_city_topology_db
+  - delete_staging_sinir
   executor_config: null
   executor_type: local_python
   has_callback: false
-  language: python
-  name: load_icare_city_topology
+  language: sql
+  name: update_sinir_sector_activity
   retry_config: null
   status: executed
   timeout: null
   type: data_loader
-  upstream_blocks: []
-  uuid: load_icare_city_topology
-- all_upstream_blocks_executed: true
-  color: null
-  configuration: {}
-  downstream_blocks:
-  - update_forecast_emission_icare
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: load_icare_city_topology_db
-  retry_config: null
-  status: executed
-  timeout: null
-  type: data_exporter
   upstream_blocks:
-  - load_icare_city_topology
-  uuid: load_icare_city_topology_db
+  - sinir_staging
+  uuid: update_sinir_sector_activity
 - all_upstream_blocks_executed: true
   color: null
-  configuration: {}
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    data_provider_schema: public
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
   downstream_blocks:
-  - load_icare_city_locode_db
+  - delete_staging_sinir
   executor_config: null
   executor_type: local_python
   has_callback: false
-  language: python
-  name: load_icare_city_locode
+  language: sql
+  name: update_sinir_emission_factors
   retry_config: null
   status: executed
   timeout: null
   type: data_loader
-  upstream_blocks: []
-  uuid: load_icare_city_locode
+  upstream_blocks:
+  - sinir_staging
+  uuid: update_sinir_emission_factors
 - all_upstream_blocks_executed: true
   color: null
-  configuration: {}
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    file_path: data_loaders/update_sinir_emissions.sql
+    file_source:
+      path: data_loaders/update_sinir_emissions.sql
+    limit: 1000
+    use_raw_sql: true
   downstream_blocks:
-  - update_forecast_emission_icare
+  - delete_staging_sinir
   executor_config: null
   executor_type: local_python
   has_callback: false
-  language: python
-  name: load_icare_city_locode_db
+  language: sql
+  name: update_sinir_emissions
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
-  type: data_exporter
+  type: data_loader
   upstream_blocks:
-  - load_icare_city_locode
-  uuid: load_icare_city_locode_db
-- all_upstream_blocks_executed: true
-  color: null
+  - sinir_staging
+  uuid: update_sinir_emissions
+- all_upstream_blocks_executed: false
+  color: purple
   configuration:
     data_provider: postgres
     data_provider_profile: default
@@ -113,89 +233,28 @@ blocks:
   executor_type: local_python
   has_callback: false
   language: sql
-  name: update_forecast_emission_icare
+  name: delete_staging_sinir
   retry_config: null
   status: executed
   timeout: null
-  type: transformer
+  type: custom
   upstream_blocks:
-  - load_icare_city_locode_db
-  - load_icare_city_topology_db
-  - load_icare_emission_forecast_rate_db
-  - update_forecast_historical
-  uuid: update_forecast_emission_icare
-- all_upstream_blocks_executed: true
-  color: null
-  configuration:
-    data_provider: postgres
-    data_provider_profile: default
-    export_write_policy: append
-  downstream_blocks:
-  - load_icare_forecast_historical_db
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: load_icare_forecast_historical_rate
-  retry_config: null
-  status: executed
-  timeout: null
-  type: data_loader
-  upstream_blocks: []
-  uuid: load_icare_forecast_historical_rate
-- all_upstream_blocks_executed: true
-  color: null
-  configuration: {}
-  downstream_blocks:
-  - update_forecast_historical
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: load_icare_forecast_historical_db
-  retry_config: null
-  status: executed
-  timeout: null
-  type: data_exporter
-  upstream_blocks:
-  - load_icare_forecast_historical_rate
-  uuid: load_icare_forecast_historical_db
-- all_upstream_blocks_executed: true
-  color: null
-  configuration:
-    data_provider: postgres
-    data_provider_profile: default
-    dbt: {}
-    disable_query_preprocessing: false
-    export_write_policy: append
-    limit: 1000
-    use_raw_sql: true
-  downstream_blocks:
-  - update_forecast_emission_icare
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: sql
-  name: update_forecast_historical
-  retry_config: null
-  status: executed
-  timeout: null
-  type: transformer
-  upstream_blocks:
-  - load_icare_forecast_historical_db
-  uuid: update_forecast_historical
+  - update_sinir_emissions
+  - update_sinir_emission_factors
+  - update_sinir_sector_activity
+  uuid: delete_staging_sinir
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
 conditionals: []
-created_at: '2025-01-13 02:39:15.887398+00:00'
+created_at: '2025-01-06 20:07:29.159093+00:00'
 data_integration: null
 description: null
 executor_config: {}
 executor_count: 1
 executor_type: null
 extensions: {}
-name: ghgi_icare_emission_forecast
+name: ghgi_sinir_solidwaste_brasil
 notification_config: {}
 remote_variables_dir: null
 retry_config: {}
@@ -205,8 +264,6 @@ settings:
 spark_config: {}
 tags: []
 type: python
-uuid: ghgi_icare_emission_forecast
-variables:
-  bucket_name: test-global-api
+uuid: ghgi_sinir_solidwaste_brasil
 variables_dir: /home/src/mage_data/cc-mage
 widgets: []
