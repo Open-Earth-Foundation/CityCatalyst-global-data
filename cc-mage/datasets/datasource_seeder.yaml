@@ -1845,7 +1845,7 @@
       ponto de emissão. Uma vez identificados, todos os pontos de dados dentro dos
       limites da cidade são agregados para calcular as emissões totais do setor.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/Climate TRACE Fall_2023/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2024/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.8.1
   scope: 1
 - datasource_id: d58b08f3-efdb-3f2d-9320-cea8c763d05a
@@ -6978,7 +6978,7 @@
       ponto de emissão. Uma vez identificados, todos os pontos de dados dentro dos
       limites da cidade são agregados para calcular as emissões totais do setor.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/climatetrace/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/climateTRACEv2024/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: IV.1
   scope: 1
 - datasource_id: 68b94c84-eda6-4cff-8044-a5f7046bb995
