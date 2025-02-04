@@ -121,7 +121,8 @@ def transform(data: DataFrame, *args, **kwargs):
     data["activity_subcategory_type"] = data.apply(
         lambda row: {
             row['activity_subcategory_type1'] : row['activity_subcategory_name1'],
-            row['activity_subcategory_type2'] : row['activity_subcategory_name2']
+            row['activity_subcategory_type2'] : row['activity_subcategory_name2'],
+            "data-source": row['facility_name'],
             # "activity_subcategory_type1": row['activity_subcategory_type1'],
             # "activity_subcategory_typename1": row['activity_subcategory_name1'],
             # "activity_subcategory_type2": row['activity_subcategory_type2'],

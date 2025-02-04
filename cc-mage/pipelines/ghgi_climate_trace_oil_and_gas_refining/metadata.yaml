@@ -249,7 +249,7 @@ blocks:
   language: sql
   name: ct_country_code_lookup
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: transformer
   upstream_blocks: []
