@@ -57,7 +57,8 @@ def transform_custom(*args, **kwargs):
             'methodology_name': 'wastewater-outside-methodology',
             'methodology_description': 'It estimates emissions from the treatment and discharge of domestic and industrial wastewater. Emissions primarily include methane (CH₄) from anaerobic decomposition and nitrous oxide (N₂O) from nitrogen compounds during treatment processes.',
             'Scope': 3
-        }
+        },
+    
     }
 
     # Convert dictionary to DataFrame
