@@ -22,8 +22,8 @@ def load_from_s3_bucket(*args, **kwargs):
     """
     config_path = path.join(get_repo_path(), 'io_config.yaml')
     config_profile = 'default'
-
-    bucket_name = 'test-global-api'
+    
+    bucket_name = kwargs['bucket_name']
     route = 'raw_data/climateTRACE'
 
     object_keys = [
@@ -39,9 +39,13 @@ def load_from_s3_bucket(*args, **kwargs):
     data_frames = []
 
     for object_key in object_keys:
-        file_obj = s3.client.get_object(Bucket=bucket_name, Key=object_key)['Body'].read()
-        data = pd.read_csv(BytesIO(file_obj))
-        data_frames.append(data)
+        try:
+            file_obj = s3.client.get_object(Bucket=bucket_name, Key=object_key)['Body'].read()
+            data = pd.read_csv(BytesIO(file_obj))
+            data_frames.append(data)
+        except Exception as e:
+            print(f'Error loading {object_key}: {str(e)}')
+            continue
 
     # Concatenate all DataFrames into one
     combined_data = pd.concat(data_frames, ignore_index=True)

@@ -11,8 +11,14 @@ import pandas as pd
 def transform(data: DataFrame, *args, **kwargs):
 
     # Filtering the df 
-    data = data[['source_name', 'iso3_country', 'subsector', 'start_time', 'lat', 'lon', 'gas', 'emissions_quantity', 'temporal_granularity', 'activity', 
-    'activity_units', 'emissions_factor', 'emissions_factor_units', 'capacity', 'capacity_units', 'capacity_factor']]
+    required_columns = ['source_name', 'iso3_country', 'subsector', 'start_time', 'lat', 'lon', 
+                    'gas', 'emissions_quantity', 'temporal_granularity', 'activity', 
+                    'activity_units', 'emissions_factor', 'emissions_factor_units', 
+                    'capacity', 'capacity_units', 'capacity_factor']
+    missing_columns = [col for col in required_columns if col not in data.columns]
+    if missing_columns:
+        raise ValueError(f'Missing required columns: {missing_columns}')
+    data = data[required_columns]
 
     data.rename(columns={
         'source_name': 'facility_name',
@@ -24,7 +30,12 @@ def transform(data: DataFrame, *args, **kwargs):
     }, inplace=True)
 
     # Extract the year from the 'start_time' column
-    data['start_time'] = pd.to_datetime(data['start_time'])
+    try:
+        data['start_time'] = pd.to_datetime(data['start_time'])
+    except pd.errors.ParserError as e:
+        problematic_rows = data[pd.to_datetime(data['start_time'], errors='coerce').isna()]
+        raise ValueError(f'Invalid datetime format in rows: {problematic_rows.index.tolist()}') from e
+
     data['emissions_year'] = data['start_time'].dt.year
 
     # Calculate annual emissions and activity values
@@ -74,13 +85,11 @@ def transform(data: DataFrame, *args, **kwargs):
             data.loc[mask, column_name] = value
 
     # create the activity_subcategory_type column to store the subcategory information
-    data["activity_subcategory_type"] = data.apply(
-        lambda row: {
-            row['activity_subcategory_type1'] : row['activity_subcategory_name1'],
-            "data-source": row['facility_name'],
-        },
-        axis=1,
-    )
+    data['activity_subcategory_type'] = pd.DataFrame({
+        'type': data['activity_subcategory_type1'],
+        'name': data['activity_subcategory_name1'],
+        'source': data['facility_name']
+    }).apply(lambda x: {'fugitive-emissions-oil-gas-type': x['name'], 'data-source': x['source']}, axis=1)
 
     data.drop(columns=['activity_subcategory_type1', 'activity_subcategory_name1'], inplace=True)
 
