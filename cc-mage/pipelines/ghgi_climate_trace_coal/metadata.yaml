@@ -1,0 +1,194 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - cleaning_coal_mining_ct
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: coal_minig_ct_read_s3
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: coal_minig_ct_read_s3
+- all_upstream_blocks_executed: false
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - coal_ct_staging
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: cleaning_coal_mining_ct
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - coal_minig_ct_read_s3
+  uuid: cleaning_coal_mining_ct
+- all_upstream_blocks_executed: false
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - update_coal_ct_activity_subcategory
+  - update_coal_ct_emissionfactor
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: coal_ct_staging
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - cleaning_coal_mining_ct
+  uuid: coal_ct_staging
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_coal_ct_activity_subcategory
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - coal_ct_staging
+  uuid: update_coal_ct_activity_subcategory
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_coal_ct_emissionfactor
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - coal_ct_staging
+  uuid: update_coal_ct_emissionfactor
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    file_source:
+      path: transformers/ct_country_code_lookup.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - locode_transformation_coal_ct
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: ct_country_code_lookup
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks: []
+  uuid: ct_country_code_lookup
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - update_coal_ct_emissions
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: locode_transformation_coal_ct
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - ct_country_code_lookup
+  uuid: locode_transformation_coal_ct
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_coal_ct_emissions
+  retry_config: null
+  status: failed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - locode_transformation_coal_ct
+  uuid: update_coal_ct_emissions
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2025-02-10 20:19:23.289256+00:00'
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: ghgi_climate_trace_coal
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: ghgi_climate_trace_coal
+variables_dir: /home/src/mage_data/cc-mage
+widgets: []
