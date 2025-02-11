@@ -90,7 +90,7 @@ def transform(data: DataFrame, *args, **kwargs):
         'type': data['activity_subcategory_type1'],
         'name': data['activity_subcategory_name1'],
         'source': data['facility_name']
-    }).apply(lambda x: {'fugitive-emissions-oil-gas-type': x['name'], 'data-source': x['source']}, axis=1)
+    }).apply(lambda x: {'fugitive-emissions-coal-type': x['name'], 'data-source': x['source']}, axis=1)
 
     data.drop(columns=['activity_subcategory_type1', 'activity_subcategory_name1'], inplace=True)
 

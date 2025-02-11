@@ -11,7 +11,7 @@ if 'data_exporter' not in globals():
 def export_data_to_postgres(df: DataFrame, **kwargs) -> None:
 
     schema_name = 'modelled'  
-    table_name = 'fugitivie_staging'  
+    table_name = 'fugitive_staging'  
     config_path = path.join(get_repo_path(), 'io_config.yaml')
     config_profile = 'default'
 
