@@ -13,18 +13,20 @@ WITH snis_staging AS (
         e.emissions_year,
         e.gpcmethod_id,
         c.locode,
-        c.city_id
+        c.city_id,
+        (MD5(CONCAT_WS('-', e.activity_name, e.gpcmethod_id, e.income_group, e.treatment_type, e.treatment_status, e.collection_status))::UUID) AS activity_id
     FROM 
         modelled.snis_staging e 
     LEFT JOIN 
-        modelled.city_polygon c 
-        ON LOWER(TRIM(e.actor_name)) = LOWER(TRIM(c.city_name))
+        modelled.city_polygon c
+        ON REPLACE(LOWER(TRIM(e.actor_name)), '-', ' ') = REPLACE(LOWER(TRIM(c.city_name)), '-', ' ')
+		AND e.UF = c.region_code
     WHERE 
         e.actor_name IS NOT NULL
 ),
 staging_with_activity AS (
     SELECT
-        (MD5(CONCAT_WS('-', activity_name))::UUID) AS activity_id,
+        activity_id,
         activity_value,
         unit_denominator,
         gas_name,
@@ -37,7 +39,8 @@ staging_with_activity AS (
         actor_name,
         emissions_value,
         emissions_units,
-        gpcmethod_id
+        gpcmethod_id,
+        (MD5(CONCAT_WS('-', gas_name, unit_denominator, activity_id::TEXT, 'IPCCv2006', 'BR'))::UUID) AS emissionfactor_id
     FROM 
         snis_staging
 )
@@ -47,7 +50,7 @@ INSERT INTO modelled.emissions
      gas_name, emissions_value, emissions_units, emissions_year, emissionfactor_id, 
      spatial_granularity, geometry_type, geometry)
 SELECT DISTINCT
-    (MD5(CONCAT_WS('-', 'SNIS', GPC_refno, actor_name, locode, city_id, activity_name, activity_value, emissionfactor_value, emissions_year, gas_name, emissions_value))::UUID) AS emissions_id,
+    (MD5(CONCAT_WS('-', 'SNIS', GPC_refno, locode, emissions_year, gas_name, activity_id))::UUID) AS emissions_id,
     'SNIS' AS datasource_name,
     GPC_refno AS gpc_reference_number,
     locode AS actor_id,
@@ -59,10 +62,10 @@ SELECT DISTINCT
     emissions_value,
     emissions_units,
     emissions_year::numeric AS emissions_year,
-    (MD5(CONCAT_WS('-', gas_name, emissionfactor_value, unit_denominator, activity_id::TEXT, 'IPCC 2006', locode, emissions_value))::UUID) AS emissionfactor_id,
+    emissionfactor_id,
     'city' AS spatial_granularity,
     NULL AS geometry_type,
-    NULL AS geometry
+    NULL::text[] AS geometry
 FROM 
     staging_with_activity
 WHERE 

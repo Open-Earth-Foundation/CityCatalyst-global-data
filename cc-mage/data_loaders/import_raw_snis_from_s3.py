@@ -19,7 +19,7 @@ def load_from_s3_bucket(*args, **kwargs):
     config_path = path.join(get_repo_path(), 'io_config.yaml')
     config_profile = 'default'
 
-    bucket_name = 'test-global-api'
+    bucket_name = kwargs['bucket_name']
     object_key = 'raw_data/SNIS_Brasil/raw_data_SNIS.csv'
 
     return S3.with_config(ConfigFileLoader(config_path, config_profile)).load(
