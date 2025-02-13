@@ -1,5 +1,7 @@
 import numpy as np
 import pandas as pd
+import duckdb 
+
 if 'transformer' not in globals():
     from mage_ai.data_preparation.decorators import transformer
 if 'test' not in globals():
@@ -63,32 +65,44 @@ def transform(data, *args, **kwargs):
 
     # assign the gas name and the activity name
     data['gas_name'] = 'CH4'
-    data['activity_name'] = 'solid waste disposal'
+    data['activity_name'] = 'solid-waste-disposal'
 
     # assign the GPC reference number based on where the waste is treated
     data.loc[:, 'GPC_refno'] = np.where(data.loc[:,'columns_match'] == True, 'III.1.1', 'III.1.2')
 
-    # create the metadata column to store the subcategory information
-    data["activity_subcategory_type"] = data.apply(
+    con = duckdb.connect(database=':memory:')
+    con.register('solid_df', data)
+
+    query = """
+    SELECT *,
+            json_object(
+                    'data-source', treatment_type,
+                     'methane-commitment-solid-waste-outboundary-oxidation-factor', 
+                     case when management_level = 'managed' then 'oxidation-factor-well-managed-landfill'
+                     else 'oxidation-factor-unmanaged-landfill' end
+                     )
+            AS activity_subcategory_type
+    FROM solid_df
+    """
+
+    # Execute the query and fetch the result into a DataFrame
+    data_final = con.execute(query).fetchdf()
+
+
+    data_final["default_values"] = data.apply(
         lambda row: {
-            "activity_subcategory_type1": 'waste_type',
-            "activity_subcategory_typename1": 'municipal solid waste',
-            "activity_subcategory_type2": 'treatment_type',
-            "activity_subcategory_typename2": row['treatment_type'],
-            "activity_subcategory_type3": 'management_level',
-            "activity_subcategory_typename3": row['management_level'],
-            "activity_subcategory_type4": 'DOC',
-            "activity_subcategory_typename4": 150,
-            "activity_subcategory_type5": 'f_rec',
-            "activity_subcategory_typename5": 0
+            "methane-correction-factor": (lambda level: {'managed': 1, 'unmanaged': 0.8, 'uncategorized': 0.6}.get(level, 0.6))(row['management_level']),
+            "methane-collected-and-removed": (lambda level: {'managed': 0.1, 'unmanaged': 0, 'uncategorized': 0}.get(level, 0))(row['management_level']),
+            "DOC": 150,
+            "methane-collected-and-removed": 0
         },
         axis=1,
     )
 
     # drop unnecessary columns
-    data.drop(columns=['municipality_where_the_Unit_is', 'unit_type', 'municipality_sending', 'columns_match', 'treatment_type', 'DOC', 'management_level'], inplace=True)
+    data_final.drop(columns=['municipality_code', 'IBGE_code', 'UF', 'region_name', 'municipality_where_the_Unit_is', 'region_code', 'unit_type', 'columns_match', 'treatment_type', 'DOC', 'management_level'], inplace=True)
 
-    return data
+    return data_final
 
 
 @test
