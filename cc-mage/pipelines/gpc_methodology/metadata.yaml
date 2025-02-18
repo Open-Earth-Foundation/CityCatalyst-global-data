@@ -17,8 +17,7 @@ blocks:
 - all_upstream_blocks_executed: true
   color: pink
   configuration: {}
-  downstream_blocks:
-  - gpc_methodology_staging
+  downstream_blocks: []
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -30,6 +29,22 @@ blocks:
   type: custom
   upstream_blocks: []
   uuid: sector1_scope3_gpc_method
+- all_upstream_blocks_executed: true
+  color: purple
+  configuration: {}
+  downstream_blocks:
+  - gpc_methodology_staging
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: fugitive_emissions_custom
+  retry_config: null
+  status: executed
+  timeout: null
+  type: custom
+  upstream_blocks: []
+  uuid: fugitive_emissions_custom
 - all_upstream_blocks_executed: true
   color: null
   configuration: {}
@@ -45,7 +60,7 @@ blocks:
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - sector1_scope3_gpc_method
+  - fugitive_emissions_custom
   uuid: gpc_methodology_staging
 - all_upstream_blocks_executed: true
   color: null
