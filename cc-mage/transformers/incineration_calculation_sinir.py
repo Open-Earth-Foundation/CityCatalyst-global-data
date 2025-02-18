@@ -78,7 +78,7 @@ def transform(data, *args, **kwargs):
     data_final = con.execute(query).fetchdf()
 
 
-    data_final["default_values"] = data.apply(
+    data_final["default_values"] = data_final.apply(
         lambda row: {
             "fraction-of-fossil-carbon": fcf,
             "oxidation-factor": of,
