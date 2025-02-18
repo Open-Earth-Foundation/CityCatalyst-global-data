@@ -22,36 +22,44 @@ def load_from_s3_bucket(*args, **kwargs):
     """
     config_path = path.join(get_repo_path(), 'io_config.yaml')
     config_profile = 'default'
-    
+
     bucket_name = kwargs['bucket_name']
-    route = 'raw_data/climateTRACE'
+    # Importing data only for Brazil
+    object_key = 'raw_data/climateTRACE/coal_sources_brazil.csv'
 
-    object_keys = [
-        f'{route}/coal-mining_emissions_sources_ch4.csv',
-        f'{route}/coal-mining_emissions_sources_co2.csv',
-    ]
+    return S3.with_config(ConfigFileLoader(config_path, config_profile)).load(
+        bucket_name,
+        object_key,
+    )
+    
+    #route = 'raw_data/climateTRACE'
 
-    s3 = S3.with_config(ConfigFileLoader(config_path, config_profile))
-    data_frames = []
+    #object_keys = [
+    #    f'{route}/coal-mining_emissions_sources_ch4.csv',
+    #    f'{route}/coal-mining_emissions_sources_co2.csv',
+    #]
 
-    for object_key in object_keys:
-        try:
-            file_obj = s3.client.get_object(Bucket=bucket_name, Key=object_key)['Body'].read()
-            data = pd.read_csv(BytesIO(file_obj))
-            data_frames.append(data)
-        except Exception as e:
-            print(f'Error loading {object_key}: {str(e)}')
-            continue
+    #s3 = S3.with_config(ConfigFileLoader(config_path, config_profile))
+    #data_frames = []
+
+    #for object_key in object_keys:
+    #    try:
+    #        file_obj = s3.client.get_object(Bucket=bucket_name, Key=object_key)['Body'].read()
+    #        data = pd.read_csv(BytesIO(file_obj))
+    #        data_frames.append(data)
+    #    except Exception as e:
+    #        print(f'Error loading {object_key}: {str(e)}')
+    #        continue
 
     # Concatenate all DataFrames into one
-    combined_data = pd.concat(data_frames, ignore_index=True)
+    #combined_data = pd.concat(data_frames, ignore_index=True)
 
     # Ensure all columns have consistent types
-    for col in combined_data.columns:
-        if combined_data[col].dtype == 'object':
-         combined_data[col] = combined_data[col].astype(str)
+    #for col in combined_data.columns:
+    #    if combined_data[col].dtype == 'object'
+    #     combined_data[col] = combined_data[col].astype(str)
 
-    return combined_data
+    #return combined_data
 
 
 @test
