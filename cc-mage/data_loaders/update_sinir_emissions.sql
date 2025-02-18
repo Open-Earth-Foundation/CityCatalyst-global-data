@@ -1,5 +1,5 @@
 WITH sinir_staging AS (
-    SELECT DISTINCT
+    SELECT
         e.activity_value, 
         e.actor_name, 
         e.gas_name,
@@ -12,18 +12,20 @@ WITH sinir_staging AS (
         e.emissions_year,
         e.gpcmethod_id,
         c.locode,
-        c.city_id
+        c.city_id,
+        (MD5(CONCAT_WS('-', activity_name, activity_subcategory_type))::UUID) AS activity_id
     FROM 
-        modelled.sinir_staging e 
+        raw_data.sinir_staging e 
     LEFT JOIN 
-        modelled.city_polygon c 
-        ON LOWER(TRIM(e.actor_name)) = LOWER(TRIM(c.city_name))
+        modelled.city_polygon c
+        ON REPLACE(LOWER(TRIM(e.actor_name)), '-', ' ') = REPLACE(LOWER(TRIM(c.city_name)), '-', ' ')
+		AND e.sending_region_code = c.region_code
     WHERE 
         e.actor_name IS NOT NULL
 ),
 staging_with_activity AS (
     SELECT
-        (MD5(CONCAT_WS('-', activity_name))::UUID) AS activity_id,
+        activity_id,
         activity_value,
         gas_name,
         emissionfactor_value,
@@ -35,7 +37,8 @@ staging_with_activity AS (
         actor_name,
         emissions_value,
         emissions_units,
-        gpcmethod_id
+        gpcmethod_id,
+        (MD5(CONCAT_WS('-', gas_name, emissionfactor_value, 't', activity_id::TEXT, 'IPCCv2006', 'BR'))::UUID) AS emissionfactor_id
     FROM 
         sinir_staging
 )
@@ -57,10 +60,10 @@ SELECT DISTINCT
     emissions_value,
     emissions_units,
     emissions_year::numeric AS emissions_year,
-    (MD5(CONCAT_WS('-', gas_name, emissionfactor_value, 't', activity_id::TEXT, 'IPCC 2006', locode))::UUID) AS emissionfactor_id,
+    emissionfactor_id,
     'city' AS spatial_granularity,
     NULL AS geometry_type,
-    NULL AS geometry
+    NULL::text[]  AS geometry
 FROM 
     staging_with_activity
 WHERE 
