@@ -69,7 +69,7 @@ blocks:
   language: python
   name: load_ibge_poverty_fraction
   retry_config: null
-  status: executed
+  status: failed
   timeout: null
   type: data_loader
   upstream_blocks:
@@ -109,7 +109,7 @@ blocks:
   language: python
   name: update_ibge_indicator_staging
   retry_config: null
-  status: executed
+  status: failed
   timeout: null
   type: data_exporter
   upstream_blocks:

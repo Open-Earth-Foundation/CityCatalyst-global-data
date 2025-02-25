@@ -1,19 +1,16 @@
-WITH raw_sealevel AS (
-    SELECT 
-        municipailty_id,
-        b.locode,
-        -- TRIM(SPLIT_PART(b.municipality, '(', 1)) AS city_name, 
-        -- b._state AS region_code, 
-        indicator_name,
-        variable_value as indicator_score,
+WITH raw_index AS (
+    SELECT  
+        locode,
+        'coverage rate of public urban drainage' as indicator_name,
+        IN021 as indicator_score,
         null as indicator_units,
-        indicator_year, 
-        scenario as scenario_name,
-        'SeaLevelRiseProjection' as datasource
-    FROM raw_data.ccra_icare_sea_level a
+        2023 as indicator_year, 
+        'current' as scenario_name,
+        'SNIS' as datasource
+    FROM raw_data.ccra_icare_urban_drainage a
     LEFT JOIN raw_data.icare_city_to_locode b 
-    ON a.municipailty_id = b.municipality_code
-    WHERE locode IS NOT NULL
+    ON a.CD_MUN = b.municipality_code
+    WHERE locode IS NOT NULL 
 ),
 percentiles AS (
     SELECT
@@ -22,15 +19,14 @@ percentiles AS (
         PERCENTILE_CONT(0.05) WITHIN GROUP (ORDER BY indicator_score) AS lower_limit,
         PERCENTILE_CONT(0.95) WITHIN GROUP (ORDER BY indicator_score) AS upper_limit
     FROM 
-        raw_sealevel
+        raw_index
     GROUP BY 
         indicator_name, 
         scenario_name
 ),
-sealevel_scaled AS (
+index_scaled AS (
     SELECT 
-        i.locode, 
-        -- i.region_code, 
+        i.locode,
         i.indicator_name, 
         i.indicator_score, 
         indicator_year, 
@@ -45,7 +41,7 @@ sealevel_scaled AS (
         p.lower_limit, 
         p.upper_limit
     FROM 
-        raw_sealevel i
+        raw_index i
     JOIN 
         percentiles p ON i.indicator_name = p.indicator_name AND i.scenario_name = p.scenario_name
 ),
@@ -53,8 +49,6 @@ upsert_data AS (
     SELECT 
         (MD5(CONCAT_WS('-', a.locode, indicator_name, a.datasource, a.indicator_year, a.scenario_name))::UUID) AS id,
         a.locode AS actor_id, 
-        -- a.city_name,
-        -- a.region_code,
         indicator_name,
         indicator_score,
         a.indicator_units,
@@ -63,7 +57,7 @@ upsert_data AS (
         scenario_name,
         datasource    
     FROM 
-        sealevel_scaled a
+        index_scaled a
 )
 INSERT INTO modelled.ccra_indicator (
     id,
@@ -92,5 +86,3 @@ DO UPDATE SET
     indicator_score = EXCLUDED.indicator_score,
     indicator_units = EXCLUDED.indicator_units,
     indicator_normalized_score = EXCLUDED.indicator_normalized_score;
-
-DROP TABLE raw_data.ccra_icare_sea_level;
