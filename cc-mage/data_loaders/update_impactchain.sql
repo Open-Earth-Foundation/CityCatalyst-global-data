@@ -4,14 +4,13 @@ SELECT 	hazard,
 		ARRAY[2024,2030,2050] as latest_year
 FROM (
     VALUES 
-    ('Drought', ARRAY['Water Resources', 'Food Security', 'Energy Security', 'Biodiversity']),
-    ('Heatwaves', ARRAY['Public Health', 'Infrastructure', 'Biodiversity', 'Energy Security']),
-    ('Diseases', ARRAY['Public Health']),
-    ('Landslide', ARRAY['Geo-hydrological Disasters', 'Infrastructure']),
-    ('Flooding', ARRAY['Geo-hydrological Disasters', 'Infrastructure', 'Food Security']),
-    ('Wildfires', ARRAY['Infrastructure', 'Biodiversity']),
-    ('Sea Level Rise', ARRAY['Infrastructure']),
-    ('Erosion', ARRAY['Infrastructure'])
+    ('droughts', ARRAY['Water Resources', 'Food Security', 'Energy Security', 'Biodiversity']),
+    ('heatwaves', ARRAY['Public Health', 'Infrastructure', 'Biodiversity', 'Energy Security']),
+    ('diseases', ARRAY['Public Health']),
+    ('landslides', ARRAY['Infrastructure', 'Public Health']),
+    ('floods', ARRAY['Infrastructure', 'Food Security', 'Public Health']),
+    ('wildfires', ARRAY['Infrastructure', 'Biodiversity', 'Public Health']),
+    ('sea-level-rise', ARRAY['Infrastructure'])
 ) AS t(hazard, keyimpact)
 ),
 year_assessment AS (

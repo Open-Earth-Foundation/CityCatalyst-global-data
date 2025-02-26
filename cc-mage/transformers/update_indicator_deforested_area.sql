@@ -1,26 +1,26 @@
-WITH raw_biodiversity_index AS (
+WITH raw_indicator AS (
     SELECT 
         cod_municipio municipailty_id,
-        b.locode,
-        -- TRIM(SPLIT_PART(b.municipality, '(', 1)) AS city_name, 
-        -- b._state AS region_code,  
-        'urban green area' as indicator_name,
-        urban_green_areas__::numeric as indicator_score,
+        TRIM(SPLIT_PART(b.municipality, '(', 1)) AS city_name,
+        b.locode, 
+        b.region_code AS region_code,  
+        'deforested area' as indicator_name,
+        deforested_area__::numeric as indicator_score,
         'percent' as indicator_units,
         2022 as indicator_year, 
         'current' as scenario_name,
-        'MapBiomass' as datasource
-    FROM raw_data.ccra_icare_urban_green_area a
+        'IPS' as datasource
+    FROM raw_data.ccra_icare_deforested_area a
     LEFT JOIN raw_data.icare_city_to_locode b 
     ON a.cod_municipio = b.municipality_code
     WHERE locode IS NOT NULL 
 ),
 upsert_data AS (
     SELECT 
-        (MD5(CONCAT_WS('-', a.locode, indicator_name, a.datasource, a.indicator_year, a.scenario_name))::UUID) AS id,
-        a.locode AS actor_id, 
-        -- a.city_name,
-        -- a.region_code,
+        (MD5(CONCAT_WS('-', locode, indicator_name, a.datasource, a.indicator_year, a.scenario_name))::UUID) AS id,
+        locode AS actor_id, 
+        a.city_name,
+        a.region_code,
         indicator_name,
         indicator_score,
         a.indicator_units,
@@ -29,7 +29,7 @@ upsert_data AS (
         scenario_name,
         datasource    
     FROM 
-        raw_biodiversity_index a
+        raw_indicator a
 )
 INSERT INTO modelled.ccra_indicator (
     id,
