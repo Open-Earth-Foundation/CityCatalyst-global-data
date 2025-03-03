@@ -1,0 +1,140 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - load_cc_translation_string_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_cc_translation_string
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_cc_translation_string
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - missing_translation_strings_cc
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_cc_translation_string_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_cc_translation_string
+  uuid: load_cc_translation_string_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: missing_translation_strings_cc
+  retry_config: null
+  status: updated
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_cc_translation_string_db
+  uuid: missing_translation_strings_cc
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    export_write_policy: append
+  downstream_blocks:
+  - load_cc_manual_input_json_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_cc_manual_input_json
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_cc_manual_input_json
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - transformation_cc_manual_input
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_cc_manual_input_json_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_cc_manual_input_json
+  uuid: load_cc_manual_input_json_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: transformation_cc_manual_input
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_cc_manual_input_json_db
+  uuid: transformation_cc_manual_input
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2025-02-27 14:03:16.069762+00:00'
+data_integration: null
+description: This takes the data from cc repo and checks if we alignment in names
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: dq_alignment_globalapi_and_cc
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: dq_alignment_globalapi_and_cc
+variables_dir: /home/src/mage_data/cc-mage
+widgets: []
