@@ -93,6 +93,24 @@ blocks:
   type: data_loader
   upstream_blocks: []
   uuid: coverage_br_pilot_cities
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    export_write_policy: append
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: markdown
+  name: uncovered_cities_nk_table
+  retry_config: null
+  status: updated
+  timeout: null
+  type: markdown
+  upstream_blocks: []
+  uuid: uncovered_cities_nk_table
 - all_upstream_blocks_executed: false
   color: null
   configuration:
@@ -117,6 +135,48 @@ blocks:
   upstream_blocks:
   - coverage_br_pilot_cities
   uuid: checking_uncovered_cities_in_nk_table
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    export_write_policy: append
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: markdown
+  name: pilot_cities_in_nk_table
+  retry_config: null
+  status: updated
+  timeout: null
+  type: markdown
+  upstream_blocks: []
+  uuid: pilot_cities_in_nk_table
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - checking_i51_iv1
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: checking_pilot_cities_in_nk_table
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - checking_uncovered_cities_in_nk_table
+  uuid: checking_pilot_cities_in_nk_table
 - all_upstream_blocks_executed: false
   color: null
   configuration:
@@ -132,14 +192,36 @@ blocks:
   executor_type: local_python
   has_callback: false
   language: sql
-  name: checking_pilot_cities_in_nk_table
+  name: checking_I51_IV1
   retry_config: null
   status: updated
   timeout: null
   type: transformer
   upstream_blocks:
-  - checking_uncovered_cities_in_nk_table
-  uuid: checking_pilot_cities_in_nk_table
+  - checking_pilot_cities_in_nk_table
+  uuid: checking_i51_iv1
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: checking_waste
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: checking_waste
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
