@@ -32,7 +32,7 @@ def transform(data, *args, **kwargs):
 
     # assign the emissions units and the activity name
     data['emissions_units'] = 'kg'
-    data['activity_name'] = 'composting of organic waste'
+    data['activity_name'] = 'mass-of-organic-waste-treated'
 
     # assign the GPC reference number based on where the waste is treated
     data['GPC_refno'] = np.where(data['columns_match'] == True, 'III.2.1', 'III.2.2')
@@ -48,8 +48,8 @@ def transform(data, *args, **kwargs):
                     'biological-treatment-inboundary-waste-state','waste-state-dry-waste'
                 )
                 WHEN GPC_refno = 'III.2.2' THEN json_object(
-                'biological-treatment-outside-treatment-type','treatment-type-composting',
-                'biological-treatment-outside-waste-state','waste-state-dry-waste'
+                'biological-treatment-outboundary-treatment-type','treatment-type-composting',
+                'biological-treatment-outboundary-waste-state','waste-state-dry-waste'
                 ) 
             END AS activity_subcategory_type
     FROM composting_df

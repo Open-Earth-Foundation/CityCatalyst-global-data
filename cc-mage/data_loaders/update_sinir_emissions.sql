@@ -63,7 +63,7 @@ SELECT DISTINCT
     emissionfactor_id,
     'city' AS spatial_granularity,
     NULL AS geometry_type,
-    NULL::text[]  AS geometry
+    NULL AS geometry
 FROM 
     staging_with_activity
 WHERE 

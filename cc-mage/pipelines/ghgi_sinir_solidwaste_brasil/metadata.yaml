@@ -63,7 +63,7 @@ blocks:
   language: python
   name: clinical_waste_calculation_sinir
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: transformer
   upstream_blocks:
@@ -97,7 +97,7 @@ blocks:
   language: python
   name: biological_calculation_sinir
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: transformer
   upstream_blocks:
