@@ -1,3 +1,5 @@
+DROP TABLE IF EXISTS raw_data.globalapi_activity_translated;
+
 CREATE TABLE raw_data.globalapi_activity_translated AS 
 WITH activity_details AS (
     SELECT
