@@ -5,7 +5,7 @@ WITH raw_biodiversity_index AS (
         -- TRIM(SPLIT_PART(b.municipality, '(', 1)) AS city_name, 
         -- b._state AS region_code,  
         'age distribution' as indicator_name,
-        age_dependents_percent::numeric as indicator_score,
+        age_dependents_percent::numeric/100 as indicator_score,
         'percent' as indicator_units,
         2022 as indicator_year, 
         'current' as scenario_name,

@@ -1,3 +1,5 @@
+DROP TABLE IF EXISTS raw_data.cc_manual_input_activity;
+
 CREATE TABLE raw_data.cc_manual_input_activity AS
 WITH input_json AS (
     SELECT
