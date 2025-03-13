@@ -67,7 +67,7 @@ def transform(data, *args, **kwargs):
                 WHEN GPC_refno = 'III.3.2' THEN json_object(
                     'incineration-waste-outboundary-waste-composition', 'waste-composition-clinical-waste',
                     'incineration-waste-outboundary-technology', 'technology-continuous-incineration',
-                    'incineration-waste-outboundarye-boiler-type', 'boiler-type-stoker',
+                    'incineration-waste-outboundary-boiler-type', 'boiler-type-stoker',
                     'data-source', treatment_type
                 ) 
             END AS activity_subcategory_type

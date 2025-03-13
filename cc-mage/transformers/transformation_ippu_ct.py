@@ -13,7 +13,7 @@ def transform(data: DataFrame, *args, **kwargs):
     # activity-subcategory diccionary
     act_subcat = {
         'chemicals': {
-            'activity_name': 'total-industrial-process-ouput',
+            'activity_name': 'total-industrial-process-output',
             'industrial-processes-industry-type': 'industry-type-chemical-industry',
             'activity_subcategory_type1': 'industrial-processes-industry-type',
             'activity_subcategory_name1': 'industry-type-chemical-industry',
@@ -21,7 +21,7 @@ def transform(data: DataFrame, *args, **kwargs):
             'activity_subcategory_name2': 'industry-type-chemical-industry'
         }, 
         'other-chemicals': {
-            'activity_name': 'total-industrial-process-ouput',
+            'activity_name': 'total-industrial-process-output',
             'activity_subcategory_type1': 'industrial-processes-industry-type',
             'activity_subcategory_name1': 'industry-type-chemical-industry',
             'activity_subcategory_type2': 'industrial-processes-industry-names',
@@ -35,7 +35,7 @@ def transform(data: DataFrame, *args, **kwargs):
             'activity_subcategory_name2': 'industry-name-petrochemicals-production'
         }, 
         'other-metals': {
-            'activity_name': 'total-industrial-process-ouput',
+            'activity_name': 'total-industrial-process-output',
             'activity_subcategory_type1': 'industrial-processes-industry-type',
             'activity_subcategory_name1': 'industry-type-metal-industry',
             'activity_subcategory_type2': 'industrial-processes-industry-names',
@@ -49,7 +49,7 @@ def transform(data: DataFrame, *args, **kwargs):
             'activity_subcategory_name2': 'industry-name-aluminium-production'
         },
         'lime': {
-            'activity_name': 'total-industrial-process-ouput',
+            'activity_name': 'total-industrial-process-output',
             'activity_subcategory_type1': 'industrial-processes-industry-type',
             'activity_subcategory_name1': 'industry-type-mineral-industry',
             'activity_subcategory_type2': 'industrial-processes-industry-names',
@@ -63,7 +63,7 @@ def transform(data: DataFrame, *args, **kwargs):
             'activity_subcategory_name2': 'industry-names-glass'
         },
         'iron-and-steel': {
-            'activity_name': 'total-industrial-process-ouput',
+            'activity_name': 'total-industrial-process-output',
             'activity_subcategory_type1': 'industrial-processes-industry-type',
             'activity_subcategory_name1': 'industry-type-metal-industry',
             'activity_subcategory_type2': 'industrial-processes-industry-names',
@@ -84,7 +84,7 @@ def transform(data: DataFrame, *args, **kwargs):
             'activity_subcategory_name2': 'industry-name-textiles-and-leather'
         },
         'other-manufacturing': {
-            'activity_name': 'total-industrial-process-ouput',
+            'activity_name': 'total-industrial-process-output',
             'activity_subcategory_type1': 'industrial-processes-industry-type',
             'activity_subcategory_name1': 'industry-type-other-industries',
             'activity_subcategory_type2': 'industrial-processes-industry-names',
@@ -98,7 +98,7 @@ def transform(data: DataFrame, *args, **kwargs):
             'activity_subcategory_name2': 'industry-name-pulp-and-paper'
         },
         'food-beverage-tobacco': {
-            'activity_name': 'total-industrial-process-ouput',
+            'activity_name': 'total-industrial-process-output',
             'activity_subcategory_type1': 'industrial-processes-industry-type',
             'activity_subcategory_name1': 'industry-type-other-industries',
             'activity_subcategory_type2': 'industrial-processes-industry-names',
