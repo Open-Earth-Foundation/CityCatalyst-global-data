@@ -13,95 +13,95 @@ def transform(data: DataFrame, *args, **kwargs):
     # activity-subcategory diccionary
     act_subcat = {
         'chemicals': {
-            'activity_name': 'chemicals-production',
+            'activity_name': 'total-industrial-process-ouput',
             'industrial-processes-industry-type': 'industry-type-chemical-industry',
             'activity_subcategory_type1': 'industrial-processes-industry-type',
             'activity_subcategory_name1': 'industry-type-chemical-industry',
-            'activity_subcategory_type2': 'industrial-processes-industry-name',
+            'activity_subcategory_type2': 'industrial-processes-industry-names',
             'activity_subcategory_name2': 'industry-type-chemical-industry'
         }, 
         'other-chemicals': {
-            'activity_name': 'chemicals-production',
+            'activity_name': 'total-industrial-process-ouput',
             'activity_subcategory_type1': 'industrial-processes-industry-type',
             'activity_subcategory_name1': 'industry-type-chemical-industry',
-            'activity_subcategory_type2': 'industrial-processes-industry-name',
+            'activity_subcategory_type2': 'industrial-processes-industry-names',
             'activity_subcategory_name2': 'industry-type-chemical-industry'
         }, 
         'petrochemical-steam-cracking': {
             'activity_name': 'petrochemicals-production',
             'activity_subcategory_type1': 'industrial-processes-industry-type',
             'activity_subcategory_name1': 'industry-type-chemical-industry',
-            'activity_subcategory_type2': 'industrial-processes-industry-name',
+            'activity_subcategory_type2': 'industrial-processes-industry-names',
             'activity_subcategory_name2': 'industry-name-petrochemicals-production'
         }, 
         'other-metals': {
-            'activity_name': 'other-metals-production',
+            'activity_name': 'total-industrial-process-ouput',
             'activity_subcategory_type1': 'industrial-processes-industry-type',
             'activity_subcategory_name1': 'industry-type-metal-industry',
-            'activity_subcategory_type2': 'industrial-processes-industry-name',
+            'activity_subcategory_type2': 'industrial-processes-industry-names',
             'activity_subcategory_name2': 'industry-name-other-industries'
         },    
         'aluminum': {
-            'activity_name': 'aluminium-production',
+            'activity_name': 'total-industrial-process-ouput',
             'activity_subcategory_type1': 'industrial-processes-industry-type',
             'activity_subcategory_name1': 'industry-type-metal-industry',
-            'activity_subcategory_type2': 'industrial-processes-industry-name',
+            'activity_subcategory_type2': 'industrial-processes-industry-names',
             'activity_subcategory_name2': 'industry-name-aluminium-production'
         },
         'lime': {
-            'activity_name': 'lime-production',
+            'activity_name': 'total-industrial-process-ouput',
             'activity_subcategory_type1': 'industrial-processes-industry-type',
             'activity_subcategory_name1': 'industry-type-mineral-industry',
-            'activity_subcategory_type2': 'industrial-processes-industry-name',
+            'activity_subcategory_type2': 'industrial-processes-industry-names',
             'activity_subcategory_name2': 'industry-names-lime'
         },
         'glass': {
-            'activity_name': 'glass-production',
+            'activity_name': 'total-industrial-process-ouput',
             'activity_subcategory_type1': 'industrial-processes-industry-type',
             'activity_subcategory_name1': 'industry-type-mineral-industry',
-            'activity_subcategory_type2': 'industrial-processes-industry-name',
+            'activity_subcategory_type2': 'industrial-processes-industry-names',
             'activity_subcategory_name2': 'industry-names-glass'
         },
         'iron-and-steel': {
-            'activity_name': 'iron-and-steel-production',
+            'activity_name': 'total-industrial-process-ouput',
             'activity_subcategory_type1': 'industrial-processes-industry-type',
             'activity_subcategory_name1': 'industry-type-metal-industry',
-            'activity_subcategory_type2': 'industrial-processes-industry-name',
+            'activity_subcategory_type2': 'industrial-processes-industry-names',
             'activity_subcategory_name2': 'industry-name-iron-and-steel-production'
         }, 
         'cement': {
-            'activity_name': 'cememt-production',
+            'activity_name': 'total-industrial-process-ouput',
             'activity_subcategory_type1': 'industrial-processes-industry-type',
             'activity_subcategory_name1': 'industry-type-mineral-industry',
-            'activity_subcategory_type2': 'industrial-processes-industry-name',
+            'activity_subcategory_type2': 'industrial-processes-industry-names',
             'activity_subcategory_name2': 'industry-names-cement'
         }, 
         'textiles-leather-apparel': {
-            'activity_name': 'textiles-and-leather-production',
+            'activity_name': 'total-industrial-process-ouput',
             'activity_subcategory_type1': 'industrial-processes-industry-type',
             'activity_subcategory_name1': 'industry-type-other-industries',
-            'activity_subcategory_type2': 'industrial-processes-industry-name',
+            'activity_subcategory_type2': 'industrial-processes-industry-names',
             'activity_subcategory_name2': 'industry-name-textiles-and-leather'
         },
         'other-manufacturing': {
-            'activity_name': 'other-manufacturing-production',
+            'activity_name': 'total-industrial-process-ouput',
             'activity_subcategory_type1': 'industrial-processes-industry-type',
             'activity_subcategory_name1': 'industry-type-other-industries',
-            'activity_subcategory_type2': 'industrial-processes-industry-name',
+            'activity_subcategory_type2': 'industrial-processes-industry-names',
             'activity_subcategory_name2': 'industry-name-other-industries'
         }, 
         'pulp-and-paper': {
-            'activity_name': 'pulp-and-paper-production',
+            'activity_name': 'total-industrial-process-ouput',
             'activity_subcategory_type1': 'industrial-processes-industry-type',
             'activity_subcategory_name1': 'industry-type-other-industries',
-            'activity_subcategory_type2': 'industrial-processes-industry-name',
+            'activity_subcategory_type2': 'industrial-processes-industry-names',
             'activity_subcategory_name2': 'industry-name-pulp-and-paper'
         },
         'food-beverage-tobacco': {
-            'activity_name': 'food-beverage-tobacco-production',
+            'activity_name': 'total-industrial-process-ouput',
             'activity_subcategory_type1': 'industrial-processes-industry-type',
             'activity_subcategory_name1': 'industry-type-other-industries',
-            'activity_subcategory_type2': 'industrial-processes-industry-name',
+            'activity_subcategory_type2': 'industrial-processes-industry-names',
             'activity_subcategory_name2': 'industry-name-food-and-drink'
         }
     }
