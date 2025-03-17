@@ -9,25 +9,25 @@ WITH emissions_ct AS (
         gpc_refno,
         b.iso2_code as country_code,
         emissions_year,
-        emissions_value,
+        sum(emissions_value) as emissions_value,
         emissions_units,
         unit_denominator,
         gas_name,
         (MD5(CONCAT_WS('-', activity_name, activity_subcategory_type))::UUID) AS activity_id,
         activity_name,
         activity_subcategory_type,
-        activity_units,
-        activity_value,
-        emissionsfactor_value,
+        max(activity_units) as activity_units,
+        sum(activity_value) as activity_value,
+        avg(emissionsfactor_value) as emissionsfactor_value,
         a.actor_id,
         NULL::date AS active_from,
         NULL::date AS active_to,
         ST_GeometryType(ST_MakePoint(lon, lat)) AS geometry_type,
-        ST_MakePoint(lon, lat) AS geometry
-    FROM modelled.fugitivie_staging a
+        ST_SetSRID(ST_MakePoint(lon, lat), 4326) AS geometry
+    FROM raw_data.ippu_ct_staging a
     LEFT JOIN raw_data.country_codes b 
 	ON a.actor_id = b.iso3_code
-	GROUP BY actor_id, emissionsfactor_value, activity_value, activity_units, unit_denominator, emissions_units, emissions_value, gpc_refno, country_code, emissions_year, gas_name, activity_name, activity_subcategory_type, ST_MakePoint(lon, lat)
+	GROUP BY actor_id, unit_denominator, emissions_units, gpc_refno, country_code, emissions_year, gas_name, activity_name, activity_subcategory_type, ST_MakePoint(lon, lat)
 )
 SELECT  
     datasource_name,

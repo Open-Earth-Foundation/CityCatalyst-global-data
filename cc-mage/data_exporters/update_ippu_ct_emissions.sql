@@ -37,7 +37,7 @@ INSERT INTO modelled.emissions (
     geometry_id
 FROM modelled.city_polygon b 
 INNER JOIN modelled.emissions_staging_full a
-ON ST_Intersects(ST_SetSRID(a.geometry, 4326), ST_SetSRID(b.geometry, 4326))
+ON ST_Intersects(b.geometry, a.geometry)
 AND a.country_code = b.country_code 
 ON CONFLICT (emissions_id) DO UPDATE SET
     datasource_name = EXCLUDED.datasource_name,

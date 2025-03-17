@@ -1,0 +1,136 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: markdown
+  name: data_biome
+  retry_config: null
+  status: updated
+  timeout: null
+  type: markdown
+  upstream_blocks: []
+  uuid: data_biome
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - load_br_biome_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_br_biome
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_br_biome
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - br_city_context_staging
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_br_biome_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_br_biome
+  uuid: load_br_biome_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_loaders/load_icare_city_locode.py
+  downstream_blocks:
+  - load_icare_city_locode_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_icare_city_locode
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_icare_city_locode
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_exporters/load_icare_city_locode_db.py
+  downstream_blocks:
+  - br_city_context_staging
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_icare_city_locode_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_icare_city_locode
+  uuid: load_icare_city_locode_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: br_city_context_staging
+  retry_config: null
+  status: updated
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_icare_city_locode_db
+  - load_br_biome_db
+  uuid: br_city_context_staging
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2025-03-17 15:00:51.050193+00:00'
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: cap_br_city_context
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: cap_br_city_context
+variables:
+  bucket_name: test-global-api
+variables_dir: /home/src/mage_data/cc-mage
+widgets: []
