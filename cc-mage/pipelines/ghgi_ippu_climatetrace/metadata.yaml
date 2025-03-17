@@ -10,12 +10,12 @@ blocks:
   language: python
   name: load_raw_ippu_ct
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: data_loader
   upstream_blocks: []
   uuid: load_raw_ippu_ct
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration: {}
   downstream_blocks:
@@ -32,7 +32,7 @@ blocks:
   upstream_blocks:
   - load_raw_ippu_ct
   uuid: cleaning_ippu_ct
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration: {}
   downstream_blocks:
@@ -159,7 +159,7 @@ blocks:
   language: sql
   name: locode_transformation
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: transformer
   upstream_blocks:
@@ -183,7 +183,7 @@ blocks:
   language: sql
   name: update_ippu_ct_emissions
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: data_exporter
   upstream_blocks:

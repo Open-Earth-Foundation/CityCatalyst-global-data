@@ -28,7 +28,7 @@ def transform(data: DataFrame, *args, **kwargs):
             'activity_subcategory_name2': 'industry-type-chemical-industry'
         }, 
         'petrochemical-steam-cracking': {
-            'activity_name': 'petrochemicals-production',
+            'activity_name': 'total-industrial-process-output',
             'activity_subcategory_type1': 'industrial-processes-industry-type',
             'activity_subcategory_name1': 'industry-type-chemical-industry',
             'activity_subcategory_type2': 'industrial-processes-industry-names',
@@ -42,7 +42,7 @@ def transform(data: DataFrame, *args, **kwargs):
             'activity_subcategory_name2': 'industry-name-other-industries'
         },    
         'aluminum': {
-            'activity_name': 'total-industrial-process-ouput',
+            'activity_name': 'total-industrial-process-output',
             'activity_subcategory_type1': 'industrial-processes-industry-type',
             'activity_subcategory_name1': 'industry-type-metal-industry',
             'activity_subcategory_type2': 'industrial-processes-industry-names',
@@ -56,7 +56,7 @@ def transform(data: DataFrame, *args, **kwargs):
             'activity_subcategory_name2': 'industry-names-lime'
         },
         'glass': {
-            'activity_name': 'total-industrial-process-ouput',
+            'activity_name': 'total-industrial-process-output',
             'activity_subcategory_type1': 'industrial-processes-industry-type',
             'activity_subcategory_name1': 'industry-type-mineral-industry',
             'activity_subcategory_type2': 'industrial-processes-industry-names',
@@ -77,7 +77,7 @@ def transform(data: DataFrame, *args, **kwargs):
             'activity_subcategory_name2': 'industry-names-cement'
         }, 
         'textiles-leather-apparel': {
-            'activity_name': 'total-industrial-process-ouput',
+            'activity_name': 'total-industrial-process-output',
             'activity_subcategory_type1': 'industrial-processes-industry-type',
             'activity_subcategory_name1': 'industry-type-other-industries',
             'activity_subcategory_type2': 'industrial-processes-industry-names',
