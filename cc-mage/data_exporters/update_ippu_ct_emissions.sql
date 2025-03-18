@@ -18,7 +18,7 @@ INSERT INTO modelled.emissions (
     geometry_id
 )
  SELECT 
-    (MD5(CONCAT_WS('-', city_id, emissions_year, gpc_refno, gpcmethod_id, gas_name, emissionfactor_id, activity_id, geometry_id))::UUID) AS emissions_id,
+    (MD5(CONCAT_WS('-', locode, emissions_year, gpc_refno, gpcmethod_id, gas_name, emissionfactor_id, activity_id, geometry_id))::UUID) AS emissions_id,
     'ClimateTRACEv2024' as datasource_name,
     b.locode as actor_id,
     b.city_id,
@@ -37,7 +37,7 @@ INSERT INTO modelled.emissions (
     geometry_id
 FROM modelled.city_polygon b 
 INNER JOIN modelled.emissions_staging_full a
-ON ST_Intersects(ST_Transform(ST_SetSRID(a.geometry, 4326), 4326), b.geometry)
+ON ST_Intersects(b.geometry, a.geometry)
 AND a.country_code = b.country_code 
 ON CONFLICT (emissions_id) DO UPDATE SET
     datasource_name = EXCLUDED.datasource_name,
@@ -59,4 +59,4 @@ ON CONFLICT (emissions_id) DO UPDATE SET
 
 
 DROP TABLE modelled.emissions_staging_full;
-DROP TABLE modelled.ippu_ct_staging;
+DROP TABLE raw_data.ippu_ct_staging;

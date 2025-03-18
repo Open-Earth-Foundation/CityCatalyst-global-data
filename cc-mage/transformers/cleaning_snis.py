@@ -7,8 +7,8 @@ if 'test' not in globals():
 @transformer
 def transform(data, *args, **kwargs):
 
-    column_names = ['municipality_name', 'service_type', 'total_resident_population','number_municipalities', 'collected', 'treated', 'imported', 'exported']
-    data.columns = column_names
+    #column_names = ['municipality_name', 'service_type', 'total_resident_population','number_municipalities', 'collected', 'treated', 'imported', 'exported']
+    #data.columns = column_names
 
     # Select only the rows related to the sewer system information and one mucipality atended by the service
     data = data[~data['service_type'].isin(['Água']) & (data['number_municipalities'] == 1)]

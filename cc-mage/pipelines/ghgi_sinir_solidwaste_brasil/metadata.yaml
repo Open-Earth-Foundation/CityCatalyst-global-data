@@ -80,7 +80,7 @@ blocks:
   language: python
   name: incineration_calculation_sinir
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: transformer
   upstream_blocks:
@@ -97,13 +97,13 @@ blocks:
   language: python
   name: biological_calculation_sinir
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: transformer
   upstream_blocks:
   - cleaning_sinir
   uuid: biological_calculation_sinir
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration: {}
   downstream_blocks:
@@ -123,7 +123,7 @@ blocks:
   - clinical_waste_calculation_sinir
   - incineration_calculation_sinir
   uuid: joining_solidwaste_calculation
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration: {}
   downstream_blocks:
@@ -142,7 +142,7 @@ blocks:
   upstream_blocks:
   - joining_solidwaste_calculation
   uuid: sinir_staging
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: postgres
@@ -166,7 +166,7 @@ blocks:
   upstream_blocks:
   - sinir_staging
   uuid: update_sinir_sector_activity
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: postgres
@@ -191,7 +191,7 @@ blocks:
   upstream_blocks:
   - sinir_staging
   uuid: update_sinir_emission_factors
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: postgres
@@ -212,7 +212,7 @@ blocks:
   language: sql
   name: update_sinir_emissions
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: data_loader
   upstream_blocks:

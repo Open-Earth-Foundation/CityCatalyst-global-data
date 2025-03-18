@@ -15,7 +15,8 @@ blocks:
   status: executed
   timeout: null
   type: data_loader
-  upstream_blocks: []
+  upstream_blocks:
+  - load_icare_city_locode_db
   uuid: load_icare_sea_level
 - all_upstream_blocks_executed: true
   color: null
@@ -51,7 +52,7 @@ blocks:
   language: sql
   name: update_sea_level_indicator
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: transformer
   upstream_blocks:
@@ -74,7 +75,8 @@ blocks:
   status: executed
   timeout: null
   type: data_loader
-  upstream_blocks: []
+  upstream_blocks:
+  - load_icare_city_locode_db
   uuid: load_icare_sv_urban
 - all_upstream_blocks_executed: true
   color: null
@@ -133,7 +135,8 @@ blocks:
   status: executed
   timeout: null
   type: data_loader
-  upstream_blocks: []
+  upstream_blocks:
+  - load_icare_city_locode_db
   uuid: load_biodiversity_area
 - all_upstream_blocks_executed: true
   color: null
@@ -192,7 +195,8 @@ blocks:
   status: executed
   timeout: null
   type: data_loader
-  upstream_blocks: []
+  upstream_blocks:
+  - load_icare_city_locode_db
   uuid: load_conservation_area
 - all_upstream_blocks_executed: true
   color: null
@@ -251,7 +255,8 @@ blocks:
   status: executed
   timeout: null
   type: data_loader
-  upstream_blocks: []
+  upstream_blocks:
+  - load_icare_city_locode_db
   uuid: load_protected_area
 - all_upstream_blocks_executed: true
   color: null
@@ -287,7 +292,7 @@ blocks:
   language: sql
   name: update_protected_area_indicator
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: transformer
   upstream_blocks:
@@ -310,7 +315,8 @@ blocks:
   status: executed
   timeout: null
   type: data_loader
-  upstream_blocks: []
+  upstream_blocks:
+  - load_icare_city_locode_db
   uuid: load_icare_water_security
 - all_upstream_blocks_executed: true
   color: null
@@ -368,7 +374,8 @@ blocks:
   status: executed
   timeout: null
   type: data_loader
-  upstream_blocks: []
+  upstream_blocks:
+  - load_icare_city_locode_db
   uuid: load_icare_age_dependants
 - all_upstream_blocks_executed: true
   color: null
@@ -429,7 +436,8 @@ blocks:
   status: executed
   timeout: null
   type: data_loader
-  upstream_blocks: []
+  upstream_blocks:
+  - load_icare_city_locode_db
   uuid: load_icare_power_plants
 - all_upstream_blocks_executed: true
   color: null
@@ -488,7 +496,8 @@ blocks:
   status: executed
   timeout: null
   type: data_loader
-  upstream_blocks: []
+  upstream_blocks:
+  - load_icare_city_locode_db
   uuid: load_icare_urban_green
 - all_upstream_blocks_executed: true
   color: null
@@ -547,7 +556,8 @@ blocks:
   status: executed
   timeout: null
   type: data_loader
-  upstream_blocks: []
+  upstream_blocks:
+  - load_icare_city_locode_db
   uuid: load_icare_road_density
 - all_upstream_blocks_executed: true
   color: null
@@ -583,7 +593,7 @@ blocks:
   language: sql
   name: update_road_density_indicator
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: transformer
   upstream_blocks:
@@ -606,7 +616,8 @@ blocks:
   status: executed
   timeout: null
   type: data_loader
-  upstream_blocks: []
+  upstream_blocks:
+  - load_icare_city_locode_db
   uuid: load_icare_railway_density
 - all_upstream_blocks_executed: true
   color: null
@@ -665,7 +676,8 @@ blocks:
   status: executed
   timeout: null
   type: data_loader
-  upstream_blocks: []
+  upstream_blocks:
+  - load_icare_city_locode_db
   uuid: load_water_loss_rate
 - all_upstream_blocks_executed: true
   color: null
@@ -701,7 +713,7 @@ blocks:
   language: sql
   name: update_indicator_water_loss
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: transformer
   upstream_blocks:
@@ -724,7 +736,8 @@ blocks:
   status: executed
   timeout: null
   type: data_loader
-  upstream_blocks: []
+  upstream_blocks:
+  - load_icare_city_locode_db
   uuid: load_icare_elec
 - all_upstream_blocks_executed: true
   color: null
@@ -783,7 +796,8 @@ blocks:
   status: executed
   timeout: null
   type: data_loader
-  upstream_blocks: []
+  upstream_blocks:
+  - load_icare_city_locode_db
   uuid: load_urban_green_area
 - all_upstream_blocks_executed: true
   color: null
@@ -842,7 +856,8 @@ blocks:
   status: executed
   timeout: null
   type: data_loader
-  upstream_blocks: []
+  upstream_blocks:
+  - load_icare_city_locode_db
   uuid: load_icare_malnutrition
 - all_upstream_blocks_executed: true
   color: null
@@ -901,7 +916,8 @@ blocks:
   status: executed
   timeout: null
   type: data_loader
-  upstream_blocks: []
+  upstream_blocks:
+  - load_icare_city_locode_db
   uuid: load_icare_port
 - all_upstream_blocks_executed: true
   color: null
@@ -943,6 +959,238 @@ blocks:
   upstream_blocks:
   - load_icare_port_db
   uuid: update_indicator_port
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    export_write_policy: append
+  downstream_blocks:
+  - load_icare_deforested_area_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_icare_deforested_area
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks:
+  - load_icare_city_locode_db
+  uuid: load_icare_deforested_area
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - update_indicator_deforested_area
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_icare_deforested_area_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_icare_deforested_area
+  uuid: load_icare_deforested_area_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_indicator_deforested_area
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_icare_deforested_area_db
+  uuid: update_indicator_deforested_area
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_loaders/load_icare_city_locode.py
+  downstream_blocks:
+  - load_icare_city_locode_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_icare_city_locode
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_icare_city_locode
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_exporters/load_icare_city_locode_db.py
+  downstream_blocks:
+  - load_icare_deforested_area
+  - load_icare_urban_drainage
+  - load_icare_port
+  - load_icare_malnutrition
+  - load_urban_green_area
+  - load_icare_elec
+  - load_water_loss_rate
+  - load_icare_railway_density
+  - load_icare_road_density
+  - load_icare_urban_green
+  - load_icare_power_plants
+  - load_icare_age_dependants
+  - load_icare_water_security
+  - load_protected_area
+  - load_conservation_area
+  - load_biodiversity_area
+  - load_icare_sv_urban
+  - load_icare_sea_level
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_icare_city_locode_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_icare_city_locode
+  uuid: load_icare_city_locode_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - load_icare_urban_drainage_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_icare_urban_drainage
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks:
+  - load_icare_city_locode_db
+  uuid: load_icare_urban_drainage
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - update_indicator_urban_drainage
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_icare_urban_drainage_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_icare_urban_drainage
+  uuid: load_icare_urban_drainage_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - load_icare_population
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_indicator_urban_drainage
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_icare_urban_drainage_db
+  uuid: update_indicator_urban_drainage
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    export_write_policy: append
+  downstream_blocks:
+  - load_icare_population_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_icare_population
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks:
+  - update_indicator_urban_drainage
+  uuid: load_icare_population
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - update_population_indicator
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_icare_population_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_icare_population
+  uuid: load_icare_population_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_population_indicator
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_icare_population_db
+  uuid: update_population_indicator
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}

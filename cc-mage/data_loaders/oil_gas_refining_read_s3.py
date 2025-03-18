@@ -7,6 +7,10 @@ if 'data_loader' not in globals():
 if 'test' not in globals():
     from mage_ai.data_preparation.decorators import test
 
+from os import path
+import pandas as pd
+from io import BytesIO
+
 
 @data_loader
 def load_from_s3_bucket(*args, **kwargs):
@@ -18,14 +22,41 @@ def load_from_s3_bucket(*args, **kwargs):
     """
     config_path = path.join(get_repo_path(), 'io_config.yaml')
     config_profile = 'default'
+    
+    bucket_name = kwargs['bucket_name']
+    route = 'raw_data/climateTRACE'
 
-    bucket_name = kwargs['bucket_name'] # should be a variable to we can easily run in production
-    object_key = 'climate_trace/oil_and_gas_production/oil-and-gas-refining_emissions_sources.csv'
+    object_keys = [
+        f'{route}/oil-and-gas-production_emissions_sources_ch4.csv',
+        f'{route}/oil-and-gas-production_emissions_sources_co2.csv',
+        f'{route}/oil-and-gas-refining_emissions_sources_ch4.csv',
+        f'{route}/oil-and-gas-refining_emissions_sources_co2.csv',
+        f'{route}/oil-and-gas-transport_emissions_sources_ch4.csv',
+        f'{route}/oil-and-gas-transport_emissions_sources_co2.csv'
+    ]
 
-    return S3.with_config(ConfigFileLoader(config_path, config_profile)).load(
-        bucket_name,
-        object_key,
-    )
+    s3 = S3.with_config(ConfigFileLoader(config_path, config_profile))
+    data_frames = []
+
+    for object_key in object_keys:
+        try:
+            file_obj = s3.client.get_object(Bucket=bucket_name, Key=object_key)['Body'].read()
+            data = pd.read_csv(BytesIO(file_obj))
+            data_frames.append(data)
+        except Exception as e:
+            print(f'Error loading {object_key}: {str(e)}')
+            continue
+
+    # Concatenate all DataFrames into one
+    combined_data = pd.concat(data_frames, ignore_index=True)
+
+    # Ensure all columns have consistent types
+    for col in combined_data.columns:
+        if combined_data[col].dtype == 'object':
+         # Convert object columns to string to handle mixed types
+         combined_data[col] = combined_data[col].astype(str)
+
+    return combined_data
 
 
 @test

@@ -1,8 +1,9 @@
 WITH raw_index AS (
     SELECT 
         cd_mun municipailty_id,
-        TRIM(SPLIT_PART(b.municipality, '(', 1)) AS city_name, 
-        b._state AS region_code,  
+        b.locode,
+        -- TRIM(SPLIT_PART(b.municipality, '(', 1)) AS city_name, 
+        -- b._state AS region_code,  
         'energy power plants' as indicator_name,
         NUMPOINTS::numeric as indicator_score,
         'Number of plants' as indicator_units,
@@ -10,8 +11,9 @@ WITH raw_index AS (
         'current' as scenario_name,
         'EPE' as datasource
     FROM raw_data.ccra_icare_power_plants a
-    LEFT JOIN raw_data.ccra_ips_indicator b 
+    LEFT JOIN raw_data.icare_city_to_locode b 
     ON a.cd_mun = b.municipality_code
+    WHERE locode IS NOT NULL 
 ),
 percentiles AS (
     SELECT
@@ -27,8 +29,8 @@ percentiles AS (
 ),
 index_scaled AS (
     SELECT 
-        i.city_name, 
-        i.region_code, 
+        i.locode, 
+        -- i.region_code, 
         i.indicator_name, 
         i.indicator_score, 
         indicator_year, 
@@ -49,10 +51,10 @@ index_scaled AS (
 ),
 upsert_data AS (
     SELECT 
-        (MD5(CONCAT_WS('-', b.locode, indicator_name, a.datasource, a.indicator_year, a.scenario_name))::UUID) AS id,
-        b.locode AS actor_id, 
-        a.city_name,
-        a.region_code,
+        (MD5(CONCAT_WS('-', a.locode, indicator_name, a.datasource, a.indicator_year, a.scenario_name))::UUID) AS id,
+        a.locode AS actor_id, 
+        -- a.city_name,
+        -- a.region_code,
         indicator_name,
         indicator_score,
         a.indicator_units,
@@ -62,10 +64,6 @@ upsert_data AS (
         datasource    
     FROM 
         index_scaled a
-    INNER JOIN 
-        modelled.city_polygon b ON REPLACE(LOWER(TRIM(a.city_name)), '-', ' ') = REPLACE(LOWER(TRIM(b.city_name)), '-', ' ')
-        AND a.region_code = b.region_code
-        AND b.country_code = 'BR'
 )
 INSERT INTO modelled.ccra_indicator (
     id,

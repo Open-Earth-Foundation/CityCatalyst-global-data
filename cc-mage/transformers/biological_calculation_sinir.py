@@ -1,4 +1,6 @@
 import numpy as np
+import duckdb 
+
 if 'transformer' not in globals():
     from mage_ai.data_preparation.decorators import transformer
 if 'test' not in globals():
@@ -17,7 +19,7 @@ def transform(data, *args, **kwargs):
 
     # reformat the df
     data = data.melt(
-        id_vars=['municipality_where_the_Unit_is', 'year', 'unit_type', 'municipality_sending', 'total_SW', 'actor_name', 'columns_match', 'treatment_type'], 
+        id_vars=['municipality_code', 'IBGE_code', 'UF', 'region_name', 'municipality_where_the_Unit_is', 'year', 'unit_type', 'municipality_sending', 'sending_region_code', 'total_SW', 'actor_name', 'columns_match', 'treatment_type'], 
         value_vars=['CH4', 'N2O'], 
         var_name='gas_name', 
         value_name='emissionfactor_value')
@@ -30,30 +32,36 @@ def transform(data, *args, **kwargs):
 
     # assign the emissions units and the activity name
     data['emissions_units'] = 'kg'
-    data['activity_name'] = 'composting of organic waste'
+    data['activity_name'] = 'mass-of-organic-waste-treated'
 
     # assign the GPC reference number based on where the waste is treated
     data['GPC_refno'] = np.where(data['columns_match'] == True, 'III.2.1', 'III.2.2')
 
-    # create the metadata column to store the subcategory information
-    data["activity_subcategory_type"] = data.apply(
-        lambda row: {
-            "activity_subcategory_type1": 'waste_type',
-            "activity_subcategory_typename1": 'organic waste',
-            "activity_subcategory_type2": 'treatment_type',
-            "activity_subcategory_typename2": row['treatment_type'],
-            "activity_subcategory_type3": 'management_level',
-            "activity_subcategory_typename3": 'managed',
-            "activity_subcategory_type4": 'waste_state',
-            "activity_subcategory_typename4": 'dry waste'
-        },
-        axis=1,
-    )
+    con = duckdb.connect(database=':memory:')
+    con.register('composting_df', data)
+
+    query = """
+    SELECT *,
+            CASE
+                WHEN GPC_refno = 'III.2.1' THEN json_object(
+                    'biological-treatment-inboundary-treatment-type','treatment-type-composting',
+                    'biological-treatment-inboundary-waste-state','waste-state-dry-waste'
+                )
+                WHEN GPC_refno = 'III.2.2' THEN json_object(
+                'biological-treatment-outboundary-treatment-type','treatment-type-composting',
+                'biological-treatment-outboundary-waste-state','waste-state-dry-waste'
+                ) 
+            END AS activity_subcategory_type
+    FROM composting_df
+    """
+
+    # Execute the query and fetch the result into a DataFrame
+    data_final = con.execute(query).fetchdf()
 
     # drop unnecessary columns
-    data.drop(columns=['municipality_where_the_Unit_is', 'unit_type', 'municipality_sending', 'columns_match', 'treatment_type'], inplace=True)
+    data_final.drop(columns=['municipality_code', 'IBGE_code', 'UF', 'region_name', 'municipality_where_the_Unit_is', 'unit_type', 'columns_match', 'treatment_type'], inplace=True)
 
-    return data
+    return data_final
 
 
 @test

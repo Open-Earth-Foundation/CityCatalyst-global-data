@@ -4,10 +4,10 @@ if 'custom' not in globals():
     from mage_ai.data_preparation.decorators import custom
 if 'test' not in globals():
     from mage_ai.data_preparation.decorators import test
-
+from pandas import DataFrame
 
 @custom
-def transform_custom(*args, **kwargs):
+def transform_custom(data: DataFrame, *args, **kwargs):
     """
     args: The output from any upstream parent blocks (if applicable)
 

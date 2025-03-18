@@ -85,7 +85,7 @@ blocks:
   language: sql
   name: upsert_brazil_cities_1
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: data_loader
   upstream_blocks:

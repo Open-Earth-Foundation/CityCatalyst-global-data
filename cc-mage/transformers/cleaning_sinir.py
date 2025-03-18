@@ -39,13 +39,15 @@ def transform(data, *args, **kwargs):
     data = data[11:]
 
     # drop unnecessary columns
-    data = data.drop(columns=['municipality_code', 'IBGE_code','region_name', 'region_code', 'id_population', 'unit_code', 'unit_name', 'UF', 'dom_plus_pub', 'clinical', 'construction', 'pruning', 'others'])
+    data = data.drop(columns=['id_population', 'unit_code', 'unit_name', 'dom_plus_pub', 'clinical', 'construction', 'pruning', 'others'])
 
     # extraction of the name of the actor, which in this case is the municipality that is sending the waste to the unit (treatment side)
     data['actor_name'] = data['municipality_sending'].str.split('/').str[0]
+    data['sending_region_code'] = data['municipality_sending'].str.split('/').str[1]
 
-    # check if the municipality where the unit is located is the same as the actor name
-    data['columns_match'] = data['municipality_where_the_Unit_is'] == data['actor_name']
+    # Check if the municipality where the unit is located is the same as the actor name and if the region codes match
+    data['columns_match'] = (data['municipality_where_the_Unit_is'] == data['actor_name']) & (data['UF'] == data['sending_region_code'])
+
 
     # Ensure `total_SW` column is numeric
     data['total_SW'] = pd.to_numeric(data['total_SW'], errors='coerce').fillna(0)

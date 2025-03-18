@@ -1,24 +1,26 @@
 WITH raw_biodiversity_index AS (
     SELECT 
         cd_mun municipailty_id,
-        TRIM(SPLIT_PART(b.municipality, '(', 1)) AS city_name, 
-        b._state AS region_code,  
+        b.locode,
+        -- TRIM(SPLIT_PART(b.municipality, '(', 1)) AS city_name, 
+        -- b._state AS region_code,  
         'age distribution' as indicator_name,
-        age_dependents_percent::numeric as indicator_score,
+        age_dependents_percent::numeric/100 as indicator_score,
         'percent' as indicator_units,
         2022 as indicator_year, 
         'current' as scenario_name,
         'IBGE' as datasource
     FROM raw_data.ccra_icare_age_distribution a
-    LEFT JOIN raw_data.ccra_ips_indicator b 
+    LEFT JOIN raw_data.icare_city_to_locode b 
     ON a.cd_mun = b.municipality_code
+    WHERE locode IS NOT NULL 
 ),
 upsert_data AS (
     SELECT 
-        (MD5(CONCAT_WS('-', b.locode, indicator_name, a.datasource, a.indicator_year, a.scenario_name))::UUID) AS id,
-        b.locode AS actor_id, 
-        a.city_name,
-        a.region_code,
+        (MD5(CONCAT_WS('-', a.locode, indicator_name, a.datasource, a.indicator_year, a.scenario_name))::UUID) AS id,
+        a.locode AS actor_id, 
+        -- a.city_name,
+        -- a.region_code,
         indicator_name,
         indicator_score,
         a.indicator_units,
@@ -28,10 +30,6 @@ upsert_data AS (
         datasource    
     FROM 
         raw_biodiversity_index a
-    INNER JOIN 
-        modelled.city_polygon b ON REPLACE(LOWER(TRIM(a.city_name)), '-', ' ') = REPLACE(LOWER(TRIM(b.city_name)), '-', ' ')
-        AND a.region_code = b.region_code
-        AND b.country_code = 'BR'
 )
 INSERT INTO modelled.ccra_indicator (
     id,

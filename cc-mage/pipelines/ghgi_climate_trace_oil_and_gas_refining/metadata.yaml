@@ -21,7 +21,7 @@ blocks:
   color: null
   configuration: {}
   downstream_blocks:
-  - cleaning_oil_gas_refining_ct
+  - cleaning_fugitive_oil_ct
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -49,41 +49,22 @@ blocks:
   upstream_blocks: []
   uuid: stage_1
 - all_upstream_blocks_executed: false
-  color: teal
-  configuration: {}
-  downstream_blocks:
-  - ingest_raw_oil_gas_refining_ct
-  - activity_oil_gas_refining_ct
-  - ef_oil_gas_refining_ct
-  - emissions_staging_ct
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: cleaning_oil_gas_refining_ct
-  retry_config: null
-  status: executed
-  timeout: null
-  type: custom
-  upstream_blocks:
-  - oil_gas_refining_read_s3
-  uuid: cleaning_oil_gas_refining_ct
-- all_upstream_blocks_executed: false
   color: null
   configuration: {}
-  downstream_blocks: []
+  downstream_blocks:
+  - fugitive_ct_staging
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: ingest_raw_oil_gas_refining_ct
+  name: cleaning_fugitive_oil_ct
   retry_config: null
   status: executed
   timeout: null
-  type: data_exporter
+  type: transformer
   upstream_blocks:
-  - cleaning_oil_gas_refining_ct
-  uuid: ingest_raw_oil_gas_refining_ct
+  - oil_gas_refining_read_s3
+  uuid: cleaning_fugitive_oil_ct
 - all_upstream_blocks_executed: true
   color: null
   configuration: {}
@@ -100,39 +81,53 @@ blocks:
   upstream_blocks: []
   uuid: stage2
 - all_upstream_blocks_executed: false
-  color: purple
-  configuration: {}
-  downstream_blocks:
-  - populate_activity_subcategory
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: activity_oil_gas_refining_ct
-  retry_config: null
-  status: executed
-  timeout: null
-  type: custom
-  upstream_blocks:
-  - cleaning_oil_gas_refining_ct
-  uuid: activity_oil_gas_refining_ct
-- all_upstream_blocks_executed: false
   color: null
-  configuration: {}
+  configuration:
+    file_path: data_exporters/fugitive_ct_staging.py
+    file_source:
+      path: data_exporters/fugitive_ct_staging.py
   downstream_blocks:
-  - update_ct_oil_activity_subcategory
+  - update_fugitive_ct_sector_activity
+  - update_fugitive_ct_ef
+  - update_fugitive_ct_emissions
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: populate_activity_subcategory
+  name: fugitive_ct_staging
   retry_config: null
   status: executed
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - activity_oil_gas_refining_ct
-  uuid: populate_activity_subcategory
+  - cleaning_fugitive_oil_ct
+  uuid: fugitive_ct_staging
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    file_path: data_exporters/update_fugitive_ct_sector_activity.sql
+    file_source:
+      path: data_exporters/update_fugitive_ct_sector_activity.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_fugitive_ct_sector_activity
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - fugitive_ct_staging
+  uuid: update_fugitive_ct_sector_activity
 - all_upstream_blocks_executed: false
   color: null
   configuration:
@@ -148,89 +143,14 @@ blocks:
   executor_type: local_python
   has_callback: false
   language: sql
-  name: update_ct_oil_activity_subcategory
+  name: update_fugitive_ct_ef
   retry_config: null
   status: updated
   timeout: null
-  type: data_loader
-  upstream_blocks:
-  - populate_activity_subcategory
-  uuid: update_ct_oil_activity_subcategory
-- all_upstream_blocks_executed: false
-  color: purple
-  configuration: {}
-  downstream_blocks:
-  - populate_emission_factor
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: ef_oil_gas_refining_ct
-  retry_config: null
-  status: executed
-  timeout: null
-  type: custom
-  upstream_blocks:
-  - cleaning_oil_gas_refining_ct
-  uuid: ef_oil_gas_refining_ct
-- all_upstream_blocks_executed: false
-  color: null
-  configuration: {}
-  downstream_blocks:
-  - update_ct_oil_ef
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: populate_emission_factor
-  retry_config: null
-  status: executed
-  timeout: null
   type: data_exporter
   upstream_blocks:
-  - ef_oil_gas_refining_ct
-  uuid: populate_emission_factor
-- all_upstream_blocks_executed: false
-  color: null
-  configuration:
-    data_provider: postgres
-    data_provider_profile: default
-    dbt: {}
-    disable_query_preprocessing: false
-    export_write_policy: append
-    limit: 1000
-    use_raw_sql: true
-  downstream_blocks: []
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: sql
-  name: update_ct_oil_ef
-  retry_config: null
-  status: updated
-  timeout: null
-  type: data_loader
-  upstream_blocks:
-  - populate_emission_factor
-  uuid: update_ct_oil_ef
-- all_upstream_blocks_executed: false
-  color: null
-  configuration: {}
-  downstream_blocks:
-  - locode_transformation
-  - update_city_oil_gpcmethod
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: emissions_staging_ct
-  retry_config: null
-  status: executed
-  timeout: null
-  type: data_exporter
-  upstream_blocks:
-  - cleaning_oil_gas_refining_ct
-  uuid: emissions_staging_ct
+  - fugitive_ct_staging
+  uuid: update_fugitive_ct_ef
 - all_upstream_blocks_executed: true
   color: null
   configuration:
@@ -249,12 +169,12 @@ blocks:
   language: sql
   name: ct_country_code_lookup
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: transformer
   upstream_blocks: []
   uuid: ct_country_code_lookup
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     data_provider: postgres
@@ -264,19 +184,17 @@ blocks:
     export_write_policy: append
     limit: 1000
     use_raw_sql: true
-  downstream_blocks:
-  - update_ct_oil_emissions
+  downstream_blocks: []
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: sql
   name: locode_transformation
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: transformer
   upstream_blocks:
-  - emissions_staging_ct
   - ct_country_code_lookup
   uuid: locode_transformation
 - all_upstream_blocks_executed: false
@@ -294,39 +212,14 @@ blocks:
   executor_type: local_python
   has_callback: false
   language: sql
-  name: update_ct_oil_emissions
+  name: update_fugitive_ct_emissions
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - locode_transformation
-  - update_city_oil_gpcmethod
-  uuid: update_ct_oil_emissions
-- all_upstream_blocks_executed: false
-  color: null
-  configuration:
-    data_provider: postgres
-    data_provider_profile: default
-    dbt: {}
-    disable_query_preprocessing: false
-    export_write_policy: append
-    limit: 1000
-    use_raw_sql: true
-  downstream_blocks:
-  - update_ct_oil_emissions
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: sql
-  name: update_city_oil_gpcmethod
-  retry_config: null
-  status: executed
-  timeout: null
-  type: data_exporter
-  upstream_blocks:
-  - emissions_staging_ct
-  uuid: update_city_oil_gpcmethod
+  - fugitive_ct_staging
+  uuid: update_fugitive_ct_emissions
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}

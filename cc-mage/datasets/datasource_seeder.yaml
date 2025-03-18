@@ -101,6 +101,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/ghgrp_epa/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.3.1
   scope: 1
+  priority: 1
 - datasource_id: 06BB5C1D-E554-40D7-B619-DA768A5FD607
   publisher_id: EPA
   datasource_name: Environmental Protection Agency
@@ -204,6 +205,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/ghgrp_epa/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.4.1
   scope: 1
+  priority: 1
 - datasource_id: C309DE81-6D75-4782-98B0-A9229D43F042
   publisher_id: EPA
   datasource_name: Environmental Protection Agency
@@ -308,6 +310,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/ghgrp_epa/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: III.1.1
   scope: 1
+  priority: 1
 - datasource_id: 8F3E7542-3C50-4E33-B2F7-57F326CBF9A6
   publisher_id: EPA
   datasource_name: Environmental Protection Agency
@@ -412,6 +415,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/ghgrp_epa/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.4.4
   scope: 1
+  priority: 1
 - datasource_id: C57F697D-2659-450E-BAF6-6F142D18A9AF
   publisher_id: EPA
   datasource_name: Environmental Protection Agency
@@ -516,6 +520,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/ghgrp_epa/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: IV.1
   scope: 1
+  priority: 1
 - datasource_id: 930F05CF-1796-4E25-B391-686BEA746A88
   publisher_id: EPA
   datasource_name: Environmental Protection Agency
@@ -621,6 +626,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/ghgrp_epa/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: III.3.1
   scope: 1
+  priority: 1
 - datasource_id: 0D7F6F31-D483-4170-B36C-C9CFC0434A09
   publisher_id: EPA
   datasource_name: Environmental Protection Agency
@@ -724,6 +730,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/ghgrp_epa/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.8.1
   scope: 1
+  priority: 1
 - datasource_id: 4E235B19-E4FD-4E64-A674-9ED9D9CBA9AA
   publisher_id: EPA
   datasource_name: Environmental Protection Agency
@@ -829,6 +836,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/ghgrp_epa/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.7.1
   scope: 1
+  priority: 1
 - datasource_id: B7BCFC69-3E7F-4B5B-A7BE-B8C945BE073F
   publisher_id: EPA
   datasource_name: Environmental Protection Agency
@@ -933,6 +941,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/ghgrp_epa/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: III.4.1
   scope: 1
+  priority: 1
 - datasource_id: D213BD2F-0164-4411-84BC-1339A9D7EB94
   publisher_id: EPA
   datasource_name: Environmental Protection Agency
@@ -1035,6 +1044,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/ghgrp_epa/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.6.1
   scope: 1
+  priority: 1
 - datasource_id: 124A1F4B-13FD-439B-9175-A8C40CC36E79
   publisher_id: IEA
   datasource_name: International Energy Agency
@@ -1115,6 +1125,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/source/IEA_energy/country/:country/:year/:gpcReferenceNumber
   gpc_reference_number: I.4.4
   scope: 1
+  priority: 1
 - datasource_id: 1087D232-BC25-498B-BE38-92DC330F0B15
   publisher_id: IEA
   datasource_name: International Energy Agency
@@ -1191,6 +1202,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/source/IEA_energy/country/:country/:year/:gpcReferenceNumber
   gpc_reference_number: II.5.1
   scope: 1
+  priority: 1
 - datasource_id: D00A84CE-858E-462C-90D3-61D7BC728E30
   publisher_id: IEA
   datasource_name: International Energy Agency
@@ -1276,6 +1288,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/source/IEA_energy/country/:country/:year/:gpcReferenceNumber
   gpc_reference_number: II.1.1
   scope: 1
+  priority: 1
 - datasource_id: AD25F669-FC74-46D3-9E6E-EF92CD0079A5
   publisher_id: IEA
   datasource_name: International Energy Agency
@@ -1350,6 +1363,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/source/IEA_energy/country/:country/:year/:gpcReferenceNumber
   gpc_reference_number: I.4.1
   scope: 1
+  priority: 1
 - datasource_id: A284E16D-F04E-46C9-A977-8BDDD396F1FB
   publisher_id: IEA
   datasource_name: International Energy Agency
@@ -1425,6 +1439,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/source/IEA_energy/country/:country/:year/:gpcReferenceNumber
   gpc_reference_number: I.1.1
   scope: 1
+  priority: 1
 - datasource_id: CAD04116-1B60-4290-A158-85F4B2BCED28
   publisher_id: IEA
   datasource_name: International Energy Agency
@@ -1511,6 +1526,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/source/IEA_energy/country/:country/:year/:gpcReferenceNumber
   gpc_reference_number: I.3.1
   scope: 1
+  priority: 1
 - datasource_id: F70577EF-3E87-4750-BB48-DF48899B040E
   publisher_id: IEA
   datasource_name: International Energy Agency
@@ -1596,6 +1612,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/source/IEA_energy/country/:country/:year/:gpcReferenceNumber
   gpc_reference_number: I.2.1
   scope: 1
+  priority: 1
 - datasource_id: 497e10f2-c3f3-3b1a-ba35-707edff58858
   publisher_id: ClimateTRACE
   datasource_name: ClimateTRACE
@@ -1681,6 +1698,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/climatetrace/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.1.1
   scope: 1
+  priority: 1
 - datasource_id: c7c660e4-56ca-3c42-96d4-6525d2a8f6cc
   publisher_id: ClimateTRACE
   datasource_name: ClimateTRACE
@@ -1762,6 +1780,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/climatetrace/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.4.1
   scope: 1
+  priority: 1
 - datasource_id: 7feeb3b0-a896-3481-8c05-8d31464dcede
   publisher_id: ClimateTRACE
   datasource_name: ClimateTRACE
@@ -1848,6 +1867,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2023/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.8.1
   scope: 1
+  priority: 1
 - datasource_id: d58b08f3-efdb-3f2d-9320-cea8c763d05a
   publisher_id: ClimateTRACE
   datasource_name: ClimateTRACE
@@ -1931,6 +1951,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/climatetrace/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.7.1
   scope: 1
+  priority: 1
 - datasource_id: 4fa3124f-cb69-300d-964f-57d63b04d46e
   publisher_id: ClimateTRACE
   datasource_name: ClimateTRACE
@@ -2023,6 +2044,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/climatetrace/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.4.3
   scope: 3
+  priority: 1
 - datasource_id: d8bf703a-0b3f-305d-b2a0-6d1c9419044e
   publisher_id: ClimateTRACE
   datasource_name: ClimateTRACE
@@ -2119,6 +2141,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/climatetrace/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.4.3
   scope: 3
+  priority: 1
 - datasource_id: 3b4cf72b-3bf0-32e3-af14-9dc0a05874d5
   publisher_id: ClimateTRACE
   datasource_name: ClimateTRACE
@@ -2215,6 +2238,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/climatetrace/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: III.1.1
   scope: 1
+  priority: 1
 - datasource_id: e6d533a4-0020-30bc-bbac-90627e499663
   publisher_id: ClimateTRACE
   datasource_name: ClimateTRACE
@@ -2303,6 +2327,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/climatetrace/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: V.1
   scope: 1
+  priority: 1
 - datasource_id: 3b18e434-cd0e-3686-9537-6ae38ccb5c0c
   publisher_id: ClimateTRACE
   datasource_name: ClimateTRACE
@@ -2408,6 +2433,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/climatetrace/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: V.1
   scope: 1
+  priority: 1
 - datasource_id: 3bfaac71-953d-354b-8e0c-dc3bb8ec34c3
   publisher_id: EDGAR
   datasource_name: Emissions Database for Global Atmospheric Research
@@ -2505,6 +2531,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/edgar/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.3.1
   scope: 1
+  priority: 1
 - datasource_id: 9e7138c0-510a-3f17-9464-c245842d9862
   publisher_id: EDGAR
   datasource_name: Emissions Database for Global Atmospheric Research
@@ -2603,6 +2630,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/edgar/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.1.1
   scope: 1
+  priority: 1
 - datasource_id: 66403f84-41cf-4c24-8dd8-ae980e8ad687
   publisher_id: DEIE Mendoza
   datasource_name:
@@ -2675,6 +2703,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/source/deie_mendoza/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.1.2
   scope: 2
+  priority: 1
 - datasource_id: ef052fea-4b6c-4421-8911-c31e01f0cc89
   publisher_id: DEIE Mendoza
   datasource_name:
@@ -2747,6 +2776,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/source/deie_mendoza/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.2.2
   scope: 2
+  priority: 1
 - datasource_id: 56eab4cc-b26e-44a6-b9ac-65815736b6f0
   publisher_id: DEIE Mendoza
   datasource_name:
@@ -2819,6 +2849,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/source/deie_mendoza/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.5.2
   scope: 2
+  priority: 1
 - datasource_id: ba4e85e8-8292-4a5d-93a7-2cec57e7dee7
   publisher_id: DEIE Mendoza
   datasource_name:
@@ -2897,6 +2928,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/source/deie_mendoza/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.3.2
   scope: 2
+  priority: 1
 - datasource_id: ff4c21b4-574b-4f4d-bd19-7d3f9dda9093
   publisher_id: DEIE Mendoza
   datasource_name:
@@ -2969,6 +3001,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/source/deie_mendoza/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.1.1
   scope: 1
+  priority: 1
 - datasource_id: ae849774-309e-4091-8461-1be91db5a958
   publisher_id: DEIE Mendoza
   datasource_name:
@@ -3041,6 +3074,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/source/deie_mendoza/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.2.1
   scope: 1
+  priority: 1
 - datasource_id: 70f80ab9-622a-4665-8176-e4e21bf9a634
   publisher_id: DEIE Mendoza
   datasource_name:
@@ -3119,6 +3153,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/source/deie_mendoza/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.3.1
   scope: 1
+  priority: 1
 - datasource_id: de8dc6b3-6c78-4fc7-9b4a-df24a2326634
   publisher_id: Google EIE
   datasource_name: Google Environmental Insights Explorer
@@ -3180,6 +3215,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/source/Google EIE/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.1.1
   scope: 1
+  priority: 1
 - datasource_id: fdf77b4a-5fb8-4b33-92b5-07b92f839c9b
   publisher_id: Carbon Monitor
   datasource_name: Carbon Monitor Cities
@@ -3235,6 +3271,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/source/Carbon Monitor Cities/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.1.1
   scope: 1
+  priority: 1
 - datasource_id: e2143a90-0e5f-48fa-9a1d-85505f90b95f
   publisher_id: Carbon Monitor
   datasource_name: Carbon Monitor Cities
@@ -3293,6 +3330,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/source/Carbon Monitor Cities/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.1.1
   scope: 1
+  priority: 1
 - datasource_id: 1007a979-3c3c-4115-b61a-c85e3e39b165
   publisher_id: Carbon Monitor
   datasource_name: Carbon Monitor Cities
@@ -3350,6 +3388,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/source/Carbon Monitor Cities/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.4.3
   scope: 3
+  priority: 1
 - datasource_id: c0ef94f0-5ecf-45bc-9e3e-f273396b101d
   publisher_id: EDGAR
   datasource_name: Emissions Database for Global Atmospheric Research
@@ -3448,6 +3487,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/edgar/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.4.3
   scope: 3
+  priority: 1
 - datasource_id: 492537be-6eca-4508-ba27-ea6c7c42b019
   publisher_id: BEN
   datasource_name: Balances Energéticos Nacionales
@@ -3525,6 +3565,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/BEN/country/:country/:year/:gpcReferenceNumber
   gpc_reference_number: I.1.1
   scope: 1
+  priority: 1
 - datasource_id: 38918e8a-bb0a-466a-91c7-d085c8e26992
   publisher_id: BEN
   datasource_name: Balances Energéticos Nacionales
@@ -3602,6 +3643,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/BEN/country/:country/:year/:gpcReferenceNumber
   gpc_reference_number: I.2.1
   scope: 1
+  priority: 1
 - datasource_id: 8bff6600-e3b3-4d1c-85b7-f1aa2edbc1f3
   publisher_id: BEN
   datasource_name: Balances Energéticos Nacionales
@@ -3679,6 +3721,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/BEN/country/:country/:year/:gpcReferenceNumber
   gpc_reference_number: I.5.1
   scope: 1
+  priority: 1
 - datasource_id: 059c5cb5-98d4-4b7f-a1c2-9e94756365a4
   publisher_id: BEN
   datasource_name: Balances Energéticos Nacionales
@@ -3762,6 +3805,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/BEN/country/:country/:year/:gpcReferenceNumber
   gpc_reference_number: I.3.1
   scope: 1
+  priority: 1
 - datasource_id: 96bd45c8-259b-4e41-89f1-cd4e2dbff959
   publisher_id: ENARGAS
   datasource_name: Entidad Nacional Regulatoria de Gas
@@ -3827,6 +3871,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/source/ENARGAS/region/:region/:year/:gpcReferenceNumber
   gpc_reference_number: I.1.1
   scope: 1
+  priority: 1
 - datasource_id: 775c21ad-d203-4fd6-bdbd-a778a7cac07e
   publisher_id: ENARGAS
   datasource_name: Entidad Nacional Regulatoria de Gas
@@ -3890,6 +3935,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/source/ENARGAS/region/:region/:year/:gpcReferenceNumber
   gpc_reference_number: I.2.1
   scope: 1
+  priority: 1
 - datasource_id: 04ee4655-5d9a-4778-a6e4-4ed15052a8a5
   publisher_id: ENARGAS
   datasource_name: Entidad Nacional Regulatoria de Gas
@@ -3957,6 +4003,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/source/ENARGAS/region/:region/:year/:gpcReferenceNumber
   gpc_reference_number: I.3.1
   scope: 1
+  priority: 1
 - datasource_id: 75ac9523-3079-4fd7-8d2e-9547f2eda010
   publisher_id: ENARGAS
   datasource_name: Entidad Nacional Regulatoria de Gas
@@ -4022,6 +4069,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/source/ENARGAS/region/:region/:year/:gpcReferenceNumber
   gpc_reference_number: II.1.1
   scope: 1
+  priority: 1
 - datasource_id: cfb06d16-381a-4dfe-bf6c-53900950845a
   publisher_id: SESCO
   datasource_name: SESCO
@@ -4076,6 +4124,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/source/SESCO/region/:region/:year/:gpcReferenceNumber
   gpc_reference_number: I.3.1
   scope: 1
+  priority: 1
 - datasource_id: 9bdb03c4-1fbb-40a7-becf-61262d1f488c
   publisher_id: SESCO
   datasource_name: SESCO
@@ -4130,6 +4179,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/source/SESCO/region/:region/:year/:gpcReferenceNumber
   gpc_reference_number: II.1.1
   scope: 1
+  priority: 1
 - datasource_id: cf301691-f6db-4c69-90c6-5be062cf2454
   publisher_id: SESCO
   datasource_name: SESCO
@@ -4184,6 +4234,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/source/SESCO/region/:region/:year/:gpcReferenceNumber
   gpc_reference_number: II.5.1
   scope: 1
+  priority: 1
 - datasource_id: ef6d15ea-66a3-43c0-9a9a-fe8596ab6447
   publisher_id: SESCO
   datasource_name: SESCO
@@ -4238,6 +4289,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/source/SESCO/region/:region/:year/:gpcReferenceNumber
   gpc_reference_number: II.2.1
   scope: 1
+  priority: 1
 - datasource_id: e81bb333-d0a0-4621-b15f-f6f0012c2a5e
   publisher_id: cammesa
   datasource_name: CAMMESA
@@ -4300,6 +4352,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v0/source/CAMMESA/region/:region/:year/:gpcReferenceNumber
   gpc_reference_number: I.4.4
   scope: 1
+  priority: 1
 - datasource_id: 45196fcf-eb15-4037-b763-33e4d33f04d6
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
@@ -4381,6 +4434,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.1.1
   scope: 1
+  priority: 2.75
 - datasource_id: 06b23117-4890-4467-a740-b7099675413b
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
@@ -4462,6 +4516,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEGv2023/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.1.1
   scope: 1
+  priority: 2.75
 - datasource_id: 54e965a4-3bd0-4f6a-a425-e843bb955712
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
@@ -4542,6 +4597,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.2.1
   scope: 1
+  priority: 2.75
 - datasource_id: bfe11415-e453-4a46-b238-3836cfcb52a7
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
@@ -4622,6 +4678,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEGv2023/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.2.1
   scope: 1
+  priority: 2.75
 - datasource_id: 31a76645-f430-4695-a431-c173dae1d224
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
@@ -4702,6 +4759,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.3.1
   scope: 1
+  priority: 2.75
 - datasource_id: 7a9c2e70-54e8-4cd0-8065-05ba3263721d
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
@@ -4782,6 +4840,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEGv2023/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.3.1
   scope: 1
+  priority: 2.75
 - datasource_id: 165e66da-b027-40dc-8957-0657d77a93d9
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
@@ -4860,6 +4919,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.4.1
   scope: 1
+  priority: 2.75
 - datasource_id: 3e3aced9-4e5b-436a-a4c1-e8abed2c2ca6
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
@@ -4938,6 +4998,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEGv2023/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.4.1
   scope: 1
+  priority: 2.75
 - datasource_id: c1a1a270-172b-49aa-bc9c-e3aa7d7620a6
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
@@ -5019,6 +5080,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.5.1
   scope: 1
+  priority: 2.75
 - datasource_id: 0352419c-103e-446c-9b68-5b87fc72b443
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
@@ -5100,6 +5162,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEGv2023/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.5.1
   scope: 1
+  priority: 2.75
 - datasource_id: de65d76e-510f-49bf-be89-0b687a4f4553
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
@@ -5182,6 +5245,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.8.1
   scope: 1
+  priority: 2.75
 - datasource_id: ebfdf47c-2418-4730-b411-67f3824ef656
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
@@ -5264,6 +5328,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEGv2023/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.8.1
   scope: 1
+  priority: 2.75
 - datasource_id: 567bcd46-f6c4-499f-9597-6240592c1e35
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
@@ -5337,6 +5402,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.1.1
   scope: 1
+  priority: 2.875
 - datasource_id: 3f303bd0-6008-4913-8692-561f824ecde2
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
@@ -5410,6 +5476,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEGv2023/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.1.1
   scope: 1
+  priority: 2.875
 - datasource_id: fd3bed77-1315-4b77-9ae3-1c8d9f2235ad
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
@@ -5482,6 +5549,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.2.1
   scope: 1
+  priority: 2.875
 - datasource_id: 8c0362e1-e9e2-4480-9b05-0eef1206e654
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
@@ -5554,6 +5622,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEGv2023/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.2.1
   scope: 1
+  priority: 2.875
 - datasource_id: 0f5e1940-2e66-4ffd-a0f2-d90ad300ab62
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
@@ -5625,6 +5694,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.3.3
   scope: 3
+  priority: 2.875
 - datasource_id: 3afc6b0c-a162-4539-bb30-bbdf9013414d
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
@@ -5696,6 +5766,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEGv2023/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.3.3
   scope: 3
+  priority: 2.875
 - datasource_id: 60ca4997-51a3-43de-9caa-ce5ec0d1ab19
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
@@ -5766,6 +5837,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.4.3
   scope: 3
+  priority: 2.875
 - datasource_id: 2c456451-ca9f-45bf-ab4c-8ed76094c32b
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
@@ -5836,6 +5908,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEGv2023/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.4.3
   scope: 3
+  priority: 2.875
 - datasource_id: 3da1a62f-8cff-464b-bd5e-af70213f22c8
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
@@ -5909,6 +5982,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: V.1
   scope: 1
+  priority: 3
 - datasource_id: 0309b37b-b265-4ca6-aa05-3aef53f62184
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
@@ -5982,6 +6056,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEGv2023/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: V.1
   scope: 1
+  priority: 3
 - datasource_id: 56578539-5606-4fd7-88da-20a87b730af0
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
@@ -6068,6 +6143,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: V.2
   scope: 1
+  priority: 3
 - datasource_id: 43de4888-2c63-4db8-a08a-01827e2be213
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
@@ -6154,6 +6230,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEGv2023/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: V.2
   scope: 1
+  priority: 3
 - datasource_id: 0891f485-942c-44f8-a398-09b9d050dabc
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
@@ -6225,6 +6302,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: V.3
   scope: 1
+  priority: 3
 - datasource_id: 1fa40597-0e04-4adc-83bb-1e6bb46e5a09
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
@@ -6296,6 +6374,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEGv2023/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: V.3
   scope: 1
+  priority: 3
 - datasource_id: ca167e36-9969-45b1-b000-f72fafc36e8b
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
@@ -6361,6 +6440,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: IV.1
   scope: 1
+  priority: 2.625
 - datasource_id: 810d6eef-7b15-4110-85de-566fdd72ae8e
   publisher_id: EPE
   datasource_name: Empresa de Pesquisa Energética
@@ -6425,6 +6505,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/EPE/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.1.2
   scope: 2
+  priority: 2.375
 - datasource_id: d187ac96-1b4e-4b44-91d1-a80f6570c9ef
   publisher_id: EPE
   datasource_name: Empresa de Pesquisa Energética
@@ -6492,6 +6573,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/EPE/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.2.2
   scope: 2
+  priority: 2.375
 - datasource_id: 5d120586-9eca-4ca9-8c5e-e7c2f04c129c
   publisher_id: EPE
   datasource_name: Empresa de Pesquisa Energética
@@ -6559,6 +6641,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/EPE/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.3.2
   scope: 2
+  priority: 2.375
 - datasource_id: b29e69d0-679a-4922-9745-8102c10bcbc0
   publisher_id: EPE
   datasource_name: Empresa de Pesquisa Energética
@@ -6626,6 +6709,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/EPE/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.5.2
   scope: 2
+  priority: 2.375
 - datasource_id: b7aa7f41-37a1-468e-9394-fc0b421964de
   publisher_id: snis
   datasource_name: SNIS
@@ -6664,6 +6748,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SNIS/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: "III.4.1"
   scope: 1
+  priority: 2.5
 - datasource_id: 123f3cd5-44b0-4858-87b8-e1dd0932b27e
   publisher_id: snis
   datasource_name: SNIS
@@ -6702,6 +6787,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SNIS/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: "III.4.2"
   scope: 2
+  priority: 2.5
 - datasource_id: df49b122-7b26-4fd7-ba97-83a2be9ac796
   publisher_id: sinir
   datasource_name: SINIR
@@ -6740,6 +6826,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SINIR/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: "III.1.1"
   scope: 1
+  priority: 2.625
 - datasource_id: 94b54d32-87e9-4220-a1cc-cf0058917c59
   publisher_id: sinir
   datasource_name: SINIR
@@ -6778,6 +6865,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SINIR/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: "III.1.2"
   scope: 3
+  priority: 2.625
 - datasource_id: b5895e06-98c5-416d-869d-a4d43bc2ba4c
   publisher_id: sinir
   datasource_name: SINIR
@@ -6816,6 +6904,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SINIR/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: "III.2.1"
   scope: 1
+  priority: 2.625
 - datasource_id: eff1e226-6b78-4d89-bdda-50f7f310a817
   publisher_id: sinir
   datasource_name: SINIR
@@ -6854,6 +6943,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SINIR/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: "III.2.2"
   scope: 3
+  priority: 2.625
 - datasource_id: c5ce2727-3d05-4979-aeee-e6090e0cd47a
   publisher_id: sinir
   datasource_name: SINIR
@@ -6892,6 +6982,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SINIR/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: "III.3.1"
   scope: 1
+  priority: 2.625
 - datasource_id: c54e92e6-13a8-41aa-ad80-a19208629777
   publisher_id: sinir
   datasource_name: SINIR
@@ -6930,6 +7021,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SINIR/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: "III.3.2"
   scope: 3
+  priority: 2.625
 - datasource_id: be2ec3ba-10cc-4cad-b48b-33045d053de0
   publisher_id: ClimateTRACE
   datasource_name: ClimateTRACE
@@ -6981,6 +7073,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2024/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: IV.1
   scope: 1
+  priority: 2.5
 - datasource_id: 68b94c84-eda6-4cff-8044-a5f7046bb995
   publisher_id: EPE
   datasource_name: Empresa de Pesquisa Energética
@@ -7034,6 +7127,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/EPE/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.1.3
   scope: 3
+  priority: 2.375
 - datasource_id: d7b00ee7-3432-49b0-8c17-c7dbb29722d6
   publisher_id: EPE
   datasource_name: Empresa de Pesquisa Energética
@@ -7087,6 +7181,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/EPE/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.2.3
   scope: 3
+  priority: 2.375
 - datasource_id: 9a8a6068-85eb-4cc5-9b14-2315e608b84e
   publisher_id: EPE
   datasource_name: Empresa de Pesquisa Energética
@@ -7140,6 +7235,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/EPE/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.3.3
   scope: 3
+  priority: 2.375
 - datasource_id: 6b7695bf-b321-412b-b873-17c2b979c9cb
   publisher_id: EPE
   datasource_name: Empresa de Pesquisa Energética
@@ -7193,6 +7289,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/EPE/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.5.3
   scope: 3
+  priority: 2.375
 - datasource_id: 7ff4766f-2d44-465f-ac30-19e8b6d07276
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
@@ -7258,3 +7355,175 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEGv2023/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: IV.1
   scope: 1
+  priority: 2.625
+- datasource_id: 34f813e4-2313-4e27-8c54-45ff63114b64
+  publisher_id: ClimateTRACE
+  datasource_name: ClimateTRACE
+  dataset_name:
+    en: Coal mining estimated emissions
+    es: Emisiones estimadas de la minería del carbón
+    pt: Emissões estimadas da mineração de carvão
+  dataset_description:
+    en:
+      Emissions from mining and quarrying are estimated on a statistical basis by
+      taking national and facility level production figures and applying specific
+      emission factors.
+    es:
+      Se estiman las emisiones de la extracción de minas y canteras sobre una base
+      estadística tomando las cifras de producción a nivel nacional y de instalación
+      y aplicando factores de emisión específicos.
+    pt:
+      As emissões da mineração e extração de pedras são estimadas com base estatística,
+      utilizando dados de produção em nível nacional e de instalação e aplicando fatores
+      de emissão específicos.
+  source_type: third_party
+  access_type: globalapi
+  dataset_url: https://climatetrace.org/
+  geographical_location: EARTH
+  start_year: 2021
+  end_year: 2021
+  latest_accounting_year: 2021
+  frequency_of_update: annual
+  spatial_resolution: point source
+  language: en
+  accessibility: null
+  data_quality: medium
+  notes: null
+  units: kg
+  methodology_description:
+    en:
+      The methodology involves utilizing data from the Global Coal Mine Tracker,
+      which includes production and capacity data for coal mines globally. Methane
+      emissions are estimated based on methane gas content and capacity factors obtained
+      from literature. The methane gas content is converted to emissions using a conversion
+      factor provided by the EPA. The emissions factor is calculated based on the
+      methane gas content and an average emission factor coefficient. The emissions
+      are then estimated for each mine using the emissions factor and activity data.
+    es:
+      La metodología implica la utilización de datos del Global Coal Mine Tracker,
+      que incluye datos de producción y capacidad de las minas de carbón a nivel mundial.
+      Las emisiones de metano se estiman con base en el contenido de gas metano y
+      los factores de capacidad obtenidos de la literatura. El contenido de gas metano
+      se convierte en emisiones utilizando un factor de conversión proporcionado por
+      la EPA. El factor de emisión se calcula en base al contenido de gas metano y
+      un coeficiente promedio del factor de emisión. Luego se estiman las emisiones
+      para cada mina utilizando el factor de emisiones y los datos de actividad.
+    pt:
+      A metodologia envolve a utilização de dados do Global Coal Mine Tracker, que
+      inclui dados de produção e capacidade das minas de carvão em todo o mundo. As
+      emissões de metano são estimadas com base no conteúdo de gás metano e fatores
+      de capacidade obtidos da literatura. O conteúdo de gás metano é convertido em
+      emissões usando um fator de conversão fornecido pela EPA. O fator de emissão
+      é calculado com base no conteúdo de gás metano e um coeficiente médio do fator
+      de emissão. As emissões são então estimadas para cada mina utilizando o fator
+      de emissões e dados de atividade.
+  methodology_url: https://github.com/climatetracecoalition/methodology-documents/blob/main/2024/Fossil%20Fuel%20Operations/Fossil%20Fuel%20Operations%20Sector-Coal%20Mining%20Emissions.docx.pdf
+  transformation_description:
+    en:
+      Latitude and longitude information are utilized to apply a reverse geocode
+      methodology, assigning the corresponding city locode to each emission point.
+      Once identified, all data points within the city boundary are aggregated to
+      calculate the total emissions for the sector.
+    es:
+      La información de latitud y longitud se utiliza para aplicar una metodología
+      de geocodificación inversa, asignando el código de ciudad correspondiente a
+      cada punto de emisión. Una vez identificados, todos los puntos de datos dentro
+      de los límites de la ciudad se agregan para calcular las emisiones totales del
+      sector.
+    pt:
+      As informações de latitude e longitude são utilizadas para aplicar uma metodologia
+      de geocodificação reversa, atribuindo o código de cidade correspondente a cada
+      ponto de emissão. Uma vez identificados, todos os pontos de dados dentro dos
+      limites da cidade são agregados para calcular as emissões totais do setor.
+  retrieval_method: global_api
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2024/city/:locode/:year/:gpcReferenceNumber
+  gpc_reference_number: I.7.1
+  scope: 1
+  priority: 2.125
+- datasource_id: ab92719a-d709-488a-82cc-a0d8572e2d3b
+  publisher_id: ClimateTRACE
+  datasource_name: ClimateTRACE
+  dataset_name:
+    en: Oil and gas production and transport estimated emissions
+    es: Emisiones estimadas de producción y transporte de petróleo y gas
+    pt: Emissões estimadas de produção e transporte de petróleo e gás
+  dataset_description:
+    en:
+      Oil and Gas Production and Transport Estimated Emissions - Point source GHG
+      estimates using OCI+ tool, covering upstream to downstream operations, incorporating
+      over 100 emission sources and integrating ground truthing and VIIRS remote sensing
+      data for precision.
+    es:
+      Estimaciones de GEI de fuentes puntuales utilizando la herramienta OCI+, que
+      cubre operaciones upstream a downstream, incorporando más de 100 fuentes de
+      emisión e integrando información sobre el terreno y datos de teledetección VIIRS
+      para mayor precisión.
+    pt:
+      Emissões estimadas de produção e transporte de petróleo e gás - Estimativas
+      de GEE de fontes pontuais usando a ferramenta OCI+, cobrindo operações upstream
+      a downstream, incorporando mais de 100 fontes de emissão e integrando dados
+      de verificação em campo e de sensoriamento remoto VIIRS para precisão.
+  source_type: third_party
+  access_type: globalapi
+  dataset_url: https://climatetrace.org/
+  geographical_location: EARTH
+  start_year: 2015
+  end_year: 2022
+  latest_accounting_year: 2022
+  frequency_of_update: annual
+  spatial_resolution: point source
+  language: en
+  accessibility: null
+  data_quality: medium
+  notes: null
+  units: kg
+  methodology_description:
+    en:
+      The methodology involves using the OCI+ tool, which consists of three models,
+      OPGEE for upstream operations, PRELIM for midstream refining, and OPEM for downstream
+      consumption. OPGEE focuses on all stages of producing and transporting crude
+      hydrocarbons and gas to end-use points. It accounts for over 100 emission sources,
+      including flaring, venting, fugitive losses, and more. Key inputs such as field
+      characteristics, production volumes, and transport methods are considered, integrating
+      ground truthing and remote sensing data like VIIRS for accurate estimations.
+    es:
+      La metodología implica el uso de la herramienta OCI+, que consta de tres modelos;
+      OPGEE para operaciones upstream, PRELIM para refinación midstream y OPEM para
+      consumo downstream. OPGEE se centra en todas las etapas de producción y transporte
+      de hidrocarburos crudos y gas a los puntos de uso final. Representa más de 100
+      fuentes de emisión, incluidas la quema, la ventilación, las pérdidas fugitivas
+      y más. Se consideran insumos clave como las características del campo, los volúmenes
+      de producción y los métodos de transporte, integrando datos de verificación
+      en el terreno y de sensores remotos como VIIRS para obtener estimaciones precisas.
+    pt:
+      "A metodologia envolve o uso da ferramenta OCI+, que consiste em três modelos:
+      OPGEE para operações upstream, PRELIM para refino midstream e OPEM para consumo
+      downstream. OPGEE foca em todas as etapas de produção e transporte de hidrocarbonetos
+      brutos e gás até os pontos de uso final. Considera mais de 100 fontes de emissão,
+      incluindo queima, ventilação, perdas fugitivas e mais. Insumos chave como características
+      do campo, volumes de produção e métodos de transporte são considerados, integrando
+      dados de verificação em campo e de sensoriamento remoto como VIIRS para estimativas
+      precisas."
+  methodology_url: https://github.com/climatetracecoalition/methodology-documents/blob/main/Fossil%20fuel%20operations/Fossil%20Fuel%20Operations%20sector-%20Oil%20and%20Gas%20Production%20and%20Transport%20Oil%2C%20and%20Gas%20Refining%20Methodology.pdf
+  transformation_description:
+    en:
+      Latitude and longitude information are utilized to apply a reverse geocode
+      methodology, assigning the corresponding city locode to each emission point.
+      Once identified, all data points within the city boundary are aggregated to
+      calculate the total emissions for the sector.
+    es:
+      La información de latitud y longitud se utiliza para aplicar una metodología
+      de geocodificación inversa, asignando el código de ciudad correspondiente a
+      cada punto de emisión. Una vez identificados, todos los puntos de datos dentro
+      de los límites de la ciudad se agregan para calcular las emisiones totales del
+      sector.
+    pt:
+      As informações de latitude e longitude são utilizadas para aplicar uma metodologia
+      de geocodificação reversa, atribuindo o código de cidade correspondente a cada
+      ponto de emissão. Uma vez identificados, todos os pontos de dados dentro dos
+      limites da cidade são agregados para calcular as emissões totais do setor.
+  retrieval_method: global_api
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2024/city/:locode/:year/:gpcReferenceNumber
+  gpc_reference_number: I.8.1
+  scope: 1
+  priority: 2.125

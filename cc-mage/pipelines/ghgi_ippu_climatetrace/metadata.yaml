@@ -10,12 +10,12 @@ blocks:
   language: python
   name: load_raw_ippu_ct
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: data_loader
   upstream_blocks: []
   uuid: load_raw_ippu_ct
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration: {}
   downstream_blocks:
@@ -32,7 +32,7 @@ blocks:
   upstream_blocks:
   - load_raw_ippu_ct
   uuid: cleaning_ippu_ct
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration: {}
   downstream_blocks:
@@ -43,7 +43,7 @@ blocks:
   language: python
   name: transformation_ippu_ct
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: transformer
   upstream_blocks:
@@ -53,9 +53,6 @@ blocks:
   color: null
   configuration: {}
   downstream_blocks:
-  - update_ippu_ct_sector_activity
-  - update_ippu_ct_emission_factor
-  - update_ippu_ct_emissions
   - locode_transformation
   executor_config: null
   executor_type: local_python
@@ -90,7 +87,7 @@ blocks:
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - ippu_ct_staging
+  - locode_transformation
   uuid: update_ippu_ct_sector_activity
 - all_upstream_blocks_executed: false
   color: null
@@ -113,7 +110,7 @@ blocks:
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - ippu_ct_staging
+  - locode_transformation
   uuid: update_ippu_ct_emission_factor
 - all_upstream_blocks_executed: true
   color: null
@@ -135,7 +132,7 @@ blocks:
   language: sql
   name: ct_country_code_lookup
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: transformer
   upstream_blocks: []
@@ -152,7 +149,10 @@ blocks:
       path: transformers/locode_transformation.sql
     limit: 1000
     use_raw_sql: true
-  downstream_blocks: []
+  downstream_blocks:
+  - update_ippu_ct_emissions
+  - update_ippu_ct_sector_activity
+  - update_ippu_ct_emission_factor
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -187,7 +187,7 @@ blocks:
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - ippu_ct_staging
+  - locode_transformation
   uuid: update_ippu_ct_emissions
 cache_block_output_in_memory: false
 callbacks: []
