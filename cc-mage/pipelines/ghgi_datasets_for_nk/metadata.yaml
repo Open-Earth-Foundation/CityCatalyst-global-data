@@ -1,0 +1,161 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_path: data_loaders/oil_and_gas_nk_from_s3.py
+    file_source:
+      path: data_loaders/oil_and_gas_nk_from_s3.py
+  downstream_blocks:
+  - oil_and_gas_nk_transformation
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: oil_and_gas_nk_from_s3
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: oil_and_gas_nk_from_s3
+- all_upstream_blocks_executed: false
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: oil_and_gas_nk_transformation
+  retry_config: null
+  status: updated
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - oil_and_gas_nk_from_s3
+  uuid: oil_and_gas_nk_transformation
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_path: data_loaders/coal_nk_from_s3.py
+    file_source:
+      path: data_loaders/coal_nk_from_s3.py
+  downstream_blocks:
+  - coal_nk_transfomation
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: coal_nk_from_s3
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: coal_nk_from_s3
+- all_upstream_blocks_executed: false
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: coal_nk_transfomation
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - coal_nk_from_s3
+  uuid: coal_nk_transfomation
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - power_plants_nk_transformation
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: power_plants_nk_from_s3
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: power_plants_nk_from_s3
+- all_upstream_blocks_executed: false
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: power_plants_nk_transformation
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - power_plants_nk_from_s3
+  uuid: power_plants_nk_transformation
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - airports_nk_transformation
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: airports_nk_from_s3
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: airports_nk_from_s3
+- all_upstream_blocks_executed: false
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: airports_nk_transformation
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - airports_nk_from_s3
+  uuid: airports_nk_transformation
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2025-02-28 18:43:51.518730+00:00'
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: ghgi_datasets_for_nk
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: ghgi_datasets_for_nk
+variables:
+  bucket_name: test-global-api
+variables_dir: /home/src/mage_data/cc-mage
+widgets: []
