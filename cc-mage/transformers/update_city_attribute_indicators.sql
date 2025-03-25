@@ -33,9 +33,11 @@ UpsertIndicator AS (
     SELECT 
         cp.city_id, 
         a.actor_id AS locode,
+        cp.region_code,
         cp.country_code, 
         a.indicator_name AS attribute_type,
-        category AS attribute_value, 
+        case when a.indicator_name in ('population', 'population density') then a.indicator_score::varchar
+        else category end AS attribute_value, 
         NULL AS attribute_units, 
         a.datasource,
         a.indicator_year AS datasource_date
@@ -68,16 +70,34 @@ AggregatedCityBiomes AS (
         nm_uf,
         MAX(CASE WHEN biome_rank = 1 THEN biome ELSE NULL END) AS main_biome,
         STRING_AGG(biome, ', ') AS all_biomes
-    FROM CityBiomes
+    FROM CityBiomes a
     GROUP BY cd_mun, nm_mun, nm_uf
 ),
+LookupRegionName AS (
+    SELECT 		DISTINCT a.region_code, b.nm_uf as region_name
+    FROM   		raw_data.icare_city_to_locode a 
+    INNER JOIN 	raw_data.br_city_biome b
+    ON 			a.municipality_code = b.cd_mun
+),
 AllData AS (
-    SELECT * FROM UpsertIndicator
+    SELECT city_id,
+           locode,
+           country_code,
+           b.region_name,
+           attribute_type,
+           attribute_value,
+           attribute_units,
+           datasource,
+           datasource_date  
+    FROM UpsertIndicator a 
+    INNER JOIN LookupRegionName b 
+    ON trim(a.region_code) = trim(b.region_code)
     UNION ALL
     SELECT 
         cp.city_id, 
         a.locode, 
-        cp.country_code AS country_code,  -- Assuming the country_code is not relevant
+        cp.country_code AS country_code,
+        b.nm_uf AS region_name,
         'main biome' AS attribute_type, 
         b.main_biome AS attribute_value, 
         NULL AS attribute_units,
@@ -89,13 +109,15 @@ AllData AS (
     ON a.locode = cp.locode
 )
 INSERT INTO modelled.city_attribute (
-    city_id, locode, country_code, attribute_type, attribute_value, attribute_units, datasource, datasource_date
+    city_id, locode, country_code, region_name, attribute_type, attribute_value, attribute_units, datasource, datasource_date
 )
 SELECT
-    city_id, locode, country_code, attribute_type, lower(replace(attribute_value, ' ', '_')) as attribute_value, attribute_units, datasource, datasource_date
+    city_id, locode, country_code, region_name, attribute_type, lower(replace(attribute_value, ' ', '_')) as attribute_value, attribute_units, datasource, datasource_date
 FROM AllData
 ON CONFLICT (city_id, locode, attribute_type, datasource)
 DO UPDATE SET
     attribute_value = EXCLUDED.attribute_value,
     attribute_units = EXCLUDED.attribute_units,
-    datasource_date = EXCLUDED.datasource_date;
+    datasource_date = EXCLUDED.datasource_date,
+    region_name = EXCLUDED.region_name,
+    country_code = EXCLUDED.country_code;
