@@ -34,7 +34,7 @@ blocks:
   color: null
   configuration: {}
   downstream_blocks:
-  - br_city_context_staging
+  - update_city_attribute_indicators
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -71,7 +71,7 @@ blocks:
     file_source:
       path: data_exporters/load_icare_city_locode_db.py
   downstream_blocks:
-  - br_city_context_staging
+  - update_city_attribute_indicators
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -92,6 +92,111 @@ blocks:
     dbt: {}
     disable_query_preprocessing: false
     export_write_policy: append
+    file_path: transformers/update_city_attribute_indicators.sql
+    file_source:
+      path: transformers/update_city_attribute_indicators.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - br_city_context_cleanup
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_city_attribute_indicators
+  retry_config: null
+  status: updated
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_br_biome_db
+  - load_icare_city_locode_db
+  uuid: update_city_attribute_indicators
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    export_write_policy: append
+  downstream_blocks:
+  - load_city_elevation
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_pilot_cities
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_pilot_cities
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - load_city_elevation_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_city_elevation
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_pilot_cities
+  uuid: load_city_elevation
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - update_city_attribute_elevation
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_city_elevation_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_city_elevation
+  uuid: load_city_elevation_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - br_city_context_cleanup
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_city_attribute_elevation
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_city_elevation_db
+  uuid: update_city_attribute_elevation
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
     limit: 1000
     use_raw_sql: true
   downstream_blocks: []
@@ -99,22 +204,23 @@ blocks:
   executor_type: local_python
   has_callback: false
   language: sql
-  name: br_city_context_staging
+  name: br_city_context_cleanup
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: transformer
   upstream_blocks:
-  - load_icare_city_locode_db
-  - load_br_biome_db
-  uuid: br_city_context_staging
+  - update_city_attribute_elevation
+  - update_city_attribute_indicators
+  uuid: br_city_context_cleanup
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
 conditionals: []
 created_at: '2025-03-17 15:00:51.050193+00:00'
 data_integration: null
-description: null
+description: This provides useful attributes about the city context. This is mainly
+  used by the CAP action prioritiser.
 executor_config: {}
 executor_count: 1
 executor_type: null

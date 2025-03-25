@@ -70,7 +70,7 @@ def transform(data: DataFrame, *args, **kwargs):
             'activity_subcategory_name2': 'industry-name-iron-and-steel-production'
         }, 
         'cement': {
-            'activity_name': 'total-industrial-process-ouput',
+            'activity_name': 'total-industrial-process-output',
             'activity_subcategory_type1': 'industrial-processes-industry-type',
             'activity_subcategory_name1': 'industry-type-mineral-industry',
             'activity_subcategory_type2': 'industrial-processes-industry-names',
@@ -91,7 +91,7 @@ def transform(data: DataFrame, *args, **kwargs):
             'activity_subcategory_name2': 'industry-name-other-industries'
         }, 
         'pulp-and-paper': {
-            'activity_name': 'total-industrial-process-ouput',
+            'activity_name': 'total-industrial-process-output',
             'activity_subcategory_type1': 'industrial-processes-industry-type',
             'activity_subcategory_name1': 'industry-type-other-industries',
             'activity_subcategory_type2': 'industrial-processes-industry-names',
