@@ -25,7 +25,8 @@ INSERT INTO datasource (
             api_endpoint,
             gpc_reference_number,
             scope,
-            priority
+            priority,
+            datasource_description
             )
     SELECT
             datasource_id::uuid,
@@ -54,7 +55,8 @@ INSERT INTO datasource (
             api_endpoint,
             gpc_reference_number,
             _scope as scope,
-            priority
+            priority,
+            datasource_description::jsonb as datasource_description
     FROM raw_data.datasource
             ON CONFLICT ON CONSTRAINT datasource_pkey
             DO UPDATE SET
@@ -84,4 +86,5 @@ INSERT INTO datasource (
                 gpc_reference_number = EXCLUDED.gpc_reference_number,
                 scope = EXCLUDED.scope,
                 priority = EXCLUDED.priority,
+                datasource_description = EXCLUDED.datasource_description,
                 modified_date = now();
