@@ -27,6 +27,8 @@ WITH emissions_ct AS (
     FROM raw_data.ippu_ct_staging a
     LEFT JOIN raw_data.country_codes b 
 	ON a.actor_id = b.iso3_code
+    -- AE: we are only loading cement for now since it has processing and fuel combustion seperated
+    WHERE a.industry = 'cement'
 	GROUP BY actor_id, unit_denominator, emissions_units, gpc_refno, country_code, emissions_year, gas_name, activity_name, activity_subcategory_type, ST_MakePoint(lon, lat)
 )
 SELECT  
