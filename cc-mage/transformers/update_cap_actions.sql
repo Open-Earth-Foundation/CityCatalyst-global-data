@@ -112,7 +112,7 @@ SELECT
     adaptation_effectiveness_storms,
     adaptation_effectiveness_wildfires,
     adaptation_effectiveness_diseases,
-    biome
+    case when biome ='none' then null else biome end as biome
 FROM raw_data
 ON CONFLICT (action_id) DO UPDATE SET
     action_name = EXCLUDED.action_name,
