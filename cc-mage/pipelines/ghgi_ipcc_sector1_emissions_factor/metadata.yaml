@@ -1,0 +1,164 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: markdown
+  name: emission_factors_fuel_consumption_sector_i
+  retry_config: null
+  status: updated
+  timeout: null
+  type: markdown
+  upstream_blocks: []
+  uuid: emission_factors_fuel_consumption_sector_i
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - cleaning_efs_sector1_fuel_consumption
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: s3_ef_raw
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: s3_ef_raw
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - transf_joining_all_subsectors
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: import_s3_conversion_values_volumen
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: import_s3_conversion_values_volumen
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - transf_joining_all_subsectors
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: import_s3_conversion_values_weight
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: import_s3_conversion_values_weight
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - transf_subsector_1to4_6
+  - transf_subsector_5
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: cleaning_efs_sector1_fuel_consumption
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - s3_ef_raw
+  uuid: cleaning_efs_sector1_fuel_consumption
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_path: transformers/transf_subsector_1to4_6.py
+    file_source:
+      path: transformers/transf_subsector_1to4_6.py
+  downstream_blocks:
+  - transf_joining_all_subsectors
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: transf_subsector_1to4_6
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - cleaning_efs_sector1_fuel_consumption
+  uuid: transf_subsector_1to4_6
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - transf_joining_all_subsectors
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: transf_subsector_5
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - cleaning_efs_sector1_fuel_consumption
+  uuid: transf_subsector_5
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: transf_joining_all_subsectors
+  retry_config: null
+  status: updated
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - transf_subsector_5
+  - transf_subsector_1to4_6
+  - import_s3_conversion_values_volumen
+  - import_s3_conversion_values_weight
+  uuid: transf_joining_all_subsectors
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2025-05-05 18:06:23.479214+00:00'
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: ghgi_ipcc_sector1_emissions_factor
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: ghgi_ipcc_sector1_emissions_factor
+variables:
+  bucket_name: test-global-api
+variables_dir: /home/src/mage_data/cc-mage
+widgets: []
