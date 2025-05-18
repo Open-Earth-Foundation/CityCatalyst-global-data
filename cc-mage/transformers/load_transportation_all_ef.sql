@@ -69,72 +69,15 @@ SELECT 	ef_id,
 		RANK() OVER (PARTITION BY ipcc_code, gpc_reference_number, activity_subcategory_type1,activity_subcategory_typename1, gas_name, fuel_type, unit ORDER BY technical_reference_year DESC) as rnk
 FROM ef_data
 WHERE ef_value > 0
+AND description IN ('Default Emission Factor for Aircraft ', 'Road Transport Emission Factor ', 'Emission Factor for USA Vehicles ',
+ 'Default Emission Factor for the Most Common Used Fuels for Rail Transport ', 'Default Water-Bourne Navigation Emission Factor ')
+AND unit = 'kg/TJ '
 ),
-ef_counts AS (
-  SELECT
-  	ipcc_code, 
-    gpc_reference_number,
-    activity_subcategory_type1,
-    activity_subcategory_typename1,
-    activity_subcategory_type2,
-    activity_subcategory_typename2,
-    gas_name,
-    unit,
-    ef_value,
-    COUNT(*) AS count_value,
-    RANK() OVER (
-      PARTITION BY ipcc_code, gpc_reference_number, activity_subcategory_type1, activity_subcategory_typename1, activity_subcategory_type2, activity_subcategory_typename2, gas_name, unit
-      ORDER BY COUNT(*) DESC
-    ) AS rnk
-  FROM rank_ef
-  GROUP BY
-  	ipcc_code,
-    gpc_reference_number,
-    activity_subcategory_type1,
-    activity_subcategory_typename1,
-    activity_subcategory_type2,
-    activity_subcategory_typename2,
-    gas_name,
-    unit,
-    ef_value
-),
-ef_unique AS (
-SELECT
-	gpc_reference_number,
-	activity_subcategory_type1, 
-	activity_subcategory_typename1,
-	CASE WHEN gpc_reference_number = 'II.4.3' THEN 'aviation-fuel-type'
-	WHEN gpc_reference_number = 'II.3.3' THEN 'waterborne-navigation-fuel-type'
-	ELSE activity_subcategory_type2 END AS activity_subcategory_type2,
-	activity_subcategory_typename2,
-	gas_name,
-	unit,
-	max(count_value),
-	min(ef_value) as min_ef_value, 
-	max(ef_value) as max_ef_value,
-	max(ef_value) - min(ef_value) as diff_value,
-	count(*) as frequency
-FROM ef_counts
+fuel_sales_nonco2 AS (
+SELECT *
+FROM rank_ef
 WHERE rnk = 1
-GROUP BY gpc_reference_number,activity_subcategory_type1,activity_subcategory_typename1,activity_subcategory_type2,activity_subcategory_typename2,gas_name, unit
-),
-fuel_sales_nonco2 as (
-SELECT 	gpc_reference_number,
-		activity_subcategory_type1, activity_subcategory_typename1,
-		activity_subcategory_type2, activity_subcategory_typename2,
---		jsonb_build_object(activity_subcategory_type1, activity_subcategory_typename1,
---		activity_subcategory_type2, activity_subcategory_typename2) as metadata,
-		gas_name,
-		min_ef_value as emissionfactor_value,
-		unit as units,
-		'world' as actor_id,
-		'fuel-sales' as methodology_name
-FROM ef_unique
-WHERE 1=1
---AND diff_value < 10
-AND unit NOT IN  ('mg/start', 'kg/LTO', 'dimensionless', 'mg/km')
 AND activity_subcategory_typename2 != 'unknown'
-ORDER BY gpc_reference_number,activity_subcategory_type1,activity_subcategory_typename1,activity_subcategory_type2,activity_subcategory_typename2,unit
 ),
 all_gases as (
 SELECT a.*,
@@ -143,31 +86,35 @@ SELECT a.*,
 FROM fuel_sales_nonco2 a
 LEFT JOIN raw_data.ipcc_transport_co2 b
 ON a.activity_subcategory_typename2 = b.fuel_type
-AND a.units = b.ef_units
+AND a.unit = b.ef_units
 ),
 fuel_sales_ef AS (
 SELECT 	gpc_reference_number,
 		activity_subcategory_type1,
-		activity_subcategory_typename1,
-		activity_subcategory_type2,
+		'vehicle-type-all' as activity_subcategory_typename1,
+		CASE WHEN gpc_reference_number = 'II.4.3' THEN 'aviation-fuel-type'
+		WHEN gpc_reference_number = 'II.3.3' THEN 'waterborne-navigation-fuel-type'
+		ELSE activity_subcategory_type2 END AS activity_subcategory_type2, 
 		activity_subcategory_typename2,
 		gas_name,
-		emissionfactor_value,
-		units,
-		actor_id,
-		methodology_name
+		ef_value as emissionfactor_value,
+		unit as units,
+		'world' as actor_id,
+		'fuel-sales' as methodology_name
 FROM all_gases
 UNION
 SELECT 	gpc_reference_number,
 		activity_subcategory_type1,
-		activity_subcategory_typename1,
-		activity_subcategory_type2,
+		'vehicle-type-all' as activity_subcategory_typename1,
+		CASE WHEN gpc_reference_number = 'II.4.3' THEN 'aviation-fuel-type'
+		WHEN gpc_reference_number = 'II.3.3' THEN 'waterborne-navigation-fuel-type'
+		ELSE activity_subcategory_type2 END AS activity_subcategory_type2, 
 		activity_subcategory_typename2,
 		'CO2' as gas_name,
 		co2_ef as emissionfactor_value,
 		co2_units as units,
-		actor_id,
-		methodology_name
+		'world' as actor_id,
+		'fuel-sales' as methodology_name
 FROM all_gases
 )
 SELECT *

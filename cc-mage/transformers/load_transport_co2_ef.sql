@@ -73,17 +73,17 @@ SELECT 	ipcc_code,
 		carbon_content * (44/12) * 1000 AS ef_value,
 		'kg/TJ' AS ef_units
 FROM co2_ef
-UNION
-SELECT 	ipcc_code,
-		gpc_reference_number,
-		activity_subcategory_type1,
-		activity_subcategory_typename1,
-		gas_name,
-		fuel_type,
---		carbon_content,
---		carbon_content_unit,
---		ncv,
---		ncv_unit,
-		(ncv * 1000 * carbon_content * (44/12)) / 1000 AS ef_value1,
-		'kg/kg' AS ef_units2
-FROM co2_ef
+-- UNION
+-- SELECT 	ipcc_code,
+-- 		gpc_reference_number,
+-- 		activity_subcategory_type1,
+-- 		activity_subcategory_typename1,
+-- 		gas_name,
+-- 		fuel_type,
+-- --		carbon_content,
+-- --		carbon_content_unit,
+-- --		ncv,
+-- --		ncv_unit,
+-- 		(ncv * 1000 * carbon_content * (44/12)) / 1000 AS ef_value1,
+-- 		'kg/kg' AS ef_units2
+-- FROM co2_ef

@@ -96,7 +96,7 @@ blocks:
   language: sql
   name: load_transport_co2_ef
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: transformer
   upstream_blocks:
@@ -112,7 +112,8 @@ blocks:
     export_write_policy: append
     limit: 1000
     use_raw_sql: true
-  downstream_blocks: []
+  downstream_blocks:
+  - load_transport_ef_staging
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -131,35 +132,66 @@ blocks:
     data_provider: postgres
     data_provider_profile: default
     export_write_policy: append
+    file_path: data_loaders/load_conversion_factors.py
+    file_source:
+      path: data_loaders/load_conversion_factors.py
   downstream_blocks:
-  - load_raw_data_energy_density
+  - load_conversion_factors_db
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: load_density_value
+  name: load_conversion_factors
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: data_loader
   upstream_blocks: []
-  uuid: load_density_value
-- all_upstream_blocks_executed: true
+  uuid: load_conversion_factors
+- all_upstream_blocks_executed: false
   color: null
-  configuration: {}
-  downstream_blocks: []
+  configuration:
+    file_path: data_exporters/load_conversion_factors_db.py
+    file_source:
+      path: data_exporters/load_conversion_factors_db.py
+  downstream_blocks:
+  - load_transport_ef_staging
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: load_raw_data_energy_density
+  name: load_conversion_factors_db
   retry_config: null
   status: executed
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - load_density_value
-  uuid: load_raw_data_energy_density
+  - load_conversion_factors
+  uuid: load_conversion_factors_db
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: load_transport_ef_staging
+  retry_config: null
+  status: updated
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_conversion_factors_db
+  - load_transportation_all_ef
+  uuid: load_transport_ef_staging
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
