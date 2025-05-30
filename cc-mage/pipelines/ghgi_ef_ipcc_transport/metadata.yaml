@@ -96,7 +96,7 @@ blocks:
   language: sql
   name: load_transport_co2_ef
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: transformer
   upstream_blocks:
@@ -185,7 +185,7 @@ blocks:
   language: sql
   name: load_transport_ef_staging
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: transformer
   upstream_blocks:

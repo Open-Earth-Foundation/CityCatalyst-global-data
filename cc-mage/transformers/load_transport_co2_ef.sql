@@ -1,4 +1,4 @@
-DROP TABLE raw_data.ipcc_transport_co2;
+DROP TABLE IF EXISTS raw_data.ipcc_transport_co2;
 
 CREATE TABLE raw_data.ipcc_transport_co2 AS
 WITH ef_data AS (

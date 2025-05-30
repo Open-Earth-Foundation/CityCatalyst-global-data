@@ -1,3 +1,6 @@
+DROP TABLE IF EXISTS raw_data.ipcc_transport_ef2;
+
+CREATE TABLE raw_data.ipcc_transport_ef2 AS
 WITH conversions AS (
 SELECT "_from" AS unit_from,"_to" AS unit_to,factor,fuel_type
 FROM raw_data.ipcc_conversion_factor

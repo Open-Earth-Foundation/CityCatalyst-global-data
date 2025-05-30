@@ -101,7 +101,9 @@ WHERE gas_name != ''
 gpc_ef AS (
 SELECT 	ef_id,
 		ipcc_code,
-		b.gpc_mapping as gpc_reference_number,
+		case when b.gpc_mapping = 'II.4.3' then 'II.4.1'
+		when b.gpc_mapping = 'II.3.3' then 'II.3.1'
+		else b.gpc_mapping end as gpc_reference_number,
 		activity_subcategory_type1,activity_subcategory_typename1,activity_subcategory_type2,activity_subcategory_typename2,
 		ipcc_name,
 		gas_name,

@@ -1,4 +1,4 @@
-DROP TABLE raw_data.ipcc_transport_ef;
+DROP TABLE IF EXISTS raw_data.ipcc_transport_ef;
 
 CREATE TABLE raw_data.ipcc_transport_ef AS
 WITH ef_data AS (
@@ -34,9 +34,9 @@ SELECT 	ef_id,
         WHEN fuel_2006 LIKE 'Gas Oil%' THEN 'fuel-type-gasoline'
         WHEN fuel_2006 LIKE 'Jet Gasoline%' THEN 'fuel-type-jet-gasoline'
         WHEN fuel_2006 LIKE 'Jet Kerosene%' THEN 'fuel-type-jet-kerosene'
-        WHEN fuel_2006 LIKE 'Liquefied Petroleum Gases%' THEN 'fuel-type-lpg'
+        WHEN fuel_2006 LIKE 'Liquefied Petroleum Gases%' THEN 'fuel-type-liquefied-petroleum-gases'
         WHEN fuel_2006 LIKE 'Motor Gasoline%' THEN 'fuel-type-gasoline'
-        WHEN fuel_2006 LIKE 'Natural Gas%' THEN 'fuel-type-natural-gas-liquids'
+        WHEN fuel_2006 LIKE 'Natural Gas%' THEN 'fuel-type-cng'
         ELSE 'unknown' 
     END AS fuel_type
 FROM raw_data.ipcc_ef
@@ -70,7 +70,7 @@ SELECT 	ef_id,
 FROM ef_data
 WHERE ef_value > 0
 AND description IN ('Default Emission Factor for Aircraft ', 'Road Transport Emission Factor ', 'Emission Factor for USA Vehicles ',
- 'Default Emission Factor for the Most Common Used Fuels for Rail Transport ', 'Default Water-Bourne Navigation Emission Factor ')
+ 'Default Emission Factor for the Most Common Used Fuels for Rail Transport ', 'Default Water-Bourne Navigation Emission Factor ', 'Default Emission Factors for Off-road Mobile Source and Machinery ')
 AND unit = 'kg/TJ '
 ),
 fuel_sales_nonco2 AS (
