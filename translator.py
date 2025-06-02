@@ -1,3 +1,23 @@
+"""
+This script automates the translation of dataset seeder YAML files for the CityCatalyst project.
+It reads the YAML file containing dataset metadata (such as dataset name, description, methodology, and transformation description), uses an LLM (OpenAI) to generate translations for a specified target language, and updates the YAML file with the new translations.
+
+Usage:
+    python translator.py --language <language_code>
+
+Arguments:
+    --language: The ISO 639-1 code of the target language (e.g., 'es' for Spanish, 'pt' for Portuguese).
+
+Example:
+    python translator.py --language es
+
+Requirements:
+- Dependencies listed in requirements.txt (including openai, langsmith, pydantic, yaml, dotenv)
+- An OpenAI API key set in your environment (see .env or dev.env)
+
+The script will update the YAML file in-place with the new translations for the specified language.
+"""
+
 from openai import OpenAI
 from dotenv import load_dotenv
 from typing import Optional
