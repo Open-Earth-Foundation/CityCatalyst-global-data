@@ -48,6 +48,7 @@ class DatasetModel(BaseModel):
     dataset_description: TranslationModel
     methodology_description: TranslationModel
     transformation_description: TranslationModel
+    datasource_description: TranslationModel
 
 
 @traceable
@@ -143,6 +144,7 @@ def translate(target_language: str):
         dataset_description = datasource.get("dataset_description")
         methodology_description = datasource.get("methodology_description")
         transformation_description = datasource.get("transformation_description")
+        datasource_description = datasource.get("datasource_description")
 
         # Translate keys
         prompt = f"""
@@ -152,6 +154,7 @@ def translate(target_language: str):
         - dataset_description: {json.dumps(dataset_description, indent=4)}
         - methodology_description: {json.dumps(methodology_description, indent=4)}
         - transformation_description: {json.dumps(transformation_description, indent=4)}
+        - datasource_description: {json.dumps(datasource_description, indent=4)}
         </inputs>
         """
         translation_str = get_llm_response(prompt, target_language=target_language)  # type: ignore
