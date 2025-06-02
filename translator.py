@@ -154,7 +154,7 @@ def translate(target_language: str):
         - transformation_description: {json.dumps(transformation_description, indent=4)}
         </inputs>
         """
-        translation_str = get_llm_response(prompt, target_language=target_language)
+        translation_str = get_llm_response(prompt, target_language=target_language)  # type: ignore
 
         if translation_str:
             print("Translation by LLM completed!")
