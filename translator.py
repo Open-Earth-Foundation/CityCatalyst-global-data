@@ -88,10 +88,11 @@ The output format must be in pure JSON format as follows:
 1. Maintain the original meaning and tone of the input while ensuring linguistic accuracy.
 2. If there are ambiguities in the input, prioritize clarity in the translation.
 3. If domain-specific terms appear, use appropriate equivalents in the target language if available and commonly used in that language. If no equivalent exists, use the English domain-specific term.
+4. Ensure that the output does not contain any formatting, or unusual characters.
 """
 
     response = client.beta.chat.completions.parse(
-        model="gpt-4o-mini",
+        model="gpt-4.1",
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt},
