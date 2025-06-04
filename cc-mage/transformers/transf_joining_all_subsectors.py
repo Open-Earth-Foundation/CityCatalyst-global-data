@@ -98,14 +98,16 @@ def transform(data: DataFrame, data_2: DataFrame, data_3: DataFrame, data_4: Dat
     }
 
     # filter by units
-    conversion_factor_vol = data_3[data_3['To'] == 'TJ']
-    conversion_factor_mass = data_4[data_4['To'] == 'TJ']
+    conversion_factor_vol = data[(data['To'] == 'TJ') & (data['From '] == 'm³')]
+    conversion_factor_mass = data_2[(data_2['To'] == 'TJ') & (data_2['From '] == 'kg')]
 
-    EF_final = pd.concat([data, data_2], ignore_index=True)
+    # concant dfs with EF values
+    EF_final = pd.concat([data_3, data_4], ignore_index=True)
 
     # assign fuel ids based on fuel names
     EF_final['fuel_type'] = EF_final['fuel'].map(fuel_to_fuel_ids_mapping)
 
+    # drop EF without an ID
     EF_final = EF_final.dropna(subset=['fuel_type'])
 
     # apply conversion of energy to volumen only for gas and liquid fuels
@@ -113,19 +115,49 @@ def transform(data: DataFrame, data_2: DataFrame, data_3: DataFrame, data_4: Dat
     tmp.dropna(subset=['Factor'], inplace=True)
     tmp['emissions_per_activity'] = tmp['value'] * tmp['Factor']
     tmp['units_after_transformation'] = 'kg/m3' # kg of gas / m3 of fuel
+    tmp['activity_units'] = 'm3'
 
     # apply conversion of energy to mass only for solid fuels
     tmp2 = EF_final.merge(conversion_factor_mass[['fuel_type', 'Factor', 'From ']], on='fuel_type', how='left')
     tmp2.dropna(subset=['Factor'], inplace=True)
     tmp2['emissions_per_activity'] = tmp2['value'] * tmp2['Factor']
     tmp2['units_after_transformation'] = 'kg/kg' # kg of gas / kg of fuel
+    tmp2['activity_units'] = 'kg'
 
     EF_final = pd.concat([tmp, tmp2], ignore_index=True)
 
     EF_final['methodology_name'] = 'fuel-combustion-consumption'
     EF_final['actor_id'] = 'world'
+    EF_final['active_to'] = ''
+    EF_final['active_from'] = ''
+    EF_final['activity_name'] = 'fuel-consumption'
+    EF_final['publisher_name'] = 'IPCC'
+    EF_final['datasource_name'] = 'IPCC'
+    EF_final['dataset_name'] = 'IPCC Emission Factor Database (EFDB) [2006 IPCC Guidelines]'
+    EF_final['publisher_url'] = 'https://www.ipcc.ch/'
+    EF_final['dataset_url'] = 'https://www.ipcc-nggip.iges.or.jp/EFDB/main.php'
 
-    return EF_final[EF_final['EF ID'] == 118973]
+
+
+    EF_final.drop(columns=[
+        'EF ID', 
+        'ipcc_2006_category', 
+        'fuel', 
+        'Description', 
+        'units', 
+        'equation', 
+        'value_min', 
+        'value_max', 
+        'Factor', 
+        'From ',
+        'value'
+        ], inplace=True)
+
+    EF_final.rename(columns={
+        'units_after_transformation': 'units'
+    }, inplace=True)
+
+    return EF_final
 
 
 @test

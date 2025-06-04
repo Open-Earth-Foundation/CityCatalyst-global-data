@@ -120,22 +120,156 @@ blocks:
 - all_upstream_blocks_executed: true
   color: null
   configuration: {}
-  downstream_blocks: []
+  downstream_blocks:
+  - sector1_ef_fuel_consumption_staging
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
   name: transf_joining_all_subsectors
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: transformer
   upstream_blocks:
-  - transf_subsector_5
-  - transf_subsector_1to4_6
   - import_s3_conversion_values_volumen
   - import_s3_conversion_values_weight
+  - transf_subsector_1to4_6
+  - transf_subsector_5
   uuid: transf_joining_all_subsectors
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - update_activity_subcategory
+  - update_emissionfactors
+  - update_publisher_datasource
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: sector1_ef_fuel_consumption_staging
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - transf_joining_all_subsectors
+  uuid: sector1_ef_fuel_consumption_staging
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_publisher_datasource
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - sector1_ef_fuel_consumption_staging
+  uuid: update_publisher_datasource
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    export_write_policy: append
+    file_path: data_exporters/ghgi_methodology_staging.py
+    file_source:
+      path: data_exporters/ghgi_methodology_staging.py
+  downstream_blocks:
+  - update_ghgi_methodology
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: ghgi_methodology_staging
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks: []
+  uuid: ghgi_methodology_staging
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_ghgi_methodology
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - ghgi_methodology_staging
+  uuid: update_ghgi_methodology
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_activity_subcategory
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - sector1_ef_fuel_consumption_staging
+  uuid: update_activity_subcategory
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_emissionfactors
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - sector1_ef_fuel_consumption_staging
+  uuid: update_emissionfactors
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
