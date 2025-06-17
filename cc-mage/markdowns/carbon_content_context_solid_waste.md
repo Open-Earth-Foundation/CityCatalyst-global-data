@@ -1,0 +1,2 @@
+### Default values of cc_i
+The 'Other' category in the municipal waste composition was assigned a DOC value of 0.10, consistent with values used in national GHG inventories in Latin America (e.g., Brazil’s SEEG) and supported by IPCC Tier 1 methodological flexibility for undefined waste types. As well for 'nappies' and 'leather'
