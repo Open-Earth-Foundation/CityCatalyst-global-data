@@ -32,8 +32,7 @@ blocks:
 - all_upstream_blocks_executed: true
   color: purple
   configuration: {}
-  downstream_blocks:
-  - gpc_methodology_staging
+  downstream_blocks: []
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -46,10 +45,26 @@ blocks:
   upstream_blocks: []
   uuid: fugitive_emissions_custom
 - all_upstream_blocks_executed: true
+  color: teal
+  configuration: {}
+  downstream_blocks:
+  - gpc_methodology_staging
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: enteric_fermentation_pasture_climate_trace_custom_methodology
+  retry_config: null
+  status: executed
+  timeout: null
+  type: custom
+  upstream_blocks: []
+  uuid: enteric_fermentation_pasture_climate_trace_custom_methodology
+- all_upstream_blocks_executed: true
   color: null
   configuration: {}
   downstream_blocks:
-  - update_gpc_methodology
+  - update_ghig_methodology
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -60,7 +75,7 @@ blocks:
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - fugitive_emissions_custom
+  - enteric_fermentation_pasture_climate_trace_custom_methodology
   uuid: gpc_methodology_staging
 - all_upstream_blocks_executed: true
   color: null
@@ -70,6 +85,9 @@ blocks:
     dbt: {}
     disable_query_preprocessing: false
     export_write_policy: append
+    file_path: data_loaders/update_ghig_methodology.sql
+    file_source:
+      path: data_loaders/update_ghig_methodology.sql
     limit: 1000
     use_raw_sql: true
   downstream_blocks:
@@ -78,14 +96,14 @@ blocks:
   executor_type: local_python
   has_callback: false
   language: sql
-  name: update_gpc_methodology
+  name: update_ghig_methodology
   retry_config: null
   status: executed
   timeout: null
   type: data_loader
   upstream_blocks:
   - gpc_methodology_staging
-  uuid: update_gpc_methodology
+  uuid: update_ghig_methodology
 - all_upstream_blocks_executed: true
   color: purple
   configuration:
@@ -107,7 +125,7 @@ blocks:
   timeout: null
   type: custom
   upstream_blocks:
-  - update_gpc_methodology
+  - update_ghig_methodology
   uuid: deleting_staging_gpcmethod
 cache_block_output_in_memory: false
 callbacks: []
