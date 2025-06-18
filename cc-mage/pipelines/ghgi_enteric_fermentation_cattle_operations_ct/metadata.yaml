@@ -1,35 +1,41 @@
 blocks:
 - all_upstream_blocks_executed: true
   color: null
-  configuration: {}
+  configuration:
+    file_path: markdowns/enteric_fermentation_operations_ct_overview.md
+    file_source:
+      path: markdowns/enteric_fermentation_operations_ct_overview.md
   downstream_blocks: []
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: markdown
-  name: enteric_fermentation_ct_overview
+  name: enteric_fermentation_operations_ct_overview
   retry_config: null
   status: updated
   timeout: null
   type: markdown
   upstream_blocks: []
-  uuid: enteric_fermentation_ct_overview
+  uuid: enteric_fermentation_operations_ct_overview
 - all_upstream_blocks_executed: true
   color: null
-  configuration: {}
+  configuration:
+    file_path: data_loaders/import_raw_enteric_fermentation_operations_ct_froms3.py
+    file_source:
+      path: data_loaders/import_raw_enteric_fermentation_operations_ct_froms3.py
   downstream_blocks:
   - transformation_enteric_fermentation_operations_ct
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: import_raw_enteric_fermentation_ct_froms3
+  name: import_raw_enteric_fermentation_operations_ct_froms3
   retry_config: null
   status: executed
   timeout: null
   type: data_loader
   upstream_blocks: []
-  uuid: import_raw_enteric_fermentation_ct_froms3
+  uuid: import_raw_enteric_fermentation_operations_ct_froms3
 - all_upstream_blocks_executed: true
   color: null
   configuration: {}
@@ -45,7 +51,7 @@ blocks:
   timeout: null
   type: transformer
   upstream_blocks:
-  - import_raw_enteric_fermentation_ct_froms3
+  - import_raw_enteric_fermentation_operations_ct_froms3
   uuid: transformation_enteric_fermentation_operations_ct
 - all_upstream_blocks_executed: true
   color: null
