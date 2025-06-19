@@ -60,13 +60,13 @@ def transform(data: DataFrame, *args, **kwargs):
     data['activity_name'] = "total-livestock"
     data['livestock-species'] = "species-cattle"
     data['livestock-activity-type'] = "type-manure-management"
-    data['livestock-subactivity-type'] = "type-manure-management-operation"
-    data['methodology_name'] = 'type-manure-management-operation-cattle-CT'
-    data['methodology_description'] = 'This methodology estimates methane (CH₄) and nitrous oxide (N₂O) emissions from manure storage and treatment systems at confined cattle facilities. It follows IPCC Tier 2 methods, using country-specific manure management system distributions, climate data, and facility-level cattle counts to refine emissions estimates.'
+    data['livestock-subactivity-type'] = "type-manure-management-pasture"
+    data['methodology_name'] = 'type-manure-management-pasture-cattle-CT'
+    data['methodology_description'] = 'This methodology estimates nitrous oxide (N₂O) emissions from manure deposited directly onto pasture by grazing cattle. It uses IPCC Tier 1 methods, applying default nitrogen excretion rates and emission factors based on regional climate and soil conditions.'
     data['publisher_name'] = 'ClimateTRACE'
     data['publisher_url'] = 'https://climatetrace.org/'
     data['datasource_name'] = 'ClimateTRACE'
-    data['dataset_name'] = 'Manure Management Cattle Operation v4.3.1'
+    data['dataset_name'] = 'Manure Management Cattle Pasture v4.3.1'
     data['dataset_url'] = 'https://downloads.climatetrace.org/v4.3.1/sector_packages/ch4/agriculture.zip'
 
     # Replace gas names

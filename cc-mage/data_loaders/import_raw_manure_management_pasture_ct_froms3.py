@@ -20,7 +20,7 @@ def load_from_s3_bucket(*args, **kwargs):
     config_profile = 'default'
 
     bucket_name = kwargs['bucket_name']
-    object_key = 'raw_data/climateTRACE/manure/manure-management-cattle-operation_emissions_sources_v4_3_1_CH4&N2O_CA.csv'
+    object_key = 'raw_data/climateTRACE/manure/manure-left-on-pasture-cattle_emissions_sources_v4_3_1_CH4&N2O_CA.csv'
 
     return S3.with_config(ConfigFileLoader(config_path, config_profile)).load(
         bucket_name,

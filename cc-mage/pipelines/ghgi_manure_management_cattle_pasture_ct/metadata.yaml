@@ -7,30 +7,33 @@ blocks:
   executor_type: local_python
   has_callback: false
   language: markdown
-  name: manure_management_operations_ct_overview
+  name: manure_management_pasture_ct_overview
   retry_config: null
   status: updated
   timeout: null
   type: markdown
   upstream_blocks: []
-  uuid: manure_management_operations_ct_overview
+  uuid: manure_management_pasture_ct_overview
 - all_upstream_blocks_executed: true
   color: null
-  configuration: {}
+  configuration:
+    file_path: data_loaders/import_raw_manure_management_pasture_ct_froms3.py
+    file_source:
+      path: data_loaders/import_raw_manure_management_pasture_ct_froms3.py
   downstream_blocks:
-  - transformation_manure_management_operations_ct
+  - transformation_manure_management_pasture_ct
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: import_raw_manure_management_operations_ct_froms3
+  name: import_raw_manure_management_pasture_ct_froms3
   retry_config: null
   status: updated
   timeout: null
   type: data_loader
   upstream_blocks: []
-  uuid: import_raw_manure_management_operations_ct_froms3
-- all_upstream_blocks_executed: true
+  uuid: import_raw_manure_management_pasture_ct_froms3
+- all_upstream_blocks_executed: false
   color: null
   configuration: {}
   downstream_blocks:
@@ -39,14 +42,14 @@ blocks:
   executor_type: local_python
   has_callback: false
   language: python
-  name: transformation_manure_management_operations_ct
+  name: transformation_manure_management_pasture_ct
   retry_config: null
   status: updated
   timeout: null
   type: transformer
   upstream_blocks:
-  - import_raw_manure_management_operations_ct_froms3
-  uuid: transformation_manure_management_operations_ct
+  - import_raw_manure_management_pasture_ct_froms3
+  uuid: transformation_manure_management_pasture_ct
 - all_upstream_blocks_executed: false
   color: null
   configuration:
@@ -60,11 +63,11 @@ blocks:
   language: python
   name: ct_staging
   retry_config: null
-  status: executed
+  status: not_executed
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - transformation_manure_management_operations_ct
+  - transformation_manure_management_pasture_ct
   uuid: ct_staging
 - all_upstream_blocks_executed: false
   color: null
@@ -81,6 +84,7 @@ blocks:
   downstream_blocks:
   - update_methodology_ct
   - update_publisher_datasource_ct
+  - update_activity_subcategory_ct
   - update_emission_factors_ct
   - update_emissions_ct
   - delete_staging_tables_ct
@@ -90,7 +94,7 @@ blocks:
   language: sql
   name: update_ct_staging
   retry_config: null
-  status: executed
+  status: not_executed
   timeout: null
   type: data_exporter
   upstream_blocks:
@@ -115,7 +119,7 @@ blocks:
   language: sql
   name: update_methodology_ct
   retry_config: null
-  status: executed
+  status: not_executed
   timeout: null
   type: data_exporter
   upstream_blocks:
@@ -140,12 +144,37 @@ blocks:
   language: sql
   name: update_publisher_datasource_ct
   retry_config: null
-  status: updated
+  status: not_executed
   timeout: null
   type: data_exporter
   upstream_blocks:
   - update_ct_staging
   uuid: update_publisher_datasource_ct
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    file_source:
+      path: data_exporters/update_activity_subcategory_ct.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_activity_subcategory_ct
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - update_ct_staging
+  uuid: update_activity_subcategory_ct
 - all_upstream_blocks_executed: false
   color: null
   configuration:
@@ -165,7 +194,7 @@ blocks:
   language: sql
   name: update_emission_factors_ct
   retry_config: null
-  status: executed
+  status: not_executed
   timeout: null
   type: data_exporter
   upstream_blocks:
@@ -190,7 +219,7 @@ blocks:
   language: sql
   name: update_emissions_ct
   retry_config: null
-  status: executed
+  status: not_executed
   timeout: null
   type: data_exporter
   upstream_blocks:
@@ -199,15 +228,8 @@ blocks:
 - all_upstream_blocks_executed: false
   color: teal
   configuration:
-    data_provider: postgres
-    data_provider_profile: default
-    dbt: {}
-    disable_query_preprocessing: false
-    export_write_policy: append
     file_source:
       path: custom/delete_staging_tables_ct.sql
-    limit: 1000
-    use_raw_sql: true
   downstream_blocks: []
   executor_config: null
   executor_type: local_python
@@ -215,7 +237,7 @@ blocks:
   language: sql
   name: delete_staging_tables_ct
   retry_config: null
-  status: executed
+  status: not_executed
   timeout: null
   type: custom
   upstream_blocks:
@@ -225,14 +247,14 @@ cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
 conditionals: []
-created_at: '2025-06-19 09:24:54.520633+00:00'
+created_at: '2025-06-19 09:50:59.953119+00:00'
 data_integration: null
 description: null
 executor_config: {}
 executor_count: 1
 executor_type: null
 extensions: {}
-name: ghgi_manure_management_cattle_operations_ct
+name: ghgi_manure_management_cattle_pasture_ct
 notification_config: {}
 remote_variables_dir: null
 retry_config: {}
@@ -242,7 +264,7 @@ settings:
 spark_config: {}
 tags: []
 type: python
-uuid: ghgi_manure_management_cattle_operations_ct
+uuid: ghgi_manure_management_cattle_pasture_ct
 variables:
   bucket_name: test-global-api
 variables_dir: /home/src/mage_data/cc-mage
