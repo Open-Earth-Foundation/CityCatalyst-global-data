@@ -60,7 +60,6 @@ blocks:
     file_source:
       path: data_exporters/ct_staging.py
   downstream_blocks:
-  - update_methodology_ct
   - update_ct_staging
   executor_config: null
   executor_type: local_python
@@ -84,7 +83,13 @@ blocks:
     export_write_policy: append
     limit: 1000
     use_raw_sql: true
-  downstream_blocks: []
+  downstream_blocks:
+  - update_methodology_ct
+  - update_publisher_datasource_ct
+  - update_activity_subcategory_ct
+  - update_emission_factors_ct
+  - update_emissions_ct
+  - delete_staging_tables_ct
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -110,8 +115,7 @@ blocks:
       path: data_exporters/update_methodology_ct.sql
     limit: 1000
     use_raw_sql: true
-  downstream_blocks:
-  - update_publisher_datasource_ct
+  downstream_blocks: []
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -122,9 +126,9 @@ blocks:
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - ct_staging
+  - update_ct_staging
   uuid: update_methodology_ct
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     data_provider: postgres
@@ -134,8 +138,7 @@ blocks:
     export_write_policy: append
     limit: 1000
     use_raw_sql: true
-  downstream_blocks:
-  - update_activity_subcategory_ct
+  downstream_blocks: []
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -146,9 +149,9 @@ blocks:
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - update_methodology_ct
+  - update_ct_staging
   uuid: update_publisher_datasource_ct
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     data_provider: postgres
@@ -158,8 +161,7 @@ blocks:
     export_write_policy: append
     limit: 1000
     use_raw_sql: true
-  downstream_blocks:
-  - update_emission_factors_ct
+  downstream_blocks: []
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -170,9 +172,9 @@ blocks:
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - update_publisher_datasource_ct
+  - update_ct_staging
   uuid: update_activity_subcategory_ct
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     data_provider: postgres
@@ -182,8 +184,7 @@ blocks:
     export_write_policy: append
     limit: 1000
     use_raw_sql: true
-  downstream_blocks:
-  - update_emissions_ct
+  downstream_blocks: []
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -194,9 +195,9 @@ blocks:
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - update_activity_subcategory_ct
+  - update_ct_staging
   uuid: update_emission_factors_ct
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     data_provider: postgres
@@ -217,8 +218,31 @@ blocks:
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - update_emission_factors_ct
+  - update_ct_staging
   uuid: update_emissions_ct
+- all_upstream_blocks_executed: true
+  color: teal
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: delete_staging_tables_ct
+  retry_config: null
+  status: executed
+  timeout: null
+  type: custom
+  upstream_blocks:
+  - update_ct_staging
+  uuid: delete_staging_tables_ct
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
