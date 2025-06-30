@@ -47,7 +47,7 @@ blocks:
   upstream_blocks:
   - import_raw_enteric_fermentation_pasture_ct_froms3
   uuid: transformation_enteric_fermentation_pasture_ct
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     file_source:
@@ -66,7 +66,7 @@ blocks:
   upstream_blocks:
   - transformation_enteric_fermentation_pasture_ct
   uuid: ct_staging
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: postgres
@@ -97,7 +97,7 @@ blocks:
   upstream_blocks:
   - ct_staging
   uuid: update_ct_staging
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: postgres
@@ -122,7 +122,7 @@ blocks:
   upstream_blocks:
   - update_ct_staging
   uuid: update_methodology_ct
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: postgres
@@ -147,7 +147,7 @@ blocks:
   upstream_blocks:
   - update_ct_staging
   uuid: update_publisher_datasource_ct
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: postgres
@@ -172,7 +172,7 @@ blocks:
   upstream_blocks:
   - update_ct_staging
   uuid: update_activity_subcategory_ct
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: postgres
@@ -197,7 +197,7 @@ blocks:
   upstream_blocks:
   - update_ct_staging
   uuid: update_emission_factors_ct
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: postgres
@@ -222,7 +222,7 @@ blocks:
   upstream_blocks:
   - update_ct_staging
   uuid: update_emissions_ct
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: teal
   configuration:
     data_provider: postgres

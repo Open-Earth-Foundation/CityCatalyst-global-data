@@ -65,7 +65,7 @@ def transform(data: DataFrame, *args, **kwargs):
     data['methodology_description'] = 'This methodology estimates methane (CH₄) emissions from confined cattle (e.g., feedlots and dairies) using a facility-level approach. It is based on IPCC Tier 2 methods, incorporating region-specific emission factors and cattle diet data to improve accuracy over default Tier 1 approaches.'
     data['publisher_name'] = 'ClimateTRACE'
     data['publisher_url'] = 'https://climatetrace.org/'
-    data['datasource_name'] = 'ClimateTRACE'
+    data['datasource_name'] = 'ClimateTRACEv2024'
     data['dataset_name'] = 'Enteric Fermentation Cattle Operation v4.3.1'
     data['dataset_url'] = 'https://downloads.climatetrace.org/v4.3.1/sector_packages/ch4/agriculture.zip'
 

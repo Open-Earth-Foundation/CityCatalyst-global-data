@@ -65,7 +65,7 @@ def transform(data: DataFrame, *args, **kwargs):
     data['methodology_description'] = 'This methodology estimates methane (CH₄) emissions from grazing cattle using gridded livestock density data and regional emission factors. It follows a combination of IPCC Tier 1 and Tier 2 approaches, adjusting default emission factors to reflect regional differences in cattle type and management.'
     data['publisher_name'] = 'ClimateTRACE'
     data['publisher_url'] = 'https://climatetrace.org/'
-    data['datasource_name'] = 'ClimateTRACE'
+    data['datasource_name'] = 'ClimateTRACEv2024'
     data['dataset_name'] = 'Enteric Fermentation Cattle Pasture v4.3.1'
     data['dataset_url'] = 'https://downloads.climatetrace.org/v4.3.1/sector_packages/ch4/agriculture.zip'
 
