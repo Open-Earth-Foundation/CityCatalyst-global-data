@@ -28,7 +28,7 @@ blocks:
   language: python
   name: import_raw_manure_management_pasture_ct_froms3
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: data_loader
   upstream_blocks: []
@@ -44,7 +44,7 @@ blocks:
   language: python
   name: transformation_manure_management_pasture_ct
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: transformer
   upstream_blocks:

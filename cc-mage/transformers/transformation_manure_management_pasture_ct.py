@@ -65,7 +65,7 @@ def transform(data: DataFrame, *args, **kwargs):
     data['methodology_description'] = 'This methodology estimates nitrous oxide (N₂O) emissions from manure deposited directly onto pasture by grazing cattle. It uses IPCC Tier 1 methods, applying default nitrogen excretion rates and emission factors based on regional climate and soil conditions.'
     data['publisher_name'] = 'ClimateTRACE'
     data['publisher_url'] = 'https://climatetrace.org/'
-    data['datasource_name'] = 'ClimateTRACE'
+    data['datasource_name'] = 'ClimateTRACEv2024'
     data['dataset_name'] = 'Manure Management Cattle Pasture v4.3.1'
     data['dataset_url'] = 'https://downloads.climatetrace.org/v4.3.1/sector_packages/ch4/agriculture.zip'
 
