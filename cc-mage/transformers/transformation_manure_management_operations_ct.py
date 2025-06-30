@@ -65,7 +65,7 @@ def transform(data: DataFrame, *args, **kwargs):
     data['methodology_description'] = 'This methodology estimates methane (CH₄) and nitrous oxide (N₂O) emissions from manure storage and treatment systems at confined cattle facilities. It follows IPCC Tier 2 methods, using country-specific manure management system distributions, climate data, and facility-level cattle counts to refine emissions estimates.'
     data['publisher_name'] = 'ClimateTRACE'
     data['publisher_url'] = 'https://climatetrace.org/'
-    data['datasource_name'] = 'ClimateTRACE'
+    data['datasource_name'] = 'ClimateTRACEv2024'
     data['dataset_name'] = 'Manure Management Cattle Operation v4.3.1'
     data['dataset_url'] = 'https://downloads.climatetrace.org/v4.3.1/sector_packages/ch4/agriculture.zip'
 
