@@ -3512,7 +3512,7 @@
       estatístico para o planejamento energético nacional. Os combustíveis incluídos
       são GLP, querosene e carvão de lenha.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: http://datos.energia.gob.ar/dataset/balances-energeticos
   geographical_location: AR
   start_year: 2018
@@ -3590,7 +3590,7 @@
       estatístico para o planejamento energético nacional. Os combustíveis incluídos
       são GLP, querosene e carvão de lenha.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: http://datos.energia.gob.ar/dataset/balances-energeticos
   geographical_location: AR
   start_year: 2018
@@ -3668,7 +3668,7 @@
       estatístico para o planejamento energético nacional. Os combustíveis incluídos
       são GLP, querosene e carvão de lenha.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: http://datos.energia.gob.ar/dataset/balances-energeticos
   geographical_location: AR
   start_year: 2018
@@ -3752,7 +3752,7 @@
       estatístico para o planejamento energético nacional. Os combustíveis incluídos
       são GLP, querosene e carvão de lenha.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: http://datos.energia.gob.ar/dataset/balances-energeticos
   geographical_location: AR
   start_year: 2018
@@ -3826,7 +3826,7 @@
       Volume de gás entregue pelos distribuidores em cada província por usuário
       final
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://www.enargas.gob.ar/secciones/transporte-y-distribucion/datos-operativos-subsec.php?sec=1&subsec=10&subsecord=10
   geographical_location: AR
   start_year: 2018
@@ -3890,7 +3890,7 @@
       Volume de gás entregue pelos distribuidores em cada província por usuário
       final
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://www.enargas.gob.ar/secciones/transporte-y-distribucion/datos-operativos-subsec.php?sec=1&subsec=10&subsecord=10
   geographical_location: AR
   start_year: 2018
@@ -3958,7 +3958,7 @@
       Volume de gás entregue pelos distribuidores em cada província por usuário
       final
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://www.enargas.gob.ar/secciones/transporte-y-distribucion/datos-operativos-subsec.php?sec=1&subsec=10&subsecord=10
   geographical_location: AR
   start_year: 2018
@@ -4024,7 +4024,7 @@
       Volume de gás entregue pelos distribuidores em cada província por usuário
       final
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://www.enargas.gob.ar/secciones/transporte-y-distribucion/datos-operativos-subsec.php?sec=1&subsec=10&subsecord=10
   geographical_location: AR
   start_year: 2018
@@ -4089,7 +4089,7 @@
       Refino e Comercialização de petróleo, gás e derivados. Vendas de mercado por
       setor e província reportadas pela Secretaria de Energia do Governo Nacional
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: http://datos.energia.gob.ar
   geographical_location: AR
   start_year: 2010
@@ -4144,7 +4144,7 @@
       Refino e Comercialização de petróleo, gás e derivados. Vendas de mercado por
       setor e província reportadas pela Secretaria de Energia do Governo Nacional
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: http://datos.energia.gob.ar
   geographical_location: AR
   start_year: 2010
@@ -4199,7 +4199,7 @@
       Refino e Comercialização de petróleo, gás e derivados. Vendas de mercado por
       setor e província reportadas pela Secretaria de Energia do Governo Nacional
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: http://datos.energia.gob.ar
   geographical_location: AR
   start_year: 2010
@@ -4254,7 +4254,7 @@
       Refino e Comercialização de petróleo, gás e derivados. Vendas do mercado por
       setor e província reportadas pela Secretaria de Energia do Governo Nacional
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: http://datos.energia.gob.ar
   geographical_location: AR
   start_year: 2010
@@ -4304,7 +4304,7 @@
       argentinas
     pt: Dados locais de geração de energia por usinas nas províncias argentinas
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://cammesaweb.cammesa.com/download/factor-de-emision/
   geographical_location: AR
   start_year: 2020
@@ -4373,7 +4373,7 @@
       emissões em nível municipal provenientes da combustão de combustíveis em edifícios
       residenciais.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
   start_year: 2015
@@ -4455,7 +4455,7 @@
       emissões em nível municipal provenientes da combustão de combustíveis em edifícios
       residenciais.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
   start_year: 2015
@@ -4537,7 +4537,7 @@
       dados de emissões a nível municipal provenientes da combustão de combustíveis
       em edifícios comerciais.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
   start_year: 2015
@@ -4618,7 +4618,7 @@
       dados de emissões a nível municipal provenientes da combustão de combustíveis
       em edifícios comerciais.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
   start_year: 2015
@@ -4699,7 +4699,7 @@
       emissões em nível municipal provenientes da combustão de combustíveis em edifícios
       industriais.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
   start_year: 2015
@@ -4780,7 +4780,7 @@
       emissões em nível municipal provenientes da combustão de combustíveis em edifícios
       industriais.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
   start_year: 2015
@@ -4859,7 +4859,7 @@
       O Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) fornece
       dados de emissões a nível municipal da indústria de energia.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
   start_year: 2015
@@ -4938,7 +4938,7 @@
       O Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) fornece
       dados de emissões a nível municipal da indústria de energia.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
   start_year: 2015
@@ -5020,7 +5020,7 @@
       emissões em nível municipal provenientes das atividades de agricultura, silvicultura
       e pesca.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
   start_year: 2015
@@ -5102,7 +5102,7 @@
       emissões em nível municipal provenientes das atividades de agricultura, silvicultura
       e pesca.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
   start_year: 2015
@@ -5184,7 +5184,7 @@
       dados de emissões a nível municipal provenientes de emissões fugitivas de sistemas
       de petróleo e gás natural.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
   start_year: 2015
@@ -5267,7 +5267,7 @@
       dados de emissões a nível municipal provenientes de emissões fugitivas de sistemas
       de petróleo e gás natural.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
   start_year: 2015
@@ -5348,7 +5348,7 @@
       O Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) fornece
       dados de emissões a nível municipal provenientes do transporte rodoviário.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
   start_year: 2015
@@ -5422,7 +5422,7 @@
       O Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) fornece
       dados de emissões a nível municipal provenientes do transporte rodoviário.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
   start_year: 2015
@@ -5495,7 +5495,7 @@
       O Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) fornece
       dados de emissões a nível municipal para o transporte ferroviário.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
   start_year: 2015
@@ -5568,7 +5568,7 @@
       O Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) fornece
       dados de emissões a nível municipal para o transporte ferroviário.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
   start_year: 2015
@@ -5641,7 +5641,7 @@
       O Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) fornece
       dados de emissões a nível municipal para navegação aquática.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
   start_year: 2015
@@ -5713,7 +5713,7 @@
       O Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) fornece
       dados de emissões a nível municipal para navegação aquática.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
   start_year: 2015
@@ -5785,7 +5785,7 @@
       O Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) fornece
       dados de emissões a nível municipal para a aviação.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
   start_year: 2015
@@ -5856,7 +5856,7 @@
       O Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) fornece
       dados de emissões a nível municipal para a aviação.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
   start_year: 2015
@@ -5930,7 +5930,7 @@
       dados de emissões a nível municipal para a agricultura, silvicultura e outras
       utilizações da terra (AFOLU) relacionadas ao gado.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
   start_year: 2015
@@ -6004,7 +6004,7 @@
       dados de emissões a nível municipal para a agricultura, silvicultura e outras
       utilizações da terra (AFOLU) relacionadas ao gado.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
   start_year: 2015
@@ -6078,7 +6078,7 @@
       emissões em nível municipal para agricultura, silvicultura e outras emissões
       de uso da terra (AFOLU) e mudança de uso da terra.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
   start_year: 2015
@@ -6165,7 +6165,7 @@
       emissões em nível municipal para agricultura, silvicultura e outras emissões
       de uso da terra (AFOLU) e mudança de uso da terra.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
   start_year: 2015
@@ -6249,7 +6249,7 @@
       O Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) fornece
       emissões a nível municipal para fontes agregadas e emissões não-CO2.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
   start_year: 2015
@@ -6321,7 +6321,7 @@
       O Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) fornece
       emissões a nível municipal para fontes agregadas e emissões não-CO2.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
   start_year: 2015
@@ -6393,7 +6393,7 @@
       O Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) fornece
       emissões a nível municipal para fontes agregadas e emissões não-CO2.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
   start_year: 2015
@@ -6459,7 +6459,7 @@
       A Empresa de Pesquisa Energética (EPE) fornece dados anuais de consumo de
       eletricidade categorizados por sub-setor em nível estadual em todo o Brasil.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://dashboard.epe.gov.br/apps/anuario-livro/#Apresenta%C3%A7%C3%A3o
   geographical_location: BR
   start_year: 2014
@@ -6524,7 +6524,7 @@
       A Empresa de Pesquisa Energética (EPE) fornece dados anuais de consumo de
       eletricidade categorizados por sub-setor em nível estadual em todo o Brasil.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://dashboard.epe.gov.br/apps/anuario-livro/#Apresenta%C3%A7%C3%A3o
   geographical_location: BR
   start_year: 2014
@@ -6592,7 +6592,7 @@
       A Empresa de Pesquisa Energética (EPE) fornece dados anuais de consumo de
       eletricidade categorizados por sub-setor em nível estadual em todo o Brasil.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://dashboard.epe.gov.br/apps/anuario-livro/#Apresenta%C3%A7%C3%A3o
   geographical_location: BR
   start_year: 2014
@@ -6660,7 +6660,7 @@
       A Empresa de Pesquisa Energética (EPE) fornece dados anuais de consumo de
       eletricidade categorizados por sub-setor em nível estadual em todo o Brasil.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://dashboard.epe.gov.br/apps/anuario-livro/#Apresenta%C3%A7%C3%A3o
   geographical_location: BR
   start_year: 2014
@@ -7092,7 +7092,7 @@
       A Empresa de Pesquisa Energética (EPE) fornece dados anuais de consumo de
       eletricidade categorizados por sub-setor em nível estadual em todo o Brasil.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://dashboard.epe.gov.br/apps/anuario-livro/#Apresenta%C3%A7%C3%A3o
   geographical_location: BR
   start_year: 2014
@@ -7146,7 +7146,7 @@
       A Empresa de Pesquisa Energética (EPE) fornece dados anuais de consumo de
       eletricidade categorizados por sub-setor em nível estadual em todo o Brasil.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://dashboard.epe.gov.br/apps/anuario-livro/#Apresenta%C3%A7%C3%A3o
   geographical_location: BR
   start_year: 2014
@@ -7200,7 +7200,7 @@
       A Empresa de Pesquisa Energética (EPE) fornece dados anuais de consumo de
       eletricidade categorizados por sub-setor em nível estadual em todo o Brasil.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://dashboard.epe.gov.br/apps/anuario-livro/#Apresenta%C3%A7%C3%A3o
   geographical_location: BR
   start_year: 2014
@@ -7254,7 +7254,7 @@
       A Empresa de Pesquisa Energética (EPE) fornece dados anuais de consumo de
       eletricidade categorizados por sub-setor em nível estadual em todo o Brasil.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://dashboard.epe.gov.br/apps/anuario-livro/#Apresenta%C3%A7%C3%A3o
   geographical_location: BR
   start_year: 2014
@@ -7308,7 +7308,7 @@
       O Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) fornece
       emissões a nível municipal para fontes agregadas e emissões não-CO2.
   source_type: Third-party
-  access_type: Public
+  access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
   start_year: 2015
