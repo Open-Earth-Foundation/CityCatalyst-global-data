@@ -6844,7 +6844,7 @@
       no monitoramento das emissões do Brasil e na orientação de estratégias climáticas
       nacionais e internacionais.
 - datasource_id: 06b23117-4890-4467-a740-b7099675413b
-  publisher_id: SEEG
+  publisher_id: SEEG version 2023
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
     en: SEEG Fuel Combustion in Residential Buildings
@@ -6870,7 +6870,7 @@
   access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
-  start_year: 2023
+  start_year: 2015
   end_year: 2023
   latest_accounting_year: 2023
   frequency_of_update: annual
@@ -7103,7 +7103,7 @@
       no monitoramento das emissões do Brasil e na orientação de estratégias climáticas
       nacionais e internacionais.
 - datasource_id: bfe11415-e453-4a46-b238-3836cfcb52a7
-  publisher_id: SEEG
+  publisher_id: SEEG version 2023
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
     en: SEEG Fuel Combustion in Commercial Buildings
@@ -7129,7 +7129,7 @@
   access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
-  start_year: 2023
+  start_year: 2015
   end_year: 2023
   latest_accounting_year: 2023
   frequency_of_update: annual
@@ -7361,7 +7361,7 @@
       no monitoramento das emissões do Brasil e na orientação de estratégias climáticas
       nacionais e internacionais.
 - datasource_id: 7a9c2e70-54e8-4cd0-8065-05ba3263721d
-  publisher_id: SEEG
+  publisher_id: SEEG version 2023
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
     en: SEEG Fuel Combustion in Industrial Buildings
@@ -7387,7 +7387,7 @@
   access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
-  start_year: 2023
+  start_year: 2015
   end_year: 2023
   latest_accounting_year: 2023
   frequency_of_update: annual
@@ -7616,7 +7616,7 @@
       no monitoramento das emissões do Brasil e na orientação de estratégias climáticas
       nacionais e internacionais.
 - datasource_id: 3e3aced9-4e5b-436a-a4c1-e8abed2c2ca6
-  publisher_id: SEEG
+  publisher_id: SEEG version 2023
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
     en: SEEG Fuel Combustion in Energy Industry
@@ -7639,7 +7639,7 @@
   access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
-  start_year: 2023
+  start_year: 2015
   end_year: 2023
   latest_accounting_year: 2023
   frequency_of_update: annual
@@ -7873,7 +7873,7 @@
       no monitoramento das emissões do Brasil e na orientação de estratégias climáticas
       nacionais e internacionais.
 - datasource_id: 0352419c-103e-446c-9b68-5b87fc72b443
-  publisher_id: SEEG
+  publisher_id: SEEG version 2023
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
     en: SEEG Fuel Combustion in Agriculture, Forestry and Fishing
@@ -7902,7 +7902,7 @@
   access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
-  start_year: 2023
+  start_year: 2015
   end_year: 2023
   latest_accounting_year: 2023
   frequency_of_update: annual
@@ -8137,7 +8137,7 @@
       no monitoramento das emissões do Brasil e na orientação de estratégias climáticas
       nacionais e internacionais.
 - datasource_id: ebfdf47c-2418-4730-b411-67f3824ef656
-  publisher_id: SEEG
+  publisher_id: SEEG version 2023
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
     en: SEEG Fugitive Emissions from Oil and Natural Gas
@@ -8164,7 +8164,7 @@
   access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
-  start_year: 2023
+  start_year: 2015
   end_year: 2023
   latest_accounting_year: 2023
   frequency_of_update: annual
@@ -8383,7 +8383,7 @@
       no monitoramento das emissões do Brasil e na orientação de estratégias climáticas
       nacionais e internacionais.
 - datasource_id: 3f303bd0-6008-4913-8692-561f824ecde2
-  publisher_id: SEEG
+  publisher_id: SEEG version 2023
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
     en: SEEG On-Road Transportation Emissions
@@ -8407,7 +8407,7 @@
   access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
-  start_year: 2023
+  start_year: 2015
   end_year: 2023
   latest_accounting_year: 2023
   frequency_of_update: annual
@@ -8612,7 +8612,7 @@
       no monitoramento das emissões do Brasil e na orientação de estratégias climáticas
       nacionais e internacionais.
 - datasource_id: 8c0362e1-e9e2-4480-9b05-0eef1206e654
-  publisher_id: SEEG
+  publisher_id: SEEG version 2023
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
     en: SEEG Railway Transport Emissions
@@ -8635,7 +8635,7 @@
   access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
-  start_year: 2023
+  start_year: 2015
   end_year: 2023
   latest_accounting_year: 2023
   frequency_of_update: annual
@@ -8839,7 +8839,7 @@
       no monitoramento das emissões do Brasil e na orientação de estratégias climáticas
       nacionais e internacionais.
 - datasource_id: 3afc6b0c-a162-4539-bb30-bbdf9013414d
-  publisher_id: SEEG
+  publisher_id: SEEG version 2023
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
     en: SEEG Waterborne Navigation Emissions
@@ -8862,7 +8862,7 @@
   access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
-  start_year: 2023
+  start_year: 2015
   end_year: 2023
   latest_accounting_year: 2023
   frequency_of_update: annual
@@ -9064,7 +9064,7 @@
       no monitoramento das emissões do Brasil e na orientação de estratégias climáticas
       nacionais e internacionais.
 - datasource_id: 2c456451-ca9f-45bf-ab4c-8ed76094c32b
-  publisher_id: SEEG
+  publisher_id: SEEG version 2023
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
     en: SEEG Aviation Emissions
@@ -9087,7 +9087,7 @@
   access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
-  start_year: 2023
+  start_year: 2015
   end_year: 2023
   latest_accounting_year: 2023
   frequency_of_update: annual
@@ -9292,7 +9292,7 @@
       no monitoramento das emissões do Brasil e na orientação de estratégias climáticas
       nacionais e internacionais.
 - datasource_id: 0309b37b-b265-4ca6-aa05-3aef53f62184
-  publisher_id: SEEG
+  publisher_id: SEEG version 2023
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
     en: SEEG Livestock Emissions
@@ -9320,7 +9320,7 @@
   access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
-  start_year: 2023
+  start_year: 2015
   end_year: 2023
   latest_accounting_year: 2023
   frequency_of_update: annual
@@ -9549,7 +9549,7 @@
       no monitoramento das emissões do Brasil e na orientação de estratégias climáticas
       nacionais e internacionais.
 - datasource_id: 43de4888-2c63-4db8-a08a-01827e2be213
-  publisher_id: SEEG
+  publisher_id: SEEG version 2023
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
     en: SEEG Land Use and Land Change Emissions
@@ -9579,7 +9579,7 @@
   access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
-  start_year: 2023
+  start_year: 2015
   end_year: 2023
   latest_accounting_year: 2023
   frequency_of_update: annual
@@ -9804,7 +9804,7 @@
       no monitoramento das emissões do Brasil e na orientação de estratégias climáticas
       nacionais e internacionais.
 - datasource_id: 1fa40597-0e04-4adc-83bb-1e6bb46e5a09
-  publisher_id: SEEG
+  publisher_id: SEEG version 2023
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
     en: SEEG Emissions from Aggregate Sources and Non CO2
@@ -9828,7 +9828,7 @@
   access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
-  start_year: 2023
+  start_year: 2015
   end_year: 2023
   latest_accounting_year: 2023
   frequency_of_update: annual
@@ -11790,7 +11790,7 @@
       desenvolvimento de infraestrutura e ao planejamento de longo prazo para um futuro
       energético seguro e sustentável no Brasil.
 - datasource_id: 7ff4766f-2d44-465f-ac30-19e8b6d07276
-  publisher_id: SEEG
+  publisher_id: SEEG version 2023
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
     en: SEEG Emissions from Industrial Processes
@@ -11814,7 +11814,7 @@
   access_type: public
   dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
   geographical_location: BR
-  start_year: 2023
+  start_year: 2015
   end_year: 2023
   latest_accounting_year: 2023
   frequency_of_update: annual
@@ -12127,32 +12127,3 @@
   gpc_reference_number: I.8.1
   scope: 1
   priority: 2.125
-  datasource_description:
-    en: Climate TRACE is a global coalition that uses satellite imagery, AI, and other
-      remote sensing technologies to independently track greenhouse gas emissions
-      in near real-time. The initiative provides high-resolution, facility-level data
-      across sectors like power, transportation, agriculture, and land use, making
-      emissions information more transparent and accessible. By offering free, publicly
-      available data, Climate TRACE empowers governments, companies, and civil society
-      to make data-driven decisions for climate action. Its goal is to close the emissions
-      data gap and accelerate accountability and progress toward global climate targets.
-    es: Climate TRACE es una coalición global que utiliza imágenes satelitales, IA
-      y otras tecnologías de teledetección para rastrear de forma independiente las
-      emisiones de gases de efecto invernadero casi en tiempo real. La iniciativa
-      proporciona datos de alta resolución a nivel de instalaciones en sectores como
-      la energía, el transporte, la agricultura y el uso del suelo, lo que hace que
-      la información sobre emisiones sea más transparente y accesible. Al ofrecer
-      datos gratuitos y públicos, Climate TRACE empodera a gobiernos, empresas y sociedad
-      civil para tomar decisiones basadas en datos para la acción climática. Su objetivo
-      es cerrar la brecha de datos sobre emisiones y acelerar la rendición de cuentas
-      y el progreso hacia los objetivos climáticos globales.
-    pt: A Climate TRACE é uma coalizão global que utiliza imagens de satélite, inteligência
-      artificial e outras tecnologias de sensoriamento remoto para monitorar de forma
-      independente as emissões de gases de efeito estufa em quase tempo real. A iniciativa
-      fornece dados de alta resolução, em nível de instalação, cobrindo setores como
-      energia, transporte, agricultura e uso da terra, tornando as informações sobre
-      emissões mais transparentes e acessíveis. Ao oferecer dados gratuitos e disponíveis
-      ao público, a Climate TRACE capacita governos, empresas e a sociedade civil
-      a tomar decisões baseadas em dados para ações climáticas. Seu objetivo é reduzir
-      a lacuna de dados sobre emissões e acelerar a responsabilização e o progresso
-      em direção às metas climáticas globais.
