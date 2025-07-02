@@ -10579,11 +10579,11 @@
   publisher_id: SEEG
   datasource_name: Sistema de Estimativa de Emissão de Gases do Efeito Estufa
   dataset_name:
-    en: SEEG Livestock Emissions v2023
-    es: Emisiones de Ganado SEEG v2023
-    pt: Emissões de Gado SEEG v2023
-    fr: Émissions de Gado SEEG v2023
-    de: SEEG Vieh-Emissionen v2023
+    en: SEEG Livestock Emissions
+    es: Emisiones de Ganado SEEG
+    pt: Emissões de Gado SEEG
+    fr: Émissions de Gado SEEG
+    de: SEEG Vieh-Emissionen
   dataset_description:
     en:
       Sistema de Estimativa de Emissão de Gases do Efeito Estufa (SEEG) provides
