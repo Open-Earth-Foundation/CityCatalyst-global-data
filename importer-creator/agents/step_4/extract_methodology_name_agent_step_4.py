@@ -7,6 +7,8 @@ from utils.create_prompt import create_prompt
 from utils.agent_creation import create_coding_agent
 from utils.json_output_cleaner import clean_json_output
 from context.mappings.mappings_methodologies import methodologies_mapping
+from utils.path_helper import get_run_path, ensure_path_exists
+from utils.gemini_mitigation import invoke_with_retry
 
 
 def extract_methodology_name_agent_step_4(
@@ -25,8 +27,8 @@ def extract_methodology_name_agent_step_4(
     print("\nEXTRACT METHODOLOGY NAME AGENT STEP 4\n")
 
     # Load the output files of initial script
-    input_path_csv = "./generated/step_3/final/generated_final_output.csv"
-    input_path_script = "./generated/step_3/final/generated_script_final_output.py"
+    input_path_csv = get_run_path(state, "step_3/final/final_output.csv")
+    input_path_script = get_run_path(state, "step_3/final/final_output.py")
 
     # Load the csv file into the dataframe
     df = pd.read_csv(input_path_csv, encoding="utf-8")
@@ -35,13 +37,14 @@ def extract_methodology_name_agent_step_4(
         script = file.read()
 
     # Define the output paths
-    output_path_csv = "./generated/step_4/steps/extracted_methodology_name.csv"
-    output_path_script = (
-        "./generated/step_4/steps/generated_script_extracted_methodology_name.py"
-    )
-    output_path_markdown = (
-        "./generated/step_4/steps/generated_markdown_extracted_methodology_name.md"
-    )
+    output_path_csv = get_run_path(state, "step_4/steps/extracted_methodology_name.csv")
+    output_path_script = get_run_path(state, "step_4/steps/generated_script_extracted_methodology_name.py")
+    output_path_markdown = get_run_path(state, "step_4/steps/generated_markdown_extracted_methodology_name.md")
+    
+    # Ensure output directories exist
+    ensure_path_exists(output_path_csv)
+    ensure_path_exists(output_path_script)
+    ensure_path_exists(output_path_markdown)
 
     task = """
 Your task is to extract the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) 'methodology name' from the provided python pandas dataframe based on the instructions below. You will also create a runnable python script.
@@ -111,10 +114,13 @@ This is the output path for the new .csv file: {output_path_csv}
     )
 
     # Create agent
-    agent = create_coding_agent(df, state.get("verbose"))
+    verbose = state.get("verbose", False)
+    if verbose is None:
+        verbose = False
+    agent = create_coding_agent(df, verbose)
 
     # Invoke summary agent with custom prompt
-    response = agent.invoke(prompt)
+    response = invoke_with_retry(agent, prompt)
     response_output = response.get("output")
 
     # Check and potentially clean the JSON output by removing ```json``` code block markers
@@ -160,3 +166,5 @@ This is the output path for the new .csv file: {output_path_csv}
     else:
         print("No Python code was found in the agent's response.")
         sys.exit(1)
+
+    return state

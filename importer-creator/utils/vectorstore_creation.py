@@ -3,6 +3,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_openai import OpenAIEmbeddings
 from langchain_chroma import Chroma
 from dotenv import load_dotenv
+from utils.config_loader import ConfigLoader
 
 load_dotenv()
 
@@ -24,9 +25,16 @@ def create_vectorstore():
     # Split PDF using text splitter
     pages = loader.load_and_split(text_splitter)
 
-    # Create embeddings model
+    # Get configuration
+    embeddings_model = ConfigLoader.get_embeddings_model()
+    base_url = ConfigLoader.get_base_url()
+    api_key = ConfigLoader.get_api_key()
+
+    # Create embeddings model with OpenRouter
     embeddings = OpenAIEmbeddings(
-        model="text-embedding-3-large",
+        model=embeddings_model,
+        base_url=base_url,
+        api_key=api_key  # type: ignore
     )
 
     # Create Chroma vector store

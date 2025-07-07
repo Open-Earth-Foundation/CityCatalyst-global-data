@@ -8,10 +8,11 @@ from utils.create_prompt import create_prompt
 from utils.agent_creation import create_coding_agent
 from utils.json_output_cleaner import clean_json_output
 from context.mappings.mappings_methodologies import methodologies_mapping
+from utils.path_helper import get_run_path, ensure_path_exists
 
 
 def get_emissionfactor_value_agent_step_4(
-    # state: AgentState,
+    state: AgentState,
 ):
     """
     This agent extracts the unique combinations of 'gpc_refno', 'actor_name' (region) and 'methodology_name' from the dataframe 'df'.
@@ -26,10 +27,8 @@ def get_emissionfactor_value_agent_step_4(
     print("\nGET EMISSIONFACTOR VALUE AGENT STEP 4\n")
 
     # Load the output files of initial script
-    input_path_csv = "./generated/step_4/steps/extracted_methodology_name.csv"
-    input_path_script = (
-        "./generated/step_4/steps/generated_script_extracted_methodology_name.py"
-    )
+    input_path_csv = get_run_path(state, "step_4/steps/extracted_methodology_name.csv")
+    input_path_script = get_run_path(state, "step_4/steps/generated_script_extracted_methodology_name.py")
 
     # Load the csv file into the dataframe
     df = pd.read_csv(input_path_csv, encoding="utf-8")
@@ -38,13 +37,12 @@ def get_emissionfactor_value_agent_step_4(
     #     script = file.read()
 
     # Define the output paths
-    output_path_csv = "./generated/step_4/steps/extracted_emissionfactor_value.csv"
-    # output_path_script = (
-    #     "./generated/step_4/steps/generated_script_extracted_emissionfactor_value.py"
-    # )
-    # output_path_markdown = (
-    #     "./generated/step_4/steps/generated_markdown_extracted_emissionfactor_value.md"
-    # )
+    output_path_csv = get_run_path(state, "step_4/steps/extracted_emissionfactor_value.csv")
+    # output_path_script = get_run_path(state, "step_4/steps/generated_script_extracted_emissionfactor_value.py")
+    # output_path_markdown = get_run_path(state, "step_4/steps/generated_markdown_extracted_emissionfactor_value.md")
+    
+    # Ensure output directory exists
+    ensure_path_exists(output_path_csv)
 
     # Step 1: Extract unique combinations of 'actor_name', 'gpc_refno', 'methodology_name'
     # Based on implementation of API, this might need to be adjusted
@@ -61,9 +59,9 @@ def get_emissionfactor_value_agent_step_4(
 
         # Ensure required parameters are provided
         if pd.isnull(gpc_refno) or not gpc_refno.strip():
-            return None, "gpc_refno is required."
+            return None
         if pd.isnull(methodology_name) or not methodology_name.strip():
-            return None, "methodology_name is required."
+            return None
 
         # Set actor_name to 'world' if not provided
         if pd.isnull(actor_name) or not str(actor_name).strip():
@@ -122,3 +120,5 @@ def get_emissionfactor_value_agent_step_4(
 
     # Optionally, save the resulting DataFrame
     df_with_emissionfactor_value.to_csv(output_path_csv, index=False)
+
+    return state

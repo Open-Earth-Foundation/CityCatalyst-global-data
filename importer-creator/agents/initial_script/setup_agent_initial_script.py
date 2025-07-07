@@ -6,6 +6,8 @@ from state.agent_state import AgentState
 from utils.agent_factory import AgentFactory
 from utils.create_prompt import create_prompt
 from utils.create_descriptive_stats_prompt import create_descriptive_stats_prompt
+from utils.path_manager import path_manager
+from utils.gemini_mitigation import invoke_with_retry
 
 
 def setup_agent_initial_script(
@@ -21,24 +23,34 @@ def setup_agent_initial_script(
     """
     print("\nSETUP AGENT INITIAL SCRIPT\n")
 
+    # Create run directory for this execution
+    run_dir = path_manager.create_run_directory()
+    
+    # Store the run directory in state for other agents to use
+    state["run_dir"] = run_dir
+    print(f"DEBUG: Set run_dir in state: {run_dir}")
+    print(f"DEBUG: State after setting run_dir: {dict(state)}")
+
     # Get the original path for the CSV file passed from the user
     original_path_csv = state.get("full_path")
+    if not original_path_csv:
+        print("ERROR: No file path provided in state")
+        sys.exit(1)
 
     # Load the original CSV file into a pandas dataframe
     df_original = pd.read_csv(original_path_csv, encoding="utf-8")
 
     # Get pre-initialized agents from the AgentFactory
-    structured_output_agent = AgentFactory.get_structured_output_agent(
-        state.get("verbose")
-    )
-    agent = AgentFactory.get_coding_agent(df_original, state.get("verbose"))
+    verbose = state.get("verbose", False)
+    structured_output_agent = AgentFactory.get_structured_output_agent(verbose)
+    agent = AgentFactory.get_coding_agent(df_original, verbose)
 
     descriptive_statistics = create_descriptive_stats_prompt(df_original)
 
-    # Define the output paths for the generated files
-    output_path_csv = "./generated/initial_script/steps/1_initially.csv"
-    output_path_script = "./generated/initial_script/steps/1_initially.py"
-    output_path_markdown = "./generated/initial_script/steps/1_initially.md"
+    # Define the output paths for the generated files using the run directory
+    output_path_csv = path_manager.get_path("initial_script/steps/1_initially.csv")
+    output_path_script = path_manager.get_path("initial_script/steps/1_initially.py")
+    output_path_markdown = path_manager.get_path("initial_script/steps/1_initially.md")
 
     task = """
 Your task is to reformat a python pandas dataframe. You will do reformating based on below instructions and create a runnable python script.
@@ -87,9 +99,12 @@ c. Create a python script. This python script must contain the following:
     5. finally:
     - add code to output a new .csv file with the output path given below under <output_path> tags so that the new .csv file contains the new dataframe 'df_new' with the changes made above. The new .csv file must be comma separated ','. The .csv file must use 'encoding="utf-8"'.
     - store the path to the new .csv file in a variable 'output_path'.
+    - **IMPORTANT**: Use forward slashes '/' in the path string and ensure the directory exists before writing the file.
     - Use the following code snippet:
     ```python
-    output_path = ...
+    import os
+    output_path = ...  # Use forward slashes '/' in the path
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)  # Create directory if it doesn't exist
     df_new.to_csv(output_path, encoding='utf-8', sep=',', index=False)
     ```
 
@@ -128,11 +143,12 @@ The output path for the new .csv file is this: {output_path_csv}.
     )
 
     # Invoke summary agent with custom prompt
-    response = agent.invoke(descriptive_statistics + prompt)
+    full_prompt = descriptive_statistics + prompt
+    response = invoke_with_retry(agent, full_prompt)
     response_output = response.get("output")
 
     # Invoke the new structured output agent with the parsing task
-    structured_output = structured_output_agent.invoke(response_output)
+    structured_output = invoke_with_retry(structured_output_agent, response_output)
 
     ### Code below for extracting the code from the agent's response and running it - creating the csv file ###
     # Function to parse the JSON response from the agent
@@ -178,3 +194,7 @@ The output path for the new .csv file is this: {output_path_csv}.
     else:
         print("No Python code was found in the agent's response.")
         sys.exit(1)
+    
+    # Return the updated state so run_dir is preserved for other agents
+    print(f"DEBUG: Returning state with run_dir: {state.get('run_dir')}")
+    return state

@@ -1,0 +1,9 @@
+{
+  "embeddings_model": "text-embedding-3-large",
+  "total_documents": 1088,
+  "total_tokens": 223657,
+  "average_tokens_per_document": 205.57,
+  "max_tokens_per_document": 671,
+  "min_tokens_per_document": 2,
+  "estimated_embedding_cost": 0.0224
+}

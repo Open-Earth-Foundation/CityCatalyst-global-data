@@ -1,0 +1,23 @@
+models:
+  # Model configurations for OpenRouter
+  BIG_MODEL_2: "anthropic/claude-sonnet-4" # Switch to Claude for complex tasks
+  BIG_MODEL_1: "google/gemini-2.5-pro" #give me issues on calls to the model
+  BIG_MODEL_3: "openai/gpt-4.1"
+  BIG_MODEL: "google/gemini-2.5-flash-preview-05-20" #for tests
+  SMALL_MODEL: "google/gemini-2.5-flash-preview-05-20" # Switch to flash for simplier tasks
+  EMBEDDINGS_MODEL: "text-embedding-3-large"
+
+  # OpenRouter settings
+  base_url: "https://openrouter.ai/api/v1"
+  temperature: 0
+
+# API settings
+api:
+  # OpenRouter API key - set via OPENROUTER_API_KEY environment variable
+  timeout: 60
+  max_retries: 3
+
+# Optional OpenRouter headers for site rankings
+headers:
+  http_referer: "CityCatalyst-Importer" # Your site URL
+  x_title: "CityCatalyst Data Importer" # Your site name

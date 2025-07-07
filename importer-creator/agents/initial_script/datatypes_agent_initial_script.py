@@ -8,6 +8,8 @@ from utils.agent_factory import AgentFactory
 from context.mappings.mappings_white_list import white_list_mapping
 from utils.create_descriptive_stats_prompt import create_descriptive_stats_prompt
 from utils.file_paths_updater import update_file_paths
+from utils.path_helper import get_run_path, ensure_path_exists
+from utils.gemini_mitigation import invoke_with_retry
 
 
 def datatypes_agent_initial_script(state: AgentState):
@@ -22,33 +24,31 @@ def datatypes_agent_initial_script(state: AgentState):
     """
     print("\nFIX DATATYPES AGENT INITIAL SCRIPT\n")
 
-    # Get pre-initialized agents from the AgentFactory
-    structured_output_agent = AgentFactory.get_structured_output_agent(
-        state.get("verbose")
-    )
-    # agent = AgentFactory.get_coding_agent(df_original, state.get("verbose"))
-
     # Load the previously created formatted csv file into a pandas dataframe
-    input_path_csv = "./generated/initial_script/steps/2_deleted_columns.csv"
-    input_path_script = "./generated/initial_script/steps/2_deleted_columns.py"
+    input_path_csv = get_run_path(state, "initial_script/steps/2_deleted_columns.csv")
+    input_path_script = get_run_path(state, "initial_script/steps/2_deleted_columns.py")
 
     # Load the csv file into the dataframe
     df = pd.read_csv(input_path_csv, encoding="utf-8")
 
     # Get pre-initialized agents from the AgentFactory
-    structured_output_agent = AgentFactory.get_structured_output_agent(
-        state.get("verbose")
-    )
-    agent = AgentFactory.get_coding_agent(df, state.get("verbose"))
+    verbose = state.get("verbose", False)
+    structured_output_agent = AgentFactory.get_structured_output_agent(verbose)
+    agent = AgentFactory.get_coding_agent(df, verbose)
 
     descriptive_statistics = create_descriptive_stats_prompt(df)
     # Load the script
     with open(input_path_script, "r", encoding="utf-8") as file:
         script = file.read()
 
-    output_path_csv = "./generated/initial_script/steps/3_datatypes.csv"
-    output_path_script = "./generated/initial_script/steps/3_datatypes.py"
-    output_path_markdown = "./generated/initial_script/steps/3_datatypes.md"
+    output_path_csv = get_run_path(state, "initial_script/steps/3_datatypes.csv")
+    output_path_script = get_run_path(state, "initial_script/steps/3_datatypes.py")
+    output_path_markdown = get_run_path(state, "initial_script/steps/3_datatypes.md")
+    
+    # Ensure output directories exist
+    ensure_path_exists(output_path_csv)
+    ensure_path_exists(output_path_script)
+    ensure_path_exists(output_path_markdown)
 
     task = """
 Your task is to inspect and correct the datatypes of columns of the provided DataFrame 'df'. You will also create a runnable python script.
@@ -120,11 +120,12 @@ This is the prior python script provided:
     )
 
     # Invoke summary agent with custom prompt
-    response = agent.invoke(descriptive_statistics + prompt)
+    full_prompt = descriptive_statistics + prompt
+    response = invoke_with_retry(agent, full_prompt)
     response_output = response.get("output")
 
     # Invoke the new structured output agent with the parsing task
-    structured_output = structured_output_agent.invoke(response_output)
+    structured_output = invoke_with_retry(structured_output_agent, response_output)
 
     ### Code below for extracting the code from the agent's response and running it - creating the csv file ###
     # Function to parse the JSON response from the agent
@@ -175,3 +176,6 @@ This is the prior python script provided:
     else:
         print("No Python code was found in the agent's response.")
         sys.exit(1)
+    
+    # Return the state to pass to next agent
+    return state

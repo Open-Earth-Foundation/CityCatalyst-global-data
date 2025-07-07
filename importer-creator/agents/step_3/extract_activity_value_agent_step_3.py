@@ -7,6 +7,8 @@ from utils.create_prompt import create_prompt
 from utils.agent_factory import AgentFactory
 from utils.file_paths_updater import update_file_paths
 from utils.create_descriptive_stats_prompt import create_descriptive_stats_prompt
+from utils.path_helper import get_run_path, ensure_path_exists
+from utils.gemini_mitigation import invoke_with_retry
 
 
 def extract_activity_value_agent_step_3(
@@ -23,17 +25,18 @@ def extract_activity_value_agent_step_3(
     print("\nEXTRACT ACTIVITY VALUE AGENT STEP 3\n")
 
     # Load the output files of initial script
-    input_path_csv = "./generated/step_3/steps/1_activity_name.csv"
-    input_path_script = "./generated/step_3/steps/1_activity_name.py"
+    input_path_csv = get_run_path(state, "step_3/steps/1_activity_name.csv")
+    input_path_script = get_run_path(state, "step_3/steps/1_activity_name.py")
 
     # Load the csv file into the dataframe
     df = pd.read_csv(input_path_csv, encoding="utf-8")
 
     # Get pre-initialized agents from the AgentFactory
-    structured_output_agent = AgentFactory.get_structured_output_agent(
-        state.get("verbose")
-    )
-    agent = AgentFactory.get_coding_agent(df, state.get("verbose"))
+    verbose = state.get("verbose", False)
+    if verbose is None:
+        verbose = False
+    structured_output_agent = AgentFactory.get_structured_output_agent(verbose)
+    agent = AgentFactory.get_coding_agent(df, verbose)
 
     descriptive_statistics = create_descriptive_stats_prompt(df)
 
@@ -42,9 +45,14 @@ def extract_activity_value_agent_step_3(
         script = file.read()
 
     # Define the output paths
-    output_path_csv = "./generated/step_3/steps/2_activity_value.csv"
-    output_path_script = "./generated/step_3/steps/2_activity_value.py"
-    output_path_markdown = "./generated/step_3/steps/2_activity_value.md"
+    output_path_csv = get_run_path(state, "step_3/steps/2_activity_value.csv")
+    output_path_script = get_run_path(state, "step_3/steps/2_activity_value.py")
+    output_path_markdown = get_run_path(state, "step_3/steps/2_activity_value.md")
+    
+    # Ensure output directories exist
+    ensure_path_exists(output_path_csv)
+    ensure_path_exists(output_path_script)
+    ensure_path_exists(output_path_markdown)
 
     task = """
 Your task is to extract the Global Protocol for Community-Scale Greenhouse Gas Emission Inventories (GPC) 'activity value' (e.g. the number that describes how much fuel was sold, energy consumed and so on) from the provided python pandas dataframe based on the instructions below. You will also create a runnable python script.
@@ -64,7 +72,7 @@ b. Determine the GPC 'activity value' based on the content of the dataframe 'df'
 c. Inspect the provided python script under <prior_script> tags.
 d. Create a python script based on the script provided within <prior_script> tags. This python script must contain the following:
     1. the original code of the prior script provided in the <prior_script> tags **WITHOUT** any changes to the exisiting code. 
-    2. add a column 'activity_value' to the dataframe 'df_new' with the extracted GPC 'activity_value' based on your prior analysis.
+    2. add a column 'activity_value' to the dataframe 'df_new' with the extracted GPC 'activity value' based on your prior analysis.
     3. Insert the new code at the bottom of the script and before the final output to csv, to keep the chronological order of the script.
     4. **ONLY** insert the new code and **NEVER** overwrite or change the existing code. **NEVER** change the variable 'original_path'.
 
@@ -104,11 +112,11 @@ This is the prior python script provided:
     )
 
     # Invoke summary agent with custom prompt
-    response = agent.invoke(descriptive_statistics + prompt)
+    response = invoke_with_retry(agent, descriptive_statistics + prompt)
     response_output = response.get("output")
 
     # Invoke the new structured output agent with the parsing task
-    structured_output = structured_output_agent.invoke(response_output)
+    structured_output = invoke_with_retry(structured_output_agent, response_output)
 
     ### Code below for extracting the code from the agent's response and running it - creating the csv file ###
     # Function to parse the JSON response from the agent
@@ -160,3 +168,5 @@ This is the prior python script provided:
     else:
         print("No Python code was found in the agent's response.")
         sys.exit(1)
+
+    return state

@@ -22,14 +22,14 @@ def process_datafile(
     if show_graph:
         render_graph(app)
 
-    inputs = AgentState(
-        full_path=full_path,
-        datasource_name=datasource_name,
-        user_input=user_input,
-        feedback_hitl="",
-        verbose=verbose,
-        hitl=hitl,
-    )
+    inputs = {
+        "full_path": full_path,
+        "datasource_name": datasource_name,
+        "user_input": user_input,
+        "feedback_hitl": "",
+        "verbose": verbose,
+        "hitl": hitl,
+    }
 
     result = app.invoke(inputs)
     return result

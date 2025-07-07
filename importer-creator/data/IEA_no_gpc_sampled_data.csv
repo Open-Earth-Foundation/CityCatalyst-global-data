@@ -1,0 +1,201 @@
+country_name,year,activity_name,emissions_value,country_id,gas_name,emissions_units,source_name,temporal_granularity
+Israel,2020,electricity_and_heat_production,34267452868.021214,IL,co2e,kg,IEA_energy,annual
+Italy,2020,electricity_and_heat_production,87488472106.63928,IT,co2e,kg,IEA_energy,annual
+Poland,2020,electricity_and_heat_production,141560899379.34348,PL,co2e,kg,IEA_energy,annual
+Slovenia,2020,electricity_and_heat_production,4371190884.900598,SI,co2e,kg,IEA_energy,annual
+Botswana,2020,electricity_and_heat_production,3246981470.259626,BW,co2e,kg,IEA_energy,annual
+Congo,2020,electricity_and_heat_production,8145267.497073966,CD,co2e,kg,IEA_energy,annual
+Eritrea,2020,electricity_and_heat_production,408510905.3847031,ER,co2e,kg,IEA_energy,annual
+Namibia,2020,electricity_and_heat_production,88762522.74746305,,co2e,kg,IEA_energy,annual
+South Sudan,2020,electricity_and_heat_production,1137807553.425454,SS,co2e,kg,IEA_energy,annual
+Paraguay,2020,electricity_and_heat_production,1635228.6094570486,PY,co2e,kg,IEA_energy,annual
+Peru,2020,electricity_and_heat_production,10628960808.20021,PE,co2e,kg,IEA_energy,annual
+Venezuela,2020,electricity_and_heat_production,32334726561.8474,VE,co2e,kg,IEA_energy,annual
+Kuwait,2020,electricity_and_heat_production,58067742220.98378,KW,co2e,kg,IEA_energy,annual
+Germany,2020,other_energy_industry_own_use,20877905566.32264,DE,co2e,kg,IEA_energy,annual
+Turkmenistan,2020,other_energy_industry_own_use,18540956214.025177,TM,co2e,kg,IEA_energy,annual
+Botswana,2020,other_energy_industry_own_use,0.0,BW,co2e,kg,IEA_energy,annual
+Ghana,2020,other_energy_industry_own_use,100112455.94234824,GH,co2e,kg,IEA_energy,annual
+Namibia,2020,other_energy_industry_own_use,0.0,,co2e,kg,IEA_energy,annual
+Sudan,2020,other_energy_industry_own_use,100155552.76055747,SD,co2e,kg,IEA_energy,annual
+Uganda,2020,other_energy_industry_own_use,0.0,UG,co2e,kg,IEA_energy,annual
+India,2020,other_energy_industry_own_use,58083431602.92099,IN,co2e,kg,IEA_energy,annual
+Thailand,2020,other_energy_industry_own_use,18774072332.874805,TH,co2e,kg,IEA_energy,annual
+Bahrain,2020,other_energy_industry_own_use,3503104040.55113,BH,co2e,kg,IEA_energy,annual
+Qatar,2020,other_energy_industry_own_use,41615244698.62842,QA,co2e,kg,IEA_energy,annual
+Africa,2020,other_energy_industry_own_use,128718789049.207,ZA,co2e,kg,IEA_energy,annual
+Mexico,2020,manuf_industries_and_construction,47577075194.68256,MX,co2e,kg,IEA_energy,annual
+France,2020,manuf_industries_and_construction,44337538845.97061,FR,co2e,kg,IEA_energy,annual
+Algeria,2020,manuf_industries_and_construction,24608261893.97615,DZ,co2e,kg,IEA_energy,annual
+Egypt,2020,manuf_industries_and_construction,33521770992.15113,EG,co2e,kg,IEA_energy,annual
+Ghana,2020,manuf_industries_and_construction,2791719326.826103,GH,co2e,kg,IEA_energy,annual
+South Africa,2020,manuf_industries_and_construction,53907088339.29751,ZA,co2e,kg,IEA_energy,annual
+Brunei Darussalam,2020,manuf_industries_and_construction,462821374.9498152,BN,co2e,kg,IEA_energy,annual
+Bolivia,2020,manuf_industries_and_construction,2227006491.83009,BO,co2e,kg,IEA_energy,annual
+Ecuador,2020,manuf_industries_and_construction,3563238618.2043653,EC,co2e,kg,IEA_energy,annual
+Qatar,2020,manuf_industries_and_construction,22855389512.182568,QA,co2e,kg,IEA_energy,annual
+Syrian Arab Republic ,2020,manuf_industries_and_construction,3373598327.4790573,SY,co2e,kg,IEA_energy,annual
+United Arab Emirates,2020,manuf_industries_and_construction,82460675345.03914,AE,co2e,kg,IEA_energy,annual
+Azerbaijan,2020,road_transport,8850163810.119051,AZ,co2e,kg,IEA_energy,annual
+Angola,2020,road_transport,12508278063.084234,AO,co2e,kg,IEA_energy,annual
+Gabon,2020,road_transport,880377928.3484629,GA,co2e,kg,IEA_energy,annual
+Madagascar,2020,road_transport,1701562489.8375454,MG,co2e,kg,IEA_energy,annual
+Senegal,2020,road_transport,2799381778.120612,SN,co2e,kg,IEA_energy,annual
+Bangladesh,2020,road_transport,8583618256.475445,BD,co2e,kg,IEA_energy,annual
+Uruguay,2020,road_transport,3510505638.2823186,UY,co2e,kg,IEA_energy,annual
+Poland,2020,residential,30740457180.051407,PL,co2e,kg,IEA_energy,annual
+Uzbekistan,2020,residential,28987810073.267296,UZ,co2e,kg,IEA_energy,annual
+Congo,2020,residential,218058354.26648083,CD,co2e,kg,IEA_energy,annual
+Equatorial Guinea,2020,residential,169000639.19146958,GQ,co2e,kg,IEA_energy,annual
+Nigeria,2020,residential,8627101751.244371,NG,co2e,kg,IEA_energy,annual
+Senegal,2020,residential,514210425.3605524,SN,co2e,kg,IEA_energy,annual
+Malaysia,2020,residential,2882318703.020212,MY,co2e,kg,IEA_energy,annual
+Argentina,2020,residential,27083619916.92956,AR,co2e,kg,IEA_energy,annual
+Paraguay,2020,residential,217977130.6419992,PY,co2e,kg,IEA_energy,annual
+Iraq,2020,residential,16401261647.839998,IQ,co2e,kg,IEA_energy,annual
+Kuwait,2020,residential,988899021.6807356,KW,co2e,kg,IEA_energy,annual
+Saudi Arabia,2020,residential,5686990800.857252,SA,co2e,kg,IEA_energy,annual
+Australia,2020,commercial_public_services,5355194789.455927,AU,co2e,kg,IEA_energy,annual
+Netherlands,2020,commercial_public_services,7386047936.292028,NL,co2e,kg,IEA_energy,annual
+Ghana,2020,commercial_public_services,130645848.2595838,GH,co2e,kg,IEA_energy,annual
+Namibia,2020,commercial_public_services,9410527.377467014,,co2e,kg,IEA_energy,annual
+Bangladesh,2020,commercial_public_services,339841153.2173013,BD,co2e,kg,IEA_energy,annual
+Philippines,2020,commercial_public_services,7864065381.063196,PH,co2e,kg,IEA_energy,annual
+Chile,2020,other_transport,2318020575.693684,CL,co2e,kg,IEA_energy,annual
+United States,2020,other_transport,274031382297.67096,US,co2e,kg,IEA_energy,annual
+Denmark,2020,other_transport,709736928.0115677,DK,co2e,kg,IEA_energy,annual
+Italy,2020,other_transport,4065431911.383412,IT,co2e,kg,IEA_energy,annual
+Poland,2020,other_transport,1002333518.0539216,PL,co2e,kg,IEA_energy,annual
+Slovenia,2020,other_transport,22717866.45159629,SI,co2e,kg,IEA_energy,annual
+Romania,2020,other_transport,781496873.0525228,RO,co2e,kg,IEA_energy,annual
+Congo,2020,other_transport,412740589.8714925,CD,co2e,kg,IEA_energy,annual
+Eswatini,2020,other_transport,0.0,SZ,co2e,kg,IEA_energy,annual
+Tanzania,2020,other_transport,188939407.86671183,TZ,co2e,kg,IEA_energy,annual
+Tunisia,2020,other_transport,718266320.9615524,TN,co2e,kg,IEA_energy,annual
+Kuwait,2020,other_transport,0.0,KW,co2e,kg,IEA_energy,annual
+Oman,2020,other_transport,66922560.714409456,OM,co2e,kg,IEA_energy,annual
+Canada,2021,electricity_and_heat_production,76980518000.0,CA,co2e,kg,IEA_energy,annual
+Israel,2021,electricity_and_heat_production,32569079000.000004,IL,co2e,kg,IEA_energy,annual
+Belgium,2021,electricity_and_heat_production,14689095000.0,BE,co2e,kg,IEA_energy,annual
+Serbia,2021,electricity_and_heat_production,29710961000.0,RS,co2e,kg,IEA_energy,annual
+Congo,2021,electricity_and_heat_production,2301005000.0,CD,co2e,kg,IEA_energy,annual
+South Africa,2021,electricity_and_heat_production,214671351000.0,ZA,co2e,kg,IEA_energy,annual
+South Sudan,2021,electricity_and_heat_production,485488000.0,SS,co2e,kg,IEA_energy,annual
+India,2021,electricity_and_heat_production,1165721752000.0,IN,co2e,kg,IEA_energy,annual
+Mongolia,2021,electricity_and_heat_production,14532577000.0,MN,co2e,kg,IEA_energy,annual
+Thailand,2021,electricity_and_heat_production,82400810000.0,TH,co2e,kg,IEA_energy,annual
+Curaçao,2021,electricity_and_heat_production,530714000.0,CW,co2e,kg,IEA_energy,annual
+Guyana,2021,electricity_and_heat_production,925156000.0,GY,co2e,kg,IEA_energy,annual
+Suriname,2021,electricity_and_heat_production,1073698000.0,SR,co2e,kg,IEA_energy,annual
+Bahrain,2021,electricity_and_heat_production,23674674000.0,BH,co2e,kg,IEA_energy,annual
+Iraq,2021,electricity_and_heat_production,53865197000.0,IQ,co2e,kg,IEA_energy,annual
+Jordan,2021,electricity_and_heat_production,8107182999.999999,JO,co2e,kg,IEA_energy,annual
+Africa,2021,electricity_and_heat_production,473104870000.0,ZA,co2e,kg,IEA_energy,annual
+Japan,2021,other_energy_industry_own_use,34124462000.0,JP,co2e,kg,IEA_energy,annual
+Belgium,2021,other_energy_industry_own_use,5770334000.0,BE,co2e,kg,IEA_energy,annual
+Greece,2021,other_energy_industry_own_use,4512127000.0,GR,co2e,kg,IEA_energy,annual
+Slovenia,2021,other_energy_industry_own_use,2068000.0,SI,co2e,kg,IEA_energy,annual
+Algeria,2021,other_energy_industry_own_use,10210517000.0,DZ,co2e,kg,IEA_energy,annual
+Gabon,2021,other_energy_industry_own_use,284701000.0,GA,co2e,kg,IEA_energy,annual
+Madagascar,2021,other_energy_industry_own_use,0.0,MG,co2e,kg,IEA_energy,annual
+Senegal,2021,other_energy_industry_own_use,131330000.0,SN,co2e,kg,IEA_energy,annual
+Tanzania,2021,other_energy_industry_own_use,0.0,TZ,co2e,kg,IEA_energy,annual
+Tunisia,2021,other_energy_industry_own_use,536817000.0,TN,co2e,kg,IEA_energy,annual
+Zimbabwe,2021,other_energy_industry_own_use,90305000.0,ZW,co2e,kg,IEA_energy,annual
+India,2021,other_energy_industry_own_use,57651872000.0,IN,co2e,kg,IEA_energy,annual
+Myanmar,2021,other_energy_industry_own_use,1028734000.0,MM,co2e,kg,IEA_energy,annual
+Africa,2021,other_energy_industry_own_use,98370311000.0,ZA,co2e,kg,IEA_energy,annual
+Costa Rica,2021,manuf_industries_and_construction,1211231000.0,CR,co2e,kg,IEA_energy,annual
+Estonia,2021,manuf_industries_and_construction,347797000.0,EE,co2e,kg,IEA_energy,annual
+Luxembourg,2021,manuf_industries_and_construction,939174000.0,LU,co2e,kg,IEA_energy,annual
+Spain,2021,manuf_industries_and_construction,31967164000.0,ES,co2e,kg,IEA_energy,annual
+Cyprus,2021,manuf_industries_and_construction,552741000.0,CY,co2e,kg,IEA_energy,annual
+Equatorial Guinea,2021,manuf_industries_and_construction,1095304000.0,GQ,co2e,kg,IEA_energy,annual
+Gabon,2021,manuf_industries_and_construction,442071000.0,GA,co2e,kg,IEA_energy,annual
+Sudan,2021,manuf_industries_and_construction,1592324000.0,SD,co2e,kg,IEA_energy,annual
+Bangladesh,2021,manuf_industries_and_construction,19954951000.0,BD,co2e,kg,IEA_energy,annual
+Cambodia,2021,manuf_industries_and_construction,1025299000.0,KH,co2e,kg,IEA_energy,annual
+Sri Lanka,2021,manuf_industries_and_construction,1183076000.0,LK,co2e,kg,IEA_energy,annual
+Qatar,2021,manuf_industries_and_construction,17021115000.0,QA,co2e,kg,IEA_energy,annual
+Belgium,2021,road_transport,22383925000.0,BE,co2e,kg,IEA_energy,annual
+Portugal,2021,road_transport,14835401000.0,PT,co2e,kg,IEA_energy,annual
+Croatia,2021,road_transport,5946179000.0,HR,co2e,kg,IEA_energy,annual
+Namibia,2021,road_transport,1825626000.0,,co2e,kg,IEA_energy,annual
+South Sudan,2021,road_transport,939255000.0,SS,co2e,kg,IEA_energy,annual
+Tunisia,2021,road_transport,7308096000.0,TN,co2e,kg,IEA_energy,annual
+Zimbabwe,2021,road_transport,1389944000.0,ZW,co2e,kg,IEA_energy,annual
+Cambodia,2021,road_transport,5761236000.0,KH,co2e,kg,IEA_energy,annual
+Philippines,2021,road_transport,28589018000.0,PH,co2e,kg,IEA_energy,annual
+Brazil,2021,road_transport,183772915000.0,BR,co2e,kg,IEA_energy,annual
+Curaçao,2021,road_transport,1115109000.0,CW,co2e,kg,IEA_energy,annual
+Haiti,2021,road_transport,1393588000.0,HT,co2e,kg,IEA_energy,annual
+Mexico,2021,residential,19032833000.0,MX,co2e,kg,IEA_energy,annual
+United States,2021,residential,303053397000.0,US,co2e,kg,IEA_energy,annual
+New Zealand,2021,residential,621835000.0,NZ,co2e,kg,IEA_energy,annual
+Latvia,2021,residential,432892000.0,LV,co2e,kg,IEA_energy,annual
+Türkiye,2021,residential,37160988000.0,TR,co2e,kg,IEA_energy,annual
+Albania,2021,residential,322773000.0,AL,co2e,kg,IEA_energy,annual
+Montenegro,2021,residential,13325000.0,ME,co2e,kg,IEA_energy,annual
+North Macedonia,2021,residential,28139000.0,MK,co2e,kg,IEA_energy,annual
+Equatorial Guinea,2021,residential,62400000.0,GQ,co2e,kg,IEA_energy,annual
+Ethiopia,2021,residential,239764000.0,ET,co2e,kg,IEA_energy,annual
+Libya,2021,residential,1042640000.0,LY,co2e,kg,IEA_energy,annual
+Madagascar,2021,residential,85210000.0,MG,co2e,kg,IEA_energy,annual
+Mongolia,2021,residential,1385539000.0,MN,co2e,kg,IEA_energy,annual
+Thailand,2021,residential,4311612000.0,TH,co2e,kg,IEA_energy,annual
+Viet Nam,2021,residential,6487366000.0,VN,co2e,kg,IEA_energy,annual
+Honduras,2021,residential,280129000.0,HN,co2e,kg,IEA_energy,annual
+Jordan,2021,residential,1521870000.0,JO,co2e,kg,IEA_energy,annual
+Kuwait,2021,residential,840268000.0,KW,co2e,kg,IEA_energy,annual
+Lebanon,2021,residential,620269000.0,LB,co2e,kg,IEA_energy,annual
+Yemen,2021,residential,2052717000.0,YE,co2e,kg,IEA_energy,annual
+Costa Rica,2021,commercial_public_services,154550000.0,CR,co2e,kg,IEA_energy,annual
+France,2021,commercial_public_services,21898379000.0,FR,co2e,kg,IEA_energy,annual
+Bosnia and Herzegovina,2021,commercial_public_services,266985000.0,BA,co2e,kg,IEA_energy,annual
+Tajikistan,2021,commercial_public_services,7203000.0,TJ,co2e,kg,IEA_energy,annual
+Equatorial Guinea,2021,commercial_public_services,45366000.0,GQ,co2e,kg,IEA_energy,annual
+Morocco,2021,commercial_public_services,475204000.0,MA,co2e,kg,IEA_energy,annual
+Tanzania,2021,commercial_public_services,0.0,TZ,co2e,kg,IEA_energy,annual
+Bolivia,2021,commercial_public_services,173147000.0,BO,co2e,kg,IEA_energy,annual
+Guyana,2021,commercial_public_services,25193000.0,GY,co2e,kg,IEA_energy,annual
+Haiti,2021,commercial_public_services,2358000.0,HT,co2e,kg,IEA_energy,annual
+Saudi Arabia,2021,commercial_public_services,0.0,SA,co2e,kg,IEA_energy,annual
+Yemen,2021,commercial_public_services,235990000.0,YE,co2e,kg,IEA_energy,annual
+Africa,2021,commercial_public_services,12645245000.0,ZA,co2e,kg,IEA_energy,annual
+Chile,2021,other_transport,2253944999.999998,CL,co2e,kg,IEA_energy,annual
+Japan,2021,other_transport,17304101000.000004,JP,co2e,kg,IEA_energy,annual
+Austria,2021,other_transport,607765000.0000006,AT,co2e,kg,IEA_energy,annual
+Netherlands,2021,other_transport,802986000.0000007,NL,co2e,kg,IEA_energy,annual
+Croatia,2021,other_transport,215992000.0,HR,co2e,kg,IEA_energy,annual
+Kosovo,2021,other_transport,25924999.99999997,XK,co2e,kg,IEA_energy,annual
+Romania,2021,other_transport,723306999.9999983,RO,co2e,kg,IEA_energy,annual
+Tanzania,2021,other_transport,155810000.00000066,TZ,co2e,kg,IEA_energy,annual
+Zimbabwe,2021,other_transport,194744000.00000003,ZW,co2e,kg,IEA_energy,annual
+Myanmar,2021,other_transport,1228655000.0000002,MM,co2e,kg,IEA_energy,annual
+Nepal,2021,other_transport,68141000.00000067,NP,co2e,kg,IEA_energy,annual
+Cuba,2021,other_transport,38271000.00000016,CU,co2e,kg,IEA_energy,annual
+Curaçao,2021,other_transport,0.0,CW,co2e,kg,IEA_energy,annual
+Jamaica,2021,other_transport,50206000.00000019,JM,co2e,kg,IEA_energy,annual
+Panama,2021,other_transport,239104000.0000002,PA,co2e,kg,IEA_energy,annual
+Peru,2021,other_transport,1004768999.9999996,PE,co2e,kg,IEA_energy,annual
+Saudi Arabia,2021,other_transport,2298972999.999989,SA,co2e,kg,IEA_energy,annual
+Mexico,2022,electricity_and_heat_production,187403389932.1541,MX,co2e,kg,IEA_energy,annual
+United States,2022,electricity_and_heat_production,1814536555138.4688,US,co2e,kg,IEA_energy,annual
+Netherlands,2022,electricity_and_heat_production,40211027844.2907,NL,co2e,kg,IEA_energy,annual
+Mexico,2022,other_energy_industry_own_use,51605731640.81752,MX,co2e,kg,IEA_energy,annual
+Romania,2022,other_energy_industry_own_use,2768881478.99183,RO,co2e,kg,IEA_energy,annual
+United States,2022,manuf_industries_and_construction,497074416942.35913,US,co2e,kg,IEA_energy,annual
+Korea,2022,manuf_industries_and_construction,65784597004.212135,KP,co2e,kg,IEA_energy,annual
+Poland,2022,manuf_industries_and_construction,30339682449.69301,PL,co2e,kg,IEA_energy,annual
+Germany,2022,road_transport,143077114116.51096,DE,co2e,kg,IEA_energy,annual
+Poland,2022,road_transport,66733596077.40785,PL,co2e,kg,IEA_energy,annual
+Tunisia,2022,road_transport,8348541190.132175,TN,co2e,kg,IEA_energy,annual
+Colombia,2022,residential,5916606099.782982,CO,co2e,kg,IEA_energy,annual
+Israel,2022,residential,504976770.91783553,IL,co2e,kg,IEA_energy,annual
+Netherlands,2022,residential,15840967302.309486,NL,co2e,kg,IEA_energy,annual
+Denmark,2022,commercial_public_services,777923280.4043272,DK,co2e,kg,IEA_energy,annual
+Sweden,2022,commercial_public_services,833239860.6527387,SE,co2e,kg,IEA_energy,annual
+France,2022,other_transport,5569094704.396201,FR,co2e,kg,IEA_energy,annual
+Poland,2022,other_transport,1053747518.6053716,PL,co2e,kg,IEA_energy,annual
+United Kingdom,2022,other_transport,4467895148.991805,GB,co2e,kg,IEA_energy,annual
+Brazil,2022,other_transport,18368822270.345303,BR,co2e,kg,IEA_energy,annual

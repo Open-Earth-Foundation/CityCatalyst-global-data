@@ -3,15 +3,29 @@ from langchain_openai import ChatOpenAI
 from langchain.agents import AgentExecutor
 from langchain_experimental.agents import create_pandas_dataframe_agent
 from langchain_core.pydantic_v1 import BaseModel, Field
+from langchain_core.runnables import Runnable
+from utils.config_loader import ConfigLoader
 
 
 # Create agent for code generation
 def create_coding_agent(df: pd.DataFrame, verbose: bool) -> AgentExecutor:
+    """Create a coding agent using the BIG_MODEL for complex data analysis."""
+    
+    # Get BIG_MODEL configuration
+    model = ConfigLoader.get_big_model()
+    base_url = ConfigLoader.get_base_url()
+    temperature = ConfigLoader.get_temperature()
+    api_key = ConfigLoader.get_api_key()
+    headers = ConfigLoader.get_headers()
 
-    model = "gpt-4o-2024-08-06"
-
-    # Initialize the LLM
-    llm = ChatOpenAI(model=model, temperature=0)
+    # Initialize the LLM with OpenRouter using BIG_MODEL
+    llm = ChatOpenAI(
+        model=model,
+        temperature=temperature,
+        base_url=base_url,
+        api_key=api_key,  # type: ignore
+        default_headers=headers
+    )
 
     return create_pandas_dataframe_agent(
         llm,
@@ -51,7 +65,12 @@ import pandas as pd
 #     df: pd.DataFrame, verbose: bool
 # ) -> AgentExecutor:
 
-#     model = "gpt-4o-2024-08-06"
+#     # Get BIG_MODEL configuration
+#     model = ConfigLoader.get_big_model()
+#     base_url = ConfigLoader.get_base_url()
+#     temperature = ConfigLoader.get_temperature()
+#     api_key = ConfigLoader.get_api_key()
+#     headers = ConfigLoader.get_headers()
 
 #     # Define a function to generate structured output
 #     def generate_output(reasoning: str, code: str) -> dict:
@@ -68,8 +87,14 @@ import pandas as pd
 #         """,
 #     )
 
-#     # Initialize the LLM
-#     llm = ChatOpenAI(model=model, temperature=0)
+#     # Initialize the LLM with OpenRouter using BIG_MODEL
+#     llm = ChatOpenAI(
+#         model=model,
+#         temperature=temperature,
+#         base_url=base_url,
+#         api_key=api_key,  # type: ignore
+#         default_headers=headers
+#     )
 #     # llm = ChatAnthropic(model="claude-3-5-sonnet-20240620", temperature=0)
 
 #     return create_pandas_dataframe_agent(
@@ -120,10 +145,25 @@ class GenerateOutputInput(BaseModel):
 
 
 # Create the agent for JSON output
-def llm_with_structured_output(verbose: bool) -> AgentExecutor:
+def llm_with_structured_output(verbose: bool) -> Runnable:
+    """Create a structured output agent using the SMALL_MODEL for JSON parsing."""
+    
+    # Get SMALL_MODEL configuration
+    model = ConfigLoader.get_small_model()
+    base_url = ConfigLoader.get_base_url()
+    temperature = ConfigLoader.get_temperature()
+    api_key = ConfigLoader.get_api_key()
+    headers = ConfigLoader.get_headers()
 
-    model = "gpt-4o-mini"
-
-    llm = ChatOpenAI(model=model, temperature=0, verbose=verbose)
+    # Initialize the LLM with OpenRouter using SMALL_MODEL
+    llm = ChatOpenAI(
+        model=model,
+        temperature=temperature,
+        base_url=base_url,
+        api_key=api_key,  # type: ignore
+        default_headers=headers,
+        verbose=verbose
+    )
+    
     structured_llm = llm.with_structured_output(GenerateOutputInput)
     return structured_llm

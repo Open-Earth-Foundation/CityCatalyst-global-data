@@ -7,6 +7,8 @@ from utils.create_prompt import create_prompt
 from utils.agent_factory import AgentFactory
 from utils.create_descriptive_stats_prompt import create_descriptive_stats_prompt
 from utils.file_paths_updater import update_file_paths
+from utils.path_helper import get_run_path, ensure_path_exists
+from utils.gemini_mitigation import invoke_with_retry
 
 
 def extract_emissions_year_agent_step_2(
@@ -24,28 +26,32 @@ def extract_emissions_year_agent_step_2(
     """
     print("\nEXTRACT EMISSIONS YEAR AGENT STEP 2\n")
 
-    # Load the output files of initial script
-    input_path_csv = "./generated/step_2/steps/1_datasource_name.csv"
-    input_path_script = "./generated/step_2/steps/1_datasource_name.py"
+    # Load the output files of previous step using run paths
+    input_path_csv = get_run_path(state, "step_2/steps/1_datasource_name.csv")
+    input_path_script = get_run_path(state, "step_2/steps/1_datasource_name.py")
 
     # Load the csv file into the dataframe
     df = pd.read_csv(input_path_csv, encoding="utf-8")
 
     # Get pre-initialized agents from the AgentFactory
-    structured_output_agent = AgentFactory.get_structured_output_agent(
-        state.get("verbose")
-    )
-    agent = AgentFactory.get_coding_agent(df, state.get("verbose"))
+    verbose = state.get("verbose", False)
+    structured_output_agent = AgentFactory.get_structured_output_agent(verbose)
+    agent = AgentFactory.get_coding_agent(df, verbose)
 
     descriptive_statistics = create_descriptive_stats_prompt(df)
     # Load the script
     with open(input_path_script, "r", encoding="utf-8") as file:
         script = file.read()
 
-    # Define the output paths
-    output_path_csv = "./generated/step_2/steps/2_emissions_year.csv"
-    output_path_script = "./generated/step_2/steps/2_emissions_year.py"
-    output_path_markdown = "./generated/step_2/steps/2_emissions_year.md"
+    # Define the output paths using run paths
+    output_path_csv = get_run_path(state, "step_2/steps/2_emissions_year.csv")
+    output_path_script = get_run_path(state, "step_2/steps/2_emissions_year.py")
+    output_path_markdown = get_run_path(state, "step_2/steps/2_emissions_year.md")
+    
+    # Ensure output directories exist
+    ensure_path_exists(output_path_csv)
+    ensure_path_exists(output_path_script)
+    ensure_path_exists(output_path_markdown)
 
     task = """
 Your task is to extract the year of the data inside the provided python pandas dataframe. You will also create a runnable python script.
@@ -114,11 +120,12 @@ This is the output path for the new .csv file: {output_path_csv}
     )
 
     # Invoke summary agent with custom prompt
-    response = agent.invoke(descriptive_statistics + prompt)
+    full_prompt = descriptive_statistics + prompt
+    response = invoke_with_retry(agent, full_prompt)
     response_output = response.get("output")
 
     # Invoke the new structured output agent with the parsing task
-    structured_output = structured_output_agent.invoke(response_output)
+    structured_output = invoke_with_retry(structured_output_agent, response_output)
 
     ### Code below for extracting the code from the agent's response and running it - creating the csv file ###
     # Function to parse the JSON response from the agent
@@ -170,3 +177,6 @@ This is the output path for the new .csv file: {output_path_csv}
     else:
         print("No Python code was found in the agent's response.")
         sys.exit(1)
+    
+    # Return the state to pass to next agent
+    return state
