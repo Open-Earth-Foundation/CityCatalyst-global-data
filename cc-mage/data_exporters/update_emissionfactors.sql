@@ -9,7 +9,7 @@ WITH ef_raw AS (
         actor_id,
         active_to,
         active_from,
-        activity_name, 
+        activity_name,
         fuel_type,
         publisher_name,
         datasource_name,
@@ -24,14 +24,14 @@ ef_data AS (
         MD5(CONCAT_WS('-', publisher_name, publisher_url))::UUID AS publisher_id,
         MD5(CONCAT_WS('-', datasource_name, dataset_name, dataset_url))::UUID AS dataset_id,
         jsonb_build_object('fuel_type', fuel_type) AS activity_subcategory_type,
-        MD5(CONCAT_WS('-', activity_name, activity_units, jsonb_build_object('fuel_type', fuel_type)::TEXT, MD5(CONCAT_WS('-', methodology_name, gpc_reference_number))::TEXT))::UUID AS activity_id
+        (MD5(CONCAT_WS('-', activity_name, activity_units, jsonb_build_object('fuel_type', fuel_type)::TEXT, MD5(CONCAT_WS('-', methodology_name, gpc_reference_number))::TEXT)))::UUID AS activity_id
     FROM ef_raw
 )
 INSERT INTO modelled.emissions_factor (
-    emissionfactor_id, 
-    publisher_id, 
+    emissionfactor_id,
+    publisher_id,
     dataset_id,
-    activity_id, 
+    activity_id,
     gas_name,
     emissionfactor_value,
     units,
@@ -39,7 +39,7 @@ INSERT INTO modelled.emissions_factor (
     active_from,
     actor_id
 )
-SELECT 
+SELECT
     MD5(CONCAT_WS('-', publisher_id::TEXT, dataset_id::TEXT, activity_id::TEXT, units, gas, actor_id))::UUID AS emissionfactor_id,
     publisher_id,
     dataset_id,

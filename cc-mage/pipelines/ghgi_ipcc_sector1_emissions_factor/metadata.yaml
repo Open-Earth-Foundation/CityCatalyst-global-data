@@ -241,7 +241,7 @@ blocks:
   language: sql
   name: update_activity_subcategory
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: data_exporter
   upstream_blocks:
