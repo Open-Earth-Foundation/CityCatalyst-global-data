@@ -20,8 +20,8 @@ WITH formula_raw AS (
 ids_data AS (
     SELECT *,
         MD5(CONCAT_WS('-', methodology_name, gpc_refno))::UUID AS method_id,
-        MD5(CONCAT_WS('-', publisher_name, publisher_url))::UUID AS publisher_id,
-        MD5(CONCAT_WS('-', datasource_name, dataset_name, dataset_url))::UUID AS dataset_id
+        MD5(CONCAT_WS('-', publisher_name))::UUID AS publisher_id,
+        MD5(CONCAT_WS('-', datasource_name, dataset_name))::UUID AS dataset_id
     FROM formula_raw
 )
 INSERT INTO modelled.formula_input (
@@ -45,8 +45,8 @@ SELECT
     dataset_id, 
     gas,
     parameter_code,
-    _parameter_name,
-    gpc_refno,
+    _parameter_name as parameter_name,
+    gpc_refno as gpc_reference_number,
     formula_input_value,
     formula_input_units,
     NULL::jsonb AS metadata,
