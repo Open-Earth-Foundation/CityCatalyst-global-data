@@ -142,9 +142,6 @@ blocks:
     dbt: {}
     disable_query_preprocessing: false
     export_write_policy: append
-    file_path: data_loaders/formula_input.sql
-    file_source:
-      path: data_loaders/formula_input.sql
     limit: 1000
     use_raw_sql: true
   downstream_blocks: []
@@ -152,13 +149,35 @@ blocks:
   executor_type: local_python
   has_callback: false
   language: sql
-  name: formula_input
+  name: publisher_datasource
   retry_config: null
   status: executed
   timeout: null
   type: data_loader
   upstream_blocks: []
-  uuid: formula_input
+  uuid: publisher_datasource
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: ghgi_methodology
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: ghgi_methodology
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
