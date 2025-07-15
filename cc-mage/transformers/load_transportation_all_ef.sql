@@ -66,7 +66,10 @@ SELECT 	ef_id,
 		technical_reference_year,
 		technical_reference,
 		data_provider,
-		RANK() OVER (PARTITION BY ipcc_code, gpc_reference_number, activity_subcategory_type1,activity_subcategory_typename1, gas_name, fuel_type, unit ORDER BY technical_reference_year DESC) as rnk
+		RANK() OVER (PARTITION BY ipcc_code, gpc_reference_number, activity_subcategory_type1,activity_subcategory_typename1, gas_name, fuel_type, unit 
+		ORDER BY technical_reference_year DESC, technology) as rnk,
+		RANK() over (partition by gpc_reference_number, activity_subcategory_type1,activity_subcategory_typename1, gas_name, fuel_type, unit 
+		ORDER BY (CASE WHEN ipcc_code='1.A.3.e.ii' THEN 1 ELSE 2 END) DESC) as ipcc_rnk
 FROM ef_data
 WHERE ef_value > 0
 AND description IN ('Default Emission Factor for Aircraft ', 'Road Transport Emission Factor ', 'Emission Factor for USA Vehicles ',
@@ -77,6 +80,7 @@ fuel_sales_nonco2 AS (
 SELECT *
 FROM rank_ef
 WHERE rnk = 1
+AND ipcc_rnk = 1
 AND activity_subcategory_typename2 != 'unknown'
 ),
 all_gases as (
