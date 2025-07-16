@@ -17,12 +17,25 @@ WITH formula_raw AS (
     FROM raw_data.waste_composition_staging
     WHERE formula_input_value IS NOT NULL
 ),
+publisher_ids AS (
+    SELECT DISTINCT
+        publisher_id,
+        publisher_name,
+        dataset_id,
+        dataset_name
+    FROM modelled.publisher_datasource
+),
+-- I cannot generate the ids for the publisher and dataset because those values were already calculated using a different combination in the UUID
 ids_data AS (
-    SELECT *,
+    SELECT
+        fr.*,
         MD5(CONCAT_WS('-', methodology_name, gpc_refno))::UUID AS method_id,
-        MD5(CONCAT_WS('-', publisher_name))::UUID AS publisher_id,
-        MD5(CONCAT_WS('-', datasource_name, dataset_name))::UUID AS dataset_id
-    FROM formula_raw
+        pid.publisher_id,
+        pid.dataset_id
+    FROM formula_raw fr
+    LEFT JOIN publisher_ids pid
+      ON fr.publisher_name = pid.publisher_name
+     AND fr.dataset_name = pid.dataset_name
 )
 INSERT INTO modelled.formula_input (
     formula_input_id,
@@ -52,6 +65,7 @@ SELECT
     NULL::jsonb AS metadata,
     actor_id
 FROM ids_data
+WHERE publisher_id IS NOT NULL AND dataset_id IS NOT NULL
 ON CONFLICT (formula_input_id) DO UPDATE SET
     method_id = EXCLUDED.method_id, 
     publisher_id = EXCLUDED.publisher_id, 
