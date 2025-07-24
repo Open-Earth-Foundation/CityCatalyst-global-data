@@ -47,7 +47,7 @@ ef_data AS (
                     WHEN 'I.3.1' THEN jsonb_build_object('manufacturing-and-construction-fuel-type', fuel_type)::TEXT
                     WHEN 'I.4.1' THEN jsonb_build_object('energy-industries-fuel-type', fuel_type)::TEXT
                     WHEN 'I.5.1' THEN jsonb_build_object('agriculture-forestry-fishing-activities-fuel-type', fuel_type)::TEXT
-                    WHEN 'I.5.1' THEN jsonb_build_object('non-specific-sources-fuel-type', fuel_type)::TEXT
+                    WHEN 'I.6.1' THEN jsonb_build_object('non-specific-sources-fuel-type', fuel_type)::TEXT
                     ELSE jsonb_build_object('fuel_type', fuel_type)::TEXT
                 END,
                 MD5(CONCAT_WS('-', methodology_name, gpc_reference_number))::TEXT
