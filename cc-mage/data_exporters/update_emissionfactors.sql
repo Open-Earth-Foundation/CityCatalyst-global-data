@@ -23,8 +23,36 @@ ef_data AS (
     SELECT *,
         MD5(CONCAT_WS('-', publisher_name, publisher_url))::UUID AS publisher_id,
         MD5(CONCAT_WS('-', datasource_name, dataset_name, dataset_url))::UUID AS dataset_id,
-        jsonb_build_object('fuel_type', fuel_type) AS activity_subcategory_type,
-        (MD5(CONCAT_WS('-', activity_name, activity_units, jsonb_build_object('fuel_type', fuel_type)::TEXT, MD5(CONCAT_WS('-', methodology_name, gpc_reference_number))::TEXT)))::UUID AS activity_id
+        
+        -- Adapted activity_subcategory_type logic
+        CASE gpc_reference_number
+            WHEN 'I.1.1' THEN jsonb_build_object('residential-building-fuel-type', fuel_type)
+            WHEN 'I.2.1' THEN jsonb_build_object('commercial-building-fuel-type', fuel_type)
+            WHEN 'I.3.1' THEN jsonb_build_object('manufacturing-and-construction-fuel-type', fuel_type)
+            WHEN 'I.4.1' THEN jsonb_build_object('energy-industries-fuel-type', fuel_type)
+            WHEN 'I.5.1' THEN jsonb_build_object('agriculture-forestry-fishing-activities-fuel-type', fuel_type)
+            WHEN 'I.6.1' THEN jsonb_build_object('non-specific-sources-fuel-type', fuel_type)
+            ELSE jsonb_build_object('fuel_type', fuel_type)
+        END AS activity_subcategory_type,
+
+        -- Adapted activity_id logic using same structure
+        (
+            MD5(CONCAT_WS(
+                '-',
+                activity_name,
+                activity_units,
+                CASE gpc_reference_number
+                    WHEN 'I.1.1' THEN jsonb_build_object('residential-building-fuel-type', fuel_type)::TEXT
+                    WHEN 'I.2.1' THEN jsonb_build_object('commercial-building-fuel-type', fuel_type)::TEXT
+                    WHEN 'I.3.1' THEN jsonb_build_object('manufacturing-and-construction-fuel-type', fuel_type)::TEXT
+                    WHEN 'I.4.1' THEN jsonb_build_object('energy-industries-fuel-type', fuel_type)::TEXT
+                    WHEN 'I.5.1' THEN jsonb_build_object('agriculture-forestry-fishing-activities-fuel-type', fuel_type)::TEXT
+                    WHEN 'I.5.1' THEN jsonb_build_object('non-specific-sources-fuel-type', fuel_type)::TEXT
+                    ELSE jsonb_build_object('fuel_type', fuel_type)::TEXT
+                END,
+                MD5(CONCAT_WS('-', methodology_name, gpc_reference_number))::TEXT
+            ))
+        )::UUID AS activity_id
     FROM ef_raw
 )
 INSERT INTO modelled.emissions_factor (
