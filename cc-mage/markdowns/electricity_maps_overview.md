@@ -1,0 +1,3 @@
+Electricity Maps’ carbon intensity data provides real-time and historical estimates of the greenhouse gas emissions (in gCO₂e/kWh) associated with electricity consumption in different regions worldwide. The data reflects either direct emissions (from power generation only) or life-cycle emissions (including upstream and infrastructure impacts), allowing users to choose the most appropriate factor for their reporting needs. The platform uses advanced flow-tracing models to account for electricity imports and exports, offering a more accurate, location-based view of grid emissions intensity.
+
+The values imported here correspond to `direct emissions` and the version is July 2, 2025

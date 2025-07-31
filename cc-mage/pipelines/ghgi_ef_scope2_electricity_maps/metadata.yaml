@@ -1,0 +1,190 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: markdown
+  name: electricity_maps_overview
+  retry_config: null
+  status: updated
+  timeout: null
+  type: markdown
+  upstream_blocks: []
+  uuid: electricity_maps_overview
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - transformation_raw_electricity_maps
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: import_s3_scope2_electricity_maps
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: import_s3_scope2_electricity_maps
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - electricity_maps_staging
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: transformation_raw_electricity_maps
+  retry_config: null
+  status: updated
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - import_s3_scope2_electricity_maps
+  uuid: transformation_raw_electricity_maps
+- all_upstream_blocks_executed: false
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - update_ghgi_method
+  - update_publisher_datasource_efscope2
+  - update_activity_subcategory_efscope2
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: electricity_maps_staging
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - transformation_raw_electricity_maps
+  uuid: electricity_maps_staging
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_ghgi_method
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - electricity_maps_staging
+  uuid: update_ghgi_method
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    file_path: data_exporters/update_publisher_datasource_efscope2.sql
+    file_source:
+      path: data_exporters/update_publisher_datasource_efscope2.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_publisher_datasource_efscope2
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - electricity_maps_staging
+  uuid: update_publisher_datasource_efscope2
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - update_emissionfactors_efscope2
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_activity_subcategory_efscope2
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - electricity_maps_staging
+  uuid: update_activity_subcategory_efscope2
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_emissionfactors_efscope2
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - update_activity_subcategory_efscope2
+  uuid: update_emissionfactors_efscope2
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2025-07-30 17:39:21.959569+00:00'
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: ghgi_ef_scope2_electricity_maps
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: ghgi_ef_scope2_electricity_maps
+variables:
+  bucket_name: test-global-api
+variables_dir: /home/src/mage_data/cc-mage
+widgets: []
