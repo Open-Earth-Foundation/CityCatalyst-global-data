@@ -41,13 +41,13 @@ blocks:
   language: python
   name: transformation_raw_electricity_maps
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: transformer
   upstream_blocks:
   - import_s3_scope2_electricity_maps
   uuid: transformation_raw_electricity_maps
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration: {}
   downstream_blocks:
@@ -66,7 +66,7 @@ blocks:
   upstream_blocks:
   - transformation_raw_electricity_maps
   uuid: electricity_maps_staging
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     data_provider: postgres
@@ -89,7 +89,7 @@ blocks:
   upstream_blocks:
   - electricity_maps_staging
   uuid: update_ghgi_method
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     data_provider: postgres
@@ -115,7 +115,7 @@ blocks:
   upstream_blocks:
   - electricity_maps_staging
   uuid: update_publisher_datasource_efscope2
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     data_provider: postgres
@@ -139,7 +139,7 @@ blocks:
   upstream_blocks:
   - electricity_maps_staging
   uuid: update_activity_subcategory_efscope2
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     data_provider: postgres
@@ -156,7 +156,7 @@ blocks:
   language: sql
   name: update_emissionfactors_efscope2
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: data_exporter
   upstream_blocks:
