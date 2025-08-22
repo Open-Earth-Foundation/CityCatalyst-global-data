@@ -12,8 +12,8 @@ import argparse
 load_dotenv()
 
 # Define paths
-PATH_TO_YAML = Path("./cc-mage/datasets/datasource_seeder.yaml")
-UPDATED_YAML_PATH = Path("./cc-mage/datasets/datasource_seeder_updated.yaml")
+PATH_TO_YAML = Path("../cc-mage/datasets/datasource_seeder.yaml")
+UPDATED_YAML_PATH = Path("../cc-mage/datasets/datasource_seeder_updated.yaml")
 
 client = wrap_openai(OpenAI())
 
@@ -37,7 +37,7 @@ def get_llm_response(user_prompt: str, target_language: str) -> Optional[str]:
 You are a professional translator with deep domain knowledge in data science with a focus on climate change.
 
 Your task is to translate input strings to a target language.
-The input strings are in English and potentially multiple other languages. 
+The input strings are in English and potentially multiple other languages.
 Use the input provided in all languages to create a translation for the target language which has the same meaning as all the inputs.
 The target language is provided as ISO 639 language codes. E.g. 'en' stands for English, 'es' for spanish and so on.
 
