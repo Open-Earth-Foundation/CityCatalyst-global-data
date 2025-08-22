@@ -8,12 +8,12 @@ WITH formula_raw AS (
         formula_input_units,
         actor_id,
         methodology_name,
-        formula_name,
         publisher_name,
         publisher_url,
         datasource_name,
         dataset_name,
-        dataset_url
+        dataset_url,
+        formula_name
     FROM raw_data.waste_composition_staging
     WHERE formula_input_value IS NOT NULL
 ),
@@ -54,19 +54,19 @@ INSERT INTO modelled.formula_input (
 )
 SELECT 
     MD5(CONCAT_WS('-', fr.formula_name, fr.gas, fr.parameter_code, fr.gpc_refno, fr.actor_id))::UUID AS formula_input_id,
-    fr.method_id, 
-    fr.publisher_id, 
-    fr.dataset_id, 
-    fr.gas,
-    fr.parameter_code,
-    fr._parameter_name AS parameter_name,
-    fr.gpc_refno AS gpc_reference_number,
-    fr.formula_input_value,
-    fr.formula_input_units,
+    method_id, 
+    publisher_id, 
+    dataset_id, 
+    gas,
+    parameter_code,
+    _parameter_name as parameter_name,
+    gpc_refno as gpc_reference_number,
+    formula_input_value,
+    formula_input_units,
     NULL::jsonb AS metadata,
-    fr.actor_id,
-    fr.formula_name
-FROM ids_data fr
+    actor_id,
+    formula_name
+FROM ids_data
 WHERE fr.publisher_id IS NOT NULL AND fr.dataset_id IS NOT NULL
 ON CONFLICT (formula_input_id) DO UPDATE SET
     method_id = EXCLUDED.method_id, 

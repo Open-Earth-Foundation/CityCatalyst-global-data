@@ -173,7 +173,7 @@ blocks:
   language: sql
   name: update_publisher_datasource
   retry_config: null
-  status: executed
+  status: failed
   timeout: null
   type: data_exporter
   upstream_blocks:
@@ -218,7 +218,7 @@ blocks:
   language: sql
   name: update_ghgi_methodology
   retry_config: null
-  status: executed
+  status: failed
   timeout: null
   type: data_exporter
   upstream_blocks:
@@ -241,7 +241,7 @@ blocks:
   language: sql
   name: update_activity_subcategory
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: data_exporter
   upstream_blocks:
@@ -264,7 +264,7 @@ blocks:
   language: sql
   name: update_emissionfactors
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: data_exporter
   upstream_blocks:
