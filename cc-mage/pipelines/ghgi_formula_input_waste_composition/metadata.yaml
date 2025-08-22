@@ -110,7 +110,7 @@ blocks:
   language: python
   name: waste_composition_staging
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: data_exporter
   upstream_blocks:
@@ -149,13 +149,13 @@ blocks:
   language: sql
   name: update_ghgi_methodology
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: data_exporter
   upstream_blocks:
   - ghgi_methodology_methane_commitment_staging
   uuid: update_ghgi_methodology
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: postgres

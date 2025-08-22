@@ -1,47 +1,37 @@
 blocks:
 - all_upstream_blocks_executed: true
   color: null
-  configuration:
-    data_provider: duckdb
-    data_provider_profile: default
-    dbt: {}
-    disable_query_preprocessing: false
-    export_write_policy: append
-    limit: 1000
-    use_raw_sql: true
+  configuration: {}
   downstream_blocks:
-  - load_actions_db
+  - load_gpc_sector_db
   executor_config: null
   executor_type: local_python
   has_callback: false
-  language: sql
-  name: load_list_actions
+  language: python
+  name: load_gpc_sector
   retry_config: null
   status: executed
   timeout: null
   type: data_loader
   upstream_blocks: []
-  uuid: load_list_actions
+  uuid: load_gpc_sector
 - all_upstream_blocks_executed: true
   color: null
-  configuration:
-    data_provider: duckdb
-    data_provider_profile: default
-    export_write_policy: append
+  configuration: {}
   downstream_blocks:
-  - update_cap_actions
+  - update_gpc_sector
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: load_actions_db
+  name: load_gpc_sector_db
   retry_config: null
   status: executed
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - load_list_actions
-  uuid: load_actions_db
+  - load_gpc_sector
+  uuid: load_gpc_sector_db
 - all_upstream_blocks_executed: true
   color: null
   configuration:
@@ -57,26 +47,26 @@ blocks:
   executor_type: local_python
   has_callback: false
   language: sql
-  name: update_cap_actions
+  name: update_gpc_sector
   retry_config: null
   status: updated
   timeout: null
   type: transformer
   upstream_blocks:
-  - load_actions_db
-  uuid: update_cap_actions
+  - load_gpc_sector_db
+  uuid: update_gpc_sector
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
 conditionals: []
-created_at: '2025-04-16 19:22:39.268403+00:00'
+created_at: '2025-06-16 09:59:37.407431+00:00'
 data_integration: null
-description: null
+description: This pipeline loads the gpc sectors
 executor_config: {}
 executor_count: 1
 executor_type: null
 extensions: {}
-name: cap_list_actions
+name: gpc_sector
 notification_config: {}
 remote_variables_dir: null
 retry_config: {}
@@ -86,6 +76,8 @@ settings:
 spark_config: {}
 tags: []
 type: python
-uuid: cap_list_actions
+uuid: gpc_sector
+variables:
+  bucket_name: test-global-api
 variables_dir: /home/src/mage_data/cc-mage
 widgets: []

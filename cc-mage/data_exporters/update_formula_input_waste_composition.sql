@@ -8,21 +8,34 @@ WITH formula_raw AS (
         formula_input_units,
         actor_id,
         methodology_name,
-        formula_name,
         publisher_name,
         publisher_url,
         datasource_name,
         dataset_name,
-        dataset_url
+        dataset_url,
+        formula_name
     FROM raw_data.waste_composition_staging
     WHERE formula_input_value IS NOT NULL
 ),
+publisher_ids AS (
+    SELECT DISTINCT
+        publisher_id,
+        publisher_name,
+        dataset_id,
+        dataset_name
+    FROM modelled.publisher_datasource
+),
+-- Match with known publisher/dataset IDs
 ids_data AS (
-    SELECT *,
-        MD5(CONCAT_WS('-', methodology_name, gpc_refno))::UUID AS method_id,
-        MD5(CONCAT_WS('-', publisher_name, publisher_url))::UUID AS publisher_id,
-        MD5(CONCAT_WS('-', datasource_name, dataset_name, dataset_url))::UUID AS dataset_id
-    FROM formula_raw
+    SELECT
+        fr.*,
+        MD5(CONCAT_WS('-', fr.methodology_name, fr.gpc_refno))::UUID AS method_id,
+        pid.publisher_id,
+        pid.dataset_id
+    FROM formula_raw fr
+    LEFT JOIN publisher_ids pid
+      ON fr.publisher_name = pid.publisher_name
+     AND fr.dataset_name = pid.dataset_name
 )
 INSERT INTO modelled.formula_input (
     formula_input_id,
@@ -36,22 +49,25 @@ INSERT INTO modelled.formula_input (
     formula_input_value,
     formula_input_units,
     metadata,
-    actor_id
+    actor_id,
+    formula_name
 )
 SELECT 
-    MD5(CONCAT_WS('-', gas, parameter_code, gpc_refno, actor_id))::UUID AS formula_input_id,
+    MD5(CONCAT_WS('-', fr.formula_name, fr.gas, fr.parameter_code, fr.gpc_refno, fr.actor_id))::UUID AS formula_input_id,
     method_id, 
     publisher_id, 
     dataset_id, 
     gas,
     parameter_code,
-    _parameter_name,
-    gpc_refno,
+    _parameter_name as parameter_name,
+    gpc_refno as gpc_reference_number,
     formula_input_value,
     formula_input_units,
     NULL::jsonb AS metadata,
-    actor_id
+    actor_id,
+    formula_name
 FROM ids_data
+WHERE fr.publisher_id IS NOT NULL AND fr.dataset_id IS NOT NULL
 ON CONFLICT (formula_input_id) DO UPDATE SET
     method_id = EXCLUDED.method_id, 
     publisher_id = EXCLUDED.publisher_id, 
@@ -63,4 +79,5 @@ ON CONFLICT (formula_input_id) DO UPDATE SET
     formula_input_value = EXCLUDED.formula_input_value,
     formula_input_units = EXCLUDED.formula_input_units,
     metadata = EXCLUDED.metadata,
-    actor_id = EXCLUDED.actor_id;
+    actor_id = EXCLUDED.actor_id,
+    formula_name = EXCLUDED.formula_name;

@@ -11,13 +11,10 @@ if 'data_exporter' not in globals():
 @data_exporter
 def export_data_to_postgres(df: DataFrame, **kwargs) -> None:
     """
-    Template for exporting data to a PostgreSQL database.
-    Specify your configuration settings in 'io_config.yaml'.
-
-    Docs: https://docs.mage.ai/design/data-loading#postgresql
+    Export data to a PostgreSQL database.
     """
-    schema_name = 'raw_data'  # Specify the name of the schema to export data to
-    table_name = 'waste_composition_staging'  # Specify the name of the table to export data to
+    schema_name = 'raw_data'  
+    table_name = 'nk_staging'  
     config_path = path.join(get_repo_path(), 'io_config.yaml')
     config_profile = 'default'
 
@@ -26,6 +23,6 @@ def export_data_to_postgres(df: DataFrame, **kwargs) -> None:
             df,
             schema_name,
             table_name,
-            index=False,  # Specifies whether to include index in exported table
-            if_exists='replace',  # Specify resolution policy if table name already exists
+            index=False,  
+            if_exists='replace',  
         )

@@ -12,4 +12,4 @@ SELECT
     methodology_name,
     methodology_description,
     gpc_reference_number
-FROM methodology
+FROM methodology;
