@@ -14022,3 +14022,110 @@
   gpc_reference_number: I.8.1
   scope: 1
   priority: 2.125
+  datasource_description:
+    en: Climate TRACE is a global coalition that uses satellite imagery, AI, and other
+      remote sensing technologies to independently track greenhouse gas emissions
+      in near real-time. The initiative provides high-resolution, facility-level data
+      across sectors like power, transportation, agriculture, and land use, making
+      emissions information more transparent and accessible. By offering free, publicly
+      available data, Climate TRACE empowers governments, companies, and civil society
+      to make data-driven decisions for climate action. Its goal is to close the emissions
+      data gap and accelerate accountability and progress toward global climate targets.
+    es: Climate TRACE es una coalición global que utiliza imágenes satelitales, IA
+      y otras tecnologías de teledetección para rastrear de forma independiente las
+      emisiones de gases de efecto invernadero casi en tiempo real. La iniciativa
+      proporciona datos de alta resolución a nivel de instalaciones en sectores como
+      la energía, el transporte, la agricultura y el uso del suelo, lo que hace que
+      la información sobre emisiones sea más transparente y accesible. Al ofrecer
+      datos gratuitos y públicos, Climate TRACE empodera a gobiernos, empresas y sociedad
+      civil para tomar decisiones basadas en datos para la acción climática. Su objetivo
+      es cerrar la brecha de datos sobre emisiones y acelerar la rendición de cuentas
+      y el progreso hacia los objetivos climáticos globales.
+    pt: A Climate TRACE é uma coalizão global que utiliza imagens de satélite, inteligência
+      artificial e outras tecnologias de sensoriamento remoto para monitorar de forma
+      independente as emissões de gases de efeito estufa em quase tempo real. A iniciativa
+      fornece dados de alta resolução, em nível de instalação, cobrindo setores como
+      energia, transporte, agricultura e uso da terra, tornando as informações sobre
+      emissões mais transparentes e acessíveis. Ao oferecer dados gratuitos e disponíveis
+      ao público, a Climate TRACE capacita governos, empresas e a sociedade civil
+      a tomar decisões baseadas em dados para ações climáticas. Seu objetivo é reduzir
+      a lacuna de dados sobre emissões e acelerar a responsabilização e o progresso
+      em direção às metas climáticas globais.
+- datasource_id: 879ade7e-bed8-479b-8055-aa80d4ef41ca
+  publisher_id: ClimateTRACE
+  datasource_name: ClimateTRACE
+  dataset_name:
+    en: Manure Management & Enteric Fermentation – Cattle Operations & Pasture
+    es: Manejo de estiércol y fermentación entérica - Operaciones de ganado y pastoreo
+    pt: Manejo de esterco e fermentação entérica - Operações de gado e pastagem
+  dataset_description:
+    en: The Climate TRACE cattle emissions datasets provide spatially explicit estimates of greenhouse gas emissions from both grazing and confined cattle systems. They include emissions from enteric fermentation and manure management, with data disaggregated into four categories; grazing cattle enteric fermentation, grazing cattle manure left on pasture, confined cattle enteric fermentation, and confined cattle manure management. Each dataset contains facility-level emissions estimates, with geographic coordinates.
+    es: Los conjuntos de datos de emisiones de ganado de Climate TRACE proporcionan estimaciones espacialmente explícitas de las emisiones de gases de efecto invernadero tanto de sistemas de ganado en pastoreo como confinados. Incluyen emisiones de fermentación entérica y manejo de estiércol, con datos desagregados en cuatro categorías; fermentación entérica del ganado en pastoreo, estiércol del ganado en pastoreo dejado en el pasto, fermentación entérica del ganado confinado y manejo del estiércol del ganado confinado. Cada conjunto de datos contiene estimaciones de emisiones a nivel de instalación, con coordenadas geográficas.
+    pt: Os conjuntos de dados de emissões de gado da Climate TRACE fornecem estimativas espacialmente explícitas das emissões de gases de efeito estufa tanto de sistemas de gado em pastagem quanto confinados. Eles incluem emissões de fermentação entérica e manejo de esterco, com dados desagregados em quatro categorias; fermentação entérica do gado em pastagem, esterco do gado em pastagem deixado na pastagem, fermentação entérica do gado confinado e manejo do esterco do gado confinado. Cada conjunto de dados contém estimativas de emissões a nível de instalação, com coordenadas geográficas. 
+  source_type: third_party
+  access_type: globalapi
+  dataset_url: https://climatetrace.org/
+  geographical_location: EARTH
+  start_year: 2015
+  end_year: 2024
+  latest_accounting_year: 2024
+  frequency_of_update: annual
+  spatial_resolution: point source
+  language: en
+  accessibility: null
+  data_quality: medium
+  notes: null
+  units: kg
+  methodology_description:
+    en: The Climate TRACE cattle emissions methodologies are based on IPCC guidelines, combining Tier 1 and Tier 2 approaches to estimate methane (CH₄) and nitrous oxide (N₂O) emissions. Enteric fermentation from grazing cattle uses Tier 1 and 2 methods with regional emission factors, while emissions from confined cattle operations apply Tier 2 methods with facility-level data. Manure left on pasture by grazing cattle is estimated using Tier 1 methods, applying default nitrogen excretion rates and emission factors. In contrast, manure management at confined operations uses Tier 2 methods, incorporating country-specific system distributions and climate variables to capture CH₄ and N₂O emissions from storage and treatment processes.
+    es: Las metodologías de emisiones de ganado de Climate TRACE se basan en las directrices del IPCC, combinando enfoques de Nivel 1 y Nivel 2 para estimar las emisiones de metano (CH₄) y óxido nitroso (N₂O). La fermentación entérica del ganado en pastoreo utiliza métodos de Nivel 1 y 2 con factores de emisión regionales, mientras que las emisiones de las operaciones de ganado confinado aplican métodos de Nivel 2 con datos a nivel de instalación. El estiércol dejado en el pasto por el ganado en pastoreo se estima utilizando métodos de Nivel 1, aplicando tasas predeterminadas de excreción de nitrógeno y factores de emisión. En contraste, el manejo del estiércol en operaciones confinadas utiliza métodos de Nivel 2, incorporando distribuciones específicas del sistema por país y variables climáticas para capturar las emisiones de CH₄ y N₂O de los procesos de almacenamiento y tratamiento.
+    pt: As metodologias de emissões de gado da Climate TRACE são baseadas nas diretrizes do IPCC, combinando abordagens de Nível 1 e Nível 2 para estimar as emissões de metano (CH₄) e óxido nitroso (N₂O). A fermentação entérica do gado em pastagem utiliza métodos de Nível 1 e 2 com fatores de emissão regionais, enquanto as emissões das operações de gado confinado aplicam métodos de Nível 2 com dados a nível de instalação. O esterco deixado na pastagem pelo gado em pastagem é estimado usando métodos de Nível 1, aplicando taxas padrão de excreção de nitrogênio e fatores de emissão. Em contraste, o manejo do esterco em operações confinadas utiliza métodos de Nível 2, incorporando distribuições específicas do sistema por país e variáveis climáticas para capturar as emissões de CH₄ e N₂O dos processos de armazenamento e tratamento.
+  methodology_url: https://github.com/climatetracecoalition/methodology-documents/blob/main/Fossil%20fuel%20operations/Fossil%20Fuel%20Operations%20sector-%20Oil%20and%20Gas%20Production%20and%20Transport%20Oil%2C%20and%20Gas%20Refining%20Methodology.pdf
+  transformation_description:
+    en: Latitude and longitude information are utilized to apply a reverse geocode
+      methodology, assigning the corresponding city locode to each emission point.
+      Once identified, all data points within the city boundary are aggregated to
+      calculate the total emissions for the subsector.
+    es: La información de latitud y longitud se utiliza para aplicar una metodología
+      de geocodificación inversa, asignando el código de ciudad correspondiente a
+      cada punto de emisión. Una vez identificados, todos los puntos de datos dentro
+      de los límites de la ciudad se agregan para calcular las emisiones totales del
+      sub-sector.
+    pt: As informações de latitude e longitude são utilizadas para aplicar uma metodologia
+      de geocodificação reversa, atribuindo o código de cidade correspondente a cada
+      ponto de emissão. Uma vez identificados, todos os pontos de dados dentro dos
+      limites da cidade são agregados para calcular as emissões totais do subsetor.
+  retrieval_method: global_api
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2024/city/:locode/:year/:gpcReferenceNumber
+  gpc_reference_number: V.1
+  scope: 1
+  priority: 2.2
+  datasource_description:
+    en: Climate TRACE is a global coalition that uses satellite imagery, AI, and other
+      remote sensing technologies to independently track greenhouse gas emissions
+      in near real-time. The initiative provides high-resolution, facility-level data
+      across sectors like power, transportation, agriculture, and land use, making
+      emissions information more transparent and accessible. By offering free, publicly
+      available data, Climate TRACE empowers governments, companies, and civil society
+      to make data-driven decisions for climate action. Its goal is to close the emissions
+      data gap and accelerate accountability and progress toward global climate targets.
+    es: Climate TRACE es una coalición global que utiliza imágenes satelitales, IA
+      y otras tecnologías de teledetección para rastrear de forma independiente las
+      emisiones de gases de efecto invernadero casi en tiempo real. La iniciativa
+      proporciona datos de alta resolución a nivel de instalaciones en sectores como
+      la energía, el transporte, la agricultura y el uso del suelo, lo que hace que
+      la información sobre emisiones sea más transparente y accesible. Al ofrecer
+      datos gratuitos y públicos, Climate TRACE empodera a gobiernos, empresas y sociedad
+      civil para tomar decisiones basadas en datos para la acción climática. Su objetivo
+      es cerrar la brecha de datos sobre emisiones y acelerar la rendición de cuentas
+      y el progreso hacia los objetivos climáticos globales.
+    pt: A Climate TRACE é uma coalizão global que utiliza imagens de satélite, inteligência
+      artificial e outras tecnologias de sensoriamento remoto para monitorar de forma
+      independente as emissões de gases de efeito estufa em quase tempo real. A iniciativa
+      fornece dados de alta resolução, em nível de instalação, cobrindo setores como
+      energia, transporte, agricultura e uso da terra, tornando as informações sobre
+      emissões mais transparentes e acessíveis. Ao oferecer dados gratuitos e disponíveis
+      ao público, a Climate TRACE capacita governos, empresas e a sociedade civil
+      a tomar decisões baseadas em dados para ações climáticas. Seu objetivo é reduzir
+      a lacuna de dados sobre emissões e acelerar a responsabilização e o progresso
+      em direção às metas climáticas globais.
