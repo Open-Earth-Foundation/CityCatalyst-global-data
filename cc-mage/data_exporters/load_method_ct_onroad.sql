@@ -1,14 +1,15 @@
 WITH methodology AS (
-    SELECT
+    SELECT DISTINCT
+        method_id,
         methodology_name,
-        methodology_description,
+        null as methodology_description,
         gpc_reference_number
-    FROM raw_data.ghgi_methodology_staging
+    FROM raw_data.ct_onroad_v2025_staging
 )
 INSERT INTO modelled.ghgi_methodology 
     (method_id, methodology_name, methodology_description, gpc_reference_number)
 SELECT
-    (MD5(CONCAT_WS('-', methodology_name, gpc_reference_number))::UUID) AS method_id,
+    method_id,
     methodology_name,
     methodology_description,
     gpc_reference_number
@@ -16,4 +17,4 @@ FROM methodology
 ON CONFLICT (method_id) DO UPDATE SET
     methodology_name = EXCLUDED.methodology_name,
     methodology_description = EXCLUDED.methodology_description,
-    gpc_reference_number = EXCLUDED.gpc_reference_number
+    gpc_reference_number = EXCLUDED.gpc_reference_number;

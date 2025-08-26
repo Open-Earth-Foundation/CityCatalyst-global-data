@@ -78,7 +78,7 @@ SELECT 	(MD5(CONCAT_WS('-', methodology_name, gpc_reference_number))::UUID) AS m
 	    WHEN gpc_reference_number = 'II.2.1' THEN 'total-fuel-consumed'
 	    ELSE 'unknown'
 		END AS activity_name,
-		jsonb_build_object(activity_subcategory_type1,activity_subcategory_typename1,activity_subcategory_type2,activity_subcategory_typename2) as activity_subcategory_type,
+		jsonb_build_object(activity_subcategory_type2,activity_subcategory_typename2) as activity_subcategory_type,
 		activity_subcategory_type1,activity_subcategory_typename1,activity_subcategory_type2,activity_subcategory_typename2,
 		gas_name,
 		emissionfactor_value,
@@ -105,7 +105,7 @@ SELECT 	method_id,
 		(MD5(CONCAT_WS('-', publisher_name))::UUID) AS publisher_id,
 		publisher_name,
 		publisher_url,
-		(MD5(CONCAT_WS('-', datasource_name, dataset_name, dataset_url))::UUID) AS dataset_id,
+		(MD5(CONCAT_WS('-', datasource_name, dataset_name))::UUID) AS dataset_id,
 		datasource_name,
 		dataset_name,
 		dataset_url,

@@ -14023,7 +14023,8 @@
   scope: 1
   priority: 2.125
   datasource_description:
-    en: Climate TRACE is a global coalition that uses satellite imagery, AI, and other
+    en:
+      Climate TRACE is a global coalition that uses satellite imagery, AI, and other
       remote sensing technologies to independently track greenhouse gas emissions
       in near real-time. The initiative provides high-resolution, facility-level data
       across sectors like power, transportation, agriculture, and land use, making
@@ -14031,7 +14032,8 @@
       available data, Climate TRACE empowers governments, companies, and civil society
       to make data-driven decisions for climate action. Its goal is to close the emissions
       data gap and accelerate accountability and progress toward global climate targets.
-    es: Climate TRACE es una coalición global que utiliza imágenes satelitales, IA
+    es:
+      Climate TRACE es una coalición global que utiliza imágenes satelitales, IA
       y otras tecnologías de teledetección para rastrear de forma independiente las
       emisiones de gases de efecto invernadero casi en tiempo real. La iniciativa
       proporciona datos de alta resolución a nivel de instalaciones en sectores como
@@ -14041,7 +14043,8 @@
       civil para tomar decisiones basadas en datos para la acción climática. Su objetivo
       es cerrar la brecha de datos sobre emisiones y acelerar la rendición de cuentas
       y el progreso hacia los objetivos climáticos globales.
-    pt: A Climate TRACE é uma coalizão global que utiliza imagens de satélite, inteligência
+    pt:
+      A Climate TRACE é uma coalizão global que utiliza imagens de satélite, inteligência
       artificial e outras tecnologias de sensoriamento remoto para monitorar de forma
       independente as emissões de gases de efeito estufa em quase tempo real. A iniciativa
       fornece dados de alta resolução, em nível de instalação, cobrindo setores como
@@ -14061,7 +14064,7 @@
   dataset_description:
     en: The Climate TRACE cattle emissions datasets provide spatially explicit estimates of greenhouse gas emissions from both grazing and confined cattle systems. They include emissions from enteric fermentation and manure management, with data disaggregated into four categories; grazing cattle enteric fermentation, grazing cattle manure left on pasture, confined cattle enteric fermentation, and confined cattle manure management. Each dataset contains facility-level emissions estimates, with geographic coordinates.
     es: Los conjuntos de datos de emisiones de ganado de Climate TRACE proporcionan estimaciones espacialmente explícitas de las emisiones de gases de efecto invernadero tanto de sistemas de ganado en pastoreo como confinados. Incluyen emisiones de fermentación entérica y manejo de estiércol, con datos desagregados en cuatro categorías; fermentación entérica del ganado en pastoreo, estiércol del ganado en pastoreo dejado en el pasto, fermentación entérica del ganado confinado y manejo del estiércol del ganado confinado. Cada conjunto de datos contiene estimaciones de emisiones a nivel de instalación, con coordenadas geográficas.
-    pt: Os conjuntos de dados de emissões de gado da Climate TRACE fornecem estimativas espacialmente explícitas das emissões de gases de efeito estufa tanto de sistemas de gado em pastagem quanto confinados. Eles incluem emissões de fermentação entérica e manejo de esterco, com dados desagregados em quatro categorias; fermentação entérica do gado em pastagem, esterco do gado em pastagem deixado na pastagem, fermentação entérica do gado confinado e manejo do esterco do gado confinado. Cada conjunto de dados contém estimativas de emissões a nível de instalação, com coordenadas geográficas. 
+    pt: Os conjuntos de dados de emissões de gado da Climate TRACE fornecem estimativas espacialmente explícitas das emissões de gases de efeito estufa tanto de sistemas de gado em pastagem quanto confinados. Eles incluem emissões de fermentação entérica e manejo de esterco, com dados desagregados em quatro categorias; fermentação entérica do gado em pastagem, esterco do gado em pastagem deixado na pastagem, fermentação entérica do gado confinado e manejo do esterco do gado confinado. Cada conjunto de dados contém estimativas de emissões a nível de instalação, com coordenadas geográficas.
   source_type: third_party
   access_type: globalapi
   dataset_url: https://climatetrace.org/
@@ -14082,16 +14085,19 @@
     pt: As metodologias de emissões de gado da Climate TRACE são baseadas nas diretrizes do IPCC, combinando abordagens de Nível 1 e Nível 2 para estimar as emissões de metano (CH₄) e óxido nitroso (N₂O). A fermentação entérica do gado em pastagem utiliza métodos de Nível 1 e 2 com fatores de emissão regionais, enquanto as emissões das operações de gado confinado aplicam métodos de Nível 2 com dados a nível de instalação. O esterco deixado na pastagem pelo gado em pastagem é estimado usando métodos de Nível 1, aplicando taxas padrão de excreção de nitrogênio e fatores de emissão. Em contraste, o manejo do esterco em operações confinadas utiliza métodos de Nível 2, incorporando distribuições específicas do sistema por país e variáveis climáticas para capturar as emissões de CH₄ e N₂O dos processos de armazenamento e tratamento.
   methodology_url: https://github.com/climatetracecoalition/methodology-documents/blob/main/Fossil%20fuel%20operations/Fossil%20Fuel%20Operations%20sector-%20Oil%20and%20Gas%20Production%20and%20Transport%20Oil%2C%20and%20Gas%20Refining%20Methodology.pdf
   transformation_description:
-    en: Latitude and longitude information are utilized to apply a reverse geocode
+    en:
+      Latitude and longitude information are utilized to apply a reverse geocode
       methodology, assigning the corresponding city locode to each emission point.
       Once identified, all data points within the city boundary are aggregated to
       calculate the total emissions for the subsector.
-    es: La información de latitud y longitud se utiliza para aplicar una metodología
+    es:
+      La información de latitud y longitud se utiliza para aplicar una metodología
       de geocodificación inversa, asignando el código de ciudad correspondiente a
       cada punto de emisión. Una vez identificados, todos los puntos de datos dentro
       de los límites de la ciudad se agregan para calcular las emisiones totales del
       sub-sector.
-    pt: As informações de latitude e longitude são utilizadas para aplicar uma metodologia
+    pt:
+      As informações de latitude e longitude são utilizadas para aplicar uma metodologia
       de geocodificação reversa, atribuindo o código de cidade correspondente a cada
       ponto de emissão. Uma vez identificados, todos os pontos de dados dentro dos
       limites da cidade são agregados para calcular as emissões totais do subsetor.
@@ -14101,7 +14107,8 @@
   scope: 1
   priority: 2.2
   datasource_description:
-    en: Climate TRACE is a global coalition that uses satellite imagery, AI, and other
+    en:
+      Climate TRACE is a global coalition that uses satellite imagery, AI, and other
       remote sensing technologies to independently track greenhouse gas emissions
       in near real-time. The initiative provides high-resolution, facility-level data
       across sectors like power, transportation, agriculture, and land use, making
@@ -14109,7 +14116,8 @@
       available data, Climate TRACE empowers governments, companies, and civil society
       to make data-driven decisions for climate action. Its goal is to close the emissions
       data gap and accelerate accountability and progress toward global climate targets.
-    es: Climate TRACE es una coalición global que utiliza imágenes satelitales, IA
+    es:
+      Climate TRACE es una coalición global que utiliza imágenes satelitales, IA
       y otras tecnologías de teledetección para rastrear de forma independiente las
       emisiones de gases de efecto invernadero casi en tiempo real. La iniciativa
       proporciona datos de alta resolución a nivel de instalaciones en sectores como
@@ -14119,7 +14127,166 @@
       civil para tomar decisiones basadas en datos para la acción climática. Su objetivo
       es cerrar la brecha de datos sobre emisiones y acelerar la rendición de cuentas
       y el progreso hacia los objetivos climáticos globales.
-    pt: A Climate TRACE é uma coalizão global que utiliza imagens de satélite, inteligência
+    pt:
+      A Climate TRACE é uma coalizão global que utiliza imagens de satélite, inteligência
+      artificial e outras tecnologias de sensoriamento remoto para monitorar de forma
+      independente as emissões de gases de efeito estufa em quase tempo real. A iniciativa
+      fornece dados de alta resolução, em nível de instalação, cobrindo setores como
+      energia, transporte, agricultura e uso da terra, tornando as informações sobre
+      emissões mais transparentes e acessíveis. Ao oferecer dados gratuitos e disponíveis
+      ao público, a Climate TRACE capacita governos, empresas e a sociedade civil
+      a tomar decisões baseadas em dados para ações climáticas. Seu objetivo é reduzir
+      a lacuna de dados sobre emissões e acelerar a responsabilização e o progresso
+      em direção às metas climáticas globais.
+- datasource_id: d88181cb-0f3b-4448-b3e6-5f46d001d1aa
+  publisher_id: ClimateTRACEv2025
+  datasource_name: ClimateTRACE
+  dataset_name:
+    en: Road transportation estimated emissions
+    es: Emisiones estimadas de transporte en carretera
+    pt: Emissões estimadas de transporte rodoviário
+    fr: Émissions estimées du transport routier
+    de: Geschätzte Emissionen des Straßenverkehrs
+  dataset_description:
+    en:
+      It includes GHG emission estimation from on-road transportation, integrating
+      data on road segments, vehicle distribution, and fuel types for environmental
+      impact assessments
+    es:
+      Incluye la estimación de emisiones de GEI del transporte por carretera, integrando
+      datos sobre segmentos de carreteras, distribución de vehículos y tipos de combustible
+      para evaluaciones de impacto ambiental
+    pt:
+      Inclui a estimativa de emissões de GEE do transporte rodoviário, integrando
+      dados sobre segmentos de estrada, distribuição de veículos e tipos de combustível
+      para avaliações de impacto ambiental.
+    fr:
+      Elle inclut l'estimation des émissions de GES provenant du transport routier,
+      intégrant des données sur les segments de route, la répartition des véhicules
+      et les types de carburant pour les évaluations d'impact environnemental.
+    de:
+      Es umfasst die Schätzung der Treibhausgasemissionen aus dem Straßenverkehr
+      und integriert Daten zu Straßenabschnitten, Fahrzeugverteilung und Kraftstoffarten
+      für Umweltbewertung.
+  source_type: third_party
+  access_type: globalapi
+  dataset_url: https://climatetrace.org/
+  geographical_location: EARTH
+  start_year: 2021
+  end_year: 2024
+  latest_accounting_year: 2024
+  frequency_of_update: annual
+  spatial_resolution: city
+  language: en
+  accessibility: null
+  data_quality: medium
+  notes: null
+  units: kg
+  methodology_description:
+    en:
+      The on-road transportation emissions methodology involves classifying road
+      segments, considering factors like road type from OpenStreetMap data. Vehicle
+      distribution by type and fuel efficiency is determined using registration data,
+      kilometers traveled, and US FHWA estimates. Fuel types and efficiencies are
+      analyzed based on gasoline, diesel, and alternative fuels, using U.S. EPA emissions
+      factors. Machine learning models assist in estimating traffic volume per road
+      segment, contributing to emissions calculations.
+    es:
+      La metodología de emisiones del transporte en carretera implica clasificar
+      los segmentos de carreteras, considerando factores como el tipo de carretera
+      a partir de los datos de OpenStreetMap. La distribución de vehículos por tipo
+      y eficiencia de combustible se determina utilizando datos de registro, kilómetros
+      recorridos y estimaciones de la FHWA de U.S. Los tipos de combustible y las
+      eficiencias se analizan en función de la gasolina, el diésel y los combustibles
+      alternativos, utilizando factores de emisiones de la EPA de U.S. Los modelos
+      de aprendizaje automático ayudan a estimar el volumen de tráfico por segmento
+      de carretera, lo que contribuye a los cálculos de emisiones.
+    pt:
+      A metodologia de emissões do transporte rodoviário envolve a classificação
+      de segmentos de estrada, considerando fatores como o tipo de estrada a partir
+      dos dados do OpenStreetMap. A distribuição de veículos por tipo e eficiência
+      de combustível é determinada usando dados de registro, quilômetros percorridos
+      e estimativas da FHWA dos EUA. Os tipos de combustível e as eficiências são
+      analisados com base na gasolina, no diesel e em combustíveis alternativos, utilizando
+      fatores de emissões da EPA dos EUA. Modelos de aprendizado de máquina ajudam
+      a estimar o volume de tráfego por segmento de estrada, contribuindo para os
+      cálculos de emissões.
+    fr:
+      La méthodologie des émissions du transport routier implique de classer les
+      segments de route, en tenant compte de facteurs tels que le type de route à
+      partir des données d'OpenStreetMap. La répartition des véhicules par type et
+      l'efficacité énergétique sont déterminées à l'aide des données d'enregistrement,
+      des kilomètres parcourus et des estimations de la FHWA des États-Unis. Les types
+      de carburant et les efficacités sont analysés en fonction de l'essence, du diesel
+      et des carburants alternatifs, en utilisant les facteurs d'émissions de l'EPA
+      des États-Unis. Des modèles d'apprentissage automatique aident à estimer le
+      volume de trafic par segment de route, contribuant aux calculs d'émissions.
+    de:
+      Die Methodik zur Emissionen des Straßenverkehrs umfasst die Klassifizierung
+      von Straßenabschnitten unter Berücksichtigung von Faktoren wie Straßentyp aus
+      OpenStreetMap-Daten. Die Verteilung der Fahrzeuge nach Typ und Kraftstoffeffizienz
+      wird anhand von Registrierungsdaten, gefahrenen Kilometern und Schätzungen der
+      US FHWA bestimmt. Kraftstoffarten und -effizienzen werden basierend auf Benzin,
+      Diesel und alternativen Kraftstoffen analysiert, wobei die Emissionsfaktoren
+      der US EPA verwendet werden. Maschinenlernmodelle helfen bei der Schätzung des
+      Verkehrsaufkommens pro Straßenabschnitt, was zu den Emissionsberechnungen beiträgt.
+  methodology_url: https://github.com/climatetracecoalition/methodology-documents/blob/main/2025/Transportation/Transportation%20sector-Global%20Road%20Emissions.pdf
+  transformation_description:
+    en:
+      Latitude and longitude information are utilized to apply a reverse geocode
+      methodology, assigning the corresponding city locode to each emission point.
+      Once identified, all data points within the city boundary are aggregated to
+      calculate the total emissions for the sector.
+    es:
+      La información de latitud y longitud se utiliza para aplicar una metodología
+      de geocodificación inversa, asignando el código de ciudad correspondiente a
+      cada punto de emisión. Una vez identificados, todos los puntos de datos dentro
+      de los límites de la ciudad se agregan para calcular las emisiones totales del
+      sector.
+    pt:
+      As informações de latitude e longitude são utilizadas para aplicar uma metodologia
+      de geocodificação reversa, atribuindo o código de cidade correspondente a cada
+      ponto de emissão. Uma vez identificados, todos os pontos de dados dentro dos
+      limites da cidade são agregados para calcular as emissões totais do setor.
+    fr:
+      Les informations de latitude et de longitude sont utilisées pour appliquer
+      une méthodologie de géocodage inversé, attribuant le code de ville correspondant
+      à chaque point d'émission. Une fois identifiés, tous les points de données à
+      l'intérieur des limites de la ville sont agrégés pour calculer les émissions
+      totales du secteur.
+    de:
+      Die Informationen zu Breiten- und Längengraden werden verwendet, um eine Methode
+      zur umgekehrten Geokodierung anzuwenden, die den entsprechenden Stadtkode jedem
+      Emissionspunkt zuweist. Nach der Identifizierung werden alle Datenpunkte innerhalb
+      der Stadtgrenzen aggregiert, um die Gesamtemissionen für den Sektor zu berechnen.
+  retrieval_method: global_api
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/ClimateTRACEv2025/city/:locode/:year/:gpcReferenceNumber
+  gpc_reference_number: II.1.1
+  scope: 1
+  priority: 1
+  datasource_description:
+    en:
+      Climate TRACE is a global coalition that uses satellite imagery, AI, and other
+      remote sensing technologies to independently track greenhouse gas emissions
+      in near real-time. The initiative provides high-resolution, facility-level data
+      across sectors like power, transportation, agriculture, and land use, making
+      emissions information more transparent and accessible. By offering free, publicly
+      available data, Climate TRACE empowers governments, companies, and civil society
+      to make data-driven decisions for climate action. Its goal is to close the emissions
+      data gap and accelerate accountability and progress toward global climate targets.
+    es:
+      Climate TRACE es una coalición global que utiliza imágenes satelitales, IA
+      y otras tecnologías de teledetección para rastrear de forma independiente las
+      emisiones de gases de efecto invernadero casi en tiempo real. La iniciativa
+      proporciona datos de alta resolución a nivel de instalaciones en sectores como
+      la energía, el transporte, la agricultura y el uso del suelo, lo que hace que
+      la información sobre emisiones sea más transparente y accesible. Al ofrecer
+      datos gratuitos y públicos, Climate TRACE empodera a gobiernos, empresas y sociedad
+      civil para tomar decisiones basadas en datos para la acción climática. Su objetivo
+      es cerrar la brecha de datos sobre emisiones y acelerar la rendición de cuentas
+      y el progreso hacia los objetivos climáticos globales.
+    pt:
+      A Climate TRACE é uma coalizão global que utiliza imagens de satélite, inteligência
       artificial e outras tecnologias de sensoriamento remoto para monitorar de forma
       independente as emissões de gases de efeito estufa em quase tempo real. A iniciativa
       fornece dados de alta resolução, em nível de instalação, cobrindo setores como
