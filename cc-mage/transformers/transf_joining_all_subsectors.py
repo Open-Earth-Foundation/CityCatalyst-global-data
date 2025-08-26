@@ -126,7 +126,17 @@ def transform(data: DataFrame, data_2: DataFrame, data_3: DataFrame, data_4: Dat
 
     EF_final = pd.concat([tmp, tmp2], ignore_index=True)
 
-    EF_final['methodology_name'] = 'fuel-combustion-consumption'
+    # Define the mapping dictionary
+    methodology_mapping = {
+        'I.1.1': 'fuel-combustion-residential-buildings-methodology',
+        'I.2.1': 'fuel-combustion-commercial-buildings-methodology',
+        'I.3.1': 'fuel-combustion-manufacturing-and-construction-methodology',
+        'I.4.1': 'fuel-combustion-energy-industries-methodology',
+        'I.5.1': 'fuel-combustion-agriculture-forestry-fishing-activities-methodology',
+        'I.6.1': 'fuel-combustion-non-specific-sources-methodology'
+    }
+    EF_final['methodology_name'] = EF_final['gpc_reference_number'].map(methodology_mapping)
+
     EF_final['actor_id'] = 'world'
     EF_final['active_to'] = ''
     EF_final['active_from'] = ''

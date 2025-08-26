@@ -21,21 +21,25 @@ def export_data_to_postgres(**kwargs) -> None:
     config_path = path.join(get_repo_path(), 'io_config.yaml')
     config_profile = 'default'
 
-    methodology = {
-        "methodology_name": "fuel-combustion-consumption",
-        "methodology_description": "The Fuel Consumption methodology is a Tier 1 IPCC approach used in the GPC to estimate Scope 1 emissions from stationary energy by calculating GHG emissions based on the quantity of fuel consumed in buildings, industry, and other fixed sources within the city boundary. It directly links fuel usage to combustion emissions and is recommended when disaggregated fuel data by type and subsector are available.",
-    }
-
     gpc_reference_numbers = ["I.1.1", "I.2.1", "I.3.1", "I.4.1", "I.5.1", "I.6.1"]
 
-    # Create a list of dictionaries, one for each gpc_reference_number
-    rows = [
-        {**methodology, "gpc_reference_number": gpc_ref}
-        for gpc_ref in gpc_reference_numbers
+    # Corresponding methodology names
+    methodology_names = [
+        'fuel-combustion-residential-buildings-methodology',
+        'fuel-combustion-commercial-buildings-methodology',
+        'fuel-combustion-manufacturing-and-construction-methodology',
+        'fuel-combustion-energy-industries-methodology',
+        'fuel-combustion-agriculture-forestry-fishing-activities-methodology',
+        'fuel-combustion-non-specific-sources-methodology'
     ]
 
-    # Create DataFrame
-    df = pd.DataFrame(rows)
+    # Create the DataFrame
+    df = pd.DataFrame({
+        'gpc_reference_number': gpc_reference_numbers,
+        'methodology_name': methodology_names
+    })
+
+    df['methodology_description'] = "The Fuel Consumption methodology is a Tier 1 IPCC approach used in the GPC to estimate Scope 1 emissions from stationary energy by calculating GHG emissions based on the quantity of fuel consumed in buildings, industry, and other fixed sources within the city boundary. It directly links fuel usage to combustion emissions and is recommended when disaggregated fuel data by type and subsector are available."
 
     with Postgres.with_config(ConfigFileLoader(config_path, config_profile)) as loader:
         loader.export(
