@@ -128,7 +128,7 @@ blocks:
   language: python
   name: transf_joining_all_subsectors
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: transformer
   upstream_blocks:
@@ -137,7 +137,7 @@ blocks:
   - transf_subsector_1to4_6
   - transf_subsector_5
   uuid: transf_joining_all_subsectors
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration: {}
   downstream_blocks:
@@ -156,7 +156,7 @@ blocks:
   upstream_blocks:
   - transf_joining_all_subsectors
   uuid: sector1_ef_fuel_consumption_staging
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: postgres
@@ -173,7 +173,7 @@ blocks:
   language: sql
   name: update_publisher_datasource
   retry_config: null
-  status: failed
+  status: executed
   timeout: null
   type: data_exporter
   upstream_blocks:
@@ -218,13 +218,13 @@ blocks:
   language: sql
   name: update_ghgi_methodology
   retry_config: null
-  status: failed
+  status: updated
   timeout: null
   type: data_exporter
   upstream_blocks:
   - ghgi_methodology_staging
   uuid: update_ghgi_methodology
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: postgres
@@ -247,7 +247,7 @@ blocks:
   upstream_blocks:
   - sector1_ef_fuel_consumption_staging
   uuid: update_activity_subcategory
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: postgres

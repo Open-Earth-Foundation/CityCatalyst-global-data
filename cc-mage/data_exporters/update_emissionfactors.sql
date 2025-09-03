@@ -62,7 +62,7 @@ INSERT INTO modelled.emissions_factor (
     activity_id,
     gas_name,
     emissionfactor_value,
-    units,
+    unit_denominator,
     active_to,
     active_from,
     actor_id
@@ -74,7 +74,7 @@ SELECT
     activity_id,
     gas AS gas_name,
     emissions_per_activity AS emissionfactor_value,
-    units,
+    units AS unit_denominator,
     NULL::DATE AS active_to,
     NULL::DATE AS active_from,
     actor_id
@@ -85,7 +85,7 @@ ON CONFLICT (emissionfactor_id) DO UPDATE SET
     activity_id = EXCLUDED.activity_id,
     gas_name = EXCLUDED.gas_name,
     emissionfactor_value = EXCLUDED.emissionfactor_value,
-    units = EXCLUDED.units,
+    unit_denominator = EXCLUDED.unit_denominator,
     active_to = EXCLUDED.active_to,
     active_from = EXCLUDED.active_from,
     actor_id = EXCLUDED.actor_id;

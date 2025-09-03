@@ -12,7 +12,7 @@ INSERT INTO modelled.activity_subcategory (
     activity_id,
     activity_name,
     activity_units,
-    method_id,
+    gpcmethod_id,
     activity_subcategory_type
 )
 SELECT
@@ -33,7 +33,7 @@ SELECT
     ))::UUID) AS activity_id,
     activity_name,
     activity_units,
-    MD5(CONCAT_WS('-', methodology_name, gpc_reference_number))::UUID AS method_id,
+    MD5(CONCAT_WS('-', methodology_name, gpc_reference_number))::UUID AS gpcmethod_id,
     CASE gpc_reference_number
         WHEN 'I.1.1' THEN jsonb_build_object('residential-building-fuel-type', fuel_type)
         WHEN 'I.2.1' THEN jsonb_build_object('commercial-building-fuel-type', fuel_type)
@@ -48,5 +48,5 @@ FROM activity_data
 ON CONFLICT (activity_id) DO UPDATE SET
     activity_name = EXCLUDED.activity_name,
     activity_units = EXCLUDED.activity_units,
-    method_id = EXCLUDED.method_id,
+    gpcmethod_id = EXCLUDED.gpcmethod_id,
     activity_subcategory_type = EXCLUDED.activity_subcategory_type;

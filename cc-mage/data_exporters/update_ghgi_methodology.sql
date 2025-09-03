@@ -12,4 +12,8 @@ SELECT
     methodology_name,
     methodology_description,
     gpc_reference_number
-FROM methodology;
+FROM methodology
+ON CONFLICT (method_id) DO UPDATE SET
+    methodology_name = EXCLUDED.methodology_name,
+    methodology_description = EXCLUDED.methodology_description,
+    gpc_reference_number = EXCLUDED.gpc_reference_number
