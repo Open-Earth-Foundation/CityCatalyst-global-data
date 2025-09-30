@@ -7870,7 +7870,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.1.1
   scope: 1
-  priority: 2.75
+  priority: 1
   datasource_description:
     en:
       The Sistema de Estimativas de Emissões de Gases de Efeito Estufa (SEEG) is
@@ -8165,7 +8165,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.2.1
   scope: 1
-  priority: 2.75
+  priority: 1
   datasource_description:
     en:
       The Sistema de Estimativas de Emissões de Gases de Efeito Estufa (SEEG) is
@@ -8459,7 +8459,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.3.1
   scope: 1
-  priority: 2.75
+  priority: 1
   datasource_description:
     en:
       The Sistema de Estimativas de Emissões de Gases de Efeito Estufa (SEEG) is
@@ -8750,7 +8750,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.4.1
   scope: 1
-  priority: 2.75
+  priority: 1
   datasource_description:
     en:
       The Sistema de Estimativas de Emissões de Gases de Efeito Estufa (SEEG) is
@@ -9044,7 +9044,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.5.1
   scope: 1
-  priority: 2.75
+  priority: 1
   datasource_description:
     en:
       The Sistema de Estimativas de Emissões de Gases de Efeito Estufa (SEEG) is
@@ -9345,7 +9345,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.8.1
   scope: 1
-  priority: 2.75
+  priority: 1
   datasource_description:
     en:
       The Sistema de Estimativas de Emissões de Gases de Efeito Estufa (SEEG) is
@@ -9627,7 +9627,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.1.1
   scope: 1
-  priority: 2.875
+  priority: 1
   datasource_description:
     en:
       The Sistema de Estimativas de Emissões de Gases de Efeito Estufa (SEEG) is
@@ -9892,7 +9892,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.2.1
   scope: 1
-  priority: 2.875
+  priority: 1
   datasource_description:
     en:
       The Sistema de Estimativas de Emissões de Gases de Efeito Estufa (SEEG) is
@@ -10155,7 +10155,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.3.3
   scope: 3
-  priority: 2.875
+  priority: 1
   datasource_description:
     en:
       The Sistema de Estimativas de Emissões de Gases de Efeito Estufa (SEEG) is
@@ -10416,7 +10416,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.4.3
   scope: 3
-  priority: 2.875
+  priority: 1
   datasource_description:
     en:
       The Sistema de Estimativas de Emissões de Gases de Efeito Estufa (SEEG) is
@@ -10680,7 +10680,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: V.1
   scope: 1
-  priority: 3
+  priority: 1
   datasource_description:
     en:
       The Sistema de Estimativas de Emissões de Gases de Efeito Estufa (SEEG) is
@@ -10974,7 +10974,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: V.2
   scope: 1
-  priority: 3
+  priority: 1
   datasource_description:
     en:
       The Sistema de Estimativas de Emissões de Gases de Efeito Estufa (SEEG) is
@@ -11266,7 +11266,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: V.3
   scope: 1
-  priority: 3
+  priority: 1
   datasource_description:
     en:
       The Sistema de Estimativas de Emissões de Gases de Efeito Estufa (SEEG) is
@@ -11525,7 +11525,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: IV.1
   scope: 1
-  priority: 2.625
+  priority: 1
   datasource_description:
     en:
       The Sistema de Estimativas de Emissões de Gases de Efeito Estufa (SEEG) is
