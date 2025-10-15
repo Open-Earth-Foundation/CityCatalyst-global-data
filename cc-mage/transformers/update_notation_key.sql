@@ -1,3 +1,4 @@
+INSERT INTO modelled.ghgi_city_facility_occurance (id, locode, gpc_reference_number, facility_count, datasource_year, datasource_name, spatial_granularity)
 WITH nk_data AS (
     SELECT 
         a.country_code, 
@@ -35,18 +36,18 @@ data_source AS (
     SELECT DISTINCT 
         gpc_reference_number, 
         datasource_year, 
-        datasource_code, 
-        datasource_name
+        datasource_code as datasource_name 
     FROM 
         raw_data.ghgi_notation_key
 )
 SELECT  
+    (MD5(CONCAT_WS('-', a.locode, a.gpc_reference_number, c.datasource_name))::UUID) as id,
     a.locode, 
     a.gpc_reference_number,
     COALESCE(b.number_sites, 0) AS number_sites,
     c.datasource_year,
-    c.datasource_code as publisher_id,
-    c.datasource_name
+    c.datasource_name,
+    'city' AS spatial_granularity
 FROM 
     all_data a 
 LEFT JOIN 
@@ -57,4 +58,9 @@ ON
 LEFT JOIN 
     data_source c
 ON 
-    a.gpc_reference_number = c.gpc_reference_number;
+    a.gpc_reference_number = c.gpc_reference_number
+ON CONFLICT (locode, gpc_reference_number, datasource_name) 
+DO UPDATE SET
+    facility_count = excluded.facility_count,
+    datasource_year = excluded.datasource_year,
+    spatial_granularity = excluded.spatial_granularity
