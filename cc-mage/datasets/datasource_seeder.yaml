@@ -14409,7 +14409,7 @@
       geschnitten werden. Alle Anlagen innerhalb der Stadtgrenzen werden summiert,
       um die Gesamtemissionen auf Stadtebene zu berechnen.
   retrieval_method: global_api_notation_key
-  api_endpoint: https://ccglobal.openearth.dev/api/v0/ghgi/notation_key/NO/source/:datasource_name/:spatial_granularity/:actor_id/:gpc_reference_number
+  api_endpoint: https://ccglobal.openearth.dev/api/v0/ghgi/notation_key/NO/source/OurAirports/city/:actor_id/:gpc_reference_number
   gpc_reference_number: II.4.1
   scope: 1
   priority: 2
@@ -14560,7 +14560,7 @@
       aggregiert. Die Gesamtemissionen der Stadt werden durch Summierung aller Bergwerksanlagen
       innerhalb der Stadtgrenzen berechnet.
   retrieval_method: global_api_notation_key
-  api_endpoint: https://ccglobal.openearth.dev/api/v0/ghgi/notation_key/NO/source/:datasource_name/:spatial_granularity/:actor_id/:gpc_reference_number
+  api_endpoint: https://ccglobal.openearth.dev/api/v0/ghgi/notation_key/NO/source/globalenergymonitor/city/:actor_id/:gpc_reference_number
   gpc_reference_number: I.7.1
   scope: 1
   priority: 2
@@ -14715,7 +14715,7 @@
       mit kommunalen Grenzpolygonen geschnitten werden. Alle Terminals innerhalb
       der Stadtgrenzen tragen zum gesamten Emissionsinventar auf Stadtebene bei.
   retrieval_method: global_api_notation_key
-  api_endpoint: https://ccglobal.openearth.dev/api/v0/ghgi/notation_key/NO/source/:datasource_name/:spatial_granularity/:actor_id/:gpc_reference_number
+  api_endpoint: https://ccglobal.openearth.dev/api/v0/ghgi/notation_key/NO/source/OGIM/city/:actor_id/:gpc_reference_number
   gpc_reference_number: I.8.1
   scope: 1
   priority: 2
@@ -14869,7 +14869,7 @@
       um umfassende Emissionsinventare auf Stadtebene für den Öl- und Gasverarbeitungssektor
       zu erstellen.
   retrieval_method: global_api_notation_key
-  api_endpoint: https://ccglobal.openearth.dev/api/v0/ghgi/notation_key/NO/source/:datasource_name/:spatial_granularity/:actor_id/:gpc_reference_number
+  api_endpoint: https://ccglobal.openearth.dev/api/v0/ghgi/notation_key/NO/source/OGIM/city/:actor_id/:gpc_reference_number
   gpc_reference_number: I.8.1
   scope: 1
   priority: 2
@@ -15043,7 +15043,7 @@
       Stadtgrenzen werden summiert, um die Gesamtemissionen des kommunalen Stromsektors
       zu berechnen.
   retrieval_method: global_api_notation_key
-  api_endpoint: https://ccglobal.openearth.dev/api/v0/ghgi/notation_key/NO/source/:datasource_name/:spatial_granularity/:actor_id/:gpc_reference_number
+  api_endpoint: https://ccglobal.openearth.dev/api/v0/ghgi/notation_key/NO/source/WRI/city/:actor_id/:gpc_reference_number
   gpc_reference_number: I.4.1
   scope: 1
   priority: 2
