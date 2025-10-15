@@ -37,7 +37,8 @@ def test_output(output, *args) -> None:
         r"^https://ccglobal\.openearth\.dev/api/v1/source/[a-zA-Z0-9_ ]+/country/:country/:year/:gpcReferenceNumber$",  # Pattern for country
         r"^https://ccglobal\.openearth\.dev/api/v0/[a-zA-Z0-9_/ ]+/country/:country/:year/:gpcReferenceNumber$",  # Pattern for country
         r"^https://ccglobal\.openearth\.dev/api/v1/source/[a-zA-Z0-9_ ]+/region/:region/:year/:gpcReferenceNumber$",  # Pattern for region
-        r"^https://ccglobal\.openearth\.dev/api/v0/[a-zA-Z0-9_/ ]+/region/:region/:year/:gpcReferenceNumber$"   # Pattern for region
+        r"^https://ccglobal\.openearth\.dev/api/v0/[a-zA-Z0-9_/ ]+/region/:region/:year/:gpcReferenceNumber$",   # Pattern for region
+        r"^https://ccglobal\.openearth\.dev/api/v0/ghgi/notation_key/NO/source/[a-zA-Z0-9_ ]+/city/:actor_id/:gpc_reference_number$"  # Pattern for GHGI notation key
     ]
 
     # Check for valid endpoints against all patterns

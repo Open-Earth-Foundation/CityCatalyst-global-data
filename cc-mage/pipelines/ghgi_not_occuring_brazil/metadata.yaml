@@ -1,0 +1,182 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - transform_integrate_sites
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_global_power_plants
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_global_power_plants
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - transform_integrate_sites
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_global_oil_gas_facilities
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_global_oil_gas_facilities
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - transform_integrate_sites
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_brazil_airport
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_brazil_airport
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - transform_integrate_sites
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_global_mines
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_global_mines
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_path: data_loaders/load_global_lng_terminal.py
+    file_source:
+      path: data_loaders/load_global_lng_terminal.py
+  downstream_blocks:
+  - transform_integrate_sites
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_global_lng_terminal
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_global_lng_terminal
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: duckdb
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - load_nk_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: transform_integrate_sites
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_global_lng_terminal
+  - load_global_mines
+  - load_brazil_airport
+  - load_global_oil_gas_facilities
+  - load_global_power_plants
+  uuid: transform_integrate_sites
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: duckdb
+    data_provider_profile: default
+    export_write_policy: append
+  downstream_blocks:
+  - update_notation_key
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_nk_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - transform_integrate_sites
+  uuid: load_nk_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_notation_key
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_nk_db
+  uuid: update_notation_key
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2025-10-14 09:24:10.096980+00:00'
+data_integration: null
+description: This is a pipeline that provide the gpc ref no that are not occurring
+  in the city boundary
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: ghgi_not_occuring_brazil
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: ghgi_not_occuring_brazil
+variables:
+  bucket_name: test-global-api
+variables_dir: /home/src/mage_data/cc-mage
+widgets: []
