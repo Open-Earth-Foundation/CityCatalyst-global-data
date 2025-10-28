@@ -4,7 +4,7 @@ WITH raw_data AS (
     SELECT 
         action_id,
         action_name::json AS action_name,
-        ARRAY(SELECT jsonb_array_elements_text(action_type)) AS action_type,
+        ARRAY(SELECT lower(jsonb_array_elements_text(action_type))) AS action_type,
         ARRAY(SELECT jsonb_array_elements_text(hazard_name)) AS hazard_name,
         ARRAY(SELECT jsonb_array_elements_text(sector_names)) AS sector_names,
         ARRAY(SELECT jsonb_array_elements_text(subsector_names)) AS subsector_names,
@@ -37,12 +37,34 @@ WITH raw_data AS (
         LOWER(TRIM(REPLACE(REPLACE(adaptation_effectiveness_storms, '"', ''), CHR(39), ''))) AS adaptation_effectiveness_storms,
         LOWER(TRIM(REPLACE(REPLACE(adaptation_effectiveness_wildfires, '"', ''), CHR(39), ''))) AS adaptation_effectiveness_wildfires,
         LOWER(TRIM(REPLACE(REPLACE(adaptation_effectiveness_diseases, '"', ''), CHR(39), ''))) AS adaptation_effectiveness_diseases,
-        CASE WHEN biome IS NULL OR biome = '' OR biome = 'none' THEN NULL ELSE biome END AS biome
+        CASE WHEN biome IS NULL OR biome = '' OR biome = 'none' THEN NULL ELSE biome END AS biome,
+        action_category,
+        action_subcategory
     FROM raw_data.cap_climate_action
 )
 INSERT INTO modelled.cap_climate_action (
-    action_id,action_name,action_type,hazard_name,sector_names,subsector_names,primary_purpose,description,cobenefits_airquality,cobenefits_waterquality,cobenefits_habitat,cobenefits_costofliving,cobenefits_housing,cobenefits_mobility,cobenefits_stakeholderengagement,equity_and_inclusion_considerations,ghgreduction_stationary_energy,ghgreduction_transportation,ghgreduction_waste,ghgreduction_ippu,ghgreduction_afolu,adaptation_effectiveness,cost_investment_needed,timeline_for_implementation,dependencies,key_performance_indicators,powers_and_mandates,adaptation_effectiveness_droughts,adaptation_effectiveness_heatwaves,adaptation_effectiveness_floods,adaptation_effectiveness_sealevelrise,adaptation_effectiveness_landslides,adaptation_effectiveness_storms,adaptation_effectiveness_wildfires,adaptation_effectiveness_diseases,biome
+    action_id,action_name,action_type,hazard_name,sector_names,subsector_names,primary_purpose,description,cobenefits_airquality,cobenefits_waterquality,cobenefits_habitat,cobenefits_costofliving,cobenefits_housing,cobenefits_mobility,cobenefits_stakeholderengagement,equity_and_inclusion_considerations,ghgreduction_stationary_energy,ghgreduction_transportation,ghgreduction_waste,ghgreduction_ippu,ghgreduction_afolu,adaptation_effectiveness,cost_investment_needed,timeline_for_implementation,dependencies,key_performance_indicators,powers_and_mandates,adaptation_effectiveness_droughts,adaptation_effectiveness_heatwaves,adaptation_effectiveness_floods,adaptation_effectiveness_sealevelrise,adaptation_effectiveness_landslides,adaptation_effectiveness_storms,adaptation_effectiveness_wildfires,adaptation_effectiveness_diseases,
+    biome,action_category,action_subcategory
 )
 SELECT * FROM raw_data
 ON CONFLICT (action_id) DO UPDATE SET
-    action_name=EXCLUDED.action_name,action_type=EXCLUDED.action_type,hazard_name=EXCLUDED.hazard_name,sector_names=EXCLUDED.sector_names,subsector_names=EXCLUDED.subsector_names,primary_purpose=EXCLUDED.primary_purpose,description=EXCLUDED.description,cobenefits_airquality=EXCLUDED.cobenefits_airquality,cobenefits_waterquality=EXCLUDED.cobenefits_waterquality,cobenefits_habitat=EXCLUDED.cobenefits_habitat,cobenefits_costofliving=EXCLUDED.cobenefits_costofliving,cobenefits_housing=EXCLUDED.cobenefits_housing,cobenefits_mobility=EXCLUDED.cobenefits_mobility,cobenefits_stakeholderengagement=EXCLUDED.cobenefits_stakeholderengagement,equity_and_inclusion_considerations=EXCLUDED.equity_and_inclusion_considerations,ghgreduction_stationary_energy=EXCLUDED.ghgreduction_stationary_energy,ghgreduction_transportation=EXCLUDED.ghgreduction_transportation,ghgreduction_waste=EXCLUDED.ghgreduction_waste,ghgreduction_ippu=EXCLUDED.ghgreduction_ippu,ghgreduction_afolu=EXCLUDED.ghgreduction_afolu,adaptation_effectiveness=EXCLUDED.adaptation_effectiveness,cost_investment_needed=EXCLUDED.cost_investment_needed,timeline_for_implementation=EXCLUDED.timeline_for_implementation,dependencies=EXCLUDED.dependencies,key_performance_indicators=EXCLUDED.key_performance_indicators,powers_and_mandates=EXCLUDED.powers_and_mandates,adaptation_effectiveness_droughts=EXCLUDED.adaptation_effectiveness_droughts,adaptation_effectiveness_heatwaves=EXCLUDED.adaptation_effectiveness_heatwaves,adaptation_effectiveness_floods=EXCLUDED.adaptation_effectiveness_floods,adaptation_effectiveness_sealevelrise=EXCLUDED.adaptation_effectiveness_sealevelrise,adaptation_effectiveness_landslides=EXCLUDED.adaptation_effectiveness_landslides,adaptation_effectiveness_storms=EXCLUDED.adaptation_effectiveness_storms,adaptation_effectiveness_wildfires=EXCLUDED.adaptation_effectiveness_wildfires,adaptation_effectiveness_diseases=EXCLUDED.adaptation_effectiveness_diseases,biome=EXCLUDED.biome;
+    action_name=EXCLUDED.action_name,
+    action_type=EXCLUDED.action_type,
+    hazard_name=EXCLUDED.hazard_name,
+    sector_names=EXCLUDED.sector_names,
+    subsector_names=EXCLUDED.subsector_names,
+    primary_purpose=EXCLUDED.primary_purpose,
+    description=EXCLUDED.description,
+    cobenefits_airquality=EXCLUDED.cobenefits_airquality,
+    cobenefits_waterquality=EXCLUDED.cobenefits_waterquality,
+    cobenefits_habitat=EXCLUDED.cobenefits_habitat,
+    cobenefits_costofliving=EXCLUDED.cobenefits_costofliving,
+    cobenefits_housing=EXCLUDED.cobenefits_housing,
+    cobenefits_mobility=EXCLUDED.cobenefits_mobility,
+    cobenefits_stakeholderengagement=EXCLUDED.cobenefits_stakeholderengagement,
+    equity_and_inclusion_considerations=EXCLUDED.equity_and_inclusion_considerations,
+    ghgreduction_stationary_energy=EXCLUDED.ghgreduction_stationary_energy,
+    ghgreduction_transportation=EXCLUDED.ghgreduction_transportation,
+    ghgreduction_waste=EXCLUDED.ghgreduction_waste,
+    ghgreduction_ippu=EXCLUDED.ghgreduction_ippu,ghgreduction_afolu=EXCLUDED.ghgreduction_afolu,adaptation_effectiveness=EXCLUDED.adaptation_effectiveness,cost_investment_needed=EXCLUDED.cost_investment_needed,timeline_for_implementation=EXCLUDED.timeline_for_implementation,dependencies=EXCLUDED.dependencies,key_performance_indicators=EXCLUDED.key_performance_indicators,powers_and_mandates=EXCLUDED.powers_and_mandates,adaptation_effectiveness_droughts=EXCLUDED.adaptation_effectiveness_droughts,adaptation_effectiveness_heatwaves=EXCLUDED.adaptation_effectiveness_heatwaves,adaptation_effectiveness_floods=EXCLUDED.adaptation_effectiveness_floods,adaptation_effectiveness_sealevelrise=EXCLUDED.adaptation_effectiveness_sealevelrise,adaptation_effectiveness_landslides=EXCLUDED.adaptation_effectiveness_landslides,adaptation_effectiveness_storms=EXCLUDED.adaptation_effectiveness_storms,adaptation_effectiveness_wildfires=EXCLUDED.adaptation_effectiveness_wildfires,adaptation_effectiveness_diseases=EXCLUDED.adaptation_effectiveness_diseases,
+    biome=EXCLUDED.biome,action_category=EXCLUDED.action_category,action_subcategory=EXCLUDED.action_subcategory;
