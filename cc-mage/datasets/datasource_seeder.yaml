@@ -7870,7 +7870,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.1.1
   scope: 1
-  priority: 2.75
+  priority: 1
   datasource_description:
     en:
       The Sistema de Estimativas de Emissões de Gases de Efeito Estufa (SEEG) is
@@ -8165,7 +8165,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.2.1
   scope: 1
-  priority: 2.75
+  priority: 1
   datasource_description:
     en:
       The Sistema de Estimativas de Emissões de Gases de Efeito Estufa (SEEG) is
@@ -8459,7 +8459,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.3.1
   scope: 1
-  priority: 2.75
+  priority: 1
   datasource_description:
     en:
       The Sistema de Estimativas de Emissões de Gases de Efeito Estufa (SEEG) is
@@ -8750,7 +8750,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.4.1
   scope: 1
-  priority: 2.75
+  priority: 1
   datasource_description:
     en:
       The Sistema de Estimativas de Emissões de Gases de Efeito Estufa (SEEG) is
@@ -9044,7 +9044,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.5.1
   scope: 1
-  priority: 2.75
+  priority: 1
   datasource_description:
     en:
       The Sistema de Estimativas de Emissões de Gases de Efeito Estufa (SEEG) is
@@ -9345,7 +9345,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.8.1
   scope: 1
-  priority: 2.75
+  priority: 1
   datasource_description:
     en:
       The Sistema de Estimativas de Emissões de Gases de Efeito Estufa (SEEG) is
@@ -9627,7 +9627,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.1.1
   scope: 1
-  priority: 2.875
+  priority: 1
   datasource_description:
     en:
       The Sistema de Estimativas de Emissões de Gases de Efeito Estufa (SEEG) is
@@ -9892,7 +9892,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.2.1
   scope: 1
-  priority: 2.875
+  priority: 1
   datasource_description:
     en:
       The Sistema de Estimativas de Emissões de Gases de Efeito Estufa (SEEG) is
@@ -10155,7 +10155,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.3.3
   scope: 3
-  priority: 2.875
+  priority: 1
   datasource_description:
     en:
       The Sistema de Estimativas de Emissões de Gases de Efeito Estufa (SEEG) is
@@ -10416,7 +10416,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.4.3
   scope: 3
-  priority: 2.875
+  priority: 1
   datasource_description:
     en:
       The Sistema de Estimativas de Emissões de Gases de Efeito Estufa (SEEG) is
@@ -10680,7 +10680,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: V.1
   scope: 1
-  priority: 3
+  priority: 1
   datasource_description:
     en:
       The Sistema de Estimativas de Emissões de Gases de Efeito Estufa (SEEG) is
@@ -10974,7 +10974,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: V.2
   scope: 1
-  priority: 3
+  priority: 1
   datasource_description:
     en:
       The Sistema de Estimativas de Emissões de Gases de Efeito Estufa (SEEG) is
@@ -11266,7 +11266,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: V.3
   scope: 1
-  priority: 3
+  priority: 1
   datasource_description:
     en:
       The Sistema de Estimativas de Emissões de Gases de Efeito Estufa (SEEG) is
@@ -11525,7 +11525,7 @@
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/SEEG/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: IV.1
   scope: 1
-  priority: 2.625
+  priority: 1
   datasource_description:
     en:
       The Sistema de Estimativas de Emissões de Gases de Efeito Estufa (SEEG) is
@@ -14296,3 +14296,791 @@
       a tomar decisões baseadas em dados para ações climáticas. Seu objetivo é reduzir
       a lacuna de dados sobre emissões e acelerar a responsabilização e o progresso
       em direção às metas climáticas globais.
+- datasource_id: 5ebc16a0-7dfa-4f0a-a5bf-f9cdf43f56fb
+  publisher_id: OurAirports
+  datasource_name: OurAirports
+  dataset_name:
+    en: Airport facility-level emissions
+    es: Emisiones a nivel de instalación de aeropuertos
+    pt: Emissões em nível de instalação de aeroportos
+    fr: Émissions au niveau des installations aéroportuaires
+    de: Flughafenabgaben auf Anlagenebene
+  dataset_description:
+    en:
+      This dataset contains facility-level information on airports used to identify
+      and quantify greenhouse gas emissions activities occurring within city boundaries.
+      It provides location and operational data for airport facilities including ground
+      support equipment, auxiliary power units, and other airport-based emission sources.
+    es:
+      Este conjunto de datos contiene información a nivel de instalación sobre aeropuertos
+      utilizada para identificar y cuantificar actividades de emisiones de gases
+      de efecto invernadero que ocurren dentro de los límites de la ciudad. Proporciona
+      datos de ubicación y operación para instalaciones aeroportuarias, incluidos
+      equipos de apoyo en tierra, unidades de energía auxiliar y otras fuentes de
+      emisión en aeropuertos.
+    pt:
+      Este conjunto de dados contém informações em nível de instalação sobre aeroportos
+      usadas para identificar e quantificar atividades de emissões de gases de efeito
+      estufa que ocorrem dentro dos limites da cidade. Fornece dados de localização
+      e operação para instalações aeroportuárias, incluindo equipamentos de apoio
+      em solo, unidades de energia auxiliar e outras fontes de emissão em aeroportos.
+    fr:
+      Cet ensemble de données contient des informations au niveau des installations
+      sur les aéroports utilisées pour identifier et quantifier les activités d'émissions
+      de gaz à effet de serre se produisant dans les limites de la ville. Il fournit
+      des données de localisation et d'exploitation pour les installations aéroportuaires,
+      y compris les équipements d'assistance au sol, les groupes auxiliaires de puissance
+      et d'autres sources d'émission dans les aéroports.
+    de:
+      Dieser Datensatz enthält Informationen auf Anlagenebene über Flughäfen, die
+      zur Identifizierung und Quantifizierung von Treibhausgasemissionsaktivitäten
+      innerhalb der Stadtgrenzen verwendet werden. Er liefert Standort- und Betriebsdaten
+      für Flughafeneinrichtungen, einschließlich Bodenunterstützungsgeräte, Hilfskraftanlagen
+      und andere flughafenbasierte Emissionsquellen.
+  source_type: third_party
+  access_type: public
+  dataset_url: https://ourairports.com/
+  geographical_location: BR
+  start_year: 2019
+  end_year: 2025
+  latest_accounting_year: 2025
+  frequency_of_update: annual
+  spatial_resolution: point source
+  language: en
+  accessibility: null
+  data_quality: medium
+  notes: null
+  units: kg
+  methodology_description:
+    en:
+      Airport emissions are calculated based on facility-level data including fuel
+      consumption, ground support equipment operations, and auxiliary power unit
+      usage. Emissions factors are applied according to IPCC guidelines and local
+      emission standards.
+    es:
+      Las emisiones de aeropuertos se calculan en base a datos a nivel de instalación,
+      incluido el consumo de combustible, operaciones de equipos de apoyo en tierra
+      y uso de unidades de energía auxiliar. Los factores de emisión se aplican
+      según las directrices del IPCC y las normas de emisión locales.
+    pt:
+      As emissões de aeroportos são calculadas com base em dados em nível de instalação,
+      incluindo consumo de combustível, operações de equipamentos de apoio em solo
+      e uso de unidades de energia auxiliar. Os fatores de emissão são aplicados
+      de acordo com as diretrizes do IPCC e padrões de emissão locais.
+    fr:
+      Les émissions des aéroports sont calculées sur la base de données au niveau
+      des installations, y compris la consommation de carburant, les opérations
+      d'équipement d'assistance au sol et l'utilisation de groupes auxiliaires de
+      puissance. Les facteurs d'émission sont appliqués conformément aux directives
+      du GIEC et aux normes d'émission locales.
+    de:
+      Flughafenabgaben werden auf der Grundlage von Daten auf Anlagenebene berechnet,
+      einschließlich Kraftstoffverbrauch, Bodenunterstützungsgerätebetrieb und Hilfskraftanlagennutzung.
+      Emissionsfaktoren werden gemäß den IPCC-Richtlinien und lokalen Emissionsstandards
+      angewendet.
+  methodology_url: https://ourairports.com/about.html
+  transformation_description:
+    en:
+      Facility locations are geocoded using latitude and longitude coordinates.
+      Emissions data is aggregated to city level by intersecting facility points
+      with city boundary polygons. All facilities within city boundaries are summed
+      to calculate total city-level emissions.
+    es:
+      Las ubicaciones de las instalaciones se geocodifican utilizando coordenadas
+      de latitud y longitud. Los datos de emisiones se agregan a nivel de ciudad
+      intersectando puntos de instalaciones con polígonos de límites de ciudad.
+      Todas las instalaciones dentro de los límites de la ciudad se suman para calcular
+      las emisiones totales a nivel de ciudad.
+    pt:
+      As localizações das instalações são geocodificadas usando coordenadas de latitude
+      e longitude. Os dados de emissões são agregados em nível de cidade intersectando
+      pontos de instalação com polígonos de limites de cidade. Todas as instalações
+      dentro dos limites da cidade são somadas para calcular as emissões totais
+      em nível de cidade.
+    fr:
+      Les emplacements des installations sont géocodés à l'aide de coordonnées de
+      latitude et de longitude. Les données d'émission sont agrégées au niveau de
+      la ville en croisant les points d'installation avec les polygones de limites
+      de ville. Toutes les installations dans les limites de la ville sont additionnées
+      pour calculer les émissions totales au niveau de la ville.
+    de:
+      Anlagenstandorte werden mithilfe von Breiten- und Längengradkoordinaten geokodiert.
+      Emissionsdaten werden auf Stadtebene aggregiert, indem Anlagenpunkte mit Stadtgrenzpolygonen
+      geschnitten werden. Alle Anlagen innerhalb der Stadtgrenzen werden summiert,
+      um die Gesamtemissionen auf Stadtebene zu berechnen.
+  retrieval_method: global_api_notation_key
+  api_endpoint: https://ccglobal.openearth.dev/api/v0/ghgi/notation_key/NO/source/OurAirports/city/:locode/:gpc_reference_number/:year
+  gpc_reference_number: II.4.1
+  scope: 1
+  priority: 2
+  datasource_description:
+    en:
+      OurAirports is a comprehensive database of airports worldwide, providing detailed
+      information on airport locations, facilities, and operations. The database
+      is maintained by volunteer contributors and provides open data for aviation
+      and environmental analysis.
+    es:
+      OurAirports es una base de datos completa de aeropuertos en todo el mundo,
+      que proporciona información detallada sobre ubicaciones de aeropuertos, instalaciones
+      y operaciones. La base de datos es mantenida por colaboradores voluntarios
+      y proporciona datos abiertos para análisis de aviación y medio ambiente.
+    pt:
+      OurAirports é um banco de dados abrangente de aeroportos em todo o mundo,
+      fornecendo informações detalhadas sobre localizações de aeroportos, instalações
+      e operações. O banco de dados é mantido por colaboradores voluntários e fornece
+      dados abertos para análise de aviação e meio ambiente.
+    fr:
+      OurAirports est une base de données complète des aéroports du monde entier,
+      fournissant des informations détaillées sur les emplacements, les installations
+      et les opérations des aéroports. La base de données est maintenue par des
+      contributeurs bénévoles et fournit des données ouvertes pour l'analyse de
+      l'aviation et de l'environnement.
+    de:
+      OurAirports ist eine umfassende Datenbank von Flughäfen weltweit, die detaillierte
+      Informationen über Flughafenstandorte, Einrichtungen und Betrieb bereitstellt.
+      Die Datenbank wird von freiwilligen Mitwirkenden gepflegt und bietet offene
+      Daten für Luftfahrt- und Umweltanalysen.
+- datasource_id: a76802aa-c627-4267-9621-ef7ebc71e5a3
+  publisher_id: globalenergymonitor
+  datasource_name: Global Energy Monitor
+  dataset_name:
+    en: Coal mine facility-level data
+    es: Datos a nivel de instalación de minas de carbón
+    pt: Dados em nível de instalação de minas de carvão
+    fr: Données au niveau des installations de mines de charbon
+    de: Kohlenbergwerksdaten auf Anlagenebene
+  dataset_description:
+    en:
+      This dataset contains facility-level information on coal mining operations used
+      to identify and quantify greenhouse gas emissions activities occurring within
+      city boundaries. It includes location and operational data for coal extraction,
+      processing, and fugitive methane emissions from underground and surface mining
+      activities.
+    es:
+      Este conjunto de datos contiene información a nivel de instalación sobre operaciones
+      de minería de carbón utilizada para identificar y cuantificar actividades de
+      emisiones de gases de efecto invernadero que ocurren dentro de los límites de
+      la ciudad. Incluye datos de ubicación y operación para extracción de carbón,
+      procesamiento y emisiones fugitivas de metano de actividades de minería subterránea
+      y de superficie.
+    pt:
+      Este conjunto de dados contém informações em nível de instalação sobre operações
+      de mineração de carvão usadas para identificar e quantificar atividades de emissões
+      de gases de efeito estufa que ocorrem dentro dos limites da cidade. Inclui dados
+      de localização e operação para extração de carvão, processamento e emissões
+      fugitivas de metano de atividades de mineração subterrânea e de superfície.
+    fr:
+      Cet ensemble de données contient des informations au niveau des installations
+      sur les opérations minières de charbon utilisées pour identifier et quantifier
+      les activités d'émissions de gaz à effet de serre se produisant dans les limites
+      de la ville. Il comprend les données de localisation et d'exploitation pour
+      l'extraction du charbon, le traitement et les émissions fugitives de méthane
+      provenant des activités minières souterraines et de surface.
+    de:
+      Dieser Datensatz enthält Informationen auf Anlagenebene über Kohlebergbaubetriebe,
+      die zur Identifizierung und Quantifizierung von Treibhausgasemissionsaktivitäten
+      innerhalb der Stadtgrenzen verwendet werden. Er umfasst Standort- und Betriebsdaten
+      für Kohleförderung, Verarbeitung und flüchtige Methanemissionen aus Untertage-
+      und Tagebauaktivitäten.
+  source_type: third_party
+  access_type: public
+  dataset_url: https://globalenergymonitor.org/
+  geographical_location: BR
+  start_year: 2019
+  end_year: 2025
+  latest_accounting_year: 2025
+  frequency_of_update: annual
+  spatial_resolution: point source
+  language: en
+  accessibility: null
+  data_quality: high
+  notes: null
+  units: kg
+  methodology_description:
+    en:
+      Coal mine emissions are calculated using facility-level production data, coal
+      characteristics (carbon content, calorific value), and emission factors for
+      fugitive methane emissions. Underground mines account for ventilation air
+      methane and degasification, while surface mines include emissions from coal
+      seams and handling.
+    es:
+      Las emisiones de las minas de carbón se calculan utilizando datos de producción
+      a nivel de instalación, características del carbón (contenido de carbono,
+      valor calorífico) y factores de emisión para emisiones fugitivas de metano.
+      Las minas subterráneas representan metano en el aire de ventilación y desgasificación,
+      mientras que las minas de superficie incluyen emisiones de vetas de carbón
+      y manipulación.
+    pt:
+      As emissões de minas de carvão são calculadas usando dados de produção em
+      nível de instalação, características do carvão (conteúdo de carbono, valor
+      calorífico) e fatores de emissão para emissões fugitivas de metano. Minas
+      subterrâneas contabilizam metano do ar de ventilação e desgaseificação, enquanto
+      minas de superfície incluem emissões de camadas de carvão e manuseio.
+    fr:
+      Les émissions des mines de charbon sont calculées à l'aide de données de production
+      au niveau des installations, des caractéristiques du charbon (teneur en carbone,
+      valeur calorifique) et des facteurs d'émission pour les émissions fugitives
+      de méthane. Les mines souterraines tiennent compte du méthane dans l'air de
+      ventilation et de la dégazéification, tandis que les mines de surface comprennent
+      les émissions des couches de charbon et de la manutention.
+    de:
+      Kohlebergwerksemissionen werden unter Verwendung von Produktionsdaten auf
+      Anlagenebene, Kohleeigenschaften (Kohlenstoffgehalt, Heizwert) und Emissionsfaktoren
+      für flüchtige Methanemissionen berechnet. Untertagebergwerke berücksichtigen
+      Bewetterungsluftmethan und Entgasung, während Tagebaue Emissionen aus Kohleflözen
+      und Handhabung einschließen.
+  methodology_url: https://globalenergymonitor.org/projects/global-coal-mine-tracker/
+  transformation_description:
+    en:
+      Coal mine locations are geocoded using facility coordinates. Emissions are
+      aggregated to city level by spatial intersection with city boundary polygons.
+      Total city emissions are calculated by summing all mine facilities within
+      municipal boundaries.
+    es:
+      Las ubicaciones de las minas de carbón se geocodifican utilizando coordenadas
+      de instalaciones. Las emisiones se agregan a nivel de ciudad mediante intersección
+      espacial con polígonos de límites de ciudad. Las emisiones totales de la ciudad
+      se calculan sumando todas las instalaciones mineras dentro de los límites
+      municipales.
+    pt:
+      As localizações das minas de carvão são geocodificadas usando coordenadas
+      de instalação. As emissões são agregadas em nível de cidade por intersecção
+      espacial com polígonos de limites de cidade. As emissões totais da cidade
+      são calculadas somando todas as instalações de mineração dentro dos limites
+      municipais.
+    fr:
+      Les emplacements des mines de charbon sont géocodés à l'aide de coordonnées
+      d'installation. Les émissions sont agrégées au niveau de la ville par intersection
+      spatiale avec les polygones de limites de ville. Les émissions totales de
+      la ville sont calculées en additionnant toutes les installations minières
+      dans les limites municipales.
+    de:
+      Kohlebergwerksstandorte werden mithilfe von Anlagenkoordinaten geokodiert.
+      Emissionen werden auf Stadtebene durch räumliche Überschneidung mit Stadtgrenzpolygonen
+      aggregiert. Die Gesamtemissionen der Stadt werden durch Summierung aller Bergwerksanlagen
+      innerhalb der Stadtgrenzen berechnet.
+  retrieval_method: global_api_notation_key
+  api_endpoint: https://ccglobal.openearth.dev/api/v0/ghgi/notation_key/NO/source/globalenergymonitor/city/:locode/:gpc_reference_number/:year
+  gpc_reference_number: I.7.1
+  scope: 1
+  priority: 2
+  datasource_description:
+    en:
+      Global Energy Monitor is a network of researchers providing information on
+      fossil fuel and renewable energy projects worldwide. Their coal mine tracker
+      provides comprehensive data on operating and proposed coal mines, including
+      production capacity, ownership, and environmental impacts.
+    es:
+      Global Energy Monitor es una red de investigadores que proporciona información
+      sobre proyectos de combustibles fósiles y energía renovable en todo el mundo.
+      Su rastreador de minas de carbón proporciona datos completos sobre minas de
+      carbón en operación y propuestas, incluida la capacidad de producción, propiedad
+      e impactos ambientales.
+    pt:
+      Global Energy Monitor é uma rede de pesquisadores que fornece informações
+      sobre projetos de combustíveis fósseis e energia renovável em todo o mundo.
+      Seu rastreador de minas de carvão fornece dados abrangentes sobre minas de
+      carvão em operação e propostas, incluindo capacidade de produção, propriedade
+      e impactos ambientais.
+    fr:
+      Global Energy Monitor est un réseau de chercheurs fournissant des informations
+      sur les projets de combustibles fossiles et d'énergie renouvelable dans le
+      monde entier. Leur suivi des mines de charbon fournit des données complètes
+      sur les mines de charbon en exploitation et proposées, y compris la capacité
+      de production, la propriété et les impacts environnementaux.
+    de:
+      Global Energy Monitor ist ein Netzwerk von Forschern, das Informationen über
+      fossile Brennstoffe und erneuerbare Energieprojekte weltweit bereitstellt.
+      Ihr Kohlebergwerks-Tracker bietet umfassende Daten zu betriebenen und geplanten
+      Kohlebergwerken, einschließlich Produktionskapazität, Eigentum und Umweltauswirkungen.
+- datasource_id: 95e15df0-18ff-4976-a911-52ec0649c970
+  publisher_id: OGIM
+  datasource_name: Oil and Gas Infrastructure Mapping
+  dataset_name:
+    en: LNG terminal facility-level data
+    es: Datos a nivel de instalación de terminales de GNL
+    pt: Dados em nível de instalação de terminais de GNL
+    fr: Données au niveau des installations de terminaux GNL
+    de: LNG-Terminaldaten auf Anlagenebene
+  dataset_description:
+    en:
+      This dataset contains facility-level information on liquefied natural gas (LNG)
+      terminals used to identify and quantify greenhouse gas emissions activities
+      occurring within city boundaries. It includes location and operational data
+      for LNG import/export facilities, regasification plants, and associated infrastructure
+      including storage tanks and processing equipment.
+    es:
+      Este conjunto de datos contiene información a nivel de instalación sobre terminales
+      de gas natural licuado (GNL) utilizada para identificar y cuantificar actividades
+      de emisiones de gases de efecto invernadero que ocurren dentro de los límites
+      de la ciudad. Incluye datos de ubicación y operación para instalaciones de
+      importación/exportación de GNL, plantas de regasificación e infraestructura
+      asociada, incluidos tanques de almacenamiento y equipos de procesamiento.
+    pt:
+      Este conjunto de dados contém informações em nível de instalação sobre terminais
+      de gás natural liquefeito (GNL) usadas para identificar e quantificar atividades
+      de emissões de gases de efeito estufa que ocorrem dentro dos limites da cidade.
+      Inclui dados de localização e operação para instalações de importação/exportação
+      de GNL, plantas de regaseificação e infraestrutura associada, incluindo tanques
+      de armazenamento e equipamentos de processamento.
+    fr:
+      Cet ensemble de données contient des informations au niveau des installations
+      sur les terminaux de gaz naturel liquéfié (GNL) utilisées pour identifier et
+      quantifier les activités d'émissions de gaz à effet de serre se produisant dans
+      les limites de la ville. Il comprend les données de localisation et d'exploitation
+      pour les installations d'importation/exportation de GNL, les usines de regazéification
+      et l'infrastructure associée, y compris les réservoirs de stockage et les équipements
+      de traitement.
+    de:
+      Dieser Datensatz enthält Informationen auf Anlagenebene über Flüssigerdgas(LNG)-Terminals,
+      die zur Identifizierung und Quantifizierung von Treibhausgasemissionsaktivitäten
+      innerhalb der Stadtgrenzen verwendet werden. Er umfasst Standort- und Betriebsdaten
+      für LNG-Import-/Exportanlagen, Regasifizierungsanlagen und zugehörige Infrastruktur,
+      einschließlich Lagertanks und Verarbeitungsanlagen.
+  source_type: third_party
+  access_type: public
+  dataset_url: https://www.ogim.org/
+  geographical_location: BR
+  start_year: 2019
+  end_year: 2025
+  latest_accounting_year: 2025
+  frequency_of_update: annual
+  spatial_resolution: point source
+  language: en
+  accessibility: null
+  data_quality: high
+  notes: null
+  units: kg
+  methodology_description:
+    en:
+      LNG terminal emissions are calculated based on facility throughput, storage
+      capacity, and operational characteristics. Emissions include fugitive methane
+      from equipment leaks, venting during operations, flaring, and combustion from
+      power generation. Emission factors are applied according to IPCC guidelines
+      and industry best practices.
+    es:
+      Las emisiones de terminales de GNL se calculan en base al rendimiento de las
+      instalaciones, capacidad de almacenamiento y características operativas. Las
+      emisiones incluyen metano fugitivo de fugas de equipos, venteo durante operaciones,
+      quema y combustión de generación de energía. Los factores de emisión se aplican
+      según las directrices del IPCC y las mejores prácticas de la industria.
+    pt:
+      As emissões de terminais de GNL são calculadas com base na capacidade de processamento
+      da instalação, capacidade de armazenamento e características operacionais.
+      As emissões incluem metano fugitivo de vazamentos de equipamentos, ventilação
+      durante operações, queima e combustão da geração de energia. Os fatores de
+      emissão são aplicados de acordo com as diretrizes do IPCC e as melhores práticas
+      da indústria.
+    fr:
+      Les émissions des terminaux GNL sont calculées sur la base du débit des installations,
+      de la capacité de stockage et des caractéristiques opérationnelles. Les émissions
+      comprennent le méthane fugitif provenant de fuites d'équipement, le dégazage
+      pendant les opérations, le torchage et la combustion de la production d'énergie.
+      Les facteurs d'émission sont appliqués conformément aux directives du GIEC
+      et aux meilleures pratiques de l'industrie.
+    de:
+      LNG-Terminalemissionen werden auf Grundlage des Anlagendurchsatzes, der Speicherkapazität
+      und der Betriebsmerkmale berechnet. Die Emissionen umfassen flüchtiges Methan
+      aus Gerätelecks, Ablassen während des Betriebs, Abfackeln und Verbrennung
+      aus der Stromerzeugung. Emissionsfaktoren werden gemäß den IPCC-Richtlinien
+      und bewährten Praktiken der Industrie angewendet.
+  methodology_url: https://www.ogim.org/methodology
+  transformation_description:
+    en:
+      LNG terminal locations are geocoded using precise facility coordinates. Emissions
+      data is spatially aggregated to city level by intersecting terminal locations
+      with municipal boundary polygons. All terminals within city boundaries contribute
+      to the total city-level emissions inventory.
+    es:
+      Las ubicaciones de terminales de GNL se geocodifican utilizando coordenadas
+      precisas de instalaciones. Los datos de emisiones se agregan espacialmente
+      a nivel de ciudad intersectando ubicaciones de terminales con polígonos de
+      límites municipales. Todas las terminales dentro de los límites de la ciudad
+      contribuyen al inventario total de emisiones a nivel de ciudad.
+    pt:
+      As localizações dos terminais de GNL são geocodificadas usando coordenadas
+      precisas de instalação. Os dados de emissões são agregados espacialmente em
+      nível de cidade intersectando localizações de terminais com polígonos de limites
+      municipais. Todos os terminais dentro dos limites da cidade contribuem para
+      o inventário total de emissões em nível de cidade.
+    fr:
+      Les emplacements des terminaux GNL sont géocodés à l'aide de coordonnées précises
+      des installations. Les données d'émission sont agrégées spatialement au niveau
+      de la ville en croisant les emplacements des terminaux avec les polygones
+      de limites municipales. Tous les terminaux dans les limites de la ville contribuent
+      à l'inventaire total des émissions au niveau de la ville.
+    de:
+      LNG-Terminalstandorte werden mithilfe präziser Anlagenkoordinaten geokodiert.
+      Emissionsdaten werden räumlich auf Stadtebene aggregiert, indem Terminalstandorte
+      mit kommunalen Grenzpolygonen geschnitten werden. Alle Terminals innerhalb
+      der Stadtgrenzen tragen zum gesamten Emissionsinventar auf Stadtebene bei.
+  retrieval_method: global_api_notation_key
+  api_endpoint: https://ccglobal.openearth.dev/api/v0/ghgi/notation_key/NO/source/OGIM/city/:locode/:gpc_reference_number/:year
+  gpc_reference_number: I.8.1
+  scope: 1
+  priority: 2
+  datasource_description:
+    en:
+      Oil and Gas Infrastructure Mapping (OGIM) is a comprehensive database tracking
+      oil and gas infrastructure globally. It provides detailed information on LNG
+      terminals, pipelines, processing facilities, and associated infrastructure,
+      including capacity, ownership, and operational status.
+    es:
+      Oil and Gas Infrastructure Mapping (OGIM) es una base de datos integral que
+      rastrea la infraestructura de petróleo y gas a nivel mundial. Proporciona
+      información detallada sobre terminales de GNL, tuberías, instalaciones de
+      procesamiento e infraestructura asociada, incluida capacidad, propiedad y
+      estado operativo.
+    pt:
+      Oil and Gas Infrastructure Mapping (OGIM) é um banco de dados abrangente que
+      rastreia a infraestrutura de petróleo e gás globalmente. Fornece informações
+      detalhadas sobre terminais de GNL, dutos, instalações de processamento e infraestrutura
+      associada, incluindo capacidade, propriedade e status operacional.
+    fr:
+      Oil and Gas Infrastructure Mapping (OGIM) est une base de données complète
+      suivant l'infrastructure pétrolière et gazière à l'échelle mondiale. Elle
+      fournit des informations détaillées sur les terminaux GNL, les pipelines,
+      les installations de traitement et l'infrastructure associée, y compris la
+      capacité, la propriété et l'état opérationnel.
+    de:
+      Oil and Gas Infrastructure Mapping (OGIM) ist eine umfassende Datenbank, die
+      die Öl- und Gasinfrastruktur weltweit verfolgt. Sie bietet detaillierte Informationen
+      zu LNG-Terminals, Pipelines, Verarbeitungsanlagen und zugehöriger Infrastruktur,
+      einschließlich Kapazität, Eigentum und Betriebsstatus.
+- datasource_id: ff2c3dc9-cfb4-44bc-bba0-1166ef769a00
+  publisher_id: OGIM
+  datasource_name: Oil and Gas Infrastructure Mapping
+  dataset_name:
+    en: Oil and gas plant facility-level data
+    es: Datos a nivel de instalación de plantas de petróleo y gas
+    pt: Dados em nível de instalação de plantas de petróleo e gás
+    fr: Données au niveau des installations pétrolières et gazières
+    de: Öl- und Gasanlagendaten auf Anlagenebene
+  dataset_description:
+    en:
+      This dataset contains facility-level information on oil and gas processing plants
+      used to identify and quantify greenhouse gas emissions activities occurring within
+      city boundaries. It includes location and operational data for refineries, natural
+      gas processing facilities, petrochemical plants, and associated infrastructure.
+      Emission sources include combustion, flaring, venting, and fugitive emissions.
+    es:
+      Este conjunto de datos contiene datos de emisiones de gases de efecto invernadero
+      de plantas de procesamiento de petróleo y gas basados en la clave de notación
+      GHGI. Incluye emisiones de refinerías, instalaciones de procesamiento de gas
+      natural, plantas petroquímicas e infraestructura asociada. Las fuentes de
+      emisión incluyen combustión, quema, venteo y emisiones fugitivas.
+    pt:
+      Este conjunto de dados contém dados de emissões de gases de efeito estufa
+      de plantas de processamento de petróleo e gás baseados na chave de notação
+      GHGI. Inclui emissões de refinarias, instalações de processamento de gás natural,
+      plantas petroquímicas e infraestrutura associada. As fontes de emissão incluem
+      combustão, queima, ventilação e emissões fugitivas.
+    fr:
+      Cet ensemble de données contient des données sur les émissions de gaz à effet
+      de serre provenant des usines de traitement du pétrole et du gaz basées sur
+      la clé de notation GHGI. Il comprend les émissions des raffineries, des installations
+      de traitement du gaz naturel, des usines pétrochimiques et de l'infrastructure
+      associée. Les sources d'émission comprennent la combustion, le torchage, le
+      dégazage et les émissions fugitives.
+    de:
+      Dieser Datensatz enthält Daten zu Treibhausgasemissionen von Öl- und Gasverarbeitungsanlagen
+      auf Grundlage des GHGI-Notationsschlüssels. Er umfasst Emissionen von Raffinerien,
+      Erdgasverarbeitungsanlagen, petrochemischen Anlagen und zugehöriger Infrastruktur.
+      Emissionsquellen umfassen Verbrennung, Abfackeln, Ablassen und flüchtige Emissionen.
+  source_type: third_party
+  access_type: public
+  dataset_url: https://www.ogim.org/
+  geographical_location: BR
+  start_year: 2019
+  end_year: 2025
+  latest_accounting_year: 2025
+  frequency_of_update: annual
+  spatial_resolution: point source
+  language: en
+  accessibility: null
+  data_quality: high
+  notes: null
+  units: kg
+  methodology_description:
+    en:
+      Oil and gas plant emissions are calculated using facility-level production
+      data, process descriptions, and fuel consumption. Emission sources include
+      process heaters, boilers, flares, storage tanks, and equipment leaks. Calculation
+      methods follow IPCC guidelines, US EPA protocols, and API emission factors
+      for the oil and gas sector.
+    es:
+      Las emisiones de plantas de petróleo y gas se calculan utilizando datos de
+      producción a nivel de instalación, descripciones de procesos y consumo de
+      combustible. Las fuentes de emisión incluyen calentadores de proceso, calderas,
+      antorchas, tanques de almacenamiento y fugas de equipos. Los métodos de cálculo
+      siguen las directrices del IPCC, los protocolos de la EPA de EE. UU. y los
+      factores de emisión de la API para el sector de petróleo y gas.
+    pt:
+      As emissões de plantas de petróleo e gás são calculadas usando dados de produção
+      em nível de instalação, descrições de processos e consumo de combustível.
+      As fontes de emissão incluem aquecedores de processo, caldeiras, queimadores,
+      tanques de armazenamento e vazamentos de equipamentos. Os métodos de cálculo
+      seguem as diretrizes do IPCC, protocolos da EPA dos EUA e fatores de emissão
+      da API para o setor de petróleo e gás.
+    fr:
+      Les émissions des installations pétrolières et gazières sont calculées à l'aide
+      de données de production au niveau des installations, de descriptions de processus
+      et de consommation de carburant. Les sources d'émission comprennent les réchauffeurs
+      de processus, les chaudières, les torchères, les réservoirs de stockage et
+      les fuites d'équipement. Les méthodes de calcul suivent les directives du
+      GIEC, les protocoles de l'EPA des États-Unis et les facteurs d'émission de
+      l'API pour le secteur pétrolier et gazier.
+    de:
+      Öl- und Gasanlagenabgaben werden unter Verwendung von Produktionsdaten auf
+      Anlagenebene, Prozessbeschreibungen und Kraftstoffverbrauch berechnet. Emissionsquellen
+      umfassen Prozessheizungen, Kessel, Fackeln, Lagertanks und Gerätelecks. Berechnungsmethoden
+      folgen den IPCC-Richtlinien, US EPA-Protokollen und API-Emissionsfaktoren
+      für den Öl- und Gassektor.
+  methodology_url: https://www.ogim.org/methodology
+  transformation_description:
+    en:
+      Oil and gas plant locations are geocoded using precise facility coordinates.
+      Emissions are aggregated to city level through spatial intersection with municipal
+      boundaries. Multiple facilities within a city are summed to produce comprehensive
+      city-level emission inventories for the oil and gas processing sector.
+    es:
+      Las ubicaciones de plantas de petróleo y gas se geocodifican utilizando coordenadas
+      precisas de instalaciones. Las emisiones se agregan a nivel de ciudad mediante
+      intersección espacial con límites municipales. Múltiples instalaciones dentro
+      de una ciudad se suman para producir inventarios completos de emisiones a
+      nivel de ciudad para el sector de procesamiento de petróleo y gas.
+    pt:
+      As localizações das plantas de petróleo e gás são geocodificadas usando coordenadas
+      precisas de instalação. As emissões são agregadas em nível de cidade através
+      de intersecção espacial com limites municipais. Várias instalações dentro
+      de uma cidade são somadas para produzir inventários abrangentes de emissões
+      em nível de cidade para o setor de processamento de petróleo e gás.
+    fr:
+      Les emplacements des installations pétrolières et gazières sont géocodés à
+      l'aide de coordonnées précises des installations. Les émissions sont agrégées
+      au niveau de la ville par intersection spatiale avec les limites municipales.
+      Plusieurs installations dans une ville sont additionnées pour produire des
+      inventaires complets d'émissions au niveau de la ville pour le secteur du
+      traitement du pétrole et du gaz.
+    de:
+      Öl- und Gasanlagenstandorte werden mithilfe präziser Anlagenkoordinaten geokodiert.
+      Emissionen werden auf Stadtebene durch räumliche Überschneidung mit kommunalen
+      Grenzen aggregiert. Mehrere Anlagen innerhalb einer Stadt werden summiert,
+      um umfassende Emissionsinventare auf Stadtebene für den Öl- und Gasverarbeitungssektor
+      zu erstellen.
+  retrieval_method: global_api_notation_key
+  api_endpoint: https://ccglobal.openearth.dev/api/v0/ghgi/notation_key/NO/source/OGIM/city/:locode/:gpc_reference_number/:year
+  gpc_reference_number: I.8.1
+  scope: 1
+  priority: 2
+  datasource_description:
+    en:
+      Oil and Gas Infrastructure Mapping (OGIM) is a comprehensive database tracking
+      oil and gas infrastructure globally. It provides detailed information on refineries,
+      processing plants, petrochemical facilities, pipelines, and associated infrastructure,
+      including production capacity, ownership, operational status, and environmental
+      performance.
+    es:
+      Oil and Gas Infrastructure Mapping (OGIM) es una base de datos integral que
+      rastrea la infraestructura de petróleo y gas a nivel mundial. Proporciona
+      información detallada sobre refinerías, plantas de procesamiento, instalaciones
+      petroquímicas, tuberías e infraestructura asociada, incluida capacidad de
+      producción, propiedad, estado operativo y desempeño ambiental.
+    pt:
+      Oil and Gas Infrastructure Mapping (OGIM) é um banco de dados abrangente que
+      rastreia a infraestrutura de petróleo e gás globalmente. Fornece informações
+      detalhadas sobre refinarias, plantas de processamento, instalações petroquímicas,
+      dutos e infraestrutura associada, incluindo capacidade de produção, propriedade,
+      status operacional e desempenho ambiental.
+    fr:
+      Oil and Gas Infrastructure Mapping (OGIM) est une base de données complète
+      suivant l'infrastructure pétrolière et gazière à l'échelle mondiale. Elle
+      fournit des informations détaillées sur les raffineries, les usines de traitement,
+      les installations pétrochimiques, les pipelines et l'infrastructure associée,
+      y compris la capacité de production, la propriété, l'état opérationnel et
+      les performances environnementales.
+    de:
+      Oil and Gas Infrastructure Mapping (OGIM) ist eine umfassende Datenbank, die
+      die Öl- und Gasinfrastruktur weltweit verfolgt. Sie bietet detaillierte Informationen
+      zu Raffinerien, Verarbeitungsanlagen, petrochemischen Anlagen, Pipelines und
+      zugehöriger Infrastruktur, einschließlich Produktionskapazität, Eigentum,
+      Betriebsstatus und Umweltleistung.
+- datasource_id: a7965450-8dde-437f-8938-615c0fab1f21
+  publisher_id: WRI
+  datasource_name: World Resources Institute
+  dataset_name:
+    en: Power plant facility-level data
+    es: Datos a nivel de instalación de plantas de energía
+    pt: Dados em nível de instalação de usinas de energia
+    fr: Données au niveau des installations de centrales électriques
+    de: Kraftwerksdaten auf Anlagenebene
+  dataset_description:
+    en:
+      This dataset contains facility-level information on power generation facilities
+      used to identify and quantify greenhouse gas emissions activities occurring within
+      city boundaries. It includes location and operational data for thermal power
+      plants, combined heat and power facilities, and electricity generation units using
+      fossil fuels, biomass, and other fuel sources. The data covers both direct
+      combustion emissions and auxiliary operations.
+    es:
+      Este conjunto de datos contiene datos de emisiones de gases de efecto invernadero
+      de instalaciones de generación de energía basados en la clave de notación
+      GHGI. Incluye emisiones de plantas de energía térmica, instalaciones de cogeneración
+      de calor y energía, y unidades de generación de electricidad que utilizan
+      combustibles fósiles, biomasa y otras fuentes de combustible. Los datos cubren
+      tanto las emisiones de combustión directa como las operaciones auxiliares.
+    pt:
+      Este conjunto de dados contém dados de emissões de gases de efeito estufa
+      de instalações de geração de energia baseados na chave de notação GHGI. Inclui
+      emissões de usinas termelétricas, instalações de cogeração de calor e energia,
+      e unidades de geração de eletricidade usando combustíveis fósseis, biomassa
+      e outras fontes de combustível. Os dados cobrem tanto as emissões de combustão
+      direta quanto as operações auxiliares.
+    fr:
+      Cet ensemble de données contient des données sur les émissions de gaz à effet
+      de serre provenant des installations de production d'énergie basées sur la
+      clé de notation GHGI. Il comprend les émissions des centrales thermiques,
+      des installations de cogénération chaleur-électricité et des unités de production
+      d'électricité utilisant des combustibles fossiles, de la biomasse et d'autres
+      sources de combustible. Les données couvrent à la fois les émissions de combustion
+      directe et les opérations auxiliaires.
+    de:
+      Dieser Datensatz enthält Daten zu Treibhausgasemissionen von Stromerzeugungsanlagen
+      auf Grundlage des GHGI-Notationsschlüssels. Er umfasst Emissionen von thermischen
+      Kraftwerken, Kraft-Wärme-Kopplungsanlagen und Stromerzeugungseinheiten, die
+      fossile Brennstoffe, Biomasse und andere Brennstoffquellen verwenden. Die
+      Daten decken sowohl direkte Verbrennungsemissionen als auch Hilfsoperationen
+      ab.
+  source_type: third_party
+  access_type: public
+  dataset_url: https://www.wri.org/
+  geographical_location: BR
+  start_year: 2019
+  end_year: 2025
+  latest_accounting_year: 2025
+  frequency_of_update: annual
+  spatial_resolution: point source
+  language: en
+  accessibility: null
+  data_quality: high
+  notes: null
+  units: kg
+  methodology_description:
+    en:
+      Power plant emissions are calculated using facility-level data on electricity
+      generation, fuel consumption, and plant technology. Emissions are estimated
+      based on fuel type (coal, natural gas, oil, biomass), combustion technology,
+      plant efficiency, and emission control systems. Calculation methods follow
+      IPCC guidelines and incorporate continuous emission monitoring data where
+      available.
+    es:
+      Las emisiones de plantas de energía se calculan utilizando datos a nivel de
+      instalación sobre generación de electricidad, consumo de combustible y tecnología
+      de planta. Las emisiones se estiman en base al tipo de combustible (carbón,
+      gas natural, petróleo, biomasa), tecnología de combustión, eficiencia de planta
+      y sistemas de control de emisiones. Los métodos de cálculo siguen las directrices
+      del IPCC e incorporan datos de monitoreo continuo de emisiones cuando están
+      disponibles.
+    pt:
+      As emissões de usinas de energia são calculadas usando dados em nível de instalação
+      sobre geração de eletricidade, consumo de combustível e tecnologia de usina.
+      As emissões são estimadas com base no tipo de combustível (carvão, gás natural,
+      petróleo, biomassa), tecnologia de combustão, eficiência da usina e sistemas
+      de controle de emissões. Os métodos de cálculo seguem as diretrizes do IPCC
+      e incorporam dados de monitoramento contínuo de emissões quando disponíveis.
+    fr:
+      Les émissions des centrales électriques sont calculées à l'aide de données
+      au niveau des installations sur la production d'électricité, la consommation
+      de carburant et la technologie de la centrale. Les émissions sont estimées
+      en fonction du type de carburant (charbon, gaz naturel, pétrole, biomasse),
+      de la technologie de combustion, de l'efficacité de la centrale et des systèmes
+      de contrôle des émissions. Les méthodes de calcul suivent les directives du
+      GIEC et intègrent des données de surveillance continue des émissions lorsqu'elles
+      sont disponibles.
+    de:
+      Kraftwerksemissionen werden unter Verwendung von Daten auf Anlagenebene zur
+      Stromerzeugung, zum Kraftstoffverbrauch und zur Anlagentechnologie berechnet.
+      Emissionen werden auf Grundlage des Brennstofftyps (Kohle, Erdgas, Öl, Biomasse),
+      der Verbrennungstechnologie, der Anlageneffizienz und der Emissionskontrollsysteme
+      geschätzt. Berechnungsmethoden folgen den IPCC-Richtlinien und integrieren
+      kontinuierliche Emissionsüberwachungsdaten, sofern verfügbar.
+  methodology_url: https://www.wri.org/research/global-power-plant-database
+  transformation_description:
+    en:
+      Power plant locations are geocoded using precise facility coordinates from
+      the World Resources Institute Global Power Plant Database. Emissions are aggregated
+      to city level by spatially intersecting plant locations with municipal boundary
+      polygons. All power generation facilities within city boundaries are summed
+      to calculate total municipal electricity sector emissions.
+    es:
+      Las ubicaciones de plantas de energía se geocodifican utilizando coordenadas
+      precisas de instalaciones de la Base de Datos Global de Plantas de Energía
+      del World Resources Institute. Las emisiones se agregan a nivel de ciudad
+      intersectando espacialmente ubicaciones de plantas con polígonos de límites
+      municipales. Todas las instalaciones de generación de energía dentro de los
+      límites de la ciudad se suman para calcular las emisiones totales del sector
+      eléctrico municipal.
+    pt:
+      As localizações de usinas de energia são geocodificadas usando coordenadas
+      precisas de instalação do Banco de Dados Global de Usinas de Energia do World
+      Resources Institute. As emissões são agregadas em nível de cidade intersectando
+      espacialmente localizações de usinas com polígonos de limites municipais.
+      Todas as instalações de geração de energia dentro dos limites da cidade são
+      somadas para calcular as emissões totais do setor elétrico municipal.
+    fr:
+      Les emplacements des centrales électriques sont géocodés à l'aide de coordonnées
+      précises des installations de la base de données mondiale des centrales électriques
+      du World Resources Institute. Les émissions sont agrégées au niveau de la
+      ville en croisant spatialement les emplacements des centrales avec les polygones
+      de limites municipales. Toutes les installations de production d'électricité
+      dans les limites de la ville sont additionnées pour calculer les émissions
+      totales du secteur électrique municipal.
+    de:
+      Kraftwerksstandorte werden mithilfe präziser Anlagenkoordinaten aus der Global
+      Power Plant Database des World Resources Institute geokodiert. Emissionen
+      werden auf Stadtebene aggregiert, indem Kraftwerksstandorte räumlich mit kommunalen
+      Grenzpolygonen geschnitten werden. Alle Stromerzeugungsanlagen innerhalb der
+      Stadtgrenzen werden summiert, um die Gesamtemissionen des kommunalen Stromsektors
+      zu berechnen.
+  retrieval_method: global_api_notation_key
+  api_endpoint: https://ccglobal.openearth.dev/api/v0/ghgi/notation_key/NO/source/WRI/city/:locode/:gpc_reference_number/:year
+  gpc_reference_number: I.4.1
+  scope: 1
+  priority: 2
+  datasource_description:
+    en:
+      The World Resources Institute (WRI) is a global research organization working
+      on environmental and development challenges. Their Global Power Plant Database
+      is a comprehensive, open-source database covering power plants worldwide, including
+      detailed information on capacity, generation, ownership, fuel type, and geographic
+      location. The database is widely used for energy and climate analysis.
+    es:
+      El World Resources Institute (WRI) es una organización de investigación global
+      que trabaja en desafíos ambientales y de desarrollo. Su Base de Datos Global
+      de Plantas de Energía es una base de datos integral y de código abierto que
+      cubre plantas de energía en todo el mundo, incluida información detallada
+      sobre capacidad, generación, propiedad, tipo de combustible y ubicación geográfica.
+      La base de datos se utiliza ampliamente para análisis energético y climático.
+    pt:
+      O World Resources Institute (WRI) é uma organização de pesquisa global que
+      trabalha em desafios ambientais e de desenvolvimento. Seu Banco de Dados Global
+      de Usinas de Energia é um banco de dados abrangente e de código aberto que
+      cobre usinas de energia em todo o mundo, incluindo informações detalhadas
+      sobre capacidade, geração, propriedade, tipo de combustível e localização
+      geográfica. O banco de dados é amplamente utilizado para análise de energia
+      e clima.
+    fr:
+      Le World Resources Institute (WRI) est une organisation de recherche mondiale
+      travaillant sur les défis environnementaux et de développement. Leur base
+      de données mondiale des centrales électriques est une base de données complète
+      et open source couvrant les centrales électriques du monde entier, y compris
+      des informations détaillées sur la capacité, la production, la propriété,
+      le type de carburant et l'emplacement géographique. La base de données est
+      largement utilisée pour l'analyse énergétique et climatique.
+    de:
+      Das World Resources Institute (WRI) ist eine globale Forschungsorganisation,
+      die an Umwelt- und Entwicklungsherausforderungen arbeitet. Ihre Global Power
+      Plant Database ist eine umfassende Open-Source-Datenbank, die Kraftwerke weltweit
+      abdeckt, einschließlich detaillierter Informationen zu Kapazität, Erzeugung,
+      Eigentum, Brennstofftyp und geografischem Standort. Die Datenbank wird weithin
+      für Energie- und Klimaanalysen verwendet.
