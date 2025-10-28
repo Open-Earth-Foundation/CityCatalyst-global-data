@@ -27,6 +27,7 @@ def load_from_s3_bucket(*args, **kwargs):
     object_key_pt = 'files/actions/actions_long_list/2025-10-22/cap_climate_actions_pt.json'
     object_key_en = 'files/actions/actions_long_list/2025-10-22/cap_climate_actions_en.json'
     object_key_es = 'files/actions/actions_long_list/2025-10-22/cap_climate_actions_es.json'
+    object_key_cat = 'files/actions/actions_long_list/2025-10-22/cap_climate_actions_categories.csv'
     
     aws_access_key_id = get_secret_value('AWS_ACCESS_KEY_ID')
     aws_secret_access_key = get_secret_value('AWS_SECRET_ACCESS_KEY')
@@ -56,14 +57,22 @@ def load_from_s3_bucket(*args, **kwargs):
         actions_pt AS (
             SELECT *
             FROM  's3://{bucket_name}/{object_key_pt}'
+        ),
+        actions_desc AS (
+            SELECT *
+            FROM 'https://raw.githubusercontent.com/Open-Earth-Foundation/CityCatalyst-global-data/refs/heads/develop/cc-mage/datasets/climate_actions/climate_actions_en.json'
+        ),
+        action_cat AS (
+            SELECT *
+            FROM 's3://{bucket_name}/{object_key_cat}'
         )
         SELECT
             a.ActionID AS action_id,
             json_object('en', a.ActionName, 'es', b.ActionName, 'pt', c.ActionName) AS action_name,
             a.ActionType AS action_type,
             a.Hazard AS hazard_name,
-            a.Sector AS sector_names,
-            a.Subsector AS subsector_names,
+            coalesce(d.Sector, a.Sector) AS sector_names,
+            coalesce(d.Subsector, a.Subsector) AS subsector_names,
             a.PrimaryPurpose AS primary_purpose,
             json_object('en', a.Description, 'es', b.Description, 'pt', c.Description) AS description,
             a.CoBenefits.air_quality AS cobenefits_airquality,
@@ -93,10 +102,14 @@ def load_from_s3_bucket(*args, **kwargs):
             a.AdaptationEffectivenessPerHazard.storms AS adaptation_effectiveness_storms,
             a.AdaptationEffectivenessPerHazard.wildfires AS adaptation_effectiveness_wildfires,
             a.AdaptationEffectivenessPerHazard.diseases AS adaptation_effectiveness_diseases,
-            a.biome
+            a.biome,
+            e.action_category,
+            e.action_subcategory
         FROM actions_en a
         LEFT JOIN actions_es b ON a.ActionID = b.ActionID
-        LEFT JOIN actions_pt c ON a.ActionID = c.ActionID;
+        LEFT JOIN actions_pt c ON a.ActionID = c.ActionID
+        LEFT JOIN actions_desc d ON a.ActionID = d.ActionID
+        LEFT JOIN action_cat e ON a.ActionID = e.action_id;
     """
     
     df = conn.execute(query).fetchdf() 
