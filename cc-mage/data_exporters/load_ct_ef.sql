@@ -8,7 +8,7 @@ INSERT INTO modelled.emissions_factor (
     active_from,
     active_to,
     actor_id,
-    publisher_id,a
+    publisher_id,
     dataset_id
 )
 SELECT emissionfactor_id, 
@@ -22,7 +22,7 @@ SELECT emissionfactor_id,
     actor_id,
     publisher_id,
     dataset_id
-FROM raw_data.ct_onroad_v2025_staging
+FROM raw_data.ct_staging_v2025
 GROUP BY emissionfactor_id, gas_name, emissions_factor_units, activity_id, datasource_name, emissions_year, actor_id, publisher_id, dataset_id
 ON CONFLICT (emissionfactor_id)
 DO UPDATE SET
