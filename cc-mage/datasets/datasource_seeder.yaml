@@ -3054,7 +3054,7 @@
       Emissionspunkt zuweist. Nach der Identifizierung werden alle Datenpunkte innerhalb
       der Stadtgrenzen aggregiert, um die Gesamtemissionen für den Sektor zu berechnen.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/spatial_granularity/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.1.1
   scope: 1
   priority: 1
@@ -3208,7 +3208,7 @@
       Emissionspunkt zuweist. Nach der Identifizierung werden alle Datenpunkte innerhalb
       der Stadtgrenzen aggregiert, um die Gesamtemissionen für den Sektor zu berechnen.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/spatial_granularity/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.4.1
   scope: 1
   priority: 1
@@ -3370,7 +3370,7 @@
       Emissionspunkt zuweist. Nach der Identifizierung werden alle Datenpunkte innerhalb
       der Stadtgrenzen aggregiert, um die Gesamtemissionen für den Sektor zu berechnen.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/spatial_granularity/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.8.1
   scope: 1
   priority: 1
@@ -3526,7 +3526,7 @@
       Emissionspunkt zuweist. Nach der Identifizierung werden alle Datenpunkte innerhalb
       der Stadtgrenzen aggregiert, um die Gesamtemissionen für den Sektor zu berechnen.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/spatial_granularity/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.7.1
   scope: 1
   priority: 1
@@ -3686,7 +3686,7 @@
       innerhalb der Stadtgrenzen aggregiert, um die Gesamtemissionen für den Sektor
       zu berechnen.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/spatial_granularity/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.4.3
   scope: 3
   priority: 1
@@ -3864,7 +3864,7 @@
       Emissionspunkt zuweist. Nach der Identifizierung werden alle Datenpunkte innerhalb
       der Stadtgrenzen aggregiert, um die Gesamtemissionen für den Sektor zu berechnen.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/spatial_granularity/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.4.3
   scope: 3
   priority: 1
@@ -3972,7 +3972,7 @@
     de:
       Um die Emissionsdaten auf Stadt-Ebene zu aggregieren, werden die 1 km-gridded-Schätzungen räumlich mit der administrativen Grenze der Stadt überlagert. Die Emissionswerte aller Gitterzellen, die die Grenze schneiden, werden summiert, wodurch die vollständige Berücksichtigung von teilweisen Zellen gewährleistet wird. Dies ermöglicht präzise Stadt-Ebene-Gesamtwerte, die die räumliche Verteilung der emissionsbezogenen Gebäudeemissionen innerhalb der städtischen Ausdehnung widerspiegeln.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/spatial_granularity/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.1.1
   scope: 1
   priority: 1
@@ -4133,7 +4133,7 @@
       Emissionspunkt zuweist. Nach der Identifizierung werden alle Datenpunkte innerhalb
       der Stadtgrenzen aggregiert, um die Gesamtemissionen für den Sektor zu berechnen.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/spatial_granularity/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: V.1
   scope: 1
   priority: 1
@@ -4239,7 +4239,7 @@
       Emissionspunkt zuweist. Nach der Identifizierung werden alle Datenpunkte innerhalb
       der Stadtgrenzen aggregiert, um die Gesamtemissionen für den Sektor zu berechnen.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/spatial_granularity/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: V.3
   scope: 1
   priority: 1
@@ -14993,7 +14993,7 @@
       Emissionspunkt zuweist. Nach der Identifizierung werden alle Datenpunkte innerhalb
       der Stadtgrenzen aggregiert, um die Gesamtemissionen für den Sektor zu berechnen.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/spatial_granularity/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.1.1
   scope: 1
   priority: 1
@@ -15098,7 +15098,7 @@
       Emissionspunkt zuweist. Nach der Identifizierung werden alle Datenpunkte innerhalb
       der Stadtgrenzen aggregiert, um die Gesamtemissionen für den Sektor zu berechnen.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/spatial_granularity/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.3.3
   scope: 1
   priority: 1
@@ -15203,7 +15203,7 @@
       Emissionspunkt zuweist. Nach der Identifizierung werden alle Datenpunkte innerhalb
       der Stadtgrenzen aggregiert, um die Gesamtemissionen für den Sektor zu berechnen.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/spatial_granularity/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.2.1
   scope: 1
   priority: 1
@@ -15308,7 +15308,7 @@
       Emissionspunkt zuweist. Nach der Identifizierung werden alle Datenpunkte innerhalb
       der Stadtgrenzen aggregiert, um die Gesamtemissionen für den Sektor zu berechnen.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/spatial_granularity/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.3.1
   scope: 1
   priority: 1
