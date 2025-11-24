@@ -14925,8 +14925,8 @@
       Eigentum, Brennstofftyp und geografischem Standort. Die Datenbank wird weithin
       für Energie- und Klimaanalysen verwendet.
 - datasource_id: 3552732e-140f-484e-956c-8163e5b73847
-  publisher_id: ClimateTRACE version 2025
-  datasource_name: ClimateTRACE version 2025
+  publisher_id: ClimateTRACE
+  datasource_name: ClimateTRACE
   dataset_name:
     en: Residential Fuel Consumption and Emissions
     es: Consumo de combustible residencial y emisiones
@@ -14993,7 +14993,7 @@
       Emissionspunkt zuweist. Nach der Identifizierung werden alle Datenpunkte innerhalb
       der Stadtgrenzen aggregiert, um die Gesamtemissionen für den Sektor zu berechnen.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACE/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.1.1
   scope: 1
   priority: 1
