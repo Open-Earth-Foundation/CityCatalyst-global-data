@@ -1,0 +1,222 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - load_ct_city_emissions_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_ct_city_emissions
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_ct_city_emissions
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - staging_ct_city
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_ct_city_emissions_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_ct_city_emissions
+  uuid: load_ct_city_emissions_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - load_ct_city_mapping_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_ct_city_mappings
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_ct_city_mappings
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - staging_ct_city
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_ct_city_mapping_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_ct_city_mappings
+  uuid: load_ct_city_mapping_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - ct_city_staging_v2025
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: staging_ct_city
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_ct_city_mapping_db
+  - load_ct_city_emissions_db
+  uuid: staging_ct_city
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - load_ct_emissions
+  - load_ct_ef
+  - load_ct_method
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: ct_city_staging_v2025
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - staging_ct_city
+  uuid: ct_city_staging_v2025
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    file_source:
+      path: data_exporters/load_ct_emissions.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: load_ct_emissions
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - ct_city_staging_v2025
+  uuid: load_ct_emissions
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    file_source:
+      path: data_exporters/load_ct_ef.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: load_ct_ef
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - ct_city_staging_v2025
+  uuid: load_ct_ef
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    file_source:
+      path: data_exporters/load_ct_method.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: load_ct_method
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - ct_city_staging_v2025
+  uuid: load_ct_method
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2025-11-19 15:39:47.204517+00:00'
+data_integration: null
+description: This is loading data from ct API for a specific city, this does not provide
+  activity values only emissions
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: ghgi_climatetrace_city_all_sectors
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: ghgi_climatetrace_city_all_sectors
+variables:
+  bucket_name: test-global-api
+  cityId: ghs-fua_4249
+  locode: AR PSS
+variables_dir: /home/src/mage_data/cc-mage
+widgets: []
