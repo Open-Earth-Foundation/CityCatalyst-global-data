@@ -2933,8 +2933,8 @@
       energia, ajudando governos e empresas a tomar decisões informadas sobre políticas
       energéticas e investimentos.
 - datasource_id: 497e10f2-c3f3-3b1a-ba35-707edff58858
-  publisher_id: ClimateTRACE
-  datasource_name: ClimateTRACE
+  publisher_id: ClimateTRACE version 2025
+  datasource_name: ClimateTRACE version 2025
   dataset_name:
     en: Road transportation estimated emissions
     es: Emisiones estimadas de transporte en carretera
@@ -2967,8 +2967,8 @@
   dataset_url: https://climatetrace.org/
   geographical_location: EARTH
   start_year: 2021
-  end_year: 2021
-  latest_accounting_year: 2021
+  end_year: 2024
+  latest_accounting_year: 2024
   frequency_of_update: annual
   spatial_resolution: city
   language: en
@@ -3024,7 +3024,7 @@
       Diesel und alternativen Kraftstoffen analysiert, wobei die Emissionsfaktoren
       der US EPA verwendet werden. Maschinenlernmodelle helfen bei der Schätzung des
       Verkehrsaufkommens pro Straßenabschnitt, was zu den Emissionsberechnungen beiträgt.
-  methodology_url: https://github.com/climatetracecoalition/methodology-documents/blob/main/Transportation/Transportation%20Sector-%20Road%20transportation%20(asset)%20Methodology.pdf
+  methodology_url: https://github.com/climatetracecoalition/methodology-documents/tree/main/2025/Transportation
   transformation_description:
     en:
       Latitude and longitude information are utilized to apply a reverse geocode
@@ -3054,7 +3054,7 @@
       Emissionspunkt zuweist. Nach der Identifizierung werden alle Datenpunkte innerhalb
       der Stadtgrenzen aggregiert, um die Gesamtemissionen für den Sektor zu berechnen.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v0/climatetrace/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/spatial_granularity/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.1.1
   scope: 1
   priority: 1
@@ -3091,8 +3091,8 @@
       a lacuna de dados sobre emissões e acelerar a responsabilização e o progresso
       em direção às metas climáticas globais.
 - datasource_id: c7c660e4-56ca-3c42-96d4-6525d2a8f6cc
-  publisher_id: ClimateTRACE
-  datasource_name: ClimateTRACE
+  publisher_id: ClimateTRACE version 2025
+  datasource_name: ClimateTRACE version 2025
   dataset_name:
     en: Oil and gas refining estimated Emissions
     es: Emisiones estimadas de refinación de petróleo y gas
@@ -3123,8 +3123,8 @@
   dataset_url: https://climatetrace.org/
   geographical_location: EARTH
   start_year: 2015
-  end_year: 2021
-  latest_accounting_year: 2021
+  end_year: 2024
+  latest_accounting_year: 2024
   frequency_of_update: annual
   spatial_resolution: point source
   language: en
@@ -3178,7 +3178,7 @@
       und Kapazität berücksichtigt werden, um Emissionsschätzungen abzuleiten. Für
       US-Raffinerien ermöglicht eine erhöhte Datenverfügbarkeit eine detailliertere
       Kategorisierung.
-  methodology_url: https://github.com/climatetracecoalition/methodology-documents/blob/main/Fossil%20fuel%20operations/Fossil%20Fuel%20Operations%20sector-%20Oil%20and%20Gas%20Production%20and%20Transport%20Oil%2C%20and%20Gas%20Refining%20Methodology.pdf
+  methodology_url: https://github.com/climatetracecoalition/methodology-documents/tree/main/2025/Power
   transformation_description:
     en:
       Latitude and longitude information are utilized to apply a reverse geocode
@@ -3208,7 +3208,7 @@
       Emissionspunkt zuweist. Nach der Identifizierung werden alle Datenpunkte innerhalb
       der Stadtgrenzen aggregiert, um die Gesamtemissionen für den Sektor zu berechnen.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v0/climatetrace/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/spatial_granularity/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.4.1
   scope: 1
   priority: 1
@@ -3245,8 +3245,8 @@
       a lacuna de dados sobre emissões e acelerar a responsabilização e o progresso
       em direção às metas climáticas globais.
 - datasource_id: 7feeb3b0-a896-3481-8c05-8d31464dcede
-  publisher_id: ClimateTRACE
-  datasource_name: ClimateTRACE
+  publisher_id: ClimateTRACE version 2025
+  datasource_name: ClimateTRACE version 2025
   dataset_name:
     en: Oil and gas production and transport estimated emissions
     es: Emisiones estimadas de producción y transporte de petróleo y gas
@@ -3285,8 +3285,8 @@
   dataset_url: https://climatetrace.org/
   geographical_location: EARTH
   start_year: 2015
-  end_year: 2022
-  latest_accounting_year: 2022
+  end_year: 2025
+  latest_accounting_year: 2025
   frequency_of_update: annual
   spatial_resolution: point source
   language: en
@@ -3340,7 +3340,7 @@
       flüchtige Verluste und mehr. Wichtige Eingaben wie Feldmerkmale, Produktionsvolumina
       und Transportmethoden werden berücksichtigt, wobei Daten zur Bodenwahrheit und
       Fernmessdaten wie VIIRS für genaue Schätzungen integriert werden."
-  methodology_url: https://github.com/climatetracecoalition/methodology-documents/blob/main/Fossil%20fuel%20operations/Fossil%20Fuel%20Operations%20sector-%20Oil%20and%20Gas%20Production%20and%20Transport%20Oil%2C%20and%20Gas%20Refining%20Methodology.pdf
+  methodology_url: https://github.com/climatetracecoalition/methodology-documents/tree/main/2025/Fossil%20Fuel%20Operations
   transformation_description:
     en:
       Latitude and longitude information are utilized to apply a reverse geocode
@@ -3370,7 +3370,7 @@
       Emissionspunkt zuweist. Nach der Identifizierung werden alle Datenpunkte innerhalb
       der Stadtgrenzen aggregiert, um die Gesamtemissionen für den Sektor zu berechnen.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2023/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/spatial_granularity/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.8.1
   scope: 1
   priority: 1
@@ -3407,8 +3407,8 @@
       a lacuna de dados sobre emissões e acelerar a responsabilização e o progresso
       em direção às metas climáticas globais.
 - datasource_id: d58b08f3-efdb-3f2d-9320-cea8c763d05a
-  publisher_id: ClimateTRACE
-  datasource_name: ClimateTRACE
+  publisher_id: ClimateTRACE version 2025
+  datasource_name: ClimateTRACE version 2025
   dataset_name:
     en: Coal mining estimated emissions
     es: Emisiones estimadas de la minería del carbón
@@ -3441,8 +3441,8 @@
   dataset_url: https://climatetrace.org/
   geographical_location: EARTH
   start_year: 2021
-  end_year: 2021
-  latest_accounting_year: 2021
+  end_year: 2025
+  latest_accounting_year: 2025
   frequency_of_update: annual
   spatial_resolution: point source
   language: en
@@ -3496,7 +3496,7 @@
       wird auf Grundlage des Methangasgehalts und eines durchschnittlichen Emissionsfaktor-Koeffizienten
       berechnet. Die Emissionen werden dann für jedes Bergwerk unter Verwendung des
       Emissionsfaktors und der Aktivitätsdaten geschätzt.
-  methodology_url: https://github.com/climatetracecoalition/methodology-documents/blob/main/Fossil%20fuel%20operations/Fossil%20Fuel%20Operations%20sector-%20Coal%20mining%20Methodology.pdf
+  methodology_url: https://github.com/climatetracecoalition/methodology-documents/tree/main/2025/Fossil%20Fuel%20Operations
   transformation_description:
     en:
       Latitude and longitude information are utilized to apply a reverse geocode
@@ -3526,7 +3526,7 @@
       Emissionspunkt zuweist. Nach der Identifizierung werden alle Datenpunkte innerhalb
       der Stadtgrenzen aggregiert, um die Gesamtemissionen für den Sektor zu berechnen.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v0/climatetrace/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/spatial_granularity/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: I.7.1
   scope: 1
   priority: 1
@@ -3552,8 +3552,8 @@
       na apresentação de relatórios sobre emissões, permitindo uma melhor ação climática
       e decisões políticas.
 - datasource_id: 4fa3124f-cb69-300d-964f-57d63b04d46e
-  publisher_id: ClimateTRACE
-  datasource_name: ClimateTRACE
+  publisher_id: ClimateTRACE version 2025
+  datasource_name: ClimateTRACE version 2025
   dataset_name:
     en: International aviation estimated emissions
     es: Emisiones estimadas de la aviación internacional
@@ -3595,8 +3595,8 @@
   dataset_url: https://climatetrace.org/
   geographical_location: EARTH
   start_year: 2015
-  end_year: 2021
-  latest_accounting_year: 2021
+  end_year: 2025
+  latest_accounting_year: 2025
   frequency_of_update: annual
   spatial_resolution: point source
   language: en
@@ -3655,7 +3655,7 @@
       Emissionen werden entweder vollständig einem Land für Inlandsflüge oder gleichmäßig
       zwischen Ländern für internationale Flüge zugeordnet. Schließlich werden die
       Emissionsdaten nach Ländern und Flughäfen für Berichterstattungszwecke aggregiert.
-  methodology_url: https://github.com/climatetracecoalition/methodology-documents/blob/main/Transportation/Transportation%20sector-%20Domestic%20and%20International%20Aviation%20Methodology.pdf
+  methodology_url: https://github.com/climatetracecoalition/methodology-documents/tree/main/2025/Transportation
   transformation_description:
     en:
       Latitude and longitude information are utilized to apply a reverse geocode
@@ -3686,7 +3686,7 @@
       innerhalb der Stadtgrenzen aggregiert, um die Gesamtemissionen für den Sektor
       zu berechnen.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v0/climatetrace/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/spatial_granularity/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.4.3
   scope: 3
   priority: 1
@@ -3723,8 +3723,8 @@
       a lacuna de dados sobre emissões e acelerar a responsabilização e o progresso
       em direção às metas climáticas globais.
 - datasource_id: d8bf703a-0b3f-305d-b2a0-6d1c9419044e
-  publisher_id: ClimateTRACE
-  datasource_name: ClimateTRACE
+  publisher_id: ClimateTRACE version 2025
+  datasource_name: ClimateTRACE version 2025
   dataset_name:
     en: Domestic aviation estimated emissions
     es: Emisiones estimadas de la aviación nacional
@@ -3771,8 +3771,8 @@
   dataset_url: https://climatetrace.org/
   geographical_location: EARTH
   start_year: 2015
-  end_year: 2021
-  latest_accounting_year: 2021
+  end_year: 2025
+  latest_accounting_year: 2025
   frequency_of_update: annual
   spatial_resolution: point source
   language: en
@@ -3834,7 +3834,7 @@
       und Faktoren wie Stapelung und Wetter berücksichtigt werden. Der Kraftstoffverbrauch
       wird anhand der Daten der ICAO geschätzt, und die Emissionen werden vollständig
       dem Herkunftsland zugeordnet.
-  methodology_url: https://github.com/climatetracecoalition/methodology-documents/blob/main/Transportation/Transportation%20sector-%20Domestic%20and%20International%20Aviation%20Methodology.pdf
+  methodology_url: https://github.com/climatetracecoalition/methodology-documents/tree/main/2025/Transportation
   transformation_description:
     en:
       Latitude and longitude information are utilized to apply a reverse geocode
@@ -3864,7 +3864,7 @@
       Emissionspunkt zuweist. Nach der Identifizierung werden alle Datenpunkte innerhalb
       der Stadtgrenzen aggregiert, um die Gesamtemissionen für den Sektor zu berechnen.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v0/climatetrace/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/spatial_granularity/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.4.3
   scope: 3
   priority: 1
@@ -3901,46 +3901,46 @@
       a lacuna de dados sobre emissões e acelerar a responsabilização e o progresso
       em direção às metas climáticas globais.
 - datasource_id: 3b4cf72b-3bf0-32e3-af14-9dc0a05874d5
-  publisher_id: ClimateTRACE
-  datasource_name: ClimateTRACE
+  publisher_id: ClimateTRACE version 2025
+  datasource_name: ClimateTRACE version 2025
   dataset_name:
-    en: Solid waste disposal estimated emissions
-    es: Emisiones estimadas de eliminación de residuos sólidos
-    pt: Emissões estimadas de eliminação de resíduos sólidos
-    fr: Émissions estimées de l'élimination des déchets solides
-    de: Geschätzte Emissionen aus der Entsorgung von festen Abfällen
+    en: Residential Fuel Consumption and Emissions
+    es: Consumo de combustible residencial y emisiones
+    pt: Consumo de combustível residencial e emissões
+    fr: Consommation de carburant résidentielle et émissions
+    de: Wohnungsbezogene Kraftstoffverbrauch und Emissionen
   dataset_description:
     en:
-      Point source estimates of GHG emissions from solid waste disposal, employing
-      a Bayesian statistical approach, considering waste site capacities, income groups,
-      and regions for robust methane emission predictions.
+      Residential fuel consumption and emissions are estimated using a Bayesian statistical
+      approach, considering fuel consumption data from households and adjusting for
+      regional variations in fuel consumption patterns.
     es:
-      Estimaciones de fuentes puntuales de emisiones de GEI provenientes de la eliminación
-      de desechos sólidos, empleando un enfoque estadístico bayesiano, considerando
-      las capacidades de los sitios de desechos, los grupos de ingresos y las regiones
-      para obtener predicciones sólidas de emisiones de metano.
+      El consumo de combustible residencial y las emisiones se estiman utilizando un
+      enfoque estadístico bayesiano, considerando datos de consumo de combustible
+      de hogares y ajustando para variaciones regionales en patrones de consumo
+      de combustible.
     pt:
-      Estimativas de fontes pontuais de emissões de GEE provenientes da eliminação
-      de resíduos sólidos, empregando uma abordagem estatística bayesiana, considerando
-      as capacidades dos locais de resíduos, grupos de renda e regiões para previsões
-      robustas de emissões de metano.
+      O consumo de combustível residencial e as emissões são estimadas utilizando
+      uma abordagem estatística bayesiana, considerando dados de consumo de combustível
+      de domicílios e ajustando para variações regionais em padrões de consumo
+      de combustível.
     fr:
-      Estimations des sources ponctuelles d'émissions de GES provenant de l'élimination
-      des déchets solides, utilisant une approche statistique bayésienne, tenant compte
-      des capacités des sites de déchets, des groupes de revenus et des régions pour
-      des prévisions robustes des émissions de méthane.
+      La consommation de carburant résidentielle et les émissions sont estimées
+      à l'aide d'une approche statistique bayésienne, tenant compte des données
+      de consommation de carburant des ménages et ajustant pour les variations
+      régionales dans les modèles de consommation de carburant.
     de:
-      Punktquellen-Schätzungen der Treibhausgasemissionen aus der Entsorgung von
-      festen Abfällen unter Verwendung eines bayesianischen statistischen Ansatzes,
-      der die Kapazitäten von Abfallstandorten, Einkommensgruppen und Regionen berücksichtigt,
-      um robuste Vorhersagen der Methanemissionen zu ermöglichen.
+      Der Wohnungsbezogene Kraftstoffverbrauch und die Emissionen werden unter Verwendung
+      eines bayesianischen statistischen Ansatzes geschätzt, der die Daten des Kraftstoffverbrauchs
+      von Haushalten berücksichtigt und für regionale Variationen in den Verbrauchsmustern
+      anpasst.
   source_type: third_party
   access_type: globalapi
   dataset_url: https://climatetrace.org/
   geographical_location: EARTH
   start_year: 2021
-  end_year: 2021
-  latest_accounting_year: 2021
+  end_year: 2025
+  latest_accounting_year: 2025
   frequency_of_update: annual
   spatial_resolution: point source
   language: en
@@ -3950,100 +3950,30 @@
   units: kg
   methodology_description:
     en:
-      This methodology adopts a Bayesian statistical approach using PyMC3 in Python,
-      starting with hierarchical regression structures to predict methane emissions
-      based on waste site capacities. Parameters are initialized using priors from
-      prior predictive simulations and validated through model cross-validation. The
-      model regresses mean site emissions against observed capacities, with coefficients
-      adjusted for different income groups or regions. Posterior predictions are generated
-      by sampling from parameter distributions, with a "saturation effect" implemented
-      to cap emissions at realistic levels. This two-stage process first predicts
-      waste capacities and then emissions, enabling robust and variable-sensitive
-      modeling of methane emissions from solid waste sites.
+      This methodology uses an activity-based bottom-up approach, estimating emissions as the product of building floor area, energy use intensity (EUI), and emission factors. EDGAR v8 emissions are downscaled to 1 km using GHSL building data, and further split into residential and non-residential categories. Monthly variation is modeled using Heating Degree Days (HDD) from ERA5. EUI values are drawn from the World Bank CURB Tool, while emission factors come from EDGAR and literature. A retrofit scenario models emissions reductions from switching to electric heating and cooking.
     es:
-      Esta metodología adopta un enfoque estadístico bayesiano utilizando PyMC3
-      en Python, comenzando con estructuras de regresión jerárquica para predecir
-      las emisiones de metano en función de las capacidades de los sitios de desechos.
-      Los parámetros se inicializan utilizando datos previos de simulaciones predictivas
-      anteriores y se validan mediante validación cruzada del modelo. El modelo compara
-      las emisiones medias del sitio con las capacidades observadas, con coeficientes
-      ajustados para diferentes grupos de ingresos o regiones. Las predicciones posteriores
-      se generan mediante muestreo de distribuciones de parámetros, con un "efecto
-      de saturación" implementado para limitar las emisiones a niveles realistas.
-      Este proceso de dos etapas predice primero las capacidades de los desechos y
-      luego las emisiones, lo que permite un modelado sólido y sensible a las variables
-      de las emisiones de metano de los sitios de desechos sólidos.
+      Esta metodología utiliza un enfoque bottom-up activo, estimando las emisiones como el producto del área de piso del edificio, la intensidad de uso de energía (EUI) y los factores de emisión. Las emisiones EDGAR v8 se reducen a 1 km usando datos de edificios GHSL, y se dividen adicionalmente en categorías residenciales y no residenciales. La variación mensual se modela usando Días de Grado de Calefacción (HDD) de ERA5. Los valores EUI se extraen de la herramienta CURB del Banco Mundial, mientras que los factores de emisión provienen de EDGAR y la literatura. Un escenario de retrofit modela reducciones de emisiones al cambiar a calefacción y cocina eléctricas.
     pt:
-      Esta metodologia adota uma abordagem estatística bayesiana utilizando PyMC3
-      em Python, começando com estruturas de regressão hierárquica para prever as
-      emissões de metano com base nas capacidades dos locais de resíduos. Os parâmetros
-      são inicializados usando dados de simulações preditivas anteriores e validados
-      através da validação cruzada do modelo. O modelo regrede as emissões médias
-      do local em relação às capacidades observadas, com coeficientes ajustados para
-      diferentes grupos de renda ou regiões. As previsões posteriores são geradas
-      amostrando distribuições de parâmetros, com um "efeito de saturação" implementado
-      para limitar as emissões a níveis realistas. Este processo em duas etapas prevê
-      primeiro as capacidades dos resíduos e depois as emissões, permitindo uma modelagem
-      robusta e sensível a variáveis das emissões de metano dos locais de resíduos
-      sólidos.
+      Esta metodologia utiliza un enfoque bottom-up activo, estimando las emisiones como el producto del área de piso del edificio, la intensidad de uso de energía (EUI) y los factores de emisión. Las emisiones EDGAR v8 se reducen a 1 km usando datos de edificios GHSL, y se dividen adicionalmente en categorías residenciales y no residenciales. La variación mensual se modela usando Días de Grado de Calefacción (HDD) de ERA5. Los valores EUI se extraen de la herramienta CURB del Banco Mundial, mientras que los factores de emisión provienen de EDGAR y la literatura. Un escenario de retrofit modela reducciones de emisiones al cambiar a calefacción y cocina eléctricas.
     fr:
-      Cette méthodologie adopte une approche statistique bayésienne utilisant PyMC3
-      en Python, commençant par des structures de régression hiérarchique pour prédire
-      les émissions de méthane en fonction des capacités des sites de déchets. Les
-      paramètres sont initialisés à l'aide de priors issus de simulations prédictives
-      antérieures et validés par validation croisée du modèle. Le modèle régresse
-      les émissions moyennes des sites par rapport aux capacités observées, avec des
-      coefficients ajustés pour différents groupes de revenus ou régions. Les prédictions
-      postérieures sont générées par échantillonnage à partir des distributions de
-      paramètres, avec un "effet de saturation" mis en œuvre pour limiter les émissions
-      à des niveaux réalistes. Ce processus en deux étapes prédit d'abord les capacités
-      des déchets puis les émissions, permettant une modélisation robuste et sensible
-      aux variables des émissions de méthane des sites de déchets solides.
+      Esta metodologia utiliza un enfoque bottom-up activo, estimando las emisiones como el producto del área de piso del edificio, la intensidad de uso de energía (EUI) y los factores de emisión. Las emisiones EDGAR v8 se reducen a 1 km usando datos de edificios GHSL, y se dividen adicionalmente en categorías residenciales y no residenciales. La variación mensual se modela usando Días de Grado de Calefacción (HDD) de ERA5. Los valores EUI se extraen de la herramienta CURB del Banco Mundial, mientras que los factores de emisión provienen de EDGAR y la literatura. Un escenario de retrofit modela reducciones de emisiones al cambiar a calefacción y cocina eléctricas.
     de:
-      Diese Methodologie verwendet einen bayesianischen statistischen Ansatz mit
-      PyMC3 in Python, beginnend mit hierarchischen Regressionsstrukturen zur Vorhersage
-      von Methanemissionen basierend auf den Kapazitäten von Abfallstandorten. Die
-      Parameter werden unter Verwendung von Priors aus vorherigen prädiktiven Simulationen
-      initialisiert und durch Kreuzvalidierung des Modells validiert. Das Modell regressiert
-      die durchschnittlichen Emissionen der Standorte gegen die beobachteten Kapazitäten,
-      wobei die Koeffizienten für verschiedene Einkommensgruppen oder Regionen angepasst
-      werden. Nachfolgende Vorhersagen werden durch Sampling aus den Parameterverteilungen
-      generiert, wobei ein "Sättigungseffekt" implementiert wird, um die Emissionen
-      auf realistische Niveaus zu begrenzen. Dieser zweistufige Prozess sagt zuerst
-      die Abfallkapazitäten und dann die Emissionen voraus, was eine robuste und variablenempfindliche
-      Modellierung der Methanemissionen aus festen Abfallstandorten ermöglicht.
-  methodology_url: https://github.com/climatetracecoalition/methodology-documents/blob/main/Waste/Waste%20Sector-%20Solid%20Waste%20Disposal%20(asset)%20Methodology.pdf
+      Diese Methodologie verwendet einen bottom-up aktiven Ansatz, um die Emissionswerte als Produkt aus Gebäudefläche, Energieintensität (EUI) und Emissionsfaktoren zu schätzen. EDGAR v8-Emissionswerte werden auf 1 km reduziert, indem die GHSL-Gebäudedaten verwendet werden, und weiter in residenzielle und nicht-residenzielle Kategorien aufgeteilt. Die monatliche Variation wird mit den Heizgradtagen (HDD) aus ERA5 modelliert. EUI-Werte werden aus der World Bank CURB Tool gezogen, während Emissionsfaktoren aus EDGAR und Literatur stammen. Ein Retrofit-Szenario modelliert Emissionsreduktionen durch Wechsel zu elektrischer Heizung und Kochen.
+  methodology_url: https://github.com/climatetracecoalition/methodology-documents/tree/main/2025/Buildings
   transformation_description:
     en:
-      Latitude and longitude information are utilized to apply a reverse geocode
-      methodology, assigning the corresponding city locode to each emission point.
-      Once identified, all data points within the city boundary are aggregated to
-      calculate the total emissions for the sector.
+      To aggregate the emissions data to the city level, the 1 km gridded estimates are spatially overlaid with the city's administrative boundary. Emissions from all grid cells intersecting the boundary are summed, ensuring full inclusion of partial cells. This allows for accurate city-scale totals that reflect the spatial distribution of building-related emissions within the urban extent.
     es:
-      La información de latitud y longitud se utiliza para aplicar una metodología
-      de geocodificación inversa, asignando el código de ciudad correspondiente a
-      cada punto de emisión. Una vez identificados, todos los puntos de datos dentro
-      de los límites de la ciudad se agregan para calcular las emisiones totales del
-      sector.
+      Para agregar los datos de emisiones a nivel de ciudad, las estimaciones en cuadrícula de 1 km se superponen espacialmente con el límite administrativo de la ciudad. Se suman las emisiones de todas las celdas de cuadrícula que intersectan el límite, asegurando la inclusión completa de celdas parciales. Esto permite obtener totales a nivel de ciudad que reflejan la distribución espacial de las emisiones relacionadas con los edificios dentro del área urbana.
     pt:
-      As informações de latitude e longitude são utilizadas para aplicar uma metodologia
-      de geocodificação reversa, atribuindo o código de cidade correspondente a cada
-      ponto de emissão. Uma vez identificados, todos os pontos de dados dentro dos
-      limites da cidade são agregados para calcular as emissões totais do setor.
+      Para agregar os dados de emissões a nível de cidade, as estimativas em grade de 1 km são sobrepostas espacialmente com o limite administrativo da cidade. As emissões de todas as células de grade que intersectam o limite são somadas, garantindo a inclusão completa de células parciais. Isso permite obter totais a nível de cidade que refletem a distribuição espacial das emissões relacionadas com os edifícios dentro do território urbano.
     fr:
-      Les informations de latitude et de longitude sont utilisées pour appliquer
-      une méthodologie de géocodage inversé, attribuant le code de ville correspondant
-      à chaque point d'émission. Une fois identifiés, tous les points de données à
-      l'intérieur des limites de la ville sont agrégés pour calculer les émissions
-      totales du secteur.
+      Pour agréger les données d'émissions au niveau de la ville, les estimations en grille de 1 km sont superposées spatialement avec le limite administrative de la ville. Les émissions de toutes les cellules de grille qui intersectent la limite sont additionnées, garantissant l'inclusion complète des cellules partielles. Cela permet d'obtenir des totaux à niveau de ville qui reflètent la distribution spatiale des émissions liées aux bâtiments dans la zone urbaine.
     de:
-      Die Informationen zu Breiten- und Längengraden werden verwendet, um eine Methode
-      zur umgekehrten Geokodierung anzuwenden, die den entsprechenden Stadtkode jedem
-      Emissionspunkt zuweist. Nach der Identifizierung werden alle Datenpunkte innerhalb
-      der Stadtgrenzen aggregiert, um die Gesamtemissionen für den Sektor zu berechnen.
+      Um die Emissionsdaten auf Stadt-Ebene zu aggregieren, werden die 1 km-gridded-Schätzungen räumlich mit der administrativen Grenze der Stadt überlagert. Die Emissionswerte aller Gitterzellen, die die Grenze schneiden, werden summiert, wodurch die vollständige Berücksichtigung von teilweisen Zellen gewährleistet wird. Dies ermöglicht präzise Stadt-Ebene-Gesamtwerte, die die räumliche Verteilung der emissionsbezogenen Gebäudeemissionen innerhalb der städtischen Ausdehnung widerspiegeln.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v0/climatetrace/city/:locode/:year/:gpcReferenceNumber
-  gpc_reference_number: III.1.1
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/spatial_granularity/city/:locode/:year/:gpcReferenceNumber
+  gpc_reference_number: I.1.1
   scope: 1
   priority: 1
   datasource_description:
@@ -4079,49 +4009,46 @@
       a lacuna de dados sobre emissões e acelerar a responsabilização e o progresso
       em direção às metas climáticas globais.
 - datasource_id: e6d533a4-0020-30bc-bbac-90627e499663
-  publisher_id: ClimateTRACE
-  datasource_name: ClimateTRACE
+  publisher_id: ClimateTRACE version 2025
+  datasource_name: ClimateTRACE version 2025
   dataset_name:
-    en: Manure management estimated emissions
-    es: Emisiones estimadas de gestión de estiércol
-    pt: Emissões estimadas de gestão de esterco
-    fr: Émissions estimées de gestion de fumier
-    de: Geschätzte Emissionen aus der Güllebewirtschaftung
+    en: Enteric Fermentation and Manure Management (Asset)
+    es: Fermentación de intramurales y gestión de estiércol (Activo)
+    pt: Fermentação intramural e gestão de esterco (Ativo)
+    fr: Fermentation intramurale et gestion du fumier (Actif)
+    de: Intramurale Fermentation und Güllebewirtschaftung (Asset)
   dataset_description:
     en:
-      Point source estimates of GHG emissions from beef and dairy feedlots, employing
-      IPCC equations, default regional emission factors, and Climate Trace's approach
-      incorporating temperature data, facility-level population counts, and regional
-      manure management variations.
+      Enteric fermentation and manure management emissions are estimated using a Bayesian
+      statistical approach, considering manure management data from livestock farms and
+      adjusting for regional variations in manure management practices.
     es:
-      Estimaciones de fuentes puntuales de emisiones de GEI de corrales de engorde
-      de carne y lácteos, empleando ecuaciones del IPCC, factores de emisión regionales
-      predeterminados y el enfoque de Climate Trace que incorpora datos de temperatura,
-      recuentos de población a nivel de instalaciones y variaciones regionales en
-      el manejo del estiércol.
+      Las emisiones de fermentación intramural y gestión de estiércol se estiman utilizando
+      un enfoque estadístico bayesiano, considerando datos de gestión de estiércol de
+      granjas de ganado y ajustando para variaciones regionales en prácticas de gestión
+      de estiércol.
     pt:
-      Estimativas de fontes pontuais de emissões de GEE de confinamentos de carne
-      e laticínios, utilizando equações do IPCC, fatores de emissão regionais padrão
-      e a abordagem da Climate Trace que incorpora dados de temperatura, contagens
-      populacionais em nível de instalação e variações regionais na gestão de esterco.
+      As emissões de fermentação intramural e gestão de esterco são estimadas utilizando
+      uma abordagem estatística bayesiana, considerando dados de gestão de esterco de
+      fazendas de animais e ajustando para variações regionais em práticas de gestão
+      de esterco.
     fr:
-      Estimations des sources ponctuelles d'émissions de GES provenant des élevages
-      de viande et de produits laitiers, utilisant les équations du GIEC, des facteurs
-      d'émission régionaux par défaut et l'approche de Climate Trace intégrant des
-      données de température, des comptages de population au niveau des installations
-      et des variations régionales dans la gestion du fumier.
+      Les émissions de fermentation intramurale et de gestion du fumier sont estimées
+      à l'aide d'une approche statistique bayésienne, tenant compte des données de
+      gestion du fumier des exploitations agricoles et ajustant pour les variations
+      régionales dans les pratiques de gestion du fumier.
     de:
-      Punktquellen-Schätzungen der Treibhausgasemissionen aus Rinder- und Milchviehbetrieben,
-      unter Verwendung von IPCC-Gleichungen, standardisierten regionalen Emissionsfaktoren
-      und dem Ansatz von Climate Trace, der Temperaturdaten, Bevölkerungszahlen auf
-      Betriebsebene und regionale Variationen in der Güllebewirtschaftung einbezieht.
+      Die Emissionswerte für intramurale Fermentation und Güllebewirtschaftung werden
+      unter Verwendung eines bayesianischen statistischen Ansatzes geschätzt, der die
+      Daten der Güllebewirtschaftung von Landwirtschaftsbetrieben berücksichtigt und
+      für regionale Variationen in den Praktiken der Güllebewirtschaftung anpasst.
   source_type: third_party
   access_type: globalapi
   dataset_url: https://climatetrace.org/
   geographical_location: EARTH
   start_year: 2020
-  end_year: 2021
-  latest_accounting_year: 2021
+  end_year: 2025
+  latest_accounting_year: 2025
   frequency_of_update: annual
   spatial_resolution: point source
   language: en
@@ -4176,7 +4103,7 @@
       um Emissionsschätzungen zu entwickeln. Diese Schätzungen werden für verschiedene
       Regionen präsentiert und heben die signifikanten Beiträge von Rinder- und Milchviehbetrieben
       zu den Treibhausgasemissionen hervor.
-  methodology_url: https://github.com/climatetracecoalition/methodology-documents/blob/main/Agriculture/Agriculture%20sector-%20Enteric%20fermentation%20and%20Manure%20management%20(asset)%20Methodology.pdf
+  methodology_url: https://github.com/climatetracecoalition/methodology-documents/tree/main/2025/Agriculture
   transformation_description:
     en:
       Latitude and longitude information are utilized to apply a reverse geocode
@@ -4206,7 +4133,7 @@
       Emissionspunkt zuweist. Nach der Identifizierung werden alle Datenpunkte innerhalb
       der Stadtgrenzen aggregiert, um die Gesamtemissionen für den Sektor zu berechnen.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v0/climatetrace/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/spatial_granularity/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: V.1
   scope: 1
   priority: 1
@@ -4243,58 +4170,27 @@
       a lacuna de dados sobre emissões e acelerar a responsabilização e o progresso
       em direção às metas climáticas globais.
 - datasource_id: 3b18e434-cd0e-3686-9537-6ae38ccb5c0c
-  publisher_id: ClimateTRACE
-  datasource_name: ClimateTRACE
+  publisher_id: ClimateTRACE version 2025
+  datasource_name: ClimateTRACE version 2025
   dataset_name:
-    en: Enteric fermentation estimated emissions
-    es: Emisiones estimadas de fermentación entérica
-    pt: Emissões estimadas de fermentação entérica
-    fr: Émissions estimées de fermentation entérique
-    de: Geschätzte Emissionen aus der enterischen Fermentation
+    en: Estimated Emissions from Agricultural Soils
+    es: Emisiones estimadas de suelos agrícolas
+    pt: Emissões estimadas de solos agrícolas
+    fr: Émissions estimées de sols agricoles
+    de: Geschätzte Emissionen aus landwirtschaftlichen Böden
   dataset_description:
-    en:
-      Point source estimates of GHG emissions from beef and dairy feedlots, utilizing
-      advanced spatial data processing techniques and machine learning algorithms
-      to predict methane and nitrous oxide emissions, considering factors such as
-      cattle populations, feedlot area size, and regional variations in manure management
-      practices, with accuracy validated through statistical measures.
-    es:
-      Estimaciones de fuentes puntuales de emisiones de GEI de corrales de engorda
-      para carne y lácteos, utilizando técnicas avanzadas de procesamiento de datos
-      espaciales y algoritmos de aprendizaje automático para predecir las emisiones
-      de metano y óxido nitroso, considerando factores como las poblaciones de ganado,
-      el tamaño del área de los corrales de engorda y las variaciones regionales en
-      las prácticas de manejo del estiércol, con precisión validada mediante medidas
-      estadísticas.
-    pt:
-      Estimativas de fontes pontuais de emissões de GEE de confinamentos de gado
-      de corte e leite, utilizando técnicas avançadas de processamento de dados espaciais
-      e algoritmos de aprendizado de máquina para prever as emissões de metano e óxido
-      nitroso, considerando fatores como populações de gado, tamanho da área dos confinamentos
-      e variações regionais nas práticas de manejo de esterco, com precisão validada
-      por meio de medidas estatísticas.
-    fr:
-      Estimations des sources ponctuelles des émissions de GES provenant des élevages
-      de viande et de lait, utilisant des techniques avancées de traitement des données
-      spatiales et des algorithmes d'apprentissage automatique pour prédire les émissions
-      de méthane et d'oxyde nitreux, en tenant compte de facteurs tels que les populations
-      de bovins, la taille de la surface des élevages et les variations régionales
-      des pratiques de gestion du fumier, avec une précision validée par des mesures
-      statistiques.
-    de:
-      Punktquellen-Schätzungen der Treibhausgasemissionen aus Rinder- und Milchviehbetrieben,
-      die fortschrittliche Techniken zur Verarbeitung räumlicher Daten und Algorithmen
-      des maschinellen Lernens nutzen, um Methan- und Lachgasemissionen vorherzusagen,
-      wobei Faktoren wie Rinderpopulationen, Größe der Futterflächen und regionale
-      Unterschiede in der Güllebewirtschaftung berücksichtigt werden, mit einer Genauigkeit,
-      die durch statistische Maße validiert wird.
+    en: This dataset provides gridded annual and monthly estimates (2015–2025) of agricultural emissions from fertilizer use, manure application, crop residue management, rice cultivation, and cropland fires, at ~10 km resolution
+    es: Este conjunto de datos proporciona estimaciones anuales y mensuales (2015–2025) de emisiones agrícolas desde el uso de fertilizantes, la aplicación de estiércol, la gestión de residuos de cultivos, el cultivo de arroz y los incendios de cultivos, a una resolución de ~10 km
+    pt: Este conjunto de dados fornece estimativas anuais e mensais (2015–2025) de emissões agrícolas a partir do uso de fertilizantes, da aplicação de esterco, da gestão de resíduos de culturas, da cultura de arroz e de incêndios de culturas, a uma resolução de ~10 km
+    fr: Ce jeu de données fournit des estimations annuelles et mensuelles (2015–2025) d'émissions agricoles à partir de l'utilisation des fertilisants, de l'application du fumier, de la gestion des résidus de cultures, de la culture du riz et des incendies de cultures, à une résolution de ~10 km
+    de: Dieses Dataset bietet gridded jährliche und monatliche Schätzungen (2015–2025) von landwirtschaftlichen Emissionen aus dem Einsatz von Düngemitteln, der Anwendung von Mist, der Verwaltung von Abfallprodukten, der Anbau von Reis und von Ackerbränden, mit einer Auflösung von ~10 km
   source_type: third_party
   access_type: globalapi
   dataset_url: https://climatetrace.org/
   geographical_location: EARTH
   start_year: 2020
-  end_year: 2021
-  latest_accounting_year: 2021
+  end_year: 2025
+  latest_accounting_year: 2025
   frequency_of_update: annual
   spatial_resolution: point source
   language: en
@@ -4304,72 +4200,16 @@
   units: kg
   methodology_description:
     en:
-      The enteric fermentation calculation process  involves the utilization of
-      advanced spatial data processing techniques and machine learning algorithms
-      to estimate methane and nitrous oxide emissions from beef and dairy feedlots.
-      This method, developed by Climate Trace, involves spatially joining data, adding
-      ancillary information, and performing data cleaning to create training datasets
-      for model development. The models developed utilize linear regression to predict
-      cattle populations at individual facilities, with separate models for beef and
-      dairy feedlots, while also considering factors such as feedlot area size and
-      regional variations in manure management practices. The accuracy of the models
-      is evaluated through various statistical measures, and emission estimates are
-      provided for different regions.
+      This methodology uses a refined IPCC Tier 1 approach combined with remote sensing and empirical proxies. Gridded activity data—including rice cultivation, fertilizer use, crop residues, and manure application—are estimated using satellite imagery, FAOSTAT, and GAEZ data. Emissions are calculated using standard IPCC equations with country-specific emission factors where available, and are temporally disaggregated using EDGAR profiles. Emission reduction scenarios (e.g., AWD, balanced fertilizer) are modeled via adjusted emission factors, enabling seasonal, spatially explicit estimates across 60+ countries.
     es:
-      El proceso de cálculo de la fermentación entérica implica la utilización de
-      técnicas avanzadas de procesamiento de datos espaciales y algoritmos de aprendizaje
-      automático para estimar las emisiones de metano y óxido nitroso de los corrales
-      de engorda de carne y lácteos. Este método, desarrollado por Climate Trace,
-      implica unir datos espacialmente, agregar información auxiliar y realizar una
-      limpieza de datos para crear conjuntos de datos de entrenamiento para el desarrollo
-      de modelos. Los modelos desarrollados utilizan regresión lineal para predecir
-      las poblaciones de ganado en instalaciones individuales, con modelos separados
-      para lotes de engorde de carne y lácteos, al mismo tiempo que consideran factores
-      como el tamaño del área del lote de engorde y las variaciones regionales en
-      las prácticas de manejo del estiércol. La precisión de los modelos se evalúa
-      mediante varias medidas estadísticas y se proporcionan estimaciones de emisiones
-      para diferentes regiones.
+      Este método utiliza un enfoque IPCC Tier 1 refinado combinado con sensores remotos y proxies empíricas. Los datos de actividad en cuadrícula (cultivo de arroz, uso de fertilizantes, residuos de cultivos y aplicación de estiércol) se estiman utilizando imágenes satelitales, datos de FAOSTAT y GAEZ. Las emisiones se calculan utilizando ecuaciones IPCC estándar con factores de emisión específicos del país cuando están disponibles, y se desagregan temporalmente usando perfiles EDGAR. Los escenarios de reducción de emisiones (por ejemplo, AWD, fertilizante equilibrado) se modelan mediante factores de emisión ajustados, lo que permite estimaciones estacionales y explícitas espaciales en más de 60 países.
     pt:
-      O processo de cálculo da fermentação entérica envolve a utilização de técnicas
-      avançadas de processamento de dados espaciais e algoritmos de aprendizado de
-      máquina para estimar as emissões de metano e óxido nitroso de confinamentos
-      de gado de corte e leite. Este método, desenvolvido pela Climate Trace, envolve
-      a junção espacial de dados, adição de informações auxiliares e limpeza de dados
-      para criar conjuntos de dados de treinamento para o desenvolvimento de modelos.
-      Os modelos desenvolvidos utilizam regressão linear para prever as populações
-      de gado em instalações individuais, com modelos separados para confinamentos
-      de gado de corte e leite, considerando também fatores como tamanho da área do
-      confinamento e variações regionais nas práticas de manejo de esterco. A precisão
-      dos modelos é avaliada por meio de várias medidas estatísticas, e as estimativas
-      de emissões são fornecidas para diferentes regiões.
+      Este método utiliza un enfoque IPCC Tier 1 refinado combinado con sensores remotos y proxies empíricas. Los datos de actividad en cuadrícula (cultivo de arroz, uso de fertilizantes, residuos de cultivos y aplicación de estiércol) se estiman utilizando imágenes satelitales, datos de FAOSTAT y GAEZ. Las emisiones se calculan utilizando ecuaciones IPCC estándar con factores de emisión específicos del país cuando están disponibles, y se desagregan temporalmente usando perfiles EDGAR. Los escenarios de reducción de emisiones (por ejemplo, AWD, fertilizante equilibrado) se modelan mediante factores de emisión ajustados, lo que permite estimaciones estacionales y explícitas espaciales en más de 60 países.
     fr:
-      Le processus de calcul de la fermentation entérique implique l'utilisation
-      de techniques avancées de traitement des données spatiales et d'algorithmes
-      d'apprentissage automatique pour estimer les émissions de méthane et d'oxyde
-      nitreux des élevages de viande et de lait. Cette méthode, développée par Climate
-      Trace, consiste à joindre spatialement des données, à ajouter des informations
-      auxiliaires et à effectuer un nettoyage des données pour créer des ensembles
-      de données d'entraînement pour le développement de modèles. Les modèles développés
-      utilisent la régression linéaire pour prédire les populations de bovins dans
-      des installations individuelles, avec des modèles séparés pour les élevages
-      de viande et de lait, tout en tenant compte de facteurs tels que la taille de
-      la surface des élevages et les variations régionales des pratiques de gestion
-      du fumier. La précision des modèles est évaluée par diverses mesures statistiques,
-      et des estimations d'émissions sont fournies pour différentes régions.
+      Este método utiliza un enfoque IPCC Tier 1 refinado combinado con sensores remotos y proxies empíricas. Los datos de actividad en cuadrícula (cultivo de arroz, uso de fertilizantes, residuos de cultivos y aplicación de estiércol) se estiman utilizando imágenes satelitales, datos de FAOSTAT y GAEZ. Las emisiones se calculan utilizando ecuaciones IPCC estándar con factores de emisión específicos del país cuando están disponibles, y se desagregan temporalmente usando perfiles EDGAR. Los escenarios de reducción de emisiones (por ejemplo, AWD, fertilizante equilibrado) se modelan mediante factores de emisión ajustados, lo que permite estimaciones estacionales y explícitas espaciales en más de 60 países.
     de:
-      Der Berechnungsprozess der enterischen Fermentation umfasst die Nutzung fortschrittlicher
-      Techniken zur Verarbeitung räumlicher Daten und Algorithmen des maschinellen
-      Lernens zur Schätzung von Methan- und Lachgasemissionen aus Rinder- und Milchviehbetrieben.
-      Diese Methode, die von Climate Trace entwickelt wurde, beinhaltet das räumliche
-      Zusammenführen von Daten, das Hinzufügen von ergänzenden Informationen und die
-      Datenbereinigung zur Erstellung von Trainingsdatensätzen für die Modellentwicklung.
-      Die entwickelten Modelle verwenden lineare Regression, um die Rinderpopulationen
-      in einzelnen Betrieben vorherzusagen, mit separaten Modellen für Rinder- und
-      Milchviehbetriebe, während auch Faktoren wie die Größe der Futterflächen und
-      regionale Unterschiede in der Güllebewirtschaftung berücksichtigt werden. Die
-      Genauigkeit der Modelle wird durch verschiedene statistische Maße bewertet,
-      und Emissionsschätzungen werden für verschiedene Regionen bereitgestellt.
-  methodology_url: https://github.com/climatetracecoalition/methodology-documents/blob/main/Agriculture/Agriculture%20sector-%20Enteric%20fermentation%20and%20Manure%20management%20(asset)%20Methodology.pdf
+      Diese Methode verwendet ein verbessertes IPCC Tier 1-Ansatz in Kombination mit Fernerkundung und empirischen Proxies. Aktivitätsdaten in Gitterzellen (Rice Cultivation, Fertilizer Use, Crop Residues, and Manure Application) werden unter Verwendung von Satellitenbildern, FAOSTAT-Daten und GAEZ-Daten geschätzt. Emissionswerte werden unter Verwendung standardisierter IPCC-Gleichungen mit emissionsspezifischen Faktoren für Länder berechnet, wenn diese verfügbar sind, und werden zeitlich disaggregiert unter Verwendung von EDGAR-Profilen. Emissionsreduktionsszenarien (z.B. AWD, balancierter Dünger) werden unter Verwendung angepasster Emissionsfaktoren modelliert, was saisonale, explizit räumliche Schätzungen in mehr als 60 Ländern ermöglicht.
+  methodology_url: https://github.com/climatetracecoalition/methodology-documents/tree/main/2025/Agriculture
   transformation_description:
     en:
       Latitude and longitude information are utilized to apply a reverse geocode
@@ -4399,8 +4239,8 @@
       Emissionspunkt zuweist. Nach der Identifizierung werden alle Datenpunkte innerhalb
       der Stadtgrenzen aggregiert, um die Gesamtemissionen für den Sektor zu berechnen.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v0/climatetrace/city/:locode/:year/:gpcReferenceNumber
-  gpc_reference_number: V.1
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/spatial_granularity/city/:locode/:year/:gpcReferenceNumber
+  gpc_reference_number: V.3
   scope: 1
   priority: 1
   datasource_description:
@@ -15084,3 +14924,423 @@
       abdeckt, einschließlich detaillierter Informationen zu Kapazität, Erzeugung,
       Eigentum, Brennstofftyp und geografischem Standort. Die Datenbank wird weithin
       für Energie- und Klimaanalysen verwendet.
+- datasource_id: 3552732e-140f-484e-956c-8163e5b73847
+  publisher_id: ClimateTRACE version 2025
+  datasource_name: ClimateTRACE version 2025
+  dataset_name:
+    en: Residential Fuel Consumption and Emissions
+    es: Consumo de combustible residencial y emisiones
+    pt: Consumo de combustível residencial e emissões
+    fr: Consommation de carburant résidentielle et émissions
+    de: Wohnungsbezogene Kraftstoffverbrauch und Emissionen
+  dataset_description:
+    en: This dataset provides monthly, 1 km gridded estimates of direct CO₂, CH₄, and N₂O emissions from residential and non-residential buildings worldwide, covering 2015 to early 2025. Emissions from onsite fuel use (e.g., gas, oil, kerosene) are derived by downscaling EDGAR v8 using GHSL building floor area and adjusted monthly with ERA5 heating degree days.
+    es: Este conjunto de datos proporciona estimaciones mensuales de 1 km de emisiones directas de CO₂, CH₄ y N₂O de edificios residenciales y no residenciales en todo el mundo, cubriendo 2015 a principios de 2025. Las emisiones desde el uso de combustible en el sitio (por ejemplo, gas, petróleo, kerosena) se derivan mediante la reducción de escala de EDGAR v8 usando el área del piso de los edificios GHSL y ajustadas mensualmente con días de grado de calefacción ERA5.
+    pt: Este conjunto de dados fornece estimativas mensais de 1 km de emissões diretas de CO₂, CH₄ e N₂O de edifícios residenciais e não residenciais em todo o mundo, cobrindo 2015 a principios de 2025. As emissões a partir do uso de combustível no local (por exemplo, gás, petróleo, kerosena) são derivadas pela redução de escala de EDGAR v8 usando a área do piso dos edifícios GHSL e ajustadas mensalmente com dias de grau de aquecimento ERA5.
+    fr: Ce jeu de données fournit des estimations mensuelles de 1 km d'émissions directes de CO₂, CH₄ et N₂O des bâtiments résidentiels et non résidentiels dans le monde entier, couvrant 2015 à la mi-2025. Les émissions à partir de l'utilisation de carburant sur site (par exemple, gaz, pétrole, kérosène) sont dérivées en utilisant la réduction d'échelle de EDGAR v8 en utilisant la surface au sol des bâtiments GHSL et ajustées mensuellement avec les jours de degré de chauffage ERA5.
+    de: Dieses Dataset bietet monatliche, 1 km-gitterbasierte Schätzungen direkter CO₂-, CH₄- und N₂O-Emissionen aus Wohn- und Nichtwohngebäuden weltweit, die 2015 bis Mitte 2025 umfassen. Emissionen aus dem Einsatz von Kraftstoffen (z.B. Gas, Öl, Kerosin) werden durch Downscaling von EDGAR v8 unter Verwendung der Gebäudefläche nach GHSL und monatliche Anpassung mit ERA5-Heizgradtagen abgeleitet.
+  source_type: third_party
+  access_type: globalapi
+  dataset_url: https://climatetrace.org/
+  geographical_location: EARTH
+  start_year: 2021
+  end_year: 2024
+  latest_accounting_year: 2024
+  frequency_of_update: annual
+  spatial_resolution: city
+  language: en
+  accessibility: null
+  data_quality: medium
+  notes: null
+  units: kg
+  methodology_description:
+    en: Emissions are estimated using an activity-based bottom-up approach, where building emissions are calculated as the product of floor area, energy use intensity (EUI), and emission factors. The EDGAR v8 dataset is downscaled to 1 km using GHSL building data and classified into residential and non-residential. Monthly variation is modeled with ERA5 heating degree days, while EUI values are sourced from the World Bank CURB Tool. Emission factors are based on EDGAR and literature. A retrofit scenario estimates reductions from electrifying heating and cooking systems.
+    es: 
+      Las emisiones se estiman utilizando un enfoque bottom-up activo, donde las emisiones de edificios se calculan como el producto del área del piso, la intensidad de uso de energía (EUI) y los factores de emisión. El conjunto de datos EDGAR v8 se reduce a 1 km usando datos de edificios GHSL y se clasifica en residenciales y no residenciales. La variación mensual se modela con días de grado de calefacción ERA5, mientras que los valores EUI se obtienen de la herramienta CURB del Banco Mundial. Los factores de emisión se basan en EDGAR y la literatura. Un escenario de retrofit estima reducciones al electrificar sistemas de calefacción y cocina.
+    pt:
+      As emissões são estimadas usando um enfoque bottom-up ativo, onde as emissões de edifícios são calculadas como o produto da área do piso, a intensidade de uso de energia (EUI) e os fatores de emissão. O conjunto de dados EDGAR v8 é reduzido a 1 km usando dados de edifícios GHSL e classificado em residenciais e não residenciais. A variação mensual é modelada com dias de grau de aquecimento ERA5, enquanto os valores EUI são obtidos da ferramenta CURB do Banco Mundial. Os fatores de emissão são baseados em EDGAR e literatura. Um cenário de retrofit estima reduções ao eletrificar sistemas de aquecimento e cozinha.
+    fr:
+      Les émissions sont estimées à l'aide d'une approche bottom-up active, où les émissions des bâtiments sont calculées comme le produit de la surface au sol, l'intensité d'utilisation de l'énergie (EUI) et des facteurs d'émission. Le jeu de données EDGAR v8 est downscaled à 1 km en utilisant les données de bâtiments GHSL et classé en résidentiel et non résidentiel. La variation mensuelle est modélisée avec les jours de degré de chauffage ERA5, tandis que les valeurs EUI sont tirées de la World Bank CURB Tool. Les facteurs d'émission sont basés sur EDGAR et la littérature. Un scénario de rénovation estime les réductions en électrifiant les systèmes de chauffage et de cuisson.
+    de: 
+      Die Emissionen werden unter Verwendung eines activity-based Bottom-up-Ansatzes geschätzt, wobei die Gebäudeemissionen als Produkt aus der Bodenfläche, der Energieintensität (EUI) und den Emissionsfaktoren berechnet werden. Das EDGAR v8-Dataset wird auf 1 km herunterskaliert, indem die Gebäudedaten nach GHSL verwendet werden, und in Wohn- und Nichtwohngebäude klassifiziert. Die monatliche Variation wird mit den Heizgradtagen ERA5 modelliert, während die EUI-Werte aus der World Bank CURB Tool stammen. Die Emissionsfaktoren basieren auf EDGAR und Literatur. Ein Retrofit-Szenario schätzt Reduktionen durch Elektrifizierung von Heiz- und Kochensystemen.
+  methodology_url: https://github.com/climatetracecoalition/methodology-documents/tree/main/2025/Buildings
+  transformation_description:
+    en:
+      Latitude and longitude information are utilized to apply a reverse geocode
+      methodology, assigning the corresponding city locode to each emission point.
+      Once identified, all data points within the city boundary are aggregated to
+      calculate the total emissions for the sector.
+    es:
+      La información de latitud y longitud se utiliza para aplicar una metodología
+      de geocodificación inversa, asignando el código de ciudad correspondiente a
+      cada punto de emisión. Una vez identificados, todos los puntos de datos dentro
+      de los límites de la ciudad se agregan para calcular las emisiones totales del
+      sector.
+    pt:
+      As informações de latitude e longitude são utilizadas para aplicar uma metodologia
+      de geocodificação reversa, atribuindo o código de cidade correspondente a cada
+      ponto de emissão. Uma vez identificados, todos os pontos de dados dentro dos
+      limites da cidade são agregados para calcular as emissões totais do setor.
+    fr:
+      Les informations de latitude et de longitude sont utilisées pour appliquer
+      une méthodologie de géocodage inversé, attribuant le code de ville correspondant
+      à chaque point d'émission. Une fois identifiés, tous les points de données à
+      l'intérieur des limites de la ville sont agrégés pour calculer les émissions
+      totales du secteur.
+    de:
+      Die Informationen zu Breiten- und Längengraden werden verwendet, um eine Methode
+      zur umgekehrten Geokodierung anzuwenden, die den entsprechenden Stadtkode jedem
+      Emissionspunkt zuweist. Nach der Identifizierung werden alle Datenpunkte innerhalb
+      der Stadtgrenzen aggregiert, um die Gesamtemissionen für den Sektor zu berechnen.
+  retrieval_method: global_api
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/spatial_granularity/city/:locode/:year/:gpcReferenceNumber
+  gpc_reference_number: I.1.1
+  scope: 1
+  priority: 1
+  datasource_description:
+    en:
+      Climate TRACE is a global coalition that uses satellite imagery, AI, and other
+      remote sensing technologies to independently track greenhouse gas emissions
+      in near real-time. The initiative provides high-resolution, facility-level data
+      across sectors like power, transportation, agriculture, and land use, making
+      emissions information more transparent and accessible. By offering free, publicly
+      available data, Climate TRACE empowers governments, companies, and civil society
+      to make data-driven decisions for climate action. Its goal is to close the emissions
+      data gap and accelerate accountability and progress toward global climate targets.
+    es:
+      Climate TRACE es una coalición global que utiliza imágenes satelitales, IA
+      y otras tecnologías de teledetección para rastrear de forma independiente las
+      emisiones de gases de efecto invernadero casi en tiempo real. La iniciativa
+      proporciona datos de alta resolución a nivel de instalaciones en sectores como
+      la energía, el transporte, la agricultura y el uso del suelo, lo que hace que
+      la información sobre emisiones sea más transparente y accesible. Al ofrecer
+      datos gratuitos y públicos, Climate TRACE empodera a gobiernos, empresas y sociedad
+      civil para tomar decisiones basadas en datos para la acción climática. Su objetivo
+      es cerrar la brecha de datos sobre emisiones y acelerar la rendición de cuentas
+      y el progreso hacia los objetivos climáticos globales.
+    pt:
+      A Climate TRACE é uma coalizão global que utiliza imagens de satélite, inteligência
+      artificial e outras tecnologias de sensoriamento remoto para monitorar de forma
+      independente as emissões de gases de efeito estufa em quase tempo real. A iniciativa
+      fornece dados de alta resolução, em nível de instalação, cobrindo setores como
+      energia, transporte, agricultura e uso da terra, tornando as informações sobre
+      emissões mais transparentes e acessíveis. Ao oferecer dados gratuitos e disponíveis
+      ao público, a Climate TRACE capacita governos, empresas e a sociedade civil
+      a tomar decisões baseadas em dados para ações climáticas. Seu objetivo é reduzir
+      a lacuna de dados sobre emissões e acelerar a responsabilização e o progresso
+      em direção às metas climáticas globais.
+- datasource_id: 3552732e-140f-484e-956c-8163e5b73846
+  publisher_id: ClimateTRACE version 2025
+  datasource_name: ClimateTRACE version 2025
+  dataset_name:
+    en: Waterborn transportation estimated emissions
+    es: Emisiones estimadas de navegación acuática
+    pt: Emissões estimadas de navegação aquática
+    fr: Émissions estimées de navigation aquatique
+    de: Geschätzte Emissionsdaten der Wassertransportnavigation
+  dataset_description:
+    en: This dataset estimates GHG emissions from over 500,000 vessels, disaggregated by trip, port, and country. It includes CO₂, CH₄, and N₂O, with full gas coverage, and captures emissions from loitering near ports.
+    es: Este conjunto de datos estima las emisiones de GEI de más de 500,000 barcos, desagregadas por viaje, puerto y país. Incluye CO₂, CH₄ y N₂O, con cobertura completa de gases, y captura emisiones de espera cerca de puertos.
+    pt: Este conjunto de dados estima as emissões de GEE de mais de 500.000 barcos, desagregadas por viagem, porto e país. Inclui CO₂, CH₄ e N₂O, com cobertura completa de gases, e captura emissões de espera perto de portos.
+    fr: Ce jeu de données estime les émissions de GES provenant de plus de 500.000 navires, désagrégés par voyage, port et pays. Il inclut CO₂, CH₄ et N₂O, avec une couverture complète des gaz, et capture les émissions de stationnement près des ports.
+    de: Dieses Dataset schätzt Treibhausgasemissionen von über 500.000 Schiffen, disaggregiert nach Reise, Hafen und Land. Es umfasst CO₂, CH₄ und N₂O, mit voller Gasdeckung, und erfasst Emissionen von Ankerung in Häfen.
+  source_type: third_party
+  access_type: globalapi
+  dataset_url: https://climatetrace.org/
+  geographical_location: EARTH
+  start_year: 2021
+  end_year: 2024
+  latest_accounting_year: 2024
+  frequency_of_update: annual
+  spatial_resolution: city
+  language: en
+  accessibility: null
+  data_quality: medium
+  notes: null
+  units: kg
+  methodology_description:
+    en: Emissions are estimated using a hybrid bottom-up and machine learning model. The approach predicts engine power from vessel characteristics, estimates energy use based on activity and speed, and converts this to emissions using fuel-specific emission factors. The model is trained with EU MRV data and validated against shipowner data, global inventories, and AIS tracking. It includes emissions from loitering and “dark” vessels using satellite-based activity detection.
+    es: 
+      Las emisiones se estiman utilizando un modelo híbrido bottom-up y de aprendizaje automático. El enfoque predice la potencia del motor a partir de las características del barco, estima el uso de energía basado en la actividad y la velocidad, y convierte esto en emisiones utilizando factores de emisión específicos del combustible. El modelo se entrena con datos de la UE MRV y se valida contra datos de propietarios de barcos, inventarios globales y seguimiento AIS. Incluye emisiones de barcos de espera y "oscuros" utilizando detección de actividad basada en satélite.
+    pt:
+      As emissões são estimadas usando um modelo híbrido bottom-up e de aprendizado automático. O enfoque prediz a potência do motor a partir das características do barco, estima o uso de energia com base na atividade e na velocidade, e converte isso em emissões utilizando fatores de emissão específicos do combustível. O modelo é treinado com dados da UE MRV e validado contra dados de proprietários de barcos, inventários globais e rastreamento AIS. Inclui emissões de barcos de espera e "escuros" usando detecção de atividade baseada em satélite.
+    fr:
+      Les émissions sont estimées à l'aide d'un modèle hybride bottom-up et de machine learning. L'approche prédit la puissance du moteur à partir des caractéristiques du bateau, estime le consommation d'énergie en fonction de l'activité et de la vitesse, et convertit cela en émissions en utilisant des facteurs d'émission spécifiques au carburant. Le modèle est formé avec des données MRV de l'UE et validé contre des données de propriétaires de navires, des inventaires globaux et un suivi AIS. Il inclut les émissions des navires d'attente et des navires "sombres" en utilisant la détection d'activité basée sur les satellites.
+    de:
+      Die Emissionen werden unter Verwendung eines hybrid Bottom-up- und Machine-Learning-Modells geschätzt. Die Methode prognostiziert die Motorleistung aus den Schiffseigenschaften, schätzt den Energieverbrauch basierend auf Aktivität und Geschwindigkeit und konvertiert dies in Emissionen unter Verwendung von Kraftstoff-spezifischen Emissionsfaktoren. Das Modell wird mit EU-MRV-Daten trainiert und gegen Daten von Schiffsbesitzern, globalen Inventaren und AIS-Tracking validiert. Es umfasst Emissionen von wartenden und "dunklen" Schiffen unter Verwendung der Satellitenaktivitätserkennung.
+  methodology_url: https://github.com/climatetracecoalition/methodology-documents/tree/main/2025/Transportation
+  transformation_description:
+    en:
+      Latitude and longitude information are utilized to apply a reverse geocode
+      methodology, assigning the corresponding city locode to each emission point.
+      Once identified, all data points within the city boundary are aggregated to
+      calculate the total emissions for the sector.
+    es:
+      La información de latitud y longitud se utiliza para aplicar una metodología
+      de geocodificación inversa, asignando el código de ciudad correspondiente a
+      cada punto de emisión. Una vez identificados, todos los puntos de datos dentro
+      de los límites de la ciudad se agregan para calcular las emisiones totales del
+      sector.
+    pt:
+      As informações de latitude e longitude são utilizadas para aplicar uma metodologia
+      de geocodificação reversa, atribuindo o código de cidade correspondente a cada
+      ponto de emissão. Uma vez identificados, todos os pontos de dados dentro dos
+      limites da cidade são agregados para calcular as emissões totais do setor.
+    fr:
+      Les informations de latitude et de longitude sont utilisées pour appliquer
+      une méthodologie de géocodage inversé, attribuant le code de ville correspondant
+      à chaque point d'émission. Une fois identifiés, tous les points de données à
+      l'intérieur des limites de la ville sont agrégés pour calculer les émissions
+      totales du secteur.
+    de:
+      Die Informationen zu Breiten- und Längengraden werden verwendet, um eine Methode
+      zur umgekehrten Geokodierung anzuwenden, die den entsprechenden Stadtkode jedem
+      Emissionspunkt zuweist. Nach der Identifizierung werden alle Datenpunkte innerhalb
+      der Stadtgrenzen aggregiert, um die Gesamtemissionen für den Sektor zu berechnen.
+  retrieval_method: global_api
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/spatial_granularity/city/:locode/:year/:gpcReferenceNumber
+  gpc_reference_number: II.3.3
+  scope: 1
+  priority: 1
+  datasource_description:
+    en:
+      Climate TRACE is a global coalition that uses satellite imagery, AI, and other
+      remote sensing technologies to independently track greenhouse gas emissions
+      in near real-time. The initiative provides high-resolution, facility-level data
+      across sectors like power, transportation, agriculture, and land use, making
+      emissions information more transparent and accessible. By offering free, publicly
+      available data, Climate TRACE empowers governments, companies, and civil society
+      to make data-driven decisions for climate action. Its goal is to close the emissions
+      data gap and accelerate accountability and progress toward global climate targets.
+    es:
+      Climate TRACE es una coalición global que utiliza imágenes satelitales, IA
+      y otras tecnologías de teledetección para rastrear de forma independiente las
+      emisiones de gases de efecto invernadero casi en tiempo real. La iniciativa
+      proporciona datos de alta resolución a nivel de instalaciones en sectores como
+      la energía, el transporte, la agricultura y el uso del suelo, lo que hace que
+      la información sobre emisiones sea más transparente y accesible. Al ofrecer
+      datos gratuitos y públicos, Climate TRACE empodera a gobiernos, empresas y sociedad
+      civil para tomar decisiones basadas en datos para la acción climática. Su objetivo
+      es cerrar la brecha de datos sobre emisiones y acelerar la rendición de cuentas
+      y el progreso hacia los objetivos climáticos globales.
+    pt:
+      A Climate TRACE é uma coalizão global que utiliza imagens de satélite, inteligência
+      artificial e outras tecnologias de sensoriamento remoto para monitorar de forma
+      independente as emissões de gases de efeito estufa em quase tempo real. A iniciativa
+      fornece dados de alta resolução, em nível de instalação, cobrindo setores como
+      energia, transporte, agricultura e uso da terra, tornando as informações sobre
+      emissões mais transparentes e acessíveis. Ao oferecer dados gratuitos e disponíveis
+      ao público, a Climate TRACE capacita governos, empresas e a sociedade civil
+      a tomar decisões baseadas em dados para ações climáticas. Seu objetivo é reduzir
+      a lacuna de dados sobre emissões e acelerar a responsabilização e o progresso
+      em direção às metas climáticas globais.
+- datasource_id: 3552732e-140f-484e-956c-8163e5b73845
+  publisher_id: ClimateTRACE version 2025
+  datasource_name: ClimateTRACE version 2025
+  dataset_name:
+    en: Commercial Fuel Consumption and Emissions
+    es: Consumo de combustible comercial y emisiones
+    pt: Consumo de combustível comercial e emissões
+    fr: Consommation de carburant commercial et émissions
+    de: Gebäudebezogene Kraftstoffverbrauch und Emissionen
+  dataset_description:
+    en: This dataset provides monthly, 1 km gridded estimates of direct CO₂, CH₄, and N₂O emissions from commercial buildings worldwide, covering 2015 to early 2025. Emissions from onsite fuel use (e.g., gas, oil, kerosene) are derived by downscaling EDGAR v8 using GHSL building floor area and adjusted monthly with ERA5 heating degree days.
+    es: Este conjunto de datos proporciona estimaciones mensuales de 1 km de emisiones directas de CO₂, CH₄ y N₂O de edificios comerciales en todo el mundo, cubriendo 2015 a principios de 2025. Las emisiones desde el uso de combustible en el sitio (por ejemplo, gas, petróleo, kerosena) se derivan mediante la reducción de escala de EDGAR v8 usando el área del piso de los edificios GHSL y ajustadas mensualmente con días de grado de calefacción ERA5.
+    pt: Este conjunto de dados fornece estimativas mensais de 1 km de emissões diretas de CO₂, CH₄ e N₂O de edifícios comerciais em todo o mundo, cobrindo 2015 a principios de 2025. As emissões a partir do uso de combustível no local (por exemplo, gás, petróleo, kerosena) são derivadas pela redução de escala de EDGAR v8 usando a área do piso dos edifícios GHSL e ajustadas mensalmente com dias de grau de aquecimento ERA5.
+    fr: Ce jeu de données fournit des estimations mensuelles de 1 km d'émissions directes de CO₂, CH₄ et N₂O des bâtiments commerciaux dans le monde entier, couvrant 2015 à la mi-2025. Les émissions à partir de l'utilisation de carburant sur site (par exemple, gaz, pétrole, kérosène) sont dérivées en utilisant la réduction d'échelle de EDGAR v8 en utilisant la surface au sol des bâtiments GHSL et ajustées mensuellement avec les jours de degré de chauffage ERA5.
+    de: Dieses Dataset bietet monatliche, 1 km-gitterbasierte Schätzungen direkter CO₂-, CH₄- und N₂O-Emissionen aus Gewerbeimmobilien weltweit, die 2015 bis Mitte 2025 umfassen. Emissionen aus dem Einsatz von Kraftstoffen (z.B. Gas, Öl, Kerosin) werden durch Downscaling von EDGAR v8 unter Verwendung der Gebäudefläche nach GHSL und monatliche Anpassung mit ERA5-Heizgradtagen abgeleitet.
+  source_type: third_party
+  access_type: globalapi
+  dataset_url: https://climatetrace.org/
+  geographical_location: EARTH
+  start_year: 2021
+  end_year: 2024
+  latest_accounting_year: 2024
+  frequency_of_update: annual
+  spatial_resolution: city
+  language: en
+  accessibility: null
+  data_quality: medium
+  notes: null
+  units: kg
+  methodology_description:
+    en: Emissions are estimated using an activity-based bottom-up approach, where building emissions are calculated as the product of floor area, energy use intensity (EUI), and emission factors. The EDGAR v8 dataset is downscaled to 1 km using GHSL building data and classified into residential and non-residential. Monthly variation is modeled with ERA5 heating degree days, while EUI values are sourced from the World Bank CURB Tool. Emission factors are based on EDGAR and literature. A retrofit scenario estimates reductions from electrifying heating and cooking systems.
+    es: 
+      Las emisiones se estiman utilizando un enfoque bottom-up activo, donde las emisiones de edificios se calculan como el producto del área del piso, la intensidad de uso de energía (EUI) y los factores de emisión. El conjunto de datos EDGAR v8 se reduce a 1 km usando datos de edificios GHSL y se clasifica en residenciales y no residenciales. La variación mensual se modela con días de grado de calefacción ERA5, mientras que los valores EUI se obtienen de la herramienta CURB del Banco Mundial. Los factores de emisión se basan en EDGAR y la literatura. Un escenario de retrofit estima reducciones al electrificar sistemas de calefacción y cocina.
+    pt:
+      As emissões são estimadas usando um enfoque bottom-up ativo, onde as emissões de edifícios são calculadas como o produto da área do piso, a intensidade de uso de energia (EUI) e os fatores de emissão. O conjunto de dados EDGAR v8 é reduzido a 1 km usando dados de edifícios GHSL e classificado em residenciais e não residenciais. A variação mensual é modelada com dias de grau de aquecimento ERA5, enquanto os valores EUI são obtidos da ferramenta CURB do Banco Mundial. Os fatores de emissão são baseados em EDGAR e literatura. Um cenário de retrofit estima reduções ao eletrificar sistemas de aquecimento e cozinha.
+    fr:
+      Les émissions sont estimées à l'aide d'une approche bottom-up active, où les émissions des bâtiments sont calculées comme le produit de la surface au sol, l'intensité d'utilisation de l'énergie (EUI) et des facteurs d'émission. Le jeu de données EDGAR v8 est downscaled à 1 km en utilisant les données de bâtiments GHSL et classé en résidentiel et non résidentiel. La variation mensuelle est modélisée avec les jours de degré de chauffage ERA5, tandis que les valeurs EUI sont tirées de la World Bank CURB Tool. Les facteurs d'émission sont basés sur EDGAR et la littérature. Un scénario de rénovation estime les réductions en électrifiant les systèmes de chauffage et de cuisson.
+    de: 
+      Die Emissionen werden unter Verwendung eines activity-based Bottom-up-Ansatzes geschätzt, wobei die Gebäudeemissionen als Produkt aus der Bodenfläche, der Energieintensität (EUI) und den Emissionsfaktoren berechnet werden. Das EDGAR v8-Dataset wird auf 1 km herunterskaliert, indem die Gebäudedaten nach GHSL verwendet werden, und in Wohn- und Nichtwohngebäude klassifiziert. Die monatliche Variation wird mit den Heizgradtagen ERA5 modelliert, während die EUI-Werte aus der World Bank CURB Tool stammen. Die Emissionsfaktoren basieren auf EDGAR und Literatur. Ein Retrofit-Szenario schätzt Reduktionen durch Elektrifizierung von Heiz- und Kochensystemen.
+  methodology_url: https://github.com/climatetracecoalition/methodology-documents/tree/main/2025/Buildings
+  transformation_description:
+    en:
+      Latitude and longitude information are utilized to apply a reverse geocode
+      methodology, assigning the corresponding city locode to each emission point.
+      Once identified, all data points within the city boundary are aggregated to
+      calculate the total emissions for the sector.
+    es:
+      La información de latitud y longitud se utiliza para aplicar una metodología
+      de geocodificación inversa, asignando el código de ciudad correspondiente a
+      cada punto de emisión. Una vez identificados, todos los puntos de datos dentro
+      de los límites de la ciudad se agregan para calcular las emisiones totales del
+      sector.
+    pt:
+      As informações de latitude e longitude são utilizadas para aplicar uma metodologia
+      de geocodificação reversa, atribuindo o código de cidade correspondente a cada
+      ponto de emissão. Uma vez identificados, todos os pontos de dados dentro dos
+      limites da cidade são agregados para calcular as emissões totais do setor.
+    fr:
+      Les informations de latitude et de longitude sont utilisées pour appliquer
+      une méthodologie de géocodage inversé, attribuant le code de ville correspondant
+      à chaque point d'émission. Une fois identifiés, tous les points de données à
+      l'intérieur des limites de la ville sont agrégés pour calculer les émissions
+      totales du secteur.
+    de:
+      Die Informationen zu Breiten- und Längengraden werden verwendet, um eine Methode
+      zur umgekehrten Geokodierung anzuwenden, die den entsprechenden Stadtkode jedem
+      Emissionspunkt zuweist. Nach der Identifizierung werden alle Datenpunkte innerhalb
+      der Stadtgrenzen aggregiert, um die Gesamtemissionen für den Sektor zu berechnen.
+  retrieval_method: global_api
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/spatial_granularity/city/:locode/:year/:gpcReferenceNumber
+  gpc_reference_number: I.2.1
+  scope: 1
+  priority: 1
+  datasource_description:
+    en:
+      Climate TRACE is a global coalition that uses satellite imagery, AI, and other
+      remote sensing technologies to independently track greenhouse gas emissions
+      in near real-time. The initiative provides high-resolution, facility-level data
+      across sectors like power, transportation, agriculture, and land use, making
+      emissions information more transparent and accessible. By offering free, publicly
+      available data, Climate TRACE empowers governments, companies, and civil society
+      to make data-driven decisions for climate action. Its goal is to close the emissions
+      data gap and accelerate accountability and progress toward global climate targets.
+    es:
+      Climate TRACE es una coalición global que utiliza imágenes satelitales, IA
+      y otras tecnologías de teledetección para rastrear de forma independiente las
+      emisiones de gases de efecto invernadero casi en tiempo real. La iniciativa
+      proporciona datos de alta resolución a nivel de instalaciones en sectores como
+      la energía, el transporte, la agricultura y el uso del suelo, lo que hace que
+      la información sobre emisiones sea más transparente y accesible. Al ofrecer
+      datos gratuitos y públicos, Climate TRACE empodera a gobiernos, empresas y sociedad
+      civil para tomar decisiones basadas en datos para la acción climática. Su objetivo
+      es cerrar la brecha de datos sobre emisiones y acelerar la rendición de cuentas
+      y el progreso hacia los objetivos climáticos globales.
+    pt:
+      A Climate TRACE é uma coalizão global que utiliza imagens de satélite, inteligência
+      artificial e outras tecnologias de sensoriamento remoto para monitorar de forma
+      independente as emissões de gases de efeito estufa em quase tempo real. A iniciativa
+      fornece dados de alta resolução, em nível de instalação, cobrindo setores como
+      energia, transporte, agricultura e uso da terra, tornando as informações sobre
+      emissões mais transparentes e acessíveis. Ao oferecer dados gratuitos e disponíveis
+      ao público, a Climate TRACE capacita governos, empresas e a sociedade civil
+      a tomar decisões baseadas em dados para ações climáticas. Seu objetivo é reduzir
+      a lacuna de dados sobre emissões e acelerar a responsabilização e o progresso
+      em direção às metas climáticas globais.
+- datasource_id: e9f8566b-4c9b-47a6-8f1a-34912cd56d97
+  publisher_id: ClimateTRACE version 2025
+  datasource_name: ClimateTRACE version 2025
+  dataset_name:
+    en: Fuel combustion in manufacturing and mineral extraction
+    es: Combustión de combustible en la manufactura y la extracción de minerales
+    pt: Combustão de combustível na manufatura e extração de minerais
+    fr: Combustion de carburant dans la fabrication et l'extraction des minéraux
+    de: Brennstoffverbrennung in der Fertigung und der Bergbauindustrie
+  dataset_description:
+    en: Each manufacturing and mineral extraction subsector in this dataset uses a custom methodology tailored to its energy use and operational characteristics, enabling activity-specific emissions estimates
+    es: Cada subsector de manufactura y extracción de minerales en este conjunto de datos utiliza una metodología personalizada adaptada a su uso de energía y características operativas, permitiendo estimaciones de emisiones específicas por actividad
+    pt: Cada subsector de manufatura e extração de minerais neste conjunto de dados utiliza uma metodologia personalizada adaptada ao seu uso de energia e características operacionais, permitindo estimativas de emissões específicas por atividade
+    fr: Chaque sous-secteur de fabrication et d'extraction minière dans ce jeu de données utilise une méthodologie personnalisée adaptée à son utilisation d'énergie et à ses caractéristiques opérationnelles, permettant des estimations d'émissions spécifiques par activité
+    de: Jedes Untersektor der Fertigung und der Bergbauindustrie in diesem Dataset verwendet eine angepasste Methode, die auf seine Energieverwendung und seine betrieblichen Merkmale zugeschnitten ist, um emissionsspezifische Schätzungen pro Aktivität zu ermöglichen
+  source_type: third_party
+  access_type: globalapi
+  dataset_url: https://climatetrace.org/
+  geographical_location: EARTH
+  start_year: 2021
+  end_year: 2024
+  latest_accounting_year: 2024
+  frequency_of_update: annual
+  spatial_resolution: city
+  language: en
+  accessibility: null
+  data_quality: medium
+  notes: null
+  units: kg
+  methodology_description:
+    en: Each manufacturing and mineral extraction subsector in this dataset uses a custom methodology tailored to its energy use and operational characteristics, enabling activity-specific emissions estimates
+    es: 
+      Cada subsector de manufactura y extracción de minerales en este conjunto de datos utiliza una metodología personalizada adaptada a su uso de energía y características operativas, permitiendo estimaciones de emisiones específicas por actividad
+    pt:
+      Cada subsector de manufatura e extração de minerais neste conjunto de dados utiliza uma metodologia personalizada adaptada ao seu uso de energia e características operacionais, permitindo estimativas de emissões específicas por atividade
+    fr:
+      Chaque sous-secteur de fabrication et d'extraction minière dans ce jeu de données utilise une méthodologie personnalisée adaptée à son utilisation d'énergie et à ses caractéristiques opérationnelles, permettant des estimations d'émissions spécifiques par activité
+    de: 
+      Jedes Untersektor der Fertigung und der Bergbauindustrie in diesem Dataset verwendet eine angepasste Methode, die auf seine Energieverwendung und seine betrieblichen Merkmale zugeschnitten ist, um emissionsspezifische Schätzungen pro Aktivität zu ermöglichen
+  methodology_url: https://github.com/climatetracecoalition/methodology-documents/tree/main/2025/Manufacturing%20and%20Industrial%20Processes
+  transformation_description:
+    en:
+      Latitude and longitude information are utilized to apply a reverse geocode
+      methodology, assigning the corresponding city locode to each emission point.
+      Once identified, all data points within the city boundary are aggregated to
+      calculate the total emissions for the sector.
+    es:
+      La información de latitud y longitud se utiliza para aplicar una metodología
+      de geocodificación inversa, asignando el código de ciudad correspondiente a
+      cada punto de emisión. Una vez identificados, todos los puntos de datos dentro
+      de los límites de la ciudad se agregan para calcular las emisiones totales del
+      sector.
+    pt:
+      As informações de latitude e longitude são utilizadas para aplicar uma metodologia
+      de geocodificação reversa, atribuindo o código de cidade correspondente a cada
+      ponto de emissão. Uma vez identificados, todos os pontos de dados dentro dos
+      limites da cidade são agregados para calcular as emissões totais do setor.
+    fr:
+      Les informations de latitude et de longitude sont utilisées pour appliquer
+      une méthodologie de géocodage inversé, attribuant le code de ville correspondant
+      à chaque point d'émission. Une fois identifiés, tous les points de données à
+      l'intérieur des limites de la ville sont agrégés pour calculer les émissions
+      totales du secteur.
+    de:
+      Die Informationen zu Breiten- und Längengraden werden verwendet, um eine Methode
+      zur umgekehrten Geokodierung anzuwenden, die den entsprechenden Stadtkode jedem
+      Emissionspunkt zuweist. Nach der Identifizierung werden alle Datenpunkte innerhalb
+      der Stadtgrenzen aggregiert, um die Gesamtemissionen für den Sektor zu berechnen.
+  retrieval_method: global_api
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/spatial_granularity/city/:locode/:year/:gpcReferenceNumber
+  gpc_reference_number: I.3.1
+  scope: 1
+  priority: 1
+  datasource_description:
+    en:
+      Climate TRACE is a global coalition that uses satellite imagery, AI, and other
+      remote sensing technologies to independently track greenhouse gas emissions
+      in near real-time. The initiative provides high-resolution, facility-level data
+      across sectors like power, transportation, agriculture, and land use, making
+      emissions information more transparent and accessible. By offering free, publicly
+      available data, Climate TRACE empowers governments, companies, and civil society
+      to make data-driven decisions for climate action. Its goal is to close the emissions
+      data gap and accelerate accountability and progress toward global climate targets.
+    es:
+      Climate TRACE es una coalición global que utiliza imágenes satelitales, IA
+      y otras tecnologías de teledetección para rastrear de forma independiente las
+      emisiones de gases de efecto invernadero casi en tiempo real. La iniciativa
+      proporciona datos de alta resolución a nivel de instalaciones en sectores como
+      la energía, el transporte, la agricultura y el uso del suelo, lo que hace que
+      la información sobre emisiones sea más transparente y accesible. Al ofrecer
+      datos gratuitos y públicos, Climate TRACE empodera a gobiernos, empresas y sociedad
+      civil para tomar decisiones basadas en datos para la acción climática. Su objetivo
+      es cerrar la brecha de datos sobre emisiones y acelerar la rendición de cuentas
+      y el progreso hacia los objetivos climáticos globales.
+    pt:
+      A Climate TRACE é uma coalizão global que utiliza imagens de satélite, inteligência
+      artificial e outras tecnologias de sensoriamento remoto para monitorar de forma
+      independente as emissões de gases de efeito estufa em quase tempo real. A iniciativa
+      fornece dados de alta resolução, em nível de instalação, cobrindo setores como
+      energia, transporte, agricultura e uso da terra, tornando as informações sobre
+      emissões mais transparentes e acessíveis. Ao oferecer dados gratuitos e disponíveis
+      ao público, a Climate TRACE capacita governos, empresas e a sociedade civil
+      a tomar decisões baseadas em dados para ações climáticas. Seu objetivo é reduzir
+      a lacuna de dados sobre emissões e acelerar a responsabilização e o progresso
+      em direção às metas climáticas globais.
