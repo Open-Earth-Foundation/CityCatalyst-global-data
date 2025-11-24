@@ -14100,7 +14100,7 @@
       Emissionspunkt zuweist. Nach der Identifizierung werden alle Datenpunkte innerhalb
       der Stadtgrenzen aggregiert, um die Gesamtemissionen für den Sektor zu berechnen.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.1.1
   scope: 1
   priority: 1
