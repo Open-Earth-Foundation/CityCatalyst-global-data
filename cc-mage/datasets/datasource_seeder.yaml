@@ -3555,37 +3555,37 @@
   publisher_id: ClimateTRACE version 2025
   datasource_name: ClimateTRACE version 2025
   dataset_name:
-    en: International aviation estimated emissions
-    es: Emisiones estimadas de la aviación internacional
-    pt: Emissões estimadas da aviação internacional
-    fr: Émissions estimées de l'aviation internationale
-    de: Geschätzte Emissionen der internationalen Luftfahrt
+    en: Aviation estimated emissions
+    es: Emisiones estimadas de la aviación
+    pt: Emissões estimadas da aviação
+    fr: Émissions estimées de l'aviation
+    de: Geschätzte Emissionen der Luftfahrt
   dataset_description:
     en:
-      Point source estimates of GHG emissions from international aviation, employing
+      Point source estimates of GHG emissions from aviation, employing
       the ICAO Tier 3a methodology, Version 11 of the ICAO Carbon Emissions Calculator,
       and OAG Historical Flight Status Data to calculate emissions based on fuel consumption,
       including CO2, CH4, and N2O, and attributing them to countries and airports.
     es:
-      Estimaciones de fuentes puntuales de emisiones de GEI de la aviación internacional,
+      Estimaciones de fuentes puntuales de emisiones de GEI de la aviación,
       empleando la metodología Tier 3a de la OACI, la versión 11 de la Calculadora
       de emisiones de carbono de la OACI y los datos históricos del estado de los
       vuelos de la OAG para calcular las emisiones en función del consumo de combustible,
       incluidos CO2, CH4 y N2O, y atribuirlas a países y aeropuertos.
     pt:
-      Estimativas de fontes pontuais de emissões de GEE da aviação internacional,
+      Estimativas de fontes pontuais de emissões de GEE da aviação,
       empregando a metodologia Tier 3a da ICAO, a Versão 11 da Calculadora de Emissões
       de Carbono da ICAO e os Dados Históricos de Status de Voo da OAG para calcular
       as emissões com base no consumo de combustível, incluindo CO2, CH4 e N2O, e
       atribuindo-as a países e aeroportos.
     fr:
-      Estimations des émissions de GES provenant de l'aviation internationale, utilisant
+      Estimations des émissions de GES provenant de l'aviation, utilisant
       la méthodologie Tier 3a de l'OACI, la version 11 du Calculateur d'Émissions
       de Carbone de l'OACI, et les Données Historiques de Statut de Vol de l'OAG pour
       calculer les émissions basées sur la consommation de carburant, y compris le
       CO2, le CH4 et le N2O, et les attribuant aux pays et aux aéroports.
     de:
-      Punktquellen-Schätzungen der Treibhausgasemissionen aus der internationalen
+      Punktquellen-Schätzungen der Treibhausgasemissionen aus der Luftfahrt,
       Luftfahrt, unter Verwendung der ICAO Tier 3a Methodik, Version 11 des ICAO Carbon
       Emissions Calculator und OAG Historische Flugstatusdaten zur Berechnung der
       Emissionen basierend auf dem Kraftstoffverbrauch, einschließlich CO2, CH4 und
@@ -3864,7 +3864,7 @@
       Emissionspunkt zuweist. Nach der Identifizierung werden alle Datenpunkte innerhalb
       der Stadtgrenzen aggregiert, um die Gesamtemissionen für den Sektor zu berechnen.
   retrieval_method: global_api
-  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/city/:locode/:year/:gpcReferenceNumber
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv/city/:locode/:year/:gpcReferenceNumber
   gpc_reference_number: II.4.3
   scope: 3
   priority: 1
@@ -15099,7 +15099,7 @@
       der Stadtgrenzen aggregiert, um die Gesamtemissionen für den Sektor zu berechnen.
   retrieval_method: global_api
   api_endpoint: https://ccglobal.openearth.dev/api/v1/source/ClimateTRACEv2025/city/:locode/:year/:gpcReferenceNumber
-  gpc_reference_number: II.3.3
+  gpc_reference_number: II.3.1
   scope: 1
   priority: 1
   datasource_description:
