@@ -1,0 +1,532 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_path: data_loaders/load_country_buildings.py
+    file_source:
+      path: data_loaders/load_country_buildings.py
+  downstream_blocks:
+  - load_country_building_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_country_buildings
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_country_buildings
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - staging_ct_buildings
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_country_building_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_country_buildings
+  uuid: load_country_building_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - load_mapping_buildings
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_ct_mapping_buildings
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_ct_mapping_buildings
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - staging_ct_buildings
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_mapping_buildings
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_ct_mapping_buildings
+  uuid: load_mapping_buildings
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - ct_staging_v2025
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: staging_ct_buildings
+  retry_config: null
+  status: updated
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_mapping_buildings
+  - load_country_building_db
+  uuid: staging_ct_buildings
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - load_ct_method
+  - load_ct_activity
+  - load_ct_ef
+  - load_ct_emissions
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: ct_staging_v2025
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - staging_ct_buildings
+  - staging_ct_transport
+  - staging_ct_manufactoring
+  - staging_ct_fossilfuels
+  uuid: ct_staging_v2025
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: load_ct_emissions
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - ct_staging_v2025
+  uuid: load_ct_emissions
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: load_ct_ef
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - ct_staging_v2025
+  uuid: load_ct_ef
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: load_ct_method
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - ct_staging_v2025
+  uuid: load_ct_method
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: load_ct_activity
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - ct_staging_v2025
+  uuid: load_ct_activity
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    export_write_policy: append
+  downstream_blocks:
+  - load_country_transportation_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_country_transportation
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_country_transportation
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - staging_ct_transport
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_country_transportation_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_country_transportation
+  uuid: load_country_transportation_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - load_mapping_transportation
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_ct_mapping_transportation
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_ct_mapping_transportation
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - staging_ct_transport
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_mapping_transportation
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_ct_mapping_transportation
+  uuid: load_mapping_transportation
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - ct_staging_v2025
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: staging_ct_transport
+  retry_config: null
+  status: updated
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_mapping_transportation
+  - load_country_transportation_db
+  uuid: staging_ct_transport
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    export_write_policy: append
+    file_path: data_loaders/load_country_manufactoring.py
+    file_source:
+      path: data_loaders/load_country_manufactoring.py
+  downstream_blocks:
+  - load_country_manufactoring_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_country_manufactoring
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_country_manufactoring
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_exporters/load_country_manufactoring_db.py
+  downstream_blocks:
+  - staging_ct_manufactoring
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_country_manufactoring_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_country_manufactoring
+  uuid: load_country_manufactoring_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - load_mapping_manufactoring_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_ct_mapping_manufactoring
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_ct_mapping_manufactoring
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - staging_ct_manufactoring
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_mapping_manufactoring_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_ct_mapping_manufactoring
+  uuid: load_mapping_manufactoring_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - ct_staging_v2025
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: staging_ct_manufactoring
+  retry_config: null
+  status: updated
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_mapping_manufactoring_db
+  - load_country_manufactoring_db
+  uuid: staging_ct_manufactoring
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    export_write_policy: append
+  downstream_blocks:
+  - load_ct_fossilfuel_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_country_fossilfuels
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_country_fossilfuels
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - staging_ct_fossilfuels
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_ct_fossilfuel_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_country_fossilfuels
+  uuid: load_ct_fossilfuel_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - load_ct_mapping_fossilfuels_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_ct_mapping_fossilfuels
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_ct_mapping_fossilfuels
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - staging_ct_fossilfuels
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_ct_mapping_fossilfuels_db
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_ct_mapping_fossilfuels
+  uuid: load_ct_mapping_fossilfuels_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - ct_staging_v2025
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: staging_ct_fossilfuels
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_ct_mapping_fossilfuels_db
+  - load_ct_fossilfuel_db
+  uuid: staging_ct_fossilfuels
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2025-11-17 15:21:56.122638+00:00'
+data_integration: null
+description: This pipeline can load data pulled from the files on climatetrace website
+  by country
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: ghgi_climatetrace_country_all_sectors
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: ghgi_climatetrace_country_all_sectors
+variables:
+  bucket_name: test-global-api
+  country_code: AR
+variables_dir: /home/src/mage_data/cc-mage
+widgets: []

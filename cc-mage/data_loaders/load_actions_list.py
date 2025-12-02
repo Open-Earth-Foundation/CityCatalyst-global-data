@@ -28,6 +28,7 @@ def load_from_s3_bucket(*args, **kwargs):
     object_key_en = 'files/actions/actions_long_list/2025-10-22/cap_climate_actions_en.json'
     object_key_es = 'files/actions/actions_long_list/2025-10-22/cap_climate_actions_es.json'
     object_key_cat = 'files/actions/actions_long_list/2025-10-22/cap_climate_actions_categories.csv'
+    object_key_ki = 'files/actions/actions_long_list/2025-10-22/cap_climate_actions_keyimpacts.csv'
     
     aws_access_key_id = get_secret_value('AWS_ACCESS_KEY_ID')
     aws_secret_access_key = get_secret_value('AWS_SECRET_ACCESS_KEY')
@@ -65,6 +66,10 @@ def load_from_s3_bucket(*args, **kwargs):
         action_cat AS (
             SELECT *
             FROM 's3://{bucket_name}/{object_key_cat}'
+        ),
+        action_key_impacts AS (
+            SELECT *
+            FROM 's3://{bucket_name}/{object_key_ki}'
         )
         SELECT
             a.ActionID AS action_id,
@@ -104,12 +109,14 @@ def load_from_s3_bucket(*args, **kwargs):
             a.AdaptationEffectivenessPerHazard.diseases AS adaptation_effectiveness_diseases,
             a.biome,
             e.action_category,
-            e.action_subcategory
+            e.action_subcategory,
+            f.key_impacts
         FROM actions_en a
         LEFT JOIN actions_es b ON a.ActionID = b.ActionID
         LEFT JOIN actions_pt c ON a.ActionID = c.ActionID
         LEFT JOIN actions_desc d ON a.ActionID = d.ActionID
-        LEFT JOIN action_cat e ON a.ActionID = e.action_id;
+        LEFT JOIN action_cat e ON a.ActionID = e.action_id
+        LEFT JOIN action_key_impacts f ON a.ActionID = f.action_id;
     """
     
     df = conn.execute(query).fetchdf() 
