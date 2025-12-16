@@ -6,10 +6,8 @@ SELECT 	a.sector,
 		a.subsector,
 		_year as emissions_year,
 		upper(gas) as gas_name,
---		lat,
---		lon,
+		locode,
 		emissions_quantity,
---		source_name,
 		null::numeric as activity,
 		null as activity_units,
 		null::numeric as emissions_factor,
@@ -59,12 +57,14 @@ SELECT 		(MD5(CONCAT_WS('-', methodology_name, gpc_reference_number))::UUID) AS 
 			emissions_quantity as emissions_value,
 			(MD5(CONCAT_WS('-', methodology_name, gpc_reference_number))::UUID) AS gpcmethod_id,
 			activity::numeric as activity_value,
-			'{{locode}}' as actor_id,
-			(select city_id from modelled.city_polygon where locode = '{{locode}}') as city_id,
+			a.locode as actor_id,
+			b.city_id,
 			null as geometry_type,
 			null AS geometry_id,
 			null::geometry as geometry 			 
-FROM 		gpc_data a
+FROM 		gpc_data a 
+LEFT JOIN 	modelled.city_polygon b 
+ON 			a.locode = b.locode 
 )
 SELECT 	method_id,
 		methodology_name,

@@ -37,6 +37,7 @@ INSERT INTO modelled.emissions (
     geometry_id
 FROM raw_data.ct_staging_v2025
 GROUP BY emissions_id, datasource_name, actor_id, city_id, gpc_reference_number, emissions_year, gpcmethod_id, gas_name, emissionfactor_id, activity_id, geometry_type, geometry, geometry_id
+HAVING SUM(emissions_value::numeric*1000) > 1
 ON CONFLICT (emissions_id) DO UPDATE SET
     datasource_name = EXCLUDED.datasource_name,
     actor_id = EXCLUDED.actor_id,
