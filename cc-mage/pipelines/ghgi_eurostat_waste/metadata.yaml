@@ -36,6 +36,8 @@ blocks:
   configuration: {}
   downstream_blocks:
   - methane_commitment_eurostats
+  - biological_treatment_eurostats
+  - incineration_eurostats
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -71,10 +73,12 @@ blocks:
   configuration: {}
   downstream_blocks:
   - activity_subcategory_subsector1_eurostats
+  - emissions_subsector1_eurostats
+  - delete_staging_tables_eurostats
   executor_config: null
   executor_type: local_python
   has_callback: false
-  language: sql
+  language: python
   name: mc_eurostats_staging
   retry_config: null
   status: updated
@@ -93,8 +97,7 @@ blocks:
     export_write_policy: append
     limit: 1000
     use_raw_sql: true
-  downstream_blocks:
-  - emissions_subsector1_eurostats
+  downstream_blocks: []
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -113,8 +116,7 @@ blocks:
     data_provider: postgres
     data_provider_profile: default
     export_write_policy: append
-  downstream_blocks:
-  - biological_treatment_eurostats
+  downstream_blocks: []
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -125,9 +127,9 @@ blocks:
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - activity_subcategory_subsector1_eurostats
+  - mc_eurostats_staging
   uuid: emissions_subsector1_eurostats
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     data_provider: postgres
@@ -145,24 +147,20 @@ blocks:
   timeout: null
   type: transformer
   upstream_blocks:
-  - emissions_subsector1_eurostats
+  - cleaning_eurostats
   uuid: biological_treatment_eurostats
 - all_upstream_blocks_executed: false
   color: null
-  configuration:
-    data_provider: postgres
-    data_provider_profile: default
-    dbt: {}
-    disable_query_preprocessing: false
-    export_write_policy: append
-    limit: 1000
-    use_raw_sql: true
+  configuration: {}
   downstream_blocks:
   - activity_subcategory_subsector2_eurostats
+  - emissionfactors_subsector2_eurostats
+  - emissions_subsector2_eurostats
+  - delete_staging_tables_eurostats
   executor_config: null
   executor_type: local_python
   has_callback: false
-  language: sql
+  language: python
   name: biological_treatment_eurostats_staging
   retry_config: null
   status: updated
@@ -177,8 +175,7 @@ blocks:
     data_provider: postgres
     data_provider_profile: default
     export_write_policy: append
-  downstream_blocks:
-  - emissionfactors_subsector2_eurostats
+  downstream_blocks: []
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -197,8 +194,7 @@ blocks:
     data_provider: postgres
     data_provider_profile: default
     export_write_policy: append
-  downstream_blocks:
-  - emissions_subsector2_eurostats
+  downstream_blocks: []
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -209,7 +205,7 @@ blocks:
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - activity_subcategory_subsector2_eurostats
+  - biological_treatment_eurostats_staging
   uuid: emissionfactors_subsector2_eurostats
 - all_upstream_blocks_executed: false
   color: null
@@ -221,8 +217,7 @@ blocks:
     export_write_policy: append
     limit: 1000
     use_raw_sql: true
-  downstream_blocks:
-  - incineration_eurostats
+  downstream_blocks: []
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -233,9 +228,9 @@ blocks:
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - emissionfactors_subsector2_eurostats
+  - biological_treatment_eurostats_staging
   uuid: emissions_subsector2_eurostats
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     data_provider: postgres
@@ -253,17 +248,20 @@ blocks:
   timeout: null
   type: transformer
   upstream_blocks:
-  - emissions_subsector2_eurostats
+  - cleaning_eurostats
   uuid: incineration_eurostats
 - all_upstream_blocks_executed: false
   color: null
   configuration: {}
   downstream_blocks:
   - activity_subcategory_subsector3_eurostats
+  - emissionfactors_subsector3_eurostats
+  - emissions_subsector3_eurostats
+  - delete_staging_tables_eurostats
   executor_config: null
   executor_type: local_python
   has_callback: false
-  language: sql
+  language: python
   name: incineration_eurostats_staging
   retry_config: null
   status: updated
@@ -275,8 +273,7 @@ blocks:
 - all_upstream_blocks_executed: false
   color: null
   configuration: {}
-  downstream_blocks:
-  - emissionfactors_subsector3_eurostats
+  downstream_blocks: []
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -292,8 +289,7 @@ blocks:
 - all_upstream_blocks_executed: false
   color: null
   configuration: {}
-  downstream_blocks:
-  - emissions_subsector3_eurostats
+  downstream_blocks: []
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -304,13 +300,12 @@ blocks:
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - activity_subcategory_subsector3_eurostats
+  - incineration_eurostats_staging
   uuid: emissionfactors_subsector3_eurostats
 - all_upstream_blocks_executed: false
   color: null
   configuration: {}
-  downstream_blocks:
-  - publisher_datasource_eurostat
+  downstream_blocks: []
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -321,13 +316,12 @@ blocks:
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - emissionfactors_subsector3_eurostats
+  - incineration_eurostats_staging
   uuid: emissions_subsector3_eurostats
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration: {}
-  downstream_blocks:
-  - delete_staging_tables_eurostats
+  downstream_blocks: []
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -337,8 +331,7 @@ blocks:
   status: updated
   timeout: null
   type: data_exporter
-  upstream_blocks:
-  - emissions_subsector3_eurostats
+  upstream_blocks: []
   uuid: publisher_datasource_eurostat
 - all_upstream_blocks_executed: false
   color: null
@@ -361,7 +354,9 @@ blocks:
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - publisher_datasource_eurostat
+  - mc_eurostats_staging
+  - biological_treatment_eurostats_staging
+  - incineration_eurostats_staging
   uuid: delete_staging_tables_eurostats
 cache_block_output_in_memory: false
 callbacks: []
