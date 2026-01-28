@@ -53,8 +53,7 @@ SELECT DISTINCT
             activity_name,
             activity_units,
             jsonb_build_object(
-                'scaling-factor', 'population',
-                'original-data', 'MSW-generation-per-capita'
+                'methane-commitment-solid-waste-inboundary-oxidation-factor', 'oxidation-factor-well-managed-landfill'
             )::TEXT,
             MD5(CONCAT_WS(
                 '-',
@@ -84,8 +83,7 @@ SELECT DISTINCT
         activity_name,
         activity_units,
         jsonb_build_object(
-            'scaling-factor', 'population',
-            'original-data', 'MSW-generation-per-capita'
+            'methane-commitment-solid-waste-inboundary-oxidation-factor', 'oxidation-factor-well-managed-landfill'
         )::TEXT,
         MD5(CONCAT_WS(
             '-',
