@@ -137,7 +137,7 @@ def transform(data, *args, **kwargs):
     gdf_III['gpc_reference_number'] = None  # Initialize column
 
     gdf_III.loc[gdf_III['scope'] == 1, 'gpc_reference_number'] = 'III.3.1'
-    gdf_III.loc[gdf_III['scope'] == 3, 'gpc_reference_number'] = 'III.3.3'
+    gdf_III.loc[gdf_III['scope'] == 3, 'gpc_reference_number'] = 'III.3.2'
 
     # methodology id assignation
     gdf_III.loc[gdf_III['scope'] == 1, 'methodology_name'] = 'incineration-waste-inboundary-methodology'

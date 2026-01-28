@@ -64,7 +64,7 @@ def transform(data, *args, **kwargs):
     gdf_II['gpc_reference_number'] = None  # Initialize column
 
     gdf_II.loc[gdf_II['scope'] == 1, 'gpc_reference_number'] = 'III.2.1'
-    gdf_II.loc[gdf_II['scope'] == 3, 'gpc_reference_number'] = 'III.2.3'
+    gdf_II.loc[gdf_II['scope'] == 3, 'gpc_reference_number'] = 'III.2.2'
 
     # methodology id assignation
     gdf_II.loc[gdf_II['scope'] == 1, 'methodology_name'] = 'biological-treatment-inboundary-methodology'

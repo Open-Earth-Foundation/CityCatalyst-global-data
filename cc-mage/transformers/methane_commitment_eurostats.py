@@ -70,7 +70,7 @@ def transform(data, *args, **kwargs):
 
     # scope assignation
     gdf_I.loc[gdf_I['scope'] == 1, 'gpc_reference_number'] = 'III.1.1'
-    gdf_I.loc[gdf_I['scope'] == 3, 'gpc_reference_number'] = 'III.1.3'
+    gdf_I.loc[gdf_I['scope'] == 3, 'gpc_reference_number'] = 'III.1.2'
 
     # methodology id assignation
     gdf_I.loc[gdf_I['scope'] == 1, 'methodology_name'] = 'methane-commitment-solid-waste-inboundary-methodology'
