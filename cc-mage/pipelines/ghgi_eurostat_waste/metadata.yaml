@@ -62,13 +62,13 @@ blocks:
   language: python
   name: methane_commitment_eurostats
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: transformer
   upstream_blocks:
   - cleaning_eurostats
   uuid: methane_commitment_eurostats
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration: {}
   downstream_blocks:
@@ -115,7 +115,11 @@ blocks:
   configuration:
     data_provider: postgres
     data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
     export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
   downstream_blocks: []
   executor_config: null
   executor_type: local_python
@@ -174,7 +178,11 @@ blocks:
   configuration:
     data_provider: postgres
     data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
     export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
   downstream_blocks: []
   executor_config: null
   executor_type: local_python
@@ -193,7 +201,11 @@ blocks:
   configuration:
     data_provider: postgres
     data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
     export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
   downstream_blocks: []
   executor_config: null
   executor_type: local_python
@@ -272,7 +284,14 @@ blocks:
   uuid: incineration_eurostats_staging
 - all_upstream_blocks_executed: false
   color: null
-  configuration: {}
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
   downstream_blocks: []
   executor_config: null
   executor_type: local_python
@@ -288,7 +307,13 @@ blocks:
   uuid: activity_subcategory_subsector3_eurostats
 - all_upstream_blocks_executed: false
   color: null
-  configuration: {}
+  configuration:
+    data_provider: postgres
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
   downstream_blocks: []
   executor_config: null
   executor_type: local_python
@@ -304,7 +329,14 @@ blocks:
   uuid: emissionfactors_subsector3_eurostats
 - all_upstream_blocks_executed: false
   color: null
-  configuration: {}
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
   downstream_blocks: []
   executor_config: null
   executor_type: local_python
@@ -320,7 +352,14 @@ blocks:
   uuid: emissions_subsector3_eurostats
 - all_upstream_blocks_executed: true
   color: null
-  configuration: {}
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
   downstream_blocks: []
   executor_config: null
   executor_type: local_python
