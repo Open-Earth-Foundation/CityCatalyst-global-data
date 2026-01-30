@@ -26,12 +26,12 @@ blocks:
   language: python
   name: load_pop_raw
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: data_loader
   upstream_blocks: []
   uuid: load_pop_raw
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration: {}
   downstream_blocks:
@@ -51,7 +51,7 @@ blocks:
   - load_pop_raw
   - load_raw_data_eurostats
   uuid: cleaning_eurostats
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration: {}
   downstream_blocks:
@@ -133,7 +133,7 @@ blocks:
   upstream_blocks:
   - mc_eurostats_staging
   uuid: emissions_subsector1_eurostats
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: postgres
@@ -242,7 +242,7 @@ blocks:
   upstream_blocks:
   - biological_treatment_eurostats_staging
   uuid: emissions_subsector2_eurostats
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: postgres

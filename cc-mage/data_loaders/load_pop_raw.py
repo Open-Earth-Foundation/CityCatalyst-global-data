@@ -20,7 +20,19 @@ def load_from_s3_bucket(*args, **kwargs):
     config_profile = 'default'
 
     bucket_name = kwargs['bucket_name']
+    #----------------------------------------------
+    # run this line to run the calculation only for Germnay
     object_key = 'raw_data/euro_stast/pop_by_polygon_DE.csv'
+    #----------------------------------------------
+    # run this line to run the calculation for all the countries in the following list
+    # take into account that Germnay is not part of that list
+    # country_codes = [
+    #     'BE', 'BG', 'CZ', 'DK', 'EE', 'IE', 'GR', 'ES', 'FR', 'HR',
+    #     'IT', 'CY', 'LV', 'LT', 'LU', 'HU', 'MT', 'NL', 'AT', 'PL', 'PT',
+    #     'RO', 'SI', 'SK', 'FI', 'SE', 'IS', 'NO', 'CH', 'BA', 'ME', 'MK',
+    #     'AL', 'RS', 'TR', 'XK'
+    # ]
+    #object_key = 'raw_data/euro_stast/eu_city_population.csv'
 
     return S3.with_config(ConfigFileLoader(config_path, config_profile)).load(
         bucket_name,
