@@ -15344,3 +15344,357 @@
       a tomar decisões baseadas em dados para ações climáticas. Seu objetivo é reduzir
       a lacuna de dados sobre emissões e acelerar a responsabilização e o progresso
       em direção às metas climáticas globais.
+- datasource_id: b7f2c1a0-5d4e-4f3a-9b8c-1e2d3c4b5a6f
+  publisher_id: INDEC
+  datasource_name: INDECv2022
+  dataset_name:
+    en: Municipal solid waste generation and CH4 emissions in Misiones cities
+    es: Generación de RSU y emisiones de CH4 en ciudades de Misiones
+    pt: Geração de RSU e emissões de CH4 em cidades de Misiones
+    fr: Génération de déchets solides municipaux et émissions de CH4 dans les villes de Misiones
+    de: Siedlungsabfallerzeugung und CH4-Emissionen in Städten von Misiones
+  dataset_description:
+    en:
+      Annual municipal solid waste (MSW) generation and methane (CH4) emissions for
+      selected cities in the Province of Misiones (Argentina). Population from INDEC
+      Censo 2022 (definitive data); waste generation rate from Indicadores ambientales
+      en el sector productivo argentino (0.51 kg/capita/day for Misiones). Emission
+      factors and facility-level allocation from ClimateTRACE. Covers GPC III.1.1 (solid
+      waste disposal – landfill/open dump) and III.1.2 (biological treatment). Waste
+      within city boundary is Scope 1; waste disposed outside the city is Scope 3.
+    es:
+      Generación anual de residuos sólidos urbanos (RSU) y emisiones de metano (CH4)
+      para ciudades seleccionadas de la provincia de Misiones (Argentina). Población
+      del INDEC Censo 2022 (datos definitivos); tasa de generación de residuos de
+      Indicadores ambientales en el sector productivo argentino (0,51 kg/hab/día para
+      Misiones). Factores de emisión y asignación a nivel de instalación de ClimateTRACE.
+      Cubre GPC III.1.1 (disposición de RSU – relleno/vertedero) y III.1.2 (tratamiento
+      biológico). Residuos dentro del límite urbano son Alcance 1; residuos dispuestos
+      fuera de la ciudad son Alcance 3.
+    pt:
+      Geração anual de resíduos sólidos urbanos (RSU) e emissões de metano (CH4) para
+      cidades selecionadas da província de Misiones (Argentina). População do INDEC
+      Censo 2022 (dados definitivos); taxa de geração de resíduos de Indicadores ambientales
+      en el sector productivo argentino (0,51 kg/hab/dia para Misiones). Fatores de
+      emissão e alocação por instalação de ClimateTRACE. Cobre GPC III.1.1 (disposição
+      de RSU – aterro/vazadouro) e III.1.2 (tratamento biológico). Resíduos dentro
+      do limite da cidade são Escopo 1; resíduos dispostos fora da cidade são Escopo 3.
+    fr:
+      Génération annuelle de déchets solides municipaux (DSM) et émissions de méthane
+      (CH4) pour des villes sélectionnées de la province de Misiones (Argentine). Population
+      de l'INDEC Censo 2022 (données définitives); taux de génération de déchets issu
+      d'Indicadores ambientales en el sector productivo argentino (0,51 kg/hab/jour
+      pour Misiones). Facteurs d'émission et allocation au niveau des installations
+      de ClimateTRACE. Couvre GPC III.1.1 (élimination des DSM – décharge) et III.1.2
+      (traitement biologique). Déchets dans les limites de la ville = Scope 1; déchets
+      éliminés hors de la ville = Scope 3.
+    de:
+      Jährliche Erzeugung von Siedlungsabfällen (MSW) und Methanemissionen (CH4) für
+      ausgewählte Städte der Provinz Misiones (Argentinien). Bevölkerung aus INDEC
+      Censo 2022 (endgültige Daten); Abfallerzeugungsrate aus Indicadores ambientales
+      en el sector productivo argentino (0,51 kg/Einw./Tag für Misiones). Emissionsfaktoren
+      und Anlagenzuordnung von ClimateTRACE. Deckt GPC III.1.1 (Abfallentsorgung –
+      Deponie/Kippe) und III.1.2 (biologische Behandlung) ab. Abfall innerhalb der
+      Stadtgrenze ist Scope 1; außerhalb entsorgter Abfall ist Scope 3.
+  source_type: third_party
+  access_type: public
+  dataset_url: https://censo.gob.ar/index.php/datos_definitivos_misiones/
+  geographical_location: AR
+  start_year: 2022
+  end_year: 2022
+  latest_accounting_year: 2022
+  frequency_of_update: annual
+  spatial_resolution: city
+  language: en
+  accessibility: null
+  data_quality: high
+  notes: 
+  units: kg
+  methodology_description:
+    en:
+      Population from INDEC Censo 2022 (definitive data for Misiones). Waste generation
+      rate (0.51 kg/capita/day) from Indicadores ambientales en el sector productivo
+      argentino (Argentina government report). ClimateTRACE provides emission factors
+      and facility-level activity data; facility locations and reported activity
+      identify the most likely disposal sites. Waste treated within the city boundary
+      is Scope 1; waste disposed outside the city is Scope 3.
+    es:
+      Población del INDEC Censo 2022 (datos definitivos para Misiones). Tasa de generación
+      de residuos (0,51 kg/hab/día) de Indicadores ambientales en el sector productivo
+      argentino (informe del gobierno argentino). ClimateTRACE proporciona factores
+      de emisión y datos de actividad a nivel de instalación; las ubicaciones y la
+      actividad reportada identifican los sitios de disposición más probables. Residuos
+      tratados dentro del límite urbano son Alcance 1; residuos dispuestos fuera de
+      la ciudad son Alcance 3.
+    pt:
+      População do INDEC Censo 2022 (dados definitivos para Misiones). Taxa de geração
+      de resíduos (0,51 kg/hab/dia) de Indicadores ambientales en el sector productivo
+      argentino (relatório do governo argentino). ClimateTRACE fornece fatores de
+      emissão e dados de atividade por instalação; localizações e atividade reportada
+      identificam os locais de disposição mais prováveis. Resíduos tratados dentro do
+      limite da cidade são Escopo 1; resíduos dispostos fora da cidade são Escopo 3.
+    fr:
+      Population de l'INDEC Censo 2022 (données définitives pour Misiones). Taux de
+      génération de déchets (0,51 kg/hab/jour) issu d'Indicadores ambientales en el
+      sector productivo argentino (rapport gouvernement argentin). ClimateTRACE fournit
+      les facteurs d'émission et les données d'activité par installation; les emplacements
+      et l'activité rapportée identifient les sites d'élimination les plus probables.
+      Déchets traités dans les limites de la ville = Scope 1; déchets éliminés hors
+      de la ville = Scope 3.
+    de:
+      Bevölkerung aus INDEC Censo 2022 (endgültige Daten für Misiones). Abfallerzeugungsrate
+      (0,51 kg/Einw./Tag) aus Indicadores ambientales en el sector productivo argentino
+      (argentinischer Regierungsbericht). ClimateTRACE liefert Emissionsfaktoren und
+      Anlagenaktivitätsdaten; Standorte und gemeldete Aktivität identifizieren die
+      wahrscheinlichsten Entsorgungsstandorte. Innerhalb der Stadtgrenze behandelter
+      Abfall ist Scope 1; außerhalb entsorgter Abfall ist Scope 3.
+  methodology_url: https://www.argentina.gob.ar/sites/default/files/2021/09/indicadores_ambientales_en_el_sector_productivo_argentino.pdf
+  transformation_description:
+    en:
+      City-level MSW (kg/year) = population × 0.51 (kg/capita/day) × 365. Emissions
+      (kg CH4) = activity × emission factor. ClimateTRACE facility data used to
+      assign disposal site and scope (within city = Scope 1, outside = Scope 3).
+      Results mapped to GPC III.1.1 (disposal) and III.1.2 (biological treatment).
+    es:
+      RSU a nivel ciudad (kg/año) = población × 0,51 (kg/hab/día) × 365. Emisiones
+      (kg CH4) = actividad × factor de emisión. Datos de instalaciones ClimateTRACE
+      usados para asignar sitio de disposición y alcance (dentro de la ciudad = Alcance
+      1, fuera = Alcance 3). Resultados mapeados a GPC III.1.1 (disposición) y III.1.2
+      (tratamiento biológico).
+    pt:
+      RSU a nível de cidade (kg/ano) = população × 0,51 (kg/hab/dia) × 365. Emissões
+      (kg CH4) = atividade × fator de emissão. Dados de instalações ClimateTRACE usados
+      para atribuir local de disposição e escopo (dentro da cidade = Escopo 1, fora
+      = Escopo 3). Resultados mapeados para GPC III.1.1 (disposição) e III.1.2 (tratamento
+      biológico).
+    fr:
+      DSM au niveau ville (kg/an) = population × 0,51 (kg/hab/jour) × 365. Émissions
+      (kg CH4) = activité × facteur d'émission. Données d'installations ClimateTRACE
+      utilisées pour attribuer le site d'élimination et le scope (dans la ville =
+      Scope 1, hors = Scope 3). Résultats mappés sur GPC III.1.1 (élimination) et
+      III.1.2 (traitement biologique).
+    de:
+      MSW auf Stadtebene (kg/Jahr) = Bevölkerung × 0,51 (kg/Einw./Tag) × 365. Emissionen
+      (kg CH4) = Aktivität × Emissionsfaktor. ClimateTRACE-Anlagendaten zur Zuordnung
+      von Entsorgungsstandort und Scope (innerhalb der Stadt = Scope 1, außerhalb =
+      Scope 3). Ergebnisse auf GPC III.1.1 (Entsorgung) und III.1.2 (biologische
+      Behandlung) abgebildet.
+  retrieval_method: global_api
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/INDECv2022/city/:locode/:year/:gpcReferenceNumber
+  gpc_reference_number: III.1.1
+  scope: 1
+  priority: 1
+  datasource_description:
+    en:
+      INDEC (Instituto Nacional de Estadística y Censos) is Argentina's national
+      statistics and census institute. The Censo 2022 definitive data for Misiones
+      provides population by locality. This pipeline combines INDEC population, a
+      provincial waste generation rate (Argentina government report), and ClimateTRACE
+      emission factors to estimate city-level MSW generation and CH4 emissions for
+      Oberá, Posadas, and Eldorado.
+    es:
+      El INDEC (Instituto Nacional de Estadística y Censos) es el organismo nacional
+      de estadística y censos de Argentina. Los datos definitivos del Censo 2022
+      para Misiones proporcionan población por localidad. Este pipeline combina población
+      del INDEC, una tasa provincial de generación de residuos (informe del gobierno
+      argentino) y factores de emisión de ClimateTRACE para estimar la generación
+      de RSU y las emisiones de CH4 a nivel ciudad para Oberá, Posadas y Eldorado.
+    pt:
+      O INDEC (Instituto Nacional de Estadística y Censos) é o instituto nacional
+      de estatística e censos da Argentina. Os dados definitivos do Censo 2022 para
+      Misiones fornecem população por localidade. Este pipeline combina população
+      do INDEC, uma taxa provincial de geração de resíduos (relatório do governo
+      argentino) e fatores de emissão da ClimateTRACE para estimar a geração de RSU
+      e as emissões de CH4 em nível de cidade para Oberá, Posadas e Eldorado.
+    fr:
+      L'INDEC (Instituto Nacional de Estadística y Censos) est l'institut national
+      des statistiques et des recensements de l'Argentine. Les données définitives
+      du Censo 2022 pour Misiones fournissent la population par localité. Ce pipeline
+      combine la population de l'INDEC, un taux provincial de génération de déchets
+      (rapport gouvernement argentin) et les facteurs d'émission ClimateTRACE pour
+      estimer la génération de DSM et les émissions de CH4 au niveau ville pour Oberá,
+      Posadas et Eldorado.
+    de:
+      INDEC (Instituto Nacional de Estadística y Censos) ist Argentiniens nationales
+      Statistik- und Volkszählungsinstitut. Die endgültigen Daten des Censo 2022 für
+      Misiones liefern die Bevölkerung nach Ort. Dieser Pipeline kombiniert INDEC-Bevölkerung,
+      eine provinzielle Abfallerzeugungsrate (argentinischer Regierungsbericht) und
+      ClimateTRACE-Emissionsfaktoren zur Schätzung der MSW-Erzeugung und CH4-Emissionen
+      auf Stadtebene für Oberá, Posadas und Eldorado.
+- datasource_id: 4315b6c0-9868-489e-943c-04a15b15d555
+  publisher_id: INDEC
+  datasource_name: INDECv2022
+  dataset_name:
+    en: Municipal solid waste generation and CH4 emissions in Misiones cities
+    es: Generación de RSU y emisiones de CH4 en ciudades de Misiones
+    pt: Geração de RSU e emissões de CH4 em cidades de Misiones
+    fr: Génération de déchets solides municipaux et émissions de CH4 dans les villes de Misiones
+    de: Siedlungsabfallerzeugung und CH4-Emissionen in Städten von Misiones
+  dataset_description:
+    en:
+      Annual municipal solid waste (MSW) generation and methane (CH4) emissions for
+      selected cities in the Province of Misiones (Argentina). Population from INDEC
+      Censo 2022 (definitive data); waste generation rate from Indicadores ambientales
+      en el sector productivo argentino (0.51 kg/capita/day for Misiones). Emission
+      factors and facility-level allocation from ClimateTRACE. Covers GPC III.1.1 (solid
+      waste disposal – landfill/open dump) and III.1.2 (biological treatment). Waste
+      within city boundary is Scope 1; waste disposed outside the city is Scope 3.
+    es:
+      Generación anual de residuos sólidos urbanos (RSU) y emisiones de metano (CH4)
+      para ciudades seleccionadas de la provincia de Misiones (Argentina). Población
+      del INDEC Censo 2022 (datos definitivos); tasa de generación de residuos de
+      Indicadores ambientales en el sector productivo argentino (0,51 kg/hab/día para
+      Misiones). Factores de emisión y asignación a nivel de instalación de ClimateTRACE.
+      Cubre GPC III.1.1 (disposición de RSU – relleno/vertedero) y III.1.2 (tratamiento
+      biológico). Residuos dentro del límite urbano son Alcance 1; residuos dispuestos
+      fuera de la ciudad son Alcance 3.
+    pt:
+      Geração anual de resíduos sólidos urbanos (RSU) e emissões de metano (CH4) para
+      cidades selecionadas da província de Misiones (Argentina). População do INDEC
+      Censo 2022 (dados definitivos); taxa de geração de resíduos de Indicadores ambientales
+      en el sector productivo argentino (0,51 kg/hab/dia para Misiones). Fatores de
+      emissão e alocação por instalação de ClimateTRACE. Cobre GPC III.1.1 (disposição
+      de RSU – aterro/vazadouro) e III.1.2 (tratamento biológico). Resíduos dentro
+      do limite da cidade são Escopo 1; resíduos dispostos fora da cidade são Escopo 3.
+    fr:
+      Génération annuelle de déchets solides municipaux (DSM) et émissions de méthane
+      (CH4) pour des villes sélectionnées de la province de Misiones (Argentine). Population
+      de l'INDEC Censo 2022 (données définitives); taux de génération de déchets issu
+      d'Indicadores ambientales en el sector productivo argentino (0,51 kg/hab/jour
+      pour Misiones). Facteurs d'émission et allocation au niveau des installations
+      de ClimateTRACE. Couvre GPC III.1.1 (élimination des DSM – décharge) et III.1.2
+      (traitement biologique). Déchets dans les limites de la ville = Scope 1; déchets
+      éliminés hors de la ville = Scope 3.
+    de:
+      Jährliche Erzeugung von Siedlungsabfällen (MSW) und Methanemissionen (CH4) für
+      ausgewählte Städte der Provinz Misiones (Argentinien). Bevölkerung aus INDEC
+      Censo 2022 (endgültige Daten); Abfallerzeugungsrate aus Indicadores ambientales
+      en el sector productivo argentino (0,51 kg/Einw./Tag für Misiones). Emissionsfaktoren
+      und Anlagenzuordnung von ClimateTRACE. Deckt GPC III.1.1 (Abfallentsorgung –
+      Deponie/Kippe) und III.1.2 (biologische Behandlung) ab. Abfall innerhalb der
+      Stadtgrenze ist Scope 1; außerhalb entsorgter Abfall ist Scope 3.
+  source_type: third_party
+  access_type: public
+  dataset_url: https://censo.gob.ar/index.php/datos_definitivos_misiones/
+  geographical_location: AR
+  start_year: 2022
+  end_year: 2022
+  latest_accounting_year: 2022
+  frequency_of_update: annual
+  spatial_resolution: city
+  language: en
+  accessibility: null
+  data_quality: high
+  notes: 
+  units: kg
+  methodology_description:
+    en:
+      Population from INDEC Censo 2022 (definitive data for Misiones). Waste generation
+      rate (0.51 kg/capita/day) from Indicadores ambientales en el sector productivo
+      argentino (Argentina government report). ClimateTRACE provides emission factors
+      and facility-level activity data; facility locations and reported activity
+      identify the most likely disposal sites. Waste treated within the city boundary
+      is Scope 1; waste disposed outside the city is Scope 3.
+    es:
+      Población del INDEC Censo 2022 (datos definitivos para Misiones). Tasa de generación
+      de residuos (0,51 kg/hab/día) de Indicadores ambientales en el sector productivo
+      argentino (informe del gobierno argentino). ClimateTRACE proporciona factores
+      de emisión y datos de actividad a nivel de instalación; las ubicaciones y la
+      actividad reportada identifican los sitios de disposición más probables. Residuos
+      tratados dentro del límite urbano son Alcance 1; residuos dispuestos fuera de
+      la ciudad son Alcance 3.
+    pt:
+      População do INDEC Censo 2022 (dados definitivos para Misiones). Taxa de geração
+      de resíduos (0,51 kg/hab/dia) de Indicadores ambientales en el sector productivo
+      argentino (relatório do governo argentino). ClimateTRACE fornece fatores de
+      emissão e dados de atividade por instalação; localizações e atividade reportada
+      identificam os locais de disposição mais prováveis. Resíduos tratados dentro do
+      limite da cidade são Escopo 1; resíduos dispostos fora da cidade são Escopo 3.
+    fr:
+      Population de l'INDEC Censo 2022 (données définitives pour Misiones). Taux de
+      génération de déchets (0,51 kg/hab/jour) issu d'Indicadores ambientales en el
+      sector productivo argentino (rapport gouvernement argentin). ClimateTRACE fournit
+      les facteurs d'émission et les données d'activité par installation; les emplacements
+      et l'activité rapportée identifient les sites d'élimination les plus probables.
+      Déchets traités dans les limites de la ville = Scope 1; déchets éliminés hors
+      de la ville = Scope 3.
+    de:
+      Bevölkerung aus INDEC Censo 2022 (endgültige Daten für Misiones). Abfallerzeugungsrate
+      (0,51 kg/Einw./Tag) aus Indicadores ambientales en el sector productivo argentino
+      (argentinischer Regierungsbericht). ClimateTRACE liefert Emissionsfaktoren und
+      Anlagenaktivitätsdaten; Standorte und gemeldete Aktivität identifizieren die
+      wahrscheinlichsten Entsorgungsstandorte. Innerhalb der Stadtgrenze behandelter
+      Abfall ist Scope 1; außerhalb entsorgter Abfall ist Scope 3.
+  methodology_url: https://www.argentina.gob.ar/sites/default/files/2021/09/indicadores_ambientales_en_el_sector_productivo_argentino.pdf
+  transformation_description:
+    en:
+      City-level MSW (kg/year) = population × 0.51 (kg/capita/day) × 365. Emissions
+      (kg CH4) = activity × emission factor. ClimateTRACE facility data used to
+      assign disposal site and scope (within city = Scope 1, outside = Scope 3).
+      Results mapped to GPC III.1.1 (disposal) and III.1.2 (biological treatment).
+    es:
+      RSU a nivel ciudad (kg/año) = población × 0,51 (kg/hab/día) × 365. Emisiones
+      (kg CH4) = actividad × factor de emisión. Datos de instalaciones ClimateTRACE
+      usados para asignar sitio de disposición y alcance (dentro de la ciudad = Alcance
+      1, fuera = Alcance 3). Resultados mapeados a GPC III.1.1 (disposición) y III.1.2
+      (tratamiento biológico).
+    pt:
+      RSU a nível de cidade (kg/ano) = população × 0,51 (kg/hab/dia) × 365. Emissões
+      (kg CH4) = atividade × fator de emissão. Dados de instalações ClimateTRACE usados
+      para atribuir local de disposição e escopo (dentro da cidade = Escopo 1, fora
+      = Escopo 3). Resultados mapeados para GPC III.1.1 (disposição) e III.1.2 (tratamento
+      biológico).
+    fr:
+      DSM au niveau ville (kg/an) = population × 0,51 (kg/hab/jour) × 365. Émissions
+      (kg CH4) = activité × facteur d'émission. Données d'installations ClimateTRACE
+      utilisées pour attribuer le site d'élimination et le scope (dans la ville =
+      Scope 1, hors = Scope 3). Résultats mappés sur GPC III.1.1 (élimination) et
+      III.1.2 (traitement biologique).
+    de:
+      MSW auf Stadtebene (kg/Jahr) = Bevölkerung × 0,51 (kg/Einw./Tag) × 365. Emissionen
+      (kg CH4) = Aktivität × Emissionsfaktor. ClimateTRACE-Anlagendaten zur Zuordnung
+      von Entsorgungsstandort und Scope (innerhalb der Stadt = Scope 1, außerhalb =
+      Scope 3). Ergebnisse auf GPC III.1.1 (Entsorgung) und III.1.2 (biologische
+      Behandlung) abgebildet.
+  retrieval_method: global_api
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/INDECv2022/city/:locode/:year/:gpcReferenceNumber
+  gpc_reference_number: III.1.2
+  scope: 3
+  priority: 1
+  datasource_description:
+    en:
+      INDEC (Instituto Nacional de Estadística y Censos) is Argentina's national
+      statistics and census institute. The Censo 2022 definitive data for Misiones
+      provides population by locality. This pipeline combines INDEC population, a
+      provincial waste generation rate (Argentina government report), and ClimateTRACE
+      emission factors to estimate city-level MSW generation and CH4 emissions for
+      Oberá, Posadas, and Eldorado.
+    es:
+      El INDEC (Instituto Nacional de Estadística y Censos) es el organismo nacional
+      de estadística y censos de Argentina. Los datos definitivos del Censo 2022
+      para Misiones proporcionan población por localidad. Este pipeline combina población
+      del INDEC, una tasa provincial de generación de residuos (informe del gobierno
+      argentino) y factores de emisión de ClimateTRACE para estimar la generación
+      de RSU y las emisiones de CH4 a nivel ciudad para Oberá, Posadas y Eldorado.
+    pt:
+      O INDEC (Instituto Nacional de Estadística y Censos) é o instituto nacional
+      de estatística e censos da Argentina. Os dados definitivos do Censo 2022 para
+      Misiones fornecem população por localidade. Este pipeline combina população
+      do INDEC, uma taxa provincial de geração de resíduos (relatório do governo
+      argentino) e fatores de emissão da ClimateTRACE para estimar a geração de RSU
+      e as emissões de CH4 em nível de cidade para Oberá, Posadas e Eldorado.
+    fr:
+      L'INDEC (Instituto Nacional de Estadística y Censos) est l'institut national
+      des statistiques et des recensements de l'Argentine. Les données définitives
+      du Censo 2022 pour Misiones fournissent la population par localité. Ce pipeline
+      combine la population de l'INDEC, un taux provincial de génération de déchets
+      (rapport gouvernement argentin) et les facteurs d'émission ClimateTRACE pour
+      estimer la génération de DSM et les émissions de CH4 au niveau ville pour Oberá,
+      Posadas et Eldorado.
+    de:
+      INDEC (Instituto Nacional de Estadística y Censos) ist Argentiniens nationales
+      Statistik- und Volkszählungsinstitut. Die endgültigen Daten des Censo 2022 für
+      Misiones liefern die Bevölkerung nach Ort. Dieser Pipeline kombiniert INDEC-Bevölkerung,
+      eine provinzielle Abfallerzeugungsrate (argentinischer Regierungsbericht) und
+      ClimateTRACE-Emissionsfaktoren zur Schätzung der MSW-Erzeugung und CH4-Emissionen
+      auf Stadtebene für Oberá, Posadas und Eldorado.
