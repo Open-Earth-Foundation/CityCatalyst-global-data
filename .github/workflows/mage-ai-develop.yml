@@ -32,7 +32,7 @@ jobs:
       - name: Pushing mageai to GHCR
         env:
           VERSION: ${{ github.sha }}
-          IMAGE: ghcr.io/open-earth-foundation/citycatalyst-mage-ai
+          IMAGE: ghcr.io/open-earth-foundation/globalapi-mage-ai
         run: |
           docker build -t $IMAGE:$VERSION .
           docker tag $IMAGE:$VERSION $IMAGE:latest
