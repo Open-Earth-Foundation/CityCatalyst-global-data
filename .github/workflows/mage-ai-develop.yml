@@ -12,6 +12,9 @@ on:
 jobs:
   pushToGHCR:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
     defaults:
       run:
         working-directory: ./
