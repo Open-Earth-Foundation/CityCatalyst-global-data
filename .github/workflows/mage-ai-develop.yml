@@ -4,13 +4,10 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - cc-mage/**
+      - cc-mage/requirements.txt
+      - Dockerfile
       - .github/workflows/mage-ai-develop.yml
     branches: ["develop"]
-  pull_request:
-    paths:
-      - cc-mage/**
-      - .github/workflows/mage-ai-develop.yml
 
 jobs:
   pushToGHCR:
