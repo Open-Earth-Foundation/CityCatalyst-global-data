@@ -15698,7 +15698,7 @@
       eine provinzielle Abfallerzeugungsrate (argentinischer Regierungsbericht) und
       ClimateTRACE-Emissionsfaktoren zur Schätzung der MSW-Erzeugung und CH4-Emissionen
       auf Stadtebene für Oberá, Posadas und Eldorado.
-- datasource_id: E1A2B3C4-D5E6-F7G8-H9I0-J1K2L3M4N5O6
+- datasource_id: 422ad877-bc47-4682-8cea-0402995d4558
   publisher_id: EuroStat
   datasource_name: Eurostat Municipal Waste Statistics
   dataset_name:
@@ -15864,7 +15864,7 @@
       dados apoiam o desenvolvimento de políticas ambientais, o planejamento de gestão de resíduos e a ação
       climática, rastreando fluxos de resíduos, taxas de reciclagem e métodos de disposição. O Eurostat garante
       a comparabilidade dos dados entre países por meio de metodologias padronizadas e controles de qualidade.
-- datasource_id: F2B3C4D5-E6F7-G8H9-I0J1-K2L3M4N5O6P7
+- datasource_id: 38d59e39-5ed9-43e2-a3df-96dc0d6b74f1 
   publisher_id: EuroStat
   datasource_name: Eurostat Municipal Waste Statistics
   dataset_name:
@@ -16031,7 +16031,7 @@
       dados apoiam o desenvolvimento de políticas ambientais, o planejamento de gestão de resíduos e a ação
       climática, rastreando fluxos de resíduos, taxas de reciclagem e métodos de disposição. O Eurostat garante
       a comparabilidade dos dados entre países por meio de metodologias padronizadas e controles de qualidade.
-- datasource_id: G3C4D5E6-F7G8-H9I0-J1K2-L3M4N5O6P7Q8
+- datasource_id: 6d72ada4-69d8-45bd-b33b-f4382e32f6f5
   publisher_id: EuroStat
   datasource_name: Eurostat Municipal Waste Statistics
   dataset_name:
@@ -16197,7 +16197,7 @@
       dados apoiam o desenvolvimento de políticas ambientais, o planejamento de gestão de resíduos e a ação
       climática, rastreando fluxos de resíduos, taxas de reciclagem e métodos de disposição. O Eurostat garante
       a comparabilidade dos dados entre países por meio de metodologias padronizadas e controles de qualidade.
-- datasource_id: H4D5E6F7-G8H9-I0J1-K2L3-M4N5O6P7Q8R9
+- datasource_id: 698101db-3500-4111-ab8d-6d06203c2420
   publisher_id: EuroStat
   datasource_name: Eurostat Municipal Waste Statistics
   dataset_name:
@@ -16365,7 +16365,7 @@
       dados apoiam o desenvolvimento de políticas ambientais, o planejamento de gestão de resíduos e a ação
       climática, rastreando fluxos de resíduos, taxas de reciclagem e métodos de disposição. O Eurostat garante
       a comparabilidade dos dados entre países por meio de metodologias padronizadas e controles de qualidade.
-- datasource_id: I5E6F7G8-H9I0-J1K2-L3M4-N5O6P7Q8R9S0
+- datasource_id: fbe23136-385f-48e4-b090-fc2c895564a4
   publisher_id: EuroStat
   datasource_name: Eurostat Municipal Waste Statistics
   dataset_name:
@@ -16547,7 +16547,7 @@
       dados apoiam o desenvolvimento de políticas ambientais, o planejamento de gestão de resíduos e a ação
       climática, rastreando fluxos de resíduos, taxas de reciclagem e métodos de disposição. O Eurostat garante
       a comparabilidade dos dados entre países por meio de metodologias padronizadas e controles de qualidade.
-- datasource_id: J6F7G8H9-I0J1-K2L3-M4N5-O6P7Q8R9S0T1
+- datasource_id: 82c72d4f-f213-4c50-a944-c59610c7d067
   publisher_id: EuroStat
   datasource_name: Eurostat Municipal Waste Statistics
   dataset_name:
