@@ -15698,3 +15698,1039 @@
       eine provinzielle Abfallerzeugungsrate (argentinischer Regierungsbericht) und
       ClimateTRACE-Emissionsfaktoren zur Schätzung der MSW-Erzeugung und CH4-Emissionen
       auf Stadtebene für Oberá, Posadas und Eldorado.
+- datasource_id: 422ad877-bc47-4682-8cea-0402995d4558
+  publisher_id: EuroStat
+  datasource_name: Eurostat Municipal Waste Statistics
+  dataset_name:
+    en: Municipal Solid Waste Disposal in Managed Landfills (European Union)
+    es: Disposición de Residuos Sólidos Municipales en Rellenos Sanitarios Gestionados (Unión Europea)
+    pt: Disposição de Resíduos Sólidos Municipais em Aterros Gerenciados (União Europeia)
+    fr: Élimination des Déchets Solides Municipaux dans des Décharges Gérées (Union Européenne)
+    de: Entsorgung von festen Siedlungsabfällen in verwalteten Deponien (Europäische Union)
+  dataset_description:
+    en: |
+      This dataset provides GHG emissions estimates from municipal solid waste disposed in managed landfills
+      across European Union member states. Emissions are calculated using the IPCC 2006 methane commitment
+      methodology, accounting for degradable organic carbon content and methane generation potential. The data
+      is spatially allocated to cities and municipalities based on population distribution using the Global
+      Human Settlement Layer (GHS-POP). Waste generation rates and management fractions are derived from
+      Eurostat national statistics for 2023. This entry covers Scope 1 emissions occurring at landfills
+      within city administrative boundaries.
+    es: |
+      Este conjunto de datos proporciona estimaciones de emisiones de GEI provenientes de residuos sólidos
+      municipales dispuestos en rellenos sanitarios gestionados en los estados miembros de la Unión Europea.
+      Las emisiones se calculan utilizando la metodología de compromiso de metano IPCC 2006, considerando
+      el contenido de carbono orgánico degradable y el potencial de generación de metano. Los datos se
+      asignan espacialmente a ciudades y municipios según la distribución de población utilizando el Global
+      Human Settlement Layer (GHS-POP). Las tasas de generación de residuos y las fracciones de gestión se
+      derivan de las estadísticas nacionales de Eurostat para 2023. Esta entrada cubre emisiones de Alcance 1
+      que ocurren en rellenos sanitarios dentro de los límites administrativos de la ciudad.
+    pt: |
+      Este conjunto de dados fornece estimativas de emissões de GEE provenientes de resíduos sólidos
+      municipais dispostos em aterros gerenciados nos estados membros da União Europeia. As emissões são
+      calculadas usando a metodologia de compromisso de metano do IPCC 2006, considerando o conteúdo de
+      carbono orgânico degradável e o potencial de geração de metano. Os dados são alocados espacialmente
+      para cidades e municípios com base na distribuição populacional usando o Global Human Settlement Layer
+      (GHS-POP). As taxas de geração de resíduos e as frações de gestão são derivadas das estatísticas
+      nacionais do Eurostat para 2023. Esta entrada cobre emissões de Escopo 1 que ocorrem em aterros
+      dentro dos limites administrativos da cidade.
+    fr: |
+      Cet ensemble de données fournit des estimations des émissions de GES provenant des déchets solides
+      municipaux éliminés dans des décharges gérées dans les États membres de l'Union européenne. Les
+      émissions sont calculées selon la méthodologie d'engagement du méthane du GIEC 2006, en tenant compte
+      de la teneur en carbone organique dégradable et du potentiel de génération de méthane. Les données
+      sont réparties spatialement aux villes et municipalités en fonction de la distribution de la population
+      à l'aide du Global Human Settlement Layer (GHS-POP). Les taux de génération de déchets et les fractions
+      de gestion proviennent des statistiques nationales d'Eurostat pour 2023. Cette entrée couvre les
+      émissions de Portée 1 se produisant dans les décharges à l'intérieur des limites administratives de la ville.
+    de: |
+      Dieser Datensatz bietet Schätzungen der Treibhausgasemissionen aus festen Siedlungsabfällen, die in
+      verwalteten Deponien in den Mitgliedstaaten der Europäischen Union entsorgt werden. Die Emissionen
+      werden nach der IPCC 2006 Methanverpflichtungsmethodik berechnet, unter Berücksichtigung des abbaubaren
+      organischen Kohlenstoffgehalts und des Methanerzeugungspotenzials. Die Daten werden räumlich auf Städte
+      und Gemeinden basierend auf der Bevölkerungsverteilung unter Verwendung des Global Human Settlement
+      Layer (GHS-POP) zugeordnet. Die Abfallerzeugungsraten und Bewirtschaftungsanteile stammen aus den
+      nationalen Statistiken von Eurostat für 2023. Dieser Eintrag umfasst Scope 1-Emissionen, die auf
+      Deponien innerhalb der Verwaltungsgrenzen der Stadt auftreten.
+  source_type: third_party
+  access_type: public
+  dataset_url: https://ec.europa.eu/eurostat/databrowser/view/ENV_WASMUN/default/table
+  geographical_location: EU
+  start_year: 2023
+  end_year: 2023
+  latest_accounting_year: 2023
+  frequency_of_update: annual
+  spatial_resolution: city
+  language: en
+  accessibility: null
+  data_quality: medium
+  notes: |
+    Population-based allocation methodology. Emissions scale linearly with population size. 
+    Does not account for city-specific waste management efficiency or local policies. 
+    Suitable for broad-scale estimation where facility-specific data is unavailable.
+    Scope 1 assigned to cities containing landfill facilities within their boundaries.
+  units: kg
+  methodology_description:
+    en: |
+      Methane emissions calculated using IPCC 2006 methane commitment method (Chapter 3, Equation 3.1).
+      Emission factor and default parameters are applied to make the calculations (IPCC 2006).
+      Waste allocated by population using GHS-POP 2020. National landfill fractions from Eurostat 2023.
+    es: |
+      Emisiones de metano calculadas mediante el método de compromiso de metano IPCC 2006 (Capítulo 3, Ecuación 3.1).
+      Factores de emisión y parámetros predeterminados se aplican para realizar los cálculos (MCF=1.0, DOC=2.05, DOCf=0.6, F=0.5, frec=0, OX=0.1).
+      Residuos asignados por población usando GHS-POP 2020. Fracciones de relleno nacionales de Eurostat 2023.
+    pt: |
+      Emissões de metano calculadas usando o método de compromisso de metano do IPCC 2006 (Capítulo 3, Equação 3.1).
+      Factores de emissão e parâmetros padrão se aplicam para realizar os cálculos (MCF=1.0, DOC=2.05, DOCf=0.6, F=0.5, frec=0, OX=0.1).
+      Resíduos alocados por população usando GHS-POP 2020. Frações de aterro nacionais do Eurostat 2023.
+    fr: |
+      Émissions de méthane calculées selon la méthode d'engagement du méthane du GIEC 2006 (Chapitre 3, Équation 3.1):
+      Facteurs d'émission et paramètres par défaut se appliquent pour effectuer les calculs (MCF=1.0, DOC=2.05, DOCf=0.6, F=0.5, frec=0, OX=0.1).
+      Déchets alloués par population en utilisant GHS-POP 2020. Fractions de décharge nationales d'Eurostat 2023.
+    de: |
+      Methanemissionen berechnet nach der IPCC 2006 Methanverpflichtungsmethode (Kapitel 3, Gleichung 3.1):
+      Facteurs d'émission et paramètres par défaut se appliquent pour effectuer les calculs (MCF=1.0, DOC=2.05, DOCf=0.6, F=0.5, frec=0, OX=0.1).
+      Abfall nach Bevölkerung zugeordnet unter Verwendung von GHS-POP 2020. Nationale Deponieanteile aus Eurostat 2023.
+  methodology_url: https://www.ipcc-nggip.iges.or.jp/public/2006gl/vol5.html
+  transformation_description:
+    en: |
+      Population extracted from GHS-POP (2020) using zonal statistics within city polygons. National per capita
+      waste generation rates and management type distributions obtained from Eurostat Municipal Waste Statistics
+      (2023). Waste amounts calculated as: Total_Waste = Population × Waste_per_capita × Landfill_fraction.
+      Emissions calculated using IPCC 2006 default parameters for Western Europe. Scope 1 assigned to cities
+      containing landfill facilities (spatial join with facility point locations). Results expressed as
+      kg CH₄ per city per year (2023 accounting year). Methane commitment approach assumes all emissions
+      occur in the disposal year.
+    es: |
+      Población extraída de GHS-POP (2020) mediante estadísticas zonales dentro de polígonos urbanos. Tasas
+      nacionales de generación de residuos per cápita y distribuciones por tipo de gestión obtenidas de las
+      Estadísticas de Residuos Municipales de Eurostat (2023). Cantidades de residuos calculadas como:
+      Total_Residuos = Población × Residuos_per_capita × Fracción_relleno. Emisiones calculadas usando
+      parámetros predeterminados IPCC 2006 para Europa Occidental. Alcance 1 asignado a ciudades que contienen
+      instalaciones de relleno sanitario (unión espacial con ubicaciones puntuales de instalaciones).
+      Resultados expresados como kg CH₄ por ciudad por año (año contable 2023). El enfoque de compromiso
+      de metano asume que todas las emisiones ocurren en el año de disposición.
+    pt: |
+      População extraída do GHS-POP (2020) usando estatísticas zonais dentro de polígonos urbanos. Taxas
+      nacionais de geração de resíduos per capita e distribuições por tipo de gestão obtidas das Estatísticas
+      de Resíduos Municipais do Eurostat (2023). Quantidades de resíduos calculadas como: Total_Resíduos =
+      População × Resíduos_per_capita × Fração_aterro. Emissões calculadas usando parâmetros padrão do IPCC 2006
+      para a Europa Ocidental. Escopo 1 atribuído a cidades contendo instalações de aterro (junção espacial
+      com localizações pontuais de instalações). Resultados expressos como kg CH₄ por cidade por ano
+      (ano contábil 2023). A abordagem de compromisso de metano assume que todas as emissões ocorrem no
+      ano de disposição.
+    fr: |
+      Population extraite de GHS-POP (2020) en utilisant des statistiques zonales à l'intérieur des polygones
+      urbains. Taux nationaux de génération de déchets par habitant et distributions par type de gestion
+      obtenus des Statistiques des Déchets Municipaux d'Eurostat (2023). Quantités de déchets calculées comme:
+      Total_Déchets = Population × Déchets_par_habitant × Fraction_décharge. Émissions calculées en utilisant
+      les paramètres par défaut du GIEC 2006 pour l'Europe occidentale. Portée 1 attribuée aux villes contenant
+      des installations de décharge (jointure spatiale avec emplacements ponctuels des installations).
+      Résultats exprimés en kg CH₄ par ville par an (année comptable 2023). L'approche d'engagement du méthane
+      suppose que toutes les émissions se produisent l'année de l'élimination.
+    de: |
+      Bevölkerung aus GHS-POP (2020) mittels Zonenstatistiken innerhalb von Stadtpolygonen extrahiert. Nationale
+      Pro-Kopf-Abfallerzeugungsraten und Verteilungen nach Bewirtschaftungsart aus den kommunalen Abfallstatistiken
+      von Eurostat (2023) erhalten. Abfallmengen berechnet als: Gesamt_Abfall = Bevölkerung × Abfall_pro_Kopf ×
+      Deponieanteil. Emissionen unter Verwendung von IPCC 2006-Standardparametern für Westeuropa berechnet.
+      Scope 1 Städten zugewiesen, die Deponieanlagen enthalten (räumliche Verknüpfung mit Anlagenpunktstandorten).
+      Ergebnisse ausgedrückt als kg CH₄ pro Stadt pro Jahr (Rechnungsjahr 2023). Der Methanverpflichtungsansatz
+      geht davon aus, dass alle Emissionen im Entsorgungsjahr auftreten.
+  retrieval_method: global_api
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/EuroStat/city/:locode/:year/:gpcReferenceNumber
+  gpc_reference_number: III.1.1
+  scope: 1
+  priority: 2
+  datasource_description:
+    en: |
+      Eurostat is the statistical office of the European Union, providing high-quality statistics and data
+      on Europe. The Municipal Waste Statistics dataset offers comprehensive information on waste generation,
+      collection, treatment, and disposal across EU member states. This data supports environmental policy
+      development, waste management planning, and climate action by tracking waste streams, recycling rates,
+      and disposal methods. Eurostat ensures data comparability across countries through standardized
+      methodologies and quality controls.
+    es: |
+      Eurostat es la oficina estadística de la Unión Europea, que proporciona estadísticas y datos de alta
+      calidad sobre Europa. El conjunto de datos de Estadísticas de Residuos Municipales ofrece información
+      completa sobre la generación, recolección, tratamiento y eliminación de residuos en los estados miembros
+      de la UE. Estos datos apoyan el desarrollo de políticas ambientales, la planificación de la gestión de
+      residuos y la acción climática mediante el seguimiento de los flujos de residuos, las tasas de reciclaje
+      y los métodos de eliminación. Eurostat garantiza la comparabilidad de los datos entre países mediante
+      metodologías estandarizadas y controles de calidad.
+    pt: |
+      O Eurostat é o serviço de estatística da União Europeia, fornecendo estatísticas e dados de alta
+      qualidade sobre a Europa. O conjunto de dados de Estatísticas de Resíduos Municipais oferece informações
+      abrangentes sobre geração, coleta, tratamento e disposição de resíduos nos estados membros da UE. Estes
+      dados apoiam o desenvolvimento de políticas ambientais, o planejamento de gestão de resíduos e a ação
+      climática, rastreando fluxos de resíduos, taxas de reciclagem e métodos de disposição. O Eurostat garante
+      a comparabilidade dos dados entre países por meio de metodologias padronizadas e controles de qualidade.
+- datasource_id: 38d59e39-5ed9-43e2-a3df-96dc0d6b74f1 
+  publisher_id: EuroStat
+  datasource_name: Eurostat Municipal Waste Statistics
+  dataset_name:
+    en: Municipal Solid Waste Disposal in Managed Landfills (European Union)
+    es: Disposición de Residuos Sólidos Municipales en Rellenos Sanitarios Gestionados (Unión Europea)
+    pt: Disposição de Resíduos Sólidos Municipais em Aterros Gerenciados (União Europeia)
+    fr: Élimination des Déchets Solides Municipaux dans des Décharges Gérées (Union Européenne)
+    de: Entsorgung von festen Siedlungsabfällen in verwalteten Deponien (Europäische Union)
+  dataset_description:
+    en: |
+      This dataset provides GHG emissions estimates from municipal solid waste disposed in managed landfills
+      across European Union member states. Emissions are calculated using the IPCC 2006 methane commitment
+      methodology, accounting for degradable organic carbon content and methane generation potential. The data
+      is spatially allocated to cities and municipalities based on population distribution using the Global
+      Human Settlement Layer (GHS-POP). Waste generation rates and management fractions are derived from
+      Eurostat national statistics for 2023. This entry covers Scope 3 emissions for cities that export their
+      waste to landfills located outside their administrative boundaries.
+    es: |
+      Este conjunto de datos proporciona estimaciones de emisiones de GEI provenientes de residuos sólidos
+      municipales dispuestos en rellenos sanitarios gestionados en los estados miembros de la Unión Europea.
+      Las emisiones se calculan utilizando la metodología de compromiso de metano IPCC 2006, considerando
+      el contenido de carbono orgánico degradable y el potencial de generación de metano. Los datos se
+      asignan espacialmente a ciudades y municipios según la distribución de población utilizando el Global
+      Human Settlement Layer (GHS-POP). Las tasas de generación de residuos y las fracciones de gestión se
+      derivan de las estadísticas nacionales de Eurostat para 2023. Esta entrada cubre emisiones de Alcance 3
+      para ciudades que exportan sus residuos a rellenos sanitarios ubicados fuera de sus límites administrativos.
+    pt: |
+      Este conjunto de dados fornece estimativas de emissões de GEE provenientes de resíduos sólidos
+      municipais dispostos em aterros gerenciados nos estados membros da União Europeia. As emissões são
+      calculadas usando a metodologia de compromisso de metano do IPCC 2006, considerando o conteúdo de
+      carbono orgânico degradável e o potencial de geração de metano. Os dados são alocados espacialmente
+      para cidades e municípios com base na distribuição populacional usando o Global Human Settlement Layer
+      (GHS-POP). As taxas de geração de resíduos e as frações de gestão são derivadas das estatísticas
+      nacionais do Eurostat para 2023. Esta entrada cobre emissões de Escopo 3 para cidades que exportam seus
+      resíduos para aterros localizados fora de seus limites administrativos.
+    fr: |
+      Cet ensemble de données fournit des estimations des émissions de GES provenant des déchets solides
+      municipaux éliminés dans des décharges gérées dans les États membres de l'Union européenne. Les
+      émissions sont calculées selon la méthodologie d'engagement du méthane du GIEC 2006, en tenant compte
+      de la teneur en carbone organique dégradable et du potentiel de génération de méthane. Les données
+      sont réparties spatialement aux villes et municipalités en fonction de la distribution de la population
+      à l'aide du Global Human Settlement Layer (GHS-POP). Les taux de génération de déchets et les fractions
+      de gestion proviennent des statistiques nationales d'Eurostat pour 2023. Cette entrée couvre les
+      émissions de Portée 3 pour les villes qui exportent leurs déchets vers des décharges situées en dehors de leurs limites administratives.
+    de: |
+      Dieser Datensatz bietet Schätzungen der Treibhausgasemissionen aus festen Siedlungsabfällen, die in
+      verwalteten Deponien in den Mitgliedstaaten der Europäischen Union entsorgt werden. Die Emissionen
+      werden nach der IPCC 2006 Methanverpflichtungsmethodik berechnet, unter Berücksichtigung des abbaubaren
+      organischen Kohlenstoffgehalts und des Methanerzeugungspotenzials. Die Daten werden räumlich auf Städte
+      und Gemeinden basierend auf der Bevölkerungsverteilung unter Verwendung des Global Human Settlement
+      Layer (GHS-POP) zugeordnet. Die Abfallerzeugungsraten und Bewirtschaftungsanteile stammen aus den
+      nationalen Statistiken von Eurostat für 2023. Dieser Eintrag umfasst Scope 3-Emissionen für Städte, die
+      ihren Abfall zu Deponien außerhalb ihrer Verwaltungsgrenzen exportieren.
+  source_type: third_party
+  access_type: public
+  dataset_url: https://ec.europa.eu/eurostat/databrowser/view/ENV_WASMUN/default/table
+  geographical_location: EU
+  start_year: 2023
+  end_year: 2023
+  latest_accounting_year: 2023
+  frequency_of_update: annual
+  spatial_resolution: city
+  language: en
+  accessibility: null
+  data_quality: medium
+  notes: |
+    Population-based allocation methodology. Emissions scale linearly with population size. 
+    Does not account for city-specific waste management efficiency or local policies. 
+    Suitable for broad-scale estimation where facility-specific data is unavailable.
+    Scope 3 assigned to cities without landfill facilities within their boundaries, where waste
+    is transported to regional facilities for disposal.
+  units: kg
+  methodology_description:
+    en: |
+      Methane emissions calculated using IPCC 2006 methane commitment method (Chapter 3, Equation 3.1).
+      Emission factor and default parameters are applied to make the calculations (IPCC 2006).
+      Waste allocated by population using GHS-POP 2020. National landfill fractions from Eurostat 2023.
+    es: |
+      Emisiones de metano calculadas mediante el método de compromiso de metano IPCC 2006 (Capítulo 3, Ecuación 3.1).
+      Factores de emisión y parámetros predeterminados se aplican para realizar los cálculos (IPCC 2006).
+      Residuos asignados por población usando GHS-POP 2020. Fracciones de relleno nacionales de Eurostat 2023.
+    pt: |
+      Emissões de metano calculadas usando o método de compromisso de metano do IPCC 2006 (Capítulo 3, Equação 3.1).
+      Factores de emissão e parâmetros padrão se aplicam para realizar os cálculos (IPCC 2006).
+      Resíduos alocados por população usando GHS-POP 2020. Frações de aterro nacionais do Eurostat 2023.
+    fr: |
+      Émissions de méthane calculées selon la méthode d'engagement du méthane du GIEC 2006 (Chapitre 3, Équation 3.1):
+      Facteurs d'émission et paramètres par défaut se appliquent pour effectuer les calculs (IPCC 2006).
+      Déchets alloués par population en utilisant GHS-POP 2020. Fractions de décharge nationales d'Eurostat 2023.
+    de: |
+      Methanemissionen berechnet nach der IPCC 2006 Methanverpflichtungsmethode (Kapitel 3, Gleichung 3.1):
+      Facteurs d'émission et paramètres par défaut se appliquent pour effectuer les calculs (IPCC 2006).
+      Abfall nach Bevölkerung zugeordnet unter Verwendung von GHS-POP 2020. Nationale Deponieanteile aus Eurostat 2023.
+  methodology_url: https://www.ipcc-nggip.iges.or.jp/public/2006gl/vol5.html  
+  transformation_description:
+    en: |
+      Population extracted from GHS-POP (2020) using zonal statistics within city polygons. National per capita
+      waste generation rates and management type distributions obtained from Eurostat Municipal Waste Statistics
+      (2023). Waste amounts calculated as: Total_Waste = Population × Waste_per_capita × Landfill_fraction.
+      Emissions calculated using IPCC 2006 default parameters for Western Europe. Scope 3 assigned to cities
+      without landfill facilities within their boundaries (waste exported to regional facilities). Results expressed as
+      kg CH₄ per city per year (2023 accounting year). Methane commitment approach assumes all emissions
+      occur in the disposal year.
+    es: |
+      Población extraída de GHS-POP (2020) mediante estadísticas zonales dentro de polígonos urbanos. Tasas
+      nacionales de generación de residuos per cápita y distribuciones por tipo de gestión obtenidas de las
+      Estadísticas de Residuos Municipales de Eurostat (2023). Cantidades de residuos calculadas como:
+      Total_Residuos = Población × Residuos_per_capita × Fracción_relleno. Emisiones calculadas usando
+      parámetros predeterminados IPCC 2006 para Europa Occidental. Alcance 3 asignado a ciudades sin
+      instalaciones de relleno sanitario dentro de sus límites (residuos exportados a instalaciones regionales).
+      Resultados expresados como kg CH₄ por ciudad por año (año contable 2023). El enfoque de compromiso
+      de metano asume que todas las emisiones ocurren en el año de disposición.
+    pt: |
+      População extraída do GHS-POP (2020) usando estatísticas zonais dentro de polígonos urbanos. Taxas
+      nacionais de geração de resíduos per capita e distribuições por tipo de gestão obtidas das Estatísticas
+      de Resíduos Municipais do Eurostat (2023). Quantidades de resíduos calculadas como: Total_Resíduos =
+      População × Resíduos_per_capita × Fração_aterro. Emissões calculadas usando parâmetros padrão do IPCC 2006
+      para a Europa Ocidental. Escopo 3 atribuído a cidades sem instalações de aterro dentro de seus limites
+      (resíduos exportados para instalações regionais). Resultados expressos como kg CH₄ por cidade por ano
+      (ano contábil 2023). A abordagem de compromisso de metano assume que todas as emissões ocorrem no
+      ano de disposição.
+    fr: |
+      Population extraite de GHS-POP (2020) en utilisant des statistiques zonales à l'intérieur des polygones
+      urbains. Taux nationaux de génération de déchets par habitant et distributions par type de gestion
+      obtenus des Statistiques des Déchets Municipaux d'Eurostat (2023). Quantités de déchets calculées comme:
+      Total_Déchets = Population × Déchets_par_habitant × Fraction_décharge. Émissions calculées en utilisant
+      les paramètres par défaut du GIEC 2006 pour l'Europe occidentale. Portée 3 attribuée aux villes sans
+      installations de décharge dans leurs limites (déchets exportés vers installations régionales).
+      Résultats exprimés en kg CH₄ par ville par an (année comptable 2023). L'approche d'engagement du méthane
+      suppose que toutes les émissions se produisent l'année de l'élimination.
+    de: |
+      Bevölkerung aus GHS-POP (2020) mittels Zonenstatistiken innerhalb von Stadtpolygonen extrahiert. Nationale
+      Pro-Kopf-Abfallerzeugungsraten und Verteilungen nach Bewirtschaftungsart aus den kommunalen Abfallstatistiken
+      von Eurostat (2023) erhalten. Abfallmengen berechnet als: Gesamt_Abfall = Bevölkerung × Abfall_pro_Kopf ×
+      Deponieanteil. Emissionen unter Verwendung von IPCC 2006-Standardparametern für Westeuropa berechnet.
+      Scope 3 Städten ohne Deponieanlagen innerhalb ihrer Grenzen zugewiesen (Abfall zu regionalen Anlagen exportiert).
+      Ergebnisse ausgedrückt als kg CH₄ pro Stadt pro Jahr (Rechnungsjahr 2023). Der Methanverpflichtungsansatz
+      geht davon aus, dass alle Emissionen im Entsorgungsjahr auftreten.
+  retrieval_method: global_api
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/EuroStat/city/:locode/:year/:gpcReferenceNumber
+  gpc_reference_number: III.1.2
+  scope: 3
+  priority: 2
+  datasource_description:
+    en: |
+      Eurostat is the statistical office of the European Union, providing high-quality statistics and data
+      on Europe. The Municipal Waste Statistics dataset offers comprehensive information on waste generation,
+      collection, treatment, and disposal across EU member states. This data supports environmental policy
+      development, waste management planning, and climate action by tracking waste streams, recycling rates,
+      and disposal methods. Eurostat ensures data comparability across countries through standardized
+      methodologies and quality controls.
+    es: |
+      Eurostat es la oficina estadística de la Unión Europea, que proporciona estadísticas y datos de alta
+      calidad sobre Europa. El conjunto de datos de Estadísticas de Residuos Municipales ofrece información
+      completa sobre la generación, recolección, tratamiento y eliminación de residuos en los estados miembros
+      de la UE. Estos datos apoyan el desarrollo de políticas ambientales, la planificación de la gestión de
+      residuos y la acción climática mediante el seguimiento de los flujos de residuos, las tasas de reciclaje
+      y los métodos de eliminación. Eurostat garantiza la comparabilidad de los datos entre países mediante
+      metodologías estandarizadas y controles de calidad.
+    pt: |
+      O Eurostat é o serviço de estatística da União Europeia, fornecendo estatísticas e dados de alta
+      qualidade sobre a Europa. O conjunto de dados de Estatísticas de Resíduos Municipais oferece informações
+      abrangentes sobre geração, coleta, tratamento e disposição de resíduos nos estados membros da UE. Estes
+      dados apoiam o desenvolvimento de políticas ambientais, o planejamento de gestão de resíduos e a ação
+      climática, rastreando fluxos de resíduos, taxas de reciclagem e métodos de disposição. O Eurostat garante
+      a comparabilidade dos dados entre países por meio de metodologias padronizadas e controles de qualidade.
+- datasource_id: 6d72ada4-69d8-45bd-b33b-f4382e32f6f5
+  publisher_id: EuroStat
+  datasource_name: Eurostat Municipal Waste Statistics
+  dataset_name:
+    en: Municipal Solid Waste Biological Treatment and Composting (European Union)
+    es: Tratamiento Biológico y Compostaje de Residuos Sólidos Municipales (Unión Europea)
+    pt: Tratamento Biológico e Compostagem de Resíduos Sólidos Municipais (União Europeia)
+    fr: Traitement Biologique et Compostage des Déchets Solides Municipaux (Union Européenne)
+    de: Biologische Behandlung und Kompostierung von festen Siedlungsabfällen (Europäische Union)
+  dataset_description:
+    en: |
+      This dataset provides GHG emissions estimates from aerobic biological treatment (composting) of municipal
+      organic waste across European Union member states. Emissions include methane (CH₄) and nitrous oxide (N₂O)
+      generated during the composting process. Calculations follow IPCC 2006 guidelines (Chapter 4) using emission
+      factors for well-managed composting operations. Data is spatially allocated to cities based on population
+      distribution and national waste management statistics from Eurostat. This entry covers Scope 1 emissions
+      occurring at composting facilities within city administrative boundaries.
+    es: |
+      Este conjunto de datos proporciona estimaciones de emisiones de GEI del tratamiento biológico aeróbico
+      (compostaje) de residuos orgánicos municipales en los estados miembros de la Unión Europea. Las emisiones
+      incluyen metano (CH₄) y óxido nitroso (N₂O) generados durante el proceso de compostaje. Los cálculos siguen
+      las directrices IPCC 2006 (Capítulo 4) utilizando factores de emisión para operaciones de compostaje bien
+      gestionadas. Los datos se asignan espacialmente a las ciudades según la distribución de población y las
+      estadísticas nacionales de gestión de residuos de Eurostat. Esta entrada cubre emisiones de Alcance 1
+      que ocurren en instalaciones de compostaje dentro de los límites administrativos de la ciudad.
+    pt: |
+      Este conjunto de dados fornece estimativas de emissões de GEE do tratamento biológico aeróbico (compostagem)
+      de resíduos orgânicos municipais nos estados membros da União Europeia. As emissões incluem metano (CH₄) e
+      óxido nitroso (N₂O) gerados durante o processo de compostagem. Os cálculos seguem as diretrizes do IPCC 2006
+      (Capítulo 4) usando fatores de emissão para operações de compostagem bem gerenciadas. Os dados são alocados
+      espacialmente para cidades com base na distribuição populacional e estatísticas nacionais de gestão de
+      resíduos do Eurostat. Esta entrada cobre emissões de Escopo 1 que ocorrem em instalações de compostagem
+      dentro dos limites administrativos da cidade.
+    fr: |
+      Cet ensemble de données fournit des estimations des émissions de GES du traitement biologique aérobie
+      (compostage) des déchets organiques municipaux dans les États membres de l'Union européenne. Les émissions
+      comprennent le méthane (CH₄) et l'oxyde nitreux (N₂O) générés pendant le processus de compostage. Les calculs
+      suivent les lignes directrices du GIEC 2006 (Chapitre 4) en utilisant des facteurs d'émission pour des
+      opérations de compostage bien gérées. Les données sont réparties spatialement aux villes en fonction de la
+      distribution de la population et des statistiques nationales de gestion des déchets d'Eurostat. Cette entrée
+      couvre les émissions de Portée 1 se produisant dans les installations de compostage à l'intérieur des limites
+      administratives de la ville.
+    de: |
+      Dieser Datensatz bietet Schätzungen der Treibhausgasemissionen aus der aeroben biologischen Behandlung
+      (Kompostierung) von kommunalen organischen Abfällen in den Mitgliedstaaten der Europäischen Union. Die
+      Emissionen umfassen Methan (CH₄) und Lachgas (N₂O), die während des Kompostierungsprozesses entstehen.
+      Die Berechnungen folgen den IPCC 2006-Richtlinien (Kapitel 4) unter Verwendung von Emissionsfaktoren für
+      gut verwaltete Kompostierungsvorgänge. Die Daten werden räumlich auf Städte basierend auf der Bevölkerungsverteilung
+      und nationalen Abfallwirtschaftsstatistiken von Eurostat zugeordnet. Dieser Eintrag umfasst Scope 1-Emissionen,
+      die in Kompostierungsanlagen innerhalb der Verwaltungsgrenzen der Stadt auftreten.
+  source_type: third_party
+  access_type: public
+  dataset_url: https://ec.europa.eu/eurostat/databrowser/view/ENV_WASMUN/default/table
+  geographical_location: EU
+  start_year: 2023
+  end_year: 2023
+  latest_accounting_year: 2023
+  frequency_of_update: annual
+  spatial_resolution: city
+  language: en
+  accessibility: null
+  data_quality: medium
+  notes: |
+    Population-based allocation methodology. Emissions scale linearly with population size. 
+    Does not account for city-specific waste management efficiency or local policies. 
+    Suitable for broad-scale estimation where facility-specific data is unavailable.
+    Scope 1 assigned to cities containing composting facilities within their boundaries.
+    Assumes aerobic composting with good management practices. No methane recovery assumed.
+  units: kg
+  methodology_description:
+    en: |
+      Emissions calculated using IPCC 2006 biological treatment method (Chapter 4, Section 4.1).
+      Default emission factors applied: EF_CH₄ = 0.004 kg CH₄/kg waste, EF_N₂O = 0.00024 kg N₂O/kg waste.
+      Methane recovery (R) assumed to be zero. Waste allocated by population using GHS-POP 2020.
+      National composting fractions from Eurostat 2023. Emissions calculated separately for CH₄ and N₂O.
+    es: |
+      Emisiones calculadas usando el método de tratamiento biológico IPCC 2006 (Capítulo 4, Sección 4.1).
+      Factores de emisión predeterminados aplicados: EF_CH₄ = 0.004 kg CH₄/kg residuo, EF_N₂O = 0.00024 kg N₂O/kg residuo.
+      Recuperación de metano (R) asumida como cero. Residuos asignados por población usando GHS-POP 2020.
+      Fracciones de compostaje nacionales de Eurostat 2023. Emisiones calculadas por separado para CH₄ y N₂O.
+    pt: |
+      Emissões calculadas usando o método de tratamento biológico do IPCC 2006 (Capítulo 4, Seção 4.1).
+      Fatores de emissão padrão aplicados: EF_CH₄ = 0.004 kg CH₄/kg resíduo, EF_N₂O = 0.00024 kg N₂O/kg resíduo.
+      Recuperação de metano (R) assumida como zero. Resíduos alocados por população usando GHS-POP 2020.
+      Frações de compostagem nacionais do Eurostat 2023. Emissões calculadas separadamente para CH₄ e N₂O.
+    fr: |
+      Émissions calculées selon la méthode de traitement biologique du GIEC 2006 (Chapitre 4, Section 4.1).
+      Facteurs d'émission par défaut appliqués: EF_CH₄ = 0.004 kg CH₄/kg déchet, EF_N₂O = 0.00024 kg N₂O/kg déchet.
+      Récupération de méthane (R) supposée nulle. Déchets alloués par population en utilisant GHS-POP 2020.
+      Fractions de compostage nationales d'Eurostat 2023. Émissions calculées séparément pour CH₄ et N₂O.
+    de: |
+      Emissionen berechnet nach der IPCC 2006 Methode für biologische Behandlung (Kapitel 4, Abschnitt 4.1).
+      Standard-Emissionsfaktoren angewendet: EF_CH₄ = 0.004 kg CH₄/kg Abfall, EF_N₂O = 0.00024 kg N₂O/kg Abfall.
+      Methanrückgewinnung (R) als null angenommen. Abfall nach Bevölkerung zugeordnet unter Verwendung von GHS-POP 2020.
+      Nationale Kompostierungsanteile aus Eurostat 2023. Emissionen separat für CH₄ und N₂O berechnet.
+  methodology_url: https://www.ipcc-nggip.iges.or.jp/public/2006gl/vol5.html
+  transformation_description:
+    en: |
+      Population extracted from GHS-POP (2020) using zonal statistics within city polygons. National per capita
+      waste generation rates and management type distributions obtained from Eurostat Municipal Waste Statistics
+      (2023). Waste amounts calculated as: Total_Waste = Population × Waste_per_capita × Composting_fraction.
+      Emissions calculated using IPCC 2006 default emission factors for aerobic composting. Scope 1 assigned to
+      cities containing composting facilities (spatial join with facility point locations). Results expressed as
+      kg CH₄ and kg N₂O per city per year (2023 accounting year). Assumes well-managed aerobic composting operations.
+    es: |
+      Población extraída de GHS-POP (2020) mediante estadísticas zonales dentro de polígonos urbanos. Tasas
+      nacionales de generación de residuos per cápita y distribuciones por tipo de gestión obtenidas de las
+      Estadísticas de Residuos Municipales de Eurostat (2023). Cantidades de residuos calculadas como:
+      Total_Residuos = Población × Residuos_per_capita × Fracción_compostaje. Emisiones calculadas usando
+      factores de emisión predeterminados IPCC 2006 para compostaje aeróbico. Alcance 1 asignado a ciudades
+      que contienen instalaciones de compostaje (unión espacial con ubicaciones puntuales de instalaciones).
+      Resultados expresados como kg CH₄ y kg N₂O por ciudad por año (año contable 2023). Asume operaciones
+      de compostaje aeróbico bien gestionadas.
+    pt: |
+      População extraída do GHS-POP (2020) usando estatísticas zonais dentro de polígonos urbanos. Taxas
+      nacionais de geração de resíduos per capita e distribuições por tipo de gestão obtidas das Estatísticas
+      de Resíduos Municipais do Eurostat (2023). Quantidades de resíduos calculadas como: Total_Resíduos =
+      População × Resíduos_per_capita × Fração_compostagem. Emissões calculadas usando fatores de emissão
+      padrão do IPCC 2006 para compostagem aeróbica. Escopo 1 atribuído a cidades contendo instalações de
+      compostagem (junção espacial com localizações pontuais de instalações). Resultados expressos como kg CH₄
+      e kg N₂O por cidade por ano (ano contábil 2023). Assume operações de compostagem aeróbica bem gerenciadas.
+    fr: |
+      Population extraite de GHS-POP (2020) en utilisant des statistiques zonales à l'intérieur des polygones
+      urbains. Taux nationaux de génération de déchets par habitant et distributions par type de gestion
+      obtenus des Statistiques des Déchets Municipaux d'Eurostat (2023). Quantités de déchets calculées comme:
+      Total_Déchets = Population × Déchets_par_habitant × Fraction_compostage. Émissions calculées en utilisant
+      les facteurs d'émission par défaut du GIEC 2006 pour le compostage aérobie. Portée 1 attribuée aux villes
+      contenant des installations de compostage (jointure spatiale avec emplacements ponctuels des installations).
+      Résultats exprimés en kg CH₄ et kg N₂O par ville par an (année comptable 2023). Suppose des opérations
+      de compostage aérobie bien gérées.
+    de: |
+      Bevölkerung aus GHS-POP (2020) mittels Zonenstatistiken innerhalb von Stadtpolygonen extrahiert. Nationale
+      Pro-Kopf-Abfallerzeugungsraten und Verteilungen nach Bewirtschaftungsart aus den kommunalen Abfallstatistiken
+      von Eurostat (2023) erhalten. Abfallmengen berechnet als: Gesamt_Abfall = Bevölkerung × Abfall_pro_Kopf ×
+      Kompostierungsanteil. Emissionen unter Verwendung von IPCC 2006-Standard-Emissionsfaktoren für aerobe
+      Kompostierung berechnet. Scope 1 Städten zugewiesen, die Kompostierungsanlagen enthalten (räumliche
+      Verknüpfung mit Anlagenpunktstandorten). Ergebnisse ausgedrückt als kg CH₄ und kg N₂O pro Stadt pro Jahr
+      (Rechnungsjahr 2023). Geht von gut verwalteten aeroben Kompostierungsvorgängen aus.
+  retrieval_method: global_api
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/EuroStat/city/:locode/:year/:gpcReferenceNumber
+  gpc_reference_number: III.2.1
+  scope: 1
+  priority: 2
+  datasource_description:
+    en: |
+      Eurostat is the statistical office of the European Union, providing high-quality statistics and data
+      on Europe. The Municipal Waste Statistics dataset offers comprehensive information on waste generation,
+      collection, treatment, and disposal across EU member states. This data supports environmental policy
+      development, waste management planning, and climate action by tracking waste streams, recycling rates,
+      and disposal methods. Eurostat ensures data comparability across countries through standardized
+      methodologies and quality controls.
+    es: |
+      Eurostat es la oficina estadística de la Unión Europea, que proporciona estadísticas y datos de alta
+      calidad sobre Europa. El conjunto de datos de Estadísticas de Residuos Municipales ofrece información
+      completa sobre la generación, recolección, tratamiento y eliminación de residuos en los estados miembros
+      de la UE. Estos datos apoyan el desarrollo de políticas ambientales, la planificación de la gestión de
+      residuos y la acción climática mediante el seguimiento de los flujos de residuos, las tasas de reciclaje
+      y los métodos de eliminación. Eurostat garantiza la comparabilidad de los datos entre países mediante
+      metodologías estandarizadas y controles de calidad.
+    pt: |
+      O Eurostat é o serviço de estatística da União Europeia, fornecendo estatísticas e dados de alta
+      qualidade sobre a Europa. O conjunto de dados de Estatísticas de Resíduos Municipais oferece informações
+      abrangentes sobre geração, coleta, tratamento e disposição de resíduos nos estados membros da UE. Estes
+      dados apoiam o desenvolvimento de políticas ambientais, o planejamento de gestão de resíduos e a ação
+      climática, rastreando fluxos de resíduos, taxas de reciclagem e métodos de disposição. O Eurostat garante
+      a comparabilidade dos dados entre países por meio de metodologias padronizadas e controles de qualidade.
+- datasource_id: 698101db-3500-4111-ab8d-6d06203c2420
+  publisher_id: EuroStat
+  datasource_name: Eurostat Municipal Waste Statistics
+  dataset_name:
+    en: Municipal Solid Waste Biological Treatment and Composting - Scope 3 (European Union)
+    es: Tratamiento Biológico y Compostaje de Residuos Sólidos Municipales - Alcance 3 (Unión Europea)
+    pt: Tratamento Biológico e Compostagem de Resíduos Sólidos Municipais - Escopo 3 (União Europeia)
+    fr: Traitement Biologique et Compostage des Déchets Solides Municipaux - Portée 3 (Union Européenne)
+    de: Biologische Behandlung und Kompostierung von festen Siedlungsabfällen - Scope 3 (Europäische Union)
+  dataset_description:
+    en: |
+      This dataset provides GHG emissions estimates from aerobic biological treatment (composting) of municipal
+      organic waste across European Union member states. Emissions include methane (CH₄) and nitrous oxide (N₂O)
+      generated during the composting process. Calculations follow IPCC 2006 guidelines (Chapter 4) using emission
+      factors for well-managed composting operations. Data is spatially allocated to cities based on population
+      distribution and national waste management statistics from Eurostat. This entry covers Scope 3 emissions
+      for cities that export their organic waste to composting facilities located outside their administrative boundaries.
+    es: |
+      Este conjunto de datos proporciona estimaciones de emisiones de GEI del tratamiento biológico aeróbico
+      (compostaje) de residuos orgánicos municipales en los estados miembros de la Unión Europea. Las emisiones
+      incluyen metano (CH₄) y óxido nitroso (N₂O) generados durante el proceso de compostaje. Los cálculos siguen
+      las directrices IPCC 2006 (Capítulo 4) utilizando factores de emisión para operaciones de compostaje bien
+      gestionadas. Los datos se asignan espacialmente a las ciudades según la distribución de población y las
+      estadísticas nacionales de gestión de residuos de Eurostat. Esta entrada cubre emisiones de Alcance 3
+      para ciudades que exportan sus residuos orgánicos a instalaciones de compostaje ubicadas fuera de sus límites administrativos.
+    pt: |
+      Este conjunto de dados fornece estimativas de emissões de GEE do tratamento biológico aeróbico (compostagem)
+      de resíduos orgânicos municipais nos estados membros da União Europeia. As emissões incluem metano (CH₄) e
+      óxido nitroso (N₂O) gerados durante o processo de compostagem. Os cálculos seguem as diretrizes do IPCC 2006
+      (Capítulo 4) usando fatores de emissão para operações de compostagem bem gerenciadas. Os dados são alocados
+      espacialmente para cidades com base na distribuição populacional e estatísticas nacionais de gestão de
+      resíduos do Eurostat. Esta entrada cobre emissões de Escopo 3 para cidades que exportam seus resíduos
+      orgânicos para instalações de compostagem localizadas fora de seus limites administrativos.
+    fr: |
+      Cet ensemble de données fournit des estimations des émissions de GES du traitement biologique aérobie
+      (compostage) des déchets organiques municipaux dans les États membres de l'Union européenne. Les émissions
+      comprennent le méthane (CH₄) et l'oxyde nitreux (N₂O) générés pendant le processus de compostage. Les calculs
+      suivent les lignes directrices du GIEC 2006 (Chapitre 4) en utilisant des facteurs d'émission pour des
+      opérations de compostage bien gérées. Les données sont réparties spatialement aux villes en fonction de la
+      distribution de la population et des statistiques nationales de gestion des déchets d'Eurostat. Cette entrée
+      couvre les émissions de Portée 3 pour les villes qui exportent leurs déchets organiques vers des installations
+      de compostage situées en dehors de leurs limites administratives.
+    de: |
+      Dieser Datensatz bietet Schätzungen der Treibhausgasemissionen aus der aeroben biologischen Behandlung
+      (Kompostierung) von kommunalen organischen Abfällen in den Mitgliedstaaten der Europäischen Union. Die
+      Emissionen umfassen Methan (CH₄) und Lachgas (N₂O), die während des Kompostierungsprozesses entstehen.
+      Die Berechnungen folgen den IPCC 2006-Richtlinien (Kapitel 4) unter Verwendung von Emissionsfaktoren für
+      gut verwaltete Kompostierungsvorgänge. Die Daten werden räumlich auf Städte basierend auf der Bevölkerungsverteilung
+      und nationalen Abfallwirtschaftsstatistiken von Eurostat zugeordnet. Dieser Eintrag umfasst Scope 3-Emissionen
+      für Städte, die ihren organischen Abfall zu Kompostierungsanlagen außerhalb ihrer Verwaltungsgrenzen exportieren.
+  source_type: third_party
+  access_type: public
+  dataset_url: https://ec.europa.eu/eurostat/databrowser/view/ENV_WASMUN/default/table
+  geographical_location: EU
+  start_year: 2023
+  end_year: 2023
+  latest_accounting_year: 2023
+  frequency_of_update: annual
+  spatial_resolution: city
+  language: en
+  accessibility: null
+  data_quality: medium
+  notes: |
+    Population-based allocation methodology. Emissions scale linearly with population size. 
+    Does not account for city-specific waste management efficiency or local policies. 
+    Suitable for broad-scale estimation where facility-specific data is unavailable.
+    Scope 3 assigned to cities without composting facilities within their boundaries, where organic waste
+    is transported to regional facilities for processing. Assumes aerobic composting with good management practices.
+  units: kg
+  methodology_description:
+    en: |
+      Emissions calculated using IPCC 2006 biological treatment method (Chapter 4, Section 4.1).
+      Default emission factors applied: EF_CH₄ = 0.004 kg CH₄/kg waste, EF_N₂O = 0.00024 kg N₂O/kg waste.
+      Methane recovery (R) assumed to be zero. Waste allocated by population using GHS-POP 2020.
+      National composting fractions from Eurostat 2023. Emissions calculated separately for CH₄ and N₂O.
+    es: |
+      Emisiones calculadas usando el método de tratamiento biológico IPCC 2006 (Capítulo 4, Sección 4.1).
+      Factores de emisión predeterminados aplicados: EF_CH₄ = 0.004 kg CH₄/kg residuo, EF_N₂O = 0.00024 kg N₂O/kg residuo.
+      Recuperación de metano (R) asumida como cero. Residuos asignados por población usando GHS-POP 2020.
+      Fracciones de compostaje nacionales de Eurostat 2023. Emisiones calculadas por separado para CH₄ y N₂O.
+    pt: |
+      Emissões calculadas usando o método de tratamento biológico do IPCC 2006 (Capítulo 4, Seção 4.1).
+      Fatores de emissão padrão aplicados: EF_CH₄ = 0.004 kg CH₄/kg resíduo, EF_N₂O = 0.00024 kg N₂O/kg resíduo.
+      Recuperação de metano (R) assumida como zero. Resíduos alocados por população usando GHS-POP 2020.
+      Frações de compostagem nacionais do Eurostat 2023. Emissões calculadas separadamente para CH₄ e N₂O.
+    fr: |
+      Émissions calculées selon la méthode de traitement biologique du GIEC 2006 (Chapitre 4, Section 4.1).
+      Facteurs d'émission par défaut appliqués: EF_CH₄ = 0.004 kg CH₄/kg déchet, EF_N₂O = 0.00024 kg N₂O/kg déchet.
+      Récupération de méthane (R) supposée nulle. Déchets alloués par population en utilisant GHS-POP 2020.
+      Fractions de compostage nationales d'Eurostat 2023. Émissions calculées séparément pour CH₄ et N₂O.
+    de: |
+      Emissionen berechnet nach der IPCC 2006 Methode für biologische Behandlung (Kapitel 4, Abschnitt 4.1).
+      Standard-Emissionsfaktoren angewendet: EF_CH₄ = 0.004 kg CH₄/kg Abfall, EF_N₂O = 0.00024 kg N₂O/kg Abfall.
+      Methanrückgewinnung (R) als null angenommen. Abfall nach Bevölkerung zugeordnet unter Verwendung von GHS-POP 2020.
+      Nationale Kompostierungsanteile aus Eurostat 2023. Emissionen separat für CH₄ und N₂O berechnet.
+  methodology_url: https://www.ipcc-nggip.iges.or.jp/public/2006gl/vol5.html
+  transformation_description:
+    en: |
+      Population extracted from GHS-POP (2020) using zonal statistics within city polygons. National per capita
+      waste generation rates and management type distributions obtained from Eurostat Municipal Waste Statistics
+      (2023). Waste amounts calculated as: Total_Waste = Population × Waste_per_capita × Composting_fraction.
+      Emissions calculated using IPCC 2006 default emission factors for aerobic composting. Scope 3 assigned to
+      cities without composting facilities within their boundaries (organic waste exported to regional facilities).
+      Results expressed as kg CH₄ and kg N₂O per city per year (2023 accounting year). Assumes well-managed
+      aerobic composting operations.
+    es: |
+      Población extraída de GHS-POP (2020) mediante estadísticas zonales dentro de polígonos urbanos. Tasas
+      nacionales de generación de residuos per cápita y distribuciones por tipo de gestión obtenidas de las
+      Estadísticas de Residuos Municipales de Eurostat (2023). Cantidades de residuos calculadas como:
+      Total_Residuos = Población × Residuos_per_capita × Fracción_compostaje. Emisiones calculadas usando
+      factores de emisión predeterminados IPCC 2006 para compostaje aeróbico. Alcance 3 asignado a ciudades
+      sin instalaciones de compostaje dentro de sus límites (residuos orgánicos exportados a instalaciones regionales).
+      Resultados expresados como kg CH₄ y kg N₂O por ciudad por año (año contable 2023). Asume operaciones
+      de compostaje aeróbico bien gestionadas.
+    pt: |
+      População extraída do GHS-POP (2020) usando estatísticas zonais dentro de polígonos urbanos. Taxas
+      nacionais de geração de resíduos per capita e distribuições por tipo de gestão obtidas das Estatísticas
+      de Resíduos Municipais do Eurostat (2023). Quantidades de resíduos calculadas como: Total_Resíduos =
+      População × Resíduos_per_capita × Fração_compostagem. Emissões calculadas usando fatores de emissão
+      padrão do IPCC 2006 para compostagem aeróbica. Escopo 3 atribuído a cidades sem instalações de
+      compostagem dentro de seus limites (resíduos orgânicos exportados para instalações regionais). Resultados
+      expressos como kg CH₄ e kg N₂O por cidade por ano (ano contábil 2023). Assume operações de compostagem
+      aeróbica bem gerenciadas.
+    fr: |
+      Population extraite de GHS-POP (2020) en utilisant des statistiques zonales à l'intérieur des polygones
+      urbains. Taux nationaux de génération de déchets par habitant et distributions par type de gestion
+      obtenus des Statistiques des Déchets Municipaux d'Eurostat (2023). Quantités de déchets calculées comme:
+      Total_Déchets = Population × Déchets_par_habitant × Fraction_compostage. Émissions calculées en utilisant
+      les facteurs d'émission par défaut du GIEC 2006 pour le compostage aérobie. Portée 3 attribuée aux villes
+      sans installations de compostage dans leurs limites (déchets organiques exportés vers installations régionales).
+      Résultats exprimés en kg CH₄ et kg N₂O par ville par an (année comptable 2023). Suppose des opérations
+      de compostage aérobie bien gérées.
+    de: |
+      Bevölkerung aus GHS-POP (2020) mittels Zonenstatistiken innerhalb von Stadtpolygonen extrahiert. Nationale
+      Pro-Kopf-Abfallerzeugungsraten und Verteilungen nach Bewirtschaftungsart aus den kommunalen Abfallstatistiken
+      von Eurostat (2023) erhalten. Abfallmengen berechnet als: Gesamt_Abfall = Bevölkerung × Abfall_pro_Kopf ×
+      Kompostierungsanteil. Emissionen unter Verwendung von IPCC 2006-Standard-Emissionsfaktoren für aerobe
+      Kompostierung berechnet. Scope 3 Städten ohne Kompostierungsanlagen innerhalb ihrer Grenzen zugewiesen
+      (organischer Abfall zu regionalen Anlagen exportiert). Ergebnisse ausgedrückt als kg CH₄ und kg N₂O pro
+      Stadt pro Jahr (Rechnungsjahr 2023). Geht von gut verwalteten aeroben Kompostierungsvorgängen aus.
+  retrieval_method: global_api
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/EuroStat/city/:locode/:year/:gpcReferenceNumber
+  gpc_reference_number: III.2.2
+  scope: 3
+  priority: 2
+  datasource_description:
+    en: |
+      Eurostat is the statistical office of the European Union, providing high-quality statistics and data
+      on Europe. The Municipal Waste Statistics dataset offers comprehensive information on waste generation,
+      collection, treatment, and disposal across EU member states. This data supports environmental policy
+      development, waste management planning, and climate action by tracking waste streams, recycling rates,
+      and disposal methods. Eurostat ensures data comparability across countries through standardized
+      methodologies and quality controls.
+    es: |
+      Eurostat es la oficina estadística de la Unión Europea, que proporciona estadísticas y datos de alta
+      calidad sobre Europa. El conjunto de datos de Estadísticas de Residuos Municipales ofrece información
+      completa sobre la generación, recolección, tratamiento y eliminación de residuos en los estados miembros
+      de la UE. Estos datos apoyan el desarrollo de políticas ambientales, la planificación de la gestión de
+      residuos y la acción climática mediante el seguimiento de los flujos de residuos, las tasas de reciclaje
+      y los métodos de eliminación. Eurostat garantiza la comparabilidad de los datos entre países mediante
+      metodologías estandarizadas y controles de calidad.
+    pt: |
+      O Eurostat é o serviço de estatística da União Europeia, fornecendo estatísticas e dados de alta
+      qualidade sobre a Europa. O conjunto de dados de Estatísticas de Resíduos Municipais oferece informações
+      abrangentes sobre geração, coleta, tratamento e disposição de resíduos nos estados membros da UE. Estes
+      dados apoiam o desenvolvimento de políticas ambientais, o planejamento de gestão de resíduos e a ação
+      climática, rastreando fluxos de resíduos, taxas de reciclagem e métodos de disposição. O Eurostat garante
+      a comparabilidade dos dados entre países por meio de metodologias padronizadas e controles de qualidade.
+- datasource_id: fbe23136-385f-48e4-b090-fc2c895564a4
+  publisher_id: EuroStat
+  datasource_name: Eurostat Municipal Waste Statistics
+  dataset_name:
+    en: Municipal Solid Waste Incineration and Energy Recovery (European Union)
+    es: Incineración de Residuos Sólidos Municipales y Recuperación de Energía (Unión Europea)
+    pt: Incineração de Resíduos Sólidos Municipais e Recuperação de Energia (União Europeia)
+    fr: Incinération des Déchets Solides Municipaux et Récupération d'Énergie (Union Européenne)
+    de: Verbrennung von festen Siedlungsabfällen und Energierückgewinnung (Europäische Union)
+  dataset_description:
+    en: |
+      This dataset provides GHG emissions estimates from municipal solid waste incineration with energy recovery
+      across European Union member states. Emissions include non-biogenic CO₂ (from fossil carbon fractions),
+      methane (CH₄), and nitrous oxide (N₂O). Calculations follow IPCC 2006 guidelines (Chapter 5) accounting for
+      waste composition, dry matter content, carbon fractions, and oxidation factors. Only fossil carbon contributes
+      to climate-relevant CO₂ emissions; biogenic carbon is carbon-neutral. Data is spatially allocated to cities
+      based on population distribution and national waste management statistics from Eurostat. This entry covers
+      Scope 1 emissions occurring at incineration facilities within city administrative boundaries.
+    es: |
+      Este conjunto de datos proporciona estimaciones de emisiones de GEI de la incineración de residuos sólidos
+      municipales con recuperación de energía en los estados miembros de la Unión Europea. Las emisiones incluyen
+      CO₂ no biogénico (de fracciones de carbono fósil), metano (CH₄) y óxido nitroso (N₂O). Los cálculos siguen
+      las directrices IPCC 2006 (Capítulo 5) considerando la composición de residuos, contenido de materia seca,
+      fracciones de carbono y factores de oxidación. Solo el carbono fósil contribuye a las emisiones de CO₂
+      relevantes para el clima; el carbono biogénico es carbono neutral. Los datos se asignan espacialmente a
+      las ciudades según la distribución de población y las estadísticas nacionales de gestión de residuos de
+      Eurostat. Esta entrada cubre emisiones de Alcance 1 que ocurren en instalaciones de incineración dentro
+      de los límites administrativos de la ciudad.
+    pt: |
+      Este conjunto de dados fornece estimativas de emissões de GEE da incineração de resíduos sólidos municipais
+      com recuperação de energia nos estados membros da União Europeia. As emissões incluem CO₂ não-biogênico (de
+      frações de carbono fóssil), metano (CH₄) e óxido nitroso (N₂O). Os cálculos seguem as diretrizes do IPCC 2006
+      (Capítulo 5) considerando a composição de resíduos, conteúdo de matéria seca, frações de carbono e fatores
+      de oxidação. Apenas o carbono fóssil contribui para as emissões de CO₂ relevantes para o clima; o carbono
+      biogênico é carbono neutro. Os dados são alocados espacialmente para cidades com base na distribuição
+      populacional e estatísticas nacionais de gestão de resíduos do Eurostat. Esta entrada cobre emissões de
+      Escopo 1 que ocorrem em instalações de incineração dentro dos limites administrativos da cidade.
+    fr: |
+      Cet ensemble de données fournit des estimations des émissions de GES de l'incinération des déchets solides
+      municipaux avec récupération d'énergie dans les États membres de l'Union européenne. Les émissions comprennent
+      le CO₂ non biogénique (provenant de fractions de carbone fossile), le méthane (CH₄) et l'oxyde nitreux (N₂O).
+      Les calculs suivent les lignes directrices du GIEC 2006 (Chapitre 5) en tenant compte de la composition des
+      déchets, de la teneur en matière sèche, des fractions de carbone et des facteurs d'oxydation. Seul le carbone
+      fossile contribue aux émissions de CO₂ pertinentes pour le climat ; le carbone biogénique est neutre en carbone.
+      Les données sont réparties spatialement aux villes en fonction de la distribution de la population et des
+      statistiques nationales de gestion des déchets d'Eurostat. Cette entrée couvre les émissions de Portée 1 se
+      produisant dans les installations d'incinération à l'intérieur des limites administratives de la ville.
+    de: |
+      Dieser Datensatz bietet Schätzungen der Treibhausgasemissionen aus der Verbrennung von festen Siedlungsabfällen
+      mit Energierückgewinnung in den Mitgliedstaaten der Europäischen Union. Die Emissionen umfassen nicht-biogenes
+      CO₂ (aus fossilen Kohlenstofffraktionen), Methan (CH₄) und Lachgas (N₂O). Die Berechnungen folgen den IPCC
+      2006-Richtlinien (Kapitel 5) unter Berücksichtigung der Abfallzusammensetzung, des Trockenmassegehalts, der
+      Kohlenstofffraktionen und der Oxidationsfaktoren. Nur fossiler Kohlenstoff trägt zu klimarelevanten CO₂-Emissionen
+      bei; biogener Kohlenstoff ist kohlenstoffneutral. Die Daten werden räumlich auf Städte basierend auf der
+      Bevölkerungsverteilung und nationalen Abfallwirtschaftsstatistiken von Eurostat zugeordnet. Dieser Eintrag
+      umfasst Scope 1-Emissionen, die in Verbrennungsanlagen innerhalb der Verwaltungsgrenzen der Stadt auftreten.
+  source_type: third_party
+  access_type: public
+  dataset_url: https://ec.europa.eu/eurostat/databrowser/view/ENV_WASMUN/default/table
+  geographical_location: EU
+  start_year: 2023
+  end_year: 2023
+  latest_accounting_year: 2023
+  frequency_of_update: annual
+  spatial_resolution: city
+  language: en
+  accessibility: null
+  data_quality: medium
+  notes: |
+    Population-based allocation methodology. Emissions scale linearly with population size. 
+    Does not account for city-specific waste management efficiency or local policies. 
+    Suitable for broad-scale estimation where facility-specific data is unavailable.
+    Scope 1 assigned to cities containing incineration facilities within their boundaries.
+    Only fossil carbon contributes to CO₂ calculations. Complete combustion assumed (OX=100%).
+  units: kg
+  methodology_description:
+    en: |
+      Emissions calculated using IPCC 2006 incineration method (Chapter 5, Equation 5.2).
+      Waste composition based on Western Europe (IPCC Table 2.3).
+      Complete combustion assumed (OF=100%). Waste allocated by population using GHS-POP 2020.
+      National incineration fractions from Eurostat 2023. Emissions calculated separately for CO₂, CH₄, and N₂O.
+    es: |
+      Emisiones calculadas usando el método de incineración IPCC 2006 (Capítulo 5, Ecuación 5.2).
+      Composición de residuos basada en Europa Occidental (Tabla 2.3 IPCC).
+      Combustión completa asumida (OF=100%). Residuos asignados por población usando GHS-POP 2020.
+      Fracciones de incineración nacionales de Eurostat 2023. Emisiones calculadas por separado para CO₂, CH₄ y N₂O.
+    pt: |
+      Emissões calculadas usando o método de incineração do IPCC 2006 (Capítulo 5, Equação 5.2).
+      Composição de resíduos baseada na Europa Ocidental (Tabela 2.3 IPCC).
+      Combustão completa assumida (OF=100%). Resíduos alocados por população usando GHS-POP 2020.
+      Frações de incineração nacionais do Eurostat 2023. Emissões calculadas separadamente para CO₂, CH₄ e N₂O.
+    fr: |
+      Émissions calculées selon la méthode d'incinération du GIEC 2006 (Chapitre 5, Équation 5.2).
+      Composition des déchets basée sur l'Europe occidentale (Tableau 2.3 GIEC).
+      Combustion complète supposée (OF=100%). Déchets alloués par population en utilisant GHS-POP 2020.
+      Fractions d'incinération nationales d'Eurostat 2023. Émissions calculées séparément pour CO₂, CH₄ et N₂O.
+    de: |
+      Emissionen berechnet nach der IPCC 2006 Verbrennungsmethode (Kapitel 5, Gleichung 5.2).
+      Abfallzusammensetzung basierend auf Westeuropa (IPCC Tabelle 2.3).
+      Vollständige Verbrennung angenommen (OF=100%). Abfall nach Bevölkerung zugeordnet unter Verwendung von GHS-POP 2020.
+      Nationale Verbrennungsanteile aus Eurostat 2023. Emissionen separat für CO₂, CH₄ und N₂O berechnet.
+  methodology_url: https://www.ipcc-nggip.iges.or.jp/public/2006gl/vol5.html
+  transformation_description:
+    en: |
+      Population extracted from GHS-POP (2020) using zonal statistics within city polygons. National per capita
+      waste generation rates and management type distributions obtained from Eurostat Municipal Waste Statistics
+      (2023). Waste amounts calculated as: Total_Waste = Population × Waste_per_capita × Incineration_fraction.
+      Emissions calculated using IPCC 2006 default parameters for Western Europe waste composition. Waste fractions
+      applied: food (30.1%), paper (21.8%), wood (7.5%), textiles (4.7%), plastics (6.2%), etc. Only fossil carbon
+      fractions contribute to CO₂ calculations (plastics=100%, paper=10%, textiles=20%). Scope 1 assigned to cities
+      containing incineration facilities (spatial join with facility point locations). Results expressed as kg CO₂,
+      kg CH₄, and kg N₂O per city per year (2023 accounting year). Complete combustion assumed for modern incinerators.
+    es: |
+      Población extraída de GHS-POP (2020) mediante estadísticas zonales dentro de polígonos urbanos. Tasas
+      nacionales de generación de residuos per cápita y distribuciones por tipo de gestión obtenidas de las
+      Estadísticas de Residuos Municipales de Eurostat (2023). Cantidades de residuos calculadas como:
+      Total_Residuos = Población × Residuos_per_capita × Fracción_incineración. Emisiones calculadas usando
+      parámetros predeterminados IPCC 2006 para composición de residuos de Europa Occidental. Fracciones aplicadas:
+      alimentos (30.1%), papel (21.8%), madera (7.5%), textiles (4.7%), plásticos (6.2%), etc. Solo fracciones de
+      carbono fósil contribuyen a cálculos de CO₂ (plásticos=100%, papel=10%, textiles=20%). Alcance 1 asignado a
+      ciudades que contienen instalaciones de incineración (unión espacial con ubicaciones puntuales de instalaciones).
+      Resultados expresados como kg CO₂, kg CH₄ y kg N₂O por ciudad por año (año contable 2023). Combustión completa
+      asumida para incineradores modernos.
+    pt: |
+      População extraída do GHS-POP (2020) usando estatísticas zonais dentro de polígonos urbanos. Taxas
+      nacionais de geração de resíduos per capita e distribuições por tipo de gestão obtidas das Estatísticas
+      de Resíduos Municipais do Eurostat (2023). Quantidades de resíduos calculadas como: Total_Resíduos =
+      População × Resíduos_per_capita × Fração_incineração. Emissões calculadas usando parâmetros padrão do
+      IPCC 2006 para composição de resíduos da Europa Ocidental. Frações aplicadas: alimentos (30.1%), papel (21.8%),
+      madeira (7.5%), têxteis (4.7%), plásticos (6.2%), etc. Apenas frações de carbono fóssil contribuem para
+      cálculos de CO₂ (plásticos=100%, papel=10%, têxteis=20%). Escopo 1 atribuído a cidades contendo instalações
+      de incineração (junção espacial com localizações pontuais de instalações). Resultados expressos como kg CO₂,
+      kg CH₄ e kg N₂O por cidade por ano (ano contábil 2023). Combustão completa assumida para incineradores modernos.
+    fr: |
+      Population extraite de GHS-POP (2020) en utilisant des statistiques zonales à l'intérieur des polygones
+      urbains. Taux nationaux de génération de déchets par habitant et distributions par type de gestion
+      obtenus des Statistiques des Déchets Municipaux d'Eurostat (2023). Quantités de déchets calculées comme:
+      Total_Déchets = Population × Déchets_par_habitant × Fraction_incinération. Émissions calculées en utilisant
+      les paramètres par défaut du GIEC 2006 pour la composition des déchets d'Europe occidentale. Fractions
+      appliquées: alimentation (30.1%), papier (21.8%), bois (7.5%), textiles (4.7%), plastiques (6.2%), etc.
+      Seules les fractions de carbone fossile contribuent aux calculs de CO₂ (plastiques=100%, papier=10%,
+      textiles=20%). Portée 1 attribuée aux villes contenant des installations d'incinération (jointure spatiale
+      avec emplacements ponctuels des installations). Résultats exprimés en kg CO₂, kg CH₄ et kg N₂O par ville
+      par an (année comptable 2023). Combustion complète supposée pour les incinérateurs modernes.
+    de: |
+      Bevölkerung aus GHS-POP (2020) mittels Zonenstatistiken innerhalb von Stadtpolygonen extrahiert. Nationale
+      Pro-Kopf-Abfallerzeugungsraten und Verteilungen nach Bewirtschaftungsart aus den kommunalen Abfallstatistiken
+      von Eurostat (2023) erhalten. Abfallmengen berechnet als: Gesamt_Abfall = Bevölkerung × Abfall_pro_Kopf ×
+      Verbrennungsanteil. Emissionen unter Verwendung von IPCC 2006-Standardparametern für westeuropäische
+      Abfallzusammensetzung berechnet. Angewendete Fraktionen: Lebensmittel (30.1%), Papier (21.8%), Holz (7.5%),
+      Textilien (4.7%), Kunststoffe (6.2%), etc. Nur fossile Kohlenstofffraktionen tragen zu CO₂-Berechnungen bei
+      (Kunststoffe=100%, Papier=10%, Textilien=20%). Scope 1 Städten mit Verbrennungsanlagen zugewiesen (räumliche
+      Verknüpfung mit Anlagenpunktstandorten). Ergebnisse ausgedrückt als kg CO₂, kg CH₄ und kg N₂O pro Stadt pro
+      Jahr (Rechnungsjahr 2023). Vollständige Verbrennung für moderne Verbrennungsanlagen angenommen.
+  retrieval_method: global_api
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/EuroStat/city/:locode/:year/:gpcReferenceNumber
+  gpc_reference_number: III.3.1
+  scope: 1
+  priority: 2
+  datasource_description:
+    en: |
+      Eurostat is the statistical office of the European Union, providing high-quality statistics and data
+      on Europe. The Municipal Waste Statistics dataset offers comprehensive information on waste generation,
+      collection, treatment, and disposal across EU member states. This data supports environmental policy
+      development, waste management planning, and climate action by tracking waste streams, recycling rates,
+      and disposal methods. Eurostat ensures data comparability across countries through standardized
+      methodologies and quality controls.
+    es: |
+      Eurostat es la oficina estadística de la Unión Europea, que proporciona estadísticas y datos de alta
+      calidad sobre Europa. El conjunto de datos de Estadísticas de Residuos Municipales ofrece información
+      completa sobre la generación, recolección, tratamiento y eliminación de residuos en los estados miembros
+      de la UE. Estos datos apoyan el desarrollo de políticas ambientales, la planificación de la gestión de
+      residuos y la acción climática mediante el seguimiento de los flujos de residuos, las tasas de reciclaje
+      y los métodos de eliminación. Eurostat garantiza la comparabilidad de los datos entre países mediante
+      metodologías estandarizadas y controles de calidad.
+    pt: |
+      O Eurostat é o serviço de estatística da União Europeia, fornecendo estatísticas e dados de alta
+      qualidade sobre a Europa. O conjunto de dados de Estatísticas de Resíduos Municipais oferece informações
+      abrangentes sobre geração, coleta, tratamento e disposição de resíduos nos estados membros da UE. Estes
+      dados apoiam o desenvolvimento de políticas ambientais, o planejamento de gestão de resíduos e a ação
+      climática, rastreando fluxos de resíduos, taxas de reciclagem e métodos de disposição. O Eurostat garante
+      a comparabilidade dos dados entre países por meio de metodologias padronizadas e controles de qualidade.
+- datasource_id: 82c72d4f-f213-4c50-a944-c59610c7d067
+  publisher_id: EuroStat
+  datasource_name: Eurostat Municipal Waste Statistics
+  dataset_name:
+    en: Municipal Solid Waste Incineration and Energy Recovery - Scope 3 (European Union)
+    es: Incineración de Residuos Sólidos Municipales y Recuperación de Energía - Alcance 3 (Unión Europea)
+    pt: Incineração de Resíduos Sólidos Municipais e Recuperação de Energia - Escopo 3 (União Europeia)
+    fr: Incinération des Déchets Solides Municipaux et Récupération d'Énergie - Portée 3 (Union Européenne)
+    de: Verbrennung von festen Siedlungsabfällen und Energierückgewinnung - Scope 3 (Europäische Union)
+  dataset_description:
+    en: |
+      This dataset provides GHG emissions estimates from municipal solid waste incineration with energy recovery
+      across European Union member states. Emissions include non-biogenic CO₂ (from fossil carbon fractions),
+      methane (CH₄), and nitrous oxide (N₂O). Calculations follow IPCC 2006 guidelines (Chapter 5) accounting for
+      waste composition, dry matter content, carbon fractions, and oxidation factors. Only fossil carbon contributes
+      to climate-relevant CO₂ emissions; biogenic carbon is carbon-neutral. Data is spatially allocated to cities
+      based on population distribution and national waste management statistics from Eurostat. This entry covers
+      Scope 3 emissions for cities that export their waste to incineration facilities located outside their
+      administrative boundaries.
+    es: |
+      Este conjunto de datos proporciona estimaciones de emisiones de GEI de la incineración de residuos sólidos
+      municipales con recuperación de energía en los estados miembros de la Unión Europea. Las emisiones incluyen
+      CO₂ no biogénico (de fracciones de carbono fósil), metano (CH₄) y óxido nitroso (N₂O). Los cálculos siguen
+      las directrices IPCC 2006 (Capítulo 5) considerando la composición de residuos, contenido de materia seca,
+      fracciones de carbono y factores de oxidación. Solo el carbono fósil contribuye a las emisiones de CO₂
+      relevantes para el clima; el carbono biogénico es carbono neutral. Los datos se asignan espacialmente a
+      las ciudades según la distribución de población y las estadísticas nacionales de gestión de residuos de
+      Eurostat. Esta entrada cubre emisiones de Alcance 3 para ciudades que exportan sus residuos a instalaciones
+      de incineración ubicadas fuera de sus límites administrativos.
+    pt: |
+      Este conjunto de dados fornece estimativas de emissões de GEE da incineração de resíduos sólidos municipais
+      com recuperação de energia nos estados membros da União Europeia. As emissões incluem CO₂ não-biogênico (de
+      frações de carbono fóssil), metano (CH₄) e óxido nitroso (N₂O). Os cálculos seguem as diretrizes do IPCC 2006
+      (Capítulo 5) considerando a composição de resíduos, conteúdo de matéria seca, frações de carbono e fatores
+      de oxidação. Apenas o carbono fóssil contribui para as emissões de CO₂ relevantes para o clima; o carbono
+      biogênico é carbono neutro. Os dados são alocados espacialmente para cidades com base na distribuição
+      populacional e estatísticas nacionais de gestão de resíduos do Eurostat. Esta entrada cobre emissões de
+      Escopo 3 para cidades que exportam seus resíduos para instalações de incineração localizadas fora de seus
+      limites administrativos.
+    fr: |
+      Cet ensemble de données fournit des estimations des émissions de GES de l'incinération des déchets solides
+      municipaux avec récupération d'énergie dans les États membres de l'Union européenne. Les émissions comprennent
+      le CO₂ non biogénique (provenant de fractions de carbone fossile), le méthane (CH₄) et l'oxyde nitreux (N₂O).
+      Les calculs suivent les lignes directrices du GIEC 2006 (Chapitre 5) en tenant compte de la composition des
+      déchets, de la teneur en matière sèche, des fractions de carbone et des facteurs d'oxydation. Seul le carbone
+      fossile contribue aux émissions de CO₂ pertinentes pour le climat ; le carbone biogénique est neutre en carbone.
+      Les données sont réparties spatialement aux villes en fonction de la distribution de la population et des
+      statistiques nationales de gestion des déchets d'Eurostat. Cette entrée couvre les émissions de Portée 3 pour
+      les villes qui exportent leurs déchets vers des installations d'incinération situées en dehors de leurs limites
+      administratives.
+    de: |
+      Dieser Datensatz bietet Schätzungen der Treibhausgasemissionen aus der Verbrennung von festen Siedlungsabfällen
+      mit Energierückgewinnung in den Mitgliedstaaten der Europäischen Union. Die Emissionen umfassen nicht-biogenes
+      CO₂ (aus fossilen Kohlenstofffraktionen), Methan (CH₄) und Lachgas (N₂O). Die Berechnungen folgen den IPCC
+      2006-Richtlinien (Kapitel 5) unter Berücksichtigung der Abfallzusammensetzung, des Trockenmassegehalts, der
+      Kohlenstofffraktionen und der Oxidationsfaktoren. Nur fossiler Kohlenstoff trägt zu klimarelevanten CO₂-Emissionen
+      bei; biogener Kohlenstoff ist kohlenstoffneutral. Die Daten werden räumlich auf Städte basierend auf der
+      Bevölkerungsverteilung und nationalen Abfallwirtschaftsstatistiken von Eurostat zugeordnet. Dieser Eintrag
+      umfasst Scope 3-Emissionen für Städte, die ihren Abfall zu Verbrennungsanlagen außerhalb ihrer Verwaltungsgrenzen exportieren.
+  source_type: third_party
+  access_type: public
+  dataset_url: https://ec.europa.eu/eurostat/databrowser/view/ENV_WASMUN/default/table
+  geographical_location: EU
+  start_year: 2023
+  end_year: 2023
+  latest_accounting_year: 2023
+  frequency_of_update: annual
+  spatial_resolution: city
+  language: en
+  accessibility: null
+  data_quality: medium
+  notes: |
+    Population-based allocation methodology. Emissions scale linearly with population size. 
+    Does not account for city-specific waste management efficiency or local policies. 
+    Suitable for broad-scale estimation where facility-specific data is unavailable.
+    Scope 3 assigned to cities without incineration facilities within their boundaries, where waste
+    is transported to regional facilities for energy recovery. Only fossil carbon contributes to CO₂ calculations.
+  units: kg
+  methodology_description:
+    en: |
+      Emissions calculated using IPCC 2006 incineration method (Chapter 5, Equation 5.2).
+      Waste composition based on Western Europe (IPCC Table 2.3).
+      Complete combustion assumed (OF=100%). Waste allocated by population using GHS-POP 2020.
+      National incineration fractions from Eurostat 2023. Emissions calculated separately for CO₂, CH₄, and N₂O.
+    es: |
+      Emisiones calculadas usando el método de incineración IPCC 2006 (Capítulo 5, Ecuación 5.2).
+      Composición de residuos basada en Europa Occidental (Tabla 2.3 IPCC).
+      Combustión completa asumida (OF=100%). Residuos asignados por población usando GHS-POP 2020.
+      Fracciones de incineración nacionales de Eurostat 2023. Emisiones calculadas por separado para CO₂, CH₄ y N₂O.
+    pt: |
+      Emissões calculadas usando o método de incineração do IPCC 2006 (Capítulo 5, Equação 5.2).
+      Composição de resíduos baseada na Europa Ocidental (Tabela 2.3 IPCC).
+      Combustão completa assumida (OF=100%). Resíduos alocados por população usando GHS-POP 2020.
+      Frações de incineração nacionais do Eurostat 2023. Emissões calculadas separadamente para CO₂, CH₄ e N₂O.
+    fr: |
+      Émissions calculées selon la méthode d'incinération du GIEC 2006 (Chapitre 5, Équation 5.2).
+      Composition des déchets basée sur l'Europe occidentale (Tableau 2.3 GIEC).
+      Combustion complète supposée (OF=100%). Déchets alloués par population en utilisant GHS-POP 2020.
+      Fractions d'incinération nationales d'Eurostat 2023. Émissions calculées séparément pour CO₂, CH₄ et N₂O.
+    de: |
+      Emissionen berechnet nach der IPCC 2006 Verbrennungsmethode (Kapitel 5, Gleichung 5.2).
+      Abfallzusammensetzung basierend auf Westeuropa (IPCC Tabelle 2.3).
+      Vollständige Verbrennung angenommen (OF=100%). Abfall nach Bevölkerung zugeordnet unter Verwendung von GHS-POP 2020.
+      Nationale Verbrennungsanteile aus Eurostat 2023. Emissionen separat für CO₂, CH₄ und N₂O berechnet.
+  methodology_url: https://www.ipcc-nggip.iges.or.jp/public/2006gl/vol5.html
+  transformation_description:
+    en: |
+      Population extracted from GHS-POP (2020) using zonal statistics within city polygons. National per capita
+      waste generation rates and management type distributions obtained from Eurostat Municipal Waste Statistics
+      (2023). Waste amounts calculated as: Total_Waste = Population × Waste_per_capita × Incineration_fraction.
+      Emissions calculated using IPCC 2006 default parameters for Western Europe waste composition. Waste fractions
+      applied: food (30.1%), paper (21.8%), wood (7.5%), textiles (4.7%), plastics (6.2%), etc. Only fossil carbon
+      fractions contribute to CO₂ calculations (plastics=100%, paper=10%, textiles=20%). Scope 3 assigned to cities
+      without incineration facilities within their boundaries (waste exported to regional facilities). Results
+      expressed as kg CO₂, kg CH₄, and kg N₂O per city per year (2023 accounting year). Complete combustion
+      assumed for modern incinerators.
+    es: |
+      Población extraída de GHS-POP (2020) mediante estadísticas zonales dentro de polígonos urbanos. Tasas
+      nacionales de generación de residuos per cápita y distribuciones por tipo de gestión obtenidas de las
+      Estadísticas de Residuos Municipales de Eurostat (2023). Cantidades de residuos calculadas como:
+      Total_Residuos = Población × Residuos_per_capita × Fracción_incineración. Emisiones calculadas usando
+      parámetros predeterminados IPCC 2006 para composición de residuos de Europa Occidental. Fracciones aplicadas:
+      alimentos (30.1%), papel (21.8%), madera (7.5%), textiles (4.7%), plásticos (6.2%), etc. Solo fracciones de
+      carbono fósil contribuyen a cálculos de CO₂ (plásticos=100%, papel=10%, textiles=20%). Alcance 3 asignado a
+      ciudades sin instalaciones de incineración dentro de sus límites (residuos exportados a instalaciones regionales).
+      Resultados expresados como kg CO₂, kg CH₄ y kg N₂O por ciudad por año (año contable 2023). Combustión completa
+      asumida para incineradores modernos.
+    pt: |
+      População extraída do GHS-POP (2020) usando estatísticas zonais dentro de polígonos urbanos. Taxas
+      nacionais de geração de resíduos per capita e distribuições por tipo de gestão obtidas das Estatísticas
+      de Resíduos Municipais do Eurostat (2023). Quantidades de resíduos calculadas como: Total_Resíduos =
+      População × Resíduos_per_capita × Fração_incineração. Emissões calculadas usando parâmetros padrão do
+      IPCC 2006 para composição de resíduos da Europa Ocidental. Frações aplicadas: alimentos (30.1%), papel (21.8%),
+      madeira (7.5%), têxteis (4.7%), plásticos (6.2%), etc. Apenas frações de carbono fóssil contribuem para
+      cálculos de CO₂ (plásticos=100%, papel=10%, têxteis=20%). Escopo 3 atribuído a cidades sem instalações
+      de incineração dentro de seus limites (resíduos exportados para instalações regionais). Resultados expressos
+      como kg CO₂, kg CH₄ e kg N₂O por cidade por ano (ano contábil 2023). Combustão completa assumida para
+      incineradores modernos.
+    fr: |
+      Population extraite de GHS-POP (2020) en utilisant des statistiques zonales à l'intérieur des polygones
+      urbains. Taux nationaux de génération de déchets par habitant et distributions par type de gestion
+      obtenus des Statistiques des Déchets Municipaux d'Eurostat (2023). Quantités de déchets calculées comme:
+      Total_Déchets = Population × Déchets_par_habitant × Fraction_incinération. Émissions calculées en utilisant
+      les paramètres par défaut du GIEC 2006 pour la composition des déchets d'Europe occidentale. Fractions
+      appliquées: alimentation (30.1%), papier (21.8%), bois (7.5%), textiles (4.7%), plastiques (6.2%), etc.
+      Seules les fractions de carbone fossile contribuent aux calculs de CO₂ (plastiques=100%, papier=10%,
+      textiles=20%). Portée 3 attribuée aux villes sans installations d'incinération dans leurs limites (déchets
+      exportés vers installations régionales). Résultats exprimés en kg CO₂, kg CH₄ et kg N₂O par ville par an
+      (année comptable 2023). Combustion complète supposée pour les incinérateurs modernes.
+    de: |
+      Bevölkerung aus GHS-POP (2020) mittels Zonenstatistiken innerhalb von Stadtpolygonen extrahiert. Nationale
+      Pro-Kopf-Abfallerzeugungsraten und Verteilungen nach Bewirtschaftungsart aus den kommunalen Abfallstatistiken
+      von Eurostat (2023) erhalten. Abfallmengen berechnet als: Gesamt_Abfall = Bevölkerung × Abfall_pro_Kopf ×
+      Verbrennungsanteil. Emissionen unter Verwendung von IPCC 2006-Standardparametern für westeuropäische
+      Abfallzusammensetzung berechnet. Angewendete Fraktionen: Lebensmittel (30.1%), Papier (21.8%), Holz (7.5%),
+      Textilien (4.7%), Kunststoffe (6.2%), etc. Nur fossile Kohlenstofffraktionen tragen zu CO₂-Berechnungen bei
+      (Kunststoffe=100%, Papier=10%, Textilien=20%). Scope 3 Städten ohne Verbrennungsanlagen innerhalb ihrer
+      Grenzen zugewiesen (Abfall zu regionalen Anlagen exportiert). Ergebnisse ausgedrückt als kg CO₂, kg CH₄ und
+      kg N₂O pro Stadt pro Jahr (Rechnungsjahr 2023). Vollständige Verbrennung für moderne Verbrennungsanlagen angenommen.
+  retrieval_method: global_api
+  api_endpoint: https://ccglobal.openearth.dev/api/v1/source/EuroStat/city/:locode/:year/:gpcReferenceNumber
+  gpc_reference_number: III.3.2
+  scope: 3
+  priority: 2
+  datasource_description:
+    en: |
+      Eurostat is the statistical office of the European Union, providing high-quality statistics and data
+      on Europe. The Municipal Waste Statistics dataset offers comprehensive information on waste generation,
+      collection, treatment, and disposal across EU member states. This data supports environmental policy
+      development, waste management planning, and climate action by tracking waste streams, recycling rates,
+      and disposal methods. Eurostat ensures data comparability across countries through standardized
+      methodologies and quality controls.
+    es: |
+      Eurostat es la oficina estadística de la Unión Europea, que proporciona estadísticas y datos de alta
+      calidad sobre Europa. El conjunto de datos de Estadísticas de Residuos Municipales ofrece información
+      completa sobre la generación, recolección, tratamiento y eliminación de residuos en los estados miembros
+      de la UE. Estos datos apoyan el desarrollo de políticas ambientales, la planificación de la gestión de
+      residuos y la acción climática mediante el seguimiento de los flujos de residuos, las tasas de reciclaje
+      y los métodos de eliminación. Eurostat garantiza la comparabilidad de los datos entre países mediante
+      metodologías estandarizadas y controles de calidad.
+    pt: |
+      O Eurostat é o serviço de estatística da União Europeia, fornecendo estatísticas e dados de alta
+      qualidade sobre a Europa. O conjunto de dados de Estatísticas de Resíduos Municipais oferece informações
+      abrangentes sobre geração, coleta, tratamento e disposição de resíduos nos estados membros da UE. Estes
+      dados apoiam o desenvolvimento de políticas ambientais, o planejamento de gestão de resíduos e a ação
+      climática, rastreando fluxos de resíduos, taxas de reciclagem e métodos de disposição. O Eurostat garante
+      a comparabilidade dos dados entre países por meio de metodologias padronizadas e controles de qualidade.
