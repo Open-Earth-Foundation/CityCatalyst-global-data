@@ -14,7 +14,10 @@ def load_from_s3_bucket(*args, **kwargs):
     config_profile = 'default'
 
     bucket_name = kwargs['bucket_name']
-    object_key = 'raw_data/GHS-POP/eu_city_population.csv'
+    object_key = 'raw_data/GHS-POP/eu_city_population_ghs_2020.csv'
+    # object_key = 'raw_data/GHS-POP/rest_world_city_population1.csv'
+    # object_key = 'raw_data/GHS-POP/rest_world_city_population2.csv'
+    # object_key = 'raw_data/GHS-POP/rest_world_city_population3.csv'
 
     return S3.with_config(ConfigFileLoader(config_path, config_profile)).load(
         bucket_name,

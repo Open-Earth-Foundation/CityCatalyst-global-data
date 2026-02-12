@@ -1,9 +1,10 @@
 WITH dataset_data AS (
     SELECT DISTINCT
-        population,
-        year,
-        population_source,
-        geographical_level,
+        publisher_name,
+        publisher_url,
+        datasource_name,
+        dataset_name,
+        dataset_url
     FROM raw_data.ghs_pop_staging
 )
 
