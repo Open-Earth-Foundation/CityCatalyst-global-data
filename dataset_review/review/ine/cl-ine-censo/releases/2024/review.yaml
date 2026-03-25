@@ -1,0 +1,106 @@
+dataset_id: cl-ine-censo
+release: "2024"
+reviewed_on: 2026-02-17
+reviewed_by: amanda
+
+publisher:
+  name: Instituto Nacional de Estadísticas (INE)
+  country: CL
+
+source:
+  main_url: https://censo2024.ine.gob.cl/resultados/
+  access_type: public_download
+  format: mixed (tables, dashboards, bulk files)
+  documentation_available: true
+
+coverage:
+  geography: Chile
+  spatial_resolution:
+    - country
+    - region
+    - comuna
+    - census_block
+  temporal_reference: 2024 census year
+
+themes:
+  - socioeconomics
+  - housing
+  - infrastructure
+  - employment
+  - transport_proxy
+
+key_indicators_used:
+  - vehicle_ownership_rate
+  - home_ownership_rate
+  - renter_share
+  - electricity_access_rate
+  - employment_industry_construction
+  - employment_transport_logistics
+
+indicator_mapping:
+  electricity_access_rate:
+    variable: p9_fuente_elect
+    file: viviendas (dwellings)
+    logic: values 1-5 = has electricity; 6 = no electricity
+  home_ownership_rate:
+    variable: p12_tenencia_viv
+    file: hogares (households)
+    logic: values 1,2 = owned (Propia pagada, Propia pagándose)
+  renter_share:
+    variable: p12_tenencia_viv
+    file: hogares (households)
+    logic: values 3,4 = rented (Arrendada con/sin contrato)
+  employment_industry_construction:
+    variable: cod_caenes
+    file: personas (persons)
+    logic: values B,C,F = mining, manufacturing, construction; filter sit_fuerza_trabajo=1
+  employment_transport_logistics:
+    variable: cod_caenes
+    file: personas (persons)
+    logic: value H = Transporte y almacenamiento; filter sit_fuerza_trabajo=1
+  vehicle_ownership_rate:
+    variable: null
+    note: not directly available; p45_medio_transporte (commute mode) may proxy
+
+sample_files:
+  - viviendas_sample.parquet: dwelling-level records
+  - hogares_sample.parquet: household-level records
+  - personas_sample.parquet: person-level records
+  - curated_data.csv: indicators by comuna (region, comuna, attribute_type, attribute_value)
+  - dictionary_location.csv: region/comuna/province codebook
+  - dictionary_homes.csv: dwelling variable codebook
+  - dictionary_households.csv: household variable codebook
+  - dictionary_people.csv: person variable codebook
+
+data_quality:
+  authority: official_national_statistics
+  completeness: high
+  spatial_coverage: full_country
+  update_frequency: decennial_census
+  known_issues:
+    - some indicators released later than core census
+    - definitions may differ from labour surveys
+    - vehicle ownership definition household-based
+
+suitability_use_cases:
+  city_context: high
+  vulnerability_inputs: high
+  emissions_modelling_proxy: medium
+  direct_emissions_use: low
+
+integration_notes:
+  join_keys:
+    - comuna_code
+    - region_code
+  requires_cleaning: true
+  requires_harmonisation: true
+  recommended_storage: aggregated_city_level
+
+versioning:
+  upstream_version: "2024"
+  expected_next_release: unknown
+  stable_dataset_family: true
+
+status:
+  production_ready: true
+  priority: high
