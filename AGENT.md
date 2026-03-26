@@ -67,8 +67,8 @@ Renaming it breaks the Docker setup entirely.
 When a dataset is updated, create a new version folder alongside the old one. The catalog
 `current_version` field (or `production_approved_release`) is what determines which is active.
 
-**Pipeline `metadata.yaml` descriptions are unreliable** — roughly half have `null` or
-outdated descriptions. Do not use them to understand what a pipeline does. Read the blocks.
+**Pipeline `metadata.yaml` descriptions are unreliable** — descriptions may be `null` or
+outdated. Do not use them to understand what a pipeline does. Read the blocks directly.
 
 **Staging tables are temporary by design** — `raw_data.*_staging` tables are intermediate.
 Do not treat them as a data source for other pipelines or reporting.
@@ -77,12 +77,14 @@ Do not treat them as a data source for other pipelines or reporting.
 
 ## Things that look similar but are different
 
-**ClimateTRACE has two pipeline patterns:**
-- File-based (`ghgi_ct_onroad_v2025`, `ghgi_climatetrace_wastewater`) — reads from S3 files,
-  standard `extract → stage → modelled` flow. These are the authoritative pipelines.
-- API-based (`ghgi_climatetrace_city_all_sectors`, `ghgi_climatetrace_country_all_sectors`) —
-  pulls from the CT API directly for a specific city. Used for ad-hoc or pilot city work,
-  not production ingestion.
+**Some publishers have two pipeline patterns:**
+- File-based — reads from S3 files, standard `extract → stage → modelled` flow. These are
+  the authoritative pipelines for production ingestion.
+- API-based — pulls from the publisher's API directly for a specific city. Used for ad-hoc
+  or pilot city work, not production ingestion.
+
+When in doubt about which pattern a pipeline uses, read its block code rather than the
+`metadata.yaml` description.
 
 **`transformer` vs `data_exporter` blocks in Mage:**
 - A `transformer` block transforms data and passes it downstream — it does not write to the DB.
@@ -93,28 +95,6 @@ Do not treat them as a data source for other pipelines or reporting.
 - `emissions_factor` — standard EF used in `emissions = activity × EF` calculations.
 - `formula_input` — parameters for more complex calculations where the simple formula doesn't
   apply (e.g. waste composition factors, biological treatment parameters).
-
----
-
-## Current state of the repo
-
-**Dataset reviews — complete:**
-- `climatetrace / on_road / v2025` — full methodology, scoring, mapping placeholder
-- `google / eie / v2023` — full methodology and scoring
-- `seeg / emissions / v10` — full methodology and scoring
-
-**Dataset reviews — stub folders exist, review needed:**
-- climatetrace: wastewater, ippu, coal, oil_and_gas, enteric_fermentation, manure_management
-- edgar, ipcc, epe, carbon_monitor, eurostat, sinir, snis, ben, indec
-
-**Pipelines with no description (null in metadata.yaml):**
-`ghgi_ct_onroad_v2025`, `ghgi_climate_trace_coal`, `ghgi_enteric_fermentation_cattle_*`,
-`ghgi_manure_management_cattle_*`, `ghgi_ippu_climatetrace`, `ghgi_eurostat_waste`,
-`ghgi_ef_scope2_electricity_maps`, `ghgi_icare_emission_forecast`, `ghgi_sinir_solidwaste_brasil`,
-`ghgi_snis_waste_water_brazil`, `ghgi_solid_waste_arg_indec`, `ghgi_notation_keys`,
-`ghgi_pilot_cities`, `gpc_methodology`, `load_city_polygon`, `population`
-
-For these pipelines, read the block SQL/Python directly to understand what they do.
 
 ---
 
