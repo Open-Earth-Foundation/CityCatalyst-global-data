@@ -1,0 +1,66 @@
+dataset_id: cl-ocha-ab
+release: "2021"
+reviewed_on: 2026-02-17
+reviewed_by: amanda
+
+publisher:
+  name: OCHA ROLAC / OCHA FIS
+  product_site: HDX Chile COD-AB
+  url: https://data.humdata.org/dataset/cod-ab-chl
+
+source:
+  main_url: https://data.humdata.org/dataset/cod-ab-chl
+  access_type: public_download
+  format: shapefile (SHP), GeoJSON
+  documentation_available: true
+
+coverage:
+  geography: Chile
+  temporal_reference: valid for humanitarian use Oct 2021
+  spatial_levels_expected:
+    - admin1 (16 regions)
+    - admin2 (56 provinces)
+    - admin3 (345 comunas)
+  geographic_extent:
+    lon: [-109.45, -66.42]
+    lat: [-55.98, -17.50]
+
+themes:
+  - boundaries
+  - administrative
+  - geocoding
+
+key_attributes:
+  - admin1_code / admin1_name (region)
+  - admin2_code / admin2_name (province)
+  - admin3_code / admin3_name (comuna)
+  - P-codes for database linking
+  - geometry
+
+integration_notes:
+  join_keys:
+    - admin1_code (region)
+    - admin2_code (province)
+    - admin3_code (comuna)
+    - name fields for fuzzy match
+  requires_cleaning: false
+  requires_harmonisation: true
+  recommended_storage: GeoPackage or GeoJSON; simplify for city-level use if needed
+  census_join: match comunas to cl-ine-censo region/comuna; naming may need normalisation
+  unlocode_join: subdiv (ISO 3166-2) maps to regions; point-in-polygon for comuna. Pre-built comuna→locode mapping (locode_mapping.gpkg/csv) in sample; only exact/partial name matches kept.
+
+data_quality:
+  authority: ocha_humanitarian_standard
+  update_frequency: annual_review
+  known_release_notes:
+    - "Original creation Sep 2018; last reviewed Feb 2025 on HDX; valid Oct 2021"
+
+suitability_use_cases:
+  city_context: high
+  city_boundaries: high
+  spatial_joins: high
+  vulnerability_inputs: medium
+
+status:
+  production_ready: pending_validation
+  priority: high

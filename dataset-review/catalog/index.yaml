@@ -1,0 +1,102 @@
+datasets:
+
+- id: cl-ine-censo
+  name: Chile Population and Housing Census
+  publisher:
+    id: cl-ine
+    name: Instituto Nacional de Estadísticas (Chile)
+    url: https://www.ine.gob.cl/
+  license:
+    id: CC-BY-4.0
+    name: Creative Commons Attribution 4.0 International
+    url: https://creativecommons.org/licenses/by/4.0/
+    commercial_use: true
+    note: "Verify current terms at ine.gob.cl; Chilean official statistics typically published under open data principles."
+  description: >
+    Official Chile Population and Housing Census dataset providing
+    demographic, housing, employment, and infrastructure indicators
+    at national to sub-city level.
+  coverage:
+    geography: country
+    countries: [CL]
+    spatial_levels: [country, region, comuna, census_block]
+  themes:
+    - socioeconomics
+    - housing
+    - infrastructure
+    - employment
+    - mobility_proxy
+  update_frequency: irregular_census
+  typical_frequency_years: 10
+  current_release: "2024"
+  production_approved_release: "2024"
+  releases:
+    - version: "2024"
+      path: "reviews/cl-ine/cl-ine-censo/releases/2024"
+
+- id: uncece-unlocode
+  name: UN/LOCODE (UN Code for Trade and Transport Locations)
+  publisher:
+    id: uncece-cefact
+    name: United Nations Economic Commission for Europe (UNECE CEFACT)
+    url: https://unece.org/trade/cefact
+  license:
+    id: UN-public
+    name: UN Public Data
+    url: https://unece.org/trade/cefact/UNLOCODE-Download
+    commercial_use: true
+    note: "Publicly available UN data; verify current terms at unece.org."
+  description: >
+    Global code list of locations used in trade and transport, maintained
+    by UNECE CEFACT. Provides standardised location codes (locodes),
+    coordinates, transport function flags, and ISO 3166-2 subdivision links
+    for ports, airports, rail terminals, and other trade/logistics nodes.
+  coverage:
+    geography: global
+    spatial_levels: [country, subdivision, location]
+  themes:
+    - transport
+    - trade
+    - geocoding
+  update_frequency: irregular
+  typical_frequency_years: 0.5
+  current_release: "2024"
+  production_approved_release: "2024"
+  releases:
+    - version: "2024"
+      path: "reviews/uncece-unlocode/releases/2024"
+
+- id: cl-ocha-ab
+  name: Chile Administrative Boundaries (COD-AB)
+  publisher:
+    id: ocha-rolac
+    name: OCHA Regional Office for Latin America and the Caribbean (ROLAC)
+    url: https://data.humdata.org/dataset/cod-ab-chl
+  license:
+    id: CC-BY-IGO-3.0
+    name: Creative Commons Attribution for Intergovernmental Organisations 3.0
+    url: https://creativecommons.org/licenses/by/3.0/igo/
+    commercial_use: true
+    note: "OCHA COD datasets are published on HDX under CC-BY-IGO; verify current terms at data.humdata.org."
+  description: >
+    Official Common Operational Dataset for Administrative Boundaries (COD-AB)
+    for Chile, maintained by OCHA. Provides admin1 (16 regions), admin2
+    (56 provinces), and admin3 (345 comunas) boundary polygons with
+    P-codes for humanitarian and analytical use.
+  coverage:
+    geography: country
+    countries: [CL]
+    spatial_levels: [admin1, admin2, admin3]
+    geographic_extent:
+      lon: [-109.45, -66.42]
+      lat: [-55.98, -17.50]
+  themes:
+    - boundaries
+    - administrative
+    - geocoding
+  update_frequency: annual_review
+  current_release: "2021"
+  production_approved_release: "2021"
+  releases:
+    - version: "2021"
+      path: "reviews/cl-ocha-ab/releases/2021"

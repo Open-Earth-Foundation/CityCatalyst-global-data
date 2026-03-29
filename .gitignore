@@ -182,4 +182,4 @@ your-first-project
 
 my_db.*
 # Sample folders
-dataset_review/**/sample/
+dataset-review/**/**/sample/
