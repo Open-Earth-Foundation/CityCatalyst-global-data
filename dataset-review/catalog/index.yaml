@@ -2,6 +2,7 @@ datasets:
 
 - id: cl-ine-censo
   name: Chile Population and Housing Census
+  dataset_url: https://www.ine.gob.cl/estadisticas/sociales/censos-de-poblacion-y-vivienda/poblacion-y-vivienda
   publisher:
     id: cl-ine
     name: Instituto Nacional de Estadísticas (Chile)
@@ -32,10 +33,13 @@ datasets:
   production_approved_release: "2024"
   releases:
     - version: "2024"
+      source_url: https://www.ine.gob.cl/estadisticas/sociales/censos-de-poblacion-y-vivienda/poblacion-y-vivienda
+      released_at: null
       path: "reviews/cl-ine/cl-ine-censo/releases/2024"
 
 - id: uncece-unlocode
   name: UN/LOCODE (UN Code for Trade and Transport Locations)
+  dataset_url: https://unece.org/trade/cefact/UNLOCODE-Download
   publisher:
     id: uncece-cefact
     name: United Nations Economic Commission for Europe (UNECE CEFACT)
@@ -64,10 +68,13 @@ datasets:
   production_approved_release: "2024"
   releases:
     - version: "2024"
+      source_url: https://unece.org/trade/cefact/UNLOCODE-Download
+      released_at: null
       path: "reviews/uncece-unlocode/releases/2024"
 
 - id: cl-ocha-ab
   name: Chile Administrative Boundaries (COD-AB)
+  dataset_url: https://data.humdata.org/dataset/cod-ab-chl
   publisher:
     id: ocha-rolac
     name: OCHA Regional Office for Latin America and the Caribbean (ROLAC)
@@ -99,4 +106,6 @@ datasets:
   production_approved_release: "2021"
   releases:
     - version: "2021"
+      source_url: https://data.humdata.org/dataset/cod-ab-chl
+      released_at: "2021-10-08"
       path: "reviews/cl-ocha-ab/releases/2021"
