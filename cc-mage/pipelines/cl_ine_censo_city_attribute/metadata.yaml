@@ -1,0 +1,182 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    file_source:
+      path: data_exporters/load_publisher_datasource_cl_ine_censo.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - load_dataset_release_cl_ine_censo
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: load_publisher_datasource_cl_ine_censo
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks: []
+  uuid: load_publisher_datasource_cl_ine_censo
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    file_source:
+      path: data_exporters/load_dataset_release_cl_ine_censo.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - update_city_attribute_cl_ine_censo
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: load_dataset_release_cl_ine_censo
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_publisher_datasource_cl_ine_censo
+  uuid: load_dataset_release_cl_ine_censo
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_loaders/load_cl_ine_censo_from_s3.py
+  downstream_blocks:
+  - load_cl_ine_censo_staging
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_cl_ine_censo_from_s3
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_cl_ine_censo_from_s3
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_exporters/load_cl_ine_censo_staging.py
+  downstream_blocks:
+  - update_city_attribute_cl_ine_censo
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_cl_ine_censo_staging
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_cl_ine_censo_from_s3
+  uuid: load_cl_ine_censo_staging
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    file_source:
+      path: transformers/update_city_attribute_cl_ine_censo.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - cl_ine_censo_cleanup
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_city_attribute_cl_ine_censo
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_dataset_release_cl_ine_censo
+  - load_cl_ine_censo_staging
+  uuid: update_city_attribute_cl_ine_censo
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    file_source:
+      path: transformers/cl_ine_censo_cleanup.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: cl_ine_censo_cleanup
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - update_city_attribute_cl_ine_censo
+  uuid: cl_ine_censo_cleanup
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2026-03-31 00:00:00.000000+00:00'
+data_integration: null
+description: 'Loads Chile INE Census 2024 city-level socioeconomic attributes from
+  S3. Joins with OCHA COD-AB parquet to resolve locodes from comuna codes. Populates
+  publisher_datasource and dataset_release, then upserts into modelled.city_attribute
+  with dataset_id and release_id references.
+
+  '
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: cl_ine_censo_city_attribute
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: cl_ine_censo_city_attribute
+variables:
+  bucket_name: test-global-api
+  censo_key: raw_data/cl-ine/cl-ine-censo/releases/2024/raw_data_cl_ine_censo.csv
+  dataset_name: Chile Population and Housing Census
+  dataset_url: https://www.ine.gob.cl/estadisticas/sociales/censos-de-poblacion-y-vivienda/poblacion-y-vivienda
+  datasource_name: cl-ine-censo
+  ocha_ab_key: raw_data/ocha-rolac/cl-ocha-ab/releases/2021/raw_data_cl_ocha_ab.parquet
+  publisher_name: Instituto Nacional de Estadísticas (Chile)
+  publisher_url: https://www.ine.gob.cl/
+  released_at: '2025-01-01'
+  source_url: https://censo2024.ine.gob.cl/resultados/
+  version_label: '2024'
+variables_dir: /home/src/mage_data/cc-mage
+widgets: []
