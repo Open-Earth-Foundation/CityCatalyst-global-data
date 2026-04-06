@@ -3,115 +3,35 @@ blocks:
   color: null
   configuration: {}
   downstream_blocks:
-  - cleaning_ippu_ct
+  - pollution_ct_staging
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: load_raw_ippu_ct
+  name: load_from_s3_pollution_ct
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: data_loader
   upstream_blocks: []
-  uuid: load_raw_ippu_ct
-- all_upstream_blocks_executed: false
+  uuid: load_from_s3_pollution_ct
+- all_upstream_blocks_executed: true
   color: null
   configuration: {}
   downstream_blocks:
-  - transformation_ippu_ct
+  - joining_pollution_to_city_polygon
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: cleaning_ippu_ct
-  retry_config: null
-  status: executed
-  timeout: null
-  type: transformer
-  upstream_blocks:
-  - load_raw_ippu_ct
-  uuid: cleaning_ippu_ct
-- all_upstream_blocks_executed: false
-  color: null
-  configuration: {}
-  downstream_blocks:
-  - ippu_ct_staging
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: transformation_ippu_ct
-  retry_config: null
-  status: updated
-  timeout: null
-  type: transformer
-  upstream_blocks:
-  - cleaning_ippu_ct
-  uuid: transformation_ippu_ct
-- all_upstream_blocks_executed: false
-  color: null
-  configuration: {}
-  downstream_blocks:
-  - locode_transformation
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: ippu_ct_staging
+  name: pollution_ct_staging
   retry_config: null
   status: executed
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - transformation_ippu_ct
-  uuid: ippu_ct_staging
-- all_upstream_blocks_executed: false
-  color: null
-  configuration:
-    data_provider: postgres
-    data_provider_profile: default
-    dbt: {}
-    disable_query_preprocessing: false
-    export_write_policy: append
-    limit: 1000
-    use_raw_sql: true
-  downstream_blocks: []
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: sql
-  name: update_ippu_ct_sector_activity
-  retry_config: null
-  status: executed
-  timeout: null
-  type: data_exporter
-  upstream_blocks:
-  - locode_transformation
-  uuid: update_ippu_ct_sector_activity
-- all_upstream_blocks_executed: false
-  color: null
-  configuration:
-    data_provider: postgres
-    data_provider_profile: default
-    dbt: {}
-    disable_query_preprocessing: false
-    export_write_policy: append
-    limit: 1000
-    use_raw_sql: true
-  downstream_blocks: []
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: sql
-  name: update_ippu_ct_emission_factor
-  retry_config: null
-  status: updated
-  timeout: null
-  type: data_exporter
-  upstream_blocks:
-  - locode_transformation
-  uuid: update_ippu_ct_emission_factor
+  - load_from_s3_pollution_ct
+  uuid: pollution_ct_staging
 - all_upstream_blocks_executed: true
   color: null
   configuration:
@@ -120,53 +40,23 @@ blocks:
     dbt: {}
     disable_query_preprocessing: false
     export_write_policy: append
-    file_source:
-      path: transformers/ct_country_code_lookup.sql
     limit: 1000
     use_raw_sql: true
   downstream_blocks:
-  - locode_transformation
+  - zcores_city_pollution_ct
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: sql
-  name: ct_country_code_lookup
+  name: joining_pollution_to_city_polygon
   retry_config: null
   status: executed
   timeout: null
-  type: transformer
-  upstream_blocks: []
-  uuid: ct_country_code_lookup
-- all_upstream_blocks_executed: false
-  color: null
-  configuration:
-    data_provider: postgres
-    data_provider_profile: default
-    dbt: {}
-    disable_query_preprocessing: false
-    export_write_policy: append
-    file_source:
-      path: transformers/locode_transformation.sql
-    limit: 1000
-    use_raw_sql: true
-  downstream_blocks:
-  - update_ippu_ct_emissions
-  - update_ippu_ct_sector_activity
-  - update_ippu_ct_emission_factor
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: sql
-  name: locode_transformation
-  retry_config: null
-  status: updated
-  timeout: null
-  type: transformer
+  type: data_exporter
   upstream_blocks:
-  - ct_country_code_lookup
-  - ippu_ct_staging
-  uuid: locode_transformation
-- all_upstream_blocks_executed: false
+  - pollution_ct_staging
+  uuid: joining_pollution_to_city_polygon
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     data_provider: postgres
@@ -181,26 +71,92 @@ blocks:
   executor_type: local_python
   has_callback: false
   language: sql
-  name: update_ippu_ct_emissions
+  name: zcores_city_pollution_ct
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - locode_transformation
-  uuid: update_ippu_ct_emissions
+  - joining_pollution_to_city_polygon
+  uuid: zcores_city_pollution_ct
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: datasource_publisher_CT_pollution
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks: []
+  uuid: datasource_publisher_ct_pollution
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: dataset_release_CT_pollution
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks: []
+  uuid: dataset_release_ct_pollution
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: populating_city_attribute_ct_pollution
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks: []
+  uuid: populating_city_attribute_ct_pollution
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
 conditionals: []
-created_at: '2025-01-15 14:08:55.176442+00:00'
+created_at: '2026-03-30 16:51:20.822597+00:00'
 data_integration: null
 description: null
 executor_config: {}
 executor_count: 1
 executor_type: null
 extensions: {}
-name: ghgi_ippu_climatetrace
+name: hiap_pollution_ct_chile
 notification_config: {}
 remote_variables_dir: null
 retry_config: {}
@@ -210,7 +166,7 @@ settings:
 spark_config: {}
 tags: []
 type: python
-uuid: ghgi_ippu_climatetrace
+uuid: hiap_pollution_ct_chile
 variables:
   bucket_name: test-global-api
 variables_dir: /home/src/mage_data/cc-mage
