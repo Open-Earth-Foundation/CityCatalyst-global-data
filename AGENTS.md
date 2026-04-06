@@ -12,7 +12,7 @@ This repo ingests emissions and activity data from external publishers, transfor
 it into the GlobalAPI — a PostgreSQL database that powers city-level GHG inventory reporting.
 
 There are two distinct halves that must stay in sync:
-- `dataset_review/` — *before* a pipeline exists: methodology, scoring, and sector mappings
+- `dataset-review/` — *before* a pipeline exists: methodology, scoring, and sector mappings
 - `cc-mage/` — the Mage.ai pipelines that actually move and transform the data
 
 A pipeline should not be built without a corresponding dataset review. The review is the source
@@ -41,20 +41,23 @@ never `city_id`. When referencing datasets, `datasource_name` must be an exact s
 ## How dataset_review and cc-mage connect
 
 ```
-dataset_review/catalog/index.yaml        ← find the current version + review path
-    └── review/<publisher>/<dataset>/<version>/
-            ├── methodology.md           ← understand the data structure and assumptions
-            ├── data_scoring.md          ← understand data quality limitations
-            └── mapping/                 ← sector mapping drives the staging SQL transform
-                    └── <source>_to_gpc.csv
+dataset-review/catalog/index.yaml        ← find the current version + review path
+    └── review/<publisher>/<dataset>/
+            ├── README.md                ← dataset-level overview
+            └── releases/<version>/
+                    ├── review.yaml      ← structured review: scoring, methodology notes,
+                    │                      sector mappings, and data quality assessment
+                    ├── notebook/
+                    │   └── exploration.ipynb  ← exploratory analysis of the raw data
+                    └── sample/          ← sample data files for the release
 
 cc-mage/pipelines/<pipeline_name>/
     └── metadata.yaml                    ← references variables (S3 path, year, gas)
 ```
 
-The mapping CSV in `dataset_review` is what drives the `gpc_reference_number` values that
-end up in `modelled.emissions`. If the mapping is wrong or missing, the pipeline will load
-data under incorrect GPC reference numbers.
+The `review.yaml` in each release folder is what documents how data maps to GPC reference
+numbers and sector structure. If this is missing or incomplete before a pipeline is built,
+the pipeline's sector mappings will be undocumented and unreliable.
 
 ---
 
@@ -63,9 +66,9 @@ data under incorrect GPC reference numbers.
 **Do not rename `cc-mage/`** — the folder name is baked into Mage.ai's project configuration.
 Renaming it breaks the Docker setup entirely.
 
-**Do not delete version folders in `dataset_review/`** — old versions must be preserved.
-When a dataset is updated, create a new version folder alongside the old one. The catalog
-`current_version` field (or `production_approved_release`) is what determines which is active.
+**Do not delete release folders in `dataset-review/review/`** — old releases must be preserved.
+When a dataset is updated, create a new release folder alongside the old one. The catalog
+`production_approved_release` field is what determines which release is currently active.
 
 **Pipeline `metadata.yaml` descriptions are unreliable** — descriptions may be `null` or
 outdated. Do not use them to understand what a pipeline does. Read the blocks directly.
