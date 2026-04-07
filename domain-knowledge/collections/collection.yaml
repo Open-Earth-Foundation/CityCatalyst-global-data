@@ -1,0 +1,19 @@
+# Collections group datasets for discovery by theme.
+# All topic ids must exist in dataset-review/catalog/index.yaml.
+
+collections:
+
+  - id: ghgi
+    name: green house gas inventory
+    topics:
+      - id:
+
+  - id: actions
+    name: climate actions
+    datasets:
+      - id:
+  
+  - id: climate-risk
+    name: climate risk
+    datasets:
+      - id:

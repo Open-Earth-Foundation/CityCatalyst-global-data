@@ -32,7 +32,7 @@ datasets:
       retrieved_at: null
       retrieval_method: manual_download
       api_endpoint: null
-      path: "review/cl-ine/cl-ine-censo/releases/2024"
+      path: "reviews/cl-ine/cl-ine-censo/releases/2024"
       is_latest: true
       production_approved: true
       pipeline_name: null
@@ -83,7 +83,7 @@ datasets:
       retrieved_at: null
       retrieval_method: manual_download
       api_endpoint: null
-      path: "review/uncece/uncece-unlocode/releases/2024"
+      path: "reviews/uncece/uncece-unlocode/releases/2024"
       is_latest: true
       production_approved: true
       pipeline_name: null
@@ -137,7 +137,7 @@ datasets:
       retrieved_at: null
       retrieval_method: manual_download
       api_endpoint: null
-      path: "review/ocha-rolac/cl-ocha-ab/releases/2021"
+      path: "reviews/ocha-rolac/cl-ocha-ab/releases/2021"
       is_latest: true
       production_approved: true
       pipeline_name: null

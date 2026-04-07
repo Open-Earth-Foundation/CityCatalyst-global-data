@@ -16,7 +16,7 @@ cc-mage/                  Mage.ai pipeline project
 dataset-review/           Dataset discovery and tracking
   catalog/index.yaml      Unified dataset catalog — one entry per dataset from first
                           discovery through production
-  review/                 Source-level dataset review notes
+  reviews/                Source-level dataset review notes
   collections/            Groupings of datasets by theme or source
 
 engineering-standards/    Team design principles and conventions

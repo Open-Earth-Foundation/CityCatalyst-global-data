@@ -30,7 +30,7 @@ datasets, `datasource_name` must be an exact string match.
 **Do not rename `cc-mage/`** — the folder name is baked into Mage.ai's project configuration.
 Renaming it breaks the Docker setup entirely.
 
-**Do not delete release folders in `dataset-review/review/`** — old releases must be preserved.
+**Do not delete release folders in `dataset-review/reviews/`** — old releases must be preserved.
 When a dataset is updated, create a new release folder alongside the old one. The catalog
 `production_approved_release` field is what determines which release is currently active.
 
