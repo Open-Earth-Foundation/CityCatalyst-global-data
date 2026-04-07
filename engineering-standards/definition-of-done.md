@@ -34,7 +34,8 @@ Use this when a dataset is being shipped to production for the first time.
 
 ### Documentation & Catalog
 
-- [ ] Methodology page exists in Notion and the URL is recorded in the catalog release entry as `methodology_url`
+- [ ] `methodology_url` set to the source publisher's own methodology documentation
+- [ ] OEF internal review exists in Notion and `internal_review_url` is set in the catalog release entry
 - [ ] Dataset catalog entry in `dataset-review/catalog/index.yaml` is complete:
   - [ ] All required dataset-level fields populated (see [Documentation & Metadata](./documentation-and-metadata.md))
   - [ ] Release entry has `production_approved: true`
@@ -74,7 +75,8 @@ Use this when an existing pipeline is being run against a new data release (same
 
 ### Documentation
 
-- [ ] If the methodology changed between releases, the Notion methodology page has been updated and `methodology_url` reflects the current version
+- [ ] If the source updated its methodology, `methodology_url` updated to the new documentation
+- [ ] If OEF's analysis changed, Notion review updated and `internal_review_url` reflects the current page
 
 ---
 
