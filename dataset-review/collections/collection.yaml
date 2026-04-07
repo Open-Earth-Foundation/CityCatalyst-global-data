@@ -1,0 +1,15 @@
+# Collections group datasets for discovery by country or theme.
+# All dataset ids must exist in dataset-review/catalog/index.yaml.
+
+collections:
+
+  - id: chile
+    name: Chile datasets
+    datasets:
+      - id: cl-ine-censo
+      - id: cl-ocha-ab
+
+  - id: global-reference
+    name: Global reference datasets
+    datasets:
+      - id: uncece-unlocode

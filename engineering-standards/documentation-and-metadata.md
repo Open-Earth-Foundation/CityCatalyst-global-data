@@ -111,7 +111,8 @@ Each entry is a flat dataset record with a nested publisher and releases list. L
       released_at: "2023-01-01"
       retrieved_at: "2024-01-15"
       retrieval_method: api
-      methodology_url: https://www.notion.so/openearth/...
+      methodology_url: https://www.epa.gov/ghgreporting/ghgrp-technical-guidance
+      internal_review_url: https://www.notion.so/openearth/...
       api_endpoint: https://data.epa.gov/efservice/
       path: reviews/epa_ghgrp_manufacturing/2023
       is_latest: true
@@ -136,7 +137,8 @@ Each entry is a flat dataset record with a nested publisher and releases list. L
       released_at: "2022-01-01"
       retrieved_at: "2023-02-10"
       retrieval_method: api
-      methodology_url: https://www.notion.so/openearth/...
+      methodology_url: https://www.epa.gov/ghgreporting/ghgrp-technical-guidance
+      internal_review_url: https://www.notion.so/openearth/...
       api_endpoint: https://data.epa.gov/efservice/
       path: reviews/epa_ghgrp_manufacturing/2022
       is_latest: false
@@ -211,7 +213,8 @@ Each entry is a flat dataset record with a nested publisher and releases list. L
 | `pipeline_version` | Pipeline version suffix if versioned (e.g. `"2"`), otherwise `null` |
 | `data_quality` | All six generic quality categories scored 1–3 |
 | `gpc_reference_numbers` | GPC sectors covered by this release (can change between releases) |
-| `methodology_url` | Notion methodology review URL — can differ per release if methodology changes |
+| `methodology_url` | URL to the source publisher's own methodology documentation — can differ per release if the source updates its methodology |
+| `internal_review_url` | URL to OEF's internal Notion review page for this release — the narrative analysis, mapping decisions, and data quality assessment |
 
 The six `data_quality` categories are: `documentation`, `methodology`, `coverage`, `granularity`, `freshness`, `accessibility`. These apply across all data types. For emissions datasets, a more detailed scoring using the [Data Scoring Framework](https://www.notion.so/openearth/Data-Scoring-Framework-233eb557728b806cb162cfd9fc66925a) should be included in the review documents at `path`.
 
@@ -227,7 +230,8 @@ The six `data_quality` categories are: `documentation`, `methodology`, `coverage
 - **Create entries early.** A dataset gets a catalog entry when it is first identified, not when a pipeline is built. The entry matures as the dataset progresses.
 - **One release entry per ingestion.** When a new version of a dataset is retrieved, a new release is appended with the next `version_number`. Previous releases stay with `is_latest: false`. Release entries are never deleted.
 - **`production_approved` is set at the release level.** Each release independently tracks whether it is approved for production. The production seeder processes releases where `production_approved: true` and `is_latest: true`. Only one release per dataset should have `is_latest: true`.
-- **`methodology_url` is required before any release can be `production_approved: true`.** The Notion methodology review must exist and be linked at the dataset level first.
+- **`methodology_url` is the source's methodology, not ours.** It should point to the publisher's own technical documentation — the evidence that we have read and understood how they produce their data. It can differ between releases if the source updates its methodology.
+- **`internal_review_url` is required before any release can be `production_approved: true`.** OEF's internal Notion review must exist and be linked before a release ships. This is where mapping decisions, quality assessment, and GPC alignment reasoning are documented.
 - **License is tracked per release.** Licenses can and do change between releases. Always confirm the license for each release being ingested and do not assume it matches the previous release.
 - **Long descriptions belong in review documents and Notion.** The `path` field in each release points to review documents in `dataset-review/` in this repo. The YAML holds structured facts; detailed narrative lives in review docs and Notion.
 - **`data_quality` is required for production releases.** Generic quality scores must be completed for every release marked `production_approved: true`. Scores from prior releases should not be carried forward without re-evaluation.
