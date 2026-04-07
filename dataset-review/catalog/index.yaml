@@ -7,12 +7,6 @@ datasets:
     id: cl-ine
     name: Instituto Nacional de Estadísticas (Chile)
     url: https://www.ine.gob.cl/
-  license:
-    id: CC-BY-4.0
-    name: Creative Commons Attribution 4.0 International
-    url: https://creativecommons.org/licenses/by/4.0/
-    commercial_use: true
-    note: "Verify current terms at ine.gob.cl; Chilean official statistics typically published under open data principles."
   description: >
     Official Chile Population and Housing Census dataset providing
     demographic, housing, employment, and infrastructure indicators
@@ -29,13 +23,34 @@ datasets:
     - mobility_proxy
   update_frequency: irregular_census
   typical_frequency_years: 10
-  current_release: "2024"
-  production_approved_release: "2024"
+  priority: medium
   releases:
     - version: "2024"
+      version_number: 1
       source_url: https://www.ine.gob.cl/estadisticas/sociales/censos-de-poblacion-y-vivienda/poblacion-y-vivienda
       released_at: null
-      path: "reviews/cl-ine/cl-ine-censo/releases/2024"
+      retrieved_at: null
+      retrieval_method: manual_download
+      api_endpoint: null
+      path: "review/cl-ine/cl-ine-censo/releases/2024"
+      is_latest: true
+      production_approved: true
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      license:
+        id: CC-BY-4.0
+        name: Creative Commons Attribution 4.0 International
+        url: https://creativecommons.org/licenses/by/4.0/
+        commercial_use: true
+        note: "Verify current terms at ine.gob.cl; Chilean official statistics typically published under open data principles."
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
 
 - id: uncece-unlocode
   name: UN/LOCODE (UN Code for Trade and Transport Locations)
@@ -44,12 +59,6 @@ datasets:
     id: uncece-cefact
     name: United Nations Economic Commission for Europe (UNECE CEFACT)
     url: https://unece.org/trade/cefact
-  license:
-    id: UN-public
-    name: UN Public Data
-    url: https://unece.org/trade/cefact/UNLOCODE-Download
-    commercial_use: true
-    note: "Publicly available UN data; verify current terms at unece.org."
   description: >
     Global code list of locations used in trade and transport, maintained
     by UNECE CEFACT. Provides standardised location codes (locodes),
@@ -64,13 +73,34 @@ datasets:
     - geocoding
   update_frequency: irregular
   typical_frequency_years: 0.5
-  current_release: "2024"
-  production_approved_release: "2024"
+  priority: high
   releases:
     - version: "2024"
+      version_number: 1
       source_url: https://unece.org/trade/cefact/UNLOCODE-Download
       released_at: null
-      path: "reviews/uncece-unlocode/releases/2024"
+      retrieved_at: null
+      retrieval_method: manual_download
+      api_endpoint: null
+      path: "review/uncece/uncece-unlocode/releases/2024"
+      is_latest: true
+      production_approved: true
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      license:
+        id: UN-public
+        name: UN Public Data
+        url: https://unece.org/trade/cefact/UNLOCODE-Download
+        commercial_use: true
+        note: "Publicly available UN data; verify current terms at unece.org."
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
 
 - id: cl-ocha-ab
   name: Chile Administrative Boundaries (COD-AB)
@@ -79,12 +109,6 @@ datasets:
     id: ocha-rolac
     name: OCHA Regional Office for Latin America and the Caribbean (ROLAC)
     url: https://data.humdata.org/dataset/cod-ab-chl
-  license:
-    id: CC-BY-IGO-3.0
-    name: Creative Commons Attribution for Intergovernmental Organisations 3.0
-    url: https://creativecommons.org/licenses/by/3.0/igo/
-    commercial_use: true
-    note: "OCHA COD datasets are published on HDX under CC-BY-IGO; verify current terms at data.humdata.org."
   description: >
     Official Common Operational Dataset for Administrative Boundaries (COD-AB)
     for Chile, maintained by OCHA. Provides admin1 (16 regions), admin2
@@ -102,10 +126,31 @@ datasets:
     - administrative
     - geocoding
   update_frequency: annual_review
-  current_release: "2021"
-  production_approved_release: "2021"
+  priority: high
   releases:
     - version: "2021"
+      version_number: 1
       source_url: https://data.humdata.org/dataset/cod-ab-chl
       released_at: "2021-10-08"
-      path: "reviews/cl-ocha-ab/releases/2021"
+      retrieved_at: null
+      retrieval_method: manual_download
+      api_endpoint: null
+      path: "review/ocha-rolac/cl-ocha-ab/releases/2021"
+      is_latest: true
+      production_approved: true
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      license:
+        id: CC-BY-IGO-3.0
+        name: Creative Commons Attribution for Intergovernmental Organisations 3.0
+        url: https://creativecommons.org/licenses/by/3.0/igo/
+        commercial_use: true
+        note: "OCHA COD datasets are published on HDX under CC-BY-IGO; verify current terms at data.humdata.org."
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
