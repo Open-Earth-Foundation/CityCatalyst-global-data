@@ -42,14 +42,14 @@ SELECT
     attribute_value,
     datasource_date,
     'climateTRACE' AS datasource,
-    'stationary pollution' AS attribute_type,
+    'stationary_pollution' AS attribute_type,
 
     CASE
-        WHEN attribute_value < -1 THEN 'significantly below average stationary pollution'
-        WHEN attribute_value >= -1 AND attribute_value < 0 THEN 'below average'
+        WHEN attribute_value < -1 THEN 'very_low'
+        WHEN attribute_value >= -1 AND attribute_value < 0 THEN 'low'
         WHEN attribute_value = 0 THEN 'average'
-        WHEN attribute_value > 0 AND attribute_value <= 1 THEN 'above average'
-        WHEN attribute_value > 1 THEN 'significantly above average stationary pollution'
+        WHEN attribute_value > 0 AND attribute_value <= 1 THEN 'high'
+        WHEN attribute_value > 1 THEN 'very_high'
     END AS attribute_category
 
 FROM z_scores;
