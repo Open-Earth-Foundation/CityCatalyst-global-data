@@ -1,3 +1,5 @@
+DROP TABLE raw_data.pollution_with_city;
+
 CREATE TABLE raw_data.pollution_with_city AS
 SELECT
     ps.*,

@@ -56,7 +56,7 @@ blocks:
   upstream_blocks:
   - pollution_ct_staging
   uuid: joining_pollution_to_city_polygon
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: postgres
@@ -66,7 +66,8 @@ blocks:
     export_write_policy: append
     limit: 1000
     use_raw_sql: true
-  downstream_blocks: []
+  downstream_blocks:
+  - populating_city_attribute_ct_pollution
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -123,7 +124,31 @@ blocks:
   type: data_exporter
   upstream_blocks: []
   uuid: dataset_release_ct_pollution
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - drop_staging_pollution_ct
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: populating_city_attribute_ct_pollution
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - zcores_city_pollution_ct
+  uuid: populating_city_attribute_ct_pollution
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: postgres
@@ -138,13 +163,14 @@ blocks:
   executor_type: local_python
   has_callback: false
   language: sql
-  name: populating_city_attribute_ct_pollution
+  name: drop_staging_pollution_ct
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: data_exporter
-  upstream_blocks: []
-  uuid: populating_city_attribute_ct_pollution
+  upstream_blocks:
+  - populating_city_attribute_ct_pollution
+  uuid: drop_staging_pollution_ct
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
