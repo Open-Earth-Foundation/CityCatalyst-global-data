@@ -1,0 +1,52 @@
+dataset_id: world-bank-projects
+release: "v2"
+reviewed_on: 2026-04-09
+reviewed_by: amanda
+
+publisher:
+  name: The World Bank
+  product_site: World Bank Search API
+  url: https://search.worldbank.org/api/v2/projects
+
+source:
+  main_url: https://search.worldbank.org/api/v2/projects?format=json&rows=50&os=0&qterm=climate
+  access_type: public_api
+  format: JSON
+  documentation_available: true
+
+coverage:
+  geography: global
+  temporal_reference: rolling API results
+  spatial_levels_expected:
+    - country
+    - project
+
+themes:
+  - climate_finance
+  - development_projects
+  - policy
+
+key_attributes:
+  - id
+  - project_name
+  - countryshortname
+  - regionname
+  - boardapprovaldate
+  - closingdate
+  - totalamt
+  - mjsector_namecode
+  - sector_namecode
+  - theme_namecode
+  - url
+
+integration_notes:
+  join_keys:
+    - countryshortname
+    - id
+  requires_cleaning: true
+  requires_harmonisation: true
+  recommended_storage: json-to-parquet normalization with nested field flattening
+
+status:
+  production_ready: pending_validation
+  priority: medium

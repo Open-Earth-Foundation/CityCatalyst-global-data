@@ -12,6 +12,9 @@ cc-mage/                  Mage.ai pipeline project
   data_exporters/         Shared exporter blocks
   utils/                  Shared Python utilities
   local_scripts/          Ad-hoc and exploratory scripts (not part of any pipeline)
+  io_config.yaml          Mage runtime storage/connection config
+
+mage_data/                Mage local metadata/state (runtime-generated)
 
 dataset-review/           Dataset discovery and tracking
   catalog/index.yaml      Unified dataset catalog — one entry per dataset from first
@@ -25,7 +28,15 @@ engineering-standards/    Team design principles and conventions
   data-quality-and-validation.md
   documentation-and-metadata.md
 
+domain-knowledge/         Shared domain definitions and reference materials
+  catalog/                Domain dataset catalog and metadata
+  collections/            Curated thematic groupings
+  topics/                 Topic references and glossary pages
+
 ARCHITECTURE.md           Technical reference — data stages, DB schema, pipeline block flow
+AGENTS.md                 Agent guardrails and repository-specific constraints
+docker-compose.yml        Local orchestration for Mage + dependencies
+dev.env                   Example local environment configuration
 ```
 
 For the full technical architecture (S3 stages, database schema, Mage block structure) see [`ARCHITECTURE.md`](./ARCHITECTURE.md).

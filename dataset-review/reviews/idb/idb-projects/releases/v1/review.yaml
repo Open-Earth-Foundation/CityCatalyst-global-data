@@ -1,0 +1,48 @@
+dataset_id: idb-projects
+release: "v1"
+reviewed_on: 2026-04-09
+reviewed_by: amanda
+
+publisher:
+  name: Inter-American Development Bank (IDB)
+  product_site: IDB Open Data API
+  url: https://data.iadb.org/api/action/datastore_search
+
+source:
+  main_url: https://data.iadb.org/api/action/datastore_search
+  access_type: public_api
+  format: JSON
+  documentation_available: true
+
+coverage:
+  geography: regional
+  regions:
+    - Latin America and the Caribbean
+  temporal_reference: rolling API results
+  spatial_levels_expected:
+    - country
+    - project
+
+themes:
+  - climate_finance
+  - development_projects
+  - policy
+
+key_attributes:
+  - resource_id
+  - records
+  - total
+  - limit
+  - offset
+
+integration_notes:
+  join_keys:
+    - country
+    - project_id
+  requires_cleaning: true
+  requires_harmonisation: true
+  recommended_storage: json-to-parquet normalization with resource-specific schemas
+
+status:
+  production_ready: pending_validation
+  priority: medium

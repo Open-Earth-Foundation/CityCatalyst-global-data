@@ -157,3 +157,153 @@ datasets:
         granularity: null
         freshness: null
         accessibility: null
+
+- id: world-bank-projects
+  name: World Bank Projects API
+  dataset_url: https://search.worldbank.org/api/v2/projects
+  publisher:
+    id: world-bank
+    name: The World Bank
+    url: https://www.worldbank.org/
+  description: >
+    Global project-level metadata from the World Bank Search API.
+    This entry tracks climate-related projects retrieved using a climate
+    query term and is intended for project discovery, finance context,
+    and cross-country climate investment analysis.
+  coverage:
+    geography: global
+    spatial_levels: [country, project]
+  themes:
+    - climate_finance
+    - development_projects
+    - policy
+  update_frequency: rolling_api
+  priority: medium
+  releases:
+    - version: "v2"
+      version_number: 1
+      source_url: https://search.worldbank.org/api/v2/projects?format=json&rows=50&os=0&qterm=climate
+      released_at: null
+      retrieved_at: null
+      retrieval_method: api
+      api_endpoint: https://search.worldbank.org/api/v2/projects
+      path: "reviews/world-bank/world-bank-projects/releases/v2"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: null
+      license:
+        id: world-bank-terms
+        name: World Bank Open Data Terms of Use
+        url: https://www.worldbank.org/en/about/legal/terms-and-conditions
+        commercial_use: true
+        note: "Confirm API-specific reuse conditions before production approval."
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
+- id: idb-projects
+  name: IDB Datastore Search API
+  dataset_url: https://data.iadb.org/api/action/datastore_search
+  publisher:
+    id: idb
+    name: Inter-American Development Bank (IDB)
+    url: https://www.iadb.org/
+  description: >
+    API endpoint for retrieving structured records from IDB open data
+    datastore resources. Intended for discovering and integrating
+    climate- and development-related project data with regional coverage.
+  coverage:
+    geography: regional
+    regions: [Latin America and the Caribbean]
+    spatial_levels: [country, project]
+  themes:
+    - climate_finance
+    - development_projects
+    - policy
+  update_frequency: rolling_api
+  priority: medium
+  releases:
+    - version: "v1"
+      version_number: 1
+      source_url: https://data.iadb.org/api/action/datastore_search
+      released_at: null
+      retrieved_at: null
+      retrieval_method: api
+      api_endpoint: https://data.iadb.org/api/action/datastore_search
+      path: "reviews/idb/idb-projects/releases/v1"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: null
+      license:
+        id: idb-terms
+        name: IDB Terms and Conditions
+        url: https://www.iadb.org/en/terms-and-conditions
+        commercial_use: true
+        note: "Confirm resource-level license and reuse constraints before production approval."
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
+- id: gcf-projects
+  name: Green Climate Fund Projects API
+  dataset_url: http://api.gcfund.org/v1/projects
+  publisher:
+    id: gcf
+    name: Green Climate Fund (GCF)
+    url: https://www.greenclimate.fund/
+  description: >
+    Project-level portfolio data from the Green Climate Fund API.
+    Intended for tracking climate finance projects, statuses, funding
+    levels, and geographic coverage across mitigation and adaptation efforts.
+  coverage:
+    geography: global
+    spatial_levels: [country, project]
+  themes:
+    - climate_finance
+    - development_projects
+    - adaptation
+    - mitigation
+  update_frequency: rolling_api
+  priority: medium
+  releases:
+    - version: "v1"
+      version_number: 1
+      source_url: http://api.gcfund.org/v1/projects
+      released_at: null
+      retrieved_at: null
+      retrieval_method: api
+      api_endpoint: http://api.gcfund.org/v1/projects
+      path: "reviews/gcf/gcf-projects/releases/v1"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: null
+      license:
+        id: gcf-terms
+        name: Green Climate Fund Terms of Use
+        url: https://www.greenclimate.fund/
+        commercial_use: true
+        note: "Confirm API and data reuse terms before production approval."
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null

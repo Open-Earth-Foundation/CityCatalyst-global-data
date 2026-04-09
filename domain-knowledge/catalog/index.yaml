@@ -1,1 +1,9 @@
 topics:
+
+- id: climate-project
+  type: concept
+  name: Climate project
+  summary: A funded intervention implementing one or more climate actions
+  relates_to:
+    - climate-action
+  doc: items/climate-projec.md

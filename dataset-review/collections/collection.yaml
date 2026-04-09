@@ -13,3 +13,10 @@ collections:
     name: Global reference datasets
     datasets:
       - id: uncece-unlocode
+
+  - id: projects
+    name: Projects datasets
+    datasets:
+      - id: world-bank-projects
+      - id: idb-projects
+      - id: gcf-projects
