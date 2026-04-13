@@ -7,6 +7,7 @@ definition of done.
 
 ---
 
+
 ## Identity mappings you must get right
 
 These are the most common source of mistakes in SQL and Python:
