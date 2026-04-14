@@ -8,6 +8,7 @@ collections:
     datasets:
       - id: cl-ine-censo
       - id: cl-ocha-ab
+      - id: cl-ssg-policy-documents
 
   - id: global-reference
     name: Global reference datasets

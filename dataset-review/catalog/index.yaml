@@ -307,3 +307,59 @@ datasets:
         granularity: null
         freshness: null
         accessibility: null
+
+- id: cl-ssg-policy-documents
+  name: Chile SSG curated policy document inventory
+  dataset_url: https://cambioclimatico.mma.gob.cl/
+  publisher:
+    id: cl-ssg
+    name: Chile SSG policy document inventory (curated)
+    url: https://www.sei.org/
+  description: >
+    Curated CSV manifest of Chilean climate, territorial planning, and related
+    policy documents (national, regional, communal, and inter-communal) with
+    territory codes and source links. Upstream files are published by many
+    distinct bodies; this entry tracks the inventory and methodology for MEED /
+    SSG use, not a single bulk download.
+  coverage:
+    geography: country
+    countries: [CL]
+    spatial_levels: [country, admin1, comuna, inter_communal]
+  themes:
+    - policy
+    - climate_instruments
+    - territorial_planning
+    - mitigation
+  update_frequency: manual_refresh
+  priority: medium
+  releases:
+    - version: "2026"
+      version_number: 1
+      source_url: null
+      released_at: null
+      retrieved_at: null
+      retrieval_method: curated_inventory
+      api_endpoint: null
+      path: "reviews/cl-ssg/cl-ssg-policy-documents/releases/2026"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: null
+      license:
+        id: mixed-upstream-cl
+        name: Varies by upstream Chilean source
+        url: null
+        commercial_use: false
+        note: >
+          Manifest only in this repo. Each linked document may have its own terms;
+          confirm host and ministry/GORE/municipal policies before storing or
+          redistributing full PDFs.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
