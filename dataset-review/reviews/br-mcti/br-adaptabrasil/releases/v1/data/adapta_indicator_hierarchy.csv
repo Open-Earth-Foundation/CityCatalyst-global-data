@@ -1,0 +1,361 @@
+nome_nivel_1,nome_nivel_2,nome_nivel_3,nome_nivel_4,nome_nivel_5,nome_nivel_6,id_nivel_1,id_nivel_2,id_nivel_3,id_nivel_4,id_nivel_5,id_nivel_6
+Biodiversidade,Integridade do bioma,Ameaça climática,Resiliência climática,Amplitude,,90000,90001,90004,90013,90034,
+Biodiversidade,Integridade do bioma,Ameaça climática,Resiliência climática,Precipitação acumulada,,90000,90001,90004,90013,90031,
+Biodiversidade,Integridade do bioma,Ameaça climática,Resiliência climática,Sazonalidade da precipitação,,90000,90001,90004,90013,90032,
+Biodiversidade,Integridade do bioma,Ameaça climática,Resiliência climática,Temperatura anual,,90000,90001,90004,90013,90033,
+Biodiversidade,Integridade do bioma,Exposição,Cobertura exposta,Cobertura natural,,90000,90001,90003,90012,90028,
+Biodiversidade,Integridade do bioma,Exposição,Cobertura exposta,Área para conservação,,90000,90001,90003,90012,90030,
+Biodiversidade,Integridade do bioma,Exposição,Cobertura exposta,Área protegida,,90000,90001,90003,90012,90029,
+Biodiversidade,Integridade do bioma,Vulnerabilidade,Capacidade adaptativa,Instrumentos para conservação,Comitê gestor e plano de manejo,90000,90001,90002,90006,90011,90027
+Biodiversidade,Integridade do bioma,Vulnerabilidade,Capacidade adaptativa,Instrumentos para conservação,Orientação técnica,90000,90001,90002,90006,90011,90026
+Biodiversidade,Integridade do bioma,Vulnerabilidade,Sensibilidade,Cobertura do solo,Mineração,90000,90001,90002,90005,90008,90021
+Biodiversidade,Integridade do bioma,Vulnerabilidade,Sensibilidade,Cobertura do solo,Passivo ambiental,90000,90001,90002,90005,90008,90018
+Biodiversidade,Integridade do bioma,Vulnerabilidade,Sensibilidade,Cobertura do solo,Pastagem degradada,90000,90001,90002,90005,90008,90020
+Biodiversidade,Integridade do bioma,Vulnerabilidade,Sensibilidade,Cobertura do solo,Perda de vegetação,90000,90001,90002,90005,90008,90019
+Biodiversidade,Integridade do bioma,Vulnerabilidade,Sensibilidade,Densidade,Estabelecimento agropecuário,90000,90001,90002,90005,90009,90023
+Biodiversidade,Integridade do bioma,Vulnerabilidade,Sensibilidade,Densidade,População,90000,90001,90002,90005,90009,90022
+Biodiversidade,Integridade do bioma,Vulnerabilidade,Sensibilidade,Infraestrutura,Hidrelétricas,90000,90001,90002,90005,90010,90025
+Biodiversidade,Integridade do bioma,Vulnerabilidade,Sensibilidade,Infraestrutura,Malha rodoviária,90000,90001,90002,90005,90010,90024
+Biodiversidade,Integridade do bioma,Vulnerabilidade,Sensibilidade,Mudança e uso do solo,Agrotóxico,90000,90001,90002,90005,90007,90014
+Biodiversidade,Integridade do bioma,Vulnerabilidade,Sensibilidade,Mudança e uso do solo,Fogo,90000,90001,90002,90005,90007,90017
+Biodiversidade,Integridade do bioma,Vulnerabilidade,Sensibilidade,Mudança e uso do solo,Sem agricultura familiar,90000,90001,90002,90005,90007,90015
+Biodiversidade,Integridade do bioma,Vulnerabilidade,Sensibilidade,Mudança e uso do solo,Sem prática agrícola sustentável,90000,90001,90002,90005,90007,90016
+Desastres geo-hidrológicos,Deslizamento de terra,Ameaça,,,,60000,60001,60004,,,
+Desastres geo-hidrológicos,Deslizamento de terra,Exposição,Densidade demográfica,Densidade da população urbana,,60000,60001,60003,60013,60040,
+Desastres geo-hidrológicos,Deslizamento de terra,Exposição,Moradias em ambiente de risco,Domicílios em áreas de risco,,60000,60001,60003,60012,60039,
+Desastres geo-hidrológicos,Deslizamento de terra,Vulnerabilidade,Capacidade adaptativa,Capacidade econômica municipal,Emprego e renda,60000,60001,60002,60005,60007,60016
+Desastres geo-hidrológicos,Deslizamento de terra,Vulnerabilidade,Capacidade adaptativa,Capacidade econômica municipal,Gestão fiscal,60000,60001,60002,60005,60007,60015
+Desastres geo-hidrológicos,Deslizamento de terra,Vulnerabilidade,Capacidade adaptativa,Capacidade econômica municipal,Investimento em políticas de adaptação,60000,60001,60002,60005,60007,60014
+Desastres geo-hidrológicos,Deslizamento de terra,Vulnerabilidade,Capacidade adaptativa,Capacidade econômica municipal,Produto interno bruto por área urbana,60000,60001,60002,60005,60007,60017
+Desastres geo-hidrológicos,Deslizamento de terra,Vulnerabilidade,Capacidade adaptativa,Gestão de risco de desastre,Ações para redução de risco,60000,60001,60002,60005,60008,60022
+Desastres geo-hidrológicos,Deslizamento de terra,Vulnerabilidade,Capacidade adaptativa,Gestão de risco de desastre,Gestão de ocupação urbana em áreas de risco,60000,60001,60002,60005,60008,60021
+Desastres geo-hidrológicos,Deslizamento de terra,Vulnerabilidade,Capacidade adaptativa,Gestão de risco de desastre,Gestão de resíduos e limpeza pública,60000,60001,60002,60005,60008,60020
+Desastres geo-hidrológicos,Deslizamento de terra,Vulnerabilidade,Capacidade adaptativa,Gestão de risco de desastre,Instituições para gestão de risco,60000,60001,60002,60005,60008,60019
+Desastres geo-hidrológicos,Deslizamento de terra,Vulnerabilidade,Capacidade adaptativa,Gestão de risco de desastre,Plano de contingência,60000,60001,60002,60005,60008,60024
+Desastres geo-hidrológicos,Deslizamento de terra,Vulnerabilidade,Capacidade adaptativa,Gestão de risco de desastre,Programa cidades resilientes,60000,60001,60002,60005,60008,60018
+Desastres geo-hidrológicos,Deslizamento de terra,Vulnerabilidade,Capacidade adaptativa,Gestão de risco de desastre,Sistemas de alerta antecipado,60000,60001,60002,60005,60008,60023
+Desastres geo-hidrológicos,Deslizamento de terra,Vulnerabilidade,Capacidade adaptativa,Política urbana,Estabelecimentos de saúde,60000,60001,60002,60005,60009,60029
+Desastres geo-hidrológicos,Deslizamento de terra,Vulnerabilidade,Capacidade adaptativa,Política urbana,Governança em habitação,60000,60001,60002,60005,60009,60027
+Desastres geo-hidrológicos,Deslizamento de terra,Vulnerabilidade,Capacidade adaptativa,Política urbana,Governança em meio ambiente,60000,60001,60002,60005,60009,60026
+Desastres geo-hidrológicos,Deslizamento de terra,Vulnerabilidade,Capacidade adaptativa,Política urbana,Governança em transporte,60000,60001,60002,60005,60009,60028
+Desastres geo-hidrológicos,Deslizamento de terra,Vulnerabilidade,Capacidade adaptativa,Política urbana,Plano municipal de saneamento básico,60000,60001,60002,60005,60009,60030
+Desastres geo-hidrológicos,Deslizamento de terra,Vulnerabilidade,Capacidade adaptativa,Política urbana,Uso e ocupação do solo,60000,60001,60002,60005,60009,60025
+Desastres geo-hidrológicos,Deslizamento de terra,Vulnerabilidade,Sensibilidade,Infraestrutura,Drenagem,60000,60001,60002,60006,60011,60038
+Desastres geo-hidrológicos,Deslizamento de terra,Vulnerabilidade,Sensibilidade,Infraestrutura,Falta de mobilidade urbana,60000,60001,60002,60006,60011,60035
+Desastres geo-hidrológicos,Deslizamento de terra,Vulnerabilidade,Sensibilidade,Infraestrutura,Inacessibilidade às cidades,60000,60001,60002,60006,60011,60036
+Desastres geo-hidrológicos,Deslizamento de terra,Vulnerabilidade,Sensibilidade,Infraestrutura,Saneamento básico,60000,60001,60002,60006,60011,60037
+Desastres geo-hidrológicos,Deslizamento de terra,Vulnerabilidade,Sensibilidade,População,Desigualdade de renda,60000,60001,60002,60006,60010,60033
+Desastres geo-hidrológicos,Deslizamento de terra,Vulnerabilidade,Sensibilidade,População,Domicílios inadequados,60000,60001,60002,60006,60010,60034
+Desastres geo-hidrológicos,Deslizamento de terra,Vulnerabilidade,Sensibilidade,População,Jovens sem ensino médio,60000,60001,60002,60006,60010,60032
+Desastres geo-hidrológicos,Deslizamento de terra,Vulnerabilidade,Sensibilidade,População,População com demandas especiais,60000,60001,60002,60006,60010,60031
+Desastres geo-hidrológicos,"Inundações, enxurradas e alagamentos",Ameaça,,,,60000,60041,60044,,,
+Desastres geo-hidrológicos,"Inundações, enxurradas e alagamentos",Exposição,Densidade demográfica,Densidade da população urbana,,60000,60041,60043,60053,60080,
+Desastres geo-hidrológicos,"Inundações, enxurradas e alagamentos",Exposição,Moradias em ambiente de risco,Domicílios em áreas de risco,,60000,60041,60043,60052,60079,
+Desastres geo-hidrológicos,"Inundações, enxurradas e alagamentos",Vulnerabilidade,Capacidade adaptativa,Capacidade econômica municipal,Emprego e renda,60000,60041,60042,60045,60047,60056
+Desastres geo-hidrológicos,"Inundações, enxurradas e alagamentos",Vulnerabilidade,Capacidade adaptativa,Capacidade econômica municipal,Gestão fiscal,60000,60041,60042,60045,60047,60055
+Desastres geo-hidrológicos,"Inundações, enxurradas e alagamentos",Vulnerabilidade,Capacidade adaptativa,Capacidade econômica municipal,Investimento em políticas de adaptação,60000,60041,60042,60045,60047,60054
+Desastres geo-hidrológicos,"Inundações, enxurradas e alagamentos",Vulnerabilidade,Capacidade adaptativa,Capacidade econômica municipal,Produto interno bruto por área urbana,60000,60041,60042,60045,60047,60057
+Desastres geo-hidrológicos,"Inundações, enxurradas e alagamentos",Vulnerabilidade,Capacidade adaptativa,Gestão de risco,Ações para redução de risco,60000,60041,60042,60045,60048,60062
+Desastres geo-hidrológicos,"Inundações, enxurradas e alagamentos",Vulnerabilidade,Capacidade adaptativa,Gestão de risco,Gestão de ocupação urbana em áreas de risco,60000,60041,60042,60045,60048,60061
+Desastres geo-hidrológicos,"Inundações, enxurradas e alagamentos",Vulnerabilidade,Capacidade adaptativa,Gestão de risco,Gestão de resíduos e limpeza pública,60000,60041,60042,60045,60048,60060
+Desastres geo-hidrológicos,"Inundações, enxurradas e alagamentos",Vulnerabilidade,Capacidade adaptativa,Gestão de risco,Instituições para gestão de risco,60000,60041,60042,60045,60048,60059
+Desastres geo-hidrológicos,"Inundações, enxurradas e alagamentos",Vulnerabilidade,Capacidade adaptativa,Gestão de risco,Plano de contingência,60000,60041,60042,60045,60048,60064
+Desastres geo-hidrológicos,"Inundações, enxurradas e alagamentos",Vulnerabilidade,Capacidade adaptativa,Gestão de risco,Programa cidades resilientes,60000,60041,60042,60045,60048,60058
+Desastres geo-hidrológicos,"Inundações, enxurradas e alagamentos",Vulnerabilidade,Capacidade adaptativa,Gestão de risco,Sistemas de alerta antecipado,60000,60041,60042,60045,60048,60063
+Desastres geo-hidrológicos,"Inundações, enxurradas e alagamentos",Vulnerabilidade,Capacidade adaptativa,Política urbana,Estabelecimentos de saúde,60000,60041,60042,60045,60049,60069
+Desastres geo-hidrológicos,"Inundações, enxurradas e alagamentos",Vulnerabilidade,Capacidade adaptativa,Política urbana,Governança em habitação,60000,60041,60042,60045,60049,60067
+Desastres geo-hidrológicos,"Inundações, enxurradas e alagamentos",Vulnerabilidade,Capacidade adaptativa,Política urbana,Governança em meio ambiente,60000,60041,60042,60045,60049,60066
+Desastres geo-hidrológicos,"Inundações, enxurradas e alagamentos",Vulnerabilidade,Capacidade adaptativa,Política urbana,Governança em transporte,60000,60041,60042,60045,60049,60068
+Desastres geo-hidrológicos,"Inundações, enxurradas e alagamentos",Vulnerabilidade,Capacidade adaptativa,Política urbana,Plano municipal de saneamento básico,60000,60041,60042,60045,60049,60070
+Desastres geo-hidrológicos,"Inundações, enxurradas e alagamentos",Vulnerabilidade,Capacidade adaptativa,Política urbana,Uso e ocupação do solo,60000,60041,60042,60045,60049,60065
+Desastres geo-hidrológicos,"Inundações, enxurradas e alagamentos",Vulnerabilidade,Sensibilidade,Infraestrutura,Drenagem,60000,60041,60042,60046,60051,60078
+Desastres geo-hidrológicos,"Inundações, enxurradas e alagamentos",Vulnerabilidade,Sensibilidade,Infraestrutura,Falta de mobilidade urbana,60000,60041,60042,60046,60051,60075
+Desastres geo-hidrológicos,"Inundações, enxurradas e alagamentos",Vulnerabilidade,Sensibilidade,Infraestrutura,Inacessibilidade às cidades,60000,60041,60042,60046,60051,60076
+Desastres geo-hidrológicos,"Inundações, enxurradas e alagamentos",Vulnerabilidade,Sensibilidade,Infraestrutura,Saneamento básico,60000,60041,60042,60046,60051,60077
+Desastres geo-hidrológicos,"Inundações, enxurradas e alagamentos",Vulnerabilidade,Sensibilidade,População,Desigualdade de renda,60000,60041,60042,60046,60050,60073
+Desastres geo-hidrológicos,"Inundações, enxurradas e alagamentos",Vulnerabilidade,Sensibilidade,População,Domicílios inadequados,60000,60041,60042,60046,60050,60074
+Desastres geo-hidrológicos,"Inundações, enxurradas e alagamentos",Vulnerabilidade,Sensibilidade,População,Jovens sem ensino médio,60000,60041,60042,60046,60050,60072
+Desastres geo-hidrológicos,"Inundações, enxurradas e alagamentos",Vulnerabilidade,Sensibilidade,População,População com demandas especiais,60000,60041,60042,60046,60050,60071
+Infraestrutura ferroviária,Deslizamento,Ameaça climática,Chuva máxima acumulada,,,80000,80001,80004,80010,,
+Infraestrutura ferroviária,Deslizamento,Ameaça climática,Dias com chuva,,,80000,80001,80004,80009,,
+Infraestrutura ferroviária,Deslizamento,Ameaça climática,Dias consecutivos com chuva,,,80000,80001,80004,80011,,
+Infraestrutura ferroviária,Deslizamento,Exposição,Veículos,,,80000,80001,80003,80008,,
+Infraestrutura ferroviária,Deslizamento,Vulnerabilidade,Bitola,,,80000,80001,80002,80006,,
+Infraestrutura ferroviária,Deslizamento,Vulnerabilidade,Carga,,,80000,80001,80002,80007,,
+Infraestrutura ferroviária,Deslizamento,Vulnerabilidade,Suscetibilidade a deslizamentos,,,80000,80001,80002,80005,,
+Infraestrutura ferroviária,Erosão,Ameaça climática,Chuva máxima acumulada,,,80000,80012,80015,80020,,
+Infraestrutura ferroviária,Erosão,Ameaça climática,Índice de intensidade de precipitação simples,,,80000,80012,80015,80021,,
+Infraestrutura ferroviária,Erosão,Exposição,Veículos,,,80000,80012,80014,80019,,
+Infraestrutura ferroviária,Erosão,Vulnerabilidade,Bitola,,,80000,80012,80013,80017,,
+Infraestrutura ferroviária,Erosão,Vulnerabilidade,Carga,,,80000,80012,80013,80018,,
+Infraestrutura ferroviária,Erosão,Vulnerabilidade,Suscetibilidade a erosão,,,80000,80012,80013,80016,,
+Infraestrutura ferroviária,Temperatura,Ameaça Climática,Dias consecutivos mais quentes,,,80000,80022,80025,80030,,
+Infraestrutura ferroviária,Temperatura,Ameaça Climática,Duração de ondas de calor,,,80000,80022,80025,80029,,
+Infraestrutura ferroviária,Temperatura,Exposição,Veículos,,,80000,80022,80024,80028,,
+Infraestrutura ferroviária,Temperatura,Vulnerabilidade,Bitola,,,80000,80022,80023,80026,,
+Infraestrutura ferroviária,Temperatura,Vulnerabilidade,Carga,,,80000,80022,80023,80027,,
+Infraestrutura portuária,Aumento do nível do mar,Ameaça climática,Risco costeiro,,,40000,40056,40059,40077,,
+Infraestrutura portuária,Aumento do nível do mar,Exposição,Movimentação de carga anual,,,40000,40056,40058,40076,,
+Infraestrutura portuária,Aumento do nível do mar,Exposição,Número de infraestruturas,,,40000,40056,40058,40075,,
+Infraestrutura portuária,Aumento do nível do mar,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Comitê de crise,40000,40056,40057,40061,40062,40067
+Infraestrutura portuária,Aumento do nível do mar,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Diretrizes de projetos de engenharia,40000,40056,40057,40061,40062,40072
+Infraestrutura portuária,Aumento do nível do mar,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Monitoramento meteorológico,40000,40056,40057,40061,40062,40068
+Infraestrutura portuária,Aumento do nível do mar,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Orçamento para adaptação,40000,40056,40057,40061,40062,40073
+Infraestrutura portuária,Aumento do nível do mar,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Planejamento específico,40000,40056,40057,40061,40062,40071
+Infraestrutura portuária,Aumento do nível do mar,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Plano estratégico,40000,40056,40057,40061,40062,40070
+Infraestrutura portuária,Aumento do nível do mar,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Planos de ação emergencial,40000,40056,40057,40061,40062,40066
+Infraestrutura portuária,Aumento do nível do mar,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Registro de impactos,40000,40056,40057,40061,40062,40065
+Infraestrutura portuária,Aumento do nível do mar,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Reuniões sobre adaptação,40000,40056,40057,40061,40062,40069
+Infraestrutura portuária,Aumento do nível do mar,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Seguro específico,40000,40056,40057,40061,40062,40074
+Infraestrutura portuária,Aumento do nível do mar,Vulnerabilidade,Sensibilidade,Condição da área abrigada,,40000,40056,40057,40060,40064,
+Infraestrutura portuária,Aumento do nível do mar,Vulnerabilidade,Sensibilidade,Tipo de porto,,40000,40056,40057,40060,40063,
+Infraestrutura portuária,Tempestade,Ameaça climática,Percentil 99 de precipitação,,,40000,40001,40004,40028,,
+Infraestrutura portuária,Tempestade,Ameaça climática,Precipitação em um dia,,,40000,40001,40004,40027,,
+Infraestrutura portuária,Tempestade,Exposição,Movimentação de carga anual,,,40000,40001,40003,40026,,
+Infraestrutura portuária,Tempestade,Exposição,Número de infraestruturas,,,40000,40001,40003,40025,,
+Infraestrutura portuária,Tempestade,Vulnerabilidade,Capacidade adaptativa,Medidas estruturais,Acessos alternativos,40000,40001,40002,40006,40007,40012
+Infraestrutura portuária,Tempestade,Vulnerabilidade,Capacidade adaptativa,Medidas estruturais,Existência de VTMS,40000,40001,40002,40006,40007,40013
+Infraestrutura portuária,Tempestade,Vulnerabilidade,Capacidade adaptativa,Medidas estruturais,Sistema de drenagem,40000,40001,40002,40006,40007,40014
+Infraestrutura portuária,Tempestade,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Comitê de crise,40000,40001,40002,40006,40008,40017
+Infraestrutura portuária,Tempestade,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Diretrizes de projetos de engenharia,40000,40001,40002,40006,40008,40022
+Infraestrutura portuária,Tempestade,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Monitoramento meteorológico,40000,40001,40002,40006,40008,40018
+Infraestrutura portuária,Tempestade,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Orçamento para adaptação,40000,40001,40002,40006,40008,40023
+Infraestrutura portuária,Tempestade,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Planejamento específico,40000,40001,40002,40006,40008,40021
+Infraestrutura portuária,Tempestade,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Plano estratégico,40000,40001,40002,40006,40008,40020
+Infraestrutura portuária,Tempestade,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Planos de ação emergencial,40000,40001,40002,40006,40008,40016
+Infraestrutura portuária,Tempestade,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Registro de impactos,40000,40001,40002,40006,40008,40015
+Infraestrutura portuária,Tempestade,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Reuniões sobre adaptação,40000,40001,40002,40006,40008,40019
+Infraestrutura portuária,Tempestade,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Seguro específico,40000,40001,40002,40006,40008,40024
+Infraestrutura portuária,Tempestade,Vulnerabilidade,Sensibilidade,Condição da área abrigada,,40000,40001,40002,40005,40011,
+Infraestrutura portuária,Tempestade,Vulnerabilidade,Sensibilidade,Tipo de carga,,40000,40001,40002,40005,40010,
+Infraestrutura portuária,Tempestade,Vulnerabilidade,Sensibilidade,Tipo de porto,,40000,40001,40002,40005,40009,
+Infraestrutura portuária,Vendaval,Ameaça climática,Velocidade máxima do vento,,,40000,40029,40032,40055,,
+Infraestrutura portuária,Vendaval,Exposição,Movimentação de carga anual,,,40000,40029,40031,40054,,
+Infraestrutura portuária,Vendaval,Exposição,Número de infraestruturas,,,40000,40029,40031,40053,,
+Infraestrutura portuária,Vendaval,Vulnerabilidade,Capacidade adaptativa,Medidas estruturais,Acessos alternativos,40000,40029,40030,40034,40035,40040
+Infraestrutura portuária,Vendaval,Vulnerabilidade,Capacidade adaptativa,Medidas estruturais,Existência de VTMS,40000,40029,40030,40034,40035,40041
+Infraestrutura portuária,Vendaval,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Comitê de crise,40000,40029,40030,40034,40036,40044
+Infraestrutura portuária,Vendaval,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Diretrizes de projetos de engenharia,40000,40029,40030,40034,40036,40049
+Infraestrutura portuária,Vendaval,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Monitoramento de rajada de vento,40000,40029,40030,40034,40036,40052
+Infraestrutura portuária,Vendaval,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Monitoramento meteorológico,40000,40029,40030,40034,40036,40045
+Infraestrutura portuária,Vendaval,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Orçamento para adaptação,40000,40029,40030,40034,40036,40050
+Infraestrutura portuária,Vendaval,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Planejamento específico,40000,40029,40030,40034,40036,40048
+Infraestrutura portuária,Vendaval,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Plano estratégico,40000,40029,40030,40034,40036,40047
+Infraestrutura portuária,Vendaval,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Planos de ação emergencial,40000,40029,40030,40034,40036,40043
+Infraestrutura portuária,Vendaval,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Registro de impactos,40000,40029,40030,40034,40036,40042
+Infraestrutura portuária,Vendaval,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Reuniões sobre adaptação,40000,40029,40030,40034,40036,40046
+Infraestrutura portuária,Vendaval,Vulnerabilidade,Capacidade adaptativa,Medidas não estruturais,Seguro específico,40000,40029,40030,40034,40036,40051
+Infraestrutura portuária,Vendaval,Vulnerabilidade,Sensibilidade,Condição da área abrigada,,40000,40029,40030,40033,40039,
+Infraestrutura portuária,Vendaval,Vulnerabilidade,Sensibilidade,Tipo de carga,,40000,40029,40030,40033,40038,
+Infraestrutura portuária,Vendaval,Vulnerabilidade,Sensibilidade,Tipo de porto,,40000,40029,40030,40033,40037,
+Infraestrutura rodoviária,Alagamento e inundação,Ameaça climática,Chuva máxima acumulada,,,70000,70001,70004,70012,,
+Infraestrutura rodoviária,Alagamento e inundação,Ameaça climática,Dias com chuva,,,70000,70001,70004,70011,,
+Infraestrutura rodoviária,Alagamento e inundação,Ameaça climática,Dias consecutivos com chuva,,,70000,70001,70004,70013,,
+Infraestrutura rodoviária,Alagamento e inundação,Exposição,OAE,,,70000,70001,70003,70009,,
+Infraestrutura rodoviária,Alagamento e inundação,Exposição,VMDA,,,70000,70001,70003,70010,,
+Infraestrutura rodoviária,Alagamento e inundação,Vulnerabilidade,Carga,,,70000,70001,70002,70008,,
+Infraestrutura rodoviária,Alagamento e inundação,Vulnerabilidade,ICS,,,70000,70001,70002,70006,,
+Infraestrutura rodoviária,Alagamento e inundação,Vulnerabilidade,Rodovias,,,70000,70001,70002,70007,,
+Infraestrutura rodoviária,Alagamento e inundação,Vulnerabilidade,Vulnerabilidade à inundação,,,70000,70001,70002,70005,,
+Infraestrutura rodoviária,Deslizamento,Ameaça climática,Chuva máxima acumulada,,,70000,70014,70017,70025,,
+Infraestrutura rodoviária,Deslizamento,Ameaça climática,Dias com chuva,,,70000,70014,70017,70024,,
+Infraestrutura rodoviária,Deslizamento,Ameaça climática,Dias consecutivos com chuva,,,70000,70014,70017,70026,,
+Infraestrutura rodoviária,Deslizamento,Exposição,OAE,,,70000,70014,70016,70022,,
+Infraestrutura rodoviária,Deslizamento,Exposição,VMDA,,,70000,70014,70016,70023,,
+Infraestrutura rodoviária,Deslizamento,Vulnerabilidade,Carga,,,70000,70014,70015,70021,,
+Infraestrutura rodoviária,Deslizamento,Vulnerabilidade,ICS,,,70000,70014,70015,70019,,
+Infraestrutura rodoviária,Deslizamento,Vulnerabilidade,Rodovias,,,70000,70014,70015,70020,,
+Infraestrutura rodoviária,Deslizamento,Vulnerabilidade,Suscetibilidade a deslizamentos,,,70000,70014,70015,70018,,
+Infraestrutura rodoviária,Erosão,Ameaça climática,Chuva máxima acumulada,,,70000,70027,70030,70038,,
+Infraestrutura rodoviária,Erosão,Ameaça climática,Dias com chuva,,,70000,70027,70030,70037,,
+Infraestrutura rodoviária,Erosão,Ameaça climática,Índice de intensidade de precipitação simples,,,70000,70027,70030,70039,,
+Infraestrutura rodoviária,Erosão,Exposição,OAE,,,70000,70027,70029,70035,,
+Infraestrutura rodoviária,Erosão,Exposição,VMDA,,,70000,70027,70029,70036,,
+Infraestrutura rodoviária,Erosão,Vulnerabilidade,Carga,,,70000,70027,70028,70034,,
+Infraestrutura rodoviária,Erosão,Vulnerabilidade,ICS,,,70000,70027,70028,70032,,
+Infraestrutura rodoviária,Erosão,Vulnerabilidade,Rodovias,,,70000,70027,70028,70033,,
+Infraestrutura rodoviária,Erosão,Vulnerabilidade,Suscetibilidade a erosão,,,70000,70027,70028,70031,,
+Infraestrutura rodoviária,Queimada,Ameaça climática,Dias consecutivos mais quentes,,,70000,70040,70043,70050,,
+Infraestrutura rodoviária,Queimada,Ameaça climática,Dias secos consecutivos,,,70000,70040,70043,70052,,
+Infraestrutura rodoviária,Queimada,Ameaça climática,Duração de ondas de calor,,,70000,70040,70043,70051,,
+Infraestrutura rodoviária,Queimada,Exposição,OAE,,,70000,70040,70042,70048,,
+Infraestrutura rodoviária,Queimada,Exposição,VMDA,,,70000,70040,70042,70049,,
+Infraestrutura rodoviária,Queimada,Vulnerabilidade,Carga,,,70000,70040,70041,70047,,
+Infraestrutura rodoviária,Queimada,Vulnerabilidade,Foco de incêndios,,,70000,70040,70041,70044,,
+Infraestrutura rodoviária,Queimada,Vulnerabilidade,ICS,,,70000,70040,70041,70045,,
+Infraestrutura rodoviária,Queimada,Vulnerabilidade,Rodovias,,,70000,70040,70041,70046,,
+Infraestrutura rodoviária,Temperatura,Ameaça climática,Dias consecutivos mais quentes,,,70000,70053,70056,70063,,
+Infraestrutura rodoviária,Temperatura,Ameaça climática,Duração de ondas de calor,,,70000,70053,70056,70062,,
+Infraestrutura rodoviária,Temperatura,Exposição,OAE,,,70000,70053,70055,70060,,
+Infraestrutura rodoviária,Temperatura,Exposição,VMDA,,,70000,70053,70055,70061,,
+Infraestrutura rodoviária,Temperatura,Vulnerabilidade,Carga,,,70000,70053,70054,70059,,
+Infraestrutura rodoviária,Temperatura,Vulnerabilidade,ICS,,,70000,70053,70054,70057,,
+Infraestrutura rodoviária,Temperatura,Vulnerabilidade,Rodovias,,,70000,70053,70054,70058,,
+Recursos hídricos,Risco de estresse hídrico,Ameaça de escassez hídrica,,,,1,2,5,,,
+Recursos hídricos,Risco de estresse hídrico,Exposição,População exposta,Densidade populacional,,1,2,4,17,45,
+Recursos hídricos,Risco de estresse hídrico,Exposição,Usuários dos recursos hídricos expostos,Usuários da criação animal expostos,,1,2,4,18,51,
+Recursos hídricos,Risco de estresse hídrico,Exposição,Usuários dos recursos hídricos expostos,Usuários da irrigação expostos,,1,2,4,18,52,
+Recursos hídricos,Risco de estresse hídrico,Exposição,Usuários dos recursos hídricos expostos,Usuários da mineração expostos,,1,2,4,18,49,
+Recursos hídricos,Risco de estresse hídrico,Exposição,Usuários dos recursos hídricos expostos,Usuários da termoeletricidade expostos,,1,2,4,18,50,
+Recursos hídricos,Risco de estresse hídrico,Exposição,Usuários dos recursos hídricos expostos,Usuários industriais expostos,,1,2,4,18,48,
+Recursos hídricos,Risco de estresse hídrico,Exposição,Usuários dos recursos hídricos expostos,Usuários rurais expostos,,1,2,4,18,47,
+Recursos hídricos,Risco de estresse hídrico,Exposição,Usuários dos recursos hídricos expostos,Usuários urbanos expostos,,1,2,4,18,46,
+Recursos hídricos,Risco de estresse hídrico,Vulnerabilidade,Capacidade adaptativa,Capacidade dos setores produtivos,Participação agropecuária no PIB,1,2,3,7,15,41
+Recursos hídricos,Risco de estresse hídrico,Vulnerabilidade,Capacidade adaptativa,Capacidade dos setores produtivos,Participação industrial no PIB,1,2,3,7,15,42
+Recursos hídricos,Risco de estresse hídrico,Vulnerabilidade,Capacidade adaptativa,Capacidade socioeconômica familiar,Renda não afetada pelo preço da água,1,2,3,7,16,43
+Recursos hídricos,Risco de estresse hídrico,Vulnerabilidade,Capacidade adaptativa,Capacidade socioeconômica familiar,Renda superior a dois salários mínimos,1,2,3,7,16,44
+Recursos hídricos,Risco de estresse hídrico,Vulnerabilidade,Capacidade adaptativa,Gestão dos recursos hídricos,Alternativas ao abastecimento de água,1,2,3,7,12,33
+Recursos hídricos,Risco de estresse hídrico,Vulnerabilidade,Capacidade adaptativa,Gestão dos recursos hídricos,Ações de prevenção relacionadas à seca,1,2,3,7,12,32
+Recursos hídricos,Risco de estresse hídrico,Vulnerabilidade,Capacidade adaptativa,Gestão dos recursos hídricos,Nível de atuação em comitês de bacia,1,2,3,7,12,31
+Recursos hídricos,Risco de estresse hídrico,Vulnerabilidade,Capacidade adaptativa,Gestão dos recursos hídricos,Plano municipal de saneamento básico,1,2,3,7,12,30
+Recursos hídricos,Risco de estresse hídrico,Vulnerabilidade,Capacidade adaptativa,Planejamento para recursos hídricos,Investimentos em políticas de adaptação,1,2,3,7,13,35
+Recursos hídricos,Risco de estresse hídrico,Vulnerabilidade,Capacidade adaptativa,Planejamento para recursos hídricos,Investimentos em recursos hídricos,1,2,3,7,13,34
+Recursos hídricos,Risco de estresse hídrico,Vulnerabilidade,Capacidade adaptativa,Planejamento para recursos hídricos,Programa cidades resilientes,1,2,3,7,13,36
+Recursos hídricos,Risco de estresse hídrico,Vulnerabilidade,Capacidade adaptativa,Planejamento para recursos hídricos,Programa cisternas: água para consumo,1,2,3,7,13,37
+Recursos hídricos,Risco de estresse hídrico,Vulnerabilidade,Capacidade adaptativa,Resiliência hídrica,Potencial de armazenamento subterrâneo,1,2,3,7,14,40
+Recursos hídricos,Risco de estresse hídrico,Vulnerabilidade,Capacidade adaptativa,Resiliência hídrica,Reservação artificial,1,2,3,7,14,39
+Recursos hídricos,Risco de estresse hídrico,Vulnerabilidade,Capacidade adaptativa,Resiliência hídrica,Reservação natural,1,2,3,7,14,38
+Recursos hídricos,Risco de estresse hídrico,Vulnerabilidade,Sensibilidade,Balanço hídrico dos setores produtivos,Balanço hídrico para agropecuária,1,2,3,6,9,22
+Recursos hídricos,Risco de estresse hídrico,Vulnerabilidade,Sensibilidade,Balanço hídrico dos setores produtivos,Balanço hídrico para indústria,1,2,3,6,9,23
+Recursos hídricos,Risco de estresse hídrico,Vulnerabilidade,Sensibilidade,Efeitos sobre a saúde humana,Doenças devido ao saneamento inadequado,1,2,3,6,10,24
+Recursos hídricos,Risco de estresse hídrico,Vulnerabilidade,Sensibilidade,Efeitos sobre a saúde humana,Qualidade da água,1,2,3,6,10,25
+Recursos hídricos,Risco de estresse hídrico,Vulnerabilidade,Sensibilidade,Insegurança do abastecimento humano,Consumo médio per capita de água,1,2,3,6,8,21
+Recursos hídricos,Risco de estresse hídrico,Vulnerabilidade,Sensibilidade,Insegurança do abastecimento humano,Ineficiência na distribuição da água,1,2,3,6,8,20
+Recursos hídricos,Risco de estresse hídrico,Vulnerabilidade,Sensibilidade,Insegurança do abastecimento humano,Ineficiência na produção da água,1,2,3,6,8,19
+Recursos hídricos,Risco de estresse hídrico,Vulnerabilidade,Sensibilidade,Pressão antrópica e qualidade ambiental,Segurança das barragens e da mineração,1,2,3,6,11,29
+Recursos hídricos,Risco de estresse hídrico,Vulnerabilidade,Sensibilidade,Pressão antrópica e qualidade ambiental,Vazão ecológica para usos ecossistêmicos,1,2,3,6,11,28
+Recursos hídricos,Risco de estresse hídrico,Vulnerabilidade,Sensibilidade,Pressão antrópica e qualidade ambiental,Áreas com solos susceptíveis à erosão,1,2,3,6,11,27
+Recursos hídricos,Risco de estresse hídrico,Vulnerabilidade,Sensibilidade,Pressão antrópica e qualidade ambiental,Áreas degradadas e/ou desmatadas,1,2,3,6,11,26
+Saúde,"Arboviroses dengue, zika e chikungunya",Ameaça climática,Amplitude térmica,,,50000,50076,50079,50102,,
+Saúde,"Arboviroses dengue, zika e chikungunya",Ameaça climática,Intensidade de precipitação,,,50000,50076,50079,50101,,
+Saúde,"Arboviroses dengue, zika e chikungunya",Ameaça climática,Ondas de calor,,,50000,50076,50079,50103,,
+Saúde,"Arboviroses dengue, zika e chikungunya",Ameaça climática,Temperatura máxima,,,50000,50076,50079,50099,,
+Saúde,"Arboviroses dengue, zika e chikungunya",Ameaça climática,Temperatura mínima,,,50000,50076,50079,50100,,
+Saúde,"Arboviroses dengue, zika e chikungunya",Ameaça climática,Umidade relativa,,,50000,50076,50079,50104,,
+Saúde,"Arboviroses dengue, zika e chikungunya",Exposição,Densidade populacional,Densidade populacional,,50000,50076,50078,50085,50094,
+Saúde,"Arboviroses dengue, zika e chikungunya",Exposição,Malha rodoviária,Densidade de rodovias,,50000,50076,50078,50086,50095,
+Saúde,"Arboviroses dengue, zika e chikungunya",Exposição,Uso e ocupação do solo,Aglomerados subnormais,,50000,50076,50078,50087,50096,
+Saúde,"Arboviroses dengue, zika e chikungunya",Exposição,Uso e ocupação do solo,Corpos d'água,,50000,50076,50078,50087,50098,
+Saúde,"Arboviroses dengue, zika e chikungunya",Exposição,Uso e ocupação do solo,Desflorestamento,,50000,50076,50078,50087,50097,
+Saúde,"Arboviroses dengue, zika e chikungunya",Vulnerabilidade,Capacidade adaptativa,Serviços de saúde,Cobertura da atenção básica,50000,50076,50077,50081,50084,50093
+Saúde,"Arboviroses dengue, zika e chikungunya",Vulnerabilidade,Sensibilidade,"Perfil epidemiológico das arboviroses dengue, zika e chikungunya","Incidência das arboviroses dengue, zika e chikungunya",50000,50076,50077,50080,50083,50092
+Saúde,"Arboviroses dengue, zika e chikungunya",Vulnerabilidade,Sensibilidade,Suscetibilidade social,Abastecimento de água,50000,50076,50077,50080,50082,50089
+Saúde,"Arboviroses dengue, zika e chikungunya",Vulnerabilidade,Sensibilidade,Suscetibilidade social,Domicílios sem acesso à coleta de lixo,50000,50076,50077,50080,50082,50088
+Saúde,"Arboviroses dengue, zika e chikungunya",Vulnerabilidade,Sensibilidade,Suscetibilidade social,IDH-M,50000,50076,50077,50080,50082,50091
+Saúde,"Arboviroses dengue, zika e chikungunya",Vulnerabilidade,Sensibilidade,Suscetibilidade social,Presença de cisterna,50000,50076,50077,50080,50082,50090
+Saúde,Leishmaniose tegumentar americana,Ameaça climática,Intensidade de precipitação,,,50000,50030,50033,50053,,
+Saúde,Leishmaniose tegumentar americana,Ameaça climática,Temperatura máxima,,,50000,50030,50033,50052,,
+Saúde,Leishmaniose tegumentar americana,Ameaça climática,Umidade relativa,,,50000,50030,50033,50054,,
+Saúde,Leishmaniose tegumentar americana,Exposição,Malha rodoviária,Densidade de rodovias,,50000,50030,50032,50040,50047,
+Saúde,Leishmaniose tegumentar americana,Exposição,Uso e ocupação do solo,Aglomerados subnormais,,50000,50030,50032,50041,50049,
+Saúde,Leishmaniose tegumentar americana,Exposição,Uso e ocupação do solo,Assentamentos,,50000,50030,50032,50041,50048,
+Saúde,Leishmaniose tegumentar americana,Exposição,Uso e ocupação do solo,Cobertura agropecuária,,50000,50030,50032,50041,50051,
+Saúde,Leishmaniose tegumentar americana,Exposição,Uso e ocupação do solo,Cobertura natural,,50000,50030,50032,50041,50050,
+Saúde,Leishmaniose tegumentar americana,Vulnerabilidade,Capacidade adaptativa,Serviços de saúde,Cobertura da atenção básica,50000,50030,50031,50035,50039,50046
+Saúde,Leishmaniose tegumentar americana,Vulnerabilidade,Sensibilidade,Mobilidade populacional,Imigração recente,50000,50030,50031,50034,50037,50044
+Saúde,Leishmaniose tegumentar americana,Vulnerabilidade,Sensibilidade,Perfil epidemiológico da lta,Incidência da lta,50000,50030,50031,50034,50038,50045
+Saúde,Leishmaniose tegumentar americana,Vulnerabilidade,Sensibilidade,Suscetibilidade social,Domicílios sem acesso à coleta de lixo,50000,50030,50031,50034,50036,50042
+Saúde,Leishmaniose tegumentar americana,Vulnerabilidade,Sensibilidade,Suscetibilidade social,IDH-M,50000,50030,50031,50034,50036,50043
+Saúde,Leishmaniose visceral,Ameaça climática,Intensidade de precipitação,,,50000,50055,50058,50074,,
+Saúde,Leishmaniose visceral,Ameaça climática,Temperatura mínima,,,50000,50055,50058,50073,,
+Saúde,Leishmaniose visceral,Ameaça climática,Umidade relativa,,,50000,50055,50058,50075,,
+Saúde,Leishmaniose visceral,Exposição,Malha rodoviária,Densidade de rodovias,,50000,50055,50057,50064,50070,
+Saúde,Leishmaniose visceral,Exposição,Uso e ocupação do solo,Assentamentos,,50000,50055,50057,50065,50071,
+Saúde,Leishmaniose visceral,Exposição,Uso e ocupação do solo,Cobertura natural,,50000,50055,50057,50065,50072,
+Saúde,Leishmaniose visceral,Vulnerabilidade,Capacidade adaptativa,Serviços de saúde,Cobertura da atenção básica,50000,50055,50056,50060,50063,50069
+Saúde,Leishmaniose visceral,Vulnerabilidade,Sensibilidade,Perfil epidemiológico da lv,Incidência da lv,50000,50055,50056,50059,50062,50068
+Saúde,Leishmaniose visceral,Vulnerabilidade,Sensibilidade,Suscetibilidade social,Domicílios sem acesso à coleta de lixo,50000,50055,50056,50059,50061,50066
+Saúde,Leishmaniose visceral,Vulnerabilidade,Sensibilidade,Suscetibilidade social,IDH-M,50000,50055,50056,50059,50061,50067
+Saúde,Malária,Ameaça climática,Intensidade de precipitação,,,50000,50001,50004,50028,,
+Saúde,Malária,Ameaça climática,Temperatura máxima,,,50000,50001,50004,50027,,
+Saúde,Malária,Ameaça climática,Umidade relativa,,,50000,50001,50004,50029,,
+Saúde,Malária,Exposição,Malha rodoviária,Densidade de rodovias,,50000,50001,50003,50011,50021,
+Saúde,Malária,Exposição,Uso e ocupação do solo,Assentamentos,,50000,50001,50003,50012,50022,
+Saúde,Malária,Exposição,Uso e ocupação do solo,Corpos d'água,,50000,50001,50003,50012,50026,
+Saúde,Malária,Exposição,Uso e ocupação do solo,Desflorestamento,,50000,50001,50003,50012,50024,
+Saúde,Malária,Exposição,Uso e ocupação do solo,Mineração,,50000,50001,50003,50012,50023,
+Saúde,Malária,Exposição,Uso e ocupação do solo,População rural,,50000,50001,50003,50012,50025,
+Saúde,Malária,Vulnerabilidade,Capacidade adaptativa,Serviços de saúde,Acesso a diagnóstico e tratamento,50000,50001,50002,50006,50010,50020
+Saúde,Malária,Vulnerabilidade,Capacidade adaptativa,Serviços de saúde,Cobertura da atenção básica,50000,50001,50002,50006,50010,50019
+Saúde,Malária,Vulnerabilidade,Sensibilidade,Mobilidade populacional,Imigração recente,50000,50001,50002,50005,50008,50016
+Saúde,Malária,Vulnerabilidade,Sensibilidade,Mobilidade populacional,Turismo municipal,50000,50001,50002,50005,50008,50015
+Saúde,Malária,Vulnerabilidade,Sensibilidade,Perfil epidemiológico da malária,Ipa,50000,50001,50002,50005,50009,50017
+Saúde,Malária,Vulnerabilidade,Sensibilidade,Perfil epidemiológico da malária,Malária falciparum,50000,50001,50002,50005,50009,50018
+Saúde,Malária,Vulnerabilidade,Sensibilidade,Suscetibilidade social,IDH-M,50000,50001,50002,50005,50007,50014
+Saúde,Malária,Vulnerabilidade,Sensibilidade,Suscetibilidade social,Sem acesso ao saneamento adequado,50000,50001,50002,50005,50007,50013
+Segurança alimentar,Acesso e consumo de alimentos,Ameaça climática,,,,5000,5048,5051,,,
+Segurança alimentar,Acesso e consumo de alimentos,Exposição,População exposta,Densidade populacional,,5000,5048,5050,5059,5080,
+Segurança alimentar,Acesso e consumo de alimentos,Exposição,População exposta,População total,,5000,5048,5050,5059,5081,
+Segurança alimentar,Acesso e consumo de alimentos,Vulnerabilidade,Capacidade adaptativa,Capacidade socioeconômica,Abrangência do programa bolsa família,5000,5048,5049,5053,5058,5077
+Segurança alimentar,Acesso e consumo de alimentos,Vulnerabilidade,Capacidade adaptativa,Capacidade socioeconômica,Domicílios com renda per capita alta,5000,5048,5049,5053,5058,5079
+Segurança alimentar,Acesso e consumo de alimentos,Vulnerabilidade,Capacidade adaptativa,Capacidade socioeconômica,Igualdade na distribuição de renda intra-domiciliar,5000,5048,5049,5053,5058,5078
+Segurança alimentar,Acesso e consumo de alimentos,Vulnerabilidade,Capacidade adaptativa,Instrumentos financeiros e políticas públicas,Atendimento do programa cisternas,5000,5048,5049,5053,5057,5076
+Segurança alimentar,Acesso e consumo de alimentos,Vulnerabilidade,Capacidade adaptativa,Instrumentos financeiros e políticas públicas,Fornecedores do PAA classificadas como “povos e comunidades tradicionais”,5000,5048,5049,5053,5057,5075
+Segurança alimentar,Acesso e consumo de alimentos,Vulnerabilidade,Capacidade adaptativa,Instrumentos financeiros e políticas públicas,Instrumentos da segurança alimentar,5000,5048,5049,5053,5057,5072
+Segurança alimentar,Acesso e consumo de alimentos,Vulnerabilidade,Capacidade adaptativa,Instrumentos financeiros e políticas públicas,Investimento federal per capita,5000,5048,5049,5053,5057,5071
+Segurança alimentar,Acesso e consumo de alimentos,Vulnerabilidade,Capacidade adaptativa,Instrumentos financeiros e políticas públicas,Programa de aquisição de alimentos (PAA),5000,5048,5049,5053,5057,5074
+Segurança alimentar,Acesso e consumo de alimentos,Vulnerabilidade,Capacidade adaptativa,Instrumentos financeiros e políticas públicas,Programa nacional de alimentação escolar (PNAE),5000,5048,5049,5053,5057,5073
+Segurança alimentar,Acesso e consumo de alimentos,Vulnerabilidade,Sensibilidade,Infraestrutura básica,Desabastecimento de água por fonte direta,5000,5048,5049,5052,5055,5063
+Segurança alimentar,Acesso e consumo de alimentos,Vulnerabilidade,Sensibilidade,Infraestrutura básica,Estabelecimentos comerciais de alimentos ultraprocessados,5000,5048,5049,5052,5055,5065
+Segurança alimentar,Acesso e consumo de alimentos,Vulnerabilidade,Sensibilidade,Infraestrutura básica,Municípios sem rede de abastecimento de alimentos básicos,5000,5048,5049,5052,5055,5066
+Segurança alimentar,Acesso e consumo de alimentos,Vulnerabilidade,Sensibilidade,Infraestrutura básica,Qualidade da água comprometida,5000,5048,5049,5052,5055,5064
+Segurança alimentar,Acesso e consumo de alimentos,Vulnerabilidade,Sensibilidade,Perfil da população,Mães chefes de família,5000,5048,5049,5052,5054,5061
+Segurança alimentar,Acesso e consumo de alimentos,Vulnerabilidade,Sensibilidade,Perfil da população,Média de moradores por domicílio,5000,5048,5049,5052,5054,5060
+Segurança alimentar,Acesso e consumo de alimentos,Vulnerabilidade,Sensibilidade,Perfil da população,População economicamente dependente,5000,5048,5049,5052,5054,5062
+Segurança alimentar,Acesso e consumo de alimentos,Vulnerabilidade,Sensibilidade,Saúde e consumo dos alimentos,Desnutrição infantil,5000,5048,5049,5052,5056,5068
+Segurança alimentar,Acesso e consumo de alimentos,Vulnerabilidade,Sensibilidade,Saúde e consumo dos alimentos,Insegurança alimentar e nutricional,5000,5048,5049,5052,5056,5067
+Segurança alimentar,Acesso e consumo de alimentos,Vulnerabilidade,Sensibilidade,Saúde e consumo dos alimentos,Ocorrência de doenças relacionadas ao saneamento ambiental inadequado,5000,5048,5049,5052,5056,5069
+Segurança alimentar,Acesso e consumo de alimentos,Vulnerabilidade,Sensibilidade,Saúde e consumo dos alimentos,Sobrepeso e obesidade,5000,5048,5049,5052,5056,5070
+Segurança alimentar,Disponibilidade de alimentos,Ameaça climática,Dias consecutivos secos,,,5000,5001,5004,5046,,
+Segurança alimentar,Disponibilidade de alimentos,Ameaça climática,Índice de precipitação-evapotranspiração padronizado,,,5000,5001,5004,5047,,
+Segurança alimentar,Disponibilidade de alimentos,Exposição,Dependência econômica,Agropecuária na economia do município,,5000,5001,5003,5013,5041,
+Segurança alimentar,Disponibilidade de alimentos,Exposição,Estrutura fundiária,Densidade de estabelecimentos agropecuários,,5000,5001,5003,5015,5045,
+Segurança alimentar,Disponibilidade de alimentos,Exposição,Estrutura fundiária,Estabelecimentos com agricultura familiar,,5000,5001,5003,5015,5044,
+Segurança alimentar,Disponibilidade de alimentos,Exposição,Áreas expostas,Área dos estabelecimentos agropecuários com pecuária,,5000,5001,5003,5014,5043,
+Segurança alimentar,Disponibilidade de alimentos,Exposição,Áreas expostas,Área plantada com culturas agrícolas,,5000,5001,5003,5014,5042,
+Segurança alimentar,Disponibilidade de alimentos,Vulnerabilidade,Capacidade adaptativa,Armazenamento de alimento,Capacidade de armazenamento,5000,5001,5002,5006,5011,5036
+Segurança alimentar,Disponibilidade de alimentos,Vulnerabilidade,Capacidade adaptativa,Armazenamento de alimento,Distância dos armazéns,5000,5001,5002,5006,5011,5037
+Segurança alimentar,Disponibilidade de alimentos,Vulnerabilidade,Capacidade adaptativa,Instrumentos financeiros e políticas públicas,Cobertura do PRONAF,5000,5001,5002,5006,5009,5028
+Segurança alimentar,Disponibilidade de alimentos,Vulnerabilidade,Capacidade adaptativa,Instrumentos financeiros e políticas públicas,Cobertura do PSR,5000,5001,5002,5006,5009,5031
+Segurança alimentar,Disponibilidade de alimentos,Vulnerabilidade,Capacidade adaptativa,Instrumentos financeiros e políticas públicas,Cobertura do proagro mais,5000,5001,5002,5006,5009,5030
+Segurança alimentar,Disponibilidade de alimentos,Vulnerabilidade,Capacidade adaptativa,Instrumentos financeiros e políticas públicas,Investimento em políticas agrárias e de gestão ambiental,5000,5001,5002,5006,5009,5026
+Segurança alimentar,Disponibilidade de alimentos,Vulnerabilidade,Capacidade adaptativa,Instrumentos financeiros e políticas públicas,Programa cisternas,5000,5001,5002,5006,5009,5029
+Segurança alimentar,Disponibilidade de alimentos,Vulnerabilidade,Capacidade adaptativa,Instrumentos financeiros e políticas públicas,Programa garantia safra,5000,5001,5002,5006,5009,5027
+Segurança alimentar,Disponibilidade de alimentos,Vulnerabilidade,Capacidade adaptativa,Rede de segurança para produção,Associativismo,5000,5001,5002,5006,5010,5033
+Segurança alimentar,Disponibilidade de alimentos,Vulnerabilidade,Capacidade adaptativa,Rede de segurança para produção,Estabilidade dos conflitos agrários,5000,5001,5002,5006,5010,5035
+Segurança alimentar,Disponibilidade de alimentos,Vulnerabilidade,Capacidade adaptativa,Rede de segurança para produção,Orientação técnica,5000,5001,5002,5006,5010,5032
+Segurança alimentar,Disponibilidade de alimentos,Vulnerabilidade,Capacidade adaptativa,Rede de segurança para produção,Propriedade da terra,5000,5001,5002,5006,5010,5034
+Segurança alimentar,Disponibilidade de alimentos,Vulnerabilidade,Capacidade adaptativa,Viabilidade produtiva,Diversidade de receitas,5000,5001,5002,5006,5012,5038
+Segurança alimentar,Disponibilidade de alimentos,Vulnerabilidade,Capacidade adaptativa,Viabilidade produtiva,Potencial de expansão agrícola em áreas de pastagem,5000,5001,5002,5006,5012,5040
+Segurança alimentar,Disponibilidade de alimentos,Vulnerabilidade,Capacidade adaptativa,Viabilidade produtiva,Tratores em estabelecimentos agropecuários,5000,5001,5002,5006,5012,5039
+Segurança alimentar,Disponibilidade de alimentos,Vulnerabilidade,Sensibilidade,Aspectos biofísicos,Agropecuária e disponibilidade hídrica,5000,5001,5002,5005,5008,5021
+Segurança alimentar,Disponibilidade de alimentos,Vulnerabilidade,Sensibilidade,Aspectos biofísicos,Déficit hídrico,5000,5001,5002,5005,5008,5024
+Segurança alimentar,Disponibilidade de alimentos,Vulnerabilidade,Sensibilidade,Aspectos biofísicos,Perdas de cobertura vegetal,5000,5001,5002,5005,5008,5025
+Segurança alimentar,Disponibilidade de alimentos,Vulnerabilidade,Sensibilidade,Aspectos biofísicos,Áreas agropecuárias com baixo potencial agrícola,5000,5001,5002,5005,5008,5022
+Segurança alimentar,Disponibilidade de alimentos,Vulnerabilidade,Sensibilidade,Aspectos biofísicos,Áreas agropecuárias com solo susceptível a erosão,5000,5001,5002,5005,5008,5023
+Segurança alimentar,Disponibilidade de alimentos,Vulnerabilidade,Sensibilidade,Práticas agrícolas,Focos de queimada,5000,5001,5002,5005,5007,5020
+Segurança alimentar,Disponibilidade de alimentos,Vulnerabilidade,Sensibilidade,Práticas agrícolas,Homogeneidade da produção agrícola,5000,5001,5002,5005,5007,5018
+Segurança alimentar,Disponibilidade de alimentos,Vulnerabilidade,Sensibilidade,Práticas agrícolas,Susceptibilidade da irrigação,5000,5001,5002,5005,5007,5019
+Segurança alimentar,Disponibilidade de alimentos,Vulnerabilidade,Sensibilidade,Práticas agrícolas,Susceptibilidade da produtividade agrícola,5000,5001,5002,5005,5007,5016
+Segurança alimentar,Disponibilidade de alimentos,Vulnerabilidade,Sensibilidade,Práticas agrícolas,Susceptibilidade da produtividade pecuária,5000,5001,5002,5005,5007,5017
+Segurança energética,Acesso,Ameaça climática,Demanda de resfriamento,,,10000,10001,10004,10023,,
+Segurança energética,Acesso,Ameaça climática,Potencial de energia eólica,,,10000,10001,10004,10022,,
+Segurança energética,Acesso,Ameaça climática,Potencial de energia hidrelétrica,,,10000,10001,10004,10020,,
+Segurança energética,Acesso,Ameaça climática,Potencial de energia solar,,,10000,10001,10004,10021,,
+Segurança energética,Acesso,Exposição,Densidade populacional,,,10000,10001,10003,10018,,
+Segurança energética,Acesso,Exposição,Indústrias energointensivas,,,10000,10001,10003,10019,,
+Segurança energética,Acesso,Vulnerabilidade,Capacidade adaptativa,Autoprodutores de eletricidade,,10000,10001,10002,10006,10011,
+Segurança energética,Acesso,Vulnerabilidade,Capacidade adaptativa,Cidades resilientes,,10000,10001,10002,10006,10017,
+Segurança energética,Acesso,Vulnerabilidade,Capacidade adaptativa,Diversificação da geração de eletricidade,,10000,10001,10002,10006,10014,
+Segurança energética,Acesso,Vulnerabilidade,Capacidade adaptativa,Energia armazenada em reservatórios de hidrelétricas,,10000,10001,10002,10006,10013,
+Segurança energética,Acesso,Vulnerabilidade,Capacidade adaptativa,Geração distribuída de eletricidade,,10000,10001,10002,10006,10012,
+Segurança energética,Acesso,Vulnerabilidade,Capacidade adaptativa,Pib municipal per capita,,10000,10001,10002,10006,10015,
+Segurança energética,Acesso,Vulnerabilidade,Capacidade adaptativa,Renda superior a dois salários mínimos,,10000,10001,10002,10006,10016,
+Segurança energética,Acesso,Vulnerabilidade,Sensibilidade,Consumo elétrico residencial,,10000,10001,10002,10005,10009,
+Segurança energética,Acesso,Vulnerabilidade,Sensibilidade,Intensidade de energia elétrica,,10000,10001,10002,10005,10010,
+Segurança energética,Acesso,Vulnerabilidade,Sensibilidade,Interrupção de eletricidade,,10000,10001,10002,10005,10008,
+Segurança energética,Acesso,Vulnerabilidade,Sensibilidade,Pobreza energética,,10000,10001,10002,10005,10007,
+Segurança energética,Disponibilidade,Demanda de resfriamento,,,,10000,10024,10028,,,
+Segurança energética,Disponibilidade,Potencial de energia eólica,,,,10000,10024,10027,,,
+Segurança energética,Disponibilidade,Potencial de energia hidrelétrica,,,,10000,10024,10025,,,
+Segurança energética,Disponibilidade,Potencial de energia solar,,,,10000,10024,10026,,,

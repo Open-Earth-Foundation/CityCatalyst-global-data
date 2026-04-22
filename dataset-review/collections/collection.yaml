@@ -21,3 +21,8 @@ collections:
       - id: world-bank-projects
       - id: idb-projects
       - id: gcf-projects
+
+  - id: brazil
+    name: Brazil datasets
+    datasets:
+      - id: br-adaptabrasil
