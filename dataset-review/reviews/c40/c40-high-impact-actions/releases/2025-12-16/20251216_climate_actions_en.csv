@@ -1,0 +1,42 @@
+ID,Action,Short name,Sector (Primary)
+1,City/transit operator is only procuring zero emission buses,Procure only zero emissions buses,Transport
+2,City has restrictions (e.g. charges or bans) on high polluting vehicles that cover a significant part of the city,Restrictions on high polluting vehicles,Transport
+3,City is reallocating road space from cars to active and sustainable modes on a permanent basis,Reallocation of road space to active transport,Transport
+4,City is implementing measures to improve network coverage, frequency, capacity, speed, reliability, accessibility, resilience, safety, affordability, comfort and convenience of public transport (e.g. buses, BRT, informal transport, intra-city rail.),Improvement of quality of public transport,Transport
+5,City is (alone or with partners) implementing the key measures to promote transport electrification,Transport electrification,Transport
+6,City is procuring only zero-emission vehicles for the municipal fleet and specifying zero emission vehicles in municipal procurements,Procure only zero emission municipal vehicles,Transport
+7,City is implementing a programme of action to reduce road danger, in order to ensure people walking, cycling and using public transport are safe and feel safe,City-wide speed restrictions,Transport
+8,City has adopted transit-oriented development policies that prioritise higher-density, mixed-use growth near transit nodes, with a particular emphasis on integrating affordable housing in these areas,Promote transit-oriented development and affordable housing,Urban Planning and Design
+9,City has adopted policies that promote polycentric form and proximity to services and amenities across neighbourhoods, by reversing single-use zoning and incentivising mixed-use development,Proximity city and mixed-use development,Urban Planning and Design
+10,City is implementing/enforcing building energy regulations, codes or policies on a mandatory pathway to achieve net zero carbon new buildings,Building energy regulations, codes or policies towards net zero carbon new buildings,Energy and Buildings
+11,City is implementing/enforcing mandatory energy or emissions performance standards for existing buildings (on a pathway to net zero carbon),Mandatory energy/emissions performance standards for existing buildings,Energy and Buildings
+12,City is incentivising or implementing [citywide/significant] actions towards grid decarbonization (either building-scale or large scale),Implement actions towards grid decarbonization,Energy and Buildings
+13,City is implementing or incentivising a phase out of fossil fuel or solid fuel technologies for heating and cooking,Phase out of fossil or solid fuel heating and cooking,Energy and Buildings
+14,City is implementing renewable energy mandates for buildings,Renewable energy mandates for buildings,Energy and Buildings
+15,City is implementing policies to deliver net zero carbon municipal buildings (through retrofits and/or onsite renewable energy requirements),Policies towards net zero carbon municipal buildings,Energy and Buildings
+16,City is implementing retrofit programs for existing, privately-owned buildings, that put the city on a pathway to net zero carbon,Retrofit programs for private buildings,Energy and Buildings
+17,City is including measures to reduce the climate impacts of the built environment (embodied carbon and climate risks of buildings and/or infrastructure assets),Measures to reduce embodied emissions and climate risk in buildings,Clean Construction
+18,City has defined a baseline and set an embodied emissions reduction target for new build, major renovations and/or infrastructure,Baseline and embodied emissions reduction target set,Clean Construction
+19,City is implementing citywide segregated collection (food waste/organics, recycling, residual/rubbish) for majority of businesses and residences,City-wide segregated waste collection,Waste
+20,City is restricting single use and non-recyclable materials,Restrict single use and non-recyclable materials,Waste
+21,City has volume-based waste collection fees or incentives,Waste collection fees or incentives (volume-based),Waste
+22,City is achieving universal waste collection,Universal waste collection,Waste
+23,City has a sanitary landfill (HDPE lining, landfill gas management and leachate treatment),Sanitary landfill,Waste
+24,City is creating/aligning school feeding programs to locally relevant low carbon diet,School feeding programs towards low carbon diets,Food
+25,City is regulating or activating programs for food businesses to minimise food related carbon emissions,Food businesses programs to minimize carbon emissions,Food
+26,City has food assistance programmes which follow locally relevant low carbon diets (eg prioritizing plant-protein),Food assistance programmes towards low carbon diets,Food
+27,City has sustainable urban agriculture as part of their food security programmes (eg regenerative agriculture programs or supporting plant based proteins production),Food security programmes,Food
+28,City is implementing water system efficiency improvements and identifying new sources of supply to reduce water supply risks,Water system efficiency improvements,Adaptation
+29,City is implementing cool surfaces (roofs, pavements) to reduce urban heat,Cool surfaces to reduce urban heat,Adaptation
+30,City is implementing Sustainable Urban Drainage Systems (SUDs),Sustainable urban drainage systems,Adaptation
+31,City has an emergency response plan in implementation to protect vulnerable citizens from extreme weather events,Emergency Preparedness,Adaptation
+32,City is implementing coastal protection against sea level rise and storm surges,Coastal protection,Adaptation
+33,City is implementing water conservation and water demand management solutions to increase water availability,Water conservation and demand solutions,Adaptation
+34,City is increasing green spaces and urban canopy cover in vulnerable areas,Green spaces and urban canopy cover,Adaptation
+35,City has adequate air quality city-wide monitoring,Air quality city-wide monitoring,Air Quality
+36,City has adopted land use policies that promote increased density in appropriate areas, such as reversing single-family zoning and incentivising infill development,Promote increased density and infill development,Urban Planning and Design
+37,City has adopted land use policies that limit urban sprawl and discourage development on natural land,Limit urban sprawl and protect natural land,Urban Planning and Design
+38,City has adopted evidence-based spatial zoning to regulate development in areas at high risk from climate impacts—particularly flooding and landslides—and, where applicable, has upgraded climate-vulnerable informal settlements,Risk-Informed Land Use Planning and Settlement Upgrading,Urban Planning and Design
+39,City is treating significant amounts of organic waste,Organic waste treatment,Waste
+40,Port and port city (alone or with partners) is implementing measures to achieve scope 1, 2 net-zero emissions at port terminals,Measures to achieve net zero emissions at port terminals,Ports
+41,Port or Port city is taking measures to promote zero emissions fuels for port and related operations,Measures to develop zero emissions fuels supply chains (by port or port city),Ports

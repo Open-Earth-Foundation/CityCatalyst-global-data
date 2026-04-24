@@ -1,0 +1,378 @@
+action_id,action_name,action_type,hazard_name,sector_names,subsector_names,primary_purpose,description,cobenefits_airquality,cobenefits_waterquality,cobenefits_habitat,cobenefits_costofliving,cobenefits_housing,cobenefits_mobility,cobenefits_stakeholderengagement,equity_and_inclusion_considerations,ghgreduction_stationary_energy,ghgreduction_transportation,ghgreduction_waste,ghgreduction_ippu,ghgreduction_afolu,adaptation_effectiveness,cost_investment_needed,timeline_for_implementation,dependencies,key_performance_indicators,powers_and_mandates,adaptation_effectiveness_droughts,adaptation_effectiveness_heatwaves,adaptation_effectiveness_floods,adaptation_effectiveness_sealevelrise,adaptation_effectiveness_landslides,adaptation_effectiveness_storms,adaptation_effectiveness_wildfires,adaptation_effectiveness_diseases,biome
+ipcc_0001,Promover a forma urbana compacta e o desenvolvimento orientado para o transporte coletivo,{mitigation},,{transport},{on_road},{},"Incentiva o desenvolvimento urbano compacto e de uso misto para reduzir distâncias de deslocamento, dependência de carros e as emissões de GEE associadas. As medidas incluem desenvolvimento orientado ao transporte público (TOD), reformas de zoneamento, adensamento ao longo de corredores de transporte e integração do planejamento do uso do solo e da mobilidade. Especialmente adequado para cidades maiores com capacidade de atualizar planos diretores e investir em infraestrutura de transporte coletivo.",1,0,0,1,1,2,1,"Melhora o acesso a opções de transporte eficientes e acessíveis para comunidades carentes, reduzindo disparidades sociais e econômicas.",,0-19,,,,,high,>10 years,"Apoio político ao planejamento do uso da terra
+aceitação pública
+realocação dos orçamentos de transporte para modos sustentáveis",,,,,,,,,,,
+ipcc_0023,Projetar produtos com materiais leves,{mitigation},,{ippu},{industrial_processes},{},"Esta ação envolve melhorar a eficiência dos materiais por meio do design de produtos mais leves, otimizando o uso de materiais para manter a funcionalidade e incorporando princípios da economia circular, como reutilização, reparabilidade e reciclabilidade. Ela abrange todo o ciclo de vida do produto, desde o design até a gestão do fim de vida.",1,0,0,0,0,0,0,Apoia o acesso equitativo a tecnologias energeticamente eficientes e promove práticas sustentáveis em regiões em desenvolvimento com altas emissões industriais. Foca na redução da competição por recursos e na garantia de uma distribuição justa dos avanços tecnológicos.,,,,20-39,,,high,5-10 years,"Disponibilidade de tecnologias avançadas
+marcos regulatórios de apoio
+investimento em pesquisa e desenvolvimento
+alinhamento com padrões globais de redução de emissões e eficiência energética","Redução das emissões industriais de GEE
+taxas de adoção de tecnologias de recuperação de calor e energia
+melhorias na intensidade energética em indústrias-chave
+taxas de reciclagem",,,,,,,,,,
+ipcc_0024,Melhorar a eficiência da utilização de materiais na produção,{mitigation},,{ippu},{industrial_processes},{},"Esta ação foca em aumentar a eficiência do uso de materiais por meio da adoção de técnicas inovadoras de fabricação, como a fundição near-net shape e similares. Esses métodos reduzem o desperdício de material durante a produção, melhoram o aproveitamento das matérias-primas e aumentam a eficiência energética ao minimizar o retrabalho. As estratégias incluem a otimização do design dos produtos, redução de peso e aprimoramento dos processos de reciclagem e reutilização.",1,0,0,0,0,0,0,"Apoia a implantação equitativa de tecnologias energeticamente eficientes em economias em desenvolvimento, garantindo acesso justo aos recursos e reduzindo a poluição ambiental em regiões industriais.",,,,20-39,,,high,5-10 years,"Disponibilidade de sistemas avançados de fornecimento de combustíveis
+estruturas de políticas de apoio
+investimento em P&D para redutores alternativos
+adoção em toda a indústria de controles de processos e tecnologias otimizados","Redução das emissões de GEE provenientes do aquecimento na produção de aço
+melhorias na intensidade energética
+aumento das taxas de adoção de injeção de carvão pulverizado e combustíveis alternativos
+redução da produção de resíduos perigosos",,,,,,,,,,
+ipcc_0025,"Projetar para Recuperação, Reutilização ou Reaproveitamento",{mitigation},,{ippu},{industrial_processes},{},"Esta ação envolve o design de produtos para possibilitar princípios circulares, como vida útil prolongada, reutilização, reparabilidade e facilidade de reciclagem. Ela enfatiza a redução de peso, a otimização de materiais e a melhoria na recuperação de materiais ao final de seu ciclo de vida por meio de reutilização, remanufatura ou reciclagem.",1,0,0,0,0,0,0,"Garante que tecnologias de fornos eficientes estejam acessíveis às indústrias em economias em desenvolvimento, reduzindo a poluição e melhorando a segurança no local de trabalho.",,,,20-39,,,high,5-10 years,"Disponibilidade de designs avançados de fornos
+políticas e incentivos de apoio
+mão de obra qualificada para instalação e manutenção
+adoção em toda a indústria de tecnologias energeticamente eficientes","Redução na intensidade energética
+Emissões de GEE
+produção de resíduos perigosos
+aumento da adoção de fornos avançados
+controles de processos",,,,,,,,,,
+ipcc_0026,Adotar matérias-primas alternativas na produção industrial,{mitigation},,{ippu},{industrial_processes},{},"Utilizar matérias-primas alternativas, como escória de alto-forno, cinzas volantes e pozolanas, para reduzir a proporção de clínquer no cimento durante a produção. Essas alternativas diminuem as emissões associadas à calcinação e aos processos de alta intensidade energética. A eficiência aprimorada dos materiais, por meio de concretos de alta resistência e métodos inovadores de aplicação, reduz ainda mais o uso de materiais.",1,0,0,0,0,0,0,"Garante que tecnologias avançadas de recuperação de calor sejam acessíveis para pequenas e médias indústrias, especialmente em regiões em desenvolvimento, ajudando-as a reduzir custos de energia e emissões.",60-79,,,40-59,,,high,5-10 years,"Disponibilidade de tecnologias avançadas de recuperação de calor e bombas
+mão de obra qualificada para instalação e manutenção
+apoio político para a adoção de sistemas de recuperação de calor residual
+investimento em infraestrutura para capturar e redirecionar o calor residual para atender outras necessidades energéticas dentro da instalação","Aumento na taxa de recuperação de calor residual
+redução na intensidade energética
+percentual de calor reutilizado por meio de sistemas de alta eficiência",,,,,,,,,,
+ipcc_0028,"Mudanças de comportamento para redução de resíduos (por exemplo, alimentos)",{mitigation},,{ippu},{industrial_processes},{},"Incentivar mudanças de comportamento para reduzir o desperdício nos processos industriais e nos hábitos de consumo, especialmente na produção e no consumo de alimentos. Isso inclui a redução do desperdício de alimentos por meio de um melhor planejamento, otimização do tamanho das porções e aprimoramento das práticas de reciclagem e reutilização nas etapas de produção e pós-consumo.",0,0,0,0,0,0,0,"Promove o acesso equitativo a tecnologias eficientes para operações de mineração em pequena escala, reduzindo os custos de energia e os impactos ambientais para comunidades vulneráveis dependentes das atividades de mineração.",,,,20-39,,,high,5-10 years,"Desenvolvimento de tecnologias avançadas de cominuição e classificação de minérios
+disponibilidade de fontes de energia renovável para geração de energia
+apoio político para incentivar a adoção","Redução no consumo de energia por tonelada de minério processado
+melhoria na taxa de recuperação do minério
+redução nas emissões de GEE das operações de mineração",,,,,,,,,,
+ipcc_0031,"Níveis de serviço de produto aprimorados por produto (por exemplo, compartilhamento de produtos)",{mitigation},,{ippu},{industrial_processes},{},"Promove o uso mais intensivo de produtos duráveis ao incentivar o compartilhamento de produtos, o que reduz a demanda por novos produtos e as emissões de GEE associadas à sua fabricação e cadeia de suprimentos.",0,0,0,0,0,1,1,"Facilita o acesso a tecnologias energeticamente eficientes para pequenas e médias empresas, garantindo a participação equitativa em iniciativas de economia de energia.",,,,20-39,,,high,5-10 years,"Disponibilidade de tecnologias avançadas como sensores e sistemas de machine learning
+infraestrutura digital adequada
+políticas de apoio para a adoção de eficiência energética","Redução no uso de energia
+economia de custos por ciclo de produção
+percentual de melhoria na eficiência do processo",,,,,,,,,,
+ipcc_0033,Melhorar a manutenção dos produtos para prolongar a vida útil,{mitigation},,{ippu},{industrial_processes},{},Prolongar a vida útil de edifícios e infraestruturas mantendo sua integridade estrutural por meio de uma melhor manutenção do estoque de produtos. Isso envolve garantir que estruturas de concreto permaneçam funcionais por mais de 200 anos.,1,0,0,0,0,0,0,"Promove o acesso equitativo a tecnologias avançadas de eletrificação e treinamento para a força de trabalho, garantindo a participação de setores industriais subatendidos.",,,,40-59,,,high,5-10 years,"Disponibilidade de eletricidade de baixo carbono
+desenvolvimento de materiais de ânodo adequados
+infraestrutura para eletrificação em larga escala na produção de aço","Redução das emissões por tonelada de aço produzida
+aumento da participação de processos eletrificados
+economia de energia nas etapas de produção",,,,,,,,,,
+ipcc_0034,Promover o comportamento do consumidor focado na suficiência e na redução do consumo,{mitigation},,{ippu},{industrial_processes},{},"Promove mudanças de comportamento e de consumo para reduzir as emissões industriais totais, enfatizando a diminuição da demanda por produtos, a reutilização e a reciclagem, além do uso mais eficiente dos recursos.",0,0,0,0,0,0,0,"Garante o acesso a tecnologias de recuperação de energia para pequenos fabricantes, promovendo uma adoção mais ampla em diferentes setores e regiões.",,,,40-59,,,high,5-10 years,"Disponibilidade de tecnologias avançadas de recuperação de calor
+mão de obra qualificada para instalação e operação
+políticas de apoio e incentivos financeiros","Redução no consumo de energia por tonelada de produto
+aumento nas taxas de recuperação de energia de resíduos
+diminuição da intensidade de emissões de GEE em processos industriais",,,,,,,,,,
+ipcc_0037,Adotar materiais e cadeias de suprimentos com emissões líquidas zero,{mitigation},,{ippu},{industrial_processes},{},"Transição para carbono incorporado líquido zero na construção, substituindo materiais com altas emissões (por exemplo, aço, concreto) por sistemas de madeira engenheirada (incluindo madeira maciça para edifícios de média altura) e integrando práticas circulares (reutilização, reciclagem, design para desmontagem). Priorizar o manejo florestal sustentável certificado (por exemplo, FSC/PEFC), uso em cascata e salvaguardas contra o desmatamento, garantindo que o uso da madeira não entre em conflito com matérias-primas para energia. Utilizar avaliação do ciclo de vida para orientar a escolha de materiais e melhorias na cadeia de suprimentos.",1,0,0,0,0,0,0,"Apoia o desenvolvimento industrial equitativo promovendo o acesso a tecnologias mais limpas, especialmente para indústrias em regiões em desenvolvimento, a fim de reduzir as emissões sem comprometer o crescimento econômico.",,,,40-59,,,high,>10 years,"Requer avanços nas tecnologias de CCS e CCU
+disponibilidade de eletricidade de baixo GEE
+políticas de apoio para incentivar a descarbonização industrial","Redução das emissões de GEE provenientes de processos industriais
+aumento do uso de matérias-primas de baixo carbono
+número de projetos de CCS/CCU implementados",,,,,,,,,,
+ipcc_0038,Estimular a produção de energia solar em instalações industriais,{mitigation},,{ippu},{industrial_processes},{},Incentivar a instalação de sistemas de energia solar em fábricas para reduzir a dependência de combustíveis fósseis e minimizar as emissões associadas.,1,0,0,0,0,0,0,"Garante que os benefícios das tecnologias de CCU sejam acessíveis às regiões de baixa renda, incluindo a redução dos custos de materiais de construção e combustíveis.",,,,20-39,,,high,5-10 years,"Disponibilidade de energia limpa para produção de hidrogênio
+desenvolvimento de tecnologias de CCU
+políticas para apoiar a adoção","Quantidade de CO2 capturada e reutilizada
+redução nas emissões por tonelada de produto
+penetração de mercado de produtos derivados de CCU",,,,,,,,,,
+ipcc_0039,Promover a substituição de materiais tradicionais por alternativas sustentáveis,{mitigation},,{ippu},{industrial_processes},{},"Estimular a substituição de materiais convencionais em bens de consumo por alternativas da bioeconomia brasileira, como bioplásticos à base de cana-de-açúcar, polímeros reciclados de alta qualidade, biotêxteis feitos de fibras de biomassa ou resíduos agrícolas como sementes de açaí e cascas de coco.",1,0,0,0,0,0,0,"Apoia uma transição equitativa ao fornecer caminhos de descarbonização para indústrias de uso intensivo de energia e de difícil redução de emissões, garantindo empregos e estabilidade econômica em regiões dependentes desses setores.",,,,40-59,,,high,>10 years,"Requer o desenvolvimento de infraestrutura para transporte e armazenamento de CO2
+marcos regulatórios de apoio
+energia limpa suficiente para os processos de captura
+incentivos para adoção","Quantidade de CO2 capturada e armazenada anualmente
+percentual de redução nas emissões industriais
+capacidade operacional de projetos de CCS globalmente",,,,,,,,,,
+ipcc_0040,Promover colaborações entre a indústria e o governo para a redução de emissões,{mitigation},,{ippu},{industrial_processes},{},Promover colaborações entre a indústria e o governo para criar políticas e incentivos para reduzir as emissões industriais e apoiar metas de sustentabilidade.,0,0,0,0,0,0,0,Promove o acesso a produtos duráveis e acessíveis para comunidades carentes e reduz o desperdício em regiões com recursos limitados.,,,,40-59,,,medium,5-10 years,"Disponibilidade de materiais avançados
+políticas de apoio para economia circular
+colaboração entre partes interessadas em toda a cadeia de suprimentos
+investimento em P&D para materiais leves
+métodos de design de alta eficiência","Redução no uso de materiais por produto
+aumento na vida útil do produto
+percentual de materiais recuperados e reutilizados
+redução nas emissões de GEE dos processos de produção",,,,,,,,,,
+ipcc_0041,Apoiar pesquisas em tecnologias de manufatura neutras em carbono,{mitigation},,{ippu},{industrial_processes},{},Investir em pesquisa e desenvolvimento de tecnologias neutras em carbono e incentivar sua adoção na produção industrial.,0,0,0,0,0,0,0,"Promove o acesso a tecnologias avançadas de eficiência no uso de materiais para indústrias de todos os portes, permitindo que pequenas empresas participem de práticas de manufatura sustentável.",,,,20-39,,,medium,5-10 years,"Disponibilidade de tecnologias avançadas de manufatura
+treinamento da força de trabalho
+regulamentações de apoio
+acesso a materiais para fundição de forma quase final","Redução do desperdício de materiais
+aumento do rendimento de produção
+redução das emissões de GEE por unidade de material produzido",,,,,,,,,,
+ipcc_0042,Definir metas de redução de emissões de carbono para os setores industriais,{mitigation},,{ippu},{industrial_processes},{},Estabelecer metas claras e alcançáveis de redução de emissões de carbono para as indústrias e exigir relatórios periódicos para garantir o progresso.,0,0,0,0,0,0,1,"Garante o acesso equitativo a tecnologias avançadas de reciclagem e reuso, criando oportunidades para que comunidades subatendidas participem de iniciativas de gestão sustentável de materiais.",,,,40-59,,,high,5-10 years,"Colaboração em toda a cadeia de suprimentos
+avanços em tecnologias de reciclagem e remanufatura
+marcos regulatórios de apoio para incentivar a adoção","Percentual de materiais recuperados e reutilizados
+redução no desperdício de produção
+diminuição das emissões de GEE por unidade do ciclo de vida do produto",,,,,,,,,,
+ipcc_0043,Incentivar o uso de combustíveis de emissão zero em processos industriais,{mitigation},,{ippu},{industrial_processes},{},"Promover a transição para fontes de energia e matérias-primas de emissão zero nos processos industriais, como hidrogênio verde, biogás de fontes sustentáveis e e-combustíveis sintéticos ou produtos químicos produzidos com eletricidade renovável. Essas alternativas reduzem significativamente ou eliminam as emissões dos processos em comparação com combustíveis de origem fóssil.
+As cidades podem acelerar essa mudança implementando projetos-piloto e de demonstração, estabelecendo padrões de compras verdes, simplificando processos de licenciamento e criando incentivos direcionados, todos alinhados com roteiros nacionais e setoriais de descarbonização.",0,0,0,0,0,0,0,"Promove o acesso a práticas de EC para pequenas e médias empresas (PMEs), garante a participação equitativa em redes de simbiose industrial e apoia regiões subatendidas criando oportunidades econômicas por meio de políticas eficientes no uso de recursos.",,,,40-59,,,high,5-10 years,"Coordenação eficaz entre indústrias, governos e comunidades
+políticas e regulamentações de apoio
+desenvolvimento de infraestrutura de reciclagem
+plataformas de compartilhamento de dados para fluxos de materiais e energia","Redução no uso de materiais virgens
+Emissões de GEE evitadas por meio de práticas de EC
+aumento nas taxas de reciclagem
+número de redes de simbiose industrial implementadas
+métricas de recuperação de recursos",,,,,,,,,,
+ipcc_0045,Transição para energia renovável nas operações industriais,{mitigation},,{ippu},{industrial_processes},{},"Incentivar a transição para fontes de energia renovável, como eólica, solar e hidrelétrica, nas operações industriais para reduzir o uso de combustíveis fósseis.",1,0,0,1,0,0,1,"Promove o acesso justo à educação e aos recursos para a redução de resíduos, especialmente para comunidades de baixa renda e subatendidas, a fim de melhorar a eficiência no uso de recursos e reduzir os custos de gestão de resíduos.",,,,20-39,,,medium,<5 years,"Disponibilidade de infraestrutura para coleta e reciclagem de resíduos
+campanhas de conscientização pública
+marcos regulatórios de apoio","Redução no percentual de desperdício de alimentos
+aumento nas taxas de reciclagem
+redução das emissões de gases de efeito estufa provenientes da gestão de resíduos",,,,,,,,,,
+ipcc_0049,Desenvolver e implementar políticas de economia circular,{mitigation},,{ippu},{industrial_processes},{},"As políticas de Economia Circular (EC) visam fechar o ciclo dos fluxos de materiais e energia por meio da redução, reutilização e reciclagem de recursos. Essas políticas promovem bens duráveis, reutilização e remanufatura, simbiose industrial e simbiose urbana para minimizar resíduos e reduzir as emissões de GEE. As políticas de EC operam nos níveis micro, meso e macro para integrar estratégias como ecodesign, cadeias de suprimentos sustentáveis e simbiose energética urbana.",0,0,0,0,0,0,0,"Apoia infraestrutura acessível ao reduzir a necessidade de reconstruções frequentes, beneficiando comunidades carentes e com poucos recursos.",,,,40-59,,,medium,5-10 years,"Desenvolvimento de técnicas avançadas de manutenção
+políticas eficazes para promover maior durabilidade das edificações
+educação para profissionais da construção sobre práticas duráveis","Aumento da vida útil média de edifícios e infraestruturas
+redução da demanda de cimento per capita
+reduções gerais das emissões de CO2 na produção de cimento",,,,,,,,,,
+ipcc_0050,Criar incentivos fiscais para empresas que adotam tecnologias limpas,{mitigation},,{ippu},{industrial_processes},{},"Implementar incentivos fiscais e subsídios para empresas que investem em tecnologias limpas, levando a reduções substanciais de emissões.",0,0,0,1,0,0,0,"Garante a participação inclusiva em iniciativas de suficiência, permitindo que grupos de baixa renda tenham acesso a medidas de economia de custos, ao mesmo tempo em que promove o consumo sustentável em todas as camadas econômicas.",,,,20-39,,,low,<5 years,"Campanhas de conscientização pública
+políticas de apoio
+integração da sustentabilidade em estruturas empresariais e governamentais","Redução da intensidade de materiais e energia per capita
+diminuição nas taxas de geração de resíduos
+melhoria nas estatísticas de reciclagem e reutilização",,,,,,,,,,
+ipcc_0052,Reduzir o Desmatamento e a Degradação,{mitigation},,{afolu},{land},{},"Reduzir o desmatamento e a degradação florestal para conservar o carbono sequestrado na vegetação e no solo das florestas, evitando a perda de cobertura arbórea e distúrbios. Isso envolve melhorar a governança florestal e apoiar a gestão comunitária das florestas. Reforçar o monitoramento e a fiscalização para prevenir o desmatamento ilegal e promover o uso sustentável da terra.",1,1,0,0,0,0,0,"Promove a posse segura da terra, apoia a gestão florestal baseada na comunidade e garante a participação de grupos marginalizados e indígenas nos processos de tomada de decisão.",,,,,60-79,,medium,5-10 years,"Requer melhor governança
+políticas claras de posse da terra
+financiamento para áreas protegidas
+participação da comunidade nos esforços de conservação florestal","Redução nas taxas de desmatamento
+aumento da cobertura florestal
+a quantidade de emissões de GEE evitadas por ano",,,,,,,,,,tropical_rainforest
+ipcc_0053,"Implementar o reflorestamento, a aforestação e a restauração de ecossistemas florestais",{mitigation},,{afolu},{land},{},"Avançar com iniciativas de plantio de árvores e recuperação florestal que fortaleçam a biodiversidade, os serviços ecossistêmicos e a captura de carbono. A aforestação estabelece novas florestas em áreas historicamente não florestadas, a reflorestação restaura áreas desmatadas e a restauração de ecossistemas prioriza espécies nativas e a integridade ecológica. Os governos municipais devem evitar monoculturas, garantir que os projetos proporcionem benefícios a longo prazo e envolver as comunidades locais para que os esforços de restauração ofereçam valor social, cultural e econômico juntamente com ganhos ambientais.",0,1,1,0,0,0,0,"Apoia os meios de subsistência locais, promove a equidade no uso da terra e garante a participação inclusiva das partes interessadas em programas de reflorestamento e restauração.",,,,,60-79,,high,5-10 years,"Requer financiamento para restauração de terras
+acesso a espécies adequadas para plantio
+engajamento da comunidade local
+sistemas de monitoramento para integridade do ecossistema e sequestro de carbono","Área de terra reflorestada ou aforestada
+taxas de sequestro de carbono
+melhoria nos índices de biodiversidade
+métricas de serviços ecossistêmicos como regulação da água e qualidade do solo",,,,,,,,,,
+ipcc_0054,Adotar práticas de manejo florestal sustentável,{mitigation},,{afolu},{land},{},"O manejo florestal sustentável de florestas já manejadas aumentará os estoques de carbono, melhorará a qualidade da madeira, mitigará distúrbios e proporcionará co-benefícios como conservação da biodiversidade, regulação da água e proteção do solo. As práticas incluem rotações mais longas, redução da extração, povoamentos mistos e silvicultura inteligente para o clima, sendo essencial trabalhar com os Povos Indígenas para salvaguardar seu trabalho e práticas. As cidades podem aplicar esses princípios se forem responsáveis pelo manejo florestal, ou podem se associar com os responsáveis para incentivar e apoiar as melhores práticas.",0,1,1,0,0,0,0,"Promove a participação inclusiva na gestão florestal e oferece apoio a pequenos produtores e comunidades locais, especialmente em regiões tropicais onde práticas sustentáveis podem melhorar os meios de subsistência e mitigar as mudanças climáticas.",,,,,40-59,,high,5-10 years,"Requer expertise em silvicultura sustentável
+investimento em viveiros com espécies adaptadas
+políticas de apoio
+incentivos para superar barreiras econômicas
+garantir acessibilidade para os atores locais","Aumento dos estoques de carbono florestal
+redução nas emissões de GEE
+melhorias nos indicadores de biodiversidade
+redução da erosão do solo e de problemas relacionados à água",,,,,,,,,,
+ipcc_0055,"Implementar o manejo do fogo em florestas, pastagens e savanas",{mitigation},,{afolu},{land},{},"Implementar práticas de manejo do fogo, incluindo queimas prescritas e gestão de recursos naturais, para reduzir incêndios florestais descontrolados em florestas e savanas. O foco é proteger vidas, propriedades e recursos, ao mesmo tempo em que se mitigam as emissões de GEE e se mantêm os estoques de carbono. As cidades podem aplicar esses princípios se forem responsáveis pelo manejo florestal, ou podem fazer parcerias com os responsáveis para incentivar e apoiar as melhores práticas. Trabalhar com Povos Indígenas para proteger ou apoiar suas próprias práticas de queima e abordagens de manejo do fogo.",1,0,0,0,0,0,0,"Promove o acesso equitativo aos recursos de gestão de incêndios, com foco no fortalecimento de capacidades e na governança em regiões vulneráveis ou subatendidas, como os países menos desenvolvidos da África.",,,,,20-39,,medium,5-10 years,"Estruturas eficazes de governança
+acesso à pesquisa e tecnologia para gestão de incêndios
+engajamento comunitário
+alinhamento com marcos legais e políticos regionais","Redução na frequência e intensidade de incêndios florestais descontrolados
+Área manejada com queimadas prescritas
+Redução nas emissões de GEE provenientes de incêndios
+Melhoria nos indicadores de biodiversidade e saúde do solo",,,,,,,,,,
+ipcc_0056,Reduzir e prevenir a degradação e conversão de pastagens e savanas,{mitigation},,{afolu},{land},{},"Prevenir a conversão de pastagens e savanas em áreas agrícolas para conservar o carbono do solo e a biodiversidade, e implementar práticas de manejo sustentável do solo em áreas agrícolas e pastagens para aumentar o carbono orgânico do solo. As cidades podem promover o pastoreio sustentável, a redução do revolvimento do solo, o manejo do fogo, a aplicação de biochar, a melhoria das variedades de gramíneas e práticas de manejo da vegetação, ao mesmo tempo em que desencorajam a mudança de uso da terra que acelera a degradação. Parcerias com comunidades locais e o alinhamento com iniciativas regionais de conservação fortalecem a proteção desses ecossistemas. Essas atividades visam aumentar a matéria orgânica do solo, mitigar as emissões de GEE e proporcionar co-benefícios para a biodiversidade, oferta de água e segurança alimentar.",0,0,0,0,0,0,0,"Promove práticas de conservação que beneficiam as comunidades locais, protegem ecossistemas vulneráveis e aumentam a resiliência econômica dos proprietários de terras por meio do uso sustentável dos campos nativos.",,,,,20-39,,medium,5-10 years,"Fortes estruturas políticas  
+incentivos financeiros para conservação  
+colaboração entre governos  
+comunidades locais  
+proprietários de terras para implementar práticas sustentáveis","Redução nas taxas de conversão de pastagens
+aumento nos níveis de carbono orgânico do solo
+redução mensurável nas emissões de GEE das áreas-alvo",,,,,,,,,,grassland_savanna
+ipcc_0057,Restaurar turfeiras degradadas e prevenir novas conversões ou degradações.,{mitigation},,{afolu},{land},{},"Proteger turfeiras intactas contra desmatamento, drenagem e conversão que liberam grandes emissões de carbono, além de reumedecer e revegetar turfeiras degradadas para evitar mais degradação. Os governos municipais podem aprimorar a governança e o monitoramento, restringir a expansão agrícola e colaborar com programas regionais e nacionais para a conservação de áreas úmidas. Proteger esses ecossistemas preserva o armazenamento de carbono, reduz os riscos de incêndio e protege a biodiversidade e os serviços ecossistêmicos. A restauração de turfeiras mantém a regulação da água, previne enchentes e pode promover meios de subsistência sustentáveis por meio da paludicultura.",0,1,1,0,0,0,0,"Promove o acesso equitativo aos recursos de turfeiras preservadas, ao mesmo tempo em que reduz os riscos à saúde causados por poluentes relacionados a incêndios, especialmente para comunidades vulneráveis e rurais.",,,,,40-59,,high,5-10 years,"Requer governança forte
+apoio financeiro
+cooperação internacional
+políticas para controlar os fatores de conversão de terras
+como agricultura
+mineração
+desenvolvimento urbano","Redução nas taxas de conversão de turfeiras
+emissões evitadas por hectare
+melhorias nos indicadores de biodiversidade e qualidade da água",,,,,,,,,,wetlands
+ipcc_0060,Proteger e Restaurar Zonas Úmidas Costeiras,{mitigation},,{afolu},{land},{},"Restaurar ecossistemas costeiros degradados ou danificados, incluindo manguezais, marismas e pradarias marinhas. A restauração inclui abordagens passivas (remoção dos fatores de degradação) e ativas (manipulação ambiental) para restabelecer as funções do ecossistema e o potencial de sequestro de carbono. Isso apoia a conservação da biodiversidade, a produção pesqueira, a estabilização do solo, a regulação da qualidade da água, a prevenção de inundações e a resiliência contra ciclones. As cidades podem realizar atividades de restauração por conta própria, exigir a restauração como parte do planejamento urbano e das regulamentações de uso do solo, ou fazer parcerias com o governo, organizações ecológicas e outros parceiros para executar projetos de restauração. Incentivos econômicos ou regulamentações sobre atividades que degradam áreas úmidas costeiras também podem ser eficazes.",0,1,1,0,0,0,0,"Envolve as comunidades locais nas etapas de tomada de decisão, implementação e monitoramento para garantir o acesso equitativo aos benefícios dos ecossistemas e a proteção das populações costeiras vulneráveis.",,,,,40-59,,high,>10 years,"Requer compromissos de longo prazo
+políticas de apoio
+financiamento
+mecanismos de monitoramento
+capacidade técnica
+para abordar os fatores de degradação
+garantir o sucesso da restauração","Área de zonas úmidas restauradas
+taxas de sequestro de carbono
+métricas de recuperação da biodiversidade
+redução nos custos de danos causados por tempestades
+melhorias na qualidade da água",,,,,,,,,,
+ipcc_0062,Criar parcerias para implementar usinas de biochar.,{mitigation},,{afolu},{land},{},"O biochar é produzido pelo aquecimento de matéria orgânica (por exemplo, resíduos florestais, palha, esterco) em ambientes com pouco oxigênio. Ele possui um potencial significativo de mitigação por meio da remoção de dióxido de carbono (CDR), redução das emissões de gases de efeito estufa e benefícios na aplicação ao solo, como melhoria da fertilidade e redução das emissões de N2O. As cidades podem considerar testar e adotar essas tecnologias, em colaboração com produtores rurais locais, empresas de serviços públicos e outros atores industriais.",0,0,0,0,0,0,0,"Promove o acesso a tecnologias sustentáveis de biochar para pequenos agricultores e regiões em desenvolvimento, melhorando a segurança alimentar e os meios de subsistência.",,,,,20-39,,high,5-10 years,"Disponibilidade de biomassa de origem sustentável
+padronização dos métodos de produção
+sistemas de monitoramento
+incentivos para ampliar a produção e aplicação de biochar","Taxas de sequestro de carbono
+redução nas emissões de N2O do solo
+melhorias no rendimento das culturas
+deslocamento do uso de combustíveis fósseis por meio de gases de pirólise",,,,,,,,,,
+ipcc_0064,Reduzir as emissões de metano provenientes da fermentação entérica em animais de criação,{mitigation},,{afolu},{livestock},{},"Esta ação tem como alvo as emissões de metano (CH4) provenientes da fermentação entérica em animais de criação, por meio de intervenções diretas como aditivos alimentares, inibidores ou vacinas, e medidas indiretas como a melhoria da eficiência produtiva através de melhores práticas de reprodução e manejo. Também inclui a manipulação do bioma ruminal em fases iniciais da vida. Adotar ou desenvolver normas locais para aditivos alimentares, vacinas e inibidores, e apoiar os produtores rurais para superar barreiras de custos, infraestrutura e capacitação sobre este tema.",0,0,0,0,0,0,0,"Apoia pequenos agricultores no acesso a tecnologias avançadas e programas de melhoramento genético, com foco especial em países em desenvolvimento, onde a melhoria da qualidade da alimentação pode aumentar a produtividade do gado.",,,,,20-39,,medium,5-10 years,"Desenvolvimento e aprovação regulatória de aditivos alimentares, vacinas e inibidores
+adaptação regional de estratégias de mitigação
+superação de barreiras como custos, infraestrutura e aceitação pública","Redução das emissões de CH4 por animal
+taxas de adoção de práticas alimentares melhoradas
+aumento da eficiência de produção por unidade de produto pecuário",,,,,,,,,,
+ipcc_0067,Melhorar o manejo de esterco e as práticas de nutrientes das culturas,{mitigation},,{afolu},{livestock},{},"Promover abordagens coletivas e econômicas para reduzir as emissões de metano (CH₄) e óxido nitroso (N₂O) provenientes do armazenamento e uso de esterco, além da implementação de práticas aprimoradas de manejo de nutrientes em culturas para reduzir as emissões de N₂O dos solos agrícolas. Os governos municipais podem apoiar o desenvolvimento de biodigestores cooperativos, iniciativas de compostagem e instalações de armazenamento aprimoradas, ao mesmo tempo em que incentivam melhores práticas de aplicação de fertilizantes, rotação de culturas e manejo de pastagens. Essas medidas aumentam a recuperação de nutrientes para a produção agrícola, reduzem os custos com fertilizantes e geram co-benefícios como energia renovável por meio do biogás. Ao facilitar modelos de financiamento, parcerias e assistência técnica, as cidades podem ajudar os agricultores a adotar práticas sustentáveis de manejo de esterco e nutrientes em larga escala.",1,1,1,0,0,0,0,"Apoia tecnologias de digestão anaeróbia em pequena escala e medidas aplicáveis regionalmente em países em desenvolvimento, proporcionando oportunidades econômicas e melhorando a resiliência para comunidades agrícolas carentes.",,,,,20-39,,high,5-10 years,"Desenvolvimento de sistemas de digestão anaeróbia de baixo custo  
+políticas de apoio para inibidores de nitrificação  
+programas de treinamento específicos para cada região  
+financiamento acessível para agricultores","Redução das emissões de CH4 e N2O provenientes do armazenamento de esterco
+aumento da adoção de sistemas de digestão anaeróbia
+melhoria na eficiência do uso de nitrogênio
+aumento da produção de biogás",,,,,,,,,,
+ipcc_0068,Piloto de Bioenergia com Captura de Carbono em Parceria com Concessionárias/Indústria.,{mitigation},,{afolu},{land},{},"A bioenergia envolve a produção de energia a partir de fontes orgânicas como biomassa, resíduos orgânicos e restos de colheita, substituindo combustíveis fósseis na produção de calor, eletricidade e combustíveis. Quando combinada com captura e armazenamento de carbono (BECCS), armazena carbono biogênico em reservatórios geológicos ou terrestres, alcançando emissões negativas. O BECCS também pode ser integrado à agricultura e à silvicultura para co-benefícios como restauração de terras e produção de biogás. As cidades podem considerar a implementação piloto e testes dessas tecnologias, em colaboração com produtores rurais locais, empresas de serviços públicos e outros atores industriais.",1,1,0,0,0,0,1,"Foca em práticas sustentáveis de uso da terra, incluindo a restauração de áreas degradadas, garantindo ao mesmo tempo o acesso à energia e a segurança alimentar para comunidades vulneráveis.",,,,,60-79,,high,>10 years,"Requer gestão sustentável da terra
+desenvolvimento de tecnologia avançada de bioenergia
+infraestrutura para captura e armazenamento de carbono
+governança global para comércio e cadeias de suprimentos","Quantidade de carbono removido por meio de BECCS (em GtCO2 por ano)
+energia total produzida a partir de bioenergia
+área de terra restaurada para produção de biomassa
+redução de emissões de GEE devido à substituição do uso de combustíveis fósseis",,,,,,,,,,
+ipcc_0069,Promover dietas sustentáveis e saudáveis,{mitigation},,{afolu},{livestock},{},"Apoiar a transição para padrões alimentares que melhorem a saúde e reduzam os impactos ambientais. Isso geralmente se concentra na redução do consumo de alimentos de origem animal (especialmente ruminantes) e na promoção de opções à base de plantas, tornando a ação viável e socialmente equitativa. As cidades podem agir por meio de políticas de compras públicas em escolas, hospitais, eventos e outras instituições, bem como campanhas de conscientização e promoção de diretrizes alimentares nacionais.",0,1,0,0,0,0,0,"Promove o acesso a dietas acessíveis e culturalmente adequadas que atendam às necessidades nutricionais, especialmente em comunidades carentes e vulneráveis. As políticas abordam a equidade no acesso à alimentação e mitigam impactos econômicos adversos nos setores agrícolas.",,,,,40-59,,medium,5-10 years,"Implementação de políticas integradas para sistemas alimentares
+incentivos financeiros para a agricultura sustentável
+campanhas de conscientização
+desenvolvimento de sistemas alimentares locais para apoiar transições alimentares","Redução das emissões de GEE provenientes da produção de alimentos
+redução do uso da terra para a pecuária
+aumento do consumo de alimentos à base de plantas
+melhoria nos indicadores de saúde pública relacionados a doenças associadas à alimentação",,,,,,,,,,
+ipcc_0070,Reduzir a perda e o desperdício de alimentos,{mitigation},,{afolu},{land},{},"A perda e o desperdício de alimentos podem ser reduzidos por meio de medidas em toda a cadeia de suprimento alimentar, incluindo tecnologias e comportamentos aprimorados de colheita e pós-colheita. Para alcançar essas mudanças, as cidades podem considerar a implementação de políticas de desperdício de alimentos, como relatórios obrigatórios, metas de redução, campanhas de conscientização e educação do consumidor, infraestrutura para armazenamento e transporte de alimentos, estruturas de políticas para redução de resíduos, incentivos financeiros e tributação, e marketing positivo para produtos alimentícios imperfeitos.",0,1,1,1,0,0,0,"Apoia comunidades vulneráveis ao reduzir a insegurança alimentar e a pobreza, enquanto aborda a competição por recursos e melhora o acesso a alimentos acessíveis.",,,,,20-39,,medium,5-10 years,"Infraestrutura adequada para armazenamento e transporte de alimentos
+marcos regulatórios para redução de resíduos
+incentivos financeiros
+educação ampla dos consumidores para mudar comportamentos","Redução nos percentuais de desperdício de alimentos nos níveis do consumidor e das empresas
+diminuição da área de terra utilizada para produção agrícola
+reduções mensuráveis de emissões de GEE em toda a cadeia de suprimentos de alimentos",,,,,,,,,,
+ipcc_0071,Aumentar o uso sustentável de produtos de madeira,{mitigation},,{afolu},{land},{},"Promover o uso de madeira certificada sustentável (por exemplo, FSC, PEFC) como substituto para materiais mais intensivos em carbono e ecologicamente destrutivos, como concreto ou aço. As políticas podem incluir a alteração dos Regulamentos de Construção para incluir exigências sobre produtos de madeira sustentável, e políticas de compras urbanas para projetos e gastos de capital municipais que priorizem madeira sustentável, reciclagem e extensão da vida útil dos produtos. Garantir que as políticas incluam salvaguardas para evitar a promoção do uso insustentável da madeira.",0,0,1,0,0,0,0,"Apoia comunidades locais e indígenas criando meios de subsistência sustentáveis, promovendo a gestão equitativa dos recursos florestais e ampliando o acesso a benefícios de longo prazo.",,,,,40-59,,medium,5-10 years,"Requer práticas de manejo florestal sustentável
+tecnologias avançadas de processamento de madeira
+demanda de mercado por substitutos da madeira
+cooperação global para prevenir a exploração de recursos","Aumento do uso de produtos de madeira na construção
+redução das emissões de GEE por substituição de materiais
+aumento das taxas de utilização de produtos de madeira reciclada",,,,,,,,,,
+ipcc_0074,Promover a forma urbana compacta por meio do planejamento espacial,{mitigation},,{stationary_energy},{commercial_and_institutional_buildings_and_facilities},{},"O planejamento espacial integrado promove uma forma urbana compacta para reduzir as emissões de GEE, aumentando a eficiência urbana, apoiando infraestruturas sustentáveis como redes de aquecimento/resfriamento distrital e ampliando áreas verdes. Processos de co-design melhoram a aceitação pública e a capacidade institucional para apoiar estratégias de mitigação coordenadas.",1,0,1,0,1,1,0,"Equilibra a densificação urbana com habitação acessível e acesso equitativo a áreas verdes, garantindo que populações de baixa renda e vulneráveis se beneficiem das iniciativas de planejamento urbano.",20-39,,,,,,high,>10 years,"Alta capacidade institucional para colaboração intersetorial
+ferramentas avançadas de GIS para planejamento espacial
+engajamento de partes interessadas para processos de co-design","Redução das emissões de GEE per capita
+taxas de adoção de sistemas de aquecimento/resfriamento distrital
+proporção da população urbana com acesso a áreas verdes",,,,,,,,,,
+ipcc_0076,Implementar auditorias energéticas em plantas industriais,{mitigation},,{ippu},{industrial_processes},{},Realizar auditorias energéticas regulares para identificar oportunidades de economia de energia e redução de emissões.,1,1,1,0,0,0,1,Apoia regiões com baixa cobertura florestal por meio do comércio sustentável de madeira e práticas de agroflorestas para reduzir conflitos de uso da terra. Promove a criação de empregos em setores de silvicultura sustentável e indústrias madeireiras.,,,,20-39,,,high,>10 years,"Gestão florestal sustentável
+normas internacionais de contabilização de carbono
+desenvolvimento de tecnologias de madeira engenheirada em larga escala
+políticas robustas de governança florestal e de terras urbanas
+práticas de reflorestamento incentivadas","Redução do carbono incorporado na construção
+número de edifícios urbanos de média altura utilizando madeira engenheirada
+capacidade de sequestro de carbono da infraestrutura urbana de madeira
+melhoria nas práticas de manejo florestal sustentável",,,,,,,,,,
+ipcc_0078,Implementar telhados e paredes verdes,{adaptation},{commercial_and_institutional_buildings_and_facilities},,{commercial_and_institutional_buildings_and_facilities},{},"A implementação de telhados verdes e paredes verdes mitiga os efeitos de ilha de calor urbana, melhora o conforto térmico, reduz a demanda de energia nos edifícios, gerencia a água da chuva e aumenta a habitabilidade urbana e a biodiversidade.",1,1,1,0,0,1,1,Fornece infraestrutura verde que beneficia comunidades carentes ao melhorar o acesso a espaços públicos verdes e apoiar ambientes urbanos mais saudáveis.,20-39,,,,,,high,5-10 years,"Requer coordenação do governo local
+engajamento da comunidade
+integração ao planejamento urbano
+financiamento adequado para o desenvolvimento e manutenção da infraestrutura","Redução no consumo de energia em edifícios
+aumento da cobertura verde urbana
+taxas de retenção de águas pluviais
+aumento do uso de transporte ativo (ciclismo/caminhada)
+melhora do conforto térmico",,,,,,,,,,
+ipcc_0083,Planejar a retirada estratégica das comunidades costeiras vulneráveis,{adaptation},"{sea_level_rise,floods,storms,landslides}",,"{sea_level_rise,floods,storms,landslides}",{},"Realocação e retirada planejada de pessoas, bens e atividades das zonas costeiras de risco para reduzir a exposição e os riscos causados pela elevação do nível do mar e pelos perigos costeiros associados.",0,1,2,-1,1,1,1,"A retirada estratégica garante a inclusão de populações vulneráveis, respeitando os laços culturais e abordando o apego ao lugar e os meios de subsistência.",,,,,,high,high,>10 years,"Terreno adequado e acessível
+Financiamento adequado
+Governança e planejamento eficazes
+Engajamento da comunidade","Número de comunidades realocadas
+Redução da exposição a riscos
+Restauração dos serviços ecossistêmicos em zonas de retirada",,,,"""high""","""high""","""high""","""high""",,,coastal_marine
+ipcc_0084,Restaurar/criar áreas naturais,{adaptation},"{sea_level_rise,floods,storms,droughts}",,"{sea_level_rise,floods,storms,droughts}",{},"Restauração e conservação de habitats marinhos e costeiros, como manguezais, dunas vegetadas, pradarias marinhas, recifes de coral e florestas de kelp, para proteger comunidades costeiras, apoiar a biodiversidade, sequestrar carbono e mitigar as mudanças climáticas. Os esforços incluem a criação de áreas marinhas protegidas, restauração ativa de recifes de coral, gestão de encosta ao recife, restauração de dunas, plantio de árvores tolerantes à salinidade, aumento da cobertura florestal, detecção e manejo de pragas florestais.",1,2,2,1,1,0,1,Promove a inclusão ao proteger ecossistemas que apoiam comunidades costeiras vulneráveis e melhora os meios de subsistência por meio de pescas sustentáveis e oportunidades de lazer.,,,,,,high,medium,5-10 years,"Engajamento comunitário
+Financiamento para projetos de restauração
+Integração do conhecimento local
+Gestão sustentável dos recursos marinhos","Área de habitats restaurados
+Redução nos incidentes de inundação costeira
+Melhoria nos índices de biodiversidade
+Capacidade de sequestro de carbono",,"""medium""",,"""high""","""high""",,"""high""",,,coastal_marine
+ipcc_0085,Reduzir as pressões sobre os ecossistemas para aumentar a resiliência,{adaptation},"{droughts,floods,sea_level_rise,wildfires,storms}",,"{droughts,floods,sea_level_rise,wildfires,storms}",{},"Reduzir a poluição, a eutrofização e as pressões antrópicas sobre os sistemas naturais, incluindo ecossistemas marinhos e terrestres. Os esforços incluem o manejo do escoamento, a proteção de habitats sensíveis como a Grande Barreira de Coral, o enfrentamento de fatores não relacionados ao clima, a promoção da pesca sustentável e o aumento da conectividade entre áreas naturais para fortalecer a resiliência dos ecossistemas.",1,2,2,0,0,0,1,"Apoia comunidades vulneráveis que dependem dos ecossistemas para sua subsistência, melhorando os serviços ecossistêmicos, promovendo a pesca sustentável e garantindo o acesso a habitats conectados que podem mitigar riscos relacionados ao clima.",,,,,,high,medium,5-10 years,"Aplicação das regulamentações de poluição
+Financiamento para restauração de ecossistemas
+Monitoramento de estoques pesqueiros e conectividade de habitats
+Engajamento comunitário
+Planejamento estratégico para restauração de habitats","Redução nos níveis de poluentes
+Melhoria nos índices de qualidade da água
+Aumento nos índices de resiliência da biodiversidade
+Redução na frequência de eventos de estresse em ecossistemas
+Aumento nos rendimentos sustentáveis da pesca
+Aumento na conectividade de habitats",,"""medium""",,"""high""","""high""",,"""high""","""medium""",,
+ipcc_0086,Implementar medidas de adaptação baseadas em ecossistemas,{adaptation},"{storms,sea_level_rise,heatwaves,floods}",,"{storms,sea_level_rise,heatwaves,floods}",{},"Restaurar e gerir de forma sustentável os ecossistemas marinhos, costeiros, urbanos, fluviais e de zonas húmidas para proteger contra riscos climáticos como tempestades, inundações e ondas de calor. Os esforços incluem agroecologia, vegetação costeira e marinha e recifes, corredores de vegetação, restauração de habitats de manguezais, espaços verdes urbanos para reduzir as temperaturas. Essas ações melhoram a biodiversidade, armazenam carbono, aumentam a qualidade da água e proporcionam co-benefícios socioeconômicos e culturais.",1,2,2,0,1,1,1,"Apoia comunidades vulneráveis ao fortalecer a resiliência climática, promover o acesso equitativo aos serviços ecossistêmicos e criar oportunidades de subsistência, especialmente para populações marginalizadas e desatendidas.",,,,,,high,medium,5-10 years,"Engajamento comunitário
+Apoio regulatório
+Investimento financeiro
+Planejamento urbano
+Vegetação resiliente ao clima
+Avaliações de biodiversidade
+Gestão de bacias hidrográficas
+Planejamento a montante
+Financiamento sustentável","Redução dos danos causados por ressacas
+Taxas de sequestro de carbono
+Aumento da biodiversidade
+Redução da temperatura em áreas urbanas
+Melhoria da qualidade da água
+Acesso a espaços verdes por comunidades subatendidas
+Redução de eventos de inundação
+Aprimoramento da saúde dos ecossistemas",,,"""high""","""high""","""high""",,"""high""",,,
+ipcc_0087,Melhorar a modernização da infraestrutura,{adaptation},"{floods,droughts,heatwaves}",,"{floods,droughts,heatwaves}",{},"Reforçar e modernizar a infraestrutura existente, incluindo estradas, habitações e sistemas de energia, para melhorar a resiliência contra riscos climáticos como inundações, secas e ondas de calor. Os esforços incluem o uso de termossifões para a degradação do permafrost, aumento do albedo dos telhados (para refletividade) e sombreamento.",1,1,0,-1,1,1,1,"Melhora a resiliência de comunidades vulneráveis, especialmente em regiões de baixa renda, ao reduzir os riscos de eventos climáticos extremos.",,,,,,high,high,5-10 years,"Alinhamento de políticas
+Disponibilidade de financiamento
+Especialização em engenharia e construção","Redução de falhas de infraestrutura durante eventos extremos
+Aumento da capacidade para habitação e sistemas de energia",,"""medium""","""high""","""high""",,,,,,
+ipcc_0088,Atualizar e aplicar códigos de construção resilientes ao clima,{adaptation},"{floods,landslides}",,"{floods,landslides}",{},"O desenvolvimento e a implementação de códigos de construção e regulamentos de design arquitetônico voltados para a integração de parâmetros de adaptação climática. Esses códigos têm como foco a redução de riscos provenientes de perigos induzidos pelo clima, como enchentes e deslizamentos de terra. Eles também apoiam o desenvolvimento urbano resiliente ao clima, orientando o uso do solo, as práticas de construção e os padrões de infraestrutura. A iniciativa promove o planejamento urbano estratégico de longo prazo para coordenar investimentos públicos e privados em adaptação, incluindo a criação de zonas seguras e a transformação de assentamentos precários. Garante que novas infraestruturas sejam resilientes aos riscos climáticos e que os espaços urbanos sejam seguros e sustentáveis para as populações atuais e futuras.",2,0,1,1,2,1,1,Promove o planejamento urbano inclusivo ao abordar riscos em assentamentos informais e precários e integrar eco-parques e eco-jardins para populações vulneráveis.,,,,,,high,medium,5-10 years,"Integração com avaliações locais de risco climático
+Colaboração estratégica entre planejadores urbanos e autoridades municipais","Redução de incidentes de enchentes urbanas
+Aumento da disponibilidade de moradias seguras em áreas de risco
+Taxa de implementação de eco-parques e eco-jardins em áreas vulneráveis",,,,"""high""",,"""high""",,,,
+ipcc_0089,Redirecionar o desenvolvimento espacialmente,{adaptation},"{floods,heatwaves,sea_level_rise}",,"{floods,heatwaves,sea_level_rise}",{},"Utilize o zoneamento e o planejamento do uso do solo para regular o desenvolvimento costeiro, implementando estratégias de desenvolvimento espacial que considerem as vulnerabilidades ambientais, protejam os ecossistemas e mitiguem riscos de inundações, ondas de calor e elevação do nível do mar. Isso inclui garantir que o desenvolvimento seja direcionado para longe de áreas de alto risco, integrar considerações de adaptação climática no planejamento urbano e promover práticas sustentáveis para fechar lacunas de adaptação enquanto se enfrenta a desigualdade urbana.",1,1,2,-1,1,0,2,Aborda a desigualdade nas populações urbanas ao direcionar os quintis mais pobres e garantir a implementação equitativa da adaptação.,,,,,,medium,medium,5-10 years,"Estruturas eficazes de governança  
+Engajamento da comunidade  
+Investimentos financeiros  
+Especialização técnica","Redução na lacuna de adaptação
+Diminuição das disparidades de vulnerabilidade urbana
+Melhoria da resiliência das áreas costeiras",,,"""medium""","""medium""","""medium""",,,,,coastal_marine
+ipcc_0090,Expandir a cobertura de seguros contra riscos climáticos,{adaptation},"{droughts,floods,storms}",,"{droughts,floods,storms}",{},"O seguro oferece ferramentas de gestão de risco financeiro adaptadas aos desafios induzidos pelo clima. Isso inclui o seguro agrícola tradicional para proteger agricultores contra perdas relacionadas ao clima e soluções inovadoras de seguro indexado. O seguro indexado utiliza índices climáticos mensuráveis, como precipitação ou temperatura, para acionar pagamentos automaticamente quando determinados limites são atingidos, dispensando a necessidade de verificação de perdas. Essas ferramentas ajudam a estabilizar rendas, incentivar o investimento em práticas resilientes ao clima e reduzir a vulnerabilidade econômica dos envolvidos nos setores de agricultura, aquicultura e energia. Além disso, produtos de seguro combinados com serviços adicionais, como acesso a fertilizantes ou sementes, aumentam a resiliência geral, especialmente em comunidades rurais e pouco atendidas. Ao mitigar riscos associados a secas, inundações e tempestades, o seguro apoia o desenvolvimento sustentável e os objetivos de adaptação.",0,1,0,-1,0,0,2,"Apoia pequenos agricultores, comunidades marginalizadas e pessoas em áreas vulneráveis, melhorando o acesso a ferramentas de resiliência financeira e mitigando riscos relacionados ao clima",,,,,,medium,medium,<5 years,"Disponibilidade de dados climáticos
+Marcos regulatórios
+Colaboração entre instituições financeiras e governos","Aumento no número de beneficiários de seguros
+Redução das perdas econômicas causadas por eventos extremos
+Adoção de produtos de seguro baseados em índices",,"""high""",,"""medium""",,,"""medium""",,,
+ipcc_0091,Apoiar a diversificação de meios de subsistência para a resiliência climática,{adaptation},"{storms,sea_level_rise}",,"{storms,sea_level_rise}",{},"Promover oportunidades alternativas de renda para reduzir a vulnerabilidade de comunidades dependentes da pesca e maricultura. Os governos municipais podem facilitar treinamentos, programas de microcrédito e conexões com cadeias de valor que possibilitem a diversificação para o ecoturismo, agroprocessamento, artesanato e setores de serviços. Ao apoiar melhorias de infraestrutura, desenvolvimento de habilidades e acesso a financiamento, as cidades podem ajudar a estabilizar rendas, fortalecer as economias locais e proteger os meios de subsistência dos impactos das mudanças na distribuição de espécies marinhas e da variabilidade climática.",0,1,2,1,0,0,2,"Promove oportunidades equitativas para comunidades pesqueiras vulneráveis ao apoiar a transição para setores alternativos de emprego, como ecoturismo e maricultura.",,,,,,high,medium,<5 years,"Investimento em educação
+infraestrutura
+tecnologia para apoiar a transição para meios de subsistência diversificados","Aumento da diversidade de renda
+taxas de emprego em setores alternativos
+redução da sobre-exploração de espécies marinhas",,,,,"""high""",,"""high""",,,coastal_marine
+ipcc_0092,Expandir redes de proteção social sensíveis ao clima,{adaptation},"{droughts,heatwaves,floods,storms}",,"{droughts,heatwaves,floods,storms}",{},"Redes de proteção social abrangem mecanismos adaptativos de proteção social para reduzir a insegurança alimentar e a desnutrição, especialmente para populações vulneráveis. Isso inclui transferências de renda, programas de alimentação escolar, iniciativas de trabalho público, compensação por desemprego, reformas agrárias, esquemas de crédito e seguros. Abordagens integradas combinam avaliações de risco climático com redução de risco de desastres, educação e equidade social para aumentar a resiliência aos estresses climáticos.",0,1,1,2,1,0,2,"Aumenta o status social e os direitos de grupos marginalizados, protege populações vulneráveis, reduz desigualdades e promove a educação e a equidade de gênero.",,,,,,high,medium,5-10 years,"Integração do clima e do risco de desastres na proteção social  
+programas de educação  
+coordenação com iniciativas de meios de subsistência sustentáveis e inclusão financeira","Redução nas taxas de desnutrição
+Aumento do acesso à educação para grupos vulneráveis
+Participação em programas de proteção social",,"""high""","""high""","""medium""",,,"""medium""",,,
+ipcc_0094,Fortalecer os serviços de saúde resilientes ao clima,{adaptation},"{heatwaves,floods,droughts}",,"{heatwaves,floods,droughts}",{},"Aumentar o acesso a serviços de saúde, incluindo serviços de saúde e nutrição, água potável, saneamento e recursos de saúde mental culturalmente apropriados. Expandir as capacidades de telemedicina permite uma prestação eficiente de serviços de saúde, especialmente para populações remotas e carentes. Fortalecer os sistemas básicos de saúde pública e a preparação para desastres pode reduzir rapidamente a vulnerabilidade a riscos de saúde relacionados ao clima.",1,2,0,1,1,0,2,"Promove o acesso equitativo aos cuidados de saúde para grupos marginalizados e vulneráveis, incluindo populações em situação de rua, comunidades remotas e aqueles afetados por desigualdades habitacionais.",,,,,,high,medium,5-10 years,"Investimento em tecnologias de telemedicina
+Fortalecimento da governança dos sistemas de saúde pública
+Capacitação de profissionais de saúde
+Modernização da infraestrutura das unidades de saúde","Redução da mortalidade relacionada ao clima
+Aumento do acesso à telemedicina
+Número de programas de saúde adaptados culturalmente implementados
+Melhoria nos indicadores de acesso à água e saneamento",,"""high""","""high""","""high""",,,,,,
+ipcc_0096,Reforçar a resiliência climática na agricultura e na pesca,{adaptation},"{droughts,heatwaves,floods,wildfires,storms}",,"{droughts,heatwaves,floods,wildfires,storms}",{},"Apoiar a adoção de práticas agrícolas e aquícolas inteligentes para o clima, criando condições favoráveis para agricultores e pescadores. Os governos municipais podem promover raças, rações e fertilizantes melhorados, aumentar a eficiência da irrigação e fortalecer a resiliência da aquicultura por meio de serviços de extensão, parcerias de pesquisa e compras direcionadas. Ao oferecer incentivos, assistência técnica e facilitar o acesso à inovação e ao financiamento, as cidades podem ajudar os produtores a adotar sistemas agroecológicos, diversificar culturas e fortalecer práticas sustentáveis que aumentam a resiliência aos impactos climáticos.",1,2,2,1,0,0,2,"Garante o acesso a recursos para agricultores e pescadores marginalizados, promove opções diversificadas de subsistência e fortalece a resiliência em comunidades subatendidas.",,,,,,high,medium,5-10 years,"Apoio político para agricultura e pesca resilientes ao clima
+Acesso a financiamento e subsídios
+Treinamento para adoção de novas práticas
+Melhoria da infraestrutura de mercado","Aumento da produtividade agrícola e pesqueira
+Taxa de adoção de sistemas integrados
+Redução das perdas de produtividade relacionadas ao clima",,"""high""","""high""","""medium""",,,"""medium""","""low""",,
+ipcc_0097,Aprimorar o armazenamento e a distribuição de alimentos para resiliência climática,{adaptation},"{droughts,floods,storms,heatwaves}",,"{droughts,floods,storms,heatwaves}",{},"Fortalecer os sistemas alimentares locais melhorando a infraestrutura de armazenamento e distribuição para reduzir perdas e aumentar a resiliência aos impactos climáticos. Os governos municipais podem investir em instalações públicas como unidades de armazenamento refrigerado, silos e armazéns, além de modernizar a logística para lidar com produtos perecíveis de forma mais eficiente. Ao apoiar mercados locais, otimizar redes de distribuição e facilitar o acesso a armazenamento confiável para produtores e vendedores, as cidades podem melhorar a segurança alimentar, reduzir o desperdício e garantir a disponibilidade estável de alimentos durante crises e eventos extremos.",0,1,1,1,0,2,2,"Apoia o acesso equitativo à alimentação para populações marginalizadas e vulneráveis, priorizando a produção local de alimentos e melhorando os sistemas de distribuição que atendem áreas carentes.",,,,,,high,medium,5-10 years,"Investimento em infraestrutura
+Incentivos de políticas para a produção local de alimentos
+Colaboração com os setores de logística e comércio
+Tecnologia para otimização da cadeia de suprimentos","Redução das perdas pós-colheita
+Aumento da disponibilidade local de alimentos
+Melhoria da eficiência do transporte para distribuição de alimentos
+Encurtamento das cadeias de suprimentos",,"""high""","""high""","""high""",,,"""high""",,,
+ipcc_0098,"Aumentar a resiliência melhorando o acesso à alimentação, melhorando os meios de subsistência e promovendo mudanças nos hábitos alimentares e a redução do desperdício de alimentos",{adaptation},"{droughts,heatwaves,floods,wildfires}",,"{droughts,heatwaves,floods,wildfires}",{},"Aumentar a resiliência por meio da melhoria das práticas de produção, distribuição e consumo de alimentos. As ações incluem aprimorar técnicas agrícolas, adotar tecnologias de economia de água, implementar soluções de armazenamento de baixo custo e promover dietas à base de plantas. Os formuladores de políticas podem incentivar esses comportamentos com políticas de preços adequadas, iniciativas de agricultura sustentável e apoio a grupos desfavorecidos. A ação enfatiza a transição para dietas mais saudáveis, a redução do consumo excessivo e o apoio a sistemas alimentares locais para mitigar as emissões de gases de efeito estufa e garantir a segurança alimentar diante das mudanças climáticas.",1,2,2,1,0,0,2,"Promove o acesso a alimentos saudáveis e acessíveis para comunidades vulneráveis, capacitando mulheres, jovens e grupos socialmente desfavorecidos. Incentiva a participação equitativa em práticas agrícolas sustentáveis e redes locais de alimentação.",,,,,,high,medium,5-10 years,"Educação e capacitação para agricultores
+Acesso a insumos agrícolas sustentáveis
+Apoio político para práticas sustentáveis
+Infraestrutura tecnológica para armazenamento e processamento","Redução nos percentuais de perda e desperdício de alimentos
+Aumento na adoção de dietas à base de plantas
+Melhoria nos indicadores de segurança alimentar
+Redução nas emissões de GEE dos sistemas alimentares",,"""high""","""medium""","""medium""",,,,"""low""",,
+ipcc_0099,Aumentar a Captação e Armazenamento de Água,{adaptation},"{droughts,floods,storms}",,"{droughts,floods,storms}",{},"Implementação de soluções para captação e armazenamento de água, como açudes em propriedades rurais, revitalização de corpos d’água, jardins de chuva, valas de biossistemas, lagoas de retenção, armazenamento bombeado e reservatórios de água. Essas medidas visam mitigar os impactos induzidos pelo clima por meio da melhoria da gestão da água, redução do escoamento de águas pluviais, melhoria da qualidade da água e apoio à agricultura e à produção de energia em cenários de mudanças climáticas. Reservatórios de água e barragens multipropósito oferecem benefícios adicionais ao enfrentar a escassez de água e gerenciar riscos associados a desastres naturais. Essas estratégias de adaptação contribuem para o uso sustentável da água e para a resiliência diante dos desafios relacionados ao clima.",0,2,2,1,0,1,2,"Garantir o acesso à água para comunidades carentes, entre outras soluções, promove diretamente a equidade e a inclusão ao assegurar que comunidades vulneráveis ou desatendidas tenham acesso confiável aos recursos hídricos, especialmente em períodos de escassez. Ao melhorar a gestão dos recursos hídricos, essas soluções ajudam a mitigar os impactos desproporcionais das mudanças climáticas nessas comunidades, que frequentemente enfrentam maiores desafios para acessar água limpa e suficiente. Além disso, o foco no uso sustentável da água apoia a resiliência a longo prazo dessas comunidades, permitindo que enfrentem melhor os desafios relacionados ao clima. Essa ação reconhece as necessidades específicas das populações desatendidas, garantindo que não sejam deixadas para trás diante da escassez de água e dos impactos climáticos. De modo geral, a implementação dessas estratégias de gestão da água promove uma distribuição mais equitativa dos recursos, capacitando comunidades vulneráveis a prosperar apesar dos desafios ambientais.",,,,,,high,medium,5-10 years,"Investimento em infraestrutura verde, engajamento comunitário, apoio político para a gestão da água, marcos regulatórios que apoiam a gestão da água e estratégias de adaptação climática, investimento e financiamento para construção e manutenção de instalações de armazenamento de água, disponibilidade de locais adequados para infraestrutura de armazenamento de água","Redução do escoamento de águas pluviais
+aumento da capacidade de armazenamento de água
+melhoria na qualidade da água
+estabilidade nos rendimentos agrícolas
+Volume de água armazenada
+Percentual de redução em incidentes de escassez de água
+Índice de resiliência do ecossistema local
+Frequência de interrupções no abastecimento de água
+Satisfação dos usuários com a disponibilidade de água
+Redução de conflitos relacionados à água.",,"""high""",,"""high""",,,"""high""",,,
+ipcc_0100,Melhorar o uso/consumo eficiente de água,{adaptation},"{droughts,heatwaves}",,"{droughts,heatwaves}",{},"Implementação de técnicas avançadas de irrigação, como irrigação de precisão e por gotejamento, para aumentar a eficiência do uso da água na agricultura. A Recarga Gerenciada de Aquíferos (MAR) é aplicada para reabastecer os lençóis freáticos utilizando águas pluviais, águas residuais tratadas ou outras fontes. Essas ações são complementadas por políticas cooperativas entre múltiplos setores para garantir a gestão sustentável dos recursos hídricos, o acesso equitativo e a colaboração regional. Além disso, a promoção de mudanças nos padrões de consumo de água, como a redução do desperdício e a melhoria da eficiência no uso da água urbana e agrícola, apoia a resiliência contra a escassez de água e aumenta a capacidade adaptativa em regiões vulneráveis. Esses esforços, em conjunto, visam atender à crescente demanda por água doce diante das mudanças climáticas e garantir a sustentabilidade a longo prazo.",0,2,1,1,0,0,2,"Apoia comunidades agrícolas e urbanas vulneráveis, garantindo acesso equitativo aos recursos hídricos, promovendo padrões de consumo sustentável e enfrentando o estresse hídrico persistente em áreas carentes.",,,,,,high,medium,5-10 years,"Infraestrutura para reúso de água e MAR  
+Marcos regulatórios para gestão da água  
+Educação e treinamento em técnicas de irrigação  
+Coordenação de políticas regionais e intersetoriais","Redução no uso de água na agricultura
+Aumento nas taxas de recarga de aquíferos
+Melhoria na produtividade das culturas
+Adoção de padrões sustentáveis de consumo de água
+Métricas de colaboração regional",,"""high""","""medium""",,,,,,,
+ipcc_0101,Melhorar a gestão urbana da água,{adaptation},"{droughts,floods,storms}",,"{droughts,floods,storms}",{},"Implementação de sistemas sustentáveis de abastecimento de água por meio da construção de infraestrutura de irrigação, promoção de transferências interbacias, utilização de soluções baseadas na natureza (NBS), como jardins de chuva, valas de biossistemas e áreas úmidas, além da integração de técnicas avançadas como reúso e aprimoramento da água. O reúso da água envolve o tratamento e reciclagem de águas residuais para fins não potáveis ou potáveis, enquanto o aprimoramento da água foca na melhoria da qualidade da água disponível para diversos usos. Essas abordagens aumentam a infiltração de águas pluviais, melhoram a gestão urbana da água, aumentam a resiliência à seca e apoiam a recarga de aquíferos. Elas proporcionam soluções hídricas econômicas e energeticamente eficientes, mantendo o desenvolvimento urbano sustentável.",0,2,2,1,0,0,1,"Promove o acesso equitativo aos recursos hídricos, especialmente em áreas urbanas carentes, integrando sistemas de gestão da água naturais e engenheirados para beneficiar todas as comunidades, incluindo grupos de baixa renda.",,,,,,high,medium,5-10 years,"Financiamento adequado para o desenvolvimento de infraestrutura
+Engajamento da comunidade para a implementação de Soluções Baseadas na Natureza (NBS)
+Integração do planejamento urbano com a gestão da água","Redução nos incidentes de escassez de água
+Aumento nas taxas de recarga de aquíferos
+Capacidade aprimorada de infiltração de água em áreas urbanas",,"""high""",,"""high""",,,"""high""",,,
+ipcc_0102,Facilitar estratégias de mobilidade sazonal e temporária,{adaptation},"{sea_level_rise,storms,droughts}",,"{sea_level_rise,storms,droughts}",{},"Facilitar a mobilidade das frotas de pesca e dos trabalhadores para se adaptarem às mudanças na distribuição das espécies marinhas causadas pelas alterações climáticas. Isso inclui permitir a migração sazonal ou temporária para alinhar com a disponibilidade de recursos, melhorar a infraestrutura e a tecnologia para apoiar a mobilidade, e promover uma governança flexível para gerir os recursos transfronteiriços de forma sustentável. Essas ações visam manter os meios de subsistência e reduzir os impactos econômicos da variabilidade climática.",0,1,2,1,0,2,1,"Garante o acesso equitativo aos recursos para comunidades vulneráveis, incluindo pescadores de pequena escala e aqueles que dependem de renda sazonal, promovendo estruturas de governança inclusivas e reduzindo barreiras à mobilidade.",,,,,,high,medium,5-10 years,"Investimentos em infraestrutura e tecnologia
+Acordos transfronteiriços
+Iniciativas de capacitação para apoiar a mobilidade","Redução da superexploração de recursos
+Aumento das oportunidades de emprego sazonais
+Gestão aprimorada das pescas transfronteiriças",,"""low""",,,"""medium""",,"""medium""",,,coastal_marine
+ipcc_0103,Reforçar a governança climática cooperativa,{adaptation},"{sea_level_rise,storms}",,"{sea_level_rise,storms}",{},"Aprimorar a governança cooperativa por meio de acordos de pesca transfronteiriços e governança oceânica inclusiva. Isso envolve abordagens participativas, ferramentas estruturadas de tomada de decisão e estruturas descentralizadas que combinam a gestão de cima para baixo com iniciativas impulsionadas pela comunidade. Estratégias adicionais incluem sistemas coletivos de gestão da água para otimizar o uso dos recursos diante da variabilidade induzida pelo clima, sistemas indígenas de compartilhamento de água baseados em práticas tradicionais para garantir uma alocação sustentável e equitativa dos recursos, e a aplicação dos direitos territoriais das populações indígenas para proteger a biodiversidade e o patrimônio cultural. A co-gestão adaptativa nas pescarias do Ártico integra conhecimentos locais e científicos para enfrentar os impactos climáticos sobre os recursos marinhos. O pacto internacional sobre migração promove uma migração ordenada e segura como resposta adaptativa aos riscos climáticos, e políticas de governança adaptativa promovem soluções baseadas em ecossistemas, marcos legais e adaptações institucionais para aumentar a resiliência às mudanças climáticas. Essas medidas combinadas abordam complexidades geopolíticas, garantem uma distribuição equitativa dos recursos e fortalecem a resiliência a riscos induzidos pelo clima.",0,1,2,1,0,0,2,"Promove a inclusão ao incorporar sistemas de conhecimento indígena, garantindo a representação de comunidades marginalizadas nos processos de tomada de decisão e criando acesso equitativo aos recursos marinhos para populações vulneráveis. Reconhece a importância dos direitos territoriais indígenas e dos sistemas tradicionais de governança para fortalecer a resiliência comunitária e a gestão equitativa dos recursos.",,,,,,high,medium,5-10 years,"Estabelecimento de acordos transfronteiriços
+Investimento em tecnologias de observação marinha
+Desenvolvimento de capacidades para comunidades locais
+Reconhecimento dos direitos territoriais e hídricos dos povos indígenas
+Implementação de estruturas de co-gestão adaptativa","Número de acordos transfronteiriços assinados
+Aumento da sustentabilidade dos estoques de peixes
+Satisfação das partes interessadas com os processos de governança
+Melhoria nos resultados de compartilhamento de água em comunidades indígenas
+Integração da co-gestão adaptativa na governança das pescas",,,,,"""high""",,"""high""",,,
+ipcc_0104,Planejar e apoiar a migração permanente relacionada ao clima,{adaptation},"{floods,landslides,sea_level_rise}",,"{floods,landslides,sea_level_rise}",{},"Reassentamento de comunidades de áreas propensas a inundações e migração rural-urbana como estratégia para mitigar vulnerabilidades causadas pelas mudanças climáticas. Isso inclui enfrentar desafios da urbanização, como desenvolvimento não planejado, insegurança hídrica e disparidades socioeconômicas, ao mesmo tempo em que se proporcionam oportunidades equitativas para migrantes em centros urbanos. As medidas incluem o aprimoramento do planejamento urbano, gestão de recursos hídricos e sistemas de apoio social para populações deslocadas.",0,1,1,-1,-1,1,2,"Promove a inclusão ao abordar as vulnerabilidades de populações marginalizadas e garantir o acesso equitativo a recursos, oportunidades e sistemas de apoio para comunidades deslocadas.",,,,,,medium,high,5-10 years,"Desenvolvimento de infraestrutura urbana
+Alocação equitativa de recursos
+Estruturas de governança sólidas
+Desenvolvimento de capacidades para populações deslocadas","Redução da mortalidade relacionada ao deslocamento
+Aumento no acesso à água e moradia
+Melhoria nos meios de subsistência e nas taxas de emprego de migrantes",,,,"""high""","""medium""","""medium""",,,,
+ipcc_0105,Promover mobilidade ativa através da realocação do espaço viário,{mitigation},,{transport},{on_road},{},"Promove a caminhada e o uso da bicicleta por meio da realocação permanente do espaço viário dos carros para modos ativos e sustentáveis. As medidas incluem o desenvolvimento de calçadas e passeios, infraestrutura cicloviária protegida, corredores verdes e melhorias de acessibilidade universal. Ao priorizar a mobilidade ativa, as cidades melhoram a saúde pública, a equidade e a resiliência, enquanto reduzem as emissões de veículos particulares.",1,0,0,0,0,1,1,"Fornece infraestrutura que beneficia comunidades em situação de vulnerabilidade, melhorando o acesso à mobilidade ativa e promovendo ambientes urbanos mais saudáveis.",,20-39,,,,medium,medium,<5 years,"Políticas urbanas de apoio
+Um plano robusto de comunicação e consulta pública para engajar comunidades locais, comerciantes e operadores de transporte
+Garantir que as novas rotas conectem origens e destinos-chave (ex.: casas, escolas, terminais de transporte)
+Realocação de orçamentos de transporte para a mobilidade ativa","Novas ciclovias protegidas implementadas (km)
+Passeios e calçadas requalificados implementados (km)
+Aumento no índice de caminhabilidade (%)
+Redução da taxa de lesões e fatalidades envolvendo pedestres e ciclistas (por 100.000 habitantes)
+Aumento no número de pedestres e ciclistas nos corredores de intervenção (%)",,,,,,,,,,

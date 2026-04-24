@@ -363,3 +363,163 @@ datasets:
         granularity: null
         freshness: null
         accessibility: null
+
+- id: climateview-transition-elements
+  name: Transition Element Framework (TEF)
+  dataset_url: https://www.transitionelements.org/
+  publisher:
+    id: climateview
+    name: ClimateView
+    url: https://www.transitionelements.org/
+  description: >
+    Public framework that structures IPCC mitigation options into a standardised
+    mitigation compendium and transition elements taxonomy to support climate
+    action planning, implementation, and progress tracking.
+  coverage:
+    geography: global
+    spatial_levels: [global, national, city]
+  themes:
+    - mitigation
+    - climate_action_taxonomy
+    - policy
+    - planning
+  update_frequency: rolling_web_updates
+  priority: medium
+  releases:
+    - version: "2026"
+      version_number: 1
+      source_url: https://www.transitionelements.org/
+      released_at: null
+      retrieved_at: null
+      retrieval_method: manual_download
+      api_endpoint: null
+      path: "reviews/climateview/climateview-transition-elements/releases/2026"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: https://www.transitionelements.org/introduction/
+      internal_review_url: null
+      license:
+        id: unspecified-open-source-wip
+        name: Public website (license verification pending)
+        url: https://www.transitionelements.org/
+        commercial_use: false
+        note: >
+          The website states the framework is open source and work in progress,
+          but explicit license terms should be confirmed before redistribution.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
+- id: icare-climate-actions
+  name: I Care Climate Actions
+  dataset_url: https://www.i-care-consult.com/
+  publisher:
+    id: icare
+    name: I Care by BearingPoint
+    url: https://www.i-care-consult.com/
+  description: >
+    Curated research dataset entry for climate transition action-oriented content
+    sourced from I Care by BearingPoint public materials. Intended for action
+    discovery, taxonomy mapping, and comparison against existing climate action
+    libraries.
+  coverage:
+    geography: global
+    spatial_levels: [global, city]
+  themes:
+    - mitigation
+    - adaptation
+    - climate_action_taxonomy
+    - policy
+  update_frequency: manual_refresh
+  priority: medium
+  releases:
+    - version: "2026-04-23"
+      version_number: 1
+      source_url: https://www.i-care-consult.com/
+      released_at: null
+      retrieved_at: "2026-04-23"
+      retrieval_method: manual_review
+      api_endpoint: null
+      path: "reviews/icare/icare-climate-actions/releases/2026-04-23"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: null
+      license:
+        id: license-verification-pending
+        name: Website terms to be verified
+        url: https://www.i-care-consult.com/
+        commercial_use: false
+        note: >
+          Public website content can be used for research review, but explicit
+          redistribution and derivative-use permissions should be validated
+          against current legal terms before production approval.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
+- id: ipcc-climate-actions
+  name: IPCC Climate Actions
+  dataset_url: https://www.ipcc.ch/
+  publisher:
+    id: ipcc
+    name: Intergovernmental Panel on Climate Change (IPCC)
+    url: https://www.ipcc.ch/
+  description: >
+    Curated research dataset entry for action-oriented concepts derived from IPCC
+    reports and related public materials. Intended to support climate action
+    taxonomy development, evidence-aligned terminology, and crosswalks to city
+    action libraries.
+  coverage:
+    geography: global
+    spatial_levels: [global, national, city]
+  themes:
+    - mitigation
+    - adaptation
+    - climate_action_taxonomy
+    - science_assessment
+  update_frequency: manual_refresh
+  priority: high
+  releases:
+    - version: "2026-04-23"
+      version_number: 1
+      source_url: https://www.ipcc.ch/
+      released_at: null
+      retrieved_at: "2026-04-23"
+      retrieval_method: manual_review
+      api_endpoint: null
+      path: "reviews/ipcc/ipcc-climate-actions/releases/2026-04-23"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: null
+      license:
+        id: license-verification-pending
+        name: IPCC website terms to be verified
+        url: https://www.ipcc.ch/
+        commercial_use: false
+        note: >
+          IPCC content is publicly available for research and policy use, but
+          redistribution and derivative packaging requirements should be confirmed
+          against current copyright and reuse terms before production approval.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
