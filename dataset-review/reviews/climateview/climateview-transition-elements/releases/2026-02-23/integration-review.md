@@ -139,6 +139,74 @@ erDiagram
 
 ---
 
+### 4.3 Implemented first step (migration `c9a4e21bd301`)
+
+The first shipped migration intentionally narrows scope to two production tables:
+
+- `modelled.action_pathway`
+- `modelled.action_pathway_impact`
+
+This is a deliberate **staging** step before TEF outcome entities and mapping links are enforced in production.
+
+```mermaid
+erDiagram
+    action_pathway {
+        string pathway_id "PK"
+        string src_action_id
+        string publisher_id
+        string name
+        string description
+        string action_type
+        string action_role
+        string intervention_type
+        string intervention_summary
+        string outcome_summary
+        string investment_cost
+        string implementation_timeline
+        string generation_method
+        string release_id "FK"
+        datetime created_at
+        datetime updated_at
+    }
+
+    action_pathway_impact {
+        string pathway_impact_id "PK"
+        string pathway_id "FK"
+        string metric_name
+        string metric_units
+        float metric_value_numeric
+        string metric_value_text
+        int reporting_year
+        string release_id "FK"
+        datetime created_at
+        datetime updated_at
+    }
+
+    action_pathway ||--o{ action_pathway_impact : "has"
+```
+
+**Why these decisions were made in first implementation:**
+
+1. **Pathway-first matches source truth.**  
+   Current expert-reviewed rows are predominantly pathway-like statements (mechanism + intended effect in one record), so persisting pathways first avoids forced decomposition.
+
+2. **Impact kept as a separate fact table (`action_pathway_impact`).**  
+   Current metrics are attached to pathway statements; separating impacts from pathway metadata preserves source fidelity and allows multiple metrics per pathway over time.
+
+3. **Outcome/TE tables and pathway→outcome links were deferred.**  
+   TEF-aligned outcomes are still being stabilized. Deferring these avoids premature hard constraints that would block ingestion while mappings are incomplete.
+
+4. **Legal/policy link tables were deferred.**  
+   They are conceptually valid but not required for the first production slice and would increase complexity before core pathway+impact ingestion is proven.
+
+5. **`review_status` was intentionally omitted from DB shape.**  
+   Production DB rows are treated as accepted records at write time; workflow review state is managed outside these tables.
+
+6. **Provenance and audit columns were included from day one.**  
+   Both tables include `release_id`, `created_at`, and `updated_at` to align with modelled-schema standards and ensure release-level traceability.
+
+---
+
 ## 5. Vocabulary (single glossary)
 
 | Term | Meaning | v1 ranking / surfacing |

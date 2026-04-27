@@ -1,0 +1,218 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_loaders/load_c40_climate_actions_mitigation_en_from_s3.py
+  downstream_blocks:
+  - merge_climate_actions_mitigation_catalogs
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_c40_climate_actions_mitigation_en_from_s3
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_c40_climate_actions_mitigation_en_from_s3
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_loaders/load_icare_climate_actions_mitigation_from_s3.py
+  downstream_blocks:
+  - merge_climate_actions_mitigation_catalogs
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_icare_climate_actions_mitigation_from_s3
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_icare_climate_actions_mitigation_from_s3
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_loaders/load_ipcc_climate_actions_mitigation_from_s3.py
+  downstream_blocks:
+  - merge_climate_actions_mitigation_catalogs
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_ipcc_climate_actions_mitigation_from_s3
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_ipcc_climate_actions_mitigation_from_s3
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: transformers/merge_climate_actions_mitigation_catalogs.py
+  downstream_blocks:
+  - load_climate_actions_mitigation_staging
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: merge_climate_actions_mitigation_catalogs
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_c40_climate_actions_mitigation_en_from_s3
+  - load_icare_climate_actions_mitigation_from_s3
+  - load_ipcc_climate_actions_mitigation_from_s3
+  uuid: merge_climate_actions_mitigation_catalogs
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_exporters/load_climate_actions_mitigation_staging.py
+  downstream_blocks:
+  - load_publisher_datasource_action_pathway_mitigation_catalogs
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_climate_actions_mitigation_staging
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - merge_climate_actions_mitigation_catalogs
+  uuid: load_climate_actions_mitigation_staging
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - load_dataset_release_action_pathway_mitigation_catalogs
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: load_publisher_datasource_action_pathway_mitigation_catalogs
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_climate_actions_mitigation_staging
+  uuid: load_publisher_datasource_action_pathway_mitigation_catalogs
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - load_action_pathway_from_mitigation_staging
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: load_dataset_release_action_pathway_mitigation_catalogs
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_publisher_datasource_action_pathway_mitigation_catalogs
+  uuid: load_dataset_release_action_pathway_mitigation_catalogs
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: load_action_pathway_from_mitigation_staging
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_dataset_release_action_pathway_mitigation_catalogs
+  uuid: load_action_pathway_from_mitigation_staging
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2026-04-27 00:00:00.000000+00:00'
+data_integration: null
+description: Load C40, iCARE, and IPCC mitigation CSVs (en, es, pt), merge, stage
+  to raw_data.climate_actions_mitigation_staging, upsert modelled.publisher_datasource
+  and dataset_release, then populate modelled.action_pathway and action_pathway_mitigation_impact.
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: action_pathways_to_modelled
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: action_pathways_to_modelled
+variables:
+  c40_dataset_name: C40 High Impact Climate Actions
+  c40_dataset_url: https://github.com/Open-Earth-Foundation/CityCatalyst-global-data/tree/main/dataset-review/reviews/c40/c40-high-impact-actions/releases/2026-04-24
+  c40_datasource_name: c40-high-impact-actions
+  c40_mitigation_s3_key_prefix: files/c40/c40_high_impact_actions/release/2026-04-24/climate_actions_mitigation
+  c40_publisher_name: C40 Cities Climate Leadership Group
+  c40_publisher_url: https://www.c40.org/
+  c40_source_url: s3://test-global-api/files/c40/c40_high_impact_actions/release/2026-04-24/
+  icare_dataset_name: I Care Climate Actions
+  icare_dataset_url: https://github.com/Open-Earth-Foundation/CityCatalyst-global-data/tree/main/dataset-review/reviews/icare/icare-climate-actions/releases/2026-04-24
+  icare_datasource_name: icare-climate-actions
+  icare_mitigation_s3_key_prefix: files/icare/icare_climate_actions/release/2026-04-24/climate_actions_mitigation
+  icare_publisher_name: I Care by BearingPoint
+  icare_publisher_url: https://www.i-care-consult.com/
+  icare_source_url: s3://test-global-api/files/icare/icare_climate_actions/release/2026-04-24/
+  ipcc_dataset_name: IPCC Climate Actions
+  ipcc_dataset_url: https://github.com/Open-Earth-Foundation/CityCatalyst-global-data/tree/main/dataset-review/reviews/ipcc/ipcc-climate-actions/releases/2026-04-24
+  ipcc_datasource_name: ipcc-climate-actions
+  ipcc_mitigation_s3_key_prefix: files/ipcc/ipcc_climate_actions/release/2026-04-24/climate_actions_mitigation
+  ipcc_publisher_name: Intergovernmental Panel on Climate Change (IPCC)
+  ipcc_publisher_url: https://www.ipcc.ch/
+  ipcc_source_url: s3://test-global-api/files/ipcc/ipcc_climate_actions/release/2026-04-24/
+  mitigation_actions_released_at: '2025-01-01'
+  mitigation_actions_reporting_year: 2025
+  mitigation_actions_version_label: '2025'
+  source_bucket: test-global-api
+variables_dir: /home/src/mage_data/cc-mage
+widgets: []
