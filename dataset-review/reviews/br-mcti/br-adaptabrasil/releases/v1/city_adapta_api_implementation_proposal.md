@@ -2,13 +2,12 @@
 
 ## Executive summary
 
-Build a city-first AdaptaBrasil API that serves both:
+Build a city-first AdaptaBrasil API for a practical v1 launch while keeping room for future expansion.
 
 1. Current product expectations (`sector`, `risk`, `risk_component`), and
-2. Full future-safe hierarchy (`impact_chain_*`, `base_indicator`).
+2. Full hierarchy detail when needed (`impact_chain_*`, `base_indicator`).
 
-Recommendation: implement a star-like serving model with one fact table and two dimensions, then expose one primary city route with level-based output controls.
-<!-- Amanda comment: This recommendation should be aligned with the proposed v1 simplification (single wide fact table) to avoid conflicting direction in the document. -->
+Recommendation: implement a single wide serving table for v1, then expose one primary city route with level-based output controls (`summary` and `chain`).
 
 This approach minimizes rework, preserves source semantics, and handles known hierarchy/data-quality edge cases already observed in the release files.
 
@@ -57,72 +56,27 @@ This approach minimizes rework, preserves source semantics, and handles known hi
 ## Proposed data model
 
 ## Schema: `global_api`
-<!-- Amanda comment: Given this is a dedicated dataset with one primary city-first API use case, we should prefer a single wide/flat serving table in v1 instead of fully normalizing into multiple dimensions. Rationale: simpler ingestion/upserts, fewer joins, faster delivery, and easier maintenance while the contract is still evolving. -->
 
-### Table 1: `dim_adapta_hierarchy`
-Source: `adapta_indicator_hierarchy_modeled_en.csv`
-
-Columns:
-- `hierarchy_pk` (surrogate key, bigint)
-- `sector_id`, `sector_name`
-- `risk_id`, `risk_name`
-- `risk_component_id`, `risk_component_name` (nullable)
-- `impact_chain_id_1`, `impact_chain_name_1` (nullable)
-- `impact_chain_id_2`, `impact_chain_name_2` (nullable)
-- `impact_chain_id_3`, `impact_chain_name_3` (nullable)
-- `base_indicator_id`, `base_indicator_name`
-- `base_indicator_level` (int)
-- `is_component_structural_null` (boolean default false)
-- `source_release` (text, e.g. `v1`)
-- `is_active` (boolean default true)
-
-Constraints/indexes:
-- Unique on full hierarchy IDs.
-- Unique on full hierarchy names (for ingestion matching when IDs are absent in value payloads).
-- Indexes on `sector_id`, `risk_id`, `base_indicator_id`.
-
----
-
-### Table 2: `dim_adapta_indicator_metadata`
-Source: `adapta_indicators_ids.csv`
-
-Columns:
-- `indicator_id` (PK; matches source `id`)
-- `name`, `title`, `shortname`
-- `level`
-- `simple_description`, `complete_description`
-- `equation`
-- `measurement_unit`
-- `climate_hazard`
-- `years`, `years_description` (json/text)
-- `scenarios` (json/text)
-- `pessimist` (numeric/int as provided)
-- `geometrytype`
-- `legend`
-- `menu_structure` (json/text)
-- `raw_record` (jsonb/text for lossless provenance)
-
-Indexes:
-- PK on `indicator_id`.
-- Optional full-text/search indexes on `name`, `title`.
-
----
-
-### Table 3: `modelled.city_adapta_risk_fact`
-Primary serving table for API responses.
+### Table 1 (v1): `modelled.city_adapta_risk_fact`
+Primary serving table for API responses (single wide/flat table for v1).
 
 Columns:
 - **City/time**
-  - `city_id` (internal key)
-<!-- Amanda comment: Rename `city_id` to `actor_id` to align with existing city identity conventions (`actor_id`/`locode`). -->
+  - `actor_id` (UN/LOCODE city key)
   - `city_name`
   - `country_code` (default `BR`)
   - `timeframe` (int or text; e.g. `2020`, `2030`, `2050`)
-  - `scenario` (text; e.g. `current`, `optimistic`, `pessimistic`)
-  - `scenario_family` (nullable; `SSP`/`RCP`/`SWL`)
-- **Hierarchy**
-  - `hierarchy_pk` (FK to `dim_adapta_hierarchy`)
-  - denormalized IDs optional for query speed: `sector_id`, `risk_id`, `risk_component_id`, `base_indicator_id`
+  - `scenario` (text; source-faithful values)
+  - `scenario_family` (nullable; e.g. `SSP`, `RCP`, `SWL` when available from source API)
+- **Hierarchy (IDs and names in-table)**
+  - `sector_id`, `sector_name`
+  - `risk_id`, `risk_name`
+  - `risk_component_id`, `risk_component_name` (nullable)
+  - `impact_chain_id_1`, `impact_chain_name_1` (nullable)
+  - `impact_chain_id_2`, `impact_chain_name_2` (nullable)
+  - `impact_chain_id_3`, `impact_chain_name_3` (nullable)
+  - `base_indicator_id`, `base_indicator_name`
+  - `base_indicator_level` (nullable int)
 - **Values**
   - `risk_value_numeric`, `risk_value_string`
   - `risk_component_value_numeric`, `risk_component_value_string` (nullable)
@@ -131,33 +85,28 @@ Columns:
   - `impact_chain_3_value_numeric`, `impact_chain_3_value_string` (nullable)
   - `base_indicator_value_numeric`, `base_indicator_value_string`
 - **Null/data quality semantics**
-  - `value_status` (`ok`, `data_unavailable`)
   - `null_type` (`none`, `structural_null`, `data_gap_null`)
-<!-- Amanda comment: To keep v1 simpler, we could store only `null_type` and derive `value_status` in the API response layer. -->
+  - `value_status` is derived in API responses from `null_type` for v1
 - **Provenance**
-  - `source_dataset` (e.g. `br-mcti/adaptabrasil`)
-  - `release_version` (e.g. `v1`)
+  - `release_id` (FK to `modelled.dataset_release.release_id`)
+  - `source_dataset` (display field; e.g. `br-mcti/adaptabrasil`)
+  - `release_version` (display field; e.g. `v1`)
   - `source_vintage` (text)
   - `spatial_support_level` (`municipal`, `state`, `subsystem`, `asset`)
-  - `ingested_at`, `updated_at`
-<!-- Amanda comment: For this phase, we can ignore records that are not `municipal` level. -->
-<!-- Amanda comment: We can use our new tables for provenance fields:
-  - `release_id` (FK to `modelled.dataset_release.release_id`; primary traceability key)
   - `created_at` (`TIMESTAMPTZ`, default `NOW()`)
   - `updated_at` (`TIMESTAMPTZ`, default `NOW()`, updated on upsert)
-  - optionally keep `source_dataset` and `release_version` as display fields only
-  - `release_id` should be populated via join to `modelled.dataset_release` using pipeline `release_version`
--->
 
 Logical uniqueness:
-- (`city_id`, `timeframe`, `scenario`, `hierarchy_pk`)
-<!-- Amanda comment: If we rename `city_id` to `actor_id`, update logical uniqueness and all indexes below to use `actor_id` consistently. -->
+- (`actor_id`, `timeframe`, `scenario`, `base_indicator_id`, `risk_component_id`, `impact_chain_id_1`, `impact_chain_id_2`, `impact_chain_id_3`)
 
 Critical indexes:
-- (`city_id`, `timeframe`, `scenario`)
-- (`city_id`, `sector_id`)
-- (`city_id`, `risk_id`)
-- (`city_id`, `timeframe`, `scenario`, `risk_component_id`)
+- (`actor_id`, `timeframe`, `scenario`)
+- (`actor_id`, `sector_id`)
+- (`actor_id`, `risk_id`)
+- (`actor_id`, `timeframe`, `scenario`, `risk_component_id`)
+
+Future note (phase 2):
+- If API contracts stabilize and reuse grows, split hierarchy and metadata into dimensions to reduce duplication.
 
 ---
 
@@ -165,21 +114,16 @@ Critical indexes:
 
 ## Pipeline steps
 
-1. Load hierarchy from `adapta_indicator_hierarchy_modeled_en.csv` into `dim_adapta_hierarchy`.
-2. Load indicator dictionary from `adapta_indicators_ids.csv` into `dim_adapta_indicator_metadata`.
-<!-- Amanda comment: Before these steps, we should ingest AdaptaBrasil data directly from the API only, land raw payloads into `raw_data`, and run this ingestion weekly to keep data synchronized with source updates. -->
-<!-- Amanda comment: If we proceed with a flat-table v1, these dimension-loading steps should be revised to avoid implying a mandatory 3-table implementation. -->
-3. Load value payloads (sample/full extract) into staging.
-4. Resolve hierarchy for each value row:
-   - join by full name path:
-     - `sector_name`, `risk_name`, `risk_component_name`,
-     - `impact_chain_name_1`, `impact_chain_name_2`, `impact_chain_name_3`,
-     - `base_indicator_name`.
-5. Assign null semantics:
+1. Ingest AdaptaBrasil directly from source API on a weekly schedule.
+2. Land raw payloads into `raw_data` for reproducibility and audit.
+3. Transform raw payloads into staging with normalized hierarchy fields.
+4. Keep only records with `spatial_support_level = municipal` for v1 serving.
+5. Resolve hierarchy values using full path keys (`sector` -> `risk` -> `risk_component` -> `impact_chain_*` -> `base_indicator`) to avoid collisions.
+6. Assign null semantics:
    - `structural_null` if component fields empty and base indicator numeric exists.
    - `data_gap_null` if base indicator numeric is empty and string is `Data unavailable`.
-6. Upsert into `city_adapta_risk_fact`.
-7. Run validation checks + publish.
+7. Upsert into `modelled.city_adapta_risk_fact`.
+8. Run validation checks + publish.
 
 ## Why full-path matching is required
 
@@ -189,48 +133,28 @@ Critical indexes:
 
 ## API routes proposal
 
-## 1) Primary city endpoint (recommended default)
-`GET /v1/cities/{cityId}/climate-risk/adapta`
+## Primary city endpoint (v1)
+`GET /v1/cities/{actorId}/climate-risk/adapta`
 
 Query params:
 - `timeframe` (optional; default current configured year)
 - `scenario` (optional; default current)
-- `sector` (optional; id or name)
-- `risk` (optional; id or name)
 - `level` (optional):
   - `summary` (default: sector/risk/risk_component)
-  - `chain` (includes impact_chain levels)
-  - `indicator` (full hierarchy + base indicators)
-<!-- Amanda comment: Keep only two `level` options for now: `summary` and `chain`, where `chain` should return the full hierarchy/detail (no separate `indicator` level in v1). -->
-- `include_metadata` (optional boolean; enrich with indicator descriptions)
-- `include_nulls` (optional boolean; default true)
-<!-- Amanda comment: This feels too parameter-heavy for v1. Prefer a simpler contract with only `timeframe`, `scenario`, and optional `level` (default `summary`), and defer `sector`, `risk`, `include_metadata`, and `include_nulls` to follow-up endpoints/versions if needed. -->
+  - `chain` (full hierarchy detail including impact chains and base indicators)
 
 Response shape:
 - `meta`: dataset/release/scenario/timeframe/provenance
 - `data`: array of rows filtered to requested level
-- each row includes `null_type` and `value_status`
+- each row includes `null_type`; `value_status` is derived in the response layer
 
 ---
 
-## 2) Secondary list endpoint (UI filtering support)
-`GET /v1/cities/{cityId}/climate-risk/adapta/options`
-<!-- Amanda comment: For v1, we can likely skip this endpoint and keep a single city endpoint; add `/options` later only if UI filtering requires a dedicated route. -->
+## Deferred endpoints (phase 2)
 
-Returns available filters for the current city/time/scenario:
-- sectors
-- risks per sector
-- components per risk
-- available timeframes/scenarios
-
----
-
-## 3) Optional dictionary endpoint (cached, low change)
-`GET /v1/climate-risk/adapta/dictionary`
-<!-- Amanda comment: Defer this to phase 2 unless the UI needs metadata/tooltips immediately in v1. -->
-
-Returns hierarchy metadata + indicator definitions.
-Can be served from dimensions only (no city filtering).
+The following routes are deferred unless UI needs force earlier delivery:
+- `GET /v1/cities/{actorId}/climate-risk/adapta/options`
+- `GET /v1/climate-risk/adapta/dictionary`
 
 ---
 
@@ -242,7 +166,7 @@ If a row has:
 
 then return:
 - `null_type: "structural_null"`
-- `value_status: "ok"`
+- `value_status: "ok"` (derived in API layer)
 
 If a row has:
 - `base_indicator_value_numeric` null
@@ -250,7 +174,7 @@ If a row has:
 
 then return:
 - `null_type: "data_gap_null"`
-- `value_status: "data_unavailable"`
+- `value_status: "data_unavailable"` (derived in API layer)
 
 ---
 
@@ -278,9 +202,10 @@ then return:
 ## Decision request
 
 Approve implementation with:
-1. `dim_adapta_hierarchy` + `dim_adapta_indicator_metadata` + `city_adapta_risk_fact`,
-2. Primary city endpoint with `level` parameter,
+1. A single wide v1 serving table: `modelled.city_adapta_risk_fact`,
+2. A single city endpoint with a minimal parameter set (`timeframe`, `scenario`, `level`),
 3. Explicit `structural_null` vs `data_gap_null` semantics,
-4. Source-faithful scenario handling (`SSP`/`RCP`/`SWL`) without premature harmonization.
-<!-- Amanda comment: is this information currently coming from the API, if not we will need to follow up with them -->
+4. Source-faithful scenario handling (`SSP`/`RCP`/`SWL`) without premature harmonization,
+5. Weekly API ingestion into `raw_data` and municipal-level filtering for v1,
+6. Follow-up verification on scenario-family field availability from source API.
 
