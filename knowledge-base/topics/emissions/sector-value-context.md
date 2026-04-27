@@ -4,6 +4,9 @@ This document helps someone unfamiliar with city-level emissions data make sense
 a value they are looking at. It is organised by GPC sector because the same number
 means very different things depending on what sector produced it.
 
+For machine-readable QA and MCP integration, use the companion rules file:
+`sector-value-context.thresholds.yaml`.
+
 **This is not a schema document.** For column definitions and table structure, see
 `emissions-table.md`. This document is about what the *values themselves* mean —
 whether a number is plausible, what it implies about a city, and what should make
