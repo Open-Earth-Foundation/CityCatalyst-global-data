@@ -1,0 +1,8 @@
+gpc_reference_number,count,median_per_capita_tco2e,p05_per_capita_tco2e,p95_per_capita_tco2e,iqr_low_suggested,iqr_high_suggested,note
+I.1.1,329,0.3724282595,0.042185215575999996,1.3930658915999987,-0.8713996463,1.7809660561,Use as soft-flag context; investigate before asserting error.
+I.2.1,325,0.2447554626,0.009857770117999999,1.9018456702000026,-0.98449476875,1.80434905261,Use as soft-flag context; investigate before asserting error.
+II.1.1,329,1.118699772,0.45789389030000005,3.7842975664,-1.4396880272500001,4.21229421795,Use as soft-flag context; investigate before asserting error.
+III.1.1,158,0.099152108185,0.0005293669493850001,0.44505448661500063,-0.21860000445000002,0.46184341795000006,Use as soft-flag context; investigate before asserting error.
+III.4.1,270,0.023322244409999998,0.0041307121149,0.14495192465499995,-0.028422251299999996,0.07596434216,Use as soft-flag context; investigate before asserting error.
+I.4.1,93,0.01640141381,0.0,1.1300867473999998,-0.61044332006425,1.01983582291855,Use as soft-flag context; investigate before asserting error.
+IV.1,66,0.2633185939,0.000325070065,1.3819746025,-1.2474474917274998,2.0917150651165,Use as soft-flag context; investigate before asserting error.

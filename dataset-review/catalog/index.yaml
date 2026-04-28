@@ -523,3 +523,57 @@ datasets:
         granularity: null
         freshness: null
         accessibility: null
+
+- id: c40-city-emissions-benchmark
+  name: C40 City Emissions Benchmark Context
+  dataset_url: https://www.c40knowledgehub.org/
+  publisher:
+    id: c40
+    name: C40 Cities
+    url: https://www.c40.org/
+  description: >
+    Benchmark context dataset for interpreting city emissions values by sector
+    and identifying potential outliers during data quality checks. This entry is
+    used to maintain versioned reference context that supports QA agents and
+    future MCP-assisted interpretation in Global API workflows.
+  coverage:
+    geography: global
+    spatial_levels: [city, sector, sub_sector]
+  themes:
+    - emissions
+    - data_quality
+    - benchmarking
+    - interpretation_context
+  update_frequency: annual_refresh
+  priority: high
+  releases:
+    - version: "2024"
+      version_number: 1
+      source_url: https://www.c40knowledgehub.org/
+      released_at: null
+      retrieved_at: null
+      retrieval_method: manual_review
+      api_endpoint: null
+      path: "reviews/c40/c40-city-emissions-benchmark/releases/2024"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: null
+      license:
+        id: c40-terms-verification-pending
+        name: C40 website terms to be verified
+        url: https://www.c40.org/
+        commercial_use: false
+        note: >
+          Context and benchmark interpretation references are derived from public
+          C40 materials; confirm reuse and redistribution permissions before any
+          production promotion or downstream packaging.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
