@@ -1,4 +1,4 @@
-# Glossary for `export-2026-02-23/transition_elements.csv`
+# Glossary
 
 This glossary explains the key terms and fields used in the TEF `transition_elements.csv` export.
 
