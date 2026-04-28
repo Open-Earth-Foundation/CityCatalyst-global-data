@@ -1,0 +1,103 @@
+action_id,action_name,sector,subsector,implementing_agent,implementing_agent_confidence,geography,action_role,intervention_type,publisher_id,implementation_timeline,investment_cost
+c40_0010,Introduce energy-efficiency standards for new residential buildings,stationary_energy,I.1,municipal_government,high,city,intervention,regulatory,c40,<5 years,low
+c40_0012,Introduce energy-efficiency standards for new institutional buildings,stationary_energy,I.2,municipal_government,high,city,intervention,regulatory,c40,<5 years,low
+c40_0013,Support Implementation of Industrial Building Efficiency Standards.,stationary_energy,I.3,private_sector_industry,medium,city,intervention,regulatory,c40,<5 years,low
+c40_0015,Retrofit residential buildings for energy efficiency,stationary_energy,I.1,municipal_government,high,city,intervention,infrastructure,c40,<5 years,low
+c40_0016,Retrofit commercial and institutional other non-residential buildings  for energy efficiency,stationary_energy,I.2,municipal_government,high,city,intervention,infrastructure,c40,<5 years,low
+c40_0017,Retrofit municipal buildings for energy efficiency,stationary_energy,I.2,municipal_government,high,city,intervention,infrastructure,c40,<5 years,low
+c40_0018,Optimize energy efficiency and sustainability standards for existing industrial infrastructure,stationary_energy,I.3,municipal_government,high,city,intervention,regulatory,c40,<5 years,low
+c40_0023,Adopt zero-emission bus fleets for public transport,transportation,II.1,municipal_government,high,city,outcome,,c40,<5 years,high
+c40_0025,Promote deployment of zero-emission freight fleets (trucks),transportation,II.1,municipal_government,medium,city,intervention,program,c40,<5 years,medium
+c40_0029,Electrify municipal vehicle fleets,transportation,II.1,municipal_government,high,city,outcome,,c40,5-10 years,high
+c40_0034,Enact and enforce material bans in order to restrict single use and non-recyclable materials,waste,III.1,municipal_government,medium,city,intervention,regulatory,c40,<5 years,low
+c40_0035,Optmize waste management systems,waste,III.1,municipal_government,high,city,intervention,planning,c40,<5 years,medium
+c40_0036,Upgrade Landfills to Engineered Sanitary Landfills with Gas Capture.,waste,III.1,municipal_government,medium,city,intervention,infrastructure,c40,<5 years,medium
+c40_0037,"Implement residential and business segregated collection of recyclables, organic, and residual waste",waste,III.1,municipal_government,high,city,intervention,program,c40,<5 years,medium
+c40_0040,Implement Volume-Based Collection policy,waste,III.1,municipal_government,medium,city,intervention,regulatory,c40,5-10 years,low
+c40_0042,Expand urban and peri-urban green spaces,afolu,V.2,municipal_government,medium,city,intervention,infrastructure,c40,5-10 years,low
+c40_0071,Promote the phase out the reliance on fossil fuels for cooking (in favour of high-efficiency electric cookstoves such as induction stoves).,stationary_energy,I.6,municipal_government,medium,city,intervention,program,c40,5-10 years,low
+icare_0001,Improve heat and energy recovery,ippu_industry,IV.1,private_sector_industry,medium,city,outcome,,icare,>10 years,high
+icare_0002,Promote and expand the use of the Brazilian Energy Labeling Program for Buildings,stationary_energy,I.1,municipal_government,high,city,intervention,program,icare,<5 years,low
+icare_0006,Develop integrated renewable energy planning and solar–battery microgrids for rural and peri-urban areas,stationary_energy,I.4,municipal_government,high,city,intervention,planning,icare,>10 years,high
+icare_0008,Enable smart grid integration and distributed energy storage through municipal collaboration and demonstration projects,stationary_energy,I.4,municipal_government,high,city,intervention,infrastructure,icare,5-10 years,high
+icare_0009,Deploy cogeneration systems in industries,stationary_energy,I.3,private_sector_industry,medium,city,intervention,infrastructure,icare,5-10 years,high
+icare_0010,Promote Net-Zero and Green Building Certifications,stationary_energy,I.1,municipal_government,medium,city,intervention,program,icare,5-10 years,medium
+icare_0012,Expand solar energy generation on municipal facilities and public assets,stationary_energy,I.4,municipal_government,high,city,intervention,infrastructure,icare,5-10 years,medium
+icare_0015,Promote Mini and Micro-Hydropower and Biomass Energy,stationary_energy,I.4,municipal_government,medium,city,intervention,infrastructure,icare,5-10 years,high
+icare_0016,"Promote solar thermal and heat pump systems for water heating in residential, commercial, and public buildings",stationary_energy,I.1,municipal_government,high,city,intervention,program,icare,<5 years,medium
+icare_0023,Upgrade and maintain electrical substations,stationary_energy,I.4,utility_or_energy_operator,medium,city,intervention,infrastructure,icare,5-10 years,medium
+icare_0024,Integrate renewables into municipal water systems,stationary_energy,I.4,municipal_government,high,city,intervention,infrastructure,icare,5-10 years,medium
+icare_0025,Promote energy-efficient and climate-resilient housing for low-income and informal settlements,stationary_energy,I.1,municipal_government,high,city,intervention,program,icare,5-10 years,medium
+icare_0026,Implement time-of-use electricity tariffs to enhance demand-side flexibility and efficiency,stationary_energy,I.4,municipal_government,high,city,intervention,financial,icare,<5 years,low
+icare_0027,Create financing programs for local renewable energy projects,stationary_energy,I.4,land_sector_actors,medium,city,intervention,financial,icare,5-10 years,medium
+icare_0028,"Promote passive cooling through natural shading and ventilation in residential, commercial, and public buildings",stationary_energy,I.1,municipal_government,high,city,intervention,regulatory,icare,<5 years,low
+icare_0031,Capture & Use Biogas at Wastewater Treatment Plants',waste,III.4,mixed_multi_actor,low,city,outcome,,icare,5-10 years,high
+icare_0033,Install biodigesters in rural properties,stationary_energy,I.5,land_sector_actors,medium,city,intervention,infrastructure,icare,<5 years,medium
+icare_0034,Improve Fuel Supply Systems for Industrial Heating,ippu_industry,IV.1,private_sector_industry,medium,city,outcome,,icare,<5 years,low
+icare_0035,Enhance industrial energy efficiency processes,stationary_energy,I.3,private_sector_industry,medium,city,intervention,infrastructure,icare,5-10 years,medium
+icare_0040,Deploy energy-efficient and solar-powered street lighting across all neighborhoods,stationary_energy,I.1,municipal_government,high,city,intervention,infrastructure,icare,5-10 years,medium
+icare_0045,"Promote organic, regenerative and agroecological agriculture in rural areas",stationary_energy,I.5,municipal_government,high,city,intervention,program,icare,<5 years,low
+icare_0049,Develop regional hubs for renewable energy production,stationary_energy,I.4,municipal_government,medium,city,intervention,infrastructure,icare,>10 years,high
+icare_0050,Accelerate the adoption of Agroforestry',stationary_energy,I.5,land_sector_actors,medium,city,outcome,,icare,5-10 years,medium
+icare_0053,Support cooperatives of voluntary waste collectors to aggregate into small enterprises and expand into organics management,waste,III.1,municipal_government,medium,city,intervention,program,icare,<5 years,medium
+icare_0064,Develop an organic waste management strategy,waste,III.2,municipal_government,medium,city,intervention,planning,icare,5-10 years,medium
+icare_0069,Complete ecological and agroclimatic mapping,stationary_energy,I.5,land_sector_actors,medium,city,intervention,planning,icare,<5 years,low
+icare_0071,Increase efficiency of industrial furnaces and kilns,ippu_industry,IV.1,private_sector_industry,medium,city,outcome,,icare,5-10 years,medium
+icare_0072,Improve Heat Recovery and Reuse through Heat Exchanger Networks or Heat Pumps,ippu_industry,IV.1,private_sector_industry,medium,city,outcome,,icare,<5 years,low
+icare_0074,Adopt industrial energy efficiency technologies,ippu_industry,IV.1,private_sector_industry,medium,city,outcome,,icare,5-10 years,medium
+icare_0076,Electrify Industrial Processes (with Renewable Power),ippu_industry,IV.1,municipal_government,high,city,outcome,,icare,>10 years,medium
+icare_0078,Decarbonize industrial feedstocks,ippu_industry,IV.1,private_sector_industry,medium,city,outcome,,icare,5-10 years,medium
+icare_0079,Implement carbon capture and utilization (CCU),ippu_industry,IV.1,private_sector_industry,medium,city,intervention,infrastructure,icare,<5 years,low
+icare_0082,Implement carbon capture and storage (CCS),ippu_industry,IV.1,private_sector_industry,medium,city,intervention,infrastructure,icare,>10 years,high
+icare_0099,Increase local participation in Agroecological Certification Programmes,stationary_energy,I.5,land_sector_actors,medium,city,outcome,,icare,<5 years,low
+icare_0101,Accelerate the adoption of Zero Emission Agricultural Machinery,stationary_energy,I.5,municipal_government,high,city,outcome,,icare,5-10 years,medium
+icare_0104,Adopt hybrid renewable energy systems (solar-wind),stationary_energy,I.4,mixed_multi_actor,low,city,outcome,,icare,>10 years,high
+icare_0105,Reduce technical losses in energy distribution networks,stationary_energy,I.4,utility_or_energy_operator,medium,city,outcome,,icare,5-10 years,medium
+icare_0110,"Regulate Construction and Demolition Waste Management to improve deconstruction, segregation at source, reutilization and recycling",waste,III.1,municipal_government,medium,city,intervention,regulatory,icare,<5 years,medium
+icare_0111,Strengthen Extended Producer Responsibility (EPR) Systems,waste,III.1,municipal_government,medium,city,intervention,regulatory,icare,5-10 years,medium
+icare_0117,Improve public transport systems to promote modal shift,transportation,II.1,municipal_government,high,city,outcome,,icare,5-10 years,medium
+icare_0120,"Implement energy efficiency criteria and indicators in the procurement of goods, services, or works by the municipal public administration.",stationary_energy,I.6,municipal_government,high,city,intervention,regulatory,icare,<5 years,low
+icare_0121,"Incentive to create bike-sharing programs in urban areas, with a focus on electric bikes.",transportation,II.1,land_sector_actors,medium,city,intervention,financial,icare,<5 years,medium
+icare_0122,Establish eco-parks.,afolu,V.2,municipal_government,medium,city,intervention,infrastructure,icare,<5 years,medium
+icare_0127,Improve Accelerate Environmental Regularization of Rural Properties,stationary_energy,I.5,land_sector_actors,medium,city,outcome,,icare,5-10 years,medium
+icare_0128,Establish Municipal Programs for Payment for Environmental Services and other ecological financial incentives,afolu,V.2,municipal_government,high,city,intervention,financial,icare,5-10 years,medium
+icare_0131,Prioritize Procurement of Locally Produced Agroecological Products in Public Purchases,stationary_energy,I.5,municipal_government,medium,city,intervention,regulatory,icare,<5 years,low
+icare_0132,Encourage Local Agroecological Production and Short Supply Chains,stationary_energy,I.5,utility_or_energy_operator,medium,city,intervention,program,icare,<5 years,low
+icare_0137,Replace Inefficient Lighting with LED Technology in Public Spaces,stationary_energy,I.2,municipal_government,high,city,intervention,infrastructure,icare,<5 years,medium
+icare_0139,Implement congestion pricing and restrictions on high-polluting vehicles,transportation,II.1,municipal_government,high,city,intervention,regulatory,icare,<5 years,low
+ipcc_0001,Promote compact urban form and transit-oriented development,transportation,II.1,municipal_government,high,city,intervention,planning,ipcc,>10 years,high
+ipcc_0023,Design products with lightweight materials,ippu_industry,IV.1,municipal_government,medium,city,intervention,program,ipcc,5-10 years,high
+ipcc_0024,Improve material utilization efficiency in production,ippu_industry,IV.1,private_sector_industry,medium,city,outcome,,ipcc,5-10 years,high
+ipcc_0025,"Design for Recovery, Reuse, or Repurposing",ippu_industry,IV.1,private_sector_industry,medium,city,intervention,program,ipcc,5-10 years,high
+ipcc_0026,Adopt alternative feedstocks in industrial production,ippu_industry,IV.1,private_sector_industry,medium,city,outcome,,ipcc,5-10 years,high
+ipcc_0028,"Behavioral Changes for Reduced Waste (e.g., Food)",ippu_industry,IV.1,private_sector_industry,medium,city,outcome,,ipcc,5-10 years,high
+ipcc_0031,Enhanced product service levels per product (e.g. product sharing),ippu_industry,IV.1,private_sector_industry,medium,city,outcome,,ipcc,5-10 years,high
+ipcc_0033,Improve product maintenance to extend lifespan,ippu_industry,IV.1,mixed_multi_actor,low,city,outcome,,ipcc,5-10 years,high
+ipcc_0034,Promote consumer behavior focused on sufficiency and reduced consumption,ippu_industry,IV.1,private_sector_industry,medium,city,intervention,program,ipcc,5-10 years,high
+ipcc_0037,Adopt net-zero-emissions materials and supply chains,ippu_industry,IV.2,land_sector_actors,medium,city,outcome,,ipcc,>10 years,high
+ipcc_0038,Stimulate solar energy production in industrial facilities,ippu_industry,IV.2,private_sector_industry,medium,city,intervention,infrastructure,ipcc,5-10 years,high
+ipcc_0039,Promote the substitution of traditional materials with sustainable alternatives,ippu_industry,IV.2,municipal_government,medium,city,intervention,program,ipcc,>10 years,high
+ipcc_0040,Promote industry-government collaborations on emissions reduction,ippu_industry,IV.1,private_sector_industry,medium,city,intervention,planning,ipcc,5-10 years,medium
+ipcc_0041,Support research into carbon-neutral manufacturing technologies,ippu_industry,IV.1,private_sector_industry,medium,city,intervention,program,ipcc,5-10 years,medium
+ipcc_0042,Set carbon emissions reduction targets for industrial sectors,ippu_industry,IV.1,private_sector_industry,medium,city,intervention,regulatory,ipcc,5-10 years,high
+ipcc_0043,Encourage the Use of Zero-Emission Fuels in Industrial Processes,ippu_industry,IV.1,private_sector_industry,medium,city,intervention,program,ipcc,5-10 years,high
+ipcc_0045,Transition to renewable energy for industrial operations,ippu_industry,IV.1,private_sector_industry,medium,city,outcome,,ipcc,<5 years,medium
+ipcc_0049,Develop and implement circular economy policies,ippu_industry,IV.1,private_sector_industry,medium,city,intervention,regulatory,ipcc,5-10 years,medium
+ipcc_0050,Create tax incentives for companies adopting clean technologies,ippu_industry,IV.1,municipal_government,medium,city,intervention,financial,ipcc,<5 years,low
+ipcc_0052,Reduce Deforestation and Degradation,afolu,V.2,land_sector_actors,medium,city,outcome,,ipcc,5-10 years,medium
+ipcc_0053,"Implement afforestation, reforestation, and forest ecosystem restoration",afolu,V.2,municipal_government,high,city,intervention,infrastructure,ipcc,5-10 years,high
+ipcc_0054,Adopt sustainable forest management practices,afolu,V.2,land_sector_actors,medium,city,outcome,,ipcc,5-10 years,high
+ipcc_0055,"Implement fire management in forests, grasslands, and savannas",afolu,V.2,land_sector_actors,medium,city,intervention,infrastructure,ipcc,5-10 years,medium
+ipcc_0056,Reduce and prevent degradation and conversion of Grasslands and Savannas,afolu,V.2,mixed_multi_actor,low,city,outcome,,ipcc,5-10 years,medium
+ipcc_0057,Restore degraded peatlands and prevent further conversion or degradation.,afolu,V.2,municipal_government,high,city,outcome,,ipcc,5-10 years,high
+ipcc_0060,Protect and Restore Coastal Wetlands,afolu,V.2,mixed_multi_actor,low,city,outcome,,ipcc,>10 years,high
+ipcc_0062,Create partnerships to implement biochar plants.,afolu,V.2,utility_or_energy_operator,medium,city,intervention,program,ipcc,5-10 years,high
+ipcc_0064,Reduce methane emissions from enteric fermentation in livestock,afolu,V.1,land_sector_actors,medium,city,outcome,,ipcc,5-10 years,medium
+ipcc_0067,Improve manure management and crop nutrient practices,afolu,V.1,municipal_government,high,city,outcome,,ipcc,5-10 years,high
+ipcc_0068,Pilot Bioenergy with Carbon Capture in Partnership with Utilities/Industry.,afolu,V.2,utility_or_energy_operator,medium,city,intervention,program,ipcc,>10 years,high
+ipcc_0069,Promote sustainable and healthy diets,afolu,V.1,municipal_government,high,city,intervention,program,ipcc,5-10 years,medium
+ipcc_0070,Reduce food loss and waste,afolu,V.2,mixed_multi_actor,low,city,outcome,,ipcc,5-10 years,medium
+ipcc_0071,Increase sustainable use of wood products,afolu,V.2,municipal_government,high,city,outcome,,ipcc,5-10 years,medium
+ipcc_0074,Promote compact urban form through spatial planning,stationary_energy,I.2,municipal_government,high,city,intervention,planning,ipcc,>10 years,high
+ipcc_0076,Implement energy audits in industrial plants,ippu_industry,IV.1,private_sector_industry,medium,city,intervention,program,ipcc,>10 years,high
+ipcc_0105,Promote active mobility through road space reallocation,transportation,II.1,municipal_government,medium,city,intervention,infrastructure,ipcc,<5 years,medium
