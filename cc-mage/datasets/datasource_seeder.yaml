@@ -1972,7 +1972,7 @@
       Emissionen aus dem eigenen Brennstoffverbrauch vor Ort sind enthalten.
   source_type: third_party
   access_type: public
-  dataset_url: https://www.iea.org/statistics/co2emissions/
+  dataset_url: https://www.iea.org/data-and-statistics
   geographical_location: EARTH
   start_year: 2020
   end_year: 2022
@@ -2108,7 +2108,7 @@
       sind. Bei den Berechnungen werden nicht-CO2-Treibhausgase ausgeschlossen.
   source_type: third_party
   access_type: public
-  dataset_url: https://www.iea.org/statistics/co2emissions/
+  dataset_url: https://www.iea.org/data-and-statistics
   geographical_location: EARTH
   start_year: 2020
   end_year: 2022
@@ -2261,7 +2261,7 @@
       bestimmt sind, ausgeschlossen.
   source_type: third_party
   access_type: public
-  dataset_url: https://www.iea.org/statistics/co2emissions/
+  dataset_url: https://www.iea.org/data-and-statistics
   geographical_location: EARTH
   start_year: 2020
   end_year: 2022
@@ -2395,7 +2395,7 @@
       oder Kraftwerken
   source_type: third_party
   access_type: public
-  dataset_url: https://www.iea.org/statistics/co2emissions/
+  dataset_url: https://www.iea.org/data-and-statistics
   geographical_location: EARTH
   start_year: 2020
   end_year: 2022
@@ -2529,7 +2529,7 @@
       in Haushalten. Dies entspricht der IPCC-Quelle/Senke-Kategorie 1 A 4 b.
   source_type: third_party
   access_type: public
-  dataset_url: https://www.iea.org/statistics/co2emissions/
+  dataset_url: https://www.iea.org/data-and-statistics
   geographical_location: EARTH
   start_year: 2020
   end_year: 2022
@@ -2682,7 +2682,7 @@
       Endnutzungsaufteilung, was zu nicht zugeordneten Autoproduzenten führt.
   source_type: third_party
   access_type: public
-  dataset_url: https://www.iea.org/statistics/co2emissions/
+  dataset_url: https://www.iea.org/data-and-statistics
   geographical_location: EARTH
   start_year: 2020
   end_year: 2022
@@ -2833,7 +2833,7 @@
       und des Energieverbrauchs in verschiedenen Sektoren.
   source_type: third_party
   access_type: public
-  dataset_url: https://www.iea.org/statistics/co2emissions/
+  dataset_url: https://www.iea.org/data-and-statistics
   geographical_location: EARTH
   start_year: 2020
   end_year: 2022
@@ -6649,7 +6649,7 @@
       erfasst, sie enthält Informationen über die Lizenznehmer des Verteilungsdienstes.
       Diese Tabelle umfasst das sogenannte "kommerzielle Durchleiten" oder Gas, das
       im Auftrag Dritter geliefert wird.
-  methodology_url: https://www.enargas.gob.ar/secciones/transporte-y-distribucion/glosario.pdfdf
+  methodology_url: https://www.enargas.gob.ar/secciones/transporte-y-distribucion/glosario.pdf
   transformation_description:
     en:
       The nacional information is scaled-down at the city level using population
@@ -6767,7 +6767,7 @@
       erfasst, sie enthält Informationen über die Lizenznehmer des Verteilungsdienstes.
       Diese Tabelle umfasst das sogenannte "kommerzielle Durchleiten" oder Gas, das
       im Auftrag Dritter geliefert wird.
-  methodology_url: https://www.enargas.gob.ar/secciones/transporte-y-distribucion/glosario.pdfdf
+  methodology_url: https://www.enargas.gob.ar/secciones/transporte-y-distribucion/glosario.pdf
   transformation_description:
     en:
       The nacional information is scaled-down at the city level using population
@@ -6893,7 +6893,7 @@
       erfasst, sie enthält Informationen über die Lizenznehmer des Verteilungsdienstes.
       Diese Tabelle umfasst das sogenannte "kommerzielle Durchleiten" oder Gas, das
       im Auftrag Dritter geliefert wird.
-  methodology_url: https://www.enargas.gob.ar/secciones/transporte-y-distribucion/glosario.pdfdf
+  methodology_url: https://www.enargas.gob.ar/secciones/transporte-y-distribucion/glosario.pdf
   transformation_description:
     en:
       The nacional information is scaled-down at the city level using population
@@ -7013,7 +7013,7 @@
       erfasst, sie enthält Informationen über die Lizenznehmer des Verteilungsdienstes.
       Diese Tabelle umfasst das sogenannte "kommerzielle Umgehen" oder Gas, das im
       Auftrag Dritter geliefert wird.
-  methodology_url: https://www.enargas.gob.ar/secciones/transporte-y-distribucion/glosario.pdfdf
+  methodology_url: https://www.enargas.gob.ar/secciones/transporte-y-distribucion/glosario.pdf
   transformation_description:
     en:
       The nacional information is scaled-down at the city level using population
@@ -7621,7 +7621,7 @@
       Emissionen auf Gemeindeebene aus der Brennstoffverbrennung in Wohngebäuden.
   source_type: Third-party
   access_type: public
-  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  dataset_url: https://seeg.eco.br/
   geographical_location: BR
   start_year: 2015
   end_year: 2022
@@ -7667,7 +7667,7 @@
       (BEN) und spezifische Emissionsfaktoren nutzt, um CO2-, CH4- und N2O-Emissionen
       in verschiedenen Sektoren zu quantifizieren, wobei staatliche Unterschiede berücksichtigt
       werden.
-  methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
+  methodology_url: https://seeg.eco.br/metodologia/
   transformation_description:
     en:
       The data transformation process involves mapping IPCC categories to the Global
@@ -7769,7 +7769,7 @@
       Emissionen auf Gemeindeebene aus der Brennstoffverbrennung in Wohngebäuden.
   source_type: Third-party
   access_type: public
-  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  dataset_url: https://seeg.eco.br/
   geographical_location: BR
   start_year: 2015
   end_year: 2023
@@ -7815,7 +7815,7 @@
       (BEN) und spezifische Emissionsfaktoren nutzt, um CO2-, CH4- und N2O-Emissionen
       in verschiedenen Sektoren zu quantifizieren, wobei staatliche Unterschiede berücksichtigt
       werden.
-  methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
+  methodology_url: https://seeg.eco.br/metodologia/
   transformation_description:
     en:
       The data transformation process involves mapping IPCC categories to the Global
@@ -7917,7 +7917,7 @@
       Emissionen aus der Brennstoffverbrennung in gewerblichen Gebäuden.
   source_type: Third-party
   access_type: public
-  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  dataset_url: https://seeg.eco.br/
   geographical_location: BR
   start_year: 2015
   end_year: 2022
@@ -7963,7 +7963,7 @@
       (BEN) und spezifische Emissionsfaktoren nutzt, um CO2-, CH4- und N2O-Emissionen
       in verschiedenen Sektoren zu quantifizieren, wobei staatliche Unterschiede berücksichtigt
       werden.
-  methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
+  methodology_url: https://seeg.eco.br/metodologia/
   transformation_description:
     en:
       The data transformation process involves mapping IPCC categories to the Global
@@ -8064,7 +8064,7 @@
       Emissionen aus der Brennstoffverbrennung in gewerblichen Gebäuden.
   source_type: Third-party
   access_type: public
-  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  dataset_url: https://seeg.eco.br/
   geographical_location: BR
   start_year: 2015
   end_year: 2023
@@ -8110,7 +8110,7 @@
       (BEN) und spezifische Emissionsfaktoren nutzt, um CO2-, CH4- und N2O-Emissionen
       in verschiedenen Sektoren zu quantifizieren, wobei staatliche Unterschiede berücksichtigt
       werden.
-  methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
+  methodology_url: https://seeg.eco.br/metodologia/
   transformation_description:
     en:
       The data transformation process involves mapping IPCC categories to the Global
@@ -8211,7 +8211,7 @@
       kommunale Emissionen aus der Brennstoffverbrennung in Industriegebäuden.
   source_type: Third-party
   access_type: public
-  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  dataset_url: https://seeg.eco.br/
   geographical_location: BR
   start_year: 2015
   end_year: 2022
@@ -8257,7 +8257,7 @@
       (BEN) und spezifische Emissionsfaktoren nutzt, um CO2-, CH4- und N2O-Emissionen
       in verschiedenen Sektoren zu quantifizieren, wobei staatliche Unterschiede berücksichtigt
       werden.
-  methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
+  methodology_url: https://seeg.eco.br/metodologia/
   transformation_description:
     en:
       The data transformation process involves mapping IPCC categories to the Global
@@ -8358,7 +8358,7 @@
       kommunale Emissionen aus der Brennstoffverbrennung in Industriegebäuden.
   source_type: Third-party
   access_type: public
-  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  dataset_url: https://seeg.eco.br/
   geographical_location: BR
   start_year: 2015
   end_year: 2023
@@ -8404,7 +8404,7 @@
       (BEN) und spezifische Emissionsfaktoren nutzt, um CO2-, CH4- und N2O-Emissionen
       in verschiedenen Sektoren zu quantifizieren, wobei staatliche Unterschiede berücksichtigt
       werden.
-  methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
+  methodology_url: https://seeg.eco.br/metodologia/
   transformation_description:
     en:
       The data transformation process involves mapping IPCC categories to the Global
@@ -8502,7 +8502,7 @@
       Emissionen auf Gemeindeebene aus der Energieindustrie.
   source_type: Third-party
   access_type: public
-  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  dataset_url: https://seeg.eco.br/
   geographical_location: BR
   start_year: 2015
   end_year: 2022
@@ -8548,7 +8548,7 @@
       (BEN) und spezifische Emissionsfaktoren nutzt, um CO2-, CH4- und N2O-Emissionen
       in verschiedenen Sektoren zu quantifizieren, wobei staatliche Unterschiede berücksichtigt
       werden.
-  methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
+  methodology_url: https://seeg.eco.br/metodologia/
   transformation_description:
     en:
       The data transformation process involves mapping IPCC categories to the Global
@@ -8646,7 +8646,7 @@
       Emissionen auf Gemeindeebene aus der Energieindustrie.
   source_type: Third-party
   access_type: public
-  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  dataset_url: https://seeg.eco.br/
   geographical_location: BR
   start_year: 2015
   end_year: 2023
@@ -8692,7 +8692,7 @@
       (BEN) und spezifische Emissionsfaktoren nutzt, um CO2-, CH4- und N2O-Emissionen
       in verschiedenen Sektoren zu quantifizieren, wobei staatliche Unterschiede berücksichtigt
       werden.
-  methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
+  methodology_url: https://seeg.eco.br/metodologia/
   transformation_description:
     en:
       The data transformation process involves mapping IPCC categories to the Global
@@ -8796,7 +8796,7 @@
       Emissionen auf Gemeindeebene aus der Landwirtschaft, Forstwirtschaft und Fischerei.
   source_type: Third-party
   access_type: public
-  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  dataset_url: https://seeg.eco.br/
   geographical_location: BR
   start_year: 2015
   end_year: 2022
@@ -8842,7 +8842,7 @@
       (BEN) und spezifische Emissionsfaktoren nutzt, um CO2-, CH4- und N2O-Emissionen
       in verschiedenen Sektoren zu quantifizieren, wobei staatliche Unterschiede berücksichtigt
       werden.
-  methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
+  methodology_url: https://seeg.eco.br/metodologia/
   transformation_description:
     en:
       The data transformation process involves mapping IPCC categories to the Global
@@ -8947,7 +8947,7 @@
       Bezug auf Energieemissionen.
   source_type: Third-party
   access_type: public
-  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  dataset_url: https://seeg.eco.br/
   geographical_location: BR
   start_year: 2015
   end_year: 2023
@@ -8993,7 +8993,7 @@
       (BEN) und spezifische Emissionsfaktoren nutzt, um CO2-, CH4- und N2O-Emissionen
       in verschiedenen Sektoren zu quantifizieren, wobei staatliche Unterschiede berücksichtigt
       werden.
-  methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
+  methodology_url: https://seeg.eco.br/metodologia/
   transformation_description:
     en:
       The data transformation process involves mapping IPCC categories to the Global
@@ -9095,7 +9095,7 @@
       Emissionen aus flüchtigen Emissionen von Öl- und Erdgas-Systemen.
   source_type: Third-party
   access_type: public
-  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  dataset_url: https://seeg.eco.br/
   geographical_location: BR
   start_year: 2015
   end_year: 2022
@@ -9141,7 +9141,7 @@
       (BEN) und spezifische Emissionsfaktoren nutzt, um CO2-, CH4- und N2O-Emissionen
       in verschiedenen Sektoren zu quantifizieren, wobei staatliche Unterschiede berücksichtigt
       werden.
-  methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
+  methodology_url: https://seeg.eco.br/metodologia/
   transformation_description:
     en:
       The data transformation process involves mapping IPCC categories to the Global
@@ -9245,7 +9245,7 @@
       Emissionen aus flüchtigen Emissionen von Öl- und Erdgas-Systemen.
   source_type: Third-party
   access_type: public
-  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  dataset_url: https://seeg.eco.br/
   geographical_location: BR
   start_year: 2015
   end_year: 2023
@@ -9291,7 +9291,7 @@
       (BEN) und spezifische Emissionsfaktoren nutzt, um CO2-, CH4- und N2O-Emissionen
       in verschiedenen Sektoren zu quantifizieren, wobei staatliche Unterschiede berücksichtigt
       werden.
-  methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
+  methodology_url: https://seeg.eco.br/metodologia/
   transformation_description:
     en:
       The data transformation process involves mapping IPCC categories to the Global
@@ -9391,7 +9391,7 @@
       auf Gemeindeebene aus dem Straßenverkehr.
   source_type: Third-party
   access_type: public
-  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  dataset_url: https://seeg.eco.br/
   geographical_location: BR
   start_year: 2015
   end_year: 2022
@@ -9424,7 +9424,7 @@
       Die Emissionen des Straßenverkehrs werden berechnet, indem der jährliche Kraftstoffverbrauch
       verschiedener Fahrzeugtypen bewertet wird, der dann mit spezifischen Emissionsfaktoren
       für jeden Kraftstofftyp multipliziert wird.
-  methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
+  methodology_url: https://seeg.eco.br/metodologia/
   transformation_description:
     en:
       The data transformation process involves mapping IPCC categories to the Global
@@ -9524,7 +9524,7 @@
       auf Gemeindeebene aus dem Straßenverkehr.
   source_type: Third-party
   access_type: public
-  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  dataset_url: https://seeg.eco.br/
   geographical_location: BR
   start_year: 2015
   end_year: 2023
@@ -9557,7 +9557,7 @@
       Die Emissionen des Straßenverkehrs werden berechnet, indem der jährliche Kraftstoffverbrauch
       verschiedener Fahrzeugtypen bewertet wird, der dann mit spezifischen Emissionsfaktoren
       für jeden Kraftstofftyp multipliziert wird.
-  methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
+  methodology_url: https://seeg.eco.br/metodologia/
   transformation_description:
     en:
       The data transformation process involves mapping IPCC categories to the Global
@@ -9656,7 +9656,7 @@
       auf Gemeindeebene für den Eisenbahntransport.
   source_type: Third-party
   access_type: public
-  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  dataset_url: https://seeg.eco.br/
   geographical_location: BR
   start_year: 2015
   end_year: 2022
@@ -9689,7 +9689,7 @@
       Die Eisenbahnemissionen werden berechnet, indem der jährliche Kraftstoffverbrauch
       verschiedener Eisenbahntypen bewertet wird, der dann mit spezifischen Emissionsfaktoren
       für jeden Kraftstofftyp multipliziert wird.
-  methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
+  methodology_url: https://seeg.eco.br/metodologia/
   transformation_description:
     en:
       The data transformation process involves mapping IPCC categories to the Global
@@ -9788,7 +9788,7 @@
       auf Gemeindeebene für den Schienenverkehr.
   source_type: Third-party
   access_type: public
-  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  dataset_url: https://seeg.eco.br/
   geographical_location: BR
   start_year: 2015
   end_year: 2023
@@ -9821,7 +9821,7 @@
       Die Eisenbahnemissionen werden berechnet, indem der jährliche Kraftstoffverbrauch
       verschiedener Eisenbahntypen bewertet wird, der dann mit spezifischen Emissionsfaktoren
       für jeden Kraftstofftyp multipliziert wird.
-  methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
+  methodology_url: https://seeg.eco.br/metodologia/
   transformation_description:
     en:
       The data transformation process involves mapping IPCC categories to the Global
@@ -9920,7 +9920,7 @@
       auf Gemeindeebene für die Wassertransportnavigation.
   source_type: Third-party
   access_type: public
-  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  dataset_url: https://seeg.eco.br/
   geographical_location: BR
   start_year: 2015
   end_year: 2022
@@ -9953,7 +9953,7 @@
       Die Emissionen des Wassertransports werden berechnet, indem der jährliche
       Kraftstoffverbrauch verschiedener Wassertransportarten bewertet wird, der dann
       mit spezifischen Emissionsfaktoren für jede Kraftstoffart multipliziert wird.
-  methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
+  methodology_url: https://seeg.eco.br/metodologia/
   transformation_description:
     en:
       The data transformation process involves mapping IPCC categories to the Global
@@ -10051,7 +10051,7 @@
       auf Gemeindeebene für die Wassertransportnavigation.
   source_type: Third-party
   access_type: public
-  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  dataset_url: https://seeg.eco.br/
   geographical_location: BR
   start_year: 2015
   end_year: 2023
@@ -10084,7 +10084,7 @@
       Die Emissionen des Wassertransports werden berechnet, indem der jährliche
       Kraftstoffverbrauch verschiedener Wassertransportarten bewertet wird, der dann
       mit spezifischen Emissionsfaktoren für jede Kraftstoffart multipliziert wird.
-  methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
+  methodology_url: https://seeg.eco.br/metodologia/
   transformation_description:
     en:
       The data transformation process involves mapping IPCC categories to the Global
@@ -10182,7 +10182,7 @@
       auf Gemeindeebene für die Luftfahrt.
   source_type: Third-party
   access_type: public
-  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  dataset_url: https://seeg.eco.br/
   geographical_location: BR
   start_year: 2015
   end_year: 2022
@@ -10215,7 +10215,7 @@
       Die Emissionen des Luftverkehrs werden berechnet, indem der jährliche Kraftstoffverbrauch
       verschiedener Luftverkehrsarten bewertet wird, der dann mit spezifischen Emissionsfaktoren
       für jede Kraftstoffart multipliziert wird.
-  methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
+  methodology_url: https://seeg.eco.br/metodologia/
   transformation_description:
     en:
       The data transformation process involves mapping IPCC categories to the Global
@@ -10312,7 +10312,7 @@
       auf Gemeindeebene für die Luftfahrt.
   source_type: Third-party
   access_type: public
-  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  dataset_url: https://seeg.eco.br/
   geographical_location: BR
   start_year: 2015
   end_year: 2023
@@ -10345,7 +10345,7 @@
       Die Emissionen des Luftverkehrs werden berechnet, indem der jährliche Kraftstoffverbrauch
       verschiedener Luftverkehrsarten bewertet wird, der dann mit spezifischen Emissionsfaktoren
       für jede Kraftstoffart multipliziert wird.
-  methodology_url: https://drive.google.com/file/d/1lOgThiSUICc02Jj0nI70Ib2r4Fog-oaF/view
+  methodology_url: https://seeg.eco.br/metodologia/
   transformation_description:
     en:
       The data transformation process involves mapping IPCC categories to the Global
@@ -10447,7 +10447,7 @@
       im Zusammenhang mit Viehemissionen.
   source_type: Third-party
   access_type: public
-  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  dataset_url: https://seeg.eco.br/
   geographical_location: BR
   start_year: 2015
   end_year: 2022
@@ -10480,7 +10480,7 @@
       Die Viehemissionen werden geschätzt, indem die Anzahl der Tiere in jeder Kategorie
       (z. B. Milchkühe, Rinder, Schafe) mit emissionsspezifischen Faktoren für jeden
       Tier- und Produktionssystemtyp multipliziert wird.
-  methodology_url: https://drive.google.com/file/d/1DT9ZASVYmaBkGUI8Jn1hhl_bHQVZklq3/view
+  methodology_url: https://seeg.eco.br/metodologia/
   transformation_description:
     en:
       The data transformation process involves mapping IPCC categories to the Global
@@ -10581,7 +10581,7 @@
       im Zusammenhang mit Vieh-Emissionen.
   source_type: Third-party
   access_type: public
-  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  dataset_url: https://seeg.eco.br/
   geographical_location: BR
   start_year: 2015
   end_year: 2023
@@ -10614,7 +10614,7 @@
       Die Vieh-Emissionen werden geschätzt, indem die Anzahl der Tiere in jeder
       Kategorie (z. B. Milchkühe, Rindfleisch, Schafe) mit emissionsspezifischen Faktoren
       für jeden Tier- und Produktionssystemtyp multipliziert wird.
-  methodology_url: https://drive.google.com/file/d/1DT9ZASVYmaBkGUI8Jn1hhl_bHQVZklq3/view
+  methodology_url: https://seeg.eco.br/metodologia/
   transformation_description:
     en:
       The data transformation process involves mapping IPCC categories to the Global
@@ -10718,7 +10718,7 @@
       (AFOLU) sowie Emissionen aus Landnutzungsänderungen.
   source_type: Third-party
   access_type: public
-  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  dataset_url: https://seeg.eco.br/
   geographical_location: BR
   start_year: 2015
   end_year: 2022
@@ -10772,7 +10772,7 @@
       zu verfolgen. Emissionen und Senken werden dann basierend auf diesen Veränderungen
       der Kohlenstoffvorräte berechnet, wobei sowohl oberirdische als auch unterirdische
       Biomasse sowie der Kohlenstoff im Boden berücksichtigt werden.
-  methodology_url: https://drive.google.com/file/d/1DT9ZASVYmaBkGUI8Jn1hhl_bHQVZklq3/view
+  methodology_url: https://seeg.eco.br/metodologia/
   transformation_description:
     en:
       The data transformation process involves mapping IPCC categories to the Global
@@ -10878,7 +10878,7 @@
       (AFOLU) sowie Emissionen aus Landnutzungsänderungen.
   source_type: Third-party
   access_type: public
-  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  dataset_url: https://seeg.eco.br/
   geographical_location: BR
   start_year: 2015
   end_year: 2023
@@ -10932,7 +10932,7 @@
       zu verfolgen. Emissionen und Senken werden dann basierend auf diesen Veränderungen
       der Kohlenstoffvorräte berechnet, wobei sowohl oberirdische als auch unterirdische
       Biomasse sowie der Kohlenstoff im Boden berücksichtigt werden.
-  methodology_url: https://drive.google.com/file/d/1DT9ZASVYmaBkGUI8Jn1hhl_bHQVZklq3/view
+  methodology_url: https://seeg.eco.br/metodologia/
   transformation_description:
     en:
       The data transformation process involves mapping IPCC categories to the Global
@@ -11031,7 +11031,7 @@
       auf Gemeindeebene für aggregierte Quellen und Nicht-CO2-Emissionen.
   source_type: Third-party
   access_type: public
-  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  dataset_url: https://seeg.eco.br/
   geographical_location: BR
   start_year: 2015
   end_year: 2022
@@ -11064,7 +11064,7 @@
       Diese Emissionen werden geschätzt, indem verschiedene Quellen wie Biomasseverbrennung,
       Kalkung, Urea-Anwendung und bewirtschaftete Böden in verschiedenen Landtypen
       (z. B. Ackerland, Weideland) bewertet werden.
-  methodology_url: https://drive.google.com/file/d/1DT9ZASVYmaBkGUI8Jn1hhl_bHQVZklq3/view
+  methodology_url: https://seeg.eco.br/metodologia/
   transformation_description:
     en:
       The data transformation process involves mapping IPCC categories to the Global
@@ -11163,7 +11163,7 @@
       auf Gemeindeebene für aggregierte Quellen und Nicht-CO2-Emissionen.
   source_type: Third-party
   access_type: public
-  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  dataset_url: https://seeg.eco.br/
   geographical_location: BR
   start_year: 2015
   end_year: 2023
@@ -11196,7 +11196,7 @@
       Diese Emissionen werden geschätzt, indem verschiedene Quellen wie Biomasseverbrennung,
       Kalkung, Urea-Anwendung und bewirtschaftete Böden in verschiedenen Landtypen
       (z. B. Ackerland, Weideland) bewertet werden.
-  methodology_url: https://drive.google.com/file/d/1DT9ZASVYmaBkGUI8Jn1hhl_bHQVZklq3/view
+  methodology_url: https://seeg.eco.br/metodologia/
   transformation_description:
     en:
       The data transformation process involves mapping IPCC categories to the Global
@@ -11295,7 +11295,7 @@
       auf Gemeindeebene für aggregierte Quellen und Nicht-CO2-Emissionen.
   source_type: Third-party
   access_type: public
-  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  dataset_url: https://seeg.eco.br/
   geographical_location: BR
   start_year: 2015
   end_year: 2022
@@ -11328,7 +11328,7 @@
       Diese Emissionen werden geschätzt, indem regionale und nationale Daten zur
       industriellen Aktivität auf Gemeindeebene hochgerechnet werden. Dies kann schwierig
       sein, um vollständig auf Gemeindeebene zu zerlegen.
-  methodology_url: https://drive.google.com/file/d/1DT9ZASVYmaBkGUI8Jn1hhl_bHQVZklq3/view
+  methodology_url: https://seeg.eco.br/metodologia/
   transformation_description:
     en:
       The data transformation process involves mapping IPCC categories to the Global
@@ -12905,7 +12905,7 @@
       aus öffentlich verfügbaren Inventaren und branchenspezifischen Berichten, die
       Schätzungen der Emissionen auf Anlageebene für industrielle und Fertigungseinrichtungen
       weltweit ermöglichen.
-  methodology_url: https://github.com/climatetracecoalition/methodology-documents/blob/main/Fossil%20fuel%20operations/Fossil%20Fuel%20Operations%20sector-%20Oil%20and%20Gas%20Production%20and%20Transport%20Oil%2C%20and%20Gas%20Refining%20Methodology.pdf
+  methodology_url: https://github.com/climatetracecoalition/methodology-documents/tree/main/2025/Fossil%20Fuel%20Operations
   transformation_description:
     en:
       Latitude and longitude information are utilized to apply a reverse geocode
@@ -13505,7 +13505,7 @@
       auf Gemeindeebene für aggregierte Quellen und Nicht-CO2-Emissionen.
   source_type: Third-party
   access_type: public
-  dataset_url: https://drive.google.com/drive/folders/1rdVratpALksJJlRG-H3jMOCAmRMq4gXq
+  dataset_url: https://seeg.eco.br/
   geographical_location: BR
   start_year: 2015
   end_year: 2023
@@ -13538,7 +13538,7 @@
       Diese Emissionen werden geschätzt, indem regionale und nationale Daten zur
       industriellen Aktivität auf Gemeindeebene hochgerechnet werden. Dies kann schwierig
       sein, um vollständig auf Gemeindeebene zu zerlegen.
-  methodology_url: https://drive.google.com/file/d/1DT9ZASVYmaBkGUI8Jn1hhl_bHQVZklq3/view
+  methodology_url: https://seeg.eco.br/metodologia/
   transformation_description:
     en:
       The data transformation process involves mapping IPCC categories to the Global
@@ -13828,7 +13828,7 @@
       flüchtige Verluste und mehr. Wichtige Eingaben wie Feldmerkmale, Produktionsvolumina
       und Transportmethoden werden berücksichtigt, wobei Daten zur Bodenwahrheit und
       Fernmessdaten wie VIIRS für genaue Schätzungen integriert werden."
-  methodology_url: https://github.com/climatetracecoalition/methodology-documents/blob/main/Fossil%20fuel%20operations/Fossil%20Fuel%20Operations%20sector-%20Oil%20and%20Gas%20Production%20and%20Transport%20Oil%2C%20and%20Gas%20Refining%20Methodology.pdf
+  methodology_url: https://github.com/climatetracecoalition/methodology-documents/tree/main/2025/Fossil%20Fuel%20Operations
   transformation_description:
     en:
       Latitude and longitude information are utilized to apply a reverse geocode
@@ -13923,7 +13923,7 @@
     en: The Climate TRACE cattle emissions methodologies are based on IPCC guidelines, combining Tier 1 and Tier 2 approaches to estimate methane (CH₄) and nitrous oxide (N₂O) emissions. Enteric fermentation from grazing cattle uses Tier 1 and 2 methods with regional emission factors, while emissions from confined cattle operations apply Tier 2 methods with facility-level data. Manure left on pasture by grazing cattle is estimated using Tier 1 methods, applying default nitrogen excretion rates and emission factors. In contrast, manure management at confined operations uses Tier 2 methods, incorporating country-specific system distributions and climate variables to capture CH₄ and N₂O emissions from storage and treatment processes.
     es: Las metodologías de emisiones de ganado de Climate TRACE se basan en las directrices del IPCC, combinando enfoques de Nivel 1 y Nivel 2 para estimar las emisiones de metano (CH₄) y óxido nitroso (N₂O). La fermentación entérica del ganado en pastoreo utiliza métodos de Nivel 1 y 2 con factores de emisión regionales, mientras que las emisiones de las operaciones de ganado confinado aplican métodos de Nivel 2 con datos a nivel de instalación. El estiércol dejado en el pasto por el ganado en pastoreo se estima utilizando métodos de Nivel 1, aplicando tasas predeterminadas de excreción de nitrógeno y factores de emisión. En contraste, el manejo del estiércol en operaciones confinadas utiliza métodos de Nivel 2, incorporando distribuciones específicas del sistema por país y variables climáticas para capturar las emisiones de CH₄ y N₂O de los procesos de almacenamiento y tratamiento.
     pt: As metodologias de emissões de gado da Climate TRACE são baseadas nas diretrizes do IPCC, combinando abordagens de Nível 1 e Nível 2 para estimar as emissões de metano (CH₄) e óxido nitroso (N₂O). A fermentação entérica do gado em pastagem utiliza métodos de Nível 1 e 2 com fatores de emissão regionais, enquanto as emissões das operações de gado confinado aplicam métodos de Nível 2 com dados a nível de instalação. O esterco deixado na pastagem pelo gado em pastagem é estimado usando métodos de Nível 1, aplicando taxas padrão de excreção de nitrogênio e fatores de emissão. Em contraste, o manejo do esterco em operações confinadas utiliza métodos de Nível 2, incorporando distribuições específicas do sistema por país e variáveis climáticas para capturar as emissões de CH₄ e N₂O dos processos de armazenamento e tratamento.
-  methodology_url: https://github.com/climatetracecoalition/methodology-documents/blob/main/Fossil%20fuel%20operations/Fossil%20Fuel%20Operations%20sector-%20Oil%20and%20Gas%20Production%20and%20Transport%20Oil%2C%20and%20Gas%20Refining%20Methodology.pdf
+  methodology_url: https://github.com/climatetracecoalition/methodology-documents/tree/main/2025/Fossil%20Fuel%20Operations
   transformation_description:
     en:
       Latitude and longitude information are utilized to apply a reverse geocode
@@ -14070,7 +14070,7 @@
       Diesel und alternativen Kraftstoffen analysiert, wobei die Emissionsfaktoren
       der US EPA verwendet werden. Maschinenlernmodelle helfen bei der Schätzung des
       Verkehrsaufkommens pro Straßenabschnitt, was zu den Emissionsberechnungen beiträgt.
-  methodology_url: https://github.com/climatetracecoalition/methodology-documents/blob/main/2025/Transportation/Transportation%20sector-Global%20Road%20Emissions.pdf
+  methodology_url: https://github.com/climatetracecoalition/methodology-documents/tree/main/2025/Transportation
   transformation_description:
     en:
       Latitude and longitude information are utilized to apply a reverse geocode
@@ -14479,7 +14479,7 @@
       einschließlich Lagertanks und Verarbeitungsanlagen.
   source_type: third_party
   access_type: public
-  dataset_url: https://www.ogim.org/
+  dataset_url: https://zenodo.org/records/7922117
   geographical_location: BR
   start_year: 2019
   end_year: 2025
@@ -14524,7 +14524,7 @@
       aus Gerätelecks, Ablassen während des Betriebs, Abfackeln und Verbrennung
       aus der Stromerzeugung. Emissionsfaktoren werden gemäß den IPCC-Richtlinien
       und bewährten Praktiken der Industrie angewendet.
-  methodology_url: https://www.ogim.org/methodology
+  methodology_url: https://zenodo.org/records/7922117
   transformation_description:
     en:
       LNG terminal locations are geocoded using precise facility coordinates. Emissions
@@ -14629,7 +14629,7 @@
       Emissionsquellen umfassen Verbrennung, Abfackeln, Ablassen und flüchtige Emissionen.
   source_type: third_party
   access_type: public
-  dataset_url: https://www.ogim.org/
+  dataset_url: https://zenodo.org/records/7922117
   geographical_location: BR
   start_year: 2019
   end_year: 2025
@@ -14676,7 +14676,7 @@
       umfassen Prozessheizungen, Kessel, Fackeln, Lagertanks und Gerätelecks. Berechnungsmethoden
       folgen den IPCC-Richtlinien, US EPA-Protokollen und API-Emissionsfaktoren
       für den Öl- und Gassektor.
-  methodology_url: https://www.ogim.org/methodology
+  methodology_url: https://zenodo.org/records/7922117
   transformation_description:
     en:
       Oil and gas plant locations are geocoded using precise facility coordinates.
@@ -14844,7 +14844,7 @@
       der Verbrennungstechnologie, der Anlageneffizienz und der Emissionskontrollsysteme
       geschätzt. Berechnungsmethoden folgen den IPCC-Richtlinien und integrieren
       kontinuierliche Emissionsüberwachungsdaten, sofern verfügbar.
-  methodology_url: https://www.wri.org/research/global-power-plant-database
+  methodology_url: https://datasets.wri.org/datasets/global-power-plant-database
   transformation_description:
     en:
       Power plant locations are geocoded using precise facility coordinates from
