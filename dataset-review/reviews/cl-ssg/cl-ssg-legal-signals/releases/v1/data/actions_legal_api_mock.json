@@ -3,7 +3,11 @@
     "generatedAtUtc": "2026-05-05T10:57:04.586016+00:00",
     "endpoint": "GET /api/v1/action-pathways/legal-signals?countryCode=CL",
     "countryCode": "CL",
-    "totalRecords": 102
+    "totalRecords": 102,
+    "disclaimers": {
+      "legalAssessmentType": "This assessment is analytical and does not constitute a binding legal opinion.",
+      "legalUniformityAssumption": "Legal viability is assumed to be generally consistent across municipalities under the same national legal framework."
+    }
   },
   "actionsLegal": [
     {
