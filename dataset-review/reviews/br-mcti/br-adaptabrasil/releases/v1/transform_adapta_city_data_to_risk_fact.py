@@ -16,6 +16,15 @@ Requires pandas (same as the download notebook).
 Deduplication is applied per input chunk only; run a full-file dedupe on the logical keys
 before loading to the warehouse if overlaps occur across chunks.
 
+By default the transform runs a first pass over the input to build a value index,
+then fills every ancestor level's ``*_value_*`` columns on each output row from
+the matching indicator rows for the same municipality, year, and requested
+scenario (so a leaf row repeats risk / component / chain scores from their own
+API extracts). Aggregate/intermediate input rows are used for this lookup, but
+are not emitted when a deeper descendant row exists for the same municipality,
+year, and requested scenario. Pass ``--skip-ancestor-value-fill`` to restore the
+previous single-slot behaviour (faster, one pass, no extra I/O).
+
 Example:
   python transform_adapta_city_data_to_risk_fact.py \\
     --input sample/indicators/adapta_city_data.csv \\
@@ -105,6 +114,93 @@ def translate_rangelabel(label: str | float) -> str:
     return RANGE_PT_TO_EN.get(key, str(label).strip())
 
 
+def _to_float_maybe(value) -> float | type(pd.NA):  # noqa: ANN001
+    """Parse API/CSV numeric strings; accepts Brazilian comma decimals."""
+    if pd.isna(value):
+        return pd.NA
+    s = str(value).strip().replace(",", ".")
+    if s.lower() in {"", "nan", "null"}:
+        return pd.NA
+    try:
+        return float(s)
+    except (TypeError, ValueError):
+        return pd.NA
+
+
+def _node_pt_slice(k: int, ids: list, names: list) -> dict:
+    """
+    Build hierarchy snapshot for the node at path depth ``k`` (1..6).
+
+    Each node must only carry ids/names for ancestors and itself — not deeper
+    descendants from the same CSV row (those vary by path and broke joins and
+    value-column alignment for aggregate indicators).
+    """
+    na = pd.NA
+    out: dict = {
+        "node_level": k,
+        "node_name": names[k - 1],
+        "sector_id": _to_int(ids[0]) if ids else na,
+        "sector_name": (names[0] or na) if names else na,
+    }
+    if k >= 2:
+        out["risk_id"] = _to_int(ids[1])
+        out["risk_name"] = names[1] or na
+    else:
+        out["risk_id"] = na
+        out["risk_name"] = na
+    if k >= 3:
+        out["risk_component_id"] = _to_int(ids[2])
+        out["risk_component_name"] = names[2] or na
+    else:
+        out["risk_component_id"] = na
+        out["risk_component_name"] = na
+    if k >= 4:
+        out["impact_chain_id_1"] = _to_int(ids[3])
+        out["impact_chain_name_1"] = names[3] or na
+    else:
+        out["impact_chain_id_1"] = na
+        out["impact_chain_name_1"] = na
+    if k >= 5:
+        out["impact_chain_id_2"] = _to_int(ids[4])
+        out["impact_chain_name_2"] = names[4] or na
+    else:
+        out["impact_chain_id_2"] = na
+        out["impact_chain_name_2"] = na
+    if k >= 6:
+        out["impact_chain_id_3"] = _to_int(ids[5])
+        out["impact_chain_name_3"] = names[5] or na
+    else:
+        out["impact_chain_id_3"] = na
+        out["impact_chain_name_3"] = na
+    return out
+
+
+def _mask_modeled_row_for_aggregate(mrow: pd.Series, node_level: int) -> pd.Series:
+    """
+    Strip modeled_en leaf path fields that sit below this aggregate node's depth.
+
+    Otherwise ``english_hierarchy_fields`` prefers modeled values and copies an
+    arbitrary deep-leaf path onto a sector/risk/... aggregate row.
+    """
+    out = mrow.copy()
+    if node_level < 3:
+        out["risk_component_id"] = pd.NA
+        out["risk_component_name"] = ""
+    if node_level < 4:
+        out["impact_chain_id_1"] = pd.NA
+        out["impact_chain_name_1"] = ""
+    if node_level < 5:
+        out["impact_chain_id_2"] = pd.NA
+        out["impact_chain_name_2"] = ""
+    if node_level < 6:
+        out["impact_chain_id_3"] = pd.NA
+        out["impact_chain_name_3"] = ""
+    out["base_indicator_id"] = pd.NA
+    out["base_indicator_name"] = ""
+    out["base_indicator_level"] = pd.NA
+    return out
+
+
 def load_scenario_map(path: Path) -> dict[str, dict[str, str]]:
     if not path.exists():
         return {}
@@ -171,18 +267,31 @@ def scenario_family(req_id: str | float, smap: dict[str, dict[str, str]]) -> str
     return (info or {}).get("family", "") if info else ""
 
 
-def build_node_maps(hierarchy_pt: Path) -> tuple[dict, dict]:
+def build_node_maps(hierarchy_pt: Path) -> tuple[dict, dict, dict[int, set[int]]]:
     h = pd.read_csv(hierarchy_pt, dtype="string").fillna("")
     node_info: dict = {}
     has_children: dict = {}
+    descendants: dict[int, set[int]] = {}
 
     for row in h.itertuples(index=False):
         ids = [getattr(row, f"id_nivel_{k}") for k in range(1, 7)]
+        int_ids = [_to_int(v) for v in ids]
         for k in range(1, 6):
-            parent = _to_int(ids[k - 1])
-            child = _to_int(ids[k])
-            if not pd.isna(parent) and not pd.isna(child):
-                has_children[parent] = True
+            parent = int_ids[k - 1]
+            child = int_ids[k]
+            if not pd.isna(parent) and not pd.isna(child) and int(parent) != int(child):
+                has_children[int(parent)] = True
+
+        for i, parent in enumerate(int_ids[:-1]):
+            if pd.isna(parent):
+                continue
+            p = int(parent)
+            for child in int_ids[i + 1 :]:
+                if pd.isna(child):
+                    continue
+                c = int(child)
+                if c != p:
+                    descendants.setdefault(p, set()).add(c)
 
         names = [getattr(row, f"nome_nivel_{k}") for k in range(1, 7)]
 
@@ -190,26 +299,11 @@ def build_node_maps(hierarchy_pt: Path) -> tuple[dict, dict]:
             node_id = _to_int(ids[k - 1])
             if pd.isna(node_id):
                 continue
-            info = {
-                "node_level": k,
-                "node_name": names[k - 1],
-                "sector_id": _to_int(ids[0]),
-                "sector_name": names[0] or pd.NA,
-                "risk_id": _to_int(ids[1]),
-                "risk_name": names[1] or pd.NA,
-                "risk_component_id": _to_int(ids[2]),
-                "risk_component_name": names[2] or pd.NA,
-                "impact_chain_id_1": _to_int(ids[3]),
-                "impact_chain_name_1": names[3] or pd.NA,
-                "impact_chain_id_2": _to_int(ids[4]),
-                "impact_chain_name_2": names[4] or pd.NA,
-                "impact_chain_id_3": _to_int(ids[5]),
-                "impact_chain_name_3": names[5] or pd.NA,
-            }
+            info = _node_pt_slice(k, ids, names)
             if node_id not in node_info:
                 node_info[node_id] = info
 
-    return node_info, has_children
+    return node_info, has_children, descendants
 
 
 def modeled_row_for_node(
@@ -280,61 +374,90 @@ def modeled_row_for_node(
     return sub.iloc[0]
 
 
-def english_hierarchy_fields(mrow: pd.Series | None, pt_leaf_name: str) -> dict:
+def english_hierarchy_fields(
+    mrow: pd.Series | None, pt_info: dict, pt_leaf_name: str
+) -> dict:
     """Map modeled_en columns into fact-table hierarchy name/id fields."""
+    def pick_int(modeled_value, pt_value):  # noqa: ANN001
+        mv = _to_int(modeled_value)
+        if pd.notna(mv):
+            return mv
+        pv = _to_int(pt_value)
+        return pv if pd.notna(pv) else pd.NA
+
+    def pick_name(modeled_value, pt_value):  # noqa: ANN001
+        mtxt = str(modeled_value).strip() if pd.notna(modeled_value) else ""
+        if mtxt:
+            return mtxt
+        ptxt = str(pt_value).strip() if pd.notna(pt_value) else ""
+        return ptxt
+
     if mrow is None:
         return {
-            "sector_id": pd.NA,
-            "sector_name": "",
-            "risk_id": pd.NA,
-            "risk_name": "",
-            "risk_component_id": pd.NA,
-            "risk_component_name": "",
-            "impact_chain_id_1": pd.NA,
-            "impact_chain_name_1": "",
-            "impact_chain_id_2": pd.NA,
-            "impact_chain_name_2": "",
-            "impact_chain_id_3": pd.NA,
-            "impact_chain_name_3": "",
+            "sector_id": pick_int(pd.NA, pt_info.get("sector_id")),
+            "sector_name": pick_name("", pt_info.get("sector_name")),
+            "risk_id": pick_int(pd.NA, pt_info.get("risk_id")),
+            "risk_name": pick_name("", pt_info.get("risk_name")),
+            "risk_component_id": pick_int(pd.NA, pt_info.get("risk_component_id")),
+            "risk_component_name": pick_name("", pt_info.get("risk_component_name")),
+            "impact_chain_id_1": pick_int(pd.NA, pt_info.get("impact_chain_id_1")),
+            "impact_chain_name_1": pick_name("", pt_info.get("impact_chain_name_1")),
+            "impact_chain_id_2": pick_int(pd.NA, pt_info.get("impact_chain_id_2")),
+            "impact_chain_name_2": pick_name("", pt_info.get("impact_chain_name_2")),
+            "impact_chain_id_3": pick_int(pd.NA, pt_info.get("impact_chain_id_3")),
+            "impact_chain_name_3": pick_name("", pt_info.get("impact_chain_name_3")),
             "base_indicator_id": pd.NA,
             "base_indicator_name": "",
             "base_indicator_level": pd.NA,
         }
 
+    bid = _to_int(mrow["base_indicator_id"])
+    if pd.notna(bid):
+        bname = pick_name(mrow["base_indicator_name"], "")
+        if not str(bname).strip():
+            bname = str(pt_leaf_name).strip() if pt_leaf_name else ""
+        bless = (
+            _to_int(mrow["base_indicator_level"])
+            if "base_indicator_level" in mrow.index
+            else pd.NA
+        )
+    else:
+        bid = pd.NA
+        bname = ""
+        bless = pd.NA
+
     return {
-        "sector_id": _to_int(mrow["sector_id"]),
-        "sector_name": mrow["sector_name"] or "",
-        "risk_id": _to_int(mrow["risk_id"]),
-        "risk_name": mrow["risk_name"] or "",
-        "risk_component_id": _to_int(mrow["risk_component_id"])
-        if pd.notna(mrow["risk_component_id"]) and str(mrow["risk_component_id"]).strip() != ""
-        else pd.NA,
-        "risk_component_name": mrow["risk_component_name"]
-        if pd.notna(mrow["risk_component_name"]) and str(mrow["risk_component_name"]).strip() != ""
-        else "",
-        "impact_chain_id_1": _to_int(mrow["impact_chain_id_1"])
-        if pd.notna(mrow["impact_chain_id_1"]) and str(mrow["impact_chain_id_1"]).strip() != ""
-        else pd.NA,
-        "impact_chain_name_1": mrow["impact_chain_name_1"]
-        if pd.notna(mrow["impact_chain_name_1"]) and str(mrow["impact_chain_name_1"]).strip() != ""
-        else "",
-        "impact_chain_id_2": _to_int(mrow["impact_chain_id_2"])
-        if pd.notna(mrow["impact_chain_id_2"]) and str(mrow["impact_chain_id_2"]).strip() != ""
-        else pd.NA,
-        "impact_chain_name_2": mrow["impact_chain_name_2"]
-        if pd.notna(mrow["impact_chain_name_2"]) and str(mrow["impact_chain_name_2"]).strip() != ""
-        else "",
-        "impact_chain_id_3": _to_int(mrow["impact_chain_id_3"])
-        if pd.notna(mrow["impact_chain_id_3"]) and str(mrow["impact_chain_id_3"]).strip() != ""
-        else pd.NA,
-        "impact_chain_name_3": mrow["impact_chain_name_3"]
-        if pd.notna(mrow["impact_chain_name_3"]) and str(mrow["impact_chain_name_3"]).strip() != ""
-        else "",
-        "base_indicator_id": _to_int(mrow["base_indicator_id"]),
-        "base_indicator_name": mrow["base_indicator_name"] or pt_leaf_name or "",
-        "base_indicator_level": _to_int(mrow["base_indicator_level"])
-        if "base_indicator_level" in mrow.index
-        else pd.NA,
+        "sector_id": pick_int(mrow["sector_id"], pt_info.get("sector_id")),
+        "sector_name": pick_name(mrow["sector_name"], pt_info.get("sector_name")),
+        "risk_id": pick_int(mrow["risk_id"], pt_info.get("risk_id")),
+        "risk_name": pick_name(mrow["risk_name"], pt_info.get("risk_name")),
+        "risk_component_id": pick_int(
+            mrow["risk_component_id"], pt_info.get("risk_component_id")
+        ),
+        "risk_component_name": pick_name(
+            mrow["risk_component_name"], pt_info.get("risk_component_name")
+        ),
+        "impact_chain_id_1": pick_int(
+            mrow["impact_chain_id_1"], pt_info.get("impact_chain_id_1")
+        ),
+        "impact_chain_name_1": pick_name(
+            mrow["impact_chain_name_1"], pt_info.get("impact_chain_name_1")
+        ),
+        "impact_chain_id_2": pick_int(
+            mrow["impact_chain_id_2"], pt_info.get("impact_chain_id_2")
+        ),
+        "impact_chain_name_2": pick_name(
+            mrow["impact_chain_name_2"], pt_info.get("impact_chain_name_2")
+        ),
+        "impact_chain_id_3": pick_int(
+            mrow["impact_chain_id_3"], pt_info.get("impact_chain_id_3")
+        ),
+        "impact_chain_name_3": pick_name(
+            mrow["impact_chain_name_3"], pt_info.get("impact_chain_name_3")
+        ),
+        "base_indicator_id": bid,
+        "base_indicator_name": bname,
+        "base_indicator_level": bless,
     }
 
 
@@ -412,6 +535,145 @@ def _strip_ibge(s: str) -> str:
     return s.zfill(7) if s.isdigit() else s
 
 
+# (hierarchy id column on the fact row, numeric value column, string value column)
+# Sector and risk both roll into risk_value_* in this schema (same as aggregate mapping).
+PATH_VALUE_LOOKUP: list[tuple[str, str, str]] = [
+    ("sector_id", "risk_value_numeric", "risk_value_string"),
+    ("risk_id", "risk_value_numeric", "risk_value_string"),
+    ("risk_component_id", "risk_component_value_numeric", "risk_component_value_string"),
+    ("impact_chain_id_1", "impact_chain_1_value_numeric", "impact_chain_1_value_string"),
+    ("impact_chain_id_2", "impact_chain_2_value_numeric", "impact_chain_2_value_string"),
+    ("impact_chain_id_3", "impact_chain_3_value_numeric", "impact_chain_3_value_string"),
+    ("base_indicator_id", "base_indicator_value_numeric", "base_indicator_value_string"),
+]
+
+
+def _value_index_coord_keys(row: pd.Series) -> tuple[str, str, str] | None:
+    """
+    (geocod_ibge_norm, year_str, requested_scenario_id_norm) for joining API rows.
+
+    Rows without a usable IBGE code are skipped so unrelated cities never share keys.
+    """
+    geo = _strip_ibge(str(row.get("geocod_ibge", "")))
+    if not geo:
+        return None
+    yv = row.get("year")
+    if pd.isna(yv) or str(yv).strip() == "":
+        y = ""
+    else:
+        ti = _to_int(yv)
+        y = str(int(ti)) if pd.notna(ti) else str(yv).strip()
+    req = row.get("requested_scenario_id")
+    if pd.isna(req) or str(req).strip().lower() in {"", "nan", "null"}:
+        rk = ""
+    else:
+        rk = str(req).strip().lower()
+    return geo, y, rk
+
+
+def _value_index_full_key(row: pd.Series) -> tuple[str, str, str, int] | None:
+    ind = _to_int(row.get("indicator_id"))
+    if pd.isna(ind):
+        return None
+    ck = _value_index_coord_keys(row)
+    if ck is None:
+        return None
+    return (*ck, int(ind))
+
+
+def build_value_index(
+    input_path: Path,
+    chunksize: int,
+    *,
+    progress_every: int,
+) -> dict[tuple[str, str, str, int], tuple]:
+    """
+    Map (geocod_ibge, year, requested_scenario_id, indicator_id) -> (numeric, string).
+
+    Last duplicate key wins (identical replays from the download are harmless).
+    """
+    out: dict[tuple[str, str, str, int], tuple] = {}
+    t0 = time.perf_counter()
+    rows_seen = 0
+    skipped_no_key = 0
+    chunk_idx = 0
+    for chunk in pd.read_csv(input_path, chunksize=chunksize, dtype="string"):
+        chunk_idx += 1
+        chunk_t0 = time.perf_counter()
+        inner = 0
+        for row_idx, (_, row) in enumerate(chunk.iterrows(), start=1):
+            inner += 1
+            key = _value_index_full_key(row)
+            if key is None:
+                skipped_no_key += 1
+                continue
+            vnum = _to_float_maybe(row.get("value"))
+            vstr = translate_rangelabel(row.get("rangelabel"))
+            out[key] = (vnum, vstr)
+            if progress_every > 0 and row_idx % progress_every == 0:
+                _log(
+                    f"Pass 1 chunk {chunk_idx}: inner {row_idx:,}/{len(chunk):,} rows "
+                    f"(index_keys={len(out):,})"
+                )
+        rows_seen += len(chunk)
+        chunk_elapsed = time.perf_counter() - chunk_t0
+        _log(
+            f"Pass 1 chunk {chunk_idx} done: +{len(chunk):,} rows in {chunk_elapsed:.1f}s "
+            f"(cumulative_input_rows={rows_seen:,}, index_keys={len(out):,}, "
+            f"skipped_no_ibge_or_indicator={skipped_no_key:,})"
+        )
+    elapsed = time.perf_counter() - t0
+    _log(
+        f"Pass 1 finished: scanned {rows_seen:,} input rows, {len(out):,} index keys, "
+        f"{elapsed:.1f}s total"
+    )
+    return out
+
+
+def has_descendant_value_for_same_place_time(
+    row: pd.Series,
+    indicator_id: int,
+    descendants: dict[int, set[int]],
+    value_index: dict[tuple[str, str, str, int], tuple] | None,
+) -> bool:
+    """
+    True when this aggregate/intermediate row has a deeper descendant value.
+
+    In that case the row is only needed to populate ancestor ``*_value_*``
+    columns on deeper rows, so Pass 2 should not emit it as its own fact row.
+    """
+    if value_index is None:
+        return False
+    child_ids = descendants.get(int(indicator_id), set())
+    if not child_ids:
+        return False
+    ck = _value_index_coord_keys(row)
+    if ck is None:
+        return False
+    geo, year_key, scenario_req_key = ck
+    return any((geo, year_key, scenario_req_key, int(child_id)) in value_index for child_id in child_ids)
+
+
+def fill_ancestor_path_values(
+    rec: dict,
+    value_index: dict[tuple[str, str, str, int], tuple],
+    geo: str,
+    year_key: str,
+    scenario_req_key: str,
+) -> None:
+    """Copy values from ``value_index`` into every populated hierarchy id on ``rec``."""
+    for id_col, num_col, str_col in PATH_VALUE_LOOKUP:
+        iid = _to_int(rec.get(id_col))
+        if pd.isna(iid):
+            continue
+        key = (geo, year_key, scenario_req_key, int(iid))
+        if key not in value_index:
+            continue
+        vn, vs = value_index[key]
+        rec[num_col] = vn
+        rec[str_col] = vs
+
+
 def assign_null_type(row: dict) -> str:
     base_num = row.get("base_indicator_value_numeric")
     base_str = str(row.get("base_indicator_value_string") or "").strip().lower()
@@ -445,6 +707,7 @@ def build_fact_record(
     source_vintage: str,
     spatial_support_level: str,
     audit_columns: bool,
+    value_index: dict[tuple[str, str, str, int], tuple] | None = None,
 ) -> dict | None:
     indicator_id = _to_int(r.get("indicator_id"))
     if pd.isna(indicator_id):
@@ -468,7 +731,9 @@ def build_fact_record(
     mrow = modeled_row_for_node(
         modeled, int(indicator_id), level, pt, is_aggregate=is_aggregate
     )
-    hi = english_hierarchy_fields(mrow, str(pt["node_name"]))
+    if is_aggregate and mrow is not None:
+        mrow = _mask_modeled_row_for_aggregate(mrow, level)
+    hi = english_hierarchy_fields(mrow, pt, str(pt["node_name"]))
 
     timeframe = _to_int(r.get("year"))
     req_sid = r.get("requested_scenario_id")
@@ -476,10 +741,7 @@ def build_fact_record(
     scen_fam = scenario_family(req_sid, smap)
 
     value_numeric = r.get("value")
-    try:
-        vnum = float(value_numeric) if pd.notna(value_numeric) and str(value_numeric).strip() != "" else pd.NA
-    except (TypeError, ValueError):
-        vnum = pd.NA
+    vnum = _to_float_maybe(value_numeric)
 
     value_str_en = translate_rangelabel(r.get("rangelabel"))
 
@@ -560,6 +822,12 @@ def build_fact_record(
             hi["base_indicator_level"] if pd.notna(hi["base_indicator_level"]) else level
         )
 
+    if value_index is not None and geo:
+        ck = _value_index_coord_keys(r)
+        if ck is not None:
+            geo_k, y_k, rk_k = ck
+            fill_ancestor_path_values(rec, value_index, geo_k, y_k, rk_k)
+
     rec["null_type"] = assign_null_type(rec)
     return rec
 
@@ -567,6 +835,66 @@ def build_fact_record(
 def _log(message: str) -> None:
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     print(f"[{now}] {message}", flush=True)
+
+
+def _stage(title: str, detail: str = "") -> None:
+    """High-visibility section header for terminal monitoring."""
+    bar = "=" * 72
+    print(f"\n{bar}\n  {title}\n{bar}", flush=True)
+    if detail.strip():
+        for line in detail.strip().split("\n"):
+            print(f"  {line}", flush=True)
+    print(flush=True)
+
+
+def validate_required_fields(df: pd.DataFrame, required_fields: list[str]) -> None:
+    """
+    Fail fast if required fields contain null/blank values in the transform output.
+    """
+    errors: list[str] = []
+    sample_frames: list[pd.DataFrame] = []
+    sample_cols = [
+        "actor_id",
+        "city_name",
+        "timeframe",
+        "scenario",
+        "sector_id",
+        "risk_id",
+        "base_indicator_id",
+    ]
+    for field in required_fields:
+        if field not in df.columns:
+            errors.append(f"{field}: missing column")
+            continue
+        series = df[field]
+        null_count = int(series.isna().sum())
+        blank_count = int((series.astype("string").str.strip() == "").fillna(False).sum())
+        bad_count = null_count + blank_count
+        if bad_count > 0:
+            errors.append(
+                f"{field}: {bad_count} invalid rows "
+                f"(null={null_count}, blank={blank_count})"
+            )
+            bad_mask = series.isna() | (series.astype("string").str.strip() == "")
+            cols = [c for c in sample_cols if c in df.columns]
+            sample = df.loc[bad_mask, cols].head(10).copy()
+            sample.insert(0, "invalid_field", field)
+            sample_frames.append(sample)
+    if errors:
+        sample_text = ""
+        if sample_frames:
+            sample_rows = (
+                pd.concat(sample_frames, ignore_index=True)
+                .drop_duplicates()
+                .head(10)
+                .to_dict("records")
+            )
+            sample_text = f" Sample rows: {sample_rows}"
+        raise ValueError(
+            "Required-field validation failed before writing output CSV: "
+            + "; ".join(errors)
+            + sample_text
+        )
 
 
 def main() -> None:
@@ -602,8 +930,9 @@ def main() -> None:
         type=int,
         default=10_000,
         help=(
-            "Emit row-level progress every N input rows within each chunk. "
-            "Set 0 to disable."
+            "Within each chunk, log every N input rows during Pass 1 (index) and Pass 2 "
+            "(transform). Set 0 to disable intra-chunk row logs (chunk boundary logs "
+            "still print)."
         ),
     )
     ap.add_argument(
@@ -611,15 +940,31 @@ def main() -> None:
         action="store_true",
         help="Append source_requested_scenario_id and source_geocod_ibge for QA joins",
     )
+    ap.add_argument(
+        "--skip-ancestor-value-fill",
+        action="store_true",
+        help=(
+            "Do not run the extra input pass that fills risk/component/chain/base "
+            "value columns from sibling indicator rows (legacy single-slot output)."
+        ),
+    )
     args = ap.parse_args()
 
     run_start = time.perf_counter()
-    _log("Starting transform")
+    _stage(
+        "AdaptaBrasil: city data → risk_fact CSV",
+        f"input:  {args.input}\n"
+        f"output: {args.output}\n"
+        f"chunksize={args.chunksize:,}  progress_every={args.progress_every}\n"
+        f"ancestor_value_fill={'disabled' if args.skip_ancestor_value_fill else 'enabled (Pass 1 index + Pass 2 transform)'}",
+    )
+    _log("Stage A: load hierarchy, scenarios, crosswalks")
     _log(f"Loading hierarchy PT: {args.hierarchy_pt}")
-    node_info, has_children = build_node_maps(args.hierarchy_pt)
+    node_info, has_children, descendants = build_node_maps(args.hierarchy_pt)
     _log(
         "Loaded hierarchy PT "
-        f"(nodes={len(node_info)}, aggregate_nodes={len(has_children)})"
+        f"(nodes={len(node_info)}, aggregate_nodes={len(has_children)}, "
+        f"nodes_with_descendants={len(descendants)})"
     )
     _log(f"Loading hierarchy EN: {args.hierarchy_en}")
     modeled = pd.read_csv(args.hierarchy_en, dtype="string").fillna("")
@@ -639,6 +984,7 @@ def main() -> None:
         _log(f"Loading IBGE crosswalk: {args.ibge_crosswalk}")
         cw_ibge = build_ibge_crosswalk(args.ibge_crosswalk)
         _log(f"Loaded IBGE crosswalk entries={len(cw_ibge)}")
+    _log("Stage A complete.")
 
     out_cols = [
         "actor_id",
@@ -691,18 +1037,51 @@ def main() -> None:
     total = 0
     skipped_indicator = 0
     unmatched_actor = 0
+    skipped_parent_rows = 0
 
-    _log(
-        f"Opening input CSV in chunks (input={args.input}, chunksize={args.chunksize})"
+    value_index: dict[tuple[str, str, str, int], tuple] | None = None
+    if not args.skip_ancestor_value_fill:
+        _stage(
+            "Pass 1 / 2 — Build value lookup index",
+            "Reading the full input once to map (IBGE, year, scenario, indicator_id) → value.\n"
+            "Pass 2 will join these onto each output row for ancestor columns.",
+        )
+        value_index = build_value_index(
+            args.input,
+            args.chunksize,
+            progress_every=args.progress_every,
+        )
+        _log(f"Value index ready: {len(value_index):,} keys")
+    else:
+        _stage(
+            "Single pass mode",
+            "--skip-ancestor-value-fill: only Pass 2 runs (no value index).",
+        )
+
+    _stage(
+        "Pass 2 / 2 — Transform, validate, append to output"
+        if not args.skip_ancestor_value_fill
+        else "Pass 1 / 1 — Transform, validate, append to output",
+        f"Streaming {args.input} (chunksize={args.chunksize:,})",
     )
     reader = pd.read_csv(args.input, chunksize=args.chunksize, dtype="string")
 
     for chunk_idx, chunk in enumerate(reader, start=1):
         chunk_start = time.perf_counter()
-        _log(f"Chunk {chunk_idx}: read {len(chunk)} input rows")
+        chunk_skipped_parent_start = skipped_parent_rows
+        _log(f"Pass 2 chunk {chunk_idx}: read {len(chunk):,} input rows — building fact rows…")
         rows_out = []
         for row_idx, (_, row) in enumerate(chunk.iterrows(), start=1):
             d = row
+            current_indicator = _to_int(d.get("indicator_id"))
+            if not pd.isna(current_indicator) and has_descendant_value_for_same_place_time(
+                d,
+                int(current_indicator),
+                descendants,
+                value_index,
+            ):
+                skipped_parent_rows += 1
+                continue
             fact = build_fact_record(
                 d,
                 node_info,
@@ -715,6 +1094,7 @@ def main() -> None:
                 source_vintage=args.source_vintage,
                 spatial_support_level=args.spatial_support_level,
                 audit_columns=args.audit_columns,
+                value_index=value_index,
             )
             if fact is None:
                 skipped_indicator += 1
@@ -725,19 +1105,25 @@ def main() -> None:
 
             if args.progress_every > 0 and row_idx % args.progress_every == 0:
                 _log(
-                    f"Chunk {chunk_idx}: processed {row_idx}/{len(chunk)} rows "
-                    f"(output_rows_buffered={len(rows_out)})"
+                    f"Pass 2 chunk {chunk_idx}: rows {row_idx:,}/{len(chunk):,} "
+                    f"(buffered_output={len(rows_out):,})"
                 )
 
         if not rows_out:
             chunk_elapsed = time.perf_counter() - chunk_start
             _log(
-                f"Chunk {chunk_idx}: no output rows produced "
-                f"(elapsed={chunk_elapsed:.1f}s)"
+                f"Pass 2 chunk {chunk_idx}: no output rows produced "
+                f"(skipped_parent_rows={skipped_parent_rows - chunk_skipped_parent_start:,}, "
+                f"elapsed={chunk_elapsed:.1f}s)"
             )
             continue
+        _log(
+            f"Pass 2 chunk {chunk_idx}: DataFrame ({len(rows_out):,} rows) → "
+            "drop_duplicates → validate_required_fields → to_csv…"
+        )
         out_df = pd.DataFrame(rows_out, columns=out_cols)
         out_df = out_df.drop_duplicates()
+        validate_required_fields(out_df, ["risk_id", "sector_id"])
         mode = "w" if first_chunk else "a"
         header = first_chunk
         out_df.to_csv(args.output, index=False, mode=mode, header=header)
@@ -745,16 +1131,21 @@ def main() -> None:
         total += len(out_df)
         chunk_elapsed = time.perf_counter() - chunk_start
         _log(
-            f"Chunk {chunk_idx}: wrote {len(out_df)} rows "
-            f"(running_total={total}, elapsed={chunk_elapsed:.1f}s)"
+            f"Pass 2 chunk {chunk_idx}: wrote {len(out_df):,} rows "
+            f"(running_total={total:,}, "
+            f"skipped_parent_rows={skipped_parent_rows - chunk_skipped_parent_start:,}, "
+            f"chunk_elapsed={chunk_elapsed:.1f}s)"
         )
 
     total_elapsed = time.perf_counter() - run_start
-    print(
-        f"Wrote {total} deduplicated rows to {args.output} "
-        f"(skipped_unknown_indicator_rows={skipped_indicator}, "
-        f"rows_missing_actor_id={unmatched_actor}, "
-        f"elapsed_seconds={total_elapsed:.1f})"
+    _stage(
+        "Done",
+        f"Output: {args.output}\n"
+        f"Rows written (after dedupe): {total:,}\n"
+        f"skipped_unknown_indicator_rows={skipped_indicator:,}\n"
+        f"skipped_parent_rows_with_descendants={skipped_parent_rows:,}\n"
+        f"rows_missing_actor_id={unmatched_actor:,}\n"
+        f"elapsed_seconds={total_elapsed:.1f}",
     )
 
 
