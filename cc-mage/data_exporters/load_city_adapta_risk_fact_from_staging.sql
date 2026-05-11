@@ -1,6 +1,6 @@
 -- Refresh Adapta Brasil CCRA facts from staging into modelled table.
-DELETE FROM modelled.city_adapta_risk_fact
-WHERE source_dataset = 'br-mcti/adaptabrasil';
+--DELETE FROM modelled.city_adapta_risk_fact
+--WHERE source_dataset = 'br-mcti/adaptabrasil';
 
 INSERT INTO modelled.city_adapta_risk_fact (
     actor_id,
