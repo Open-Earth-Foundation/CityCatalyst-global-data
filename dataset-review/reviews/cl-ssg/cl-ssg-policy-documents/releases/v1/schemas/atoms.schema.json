@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://citycatalyst.example/schemas/v1/atoms.schema.json",
+  "title": "Policy Atom",
+  "description": "A single granular evidence unit extracted from a policy document. Atoms are stored as JSONL — one atom per line — at data/atoms/<source_document_id>.jsonl. This schema validates each atom independently. Atoms are family-agnostic; family-specific shaping happens at the synthesis stage.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "atom_id",
+    "source_document_id",
+    "primitive_type",
+    "evidence_kind",
+    "evidence_text",
+    "page_start",
+    "page_end",
+    "explicitness",
+    "extraction_method"
+  ],
+  "properties": {
+    "atom_id": {
+      "type": "string",
+      "description": "Unique identifier within the document. Convention: <doc_short_id>_a_<NNNN>."
+    },
+    "source_document_id": {
+      "type": "string"
+    },
+    "_doc_type": {
+      "type": "string",
+      "description": "Denormalized from the registry for synthesis-stage prioritization. Typical values: parcc, sector_plan, framework, territorial_plan, environmental_program."
+    },
+    "_section": {
+      "type": "string",
+      "description": "Section heading the page belongs to per section_map.json. Denormalized for traceability and synthesis-stage filtering."
+    },
+    "primitive_type": { "$ref": "#/$defs/primitive_type" },
+    "evidence_kind": { "$ref": "#/$defs/evidence_kind" },
+    "evidence_text": {
+      "type": "string",
+      "description": "Verbatim excerpt from the source document. Copied character-for-character from the page text. No paraphrase, no translation. The validator confirms this string appears in data/markdown/<id>/document.md for the cited pages."
+    },
+    "page_start": { "type": "integer", "minimum": 1 },
+    "page_end":   { "type": "integer", "minimum": 1 },
+    "page_reference": {
+      "type": "string",
+      "description": "Optional human-readable form such as 'p. 12' or 'p. 12-14'."
+    },
+    "explicitness": { "$ref": "#/$defs/explicitness" },
+    "plain_language_summary": {
+      "type": "string",
+      "description": "One-sentence paraphrase in English. Synthesis-friendly. Distinct from evidence_text which stays in source language."
+    },
+    "sector":  { "type": "string", "description": "Normalized sector label. Vocabulary in extraction_rules.md." },
+    "theme":   { "type": "string", "description": "Sub-theme close to source wording. Free text." },
+    "measure_type": { "$ref": "#/$defs/measure_type" },
+    "action_statement": {
+      "type": "string",
+      "description": "For action atoms: a clean restatement of the named intervention, close to source wording."
+    },
+    "target_value_text": {
+      "type": "string",
+      "description": "For target atoms: the target as stated in the source, close to source wording."
+    },
+    "raw_value_numeric": {
+      "type": "number",
+      "description": "Parsed numeric value when the atom carries a quantified target, scale, or amount."
+    },
+    "raw_unit": {
+      "type": "string",
+      "description": "Unit string (e.g. 'MtCO2e', '%', 'USD millions')."
+    },
+    "timeline": {
+      "type": "string",
+      "description": "Deadline, target year, or implementation period. Close to source."
+    },
+    "responsible_actor": { "type": "string" },
+    "supporting_actors": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "funding_status": { "$ref": "#/$defs/funding_status" },
+    "funding_source": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "funding_amount":      { "type": "string" },
+    "monitoring_indicator":{ "type": "string" },
+    "verification_method": { "type": "string" },
+    "review_cycle":        { "type": "string" },
+    "region_code":         { "type": "string" },
+    "communal_code":       { "type": "string" },
+    "applicability_scope": { "type": "string", "description": "Plain-language description of where the atom applies." },
+    "territorial_condition": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "readiness_status":    { "$ref": "#/$defs/readiness_status" },
+    "beneficiary_group":   { "type": "string" },
+    "equity_tags":         { "type": "array", "items": { "type": "string" } },
+    "extraction_method":   { "$ref": "#/$defs/extraction_method" },
+    "echoes_atom_id": {
+      "type": "string",
+      "description": "When this atom restates a fact present in another document (e.g. a PARCC restating an NDC target), the atom_id of the upstream atom. Populated by synthesis-stage cross-document linking; optional at extraction time."
+    },
+    "notes": {
+      "type": "string",
+      "description": "Free-text reviewer commentary. Not part of the data contract."
+    }
+  },
+  "$defs": {
+    "primitive_type": {
+      "type": "string",
+      "enum": [
+        "context",
+        "risk",
+        "sector_priority",
+        "target",
+        "action",
+        "actor",
+        "timeline",
+        "funding",
+        "monitoring",
+        "governance"
+      ]
+    },
+    "evidence_kind": {
+      "type": "string",
+      "enum": ["quantitative", "qualitative", "categorical"]
+    },
+    "measure_type": {
+      "type": "string",
+      "enum": ["mitigation", "adaptation", "transversal", "mixed", "unknown"]
+    },
+    "explicitness": {
+      "type": "string",
+      "enum": ["explicit", "inferred"]
+    },
+    "extraction_method": {
+      "type": "string",
+      "enum": ["manual", "assisted", "atom_extractor", "repaired"]
+    },
+    "readiness_status": {
+      "type": "string",
+      "enum": ["active_plan_measure", "proposal", "conceptual", "context_only", "unknown"]
+    },
+    "funding_status": {
+      "type": "string",
+      "enum": ["identified", "not_identified", "proposal_only", "unknown"]
+    }
+  }
+}

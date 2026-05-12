@@ -1,0 +1,42 @@
+{
+  "n_files": 6989,
+  "n_valid": 6989,
+  "n_invalid": 0,
+  "err_pattern_top": [],
+  "parser_versions": {
+    "ficha_idi_parser/1.0.2": 6989
+  },
+  "template_variants": {
+    "PROYECTO": 6132,
+    "PROGRAMA": 830,
+    "STUB": 27
+  },
+  "template_versions": {
+    "10.0319": 6129,
+    "7.0624": 830,
+    "11.0428": 30
+  },
+  "sectors": {
+    "ambiente": 1501,
+    "energia": 577,
+    "hidrico": 1051,
+    "mineria": 20,
+    "multisector": 97,
+    "transporte": 2002,
+    "vivienda": 1741
+  },
+  "warnings": {
+    "multi_etapa_identical_blocks": 124
+  },
+  "n_etapas": 7086,
+  "etapa_populated": {
+    "nombre": 7086,
+    "sector": 7053,
+    "ubicacion_tipo": 7076,
+    "funcionario": 6535,
+    "any_financing_row": 7086,
+    "any_aporte_directo": 7086,
+    "componentes": 639,
+    "indicadores_proposito": 639
+  }
+}

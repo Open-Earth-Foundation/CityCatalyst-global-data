@@ -1,0 +1,90 @@
+dataset_id: cl-casen
+release: "2022"
+reviewed_on: 2026-05-12
+reviewed_by: amanda
+
+publisher:
+  name: Ministerio de Desarrollo Social y Familia (Chile)
+  id: cl-mdsfam
+  country: CL
+
+source:
+  main_url: https://observatorio.ministeriodesarrollosocial.gob.cl/encuesta-casen-2022
+  access_type: public_download
+  format: published tables (PDF/Excel); microdata (Stata, R, SPSS); comuna/province aggregate bases
+  documentation_available: true
+  retrieval_note: >
+    Encuesta CASEN 2022 portal lists resultados temáticos, metodología, fichas técnicas,
+    and "Bases de datos" including person/household microdata and comuna/provincia aggregate
+    bases. Follow "Nota uso bases de datos" for weights and disclosure rules.
+
+coverage:
+  geography: Chile
+  spatial_resolution:
+    - country
+    - region
+    - province
+    - comuna
+  temporal_reference: survey year 2022 (fieldwork and reference periods per ficha técnica)
+
+themes:
+  - socioeconomics
+  - poverty
+  - income
+  - employment
+  - housing
+  - health
+  - education
+
+key_indicators_used:
+  - poverty_rate_by_income
+  - multidimensional_poverty
+  - household_income_distribution
+  - unemployment_and_labour_market
+
+indicator_mapping:
+  poverty_rate_by_income:
+    note: >
+      Official income poverty incidence from CASEN tables and/or derived from microdata
+      using MDSF/CEPAL methodology documents for the round; align with published
+      "Pobreza por ingresos" results for comparability.
+  median_household_income:
+    note: >
+      Use "Ingresos" results or microdata with expansion factors; median may be computed
+      from income variable where license and sample allow; comuna estimates may be unstable
+      for small populations.
+  unemployment_rate:
+    note: >
+      "Trabajo" / labour module; definitions in CASEN 2022 questionnaire and technical notes;
+      harmonise with global-api attribute naming if exposing alongside census-derived rates.
+
+sample_files: []
+
+integration_notes:
+  join_keys:
+    - comuna_code (INE codes; verify against CASEN comuna codebook)
+    - region_code
+  requires_cleaning: true
+  requires_harmonisation: true
+  recommended_storage: weighted aggregates at comuna or higher; microdata in restricted pipeline if used
+  complements:
+    - cl-ine-censo
+
+data_quality:
+  authority: official_national_survey
+  completeness: high at national and regional levels; comuna-level subject to sample constraints
+  spatial_coverage: national_sample
+  update_frequency: irregular_survey_rounds
+  known_issues:
+    - comuna estimates require checking sample size and suppression rules
+    - income and poverty concepts updated over time; read notas técnicas when comparing rounds
+    - census year 2024 will not align temporally with CASEN 2022 for cross-sectional pairing
+
+suitability_use_cases:
+  city_context_income_poverty: high
+  city_context_with_census_join: high
+  sub_comuna_spatial: low
+
+status:
+  production_ready: false
+  priority: high
