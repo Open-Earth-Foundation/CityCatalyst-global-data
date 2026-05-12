@@ -53,6 +53,63 @@ datasets:
         freshness: null
         accessibility: null
 
+- id: cl-casen
+  name: CASEN (Chile Socioeconomic Characterization Survey)
+  dataset_url: https://observatorio.ministeriodesarrollosocial.gob.cl/encuesta-casen-2022
+  publisher:
+    id: cl-mdsfam
+    name: Ministerio de Desarrollo Social y Familia (Chile)
+    url: https://www.desarrollosocialyfamilia.gob.cl/
+  description: >
+    National household survey (CASEN) providing official poverty-by-income and
+    multidimensional poverty statistics, income distributions, labour market
+    indicators, and thematic modules. Published tables and microdata support
+    regional and comuna-level analysis where the sample allows; primary source
+    for indicators such as poverty rate and median income that complement INE census data.
+  coverage:
+    geography: country
+    countries: [CL]
+    spatial_levels: [country, region, province, comuna]
+  themes:
+    - socioeconomics
+    - poverty
+    - income
+    - employment
+    - housing
+  update_frequency: irregular_survey
+  typical_frequency_years: 2
+  priority: high
+  releases:
+    - version: "2022"
+      version_number: 1
+      source_url: https://observatorio.ministeriodesarrollosocial.gob.cl/encuesta-casen-2022
+      released_at: null
+      retrieved_at: null
+      retrieval_method: manual_download
+      api_endpoint: null
+      path: "reviews/cl-mdsfam/cl-casen/releases/2022"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: https://observatorio.ministeriodesarrollosocial.gob.cl/encuesta-casen-2022
+      internal_review_url: null
+      license:
+        id: cl-mdsfam-casen-terms
+        name: Ministerio de Desarrollo Social y Familia — CASEN data use terms
+        url: https://observatorio.ministeriodesarrollosocial.gob.cl/encuesta-casen-2022
+        commercial_use: false
+        note: >
+          Use observatory downloads and bundled "Nota uso bases de datos" / license terms
+          for the specific file version; confirm redistribution and commercial use before production.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
 - id: uncece-unlocode
   name: UN/LOCODE (UN Code for Trade and Transport Locations)
   dataset_url: https://unece.org/trade/cefact/UNLOCODE-Download

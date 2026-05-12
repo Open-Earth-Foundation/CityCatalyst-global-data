@@ -7,6 +7,7 @@ collections:
     name: Chile datasets
     datasets:
       - id: cl-ine-censo
+      - id: cl-casen
       - id: cl-ocha-ab
       - id: cl-ssg-policy-documents
 
