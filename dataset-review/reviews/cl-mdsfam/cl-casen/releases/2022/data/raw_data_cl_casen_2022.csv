@@ -1,0 +1,1341 @@
+region,comuna,region_nombre,comuna_nombre,attribute_type,attribute_value,attribute_units,attribute_category
+1,1101,Tarapacá,Iquique,median_household_income,1174475.0,CLP,very high
+1,1107,Tarapacá,Alto Hospicio,median_household_income,984239.0,CLP,high
+1,1401,Tarapacá,Pozo Almonte,median_household_income,850000.0,CLP,medium
+1,1402,Tarapacá,Camiña,median_household_income,882500.0,CLP,medium
+1,1403,Tarapacá,Colchane,median_household_income,537834.0,CLP,very low
+1,1404,Tarapacá,Huara,median_household_income,665000.0,CLP,very low
+1,1405,Tarapacá,Pica,median_household_income,1100000.0,CLP,very high
+2,2101,Antofagasta,Antofagasta,median_household_income,1214500.0,CLP,very high
+2,2102,Antofagasta,Mejillones,median_household_income,1018000.0,CLP,high
+2,2103,Antofagasta,Sierra Gorda,median_household_income,1340000.0,CLP,very high
+2,2104,Antofagasta,Taltal,median_household_income,883333.0,CLP,medium
+2,2201,Antofagasta,Calama,median_household_income,1151250.0,CLP,very high
+2,2203,Antofagasta,San Pedro de Atacama,median_household_income,1106500.0,CLP,very high
+2,2301,Antofagasta,Tocopilla,median_household_income,765404.0,CLP,low
+2,2302,Antofagasta,María Elena,median_household_income,1360000.0,CLP,very high
+3,3101,Atacama,Copiapó,median_household_income,1080000.0,CLP,high
+3,3102,Atacama,Caldera,median_household_income,996864.0,CLP,high
+3,3103,Atacama,Tierra Amarilla,median_household_income,982378.0,CLP,high
+3,3201,Atacama,Chañaral,median_household_income,999000.0,CLP,high
+3,3202,Atacama,Diego de Almagro,median_household_income,1099415.0,CLP,very high
+3,3301,Atacama,Vallenar,median_household_income,838845.0,CLP,medium
+3,3302,Atacama,Alto del Carmen,median_household_income,624750.0,CLP,very low
+3,3303,Atacama,Freirina,median_household_income,626973.0,CLP,very low
+3,3304,Atacama,Huasco,median_household_income,799778.0,CLP,low
+4,4101,Coquimbo,La Serena,median_household_income,1078921.0,CLP,high
+4,4102,Coquimbo,Coquimbo,median_household_income,948000.0,CLP,high
+4,4103,Coquimbo,Andacollo,median_household_income,894628.0,CLP,medium
+4,4104,Coquimbo,La Higuera,median_household_income,1020005.0,CLP,high
+4,4105,Coquimbo,Paiguano,median_household_income,905472.0,CLP,medium
+4,4106,Coquimbo,Vicuña,median_household_income,750000.0,CLP,low
+4,4201,Coquimbo,Illapel,median_household_income,953910.0,CLP,high
+4,4202,Coquimbo,Canela,median_household_income,731696.0,CLP,low
+4,4203,Coquimbo,Los Vilos,median_household_income,864257.0,CLP,medium
+4,4204,Coquimbo,Salamanca,median_household_income,900000.0,CLP,medium
+4,4301,Coquimbo,Ovalle,median_household_income,908497.0,CLP,medium
+4,4302,Coquimbo,Combarbalá,median_household_income,798655.0,CLP,low
+4,4303,Coquimbo,Monte Patria,median_household_income,663917.0,CLP,very low
+4,4304,Coquimbo,Punitaqui,median_household_income,713917.0,CLP,very low
+4,4305,Coquimbo,Río Hurtado,median_household_income,644976.0,CLP,very low
+5,5101,Valparaíso,Valparaíso,median_household_income,934167.0,CLP,high
+5,5102,Valparaíso,Casablanca,median_household_income,1012319.0,CLP,high
+5,5103,Valparaíso,Concón,median_household_income,1319333.0,CLP,very high
+5,5105,Valparaíso,Puchuncaví,median_household_income,1018977.0,CLP,high
+5,5107,Valparaíso,Quintero,median_household_income,1086295.0,CLP,very high
+5,5109,Valparaíso,Viña del Mar,median_household_income,1035689.0,CLP,high
+5,5301,Valparaíso,Los Andes,median_household_income,1040411.0,CLP,high
+5,5302,Valparaíso,Calle Larga,median_household_income,918089.0,CLP,high
+5,5303,Valparaíso,Rinconada,median_household_income,833333.0,CLP,medium
+5,5304,Valparaíso,San Esteban,median_household_income,889538.0,CLP,medium
+5,5401,Valparaíso,La Ligua,median_household_income,864167.0,CLP,medium
+5,5402,Valparaíso,Cabildo,median_household_income,807852.0,CLP,low
+5,5403,Valparaíso,Papudo,median_household_income,990724.0,CLP,high
+5,5404,Valparaíso,Petorca,median_household_income,722196.0,CLP,very low
+5,5405,Valparaíso,Zapallar,median_household_income,1135000.0,CLP,very high
+5,5501,Valparaíso,Quillota,median_household_income,874897.0,CLP,medium
+5,5502,Valparaíso,Calera,median_household_income,894606.0,CLP,medium
+5,5503,Valparaíso,Hijuelas,median_household_income,982887.0,CLP,high
+5,5504,Valparaíso,La Cruz,median_household_income,982702.0,CLP,high
+5,5506,Valparaíso,Nogales,median_household_income,877736.0,CLP,medium
+5,5601,Valparaíso,San Antonio,median_household_income,950000.0,CLP,high
+5,5602,Valparaíso,Algarrobo,median_household_income,1005750.0,CLP,high
+5,5603,Valparaíso,Cartagena,median_household_income,963935.0,CLP,high
+5,5604,Valparaíso,El Quisco,median_household_income,917133.0,CLP,medium
+5,5605,Valparaíso,El Tabo,median_household_income,898511.0,CLP,medium
+5,5606,Valparaíso,Santo Domingo,median_household_income,1198968.0,CLP,very high
+5,5701,Valparaíso,San Felipe,median_household_income,940000.0,CLP,high
+5,5702,Valparaíso,Catemu,median_household_income,800654.0,CLP,low
+5,5703,Valparaíso,Llaillay,median_household_income,747103.0,CLP,low
+5,5704,Valparaíso,Panquehue,median_household_income,814214.0,CLP,medium
+5,5705,Valparaíso,Putaendo,median_household_income,850000.0,CLP,medium
+5,5706,Valparaíso,Santa María,median_household_income,784319.0,CLP,low
+5,5801,Valparaíso,Quilpué,median_household_income,1085984.0,CLP,very high
+5,5802,Valparaíso,Limache,median_household_income,1014190.0,CLP,high
+5,5803,Valparaíso,Olmué,median_household_income,887572.0,CLP,medium
+5,5804,Valparaíso,Villa Alemana,median_household_income,1132000.0,CLP,very high
+6,6101,Libertador Gral. Bernardo O'Higgins,Rancagua,median_household_income,1056238.0,CLP,high
+6,6102,Libertador Gral. Bernardo O'Higgins,Codegua,median_household_income,1002836.0,CLP,high
+6,6103,Libertador Gral. Bernardo O'Higgins,Coinco,median_household_income,915662.0,CLP,medium
+6,6104,Libertador Gral. Bernardo O'Higgins,Coltauco,median_household_income,800000.0,CLP,low
+6,6105,Libertador Gral. Bernardo O'Higgins,Doñihue,median_household_income,900000.0,CLP,medium
+6,6106,Libertador Gral. Bernardo O'Higgins,Graneros,median_household_income,1147500.0,CLP,very high
+6,6107,Libertador Gral. Bernardo O'Higgins,Las Cabras,median_household_income,900000.0,CLP,medium
+6,6108,Libertador Gral. Bernardo O'Higgins,Machalí,median_household_income,1353750.0,CLP,very high
+6,6109,Libertador Gral. Bernardo O'Higgins,Malloa,median_household_income,876670.0,CLP,medium
+6,6110,Libertador Gral. Bernardo O'Higgins,Mostazal,median_household_income,1010576.0,CLP,high
+6,6111,Libertador Gral. Bernardo O'Higgins,Olivar,median_household_income,990736.0,CLP,high
+6,6112,Libertador Gral. Bernardo O'Higgins,Peumo,median_household_income,905856.0,CLP,medium
+6,6113,Libertador Gral. Bernardo O'Higgins,Pichidegua,median_household_income,800000.0,CLP,low
+6,6114,Libertador Gral. Bernardo O'Higgins,Quinta de Tilcoco,median_household_income,766348.0,CLP,low
+6,6115,Libertador Gral. Bernardo O'Higgins,Rengo,median_household_income,1075457.0,CLP,high
+6,6116,Libertador Gral. Bernardo O'Higgins,Requínoa,median_household_income,1030000.0,CLP,high
+6,6117,Libertador Gral. Bernardo O'Higgins,San Vicente,median_household_income,750000.0,CLP,low
+6,6201,Libertador Gral. Bernardo O'Higgins,Pichilemu,median_household_income,803713.0,CLP,low
+6,6202,Libertador Gral. Bernardo O'Higgins,La Estrella,median_household_income,913402.0,CLP,medium
+6,6203,Libertador Gral. Bernardo O'Higgins,Litueche,median_household_income,700000.0,CLP,very low
+6,6204,Libertador Gral. Bernardo O'Higgins,Marchihue,median_household_income,1094722.0,CLP,very high
+6,6205,Libertador Gral. Bernardo O'Higgins,Navidad,median_household_income,810000.0,CLP,low
+6,6206,Libertador Gral. Bernardo O'Higgins,Paredones,median_household_income,676167.0,CLP,very low
+6,6301,Libertador Gral. Bernardo O'Higgins,San Fernando,median_household_income,957158.0,CLP,high
+6,6302,Libertador Gral. Bernardo O'Higgins,Chépica,median_household_income,848917.0,CLP,medium
+6,6303,Libertador Gral. Bernardo O'Higgins,Chimbarongo,median_household_income,887588.0,CLP,medium
+6,6304,Libertador Gral. Bernardo O'Higgins,Lolol,median_household_income,799171.0,CLP,low
+6,6305,Libertador Gral. Bernardo O'Higgins,Nancagua,median_household_income,850904.0,CLP,medium
+6,6306,Libertador Gral. Bernardo O'Higgins,Palmilla,median_household_income,879026.0,CLP,medium
+6,6307,Libertador Gral. Bernardo O'Higgins,Peralillo,median_household_income,731484.0,CLP,very low
+6,6308,Libertador Gral. Bernardo O'Higgins,Placilla,median_household_income,705168.0,CLP,very low
+6,6309,Libertador Gral. Bernardo O'Higgins,Pumanque,median_household_income,763000.0,CLP,low
+6,6310,Libertador Gral. Bernardo O'Higgins,Santa Cruz,median_household_income,891459.0,CLP,medium
+7,7101,Maule,Talca,median_household_income,905639.0,CLP,medium
+7,7102,Maule,Constitución,median_household_income,850000.0,CLP,medium
+7,7103,Maule,Curepto,median_household_income,599778.0,CLP,very low
+7,7104,Maule,Empedrado,median_household_income,750666.0,CLP,low
+7,7105,Maule,Maule,median_household_income,830231.0,CLP,medium
+7,7106,Maule,Pelarco,median_household_income,874600.0,CLP,medium
+7,7107,Maule,Pencahue,median_household_income,648419.0,CLP,very low
+7,7108,Maule,Río Claro,median_household_income,890103.0,CLP,medium
+7,7109,Maule,San Clemente,median_household_income,700000.0,CLP,very low
+7,7110,Maule,San Rafael,median_household_income,682816.0,CLP,very low
+7,7201,Maule,Cauquenes,median_household_income,701442.0,CLP,very low
+7,7202,Maule,Chanco,median_household_income,637263.0,CLP,very low
+7,7203,Maule,Pelluhue,median_household_income,578639.0,CLP,very low
+7,7301,Maule,Curicó,median_household_income,923300.0,CLP,high
+7,7302,Maule,Hualañé,median_household_income,810139.0,CLP,low
+7,7303,Maule,Licantén,median_household_income,897796.0,CLP,medium
+7,7304,Maule,Molina,median_household_income,884612.0,CLP,medium
+7,7305,Maule,Rauco,median_household_income,788918.0,CLP,low
+7,7306,Maule,Romeral,median_household_income,977500.0,CLP,high
+7,7307,Maule,Sagrada Familia,median_household_income,866554.0,CLP,medium
+7,7308,Maule,Teno,median_household_income,787497.0,CLP,low
+7,7309,Maule,Vichuquén,median_household_income,746668.0,CLP,low
+7,7401,Maule,Linares,median_household_income,812210.0,CLP,low
+7,7402,Maule,Colbún,median_household_income,668079.0,CLP,very low
+7,7403,Maule,Longaví,median_household_income,703328.0,CLP,very low
+7,7404,Maule,Parral,median_household_income,729118.0,CLP,very low
+7,7405,Maule,Retiro,median_household_income,612294.0,CLP,very low
+7,7406,Maule,San Javier,median_household_income,843250.0,CLP,medium
+7,7407,Maule,Villa Alegre,median_household_income,794472.0,CLP,low
+7,7408,Maule,Yerbas Buenas,median_household_income,750000.0,CLP,low
+8,8101,Biobío,Concepción,median_household_income,1072355.0,CLP,high
+8,8102,Biobío,Coronel,median_household_income,946421.0,CLP,high
+8,8103,Biobío,Chiguayante,median_household_income,1043695.0,CLP,high
+8,8104,Biobío,Florida,median_household_income,773949.0,CLP,low
+8,8105,Biobío,Hualqui,median_household_income,786699.0,CLP,low
+8,8106,Biobío,Lota,median_household_income,810000.0,CLP,low
+8,8107,Biobío,Penco,median_household_income,916173.0,CLP,medium
+8,8108,Biobío,San Pedro de la Paz,median_household_income,1100500.0,CLP,very high
+8,8109,Biobío,Santa Juana,median_household_income,840341.0,CLP,medium
+8,8110,Biobío,Talcahuano,median_household_income,1057551.0,CLP,high
+8,8111,Biobío,Tomé,median_household_income,932386.0,CLP,high
+8,8112,Biobío,Hualpén,median_household_income,1072467.0,CLP,high
+8,8201,Biobío,Lebu,median_household_income,819235.0,CLP,medium
+8,8202,Biobío,Arauco,median_household_income,837778.0,CLP,medium
+8,8203,Biobío,Cañete,median_household_income,781457.0,CLP,low
+8,8204,Biobío,Contulmo,median_household_income,612889.0,CLP,very low
+8,8205,Biobío,Curanilahue,median_household_income,786521.0,CLP,low
+8,8206,Biobío,Los Álamos,median_household_income,796667.0,CLP,low
+8,8207,Biobío,Tirúa,median_household_income,623909.0,CLP,very low
+8,8301,Biobío,Los Ángeles,median_household_income,856510.0,CLP,medium
+8,8302,Biobío,Antuco,median_household_income,675300.0,CLP,very low
+8,8303,Biobío,Cabrero,median_household_income,837748.0,CLP,medium
+8,8304,Biobío,Laja,median_household_income,713742.0,CLP,very low
+8,8305,Biobío,Mulchén,median_household_income,713320.0,CLP,very low
+8,8306,Biobío,Nacimiento,median_household_income,747764.0,CLP,low
+8,8307,Biobío,Negrete,median_household_income,677146.0,CLP,very low
+8,8308,Biobío,Quilaco,median_household_income,775865.0,CLP,low
+8,8309,Biobío,Quilleco,median_household_income,739364.0,CLP,low
+8,8310,Biobío,San Rosendo,median_household_income,650601.0,CLP,very low
+8,8311,Biobío,Santa Bárbara,median_household_income,743500.0,CLP,low
+8,8312,Biobío,Tucapel,median_household_income,686667.0,CLP,very low
+8,8313,Biobío,Yumbel,median_household_income,652736.0,CLP,very low
+8,8314,Biobío,Alto Biobío,median_household_income,691802.0,CLP,very low
+9,9101,La Araucanía,Temuco,median_household_income,940000.0,CLP,high
+9,9102,La Araucanía,Carahue,median_household_income,640834.0,CLP,very low
+9,9103,La Araucanía,Cunco,median_household_income,748622.0,CLP,low
+9,9104,La Araucanía,Curarrehue,median_household_income,782579.0,CLP,low
+9,9105,La Araucanía,Freire,median_household_income,695000.0,CLP,very low
+9,9106,La Araucanía,Galvarino,median_household_income,669778.0,CLP,very low
+9,9107,La Araucanía,Gorbea,median_household_income,700000.0,CLP,very low
+9,9108,La Araucanía,Lautaro,median_household_income,824750.0,CLP,medium
+9,9109,La Araucanía,Loncoche,median_household_income,743917.0,CLP,low
+9,9110,La Araucanía,Melipeuco,median_household_income,588341.0,CLP,very low
+9,9111,La Araucanía,Nueva Imperial,median_household_income,741639.0,CLP,low
+9,9112,La Araucanía,Padre Las Casas,median_household_income,803936.0,CLP,low
+9,9113,La Araucanía,Perquenco,median_household_income,719935.0,CLP,very low
+9,9114,La Araucanía,Pitrufquén,median_household_income,803128.0,CLP,low
+9,9115,La Araucanía,Pucón,median_household_income,1011667.0,CLP,high
+9,9116,La Araucanía,Saavedra,median_household_income,554475.0,CLP,very low
+9,9117,La Araucanía,Teodoro Schmidt,median_household_income,659115.0,CLP,very low
+9,9118,La Araucanía,Toltén,median_household_income,637889.0,CLP,very low
+9,9119,La Araucanía,Vilcún,median_household_income,748973.0,CLP,low
+9,9120,La Araucanía,Villarrica,median_household_income,944156.0,CLP,high
+9,9121,La Araucanía,Cholchol,median_household_income,623932.0,CLP,very low
+9,9201,La Araucanía,Angol,median_household_income,889583.0,CLP,medium
+9,9202,La Araucanía,Collipulli,median_household_income,803023.0,CLP,low
+9,9203,La Araucanía,Curacautín,median_household_income,797750.0,CLP,low
+9,9204,La Araucanía,Ercilla,median_household_income,715742.0,CLP,very low
+9,9205,La Araucanía,Lonquimay,median_household_income,652436.0,CLP,very low
+9,9206,La Araucanía,Los Sauces,median_household_income,618917.0,CLP,very low
+9,9207,La Araucanía,Lumaco,median_household_income,533767.0,CLP,very low
+9,9208,La Araucanía,Purén,median_household_income,692222.0,CLP,very low
+9,9209,La Araucanía,Renaico,median_household_income,966994.0,CLP,high
+9,9210,La Araucanía,Traiguén,median_household_income,592936.0,CLP,very low
+9,9211,La Araucanía,Victoria,median_household_income,664776.0,CLP,very low
+10,10101,Los Lagos,Puerto Montt,median_household_income,1000039.0,CLP,high
+10,10102,Los Lagos,Calbuco,median_household_income,897477.0,CLP,medium
+10,10104,Los Lagos,Fresia,median_household_income,848280.0,CLP,medium
+10,10105,Los Lagos,Frutillar,median_household_income,919878.0,CLP,high
+10,10106,Los Lagos,Los Muermos,median_household_income,767580.0,CLP,low
+10,10107,Los Lagos,Llanquihue,median_household_income,1093112.0,CLP,very high
+10,10108,Los Lagos,Maullín,median_household_income,645000.0,CLP,very low
+10,10109,Los Lagos,Puerto Varas,median_household_income,1308033.0,CLP,very high
+10,10201,Los Lagos,Castro,median_household_income,967282.0,CLP,high
+10,10202,Los Lagos,Ancud,median_household_income,901524.0,CLP,medium
+10,10203,Los Lagos,Chonchi,median_household_income,872868.0,CLP,medium
+10,10204,Los Lagos,Curaco de Vélez,median_household_income,854444.0,CLP,medium
+10,10205,Los Lagos,Dalcahue,median_household_income,836666.0,CLP,medium
+10,10206,Los Lagos,Puqueldón,median_household_income,792392.0,CLP,low
+10,10207,Los Lagos,Queilén,median_household_income,758111.0,CLP,low
+10,10208,Los Lagos,Quellón,median_household_income,846144.0,CLP,medium
+10,10209,Los Lagos,Quemchi,median_household_income,756162.0,CLP,low
+10,10210,Los Lagos,Quinchao,median_household_income,704960.0,CLP,very low
+10,10301,Los Lagos,Osorno,median_household_income,900000.0,CLP,medium
+10,10302,Los Lagos,Puerto Octay,median_household_income,735001.0,CLP,low
+10,10303,Los Lagos,Purranque,median_household_income,861861.0,CLP,medium
+10,10304,Los Lagos,Puyehue,median_household_income,835918.0,CLP,medium
+10,10305,Los Lagos,Río Negro,median_household_income,862923.0,CLP,medium
+10,10306,Los Lagos,San Juan de la Costa,median_household_income,652826.0,CLP,very low
+10,10307,Los Lagos,San Pablo,median_household_income,809764.0,CLP,low
+11,11101,Aysén del Gral. Carlos Ibáñez del Campo,Coyhaique,median_household_income,1198588.0,CLP,very high
+11,11102,Aysén del Gral. Carlos Ibáñez del Campo,Lago Verde,median_household_income,717500.0,CLP,very low
+11,11201,Aysén del Gral. Carlos Ibáñez del Campo,Aysén,median_household_income,1066954.0,CLP,high
+11,11202,Aysén del Gral. Carlos Ibáñez del Campo,Cisnes,median_household_income,1270833.0,CLP,very high
+11,11301,Aysén del Gral. Carlos Ibáñez del Campo,Cochrane,median_household_income,1351982.0,CLP,very high
+11,11303,Aysén del Gral. Carlos Ibáñez del Campo,Tortel,median_household_income,1245833.0,CLP,very high
+11,11401,Aysén del Gral. Carlos Ibáñez del Campo,Chile Chico,median_household_income,1171288.0,CLP,very high
+11,11402,Aysén del Gral. Carlos Ibáñez del Campo,Río Ibáñez,median_household_income,813861.0,CLP,medium
+12,12101,Magallanes y de la Antártica Chilena,Punta Arenas,median_household_income,1270000.0,CLP,very high
+12,12102,Magallanes y de la Antártica Chilena,Laguna Blanca,median_household_income,1305000.0,CLP,very high
+12,12103,Magallanes y de la Antártica Chilena,Río Verde,median_household_income,1591538.0,CLP,very high
+12,12104,Magallanes y de la Antártica Chilena,San Gregorio,median_household_income,1000000.0,CLP,high
+12,12201,Magallanes y de la Antártica Chilena,Cabo de Hornos,median_household_income,1912166.0,CLP,very high
+12,12301,Magallanes y de la Antártica Chilena,Porvenir,median_household_income,1300000.0,CLP,very high
+12,12302,Magallanes y de la Antártica Chilena,Primavera,median_household_income,1297239.0,CLP,very high
+12,12303,Magallanes y de la Antártica Chilena,Timaukel,median_household_income,1340000.0,CLP,very high
+12,12401,Magallanes y de la Antártica Chilena,Natales,median_household_income,1116667.0,CLP,very high
+12,12402,Magallanes y de la Antártica Chilena,Torres del Paine,median_household_income,1147000.0,CLP,very high
+13,13101,Metropolitana de Santiago,Santiago,median_household_income,1175258.0,CLP,very high
+13,13102,Metropolitana de Santiago,Cerrillos,median_household_income,1223903.0,CLP,very high
+13,13103,Metropolitana de Santiago,Cerro Navia,median_household_income,1036000.0,CLP,high
+13,13104,Metropolitana de Santiago,Conchalí,median_household_income,950000.0,CLP,high
+13,13105,Metropolitana de Santiago,El Bosque,median_household_income,1008110.0,CLP,high
+13,13106,Metropolitana de Santiago,Estación Central,median_household_income,1155750.0,CLP,very high
+13,13107,Metropolitana de Santiago,Huechuraba,median_household_income,1366667.0,CLP,very high
+13,13108,Metropolitana de Santiago,Independencia,median_household_income,1055000.0,CLP,high
+13,13109,Metropolitana de Santiago,La Cisterna,median_household_income,1130166.0,CLP,very high
+13,13110,Metropolitana de Santiago,La Florida,median_household_income,1261667.0,CLP,very high
+13,13111,Metropolitana de Santiago,La Granja,median_household_income,963997.0,CLP,high
+13,13112,Metropolitana de Santiago,La Pintana,median_household_income,883000.0,CLP,medium
+13,13113,Metropolitana de Santiago,La Reina,median_household_income,2075000.0,CLP,very high
+13,13114,Metropolitana de Santiago,Las Condes,median_household_income,3178667.0,CLP,very high
+13,13115,Metropolitana de Santiago,Lo Barnechea,median_household_income,2116078.0,CLP,very high
+13,13116,Metropolitana de Santiago,Lo Espejo,median_household_income,1033390.0,CLP,high
+13,13117,Metropolitana de Santiago,Lo Prado,median_household_income,1014082.0,CLP,high
+13,13118,Metropolitana de Santiago,Macul,median_household_income,1343333.0,CLP,very high
+13,13119,Metropolitana de Santiago,Maipú,median_household_income,1263334.0,CLP,very high
+13,13120,Metropolitana de Santiago,Ñuñoa,median_household_income,2256416.0,CLP,very high
+13,13121,Metropolitana de Santiago,Pedro Aguirre Cerda,median_household_income,1053567.0,CLP,high
+13,13122,Metropolitana de Santiago,Peñalolén,median_household_income,1313334.0,CLP,very high
+13,13123,Metropolitana de Santiago,Providencia,median_household_income,2938042.0,CLP,very high
+13,13124,Metropolitana de Santiago,Pudahuel,median_household_income,1205000.0,CLP,very high
+13,13125,Metropolitana de Santiago,Quilicura,median_household_income,1137528.0,CLP,very high
+13,13126,Metropolitana de Santiago,Quinta Normal,median_household_income,1108333.0,CLP,very high
+13,13127,Metropolitana de Santiago,Recoleta,median_household_income,1139792.0,CLP,very high
+13,13128,Metropolitana de Santiago,Renca,median_household_income,949889.0,CLP,high
+13,13129,Metropolitana de Santiago,San Joaquín,median_household_income,1069166.0,CLP,high
+13,13130,Metropolitana de Santiago,San Miguel,median_household_income,1620000.0,CLP,very high
+13,13131,Metropolitana de Santiago,San Ramón,median_household_income,930456.0,CLP,high
+13,13132,Metropolitana de Santiago,Vitacura,median_household_income,4350000.0,CLP,very high
+13,13201,Metropolitana de Santiago,Puente Alto,median_household_income,1142000.0,CLP,very high
+13,13202,Metropolitana de Santiago,Pirque,median_household_income,1320177.0,CLP,very high
+13,13203,Metropolitana de Santiago,San José de Maipo,median_household_income,1200000.0,CLP,very high
+13,13301,Metropolitana de Santiago,Colina,median_household_income,1150000.0,CLP,very high
+13,13302,Metropolitana de Santiago,Lampa,median_household_income,1082667.0,CLP,high
+13,13303,Metropolitana de Santiago,Tiltil,median_household_income,908935.0,CLP,medium
+13,13401,Metropolitana de Santiago,San Bernardo,median_household_income,1127786.0,CLP,very high
+13,13402,Metropolitana de Santiago,Buin,median_household_income,1286000.0,CLP,very high
+13,13403,Metropolitana de Santiago,Calera de Tango,median_household_income,1093913.0,CLP,very high
+13,13404,Metropolitana de Santiago,Paine,median_household_income,1205423.0,CLP,very high
+13,13501,Metropolitana de Santiago,Melipilla,median_household_income,948000.0,CLP,high
+13,13502,Metropolitana de Santiago,Alhué,median_household_income,966500.0,CLP,high
+13,13503,Metropolitana de Santiago,Curacaví,median_household_income,1052889.0,CLP,high
+13,13504,Metropolitana de Santiago,María Pinto,median_household_income,813718.0,CLP,low
+13,13505,Metropolitana de Santiago,San Pedro,median_household_income,944155.0,CLP,high
+13,13601,Metropolitana de Santiago,Talagante,median_household_income,1220000.0,CLP,very high
+13,13602,Metropolitana de Santiago,El Monte,median_household_income,1040611.0,CLP,high
+13,13603,Metropolitana de Santiago,Isla de Maipo,median_household_income,1188186.0,CLP,very high
+13,13604,Metropolitana de Santiago,Padre Hurtado,median_household_income,1410312.0,CLP,very high
+13,13605,Metropolitana de Santiago,Peñaflor,median_household_income,1233000.0,CLP,very high
+14,14101,Los Ríos,Valdivia,median_household_income,1088166.0,CLP,very high
+14,14102,Los Ríos,Corral,median_household_income,813000.0,CLP,low
+14,14103,Los Ríos,Lanco,median_household_income,875994.0,CLP,medium
+14,14104,Los Ríos,Los Lagos,median_household_income,900828.0,CLP,medium
+14,14105,Los Ríos,Máfil,median_household_income,873481.0,CLP,medium
+14,14106,Los Ríos,Mariquina,median_household_income,921790.0,CLP,high
+14,14107,Los Ríos,Paillaco,median_household_income,803695.0,CLP,low
+14,14108,Los Ríos,Panguipulli,median_household_income,775287.0,CLP,low
+14,14201,Los Ríos,La Unión,median_household_income,796088.0,CLP,low
+14,14202,Los Ríos,Futrono,median_household_income,813602.0,CLP,low
+14,14203,Los Ríos,Lago Ranco,median_household_income,723556.0,CLP,very low
+14,14204,Los Ríos,Río Bueno,median_household_income,835222.0,CLP,medium
+15,15101,Arica y Parinacota,Arica,median_household_income,1049458.0,CLP,high
+15,15102,Arica y Parinacota,Camarones,median_household_income,529694.0,CLP,very low
+15,15201,Arica y Parinacota,Putre,median_household_income,662922.0,CLP,very low
+15,15202,Arica y Parinacota,General Lagos,median_household_income,505000.0,CLP,very low
+16,16101,Ñuble,Chillán,median_household_income,893000.0,CLP,medium
+16,16102,Ñuble,Bulnes,median_household_income,740750.0,CLP,low
+16,16103,Ñuble,Chillán Viejo,median_household_income,791917.0,CLP,low
+16,16104,Ñuble,El Carmen,median_household_income,738063.0,CLP,low
+16,16105,Ñuble,Pemuco,median_household_income,651627.0,CLP,very low
+16,16106,Ñuble,Pinto,median_household_income,803000.0,CLP,low
+16,16107,Ñuble,Quillón,median_household_income,593348.0,CLP,very low
+16,16108,Ñuble,San Ignacio,median_household_income,714502.0,CLP,very low
+16,16109,Ñuble,Yungay,median_household_income,705419.0,CLP,very low
+16,16201,Ñuble,Quirihue,median_household_income,802494.0,CLP,low
+16,16202,Ñuble,Cobquecura,median_household_income,768750.0,CLP,low
+16,16203,Ñuble,Coelemu,median_household_income,760078.0,CLP,low
+16,16204,Ñuble,Ninhue,median_household_income,781435.0,CLP,low
+16,16205,Ñuble,Portezuelo,median_household_income,689722.0,CLP,very low
+16,16206,Ñuble,Ranquil,median_household_income,699377.0,CLP,very low
+16,16207,Ñuble,Treguaco,median_household_income,756294.0,CLP,low
+16,16301,Ñuble,San Carlos,median_household_income,700000.0,CLP,very low
+16,16302,Ñuble,Coihueco,median_household_income,753333.0,CLP,low
+16,16303,Ñuble,Ñiquén,median_household_income,671448.0,CLP,very low
+16,16304,Ñuble,San Fabián,median_household_income,738668.0,CLP,low
+16,16305,Ñuble,San Nicolás,median_household_income,650000.0,CLP,very low
+1,1101,Tarapacá,Iquique,poverty_rate,19.72,percent,low
+1,1107,Tarapacá,Alto Hospicio,poverty_rate,34.46,percent,very high
+1,1401,Tarapacá,Pozo Almonte,poverty_rate,24.09,percent,medium
+1,1402,Tarapacá,Camiña,poverty_rate,28.54,percent,high
+1,1403,Tarapacá,Colchane,poverty_rate,34.88,percent,very high
+1,1404,Tarapacá,Huara,poverty_rate,26.47,percent,medium
+1,1405,Tarapacá,Pica,poverty_rate,22.33,percent,low
+2,2101,Antofagasta,Antofagasta,poverty_rate,17.67,percent,very low
+2,2102,Antofagasta,Mejillones,poverty_rate,24.33,percent,medium
+2,2103,Antofagasta,Sierra Gorda,poverty_rate,12.6,percent,very low
+2,2104,Antofagasta,Taltal,poverty_rate,28.33,percent,high
+2,2201,Antofagasta,Calama,poverty_rate,21.23,percent,low
+2,2203,Antofagasta,San Pedro de Atacama,poverty_rate,26.29,percent,medium
+2,2301,Antofagasta,Tocopilla,poverty_rate,37.97,percent,very high
+2,2302,Antofagasta,María Elena,poverty_rate,7.06,percent,very low
+3,3101,Atacama,Copiapó,poverty_rate,19.43,percent,low
+3,3102,Atacama,Caldera,poverty_rate,10.8,percent,very low
+3,3103,Atacama,Tierra Amarilla,poverty_rate,19.89,percent,low
+3,3201,Atacama,Chañaral,poverty_rate,26.04,percent,medium
+3,3202,Atacama,Diego de Almagro,poverty_rate,20.43,percent,low
+3,3301,Atacama,Vallenar,poverty_rate,29.45,percent,high
+3,3302,Atacama,Alto del Carmen,poverty_rate,33.75,percent,very high
+3,3303,Atacama,Freirina,poverty_rate,31.75,percent,high
+3,3304,Atacama,Huasco,poverty_rate,26.48,percent,medium
+4,4101,Coquimbo,La Serena,poverty_rate,20.49,percent,low
+4,4102,Coquimbo,Coquimbo,poverty_rate,28.31,percent,high
+4,4103,Coquimbo,Andacollo,poverty_rate,32.19,percent,high
+4,4104,Coquimbo,La Higuera,poverty_rate,22.9,percent,medium
+4,4105,Coquimbo,Paiguano,poverty_rate,32.99,percent,very high
+4,4106,Coquimbo,Vicuña,poverty_rate,25.82,percent,medium
+4,4201,Coquimbo,Illapel,poverty_rate,28.44,percent,high
+4,4202,Coquimbo,Canela,poverty_rate,33.06,percent,very high
+4,4203,Coquimbo,Los Vilos,poverty_rate,25.04,percent,medium
+4,4204,Coquimbo,Salamanca,poverty_rate,18.05,percent,very low
+4,4301,Coquimbo,Ovalle,poverty_rate,27.71,percent,high
+4,4302,Coquimbo,Combarbalá,poverty_rate,28.62,percent,high
+4,4303,Coquimbo,Monte Patria,poverty_rate,31.18,percent,high
+4,4304,Coquimbo,Punitaqui,poverty_rate,39.46,percent,very high
+4,4305,Coquimbo,Río Hurtado,poverty_rate,31.63,percent,high
+5,5101,Valparaíso,Valparaíso,poverty_rate,22.76,percent,medium
+5,5102,Valparaíso,Casablanca,poverty_rate,20.32,percent,low
+5,5103,Valparaíso,Concón,poverty_rate,8.91,percent,very low
+5,5105,Valparaíso,Puchuncaví,poverty_rate,20.07,percent,low
+5,5107,Valparaíso,Quintero,poverty_rate,20.58,percent,low
+5,5109,Valparaíso,Viña del Mar,poverty_rate,19.95,percent,low
+5,5301,Valparaíso,Los Andes,poverty_rate,21.28,percent,low
+5,5302,Valparaíso,Calle Larga,poverty_rate,24.99,percent,medium
+5,5303,Valparaíso,Rinconada,poverty_rate,22.75,percent,medium
+5,5304,Valparaíso,San Esteban,poverty_rate,21.22,percent,low
+5,5401,Valparaíso,La Ligua,poverty_rate,26.81,percent,high
+5,5402,Valparaíso,Cabildo,poverty_rate,22.64,percent,low
+5,5403,Valparaíso,Papudo,poverty_rate,18.03,percent,very low
+5,5404,Valparaíso,Petorca,poverty_rate,24.14,percent,medium
+5,5405,Valparaíso,Zapallar,poverty_rate,9.81,percent,very low
+5,5501,Valparaíso,Quillota,poverty_rate,25.83,percent,medium
+5,5502,Valparaíso,Calera,poverty_rate,26.8,percent,high
+5,5503,Valparaíso,Hijuelas,poverty_rate,33.28,percent,very high
+5,5504,Valparaíso,La Cruz,poverty_rate,28.49,percent,high
+5,5506,Valparaíso,Nogales,poverty_rate,24.51,percent,medium
+5,5601,Valparaíso,San Antonio,poverty_rate,20.68,percent,low
+5,5602,Valparaíso,Algarrobo,poverty_rate,19.65,percent,low
+5,5603,Valparaíso,Cartagena,poverty_rate,20.03,percent,low
+5,5604,Valparaíso,El Quisco,poverty_rate,19.23,percent,low
+5,5605,Valparaíso,El Tabo,poverty_rate,12.31,percent,very low
+5,5606,Valparaíso,Santo Domingo,poverty_rate,10.33,percent,very low
+5,5701,Valparaíso,San Felipe,poverty_rate,18.41,percent,very low
+5,5702,Valparaíso,Catemu,poverty_rate,28.73,percent,high
+5,5703,Valparaíso,Llaillay,poverty_rate,35.86,percent,very high
+5,5704,Valparaíso,Panquehue,poverty_rate,17.26,percent,very low
+5,5705,Valparaíso,Putaendo,poverty_rate,26.78,percent,high
+5,5706,Valparaíso,Santa María,poverty_rate,27.94,percent,high
+5,5801,Valparaíso,Quilpué,poverty_rate,17.45,percent,very low
+5,5802,Valparaíso,Limache,poverty_rate,23.43,percent,medium
+5,5803,Valparaíso,Olmué,poverty_rate,21.06,percent,low
+5,5804,Valparaíso,Villa Alemana,poverty_rate,18.63,percent,low
+6,6101,Libertador Gral. Bernardo O'Higgins,Rancagua,poverty_rate,20.25,percent,low
+6,6102,Libertador Gral. Bernardo O'Higgins,Codegua,poverty_rate,16.23,percent,very low
+6,6103,Libertador Gral. Bernardo O'Higgins,Coinco,poverty_rate,23.45,percent,medium
+6,6104,Libertador Gral. Bernardo O'Higgins,Coltauco,poverty_rate,25.65,percent,medium
+6,6105,Libertador Gral. Bernardo O'Higgins,Doñihue,poverty_rate,29.35,percent,high
+6,6106,Libertador Gral. Bernardo O'Higgins,Graneros,poverty_rate,22.75,percent,medium
+6,6107,Libertador Gral. Bernardo O'Higgins,Las Cabras,poverty_rate,20.6,percent,low
+6,6108,Libertador Gral. Bernardo O'Higgins,Machalí,poverty_rate,13.41,percent,very low
+6,6109,Libertador Gral. Bernardo O'Higgins,Malloa,poverty_rate,12.91,percent,very low
+6,6110,Libertador Gral. Bernardo O'Higgins,Mostazal,poverty_rate,18.5,percent,low
+6,6111,Libertador Gral. Bernardo O'Higgins,Olivar,poverty_rate,22.28,percent,low
+6,6112,Libertador Gral. Bernardo O'Higgins,Peumo,poverty_rate,24.38,percent,medium
+6,6113,Libertador Gral. Bernardo O'Higgins,Pichidegua,poverty_rate,26.43,percent,medium
+6,6114,Libertador Gral. Bernardo O'Higgins,Quinta de Tilcoco,poverty_rate,25.31,percent,medium
+6,6115,Libertador Gral. Bernardo O'Higgins,Rengo,poverty_rate,15.63,percent,very low
+6,6116,Libertador Gral. Bernardo O'Higgins,Requínoa,poverty_rate,18.4,percent,very low
+6,6117,Libertador Gral. Bernardo O'Higgins,San Vicente,poverty_rate,33.77,percent,very high
+6,6201,Libertador Gral. Bernardo O'Higgins,Pichilemu,poverty_rate,24.84,percent,medium
+6,6202,Libertador Gral. Bernardo O'Higgins,La Estrella,poverty_rate,19.13,percent,low
+6,6203,Libertador Gral. Bernardo O'Higgins,Litueche,poverty_rate,26.07,percent,medium
+6,6204,Libertador Gral. Bernardo O'Higgins,Marchihue,poverty_rate,19.14,percent,low
+6,6205,Libertador Gral. Bernardo O'Higgins,Navidad,poverty_rate,36.9,percent,very high
+6,6206,Libertador Gral. Bernardo O'Higgins,Paredones,poverty_rate,29.34,percent,high
+6,6301,Libertador Gral. Bernardo O'Higgins,San Fernando,poverty_rate,21.83,percent,low
+6,6302,Libertador Gral. Bernardo O'Higgins,Chépica,poverty_rate,29.29,percent,high
+6,6303,Libertador Gral. Bernardo O'Higgins,Chimbarongo,poverty_rate,27.67,percent,high
+6,6304,Libertador Gral. Bernardo O'Higgins,Lolol,poverty_rate,26.21,percent,medium
+6,6305,Libertador Gral. Bernardo O'Higgins,Nancagua,poverty_rate,19.86,percent,low
+6,6306,Libertador Gral. Bernardo O'Higgins,Palmilla,poverty_rate,22.06,percent,low
+6,6307,Libertador Gral. Bernardo O'Higgins,Peralillo,poverty_rate,20.57,percent,low
+6,6308,Libertador Gral. Bernardo O'Higgins,Placilla,poverty_rate,28.55,percent,high
+6,6309,Libertador Gral. Bernardo O'Higgins,Pumanque,poverty_rate,32.82,percent,very high
+6,6310,Libertador Gral. Bernardo O'Higgins,Santa Cruz,poverty_rate,18.83,percent,low
+7,7101,Maule,Talca,poverty_rate,21.37,percent,low
+7,7102,Maule,Constitución,poverty_rate,26.71,percent,medium
+7,7103,Maule,Curepto,poverty_rate,25.32,percent,medium
+7,7104,Maule,Empedrado,poverty_rate,27.45,percent,high
+7,7105,Maule,Maule,poverty_rate,27.0,percent,high
+7,7106,Maule,Pelarco,poverty_rate,17.46,percent,very low
+7,7107,Maule,Pencahue,poverty_rate,31.42,percent,high
+7,7108,Maule,Río Claro,poverty_rate,11.96,percent,very low
+7,7109,Maule,San Clemente,poverty_rate,37.28,percent,very high
+7,7110,Maule,San Rafael,poverty_rate,26.41,percent,medium
+7,7201,Maule,Cauquenes,poverty_rate,33.44,percent,very high
+7,7202,Maule,Chanco,poverty_rate,42.59,percent,very high
+7,7203,Maule,Pelluhue,poverty_rate,43.22,percent,very high
+7,7301,Maule,Curicó,poverty_rate,26.11,percent,medium
+7,7302,Maule,Hualañé,poverty_rate,28.68,percent,high
+7,7303,Maule,Licantén,poverty_rate,18.75,percent,low
+7,7304,Maule,Molina,poverty_rate,27.71,percent,high
+7,7305,Maule,Rauco,poverty_rate,34.21,percent,very high
+7,7306,Maule,Romeral,poverty_rate,22.65,percent,medium
+7,7307,Maule,Sagrada Familia,poverty_rate,16.96,percent,very low
+7,7308,Maule,Teno,poverty_rate,24.49,percent,medium
+7,7309,Maule,Vichuquén,poverty_rate,22.96,percent,medium
+7,7401,Maule,Linares,poverty_rate,23.71,percent,medium
+7,7402,Maule,Colbún,poverty_rate,34.51,percent,very high
+7,7403,Maule,Longaví,poverty_rate,29.58,percent,high
+7,7404,Maule,Parral,poverty_rate,34.01,percent,very high
+7,7405,Maule,Retiro,poverty_rate,36.64,percent,very high
+7,7406,Maule,San Javier,poverty_rate,23.73,percent,medium
+7,7407,Maule,Villa Alegre,poverty_rate,21.69,percent,low
+7,7408,Maule,Yerbas Buenas,poverty_rate,25.89,percent,medium
+8,8101,Biobío,Concepción,poverty_rate,19.14,percent,low
+8,8102,Biobío,Coronel,poverty_rate,23.78,percent,medium
+8,8103,Biobío,Chiguayante,poverty_rate,21.74,percent,low
+8,8104,Biobío,Florida,poverty_rate,29.77,percent,high
+8,8105,Biobío,Hualqui,poverty_rate,33.4,percent,very high
+8,8106,Biobío,Lota,poverty_rate,28.72,percent,high
+8,8107,Biobío,Penco,poverty_rate,19.48,percent,low
+8,8108,Biobío,San Pedro de la Paz,poverty_rate,16.65,percent,very low
+8,8109,Biobío,Santa Juana,poverty_rate,23.98,percent,medium
+8,8110,Biobío,Talcahuano,poverty_rate,21.28,percent,low
+8,8111,Biobío,Tomé,poverty_rate,20.35,percent,low
+8,8112,Biobío,Hualpén,poverty_rate,16.65,percent,very low
+8,8201,Biobío,Lebu,poverty_rate,32.83,percent,very high
+8,8202,Biobío,Arauco,poverty_rate,25.95,percent,medium
+8,8203,Biobío,Cañete,poverty_rate,36.49,percent,very high
+8,8204,Biobío,Contulmo,poverty_rate,31.36,percent,high
+8,8205,Biobío,Curanilahue,poverty_rate,24.26,percent,medium
+8,8206,Biobío,Los Álamos,poverty_rate,28.08,percent,high
+8,8207,Biobío,Tirúa,poverty_rate,39.38,percent,very high
+8,8301,Biobío,Los Ángeles,poverty_rate,23.68,percent,medium
+8,8302,Biobío,Antuco,poverty_rate,32.73,percent,very high
+8,8303,Biobío,Cabrero,poverty_rate,29.82,percent,high
+8,8304,Biobío,Laja,poverty_rate,22.73,percent,medium
+8,8305,Biobío,Mulchén,poverty_rate,36.1,percent,very high
+8,8306,Biobío,Nacimiento,poverty_rate,26.27,percent,medium
+8,8307,Biobío,Negrete,poverty_rate,26.57,percent,medium
+8,8308,Biobío,Quilaco,poverty_rate,36.03,percent,very high
+8,8309,Biobío,Quilleco,poverty_rate,29.04,percent,high
+8,8310,Biobío,San Rosendo,poverty_rate,22.64,percent,medium
+8,8311,Biobío,Santa Bárbara,poverty_rate,31.06,percent,high
+8,8312,Biobío,Tucapel,poverty_rate,32.51,percent,high
+8,8313,Biobío,Yumbel,poverty_rate,28.17,percent,high
+8,8314,Biobío,Alto Biobío,poverty_rate,42.79,percent,very high
+9,9101,La Araucanía,Temuco,poverty_rate,26.39,percent,medium
+9,9102,La Araucanía,Carahue,poverty_rate,42.31,percent,very high
+9,9103,La Araucanía,Cunco,poverty_rate,35.59,percent,very high
+9,9104,La Araucanía,Curarrehue,poverty_rate,35.47,percent,very high
+9,9105,La Araucanía,Freire,poverty_rate,42.47,percent,very high
+9,9106,La Araucanía,Galvarino,poverty_rate,41.14,percent,very high
+9,9107,La Araucanía,Gorbea,poverty_rate,38.78,percent,very high
+9,9108,La Araucanía,Lautaro,poverty_rate,23.53,percent,medium
+9,9109,La Araucanía,Loncoche,poverty_rate,31.35,percent,high
+9,9110,La Araucanía,Melipeuco,poverty_rate,50.15,percent,very high
+9,9111,La Araucanía,Nueva Imperial,poverty_rate,38.62,percent,very high
+9,9112,La Araucanía,Padre Las Casas,poverty_rate,35.21,percent,very high
+9,9113,La Araucanía,Perquenco,poverty_rate,40.26,percent,very high
+9,9114,La Araucanía,Pitrufquén,poverty_rate,29.94,percent,high
+9,9115,La Araucanía,Pucón,poverty_rate,20.93,percent,low
+9,9116,La Araucanía,Saavedra,poverty_rate,51.96,percent,very high
+9,9117,La Araucanía,Teodoro Schmidt,poverty_rate,47.37,percent,very high
+9,9118,La Araucanía,Toltén,poverty_rate,54.31,percent,very high
+9,9119,La Araucanía,Vilcún,poverty_rate,37.25,percent,very high
+9,9120,La Araucanía,Villarrica,poverty_rate,28.1,percent,high
+9,9121,La Araucanía,Cholchol,poverty_rate,46.07,percent,very high
+9,9201,La Araucanía,Angol,poverty_rate,28.57,percent,high
+9,9202,La Araucanía,Collipulli,poverty_rate,31.86,percent,high
+9,9203,La Araucanía,Curacautín,poverty_rate,32.04,percent,high
+9,9204,La Araucanía,Ercilla,poverty_rate,41.07,percent,very high
+9,9205,La Araucanía,Lonquimay,poverty_rate,36.94,percent,very high
+9,9206,La Araucanía,Los Sauces,poverty_rate,38.98,percent,very high
+9,9207,La Araucanía,Lumaco,poverty_rate,44.13,percent,very high
+9,9208,La Araucanía,Purén,poverty_rate,26.74,percent,high
+9,9209,La Araucanía,Renaico,poverty_rate,25.14,percent,medium
+9,9210,La Araucanía,Traiguén,poverty_rate,50.99,percent,very high
+9,9211,La Araucanía,Victoria,poverty_rate,39.31,percent,very high
+10,10101,Los Lagos,Puerto Montt,poverty_rate,21.41,percent,low
+10,10102,Los Lagos,Calbuco,poverty_rate,24.75,percent,medium
+10,10104,Los Lagos,Fresia,poverty_rate,35.48,percent,very high
+10,10105,Los Lagos,Frutillar,poverty_rate,23.77,percent,medium
+10,10106,Los Lagos,Los Muermos,poverty_rate,31.41,percent,high
+10,10107,Los Lagos,Llanquihue,poverty_rate,21.71,percent,low
+10,10108,Los Lagos,Maullín,poverty_rate,42.83,percent,very high
+10,10109,Los Lagos,Puerto Varas,poverty_rate,13.4,percent,very low
+10,10201,Los Lagos,Castro,poverty_rate,16.31,percent,very low
+10,10202,Los Lagos,Ancud,poverty_rate,18.49,percent,low
+10,10203,Los Lagos,Chonchi,poverty_rate,18.79,percent,low
+10,10204,Los Lagos,Curaco de Vélez,poverty_rate,29.46,percent,high
+10,10205,Los Lagos,Dalcahue,poverty_rate,19.31,percent,low
+10,10206,Los Lagos,Puqueldón,poverty_rate,33.26,percent,very high
+10,10207,Los Lagos,Queilén,poverty_rate,16.91,percent,very low
+10,10208,Los Lagos,Quellón,poverty_rate,28.9,percent,high
+10,10209,Los Lagos,Quemchi,poverty_rate,27.08,percent,high
+10,10210,Los Lagos,Quinchao,poverty_rate,25.83,percent,medium
+10,10301,Los Lagos,Osorno,poverty_rate,22.37,percent,low
+10,10302,Los Lagos,Puerto Octay,poverty_rate,26.68,percent,medium
+10,10303,Los Lagos,Purranque,poverty_rate,19.54,percent,low
+10,10304,Los Lagos,Puyehue,poverty_rate,21.15,percent,low
+10,10305,Los Lagos,Río Negro,poverty_rate,23.04,percent,medium
+10,10306,Los Lagos,San Juan de la Costa,poverty_rate,38.55,percent,very high
+10,10307,Los Lagos,San Pablo,poverty_rate,21.33,percent,low
+11,11101,Aysén del Gral. Carlos Ibáñez del Campo,Coyhaique,poverty_rate,14.95,percent,very low
+11,11102,Aysén del Gral. Carlos Ibáñez del Campo,Lago Verde,poverty_rate,27.79,percent,high
+11,11201,Aysén del Gral. Carlos Ibáñez del Campo,Aysén,poverty_rate,19.9,percent,low
+11,11202,Aysén del Gral. Carlos Ibáñez del Campo,Cisnes,poverty_rate,13.96,percent,very low
+11,11301,Aysén del Gral. Carlos Ibáñez del Campo,Cochrane,poverty_rate,1.16,percent,very low
+11,11303,Aysén del Gral. Carlos Ibáñez del Campo,Tortel,poverty_rate,11.97,percent,very low
+11,11401,Aysén del Gral. Carlos Ibáñez del Campo,Chile Chico,poverty_rate,13.0,percent,very low
+11,11402,Aysén del Gral. Carlos Ibáñez del Campo,Río Ibáñez,poverty_rate,19.88,percent,low
+12,12101,Magallanes y de la Antártica Chilena,Punta Arenas,poverty_rate,15.62,percent,very low
+12,12102,Magallanes y de la Antártica Chilena,Laguna Blanca,poverty_rate,6.52,percent,very low
+12,12103,Magallanes y de la Antártica Chilena,Río Verde,poverty_rate,0.0,percent,very low
+12,12104,Magallanes y de la Antártica Chilena,San Gregorio,poverty_rate,4.83,percent,very low
+12,12201,Magallanes y de la Antártica Chilena,Cabo de Hornos,poverty_rate,9.26,percent,very low
+12,12301,Magallanes y de la Antártica Chilena,Porvenir,poverty_rate,9.66,percent,very low
+12,12302,Magallanes y de la Antártica Chilena,Primavera,poverty_rate,0.0,percent,very low
+12,12303,Magallanes y de la Antártica Chilena,Timaukel,poverty_rate,0.0,percent,very low
+12,12401,Magallanes y de la Antártica Chilena,Natales,poverty_rate,18.47,percent,low
+12,12402,Magallanes y de la Antártica Chilena,Torres del Paine,poverty_rate,6.87,percent,very low
+13,13101,Metropolitana de Santiago,Santiago,poverty_rate,13.53,percent,very low
+13,13102,Metropolitana de Santiago,Cerrillos,poverty_rate,23.68,percent,medium
+13,13103,Metropolitana de Santiago,Cerro Navia,poverty_rate,17.67,percent,very low
+13,13104,Metropolitana de Santiago,Conchalí,poverty_rate,28.93,percent,high
+13,13105,Metropolitana de Santiago,El Bosque,poverty_rate,24.44,percent,medium
+13,13106,Metropolitana de Santiago,Estación Central,poverty_rate,14.7,percent,very low
+13,13107,Metropolitana de Santiago,Huechuraba,poverty_rate,16.08,percent,very low
+13,13108,Metropolitana de Santiago,Independencia,poverty_rate,19.97,percent,low
+13,13109,Metropolitana de Santiago,La Cisterna,poverty_rate,20.29,percent,low
+13,13110,Metropolitana de Santiago,La Florida,poverty_rate,14.16,percent,very low
+13,13111,Metropolitana de Santiago,La Granja,poverty_rate,27.68,percent,high
+13,13112,Metropolitana de Santiago,La Pintana,poverty_rate,31.47,percent,high
+13,13113,Metropolitana de Santiago,La Reina,poverty_rate,7.37,percent,very low
+13,13114,Metropolitana de Santiago,Las Condes,poverty_rate,3.12,percent,very low
+13,13115,Metropolitana de Santiago,Lo Barnechea,poverty_rate,8.05,percent,very low
+13,13116,Metropolitana de Santiago,Lo Espejo,poverty_rate,21.52,percent,low
+13,13117,Metropolitana de Santiago,Lo Prado,poverty_rate,17.57,percent,very low
+13,13118,Metropolitana de Santiago,Macul,poverty_rate,15.73,percent,very low
+13,13119,Metropolitana de Santiago,Maipú,poverty_rate,14.55,percent,very low
+13,13120,Metropolitana de Santiago,Ñuñoa,poverty_rate,3.08,percent,very low
+13,13121,Metropolitana de Santiago,Pedro Aguirre Cerda,poverty_rate,21.96,percent,low
+13,13122,Metropolitana de Santiago,Peñalolén,poverty_rate,11.42,percent,very low
+13,13123,Metropolitana de Santiago,Providencia,poverty_rate,4.82,percent,very low
+13,13124,Metropolitana de Santiago,Pudahuel,poverty_rate,17.69,percent,very low
+13,13125,Metropolitana de Santiago,Quilicura,poverty_rate,20.61,percent,low
+13,13126,Metropolitana de Santiago,Quinta Normal,poverty_rate,18.43,percent,low
+13,13127,Metropolitana de Santiago,Recoleta,poverty_rate,16.46,percent,very low
+13,13128,Metropolitana de Santiago,Renca,poverty_rate,23.12,percent,medium
+13,13129,Metropolitana de Santiago,San Joaquín,poverty_rate,25.51,percent,medium
+13,13130,Metropolitana de Santiago,San Miguel,poverty_rate,13.74,percent,very low
+13,13131,Metropolitana de Santiago,San Ramón,poverty_rate,25.09,percent,medium
+13,13132,Metropolitana de Santiago,Vitacura,poverty_rate,3.24,percent,very low
+13,13201,Metropolitana de Santiago,Puente Alto,poverty_rate,20.72,percent,low
+13,13202,Metropolitana de Santiago,Pirque,poverty_rate,15.06,percent,very low
+13,13203,Metropolitana de Santiago,San José de Maipo,poverty_rate,15.79,percent,very low
+13,13301,Metropolitana de Santiago,Colina,poverty_rate,21.56,percent,low
+13,13302,Metropolitana de Santiago,Lampa,poverty_rate,19.22,percent,low
+13,13303,Metropolitana de Santiago,Tiltil,poverty_rate,26.53,percent,medium
+13,13401,Metropolitana de Santiago,San Bernardo,poverty_rate,19.97,percent,low
+13,13402,Metropolitana de Santiago,Buin,poverty_rate,15.98,percent,very low
+13,13403,Metropolitana de Santiago,Calera de Tango,poverty_rate,20.98,percent,low
+13,13404,Metropolitana de Santiago,Paine,poverty_rate,16.7,percent,very low
+13,13501,Metropolitana de Santiago,Melipilla,poverty_rate,24.94,percent,medium
+13,13502,Metropolitana de Santiago,Alhué,poverty_rate,26.92,percent,high
+13,13503,Metropolitana de Santiago,Curacaví,poverty_rate,25.21,percent,medium
+13,13504,Metropolitana de Santiago,María Pinto,poverty_rate,31.16,percent,high
+13,13505,Metropolitana de Santiago,San Pedro,poverty_rate,29.94,percent,high
+13,13601,Metropolitana de Santiago,Talagante,poverty_rate,28.89,percent,high
+13,13602,Metropolitana de Santiago,El Monte,poverty_rate,17.42,percent,very low
+13,13603,Metropolitana de Santiago,Isla de Maipo,poverty_rate,20.07,percent,low
+13,13604,Metropolitana de Santiago,Padre Hurtado,poverty_rate,9.38,percent,very low
+13,13605,Metropolitana de Santiago,Peñaflor,poverty_rate,17.86,percent,very low
+14,14101,Los Ríos,Valdivia,poverty_rate,15.47,percent,very low
+14,14102,Los Ríos,Corral,poverty_rate,12.53,percent,very low
+14,14103,Los Ríos,Lanco,poverty_rate,23.2,percent,medium
+14,14104,Los Ríos,Los Lagos,poverty_rate,23.9,percent,medium
+14,14105,Los Ríos,Máfil,poverty_rate,32.89,percent,very high
+14,14106,Los Ríos,Mariquina,poverty_rate,19.6,percent,low
+14,14107,Los Ríos,Paillaco,poverty_rate,28.0,percent,high
+14,14108,Los Ríos,Panguipulli,poverty_rate,29.06,percent,high
+14,14201,Los Ríos,La Unión,poverty_rate,28.99,percent,high
+14,14202,Los Ríos,Futrono,poverty_rate,29.09,percent,high
+14,14203,Los Ríos,Lago Ranco,poverty_rate,30.58,percent,high
+14,14204,Los Ríos,Río Bueno,poverty_rate,20.11,percent,low
+15,15101,Arica y Parinacota,Arica,poverty_rate,24.21,percent,medium
+15,15102,Arica y Parinacota,Camarones,poverty_rate,38.43,percent,very high
+15,15201,Arica y Parinacota,Putre,poverty_rate,35.95,percent,very high
+15,15202,Arica y Parinacota,General Lagos,poverty_rate,50.0,percent,very high
+16,16101,Ñuble,Chillán,poverty_rate,25.82,percent,medium
+16,16102,Ñuble,Bulnes,poverty_rate,35.1,percent,very high
+16,16103,Ñuble,Chillán Viejo,poverty_rate,24.71,percent,medium
+16,16104,Ñuble,El Carmen,poverty_rate,25.02,percent,medium
+16,16105,Ñuble,Pemuco,poverty_rate,36.75,percent,very high
+16,16106,Ñuble,Pinto,poverty_rate,31.19,percent,high
+16,16107,Ñuble,Quillón,poverty_rate,43.97,percent,very high
+16,16108,Ñuble,San Ignacio,poverty_rate,35.39,percent,very high
+16,16109,Ñuble,Yungay,poverty_rate,32.58,percent,high
+16,16201,Ñuble,Quirihue,poverty_rate,23.39,percent,medium
+16,16202,Ñuble,Cobquecura,poverty_rate,39.39,percent,very high
+16,16203,Ñuble,Coelemu,poverty_rate,34.87,percent,very high
+16,16204,Ñuble,Ninhue,poverty_rate,20.3,percent,low
+16,16205,Ñuble,Portezuelo,poverty_rate,34.01,percent,very high
+16,16206,Ñuble,Ranquil,poverty_rate,37.8,percent,very high
+16,16207,Ñuble,Treguaco,poverty_rate,31.04,percent,high
+16,16301,Ñuble,San Carlos,poverty_rate,32.6,percent,high
+16,16302,Ñuble,Coihueco,poverty_rate,28.42,percent,high
+16,16303,Ñuble,Ñiquén,poverty_rate,33.57,percent,very high
+16,16304,Ñuble,San Fabián,poverty_rate,31.27,percent,high
+16,16305,Ñuble,San Nicolás,poverty_rate,32.68,percent,very high
+1,1101,Tarapacá,Iquique,unemployment_rate,9.08,percent,medium
+1,1107,Tarapacá,Alto Hospicio,unemployment_rate,11.1,percent,high
+1,1401,Tarapacá,Pozo Almonte,unemployment_rate,10.82,percent,high
+1,1402,Tarapacá,Camiña,unemployment_rate,2.53,percent,very low
+1,1403,Tarapacá,Colchane,unemployment_rate,11.86,percent,very high
+1,1404,Tarapacá,Huara,unemployment_rate,4.31,percent,very low
+1,1405,Tarapacá,Pica,unemployment_rate,7.24,percent,low
+2,2101,Antofagasta,Antofagasta,unemployment_rate,9.31,percent,medium
+2,2102,Antofagasta,Mejillones,unemployment_rate,5.42,percent,very low
+2,2103,Antofagasta,Sierra Gorda,unemployment_rate,8.2,percent,medium
+2,2104,Antofagasta,Taltal,unemployment_rate,10.87,percent,high
+2,2201,Antofagasta,Calama,unemployment_rate,10.76,percent,high
+2,2203,Antofagasta,San Pedro de Atacama,unemployment_rate,4.27,percent,very low
+2,2301,Antofagasta,Tocopilla,unemployment_rate,9.58,percent,high
+2,2302,Antofagasta,María Elena,unemployment_rate,4.84,percent,very low
+3,3101,Atacama,Copiapó,unemployment_rate,8.07,percent,medium
+3,3102,Atacama,Caldera,unemployment_rate,7.49,percent,low
+3,3103,Atacama,Tierra Amarilla,unemployment_rate,14.66,percent,very high
+3,3201,Atacama,Chañaral,unemployment_rate,12.57,percent,very high
+3,3202,Atacama,Diego de Almagro,unemployment_rate,7.4,percent,low
+3,3301,Atacama,Vallenar,unemployment_rate,9.68,percent,high
+3,3302,Atacama,Alto del Carmen,unemployment_rate,6.42,percent,low
+3,3303,Atacama,Freirina,unemployment_rate,15.34,percent,very high
+3,3304,Atacama,Huasco,unemployment_rate,11.87,percent,very high
+4,4101,Coquimbo,La Serena,unemployment_rate,9.48,percent,high
+4,4102,Coquimbo,Coquimbo,unemployment_rate,9.69,percent,high
+4,4103,Coquimbo,Andacollo,unemployment_rate,5.13,percent,very low
+4,4104,Coquimbo,La Higuera,unemployment_rate,5.47,percent,very low
+4,4105,Coquimbo,Paiguano,unemployment_rate,3.16,percent,very low
+4,4106,Coquimbo,Vicuña,unemployment_rate,5.2,percent,very low
+4,4201,Coquimbo,Illapel,unemployment_rate,9.29,percent,medium
+4,4202,Coquimbo,Canela,unemployment_rate,1.61,percent,very low
+4,4203,Coquimbo,Los Vilos,unemployment_rate,3.59,percent,very low
+4,4204,Coquimbo,Salamanca,unemployment_rate,10.12,percent,high
+4,4301,Coquimbo,Ovalle,unemployment_rate,9.76,percent,high
+4,4302,Coquimbo,Combarbalá,unemployment_rate,14.78,percent,very high
+4,4303,Coquimbo,Monte Patria,unemployment_rate,6.92,percent,low
+4,4304,Coquimbo,Punitaqui,unemployment_rate,12.48,percent,very high
+4,4305,Coquimbo,Río Hurtado,unemployment_rate,3.97,percent,very low
+5,5101,Valparaíso,Valparaíso,unemployment_rate,11.56,percent,very high
+5,5102,Valparaíso,Casablanca,unemployment_rate,12.12,percent,very high
+5,5103,Valparaíso,Concón,unemployment_rate,8.2,percent,medium
+5,5105,Valparaíso,Puchuncaví,unemployment_rate,1.59,percent,very low
+5,5107,Valparaíso,Quintero,unemployment_rate,10.3,percent,high
+5,5109,Valparaíso,Viña del Mar,unemployment_rate,9.71,percent,high
+5,5301,Valparaíso,Los Andes,unemployment_rate,11.64,percent,very high
+5,5302,Valparaíso,Calle Larga,unemployment_rate,6.58,percent,low
+5,5303,Valparaíso,Rinconada,unemployment_rate,12.75,percent,very high
+5,5304,Valparaíso,San Esteban,unemployment_rate,16.03,percent,very high
+5,5401,Valparaíso,La Ligua,unemployment_rate,10.95,percent,high
+5,5402,Valparaíso,Cabildo,unemployment_rate,17.12,percent,very high
+5,5403,Valparaíso,Papudo,unemployment_rate,8.11,percent,medium
+5,5404,Valparaíso,Petorca,unemployment_rate,4.53,percent,very low
+5,5405,Valparaíso,Zapallar,unemployment_rate,5.38,percent,very low
+5,5501,Valparaíso,Quillota,unemployment_rate,6.22,percent,low
+5,5502,Valparaíso,Calera,unemployment_rate,16.47,percent,very high
+5,5503,Valparaíso,Hijuelas,unemployment_rate,6.12,percent,low
+5,5504,Valparaíso,La Cruz,unemployment_rate,5.41,percent,very low
+5,5506,Valparaíso,Nogales,unemployment_rate,5.77,percent,low
+5,5601,Valparaíso,San Antonio,unemployment_rate,8.36,percent,medium
+5,5602,Valparaíso,Algarrobo,unemployment_rate,7.83,percent,low
+5,5603,Valparaíso,Cartagena,unemployment_rate,9.98,percent,high
+5,5604,Valparaíso,El Quisco,unemployment_rate,2.13,percent,very low
+5,5605,Valparaíso,El Tabo,unemployment_rate,5.47,percent,very low
+5,5606,Valparaíso,Santo Domingo,unemployment_rate,5.02,percent,very low
+5,5701,Valparaíso,San Felipe,unemployment_rate,9.46,percent,medium
+5,5702,Valparaíso,Catemu,unemployment_rate,7.91,percent,medium
+5,5703,Valparaíso,Llaillay,unemployment_rate,8.82,percent,medium
+5,5704,Valparaíso,Panquehue,unemployment_rate,7.54,percent,low
+5,5705,Valparaíso,Putaendo,unemployment_rate,12.77,percent,very high
+5,5706,Valparaíso,Santa María,unemployment_rate,11.7,percent,very high
+5,5801,Valparaíso,Quilpué,unemployment_rate,12.79,percent,very high
+5,5802,Valparaíso,Limache,unemployment_rate,7.9,percent,medium
+5,5803,Valparaíso,Olmué,unemployment_rate,8.98,percent,medium
+5,5804,Valparaíso,Villa Alemana,unemployment_rate,10.2,percent,high
+6,6101,Libertador Gral. Bernardo O'Higgins,Rancagua,unemployment_rate,10.43,percent,high
+6,6102,Libertador Gral. Bernardo O'Higgins,Codegua,unemployment_rate,5.21,percent,very low
+6,6103,Libertador Gral. Bernardo O'Higgins,Coinco,unemployment_rate,8.28,percent,medium
+6,6104,Libertador Gral. Bernardo O'Higgins,Coltauco,unemployment_rate,2.3,percent,very low
+6,6105,Libertador Gral. Bernardo O'Higgins,Doñihue,unemployment_rate,8.79,percent,medium
+6,6106,Libertador Gral. Bernardo O'Higgins,Graneros,unemployment_rate,4.5,percent,very low
+6,6107,Libertador Gral. Bernardo O'Higgins,Las Cabras,unemployment_rate,9.24,percent,medium
+6,6108,Libertador Gral. Bernardo O'Higgins,Machalí,unemployment_rate,10.25,percent,high
+6,6109,Libertador Gral. Bernardo O'Higgins,Malloa,unemployment_rate,7.76,percent,low
+6,6110,Libertador Gral. Bernardo O'Higgins,Mostazal,unemployment_rate,9.53,percent,high
+6,6111,Libertador Gral. Bernardo O'Higgins,Olivar,unemployment_rate,3.5,percent,very low
+6,6112,Libertador Gral. Bernardo O'Higgins,Peumo,unemployment_rate,8.97,percent,medium
+6,6113,Libertador Gral. Bernardo O'Higgins,Pichidegua,unemployment_rate,4.59,percent,very low
+6,6114,Libertador Gral. Bernardo O'Higgins,Quinta de Tilcoco,unemployment_rate,11.89,percent,very high
+6,6115,Libertador Gral. Bernardo O'Higgins,Rengo,unemployment_rate,6.84,percent,low
+6,6116,Libertador Gral. Bernardo O'Higgins,Requínoa,unemployment_rate,9.16,percent,medium
+6,6117,Libertador Gral. Bernardo O'Higgins,San Vicente,unemployment_rate,9.33,percent,medium
+6,6201,Libertador Gral. Bernardo O'Higgins,Pichilemu,unemployment_rate,2.88,percent,very low
+6,6202,Libertador Gral. Bernardo O'Higgins,La Estrella,unemployment_rate,4.02,percent,very low
+6,6203,Libertador Gral. Bernardo O'Higgins,Litueche,unemployment_rate,10.52,percent,high
+6,6204,Libertador Gral. Bernardo O'Higgins,Marchihue,unemployment_rate,8.7,percent,medium
+6,6205,Libertador Gral. Bernardo O'Higgins,Navidad,unemployment_rate,13.24,percent,very high
+6,6206,Libertador Gral. Bernardo O'Higgins,Paredones,unemployment_rate,16.25,percent,very high
+6,6301,Libertador Gral. Bernardo O'Higgins,San Fernando,unemployment_rate,12.66,percent,very high
+6,6302,Libertador Gral. Bernardo O'Higgins,Chépica,unemployment_rate,9.26,percent,medium
+6,6303,Libertador Gral. Bernardo O'Higgins,Chimbarongo,unemployment_rate,9.48,percent,medium
+6,6304,Libertador Gral. Bernardo O'Higgins,Lolol,unemployment_rate,9.94,percent,high
+6,6305,Libertador Gral. Bernardo O'Higgins,Nancagua,unemployment_rate,6.24,percent,low
+6,6306,Libertador Gral. Bernardo O'Higgins,Palmilla,unemployment_rate,5.52,percent,low
+6,6307,Libertador Gral. Bernardo O'Higgins,Peralillo,unemployment_rate,14.2,percent,very high
+6,6308,Libertador Gral. Bernardo O'Higgins,Placilla,unemployment_rate,12.71,percent,very high
+6,6309,Libertador Gral. Bernardo O'Higgins,Pumanque,unemployment_rate,11.78,percent,very high
+6,6310,Libertador Gral. Bernardo O'Higgins,Santa Cruz,unemployment_rate,6.65,percent,low
+7,7101,Maule,Talca,unemployment_rate,7.47,percent,low
+7,7102,Maule,Constitución,unemployment_rate,9.64,percent,high
+7,7103,Maule,Curepto,unemployment_rate,0.0,percent,very low
+7,7104,Maule,Empedrado,unemployment_rate,11.91,percent,very high
+7,7105,Maule,Maule,unemployment_rate,8.1,percent,medium
+7,7106,Maule,Pelarco,unemployment_rate,12.06,percent,very high
+7,7107,Maule,Pencahue,unemployment_rate,0.0,percent,very low
+7,7108,Maule,Río Claro,unemployment_rate,6.15,percent,low
+7,7109,Maule,San Clemente,unemployment_rate,11.29,percent,high
+7,7110,Maule,San Rafael,unemployment_rate,9.78,percent,high
+7,7201,Maule,Cauquenes,unemployment_rate,20.17,percent,very high
+7,7202,Maule,Chanco,unemployment_rate,21.0,percent,very high
+7,7203,Maule,Pelluhue,unemployment_rate,11.42,percent,high
+7,7301,Maule,Curicó,unemployment_rate,10.05,percent,high
+7,7302,Maule,Hualañé,unemployment_rate,7.6,percent,low
+7,7303,Maule,Licantén,unemployment_rate,3.4,percent,very low
+7,7304,Maule,Molina,unemployment_rate,9.84,percent,high
+7,7305,Maule,Rauco,unemployment_rate,7.53,percent,low
+7,7306,Maule,Romeral,unemployment_rate,4.98,percent,very low
+7,7307,Maule,Sagrada Familia,unemployment_rate,2.55,percent,very low
+7,7308,Maule,Teno,unemployment_rate,2.75,percent,very low
+7,7309,Maule,Vichuquén,unemployment_rate,0.0,percent,very low
+7,7401,Maule,Linares,unemployment_rate,9.4,percent,medium
+7,7402,Maule,Colbún,unemployment_rate,11.86,percent,very high
+7,7403,Maule,Longaví,unemployment_rate,6.95,percent,low
+7,7404,Maule,Parral,unemployment_rate,7.92,percent,medium
+7,7405,Maule,Retiro,unemployment_rate,3.13,percent,very low
+7,7406,Maule,San Javier,unemployment_rate,5.89,percent,low
+7,7407,Maule,Villa Alegre,unemployment_rate,6.65,percent,low
+7,7408,Maule,Yerbas Buenas,unemployment_rate,8.32,percent,medium
+8,8101,Biobío,Concepción,unemployment_rate,8.0,percent,medium
+8,8102,Biobío,Coronel,unemployment_rate,8.62,percent,medium
+8,8103,Biobío,Chiguayante,unemployment_rate,7.35,percent,low
+8,8104,Biobío,Florida,unemployment_rate,11.38,percent,high
+8,8105,Biobío,Hualqui,unemployment_rate,13.35,percent,very high
+8,8106,Biobío,Lota,unemployment_rate,17.28,percent,very high
+8,8107,Biobío,Penco,unemployment_rate,9.54,percent,high
+8,8108,Biobío,San Pedro de la Paz,unemployment_rate,9.37,percent,medium
+8,8109,Biobío,Santa Juana,unemployment_rate,15.39,percent,very high
+8,8110,Biobío,Talcahuano,unemployment_rate,9.76,percent,high
+8,8111,Biobío,Tomé,unemployment_rate,11.79,percent,very high
+8,8112,Biobío,Hualpén,unemployment_rate,9.39,percent,medium
+8,8201,Biobío,Lebu,unemployment_rate,8.23,percent,medium
+8,8202,Biobío,Arauco,unemployment_rate,13.07,percent,very high
+8,8203,Biobío,Cañete,unemployment_rate,10.66,percent,high
+8,8204,Biobío,Contulmo,unemployment_rate,6.35,percent,low
+8,8205,Biobío,Curanilahue,unemployment_rate,10.31,percent,high
+8,8206,Biobío,Los Álamos,unemployment_rate,9.65,percent,high
+8,8207,Biobío,Tirúa,unemployment_rate,18.85,percent,very high
+8,8301,Biobío,Los Ángeles,unemployment_rate,9.71,percent,high
+8,8302,Biobío,Antuco,unemployment_rate,10.3,percent,high
+8,8303,Biobío,Cabrero,unemployment_rate,12.02,percent,very high
+8,8304,Biobío,Laja,unemployment_rate,9.69,percent,high
+8,8305,Biobío,Mulchén,unemployment_rate,8.69,percent,medium
+8,8306,Biobío,Nacimiento,unemployment_rate,15.75,percent,very high
+8,8307,Biobío,Negrete,unemployment_rate,7.36,percent,low
+8,8308,Biobío,Quilaco,unemployment_rate,17.44,percent,very high
+8,8309,Biobío,Quilleco,unemployment_rate,6.06,percent,low
+8,8310,Biobío,San Rosendo,unemployment_rate,10.95,percent,high
+8,8311,Biobío,Santa Bárbara,unemployment_rate,15.49,percent,very high
+8,8312,Biobío,Tucapel,unemployment_rate,8.88,percent,medium
+8,8313,Biobío,Yumbel,unemployment_rate,7.32,percent,low
+8,8314,Biobío,Alto Biobío,unemployment_rate,12.03,percent,very high
+9,9101,La Araucanía,Temuco,unemployment_rate,10.47,percent,high
+9,9102,La Araucanía,Carahue,unemployment_rate,12.74,percent,very high
+9,9103,La Araucanía,Cunco,unemployment_rate,18.95,percent,very high
+9,9104,La Araucanía,Curarrehue,unemployment_rate,7.3,percent,low
+9,9105,La Araucanía,Freire,unemployment_rate,14.27,percent,very high
+9,9106,La Araucanía,Galvarino,unemployment_rate,8.51,percent,medium
+9,9107,La Araucanía,Gorbea,unemployment_rate,5.06,percent,very low
+9,9108,La Araucanía,Lautaro,unemployment_rate,10.76,percent,high
+9,9109,La Araucanía,Loncoche,unemployment_rate,23.53,percent,very high
+9,9110,La Araucanía,Melipeuco,unemployment_rate,18.87,percent,very high
+9,9111,La Araucanía,Nueva Imperial,unemployment_rate,11.15,percent,high
+9,9112,La Araucanía,Padre Las Casas,unemployment_rate,12.06,percent,very high
+9,9113,La Araucanía,Perquenco,unemployment_rate,13.52,percent,very high
+9,9114,La Araucanía,Pitrufquén,unemployment_rate,9.48,percent,medium
+9,9115,La Araucanía,Pucón,unemployment_rate,9.6,percent,high
+9,9116,La Araucanía,Saavedra,unemployment_rate,16.31,percent,very high
+9,9117,La Araucanía,Teodoro Schmidt,unemployment_rate,9.14,percent,medium
+9,9118,La Araucanía,Toltén,unemployment_rate,5.32,percent,very low
+9,9119,La Araucanía,Vilcún,unemployment_rate,14.71,percent,very high
+9,9120,La Araucanía,Villarrica,unemployment_rate,6.26,percent,low
+9,9121,La Araucanía,Cholchol,unemployment_rate,10.73,percent,high
+9,9201,La Araucanía,Angol,unemployment_rate,7.13,percent,low
+9,9202,La Araucanía,Collipulli,unemployment_rate,2.84,percent,very low
+9,9203,La Araucanía,Curacautín,unemployment_rate,10.45,percent,high
+9,9204,La Araucanía,Ercilla,unemployment_rate,13.14,percent,very high
+9,9205,La Araucanía,Lonquimay,unemployment_rate,13.5,percent,very high
+9,9206,La Araucanía,Los Sauces,unemployment_rate,15.99,percent,very high
+9,9207,La Araucanía,Lumaco,unemployment_rate,13.91,percent,very high
+9,9208,La Araucanía,Purén,unemployment_rate,12.23,percent,very high
+9,9209,La Araucanía,Renaico,unemployment_rate,6.52,percent,low
+9,9210,La Araucanía,Traiguén,unemployment_rate,10.91,percent,high
+9,9211,La Araucanía,Victoria,unemployment_rate,11.15,percent,high
+10,10101,Los Lagos,Puerto Montt,unemployment_rate,6.56,percent,low
+10,10102,Los Lagos,Calbuco,unemployment_rate,10.7,percent,high
+10,10104,Los Lagos,Fresia,unemployment_rate,4.02,percent,very low
+10,10105,Los Lagos,Frutillar,unemployment_rate,6.92,percent,low
+10,10106,Los Lagos,Los Muermos,unemployment_rate,3.4,percent,very low
+10,10107,Los Lagos,Llanquihue,unemployment_rate,9.6,percent,high
+10,10108,Los Lagos,Maullín,unemployment_rate,6.84,percent,low
+10,10109,Los Lagos,Puerto Varas,unemployment_rate,3.49,percent,very low
+10,10201,Los Lagos,Castro,unemployment_rate,3.98,percent,very low
+10,10202,Los Lagos,Ancud,unemployment_rate,6.32,percent,low
+10,10203,Los Lagos,Chonchi,unemployment_rate,7.08,percent,low
+10,10204,Los Lagos,Curaco de Vélez,unemployment_rate,10.17,percent,high
+10,10205,Los Lagos,Dalcahue,unemployment_rate,7.43,percent,low
+10,10206,Los Lagos,Puqueldón,unemployment_rate,4.6,percent,very low
+10,10207,Los Lagos,Queilén,unemployment_rate,9.02,percent,medium
+10,10208,Los Lagos,Quellón,unemployment_rate,7.2,percent,low
+10,10209,Los Lagos,Quemchi,unemployment_rate,10.07,percent,high
+10,10210,Los Lagos,Quinchao,unemployment_rate,6.75,percent,low
+10,10301,Los Lagos,Osorno,unemployment_rate,7.86,percent,medium
+10,10302,Los Lagos,Puerto Octay,unemployment_rate,8.35,percent,medium
+10,10303,Los Lagos,Purranque,unemployment_rate,11.97,percent,very high
+10,10304,Los Lagos,Puyehue,unemployment_rate,15.17,percent,very high
+10,10305,Los Lagos,Río Negro,unemployment_rate,9.49,percent,high
+10,10306,Los Lagos,San Juan de la Costa,unemployment_rate,3.39,percent,very low
+10,10307,Los Lagos,San Pablo,unemployment_rate,6.0,percent,low
+11,11101,Aysén del Gral. Carlos Ibáñez del Campo,Coyhaique,unemployment_rate,5.63,percent,low
+11,11102,Aysén del Gral. Carlos Ibáñez del Campo,Lago Verde,unemployment_rate,5.48,percent,low
+11,11201,Aysén del Gral. Carlos Ibáñez del Campo,Aysén,unemployment_rate,6.12,percent,low
+11,11202,Aysén del Gral. Carlos Ibáñez del Campo,Cisnes,unemployment_rate,5.89,percent,low
+11,11301,Aysén del Gral. Carlos Ibáñez del Campo,Cochrane,unemployment_rate,0.0,percent,very low
+11,11303,Aysén del Gral. Carlos Ibáñez del Campo,Tortel,unemployment_rate,4.42,percent,very low
+11,11401,Aysén del Gral. Carlos Ibáñez del Campo,Chile Chico,unemployment_rate,1.16,percent,very low
+11,11402,Aysén del Gral. Carlos Ibáñez del Campo,Río Ibáñez,unemployment_rate,8.38,percent,medium
+12,12101,Magallanes y de la Antártica Chilena,Punta Arenas,unemployment_rate,4.38,percent,very low
+12,12102,Magallanes y de la Antártica Chilena,Laguna Blanca,unemployment_rate,0.0,percent,very low
+12,12103,Magallanes y de la Antártica Chilena,Río Verde,unemployment_rate,0.0,percent,very low
+12,12104,Magallanes y de la Antártica Chilena,San Gregorio,unemployment_rate,0.0,percent,very low
+12,12201,Magallanes y de la Antártica Chilena,Cabo de Hornos,unemployment_rate,0.0,percent,very low
+12,12301,Magallanes y de la Antártica Chilena,Porvenir,unemployment_rate,5.85,percent,low
+12,12302,Magallanes y de la Antártica Chilena,Primavera,unemployment_rate,0.0,percent,very low
+12,12303,Magallanes y de la Antártica Chilena,Timaukel,unemployment_rate,0.0,percent,very low
+12,12401,Magallanes y de la Antártica Chilena,Natales,unemployment_rate,3.16,percent,very low
+12,12402,Magallanes y de la Antártica Chilena,Torres del Paine,unemployment_rate,10.83,percent,high
+13,13101,Metropolitana de Santiago,Santiago,unemployment_rate,6.05,percent,low
+13,13102,Metropolitana de Santiago,Cerrillos,unemployment_rate,7.95,percent,medium
+13,13103,Metropolitana de Santiago,Cerro Navia,unemployment_rate,13.3,percent,very high
+13,13104,Metropolitana de Santiago,Conchalí,unemployment_rate,8.61,percent,medium
+13,13105,Metropolitana de Santiago,El Bosque,unemployment_rate,10.15,percent,high
+13,13106,Metropolitana de Santiago,Estación Central,unemployment_rate,8.58,percent,medium
+13,13107,Metropolitana de Santiago,Huechuraba,unemployment_rate,8.9,percent,medium
+13,13108,Metropolitana de Santiago,Independencia,unemployment_rate,5.71,percent,low
+13,13109,Metropolitana de Santiago,La Cisterna,unemployment_rate,8.78,percent,medium
+13,13110,Metropolitana de Santiago,La Florida,unemployment_rate,8.91,percent,medium
+13,13111,Metropolitana de Santiago,La Granja,unemployment_rate,13.16,percent,very high
+13,13112,Metropolitana de Santiago,La Pintana,unemployment_rate,14.05,percent,very high
+13,13113,Metropolitana de Santiago,La Reina,unemployment_rate,4.92,percent,very low
+13,13114,Metropolitana de Santiago,Las Condes,unemployment_rate,6.5,percent,low
+13,13115,Metropolitana de Santiago,Lo Barnechea,unemployment_rate,5.02,percent,very low
+13,13116,Metropolitana de Santiago,Lo Espejo,unemployment_rate,11.23,percent,high
+13,13117,Metropolitana de Santiago,Lo Prado,unemployment_rate,14.27,percent,very high
+13,13118,Metropolitana de Santiago,Macul,unemployment_rate,8.39,percent,medium
+13,13119,Metropolitana de Santiago,Maipú,unemployment_rate,9.73,percent,high
+13,13120,Metropolitana de Santiago,Ñuñoa,unemployment_rate,4.61,percent,very low
+13,13121,Metropolitana de Santiago,Pedro Aguirre Cerda,unemployment_rate,6.18,percent,low
+13,13122,Metropolitana de Santiago,Peñalolén,unemployment_rate,7.98,percent,medium
+13,13123,Metropolitana de Santiago,Providencia,unemployment_rate,5.64,percent,low
+13,13124,Metropolitana de Santiago,Pudahuel,unemployment_rate,9.18,percent,medium
+13,13125,Metropolitana de Santiago,Quilicura,unemployment_rate,9.37,percent,medium
+13,13126,Metropolitana de Santiago,Quinta Normal,unemployment_rate,4.93,percent,very low
+13,13127,Metropolitana de Santiago,Recoleta,unemployment_rate,8.83,percent,medium
+13,13128,Metropolitana de Santiago,Renca,unemployment_rate,9.8,percent,high
+13,13129,Metropolitana de Santiago,San Joaquín,unemployment_rate,7.64,percent,low
+13,13130,Metropolitana de Santiago,San Miguel,unemployment_rate,8.87,percent,medium
+13,13131,Metropolitana de Santiago,San Ramón,unemployment_rate,8.29,percent,medium
+13,13132,Metropolitana de Santiago,Vitacura,unemployment_rate,2.52,percent,very low
+13,13201,Metropolitana de Santiago,Puente Alto,unemployment_rate,10.84,percent,high
+13,13202,Metropolitana de Santiago,Pirque,unemployment_rate,7.3,percent,low
+13,13203,Metropolitana de Santiago,San José de Maipo,unemployment_rate,8.85,percent,medium
+13,13301,Metropolitana de Santiago,Colina,unemployment_rate,12.09,percent,very high
+13,13302,Metropolitana de Santiago,Lampa,unemployment_rate,8.81,percent,medium
+13,13303,Metropolitana de Santiago,Tiltil,unemployment_rate,14.11,percent,very high
+13,13401,Metropolitana de Santiago,San Bernardo,unemployment_rate,10.15,percent,high
+13,13402,Metropolitana de Santiago,Buin,unemployment_rate,10.06,percent,high
+13,13403,Metropolitana de Santiago,Calera de Tango,unemployment_rate,9.56,percent,high
+13,13404,Metropolitana de Santiago,Paine,unemployment_rate,5.6,percent,low
+13,13501,Metropolitana de Santiago,Melipilla,unemployment_rate,8.98,percent,medium
+13,13502,Metropolitana de Santiago,Alhué,unemployment_rate,5.48,percent,very low
+13,13503,Metropolitana de Santiago,Curacaví,unemployment_rate,6.95,percent,low
+13,13504,Metropolitana de Santiago,María Pinto,unemployment_rate,10.08,percent,high
+13,13505,Metropolitana de Santiago,San Pedro,unemployment_rate,6.1,percent,low
+13,13601,Metropolitana de Santiago,Talagante,unemployment_rate,5.48,percent,low
+13,13602,Metropolitana de Santiago,El Monte,unemployment_rate,7.25,percent,low
+13,13603,Metropolitana de Santiago,Isla de Maipo,unemployment_rate,7.62,percent,low
+13,13604,Metropolitana de Santiago,Padre Hurtado,unemployment_rate,6.77,percent,low
+13,13605,Metropolitana de Santiago,Peñaflor,unemployment_rate,10.25,percent,high
+14,14101,Los Ríos,Valdivia,unemployment_rate,8.15,percent,medium
+14,14102,Los Ríos,Corral,unemployment_rate,3.71,percent,very low
+14,14103,Los Ríos,Lanco,unemployment_rate,8.8,percent,medium
+14,14104,Los Ríos,Los Lagos,unemployment_rate,5.5,percent,low
+14,14105,Los Ríos,Máfil,unemployment_rate,15.02,percent,very high
+14,14106,Los Ríos,Mariquina,unemployment_rate,10.46,percent,high
+14,14107,Los Ríos,Paillaco,unemployment_rate,10.03,percent,high
+14,14108,Los Ríos,Panguipulli,unemployment_rate,9.07,percent,medium
+14,14201,Los Ríos,La Unión,unemployment_rate,8.38,percent,medium
+14,14202,Los Ríos,Futrono,unemployment_rate,8.09,percent,medium
+14,14203,Los Ríos,Lago Ranco,unemployment_rate,8.57,percent,medium
+14,14204,Los Ríos,Río Bueno,unemployment_rate,5.8,percent,low
+15,15101,Arica y Parinacota,Arica,unemployment_rate,9.83,percent,high
+15,15102,Arica y Parinacota,Camarones,unemployment_rate,2.76,percent,very low
+15,15201,Arica y Parinacota,Putre,unemployment_rate,0.88,percent,very low
+15,15202,Arica y Parinacota,General Lagos,unemployment_rate,37.45,percent,very high
+16,16101,Ñuble,Chillán,unemployment_rate,11.48,percent,high
+16,16102,Ñuble,Bulnes,unemployment_rate,2.22,percent,very low
+16,16103,Ñuble,Chillán Viejo,unemployment_rate,8.92,percent,medium
+16,16104,Ñuble,El Carmen,unemployment_rate,10.47,percent,high
+16,16105,Ñuble,Pemuco,unemployment_rate,7.97,percent,medium
+16,16106,Ñuble,Pinto,unemployment_rate,7.76,percent,low
+16,16107,Ñuble,Quillón,unemployment_rate,11.43,percent,high
+16,16108,Ñuble,San Ignacio,unemployment_rate,6.39,percent,low
+16,16109,Ñuble,Yungay,unemployment_rate,12.56,percent,very high
+16,16201,Ñuble,Quirihue,unemployment_rate,8.66,percent,medium
+16,16202,Ñuble,Cobquecura,unemployment_rate,5.09,percent,very low
+16,16203,Ñuble,Coelemu,unemployment_rate,5.55,percent,low
+16,16204,Ñuble,Ninhue,unemployment_rate,5.49,percent,low
+16,16205,Ñuble,Portezuelo,unemployment_rate,22.59,percent,very high
+16,16206,Ñuble,Ranquil,unemployment_rate,12.09,percent,very high
+16,16207,Ñuble,Treguaco,unemployment_rate,2.27,percent,very low
+16,16301,Ñuble,San Carlos,unemployment_rate,10.36,percent,high
+16,16302,Ñuble,Coihueco,unemployment_rate,9.03,percent,medium
+16,16303,Ñuble,Ñiquén,unemployment_rate,6.27,percent,low
+16,16304,Ñuble,San Fabián,unemployment_rate,3.27,percent,very low
+16,16305,Ñuble,San Nicolás,unemployment_rate,8.25,percent,medium
+1,1101,Tarapacá,Iquique,public_transport_share,31.5,percent,high
+1,1107,Tarapacá,Alto Hospicio,public_transport_share,37.87,percent,very high
+1,1401,Tarapacá,Pozo Almonte,public_transport_share,13.63,percent,low
+1,1402,Tarapacá,Camiña,public_transport_share,0.0,percent,very low
+1,1403,Tarapacá,Colchane,public_transport_share,0.0,percent,very low
+1,1404,Tarapacá,Huara,public_transport_share,1.84,percent,very low
+1,1405,Tarapacá,Pica,public_transport_share,18.79,percent,medium
+2,2101,Antofagasta,Antofagasta,public_transport_share,42.72,percent,very high
+2,2102,Antofagasta,Mejillones,public_transport_share,12.91,percent,low
+2,2103,Antofagasta,Sierra Gorda,public_transport_share,5.51,percent,very low
+2,2104,Antofagasta,Taltal,public_transport_share,8.16,percent,very low
+2,2201,Antofagasta,Calama,public_transport_share,25.5,percent,high
+2,2203,Antofagasta,San Pedro de Atacama,public_transport_share,6.55,percent,very low
+2,2301,Antofagasta,Tocopilla,public_transport_share,32.74,percent,very high
+2,2302,Antofagasta,María Elena,public_transport_share,9.88,percent,very low
+3,3101,Atacama,Copiapó,public_transport_share,27.53,percent,high
+3,3102,Atacama,Caldera,public_transport_share,17.75,percent,medium
+3,3103,Atacama,Tierra Amarilla,public_transport_share,13.07,percent,low
+3,3201,Atacama,Chañaral,public_transport_share,15.33,percent,low
+3,3202,Atacama,Diego de Almagro,public_transport_share,14.32,percent,low
+3,3301,Atacama,Vallenar,public_transport_share,33.46,percent,very high
+3,3302,Atacama,Alto del Carmen,public_transport_share,7.07,percent,very low
+3,3303,Atacama,Freirina,public_transport_share,21.93,percent,medium
+3,3304,Atacama,Huasco,public_transport_share,11.37,percent,low
+4,4101,Coquimbo,La Serena,public_transport_share,34.86,percent,very high
+4,4102,Coquimbo,Coquimbo,public_transport_share,29.92,percent,high
+4,4103,Coquimbo,Andacollo,public_transport_share,39.17,percent,very high
+4,4104,Coquimbo,La Higuera,public_transport_share,15.01,percent,low
+4,4105,Coquimbo,Paiguano,public_transport_share,2.13,percent,very low
+4,4106,Coquimbo,Vicuña,public_transport_share,12.68,percent,low
+4,4201,Coquimbo,Illapel,public_transport_share,21.14,percent,medium
+4,4202,Coquimbo,Canela,public_transport_share,24.43,percent,high
+4,4203,Coquimbo,Los Vilos,public_transport_share,12.35,percent,low
+4,4204,Coquimbo,Salamanca,public_transport_share,14.13,percent,low
+4,4301,Coquimbo,Ovalle,public_transport_share,30.69,percent,high
+4,4302,Coquimbo,Combarbalá,public_transport_share,15.26,percent,low
+4,4303,Coquimbo,Monte Patria,public_transport_share,19.42,percent,medium
+4,4304,Coquimbo,Punitaqui,public_transport_share,20.21,percent,medium
+4,4305,Coquimbo,Río Hurtado,public_transport_share,13.08,percent,low
+5,5101,Valparaíso,Valparaíso,public_transport_share,54.4,percent,very high
+5,5102,Valparaíso,Casablanca,public_transport_share,16.22,percent,medium
+5,5103,Valparaíso,Concón,public_transport_share,26.33,percent,high
+5,5105,Valparaíso,Puchuncaví,public_transport_share,27.24,percent,high
+5,5107,Valparaíso,Quintero,public_transport_share,30.0,percent,high
+5,5109,Valparaíso,Viña del Mar,public_transport_share,51.42,percent,very high
+5,5301,Valparaíso,Los Andes,public_transport_share,23.43,percent,high
+5,5302,Valparaíso,Calle Larga,public_transport_share,17.95,percent,medium
+5,5303,Valparaíso,Rinconada,public_transport_share,5.62,percent,very low
+5,5304,Valparaíso,San Esteban,public_transport_share,31.14,percent,high
+5,5401,Valparaíso,La Ligua,public_transport_share,21.12,percent,medium
+5,5402,Valparaíso,Cabildo,public_transport_share,9.32,percent,very low
+5,5403,Valparaíso,Papudo,public_transport_share,25.18,percent,high
+5,5404,Valparaíso,Petorca,public_transport_share,14.96,percent,low
+5,5405,Valparaíso,Zapallar,public_transport_share,24.49,percent,high
+5,5501,Valparaíso,Quillota,public_transport_share,36.37,percent,very high
+5,5502,Valparaíso,Calera,public_transport_share,28.44,percent,high
+5,5503,Valparaíso,Hijuelas,public_transport_share,12.99,percent,low
+5,5504,Valparaíso,La Cruz,public_transport_share,22.7,percent,medium
+5,5506,Valparaíso,Nogales,public_transport_share,33.02,percent,very high
+5,5601,Valparaíso,San Antonio,public_transport_share,39.84,percent,very high
+5,5602,Valparaíso,Algarrobo,public_transport_share,26.01,percent,high
+5,5603,Valparaíso,Cartagena,public_transport_share,38.53,percent,very high
+5,5604,Valparaíso,El Quisco,public_transport_share,20.8,percent,medium
+5,5605,Valparaíso,El Tabo,public_transport_share,17.75,percent,medium
+5,5606,Valparaíso,Santo Domingo,public_transport_share,12.34,percent,low
+5,5701,Valparaíso,San Felipe,public_transport_share,26.35,percent,high
+5,5702,Valparaíso,Catemu,public_transport_share,13.65,percent,low
+5,5703,Valparaíso,Llaillay,public_transport_share,31.59,percent,high
+5,5704,Valparaíso,Panquehue,public_transport_share,22.62,percent,medium
+5,5705,Valparaíso,Putaendo,public_transport_share,15.3,percent,low
+5,5706,Valparaíso,Santa María,public_transport_share,9.38,percent,very low
+5,5801,Valparaíso,Quilpué,public_transport_share,46.36,percent,very high
+5,5802,Valparaíso,Limache,public_transport_share,42.64,percent,very high
+5,5803,Valparaíso,Olmué,public_transport_share,26.05,percent,high
+5,5804,Valparaíso,Villa Alemana,public_transport_share,50.8,percent,very high
+6,6101,Libertador Gral. Bernardo O'Higgins,Rancagua,public_transport_share,31.98,percent,high
+6,6102,Libertador Gral. Bernardo O'Higgins,Codegua,public_transport_share,15.72,percent,medium
+6,6103,Libertador Gral. Bernardo O'Higgins,Coinco,public_transport_share,15.42,percent,low
+6,6104,Libertador Gral. Bernardo O'Higgins,Coltauco,public_transport_share,17.86,percent,medium
+6,6105,Libertador Gral. Bernardo O'Higgins,Doñihue,public_transport_share,7.81,percent,very low
+6,6106,Libertador Gral. Bernardo O'Higgins,Graneros,public_transport_share,23.96,percent,high
+6,6107,Libertador Gral. Bernardo O'Higgins,Las Cabras,public_transport_share,7.38,percent,very low
+6,6108,Libertador Gral. Bernardo O'Higgins,Machalí,public_transport_share,18.91,percent,medium
+6,6109,Libertador Gral. Bernardo O'Higgins,Malloa,public_transport_share,9.55,percent,very low
+6,6110,Libertador Gral. Bernardo O'Higgins,Mostazal,public_transport_share,15.97,percent,medium
+6,6111,Libertador Gral. Bernardo O'Higgins,Olivar,public_transport_share,12.88,percent,low
+6,6112,Libertador Gral. Bernardo O'Higgins,Peumo,public_transport_share,11.35,percent,low
+6,6113,Libertador Gral. Bernardo O'Higgins,Pichidegua,public_transport_share,10.96,percent,low
+6,6114,Libertador Gral. Bernardo O'Higgins,Quinta de Tilcoco,public_transport_share,10.25,percent,low
+6,6115,Libertador Gral. Bernardo O'Higgins,Rengo,public_transport_share,18.19,percent,medium
+6,6116,Libertador Gral. Bernardo O'Higgins,Requínoa,public_transport_share,13.46,percent,low
+6,6117,Libertador Gral. Bernardo O'Higgins,San Vicente,public_transport_share,13.96,percent,low
+6,6201,Libertador Gral. Bernardo O'Higgins,Pichilemu,public_transport_share,11.3,percent,low
+6,6202,Libertador Gral. Bernardo O'Higgins,La Estrella,public_transport_share,2.26,percent,very low
+6,6203,Libertador Gral. Bernardo O'Higgins,Litueche,public_transport_share,9.3,percent,very low
+6,6204,Libertador Gral. Bernardo O'Higgins,Marchihue,public_transport_share,8.71,percent,very low
+6,6205,Libertador Gral. Bernardo O'Higgins,Navidad,public_transport_share,10.74,percent,low
+6,6206,Libertador Gral. Bernardo O'Higgins,Paredones,public_transport_share,7.82,percent,very low
+6,6301,Libertador Gral. Bernardo O'Higgins,San Fernando,public_transport_share,24.0,percent,high
+6,6302,Libertador Gral. Bernardo O'Higgins,Chépica,public_transport_share,13.72,percent,low
+6,6303,Libertador Gral. Bernardo O'Higgins,Chimbarongo,public_transport_share,12.61,percent,low
+6,6304,Libertador Gral. Bernardo O'Higgins,Lolol,public_transport_share,8.28,percent,very low
+6,6305,Libertador Gral. Bernardo O'Higgins,Nancagua,public_transport_share,11.02,percent,low
+6,6306,Libertador Gral. Bernardo O'Higgins,Palmilla,public_transport_share,19.26,percent,medium
+6,6307,Libertador Gral. Bernardo O'Higgins,Peralillo,public_transport_share,12.82,percent,low
+6,6308,Libertador Gral. Bernardo O'Higgins,Placilla,public_transport_share,18.37,percent,medium
+6,6309,Libertador Gral. Bernardo O'Higgins,Pumanque,public_transport_share,7.77,percent,very low
+6,6310,Libertador Gral. Bernardo O'Higgins,Santa Cruz,public_transport_share,20.43,percent,medium
+7,7101,Maule,Talca,public_transport_share,30.08,percent,high
+7,7102,Maule,Constitución,public_transport_share,24.34,percent,high
+7,7103,Maule,Curepto,public_transport_share,8.31,percent,very low
+7,7104,Maule,Empedrado,public_transport_share,12.3,percent,low
+7,7105,Maule,Maule,public_transport_share,30.72,percent,high
+7,7106,Maule,Pelarco,public_transport_share,17.6,percent,medium
+7,7107,Maule,Pencahue,public_transport_share,6.85,percent,very low
+7,7108,Maule,Río Claro,public_transport_share,16.31,percent,medium
+7,7109,Maule,San Clemente,public_transport_share,21.06,percent,medium
+7,7110,Maule,San Rafael,public_transport_share,13.06,percent,low
+7,7201,Maule,Cauquenes,public_transport_share,26.81,percent,high
+7,7202,Maule,Chanco,public_transport_share,7.5,percent,very low
+7,7203,Maule,Pelluhue,public_transport_share,17.32,percent,medium
+7,7301,Maule,Curicó,public_transport_share,20.85,percent,medium
+7,7302,Maule,Hualañé,public_transport_share,11.53,percent,low
+7,7303,Maule,Licantén,public_transport_share,16.98,percent,medium
+7,7304,Maule,Molina,public_transport_share,24.28,percent,high
+7,7305,Maule,Rauco,public_transport_share,15.99,percent,medium
+7,7306,Maule,Romeral,public_transport_share,8.1,percent,very low
+7,7307,Maule,Sagrada Familia,public_transport_share,12.46,percent,low
+7,7308,Maule,Teno,public_transport_share,2.28,percent,very low
+7,7309,Maule,Vichuquén,public_transport_share,2.49,percent,very low
+7,7401,Maule,Linares,public_transport_share,19.57,percent,medium
+7,7402,Maule,Colbún,public_transport_share,15.4,percent,low
+7,7403,Maule,Longaví,public_transport_share,14.79,percent,low
+7,7404,Maule,Parral,public_transport_share,17.04,percent,medium
+7,7405,Maule,Retiro,public_transport_share,8.2,percent,very low
+7,7406,Maule,San Javier,public_transport_share,8.08,percent,very low
+7,7407,Maule,Villa Alegre,public_transport_share,9.95,percent,low
+7,7408,Maule,Yerbas Buenas,public_transport_share,18.3,percent,medium
+8,8101,Biobío,Concepción,public_transport_share,41.89,percent,very high
+8,8102,Biobío,Coronel,public_transport_share,42.06,percent,very high
+8,8103,Biobío,Chiguayante,public_transport_share,48.34,percent,very high
+8,8104,Biobío,Florida,public_transport_share,31.52,percent,high
+8,8105,Biobío,Hualqui,public_transport_share,40.7,percent,very high
+8,8106,Biobío,Lota,public_transport_share,40.81,percent,very high
+8,8107,Biobío,Penco,public_transport_share,56.5,percent,very high
+8,8108,Biobío,San Pedro de la Paz,public_transport_share,34.38,percent,very high
+8,8109,Biobío,Santa Juana,public_transport_share,32.72,percent,high
+8,8110,Biobío,Talcahuano,public_transport_share,45.05,percent,very high
+8,8111,Biobío,Tomé,public_transport_share,41.15,percent,very high
+8,8112,Biobío,Hualpén,public_transport_share,49.99,percent,very high
+8,8201,Biobío,Lebu,public_transport_share,20.1,percent,medium
+8,8202,Biobío,Arauco,public_transport_share,12.41,percent,low
+8,8203,Biobío,Cañete,public_transport_share,15.75,percent,medium
+8,8204,Biobío,Contulmo,public_transport_share,4.0,percent,very low
+8,8205,Biobío,Curanilahue,public_transport_share,13.86,percent,low
+8,8206,Biobío,Los Álamos,public_transport_share,26.75,percent,high
+8,8207,Biobío,Tirúa,public_transport_share,15.27,percent,low
+8,8301,Biobío,Los Ángeles,public_transport_share,29.82,percent,high
+8,8302,Biobío,Antuco,public_transport_share,8.63,percent,very low
+8,8303,Biobío,Cabrero,public_transport_share,16.94,percent,medium
+8,8304,Biobío,Laja,public_transport_share,23.89,percent,high
+8,8305,Biobío,Mulchén,public_transport_share,20.58,percent,medium
+8,8306,Biobío,Nacimiento,public_transport_share,17.83,percent,medium
+8,8307,Biobío,Negrete,public_transport_share,15.74,percent,medium
+8,8308,Biobío,Quilaco,public_transport_share,7.58,percent,very low
+8,8309,Biobío,Quilleco,public_transport_share,15.42,percent,low
+8,8310,Biobío,San Rosendo,public_transport_share,6.11,percent,very low
+8,8311,Biobío,Santa Bárbara,public_transport_share,8.15,percent,very low
+8,8312,Biobío,Tucapel,public_transport_share,6.74,percent,very low
+8,8313,Biobío,Yumbel,public_transport_share,21.22,percent,medium
+8,8314,Biobío,Alto Biobío,public_transport_share,15.95,percent,medium
+9,9101,La Araucanía,Temuco,public_transport_share,39.59,percent,very high
+9,9102,La Araucanía,Carahue,public_transport_share,30.19,percent,high
+9,9103,La Araucanía,Cunco,public_transport_share,21.14,percent,medium
+9,9104,La Araucanía,Curarrehue,public_transport_share,25.65,percent,high
+9,9105,La Araucanía,Freire,public_transport_share,37.68,percent,very high
+9,9106,La Araucanía,Galvarino,public_transport_share,17.91,percent,medium
+9,9107,La Araucanía,Gorbea,public_transport_share,24.63,percent,high
+9,9108,La Araucanía,Lautaro,public_transport_share,27.15,percent,high
+9,9109,La Araucanía,Loncoche,public_transport_share,14.46,percent,low
+9,9110,La Araucanía,Melipeuco,public_transport_share,4.78,percent,very low
+9,9111,La Araucanía,Nueva Imperial,public_transport_share,28.07,percent,high
+9,9112,La Araucanía,Padre Las Casas,public_transport_share,45.8,percent,very high
+9,9113,La Araucanía,Perquenco,public_transport_share,4.55,percent,very low
+9,9114,La Araucanía,Pitrufquén,public_transport_share,28.28,percent,high
+9,9115,La Araucanía,Pucón,public_transport_share,16.69,percent,medium
+9,9116,La Araucanía,Saavedra,public_transport_share,25.2,percent,high
+9,9117,La Araucanía,Teodoro Schmidt,public_transport_share,14.71,percent,low
+9,9118,La Araucanía,Toltén,public_transport_share,14.54,percent,low
+9,9119,La Araucanía,Vilcún,public_transport_share,23.06,percent,high
+9,9120,La Araucanía,Villarrica,public_transport_share,26.89,percent,high
+9,9121,La Araucanía,Cholchol,public_transport_share,15.35,percent,low
+9,9201,La Araucanía,Angol,public_transport_share,18.79,percent,medium
+9,9202,La Araucanía,Collipulli,public_transport_share,15.12,percent,low
+9,9203,La Araucanía,Curacautín,public_transport_share,10.38,percent,low
+9,9204,La Araucanía,Ercilla,public_transport_share,10.14,percent,low
+9,9205,La Araucanía,Lonquimay,public_transport_share,2.56,percent,very low
+9,9206,La Araucanía,Los Sauces,public_transport_share,12.38,percent,low
+9,9207,La Araucanía,Lumaco,public_transport_share,6.32,percent,very low
+9,9208,La Araucanía,Purén,public_transport_share,13.74,percent,low
+9,9209,La Araucanía,Renaico,public_transport_share,8.43,percent,very low
+9,9210,La Araucanía,Traiguén,public_transport_share,9.38,percent,very low
+9,9211,La Araucanía,Victoria,public_transport_share,16.64,percent,medium
+10,10101,Los Lagos,Puerto Montt,public_transport_share,33.08,percent,very high
+10,10102,Los Lagos,Calbuco,public_transport_share,16.14,percent,medium
+10,10104,Los Lagos,Fresia,public_transport_share,24.06,percent,high
+10,10105,Los Lagos,Frutillar,public_transport_share,23.46,percent,high
+10,10106,Los Lagos,Los Muermos,public_transport_share,15.63,percent,medium
+10,10107,Los Lagos,Llanquihue,public_transport_share,37.17,percent,very high
+10,10108,Los Lagos,Maullín,public_transport_share,24.32,percent,high
+10,10109,Los Lagos,Puerto Varas,public_transport_share,25.72,percent,high
+10,10201,Los Lagos,Castro,public_transport_share,27.42,percent,high
+10,10202,Los Lagos,Ancud,public_transport_share,23.98,percent,high
+10,10203,Los Lagos,Chonchi,public_transport_share,11.59,percent,low
+10,10204,Los Lagos,Curaco de Vélez,public_transport_share,21.52,percent,medium
+10,10205,Los Lagos,Dalcahue,public_transport_share,18.57,percent,medium
+10,10206,Los Lagos,Puqueldón,public_transport_share,26.04,percent,high
+10,10207,Los Lagos,Queilén,public_transport_share,4.19,percent,very low
+10,10208,Los Lagos,Quellón,public_transport_share,15.71,percent,medium
+10,10209,Los Lagos,Quemchi,public_transport_share,6.71,percent,very low
+10,10210,Los Lagos,Quinchao,public_transport_share,22.49,percent,medium
+10,10301,Los Lagos,Osorno,public_transport_share,38.2,percent,very high
+10,10302,Los Lagos,Puerto Octay,public_transport_share,24.35,percent,high
+10,10303,Los Lagos,Purranque,public_transport_share,17.51,percent,medium
+10,10304,Los Lagos,Puyehue,public_transport_share,13.83,percent,low
+10,10305,Los Lagos,Río Negro,public_transport_share,22.34,percent,medium
+10,10306,Los Lagos,San Juan de la Costa,public_transport_share,12.71,percent,low
+10,10307,Los Lagos,San Pablo,public_transport_share,18.09,percent,medium
+11,11101,Aysén del Gral. Carlos Ibáñez del Campo,Coyhaique,public_transport_share,14.72,percent,low
+11,11102,Aysén del Gral. Carlos Ibáñez del Campo,Lago Verde,public_transport_share,0.0,percent,very low
+11,11201,Aysén del Gral. Carlos Ibáñez del Campo,Aysén,public_transport_share,7.19,percent,very low
+11,11202,Aysén del Gral. Carlos Ibáñez del Campo,Cisnes,public_transport_share,1.28,percent,very low
+11,11301,Aysén del Gral. Carlos Ibáñez del Campo,Cochrane,public_transport_share,0.0,percent,very low
+11,11303,Aysén del Gral. Carlos Ibáñez del Campo,Tortel,public_transport_share,0.0,percent,very low
+11,11401,Aysén del Gral. Carlos Ibáñez del Campo,Chile Chico,public_transport_share,1.39,percent,very low
+11,11402,Aysén del Gral. Carlos Ibáñez del Campo,Río Ibáñez,public_transport_share,3.64,percent,very low
+12,12101,Magallanes y de la Antártica Chilena,Punta Arenas,public_transport_share,23.79,percent,high
+12,12102,Magallanes y de la Antártica Chilena,Laguna Blanca,public_transport_share,0.0,percent,very low
+12,12103,Magallanes y de la Antártica Chilena,Río Verde,public_transport_share,0.0,percent,very low
+12,12104,Magallanes y de la Antártica Chilena,San Gregorio,public_transport_share,12.82,percent,low
+12,12201,Magallanes y de la Antártica Chilena,Cabo de Hornos,public_transport_share,5.8,percent,very low
+12,12301,Magallanes y de la Antártica Chilena,Porvenir,public_transport_share,4.76,percent,very low
+12,12302,Magallanes y de la Antártica Chilena,Primavera,public_transport_share,0.0,percent,very low
+12,12303,Magallanes y de la Antártica Chilena,Timaukel,public_transport_share,0.0,percent,very low
+12,12401,Magallanes y de la Antártica Chilena,Natales,public_transport_share,16.4,percent,medium
+12,12402,Magallanes y de la Antártica Chilena,Torres del Paine,public_transport_share,10.09,percent,low
+13,13101,Metropolitana de Santiago,Santiago,public_transport_share,61.62,percent,very high
+13,13102,Metropolitana de Santiago,Cerrillos,public_transport_share,55.43,percent,very high
+13,13103,Metropolitana de Santiago,Cerro Navia,public_transport_share,57.57,percent,very high
+13,13104,Metropolitana de Santiago,Conchalí,public_transport_share,60.55,percent,very high
+13,13105,Metropolitana de Santiago,El Bosque,public_transport_share,60.14,percent,very high
+13,13106,Metropolitana de Santiago,Estación Central,public_transport_share,65.69,percent,very high
+13,13107,Metropolitana de Santiago,Huechuraba,public_transport_share,49.61,percent,very high
+13,13108,Metropolitana de Santiago,Independencia,public_transport_share,66.89,percent,very high
+13,13109,Metropolitana de Santiago,La Cisterna,public_transport_share,54.27,percent,very high
+13,13110,Metropolitana de Santiago,La Florida,public_transport_share,52.72,percent,very high
+13,13111,Metropolitana de Santiago,La Granja,public_transport_share,50.75,percent,very high
+13,13112,Metropolitana de Santiago,La Pintana,public_transport_share,69.89,percent,very high
+13,13113,Metropolitana de Santiago,La Reina,public_transport_share,33.92,percent,very high
+13,13114,Metropolitana de Santiago,Las Condes,public_transport_share,29.85,percent,high
+13,13115,Metropolitana de Santiago,Lo Barnechea,public_transport_share,27.75,percent,high
+13,13116,Metropolitana de Santiago,Lo Espejo,public_transport_share,62.57,percent,very high
+13,13117,Metropolitana de Santiago,Lo Prado,public_transport_share,64.51,percent,very high
+13,13118,Metropolitana de Santiago,Macul,public_transport_share,51.58,percent,very high
+13,13119,Metropolitana de Santiago,Maipú,public_transport_share,53.0,percent,very high
+13,13120,Metropolitana de Santiago,Ñuñoa,public_transport_share,46.61,percent,very high
+13,13121,Metropolitana de Santiago,Pedro Aguirre Cerda,public_transport_share,54.36,percent,very high
+13,13122,Metropolitana de Santiago,Peñalolén,public_transport_share,47.43,percent,very high
+13,13123,Metropolitana de Santiago,Providencia,public_transport_share,39.94,percent,very high
+13,13124,Metropolitana de Santiago,Pudahuel,public_transport_share,54.48,percent,very high
+13,13125,Metropolitana de Santiago,Quilicura,public_transport_share,55.04,percent,very high
+13,13126,Metropolitana de Santiago,Quinta Normal,public_transport_share,62.9,percent,very high
+13,13127,Metropolitana de Santiago,Recoleta,public_transport_share,60.0,percent,very high
+13,13128,Metropolitana de Santiago,Renca,public_transport_share,53.56,percent,very high
+13,13129,Metropolitana de Santiago,San Joaquín,public_transport_share,50.58,percent,very high
+13,13130,Metropolitana de Santiago,San Miguel,public_transport_share,58.47,percent,very high
+13,13131,Metropolitana de Santiago,San Ramón,public_transport_share,59.93,percent,very high
+13,13132,Metropolitana de Santiago,Vitacura,public_transport_share,12.71,percent,low
+13,13201,Metropolitana de Santiago,Puente Alto,public_transport_share,57.51,percent,very high
+13,13202,Metropolitana de Santiago,Pirque,public_transport_share,27.16,percent,high
+13,13203,Metropolitana de Santiago,San José de Maipo,public_transport_share,29.4,percent,high
+13,13301,Metropolitana de Santiago,Colina,public_transport_share,28.78,percent,high
+13,13302,Metropolitana de Santiago,Lampa,public_transport_share,24.83,percent,high
+13,13303,Metropolitana de Santiago,Tiltil,public_transport_share,21.87,percent,medium
+13,13401,Metropolitana de Santiago,San Bernardo,public_transport_share,51.53,percent,very high
+13,13402,Metropolitana de Santiago,Buin,public_transport_share,31.25,percent,high
+13,13403,Metropolitana de Santiago,Calera de Tango,public_transport_share,29.88,percent,high
+13,13404,Metropolitana de Santiago,Paine,public_transport_share,16.52,percent,medium
+13,13501,Metropolitana de Santiago,Melipilla,public_transport_share,30.49,percent,high
+13,13502,Metropolitana de Santiago,Alhué,public_transport_share,1.95,percent,very low
+13,13503,Metropolitana de Santiago,Curacaví,public_transport_share,14.75,percent,low
+13,13504,Metropolitana de Santiago,María Pinto,public_transport_share,24.37,percent,high
+13,13505,Metropolitana de Santiago,San Pedro,public_transport_share,14.68,percent,low
+13,13601,Metropolitana de Santiago,Talagante,public_transport_share,33.36,percent,very high
+13,13602,Metropolitana de Santiago,El Monte,public_transport_share,23.68,percent,high
+13,13603,Metropolitana de Santiago,Isla de Maipo,public_transport_share,19.54,percent,medium
+13,13604,Metropolitana de Santiago,Padre Hurtado,public_transport_share,27.3,percent,high
+13,13605,Metropolitana de Santiago,Peñaflor,public_transport_share,39.66,percent,very high
+14,14101,Los Ríos,Valdivia,public_transport_share,33.1,percent,very high
+14,14102,Los Ríos,Corral,public_transport_share,33.92,percent,very high
+14,14103,Los Ríos,Lanco,public_transport_share,14.97,percent,low
+14,14104,Los Ríos,Los Lagos,public_transport_share,15.46,percent,low
+14,14105,Los Ríos,Máfil,public_transport_share,26.61,percent,high
+14,14106,Los Ríos,Mariquina,public_transport_share,15.49,percent,medium
+14,14107,Los Ríos,Paillaco,public_transport_share,16.53,percent,medium
+14,14108,Los Ríos,Panguipulli,public_transport_share,11.47,percent,low
+14,14201,Los Ríos,La Unión,public_transport_share,27.22,percent,high
+14,14202,Los Ríos,Futrono,public_transport_share,10.67,percent,low
+14,14203,Los Ríos,Lago Ranco,public_transport_share,11.33,percent,low
+14,14204,Los Ríos,Río Bueno,public_transport_share,18.59,percent,medium
+15,15101,Arica y Parinacota,Arica,public_transport_share,25.94,percent,high
+15,15102,Arica y Parinacota,Camarones,public_transport_share,3.46,percent,very low
+15,15201,Arica y Parinacota,Putre,public_transport_share,0.0,percent,very low
+15,15202,Arica y Parinacota,General Lagos,public_transport_share,0.0,percent,very low
+16,16101,Ñuble,Chillán,public_transport_share,32.28,percent,high
+16,16102,Ñuble,Bulnes,public_transport_share,28.62,percent,high
+16,16103,Ñuble,Chillán Viejo,public_transport_share,41.72,percent,very high
+16,16104,Ñuble,El Carmen,public_transport_share,14.2,percent,low
+16,16105,Ñuble,Pemuco,public_transport_share,3.08,percent,very low
+16,16106,Ñuble,Pinto,public_transport_share,18.17,percent,medium
+16,16107,Ñuble,Quillón,public_transport_share,15.29,percent,low
+16,16108,Ñuble,San Ignacio,public_transport_share,24.56,percent,high
+16,16109,Ñuble,Yungay,public_transport_share,15.66,percent,medium
+16,16201,Ñuble,Quirihue,public_transport_share,18.62,percent,medium
+16,16202,Ñuble,Cobquecura,public_transport_share,2.25,percent,very low
+16,16203,Ñuble,Coelemu,public_transport_share,8.25,percent,very low
+16,16204,Ñuble,Ninhue,public_transport_share,20.4,percent,medium
+16,16205,Ñuble,Portezuelo,public_transport_share,12.22,percent,low
+16,16206,Ñuble,Ranquil,public_transport_share,9.9,percent,very low
+16,16207,Ñuble,Treguaco,public_transport_share,8.96,percent,very low
+16,16301,Ñuble,San Carlos,public_transport_share,21.52,percent,medium
+16,16302,Ñuble,Coihueco,public_transport_share,21.13,percent,medium
+16,16303,Ñuble,Ñiquén,public_transport_share,4.02,percent,very low
+16,16304,Ñuble,San Fabián,public_transport_share,4.22,percent,very low
+16,16305,Ñuble,San Nicolás,public_transport_share,18.83,percent,medium
