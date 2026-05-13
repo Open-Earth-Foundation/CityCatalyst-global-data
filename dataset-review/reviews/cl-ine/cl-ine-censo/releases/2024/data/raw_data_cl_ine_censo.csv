@@ -1,0 +1,2071 @@
+region,comuna,region_nombre,comuna_nombre,attribute_type,attribute_value,attribute_units,attribute_category
+1,1101,Tarapacá,Iquique,electricity_access_rate,99.75,percent,high
+1,1101,Tarapacá,Iquique,employment_in_transport_and_logistics,7.72,percent,very high
+1,1101,Tarapacá,Iquique,home_ownership,42.18,percent,very low
+1,1101,Tarapacá,Iquique,industry_construction_employment,19.54,percent,medium
+1,1101,Tarapacá,Iquique,population,196709.0,persons,very high
+1,1101,Tarapacá,Iquique,renter_share,44.16,percent,very high
+1,1107,Tarapacá,Alto Hospicio,electricity_access_rate,98.94,percent,low
+1,1107,Tarapacá,Alto Hospicio,employment_in_transport_and_logistics,9.66,percent,very high
+1,1107,Tarapacá,Alto Hospicio,home_ownership,55.81,percent,very low
+1,1107,Tarapacá,Alto Hospicio,industry_construction_employment,26.62,percent,very high
+1,1107,Tarapacá,Alto Hospicio,population,139445.0,persons,very high
+1,1107,Tarapacá,Alto Hospicio,renter_share,22.97,percent,high
+1,1401,Tarapacá,Pozo Almonte,electricity_access_rate,98.15,percent,very low
+1,1401,Tarapacá,Pozo Almonte,employment_in_transport_and_logistics,6.41,percent,high
+1,1401,Tarapacá,Pozo Almonte,home_ownership,51.51,percent,very low
+1,1401,Tarapacá,Pozo Almonte,industry_construction_employment,33.3,percent,very high
+1,1401,Tarapacá,Pozo Almonte,population,16416.0,persons,medium
+1,1401,Tarapacá,Pozo Almonte,renter_share,22.91,percent,high
+1,1402,Tarapacá,Camiña,electricity_access_rate,97.29,percent,very low
+1,1402,Tarapacá,Camiña,employment_in_transport_and_logistics,3.19,percent,very low
+1,1402,Tarapacá,Camiña,home_ownership,65.85,percent,low
+1,1402,Tarapacá,Camiña,industry_construction_employment,12.98,percent,very low
+1,1402,Tarapacá,Camiña,population,1335.0,persons,very low
+1,1402,Tarapacá,Camiña,renter_share,12.27,percent,low
+1,1403,Tarapacá,Colchane,electricity_access_rate,83.4,percent,very low
+1,1403,Tarapacá,Colchane,employment_in_transport_and_logistics,7.18,percent,high
+1,1403,Tarapacá,Colchane,home_ownership,51.82,percent,very low
+1,1403,Tarapacá,Colchane,industry_construction_employment,18.46,percent,low
+1,1403,Tarapacá,Colchane,population,684.0,persons,very low
+1,1403,Tarapacá,Colchane,renter_share,17.81,percent,high
+1,1404,Tarapacá,Huara,electricity_access_rate,94.75,percent,very low
+1,1404,Tarapacá,Huara,employment_in_transport_and_logistics,3.85,percent,very low
+1,1404,Tarapacá,Huara,home_ownership,55.94,percent,very low
+1,1404,Tarapacá,Huara,industry_construction_employment,18.33,percent,low
+1,1404,Tarapacá,Huara,population,2850.0,persons,very low
+1,1404,Tarapacá,Huara,renter_share,17.97,percent,high
+1,1405,Tarapacá,Pica,electricity_access_rate,98.81,percent,low
+1,1405,Tarapacá,Pica,employment_in_transport_and_logistics,4.26,percent,low
+1,1405,Tarapacá,Pica,home_ownership,47.11,percent,very low
+1,1405,Tarapacá,Pica,industry_construction_employment,25.69,percent,very high
+1,1405,Tarapacá,Pica,population,6263.0,persons,very low
+1,1405,Tarapacá,Pica,renter_share,32.06,percent,very high
+2,2101,Antofagasta,Antofagasta,electricity_access_rate,99.64,percent,high
+2,2101,Antofagasta,Antofagasta,employment_in_transport_and_logistics,9.15,percent,very high
+2,2101,Antofagasta,Antofagasta,home_ownership,48.44,percent,very low
+2,2101,Antofagasta,Antofagasta,industry_construction_employment,30.62,percent,very high
+2,2101,Antofagasta,Antofagasta,population,397136.0,persons,very high
+2,2101,Antofagasta,Antofagasta,renter_share,34.43,percent,very high
+2,2102,Antofagasta,Mejillones,electricity_access_rate,99.5,percent,medium
+2,2102,Antofagasta,Mejillones,employment_in_transport_and_logistics,18.64,percent,very high
+2,2102,Antofagasta,Mejillones,home_ownership,54.14,percent,very low
+2,2102,Antofagasta,Mejillones,industry_construction_employment,23.85,percent,high
+2,2102,Antofagasta,Mejillones,population,14014.0,persons,low
+2,2102,Antofagasta,Mejillones,renter_share,29.96,percent,very high
+2,2103,Antofagasta,Sierra Gorda,electricity_access_rate,97.98,percent,very low
+2,2103,Antofagasta,Sierra Gorda,employment_in_transport_and_logistics,7.37,percent,very high
+2,2103,Antofagasta,Sierra Gorda,home_ownership,48.86,percent,very low
+2,2103,Antofagasta,Sierra Gorda,industry_construction_employment,26.84,percent,very high
+2,2103,Antofagasta,Sierra Gorda,population,1458.0,persons,very low
+2,2103,Antofagasta,Sierra Gorda,renter_share,29.73,percent,very high
+2,2104,Antofagasta,Taltal,electricity_access_rate,98.39,percent,very low
+2,2104,Antofagasta,Taltal,employment_in_transport_and_logistics,5.69,percent,medium
+2,2104,Antofagasta,Taltal,home_ownership,70.95,percent,high
+2,2104,Antofagasta,Taltal,industry_construction_employment,32.37,percent,very high
+2,2104,Antofagasta,Taltal,population,11913.0,persons,low
+2,2104,Antofagasta,Taltal,renter_share,13.15,percent,low
+2,2201,Antofagasta,Calama,electricity_access_rate,99.57,percent,high
+2,2201,Antofagasta,Calama,employment_in_transport_and_logistics,8.24,percent,very high
+2,2201,Antofagasta,Calama,home_ownership,47.46,percent,very low
+2,2201,Antofagasta,Calama,industry_construction_employment,38.18,percent,very high
+2,2201,Antofagasta,Calama,population,164641.0,persons,very high
+2,2201,Antofagasta,Calama,renter_share,38.43,percent,very high
+2,2202,Antofagasta,Ollagüe,electricity_access_rate,97.75,percent,very low
+2,2202,Antofagasta,Ollagüe,employment_in_transport_and_logistics,5.04,percent,low
+2,2202,Antofagasta,Ollagüe,home_ownership,19.61,percent,very low
+2,2202,Antofagasta,Ollagüe,industry_construction_employment,18.71,percent,medium
+2,2202,Antofagasta,Ollagüe,population,256.0,persons,very low
+2,2202,Antofagasta,Ollagüe,renter_share,24.51,percent,very high
+2,2203,Antofagasta,San Pedro de Atacama,electricity_access_rate,98.32,percent,very low
+2,2203,Antofagasta,San Pedro de Atacama,employment_in_transport_and_logistics,5.5,percent,medium
+2,2203,Antofagasta,San Pedro de Atacama,home_ownership,34.69,percent,very low
+2,2203,Antofagasta,San Pedro de Atacama,industry_construction_employment,21.92,percent,high
+2,2203,Antofagasta,San Pedro de Atacama,population,9782.0,persons,low
+2,2203,Antofagasta,San Pedro de Atacama,renter_share,37.12,percent,very high
+2,2301,Antofagasta,Tocopilla,electricity_access_rate,99.26,percent,medium
+2,2301,Antofagasta,Tocopilla,employment_in_transport_and_logistics,6.62,percent,high
+2,2301,Antofagasta,Tocopilla,home_ownership,58.71,percent,very low
+2,2301,Antofagasta,Tocopilla,industry_construction_employment,29.44,percent,very high
+2,2301,Antofagasta,Tocopilla,population,24583.0,persons,medium
+2,2301,Antofagasta,Tocopilla,renter_share,21.75,percent,high
+2,2302,Antofagasta,María Elena,electricity_access_rate,99.81,percent,very high
+2,2302,Antofagasta,María Elena,employment_in_transport_and_logistics,5.05,percent,low
+2,2302,Antofagasta,María Elena,home_ownership,6.0,percent,very low
+2,2302,Antofagasta,María Elena,industry_construction_employment,41.45,percent,very high
+2,2302,Antofagasta,María Elena,population,4815.0,persons,very low
+2,2302,Antofagasta,María Elena,renter_share,47.06,percent,very high
+3,3101,Atacama,Copiapó,electricity_access_rate,99.49,percent,medium
+3,3101,Atacama,Copiapó,employment_in_transport_and_logistics,6.54,percent,high
+3,3101,Atacama,Copiapó,home_ownership,64.29,percent,low
+3,3101,Atacama,Copiapó,industry_construction_employment,32.56,percent,very high
+3,3101,Atacama,Copiapó,population,167281.0,persons,very high
+3,3101,Atacama,Copiapó,renter_share,22.98,percent,high
+3,3102,Atacama,Caldera,electricity_access_rate,99.17,percent,low
+3,3102,Atacama,Caldera,employment_in_transport_and_logistics,7.17,percent,high
+3,3102,Atacama,Caldera,home_ownership,69.4,percent,medium
+3,3102,Atacama,Caldera,industry_construction_employment,22.33,percent,high
+3,3102,Atacama,Caldera,population,18717.0,persons,medium
+3,3102,Atacama,Caldera,renter_share,18.06,percent,high
+3,3103,Atacama,Tierra Amarilla,electricity_access_rate,99.03,percent,low
+3,3103,Atacama,Tierra Amarilla,employment_in_transport_and_logistics,5.89,percent,medium
+3,3103,Atacama,Tierra Amarilla,home_ownership,65.13,percent,low
+3,3103,Atacama,Tierra Amarilla,industry_construction_employment,38.03,percent,very high
+3,3103,Atacama,Tierra Amarilla,population,11769.0,persons,low
+3,3103,Atacama,Tierra Amarilla,renter_share,10.63,percent,low
+3,3201,Atacama,Chañaral,electricity_access_rate,99.19,percent,low
+3,3201,Atacama,Chañaral,employment_in_transport_and_logistics,7.23,percent,high
+3,3201,Atacama,Chañaral,home_ownership,67.32,percent,medium
+3,3201,Atacama,Chañaral,industry_construction_employment,35.02,percent,very high
+3,3201,Atacama,Chañaral,population,12168.0,persons,low
+3,3201,Atacama,Chañaral,renter_share,14.65,percent,medium
+3,3202,Atacama,Diego de Almagro,electricity_access_rate,99.27,percent,medium
+3,3202,Atacama,Diego de Almagro,employment_in_transport_and_logistics,5.28,percent,medium
+3,3202,Atacama,Diego de Almagro,home_ownership,43.39,percent,very low
+3,3202,Atacama,Diego de Almagro,industry_construction_employment,41.07,percent,very high
+3,3202,Atacama,Diego de Almagro,population,11339.0,persons,low
+3,3202,Atacama,Diego de Almagro,renter_share,18.72,percent,high
+3,3301,Atacama,Vallenar,electricity_access_rate,98.95,percent,low
+3,3301,Atacama,Vallenar,employment_in_transport_and_logistics,7.06,percent,high
+3,3301,Atacama,Vallenar,home_ownership,66.23,percent,low
+3,3301,Atacama,Vallenar,industry_construction_employment,31.35,percent,very high
+3,3301,Atacama,Vallenar,population,53705.0,persons,high
+3,3301,Atacama,Vallenar,renter_share,15.8,percent,medium
+3,3302,Atacama,Alto del Carmen,electricity_access_rate,97.66,percent,very low
+3,3302,Atacama,Alto del Carmen,employment_in_transport_and_logistics,2.95,percent,very low
+3,3302,Atacama,Alto del Carmen,home_ownership,67.21,percent,medium
+3,3302,Atacama,Alto del Carmen,industry_construction_employment,25.16,percent,very high
+3,3302,Atacama,Alto del Carmen,population,4781.0,persons,very low
+3,3302,Atacama,Alto del Carmen,renter_share,8.97,percent,very low
+3,3303,Atacama,Freirina,electricity_access_rate,97.39,percent,very low
+3,3303,Atacama,Freirina,employment_in_transport_and_logistics,5.7,percent,medium
+3,3303,Atacama,Freirina,home_ownership,76.02,percent,very high
+3,3303,Atacama,Freirina,industry_construction_employment,32.33,percent,very high
+3,3303,Atacama,Freirina,population,7558.0,persons,very low
+3,3303,Atacama,Freirina,renter_share,7.91,percent,very low
+3,3304,Atacama,Huasco,electricity_access_rate,98.03,percent,very low
+3,3304,Atacama,Huasco,employment_in_transport_and_logistics,6.95,percent,high
+3,3304,Atacama,Huasco,home_ownership,71.45,percent,high
+3,3304,Atacama,Huasco,industry_construction_employment,26.64,percent,very high
+3,3304,Atacama,Huasco,population,9343.0,persons,low
+3,3304,Atacama,Huasco,renter_share,12.99,percent,low
+4,4101,Coquimbo,La Serena,electricity_access_rate,99.67,percent,high
+4,4101,Coquimbo,La Serena,employment_in_transport_and_logistics,5.43,percent,medium
+4,4101,Coquimbo,La Serena,home_ownership,63.1,percent,low
+4,4101,Coquimbo,La Serena,industry_construction_employment,25.99,percent,very high
+4,4101,Coquimbo,La Serena,population,246835.0,persons,very high
+4,4101,Coquimbo,La Serena,renter_share,26.6,percent,very high
+4,4102,Coquimbo,Coquimbo,electricity_access_rate,99.53,percent,medium
+4,4102,Coquimbo,Coquimbo,employment_in_transport_and_logistics,6.55,percent,high
+4,4102,Coquimbo,Coquimbo,home_ownership,66.05,percent,low
+4,4102,Coquimbo,Coquimbo,industry_construction_employment,26.62,percent,very high
+4,4102,Coquimbo,Coquimbo,population,262907.0,persons,very high
+4,4102,Coquimbo,Coquimbo,renter_share,23.0,percent,high
+4,4103,Coquimbo,Andacollo,electricity_access_rate,99.07,percent,low
+4,4103,Coquimbo,Andacollo,employment_in_transport_and_logistics,3.66,percent,very low
+4,4103,Coquimbo,Andacollo,home_ownership,76.01,percent,very high
+4,4103,Coquimbo,Andacollo,industry_construction_employment,51.64,percent,very high
+4,4103,Coquimbo,Andacollo,population,11562.0,persons,low
+4,4103,Coquimbo,Andacollo,renter_share,8.71,percent,very low
+4,4104,Coquimbo,La Higuera,electricity_access_rate,96.26,percent,very low
+4,4104,Coquimbo,La Higuera,employment_in_transport_and_logistics,4.07,percent,very low
+4,4104,Coquimbo,La Higuera,home_ownership,76.51,percent,very high
+4,4104,Coquimbo,La Higuera,industry_construction_employment,29.81,percent,very high
+4,4104,Coquimbo,La Higuera,population,4335.0,persons,very low
+4,4104,Coquimbo,La Higuera,renter_share,7.81,percent,very low
+4,4105,Coquimbo,Paihuano,electricity_access_rate,98.74,percent,low
+4,4105,Coquimbo,Paihuano,employment_in_transport_and_logistics,3.01,percent,very low
+4,4105,Coquimbo,Paihuano,home_ownership,62.19,percent,low
+4,4105,Coquimbo,Paihuano,industry_construction_employment,22.65,percent,high
+4,4105,Coquimbo,Paihuano,population,4639.0,persons,very low
+4,4105,Coquimbo,Paihuano,renter_share,16.06,percent,medium
+4,4106,Coquimbo,Vicuña,electricity_access_rate,99.35,percent,medium
+4,4106,Coquimbo,Vicuña,employment_in_transport_and_logistics,4.07,percent,very low
+4,4106,Coquimbo,Vicuña,home_ownership,67.64,percent,medium
+4,4106,Coquimbo,Vicuña,industry_construction_employment,24.34,percent,high
+4,4106,Coquimbo,Vicuña,population,27996.0,persons,high
+4,4106,Coquimbo,Vicuña,renter_share,15.63,percent,medium
+4,4201,Coquimbo,Illapel,electricity_access_rate,99.48,percent,medium
+4,4201,Coquimbo,Illapel,employment_in_transport_and_logistics,5.48,percent,medium
+4,4201,Coquimbo,Illapel,home_ownership,68.89,percent,medium
+4,4201,Coquimbo,Illapel,industry_construction_employment,32.34,percent,very high
+4,4201,Coquimbo,Illapel,population,31732.0,persons,high
+4,4201,Coquimbo,Illapel,renter_share,17.2,percent,medium
+4,4202,Coquimbo,Canela,electricity_access_rate,98.67,percent,very low
+4,4202,Coquimbo,Canela,employment_in_transport_and_logistics,6.1,percent,high
+4,4202,Coquimbo,Canela,home_ownership,80.23,percent,very high
+4,4202,Coquimbo,Canela,industry_construction_employment,36.34,percent,very high
+4,4202,Coquimbo,Canela,population,9638.0,persons,low
+4,4202,Coquimbo,Canela,renter_share,7.91,percent,very low
+4,4203,Coquimbo,Los Vilos,electricity_access_rate,98.4,percent,very low
+4,4203,Coquimbo,Los Vilos,employment_in_transport_and_logistics,5.83,percent,medium
+4,4203,Coquimbo,Los Vilos,home_ownership,66.38,percent,low
+4,4203,Coquimbo,Los Vilos,industry_construction_employment,21.71,percent,high
+4,4203,Coquimbo,Los Vilos,population,22835.0,persons,medium
+4,4203,Coquimbo,Los Vilos,renter_share,17.57,percent,high
+4,4204,Coquimbo,Salamanca,electricity_access_rate,98.89,percent,low
+4,4204,Coquimbo,Salamanca,employment_in_transport_and_logistics,6.44,percent,high
+4,4204,Coquimbo,Salamanca,home_ownership,71.24,percent,high
+4,4204,Coquimbo,Salamanca,industry_construction_employment,33.93,percent,very high
+4,4204,Coquimbo,Salamanca,population,27789.0,persons,high
+4,4204,Coquimbo,Salamanca,renter_share,14.6,percent,medium
+4,4301,Coquimbo,Ovalle,electricity_access_rate,99.3,percent,medium
+4,4301,Coquimbo,Ovalle,employment_in_transport_and_logistics,5.66,percent,medium
+4,4301,Coquimbo,Ovalle,home_ownership,66.71,percent,low
+4,4301,Coquimbo,Ovalle,industry_construction_employment,21.87,percent,high
+4,4301,Coquimbo,Ovalle,population,117799.0,persons,very high
+4,4301,Coquimbo,Ovalle,renter_share,19.38,percent,high
+4,4302,Coquimbo,Combarbalá,electricity_access_rate,97.44,percent,very low
+4,4302,Coquimbo,Combarbalá,employment_in_transport_and_logistics,4.0,percent,very low
+4,4302,Coquimbo,Combarbalá,home_ownership,68.78,percent,medium
+4,4302,Coquimbo,Combarbalá,industry_construction_employment,30.07,percent,very high
+4,4302,Coquimbo,Combarbalá,population,12931.0,persons,low
+4,4302,Coquimbo,Combarbalá,renter_share,12.97,percent,low
+4,4303,Coquimbo,Monte Patria,electricity_access_rate,98.61,percent,very low
+4,4303,Coquimbo,Monte Patria,employment_in_transport_and_logistics,4.5,percent,low
+4,4303,Coquimbo,Monte Patria,home_ownership,66.6,percent,low
+4,4303,Coquimbo,Monte Patria,industry_construction_employment,23.3,percent,high
+4,4303,Coquimbo,Monte Patria,population,29956.0,persons,high
+4,4303,Coquimbo,Monte Patria,renter_share,11.1,percent,low
+4,4304,Coquimbo,Punitaqui,electricity_access_rate,98.28,percent,very low
+4,4304,Coquimbo,Punitaqui,employment_in_transport_and_logistics,3.83,percent,very low
+4,4304,Coquimbo,Punitaqui,home_ownership,70.25,percent,high
+4,4304,Coquimbo,Punitaqui,industry_construction_employment,34.13,percent,very high
+4,4304,Coquimbo,Punitaqui,population,12063.0,persons,low
+4,4304,Coquimbo,Punitaqui,renter_share,11.72,percent,low
+4,4305,Coquimbo,Río Hurtado,electricity_access_rate,97.68,percent,very low
+4,4305,Coquimbo,Río Hurtado,employment_in_transport_and_logistics,5.3,percent,medium
+4,4305,Coquimbo,Río Hurtado,home_ownership,69.89,percent,medium
+4,4305,Coquimbo,Río Hurtado,industry_construction_employment,25.85,percent,very high
+4,4305,Coquimbo,Río Hurtado,population,4322.0,persons,very low
+4,4305,Coquimbo,Río Hurtado,renter_share,9.95,percent,very low
+5,5101,Valparaíso,Valparaíso,electricity_access_rate,99.69,percent,high
+5,5101,Valparaíso,Valparaíso,employment_in_transport_and_logistics,9.54,percent,very high
+5,5101,Valparaíso,Valparaíso,home_ownership,52.3,percent,very low
+5,5101,Valparaíso,Valparaíso,industry_construction_employment,15.9,percent,very low
+5,5101,Valparaíso,Valparaíso,population,280357.0,persons,very high
+5,5101,Valparaíso,Valparaíso,renter_share,30.93,percent,very high
+5,5102,Valparaíso,Casablanca,electricity_access_rate,99.74,percent,high
+5,5102,Valparaíso,Casablanca,employment_in_transport_and_logistics,12.69,percent,very high
+5,5102,Valparaíso,Casablanca,home_ownership,64.82,percent,low
+5,5102,Valparaíso,Casablanca,industry_construction_employment,22.18,percent,high
+5,5102,Valparaíso,Casablanca,population,29658.0,persons,high
+5,5102,Valparaíso,Casablanca,renter_share,19.22,percent,high
+5,5103,Valparaíso,Concón,electricity_access_rate,99.89,percent,very high
+5,5103,Valparaíso,Concón,employment_in_transport_and_logistics,5.51,percent,medium
+5,5103,Valparaíso,Concón,home_ownership,55.47,percent,very low
+5,5103,Valparaíso,Concón,industry_construction_employment,18.47,percent,low
+5,5103,Valparaíso,Concón,population,48112.0,persons,high
+5,5103,Valparaíso,Concón,renter_share,34.35,percent,very high
+5,5104,Valparaíso,Juan Fernández,electricity_access_rate,99.73,percent,high
+5,5104,Valparaíso,Juan Fernández,employment_in_transport_and_logistics,3.21,percent,very low
+5,5104,Valparaíso,Juan Fernández,home_ownership,62.03,percent,low
+5,5104,Valparaíso,Juan Fernández,industry_construction_employment,9.64,percent,very low
+5,5104,Valparaíso,Juan Fernández,population,901.0,persons,very low
+5,5104,Valparaíso,Juan Fernández,renter_share,21.39,percent,high
+5,5105,Valparaíso,Puchuncaví,electricity_access_rate,98.92,percent,low
+5,5105,Valparaíso,Puchuncaví,employment_in_transport_and_logistics,6.17,percent,high
+5,5105,Valparaíso,Puchuncaví,home_ownership,65.71,percent,low
+5,5105,Valparaíso,Puchuncaví,industry_construction_employment,23.16,percent,high
+5,5105,Valparaíso,Puchuncaví,population,22443.0,persons,medium
+5,5105,Valparaíso,Puchuncaví,renter_share,17.78,percent,high
+5,5107,Valparaíso,Quintero,electricity_access_rate,99.48,percent,medium
+5,5107,Valparaíso,Quintero,employment_in_transport_and_logistics,7.59,percent,very high
+5,5107,Valparaíso,Quintero,home_ownership,59.18,percent,very low
+5,5107,Valparaíso,Quintero,industry_construction_employment,22.73,percent,high
+5,5107,Valparaíso,Quintero,population,35544.0,persons,high
+5,5107,Valparaíso,Quintero,renter_share,21.19,percent,high
+5,5109,Valparaíso,Viña del Mar,electricity_access_rate,99.63,percent,high
+5,5109,Valparaíso,Viña del Mar,employment_in_transport_and_logistics,6.58,percent,high
+5,5109,Valparaíso,Viña del Mar,home_ownership,53.07,percent,very low
+5,5109,Valparaíso,Viña del Mar,industry_construction_employment,16.53,percent,low
+5,5109,Valparaíso,Viña del Mar,population,331684.0,persons,very high
+5,5109,Valparaíso,Viña del Mar,renter_share,32.18,percent,very high
+5,5201,Valparaíso,Isla de Pascua,electricity_access_rate,99.52,percent,medium
+5,5201,Valparaíso,Isla de Pascua,employment_in_transport_and_logistics,4.13,percent,very low
+5,5201,Valparaíso,Isla de Pascua,home_ownership,58.85,percent,very low
+5,5201,Valparaíso,Isla de Pascua,industry_construction_employment,8.83,percent,very low
+5,5201,Valparaíso,Isla de Pascua,population,4773.0,persons,very low
+5,5201,Valparaíso,Isla de Pascua,renter_share,31.62,percent,very high
+5,5301,Valparaíso,Los Andes,electricity_access_rate,99.84,percent,very high
+5,5301,Valparaíso,Los Andes,employment_in_transport_and_logistics,8.03,percent,very high
+5,5301,Valparaíso,Los Andes,home_ownership,63.37,percent,low
+5,5301,Valparaíso,Los Andes,industry_construction_employment,26.46,percent,very high
+5,5301,Valparaíso,Los Andes,population,62524.0,persons,high
+5,5301,Valparaíso,Los Andes,renter_share,27.73,percent,very high
+5,5302,Valparaíso,Calle Larga,electricity_access_rate,99.73,percent,high
+5,5302,Valparaíso,Calle Larga,employment_in_transport_and_logistics,7.05,percent,high
+5,5302,Valparaíso,Calle Larga,home_ownership,69.98,percent,medium
+5,5302,Valparaíso,Calle Larga,industry_construction_employment,27.66,percent,very high
+5,5302,Valparaíso,Calle Larga,population,16594.0,persons,medium
+5,5302,Valparaíso,Calle Larga,renter_share,16.37,percent,medium
+5,5303,Valparaíso,Rinconada,electricity_access_rate,99.49,percent,medium
+5,5303,Valparaíso,Rinconada,employment_in_transport_and_logistics,6.67,percent,high
+5,5303,Valparaíso,Rinconada,home_ownership,73.71,percent,very high
+5,5303,Valparaíso,Rinconada,industry_construction_employment,23.14,percent,high
+5,5303,Valparaíso,Rinconada,population,11837.0,persons,low
+5,5303,Valparaíso,Rinconada,renter_share,13.8,percent,medium
+5,5304,Valparaíso,San Esteban,electricity_access_rate,99.63,percent,high
+5,5304,Valparaíso,San Esteban,employment_in_transport_and_logistics,6.48,percent,high
+5,5304,Valparaíso,San Esteban,home_ownership,69.01,percent,medium
+5,5304,Valparaíso,San Esteban,industry_construction_employment,25.9,percent,very high
+5,5304,Valparaíso,San Esteban,population,20103.0,persons,medium
+5,5304,Valparaíso,San Esteban,renter_share,17.02,percent,medium
+5,5401,Valparaíso,La Ligua,electricity_access_rate,99.34,percent,medium
+5,5401,Valparaíso,La Ligua,employment_in_transport_and_logistics,5.02,percent,low
+5,5401,Valparaíso,La Ligua,home_ownership,70.86,percent,high
+5,5401,Valparaíso,La Ligua,industry_construction_employment,24.61,percent,very high
+5,5401,Valparaíso,La Ligua,population,39203.0,persons,high
+5,5401,Valparaíso,La Ligua,renter_share,15.47,percent,medium
+5,5402,Valparaíso,Cabildo,electricity_access_rate,99.38,percent,medium
+5,5402,Valparaíso,Cabildo,employment_in_transport_and_logistics,4.54,percent,low
+5,5402,Valparaíso,Cabildo,home_ownership,70.92,percent,high
+5,5402,Valparaíso,Cabildo,industry_construction_employment,33.07,percent,very high
+5,5402,Valparaíso,Cabildo,population,19983.0,persons,medium
+5,5402,Valparaíso,Cabildo,renter_share,14.25,percent,medium
+5,5403,Valparaíso,Papudo,electricity_access_rate,99.51,percent,medium
+5,5403,Valparaíso,Papudo,employment_in_transport_and_logistics,3.75,percent,very low
+5,5403,Valparaíso,Papudo,home_ownership,70.03,percent,medium
+5,5403,Valparaíso,Papudo,industry_construction_employment,22.18,percent,high
+5,5403,Valparaíso,Papudo,population,7553.0,persons,very low
+5,5403,Valparaíso,Papudo,renter_share,15.74,percent,medium
+5,5404,Valparaíso,Petorca,electricity_access_rate,99.07,percent,low
+5,5404,Valparaíso,Petorca,employment_in_transport_and_logistics,5.37,percent,medium
+5,5404,Valparaíso,Petorca,home_ownership,73.23,percent,very high
+5,5404,Valparaíso,Petorca,industry_construction_employment,31.19,percent,very high
+5,5404,Valparaíso,Petorca,population,10127.0,persons,low
+5,5404,Valparaíso,Petorca,renter_share,12.37,percent,low
+5,5405,Valparaíso,Zapallar,electricity_access_rate,99.82,percent,very high
+5,5405,Valparaíso,Zapallar,employment_in_transport_and_logistics,2.95,percent,very low
+5,5405,Valparaíso,Zapallar,home_ownership,68.59,percent,medium
+5,5405,Valparaíso,Zapallar,industry_construction_employment,19.98,percent,medium
+5,5405,Valparaíso,Zapallar,population,7971.0,persons,low
+5,5405,Valparaíso,Zapallar,renter_share,13.09,percent,low
+5,5501,Valparaíso,Quillota,electricity_access_rate,99.8,percent,very high
+5,5501,Valparaíso,Quillota,employment_in_transport_and_logistics,6.01,percent,medium
+5,5501,Valparaíso,Quillota,home_ownership,64.46,percent,low
+5,5501,Valparaíso,Quillota,industry_construction_employment,20.22,percent,medium
+5,5501,Valparaíso,Quillota,population,95383.0,persons,very high
+5,5501,Valparaíso,Quillota,renter_share,23.29,percent,high
+5,5502,Valparaíso,Calera,electricity_access_rate,99.73,percent,high
+5,5502,Valparaíso,Calera,employment_in_transport_and_logistics,6.18,percent,high
+5,5502,Valparaíso,Calera,home_ownership,62.83,percent,low
+5,5502,Valparaíso,Calera,industry_construction_employment,27.37,percent,very high
+5,5502,Valparaíso,Calera,population,50451.0,persons,high
+5,5502,Valparaíso,Calera,renter_share,20.71,percent,high
+5,5503,Valparaíso,Hijuelas,electricity_access_rate,99.49,percent,medium
+5,5503,Valparaíso,Hijuelas,employment_in_transport_and_logistics,6.06,percent,medium
+5,5503,Valparaíso,Hijuelas,home_ownership,67.82,percent,medium
+5,5503,Valparaíso,Hijuelas,industry_construction_employment,17.09,percent,low
+5,5503,Valparaíso,Hijuelas,population,19279.0,persons,medium
+5,5503,Valparaíso,Hijuelas,renter_share,11.89,percent,low
+5,5504,Valparaíso,La Cruz,electricity_access_rate,99.92,percent,very high
+5,5504,Valparaíso,La Cruz,employment_in_transport_and_logistics,4.92,percent,low
+5,5504,Valparaíso,La Cruz,home_ownership,68.08,percent,medium
+5,5504,Valparaíso,La Cruz,industry_construction_employment,22.64,percent,high
+5,5504,Valparaíso,La Cruz,population,24915.0,persons,medium
+5,5504,Valparaíso,La Cruz,renter_share,19.34,percent,high
+5,5506,Valparaíso,Nogales,electricity_access_rate,99.59,percent,high
+5,5506,Valparaíso,Nogales,employment_in_transport_and_logistics,7.53,percent,very high
+5,5506,Valparaíso,Nogales,home_ownership,66.41,percent,low
+5,5506,Valparaíso,Nogales,industry_construction_employment,33.34,percent,very high
+5,5506,Valparaíso,Nogales,population,22095.0,persons,medium
+5,5506,Valparaíso,Nogales,renter_share,14.02,percent,medium
+5,5601,Valparaíso,San Antonio,electricity_access_rate,99.73,percent,high
+5,5601,Valparaíso,San Antonio,employment_in_transport_and_logistics,18.96,percent,very high
+5,5601,Valparaíso,San Antonio,home_ownership,67.04,percent,medium
+5,5601,Valparaíso,San Antonio,industry_construction_employment,15.08,percent,very low
+5,5601,Valparaíso,San Antonio,population,95520.0,persons,very high
+5,5601,Valparaíso,San Antonio,renter_share,16.13,percent,medium
+5,5602,Valparaíso,Algarrobo,electricity_access_rate,99.76,percent,high
+5,5602,Valparaíso,Algarrobo,employment_in_transport_and_logistics,3.79,percent,very low
+5,5602,Valparaíso,Algarrobo,home_ownership,64.83,percent,low
+5,5602,Valparaíso,Algarrobo,industry_construction_employment,17.78,percent,low
+5,5602,Valparaíso,Algarrobo,population,16032.0,persons,medium
+5,5602,Valparaíso,Algarrobo,renter_share,18.2,percent,high
+5,5603,Valparaíso,Cartagena,electricity_access_rate,99.62,percent,high
+5,5603,Valparaíso,Cartagena,employment_in_transport_and_logistics,12.7,percent,very high
+5,5603,Valparaíso,Cartagena,home_ownership,61.97,percent,low
+5,5603,Valparaíso,Cartagena,industry_construction_employment,19.07,percent,medium
+5,5603,Valparaíso,Cartagena,population,24544.0,persons,medium
+5,5603,Valparaíso,Cartagena,renter_share,14.56,percent,medium
+5,5604,Valparaíso,El Quisco,electricity_access_rate,99.65,percent,high
+5,5604,Valparaíso,El Quisco,employment_in_transport_and_logistics,5.5,percent,medium
+5,5604,Valparaíso,El Quisco,home_ownership,58.44,percent,very low
+5,5604,Valparaíso,El Quisco,industry_construction_employment,18.81,percent,medium
+5,5604,Valparaíso,El Quisco,population,18896.0,persons,medium
+5,5604,Valparaíso,El Quisco,renter_share,21.12,percent,high
+5,5605,Valparaíso,El Tabo,electricity_access_rate,99.61,percent,high
+5,5605,Valparaíso,El Tabo,employment_in_transport_and_logistics,6.57,percent,high
+5,5605,Valparaíso,El Tabo,home_ownership,66.5,percent,low
+5,5605,Valparaíso,El Tabo,industry_construction_employment,19.83,percent,medium
+5,5605,Valparaíso,El Tabo,population,16222.0,persons,medium
+5,5605,Valparaíso,El Tabo,renter_share,14.29,percent,medium
+5,5606,Valparaíso,Santo Domingo,electricity_access_rate,99.45,percent,medium
+5,5606,Valparaíso,Santo Domingo,employment_in_transport_and_logistics,10.2,percent,very high
+5,5606,Valparaíso,Santo Domingo,home_ownership,71.83,percent,high
+5,5606,Valparaíso,Santo Domingo,industry_construction_employment,13.48,percent,very low
+5,5606,Valparaíso,Santo Domingo,population,13149.0,persons,low
+5,5606,Valparaíso,Santo Domingo,renter_share,12.36,percent,low
+5,5701,Valparaíso,San Felipe,electricity_access_rate,99.13,percent,low
+5,5701,Valparaíso,San Felipe,employment_in_transport_and_logistics,5.63,percent,medium
+5,5701,Valparaíso,San Felipe,home_ownership,59.77,percent,very low
+5,5701,Valparaíso,San Felipe,industry_construction_employment,17.14,percent,low
+5,5701,Valparaíso,San Felipe,population,79677.0,persons,high
+5,5701,Valparaíso,San Felipe,renter_share,28.58,percent,very high
+5,5702,Valparaíso,Catemu,electricity_access_rate,99.4,percent,medium
+5,5702,Valparaíso,Catemu,employment_in_transport_and_logistics,5.55,percent,medium
+5,5702,Valparaíso,Catemu,home_ownership,73.73,percent,very high
+5,5702,Valparaíso,Catemu,industry_construction_employment,27.0,percent,very high
+5,5702,Valparaíso,Catemu,population,13755.0,persons,low
+5,5702,Valparaíso,Catemu,renter_share,13.02,percent,low
+5,5703,Valparaíso,Llaillay,electricity_access_rate,99.53,percent,medium
+5,5703,Valparaíso,Llaillay,employment_in_transport_and_logistics,6.36,percent,high
+5,5703,Valparaíso,Llaillay,home_ownership,69.26,percent,medium
+5,5703,Valparaíso,Llaillay,industry_construction_employment,23.4,percent,high
+5,5703,Valparaíso,Llaillay,population,25442.0,persons,medium
+5,5703,Valparaíso,Llaillay,renter_share,17.21,percent,high
+5,5704,Valparaíso,Panquehue,electricity_access_rate,99.75,percent,high
+5,5704,Valparaíso,Panquehue,employment_in_transport_and_logistics,5.21,percent,medium
+5,5704,Valparaíso,Panquehue,home_ownership,69.64,percent,medium
+5,5704,Valparaíso,Panquehue,industry_construction_employment,15.56,percent,very low
+5,5704,Valparaíso,Panquehue,population,7266.0,persons,very low
+5,5704,Valparaíso,Panquehue,renter_share,11.59,percent,low
+5,5705,Valparaíso,Putaendo,electricity_access_rate,99.4,percent,medium
+5,5705,Valparaíso,Putaendo,employment_in_transport_and_logistics,5.36,percent,medium
+5,5705,Valparaíso,Putaendo,home_ownership,68.83,percent,medium
+5,5705,Valparaíso,Putaendo,industry_construction_employment,20.01,percent,medium
+5,5705,Valparaíso,Putaendo,population,17057.0,persons,medium
+5,5705,Valparaíso,Putaendo,renter_share,12.06,percent,low
+5,5706,Valparaíso,Santa María,electricity_access_rate,99.62,percent,high
+5,5706,Valparaíso,Santa María,employment_in_transport_and_logistics,5.63,percent,medium
+5,5706,Valparaíso,Santa María,home_ownership,70.93,percent,high
+5,5706,Valparaíso,Santa María,industry_construction_employment,14.67,percent,very low
+5,5706,Valparaíso,Santa María,population,15120.0,persons,medium
+5,5706,Valparaíso,Santa María,renter_share,12.97,percent,low
+5,5801,Valparaíso,Quilpué,electricity_access_rate,99.33,percent,medium
+5,5801,Valparaíso,Quilpué,employment_in_transport_and_logistics,7.62,percent,very high
+5,5801,Valparaíso,Quilpué,home_ownership,62.68,percent,low
+5,5801,Valparaíso,Quilpué,industry_construction_employment,18.84,percent,medium
+5,5801,Valparaíso,Quilpué,population,161636.0,persons,very high
+5,5801,Valparaíso,Quilpué,renter_share,24.82,percent,very high
+5,5802,Valparaíso,Limache,electricity_access_rate,99.5,percent,medium
+5,5802,Valparaíso,Limache,employment_in_transport_and_logistics,7.1,percent,high
+5,5802,Valparaíso,Limache,home_ownership,67.53,percent,medium
+5,5802,Valparaíso,Limache,industry_construction_employment,18.67,percent,low
+5,5802,Valparaíso,Limache,population,55481.0,persons,high
+5,5802,Valparaíso,Limache,renter_share,17.95,percent,high
+5,5803,Valparaíso,Olmué,electricity_access_rate,98.22,percent,very low
+5,5803,Valparaíso,Olmué,employment_in_transport_and_logistics,6.62,percent,high
+5,5803,Valparaíso,Olmué,home_ownership,69.68,percent,medium
+5,5803,Valparaíso,Olmué,industry_construction_employment,19.83,percent,medium
+5,5803,Valparaíso,Olmué,population,19775.0,persons,medium
+5,5803,Valparaíso,Olmué,renter_share,10.68,percent,low
+5,5804,Valparaíso,Villa Alemana,electricity_access_rate,99.83,percent,very high
+5,5804,Valparaíso,Villa Alemana,employment_in_transport_and_logistics,8.15,percent,very high
+5,5804,Valparaíso,Villa Alemana,home_ownership,67.95,percent,medium
+5,5804,Valparaíso,Villa Alemana,industry_construction_employment,19.14,percent,medium
+5,5804,Valparaíso,Villa Alemana,population,139075.0,persons,very high
+5,5804,Valparaíso,Villa Alemana,renter_share,21.85,percent,high
+6,6101,Libertador General Bernardo O'Higgins,Rancagua,electricity_access_rate,99.89,percent,very high
+6,6101,Libertador General Bernardo O'Higgins,Rancagua,employment_in_transport_and_logistics,6.0,percent,medium
+6,6101,Libertador General Bernardo O'Higgins,Rancagua,home_ownership,61.45,percent,low
+6,6101,Libertador General Bernardo O'Higgins,Rancagua,industry_construction_employment,24.87,percent,very high
+6,6101,Libertador General Bernardo O'Higgins,Rancagua,population,254165.0,persons,very high
+6,6101,Libertador General Bernardo O'Higgins,Rancagua,renter_share,29.25,percent,very high
+6,6102,Libertador General Bernardo O'Higgins,Codegua,electricity_access_rate,99.67,percent,high
+6,6102,Libertador General Bernardo O'Higgins,Codegua,employment_in_transport_and_logistics,5.14,percent,low
+6,6102,Libertador General Bernardo O'Higgins,Codegua,home_ownership,68.29,percent,medium
+6,6102,Libertador General Bernardo O'Higgins,Codegua,industry_construction_employment,19.92,percent,medium
+6,6102,Libertador General Bernardo O'Higgins,Codegua,population,13924.0,persons,low
+6,6102,Libertador General Bernardo O'Higgins,Codegua,renter_share,12.51,percent,low
+6,6103,Libertador General Bernardo O'Higgins,Coinco,electricity_access_rate,99.46,percent,medium
+6,6103,Libertador General Bernardo O'Higgins,Coinco,employment_in_transport_and_logistics,7.81,percent,very high
+6,6103,Libertador General Bernardo O'Higgins,Coinco,home_ownership,67.9,percent,medium
+6,6103,Libertador General Bernardo O'Higgins,Coinco,industry_construction_employment,22.14,percent,high
+6,6103,Libertador General Bernardo O'Higgins,Coinco,population,7914.0,persons,low
+6,6103,Libertador General Bernardo O'Higgins,Coinco,renter_share,11.1,percent,low
+6,6104,Libertador General Bernardo O'Higgins,Coltauco,electricity_access_rate,99.38,percent,medium
+6,6104,Libertador General Bernardo O'Higgins,Coltauco,employment_in_transport_and_logistics,6.25,percent,high
+6,6104,Libertador General Bernardo O'Higgins,Coltauco,home_ownership,70.43,percent,high
+6,6104,Libertador General Bernardo O'Higgins,Coltauco,industry_construction_employment,22.73,percent,high
+6,6104,Libertador General Bernardo O'Higgins,Coltauco,population,21348.0,persons,medium
+6,6104,Libertador General Bernardo O'Higgins,Coltauco,renter_share,12.28,percent,low
+6,6105,Libertador General Bernardo O'Higgins,Doñihue,electricity_access_rate,99.42,percent,medium
+6,6105,Libertador General Bernardo O'Higgins,Doñihue,employment_in_transport_and_logistics,6.69,percent,high
+6,6105,Libertador General Bernardo O'Higgins,Doñihue,home_ownership,63.44,percent,low
+6,6105,Libertador General Bernardo O'Higgins,Doñihue,industry_construction_employment,33.13,percent,very high
+6,6105,Libertador General Bernardo O'Higgins,Doñihue,population,21888.0,persons,medium
+6,6105,Libertador General Bernardo O'Higgins,Doñihue,renter_share,19.79,percent,high
+6,6106,Libertador General Bernardo O'Higgins,Graneros,electricity_access_rate,99.94,percent,very high
+6,6106,Libertador General Bernardo O'Higgins,Graneros,employment_in_transport_and_logistics,5.64,percent,medium
+6,6106,Libertador General Bernardo O'Higgins,Graneros,home_ownership,68.15,percent,medium
+6,6106,Libertador General Bernardo O'Higgins,Graneros,industry_construction_employment,21.11,percent,medium
+6,6106,Libertador General Bernardo O'Higgins,Graneros,population,35754.0,persons,high
+6,6106,Libertador General Bernardo O'Higgins,Graneros,renter_share,21.54,percent,high
+6,6107,Libertador General Bernardo O'Higgins,Las Cabras,electricity_access_rate,99.56,percent,high
+6,6107,Libertador General Bernardo O'Higgins,Las Cabras,employment_in_transport_and_logistics,4.24,percent,low
+6,6107,Libertador General Bernardo O'Higgins,Las Cabras,home_ownership,66.97,percent,low
+6,6107,Libertador General Bernardo O'Higgins,Las Cabras,industry_construction_employment,16.43,percent,low
+6,6107,Libertador General Bernardo O'Higgins,Las Cabras,population,27510.0,persons,high
+6,6107,Libertador General Bernardo O'Higgins,Las Cabras,renter_share,15.74,percent,medium
+6,6108,Libertador General Bernardo O'Higgins,Machalí,electricity_access_rate,99.8,percent,very high
+6,6108,Libertador General Bernardo O'Higgins,Machalí,employment_in_transport_and_logistics,3.7,percent,very low
+6,6108,Libertador General Bernardo O'Higgins,Machalí,home_ownership,70.24,percent,high
+6,6108,Libertador General Bernardo O'Higgins,Machalí,industry_construction_employment,31.13,percent,very high
+6,6108,Libertador General Bernardo O'Higgins,Machalí,population,60791.0,persons,high
+6,6108,Libertador General Bernardo O'Higgins,Machalí,renter_share,20.45,percent,high
+6,6109,Libertador General Bernardo O'Higgins,Malloa,electricity_access_rate,99.0,percent,low
+6,6109,Libertador General Bernardo O'Higgins,Malloa,employment_in_transport_and_logistics,5.92,percent,medium
+6,6109,Libertador General Bernardo O'Higgins,Malloa,home_ownership,69.61,percent,medium
+6,6109,Libertador General Bernardo O'Higgins,Malloa,industry_construction_employment,21.78,percent,high
+6,6109,Libertador General Bernardo O'Higgins,Malloa,population,13877.0,persons,low
+6,6109,Libertador General Bernardo O'Higgins,Malloa,renter_share,9.85,percent,very low
+6,6110,Libertador General Bernardo O'Higgins,Mostazal,electricity_access_rate,99.58,percent,high
+6,6110,Libertador General Bernardo O'Higgins,Mostazal,employment_in_transport_and_logistics,5.75,percent,medium
+6,6110,Libertador General Bernardo O'Higgins,Mostazal,home_ownership,65.89,percent,low
+6,6110,Libertador General Bernardo O'Higgins,Mostazal,industry_construction_employment,21.11,percent,medium
+6,6110,Libertador General Bernardo O'Higgins,Mostazal,population,27331.0,persons,high
+6,6110,Libertador General Bernardo O'Higgins,Mostazal,renter_share,15.43,percent,medium
+6,6111,Libertador General Bernardo O'Higgins,Olivar,electricity_access_rate,99.78,percent,high
+6,6111,Libertador General Bernardo O'Higgins,Olivar,employment_in_transport_and_logistics,6.67,percent,high
+6,6111,Libertador General Bernardo O'Higgins,Olivar,home_ownership,63.36,percent,low
+6,6111,Libertador General Bernardo O'Higgins,Olivar,industry_construction_employment,24.47,percent,high
+6,6111,Libertador General Bernardo O'Higgins,Olivar,population,13880.0,persons,low
+6,6111,Libertador General Bernardo O'Higgins,Olivar,renter_share,16.82,percent,medium
+6,6112,Libertador General Bernardo O'Higgins,Peumo,electricity_access_rate,99.69,percent,high
+6,6112,Libertador General Bernardo O'Higgins,Peumo,employment_in_transport_and_logistics,4.3,percent,low
+6,6112,Libertador General Bernardo O'Higgins,Peumo,home_ownership,69.94,percent,medium
+6,6112,Libertador General Bernardo O'Higgins,Peumo,industry_construction_employment,17.43,percent,low
+6,6112,Libertador General Bernardo O'Higgins,Peumo,population,14076.0,persons,low
+6,6112,Libertador General Bernardo O'Higgins,Peumo,renter_share,12.89,percent,low
+6,6113,Libertador General Bernardo O'Higgins,Pichidegua,electricity_access_rate,99.42,percent,medium
+6,6113,Libertador General Bernardo O'Higgins,Pichidegua,employment_in_transport_and_logistics,4.36,percent,low
+6,6113,Libertador General Bernardo O'Higgins,Pichidegua,home_ownership,73.43,percent,very high
+6,6113,Libertador General Bernardo O'Higgins,Pichidegua,industry_construction_employment,18.3,percent,low
+6,6113,Libertador General Bernardo O'Higgins,Pichidegua,population,20320.0,persons,medium
+6,6113,Libertador General Bernardo O'Higgins,Pichidegua,renter_share,9.81,percent,very low
+6,6114,Libertador General Bernardo O'Higgins,Quinta de Tilcoco,electricity_access_rate,99.66,percent,high
+6,6114,Libertador General Bernardo O'Higgins,Quinta de Tilcoco,employment_in_transport_and_logistics,4.09,percent,very low
+6,6114,Libertador General Bernardo O'Higgins,Quinta de Tilcoco,home_ownership,69.73,percent,medium
+6,6114,Libertador General Bernardo O'Higgins,Quinta de Tilcoco,industry_construction_employment,18.62,percent,low
+6,6114,Libertador General Bernardo O'Higgins,Quinta de Tilcoco,population,13558.0,persons,low
+6,6114,Libertador General Bernardo O'Higgins,Quinta de Tilcoco,renter_share,14.6,percent,medium
+6,6115,Libertador General Bernardo O'Higgins,Rengo,electricity_access_rate,99.67,percent,high
+6,6115,Libertador General Bernardo O'Higgins,Rengo,employment_in_transport_and_logistics,5.45,percent,medium
+6,6115,Libertador General Bernardo O'Higgins,Rengo,home_ownership,68.15,percent,medium
+6,6115,Libertador General Bernardo O'Higgins,Rengo,industry_construction_employment,20.95,percent,medium
+6,6115,Libertador General Bernardo O'Higgins,Rengo,population,63204.0,persons,high
+6,6115,Libertador General Bernardo O'Higgins,Rengo,renter_share,18.8,percent,high
+6,6116,Libertador General Bernardo O'Higgins,Requínoa,electricity_access_rate,99.69,percent,high
+6,6116,Libertador General Bernardo O'Higgins,Requínoa,employment_in_transport_and_logistics,5.63,percent,medium
+6,6116,Libertador General Bernardo O'Higgins,Requínoa,home_ownership,70.16,percent,medium
+6,6116,Libertador General Bernardo O'Higgins,Requínoa,industry_construction_employment,20.07,percent,medium
+6,6116,Libertador General Bernardo O'Higgins,Requínoa,population,29482.0,persons,high
+6,6116,Libertador General Bernardo O'Higgins,Requínoa,renter_share,13.93,percent,medium
+6,6117,Libertador General Bernardo O'Higgins,San Vicente,electricity_access_rate,99.55,percent,medium
+6,6117,Libertador General Bernardo O'Higgins,San Vicente,employment_in_transport_and_logistics,4.27,percent,low
+6,6117,Libertador General Bernardo O'Higgins,San Vicente,home_ownership,64.58,percent,low
+6,6117,Libertador General Bernardo O'Higgins,San Vicente,industry_construction_employment,18.41,percent,low
+6,6117,Libertador General Bernardo O'Higgins,San Vicente,population,49488.0,persons,high
+6,6117,Libertador General Bernardo O'Higgins,San Vicente,renter_share,18.17,percent,high
+6,6201,Libertador General Bernardo O'Higgins,Pichilemu,electricity_access_rate,99.55,percent,medium
+6,6201,Libertador General Bernardo O'Higgins,Pichilemu,employment_in_transport_and_logistics,3.12,percent,very low
+6,6201,Libertador General Bernardo O'Higgins,Pichilemu,home_ownership,57.96,percent,very low
+6,6201,Libertador General Bernardo O'Higgins,Pichilemu,industry_construction_employment,19.88,percent,medium
+6,6201,Libertador General Bernardo O'Higgins,Pichilemu,population,19794.0,persons,medium
+6,6201,Libertador General Bernardo O'Higgins,Pichilemu,renter_share,24.15,percent,very high
+6,6202,Libertador General Bernardo O'Higgins,La Estrella,electricity_access_rate,98.82,percent,low
+6,6202,Libertador General Bernardo O'Higgins,La Estrella,employment_in_transport_and_logistics,3.33,percent,very low
+6,6202,Libertador General Bernardo O'Higgins,La Estrella,home_ownership,69.81,percent,medium
+6,6202,Libertador General Bernardo O'Higgins,La Estrella,industry_construction_employment,25.99,percent,very high
+6,6202,Libertador General Bernardo O'Higgins,La Estrella,population,4587.0,persons,very low
+6,6202,Libertador General Bernardo O'Higgins,La Estrella,renter_share,8.66,percent,very low
+6,6203,Libertador General Bernardo O'Higgins,Litueche,electricity_access_rate,99.16,percent,low
+6,6203,Libertador General Bernardo O'Higgins,Litueche,employment_in_transport_and_logistics,4.55,percent,low
+6,6203,Libertador General Bernardo O'Higgins,Litueche,home_ownership,70.57,percent,high
+6,6203,Libertador General Bernardo O'Higgins,Litueche,industry_construction_employment,24.18,percent,high
+6,6203,Libertador General Bernardo O'Higgins,Litueche,population,8846.0,persons,low
+6,6203,Libertador General Bernardo O'Higgins,Litueche,renter_share,14.5,percent,medium
+6,6204,Libertador General Bernardo O'Higgins,Marchihue,electricity_access_rate,99.35,percent,medium
+6,6204,Libertador General Bernardo O'Higgins,Marchihue,employment_in_transport_and_logistics,4.83,percent,low
+6,6204,Libertador General Bernardo O'Higgins,Marchihue,home_ownership,72.79,percent,high
+6,6204,Libertador General Bernardo O'Higgins,Marchihue,industry_construction_employment,25.08,percent,very high
+6,6204,Libertador General Bernardo O'Higgins,Marchihue,population,8709.0,persons,low
+6,6204,Libertador General Bernardo O'Higgins,Marchihue,renter_share,11.86,percent,low
+6,6205,Libertador General Bernardo O'Higgins,Navidad,electricity_access_rate,98.9,percent,low
+6,6205,Libertador General Bernardo O'Higgins,Navidad,employment_in_transport_and_logistics,3.22,percent,very low
+6,6205,Libertador General Bernardo O'Higgins,Navidad,home_ownership,69.24,percent,medium
+6,6205,Libertador General Bernardo O'Higgins,Navidad,industry_construction_employment,23.53,percent,high
+6,6205,Libertador General Bernardo O'Higgins,Navidad,population,8881.0,persons,low
+6,6205,Libertador General Bernardo O'Higgins,Navidad,renter_share,14.18,percent,medium
+6,6206,Libertador General Bernardo O'Higgins,Paredones,electricity_access_rate,98.09,percent,very low
+6,6206,Libertador General Bernardo O'Higgins,Paredones,employment_in_transport_and_logistics,2.96,percent,very low
+6,6206,Libertador General Bernardo O'Higgins,Paredones,home_ownership,71.33,percent,high
+6,6206,Libertador General Bernardo O'Higgins,Paredones,industry_construction_employment,18.23,percent,low
+6,6206,Libertador General Bernardo O'Higgins,Paredones,population,7228.0,persons,very low
+6,6206,Libertador General Bernardo O'Higgins,Paredones,renter_share,8.33,percent,very low
+6,6301,Libertador General Bernardo O'Higgins,San Fernando,electricity_access_rate,99.6,percent,high
+6,6301,Libertador General Bernardo O'Higgins,San Fernando,employment_in_transport_and_logistics,5.37,percent,medium
+6,6301,Libertador General Bernardo O'Higgins,San Fernando,home_ownership,65.16,percent,low
+6,6301,Libertador General Bernardo O'Higgins,San Fernando,industry_construction_employment,18.14,percent,low
+6,6301,Libertador General Bernardo O'Higgins,San Fernando,population,75449.0,persons,high
+6,6301,Libertador General Bernardo O'Higgins,San Fernando,renter_share,22.3,percent,high
+6,6302,Libertador General Bernardo O'Higgins,Chépica,electricity_access_rate,99.67,percent,high
+6,6302,Libertador General Bernardo O'Higgins,Chépica,employment_in_transport_and_logistics,3.87,percent,very low
+6,6302,Libertador General Bernardo O'Higgins,Chépica,home_ownership,75.97,percent,very high
+6,6302,Libertador General Bernardo O'Higgins,Chépica,industry_construction_employment,11.1,percent,very low
+6,6302,Libertador General Bernardo O'Higgins,Chépica,population,15560.0,persons,medium
+6,6302,Libertador General Bernardo O'Higgins,Chépica,renter_share,9.67,percent,very low
+6,6303,Libertador General Bernardo O'Higgins,Chimbarongo,electricity_access_rate,99.65,percent,high
+6,6303,Libertador General Bernardo O'Higgins,Chimbarongo,employment_in_transport_and_logistics,4.82,percent,low
+6,6303,Libertador General Bernardo O'Higgins,Chimbarongo,home_ownership,69.5,percent,medium
+6,6303,Libertador General Bernardo O'Higgins,Chimbarongo,industry_construction_employment,15.05,percent,very low
+6,6303,Libertador General Bernardo O'Higgins,Chimbarongo,population,37249.0,persons,high
+6,6303,Libertador General Bernardo O'Higgins,Chimbarongo,renter_share,12.01,percent,low
+6,6304,Libertador General Bernardo O'Higgins,Lolol,electricity_access_rate,99.37,percent,medium
+6,6304,Libertador General Bernardo O'Higgins,Lolol,employment_in_transport_and_logistics,3.68,percent,very low
+6,6304,Libertador General Bernardo O'Higgins,Lolol,home_ownership,71.0,percent,high
+6,6304,Libertador General Bernardo O'Higgins,Lolol,industry_construction_employment,12.62,percent,very low
+6,6304,Libertador General Bernardo O'Higgins,Lolol,population,7790.0,persons,very low
+6,6304,Libertador General Bernardo O'Higgins,Lolol,renter_share,11.05,percent,low
+6,6305,Libertador General Bernardo O'Higgins,Nancagua,electricity_access_rate,99.65,percent,high
+6,6305,Libertador General Bernardo O'Higgins,Nancagua,employment_in_transport_and_logistics,4.18,percent,very low
+6,6305,Libertador General Bernardo O'Higgins,Nancagua,home_ownership,70.74,percent,high
+6,6305,Libertador General Bernardo O'Higgins,Nancagua,industry_construction_employment,16.93,percent,low
+6,6305,Libertador General Bernardo O'Higgins,Nancagua,population,18684.0,persons,medium
+6,6305,Libertador General Bernardo O'Higgins,Nancagua,renter_share,15.39,percent,medium
+6,6306,Libertador General Bernardo O'Higgins,Palmilla,electricity_access_rate,99.68,percent,high
+6,6306,Libertador General Bernardo O'Higgins,Palmilla,employment_in_transport_and_logistics,5.02,percent,low
+6,6306,Libertador General Bernardo O'Higgins,Palmilla,home_ownership,77.54,percent,very high
+6,6306,Libertador General Bernardo O'Higgins,Palmilla,industry_construction_employment,15.1,percent,very low
+6,6306,Libertador General Bernardo O'Higgins,Palmilla,population,13056.0,persons,low
+6,6306,Libertador General Bernardo O'Higgins,Palmilla,renter_share,8.35,percent,very low
+6,6307,Libertador General Bernardo O'Higgins,Peralillo,electricity_access_rate,99.59,percent,high
+6,6307,Libertador General Bernardo O'Higgins,Peralillo,employment_in_transport_and_logistics,3.5,percent,very low
+6,6307,Libertador General Bernardo O'Higgins,Peralillo,home_ownership,72.84,percent,high
+6,6307,Libertador General Bernardo O'Higgins,Peralillo,industry_construction_employment,23.13,percent,high
+6,6307,Libertador General Bernardo O'Higgins,Peralillo,population,12492.0,persons,low
+6,6307,Libertador General Bernardo O'Higgins,Peralillo,renter_share,14.05,percent,medium
+6,6308,Libertador General Bernardo O'Higgins,Placilla,electricity_access_rate,99.35,percent,medium
+6,6308,Libertador General Bernardo O'Higgins,Placilla,employment_in_transport_and_logistics,3.33,percent,very low
+6,6308,Libertador General Bernardo O'Higgins,Placilla,home_ownership,65.53,percent,low
+6,6308,Libertador General Bernardo O'Higgins,Placilla,industry_construction_employment,15.07,percent,very low
+6,6308,Libertador General Bernardo O'Higgins,Placilla,population,9437.0,persons,low
+6,6308,Libertador General Bernardo O'Higgins,Placilla,renter_share,10.86,percent,low
+6,6309,Libertador General Bernardo O'Higgins,Pumanque,electricity_access_rate,98.69,percent,low
+6,6309,Libertador General Bernardo O'Higgins,Pumanque,employment_in_transport_and_logistics,2.91,percent,very low
+6,6309,Libertador General Bernardo O'Higgins,Pumanque,home_ownership,72.59,percent,high
+6,6309,Libertador General Bernardo O'Higgins,Pumanque,industry_construction_employment,20.18,percent,medium
+6,6309,Libertador General Bernardo O'Higgins,Pumanque,population,4559.0,persons,very low
+6,6309,Libertador General Bernardo O'Higgins,Pumanque,renter_share,5.8,percent,very low
+6,6310,Libertador General Bernardo O'Higgins,Santa Cruz,electricity_access_rate,99.66,percent,high
+6,6310,Libertador General Bernardo O'Higgins,Santa Cruz,employment_in_transport_and_logistics,5.0,percent,low
+6,6310,Libertador General Bernardo O'Higgins,Santa Cruz,home_ownership,67.34,percent,medium
+6,6310,Libertador General Bernardo O'Higgins,Santa Cruz,industry_construction_employment,15.19,percent,very low
+6,6310,Libertador General Bernardo O'Higgins,Santa Cruz,population,40754.0,persons,high
+6,6310,Libertador General Bernardo O'Higgins,Santa Cruz,renter_share,20.0,percent,high
+7,7101,Maule,Talca,electricity_access_rate,99.93,percent,very high
+7,7101,Maule,Talca,employment_in_transport_and_logistics,5.38,percent,medium
+7,7101,Maule,Talca,home_ownership,66.2,percent,low
+7,7101,Maule,Talca,industry_construction_employment,19.25,percent,medium
+7,7101,Maule,Talca,population,230184.0,persons,very high
+7,7101,Maule,Talca,renter_share,24.68,percent,very high
+7,7102,Maule,Constitución,electricity_access_rate,99.59,percent,high
+7,7102,Maule,Constitución,employment_in_transport_and_logistics,6.96,percent,high
+7,7102,Maule,Constitución,home_ownership,67.68,percent,medium
+7,7102,Maule,Constitución,industry_construction_employment,23.06,percent,high
+7,7102,Maule,Constitución,population,46888.0,persons,high
+7,7102,Maule,Constitución,renter_share,18.91,percent,high
+7,7103,Maule,Curepto,electricity_access_rate,98.91,percent,low
+7,7103,Maule,Curepto,employment_in_transport_and_logistics,2.68,percent,very low
+7,7103,Maule,Curepto,home_ownership,72.1,percent,high
+7,7103,Maule,Curepto,industry_construction_employment,16.61,percent,low
+7,7103,Maule,Curepto,population,9498.0,persons,low
+7,7103,Maule,Curepto,renter_share,8.69,percent,very low
+7,7104,Maule,Empedrado,electricity_access_rate,99.31,percent,medium
+7,7104,Maule,Empedrado,employment_in_transport_and_logistics,4.08,percent,very low
+7,7104,Maule,Empedrado,home_ownership,69.58,percent,medium
+7,7104,Maule,Empedrado,industry_construction_employment,27.44,percent,very high
+7,7104,Maule,Empedrado,population,3986.0,persons,very low
+7,7104,Maule,Empedrado,renter_share,15.65,percent,medium
+7,7105,Maule,Maule,electricity_access_rate,99.74,percent,high
+7,7105,Maule,Maule,employment_in_transport_and_logistics,6.14,percent,high
+7,7105,Maule,Maule,home_ownership,74.1,percent,very high
+7,7105,Maule,Maule,industry_construction_employment,20.87,percent,medium
+7,7105,Maule,Maule,population,61008.0,persons,high
+7,7105,Maule,Maule,renter_share,17.09,percent,medium
+7,7106,Maule,Pelarco,electricity_access_rate,99.4,percent,medium
+7,7106,Maule,Pelarco,employment_in_transport_and_logistics,3.99,percent,very low
+7,7106,Maule,Pelarco,home_ownership,73.08,percent,high
+7,7106,Maule,Pelarco,industry_construction_employment,17.92,percent,low
+7,7106,Maule,Pelarco,population,9229.0,persons,low
+7,7106,Maule,Pelarco,renter_share,7.02,percent,very low
+7,7107,Maule,Pencahue,electricity_access_rate,99.5,percent,medium
+7,7107,Maule,Pencahue,employment_in_transport_and_logistics,2.61,percent,very low
+7,7107,Maule,Pencahue,home_ownership,72.87,percent,high
+7,7107,Maule,Pencahue,industry_construction_employment,17.68,percent,low
+7,7107,Maule,Pencahue,population,9159.0,persons,low
+7,7107,Maule,Pencahue,renter_share,8.83,percent,very low
+7,7108,Maule,Río Claro,electricity_access_rate,99.52,percent,medium
+7,7108,Maule,Río Claro,employment_in_transport_and_logistics,4.16,percent,very low
+7,7108,Maule,Río Claro,home_ownership,74.31,percent,very high
+7,7108,Maule,Río Claro,industry_construction_employment,12.01,percent,very low
+7,7108,Maule,Río Claro,population,14270.0,persons,low
+7,7108,Maule,Río Claro,renter_share,7.7,percent,very low
+7,7109,Maule,San Clemente,electricity_access_rate,99.62,percent,high
+7,7109,Maule,San Clemente,employment_in_transport_and_logistics,3.79,percent,very low
+7,7109,Maule,San Clemente,home_ownership,73.01,percent,high
+7,7109,Maule,San Clemente,industry_construction_employment,20.65,percent,medium
+7,7109,Maule,San Clemente,population,47061.0,persons,high
+7,7109,Maule,San Clemente,renter_share,10.62,percent,very low
+7,7110,Maule,San Rafael,electricity_access_rate,99.69,percent,high
+7,7110,Maule,San Rafael,employment_in_transport_and_logistics,5.0,percent,low
+7,7110,Maule,San Rafael,home_ownership,74.97,percent,very high
+7,7110,Maule,San Rafael,industry_construction_employment,22.74,percent,high
+7,7110,Maule,San Rafael,population,11225.0,persons,low
+7,7110,Maule,San Rafael,renter_share,8.44,percent,very low
+7,7201,Maule,Cauquenes,electricity_access_rate,99.5,percent,medium
+7,7201,Maule,Cauquenes,employment_in_transport_and_logistics,5.25,percent,medium
+7,7201,Maule,Cauquenes,home_ownership,71.14,percent,high
+7,7201,Maule,Cauquenes,industry_construction_employment,16.16,percent,low
+7,7201,Maule,Cauquenes,population,42064.0,persons,high
+7,7201,Maule,Cauquenes,renter_share,15.63,percent,medium
+7,7202,Maule,Chanco,electricity_access_rate,99.04,percent,low
+7,7202,Maule,Chanco,employment_in_transport_and_logistics,3.12,percent,very low
+7,7202,Maule,Chanco,home_ownership,73.66,percent,very high
+7,7202,Maule,Chanco,industry_construction_employment,14.2,percent,very low
+7,7202,Maule,Chanco,population,9436.0,persons,low
+7,7202,Maule,Chanco,renter_share,9.78,percent,very low
+7,7203,Maule,Pelluhue,electricity_access_rate,98.96,percent,low
+7,7203,Maule,Pelluhue,employment_in_transport_and_logistics,2.75,percent,very low
+7,7203,Maule,Pelluhue,home_ownership,72.4,percent,high
+7,7203,Maule,Pelluhue,industry_construction_employment,16.88,percent,low
+7,7203,Maule,Pelluhue,population,8562.0,persons,low
+7,7203,Maule,Pelluhue,renter_share,14.36,percent,medium
+7,7301,Maule,Curicó,electricity_access_rate,99.82,percent,very high
+7,7301,Maule,Curicó,employment_in_transport_and_logistics,5.7,percent,medium
+7,7301,Maule,Curicó,home_ownership,67.4,percent,medium
+7,7301,Maule,Curicó,industry_construction_employment,16.32,percent,low
+7,7301,Maule,Curicó,population,158659.0,persons,very high
+7,7301,Maule,Curicó,renter_share,22.04,percent,high
+7,7302,Maule,Hualañé,electricity_access_rate,99.55,percent,medium
+7,7302,Maule,Hualañé,employment_in_transport_and_logistics,4.33,percent,low
+7,7302,Maule,Hualañé,home_ownership,69.04,percent,medium
+7,7302,Maule,Hualañé,industry_construction_employment,16.3,percent,low
+7,7302,Maule,Hualañé,population,10771.0,persons,low
+7,7302,Maule,Hualañé,renter_share,14.58,percent,medium
+7,7303,Maule,Licantén,electricity_access_rate,99.24,percent,low
+7,7303,Maule,Licantén,employment_in_transport_and_logistics,4.15,percent,very low
+7,7303,Maule,Licantén,home_ownership,65.19,percent,low
+7,7303,Maule,Licantén,industry_construction_employment,19.14,percent,medium
+7,7303,Maule,Licantén,population,6865.0,persons,very low
+7,7303,Maule,Licantén,renter_share,16.95,percent,medium
+7,7304,Maule,Molina,electricity_access_rate,99.63,percent,high
+7,7304,Maule,Molina,employment_in_transport_and_logistics,5.09,percent,low
+7,7304,Maule,Molina,home_ownership,70.98,percent,high
+7,7304,Maule,Molina,industry_construction_employment,17.78,percent,low
+7,7304,Maule,Molina,population,48477.0,persons,high
+7,7304,Maule,Molina,renter_share,15.93,percent,medium
+7,7305,Maule,Rauco,electricity_access_rate,99.27,percent,medium
+7,7305,Maule,Rauco,employment_in_transport_and_logistics,4.18,percent,very low
+7,7305,Maule,Rauco,home_ownership,69.82,percent,medium
+7,7305,Maule,Rauco,industry_construction_employment,14.27,percent,very low
+7,7305,Maule,Rauco,population,11265.0,persons,low
+7,7305,Maule,Rauco,renter_share,11.0,percent,low
+7,7306,Maule,Romeral,electricity_access_rate,99.55,percent,medium
+7,7306,Maule,Romeral,employment_in_transport_and_logistics,6.04,percent,medium
+7,7306,Maule,Romeral,home_ownership,70.88,percent,high
+7,7306,Maule,Romeral,industry_construction_employment,14.05,percent,very low
+7,7306,Maule,Romeral,population,17216.0,persons,medium
+7,7306,Maule,Romeral,renter_share,11.35,percent,low
+7,7307,Maule,Sagrada Familia,electricity_access_rate,99.56,percent,high
+7,7307,Maule,Sagrada Familia,employment_in_transport_and_logistics,4.42,percent,low
+7,7307,Maule,Sagrada Familia,home_ownership,72.57,percent,high
+7,7307,Maule,Sagrada Familia,industry_construction_employment,14.35,percent,very low
+7,7307,Maule,Sagrada Familia,population,19416.0,persons,medium
+7,7307,Maule,Sagrada Familia,renter_share,9.23,percent,very low
+7,7308,Maule,Teno,electricity_access_rate,99.35,percent,medium
+7,7308,Maule,Teno,employment_in_transport_and_logistics,6.43,percent,high
+7,7308,Maule,Teno,home_ownership,72.53,percent,high
+7,7308,Maule,Teno,industry_construction_employment,17.54,percent,low
+7,7308,Maule,Teno,population,30087.0,persons,high
+7,7308,Maule,Teno,renter_share,9.9,percent,very low
+7,7309,Maule,Vichuquén,electricity_access_rate,98.93,percent,low
+7,7309,Maule,Vichuquén,employment_in_transport_and_logistics,2.35,percent,very low
+7,7309,Maule,Vichuquén,home_ownership,66.7,percent,low
+7,7309,Maule,Vichuquén,industry_construction_employment,25.12,percent,very high
+7,7309,Maule,Vichuquén,population,4710.0,persons,very low
+7,7309,Maule,Vichuquén,renter_share,12.0,percent,low
+7,7401,Maule,Linares,electricity_access_rate,99.79,percent,very high
+7,7401,Maule,Linares,employment_in_transport_and_logistics,6.09,percent,high
+7,7401,Maule,Linares,home_ownership,69.0,percent,medium
+7,7401,Maule,Linares,industry_construction_employment,16.78,percent,low
+7,7401,Maule,Linares,population,95795.0,persons,very high
+7,7401,Maule,Linares,renter_share,18.98,percent,high
+7,7402,Maule,Colbún,electricity_access_rate,99.5,percent,medium
+7,7402,Maule,Colbún,employment_in_transport_and_logistics,4.13,percent,very low
+7,7402,Maule,Colbún,home_ownership,74.71,percent,very high
+7,7402,Maule,Colbún,industry_construction_employment,25.15,percent,very high
+7,7402,Maule,Colbún,population,22568.0,persons,medium
+7,7402,Maule,Colbún,renter_share,10.54,percent,very low
+7,7403,Maule,Longaví,electricity_access_rate,98.93,percent,low
+7,7403,Maule,Longaví,employment_in_transport_and_logistics,5.32,percent,medium
+7,7403,Maule,Longaví,home_ownership,77.03,percent,very high
+7,7403,Maule,Longaví,industry_construction_employment,12.58,percent,very low
+7,7403,Maule,Longaví,population,33288.0,persons,high
+7,7403,Maule,Longaví,renter_share,8.24,percent,very low
+7,7404,Maule,Parral,electricity_access_rate,99.67,percent,high
+7,7404,Maule,Parral,employment_in_transport_and_logistics,4.8,percent,low
+7,7404,Maule,Parral,home_ownership,72.5,percent,high
+7,7404,Maule,Parral,industry_construction_employment,17.95,percent,low
+7,7404,Maule,Parral,population,45014.0,persons,high
+7,7404,Maule,Parral,renter_share,15.0,percent,medium
+7,7405,Maule,Retiro,electricity_access_rate,99.62,percent,high
+7,7405,Maule,Retiro,employment_in_transport_and_logistics,3.91,percent,very low
+7,7405,Maule,Retiro,home_ownership,76.58,percent,very high
+7,7405,Maule,Retiro,industry_construction_employment,14.66,percent,very low
+7,7405,Maule,Retiro,population,22308.0,persons,medium
+7,7405,Maule,Retiro,renter_share,7.59,percent,very low
+7,7406,Maule,San Javier,electricity_access_rate,99.75,percent,high
+7,7406,Maule,San Javier,employment_in_transport_and_logistics,7.11,percent,high
+7,7406,Maule,San Javier,home_ownership,74.6,percent,very high
+7,7406,Maule,San Javier,industry_construction_employment,20.36,percent,medium
+7,7406,Maule,San Javier,population,49452.0,persons,high
+7,7406,Maule,San Javier,renter_share,12.91,percent,low
+7,7407,Maule,Villa Alegre,electricity_access_rate,99.73,percent,high
+7,7407,Maule,Villa Alegre,employment_in_transport_and_logistics,5.17,percent,low
+7,7407,Maule,Villa Alegre,home_ownership,74.12,percent,very high
+7,7407,Maule,Villa Alegre,industry_construction_employment,21.21,percent,high
+7,7407,Maule,Villa Alegre,population,17919.0,persons,medium
+7,7407,Maule,Villa Alegre,renter_share,9.81,percent,very low
+7,7408,Maule,Yerbas Buenas,electricity_access_rate,99.1,percent,low
+7,7408,Maule,Yerbas Buenas,employment_in_transport_and_logistics,5.18,percent,medium
+7,7408,Maule,Yerbas Buenas,home_ownership,75.62,percent,very high
+7,7408,Maule,Yerbas Buenas,industry_construction_employment,16.62,percent,low
+7,7408,Maule,Yerbas Buenas,population,20010.0,persons,medium
+7,7408,Maule,Yerbas Buenas,renter_share,8.06,percent,very low
+8,8101,Biobío,Concepción,electricity_access_rate,99.91,percent,very high
+8,8101,Biobío,Concepción,employment_in_transport_and_logistics,5.9,percent,medium
+8,8101,Biobío,Concepción,home_ownership,50.37,percent,very low
+8,8101,Biobío,Concepción,industry_construction_employment,17.78,percent,low
+8,8101,Biobío,Concepción,population,225985.0,persons,very high
+8,8101,Biobío,Concepción,renter_share,37.26,percent,very high
+8,8102,Biobío,Coronel,electricity_access_rate,99.8,percent,very high
+8,8102,Biobío,Coronel,employment_in_transport_and_logistics,8.17,percent,very high
+8,8102,Biobío,Coronel,home_ownership,76.05,percent,very high
+8,8102,Biobío,Coronel,industry_construction_employment,25.83,percent,very high
+8,8102,Biobío,Coronel,population,123412.0,persons,very high
+8,8102,Biobío,Coronel,renter_share,14.11,percent,medium
+8,8103,Biobío,Chiguayante,electricity_access_rate,99.91,percent,very high
+8,8103,Biobío,Chiguayante,employment_in_transport_and_logistics,5.98,percent,medium
+8,8103,Biobío,Chiguayante,home_ownership,69.83,percent,medium
+8,8103,Biobío,Chiguayante,industry_construction_employment,21.64,percent,high
+8,8103,Biobío,Chiguayante,population,85577.0,persons,very high
+8,8103,Biobío,Chiguayante,renter_share,17.64,percent,high
+8,8104,Biobío,Florida,electricity_access_rate,99.19,percent,low
+8,8104,Biobío,Florida,employment_in_transport_and_logistics,7.59,percent,very high
+8,8104,Biobío,Florida,home_ownership,74.11,percent,very high
+8,8104,Biobío,Florida,industry_construction_employment,21.17,percent,high
+8,8104,Biobío,Florida,population,12924.0,persons,low
+8,8104,Biobío,Florida,renter_share,10.52,percent,very low
+8,8105,Biobío,Hualqui,electricity_access_rate,99.48,percent,medium
+8,8105,Biobío,Hualqui,employment_in_transport_and_logistics,5.36,percent,medium
+8,8105,Biobío,Hualqui,home_ownership,70.82,percent,high
+8,8105,Biobío,Hualqui,industry_construction_employment,25.31,percent,very high
+8,8105,Biobío,Hualqui,population,25662.0,persons,medium
+8,8105,Biobío,Hualqui,renter_share,13.65,percent,low
+8,8106,Biobío,Lota,electricity_access_rate,99.8,percent,very high
+8,8106,Biobío,Lota,employment_in_transport_and_logistics,5.17,percent,low
+8,8106,Biobío,Lota,home_ownership,75.55,percent,very high
+8,8106,Biobío,Lota,industry_construction_employment,27.52,percent,very high
+8,8106,Biobío,Lota,population,39930.0,persons,high
+8,8106,Biobío,Lota,renter_share,9.92,percent,very low
+8,8107,Biobío,Penco,electricity_access_rate,99.88,percent,very high
+8,8107,Biobío,Penco,employment_in_transport_and_logistics,11.04,percent,very high
+8,8107,Biobío,Penco,home_ownership,67.0,percent,low
+8,8107,Biobío,Penco,industry_construction_employment,21.16,percent,medium
+8,8107,Biobío,Penco,population,48866.0,persons,high
+8,8107,Biobío,Penco,renter_share,15.34,percent,medium
+8,8108,Biobío,San Pedro de La paz,electricity_access_rate,99.87,percent,very high
+8,8108,Biobío,San Pedro de La paz,employment_in_transport_and_logistics,6.45,percent,high
+8,8108,Biobío,San Pedro de La paz,home_ownership,70.71,percent,high
+8,8108,Biobío,San Pedro de La paz,industry_construction_employment,22.45,percent,high
+8,8108,Biobío,San Pedro de La paz,population,150671.0,persons,very high
+8,8108,Biobío,San Pedro de La paz,renter_share,21.74,percent,high
+8,8109,Biobío,Santa Juana,electricity_access_rate,98.95,percent,low
+8,8109,Biobío,Santa Juana,employment_in_transport_and_logistics,5.79,percent,medium
+8,8109,Biobío,Santa Juana,home_ownership,77.91,percent,very high
+8,8109,Biobío,Santa Juana,industry_construction_employment,20.72,percent,medium
+8,8109,Biobío,Santa Juana,population,14934.0,persons,low
+8,8109,Biobío,Santa Juana,renter_share,10.84,percent,low
+8,8110,Biobío,Talcahuano,electricity_access_rate,99.8,percent,very high
+8,8110,Biobío,Talcahuano,employment_in_transport_and_logistics,7.72,percent,very high
+8,8110,Biobío,Talcahuano,home_ownership,66.07,percent,low
+8,8110,Biobío,Talcahuano,industry_construction_employment,20.98,percent,medium
+8,8110,Biobío,Talcahuano,population,145925.0,persons,very high
+8,8110,Biobío,Talcahuano,renter_share,19.02,percent,high
+8,8111,Biobío,Tomé,electricity_access_rate,99.53,percent,medium
+8,8111,Biobío,Tomé,employment_in_transport_and_logistics,6.19,percent,high
+8,8111,Biobío,Tomé,home_ownership,71.02,percent,high
+8,8111,Biobío,Tomé,industry_construction_employment,21.46,percent,high
+8,8111,Biobío,Tomé,population,56766.0,persons,high
+8,8111,Biobío,Tomé,renter_share,14.14,percent,medium
+8,8112,Biobío,Hualpén,electricity_access_rate,99.95,percent,very high
+8,8112,Biobío,Hualpén,employment_in_transport_and_logistics,7.83,percent,very high
+8,8112,Biobío,Hualpén,home_ownership,67.45,percent,medium
+8,8112,Biobío,Hualpén,industry_construction_employment,22.63,percent,high
+8,8112,Biobío,Hualpén,population,87346.0,persons,very high
+8,8112,Biobío,Hualpén,renter_share,20.67,percent,high
+8,8201,Biobío,Lebu,electricity_access_rate,99.16,percent,low
+8,8201,Biobío,Lebu,employment_in_transport_and_logistics,4.22,percent,low
+8,8201,Biobío,Lebu,home_ownership,76.87,percent,very high
+8,8201,Biobío,Lebu,industry_construction_employment,11.88,percent,very low
+8,8201,Biobío,Lebu,population,25057.0,persons,medium
+8,8201,Biobío,Lebu,renter_share,12.17,percent,low
+8,8202,Biobío,Arauco,electricity_access_rate,99.36,percent,medium
+8,8202,Biobío,Arauco,employment_in_transport_and_logistics,5.22,percent,medium
+8,8202,Biobío,Arauco,home_ownership,74.93,percent,very high
+8,8202,Biobío,Arauco,industry_construction_employment,23.91,percent,high
+8,8202,Biobío,Arauco,population,37049.0,persons,high
+8,8202,Biobío,Arauco,renter_share,12.2,percent,low
+8,8203,Biobío,Cañete,electricity_access_rate,98.49,percent,very low
+8,8203,Biobío,Cañete,employment_in_transport_and_logistics,5.38,percent,medium
+8,8203,Biobío,Cañete,home_ownership,75.3,percent,very high
+8,8203,Biobío,Cañete,industry_construction_employment,17.17,percent,low
+8,8203,Biobío,Cañete,population,34566.0,persons,high
+8,8203,Biobío,Cañete,renter_share,12.79,percent,low
+8,8204,Biobío,Contulmo,electricity_access_rate,97.8,percent,very low
+8,8204,Biobío,Contulmo,employment_in_transport_and_logistics,4.81,percent,low
+8,8204,Biobío,Contulmo,home_ownership,72.33,percent,high
+8,8204,Biobío,Contulmo,industry_construction_employment,15.38,percent,very low
+8,8204,Biobío,Contulmo,population,5898.0,persons,very low
+8,8204,Biobío,Contulmo,renter_share,11.98,percent,low
+8,8205,Biobío,Curanilahue,electricity_access_rate,99.06,percent,low
+8,8205,Biobío,Curanilahue,employment_in_transport_and_logistics,5.05,percent,low
+8,8205,Biobío,Curanilahue,home_ownership,74.54,percent,very high
+8,8205,Biobío,Curanilahue,industry_construction_employment,21.86,percent,high
+8,8205,Biobío,Curanilahue,population,31041.0,persons,high
+8,8205,Biobío,Curanilahue,renter_share,9.01,percent,very low
+8,8206,Biobío,Los Álamos,electricity_access_rate,98.04,percent,very low
+8,8206,Biobío,Los Álamos,employment_in_transport_and_logistics,5.28,percent,medium
+8,8206,Biobío,Los Álamos,home_ownership,76.86,percent,very high
+8,8206,Biobío,Los Álamos,industry_construction_employment,19.5,percent,medium
+8,8206,Biobío,Los Álamos,population,21765.0,persons,medium
+8,8206,Biobío,Los Álamos,renter_share,9.27,percent,very low
+8,8207,Biobío,Tirúa,electricity_access_rate,98.38,percent,very low
+8,8207,Biobío,Tirúa,employment_in_transport_and_logistics,4.4,percent,low
+8,8207,Biobío,Tirúa,home_ownership,77.93,percent,very high
+8,8207,Biobío,Tirúa,industry_construction_employment,11.68,percent,very low
+8,8207,Biobío,Tirúa,population,10188.0,persons,low
+8,8207,Biobío,Tirúa,renter_share,11.06,percent,low
+8,8301,Biobío,Los Ángeles,electricity_access_rate,99.67,percent,high
+8,8301,Biobío,Los Ángeles,employment_in_transport_and_logistics,6.84,percent,high
+8,8301,Biobío,Los Ángeles,home_ownership,68.24,percent,medium
+8,8301,Biobío,Los Ángeles,industry_construction_employment,21.67,percent,high
+8,8301,Biobío,Los Ángeles,population,218386.0,persons,very high
+8,8301,Biobío,Los Ángeles,renter_share,20.26,percent,high
+8,8302,Biobío,Antuco,electricity_access_rate,99.35,percent,medium
+8,8302,Biobío,Antuco,employment_in_transport_and_logistics,3.05,percent,very low
+8,8302,Biobío,Antuco,home_ownership,73.98,percent,very high
+8,8302,Biobío,Antuco,industry_construction_employment,32.43,percent,very high
+8,8302,Biobío,Antuco,population,4362.0,persons,very low
+8,8302,Biobío,Antuco,renter_share,11.61,percent,low
+8,8303,Biobío,Cabrero,electricity_access_rate,99.61,percent,high
+8,8303,Biobío,Cabrero,employment_in_transport_and_logistics,8.14,percent,very high
+8,8303,Biobío,Cabrero,home_ownership,71.65,percent,high
+8,8303,Biobío,Cabrero,industry_construction_employment,29.24,percent,very high
+8,8303,Biobío,Cabrero,population,31242.0,persons,high
+8,8303,Biobío,Cabrero,renter_share,14.86,percent,medium
+8,8304,Biobío,Laja,electricity_access_rate,99.33,percent,medium
+8,8304,Biobío,Laja,employment_in_transport_and_logistics,5.13,percent,low
+8,8304,Biobío,Laja,home_ownership,72.34,percent,high
+8,8304,Biobío,Laja,industry_construction_employment,38.14,percent,very high
+8,8304,Biobío,Laja,population,23691.0,persons,medium
+8,8304,Biobío,Laja,renter_share,14.63,percent,medium
+8,8305,Biobío,Mulchén,electricity_access_rate,99.48,percent,medium
+8,8305,Biobío,Mulchén,employment_in_transport_and_logistics,6.22,percent,high
+8,8305,Biobío,Mulchén,home_ownership,68.14,percent,medium
+8,8305,Biobío,Mulchén,industry_construction_employment,17.55,percent,low
+8,8305,Biobío,Mulchén,population,28857.0,persons,high
+8,8305,Biobío,Mulchén,renter_share,13.82,percent,medium
+8,8306,Biobío,Nacimiento,electricity_access_rate,99.29,percent,medium
+8,8306,Biobío,Nacimiento,employment_in_transport_and_logistics,7.11,percent,high
+8,8306,Biobío,Nacimiento,home_ownership,68.65,percent,medium
+8,8306,Biobío,Nacimiento,industry_construction_employment,33.74,percent,very high
+8,8306,Biobío,Nacimiento,population,26124.0,persons,medium
+8,8306,Biobío,Nacimiento,renter_share,16.18,percent,medium
+8,8307,Biobío,Negrete,electricity_access_rate,99.3,percent,medium
+8,8307,Biobío,Negrete,employment_in_transport_and_logistics,5.41,percent,medium
+8,8307,Biobío,Negrete,home_ownership,73.92,percent,very high
+8,8307,Biobío,Negrete,industry_construction_employment,30.07,percent,very high
+8,8307,Biobío,Negrete,population,10723.0,persons,low
+8,8307,Biobío,Negrete,renter_share,10.79,percent,low
+8,8308,Biobío,Quilaco,electricity_access_rate,99.12,percent,low
+8,8308,Biobío,Quilaco,employment_in_transport_and_logistics,3.89,percent,very low
+8,8308,Biobío,Quilaco,home_ownership,70.53,percent,high
+8,8308,Biobío,Quilaco,industry_construction_employment,23.89,percent,high
+8,8308,Biobío,Quilaco,population,4402.0,persons,very low
+8,8308,Biobío,Quilaco,renter_share,10.48,percent,very low
+8,8309,Biobío,Quilleco,electricity_access_rate,99.38,percent,medium
+8,8309,Biobío,Quilleco,employment_in_transport_and_logistics,4.46,percent,low
+8,8309,Biobío,Quilleco,home_ownership,70.21,percent,medium
+8,8309,Biobío,Quilleco,industry_construction_employment,23.32,percent,high
+8,8309,Biobío,Quilleco,population,9693.0,persons,low
+8,8309,Biobío,Quilleco,renter_share,10.58,percent,very low
+8,8310,Biobío,San Rosendo,electricity_access_rate,98.93,percent,low
+8,8310,Biobío,San Rosendo,employment_in_transport_and_logistics,5.83,percent,medium
+8,8310,Biobío,San Rosendo,home_ownership,71.56,percent,high
+8,8310,Biobío,San Rosendo,industry_construction_employment,32.48,percent,very high
+8,8310,Biobío,San Rosendo,population,3574.0,persons,very low
+8,8310,Biobío,San Rosendo,renter_share,12.03,percent,low
+8,8311,Biobío,Santa Bárbara,electricity_access_rate,99.28,percent,medium
+8,8311,Biobío,Santa Bárbara,employment_in_transport_and_logistics,4.65,percent,low
+8,8311,Biobío,Santa Bárbara,home_ownership,69.37,percent,medium
+8,8311,Biobío,Santa Bárbara,industry_construction_employment,21.17,percent,high
+8,8311,Biobío,Santa Bárbara,population,14027.0,persons,low
+8,8311,Biobío,Santa Bárbara,renter_share,14.6,percent,medium
+8,8312,Biobío,Tucapel,electricity_access_rate,99.51,percent,medium
+8,8312,Biobío,Tucapel,employment_in_transport_and_logistics,4.37,percent,low
+8,8312,Biobío,Tucapel,home_ownership,71.83,percent,high
+8,8312,Biobío,Tucapel,industry_construction_employment,27.96,percent,very high
+8,8312,Biobío,Tucapel,population,15692.0,persons,medium
+8,8312,Biobío,Tucapel,renter_share,13.78,percent,medium
+8,8313,Biobío,Yumbel,electricity_access_rate,98.92,percent,low
+8,8313,Biobío,Yumbel,employment_in_transport_and_logistics,5.05,percent,low
+8,8313,Biobío,Yumbel,home_ownership,73.32,percent,very high
+8,8313,Biobío,Yumbel,industry_construction_employment,24.15,percent,high
+8,8313,Biobío,Yumbel,population,23027.0,persons,medium
+8,8313,Biobío,Yumbel,renter_share,11.38,percent,low
+8,8314,Biobío,Alto Biobío,electricity_access_rate,92.27,percent,very low
+8,8314,Biobío,Alto Biobío,employment_in_transport_and_logistics,2.44,percent,very low
+8,8314,Biobío,Alto Biobío,home_ownership,84.97,percent,very high
+8,8314,Biobío,Alto Biobío,industry_construction_employment,21.07,percent,medium
+8,8314,Biobío,Alto Biobío,population,6014.0,persons,very low
+8,8314,Biobío,Alto Biobío,renter_share,4.98,percent,very low
+9,9101,La Araucanía,Temuco,electricity_access_rate,99.62,percent,high
+9,9101,La Araucanía,Temuco,employment_in_transport_and_logistics,5.84,percent,medium
+9,9101,La Araucanía,Temuco,home_ownership,62.7,percent,low
+9,9101,La Araucanía,Temuco,industry_construction_employment,16.71,percent,low
+9,9101,La Araucanía,Temuco,population,290433.0,persons,very high
+9,9101,La Araucanía,Temuco,renter_share,26.95,percent,very high
+9,9102,La Araucanía,Carahue,electricity_access_rate,96.93,percent,very low
+9,9102,La Araucanía,Carahue,employment_in_transport_and_logistics,6.56,percent,high
+9,9102,La Araucanía,Carahue,home_ownership,74.29,percent,very high
+9,9102,La Araucanía,Carahue,industry_construction_employment,17.78,percent,low
+9,9102,La Araucanía,Carahue,population,24941.0,persons,medium
+9,9102,La Araucanía,Carahue,renter_share,10.19,percent,very low
+9,9103,La Araucanía,Cunco,electricity_access_rate,98.78,percent,low
+9,9103,La Araucanía,Cunco,employment_in_transport_and_logistics,3.98,percent,very low
+9,9103,La Araucanía,Cunco,home_ownership,70.76,percent,high
+9,9103,La Araucanía,Cunco,industry_construction_employment,21.61,percent,high
+9,9103,La Araucanía,Cunco,population,19070.0,persons,medium
+9,9103,La Araucanía,Cunco,renter_share,10.53,percent,very low
+9,9104,La Araucanía,Curarrehue,electricity_access_rate,97.99,percent,very low
+9,9104,La Araucanía,Curarrehue,employment_in_transport_and_logistics,3.59,percent,very low
+9,9104,La Araucanía,Curarrehue,home_ownership,70.47,percent,high
+9,9104,La Araucanía,Curarrehue,industry_construction_employment,25.88,percent,very high
+9,9104,La Araucanía,Curarrehue,population,7729.0,persons,very low
+9,9104,La Araucanía,Curarrehue,renter_share,11.94,percent,low
+9,9105,La Araucanía,Freire,electricity_access_rate,97.09,percent,very low
+9,9105,La Araucanía,Freire,employment_in_transport_and_logistics,5.44,percent,medium
+9,9105,La Araucanía,Freire,home_ownership,73.62,percent,very high
+9,9105,La Araucanía,Freire,industry_construction_employment,19.85,percent,medium
+9,9105,La Araucanía,Freire,population,26153.0,persons,medium
+9,9105,La Araucanía,Freire,renter_share,8.17,percent,very low
+9,9106,La Araucanía,Galvarino,electricity_access_rate,95.09,percent,very low
+9,9106,La Araucanía,Galvarino,employment_in_transport_and_logistics,4.65,percent,low
+9,9106,La Araucanía,Galvarino,home_ownership,80.27,percent,very high
+9,9106,La Araucanía,Galvarino,industry_construction_employment,14.79,percent,very low
+9,9106,La Araucanía,Galvarino,population,12709.0,persons,low
+9,9106,La Araucanía,Galvarino,renter_share,5.87,percent,very low
+9,9107,La Araucanía,Gorbea,electricity_access_rate,99.08,percent,low
+9,9107,La Araucanía,Gorbea,employment_in_transport_and_logistics,6.58,percent,high
+9,9107,La Araucanía,Gorbea,home_ownership,66.72,percent,low
+9,9107,La Araucanía,Gorbea,industry_construction_employment,19.81,percent,medium
+9,9107,La Araucanía,Gorbea,population,14058.0,persons,low
+9,9107,La Araucanía,Gorbea,renter_share,14.56,percent,medium
+9,9108,La Araucanía,Lautaro,electricity_access_rate,98.51,percent,very low
+9,9108,La Araucanía,Lautaro,employment_in_transport_and_logistics,7.44,percent,very high
+9,9108,La Araucanía,Lautaro,home_ownership,74.07,percent,very high
+9,9108,La Araucanía,Lautaro,industry_construction_employment,24.13,percent,high
+9,9108,La Araucanía,Lautaro,population,41695.0,persons,high
+9,9108,La Araucanía,Lautaro,renter_share,13.65,percent,low
+9,9109,La Araucanía,Loncoche,electricity_access_rate,98.67,percent,very low
+9,9109,La Araucanía,Loncoche,employment_in_transport_and_logistics,4.91,percent,low
+9,9109,La Araucanía,Loncoche,home_ownership,71.93,percent,high
+9,9109,La Araucanía,Loncoche,industry_construction_employment,25.66,percent,very high
+9,9109,La Araucanía,Loncoche,population,25096.0,persons,medium
+9,9109,La Araucanía,Loncoche,renter_share,12.14,percent,low
+9,9110,La Araucanía,Melipeuco,electricity_access_rate,97.82,percent,very low
+9,9110,La Araucanía,Melipeuco,employment_in_transport_and_logistics,2.57,percent,very low
+9,9110,La Araucanía,Melipeuco,home_ownership,69.59,percent,medium
+9,9110,La Araucanía,Melipeuco,industry_construction_employment,17.65,percent,low
+9,9110,La Araucanía,Melipeuco,population,6759.0,persons,very low
+9,9110,La Araucanía,Melipeuco,renter_share,13.11,percent,low
+9,9111,La Araucanía,Nueva Imperial,electricity_access_rate,97.89,percent,very low
+9,9111,La Araucanía,Nueva Imperial,employment_in_transport_and_logistics,5.41,percent,medium
+9,9111,La Araucanía,Nueva Imperial,home_ownership,73.49,percent,very high
+9,9111,La Araucanía,Nueva Imperial,industry_construction_employment,20.79,percent,medium
+9,9111,La Araucanía,Nueva Imperial,population,33729.0,persons,high
+9,9111,La Araucanía,Nueva Imperial,renter_share,11.78,percent,low
+9,9112,La Araucanía,Padre Las Casas,electricity_access_rate,98.6,percent,very low
+9,9112,La Araucanía,Padre Las Casas,employment_in_transport_and_logistics,7.21,percent,high
+9,9112,La Araucanía,Padre Las Casas,home_ownership,76.75,percent,very high
+9,9112,La Araucanía,Padre Las Casas,industry_construction_employment,21.72,percent,high
+9,9112,La Araucanía,Padre Las Casas,population,80567.0,persons,high
+9,9112,La Araucanía,Padre Las Casas,renter_share,13.21,percent,low
+9,9113,La Araucanía,Perquenco,electricity_access_rate,96.82,percent,very low
+9,9113,La Araucanía,Perquenco,employment_in_transport_and_logistics,4.48,percent,low
+9,9113,La Araucanía,Perquenco,home_ownership,75.6,percent,very high
+9,9113,La Araucanía,Perquenco,industry_construction_employment,20.96,percent,medium
+9,9113,La Araucanía,Perquenco,population,7438.0,persons,very low
+9,9113,La Araucanía,Perquenco,renter_share,9.66,percent,very low
+9,9114,La Araucanía,Pitrufquén,electricity_access_rate,99.12,percent,low
+9,9114,La Araucanía,Pitrufquén,employment_in_transport_and_logistics,5.79,percent,medium
+9,9114,La Araucanía,Pitrufquén,home_ownership,69.62,percent,medium
+9,9114,La Araucanía,Pitrufquén,industry_construction_employment,20.8,percent,medium
+9,9114,La Araucanía,Pitrufquén,population,26811.0,persons,medium
+9,9114,La Araucanía,Pitrufquén,renter_share,14.03,percent,medium
+9,9115,La Araucanía,Pucón,electricity_access_rate,99.22,percent,low
+9,9115,La Araucanía,Pucón,employment_in_transport_and_logistics,3.45,percent,very low
+9,9115,La Araucanía,Pucón,home_ownership,54.46,percent,very low
+9,9115,La Araucanía,Pucón,industry_construction_employment,19.59,percent,medium
+9,9115,La Araucanía,Pucón,population,32211.0,persons,high
+9,9115,La Araucanía,Pucón,renter_share,28.74,percent,very high
+9,9116,La Araucanía,Saavedra,electricity_access_rate,90.9,percent,very low
+9,9116,La Araucanía,Saavedra,employment_in_transport_and_logistics,5.2,percent,medium
+9,9116,La Araucanía,Saavedra,home_ownership,77.04,percent,very high
+9,9116,La Araucanía,Saavedra,industry_construction_employment,16.07,percent,very low
+9,9116,La Araucanía,Saavedra,population,12863.0,persons,low
+9,9116,La Araucanía,Saavedra,renter_share,6.23,percent,very low
+9,9117,La Araucanía,Teodoro Schmidt,electricity_access_rate,97.42,percent,very low
+9,9117,La Araucanía,Teodoro Schmidt,employment_in_transport_and_logistics,4.63,percent,low
+9,9117,La Araucanía,Teodoro Schmidt,home_ownership,76.69,percent,very high
+9,9117,La Araucanía,Teodoro Schmidt,industry_construction_employment,13.98,percent,very low
+9,9117,La Araucanía,Teodoro Schmidt,population,15633.0,persons,medium
+9,9117,La Araucanía,Teodoro Schmidt,renter_share,8.83,percent,very low
+9,9118,La Araucanía,Toltén,electricity_access_rate,96.97,percent,very low
+9,9118,La Araucanía,Toltén,employment_in_transport_and_logistics,4.57,percent,low
+9,9118,La Araucanía,Toltén,home_ownership,72.02,percent,high
+9,9118,La Araucanía,Toltén,industry_construction_employment,14.32,percent,very low
+9,9118,La Araucanía,Toltén,population,10032.0,persons,low
+9,9118,La Araucanía,Toltén,renter_share,11.23,percent,low
+9,9119,La Araucanía,Vilcún,electricity_access_rate,98.32,percent,very low
+9,9119,La Araucanía,Vilcún,employment_in_transport_and_logistics,6.92,percent,high
+9,9119,La Araucanía,Vilcún,home_ownership,75.51,percent,very high
+9,9119,La Araucanía,Vilcún,industry_construction_employment,20.48,percent,medium
+9,9119,La Araucanía,Vilcún,population,31515.0,persons,high
+9,9119,La Araucanía,Vilcún,renter_share,11.53,percent,low
+9,9120,La Araucanía,Villarrica,electricity_access_rate,99.17,percent,low
+9,9120,La Araucanía,Villarrica,employment_in_transport_and_logistics,4.37,percent,low
+9,9120,La Araucanía,Villarrica,home_ownership,65.29,percent,low
+9,9120,La Araucanía,Villarrica,industry_construction_employment,21.77,percent,high
+9,9120,La Araucanía,Villarrica,population,67335.0,persons,high
+9,9120,La Araucanía,Villarrica,renter_share,19.85,percent,high
+9,9121,La Araucanía,Cholchol,electricity_access_rate,96.72,percent,very low
+9,9121,La Araucanía,Cholchol,employment_in_transport_and_logistics,4.28,percent,low
+9,9121,La Araucanía,Cholchol,home_ownership,78.36,percent,very high
+9,9121,La Araucanía,Cholchol,industry_construction_employment,19.15,percent,medium
+9,9121,La Araucanía,Cholchol,population,13138.0,persons,low
+9,9121,La Araucanía,Cholchol,renter_share,8.42,percent,very low
+9,9201,La Araucanía,Angol,electricity_access_rate,99.56,percent,high
+9,9201,La Araucanía,Angol,employment_in_transport_and_logistics,5.07,percent,low
+9,9201,La Araucanía,Angol,home_ownership,70.86,percent,high
+9,9201,La Araucanía,Angol,industry_construction_employment,17.52,percent,low
+9,9201,La Araucanía,Angol,population,52446.0,persons,high
+9,9201,La Araucanía,Angol,renter_share,17.5,percent,high
+9,9202,La Araucanía,Collipulli,electricity_access_rate,98.16,percent,very low
+9,9202,La Araucanía,Collipulli,employment_in_transport_and_logistics,5.87,percent,medium
+9,9202,La Araucanía,Collipulli,home_ownership,72.58,percent,high
+9,9202,La Araucanía,Collipulli,industry_construction_employment,19.69,percent,medium
+9,9202,La Araucanía,Collipulli,population,24162.0,persons,medium
+9,9202,La Araucanía,Collipulli,renter_share,12.95,percent,low
+9,9203,La Araucanía,Curacautín,electricity_access_rate,99.32,percent,medium
+9,9203,La Araucanía,Curacautín,employment_in_transport_and_logistics,4.62,percent,low
+9,9203,La Araucanía,Curacautín,home_ownership,71.66,percent,high
+9,9203,La Araucanía,Curacautín,industry_construction_employment,21.57,percent,high
+9,9203,La Araucanía,Curacautín,population,18415.0,persons,medium
+9,9203,La Araucanía,Curacautín,renter_share,13.21,percent,low
+9,9204,La Araucanía,Ercilla,electricity_access_rate,93.45,percent,very low
+9,9204,La Araucanía,Ercilla,employment_in_transport_and_logistics,4.61,percent,low
+9,9204,La Araucanía,Ercilla,home_ownership,72.52,percent,high
+9,9204,La Araucanía,Ercilla,industry_construction_employment,11.26,percent,very low
+9,9204,La Araucanía,Ercilla,population,7722.0,persons,very low
+9,9204,La Araucanía,Ercilla,renter_share,8.86,percent,very low
+9,9205,La Araucanía,Lonquimay,electricity_access_rate,96.84,percent,very low
+9,9205,La Araucanía,Lonquimay,employment_in_transport_and_logistics,3.89,percent,very low
+9,9205,La Araucanía,Lonquimay,home_ownership,79.8,percent,very high
+9,9205,La Araucanía,Lonquimay,industry_construction_employment,17.1,percent,low
+9,9205,La Araucanía,Lonquimay,population,10147.0,persons,low
+9,9205,La Araucanía,Lonquimay,renter_share,10.23,percent,very low
+9,9206,La Araucanía,Los Sauces,electricity_access_rate,96.1,percent,very low
+9,9206,La Araucanía,Los Sauces,employment_in_transport_and_logistics,3.49,percent,very low
+9,9206,La Araucanía,Los Sauces,home_ownership,70.88,percent,high
+9,9206,La Araucanía,Los Sauces,industry_construction_employment,16.43,percent,low
+9,9206,La Araucanía,Los Sauces,population,7334.0,persons,very low
+9,9206,La Araucanía,Los Sauces,renter_share,12.48,percent,low
+9,9207,La Araucanía,Lumaco,electricity_access_rate,93.89,percent,very low
+9,9207,La Araucanía,Lumaco,employment_in_transport_and_logistics,4.34,percent,low
+9,9207,La Araucanía,Lumaco,home_ownership,74.65,percent,very high
+9,9207,La Araucanía,Lumaco,industry_construction_employment,11.22,percent,very low
+9,9207,La Araucanía,Lumaco,population,9248.0,persons,low
+9,9207,La Araucanía,Lumaco,renter_share,10.47,percent,very low
+9,9208,La Araucanía,Purén,electricity_access_rate,97.9,percent,very low
+9,9208,La Araucanía,Purén,employment_in_transport_and_logistics,5.76,percent,medium
+9,9208,La Araucanía,Purén,home_ownership,73.06,percent,high
+9,9208,La Araucanía,Purén,industry_construction_employment,16.48,percent,low
+9,9208,La Araucanía,Purén,population,12161.0,persons,low
+9,9208,La Araucanía,Purén,renter_share,12.58,percent,low
+9,9209,La Araucanía,Renaico,electricity_access_rate,99.5,percent,medium
+9,9209,La Araucanía,Renaico,employment_in_transport_and_logistics,4.78,percent,low
+9,9209,La Araucanía,Renaico,home_ownership,74.64,percent,very high
+9,9209,La Araucanía,Renaico,industry_construction_employment,24.51,percent,very high
+9,9209,La Araucanía,Renaico,population,10681.0,persons,low
+9,9209,La Araucanía,Renaico,renter_share,13.15,percent,low
+9,9210,La Araucanía,Traiguén,electricity_access_rate,98.73,percent,low
+9,9210,La Araucanía,Traiguén,employment_in_transport_and_logistics,4.24,percent,low
+9,9210,La Araucanía,Traiguén,home_ownership,71.11,percent,high
+9,9210,La Araucanía,Traiguén,industry_construction_employment,13.94,percent,very low
+9,9210,La Araucanía,Traiguén,population,18531.0,persons,medium
+9,9210,La Araucanía,Traiguén,renter_share,13.81,percent,medium
+9,9211,La Araucanía,Victoria,electricity_access_rate,98.34,percent,very low
+9,9211,La Araucanía,Victoria,employment_in_transport_and_logistics,6.2,percent,high
+9,9211,La Araucanía,Victoria,home_ownership,69.8,percent,medium
+9,9211,La Araucanía,Victoria,industry_construction_employment,15.43,percent,very low
+9,9211,La Araucanía,Victoria,population,34089.0,persons,high
+9,9211,La Araucanía,Victoria,renter_share,15.39,percent,medium
+10,10101,Los Lagos,Puerto Montt,electricity_access_rate,99.59,percent,high
+10,10101,Los Lagos,Puerto Montt,employment_in_transport_and_logistics,9.5,percent,very high
+10,10101,Los Lagos,Puerto Montt,home_ownership,64.08,percent,low
+10,10101,Los Lagos,Puerto Montt,industry_construction_employment,19.59,percent,medium
+10,10101,Los Lagos,Puerto Montt,population,274146.0,persons,very high
+10,10101,Los Lagos,Puerto Montt,renter_share,26.3,percent,very high
+10,10102,Los Lagos,Calbuco,electricity_access_rate,98.94,percent,low
+10,10102,Los Lagos,Calbuco,employment_in_transport_and_logistics,7.75,percent,very high
+10,10102,Los Lagos,Calbuco,home_ownership,77.24,percent,very high
+10,10102,Los Lagos,Calbuco,industry_construction_employment,22.77,percent,high
+10,10102,Los Lagos,Calbuco,population,36437.0,persons,high
+10,10102,Los Lagos,Calbuco,renter_share,12.42,percent,low
+10,10103,Los Lagos,Cochamó,electricity_access_rate,96.33,percent,very low
+10,10103,Los Lagos,Cochamó,employment_in_transport_and_logistics,5.12,percent,low
+10,10103,Los Lagos,Cochamó,home_ownership,74.38,percent,very high
+10,10103,Los Lagos,Cochamó,industry_construction_employment,13.58,percent,very low
+10,10103,Los Lagos,Cochamó,population,4191.0,persons,very low
+10,10103,Los Lagos,Cochamó,renter_share,11.62,percent,low
+10,10104,Los Lagos,Fresia,electricity_access_rate,99.03,percent,low
+10,10104,Los Lagos,Fresia,employment_in_transport_and_logistics,4.89,percent,low
+10,10104,Los Lagos,Fresia,home_ownership,73.19,percent,very high
+10,10104,Los Lagos,Fresia,industry_construction_employment,17.22,percent,low
+10,10104,Los Lagos,Fresia,population,12297.0,persons,low
+10,10104,Los Lagos,Fresia,renter_share,11.62,percent,low
+10,10105,Los Lagos,Frutillar,electricity_access_rate,99.59,percent,high
+10,10105,Los Lagos,Frutillar,employment_in_transport_and_logistics,5.99,percent,medium
+10,10105,Los Lagos,Frutillar,home_ownership,66.36,percent,low
+10,10105,Los Lagos,Frutillar,industry_construction_employment,21.61,percent,high
+10,10105,Los Lagos,Frutillar,population,22527.0,persons,medium
+10,10105,Los Lagos,Frutillar,renter_share,17.55,percent,high
+10,10106,Los Lagos,Los Muermos,electricity_access_rate,98.94,percent,low
+10,10106,Los Lagos,Los Muermos,employment_in_transport_and_logistics,6.34,percent,high
+10,10106,Los Lagos,Los Muermos,home_ownership,71.85,percent,high
+10,10106,Los Lagos,Los Muermos,industry_construction_employment,14.88,percent,very low
+10,10106,Los Lagos,Los Muermos,population,17138.0,persons,medium
+10,10106,Los Lagos,Los Muermos,renter_share,12.26,percent,low
+10,10107,Los Lagos,Llanquihue,electricity_access_rate,99.7,percent,high
+10,10107,Los Lagos,Llanquihue,employment_in_transport_and_logistics,6.9,percent,high
+10,10107,Los Lagos,Llanquihue,home_ownership,66.95,percent,low
+10,10107,Los Lagos,Llanquihue,industry_construction_employment,26.43,percent,very high
+10,10107,Los Lagos,Llanquihue,population,18070.0,persons,medium
+10,10107,Los Lagos,Llanquihue,renter_share,16.39,percent,medium
+10,10108,Los Lagos,Maullín,electricity_access_rate,98.57,percent,very low
+10,10108,Los Lagos,Maullín,employment_in_transport_and_logistics,6.44,percent,high
+10,10108,Los Lagos,Maullín,home_ownership,78.62,percent,very high
+10,10108,Los Lagos,Maullín,industry_construction_employment,15.46,percent,very low
+10,10108,Los Lagos,Maullín,population,15054.0,persons,low
+10,10108,Los Lagos,Maullín,renter_share,10.17,percent,very low
+10,10109,Los Lagos,Puerto Varas,electricity_access_rate,99.7,percent,high
+10,10109,Los Lagos,Puerto Varas,employment_in_transport_and_logistics,5.32,percent,medium
+10,10109,Los Lagos,Puerto Varas,home_ownership,60.67,percent,very low
+10,10109,Los Lagos,Puerto Varas,industry_construction_employment,17.38,percent,low
+10,10109,Los Lagos,Puerto Varas,population,52613.0,persons,high
+10,10109,Los Lagos,Puerto Varas,renter_share,26.95,percent,very high
+10,10201,Los Lagos,Castro,electricity_access_rate,99.76,percent,high
+10,10201,Los Lagos,Castro,employment_in_transport_and_logistics,7.4,percent,very high
+10,10201,Los Lagos,Castro,home_ownership,63.75,percent,low
+10,10201,Los Lagos,Castro,industry_construction_employment,17.67,percent,low
+10,10201,Los Lagos,Castro,population,46664.0,persons,high
+10,10201,Los Lagos,Castro,renter_share,26.56,percent,very high
+10,10202,Los Lagos,Ancud,electricity_access_rate,99.54,percent,medium
+10,10202,Los Lagos,Ancud,employment_in_transport_and_logistics,7.14,percent,high
+10,10202,Los Lagos,Ancud,home_ownership,72.16,percent,high
+10,10202,Los Lagos,Ancud,industry_construction_employment,18.79,percent,medium
+10,10202,Los Lagos,Ancud,population,40570.0,persons,high
+10,10202,Los Lagos,Ancud,renter_share,16.4,percent,medium
+10,10203,Los Lagos,Chonchi,electricity_access_rate,98.73,percent,low
+10,10203,Los Lagos,Chonchi,employment_in_transport_and_logistics,5.91,percent,medium
+10,10203,Los Lagos,Chonchi,home_ownership,71.95,percent,high
+10,10203,Los Lagos,Chonchi,industry_construction_employment,26.59,percent,very high
+10,10203,Los Lagos,Chonchi,population,16072.0,persons,medium
+10,10203,Los Lagos,Chonchi,renter_share,17.08,percent,medium
+10,10204,Los Lagos,Curaco de Vélez,electricity_access_rate,99.72,percent,high
+10,10204,Los Lagos,Curaco de Vélez,employment_in_transport_and_logistics,6.1,percent,high
+10,10204,Los Lagos,Curaco de Vélez,home_ownership,79.83,percent,very high
+10,10204,Los Lagos,Curaco de Vélez,industry_construction_employment,20.89,percent,medium
+10,10204,Los Lagos,Curaco de Vélez,population,3662.0,persons,very low
+10,10204,Los Lagos,Curaco de Vélez,renter_share,10.4,percent,very low
+10,10205,Los Lagos,Dalcahue,electricity_access_rate,99.32,percent,medium
+10,10205,Los Lagos,Dalcahue,employment_in_transport_and_logistics,9.24,percent,very high
+10,10205,Los Lagos,Dalcahue,home_ownership,73.9,percent,very high
+10,10205,Los Lagos,Dalcahue,industry_construction_employment,23.65,percent,high
+10,10205,Los Lagos,Dalcahue,population,14889.0,persons,low
+10,10205,Los Lagos,Dalcahue,renter_share,18.75,percent,high
+10,10206,Los Lagos,Puqueldón,electricity_access_rate,99.22,percent,low
+10,10206,Los Lagos,Puqueldón,employment_in_transport_and_logistics,6.6,percent,high
+10,10206,Los Lagos,Puqueldón,home_ownership,82.26,percent,very high
+10,10206,Los Lagos,Puqueldón,industry_construction_employment,19.86,percent,medium
+10,10206,Los Lagos,Puqueldón,population,4034.0,persons,very low
+10,10206,Los Lagos,Puqueldón,renter_share,8.8,percent,very low
+10,10207,Los Lagos,Queilén,electricity_access_rate,98.16,percent,very low
+10,10207,Los Lagos,Queilén,employment_in_transport_and_logistics,5.18,percent,medium
+10,10207,Los Lagos,Queilén,home_ownership,79.66,percent,very high
+10,10207,Los Lagos,Queilén,industry_construction_employment,20.09,percent,medium
+10,10207,Los Lagos,Queilén,population,5675.0,persons,very low
+10,10207,Los Lagos,Queilén,renter_share,11.09,percent,low
+10,10208,Los Lagos,Quellón,electricity_access_rate,98.92,percent,low
+10,10208,Los Lagos,Quellón,employment_in_transport_and_logistics,6.3,percent,high
+10,10208,Los Lagos,Quellón,home_ownership,65.26,percent,low
+10,10208,Los Lagos,Quellón,industry_construction_employment,21.06,percent,medium
+10,10208,Los Lagos,Quellón,population,28386.0,persons,high
+10,10208,Los Lagos,Quellón,renter_share,26.53,percent,very high
+10,10209,Los Lagos,Quemchi,electricity_access_rate,99.2,percent,low
+10,10209,Los Lagos,Quemchi,employment_in_transport_and_logistics,6.76,percent,high
+10,10209,Los Lagos,Quemchi,home_ownership,79.75,percent,very high
+10,10209,Los Lagos,Quemchi,industry_construction_employment,24.27,percent,high
+10,10209,Los Lagos,Quemchi,population,8401.0,persons,low
+10,10209,Los Lagos,Quemchi,renter_share,11.21,percent,low
+10,10210,Los Lagos,Quinchao,electricity_access_rate,99.23,percent,low
+10,10210,Los Lagos,Quinchao,employment_in_transport_and_logistics,7.61,percent,very high
+10,10210,Los Lagos,Quinchao,home_ownership,78.8,percent,very high
+10,10210,Los Lagos,Quinchao,industry_construction_employment,12.57,percent,very low
+10,10210,Los Lagos,Quinchao,population,7663.0,persons,very low
+10,10210,Los Lagos,Quinchao,renter_share,13.72,percent,medium
+10,10301,Los Lagos,Osorno,electricity_access_rate,99.69,percent,high
+10,10301,Los Lagos,Osorno,employment_in_transport_and_logistics,7.03,percent,high
+10,10301,Los Lagos,Osorno,home_ownership,62.71,percent,low
+10,10301,Los Lagos,Osorno,industry_construction_employment,18.3,percent,low
+10,10301,Los Lagos,Osorno,population,165121.0,persons,very high
+10,10301,Los Lagos,Osorno,renter_share,23.29,percent,high
+10,10302,Los Lagos,Puerto Octay,electricity_access_rate,99.3,percent,medium
+10,10302,Los Lagos,Puerto Octay,employment_in_transport_and_logistics,3.73,percent,very low
+10,10302,Los Lagos,Puerto Octay,home_ownership,58.54,percent,very low
+10,10302,Los Lagos,Puerto Octay,industry_construction_employment,15.07,percent,very low
+10,10302,Los Lagos,Puerto Octay,population,8856.0,persons,low
+10,10302,Los Lagos,Puerto Octay,renter_share,9.26,percent,very low
+10,10303,Los Lagos,Purranque,electricity_access_rate,99.37,percent,medium
+10,10303,Los Lagos,Purranque,employment_in_transport_and_logistics,5.95,percent,medium
+10,10303,Los Lagos,Purranque,home_ownership,60.5,percent,very low
+10,10303,Los Lagos,Purranque,industry_construction_employment,20.45,percent,medium
+10,10303,Los Lagos,Purranque,population,19526.0,persons,medium
+10,10303,Los Lagos,Purranque,renter_share,14.99,percent,medium
+10,10304,Los Lagos,Puyehue,electricity_access_rate,99.47,percent,medium
+10,10304,Los Lagos,Puyehue,employment_in_transport_and_logistics,4.89,percent,low
+10,10304,Los Lagos,Puyehue,home_ownership,65.26,percent,low
+10,10304,Los Lagos,Puyehue,industry_construction_employment,18.35,percent,low
+10,10304,Los Lagos,Puyehue,population,11702.0,persons,low
+10,10304,Los Lagos,Puyehue,renter_share,9.67,percent,very low
+10,10305,Los Lagos,Río Negro,electricity_access_rate,99.06,percent,low
+10,10305,Los Lagos,Río Negro,employment_in_transport_and_logistics,6.01,percent,medium
+10,10305,Los Lagos,Río Negro,home_ownership,67.34,percent,medium
+10,10305,Los Lagos,Río Negro,industry_construction_employment,17.99,percent,low
+10,10305,Los Lagos,Río Negro,population,13847.0,persons,low
+10,10305,Los Lagos,Río Negro,renter_share,10.31,percent,very low
+10,10306,Los Lagos,San Juan de la Costa,electricity_access_rate,91.83,percent,very low
+10,10306,Los Lagos,San Juan de la Costa,employment_in_transport_and_logistics,4.49,percent,low
+10,10306,Los Lagos,San Juan de la Costa,home_ownership,81.53,percent,very high
+10,10306,Los Lagos,San Juan de la Costa,industry_construction_employment,19.52,percent,medium
+10,10306,Los Lagos,San Juan de la Costa,population,7766.0,persons,very low
+10,10306,Los Lagos,San Juan de la Costa,renter_share,3.23,percent,very low
+10,10307,Los Lagos,San Pablo,electricity_access_rate,99.09,percent,low
+10,10307,Los Lagos,San Pablo,employment_in_transport_and_logistics,5.62,percent,medium
+10,10307,Los Lagos,San Pablo,home_ownership,69.82,percent,medium
+10,10307,Los Lagos,San Pablo,industry_construction_employment,16.19,percent,low
+10,10307,Los Lagos,San Pablo,population,10872.0,persons,low
+10,10307,Los Lagos,San Pablo,renter_share,8.97,percent,very low
+10,10401,Los Lagos,Chaitén,electricity_access_rate,98.5,percent,very low
+10,10401,Los Lagos,Chaitén,employment_in_transport_and_logistics,6.01,percent,medium
+10,10401,Los Lagos,Chaitén,home_ownership,61.28,percent,low
+10,10401,Los Lagos,Chaitén,industry_construction_employment,13.93,percent,very low
+10,10401,Los Lagos,Chaitén,population,4007.0,persons,very low
+10,10401,Los Lagos,Chaitén,renter_share,18.74,percent,high
+10,10402,Los Lagos,Futaleufú,electricity_access_rate,97.44,percent,very low
+10,10402,Los Lagos,Futaleufú,employment_in_transport_and_logistics,3.95,percent,very low
+10,10402,Los Lagos,Futaleufú,home_ownership,58.86,percent,very low
+10,10402,Los Lagos,Futaleufú,industry_construction_employment,18.67,percent,low
+10,10402,Los Lagos,Futaleufú,population,3050.0,persons,very low
+10,10402,Los Lagos,Futaleufú,renter_share,28.38,percent,very high
+10,10403,Los Lagos,Hualaihué,electricity_access_rate,98.43,percent,very low
+10,10403,Los Lagos,Hualaihué,employment_in_transport_and_logistics,6.14,percent,high
+10,10403,Los Lagos,Hualaihué,home_ownership,79.91,percent,very high
+10,10403,Los Lagos,Hualaihué,industry_construction_employment,16.08,percent,low
+10,10403,Los Lagos,Hualaihué,population,9472.0,persons,low
+10,10403,Los Lagos,Hualaihué,renter_share,12.51,percent,low
+10,10404,Los Lagos,Palena,electricity_access_rate,97.22,percent,very low
+10,10404,Los Lagos,Palena,employment_in_transport_and_logistics,4.33,percent,low
+10,10404,Los Lagos,Palena,home_ownership,60.94,percent,low
+10,10404,Los Lagos,Palena,industry_construction_employment,15.46,percent,very low
+10,10404,Los Lagos,Palena,population,1896.0,persons,very low
+10,10404,Los Lagos,Palena,renter_share,19.82,percent,high
+11,11101,Aysén del General Carlos Ibáñez del Campo,Coyhaique,electricity_access_rate,99.64,percent,high
+11,11101,Aysén del General Carlos Ibáñez del Campo,Coyhaique,employment_in_transport_and_logistics,6.21,percent,high
+11,11101,Aysén del General Carlos Ibáñez del Campo,Coyhaique,home_ownership,60.22,percent,very low
+11,11101,Aysén del General Carlos Ibáñez del Campo,Coyhaique,industry_construction_employment,15.28,percent,very low
+11,11101,Aysén del General Carlos Ibáñez del Campo,Coyhaique,population,57136.0,persons,high
+11,11101,Aysén del General Carlos Ibáñez del Campo,Coyhaique,renter_share,28.13,percent,very high
+11,11102,Aysén del General Carlos Ibáñez del Campo,Lago Verde,electricity_access_rate,98.11,percent,very low
+11,11102,Aysén del General Carlos Ibáñez del Campo,Lago Verde,employment_in_transport_and_logistics,3.25,percent,very low
+11,11102,Aysén del General Carlos Ibáñez del Campo,Lago Verde,home_ownership,57.91,percent,very low
+11,11102,Aysén del General Carlos Ibáñez del Campo,Lago Verde,industry_construction_employment,10.06,percent,very low
+11,11102,Aysén del General Carlos Ibáñez del Campo,Lago Verde,population,762.0,persons,very low
+11,11102,Aysén del General Carlos Ibáñez del Campo,Lago Verde,renter_share,19.84,percent,high
+11,11201,Aysén del General Carlos Ibáñez del Campo,Aysén,electricity_access_rate,99.61,percent,high
+11,11201,Aysén del General Carlos Ibáñez del Campo,Aysén,employment_in_transport_and_logistics,8.11,percent,very high
+11,11201,Aysén del General Carlos Ibáñez del Campo,Aysén,home_ownership,63.45,percent,low
+11,11201,Aysén del General Carlos Ibáñez del Campo,Aysén,industry_construction_employment,16.7,percent,low
+11,11201,Aysén del General Carlos Ibáñez del Campo,Aysén,population,22825.0,persons,medium
+11,11201,Aysén del General Carlos Ibáñez del Campo,Aysén,renter_share,24.53,percent,very high
+11,11202,Aysén del General Carlos Ibáñez del Campo,Cisnes,electricity_access_rate,98.76,percent,low
+11,11202,Aysén del General Carlos Ibáñez del Campo,Cisnes,employment_in_transport_and_logistics,6.49,percent,high
+11,11202,Aysén del General Carlos Ibáñez del Campo,Cisnes,home_ownership,62.8,percent,low
+11,11202,Aysén del General Carlos Ibáñez del Campo,Cisnes,industry_construction_employment,15.39,percent,very low
+11,11202,Aysén del General Carlos Ibáñez del Campo,Cisnes,population,5132.0,persons,very low
+11,11202,Aysén del General Carlos Ibáñez del Campo,Cisnes,renter_share,23.3,percent,very high
+11,11203,Aysén del General Carlos Ibáñez del Campo,Guaitecas,electricity_access_rate,99.0,percent,low
+11,11203,Aysén del General Carlos Ibáñez del Campo,Guaitecas,employment_in_transport_and_logistics,9.13,percent,very high
+11,11203,Aysén del General Carlos Ibáñez del Campo,Guaitecas,home_ownership,69.31,percent,medium
+11,11203,Aysén del General Carlos Ibáñez del Campo,Guaitecas,industry_construction_employment,10.9,percent,very low
+11,11203,Aysén del General Carlos Ibáñez del Campo,Guaitecas,population,1587.0,persons,very low
+11,11203,Aysén del General Carlos Ibáñez del Campo,Guaitecas,renter_share,23.1,percent,high
+11,11301,Aysén del General Carlos Ibáñez del Campo,Cochrane,electricity_access_rate,98.27,percent,very low
+11,11301,Aysén del General Carlos Ibáñez del Campo,Cochrane,employment_in_transport_and_logistics,4.63,percent,low
+11,11301,Aysén del General Carlos Ibáñez del Campo,Cochrane,home_ownership,58.82,percent,very low
+11,11301,Aysén del General Carlos Ibáñez del Campo,Cochrane,industry_construction_employment,13.67,percent,very low
+11,11301,Aysén del General Carlos Ibáñez del Campo,Cochrane,population,3378.0,persons,very low
+11,11301,Aysén del General Carlos Ibáñez del Campo,Cochrane,renter_share,27.43,percent,very high
+11,11302,Aysén del General Carlos Ibáñez del Campo,O'Higgins,electricity_access_rate,99.31,percent,medium
+11,11302,Aysén del General Carlos Ibáñez del Campo,O'Higgins,employment_in_transport_and_logistics,4.53,percent,low
+11,11302,Aysén del General Carlos Ibáñez del Campo,O'Higgins,home_ownership,47.6,percent,very low
+11,11302,Aysén del General Carlos Ibáñez del Campo,O'Higgins,industry_construction_employment,9.6,percent,very low
+11,11302,Aysén del General Carlos Ibáñez del Campo,O'Higgins,population,647.0,persons,very low
+11,11302,Aysén del General Carlos Ibáñez del Campo,O'Higgins,renter_share,31.16,percent,very high
+11,11303,Aysén del General Carlos Ibáñez del Campo,Tortel,electricity_access_rate,98.7,percent,low
+11,11303,Aysén del General Carlos Ibáñez del Campo,Tortel,employment_in_transport_and_logistics,6.08,percent,medium
+11,11303,Aysén del General Carlos Ibáñez del Campo,Tortel,home_ownership,50.65,percent,very low
+11,11303,Aysén del General Carlos Ibáñez del Campo,Tortel,industry_construction_employment,13.18,percent,very low
+11,11303,Aysén del General Carlos Ibáñez del Campo,Tortel,population,499.0,persons,very low
+11,11303,Aysén del General Carlos Ibáñez del Campo,Tortel,renter_share,30.74,percent,very high
+11,11401,Aysén del General Carlos Ibáñez del Campo,Chile Chico,electricity_access_rate,98.9,percent,low
+11,11401,Aysén del General Carlos Ibáñez del Campo,Chile Chico,employment_in_transport_and_logistics,3.61,percent,very low
+11,11401,Aysén del General Carlos Ibáñez del Campo,Chile Chico,home_ownership,58.49,percent,very low
+11,11401,Aysén del General Carlos Ibáñez del Campo,Chile Chico,industry_construction_employment,19.69,percent,medium
+11,11401,Aysén del General Carlos Ibáñez del Campo,Chile Chico,population,4864.0,persons,very low
+11,11401,Aysén del General Carlos Ibáñez del Campo,Chile Chico,renter_share,24.48,percent,very high
+11,11402,Aysén del General Carlos Ibáñez del Campo,Río Ibáñez,electricity_access_rate,98.45,percent,very low
+11,11402,Aysén del General Carlos Ibáñez del Campo,Río Ibáñez,employment_in_transport_and_logistics,4.58,percent,low
+11,11402,Aysén del General Carlos Ibáñez del Campo,Río Ibáñez,home_ownership,59.87,percent,very low
+11,11402,Aysén del General Carlos Ibáñez del Campo,Río Ibáñez,industry_construction_employment,16.78,percent,low
+11,11402,Aysén del General Carlos Ibáñez del Campo,Río Ibáñez,population,2691.0,persons,very low
+11,11402,Aysén del General Carlos Ibáñez del Campo,Río Ibáñez,renter_share,18.93,percent,high
+12,12101,Magallanes y de la Antártica Chilena,Punta Arenas,electricity_access_rate,99.83,percent,very high
+12,12101,Magallanes y de la Antártica Chilena,Punta Arenas,employment_in_transport_and_logistics,8.92,percent,very high
+12,12101,Magallanes y de la Antártica Chilena,Punta Arenas,home_ownership,64.09,percent,low
+12,12101,Magallanes y de la Antártica Chilena,Punta Arenas,industry_construction_employment,19.84,percent,medium
+12,12101,Magallanes y de la Antártica Chilena,Punta Arenas,population,130452.0,persons,very high
+12,12101,Magallanes y de la Antártica Chilena,Punta Arenas,renter_share,23.48,percent,very high
+12,12102,Magallanes y de la Antártica Chilena,Laguna Blanca,electricity_access_rate,98.95,percent,low
+12,12102,Magallanes y de la Antártica Chilena,Laguna Blanca,employment_in_transport_and_logistics,0.0,percent,very low
+12,12102,Magallanes y de la Antártica Chilena,Laguna Blanca,home_ownership,16.33,percent,very low
+12,12102,Magallanes y de la Antártica Chilena,Laguna Blanca,industry_construction_employment,9.09,percent,very low
+12,12102,Magallanes y de la Antártica Chilena,Laguna Blanca,population,190.0,persons,very low
+12,12102,Magallanes y de la Antártica Chilena,Laguna Blanca,renter_share,9.18,percent,very low
+12,12103,Magallanes y de la Antártica Chilena,Río Verde,electricity_access_rate,98.41,percent,very low
+12,12103,Magallanes y de la Antártica Chilena,Río Verde,employment_in_transport_and_logistics,0.0,percent,very low
+12,12103,Magallanes y de la Antártica Chilena,Río Verde,home_ownership,7.94,percent,very low
+12,12103,Magallanes y de la Antártica Chilena,Río Verde,industry_construction_employment,2.47,percent,very low
+12,12103,Magallanes y de la Antártica Chilena,Río Verde,population,102.0,persons,very low
+12,12103,Magallanes y de la Antártica Chilena,Río Verde,renter_share,1.59,percent,very low
+12,12104,Magallanes y de la Antártica Chilena,San Gregorio,electricity_access_rate,95.37,percent,very low
+12,12104,Magallanes y de la Antártica Chilena,San Gregorio,employment_in_transport_and_logistics,4.11,percent,very low
+12,12104,Magallanes y de la Antártica Chilena,San Gregorio,home_ownership,25.45,percent,very low
+12,12104,Magallanes y de la Antártica Chilena,San Gregorio,industry_construction_employment,8.22,percent,very low
+12,12104,Magallanes y de la Antártica Chilena,San Gregorio,population,224.0,persons,very low
+12,12104,Magallanes y de la Antártica Chilena,San Gregorio,renter_share,11.82,percent,low
+12,12201,Magallanes y de la Antártica Chilena,Cabo de Hornos,electricity_access_rate,99.84,percent,very high
+12,12201,Magallanes y de la Antártica Chilena,Cabo de Hornos,employment_in_transport_and_logistics,3.08,percent,very low
+12,12201,Magallanes y de la Antártica Chilena,Cabo de Hornos,home_ownership,29.01,percent,very low
+12,12201,Magallanes y de la Antártica Chilena,Cabo de Hornos,industry_construction_employment,8.26,percent,very low
+12,12201,Magallanes y de la Antártica Chilena,Cabo de Hornos,population,1736.0,persons,very low
+12,12201,Magallanes y de la Antártica Chilena,Cabo de Hornos,renter_share,32.58,percent,very high
+12,12301,Magallanes y de la Antártica Chilena,Porvenir,electricity_access_rate,99.52,percent,medium
+12,12301,Magallanes y de la Antártica Chilena,Porvenir,employment_in_transport_and_logistics,7.54,percent,very high
+12,12301,Magallanes y de la Antártica Chilena,Porvenir,home_ownership,54.6,percent,very low
+12,12301,Magallanes y de la Antártica Chilena,Porvenir,industry_construction_employment,28.93,percent,very high
+12,12301,Magallanes y de la Antártica Chilena,Porvenir,population,6673.0,persons,very low
+12,12301,Magallanes y de la Antártica Chilena,Porvenir,renter_share,30.62,percent,very high
+12,12302,Magallanes y de la Antártica Chilena,Primavera,electricity_access_rate,98.31,percent,very low
+12,12302,Magallanes y de la Antártica Chilena,Primavera,employment_in_transport_and_logistics,3.14,percent,very low
+12,12302,Magallanes y de la Antártica Chilena,Primavera,home_ownership,36.46,percent,very low
+12,12302,Magallanes y de la Antártica Chilena,Primavera,industry_construction_employment,14.51,percent,very low
+12,12302,Magallanes y de la Antártica Chilena,Primavera,population,431.0,persons,very low
+12,12302,Magallanes y de la Antártica Chilena,Primavera,renter_share,28.18,percent,very high
+12,12303,Magallanes y de la Antártica Chilena,Timaukel,electricity_access_rate,100.0,percent,very high
+12,12303,Magallanes y de la Antártica Chilena,Timaukel,employment_in_transport_and_logistics,0.99,percent,very low
+12,12303,Magallanes y de la Antártica Chilena,Timaukel,home_ownership,9.68,percent,very low
+12,12303,Magallanes y de la Antártica Chilena,Timaukel,industry_construction_employment,1.98,percent,very low
+12,12303,Magallanes y de la Antártica Chilena,Timaukel,population,147.0,persons,very low
+12,12303,Magallanes y de la Antártica Chilena,Timaukel,renter_share,17.74,percent,high
+12,12401,Magallanes y de la Antártica Chilena,Natales,electricity_access_rate,99.87,percent,very high
+12,12401,Magallanes y de la Antártica Chilena,Natales,employment_in_transport_and_logistics,8.57,percent,very high
+12,12401,Magallanes y de la Antártica Chilena,Natales,home_ownership,64.5,percent,low
+12,12401,Magallanes y de la Antártica Chilena,Natales,industry_construction_employment,16.14,percent,low
+12,12401,Magallanes y de la Antártica Chilena,Natales,population,23878.0,persons,medium
+12,12401,Magallanes y de la Antártica Chilena,Natales,renter_share,25.86,percent,very high
+12,12402,Magallanes y de la Antártica Chilena,Torres del Paine,electricity_access_rate,100.0,percent,very high
+12,12402,Magallanes y de la Antártica Chilena,Torres del Paine,employment_in_transport_and_logistics,0.68,percent,very low
+12,12402,Magallanes y de la Antártica Chilena,Torres del Paine,home_ownership,25.0,percent,very low
+12,12402,Magallanes y de la Antártica Chilena,Torres del Paine,industry_construction_employment,2.05,percent,very low
+12,12402,Magallanes y de la Antártica Chilena,Torres del Paine,population,197.0,persons,very low
+12,12402,Magallanes y de la Antártica Chilena,Torres del Paine,renter_share,29.0,percent,very high
+13,13101,Metropolitana de Santiago,Santiago,electricity_access_rate,99.94,percent,very high
+13,13101,Metropolitana de Santiago,Santiago,employment_in_transport_and_logistics,6.31,percent,high
+13,13101,Metropolitana de Santiago,Santiago,home_ownership,23.02,percent,very low
+13,13101,Metropolitana de Santiago,Santiago,industry_construction_employment,12.25,percent,very low
+13,13101,Metropolitana de Santiago,Santiago,population,425426.0,persons,very high
+13,13101,Metropolitana de Santiago,Santiago,renter_share,72.09,percent,very high
+13,13102,Metropolitana de Santiago,Cerrillos,electricity_access_rate,99.73,percent,high
+13,13102,Metropolitana de Santiago,Cerrillos,employment_in_transport_and_logistics,10.29,percent,very high
+13,13102,Metropolitana de Santiago,Cerrillos,home_ownership,62.79,percent,low
+13,13102,Metropolitana de Santiago,Cerrillos,industry_construction_employment,21.33,percent,high
+13,13102,Metropolitana de Santiago,Cerrillos,population,83544.0,persons,high
+13,13102,Metropolitana de Santiago,Cerrillos,renter_share,22.35,percent,high
+13,13103,Metropolitana de Santiago,Cerro Navia,electricity_access_rate,99.87,percent,very high
+13,13103,Metropolitana de Santiago,Cerro Navia,employment_in_transport_and_logistics,11.9,percent,very high
+13,13103,Metropolitana de Santiago,Cerro Navia,home_ownership,53.76,percent,very low
+13,13103,Metropolitana de Santiago,Cerro Navia,industry_construction_employment,22.95,percent,high
+13,13103,Metropolitana de Santiago,Cerro Navia,population,127032.0,persons,very high
+13,13103,Metropolitana de Santiago,Cerro Navia,renter_share,24.98,percent,very high
+13,13104,Metropolitana de Santiago,Conchalí,electricity_access_rate,99.94,percent,very high
+13,13104,Metropolitana de Santiago,Conchalí,employment_in_transport_and_logistics,9.36,percent,very high
+13,13104,Metropolitana de Santiago,Conchalí,home_ownership,49.11,percent,very low
+13,13104,Metropolitana de Santiago,Conchalí,industry_construction_employment,20.27,percent,medium
+13,13104,Metropolitana de Santiago,Conchalí,population,121298.0,persons,very high
+13,13104,Metropolitana de Santiago,Conchalí,renter_share,31.45,percent,very high
+13,13105,Metropolitana de Santiago,El Bosque,electricity_access_rate,99.79,percent,very high
+13,13105,Metropolitana de Santiago,El Bosque,employment_in_transport_and_logistics,8.9,percent,very high
+13,13105,Metropolitana de Santiago,El Bosque,home_ownership,58.13,percent,very low
+13,13105,Metropolitana de Santiago,El Bosque,industry_construction_employment,21.99,percent,high
+13,13105,Metropolitana de Santiago,El Bosque,population,153976.0,persons,very high
+13,13105,Metropolitana de Santiago,El Bosque,renter_share,23.57,percent,very high
+13,13106,Metropolitana de Santiago,Estación Central,electricity_access_rate,99.94,percent,very high
+13,13106,Metropolitana de Santiago,Estación Central,employment_in_transport_and_logistics,10.31,percent,very high
+13,13106,Metropolitana de Santiago,Estación Central,home_ownership,32.07,percent,very low
+13,13106,Metropolitana de Santiago,Estación Central,industry_construction_employment,15.74,percent,very low
+13,13106,Metropolitana de Santiago,Estación Central,population,179909.0,persons,very high
+13,13106,Metropolitana de Santiago,Estación Central,renter_share,59.18,percent,very high
+13,13107,Metropolitana de Santiago,Huechuraba,electricity_access_rate,99.92,percent,very high
+13,13107,Metropolitana de Santiago,Huechuraba,employment_in_transport_and_logistics,7.31,percent,very high
+13,13107,Metropolitana de Santiago,Huechuraba,home_ownership,64.28,percent,low
+13,13107,Metropolitana de Santiago,Huechuraba,industry_construction_employment,18.37,percent,low
+13,13107,Metropolitana de Santiago,Huechuraba,population,101608.0,persons,very high
+13,13107,Metropolitana de Santiago,Huechuraba,renter_share,21.6,percent,high
+13,13108,Metropolitana de Santiago,Independencia,electricity_access_rate,99.95,percent,very high
+13,13108,Metropolitana de Santiago,Independencia,employment_in_transport_and_logistics,8.25,percent,very high
+13,13108,Metropolitana de Santiago,Independencia,home_ownership,25.59,percent,very low
+13,13108,Metropolitana de Santiago,Independencia,industry_construction_employment,17.56,percent,low
+13,13108,Metropolitana de Santiago,Independencia,population,116089.0,persons,very high
+13,13108,Metropolitana de Santiago,Independencia,renter_share,65.94,percent,very high
+13,13109,Metropolitana de Santiago,La Cisterna,electricity_access_rate,99.95,percent,very high
+13,13109,Metropolitana de Santiago,La Cisterna,employment_in_transport_and_logistics,8.49,percent,very high
+13,13109,Metropolitana de Santiago,La Cisterna,home_ownership,43.94,percent,very low
+13,13109,Metropolitana de Santiago,La Cisterna,industry_construction_employment,16.97,percent,low
+13,13109,Metropolitana de Santiago,La Cisterna,population,102478.0,persons,very high
+13,13109,Metropolitana de Santiago,La Cisterna,renter_share,44.24,percent,very high
+13,13110,Metropolitana de Santiago,La Florida,electricity_access_rate,99.95,percent,very high
+13,13110,Metropolitana de Santiago,La Florida,employment_in_transport_and_logistics,6.42,percent,high
+13,13110,Metropolitana de Santiago,La Florida,home_ownership,60.87,percent,low
+13,13110,Metropolitana de Santiago,La Florida,industry_construction_employment,15.97,percent,very low
+13,13110,Metropolitana de Santiago,La Florida,population,373466.0,persons,very high
+13,13110,Metropolitana de Santiago,La Florida,renter_share,29.78,percent,very high
+13,13111,Metropolitana de Santiago,La Granja,electricity_access_rate,99.95,percent,very high
+13,13111,Metropolitana de Santiago,La Granja,employment_in_transport_and_logistics,8.64,percent,very high
+13,13111,Metropolitana de Santiago,La Granja,home_ownership,55.81,percent,very low
+13,13111,Metropolitana de Santiago,La Granja,industry_construction_employment,20.75,percent,medium
+13,13111,Metropolitana de Santiago,La Granja,population,111670.0,persons,very high
+13,13111,Metropolitana de Santiago,La Granja,renter_share,24.66,percent,very high
+13,13112,Metropolitana de Santiago,La Pintana,electricity_access_rate,99.86,percent,very high
+13,13112,Metropolitana de Santiago,La Pintana,employment_in_transport_and_logistics,8.19,percent,very high
+13,13112,Metropolitana de Santiago,La Pintana,home_ownership,68.96,percent,medium
+13,13112,Metropolitana de Santiago,La Pintana,industry_construction_employment,24.51,percent,very high
+13,13112,Metropolitana de Santiago,La Pintana,population,174601.0,persons,very high
+13,13112,Metropolitana de Santiago,La Pintana,renter_share,18.28,percent,high
+13,13113,Metropolitana de Santiago,La Reina,electricity_access_rate,99.98,percent,very high
+13,13113,Metropolitana de Santiago,La Reina,employment_in_transport_and_logistics,3.69,percent,very low
+13,13113,Metropolitana de Santiago,La Reina,home_ownership,62.99,percent,low
+13,13113,Metropolitana de Santiago,La Reina,industry_construction_employment,11.7,percent,very low
+13,13113,Metropolitana de Santiago,La Reina,population,89091.0,persons,very high
+13,13113,Metropolitana de Santiago,La Reina,renter_share,26.88,percent,very high
+13,13114,Metropolitana de Santiago,Las Condes,electricity_access_rate,99.99,percent,very high
+13,13114,Metropolitana de Santiago,Las Condes,employment_in_transport_and_logistics,3.91,percent,very low
+13,13114,Metropolitana de Santiago,Las Condes,home_ownership,53.48,percent,very low
+13,13114,Metropolitana de Santiago,Las Condes,industry_construction_employment,10.34,percent,very low
+13,13114,Metropolitana de Santiago,Las Condes,population,293272.0,persons,very high
+13,13114,Metropolitana de Santiago,Las Condes,renter_share,40.82,percent,very high
+13,13115,Metropolitana de Santiago,Lo Barnechea,electricity_access_rate,99.96,percent,very high
+13,13115,Metropolitana de Santiago,Lo Barnechea,employment_in_transport_and_logistics,4.14,percent,very low
+13,13115,Metropolitana de Santiago,Lo Barnechea,home_ownership,69.46,percent,medium
+13,13115,Metropolitana de Santiago,Lo Barnechea,industry_construction_employment,10.48,percent,very low
+13,13115,Metropolitana de Santiago,Lo Barnechea,population,112112.0,persons,very high
+13,13115,Metropolitana de Santiago,Lo Barnechea,renter_share,23.13,percent,high
+13,13116,Metropolitana de Santiago,Lo Espejo,electricity_access_rate,99.92,percent,very high
+13,13116,Metropolitana de Santiago,Lo Espejo,employment_in_transport_and_logistics,10.76,percent,very high
+13,13116,Metropolitana de Santiago,Lo Espejo,home_ownership,54.22,percent,very low
+13,13116,Metropolitana de Santiago,Lo Espejo,industry_construction_employment,22.68,percent,high
+13,13116,Metropolitana de Santiago,Lo Espejo,population,87079.0,persons,very high
+13,13116,Metropolitana de Santiago,Lo Espejo,renter_share,20.53,percent,high
+13,13117,Metropolitana de Santiago,Lo Prado,electricity_access_rate,99.94,percent,very high
+13,13117,Metropolitana de Santiago,Lo Prado,employment_in_transport_and_logistics,11.07,percent,very high
+13,13117,Metropolitana de Santiago,Lo Prado,home_ownership,51.56,percent,very low
+13,13117,Metropolitana de Santiago,Lo Prado,industry_construction_employment,19.75,percent,medium
+13,13117,Metropolitana de Santiago,Lo Prado,population,91118.0,persons,very high
+13,13117,Metropolitana de Santiago,Lo Prado,renter_share,32.06,percent,very high
+13,13118,Metropolitana de Santiago,Macul,electricity_access_rate,99.96,percent,very high
+13,13118,Metropolitana de Santiago,Macul,employment_in_transport_and_logistics,6.18,percent,high
+13,13118,Metropolitana de Santiago,Macul,home_ownership,50.13,percent,very low
+13,13118,Metropolitana de Santiago,Macul,industry_construction_employment,14.13,percent,very low
+13,13118,Metropolitana de Santiago,Macul,population,123241.0,persons,very high
+13,13118,Metropolitana de Santiago,Macul,renter_share,39.39,percent,very high
+13,13119,Metropolitana de Santiago,Maipú,electricity_access_rate,99.92,percent,very high
+13,13119,Metropolitana de Santiago,Maipú,employment_in_transport_and_logistics,10.11,percent,very high
+13,13119,Metropolitana de Santiago,Maipú,home_ownership,71.31,percent,high
+13,13119,Metropolitana de Santiago,Maipú,industry_construction_employment,17.02,percent,low
+13,13119,Metropolitana de Santiago,Maipú,population,501786.0,persons,very high
+13,13119,Metropolitana de Santiago,Maipú,renter_share,21.62,percent,high
+13,13120,Metropolitana de Santiago,Ñuñoa,electricity_access_rate,99.98,percent,very high
+13,13120,Metropolitana de Santiago,Ñuñoa,employment_in_transport_and_logistics,4.19,percent,low
+13,13120,Metropolitana de Santiago,Ñuñoa,home_ownership,48.1,percent,very low
+13,13120,Metropolitana de Santiago,Ñuñoa,industry_construction_employment,10.66,percent,very low
+13,13120,Metropolitana de Santiago,Ñuñoa,population,239365.0,persons,very high
+13,13120,Metropolitana de Santiago,Ñuñoa,renter_share,45.69,percent,very high
+13,13121,Metropolitana de Santiago,Pedro Aguirre Cerda,electricity_access_rate,99.86,percent,very high
+13,13121,Metropolitana de Santiago,Pedro Aguirre Cerda,employment_in_transport_and_logistics,8.94,percent,very high
+13,13121,Metropolitana de Santiago,Pedro Aguirre Cerda,home_ownership,51.23,percent,very low
+13,13121,Metropolitana de Santiago,Pedro Aguirre Cerda,industry_construction_employment,18.64,percent,low
+13,13121,Metropolitana de Santiago,Pedro Aguirre Cerda,population,95643.0,persons,very high
+13,13121,Metropolitana de Santiago,Pedro Aguirre Cerda,renter_share,25.94,percent,very high
+13,13122,Metropolitana de Santiago,Peñalolén,electricity_access_rate,99.92,percent,very high
+13,13122,Metropolitana de Santiago,Peñalolén,employment_in_transport_and_logistics,6.35,percent,high
+13,13122,Metropolitana de Santiago,Peñalolén,home_ownership,61.44,percent,low
+13,13122,Metropolitana de Santiago,Peñalolén,industry_construction_employment,17.35,percent,low
+13,13122,Metropolitana de Santiago,Peñalolén,population,235724.0,persons,very high
+13,13122,Metropolitana de Santiago,Peñalolén,renter_share,24.74,percent,very high
+13,13123,Metropolitana de Santiago,Providencia,electricity_access_rate,99.97,percent,very high
+13,13123,Metropolitana de Santiago,Providencia,employment_in_transport_and_logistics,3.07,percent,very low
+13,13123,Metropolitana de Santiago,Providencia,home_ownership,42.82,percent,very low
+13,13123,Metropolitana de Santiago,Providencia,industry_construction_employment,9.18,percent,very low
+13,13123,Metropolitana de Santiago,Providencia,population,141714.0,persons,very high
+13,13123,Metropolitana de Santiago,Providencia,renter_share,51.15,percent,very high
+13,13124,Metropolitana de Santiago,Pudahuel,electricity_access_rate,99.94,percent,very high
+13,13124,Metropolitana de Santiago,Pudahuel,employment_in_transport_and_logistics,12.81,percent,very high
+13,13124,Metropolitana de Santiago,Pudahuel,home_ownership,66.01,percent,low
+13,13124,Metropolitana de Santiago,Pudahuel,industry_construction_employment,17.91,percent,low
+13,13124,Metropolitana de Santiago,Pudahuel,population,227540.0,persons,very high
+13,13124,Metropolitana de Santiago,Pudahuel,renter_share,23.18,percent,high
+13,13125,Metropolitana de Santiago,Quilicura,electricity_access_rate,99.95,percent,very high
+13,13125,Metropolitana de Santiago,Quilicura,employment_in_transport_and_logistics,10.68,percent,very high
+13,13125,Metropolitana de Santiago,Quilicura,home_ownership,68.73,percent,medium
+13,13125,Metropolitana de Santiago,Quilicura,industry_construction_employment,23.32,percent,high
+13,13125,Metropolitana de Santiago,Quilicura,population,205375.0,persons,very high
+13,13125,Metropolitana de Santiago,Quilicura,renter_share,26.03,percent,very high
+13,13126,Metropolitana de Santiago,Quinta Normal,electricity_access_rate,99.96,percent,very high
+13,13126,Metropolitana de Santiago,Quinta Normal,employment_in_transport_and_logistics,10.11,percent,very high
+13,13126,Metropolitana de Santiago,Quinta Normal,home_ownership,37.86,percent,very low
+13,13126,Metropolitana de Santiago,Quinta Normal,industry_construction_employment,19.3,percent,medium
+13,13126,Metropolitana de Santiago,Quinta Normal,population,128818.0,persons,very high
+13,13126,Metropolitana de Santiago,Quinta Normal,renter_share,45.54,percent,very high
+13,13127,Metropolitana de Santiago,Recoleta,electricity_access_rate,99.88,percent,very high
+13,13127,Metropolitana de Santiago,Recoleta,employment_in_transport_and_logistics,7.54,percent,very high
+13,13127,Metropolitana de Santiago,Recoleta,home_ownership,40.38,percent,very low
+13,13127,Metropolitana de Santiago,Recoleta,industry_construction_employment,20.44,percent,medium
+13,13127,Metropolitana de Santiago,Recoleta,population,153131.0,persons,very high
+13,13127,Metropolitana de Santiago,Recoleta,renter_share,43.29,percent,very high
+13,13128,Metropolitana de Santiago,Renca,electricity_access_rate,99.95,percent,very high
+13,13128,Metropolitana de Santiago,Renca,employment_in_transport_and_logistics,12.54,percent,very high
+13,13128,Metropolitana de Santiago,Renca,home_ownership,62.8,percent,low
+13,13128,Metropolitana de Santiago,Renca,industry_construction_employment,23.41,percent,high
+13,13128,Metropolitana de Santiago,Renca,population,143321.0,persons,very high
+13,13128,Metropolitana de Santiago,Renca,renter_share,23.76,percent,very high
+13,13129,Metropolitana de Santiago,San Joaquín,electricity_access_rate,99.94,percent,very high
+13,13129,Metropolitana de Santiago,San Joaquín,employment_in_transport_and_logistics,7.8,percent,very high
+13,13129,Metropolitana de Santiago,San Joaquín,home_ownership,47.74,percent,very low
+13,13129,Metropolitana de Santiago,San Joaquín,industry_construction_employment,18.71,percent,medium
+13,13129,Metropolitana de Santiago,San Joaquín,population,94590.0,persons,very high
+13,13129,Metropolitana de Santiago,San Joaquín,renter_share,32.94,percent,very high
+13,13130,Metropolitana de Santiago,San Miguel,electricity_access_rate,99.98,percent,very high
+13,13130,Metropolitana de Santiago,San Miguel,employment_in_transport_and_logistics,6.63,percent,high
+13,13130,Metropolitana de Santiago,San Miguel,home_ownership,40.95,percent,very low
+13,13130,Metropolitana de Santiago,San Miguel,industry_construction_employment,14.26,percent,very low
+13,13130,Metropolitana de Santiago,San Miguel,population,149102.0,persons,very high
+13,13130,Metropolitana de Santiago,San Miguel,renter_share,51.93,percent,very high
+13,13131,Metropolitana de Santiago,San Ramón,electricity_access_rate,99.87,percent,very high
+13,13131,Metropolitana de Santiago,San Ramón,employment_in_transport_and_logistics,8.35,percent,very high
+13,13131,Metropolitana de Santiago,San Ramón,home_ownership,53.31,percent,very low
+13,13131,Metropolitana de Santiago,San Ramón,industry_construction_employment,22.88,percent,high
+13,13131,Metropolitana de Santiago,San Ramón,population,75884.0,persons,high
+13,13131,Metropolitana de Santiago,San Ramón,renter_share,23.12,percent,high
+13,13132,Metropolitana de Santiago,Vitacura,electricity_access_rate,99.99,percent,very high
+13,13132,Metropolitana de Santiago,Vitacura,employment_in_transport_and_logistics,2.95,percent,very low
+13,13132,Metropolitana de Santiago,Vitacura,home_ownership,61.9,percent,low
+13,13132,Metropolitana de Santiago,Vitacura,industry_construction_employment,10.08,percent,very low
+13,13132,Metropolitana de Santiago,Vitacura,population,85876.0,persons,very high
+13,13132,Metropolitana de Santiago,Vitacura,renter_share,34.16,percent,very high
+13,13201,Metropolitana de Santiago,Puente Alto,electricity_access_rate,99.91,percent,very high
+13,13201,Metropolitana de Santiago,Puente Alto,employment_in_transport_and_logistics,7.31,percent,very high
+13,13201,Metropolitana de Santiago,Puente Alto,home_ownership,73.09,percent,high
+13,13201,Metropolitana de Santiago,Puente Alto,industry_construction_employment,19.36,percent,medium
+13,13201,Metropolitana de Santiago,Puente Alto,population,564435.0,persons,very high
+13,13201,Metropolitana de Santiago,Puente Alto,renter_share,18.82,percent,high
+13,13202,Metropolitana de Santiago,Pirque,electricity_access_rate,99.71,percent,high
+13,13202,Metropolitana de Santiago,Pirque,employment_in_transport_and_logistics,5.99,percent,medium
+13,13202,Metropolitana de Santiago,Pirque,home_ownership,70.9,percent,high
+13,13202,Metropolitana de Santiago,Pirque,industry_construction_employment,20.05,percent,medium
+13,13202,Metropolitana de Santiago,Pirque,population,28949.0,persons,high
+13,13202,Metropolitana de Santiago,Pirque,renter_share,12.33,percent,low
+13,13203,Metropolitana de Santiago,San José de Maipo,electricity_access_rate,99.27,percent,medium
+13,13203,Metropolitana de Santiago,San José de Maipo,employment_in_transport_and_logistics,4.76,percent,low
+13,13203,Metropolitana de Santiago,San José de Maipo,home_ownership,56.33,percent,very low
+13,13203,Metropolitana de Santiago,San José de Maipo,industry_construction_employment,20.48,percent,medium
+13,13203,Metropolitana de Santiago,San José de Maipo,population,17289.0,persons,medium
+13,13203,Metropolitana de Santiago,San José de Maipo,renter_share,18.04,percent,high
+13,13301,Metropolitana de Santiago,Colina,electricity_access_rate,99.89,percent,very high
+13,13301,Metropolitana de Santiago,Colina,employment_in_transport_and_logistics,6.16,percent,high
+13,13301,Metropolitana de Santiago,Colina,home_ownership,72.17,percent,high
+13,13301,Metropolitana de Santiago,Colina,industry_construction_employment,20.29,percent,medium
+13,13301,Metropolitana de Santiago,Colina,population,168128.0,persons,very high
+13,13301,Metropolitana de Santiago,Colina,renter_share,20.27,percent,high
+13,13302,Metropolitana de Santiago,Lampa,electricity_access_rate,99.82,percent,very high
+13,13302,Metropolitana de Santiago,Lampa,employment_in_transport_and_logistics,9.63,percent,very high
+13,13302,Metropolitana de Santiago,Lampa,home_ownership,71.01,percent,high
+13,13302,Metropolitana de Santiago,Lampa,industry_construction_employment,24.6,percent,very high
+13,13302,Metropolitana de Santiago,Lampa,population,144684.0,persons,very high
+13,13302,Metropolitana de Santiago,Lampa,renter_share,18.18,percent,high
+13,13303,Metropolitana de Santiago,Tiltil,electricity_access_rate,99.53,percent,medium
+13,13303,Metropolitana de Santiago,Tiltil,employment_in_transport_and_logistics,7.47,percent,very high
+13,13303,Metropolitana de Santiago,Tiltil,home_ownership,66.5,percent,low
+13,13303,Metropolitana de Santiago,Tiltil,industry_construction_employment,27.66,percent,very high
+13,13303,Metropolitana de Santiago,Tiltil,population,19534.0,persons,medium
+13,13303,Metropolitana de Santiago,Tiltil,renter_share,15.54,percent,medium
+13,13401,Metropolitana de Santiago,San Bernardo,electricity_access_rate,99.84,percent,very high
+13,13401,Metropolitana de Santiago,San Bernardo,employment_in_transport_and_logistics,9.22,percent,very high
+13,13401,Metropolitana de Santiago,San Bernardo,home_ownership,65.96,percent,low
+13,13401,Metropolitana de Santiago,San Bernardo,industry_construction_employment,22.44,percent,high
+13,13401,Metropolitana de Santiago,San Bernardo,population,304977.0,persons,very high
+13,13401,Metropolitana de Santiago,San Bernardo,renter_share,22.41,percent,high
+13,13402,Metropolitana de Santiago,Buin,electricity_access_rate,99.87,percent,very high
+13,13402,Metropolitana de Santiago,Buin,employment_in_transport_and_logistics,7.06,percent,high
+13,13402,Metropolitana de Santiago,Buin,home_ownership,70.93,percent,high
+13,13402,Metropolitana de Santiago,Buin,industry_construction_employment,19.83,percent,medium
+13,13402,Metropolitana de Santiago,Buin,population,116687.0,persons,very high
+13,13402,Metropolitana de Santiago,Buin,renter_share,17.0,percent,medium
+13,13403,Metropolitana de Santiago,Calera de Tango,electricity_access_rate,99.82,percent,very high
+13,13403,Metropolitana de Santiago,Calera de Tango,employment_in_transport_and_logistics,8.63,percent,very high
+13,13403,Metropolitana de Santiago,Calera de Tango,home_ownership,68.13,percent,medium
+13,13403,Metropolitana de Santiago,Calera de Tango,industry_construction_employment,17.98,percent,low
+13,13403,Metropolitana de Santiago,Calera de Tango,population,25390.0,persons,medium
+13,13403,Metropolitana de Santiago,Calera de Tango,renter_share,14.72,percent,medium
+13,13404,Metropolitana de Santiago,Paine,electricity_access_rate,99.78,percent,high
+13,13404,Metropolitana de Santiago,Paine,employment_in_transport_and_logistics,6.65,percent,high
+13,13404,Metropolitana de Santiago,Paine,home_ownership,64.68,percent,low
+13,13404,Metropolitana de Santiago,Paine,industry_construction_employment,20.56,percent,medium
+13,13404,Metropolitana de Santiago,Paine,population,78495.0,persons,high
+13,13404,Metropolitana de Santiago,Paine,renter_share,17.75,percent,high
+13,13501,Metropolitana de Santiago,Melipilla,electricity_access_rate,99.78,percent,high
+13,13501,Metropolitana de Santiago,Melipilla,employment_in_transport_and_logistics,6.33,percent,high
+13,13501,Metropolitana de Santiago,Melipilla,home_ownership,66.39,percent,low
+13,13501,Metropolitana de Santiago,Melipilla,industry_construction_employment,17.61,percent,low
+13,13501,Metropolitana de Santiago,Melipilla,population,135801.0,persons,very high
+13,13501,Metropolitana de Santiago,Melipilla,renter_share,20.95,percent,high
+13,13502,Metropolitana de Santiago,Alhué,electricity_access_rate,99.45,percent,medium
+13,13502,Metropolitana de Santiago,Alhué,employment_in_transport_and_logistics,3.3,percent,very low
+13,13502,Metropolitana de Santiago,Alhué,home_ownership,68.48,percent,medium
+13,13502,Metropolitana de Santiago,Alhué,industry_construction_employment,30.86,percent,very high
+13,13502,Metropolitana de Santiago,Alhué,population,7696.0,persons,very low
+13,13502,Metropolitana de Santiago,Alhué,renter_share,18.52,percent,high
+13,13503,Metropolitana de Santiago,Curacaví,electricity_access_rate,99.66,percent,high
+13,13503,Metropolitana de Santiago,Curacaví,employment_in_transport_and_logistics,9.9,percent,very high
+13,13503,Metropolitana de Santiago,Curacaví,home_ownership,68.95,percent,medium
+13,13503,Metropolitana de Santiago,Curacaví,industry_construction_employment,18.58,percent,low
+13,13503,Metropolitana de Santiago,Curacaví,population,35064.0,persons,high
+13,13503,Metropolitana de Santiago,Curacaví,renter_share,14.84,percent,medium
+13,13504,Metropolitana de Santiago,María Pinto,electricity_access_rate,99.65,percent,high
+13,13504,Metropolitana de Santiago,María Pinto,employment_in_transport_and_logistics,9.44,percent,very high
+13,13504,Metropolitana de Santiago,María Pinto,home_ownership,75.71,percent,very high
+13,13504,Metropolitana de Santiago,María Pinto,industry_construction_employment,14.65,percent,very low
+13,13504,Metropolitana de Santiago,María Pinto,population,15350.0,persons,medium
+13,13504,Metropolitana de Santiago,María Pinto,renter_share,8.62,percent,very low
+13,13505,Metropolitana de Santiago,San Pedro,electricity_access_rate,99.38,percent,medium
+13,13505,Metropolitana de Santiago,San Pedro,employment_in_transport_and_logistics,4.93,percent,low
+13,13505,Metropolitana de Santiago,San Pedro,home_ownership,70.21,percent,medium
+13,13505,Metropolitana de Santiago,San Pedro,industry_construction_employment,18.7,percent,medium
+13,13505,Metropolitana de Santiago,San Pedro,population,11092.0,persons,low
+13,13505,Metropolitana de Santiago,San Pedro,renter_share,15.84,percent,medium
+13,13601,Metropolitana de Santiago,Talagante,electricity_access_rate,99.77,percent,high
+13,13601,Metropolitana de Santiago,Talagante,employment_in_transport_and_logistics,7.5,percent,very high
+13,13601,Metropolitana de Santiago,Talagante,home_ownership,67.22,percent,medium
+13,13601,Metropolitana de Santiago,Talagante,industry_construction_employment,23.23,percent,high
+13,13601,Metropolitana de Santiago,Talagante,population,75800.0,persons,high
+13,13601,Metropolitana de Santiago,Talagante,renter_share,19.59,percent,high
+13,13602,Metropolitana de Santiago,El Monte,electricity_access_rate,99.71,percent,high
+13,13602,Metropolitana de Santiago,El Monte,employment_in_transport_and_logistics,7.26,percent,high
+13,13602,Metropolitana de Santiago,El Monte,home_ownership,67.13,percent,medium
+13,13602,Metropolitana de Santiago,El Monte,industry_construction_employment,24.64,percent,very high
+13,13602,Metropolitana de Santiago,El Monte,population,37292.0,persons,high
+13,13602,Metropolitana de Santiago,El Monte,renter_share,17.14,percent,medium
+13,13603,Metropolitana de Santiago,Isla de Maipo,electricity_access_rate,99.83,percent,very high
+13,13603,Metropolitana de Santiago,Isla de Maipo,employment_in_transport_and_logistics,7.21,percent,high
+13,13603,Metropolitana de Santiago,Isla de Maipo,home_ownership,69.42,percent,medium
+13,13603,Metropolitana de Santiago,Isla de Maipo,industry_construction_employment,22.35,percent,high
+13,13603,Metropolitana de Santiago,Isla de Maipo,population,39062.0,persons,high
+13,13603,Metropolitana de Santiago,Isla de Maipo,renter_share,15.04,percent,medium
+13,13604,Metropolitana de Santiago,Padre Hurtado,electricity_access_rate,99.89,percent,very high
+13,13604,Metropolitana de Santiago,Padre Hurtado,employment_in_transport_and_logistics,9.08,percent,very high
+13,13604,Metropolitana de Santiago,Padre Hurtado,home_ownership,71.05,percent,high
+13,13604,Metropolitana de Santiago,Padre Hurtado,industry_construction_employment,23.88,percent,high
+13,13604,Metropolitana de Santiago,Padre Hurtado,population,81112.0,persons,high
+13,13604,Metropolitana de Santiago,Padre Hurtado,renter_share,17.67,percent,high
+13,13605,Metropolitana de Santiago,Peñaflor,electricity_access_rate,99.85,percent,very high
+13,13605,Metropolitana de Santiago,Peñaflor,employment_in_transport_and_logistics,8.77,percent,very high
+13,13605,Metropolitana de Santiago,Peñaflor,home_ownership,68.33,percent,medium
+13,13605,Metropolitana de Santiago,Peñaflor,industry_construction_employment,23.34,percent,high
+13,13605,Metropolitana de Santiago,Peñaflor,population,93931.0,persons,very high
+13,13605,Metropolitana de Santiago,Peñaflor,renter_share,19.3,percent,high
+14,14101,Los Ríos,Valdivia,electricity_access_rate,99.73,percent,high
+14,14101,Los Ríos,Valdivia,employment_in_transport_and_logistics,5.47,percent,medium
+14,14101,Los Ríos,Valdivia,home_ownership,59.22,percent,very low
+14,14101,Los Ríos,Valdivia,industry_construction_employment,16.9,percent,low
+14,14101,Los Ríos,Valdivia,population,166958.0,persons,very high
+14,14101,Los Ríos,Valdivia,renter_share,28.21,percent,very high
+14,14102,Los Ríos,Corral,electricity_access_rate,98.39,percent,very low
+14,14102,Los Ríos,Corral,employment_in_transport_and_logistics,11.39,percent,very high
+14,14102,Los Ríos,Corral,home_ownership,80.48,percent,very high
+14,14102,Los Ríos,Corral,industry_construction_employment,19.23,percent,medium
+14,14102,Los Ríos,Corral,population,5493.0,persons,very low
+14,14102,Los Ríos,Corral,renter_share,7.09,percent,very low
+14,14103,Los Ríos,Lanco,electricity_access_rate,98.93,percent,low
+14,14103,Los Ríos,Lanco,employment_in_transport_and_logistics,5.5,percent,medium
+14,14103,Los Ríos,Lanco,home_ownership,71.22,percent,high
+14,14103,Los Ríos,Lanco,industry_construction_employment,25.58,percent,very high
+14,14103,Los Ríos,Lanco,population,16861.0,persons,medium
+14,14103,Los Ríos,Lanco,renter_share,15.1,percent,medium
+14,14104,Los Ríos,Los Lagos,electricity_access_rate,98.93,percent,low
+14,14104,Los Ríos,Los Lagos,employment_in_transport_and_logistics,6.08,percent,medium
+14,14104,Los Ríos,Los Lagos,home_ownership,66.92,percent,low
+14,14104,Los Ríos,Los Lagos,industry_construction_employment,24.35,percent,high
+14,14104,Los Ríos,Los Lagos,population,21421.0,persons,medium
+14,14104,Los Ríos,Los Lagos,renter_share,13.82,percent,medium
+14,14105,Los Ríos,Máfil,electricity_access_rate,98.94,percent,low
+14,14105,Los Ríos,Máfil,employment_in_transport_and_logistics,4.76,percent,low
+14,14105,Los Ríos,Máfil,home_ownership,67.65,percent,medium
+14,14105,Los Ríos,Máfil,industry_construction_employment,19.88,percent,medium
+14,14105,Los Ríos,Máfil,population,8036.0,persons,low
+14,14105,Los Ríos,Máfil,renter_share,13.06,percent,low
+14,14106,Los Ríos,Mariquina,electricity_access_rate,98.82,percent,low
+14,14106,Los Ríos,Mariquina,employment_in_transport_and_logistics,5.69,percent,medium
+14,14106,Los Ríos,Mariquina,home_ownership,71.31,percent,high
+14,14106,Los Ríos,Mariquina,industry_construction_employment,23.46,percent,high
+14,14106,Los Ríos,Mariquina,population,22901.0,persons,medium
+14,14106,Los Ríos,Mariquina,renter_share,12.84,percent,low
+14,14107,Los Ríos,Paillaco,electricity_access_rate,99.35,percent,medium
+14,14107,Los Ríos,Paillaco,employment_in_transport_and_logistics,6.33,percent,high
+14,14107,Los Ríos,Paillaco,home_ownership,66.34,percent,low
+14,14107,Los Ríos,Paillaco,industry_construction_employment,17.54,percent,low
+14,14107,Los Ríos,Paillaco,population,19719.0,persons,medium
+14,14107,Los Ríos,Paillaco,renter_share,14.01,percent,medium
+14,14108,Los Ríos,Panguipulli,electricity_access_rate,98.33,percent,very low
+14,14108,Los Ríos,Panguipulli,employment_in_transport_and_logistics,4.94,percent,low
+14,14108,Los Ríos,Panguipulli,home_ownership,67.81,percent,medium
+14,14108,Los Ríos,Panguipulli,industry_construction_employment,23.86,percent,high
+14,14108,Los Ríos,Panguipulli,population,35049.0,persons,high
+14,14108,Los Ríos,Panguipulli,renter_share,14.12,percent,medium
+14,14201,Los Ríos,La Unión,electricity_access_rate,99.27,percent,medium
+14,14201,Los Ríos,La Unión,employment_in_transport_and_logistics,6.73,percent,high
+14,14201,Los Ríos,La Unión,home_ownership,68.38,percent,medium
+14,14201,Los Ríos,La Unión,industry_construction_employment,21.57,percent,high
+14,14201,Los Ríos,La Unión,population,38724.0,persons,high
+14,14201,Los Ríos,La Unión,renter_share,14.38,percent,medium
+14,14202,Los Ríos,Futrono,electricity_access_rate,98.69,percent,low
+14,14202,Los Ríos,Futrono,employment_in_transport_and_logistics,5.03,percent,low
+14,14202,Los Ríos,Futrono,home_ownership,66.81,percent,low
+14,14202,Los Ríos,Futrono,industry_construction_employment,23.66,percent,high
+14,14202,Los Ríos,Futrono,population,15633.0,persons,medium
+14,14202,Los Ríos,Futrono,renter_share,14.32,percent,medium
+14,14203,Los Ríos,Lago Ranco,electricity_access_rate,97.76,percent,very low
+14,14203,Los Ríos,Lago Ranco,employment_in_transport_and_logistics,3.4,percent,very low
+14,14203,Los Ríos,Lago Ranco,home_ownership,72.67,percent,high
+14,14203,Los Ríos,Lago Ranco,industry_construction_employment,22.06,percent,high
+14,14203,Los Ríos,Lago Ranco,population,10527.0,persons,low
+14,14203,Los Ríos,Lago Ranco,renter_share,9.0,percent,very low
+14,14204,Los Ríos,Río Bueno,electricity_access_rate,99.21,percent,low
+14,14204,Los Ríos,Río Bueno,employment_in_transport_and_logistics,4.55,percent,low
+14,14204,Los Ríos,Río Bueno,home_ownership,65.14,percent,low
+14,14204,Los Ríos,Río Bueno,industry_construction_employment,17.41,percent,low
+14,14204,Los Ríos,Río Bueno,population,33314.0,persons,high
+14,14204,Los Ríos,Río Bueno,renter_share,13.36,percent,low
+15,15101,Arica y Parinacota,Arica,electricity_access_rate,99.14,percent,low
+15,15101,Arica y Parinacota,Arica,employment_in_transport_and_logistics,8.72,percent,very high
+15,15101,Arica y Parinacota,Arica,home_ownership,53.47,percent,very low
+15,15101,Arica y Parinacota,Arica,industry_construction_employment,19.69,percent,medium
+15,15101,Arica y Parinacota,Arica,population,236109.0,persons,very high
+15,15101,Arica y Parinacota,Arica,renter_share,26.31,percent,very high
+15,15102,Arica y Parinacota,Camarones,electricity_access_rate,92.51,percent,very low
+15,15102,Arica y Parinacota,Camarones,employment_in_transport_and_logistics,4.71,percent,low
+15,15102,Arica y Parinacota,Camarones,home_ownership,61.56,percent,low
+15,15102,Arica y Parinacota,Camarones,industry_construction_employment,12.94,percent,very low
+15,15102,Arica y Parinacota,Camarones,population,861.0,persons,very low
+15,15102,Arica y Parinacota,Camarones,renter_share,5.03,percent,very low
+15,15201,Arica y Parinacota,Putre,electricity_access_rate,94.0,percent,very low
+15,15201,Arica y Parinacota,Putre,employment_in_transport_and_logistics,10.0,percent,very high
+15,15201,Arica y Parinacota,Putre,home_ownership,34.73,percent,very low
+15,15201,Arica y Parinacota,Putre,industry_construction_employment,16.0,percent,very low
+15,15201,Arica y Parinacota,Putre,population,1368.0,persons,very low
+15,15201,Arica y Parinacota,Putre,renter_share,27.46,percent,very high
+15,15202,Arica y Parinacota,General Lagos,electricity_access_rate,93.09,percent,very low
+15,15202,Arica y Parinacota,General Lagos,employment_in_transport_and_logistics,4.63,percent,low
+15,15202,Arica y Parinacota,General Lagos,home_ownership,51.33,percent,very low
+15,15202,Arica y Parinacota,General Lagos,industry_construction_employment,17.13,percent,low
+15,15202,Arica y Parinacota,General Lagos,population,504.0,persons,very low
+15,15202,Arica y Parinacota,General Lagos,renter_share,7.52,percent,very low
+16,16101,Ñuble,Chillán,electricity_access_rate,99.84,percent,very high
+16,16101,Ñuble,Chillán,employment_in_transport_and_logistics,6.2,percent,high
+16,16101,Ñuble,Chillán,home_ownership,66.52,percent,low
+16,16101,Ñuble,Chillán,industry_construction_employment,17.64,percent,low
+16,16101,Ñuble,Chillán,population,188835.0,persons,very high
+16,16101,Ñuble,Chillán,renter_share,22.63,percent,high
+16,16102,Ñuble,Bulnes,electricity_access_rate,99.24,percent,low
+16,16102,Ñuble,Bulnes,employment_in_transport_and_logistics,6.23,percent,high
+16,16102,Ñuble,Bulnes,home_ownership,71.85,percent,high
+16,16102,Ñuble,Bulnes,industry_construction_employment,23.57,percent,high
+16,16102,Ñuble,Bulnes,population,23785.0,persons,medium
+16,16102,Ñuble,Bulnes,renter_share,11.76,percent,low
+16,16103,Ñuble,Chillán Viejo,electricity_access_rate,99.57,percent,high
+16,16103,Ñuble,Chillán Viejo,employment_in_transport_and_logistics,8.28,percent,very high
+16,16103,Ñuble,Chillán Viejo,home_ownership,67.58,percent,medium
+16,16103,Ñuble,Chillán Viejo,industry_construction_employment,20.45,percent,medium
+16,16103,Ñuble,Chillán Viejo,population,32611.0,persons,high
+16,16103,Ñuble,Chillán Viejo,renter_share,20.07,percent,high
+16,16104,Ñuble,El Carmen,electricity_access_rate,99.21,percent,low
+16,16104,Ñuble,El Carmen,employment_in_transport_and_logistics,5.98,percent,medium
+16,16104,Ñuble,El Carmen,home_ownership,70.46,percent,high
+16,16104,Ñuble,El Carmen,industry_construction_employment,17.79,percent,low
+16,16104,Ñuble,El Carmen,population,13122.0,persons,low
+16,16104,Ñuble,El Carmen,renter_share,10.05,percent,very low
+16,16105,Ñuble,Pemuco,electricity_access_rate,98.41,percent,very low
+16,16105,Ñuble,Pemuco,employment_in_transport_and_logistics,4.27,percent,low
+16,16105,Ñuble,Pemuco,home_ownership,72.55,percent,high
+16,16105,Ñuble,Pemuco,industry_construction_employment,22.73,percent,high
+16,16105,Ñuble,Pemuco,population,8913.0,persons,low
+16,16105,Ñuble,Pemuco,renter_share,9.93,percent,very low
+16,16106,Ñuble,Pinto,electricity_access_rate,99.47,percent,medium
+16,16106,Ñuble,Pinto,employment_in_transport_and_logistics,4.34,percent,low
+16,16106,Ñuble,Pinto,home_ownership,67.89,percent,medium
+16,16106,Ñuble,Pinto,industry_construction_employment,20.19,percent,medium
+16,16106,Ñuble,Pinto,population,12434.0,persons,low
+16,16106,Ñuble,Pinto,renter_share,13.34,percent,low
+16,16107,Ñuble,Quillón,electricity_access_rate,99.18,percent,low
+16,16107,Ñuble,Quillón,employment_in_transport_and_logistics,5.57,percent,medium
+16,16107,Ñuble,Quillón,home_ownership,70.29,percent,high
+16,16107,Ñuble,Quillón,industry_construction_employment,25.02,percent,very high
+16,16107,Ñuble,Quillón,population,19116.0,persons,medium
+16,16107,Ñuble,Quillón,renter_share,12.39,percent,low
+16,16108,Ñuble,San Ignacio,electricity_access_rate,99.3,percent,medium
+16,16108,Ñuble,San Ignacio,employment_in_transport_and_logistics,5.02,percent,low
+16,16108,Ñuble,San Ignacio,home_ownership,69.92,percent,medium
+16,16108,Ñuble,San Ignacio,industry_construction_employment,17.93,percent,low
+16,16108,Ñuble,San Ignacio,population,17403.0,persons,medium
+16,16108,Ñuble,San Ignacio,renter_share,10.59,percent,very low
+16,16109,Ñuble,Yungay,electricity_access_rate,99.0,percent,low
+16,16109,Ñuble,Yungay,employment_in_transport_and_logistics,5.3,percent,medium
+16,16109,Ñuble,Yungay,home_ownership,67.04,percent,medium
+16,16109,Ñuble,Yungay,industry_construction_employment,31.36,percent,very high
+16,16109,Ñuble,Yungay,population,18500.0,persons,medium
+16,16109,Ñuble,Yungay,renter_share,15.75,percent,medium
+16,16201,Ñuble,Quirihue,electricity_access_rate,99.22,percent,low
+16,16201,Ñuble,Quirihue,employment_in_transport_and_logistics,5.1,percent,low
+16,16201,Ñuble,Quirihue,home_ownership,70.9,percent,high
+16,16201,Ñuble,Quirihue,industry_construction_employment,14.73,percent,very low
+16,16201,Ñuble,Quirihue,population,11634.0,persons,low
+16,16201,Ñuble,Quirihue,renter_share,15.51,percent,medium
+16,16202,Ñuble,Cobquecura,electricity_access_rate,98.81,percent,low
+16,16202,Ñuble,Cobquecura,employment_in_transport_and_logistics,2.62,percent,very low
+16,16202,Ñuble,Cobquecura,home_ownership,74.88,percent,very high
+16,16202,Ñuble,Cobquecura,industry_construction_employment,17.24,percent,low
+16,16202,Ñuble,Cobquecura,population,5477.0,persons,very low
+16,16202,Ñuble,Cobquecura,renter_share,10.76,percent,low
+16,16203,Ñuble,Coelemu,electricity_access_rate,99.37,percent,medium
+16,16203,Ñuble,Coelemu,employment_in_transport_and_logistics,6.36,percent,high
+16,16203,Ñuble,Coelemu,home_ownership,64.44,percent,low
+16,16203,Ñuble,Coelemu,industry_construction_employment,18.71,percent,medium
+16,16203,Ñuble,Coelemu,population,15859.0,persons,medium
+16,16203,Ñuble,Coelemu,renter_share,15.68,percent,medium
+16,16204,Ñuble,Ninhue,electricity_access_rate,98.65,percent,very low
+16,16204,Ñuble,Ninhue,employment_in_transport_and_logistics,7.11,percent,high
+16,16204,Ñuble,Ninhue,home_ownership,80.03,percent,very high
+16,16204,Ñuble,Ninhue,industry_construction_employment,17.44,percent,low
+16,16204,Ñuble,Ninhue,population,5762.0,persons,very low
+16,16204,Ñuble,Ninhue,renter_share,6.5,percent,very low
+16,16205,Ñuble,Portezuelo,electricity_access_rate,98.86,percent,low
+16,16205,Ñuble,Portezuelo,employment_in_transport_and_logistics,4.68,percent,low
+16,16205,Ñuble,Portezuelo,home_ownership,78.24,percent,very high
+16,16205,Ñuble,Portezuelo,industry_construction_employment,18.42,percent,low
+16,16205,Ñuble,Portezuelo,population,5188.0,persons,very low
+16,16205,Ñuble,Portezuelo,renter_share,6.16,percent,very low
+16,16206,Ñuble,Ránquil,electricity_access_rate,99.23,percent,low
+16,16206,Ñuble,Ránquil,employment_in_transport_and_logistics,6.09,percent,high
+16,16206,Ñuble,Ránquil,home_ownership,74.23,percent,very high
+16,16206,Ñuble,Ránquil,industry_construction_employment,25.83,percent,very high
+16,16206,Ñuble,Ránquil,population,6478.0,persons,very low
+16,16206,Ñuble,Ránquil,renter_share,7.65,percent,very low
+16,16207,Ñuble,Trehuaco,electricity_access_rate,99.27,percent,medium
+16,16207,Ñuble,Trehuaco,employment_in_transport_and_logistics,3.74,percent,very low
+16,16207,Ñuble,Trehuaco,home_ownership,76.88,percent,very high
+16,16207,Ñuble,Trehuaco,industry_construction_employment,23.96,percent,high
+16,16207,Ñuble,Trehuaco,population,6124.0,persons,very low
+16,16207,Ñuble,Trehuaco,renter_share,10.62,percent,very low
+16,16301,Ñuble,San Carlos,electricity_access_rate,99.59,percent,high
+16,16301,Ñuble,San Carlos,employment_in_transport_and_logistics,5.9,percent,medium
+16,16301,Ñuble,San Carlos,home_ownership,71.73,percent,high
+16,16301,Ñuble,San Carlos,industry_construction_employment,21.21,percent,high
+16,16301,Ñuble,San Carlos,population,55629.0,persons,high
+16,16301,Ñuble,San Carlos,renter_share,14.15,percent,medium
+16,16302,Ñuble,Coihueco,electricity_access_rate,99.23,percent,low
+16,16302,Ñuble,Coihueco,employment_in_transport_and_logistics,4.47,percent,low
+16,16302,Ñuble,Coihueco,home_ownership,72.35,percent,high
+16,16302,Ñuble,Coihueco,industry_construction_employment,15.74,percent,very low
+16,16302,Ñuble,Coihueco,population,29760.0,persons,high
+16,16302,Ñuble,Coihueco,renter_share,10.31,percent,very low
+16,16303,Ñuble,Ñiquén,electricity_access_rate,98.03,percent,very low
+16,16303,Ñuble,Ñiquén,employment_in_transport_and_logistics,4.49,percent,low
+16,16303,Ñuble,Ñiquén,home_ownership,76.06,percent,very high
+16,16303,Ñuble,Ñiquén,industry_construction_employment,20.93,percent,medium
+16,16303,Ñuble,Ñiquén,population,12783.0,persons,low
+16,16303,Ñuble,Ñiquén,renter_share,6.85,percent,very low
+16,16304,Ñuble,San Fabián,electricity_access_rate,99.25,percent,medium
+16,16304,Ñuble,San Fabián,employment_in_transport_and_logistics,3.08,percent,very low
+16,16304,Ñuble,San Fabián,home_ownership,69.19,percent,medium
+16,16304,Ñuble,San Fabián,industry_construction_employment,21.07,percent,medium
+16,16304,Ñuble,San Fabián,population,5241.0,persons,very low
+16,16304,Ñuble,San Fabián,renter_share,14.99,percent,medium
+16,16305,Ñuble,San Nicolás,electricity_access_rate,99.01,percent,low
+16,16305,Ñuble,San Nicolás,employment_in_transport_and_logistics,5.88,percent,medium
+16,16305,Ñuble,San Nicolás,home_ownership,74.93,percent,very high
+16,16305,Ñuble,San Nicolás,industry_construction_employment,21.9,percent,high
+16,16305,Ñuble,San Nicolás,population,15082.0,persons,medium
+16,16305,Ñuble,San Nicolás,renter_share,9.49,percent,very low

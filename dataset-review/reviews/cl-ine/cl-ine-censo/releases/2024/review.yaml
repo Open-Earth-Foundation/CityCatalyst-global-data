@@ -36,6 +36,7 @@ key_indicators_used:
   - electricity_access_rate
   - employment_industry_construction
   - employment_transport_logistics
+  - population
 
 indicator_mapping:
   electricity_access_rate:
@@ -58,6 +59,10 @@ indicator_mapping:
     variable: cod_caenes
     file: personas (persons)
     logic: value H = Transporte y almacenamiento; filter sit_fuerza_trabajo=1
+  population:
+    variable: null
+    file: personas (persons)
+    logic: COUNT(*) by region/comuna; filter tipo_operativo = 2 (same universe as employment block)
   vehicle_ownership_rate:
     variable: null
     note: not directly available; p45_medio_transporte (commute mode) may proxy
