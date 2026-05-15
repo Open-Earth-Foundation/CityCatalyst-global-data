@@ -73,3 +73,27 @@ No SR1.5 option, no global dimensions, no computed scores
 | Output | direction + weight | direction + weight + rationale | `action_score`, dimension scores | Per-cell audit trail |
 
 **Regenerate API mocks:** export cells in `../simple_scorer.ipynb` (from `feasibility_full_view.csv`).
+
+---
+
+## HIAP-MEED ranking model (implications)
+
+**Today:** `hiap-meed` does **not** call these mocks. Feasibility is computed in `app/modules/prioritizer/blocks/feasibility.py`:
+
+- `feasibility_score = 0.5 × legal + 0.5 × socio`
+- **Legal:** soft requirements (`recommended` / `optional`) vs city legal catalogue.
+- **Socio:** for each `action.socioeconomic_indicators[]` row from the actions API, map the city’s `attribute_category` bucket to −2…+2, flip sign if `constraining`, apply `weight`, average, then normalize to [0, 1].
+- **Final rank** (orchestrator): `impact × w_i + alignment × w_a + feasibility × w_f` (defaults ~0.55 / 0.22 / 0.23).
+
+**If wired to `action_indicator_feasibility_summary.json`:**
+
+| Area | Effect |
+|------|--------|
+| Socio half | Replace the per-indicator loop with a **lookup** of precomputed `action_score` (0–1) by `(locode, action_id)`. Legal half and the 50/50 split can stay as-is unless product reweights. |
+| Actions API | `socioeconomicIndicators[]` becomes **optional / legacy** for feasibility; catalogue can slim down once the city feasibility endpoint is live. |
+| City API | Inline socio scoring still needs nine **canonical** buckets in `feasibility.py`; SR1.5 bridges also use `literacy_rate`, `disability_prevalence`, `indigenous_identification_rate`, `mean_years_schooling`, `fixed_internet_household_share`, `employment_agriculture_utilities` — only relevant if scoring stays in-process instead of via summary API. |
+| Coverage | Summary has **86** actions; **16** catalogue actions have no SR1.5 option match and are omitted. Prioritizer needs a policy: exclude, `socio = 0`, or fallback to old rules. |
+| Rank order | **Will change** vs current mocks: methodology is IPCC prior + A/C city adjustment, not editorial per-action weights. |
+| Explainability | Evidence should expose `dimension_scores`, `sr15_option`, and detail `cells[]` — not `socioeconomic_indicator_rows` / `weight` / `rationale`. Update `explanations.py` and tests (e.g. `test_feasibility_block_with_mock_api_data`). |
+
+**No change** to impact or alignment blocks, request shape (`POST /v1/prioritize`), or top-level weight keys — only how the socio component of feasibility is sourced.
