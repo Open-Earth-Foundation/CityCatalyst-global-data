@@ -28,6 +28,7 @@ themes:
   - infrastructure
   - employment
   - transport_proxy
+  - education
 
 key_indicators_used:
   - vehicle_ownership_rate
@@ -37,6 +38,7 @@ key_indicators_used:
   - employment_industry_construction
   - employment_transport_logistics
   - population
+  - mean_years_schooling
 
 indicator_mapping:
   electricity_access_rate:
@@ -63,6 +65,10 @@ indicator_mapping:
     variable: null
     file: personas (persons)
     logic: COUNT(*) by region/comuna; filter tipo_operativo = 2 (same universe as employment block)
+  mean_years_schooling:
+    variable: escolaridad
+    file: personas (persons)
+    logic: AVG(escolaridad) by comuna where escolaridad between 0 and 24 (exclude -99 no respuesta); tipo_operativo = 2
   vehicle_ownership_rate:
     variable: null
     note: not directly available; p45_medio_transporte (commute mode) may proxy

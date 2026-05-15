@@ -1,0 +1,87 @@
+action_id,action_name,primary_outcome,primary_channel,sr15_options,match_strength,n_ac_cells,n_dims_scored,econ,tech,inst,soc,env,geo,score
+icare_0012,Expand solar energy generation on municipal facilities and public assets,emissions_fuel_switch,solar_pv,Solar PV,direct,14,6,0.67,1.0,1.0,1.0,1.0,1.0,0.944
+ipcc_0038,Stimulate solar energy production in industrial facilities,emissions_fuel_switch,solar_pv,Solar PV,direct,14,6,0.67,1.0,1.0,1.0,1.0,1.0,0.944
+ipcc_0062,Create partnerships to implement biochar plants.,carbon_sequestration,biochar,Soil carbon sequestration & biochar,direct,7,5,0.67,1.0,,1.0,1.0,1.0,0.933
+ipcc_0056,Reduce and prevent degradation and conversion of Grasslands and Savannas,carbon_sequestration,agricultural_soil,Soil carbon sequestration & biochar,direct,7,5,0.67,1.0,,1.0,1.0,1.0,0.933
+icare_0050,Accelerate the adoption of Agroforestry',carbon_sequestration,agricultural_soil,Soil carbon sequestration & biochar,direct,7,5,0.67,1.0,,1.0,1.0,1.0,0.933
+icare_0045,"Promote organic, regenerative and agroecological agriculture in rural areas",carbon_sequestration,agricultural_soil,Soil carbon sequestration & biochar,direct,7,5,0.67,1.0,,1.0,1.0,1.0,0.933
+ipcc_0076,Implement energy audits in industrial plants,emissions_efficiency,industrial_process,Energy efficiency,direct,8,6,0.5,1.0,1.0,1.0,1.0,1.0,0.917
+icare_0099,Increase local participation in Agroecological Certification Programmes,emissions_demand_reduction,agricultural_soil,Sustainable intensification,partial,12,6,0.5,1.0,1.0,1.0,1.0,1.0,0.917
+icare_0132,Encourage Local Agroecological Production and Short Supply Chains,emissions_fuel_switch,agricultural_soil,Sustainable intensification,partial,12,6,0.5,1.0,1.0,1.0,1.0,1.0,0.917
+icare_0074,Adopt industrial energy efficiency technologies,emissions_efficiency,industrial_process,Energy efficiency,direct,8,6,0.5,1.0,1.0,1.0,1.0,1.0,0.917
+ipcc_0067,Improve manure management and crop nutrient practices,emissions_waste_diversion,livestock,Sustainable intensification,partial,12,6,0.5,1.0,1.0,1.0,1.0,1.0,0.917
+ipcc_0064,Reduce methane emissions from enteric fermentation in livestock,emissions_efficiency,livestock,Sustainable intensification,partial,12,6,0.5,1.0,1.0,1.0,1.0,1.0,0.917
+icare_0072,Improve Heat Recovery and Reuse through Heat Exchanger Networks or Heat Pumps,emissions_efficiency,industrial_process,Energy efficiency,direct,8,6,0.5,1.0,1.0,1.0,1.0,1.0,0.917
+icare_0071,Increase efficiency of industrial furnaces and kilns,emissions_efficiency,industrial_process,Energy efficiency,direct,8,6,0.5,1.0,1.0,1.0,1.0,1.0,0.917
+icare_0035,Enhance industrial energy efficiency processes,emissions_efficiency,industrial_process,Energy efficiency,direct,8,6,0.5,1.0,1.0,1.0,1.0,1.0,0.917
+icare_0034,Improve Fuel Supply Systems for Industrial Heating,emissions_efficiency,industrial_process,Energy efficiency,direct,8,6,0.5,1.0,1.0,1.0,1.0,1.0,0.917
+ipcc_0041,Support research into carbon-neutral manufacturing technologies,emissions_efficiency,industrial_process,Energy efficiency,direct,8,6,0.5,1.0,1.0,1.0,1.0,1.0,0.917
+icare_0001,Improve heat and energy recovery,emissions_efficiency,industrial_process,Energy efficiency,direct,8,6,0.5,1.0,1.0,1.0,1.0,1.0,0.917
+ipcc_0024,Improve material utilization efficiency in production,emissions_efficiency,industrial_process,Energy efficiency,direct,8,6,0.5,1.0,1.0,1.0,1.0,1.0,0.917
+ipcc_0026,Adopt alternative feedstocks in industrial production,emissions_efficiency,industrial_process,Energy efficiency,direct,8,6,0.5,1.0,1.0,1.0,1.0,1.0,0.917
+icare_0009,Deploy cogeneration systems in industries,emissions_efficiency,industrial_process,Energy efficiency,direct,8,6,0.5,1.0,1.0,1.0,1.0,1.0,0.917
+icare_0122,Establish eco-parks.,emissions_waste_diversion,mbt_eco_park,Reduced food wastage,direct,12,6,0.5,1.0,1.0,0.75,1.0,1.0,0.875
+c40_0036,Upgrade Landfills to Engineered Sanitary Landfills with Gas Capture.,emissions_waste_diversion,landfill,Reduced food wastage,weak,12,6,0.5,1.0,1.0,0.75,1.0,1.0,0.875
+icare_0111,Strengthen Extended Producer Responsibility (EPR) Systems,emissions_waste_diversion,waste_regulation,Reduced food wastage,weak,12,6,0.5,1.0,1.0,0.75,1.0,1.0,0.875
+ipcc_0070,Reduce food loss and waste,emissions_waste_diversion,waste_regulation,Reduced food wastage,direct,12,6,0.5,1.0,1.0,0.75,1.0,1.0,0.875
+ipcc_0049,Develop and implement circular economy policies,emissions_waste_diversion,waste_regulation,Reduced food wastage,weak,12,6,0.5,1.0,1.0,0.75,1.0,1.0,0.875
+c40_0034,Enact and enforce material bans in order to restrict single use and non-recyclable materials,emissions_demand_reduction,waste_regulation,Reduced food wastage,weak,12,6,0.5,1.0,1.0,0.75,1.0,1.0,0.875
+c40_0035,Optmize waste management systems ,emissions_waste_diversion,waste_regulation,Reduced food wastage,weak,12,6,0.5,1.0,1.0,0.75,1.0,1.0,0.875
+icare_0031,Capture & Use Biogas at Wastewater Treatment Plants',emissions_waste_diversion,biogas,Reduced food wastage,direct,12,6,0.5,1.0,1.0,0.75,1.0,1.0,0.875
+icare_0064,Develop an organic waste management strategy ,emissions_waste_diversion,organic_composting,Reduced food wastage,direct,12,6,0.5,1.0,1.0,0.75,1.0,1.0,0.875
+ipcc_0028,"Behavioral Changes for Reduced Waste (e.g., Food)",emissions_demand_reduction,waste_regulation,Reduced food wastage,weak,12,6,0.5,1.0,1.0,0.75,1.0,1.0,0.875
+c40_0040,Implement Volume-Based Collection policy,emissions_demand_reduction,waste_regulation,Reduced food wastage,weak,12,6,0.5,1.0,1.0,0.75,1.0,1.0,0.875
+icare_0053,Support cooperatives of voluntary waste collectors to aggregate into small enterprises and expand into organics management,emissions_waste_diversion,organic_composting,Reduced food wastage,direct,12,6,0.5,1.0,1.0,0.75,1.0,1.0,0.875
+c40_0037,"Implement residential and business segregated collection of recyclables, organic, and residual waste",emissions_waste_diversion,recycling_collection,Reduced food wastage,direct,12,6,0.5,1.0,1.0,0.75,1.0,1.0,0.875
+ipcc_0025,"Design for Recovery, Reuse, or Repurposing",emissions_waste_diversion,mbt_eco_park,Reduced food wastage,weak,12,6,0.5,1.0,1.0,0.75,1.0,1.0,0.875
+icare_0117,Improve public transport systems to promote modal shift,emissions_modal_shift,transit_general,Public transport,direct,18,6,0.65,0.83,0.94,0.76,1.0,1.0,0.863
+ipcc_0105,Promote active mobility through road space reallocation,emissions_modal_shift,bike_infrastructure,Non-motorised transport,direct,17,6,0.5,0.88,1.0,0.76,1.0,1.0,0.856
+icare_0121,"Incentive to create bike-sharing programs in urban areas, with a focus on electric bikes.",emissions_modal_shift,bike_sharing,Non-motorised transport,direct,17,6,0.5,0.88,1.0,0.76,1.0,1.0,0.856
+icare_0028,"Promote passive cooling through natural shading and ventilation in residential, commercial, and public buildings",emissions_efficiency,building_residential,Low/zero-energy buildings|Efficient appliances,direct,19,6,0.59,0.75,1.0,0.78,1.0,1.0,0.853
+icare_0025,Promote energy-efficient and climate-resilient housing for low-income and informal settlements,emissions_efficiency,building_residential,Low/zero-energy buildings|Efficient appliances,direct,19,6,0.59,0.75,1.0,0.78,1.0,1.0,0.853
+c40_0015,Retrofit residential buildings for energy efficiency,emissions_efficiency,building_residential,Low/zero-energy buildings|Efficient appliances,direct,19,6,0.59,0.75,1.0,0.78,1.0,1.0,0.853
+icare_0137,Replace Inefficient Lighting with LED Technology in Public Spaces,emissions_efficiency,street_lighting,Efficient appliances,direct,11,6,0.5,0.83,1.0,0.78,1.0,1.0,0.852
+icare_0040,Deploy energy-efficient and solar-powered street lighting across all neighborhoods,emissions_efficiency,street_lighting,Efficient appliances,direct,11,6,0.5,0.83,1.0,0.78,1.0,1.0,0.852
+icare_0016,"Promote solar thermal and heat pump systems for water heating in residential, commercial, and public buildings",emissions_efficiency,water_heating,Efficient appliances,direct,11,6,0.5,0.83,1.0,0.78,1.0,1.0,0.852
+icare_0139,Implement congestion pricing and restrictions on high-polluting vehicles,emissions_modal_shift,congestion_pricing,Land-use & urban planning,partial,11,6,0.5,0.5,1.0,1.0,1.0,1.0,0.833
+icare_0069,Complete ecological and agroclimatic mapping,emissions_demand_reduction,urban_form_tod,Land-use & urban planning,direct,11,6,0.5,0.5,1.0,1.0,1.0,1.0,0.833
+ipcc_0001,Promote compact urban form and transit-oriented development,emissions_demand_reduction,urban_form_tod,Land-use & urban planning,direct,11,6,0.5,0.5,1.0,1.0,1.0,1.0,0.833
+ipcc_0074,Promote compact urban form through spatial planning,emissions_demand_reduction,urban_form_tod,Land-use & urban planning,direct,11,6,0.5,0.5,1.0,1.0,1.0,1.0,0.833
+c40_0010,Introduce energy-efficiency standards for new residential buildings,emissions_efficiency,building_residential,Low/zero-energy buildings,direct,8,5,0.62,0.5,1.0,,1.0,1.0,0.824
+icare_0010,Promote Net-Zero and Green Building Certifications,emissions_efficiency,building_residential,Low/zero-energy buildings,direct,8,5,0.62,0.5,1.0,,1.0,1.0,0.824
+c40_0012,Introduce energy-efficiency standards for new institutional buildings,emissions_efficiency,building_institutional_public,Low/zero-energy buildings,direct,8,5,0.62,0.5,1.0,,1.0,1.0,0.824
+c40_0016,Retrofit commercial and institutional other non-residential buildings  for energy efficiency ,emissions_efficiency,building_institutional_public,Low/zero-energy buildings,direct,8,5,0.62,0.5,1.0,,1.0,1.0,0.824
+icare_0120,"Implement energy efficiency criteria and indicators in the procurement of goods, services, or works by the municipal public administration.",emissions_efficiency,building_institutional_public,Low/zero-energy buildings,direct,8,5,0.62,0.5,1.0,,1.0,1.0,0.824
+icare_0002,Promote and expand the use of the Brazilian Energy Labeling Program for Buildings,emissions_efficiency,building_institutional_public,Low/zero-energy buildings,direct,8,5,0.62,0.5,1.0,,1.0,1.0,0.824
+ipcc_0037,Adopt net-zero-emissions materials and supply chains,emissions_fuel_switch,building_institutional_public,Low/zero-energy buildings,partial,8,5,0.62,0.5,1.0,,1.0,1.0,0.824
+c40_0013,Support Implementation of Industrial Building Efficiency Standards.,emissions_efficiency,building_industrial,Low/zero-energy buildings,direct,8,5,0.62,0.5,1.0,,1.0,1.0,0.824
+ipcc_0071,Increase sustainable use of wood products,emissions_fuel_switch,building_institutional_public,Low/zero-energy buildings,partial,8,5,0.62,0.5,1.0,,1.0,1.0,0.824
+ipcc_0033,Improve product maintenance to extend lifespan,emissions_efficiency,building_institutional_public,Low/zero-energy buildings,direct,8,5,0.62,0.5,1.0,,1.0,1.0,0.824
+c40_0017,Retrofit municipal buildings for energy efficiency,emissions_efficiency,building_institutional_public,Low/zero-energy buildings,direct,8,5,0.62,0.5,1.0,,1.0,1.0,0.824
+c40_0018,Optimize energy efficiency and sustainability standards for existing industrial infrastructure,emissions_efficiency,building_industrial,Low/zero-energy buildings,direct,8,5,0.62,0.5,1.0,,1.0,1.0,0.824
+icare_0024,Integrate renewables into municipal water systems,emissions_fuel_switch,renewable_general,Wind (on-shore & off-shore)|Solar PV|Bioenergy,partial,34,6,0.8,1.0,0.67,0.76,0.88,0.5,0.766
+icare_0049,Develop regional hubs for renewable energy production,emissions_fuel_switch,renewable_general,Wind (on-shore & off-shore)|Solar PV|Bioenergy,partial,34,6,0.8,1.0,0.67,0.76,0.88,0.5,0.766
+icare_0006,Develop integrated renewable energy planning and solar–battery microgrids for rural and peri-urban areas,emissions_fuel_switch,renewable_general,Wind (on-shore & off-shore)|Solar PV|Bioenergy,partial,34,6,0.8,1.0,0.67,0.76,0.88,0.5,0.766
+icare_0104,Adopt hybrid renewable energy systems (solar-wind),emissions_fuel_switch,renewable_general,Wind (on-shore & off-shore)|Solar PV|Bioenergy,partial,34,6,0.8,1.0,0.67,0.76,0.88,0.5,0.766
+ipcc_0045,Transition to renewable energy for industrial operations,emissions_fuel_switch,renewable_general,Wind (on-shore & off-shore)|Solar PV|Bioenergy,partial,34,6,0.8,1.0,0.67,0.76,0.88,0.5,0.766
+c40_0042,Expand urban and peri-urban green spaces,carbon_sequestration,urban_green,Afforestation & reforestation,weak,5,4,0.5,1.0,,1.0,,0.5,0.75
+ipcc_0052,Reduce Deforestation and Degradation,carbon_sequestration,forest,Afforestation & reforestation,direct,5,4,0.5,1.0,,1.0,,0.5,0.75
+ipcc_0053,"Implement afforestation, reforestation, and forest ecosystem restoration",carbon_sequestration,forest,Afforestation & reforestation,direct,5,4,0.5,1.0,,1.0,,0.5,0.75
+ipcc_0054,Adopt sustainable forest management practices,carbon_sequestration,forest,Afforestation & reforestation,direct,5,4,0.5,1.0,,1.0,,0.5,0.75
+ipcc_0055,"Implement fire management in forests, grasslands, and savannas",carbon_sequestration,fire_mgmt,Afforestation & reforestation,weak,5,4,0.5,1.0,,1.0,,0.5,0.75
+ipcc_0057,Restore degraded peatlands and prevent further conversion or degradation.,carbon_sequestration,peatland,Afforestation & reforestation,weak,5,4,0.5,1.0,,1.0,,0.5,0.75
+ipcc_0060,Protect and Restore Coastal Wetlands,carbon_sequestration,wetland_coastal,Afforestation & reforestation,weak,5,4,0.5,1.0,,1.0,,0.5,0.75
+c40_0029,Electrify municipal vehicle fleets,emissions_fuel_switch,public_bus,Electric cars and buses,direct,12,6,0.0,0.75,0.94,1.0,1.0,0.5,0.698
+c40_0025,Promote deployment of zero-emission freight fleets (trucks),emissions_fuel_switch,freight,Electric cars and buses,direct,12,6,0.0,0.75,0.94,1.0,1.0,0.5,0.698
+c40_0023,Adopt zero-emission bus fleets for public transport,emissions_fuel_switch,public_bus,Electric cars and buses,direct,12,6,0.0,0.75,0.94,1.0,1.0,0.5,0.698
+icare_0023,Upgrade and maintain electrical substations,emissions_efficiency,renewable_general,Smart grids,direct,13,6,1.0,0.25,0.19,0.64,1.0,1.0,0.679
+icare_0008,Enable smart grid integration and distributed energy storage through municipal collaboration and demonstration projects,emissions_efficiency,renewable_general,Smart grids,direct,13,6,1.0,0.25,0.19,0.64,1.0,1.0,0.679
+icare_0105,Reduce technical losses in energy distribution networks,emissions_efficiency,renewable_general,Smart grids,direct,13,6,1.0,0.25,0.19,0.64,1.0,1.0,0.679
+icare_0078,Decarbonize industrial feedstocks,emissions_fuel_switch,industrial_process,Electrification & hydrogen,direct,5,4,0.0,0.5,1.0,,,1.0,0.625
+ipcc_0043,Encourage the Use of Zero-Emission Fuels in Industrial Processes,emissions_fuel_switch,industrial_process,Electrification & hydrogen,direct,5,4,0.0,0.5,1.0,,,1.0,0.625
+icare_0079,Implement carbon capture and utilization (CCU),emissions_fuel_switch,industrial_process,Electrification & hydrogen,direct,5,4,0.0,0.5,1.0,,,1.0,0.625
+icare_0076,Electrify Industrial Processes (with Renewable Power),emissions_fuel_switch,industrial_process,Electrification & hydrogen,direct,5,4,0.0,0.5,1.0,,,1.0,0.625
+ipcc_0068,Pilot Bioenergy with Carbon Capture in Partnership with Utilities/Industry.,emissions_fuel_switch,biogas,Bioenergy,weak,8,6,1.0,1.0,0.0,0.0,0.0,0.0,0.333
+icare_0033,Install biodigesters in rural properties,emissions_fuel_switch,biogas,Bioenergy,weak,8,6,1.0,1.0,0.0,0.0,0.0,0.0,0.333
+icare_0082,Implement carbon capture and storage (CCS),carbon_sequestration,biogas,Bioenergy,weak,8,6,1.0,1.0,0.0,0.0,0.0,0.0,0.333
+icare_0110,"Regulate Construction and Demolition Waste Management to improve deconstruction, segregation at source, reutilization and recycling",emissions_waste_diversion,construction_demolition_waste,Bio-based & circularity,weak,8,4,,0.5,0.06,0.0,,0.33,0.224

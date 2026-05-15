@@ -1,0 +1,161 @@
+option,dimension,n_indicators,n_A,n_B,n_C,n_NA,n_NE,n_LE,avg_score,band
+Bioenergy,economic,3,0,2,1,0,0,0,2.333,medium
+Wind (on-shore & off-shore),technological,3,0,1,2,0,0,0,2.667,high
+Solar PV,institutional,3,0,2,1,0,0,0,2.333,medium
+Wind (on-shore & off-shore),socio_cultural,5,0,1,4,0,0,0,2.8,high
+Wind (on-shore & off-shore),environmental,4,0,0,4,0,0,0,3.0,high
+Power sector CCS,economic,3,0,2,0,0,1,0,1.333,low
+Electricity storage,institutional,2,0,2,0,0,0,0,2.0,medium
+Nuclear energy,geophysical,4,0,0,4,0,0,0,3.0,high
+Dietary shifts,technological,4,0,2,0,0,1,1,1.0,low
+Reduced food wastage,institutional,3,0,0,3,0,0,0,3.0,high
+Dietary shifts,socio_cultural,5,0,2,2,0,0,1,2.0,medium
+Dietary shifts,environmental,4,0,1,1,0,1,1,1.25,low
+Sustainable intensification,geophysical,3,0,1,2,0,0,0,2.667,high
+Land-use & urban planning,geophysical,4,0,0,3,0,0,1,2.25,medium
+Electric cars and buses,geophysical,4,2,0,2,0,0,0,2.0,medium
+Sharing schemes,geophysical,4,0,1,3,0,0,0,2.75,high
+Non-motorised transport,economic,3,0,1,2,0,0,0,2.667,high
+Public transport,geophysical,4,0,0,4,0,0,0,3.0,high
+Aviation & shipping,geophysical,4,0,1,2,0,0,1,2.0,medium
+Smart grids,economic,3,0,2,1,0,0,0,2.333,medium
+Low/zero-energy buildings,economic,3,0,0,3,0,0,0,3.0,high
+Efficient appliances,technological,4,0,0,3,0,1,0,2.25,medium
+Efficient appliances,socio_cultural,3,0,1,2,0,0,0,2.667,high
+Efficient appliances,environmental,3,0,0,3,0,0,0,3.0,high
+Energy efficiency,economic,3,0,1,1,0,0,1,1.667,medium
+Bio-based & circularity,economic,3,0,2,0,0,1,0,1.333,low
+Electrification & hydrogen,institutional,3,0,0,1,0,2,0,,insufficient_evidence
+Industrial CCS,geophysical,3,1,0,1,0,1,0,1.333,low
+DACCS,technological,2,2,0,0,0,0,0,1.0,low
+DACCS,socio_cultural,2,0,0,0,0,2,0,,insufficient_evidence
+BECCS,geophysical,1,0,1,0,0,0,0,2.0,medium
+Enhanced weathering,technological,4,1,1,0,0,2,0,0.75,low
+Afforestation & reforestation,institutional,3,0,1,0,0,1,1,,insufficient_evidence
+Soil carbon sequestration & biochar,institutional,3,0,1,0,0,1,1,,insufficient_evidence
+Enhanced weathering,socio_cultural,4,0,0,0,0,3,1,,insufficient_evidence
+Enhanced weathering,environmental,3,0,1,0,0,0,2,,insufficient_evidence
+Solar PV,economic,3,0,0,3,0,0,0,3.0,high
+Bioenergy,institutional,3,1,1,0,0,0,1,1.0,low
+Wind (on-shore & off-shore),geophysical,3,0,3,0,0,0,0,2.0,medium
+Electricity storage,economic,3,0,3,0,0,0,0,2.0,medium
+Nuclear energy,technological,4,1,1,2,0,0,0,2.25,medium
+Nuclear energy,socio_cultural,5,2,1,0,0,2,0,0.8,low
+Power sector CCS,institutional,2,0,0,0,0,1,1,,insufficient_evidence
+Nuclear energy,environmental,4,1,1,2,0,0,0,2.25,medium
+Reduced food wastage,economic,3,0,2,1,0,0,0,2.333,medium
+Sustainable intensification,technological,4,0,0,4,0,0,0,3.0,high
+Sustainable intensification,socio_cultural,5,0,2,2,0,0,1,2.0,medium
+Sustainable intensification,environmental,4,0,0,2,0,2,0,1.5,low
+Dietary shifts,geophysical,3,0,1,1,0,0,1,1.667,medium
+Land-use & urban planning,technological,4,1,1,1,0,0,1,1.5,low
+Electric cars and buses,technological,4,0,2,2,0,0,0,2.5,medium
+Sharing schemes,technological,4,0,3,1,0,0,0,2.25,medium
+Land-use & urban planning,socio_cultural,5,0,3,1,0,0,1,1.8,medium
+Electric cars and buses,socio_cultural,5,0,2,2,0,0,1,2.0,medium
+Sharing schemes,socio_cultural,5,0,3,2,0,0,0,2.4,medium
+Land-use & urban planning,environmental,4,0,0,3,0,0,1,2.25,medium
+Electric cars and buses,environmental,4,0,0,1,0,0,3,,insufficient_evidence
+Sharing schemes,environmental,4,0,1,3,0,0,0,2.75,high
+Public transport,technological,4,0,1,3,0,0,0,2.75,high
+Aviation & shipping,technological,4,1,0,1,0,0,2,1.0,low
+Non-motorised transport,institutional,3,0,1,2,0,0,0,2.667,high
+Public transport,socio_cultural,5,0,1,4,0,0,0,2.8,high
+Aviation & shipping,socio_cultural,5,0,1,1,0,0,3,,insufficient_evidence
+Public transport,environmental,4,0,0,2,0,0,2,1.5,low
+Aviation & shipping,environmental,4,0,2,2,0,0,0,2.5,medium
+Smart grids,institutional,3,2,1,0,0,0,0,1.333,low
+Low/zero-energy buildings,institutional,3,0,1,1,0,0,1,1.667,medium
+Efficient appliances,geophysical,2,0,0,1,0,0,1,1.5,low
+Electrification & hydrogen,economic,3,1,0,0,0,0,2,,insufficient_evidence
+Industrial CCS,technological,4,1,2,1,0,0,0,2.0,medium
+Energy efficiency,institutional,3,0,1,2,0,0,0,2.667,high
+Bio-based & circularity,institutional,4,2,0,0,0,0,2,0.5,low
+Industrial CCS,socio_cultural,4,1,0,0,0,2,1,,insufficient_evidence
+Industrial CCS,environmental,4,1,0,1,0,1,1,1.0,low
+BECCS,technological,2,1,1,0,0,0,0,1.5,low
+BECCS,socio_cultural,3,0,1,0,0,1,1,,insufficient_evidence
+DACCS,geophysical,1,0,0,1,0,0,0,3.0,high
+Afforestation & reforestation,economic,3,0,2,1,0,0,0,2.333,medium
+Soil carbon sequestration & biochar,economic,3,0,0,3,0,0,0,3.0,high
+Enhanced weathering,geophysical,4,0,0,3,0,0,1,2.25,medium
+Wind (on-shore & off-shore),economic,3,0,2,1,0,0,0,2.333,medium
+Bioenergy,technological,3,0,0,3,0,0,0,3.0,high
+Bioenergy,socio_cultural,5,1,2,0,0,2,0,1.0,low
+Bioenergy,environmental,4,1,1,0,0,1,1,0.75,low
+Solar PV,geophysical,3,0,2,1,0,0,0,2.333,medium
+Power sector CCS,technological,4,0,2,1,0,0,1,1.75,medium
+Nuclear energy,institutional,3,2,0,0,0,1,0,0.667,low
+Power sector CCS,socio_cultural,4,3,0,0,0,1,0,0.75,low
+Power sector CCS,environmental,4,2,0,2,0,0,0,2.0,medium
+Electricity storage,geophysical,4,1,0,3,0,0,0,2.5,medium
+Dietary shifts,economic,3,0,1,0,0,0,2,,insufficient_evidence
+Sustainable intensification,institutional,3,0,2,1,0,0,0,2.333,medium
+Reduced food wastage,geophysical,3,0,0,2,0,0,1,2.0,medium
+Land-use & urban planning,institutional,3,0,2,1,0,0,0,2.333,medium
+Electric cars and buses,institutional,3,0,1,2,0,0,0,2.667,high
+Sharing schemes,institutional,3,1,1,1,0,0,0,2.0,medium
+Non-motorised transport,technological,4,0,0,4,0,0,0,3.0,high
+Public transport,institutional,3,0,0,2,0,0,1,2.0,medium
+Aviation & shipping,institutional,3,1,1,1,0,0,0,2.0,medium
+Non-motorised transport,socio_cultural,5,0,1,4,0,0,0,2.8,high
+Non-motorised transport,environmental,4,0,0,1,0,0,3,,insufficient_evidence
+Efficient appliances,economic,3,0,2,1,0,0,0,2.333,medium
+Smart grids,technological,4,1,2,1,0,0,0,2.0,medium
+Low/zero-energy buildings,technological,4,0,1,1,0,1,1,1.25,low
+Smart grids,socio_cultural,5,1,1,3,0,0,0,2.4,medium
+Low/zero-energy buildings,socio_cultural,4,0,1,0,0,3,0,,insufficient_evidence
+Smart grids,environmental,4,0,1,3,0,0,0,2.75,high
+Low/zero-energy buildings,environmental,3,0,1,2,0,0,0,2.667,high
+Energy efficiency,technological,3,0,1,2,0,0,0,2.667,high
+Bio-based & circularity,technological,4,1,1,1,0,0,1,1.5,low
+Industrial CCS,institutional,4,0,3,0,0,1,0,1.5,low
+Energy efficiency,socio_cultural,2,0,1,1,0,0,0,2.5,medium
+Bio-based & circularity,socio_cultural,5,1,1,0,0,2,1,,insufficient_evidence
+Energy efficiency,environmental,4,0,1,1,0,2,0,1.25,low
+Electrification & hydrogen,geophysical,3,0,1,1,0,1,0,1.667,medium
+Bio-based & circularity,environmental,4,0,0,0,0,4,0,,insufficient_evidence
+DACCS,economic,1,1,0,0,0,0,0,1.0,low
+BECCS,institutional,1,0,0,0,0,0,1,,insufficient_evidence
+Enhanced weathering,economic,3,1,0,0,0,2,0,,insufficient_evidence
+Afforestation & reforestation,geophysical,4,1,2,0,0,0,1,1.25,low
+Soil carbon sequestration & biochar,geophysical,3,0,2,1,0,0,0,2.333,medium
+Solar PV,technological,3,0,0,3,0,0,0,3.0,high
+Wind (on-shore & off-shore),institutional,3,0,2,1,0,0,0,2.333,medium
+Solar PV,socio_cultural,5,0,2,3,0,0,0,2.6,high
+Solar PV,environmental,4,0,1,3,0,0,0,2.75,high
+Bioenergy,geophysical,2,1,1,0,0,0,0,1.5,low
+Nuclear energy,economic,3,0,2,0,0,1,0,1.333,low
+Electricity storage,technological,4,0,2,2,0,0,0,2.5,medium
+Electricity storage,socio_cultural,5,1,2,2,0,0,0,2.2,medium
+Electricity storage,environmental,3,1,2,0,0,0,0,1.667,medium
+Power sector CCS,geophysical,4,0,1,3,0,0,0,2.75,high
+Sustainable intensification,economic,3,0,2,1,0,0,0,2.333,medium
+Reduced food wastage,technological,4,0,1,1,0,2,0,1.25,low
+Dietary shifts,institutional,3,0,2,0,0,1,0,1.333,low
+Reduced food wastage,socio_cultural,5,0,3,2,0,0,0,2.4,medium
+Reduced food wastage,environmental,4,0,0,3,0,1,0,2.25,medium
+Land-use & urban planning,economic,3,0,2,1,0,0,0,2.333,medium
+Electric cars and buses,economic,3,1,2,0,0,0,0,1.667,medium
+Sharing schemes,economic,3,0,1,2,0,0,0,2.667,high
+Public transport,economic,3,0,0,3,0,0,0,3.0,high
+Aviation & shipping,economic,3,1,1,0,0,0,1,1.0,low
+Non-motorised transport,geophysical,4,0,0,4,0,0,0,3.0,high
+Efficient appliances,institutional,3,0,1,1,0,0,1,1.667,medium
+Smart grids,geophysical,3,0,2,1,0,0,0,2.333,medium
+Low/zero-energy buildings,geophysical,1,0,0,1,0,0,0,3.0,high
+Industrial CCS,economic,3,0,2,0,0,1,0,1.333,low
+Electrification & hydrogen,technological,4,1,0,1,0,2,0,1.0,low
+Electrification & hydrogen,socio_cultural,2,0,0,0,0,1,1,,insufficient_evidence
+Energy efficiency,geophysical,2,0,1,1,0,0,0,2.5,medium
+Bio-based & circularity,geophysical,3,2,0,1,0,0,0,1.667,medium
+Electrification & hydrogen,environmental,4,0,0,0,0,4,0,,insufficient_evidence
+BECCS,economic,2,1,1,0,0,0,0,1.5,low
+DACCS,institutional,1,0,0,0,0,0,1,,insufficient_evidence
+Afforestation & reforestation,technological,4,0,0,2,0,2,0,1.5,low
+Soil carbon sequestration & biochar,technological,4,0,1,1,0,2,0,1.25,low
+Afforestation & reforestation,socio_cultural,4,0,2,1,0,0,1,1.75,medium
+Soil carbon sequestration & biochar,socio_cultural,4,0,0,1,0,3,0,,insufficient_evidence
+Enhanced weathering,institutional,3,0,0,0,0,2,1,,insufficient_evidence
+Afforestation & reforestation,environmental,2,0,2,0,0,0,0,2.0,medium
+Soil carbon sequestration & biochar,environmental,3,0,0,1,0,2,0,,insufficient_evidence
