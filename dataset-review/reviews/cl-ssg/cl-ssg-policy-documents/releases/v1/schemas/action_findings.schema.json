@@ -1,0 +1,168 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://citycatalyst.openearth.org/schemas/v2/action_findings.schema.json",
+  "title": "Per-action policy findings (v2)",
+  "description": "Structured record of what a single source document says about a single climate action. One record per (action, source_document) pair. v2 of the schema: adds applicability_scope, restatement_of, and early_exit relative to the v1 prototype under dataset-review-tools/.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "action_id",
+    "action_name",
+    "source_document_id",
+    "relevance",
+    "summary",
+    "findings",
+    "search_run"
+  ],
+  "properties": {
+    "schema_version": {"const": "2.0.0"},
+
+    "action_id": {"type": "string", "description": "Stable identifier for the action (e.g. icare_0001)."},
+    "action_name": {"type": "string"},
+    "action_gpc_reference": {"type": "string", "description": "GPC sector reference for the action (e.g. I.4.4)."},
+
+    "source_document_id": {"type": "string"},
+    "source_name": {"type": "string"},
+    "source_level": {"enum": ["national", "regional", "intercommunal", "municipal", "communal"]},
+    "region_code": {"type": "string"},
+    "communal_code": {"type": "string"},
+    "document_type": {"type": "string"},
+
+    "relevance": {
+      "enum": ["high", "medium", "low", "none"],
+      "description": "Overall relevance of the document to the action. 'none' means the document has nothing meaningful to say about this action."
+    },
+    "summary": {
+      "type": "string",
+      "description": "One-sentence English summary of what the document says about the action. Empty string if relevance=none."
+    },
+
+    "early_exit": {
+      "type": "boolean",
+      "description": "True when the model determined relevance=none after a cheap scan and chose not to enumerate empty findings. Distinguishes a deliberate 'nothing to say' decision from a fail-silent empty-findings response."
+    },
+
+    "findings": {
+      "type": "array",
+      "description": "Verbatim passages from the document classified by primitive_type. Empty array when relevance=none or early_exit=true.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["primitive_type", "primitive_relation", "signal_confidence", "evidence_text", "page", "relevance_note"],
+        "properties": {
+          "primitive_type": {
+            "enum": [
+              "action",
+              "target",
+              "funding",
+              "monitoring",
+              "governance",
+              "sector_priority",
+              "sector",
+              "risk",
+              "context"
+            ],
+            "description": "What KIND of policy statement this is."
+          },
+          "primitive_relation": {
+            "enum": [
+              "commits",
+              "targets",
+              "funds",
+              "monitors",
+              "governs",
+              "prioritizes",
+              "identifies",
+              "contextualizes",
+              "restates",
+              "references"
+            ],
+            "description": "How the passage relates to the action. commits = explicit commitment to act; targets = quantified/dated target; funds = funding allocation; monitors = MRV indicator or review cycle; governs = lead body or instrument; prioritizes = names the action's theme as priority; identifies = names a risk, gap, or enabling condition; contextualizes = background/framing; restates = restates a higher-level commitment without adding new content; references = points to another instrument."
+          },
+          "signal_confidence": {
+            "enum": ["high", "medium", "low"],
+            "description": "Confidence that this passage genuinely supports the action."
+          },
+          "evidence_text": {
+            "type": "string",
+            "minLength": 5,
+            "description": "Verbatim substring of the source document. Must pass an exact-substring check (whitespace-normalised) against document.md to be accepted."
+          },
+          "page": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Page number from the nearest preceding <!-- page_break: N --> marker."
+          },
+          "page_end": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "End page when the passage spans multiple pages."
+          },
+          "section": {
+            "type": "string",
+            "description": "Nearest preceding ## section heading, for human navigation."
+          },
+          "measure_type": {
+            "enum": ["mitigation", "adaptation", "transversal", "unknown"],
+            "description": "Whether the passage frames the commitment as mitigation, adaptation, both, or unknown."
+          },
+          "explicitness": {
+            "enum": ["explicit", "inferred"],
+            "description": "explicit = passage directly addresses the action; inferred = passage addresses a closely related concept and the connection requires interpretation."
+          },
+          "applicability_scope": {
+            "type": "string",
+            "description": "Which territory the passage applies to when the source document covers a region or intercommunal area. Free text but should resolve to a region or commune name where possible. Empty for national or single-commune documents."
+          },
+          "restatement_of": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "When primitive_relation=restates, optionally points to the higher-level instrument being restated.",
+            "properties": {
+              "source_document_id": {"type": "string"},
+              "quote": {"type": "string"},
+              "note": {"type": "string"}
+            }
+          },
+          "relevance_note": {
+            "type": "string",
+            "minLength": 10,
+            "description": "One sentence explaining how this passage supports (or constrains) the action."
+          }
+        }
+      }
+    },
+
+    "absent_primitive_types": {
+      "type": "array",
+      "items": {"enum": ["action", "target", "funding", "monitoring", "governance", "sector_priority", "sector", "risk", "context"]},
+      "description": "Primitive types the document does NOT cover for this action — useful for showing coverage gaps."
+    },
+
+    "caveats": {
+      "type": "string",
+      "description": "Free text noting restatements, scope limitations, or ambiguities the reviewer should know."
+    },
+
+    "search_run": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["model", "created_at"],
+      "properties": {
+        "model": {"type": "string"},
+        "created_at": {"type": "string", "format": "date-time"},
+        "input_tokens": {"type": "integer"},
+        "cached_input_tokens": {"type": "integer"},
+        "output_tokens": {"type": "integer"},
+        "duration_seconds": {"type": "number"},
+        "verbatim_check_passed": {"type": "boolean"},
+        "schema_check_passed": {"type": "boolean"},
+        "page_check_warnings": {"type": "integer"},
+        "notes": {"type": "array", "items": {"type": "string"}},
+        "rubric_version": {"type": "string"},
+        "extractor_version": {"type": "string"}
+      }
+    }
+  }
+}

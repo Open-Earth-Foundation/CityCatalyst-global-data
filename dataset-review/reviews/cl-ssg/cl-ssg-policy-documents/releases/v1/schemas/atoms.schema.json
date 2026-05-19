@@ -1,150 +1,130 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://citycatalyst.example/schemas/v1/atoms.schema.json",
-  "title": "Policy Atom",
-  "description": "A single granular evidence unit extracted from a policy document. Atoms are stored as JSONL — one atom per line — at data/atoms/<source_document_id>.jsonl. This schema validates each atom independently. Atoms are family-agnostic; family-specific shaping happens at the synthesis stage.",
+  "$id": "https://citycatalyst.openearth.org/schemas/v2/atoms.schema.json",
+  "title": "Document atoms (per-document index)",
+  "description": "An atom is one distinct, citable policy statement in a source document, classified by primitive_type and tagged for fast downstream matching. Atomization is action-agnostic: a doc's atoms.jsonl is built once and reused across every action in the catalog. The on-disk artifact is one atom per line of releases/v2/data/atoms/<source_document_id>.jsonl; this schema defines a single atom row.",
   "type": "object",
   "additionalProperties": false,
   "required": [
+    "schema_version",
     "atom_id",
     "source_document_id",
     "primitive_type",
-    "evidence_kind",
     "evidence_text",
-    "page_start",
-    "page_end",
-    "explicitness",
-    "extraction_method"
+    "page",
+    "atom_summary"
   ],
   "properties": {
+    "schema_version": {"const": "1.0.0"},
+
     "atom_id": {
       "type": "string",
-      "description": "Unique identifier within the document. Convention: <doc_short_id>_a_<NNNN>."
+      "description": "Stable identifier of the form <source_document_id>_a_NNNN where NNNN is zero-padded sequential by document offset. Stable within an extraction run; treat as opaque for joins.",
+      "pattern": "^[a-z0-9_]+_a_[0-9]{4,}$"
     },
+
     "source_document_id": {
-      "type": "string"
-    },
-    "_doc_type": {
       "type": "string",
-      "description": "Denormalized from the registry for synthesis-stage prioritization. Typical values: parcc, sector_plan, framework, territorial_plan, environmental_program."
+      "description": "FK to source_documents.json[].source_document_id."
     },
-    "_section": {
-      "type": "string",
-      "description": "Section heading the page belongs to per section_map.json. Denormalized for traceability and synthesis-stage filtering."
-    },
-    "primitive_type": { "$ref": "#/$defs/primitive_type" },
-    "evidence_kind": { "$ref": "#/$defs/evidence_kind" },
-    "evidence_text": {
-      "type": "string",
-      "description": "Verbatim excerpt from the source document. Copied character-for-character from the page text. No paraphrase, no translation. The validator confirms this string appears in data/markdown/<id>/document.md for the cited pages."
-    },
-    "page_start": { "type": "integer", "minimum": 1 },
-    "page_end":   { "type": "integer", "minimum": 1 },
-    "page_reference": {
-      "type": "string",
-      "description": "Optional human-readable form such as 'p. 12' or 'p. 12-14'."
-    },
-    "explicitness": { "$ref": "#/$defs/explicitness" },
-    "plain_language_summary": {
-      "type": "string",
-      "description": "One-sentence paraphrase in English. Synthesis-friendly. Distinct from evidence_text which stays in source language."
-    },
-    "sector":  { "type": "string", "description": "Normalized sector label. Vocabulary in extraction_rules.md." },
-    "theme":   { "type": "string", "description": "Sub-theme close to source wording. Free text." },
-    "measure_type": { "$ref": "#/$defs/measure_type" },
-    "action_statement": {
-      "type": "string",
-      "description": "For action atoms: a clean restatement of the named intervention, close to source wording."
-    },
-    "target_value_text": {
-      "type": "string",
-      "description": "For target atoms: the target as stated in the source, close to source wording."
-    },
-    "raw_value_numeric": {
-      "type": "number",
-      "description": "Parsed numeric value when the atom carries a quantified target, scale, or amount."
-    },
-    "raw_unit": {
-      "type": "string",
-      "description": "Unit string (e.g. 'MtCO2e', '%', 'USD millions')."
-    },
-    "timeline": {
-      "type": "string",
-      "description": "Deadline, target year, or implementation period. Close to source."
-    },
-    "responsible_actor": { "type": "string" },
-    "supporting_actors": {
-      "type": "array",
-      "items": { "type": "string" }
-    },
-    "funding_status": { "$ref": "#/$defs/funding_status" },
-    "funding_source": {
-      "type": "array",
-      "items": { "type": "string" }
-    },
-    "funding_amount":      { "type": "string" },
-    "monitoring_indicator":{ "type": "string" },
-    "verification_method": { "type": "string" },
-    "review_cycle":        { "type": "string" },
-    "region_code":         { "type": "string" },
-    "communal_code":       { "type": "string" },
-    "applicability_scope": { "type": "string", "description": "Plain-language description of where the atom applies." },
-    "territorial_condition": {
-      "type": "array",
-      "items": { "type": "string" }
-    },
-    "readiness_status":    { "$ref": "#/$defs/readiness_status" },
-    "beneficiary_group":   { "type": "string" },
-    "equity_tags":         { "type": "array", "items": { "type": "string" } },
-    "extraction_method":   { "$ref": "#/$defs/extraction_method" },
-    "echoes_atom_id": {
-      "type": "string",
-      "description": "When this atom restates a fact present in another document (e.g. a PARCC restating an NDC target), the atom_id of the upstream atom. Populated by synthesis-stage cross-document linking; optional at extraction time."
-    },
-    "notes": {
-      "type": "string",
-      "description": "Free-text reviewer commentary. Not part of the data contract."
-    }
-  },
-  "$defs": {
+
     "primitive_type": {
-      "type": "string",
       "enum": [
-        "context",
-        "risk",
-        "sector_priority",
-        "target",
         "action",
-        "actor",
-        "timeline",
+        "target",
         "funding",
         "monitoring",
-        "governance"
-      ]
+        "governance",
+        "sector_priority",
+        "sector",
+        "risk",
+        "context"
+      ],
+      "description": "WHAT kind of policy statement this atom is. Closed vocabulary shared with action_findings.schema.json."
     },
-    "evidence_kind": {
+
+    "evidence_text": {
       "type": "string",
-      "enum": ["quantitative", "qualitative", "categorical"]
+      "minLength": 5,
+      "description": "Verbatim substring of source document markdown. Whitespace runs may be collapsed but no other edits permitted."
     },
+
+    "evidence_offset": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Character offset of evidence_text in the source document markdown. Filled in by the post-extraction verbatim resolver."
+    },
+
+    "page": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Page number from the nearest preceding <!-- page_break: N --> marker. Set by the offset-resolver after verbatim validation, not by the model directly."
+    },
+
+    "page_end": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "End page when the atom spans multiple pages."
+    },
+
+    "section": {
+      "type": "string",
+      "description": "Nearest preceding ## section heading at the atom's offset."
+    },
+
+    "atom_summary": {
+      "type": "string",
+      "minLength": 5,
+      "description": "One-sentence English summary of what the atom says. Used as the per-atom payload sent to the matching stage so the matcher can scan many atoms cheaply without re-reading every evidence_text."
+    },
+
+    "sector_tags": {
+      "type": "array",
+      "description": "Free-form-but-normalised sector or theme tags. Controlled vocabulary seeded by the atomization prompt: energy, transport, buildings, industry, waste, water, agriculture, forestry, biodiversity, ecosystems, urban_planning, coastal, health, disaster_risk, education, gender, indigenous, finance, governance, monitoring.",
+      "items": {"type": "string"}
+    },
+
+    "applicability_scope": {
+      "type": "string",
+      "description": "Which territory the atom applies to when the source document covers a region or intercommunal area. Free text but should resolve to a region or commune name where possible."
+    },
+
     "measure_type": {
-      "type": "string",
-      "enum": ["mitigation", "adaptation", "transversal", "mixed", "unknown"]
+      "enum": ["mitigation", "adaptation", "transversal", "unknown"],
+      "description": "Whether the atom frames the statement as mitigation, adaptation, both, or unknown."
     },
+
     "explicitness": {
-      "type": "string",
-      "enum": ["explicit", "inferred"]
+      "enum": ["explicit", "inferred"],
+      "description": "explicit = atom states something directly; inferred = the atom is the model's plausible interpretation of a more diffuse passage."
     },
-    "extraction_method": {
-      "type": "string",
-      "enum": ["manual", "assisted", "atom_extractor", "repaired"]
+
+    "primitive_relation_hint": {
+      "enum": [
+        "commits",
+        "targets",
+        "funds",
+        "monitors",
+        "governs",
+        "prioritizes",
+        "identifies",
+        "contextualizes",
+        "restates",
+        "references"
+      ],
+      "description": "Optional hint at how this atom usually relates to actions in its sector. Useful for downstream filtering. The matching stage may override this when computing the per-(action, atom) relation."
     },
-    "readiness_status": {
-      "type": "string",
-      "enum": ["active_plan_measure", "proposal", "conceptual", "context_only", "unknown"]
-    },
-    "funding_status": {
-      "type": "string",
-      "enum": ["identified", "not_identified", "proposal_only", "unknown"]
+
+    "extraction_metadata": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Per-atom provenance: model, chunk index, run timestamp. Useful for debugging recall regressions.",
+      "properties": {
+        "model": {"type": "string"},
+        "chunk_index": {"type": "integer"},
+        "created_at": {"type": "string", "format": "date-time"},
+        "extractor_version": {"type": "string"}
+      }
     }
   }
 }
