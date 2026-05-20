@@ -239,8 +239,8 @@ The **socio** half loops over `actions[].socioeconomicIndicators[]` from the act
 | `action_score` | Replace inline socio computation (0–1) |
 | `dimension_scores` | Explainability / dimension-level UI |
 | `breakdown.global_indicators[].city_indicators` | Replace `socioeconomic_indicator_rows` evidence |
-| `global_mitigation_option` | Replace `sr15_option` in summary mock |
-| `action_mapping_strength` | Replace `match_strength` in summary mock |
+| `global_mitigation_option` | Not in the mock |
+| `action_mapping_strength` | Not in the mock |
 
 Legal half and the 50/50 split can stay as-is unless product reweights. See § "Changes from mock `socioeconomicIndicators`" below for migration rationale.
 
