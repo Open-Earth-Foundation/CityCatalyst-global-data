@@ -1,0 +1,101 @@
+dataset_id: cl-mapbiomas-lulc
+release: collection-02
+reviewed_on: 2026-05-19
+reviewed_by: amanda
+
+publisher:
+  name: MapBiomas Chile
+  country: CL
+  url: https://chile.mapbiomas.org/
+
+source:
+  main_url: https://chile.mapbiomas.org/
+  platform_url: https://plataforma.chile.mapbiomas.org/
+  access_type: google_earth_engine_asset
+  format: GeoTIFF / ImageCollection (GEE); multi-band annual stack
+  documentation_available: true
+  methodology_url: https://chile.mapbiomas.org/en/metodologia/
+
+gee:
+  asset_id: projects/mapbiomas-chile/assets/LULC/COLLECTION-02/CLASSIFICATIONS/classification-final/clasificacion-final-2
+  signup_url: https://earthengine.google.com/
+  tools_url: https://chile.mapbiomas.org/en/herramientas/
+
+alternate_access:
+  gcs_pattern: https://storage.googleapis.com/mapbiomas-public/initiatives/chile/coverage/chile_coverage_{year}.tif
+  legend_codes_pdf: http://chile.mapbiomas.org/wp-content/uploads/sites/13/2025/10/Leyenda2025-LEYENDA-CODIGOS.pdf
+  legend_descriptions_en_pdf: http://chile.mapbiomas.org/wp-content/uploads/sites/13/2025/10/Leyenda2025-EN-LEYENDA-DESCRIPCIONES.pdf
+
+coverage:
+  geography: Chile
+  spatial_resolution_m: 30
+  spatial_levels:
+    - country
+    - region
+    - province
+    - comuna
+    - watershed
+    - protected_area
+  temporal_range:
+    start_year: 1999
+    end_year: 2024
+  collection_version: "2.0"
+  legend_classes: 17
+
+themes:
+  - land_use
+  - land_cover
+  - afolu
+  - urban_form
+  - biodiversity_proxy
+  - remote_sensing
+
+prior_collections:
+  - version: "1.0"
+    temporal_range: { start_year: 2000, end_year: 2022 }
+    legend_classes: 13
+    note: Do not aggregate across collections without an explicit class crosswalk.
+
+suitability_use_cases:
+  city_context: medium
+  land_cover_share_by_comuna: high
+  change_detection: high
+  direct_emissions_use: low
+  parcel_level_planning: low
+
+integration_notes:
+  join_keys:
+    - comuna_code
+    - region_code
+  recommended_workflow: >
+    Zonal statistics in GEE (or platform export) → aggregate to comuna/actor_id
+    using Chile admin boundaries; store legend crosswalk in raw_data.
+  requires_harmonisation: true
+  harmonisation_targets:
+    - MapBiomas legend → internal land-cover taxonomy
+    - comuna / region codes → actor_id (UN/LOCODE) where used in modelled.*
+
+data_quality:
+  authority: collaborative_science_network
+  spatial_coverage: full_country
+  update_frequency: annual_map_update_planned
+  known_issues:
+    - Not intended for scales finer than 1:100000
+    - Collection 1 vs 2 legend break
+    - GEE user toolkit maintenance status uncertain
+
+license:
+  status: verify_before_production
+  note: >
+    MapBiomas Chile states data are free for non-commercial or public-interest use;
+    confirm current terms on chile.mapbiomas.org before redistribution or commercial pipelines.
+
+status:
+  production_ready: false
+  priority: medium
+  review_stage: in_progress
+
+open_questions:
+  - Which legend classes map to CityCatalyst land / AFOLU indicators?
+  - Preferred ingestion path — GEE export to S3 vs platform CSV statistics?
+  - Collection 1.0 GEE asset path if legacy comparisons are required?

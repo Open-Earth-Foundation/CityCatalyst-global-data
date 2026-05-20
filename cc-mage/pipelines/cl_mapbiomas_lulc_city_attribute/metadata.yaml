@@ -1,0 +1,182 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    file_source:
+      path: data_exporters/load_publisher_datasource_cl_mapbiomas_lulc.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - load_dataset_release_cl_mapbiomas_lulc
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: load_publisher_datasource_cl_mapbiomas_lulc
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks: []
+  uuid: load_publisher_datasource_cl_mapbiomas_lulc
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    file_source:
+      path: data_exporters/load_dataset_release_cl_mapbiomas_lulc.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - update_city_attribute_cl_mapbiomas_lulc
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: load_dataset_release_cl_mapbiomas_lulc
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_publisher_datasource_cl_mapbiomas_lulc
+  uuid: load_dataset_release_cl_mapbiomas_lulc
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_loaders/load_cl_mapbiomas_lulc_from_s3.py
+  downstream_blocks:
+  - load_cl_mapbiomas_lulc_staging
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_cl_mapbiomas_lulc_from_s3
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_cl_mapbiomas_lulc_from_s3
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_exporters/load_cl_mapbiomas_lulc_staging.py
+  downstream_blocks:
+  - update_city_attribute_cl_mapbiomas_lulc
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_cl_mapbiomas_lulc_staging
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_cl_mapbiomas_lulc_from_s3
+  uuid: load_cl_mapbiomas_lulc_staging
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    file_source:
+      path: transformers/update_city_attribute_cl_mapbiomas_lulc.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - cl_mapbiomas_lulc_cleanup
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_city_attribute_cl_mapbiomas_lulc
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_dataset_release_cl_mapbiomas_lulc
+  - load_cl_mapbiomas_lulc_staging
+  uuid: update_city_attribute_cl_mapbiomas_lulc
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    file_source:
+      path: transformers/cl_mapbiomas_lulc_cleanup.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: cl_mapbiomas_lulc_cleanup
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - update_city_attribute_cl_mapbiomas_lulc
+  uuid: cl_mapbiomas_lulc_cleanup
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2026-05-19 00:00:00.000000+00:00'
+data_integration: null
+description: 'Loads MapBiomas Chile Collection 2.0 land-use share indicators from
+  S3 (INE-shaped raw_data CSV). Joins OCHA COD-AB parquet for locodes. Registers
+  publisher_datasource and dataset_release, then upserts modelled.city_attribute.
+
+  '
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: cl_mapbiomas_lulc_city_attribute
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: cl_mapbiomas_lulc_city_attribute
+variables:
+  bucket_name: test-global-api
+  dataset_name: MapBiomas Chile — land use and land cover
+  dataset_url: https://chile.mapbiomas.org/
+  datasource_name: cl-mapbiomas-lulc
+  lulc_key: raw_data/gee/cl-mapbiomas/releases/collection-02/raw_data_cl_mapbiomas_lulc.csv
+  ocha_ab_key: raw_data/ocha-rolac/cl-ocha-ab/releases/2021/raw_data_cl_ocha_ab.parquet
+  publisher_name: MapBiomas Chile
+  publisher_url: https://chile.mapbiomas.org/
+  reference_year: 2023
+  released_at: '2025-10-13'
+  source_url: https://chile.mapbiomas.org/en/mapas-de-la-coleccion/
+  version_label: collection-02
+variables_dir: /home/src/mage_data/cc-mage
+widgets: []

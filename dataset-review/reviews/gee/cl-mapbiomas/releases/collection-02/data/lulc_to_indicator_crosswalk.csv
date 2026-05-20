@@ -1,0 +1,25 @@
+lulc_class,indicator_group,notes
+1,forest_cover,Forest formation (parent code; rare at pixel level)
+3,forest_cover,Forest (parent code; rare at pixel level)
+59,primary_forest,Primary forest (intact native; protect-and-restore bridges)
+60,secondary_forest,Secondary forest (regenerating native; restoration / sustainable-mgmt bridges)
+67,secondary_forest,"Dwarf forest (grouped with secondary; low biomass, regrowth class)"
+10,other_natural,Natural non-forest formation (parent code)
+11,wetland,Wetland
+12,grassland,Grassland (split from other_natural; soil-carbon / silvopastoral bridges)
+63,grassland,Steppe (grouped with grassland; Patagonian)
+66,shrubland,Shrubland (split from other_natural; matorral; distinct NBS profile)
+29,other_bare,Rocky outcrop
+14,agricultural_land,Farming and silviculture (parent code; kept as legacy aggregate)
+9,silviculture,Silviculture (exotic plantations — pine / eucalyptus; AFOLU plantation bridges)
+18,cropland,Agriculture (cropland; soil-carbon / cover-crop / agroforestry bridges)
+15,pasture,Pasture (livestock-methane / manure-management / enteric-fermentation bridges)
+22,other_bare,Non-vegetated area (parent code)
+24,urban_built,Infrastructure and built-up
+23,beach_dune,"Beach, dune and sand (coastal-NBS / dune-restoration bridges)"
+61,other_bare,Salt flat (Norte Grande; no Los Ríos presence)
+25,other_bare,Other non-vegetated
+26,water,Water bodies (parent code)
+33,water,"River, lake or ocean"
+34,ice_snow,Ice and snow (cryosphere; water-security / cordillera comunas only)
+27,unmapped,Clouds / not observed — exclude from numerator AND denominator

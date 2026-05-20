@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS raw_data.action_mitigation_feasibility_chain_staging;

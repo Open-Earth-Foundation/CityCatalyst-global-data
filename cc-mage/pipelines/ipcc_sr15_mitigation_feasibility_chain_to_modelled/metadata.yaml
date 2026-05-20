@@ -1,0 +1,180 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_loaders/load_action_mitigation_feasibility_chain_from_s3.py
+  downstream_blocks:
+  - load_action_mitigation_feasibility_chain_staging
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_action_mitigation_feasibility_chain_from_s3
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_action_mitigation_feasibility_chain_from_s3
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_exporters/load_action_mitigation_feasibility_chain_staging.py
+  downstream_blocks:
+  - load_action_mitigation_feasibility_chain_modelled
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_action_mitigation_feasibility_chain_staging
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_action_mitigation_feasibility_chain_from_s3
+  uuid: load_action_mitigation_feasibility_chain_staging
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    file_source:
+      path: data_exporters/load_publisher_datasource_ipcc_sr15_mitigation_feasibility.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - load_dataset_release_ipcc_sr15_mitigation_feasibility
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: load_publisher_datasource_ipcc_sr15_mitigation_feasibility
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks: []
+  uuid: load_publisher_datasource_ipcc_sr15_mitigation_feasibility
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    file_source:
+      path: data_exporters/load_dataset_release_ipcc_sr15_mitigation_feasibility.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - load_action_mitigation_feasibility_chain_modelled
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: load_dataset_release_ipcc_sr15_mitigation_feasibility
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_publisher_datasource_ipcc_sr15_mitigation_feasibility
+  uuid: load_dataset_release_ipcc_sr15_mitigation_feasibility
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    file_source:
+      path: data_exporters/load_action_mitigation_feasibility_chain_modelled.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - action_mitigation_feasibility_chain_cleanup
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: load_action_mitigation_feasibility_chain_modelled
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_action_mitigation_feasibility_chain_staging
+  - load_dataset_release_ipcc_sr15_mitigation_feasibility
+  uuid: load_action_mitigation_feasibility_chain_modelled
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    file_source:
+      path: transformers/action_mitigation_feasibility_chain_cleanup.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: action_mitigation_feasibility_chain_cleanup
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_action_mitigation_feasibility_chain_modelled
+  uuid: action_mitigation_feasibility_chain_cleanup
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2026-05-20 00:00:00.000000+00:00'
+data_integration: null
+description: 'Loads IPCC SR1.5 mitigation feasibility chain rows from S3 CSV into
+  raw_data staging, registers publisher/dataset release metadata, and upserts into
+  modelled.action_mitigation_feasibility_chain.
+
+  '
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: ipcc_sr15_mitigation_feasibility_chain_to_modelled
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: ipcc_sr15_mitigation_feasibility_chain_to_modelled
+variables:
+  bucket_name: test-global-api
+  dataset_name: IPCC SR1.5 Mitigation Feasibility Chain
+  dataset_url: https://www.ipcc.ch/
+  datasource_name: ipcc-sr15-mitigation-feasibility
+  publisher_name: Intergovernmental Panel on Climate Change (IPCC)
+  publisher_url: https://www.ipcc.ch/
+  released_at: '2018-01-01'
+  scoring_chain_key: raw_data/ipcc/ipcc-sr15-mitigation-feasibility/releases/2018/data/scoring_chain.csv
+  source_url: s3://test-global-api/raw_data/ipcc/ipcc-sr15-mitigation-feasibility/releases/2018/data/scoring_chain.csv
+  version_label: '2018'
+variables_dir: /home/src/mage_data/cc-mage
+widgets: []

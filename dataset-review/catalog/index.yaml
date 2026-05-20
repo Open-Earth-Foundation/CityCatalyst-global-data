@@ -634,3 +634,112 @@ datasets:
         granularity: null
         freshness: null
         accessibility: null
+
+- id: cl-mapbiomas-lulc
+  name: MapBiomas Chile — land use and land cover
+  dataset_url: https://chile.mapbiomas.org/
+  publisher:
+    id: mapbiomas-chile
+    name: MapBiomas Chile
+    url: https://chile.mapbiomas.org/
+  description: >
+    Annual land cover and land use maps for Chile (Collection 2.0: 1999–2024,
+    30 m, 17 classes). Primary access via Google Earth Engine asset and public
+    GeoTIFF; web platform provides maps, change layers, and territorial statistics.
+  coverage:
+    geography: country
+    countries: [CL]
+    spatial_levels: [country, region, province, comuna, watershed, protected_area]
+  themes:
+    - land_use
+    - land_cover
+    - afolu
+    - remote_sensing
+  update_frequency: annual
+  typical_frequency_years: 1
+  priority: medium
+  releases:
+    - version: collection-02
+      version_number: 2
+      source_url: https://chile.mapbiomas.org/en/mapas-de-la-coleccion/
+      released_at: 2025-10-13
+      retrieved_at: null
+      retrieval_method: google_earth_engine
+      api_endpoint: null
+      path: "reviews/gee/cl-mapbiomas/releases/collection-02"
+      is_latest: true
+      production_approved: false
+      pipeline_name: cl_mapbiomas_lulc_city_attribute
+      pipeline_version: null
+      methodology_url: https://chile.mapbiomas.org/en/metodologia/
+      internal_review_url: reviews/gee/cl-mapbiomas/releases/collection-02/review.md
+      license:
+        id: mapbiomas-terms-verification-pending
+        name: MapBiomas Chile terms of use (verify)
+        url: https://chile.mapbiomas.org/
+        commercial_use: false
+        note: >
+          Publisher states free use for non-commercial or public-interest purposes;
+          confirm current terms before production ingestion or redistribution.
+      data_quality:
+        documentation: partial
+        methodology: published_atbd
+        coverage: full_country
+        granularity: 30m_raster
+        freshness: annual_series_through_2024
+        accessibility: gee_and_public_gcs
+
+- id: nasa-power-degree-days
+  name: NASA POWER — heating and cooling degree days
+  dataset_url: https://power.larc.nasa.gov/
+  publisher:
+    id: nasa-power
+    name: NASA Langley Research Center — POWER Project
+    url: https://power.larc.nasa.gov/
+  description: >
+    Daily heating degree days (HDD18_3) and cooling degree days (CDD18_3) at base
+    18.3 °C from MERRA-2 via the NASA POWER REST API. Point queries at comuna
+    centroids suit pilot city sets; national coverage should migrate to ERA5-Land
+    zonal statistics for finer spatial resolution.
+  coverage:
+    geography: global
+    countries: []
+    spatial_levels: [point, comuna_centroid_proxy, country]
+  themes:
+    - climate
+    - meteorology
+    - building_energy
+    - city_context
+  update_frequency: near_real_time_daily
+  typical_frequency_years: 0
+  priority: medium
+  releases:
+    - version: daily-point
+      version_number: 1
+      source_url: https://power.larc.nasa.gov/docs/services/api/temporal/daily/
+      released_at: null
+      retrieved_at: null
+      retrieval_method: public_rest_api
+      api_endpoint: https://power.larc.nasa.gov/api/temporal/daily/point
+      path: "reviews/nasa/nasa-power-degree-days/releases/daily-point"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: https://power.larc.nasa.gov/docs/methodology/meteorology/degree-days/
+      internal_review_url: reviews/nasa/nasa-power-degree-days/releases/daily-point/review.md
+      license:
+        id: nasa-earth-science-open
+        name: NASA Earth science data use (verify POWER citation)
+        url: https://power.larc.nasa.gov/
+        commercial_use: true
+        note: >
+          NASA Earth science products are generally openly available with attribution;
+          confirm current POWER citation and redistribution guidance before production.
+      data_quality:
+        documentation: published
+        methodology: merra2_degree_days_ashrae
+        coverage: global_reanalysis
+        granularity: 0.5deg_lat_0.625deg_lon_point
+        freshness: 1981_to_nrt
+        accessibility: keyless_rest_api
