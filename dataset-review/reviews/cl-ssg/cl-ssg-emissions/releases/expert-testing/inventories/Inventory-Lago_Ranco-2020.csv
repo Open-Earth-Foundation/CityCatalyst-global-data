@@ -1,0 +1,75 @@
+Inventory Reference,GPC Reference Number,Subsector name,Notation Key,Total Emissions,Total Emission Units,Activity type,Activity Value,Activity Units,Emission Factor - CO2,Emission Factor - CH4,Emission Factor - N2O,Emission Factor - Unit,CO2 Emissions,CH4 Emissions,N2O Emissions,Data source ID,Data source name
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,I,Stationary Energy,,8114.553246,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,I.1,Residential buildings,,4231.860676,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,I.1.1,Residential buildings,,1287.30114,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,I.1.2,Residential buildings,,2934.65796,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,I.1.3,Residential buildings,,9.901576475,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,I.2,Commercial and institutional buildings and facilities,,3370.496851,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,I.2.1,Commercial and institutional buildings and facilities,,591.8083151,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,I.2.2,Commercial and institutional buildings and facilities,,2769.344729,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,I.2.3,Commercial and institutional buildings and facilities,,9.343807351,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,I.3,Manufacturing industries and construction,,395.0051675,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,I.3.1,Manufacturing industries and construction,,395.0051675,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,I.3.2,Manufacturing industries and construction,,0,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,I.3.3,Manufacturing industries and construction,,0,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,I.4,Energy industries,,0,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,I.4.1,Energy industries,,0,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,I.4.2,Energy industries,,0,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,I.4.3,Energy industries,,0,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,I.4.4,Energy generation supplied to the grid,,,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,I.5,"Agriculture, forestry and fishing activities",,117.1905511,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,I.5.1,"Agriculture, forestry and fishing activities",,117.1905511,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,I.5.2,"Agriculture, forestry and fishing activities",,0,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,I.5.3,"Agriculture, forestry and fishing activities",,0,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,I.6,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,I.6.1,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,I.6.2,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,I.6.3,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,I.7,Fugitive emissions from coal mining,,,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,I.7.1,Fugitive emissions from coal mining,,,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,I.8,Fugitive emissions from oil and natural gas,,,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,I.8.1,Fugitive emissions from oil and natural gas,,,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,II,Transportation,,28024.79195,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,II.1,On-road transportation,,27624.72284,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,II.1.1,On-road transportation,,21651.6711,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,II.1.2,On-road transportation,,,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,II.1.3,On-road transportation,,5973.05174,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,II.2,Railways,,69.54769242,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,II.2.1,Railways,,69.54769242,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,II.2.2,Railways,,,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,II.2.3,Railways,,,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,II.3,Waterborne navigation,,0,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,II.3.1,Waterborne navigation,,0,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,II.3.2,Waterborne navigation,,,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,II.3.3,Waterborne navigation,,,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,II.4,Aviation,,304.2854803,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,II.4.1,Aviation,,304.2854803,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,II.4.2,Aviation,,,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,II.4.3,Aviation,,,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,II.5,Off-road transportation,,26.23593321,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,II.5.1,Off-road transportation,,26.23593321,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,II.5.2,Off-road transportation,,,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,III,Waste,,5296.583761,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,III.1,Solid waste disposal,,4065.835399,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,III.1.1,Solid waste disposal,,0,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,III.1.2,Solid waste disposal,,4065.835399,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,III.1.3,Solid waste disposal,,,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,III.2,Biological treatment of waste,,341.095573,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,III.2.1,Biological treatment of waste,,341.095573,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,III.2.2,Biological treatment of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,III.2.3,Biological treatment of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,III.3,Incineration and open burning of waste,,47.16285371,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,III.3.1,Incineration and open burning of waste,,47.16285371,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,III.3.2,Incineration and open burning of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,III.3.3,Incineration and open burning of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,III.4,Wastewater treatment and discharge,,842.4899355,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,III.4.1,Wastewater treatment and discharge,,842.4899355,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,III.4.2,Wastewater treatment and discharge,,,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,III.4.3,Wastewater treatment and discharge,,,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,IV,IPPU,,7682.635728,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,IV.1,Industrial processes,,626.8974284,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,IV.2,Product use,,7055.738299,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,V,AFOLU,,-268483.2994,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,V.1,Livestock,,45738.09233,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,V.2,Land,,-364228.93,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020
+1fcf6f01-3b1a-4ac0-875b-4c49e16f0b52,V.3,Aggregate sources and non-CO2 emission sources on land,,50007.53827,t CO2e,,,,,,,,,,,,SSG Inventory Lago Ranco 2020

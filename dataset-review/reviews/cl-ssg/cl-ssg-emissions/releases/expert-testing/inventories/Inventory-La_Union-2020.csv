@@ -1,0 +1,75 @@
+Inventory Reference,GPC Reference Number,Subsector name,Notation Key,Total Emissions,Total Emission Units,Activity type,Activity Value,Activity Units,Emission Factor - CO2,Emission Factor - CH4,Emission Factor - N2O,Emission Factor - Unit,CO2 Emissions,CH4 Emissions,N2O Emissions,Data source ID,Data source name
+a97b33e3-df52-447e-a94b-94d5c9389afa,I,Stationary Energy,,42932.71756,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,I.1,Residential buildings,,16485.742,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,I.1.1,Residential buildings,,4939.121434,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,I.1.2,Residential buildings,,11507.79312,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,I.1.3,Residential buildings,,38.82745286,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,I.2,Commercial and institutional buildings and facilities,,12391.17446,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,I.2.1,Commercial and institutional buildings and facilities,,2519.318798,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,I.2.2,Commercial and institutional buildings and facilities,,9838.659886,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,I.2.3,Commercial and institutional buildings and facilities,,33.19577429,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,I.3,Manufacturing industries and construction,,14052.81218,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,I.3.1,Manufacturing industries and construction,,14015.362,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,I.3.2,Manufacturing industries and construction,,37.32424488,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,I.3.3,Manufacturing industries and construction,,0.125932518,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,I.4,Energy industries,,0,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,I.4.1,Energy industries,,0,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,I.4.2,Energy industries,,0,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,I.4.3,Energy industries,,0,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,I.4.4,Energy generation supplied to the grid,,,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,I.5,"Agriculture, forestry and fishing activities",,2.988925539,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,I.5.1,"Agriculture, forestry and fishing activities",,2.988925539,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,I.5.2,"Agriculture, forestry and fishing activities",,0,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,I.5.3,"Agriculture, forestry and fishing activities",,0,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,I.6,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,I.6.1,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,I.6.2,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,I.6.3,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,I.7,Fugitive emissions from coal mining,,,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,I.7.1,Fugitive emissions from coal mining,,,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,I.8,Fugitive emissions from oil and natural gas,,,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,I.8.1,Fugitive emissions from oil and natural gas,,,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,II,Transportation,,40741.8851,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,II.1,On-road transportation,,38376.49849,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,II.1.1,On-road transportation,,30804.98624,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,II.1.2,On-road transportation,,,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,II.1.3,On-road transportation,,7571.512249,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,II.2,Railways,,126.920825,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,II.2.1,Railways,,126.920825,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,II.2.2,Railways,,,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,II.2.3,Railways,,,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,II.3,Waterborne navigation,,410.2184662,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,II.3.1,Waterborne navigation,,410.2184662,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,II.3.2,Waterborne navigation,,,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,II.3.3,Waterborne navigation,,,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,II.4,Aviation,,1167.101802,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,II.4.1,Aviation,,1167.101802,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,II.4.2,Aviation,,,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,II.4.3,Aviation,,,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,II.5,Off-road transportation,,661.1455169,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,II.5.1,Off-road transportation,,661.1455169,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,II.5.2,Off-road transportation,,,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,III,Waste,,20215.10852,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,III.1,Solid waste disposal,,15594.70999,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,III.1.1,Solid waste disposal,,0,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,III.1.2,Solid waste disposal,,15594.70999,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,III.1.3,Solid waste disposal,,,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,III.2,Biological treatment of waste,,1308.288708,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,III.2.1,Biological treatment of waste,,1308.288708,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,III.2.2,Biological treatment of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,III.2.3,Biological treatment of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,III.3,Incineration and open burning of waste,,180.8954259,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,III.3.1,Incineration and open burning of waste,,180.8954259,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,III.3.2,Incineration and open burning of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,III.3.3,Incineration and open burning of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,III.4,Wastewater treatment and discharge,,3131.214391,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,III.4.1,Wastewater treatment and discharge,,3131.214391,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,III.4.2,Wastewater treatment and discharge,,,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,III.4.3,Wastewater treatment and discharge,,,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,IV,IPPU,,22967.42481,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,IV.1,Industrial processes,,2256.830742,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,IV.2,Product use,,20710.59407,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,V,AFOLU,,-618898.4815,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,V.1,Livestock,,119296.2199,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,V.2,Land,,-811391.3297,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020
+a97b33e3-df52-447e-a94b-94d5c9389afa,V.3,Aggregate sources and non-CO2 emission sources on land,,73196.62831,t CO2e,,,,,,,,,,,,SSG Inventory La Union 2020

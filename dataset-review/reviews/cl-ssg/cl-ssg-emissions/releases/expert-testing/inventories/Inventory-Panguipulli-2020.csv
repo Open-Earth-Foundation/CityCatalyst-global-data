@@ -1,0 +1,75 @@
+Inventory Reference,GPC Reference Number,Subsector name,Notation Key,Total Emissions,Total Emission Units,Activity type,Activity Value,Activity Units,Emission Factor - CO2,Emission Factor - CH4,Emission Factor - N2O,Emission Factor - Unit,CO2 Emissions,CH4 Emissions,N2O Emissions,Data source ID,Data source name
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,I,Stationary Energy,,22993.41147,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,I.1,Residential buildings,,13879.02089,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,I.1.1,Residential buildings,,3730.313921,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,I.1.2,Residential buildings,,10114.58024,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,I.1.3,Residential buildings,,34.12673337,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,I.2,Commercial and institutional buildings and facilities,,7681.108408,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,I.2.1,Commercial and institutional buildings and facilities,,2108.97303,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,I.2.2,Commercial and institutional buildings and facilities,,5553.398136,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,I.2.3,Commercial and institutional buildings and facilities,,18.73724199,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,I.3,Manufacturing industries and construction,,1409.368815,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,I.3.1,Manufacturing industries and construction,,1396.222613,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,I.3.2,Manufacturing industries and construction,,13.1019954,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,I.3.3,Manufacturing industries and construction,,0.044206313,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,I.4,Energy industries,,0,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,I.4.1,Energy industries,,0,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,I.4.2,Energy industries,,0,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,I.4.3,Energy industries,,0,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,I.4.4,Energy generation supplied to the grid,,,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,I.5,"Agriculture, forestry and fishing activities",,23.91335793,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,I.5.1,"Agriculture, forestry and fishing activities",,23.91335793,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,I.5.2,"Agriculture, forestry and fishing activities",,0,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,I.5.3,"Agriculture, forestry and fishing activities",,0,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,I.6,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,I.6.1,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,I.6.2,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,I.6.3,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,I.7,Fugitive emissions from coal mining,,,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,I.7.1,Fugitive emissions from coal mining,,,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,I.8,Fugitive emissions from oil and natural gas,,,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,I.8.1,Fugitive emissions from oil and natural gas,,,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,II,Transportation,,42272.35633,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,II.1,On-road transportation,,40956.14818,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,II.1.1,On-road transportation,,32877.87229,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,II.1.2,On-road transportation,,,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,II.1.3,On-road transportation,,8078.27589,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,II.2,Railways,,109.9770239,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,II.2.1,Railways,,109.9770239,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,II.2.2,Railways,,,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,II.2.3,Railways,,,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,II.3,Waterborne navigation,,0,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,II.3.1,Waterborne navigation,,0,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,II.3.2,Waterborne navigation,,,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,II.3.3,Waterborne navigation,,,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,II.4,Aviation,,1038.321156,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,II.4.1,Aviation,,1038.321156,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,II.4.2,Aviation,,,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,II.4.3,Aviation,,,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,II.5,Off-road transportation,,167.9099726,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,II.5.1,Off-road transportation,,167.9099726,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,II.5.2,Off-road transportation,,,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,III,Waste,,17501.25738,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,III.1,Solid waste disposal,,13873.9545,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,III.1.1,Solid waste disposal,,0,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,III.1.2,Solid waste disposal,,13873.9545,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,III.1.3,Solid waste disposal,,,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,III.2,Biological treatment of waste,,1163.92918,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,III.2.1,Biological treatment of waste,,1163.92918,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,III.2.2,Biological treatment of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,III.2.3,Biological treatment of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,III.3,Incineration and open burning of waste,,160.9350164,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,III.3.1,Incineration and open burning of waste,,160.9350164,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,III.3.2,Incineration and open burning of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,III.3.3,Incineration and open burning of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,III.4,Wastewater treatment and discharge,,2302.438682,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,III.4.1,Wastewater treatment and discharge,,2302.438682,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,III.4.2,Wastewater treatment and discharge,,,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,III.4.3,Wastewater treatment and discharge,,,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,IV,IPPU,,15550.41171,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,IV.1,Industrial processes,,1295.588019,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,IV.2,Product use,,14254.82369,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,V,AFOLU,,-581841.2104,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,V.1,Livestock,,101620.6789,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,V.2,Land,,-795638.532,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020
+8b2feb56-7c9a-416c-a5b0-8f4653ad1ba0,V.3,Aggregate sources and non-CO2 emission sources on land,,112176.6427,t CO2e,,,,,,,,,,,,SSG Inventory Panguipulli 2020

@@ -1,0 +1,75 @@
+Inventory Reference,GPC Reference Number,Subsector name,Notation Key,Total Emissions,Total Emission Units,Activity type,Activity Value,Activity Units,Emission Factor - CO2,Emission Factor - CH4,Emission Factor - N2O,Emission Factor - Unit,CO2 Emissions,CH4 Emissions,N2O Emissions,Data source ID,Data source name
+d47fb96d-814d-46e6-8a5f-7366fb199e94,I,Stationary Energy,,11581.82711,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,I.1,Residential buildings,,6332.370137,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,I.1.1,Residential buildings,,2081.81694,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,I.1.2,Residential buildings,,4236.259997,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,I.1.3,Residential buildings,,14.29319972,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,I.2,Commercial and institutional buildings and facilities,,4527.147178,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,I.2.1,Commercial and institutional buildings and facilities,,1067.116455,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,I.2.2,Commercial and institutional buildings and facilities,,3448.395787,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,I.2.3,Commercial and institutional buildings and facilities,,11.634935,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,I.3,Manufacturing industries and construction,,722.1956836,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,I.3.1,Manufacturing industries and construction,,722.1956836,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,I.3.2,Manufacturing industries and construction,,0,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,I.3.3,Manufacturing industries and construction,,0,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,I.4,Energy industries,,0,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,I.4.1,Energy industries,,0,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,I.4.2,Energy industries,,0,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,I.4.3,Energy industries,,0,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,I.4.4,Energy generation supplied to the grid,,,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,I.5,"Agriculture, forestry and fishing activities",,0.114112238,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,I.5.1,"Agriculture, forestry and fishing activities",,0.114112238,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,I.5.2,"Agriculture, forestry and fishing activities",,0,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,I.5.3,"Agriculture, forestry and fishing activities",,0,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,I.6,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,I.6.1,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,I.6.2,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,I.6.3,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,I.7,Fugitive emissions from coal mining,,,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,I.7.1,Fugitive emissions from coal mining,,,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,I.8,Fugitive emissions from oil and natural gas,,,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,I.8.1,Fugitive emissions from oil and natural gas,,,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,II,Transportation,,17367.20979,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,II.1,On-road transportation,,16601.68142,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,II.1.1,On-road transportation,,13337.98347,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,II.1.2,On-road transportation,,,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,II.1.3,On-road transportation,,3263.697952,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,II.2,Railways,,192.9243103,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,II.2.1,Railways,,192.9243103,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,II.2.2,Railways,,,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,II.2.3,Railways,,,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,II.3,Waterborne navigation,,0,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,II.3.1,Waterborne navigation,,0,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,II.3.2,Waterborne navigation,,,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,II.3.3,Waterborne navigation,,,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,II.4,Aviation,,488.649075,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,II.4.1,Aviation,,488.649075,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,II.4.2,Aviation,,,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,II.4.3,Aviation,,,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,II.5,Off-road transportation,,83.95498628,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,II.5.1,Off-road transportation,,83.95498628,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,II.5.2,Off-road transportation,,,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,III,Waste,,8205.463111,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,III.1,Solid waste disposal,,6529.285277,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,III.1.1,Solid waste disposal,,0,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,III.1.2,Solid waste disposal,,6529.285277,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,III.1.3,Solid waste disposal,,,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,III.2,Biological treatment of waste,,547.7620426,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,III.2.1,Biological treatment of waste,,547.7620426,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,III.2.2,Biological treatment of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,III.2.3,Biological treatment of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,III.3,Incineration and open burning of waste,,75.73836522,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,III.3.1,Incineration and open burning of waste,,75.73836522,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,III.3.2,Incineration and open burning of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,III.3.3,Incineration and open burning of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,III.4,Wastewater treatment and discharge,,1052.677426,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,III.4.1,Wastewater treatment and discharge,,1052.677426,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,III.4.2,Wastewater treatment and discharge,,,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,III.4.3,Wastewater treatment and discharge,,,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,IV,IPPU,,6875.458375,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,IV.1,Industrial processes,,564.2076856,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,IV.2,Product use,,6311.25069,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,V,AFOLU,,-56462.63315,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,V.1,Livestock,,45118.09004,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,V.2,Land,,-116894.4205,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020
+d47fb96d-814d-46e6-8a5f-7366fb199e94,V.3,Aggregate sources and non-CO2 emission sources on land,,15313.69735,t CO2e,,,,,,,,,,,,SSG Inventory Lanco 2020

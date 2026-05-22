@@ -1,0 +1,75 @@
+Inventory Reference,GPC Reference Number,Subsector name,Notation Key,Total Emissions,Total Emission Units,Activity type,Activity Value,Activity Units,Emission Factor - CO2,Emission Factor - CH4,Emission Factor - N2O,Emission Factor - Unit,CO2 Emissions,CH4 Emissions,N2O Emissions,Data source ID,Data source name
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,I,Stationary Energy,,16306.44818,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,I.1,Residential buildings,,8241.24854,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,I.1.1,Residential buildings,,2542.446252,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,I.1.2,Residential buildings,,5679.639108,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,I.1.3,Residential buildings,,19.16318077,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,I.2,Commercial and institutional buildings and facilities,,7252.579551,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,I.2.1,Commercial and institutional buildings and facilities,,1185.56071,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,I.2.2,Commercial and institutional buildings and facilities,,6046.61747,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,I.2.3,Commercial and institutional buildings and facilities,,20.40137083,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,I.3,Manufacturing industries and construction,,784.6870462,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,I.3.1,Manufacturing industries and construction,,783.1953195,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,I.3.2,Manufacturing industries and construction,,1.486710576,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,I.3.3,Manufacturing industries and construction,,0.005016182,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,I.4,Energy industries,,0.749880419,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,I.4.1,Energy industries,,0.749880419,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,I.4.2,Energy industries,,0,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,I.4.3,Energy industries,,0,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,I.4.4,Energy generation supplied to the grid,,,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,I.5,"Agriculture, forestry and fishing activities",,27.18316518,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,I.5.1,"Agriculture, forestry and fishing activities",,27.18316518,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,I.5.2,"Agriculture, forestry and fishing activities",,0,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,I.5.3,"Agriculture, forestry and fishing activities",,0,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,I.6,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,I.6.1,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,I.6.2,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,I.6.3,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,I.7,Fugitive emissions from coal mining,,,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,I.7.1,Fugitive emissions from coal mining,,,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,I.8,Fugitive emissions from oil and natural gas,,,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,I.8.1,Fugitive emissions from oil and natural gas,,,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,II,Transportation,,22603.11471,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,II.1,On-road transportation,,21574.31288,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,II.1.1,On-road transportation,,17379.45198,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,II.1.2,On-road transportation,,,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,II.1.3,On-road transportation,,4194.860896,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,II.2,Railways,,114.5945524,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,II.2.1,Railways,,114.5945524,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,II.2.2,Railways,,,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,II.2.3,Railways,,,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,II.3,Waterborne navigation,,0,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,II.3.1,Waterborne navigation,,0,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,II.3.2,Waterborne navigation,,,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,II.3.3,Waterborne navigation,,,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,II.4,Aviation,,599.376078,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,II.4.1,Aviation,,599.376078,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,II.4.2,Aviation,,,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,II.4.3,Aviation,,,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,II.5,Off-road transportation,,314.8311985,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,II.5.1,Off-road transportation,,314.8311985,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,II.5.2,Off-road transportation,,,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,III,Waste,,9850.442909,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,III.1,Solid waste disposal,,8008.809597,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,III.1.1,Solid waste disposal,,8008.809597,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,III.1.2,Solid waste disposal,,0,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,III.1.3,Solid waste disposal,,,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,III.2,Biological treatment of waste,,671.8839379,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,III.2.1,Biological treatment of waste,,671.8839379,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,III.2.2,Biological treatment of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,III.2.3,Biological treatment of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,III.3,Incineration and open burning of waste,,92.90054278,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,III.3.1,Incineration and open burning of waste,,92.90054278,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,III.3.2,Incineration and open burning of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,III.3.3,Incineration and open burning of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,III.4,Wastewater treatment and discharge,,1076.848831,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,III.4.1,Wastewater treatment and discharge,,1076.848831,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,III.4.2,Wastewater treatment and discharge,,,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,III.4.3,Wastewater treatment and discharge,,,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,IV,IPPU,,5957.167908,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,IV.1,Industrial processes,,376.1384571,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,IV.2,Product use,,5581.029451,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,V,AFOLU,,-182356.5956,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,V.1,Livestock,,135077.8011,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,V.2,Land,,-348873.3354,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
+2daa230d-be58-4526-ab9d-ef12bbbaecc2,V.3,Aggregate sources and non-CO2 emission sources on land,,31438.93864,t CO2e,,,,,,,,,,,,SSG Inventory Paillaco 2020
