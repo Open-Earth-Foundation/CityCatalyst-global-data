@@ -1,0 +1,516 @@
+{
+  "meta": {
+    "requestId": "mariquina-inventory-2020",
+    "generatedAtUtc": "2026-05-22T13:57:00.564739+00:00",
+    "backendConsumer": "hiap-meed",
+    "upstreamProvider": "city_catalyst_frontend",
+    "apiContext": {
+      "endpoint": "POST /v1/prioritize",
+      "locodes": [
+        "CL MRQ"
+      ]
+    },
+    "totalRecords": 1
+  },
+  "requestData": {
+    "requestedLanguages": [
+      "en"
+    ],
+    "topN": 20,
+    "createExplanations": false,
+    "cityDataList": [
+      {
+        "locode": "CL MRQ",
+        "countryCode": "CL",
+        "populationSize": null,
+        "excludedActionIds": [],
+        "cityStrategicPreferenceSectors": [],
+        "cityStrategicPreferenceTimeframes": [
+          "no_preference"
+        ],
+        "cityStrategicPreferenceCoBenefitKeys": [],
+        "cityEmissionsData": {
+          "inventoryYear": 2020,
+          "gpcData": {
+            "I.1.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Residential buildings",
+                  "totalEmissions": 2656.092133,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.1.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Residential buildings",
+                  "totalEmissions": 5347.103486,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.1.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Residential buildings",
+                  "totalEmissions": 18.04120099,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.2.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Commercial and institutional buildings and facilities",
+                  "totalEmissions": 1256.293979,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.2.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Commercial and institutional buildings and facilities",
+                  "totalEmissions": 4988.732767,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.2.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Commercial and institutional buildings and facilities",
+                  "totalEmissions": 16.83205323,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.3.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Manufacturing industries and construction",
+                  "totalEmissions": 91345.15061,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.3.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Manufacturing industries and construction",
+                  "totalEmissions": 13.05950474,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.3.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Manufacturing industries and construction",
+                  "totalEmissions": 0.044062949,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.4.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Energy industries",
+                  "totalEmissions": 63.09754671,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.4.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Energy industries",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.4.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Energy industries",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.5.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Agriculture, forestry and fishing activities",
+                  "totalEmissions": 0.141281818,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.5.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Agriculture, forestry and fishing activities",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.5.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Agriculture, forestry and fishing activities",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.6.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Non-specified sources",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.6.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Non-specified sources",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.6.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Non-specified sources",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "II.1.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "On-road transportation",
+                  "totalEmissions": 16483.075,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "II.1.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "On-road transportation",
+                  "totalEmissions": 4034.574324,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "II.2.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Railways",
+                  "totalEmissions": 75.22812874,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "II.3.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Waterborne navigation",
+                  "totalEmissions": 820.4369324,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "II.4.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Aviation",
+                  "totalEmissions": 621.008976,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "II.5.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Off-road transportation",
+                  "totalEmissions": 152.1684126,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "III.1.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Solid waste disposal",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "III.1.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Solid waste disposal",
+                  "totalEmissions": 8297.866447,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "III.2.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Biological treatment of waste",
+                  "totalEmissions": 696.1338157,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "III.3.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Incineration and open burning of waste",
+                  "totalEmissions": 96.25354274,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "III.4.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Wastewater treatment and discharge",
+                  "totalEmissions": 1749.293894,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "IV.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Industrial processes",
+                  "totalEmissions": 1323.450127,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "IV.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Product use",
+                  "totalEmissions": 11933.02676,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "V.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Livestock",
+                  "totalEmissions": 69924.48736,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "V.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Land",
+                  "totalEmissions": -456657.5471,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "V.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Aggregate sources and non-CO2 emission sources on land",
+                  "totalEmissions": 39824.51278,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Mariquina 2020",
+                  "notationKey": null
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

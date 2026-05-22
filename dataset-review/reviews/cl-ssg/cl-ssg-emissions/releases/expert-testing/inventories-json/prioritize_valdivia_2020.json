@@ -1,0 +1,516 @@
+{
+  "meta": {
+    "requestId": "valdivia-inventory-2020",
+    "generatedAtUtc": "2026-05-22T13:57:00.570268+00:00",
+    "backendConsumer": "hiap-meed",
+    "upstreamProvider": "city_catalyst_frontend",
+    "apiContext": {
+      "endpoint": "POST /v1/prioritize",
+      "locodes": [
+        "CL ZAL"
+      ]
+    },
+    "totalRecords": 1
+  },
+  "requestData": {
+    "requestedLanguages": [
+      "en"
+    ],
+    "topN": 20,
+    "createExplanations": false,
+    "cityDataList": [
+      {
+        "locode": "CL ZAL",
+        "countryCode": "CL",
+        "populationSize": null,
+        "excludedActionIds": [],
+        "cityStrategicPreferenceSectors": [],
+        "cityStrategicPreferenceTimeframes": [
+          "no_preference"
+        ],
+        "cityStrategicPreferenceCoBenefitKeys": [],
+        "cityEmissionsData": {
+          "inventoryYear": 2020,
+          "gpcData": {
+            "I.1.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Residential buildings",
+                  "totalEmissions": 20421.27895,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.1.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Residential buildings",
+                  "totalEmissions": 54982.08144,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.1.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Residential buildings",
+                  "totalEmissions": 185.5103019,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.2.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Commercial and institutional buildings and facilities",
+                  "totalEmissions": 10637.52091,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.2.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Commercial and institutional buildings and facilities",
+                  "totalEmissions": 40675.263,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.2.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Commercial and institutional buildings and facilities",
+                  "totalEmissions": 137.238899,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.3.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Manufacturing industries and construction",
+                  "totalEmissions": 24941.36045,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.3.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Manufacturing industries and construction",
+                  "totalEmissions": 39.38776733,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.3.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Manufacturing industries and construction",
+                  "totalEmissions": 0.132894871,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.4.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Energy industries",
+                  "totalEmissions": 17.09543461,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.4.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Energy industries",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.4.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Energy industries",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.5.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Agriculture, forestry and fishing activities",
+                  "totalEmissions": 249.0740446,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.5.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Agriculture, forestry and fishing activities",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.5.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Agriculture, forestry and fishing activities",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.6.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Non-specified sources",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.6.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Non-specified sources",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.6.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Non-specified sources",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "II.1.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "On-road transportation",
+                  "totalEmissions": 131850.9675,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "II.1.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "On-road transportation",
+                  "totalEmissions": 28477.18316,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "II.2.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Railways",
+                  "totalEmissions": 123.1149773,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "II.3.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Waterborne navigation",
+                  "totalEmissions": 1435.764632,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "II.4.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Aviation",
+                  "totalEmissions": 4781.053704,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "II.5.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Off-road transportation",
+                  "totalEmissions": 125.9324794,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "III.1.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Solid waste disposal",
+                  "totalEmissions": 63884.01238,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "III.1.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Solid waste disposal",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "III.2.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Biological treatment of waste",
+                  "totalEmissions": 5359.428425,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "III.3.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Incineration and open burning of waste",
+                  "totalEmissions": 741.0413936,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "III.4.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Wastewater treatment and discharge",
+                  "totalEmissions": 10207.36455,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "IV.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Industrial processes",
+                  "totalEmissions": 5384.352357,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "IV.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Product use",
+                  "totalEmissions": 67263.84274,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "V.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Livestock",
+                  "totalEmissions": 29824.09812,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "V.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Land",
+                  "totalEmissions": -5959.048053,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "V.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Aggregate sources and non-CO2 emission sources on land",
+                  "totalEmissions": 30500.25022,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Valdivia 2020",
+                  "notationKey": null
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

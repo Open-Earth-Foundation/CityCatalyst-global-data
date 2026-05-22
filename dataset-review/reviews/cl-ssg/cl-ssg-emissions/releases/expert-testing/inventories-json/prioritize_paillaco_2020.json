@@ -1,0 +1,516 @@
+{
+  "meta": {
+    "requestId": "paillaco-inventory-2020",
+    "generatedAtUtc": "2026-05-22T13:57:00.566446+00:00",
+    "backendConsumer": "hiap-meed",
+    "upstreamProvider": "city_catalyst_frontend",
+    "apiContext": {
+      "endpoint": "POST /v1/prioritize",
+      "locodes": [
+        "CL PAO"
+      ]
+    },
+    "totalRecords": 1
+  },
+  "requestData": {
+    "requestedLanguages": [
+      "en"
+    ],
+    "topN": 20,
+    "createExplanations": false,
+    "cityDataList": [
+      {
+        "locode": "CL PAO",
+        "countryCode": "CL",
+        "populationSize": null,
+        "excludedActionIds": [],
+        "cityStrategicPreferenceSectors": [],
+        "cityStrategicPreferenceTimeframes": [
+          "no_preference"
+        ],
+        "cityStrategicPreferenceCoBenefitKeys": [],
+        "cityEmissionsData": {
+          "inventoryYear": 2020,
+          "gpcData": {
+            "I.1.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Residential buildings",
+                  "totalEmissions": 2542.446252,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.1.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Residential buildings",
+                  "totalEmissions": 5679.639108,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.1.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Residential buildings",
+                  "totalEmissions": 19.16318077,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.2.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Commercial and institutional buildings and facilities",
+                  "totalEmissions": 1185.56071,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.2.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Commercial and institutional buildings and facilities",
+                  "totalEmissions": 6046.61747,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.2.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Commercial and institutional buildings and facilities",
+                  "totalEmissions": 20.40137083,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.3.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Manufacturing industries and construction",
+                  "totalEmissions": 783.1953195,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.3.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Manufacturing industries and construction",
+                  "totalEmissions": 1.486710576,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.3.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Manufacturing industries and construction",
+                  "totalEmissions": 0.005016182,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.4.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Energy industries",
+                  "totalEmissions": 0.749880419,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.4.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Energy industries",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.4.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Energy industries",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.5.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Agriculture, forestry and fishing activities",
+                  "totalEmissions": 27.18316518,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.5.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Agriculture, forestry and fishing activities",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.5.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Agriculture, forestry and fishing activities",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.6.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Non-specified sources",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.6.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Non-specified sources",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.6.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Non-specified sources",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "II.1.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "On-road transportation",
+                  "totalEmissions": 17379.45198,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "II.1.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "On-road transportation",
+                  "totalEmissions": 4194.860896,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "II.2.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Railways",
+                  "totalEmissions": 114.5945524,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "II.3.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Waterborne navigation",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "II.4.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Aviation",
+                  "totalEmissions": 599.376078,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "II.5.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Off-road transportation",
+                  "totalEmissions": 314.8311985,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "III.1.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Solid waste disposal",
+                  "totalEmissions": 8008.809597,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "III.1.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Solid waste disposal",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "III.2.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Biological treatment of waste",
+                  "totalEmissions": 671.8839379,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "III.3.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Incineration and open burning of waste",
+                  "totalEmissions": 92.90054278,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "III.4.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Wastewater treatment and discharge",
+                  "totalEmissions": 1076.848831,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "IV.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Industrial processes",
+                  "totalEmissions": 376.1384571,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "IV.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Product use",
+                  "totalEmissions": 5581.029451,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "V.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Livestock",
+                  "totalEmissions": 135077.8011,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "V.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Land",
+                  "totalEmissions": -348873.3354,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "V.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Aggregate sources and non-CO2 emission sources on land",
+                  "totalEmissions": 31438.93864,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Paillaco 2020",
+                  "notationKey": null
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}
