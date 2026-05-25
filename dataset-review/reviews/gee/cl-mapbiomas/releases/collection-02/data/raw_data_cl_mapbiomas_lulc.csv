@@ -1,6 +1,9 @@
 region,comuna,region_nombre,comuna_nombre,attribute_type,attribute_value,attribute_units,attribute_category
 14,14101,Los Ríos,Valdivia,beach_dune_share,0.3,percent,low
+14,14101,Los Ríos,Valdivia,cropland_share,0.0,percent,very low
 14,14101,Los Ríos,Valdivia,grassland_share,0.0,percent,very low
+14,14101,Los Ríos,Valdivia,ice_snow_share,0.0,percent,very low
+14,14101,Los Ríos,Valdivia,other_bare_share,0.0,percent,very low
 14,14101,Los Ríos,Valdivia,pasture_share,12.9,percent,low
 14,14101,Los Ríos,Valdivia,primary_forest_share,25.2,percent,medium
 14,14101,Los Ríos,Valdivia,secondary_forest_share,16.6,percent,medium
@@ -10,7 +13,10 @@ region,comuna,region_nombre,comuna_nombre,attribute_type,attribute_value,attribu
 14,14101,Los Ríos,Valdivia,water_share,0.7,percent,very low
 14,14101,Los Ríos,Valdivia,wetland_share,2.5,percent,medium
 14,14102,Los Ríos,Corral,beach_dune_share,0.1,percent,low
+14,14102,Los Ríos,Corral,cropland_share,0.0,percent,very low
 14,14102,Los Ríos,Corral,grassland_share,0.0,percent,very low
+14,14102,Los Ríos,Corral,ice_snow_share,0.0,percent,very low
+14,14102,Los Ríos,Corral,other_bare_share,0.0,percent,very low
 14,14102,Los Ríos,Corral,pasture_share,2.6,percent,very low
 14,14102,Los Ríos,Corral,primary_forest_share,31.3,percent,medium
 14,14102,Los Ríos,Corral,secondary_forest_share,36.4,percent,high
@@ -20,7 +26,10 @@ region,comuna,region_nombre,comuna_nombre,attribute_type,attribute_value,attribu
 14,14102,Los Ríos,Corral,water_share,0.3,percent,very low
 14,14102,Los Ríos,Corral,wetland_share,0.7,percent,low
 14,14103,Los Ríos,Lanco,beach_dune_share,0.0,percent,very low
+14,14103,Los Ríos,Lanco,cropland_share,0.0,percent,very low
 14,14103,Los Ríos,Lanco,grassland_share,0.0,percent,very low
+14,14103,Los Ríos,Lanco,ice_snow_share,0.0,percent,very low
+14,14103,Los Ríos,Lanco,other_bare_share,0.0,percent,very low
 14,14103,Los Ríos,Lanco,pasture_share,31.7,percent,medium
 14,14103,Los Ríos,Lanco,primary_forest_share,18.1,percent,medium
 14,14103,Los Ríos,Lanco,secondary_forest_share,15.1,percent,medium
@@ -30,6 +39,7 @@ region,comuna,region_nombre,comuna_nombre,attribute_type,attribute_value,attribu
 14,14103,Los Ríos,Lanco,water_share,0.0,percent,very low
 14,14103,Los Ríos,Lanco,wetland_share,0.2,percent,very low
 14,14104,Los Ríos,Los Lagos,beach_dune_share,0.0,percent,very low
+14,14104,Los Ríos,Los Lagos,cropland_share,0.0,percent,very low
 14,14104,Los Ríos,Los Lagos,grassland_share,0.1,percent,very low
 14,14104,Los Ríos,Los Lagos,ice_snow_share,0.5,percent,medium
 14,14104,Los Ríos,Los Lagos,other_bare_share,0.3,percent,very low
@@ -41,8 +51,11 @@ region,comuna,region_nombre,comuna_nombre,attribute_type,attribute_value,attribu
 14,14104,Los Ríos,Los Lagos,urban_built_share,0.6,percent,low
 14,14104,Los Ríos,Los Lagos,water_share,3.7,percent,medium
 14,14104,Los Ríos,Los Lagos,wetland_share,0.1,percent,very low
-14,14105,Los Ríos,Máfil,beach_dune_share,0.1,percent,very low
+14,14105,Los Ríos,Máfil,beach_dune_share,0.1,percent,low
+14,14105,Los Ríos,Máfil,cropland_share,0.0,percent,very low
 14,14105,Los Ríos,Máfil,grassland_share,0.0,percent,very low
+14,14105,Los Ríos,Máfil,ice_snow_share,0.0,percent,very low
+14,14105,Los Ríos,Máfil,other_bare_share,0.0,percent,very low
 14,14105,Los Ríos,Máfil,pasture_share,36.2,percent,high
 14,14105,Los Ríos,Máfil,primary_forest_share,11.1,percent,low
 14,14105,Los Ríos,Máfil,secondary_forest_share,14.5,percent,low
@@ -51,18 +64,24 @@ region,comuna,region_nombre,comuna_nombre,attribute_type,attribute_value,attribu
 14,14105,Los Ríos,Máfil,urban_built_share,0.6,percent,low
 14,14105,Los Ríos,Máfil,water_share,0.3,percent,very low
 14,14105,Los Ríos,Máfil,wetland_share,0.3,percent,very low
-14,14106,Los Ríos,Mariquina,beach_dune_share,0.2,percent,low
+14,14106,Los Ríos,Mariquina,beach_dune_share,0.0,percent,very low
+14,14106,Los Ríos,Mariquina,cropland_share,0.0,percent,very low
 14,14106,Los Ríos,Mariquina,grassland_share,0.0,percent,very low
-14,14106,Los Ríos,Mariquina,pasture_share,22.2,percent,medium
-14,14106,Los Ríos,Mariquina,primary_forest_share,20.8,percent,medium
-14,14106,Los Ríos,Mariquina,secondary_forest_share,14.8,percent,low
-14,14106,Los Ríos,Mariquina,shrubland_share,3.6,percent,low
-14,14106,Los Ríos,Mariquina,silviculture_share,36.8,percent,high
-14,14106,Los Ríos,Mariquina,urban_built_share,0.6,percent,low
-14,14106,Los Ríos,Mariquina,water_share,0.2,percent,very low
-14,14106,Los Ríos,Mariquina,wetland_share,0.8,percent,low
+14,14106,Los Ríos,Mariquina,ice_snow_share,0.0,percent,very low
+14,14106,Los Ríos,Mariquina,other_bare_share,0.0,percent,very low
+14,14106,Los Ríos,Mariquina,pasture_share,0.0,percent,very low
+14,14106,Los Ríos,Mariquina,primary_forest_share,0.0,percent,very low
+14,14106,Los Ríos,Mariquina,secondary_forest_share,0.0,percent,very low
+14,14106,Los Ríos,Mariquina,shrubland_share,0.0,percent,very low
+14,14106,Los Ríos,Mariquina,silviculture_share,0.0,percent,very low
+14,14106,Los Ríos,Mariquina,urban_built_share,0.0,percent,very low
+14,14106,Los Ríos,Mariquina,water_share,0.0,percent,very low
+14,14106,Los Ríos,Mariquina,wetland_share,0.0,percent,very low
 14,14107,Los Ríos,Paillaco,beach_dune_share,0.0,percent,very low
+14,14107,Los Ríos,Paillaco,cropland_share,0.0,percent,very low
 14,14107,Los Ríos,Paillaco,grassland_share,0.0,percent,very low
+14,14107,Los Ríos,Paillaco,ice_snow_share,0.0,percent,very low
+14,14107,Los Ríos,Paillaco,other_bare_share,0.0,percent,very low
 14,14107,Los Ríos,Paillaco,pasture_share,52.2,percent,very high
 14,14107,Los Ríos,Paillaco,primary_forest_share,9.3,percent,low
 14,14107,Los Ríos,Paillaco,secondary_forest_share,11.1,percent,low
@@ -81,11 +100,14 @@ region,comuna,region_nombre,comuna_nombre,attribute_type,attribute_value,attribu
 14,14108,Los Ríos,Panguipulli,secondary_forest_share,27.0,percent,medium
 14,14108,Los Ríos,Panguipulli,shrubland_share,0.9,percent,very low
 14,14108,Los Ríos,Panguipulli,silviculture_share,2.3,percent,low
-14,14108,Los Ríos,Panguipulli,urban_built_share,0.5,percent,very low
+14,14108,Los Ríos,Panguipulli,urban_built_share,0.5,percent,low
 14,14108,Los Ríos,Panguipulli,water_share,8.5,percent,high
 14,14108,Los Ríos,Panguipulli,wetland_share,0.3,percent,very low
 14,14201,Los Ríos,La Unión,beach_dune_share,0.1,percent,low
+14,14201,Los Ríos,La Unión,cropland_share,0.0,percent,very low
 14,14201,Los Ríos,La Unión,grassland_share,0.0,percent,very low
+14,14201,Los Ríos,La Unión,ice_snow_share,0.0,percent,very low
+14,14201,Los Ríos,La Unión,other_bare_share,0.0,percent,very low
 14,14201,Los Ríos,La Unión,pasture_share,26.8,percent,medium
 14,14201,Los Ríos,La Unión,primary_forest_share,25.2,percent,medium
 14,14201,Los Ríos,La Unión,secondary_forest_share,18.6,percent,medium
@@ -95,6 +117,7 @@ region,comuna,region_nombre,comuna_nombre,attribute_type,attribute_value,attribu
 14,14201,Los Ríos,La Unión,water_share,1.7,percent,low
 14,14201,Los Ríos,La Unión,wetland_share,0.3,percent,very low
 14,14202,Los Ríos,Futrono,beach_dune_share,0.0,percent,very low
+14,14202,Los Ríos,Futrono,cropland_share,0.0,percent,very low
 14,14202,Los Ríos,Futrono,grassland_share,0.2,percent,very low
 14,14202,Los Ríos,Futrono,ice_snow_share,1.5,percent,medium
 14,14202,Los Ríos,Futrono,other_bare_share,1.9,percent,very low
@@ -107,6 +130,7 @@ region,comuna,region_nombre,comuna_nombre,attribute_type,attribute_value,attribu
 14,14202,Los Ríos,Futrono,water_share,8.3,percent,high
 14,14202,Los Ríos,Futrono,wetland_share,0.1,percent,very low
 14,14203,Los Ríos,Lago Ranco,beach_dune_share,0.0,percent,very low
+14,14203,Los Ríos,Lago Ranco,cropland_share,0.0,percent,very low
 14,14203,Los Ríos,Lago Ranco,grassland_share,0.7,percent,very low
 14,14203,Los Ríos,Lago Ranco,ice_snow_share,1.5,percent,medium
 14,14203,Los Ríos,Lago Ranco,other_bare_share,9.5,percent,low
@@ -119,14 +143,15 @@ region,comuna,region_nombre,comuna_nombre,attribute_type,attribute_value,attribu
 14,14203,Los Ríos,Lago Ranco,water_share,17.4,percent,very high
 14,14203,Los Ríos,Lago Ranco,wetland_share,0.1,percent,very low
 14,14204,Los Ríos,Río Bueno,beach_dune_share,0.0,percent,very low
-14,14204,Los Ríos,Río Bueno,grassland_share,0.4,percent,very low
-14,14204,Los Ríos,Río Bueno,ice_snow_share,1.5,percent,medium
-14,14204,Los Ríos,Río Bueno,other_bare_share,5.1,percent,low
-14,14204,Los Ríos,Río Bueno,pasture_share,51.7,percent,very high
-14,14204,Los Ríos,Río Bueno,primary_forest_share,20.8,percent,medium
-14,14204,Los Ríos,Río Bueno,secondary_forest_share,14.2,percent,low
-14,14204,Los Ríos,Río Bueno,shrubland_share,1.2,percent,very low
-14,14204,Los Ríos,Río Bueno,silviculture_share,1.6,percent,very low
-14,14204,Los Ríos,Río Bueno,urban_built_share,0.3,percent,very low
-14,14204,Los Ríos,Río Bueno,water_share,3.0,percent,low
-14,14204,Los Ríos,Río Bueno,wetland_share,0.1,percent,very low
+14,14204,Los Ríos,Río Bueno,cropland_share,0.0,percent,very low
+14,14204,Los Ríos,Río Bueno,grassland_share,0.0,percent,very low
+14,14204,Los Ríos,Río Bueno,ice_snow_share,0.0,percent,very low
+14,14204,Los Ríos,Río Bueno,other_bare_share,0.0,percent,very low
+14,14204,Los Ríos,Río Bueno,pasture_share,0.0,percent,very low
+14,14204,Los Ríos,Río Bueno,primary_forest_share,0.0,percent,very low
+14,14204,Los Ríos,Río Bueno,secondary_forest_share,0.0,percent,very low
+14,14204,Los Ríos,Río Bueno,shrubland_share,0.0,percent,very low
+14,14204,Los Ríos,Río Bueno,silviculture_share,0.0,percent,very low
+14,14204,Los Ríos,Río Bueno,urban_built_share,0.0,percent,very low
+14,14204,Los Ríos,Río Bueno,water_share,0.0,percent,very low
+14,14204,Los Ríos,Río Bueno,wetland_share,0.0,percent,very low

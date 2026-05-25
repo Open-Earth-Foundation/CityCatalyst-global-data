@@ -58,8 +58,7 @@ Wind (on-shore & off-shore),environmental,biodiversity,C,energy_supply,(no scope
 Solar PV,environmental,biodiversity,C,energy_supply,(no scope-matching bridge),0,
 Bioenergy,environmental,biodiversity,B,energy_supply,(SR1.5 code B: no directional evidence),0,
 Wind (on-shore & off-shore),geophysical,physical_feasibility,B,energy_supply,(SR1.5 code B: no directional evidence),0,
-Solar PV,geophysical,physical_feasibility,C,energy_supply,silviculture_share,1,energy_supply
-Solar PV,geophysical,physical_feasibility,C,energy_supply,urban_built_share,1,energy_supply
+Solar PV,geophysical,physical_feasibility,C,energy_supply,(no scope-matching bridge),0,
 Bioenergy,geophysical,physical_feasibility,B,energy_supply,(SR1.5 code B: no directional evidence),0,
 Wind (on-shore & off-shore),geophysical,limited_land_use,B,energy_supply,(SR1.5 code B: no directional evidence),0,
 Solar PV,geophysical,limited_land_use,B,energy_supply,(SR1.5 code B: no directional evidence),0,
@@ -91,7 +90,7 @@ Power sector CCS,economic,distributional_effects,NE,energy_supply,(SR1.5 code NE
 Nuclear energy,economic,distributional_effects,NE,energy_supply,(SR1.5 code NE: no directional evidence),0,
 Power sector CCS,technological,simplicity,LE,energy_supply,(SR1.5 code LE: no directional evidence),0,
 Electricity storage,institutional,institutional_capacity,B,energy_supply,(SR1.5 code B: no directional evidence),0,
-Nuclear energy,institutional,institutional_capacity,A,energy_supply,employment_agriculture_utilities,1,energy_supply
+Nuclear energy,institutional,institutional_capacity,A,energy_supply,employment_electricity_gas,1,energy_supply
 Electricity storage,institutional,transparency_accountability,B,energy_supply,(SR1.5 code B: no directional evidence),0,
 Nuclear energy,institutional,transparency_accountability,A,energy_supply,(no scope-matching bridge),0,
 Electricity storage,socio_cultural,social_co_benefits,A,energy_supply,(no scope-matching bridge),0,
@@ -125,12 +124,9 @@ Power sector CCS,environmental,water_use,A,energy_supply,(no scope-matching brid
 Nuclear energy,environmental,water_use,B,energy_supply,(SR1.5 code B: no directional evidence),0,
 Power sector CCS,environmental,biodiversity,C,energy_supply,(no scope-matching bridge),0,
 Nuclear energy,environmental,biodiversity,C,energy_supply,(no scope-matching bridge),0,
-Electricity storage,geophysical,physical_feasibility,C,energy_supply,silviculture_share,1,energy_supply
-Electricity storage,geophysical,physical_feasibility,C,energy_supply,urban_built_share,1,energy_supply
-Power sector CCS,geophysical,physical_feasibility,C,energy_supply,silviculture_share,1,energy_supply
-Power sector CCS,geophysical,physical_feasibility,C,energy_supply,urban_built_share,1,energy_supply
-Nuclear energy,geophysical,physical_feasibility,C,energy_supply,silviculture_share,1,energy_supply
-Nuclear energy,geophysical,physical_feasibility,C,energy_supply,urban_built_share,1,energy_supply
+Electricity storage,geophysical,physical_feasibility,C,energy_supply,(no scope-matching bridge),0,
+Power sector CCS,geophysical,physical_feasibility,C,energy_supply,(no scope-matching bridge),0,
+Nuclear energy,geophysical,physical_feasibility,C,energy_supply,(no scope-matching bridge),0,
 Electricity storage,geophysical,limited_land_use,C,energy_supply,(no scope-matching bridge),0,
 Power sector CCS,geophysical,limited_land_use,C,energy_supply,(no scope-matching bridge),0,
 Nuclear energy,geophysical,limited_land_use,C,energy_supply,(no scope-matching bridge),0,
@@ -222,8 +218,8 @@ Land-use & urban planning,economic,employment_productivity,B,cross_cutting,(SR1.
 Electric cars and buses,economic,employment_productivity,B,transport,(SR1.5 code B: no directional evidence),0,
 Sharing schemes,economic,employment_productivity,B,transport,(SR1.5 code B: no directional evidence),0,
 Land-use & urban planning,technological,technical_scalability,C,cross_cutting,(no scope-matching bridge),0,
-Electric cars and buses,technological,technical_scalability,C,transport,fixed_internet_household_share,1,transport
-Sharing schemes,technological,technical_scalability,C,transport,fixed_internet_household_share,1,transport
+Electric cars and buses,technological,technical_scalability,C,transport,(no scope-matching bridge),0,
+Sharing schemes,technological,technical_scalability,C,transport,(no scope-matching bridge),0,
 Land-use & urban planning,technological,maturity,B,cross_cutting,(SR1.5 code B: no directional evidence),0,
 Electric cars and buses,technological,maturity,B,transport,(SR1.5 code B: no directional evidence),0,
 Sharing schemes,technological,maturity,B,transport,(SR1.5 code B: no directional evidence),0,
@@ -293,9 +289,9 @@ Public transport,economic,employment_productivity,C,transport,unemployment_rate,
 Public transport,economic,employment_productivity,C,transport,employment_in_transport_and_logistics,1,transport
 Non-motorised transport,economic,employment_productivity,B,transport,(SR1.5 code B: no directional evidence),0,
 Aviation & shipping,economic,employment_productivity,B,transport,(SR1.5 code B: no directional evidence),0,
-Public transport,technological,technical_scalability,C,transport,fixed_internet_household_share,1,transport
-Non-motorised transport,technological,technical_scalability,C,transport,fixed_internet_household_share,1,transport
-Aviation & shipping,technological,technical_scalability,C,transport,fixed_internet_household_share,1,transport
+Public transport,technological,technical_scalability,C,transport,(no scope-matching bridge),0,
+Non-motorised transport,technological,technical_scalability,C,transport,(no scope-matching bridge),0,
+Aviation & shipping,technological,technical_scalability,C,transport,(no scope-matching bridge),0,
 Public transport,technological,maturity,C,transport,(no scope-matching bridge),0,
 Non-motorised transport,technological,maturity,C,transport,(no scope-matching bridge),0,
 Aviation & shipping,technological,maturity,A,transport,(no scope-matching bridge),0,
@@ -374,7 +370,7 @@ Low/zero-energy buildings,economic,distributional_effects,C,buildings,renter_sha
 Smart grids,economic,employment_productivity,C,energy_supply,unemployment_rate,1,all
 Efficient appliances,economic,employment_productivity,B,buildings,(SR1.5 code B: no directional evidence),0,
 Low/zero-energy buildings,economic,employment_productivity,C,buildings,unemployment_rate,1,all
-Low/zero-energy buildings,economic,employment_productivity,C,buildings,industry_construction_employment,1,buildings
+Low/zero-energy buildings,economic,employment_productivity,C,buildings,employment_construction,1,buildings
 Smart grids,technological,technical_scalability,C,energy_supply,electricity_access_rate,1,energy_supply
 Smart grids,technological,technical_scalability,C,energy_supply,fixed_internet_household_share,1,energy_supply
 Efficient appliances,technological,technical_scalability,C,buildings,electricity_access_rate,1,buildings
@@ -390,7 +386,7 @@ Smart grids,technological,absence_of_risk,B,energy_supply,(SR1.5 code B: no dire
 Smart grids,institutional,political_acceptability,B,energy_supply,(SR1.5 code B: no directional evidence),0,
 Efficient appliances,institutional,political_acceptability,C,buildings,(no scope-matching bridge),0,
 Low/zero-energy buildings,institutional,political_acceptability,C,buildings,(no scope-matching bridge),0,
-Smart grids,institutional,institutional_capacity,A,energy_supply,employment_agriculture_utilities,1,energy_supply
+Smart grids,institutional,institutional_capacity,A,energy_supply,employment_electricity_gas,1,energy_supply
 Efficient appliances,institutional,institutional_capacity,B,buildings,(SR1.5 code B: no directional evidence),0,
 Low/zero-energy buildings,institutional,institutional_capacity,B,buildings,(SR1.5 code B: no directional evidence),0,
 Smart grids,institutional,transparency_accountability,A,energy_supply,(no scope-matching bridge),0,
@@ -422,8 +418,7 @@ Smart grids,environmental,water_use,C,energy_supply,(no scope-matching bridge),0
 Efficient appliances,environmental,water_use,C,buildings,(no scope-matching bridge),0,
 Low/zero-energy buildings,environmental,water_use,C,buildings,(no scope-matching bridge),0,
 Smart grids,environmental,biodiversity,C,energy_supply,(no scope-matching bridge),0,
-Smart grids,geophysical,physical_feasibility,C,energy_supply,silviculture_share,1,energy_supply
-Smart grids,geophysical,physical_feasibility,C,energy_supply,urban_built_share,1,energy_supply
+Smart grids,geophysical,physical_feasibility,C,energy_supply,(no scope-matching bridge),0,
 Efficient appliances,geophysical,physical_feasibility,C,buildings,urban_built_share,1,buildings
 Low/zero-energy buildings,geophysical,physical_feasibility,C,buildings,urban_built_share,1,buildings
 Low/zero-energy buildings,socio_cultural,public_acceptance,NE,buildings,(SR1.5 code NE: no directional evidence),0,
@@ -441,10 +436,10 @@ Industrial CCS,economic,cost-effectiveness,B,industrial,(SR1.5 code B: no direct
 Energy efficiency,economic,employment_productivity,B,industrial,(SR1.5 code B: no directional evidence),0,
 Bio-based & circularity,economic,employment_productivity,B,industrial,(SR1.5 code B: no directional evidence),0,
 Industrial CCS,economic,employment_productivity,B,industrial,(SR1.5 code B: no directional evidence),0,
-Energy efficiency,technological,technical_scalability,C,industrial,(no scope-matching bridge),0,
-Bio-based & circularity,technological,technical_scalability,C,industrial,(no scope-matching bridge),0,
-Electrification & hydrogen,technological,technical_scalability,C,industrial,(no scope-matching bridge),0,
-Industrial CCS,technological,technical_scalability,C,industrial,(no scope-matching bridge),0,
+Energy efficiency,technological,technical_scalability,C,industrial,employment_manufacturing,1,industrial
+Bio-based & circularity,technological,technical_scalability,C,industrial,employment_manufacturing,1,industrial
+Electrification & hydrogen,technological,technical_scalability,C,industrial,employment_manufacturing,1,industrial
+Industrial CCS,technological,technical_scalability,C,industrial,employment_manufacturing,1,industrial
 Energy efficiency,technological,maturity,C,industrial,(no scope-matching bridge),0,
 Bio-based & circularity,technological,maturity,B,industrial,(SR1.5 code B: no directional evidence),0,
 Electrification & hydrogen,technological,maturity,A,industrial,(no scope-matching bridge),0,
@@ -466,7 +461,7 @@ Energy efficiency,institutional,legal_admin_acceptability,C,industrial,(no scope
 Bio-based & circularity,institutional,legal_admin_acceptability,A,industrial,(no scope-matching bridge),0,
 Industrial CCS,institutional,legal_admin_acceptability,B,industrial,(SR1.5 code B: no directional evidence),0,
 Energy efficiency,institutional,institutional_capacity,B,industrial,(SR1.5 code B: no directional evidence),0,
-Bio-based & circularity,institutional,institutional_capacity,A,industrial,industry_construction_employment,1,industrial
+Bio-based & circularity,institutional,institutional_capacity,A,industrial,employment_manufacturing,1,industrial
 Industrial CCS,institutional,institutional_capacity,B,industrial,(SR1.5 code B: no directional evidence),0,
 Energy efficiency,socio_cultural,public_acceptance,C,industrial,(no scope-matching bridge),0,
 Bio-based & circularity,socio_cultural,public_acceptance,A,industrial,(no scope-matching bridge),0,
@@ -511,10 +506,10 @@ Electrification & hydrogen,environmental,biodiversity,NE,industrial,(SR1.5 code 
 Industrial CCS,environmental,biodiversity,LE,industrial,(SR1.5 code LE: no directional evidence),0,
 Electrification & hydrogen,geophysical,limited_land_use,NE,industrial,(SR1.5 code NE: no directional evidence),0,
 Industrial CCS,geophysical,limited_land_use,NE,industrial,(SR1.5 code NE: no directional evidence),0,
-Energy efficiency,geophysical,global_spread,C,industrial,urban_built_share,1,industrial
-Bio-based & circularity,geophysical,global_spread,C,industrial,urban_built_share,1,industrial
-Electrification & hydrogen,geophysical,global_spread,C,industrial,urban_built_share,1,industrial
-Industrial CCS,geophysical,global_spread,C,industrial,urban_built_share,1,industrial
+Energy efficiency,geophysical,global_spread,C,industrial,(no scope-matching bridge),0,
+Bio-based & circularity,geophysical,global_spread,C,industrial,(no scope-matching bridge),0,
+Electrification & hydrogen,geophysical,global_spread,C,industrial,(no scope-matching bridge),0,
+Industrial CCS,geophysical,global_spread,C,industrial,(no scope-matching bridge),0,
 BECCS,economic,cost-effectiveness,A,energy_supply,median_household_income,1,all
 BECCS,economic,cost-effectiveness,A,energy_supply,poverty_rate,-1,all
 DACCS,economic,cost-effectiveness,A,energy_supply,median_household_income,1,all
@@ -532,8 +527,7 @@ DACCS,socio_cultural,inclusiveness,NE,energy_supply,(SR1.5 code NE: no direction
 BECCS,socio_cultural,intergenerational_equity,NE,energy_supply,(SR1.5 code NE: no directional evidence),0,
 DACCS,socio_cultural,intergenerational_equity,NE,energy_supply,(SR1.5 code NE: no directional evidence),0,
 BECCS,geophysical,physical_feasibility,B,energy_supply,(SR1.5 code B: no directional evidence),0,
-DACCS,geophysical,physical_feasibility,C,energy_supply,silviculture_share,1,energy_supply
-DACCS,geophysical,physical_feasibility,C,energy_supply,urban_built_share,1,energy_supply
+DACCS,geophysical,physical_feasibility,C,energy_supply,(no scope-matching bridge),0,
 Afforestation & reforestation,economic,cost-effectiveness,C,nbs,median_household_income,1,all
 Afforestation & reforestation,economic,cost-effectiveness,C,nbs,poverty_rate,-1,all
 Soil carbon sequestration & biochar,economic,cost-effectiveness,C,nbs,median_household_income,1,all
@@ -588,7 +582,6 @@ Enhanced weathering,geophysical,physical_feasibility,C,nbs,urban_built_share,-1,
 Enhanced weathering,geophysical,physical_feasibility,C,nbs,wetland_share,1,nbs
 Enhanced weathering,geophysical,physical_feasibility,C,nbs,grassland_share,1,nbs
 Enhanced weathering,geophysical,physical_feasibility,C,nbs,shrubland_share,1,nbs
-Enhanced weathering,geophysical,physical_feasibility,C,nbs,silviculture_share,-1,nbs
 Afforestation & reforestation,socio_cultural,human_capabilities,LE,nbs,(SR1.5 code LE: no directional evidence),0,
 Soil carbon sequestration & biochar,socio_cultural,human_capabilities,NE,nbs,(SR1.5 code NE: no directional evidence),0,
 Enhanced weathering,socio_cultural,human_capabilities,NE,nbs,(SR1.5 code NE: no directional evidence),0,
@@ -596,9 +589,9 @@ Soil carbon sequestration & biochar,environmental,toxic_waste,NE,nbs,(SR1.5 code
 Enhanced weathering,environmental,toxic_waste,LE,nbs,(SR1.5 code LE: no directional evidence),0,
 Enhanced weathering,environmental,water_use,LE,nbs,(SR1.5 code LE: no directional evidence),0,
 Soil carbon sequestration & biochar,environmental,biodiversity,NE,nbs,(SR1.5 code NE: no directional evidence),0,
-Afforestation & reforestation,geophysical,limited_land_use,A,nbs,primary_forest_share,1,nbs
-Soil carbon sequestration & biochar,geophysical,limited_land_use,C,nbs,primary_forest_share,1,nbs
-Enhanced weathering,geophysical,limited_land_use,C,nbs,primary_forest_share,1,nbs
+Afforestation & reforestation,geophysical,limited_land_use,A,nbs,secondary_forest_share,1,nbs
+Soil carbon sequestration & biochar,geophysical,limited_land_use,C,nbs,secondary_forest_share,1,nbs
+Enhanced weathering,geophysical,limited_land_use,C,nbs,secondary_forest_share,1,nbs
 Afforestation & reforestation,geophysical,global_spread,B,nbs,(SR1.5 code B: no directional evidence),0,
 Soil carbon sequestration & biochar,geophysical,global_spread,B,nbs,(SR1.5 code B: no directional evidence),0,
 Enhanced weathering,geophysical,global_spread,C,nbs,(no scope-matching bridge),0,

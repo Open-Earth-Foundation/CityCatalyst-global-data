@@ -24,7 +24,7 @@ blocks:
   type: data_exporter
   upstream_blocks: []
   uuid: load_publisher_datasource_cl_casen
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: postgres
@@ -68,7 +68,7 @@ blocks:
   type: data_loader
   upstream_blocks: []
   uuid: load_cl_casen_from_s3
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     file_source:
@@ -87,7 +87,7 @@ blocks:
   upstream_blocks:
   - load_cl_casen_from_s3
   uuid: load_cl_casen_staging
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: postgres
@@ -114,7 +114,7 @@ blocks:
   - load_dataset_release_cl_casen
   - load_cl_casen_staging
   uuid: update_city_attribute_cl_casen
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: postgres
@@ -146,10 +146,10 @@ conditionals: []
 created_at: '2026-05-12 00:00:00.000000+00:00'
 data_integration: null
 description: 'Loads Chile CASEN 2022 comuna-level survey indicators from S3 (long
-  CSV aligned with cl-ine-censo shape). Joins OCHA COD-AB parquet for locodes.
-  Registers publisher_datasource and dataset_release, upserts modelled.city_attribute.
-  Canonical population remains on INE census or GHS pipelines — CASEN carries
-  socioeconomic indicators only.
+  CSV aligned with cl-ine-censo shape). Joins OCHA COD-AB parquet for locodes. Registers
+  publisher_datasource and dataset_release, upserts modelled.city_attribute. Canonical
+  population remains on INE census or GHS pipelines — CASEN carries socioeconomic
+  indicators only.
 
   '
 executor_config: {}
@@ -170,7 +170,7 @@ uuid: cl_casen_city_attribute
 variables:
   bucket_name: test-global-api
   casen_key: raw_data/cl-mdsfam/cl-casen/releases/2022/raw_data_cl_casen_2022.csv
-  dataset_name: Chile CASEN 2022 comunal indicators
+  dataset_name: Chile CASEN comunal indicators
   dataset_url: https://observatorio.ministeriodesarrolloysocial.gob.cl/encuesta-casen-2022
   datasource_name: cl-casen
   ocha_ab_key: raw_data/ocha-rolac/cl-ocha-ab/releases/2021/raw_data_cl_ocha_ab.parquet

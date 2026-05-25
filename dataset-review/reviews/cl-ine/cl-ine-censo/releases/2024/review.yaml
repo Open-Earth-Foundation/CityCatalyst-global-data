@@ -35,8 +35,13 @@ key_indicators_used:
   - home_ownership_rate
   - renter_share
   - electricity_access_rate
-  - employment_industry_construction
-  - employment_transport_logistics
+  - employment_agriculture_forestry
+  - employment_mining
+  - employment_manufacturing
+  - employment_electricity_gas
+  - employment_water_waste
+  - employment_construction
+  - employment_in_transport_and_logistics
   - population
   - mean_years_schooling
 
@@ -53,11 +58,31 @@ indicator_mapping:
     variable: p12_tenencia_viv
     file: hogares (households)
     logic: values 3,4 = rented (Arrendada con/sin contrato)
-  employment_industry_construction:
+  employment_agriculture_forestry:
     variable: cod_caenes
     file: personas (persons)
-    logic: values B,C,F = mining, manufacturing, construction; filter sit_fuerza_trabajo=1
-  employment_transport_logistics:
+    logic: value A = Agricultura, ganadería, silvicultura y pesca; filter sit_fuerza_trabajo=1
+  employment_mining:
+    variable: cod_caenes
+    file: personas (persons)
+    logic: value B = Explotación de minas y canteras; filter sit_fuerza_trabajo=1
+  employment_manufacturing:
+    variable: cod_caenes
+    file: personas (persons)
+    logic: value C = Industrias manufactureras; filter sit_fuerza_trabajo=1
+  employment_electricity_gas:
+    variable: cod_caenes
+    file: personas (persons)
+    logic: value D = Suministro de electricidad, gas, vapor y aire acondicionado; filter sit_fuerza_trabajo=1
+  employment_water_waste:
+    variable: cod_caenes
+    file: personas (persons)
+    logic: value E = Suministro de agua; evacuación de aguas residuales, gestión de desechos; filter sit_fuerza_trabajo=1
+  employment_construction:
+    variable: cod_caenes
+    file: personas (persons)
+    logic: value F = Construcción; filter sit_fuerza_trabajo=1
+  employment_in_transport_and_logistics:
     variable: cod_caenes
     file: personas (persons)
     logic: value H = Transporte y almacenamiento; filter sit_fuerza_trabajo=1

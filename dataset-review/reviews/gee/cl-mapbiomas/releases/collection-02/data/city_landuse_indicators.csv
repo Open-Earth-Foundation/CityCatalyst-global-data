@@ -1,6 +1,9 @@
 comuna_code,comuna_name,year,indicator_group,area_pct
 CL14101,Valdivia,2023,beach_dune,0.3
+CL14101,Valdivia,2023,cropland,0.0
 CL14101,Valdivia,2023,grassland,0.0
+CL14101,Valdivia,2023,ice_snow,0.0
+CL14101,Valdivia,2023,other_bare,0.0
 CL14101,Valdivia,2023,pasture,12.9
 CL14101,Valdivia,2023,primary_forest,25.2
 CL14101,Valdivia,2023,secondary_forest,16.6
@@ -10,7 +13,10 @@ CL14101,Valdivia,2023,urban_built,2.4
 CL14101,Valdivia,2023,water,0.7
 CL14101,Valdivia,2023,wetland,2.5
 CL14102,Corral,2023,beach_dune,0.1
+CL14102,Corral,2023,cropland,0.0
 CL14102,Corral,2023,grassland,0.0
+CL14102,Corral,2023,ice_snow,0.0
+CL14102,Corral,2023,other_bare,0.0
 CL14102,Corral,2023,pasture,2.6
 CL14102,Corral,2023,primary_forest,31.3
 CL14102,Corral,2023,secondary_forest,36.4
@@ -20,7 +26,10 @@ CL14102,Corral,2023,urban_built,0.1
 CL14102,Corral,2023,water,0.3
 CL14102,Corral,2023,wetland,0.7
 CL14103,Lanco,2023,beach_dune,0.0
+CL14103,Lanco,2023,cropland,0.0
 CL14103,Lanco,2023,grassland,0.0
+CL14103,Lanco,2023,ice_snow,0.0
+CL14103,Lanco,2023,other_bare,0.0
 CL14103,Lanco,2023,pasture,31.7
 CL14103,Lanco,2023,primary_forest,18.1
 CL14103,Lanco,2023,secondary_forest,15.1
@@ -30,6 +39,7 @@ CL14103,Lanco,2023,urban_built,0.8
 CL14103,Lanco,2023,water,0.0
 CL14103,Lanco,2023,wetland,0.2
 CL14104,Los Lagos,2023,beach_dune,0.0
+CL14104,Los Lagos,2023,cropland,0.0
 CL14104,Los Lagos,2023,grassland,0.1
 CL14104,Los Lagos,2023,ice_snow,0.5
 CL14104,Los Lagos,2023,other_bare,0.3
@@ -42,7 +52,10 @@ CL14104,Los Lagos,2023,urban_built,0.6
 CL14104,Los Lagos,2023,water,3.7
 CL14104,Los Lagos,2023,wetland,0.1
 CL14105,Máfil,2023,beach_dune,0.1
+CL14105,Máfil,2023,cropland,0.0
 CL14105,Máfil,2023,grassland,0.0
+CL14105,Máfil,2023,ice_snow,0.0
+CL14105,Máfil,2023,other_bare,0.0
 CL14105,Máfil,2023,pasture,36.2
 CL14105,Máfil,2023,primary_forest,11.1
 CL14105,Máfil,2023,secondary_forest,14.5
@@ -51,18 +64,24 @@ CL14105,Máfil,2023,silviculture,33.7
 CL14105,Máfil,2023,urban_built,0.6
 CL14105,Máfil,2023,water,0.3
 CL14105,Máfil,2023,wetland,0.3
-CL14106,Mariquina,2023,beach_dune,0.2
+CL14106,Mariquina,2023,beach_dune,0.0
+CL14106,Mariquina,2023,cropland,0.0
 CL14106,Mariquina,2023,grassland,0.0
-CL14106,Mariquina,2023,pasture,22.2
-CL14106,Mariquina,2023,primary_forest,20.8
-CL14106,Mariquina,2023,secondary_forest,14.8
-CL14106,Mariquina,2023,shrubland,3.6
-CL14106,Mariquina,2023,silviculture,36.8
-CL14106,Mariquina,2023,urban_built,0.6
-CL14106,Mariquina,2023,water,0.2
-CL14106,Mariquina,2023,wetland,0.8
+CL14106,Mariquina,2023,ice_snow,0.0
+CL14106,Mariquina,2023,other_bare,0.0
+CL14106,Mariquina,2023,pasture,0.0
+CL14106,Mariquina,2023,primary_forest,0.0
+CL14106,Mariquina,2023,secondary_forest,0.0
+CL14106,Mariquina,2023,shrubland,0.0
+CL14106,Mariquina,2023,silviculture,0.0
+CL14106,Mariquina,2023,urban_built,0.0
+CL14106,Mariquina,2023,water,0.0
+CL14106,Mariquina,2023,wetland,0.0
 CL14107,Paillaco,2023,beach_dune,0.0
+CL14107,Paillaco,2023,cropland,0.0
 CL14107,Paillaco,2023,grassland,0.0
+CL14107,Paillaco,2023,ice_snow,0.0
+CL14107,Paillaco,2023,other_bare,0.0
 CL14107,Paillaco,2023,pasture,52.2
 CL14107,Paillaco,2023,primary_forest,9.3
 CL14107,Paillaco,2023,secondary_forest,11.1
@@ -85,7 +104,10 @@ CL14108,Panguipulli,2023,urban_built,0.5
 CL14108,Panguipulli,2023,water,8.5
 CL14108,Panguipulli,2023,wetland,0.3
 CL14201,La Unión,2023,beach_dune,0.1
+CL14201,La Unión,2023,cropland,0.0
 CL14201,La Unión,2023,grassland,0.0
+CL14201,La Unión,2023,ice_snow,0.0
+CL14201,La Unión,2023,other_bare,0.0
 CL14201,La Unión,2023,pasture,26.8
 CL14201,La Unión,2023,primary_forest,25.2
 CL14201,La Unión,2023,secondary_forest,18.6
@@ -95,6 +117,7 @@ CL14201,La Unión,2023,urban_built,0.4
 CL14201,La Unión,2023,water,1.7
 CL14201,La Unión,2023,wetland,0.3
 CL14202,Futrono,2023,beach_dune,0.0
+CL14202,Futrono,2023,cropland,0.0
 CL14202,Futrono,2023,grassland,0.2
 CL14202,Futrono,2023,ice_snow,1.5
 CL14202,Futrono,2023,other_bare,1.9
@@ -107,6 +130,7 @@ CL14202,Futrono,2023,urban_built,0.1
 CL14202,Futrono,2023,water,8.3
 CL14202,Futrono,2023,wetland,0.1
 CL14203,Lago Ranco,2023,beach_dune,0.0
+CL14203,Lago Ranco,2023,cropland,0.0
 CL14203,Lago Ranco,2023,grassland,0.7
 CL14203,Lago Ranco,2023,ice_snow,1.5
 CL14203,Lago Ranco,2023,other_bare,9.5
@@ -119,14 +143,15 @@ CL14203,Lago Ranco,2023,urban_built,0.1
 CL14203,Lago Ranco,2023,water,17.4
 CL14203,Lago Ranco,2023,wetland,0.1
 CL14204,Río Bueno,2023,beach_dune,0.0
-CL14204,Río Bueno,2023,grassland,0.4
-CL14204,Río Bueno,2023,ice_snow,1.5
-CL14204,Río Bueno,2023,other_bare,5.1
-CL14204,Río Bueno,2023,pasture,51.7
-CL14204,Río Bueno,2023,primary_forest,20.8
-CL14204,Río Bueno,2023,secondary_forest,14.2
-CL14204,Río Bueno,2023,shrubland,1.2
-CL14204,Río Bueno,2023,silviculture,1.6
-CL14204,Río Bueno,2023,urban_built,0.3
-CL14204,Río Bueno,2023,water,3.0
-CL14204,Río Bueno,2023,wetland,0.1
+CL14204,Río Bueno,2023,cropland,0.0
+CL14204,Río Bueno,2023,grassland,0.0
+CL14204,Río Bueno,2023,ice_snow,0.0
+CL14204,Río Bueno,2023,other_bare,0.0
+CL14204,Río Bueno,2023,pasture,0.0
+CL14204,Río Bueno,2023,primary_forest,0.0
+CL14204,Río Bueno,2023,secondary_forest,0.0
+CL14204,Río Bueno,2023,shrubland,0.0
+CL14204,Río Bueno,2023,silviculture,0.0
+CL14204,Río Bueno,2023,urban_built,0.0
+CL14204,Río Bueno,2023,water,0.0
+CL14204,Río Bueno,2023,wetland,0.0
