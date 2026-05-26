@@ -14,10 +14,11 @@
   },
   "requestData": {
     "requestedLanguages": [
-      "en"
+      "en", 
+      "es"
     ],
     "topN": 20,
-    "createExplanations": false,
+    "createExplanations": true,
     "cityDataList": [
       {
         "locode": "CL RNC",
