@@ -33,11 +33,14 @@ other features before downstream weighted combination.
   **strong, literature-cited** relationships only.
 
 **Known scope:** the feature provides strongest discrimination on the
-Economic, Institutional, and Socio-cultural dimensions where the bridges
-are conceptually robust. Environmental and Geophysical dimensions inherit
-the SR1.5 prior largely unmodified (with one exception — population →
-limited_land_use for NBS). Downstream models should not expect this
-feature to differentiate cities on environmental/geophysical grounds.
+Economic, Socio-cultural, and (since the land-cover bridges were added)
+Geophysical dimensions, where the bridges are conceptually robust. The
+Environmental dimension is only partially active — `biodiversity` has
+bridges through forest- and wetland-cover shares, but air-pollution and
+toxic-waste channels still inherit the SR1.5 prior. The
+non-`institutional_capacity` slice of the Institutional dimension also
+inherits the prior. Downstream models should not expect this feature to
+differentiate cities on those still-prior-only channels.
 
 
 ## Background — what is this dataset?
@@ -123,46 +126,66 @@ this. AR7 WGIII follows ~2028.
 
 ## Files
 
-The `data/` subfolder contains the canonical inputs plus four files
-regenerated each time the notebook runs.
+Canonical inputs live in `data/`. A sample city-indicator input and the
+notebook's ranked-action outputs live in `sample/`. The notebook
+`scorer_simple.ipynb` sits at the release root.
 
 | File | Rows | Status | Purpose |
 |---|---|---|---|
-| `sample_chile_indicators.csv` | 16 | canonical | City socioeconomic indicators (one sample comuna, Colchane CL CNE). Long-table format with `attribute_type` × `attribute_category` quintiles. |
-| `actions_to_sr15_mapping.csv` | 102 | canonical | Each catalogue action mapped to one or more SR1.5 mitigation options. Includes `match_strength` and `mapping_rule`. |
-| `sr15_feasibility_per_cell.csv` | 547 | canonical | Per-indicator A/B/C/NE/LE codes extracted from SR1.5 Ch.4 SM Tables 4.SM.7–15. |
-| `sr15_indicator_to_city_indicator.csv` | 44 | canonical | Indicator-level bridge: 28 active bridges + 16 option-level constants. Each active row cites its literature lineage. |
-| `sr15_feasibility_dim_aggregate.csv` | 160 | regenerated | Dimension-level aggregate scores per (option × dimension) using SR1.5 Table 4.SM.5 formula. Bands: low / medium / high / insufficient_evidence. |
-| `sr15_cell_bridge.csv` | 592 | regenerated | Cell-level bridge: one row per (option × indicator × city_indicator), gated by the A/C rule. |
-| `sr15_to_city_mapping.csv` | 592 | regenerated | Slim consumer view with `sm_section`, `is_city_varying`, and `city_indicator_datasource` columns. |
-| `ranked_actions.csv` | 86 | regenerated | Example output — all 102 catalogue actions scored for Colchane. 86 rows because 16 actions are cross-cutting / no_match. |
-| `simple_scorer.ipynb` | n/a | engine | Self-contained Jupyter notebook (sits one level above `data/`); reads canonical files and regenerates the four derived CSVs. |
+| `data/actions_to_sr15_mapping.csv` | 102 | canonical | Each catalogue action mapped to one or more SR1.5 mitigation options. Includes `match_strength` and `mapping_rule`. |
+| `data/sr15_feasibility_per_cell.csv` | 547 | canonical | Per-indicator A/B/C/NE/LE codes extracted from SR1.5 Ch.4 SM Tables 4.SM.7–15. |
+| `data/sr15_indicator_to_city_indicator.csv` | 54 | canonical | Indicator-level bridge: 39 active bridges + 15 option-level constants. Each active row cites its literature lineage. |
+| `data/sr15_cell_bridge.csv` | 598 | regenerated | Cell-level bridge: one row per (option × dimension × indicator × city_indicator) once scope-matched bridges are attached. |
+| `data/scoring_chain.csv` | 1,900 | regenerated | Full provenance chain — one flat row per (action × option × dimension × global_indicator × city_indicator), with `interpretation` text. Backs the API. |
+| `data/api/feasibility-api.md` | n/a | canonical | Endpoint specification for `GET /api/v1/cities/{locode}/action-mitigation-feasibility-scores`. |
+| `data/api/example_response.json` | n/a | canonical | Full sample API payload mirroring the scoring-chain schema. |
+| `scorer_simple.ipynb` | n/a | engine | Self-contained Jupyter notebook (release root). Reads the three canonical inputs in `data/` and the city-indicators file in `sample/`, then regenerates the four derived CSVs above. |
+| `archive/actions_to_sr15_mapping.pre_single_primary.csv` | n/a | archive | Pre-single-primary snapshot of the action mapping, retained for diffing. |
 
 ## City indicators used by the strong bridges
 
-The 28 active bridges in `sr15_indicator_to_city_indicator.csv` reference
-15 distinct city indicators. All are extracted in the sample.
+The 39 active bridges in `sr15_indicator_to_city_indicator.csv` reference
+23 distinct city indicators. The sample `test_cities_indicators.csv`
+extracts all of them (plus `population` as context metadata).
 
-| City indicator | Datasource | Bridges to | # bridges |
-|---|---|---|---|
-| median_household_income | cl-casen 2022 | cost-effectiveness | 1 |
-| poverty_rate | cl-casen 2022 | cost-effectiveness, distributional_effects, inclusiveness | 3 |
-| unemployment_rate | cl-casen 2022 | employment_productivity | 1 |
-| public_transport_share | cl-casen 2022 | public_acceptance | 1 |
-| electricity_access_rate | cl-ine-censo 2024 | technical_scalability (buildings, energy_supply) | 2 |
-| home_ownership | cl-ine-censo 2024 | distributional_effects, public_acceptance | 2 |
-| renter_share | cl-ine-censo 2024 | distributional_effects, public_acceptance, inclusiveness | 3 |
-| industry_construction_employment | cl-ine-censo 2024 | employment_productivity, institutional_capacity (buildings + industrial) | 3 |
-| employment_in_transport_and_logistics | cl-ine-censo 2024 | employment_productivity, institutional_capacity (transport) | 2 |
-| mean_years_schooling | cl-ine-censo 2024 | human_capabilities | 1 |
-| literacy_rate | cl-ine-censo 2024 | human_capabilities | 1 |
-| disability_prevalence | cl-ine-censo 2024 | inclusiveness | 1 |
-| indigenous_identification_rate | cl-ine-censo 2024 | public_acceptance (nbs), inclusiveness | 2 |
-| fixed_internet_household_share | cl-ine-censo 2024 | technical_scalability (energy_supply, buildings, transport) | 3 |
-| employment_agriculture_utilities | cl-ine-censo 2024 | institutional_capacity (nbs, energy_supply) | 2 |
+**Socioeconomic indicators (Chile sources — cl-casen 2022, cl-ine-censo 2024):**
 
-`population` is also extracted in the sample but does not participate
-in any strong bridge — kept as context metadata only.
+| City indicator | Bridges to | # bridges |
+|---|---|---|
+| median_household_income | cost-effectiveness | 1 |
+| poverty_rate | cost-effectiveness, distributional_effects, inclusiveness | 3 |
+| unemployment_rate | employment_productivity | 1 |
+| employment_construction | employment_productivity | 1 |
+| employment_manufacturing | employment_productivity, institutional_capacity, technical_scalability | 3 |
+| employment_in_transport_and_logistics | employment_productivity, institutional_capacity | 2 |
+| employment_electricity_gas | institutional_capacity | 1 |
+| electricity_access_rate | technical_scalability | 2 |
+| fixed_internet_household_share | technical_scalability | 2 |
+| home_ownership | distributional_effects, public_acceptance | 2 |
+| renter_share | distributional_effects, public_acceptance | 2 |
+| mean_years_schooling | human_capabilities | 1 |
+| literacy_rate | human_capabilities | 1 |
+| disability_prevalence | inclusiveness | 1 |
+| indigenous_identification_rate | inclusiveness, public_acceptance | 2 |
+
+**Land-cover indicators (geospatial sources — ESA WorldCover / MapBiomas-style shares):**
+
+| City indicator | Bridges to | # bridges |
+|---|---|---|
+| urban_built_share | physical_feasibility | 4 |
+| cropland_share | physical_feasibility | 1 |
+| pasture_share | physical_feasibility | 1 |
+| grassland_share | physical_feasibility | 1 |
+| shrubland_share | physical_feasibility | 1 |
+| primary_forest_share | physical_feasibility, biodiversity | 2 |
+| secondary_forest_share | physical_feasibility, limited_land_use | 2 |
+| wetland_share | physical_feasibility, biodiversity | 2 |
+
+`population` and several auxiliary land-cover shares (e.g.
+`silviculture_share`, `water_share`, `beach_dune_share`, `ice_snow_share`,
+`other_bare_share`) are extracted in `test_cities_indicators.csv` for
+completeness but do not participate in any strong bridge — kept as
+context metadata only.
 
 **One signed-bridge tension worth noting.** `indigenous_identification_rate`
 appears with opposite signs in two SR1.5 channels: **+1** for
@@ -207,9 +230,12 @@ IPCC) and the **city-data adjustment** (local modification). Joins:
 
 ```
 action_id  →  sr15_options                       (actions_to_sr15_mapping.csv)
-sr15_option × dimension  →  avg_score, band      (sr15_feasibility_dim_aggregate.csv)
+sr15_option × dimension × indicator → A/B/C/...  (sr15_feasibility_per_cell.csv)
 sr15_option × indicator × city_indicator → sign  (sr15_cell_bridge.csv)
-city × city_indicator  →  city_value             (city's socioeconomic indicators)
+city × city_indicator  →  city_value             (sample/test_cities_indicators.csv)
+
+dimension AVG = SR1.5 Table 4.SM.5 formula applied to the per-cell codes
+                (computed inline by the notebook — no standalone CSV)
 
 score = mean over dimensions of
           (sr15_avg_score / 3.0)                ← SR1.5 prior
@@ -235,10 +261,14 @@ Under this rule:
 
 - Of the 547 cells in `sr15_feasibility_per_cell.csv`, **261 are A or C**
   (48%) and are eligible for city-data adjustment.
-- Of those, **112 currently have a scope-matched city bridge** that
+- Of those, **127 currently have a scope-matched city bridge** that
   provides active discrimination.
-- The remaining 149 A/C cells contribute to the score via the SR1.5 prior
-  only — no city adjustment.
+- The remaining 134 A/C cells contribute to the score via the SR1.5 prior
+  only — no city adjustment (they appear in `sr15_cell_bridge.csv` with
+  `city_indicator = '(no scope-matching bridge)'`).
+- The B/NE/LE cells appear in `sr15_cell_bridge.csv` with a placeholder
+  `city_indicator` value (e.g. `(SR1.5 code B: no directional evidence)`)
+  to keep the chain fully enumerated for the API view.
 
 This is methodologically conservative but defensible: every city-data
 adjustment in the system can be traced to an IPCC-published finding that
@@ -259,42 +289,62 @@ smaller but more defensible bridge set.
 
 **Dimensions that mostly retain SR1.5 prior unmodified**:
 
-- **Environmental**: bridges removed (cooking/heating fuel, garbage
-  collection were conceptually weak). Will need geospatial data
-  (NASA POWER, satellite air-quality) for v1.
-- **Geophysical**: all bridges retreated to option-level. Will need
-  geospatial data (Global Solar Atlas, ESA WorldCover, HDD/CDD) for v1.
+- **Environmental**: largely unchanged — only `biodiversity` has active
+  bridges (primary/secondary/wetland forest shares). Air-pollution and
+  toxic-waste channels still inherit the SR1.5 prior; closing them would
+  need satellite air-quality / pollutant-inventory data.
+- **Geophysical**: now partially active. `physical_feasibility` is the
+  largest single channel in the bridge set (11 dictionary rows → 17
+  cell-level bridges) and uses land-cover shares (`urban_built_share`,
+  `cropland_share`, `pasture_share`, `grassland_share`, `shrubland_share`,
+  `primary_forest_share`, `secondary_forest_share`, `wetland_share`)
+  sourced from ESA WorldCover / MapBiomas-style products. The
+  `limited_land_use`, `water_use`, and `limited_scarce_resources`
+  channels still inherit the prior.
 - **Institutional** (mostly): `political_acceptability`,
   `legal_admin_acceptability`, `transparency_accountability` all
   retreated to option-level. Better source would be a national
   governance index (WGI). Only `institutional_capacity` retains active
   city bridges (sector-employment proxies for buildings, transport,
-  industrial).
+  manufacturing, and electricity/gas utilities).
 
-Cities in the system are now discriminated primarily on the **Economic**
-and **Socio-cultural** dimensions, where the bridges are conceptually
-strong. The other dimensions inherit the SR1.5 prior largely unchanged.
+Cities in the system are now discriminated primarily on the **Economic**,
+**Socio-cultural**, and **Geophysical** dimensions, where the bridges are
+conceptually strong. **Environmental** (apart from `biodiversity`) and the
+non-capacity slice of **Institutional** inherit the SR1.5 prior largely
+unchanged.
 
 ### Active bridge count by SR1.5 indicator
+
+Counts of A/C cells with a scope-matched city bridge attached
+(`sr15_cell_bridge.csv` filtered to `sr15_code ∈ {A, C}` and a real
+`city_indicator`).
 
 | SR1.5 indicator | Active cell-level bridges |
 |---|---|
 | cost-effectiveness | 34 |
-| technical_scalability | 17 |
+| physical_feasibility | 17 |
+| technical_scalability | 16 |
 | inclusiveness | 15 |
 | human_capabilities | 14 |
 | distributional_effects | 9 |
 | employment_productivity | 9 |
 | institutional_capacity | 7 |
-| public_acceptance | 4 |
+| public_acceptance | 3 |
 | limited_land_use | 3 |
-| **Total** | **112** |
+| **Total** | **127** |
+
+The two new entries since the previous revision are `physical_feasibility`
+(land-cover shares feeding the Geophysical dimension) and an expanded
+`technical_scalability` channel; the `public_acceptance` count has tightened
+as `home_ownership` / `renter_share` bridges were re-scoped to
+`distributional_effects` where the literature is stronger.
 
 ## Match-strength distribution (102 actions)
 
-- **direct (58)** — action's profile clearly maps to one SR1.5 option (includes 3 smart-grid actions reclassified from `rule_eff_renewable` to `Smart grids` via description-keyword matching)
-- **partial (12)** — action maps but with a caveat (e.g., generic renewable channel averaged across Wind/Solar/Bioenergy)
-- **weak (16)** — mostly waste actions; SR1.5 covers only food waste, so general MSW gets the food-waste prior with low confidence. Also includes 3 actions reclassified as scale-mismatch with Bioenergy: household biodigesters (`icare_0033`), pilot BECCS (`ipcc_0068`), and CCS-via-biogas (`icare_0082`) — the SR1.5 Bioenergy option assesses utility-scale and overstates land-use/water barriers for small-scale applications
+- **direct (62)** — action's profile clearly maps to one SR1.5 option (includes 3 smart-grid actions reclassified from `rule_eff_renewable` to `Smart grids` via description-keyword matching)
+- **partial (10)** — action maps but with a caveat (e.g., generic renewable channel averaged across Wind/Solar/Bioenergy)
+- **weak (14)** — mostly waste actions; SR1.5 covers only food waste, so general MSW gets the food-waste prior with low confidence. Also includes 3 actions reclassified as scale-mismatch with Bioenergy: household biodigesters (`icare_0033`), pilot BECCS (`ipcc_0068`), and CCS-via-biogas (`icare_0082`) — the SR1.5 Bioenergy option assesses utility-scale and overstates land-use/water barriers for small-scale applications
 - **cross_cutting (15)** — enabling, financial-instrument, and regulatory-standard actions that have no specific SR1.5 option. Use AR6 WGIII Ch.17 enabling-conditions framework instead
 - **no_match (1)** — hydropower (not in SR1.5 Ch.4 SM mitigation options)
 
@@ -337,12 +387,14 @@ ranking model rather than a blocker to shipping this feature.
 5. **Urban NBS** (urban_green, wetland, peatland, fire_mgmt) are proxied
    onto Afforestation & reforestation with a weak-match flag.
 6. **Hydropower** is not in SR1.5 Ch.4 SM (1 action excluded).
-7. **Environmental and Geophysical dimensions are mostly inactive** —
-   only `limited_land_use` for NBS has a city bridge (population proxy).
-   The other env/geo cells inherit the SR1.5 prior unmodified. The
-   downstream model should not expect this feature to discriminate
-   cities on those grounds; geospatial sources (NASA POWER, Global
-   Solar Atlas, ESA WorldCover) would close this in v1+.
+7. **Environmental dimension still mostly inactive** — only
+   `biodiversity` now has city bridges (via primary/secondary/wetland
+   forest shares). `air_pollution`, `toxic_waste`, `social_co_benefits`,
+   and `absence_of_risk` channels still inherit the SR1.5 prior
+   unmodified. Geophysical was the major v1 gap and is now substantially
+   closed through the `physical_feasibility` land-cover bridges, but
+   `water_use` and `limited_scarce_resources` remain prior-only and would
+   benefit from hydrological / critical-minerals data in v1+.
 8. **Quintile bucketing** of city indicators loses signal — a city at
    the 21st percentile and one at the 39th percentile both score `low`
    (0.25 capacity). For relative ranking within a country this is
@@ -378,6 +430,13 @@ Implementing the Global Response. In: IPCC, *Global Warming of 1.5°C*
 (SR1.5), Chapter 4, Supplementary Material.
 https://www.ipcc.ch/sr15/
 
-## Migration from prior socioeconomic mock
+## API contract
 
-See [`data/api/change_log.md`](data/api/change_log.md) for the full comparison: replacement of the 510-row `action_socioeconomic` placeholder CSV, SR1.5 scoring methodology, and how `action_indicator_feasibility_summary.json` / `action_indicator_feasibility_detail.json` differ from HIAP-MEED `socioeconomicIndicators` in `actions_api_mock.json`.
+The endpoint specification for the consumer-facing API
+(`GET /api/v1/cities/{locode}/action-mitigation-feasibility-scores`) lives
+at [`data/api/feasibility-api.md`](data/api/feasibility-api.md), with a
+full sample payload at
+[`data/api/example_response.json`](data/api/example_response.json). Both
+mirror the schema in `data/scoring_chain.csv`. The API replaces the
+earlier 510-row `action_socioeconomic` placeholder CSV and the
+HIAP-MEED `socioeconomicIndicators` block in `actions_api_mock.json`.

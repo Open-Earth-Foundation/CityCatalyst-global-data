@@ -12,7 +12,7 @@ Landing context for the full Special Report: [https://www.ipcc.ch/sr15/](https:/
 ## Why we use it
 
 - **Authoritative** global synthesis of feasibility for discrete mitigation options (as of the SR1.5 cycle), with per-indicator **A / B / C** (and related) codings traceable to the published tables.
-- **Stable priors** for action- and city-level workflows that need a literature-backed baseline before local data are applied (see `dataset-review/reviews/oef/oef-action-indicators/sr15_priors/`).
+- **Stable priors** for action- and city-level workflows that need a literature-backed baseline before local data are applied (extracted CSVs and the scoring engine live in `releases/2018/`).
 - **Explicit provenance** for HIAP / MEED–style scoring: every derived cell should map back to a table and row in this document.
 
 ## Spatial and temporal scope
@@ -24,10 +24,14 @@ Landing context for the full Special Report: [https://www.ipcc.ch/sr15/](https:/
 
 | Path | Purpose |
 |------|---------|
-| `releases/2018/` | Release folder for the 2018 SR1.5 cycle; may hold a **local copy** of the PDF (same filename as the IPCC asset above) for offline review, plus `review.md` describing how extracted priors relate to the SM tables. |
-| `releases/2018/review.md` | Internal methodology and design notes (feasibility dimensions, aggregation formula, bridge rules, limitations). |
+| `releases/2018/review.md` | Methodology and design notes — feasibility dimensions, aggregation formula, A/C bridging rule, known limitations. |
+| `releases/2018/scorer_simple.ipynb` | Self-contained scoring engine. Reads canonical inputs from `data/` and a city-indicator file from `sample/`, then regenerates the derived CSVs. |
+| `releases/2018/data/` | Canonical inputs extracted from the SR1.5 SM PDF (`actions_to_sr15_mapping.csv`, `sr15_feasibility_per_cell.csv`, `sr15_indicator_to_city_indicator.csv`) plus notebook-regenerated artifacts (`sr15_cell_bridge.csv`, `scoring_chain.csv`). |
+| `releases/2018/data/api/` | API contract — `feasibility-api.md` (endpoint spec) and `example_response.json` (full sample payload) for the city-action mitigation feasibility scores endpoint that hiap-meed consumes. |
+| `releases/2018/sample/` | Sample city-indicator inputs (12 Chilean comunas in `test_cities_indicators.csv`) and the ranked-action outputs the notebook writes (`test_cities_ranked_actions_by_locode.csv`, `test_cities_ranked_actions_per_cell.csv`, `scoring_chain_full.csv`). |
+| `releases/2018/archive/` | Snapshots of earlier mapping versions kept for diffing (e.g. `actions_to_sr15_mapping.pre_single_primary.csv`). |
 
-Structured CSV extracts and notebooks built from this PDF live under **`oef-action-indicators/sr15_priors/`** (separate dataset review) so they can evolve with the action catalogue without duplicating the IPCC source file.
+The PDF itself is not redistributed in this folder — fetch it from the IPCC link above. Bridge tables and the notebook live here (rather than in a separate `oef-action-indicators` review) so the action-catalogue mapping evolves alongside the IPCC extracts in one place.
 
 ## Citation
 
