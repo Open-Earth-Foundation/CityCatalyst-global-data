@@ -25,7 +25,7 @@ Authoritative checklist lives in `engineering-standards/definition-of-done.md`. 
 - [ ] Catalog entry exists in `catalog/index.yaml`, `production_approved: true`, `pipeline_name` and `data_quality` non-null.
 - [ ] `dataset-review/reviews/<publisher>/<dataset>/README.md` mentions the pipeline.
 - [ ] Notion methodology page linked from `urls` in catalog.
-- [ ] Peer review in PR (CTO sign-off).
+- [ ] Peer review in PR (core-team sign-off).
 
 ### B. New release of existing pipeline
 

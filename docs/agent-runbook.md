@@ -15,7 +15,7 @@ The curated list of tasks an autonomous agent (Cursor agent, agentic-coder, Clou
 
 - [ ] **Update `README.md`** to reference `knowledge-base/` instead of `domain-knowledge/`. Skill: `docs-after-change`.
 - [ ] **Fix typo** in `knowledge-base/catalog/index.yaml`: `items/climate-projec.md` → `items/climate-project.md`.
-- [ ] **Fill stubbed knowledge-base topics** — `topics/glossary.md`, `topics/gpc-framework.md` are empty. Seed with 2–3 paragraphs each.
+- [ ] **Audit knowledge-base topics** — sweep `knowledge-base/topics/` for stale or thin pages, expand or cross-link as needed. Skill: `repo-doc-audit`.
 - [ ] **Audit `cc-mage/requirements.txt`** — list deps actually imported by blocks (boto3, requests, sqlalchemy) that aren't pinned. Add them with current versions.
 - [ ] **Fill `metadata.yaml.description`** for any pipeline where it is `null`. Skill: `mage-pipelines.mdc`.
 - [ ] **Add CI step** to fail on `metadata.yaml.description: null` (lint over `cc-mage/pipelines/**`).

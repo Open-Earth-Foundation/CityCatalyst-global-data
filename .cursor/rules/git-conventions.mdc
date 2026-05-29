@@ -52,5 +52,5 @@ Use the cross-repo `pull-request-standards` skill (mirrored in `.cursor/skills/`
 ## Merge policy
 
 - **Pipelines, catalog, knowledge-base, code** — any tech-team member can merge after standard review (≥ 1 approval, CI green).
-- **Agentic + standards foundation** (`AGENTS.md`, `.cursor/rules/`, `.cursor/skills/`, `engineering-standards/`, `docs/agent-runbook.md`) — **CTO is the curator**. PRs touching these need CTO sign-off; after approval, anyone in the tech team merges.
+- **Agentic + standards foundation** (`AGENTS.md`, `.cursor/rules/`, `.cursor/skills/`, `engineering-standards/`, `docs/agent-runbook.md`) — curated by the **core engineering team**. PRs touching these need core-team sign-off; after approval, anyone in the tech team merges.
 - **Agents** push branches and stop. They never merge their own PRs and don't open PRs unless explicitly told.

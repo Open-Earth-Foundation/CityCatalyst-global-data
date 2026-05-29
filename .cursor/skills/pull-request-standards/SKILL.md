@@ -44,5 +44,5 @@ Assume the branch is already pushed when the user asks to create a PR. Do **not*
 ## Who merges
 
 - **Pipelines / catalog / code** — any tech-team member after standard review (≥1 approval, CI green).
-- **Agentic + standards foundation** (`AGENTS.md`, `.cursor/rules/`, `.cursor/skills/`, `engineering-standards/`, `docs/agent-runbook.md`) — CTO sign-off required; then anyone merges.
+- **Agentic + standards foundation** (`AGENTS.md`, `.cursor/rules/`, `.cursor/skills/`, `engineering-standards/`, `docs/agent-runbook.md`) — core-team sign-off required; then anyone merges.
 - **Agents** never merge their own PRs and do not open PRs unless explicitly told to in the active task. If asked to open the PR, use `gh pr create --base develop`.

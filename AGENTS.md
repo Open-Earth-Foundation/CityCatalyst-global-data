@@ -55,7 +55,7 @@ When in doubt about which pattern a pipeline uses, **read the block code** — `
 - **Do not commit secrets.** AWS keys, DB passwords, `*.env`, `credentials*.json` → hard stop.
 - **Do not flip `production_approved: true`** without running the `definition-of-done-check` skill first.
 - **Do not introduce new deps** in `cc-mage/requirements.txt` without justification.
-- **Do not modify `AGENTS.md`, `.cursor/rules/`, `.cursor/skills/`, `engineering-standards/`, or `docs/agent-runbook.md` without CTO review.** These are the agentic + standards foundation; the CTO is the curator. (Product / pipeline code merges are unaffected — any tech-team member can merge as today.)
+- **Do not modify `AGENTS.md`, `.cursor/rules/`, `.cursor/skills/`, `engineering-standards/`, or `docs/agent-runbook.md` without core-team review.** These are the agentic + standards foundation, curated by the core engineering team. (Product / pipeline code merges are unaffected — any tech-team member can merge as today.)
 
 ## What you must always do
 
@@ -134,7 +134,7 @@ Topical notes for the data domain live in `knowledge-base/topics/`. Some are sti
 createuser -s ccglobal && createdb -O ccglobal ccglobal
 
 # Local Mage stack
-cp dev.env .env       # ask the CTO if you need real secrets in io_config.yaml
+cp dev.env .env       # ask the team in #engineering for real secrets in io_config.yaml
 docker compose up     # http://localhost:6789
 ```
 
