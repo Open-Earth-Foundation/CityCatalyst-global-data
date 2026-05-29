@@ -1,0 +1,37 @@
+---
+description: Security baseline — secrets, AWS credentials, DB connection strings.
+alwaysApply: true
+---
+
+# Security Baseline — global-data
+
+## Secrets
+
+- **Never commit credentials.** Anything matching `*.env`, `credentials*.json`, `*key*.pem`, AWS keys (`AKIA…`), DB strings with passwords inline → hard stop.
+- `dev.env` is committed and **must not contain real secrets**. Use placeholders. Real values go in `.env` (gitignored) and `cc-mage/io_config.yaml` overrides.
+- AWS credentials go through the standard `~/.aws/credentials` profile — never inline in Mage blocks.
+
+## DB connections
+
+- Connection strings live in `io_config.yaml` (gitignored values) and are referenced by alias in Mage blocks (`config_profile`).
+- For destructive SQL (DROP, TRUNCATE, DELETE without WHERE), require a comment block explaining intent + a `metadata.yaml` `variable` to gate it.
+
+## SQL hygiene
+
+- Parameterise inputs (`%(var)s` for psycopg2-style or Mage variables). Never concatenate user input into SQL.
+- For `modelled.*` writes, prefer `INSERT … ON CONFLICT DO UPDATE` over `DELETE + INSERT`. See `mage-blocks-sql.mdc`.
+
+## S3
+
+- Buckets in dev: `test-global-api`. Buckets in prod: `global-api` (or as documented).
+- Listings via `boto3` should not enumerate the entire bucket — paginate and prefix-filter.
+- File names sanitise (drop spaces, lowercase) when uploading raw data — see `s3-upload-raw-data` skill.
+
+## Logging
+
+- Never log a full row containing PII (publisher contact info, citizen-level data). Aggregate counts only.
+- Mage block `print()` is OK for development; for production-relevant logs use `logging` (`logger = logging.getLogger(__name__)`).
+
+## Pipeline test data
+
+- `metadata.yaml` `variables.bucket_name` defaults to `test-global-api` (dev). Production overrides via the env-specific run config — never hardcode `global-api` in code.

@@ -1,0 +1,68 @@
+---
+description: dataset-review/ and catalog/index.yaml conventions — releases, status fields, completeness.
+globs: dataset-review/**/*.yaml,dataset-review/**/*.yml,dataset-review/**/*.md
+alwaysApply: false
+---
+
+# Dataset Review & Catalog
+
+`dataset-review/` is **the registry**. Every dataset that touches our pipelines exists here, with a per-release folder and a row in `catalog/index.yaml`.
+
+## Per-publisher layout
+
+```
+dataset-review/
+├── catalog/index.yaml                       # registry, see below
+├── collections/collection.yaml              # thematic groupings
+└── reviews/<publisher>/<dataset-id>/
+    ├── README.md                             # human-readable summary
+    └── releases/<version>/
+        ├── review.yaml                       # structured per-release review
+        └── sample/                            # optional sample data
+```
+
+## `catalog/index.yaml` — required fields per release
+
+```yaml
+datasets:
+  - id: <publisher>-<dataset-slug>
+    name: Human readable name
+    publisher: <publisher_short_name>
+    coverage: { type: country|global|city, value: <value> }
+    themes: [climate, energy, ...]
+    update_frequency: annual|quarterly|monthly|adhoc
+    priority: high|medium|low
+    releases:
+      - version: '2026'
+        production_approved: false
+        is_latest: true
+        license: { spdx: '...', url: '...' }
+        pipeline_name: ghgi_<...>           # MUST be present once production_approved=true
+        data_quality:                        # MUST be present once production_approved=true
+          layer_2_passed: true
+          layer_3_passed: pending
+          notes: '...'
+        urls: { source: '...', methodology: '...' }
+```
+
+**Hard rule:** `production_approved: true` → `pipeline_name` and `data_quality` MUST be filled. CI / agents flag this drift.
+
+## When you add a new release
+
+Use the **`add-dataset-release`** skill.
+
+## When you add a new publisher / dataset
+
+Use the **`add-publisher`** skill.
+
+## `review.yaml` per release
+
+Structured per-release notes covering: source format, themes, key attributes, integration recommendation (which pipeline pattern), production-readiness (`production_ready: yes|pending_validation|no`).
+
+## Old releases — preserve
+
+Do **not** delete old `releases/<v>/` folders. When updating, add a new `<v+1>` alongside and flip `is_latest`.
+
+## Catalog completeness check
+
+Run the `definition-of-done-check` skill to validate `catalog/index.yaml` against the rules above before opening a PR.

@@ -1,0 +1,103 @@
+---
+description: Python block conventions — data_loader, transformer, data_exporter shapes.
+globs: cc-mage/**/data_loaders/**/*.py,cc-mage/**/transformers/**/*.py,cc-mage/**/data_exporters/**/*.py
+alwaysApply: false
+---
+
+# Python Block Conventions
+
+## Block shape
+
+```python
+"""<pipeline_name> / <block_name>
+
+Brief: what this block does in 1 sentence.
+
+Inputs:  pandas.DataFrame from <upstream_block>
+Outputs: pandas.DataFrame consumed by <downstream_block>
+"""
+
+from typing import Optional
+import pandas as pd
+
+if 'transformer' not in globals():
+    from mage_ai.data_preparation.decorators import transformer
+if 'test' not in globals():
+    from mage_ai.data_preparation.decorators import test
+
+
+@transformer
+def transform(df: pd.DataFrame, *args, **kwargs) -> pd.DataFrame:
+    """Transform <input> into <output>.
+
+    See the docstring at top of file for full input/output spec.
+    """
+    # ... pure DataFrame logic; no I/O here
+
+    return df
+
+
+@test
+def test_output_schema(output, *args) -> None:
+    """Output must have the canonical columns and a positive row count."""
+    expected = {"locode", "year", "gas", "value", "gpc_ref"}
+    missing = expected - set(output.columns)
+    assert not missing, f"missing columns: {missing}"
+    assert len(output) > 0, "empty output — upstream filter too aggressive?"
+```
+
+## I/O is data_loader / data_exporter only
+
+- `transformer` blocks must be **pure**: in → out, no S3, no DB, no `os.environ` reads.
+- I/O happens in `data_loader` (read) and `data_exporter` (write) blocks. They are the only blocks allowed to import `boto3` or `mage_ai.io.*`.
+
+## Tests are mandatory beyond `assert output is not None`
+
+The default Mage `@test` template asserts non-null. **That is not enough.** At minimum:
+
+- Schema check: column names + dtypes match expected.
+- Row count > 0 (or document why empty is allowed).
+- Primary-key-ish uniqueness check: e.g. `(locode, year, gas)` is unique.
+- Identity check: `actor_id` values look like UN/LOCODE strings (regex `^[A-Z]{2} [A-Z0-9]{3}$`).
+- Plausibility: numeric ranges (e.g. emissions are non-negative).
+
+These are **Layer 2** checks per `engineering-standards/data-quality-and-validation.md`.
+
+## Variables come from kwargs
+
+`metadata.yaml.variables` are passed via `kwargs`:
+
+```python
+@data_loader
+def load(*args, **kwargs) -> pd.DataFrame:
+    bucket = kwargs.get("bucket_name", "test-global-api")
+    source_path = kwargs["source_path"]
+    # ...
+```
+
+Never read from `os.environ` directly inside a block — it breaks when running through Mage's UI.
+
+## boto3 etiquette
+
+- One client per block (`s3 = boto3.client("s3")` once at top of function).
+- Use `paginator` for listings.
+- For large files, use `get_object()['Body'].read()` only if the file is small. Otherwise stream to disk and read with pandas.
+
+## Logging
+
+```python
+import logging
+logger = logging.getLogger(__name__)
+
+logger.info("loaded %d rows from %s", len(df), source_path)
+```
+
+Don't `print()` for production-meaningful logs.
+
+## Anti-patterns
+
+- `pd.read_csv(s3_url)` with no error handling.
+- Mutating an upstream DataFrame in place — make a `.copy()` first.
+- `assert output is not None` as the only test.
+- Reading credentials from anywhere other than the documented config layer.
+- Long Jupyter-style "exploration" left in the block code.

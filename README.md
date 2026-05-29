@@ -28,13 +28,15 @@ engineering-standards/    Team design principles and conventions
   data-quality-and-validation.md
   documentation-and-metadata.md
 
-domain-knowledge/         Shared domain definitions and reference materials
-  catalog/                Domain dataset catalog and metadata
+knowledge-base/           Shared domain definitions and reference materials
+  catalog/                Topic catalog and metadata
   collections/            Curated thematic groupings
   topics/                 Topic references and glossary pages
 
 ARCHITECTURE.md           Technical reference — data stages, DB schema, pipeline block flow
-AGENTS.md                 Agent guardrails and repository-specific constraints
+AGENTS.md                 Agent brief — read first
+.cursor/                  Cursor rules + skills (read by Cursor, agentic-coder, etc.)
+docs/agent-runbook.md     Curated tickets safe for autonomous agent runs
 docker-compose.yml        Local orchestration for Mage + dependencies
 dev.env                   Example local environment configuration
 ```
@@ -42,6 +44,8 @@ dev.env                   Example local environment configuration
 For the full technical architecture (S3 stages, database schema, Mage block structure) see [`ARCHITECTURE.md`](./ARCHITECTURE.md).
 
 For team conventions and design principles see [`engineering-standards/`](./engineering-standards/).
+
+For agent / AI usage (Cursor, agentic-coder, Cloud Agents) start with [`AGENTS.md`](./AGENTS.md).
 
 ---
 
