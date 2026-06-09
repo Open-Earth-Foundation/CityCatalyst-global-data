@@ -1,0 +1,10 @@
+segment,baseline_mtco2e,gpc_ref,notes
+LDV_onroad_petrol,4.5,II.1,light-duty petrol (carved from on-road)
+HDV_onroad_diesel,3.0,II.1,heavy-duty + bus diesel
+buildings,5.5,I.1+I.2,residential + commercial (direct + indirect)
+buildings_electricity,3.3,I.1+I.2 scope2,electricity portion of buildings
+industry_energy,4.5,I.3,industrial fuel combustion (direct)
+industry_electricity,3.0,I.3 scope2,industrial electricity (grid-adjustable)
+industry_process,1.5,IV,IPPU process emissions (BASIC+)
+solid_waste,1.5,III.1,
+wastewater,0.5,III.2,

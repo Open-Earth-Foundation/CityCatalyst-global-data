@@ -743,3 +743,321 @@ datasets:
         granularity: 0.5deg_lat_0.625deg_lon_point
         freshness: 1981_to_nrt
         accessibility: keyless_rest_api
+
+- id: cl-mma-fondos
+  name: MMA competitive environmental funds (FPA / FPR)
+  dataset_url: https://fondos.mma.gob.cl/
+  publisher:
+    id: cl-mma
+    name: Ministerio del Medio Ambiente (Chile)
+    url: https://mma.gob.cl/
+  description: >
+    Inventory of MMA competitive environmental funds (Fondo de Protección Ambiental,
+    Fondo para el Reciclaje, Recambio de Calefactores) for climate-finance screening.
+    55 fund lines (current cycle + 2020-2025 archive) with eligibility, amount, dates,
+    GPC sector, and a recurrence classification (annual / sporadic / one-off).
+  coverage:
+    geography: country
+    countries: [CL]
+    spatial_levels: [country, region, comuna]
+  themes:
+    - climate_finance
+    - waste
+    - biodiversity
+    - environment
+  update_frequency: annual_cycle
+  typical_frequency_years: 1
+  priority: medium
+  releases:
+    - version: "v1"
+      version_number: 1
+      source_url: https://fondos.mma.gob.cl/
+      released_at: null
+      retrieved_at: "2026-06-08"
+      retrieval_method: web_extraction
+      api_endpoint: null
+      path: "reviews/cl-mma/cl-mma-fondos/releases/v1"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: reviews/cl-mma/cl-mma-fondos/releases/v1/review.md
+      license:
+        id: cl-public-info
+        name: Public information (Ley de Transparencia 20.285); no explicit reuse licence
+        url: https://fondos.mma.gob.cl/
+        commercial_use: null
+        note: >
+          No restrictive ToU; programme rules are public Resoluciones Exentas. No
+          affirmative open licence — attribute to MMA; confirm before bulk redistribution.
+      data_quality:
+        documentation: published
+        methodology: web_extraction_two_tier
+        coverage: mma_environmental_funds
+        granularity: fund_line
+        freshness: "2026_cycle_plus_2020_2025_archive"
+        accessibility: server_rendered_html
+
+- id: cl-minenergia-fondos
+  name: Min. Energía municipal energy programmes
+  dataset_url: https://www.agenciase.org/convocatorias/
+  publisher:
+    id: cl-minenergia
+    name: Ministerio de Energía / Agencia de Sostenibilidad Energética (Chile)
+    url: https://energia.gob.cl/
+  description: >
+    Municipally-relevant energy-transition programmes (Comuna Energética, Casa Solar,
+    Parque Solar Comunitario, FAE, Mejor Escuela, Asistencia Técnica Municipios).
+    Hand-curated; mostly standing/rolling programmes, not annual concursos.
+  coverage:
+    geography: country
+    countries: [CL]
+    spatial_levels: [country, comuna]
+  themes:
+    - climate_finance
+    - energy
+    - renewables
+    - energy_efficiency
+  update_frequency: rolling
+  typical_frequency_years: 0
+  priority: medium
+  releases:
+    - version: "v1"
+      version_number: 1
+      source_url: https://www.agenciase.org/convocatorias/
+      released_at: null
+      retrieved_at: "2026-06-08"
+      retrieval_method: manual_curation
+      api_endpoint: null
+      path: "reviews/cl-minenergia/cl-minenergia-fondos/releases/v1"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: reviews/cl-minenergia/cl-minenergia-fondos/releases/v1/review.md
+      license:
+        id: cl-public-info-mixed
+        name: Public info (Min. Energía) + AgenciaSE foundation (all-rights-reserved)
+        url: https://www.agenciase.org/politicas-de-privacidad/
+        commercial_use: null
+        note: >
+          AgenciaSE is a private-law foundation with an all-rights-reserved notice but
+          is Transparency-subject; capture facts with attribution, confirm before reuse at scale.
+      data_quality:
+        documentation: published
+        methodology: manual_curation
+        coverage: municipal_energy_programmes
+        granularity: programme
+        freshness: "2026_snapshot"
+        accessibility: scattered_microsites
+
+- id: cl-subdere-fondos
+  name: SUBDERE municipal investment funds (PMU / PMB / PMR / FRC)
+  dataset_url: https://www.subdere.gov.cl/programas
+  publisher:
+    id: cl-subdere
+    name: Subsecretaría de Desarrollo Regional y Administrativo (Chile)
+    url: https://www.subdere.gov.cl/
+  description: >
+    Climate-relevant SUBDERE municipal investment programmes (PMU, PMB, Prevención y
+    Mitigación de Riesgos, Fondo de Recuperación de Ciudades). Broad municipal funds;
+    municipalities apply directly, mostly rolling/continuous.
+  coverage:
+    geography: country
+    countries: [CL]
+    spatial_levels: [country, comuna]
+  themes:
+    - climate_finance
+    - municipal_investment
+    - water
+    - waste
+  update_frequency: rolling
+  typical_frequency_years: 0
+  priority: medium
+  releases:
+    - version: "v1"
+      version_number: 1
+      source_url: https://www.subdere.gov.cl/programas
+      released_at: null
+      retrieved_at: "2026-06-08"
+      retrieval_method: manual_curation
+      api_endpoint: null
+      path: "reviews/cl-subdere/cl-subdere-fondos/releases/v1"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: reviews/cl-subdere/cl-subdere-fondos/releases/v1/review.md
+      license:
+        id: cl-public-info
+        name: Public information (Ley de Transparencia 20.285); no explicit reuse licence
+        url: https://www.subdere.gov.cl/
+        commercial_use: null
+        note: "Public-info; attribute to SUBDERE; confirm before bulk redistribution. Note: PMU/PMB are broad funds (down-weight in scoring)."
+      data_quality:
+        documentation: published
+        methodology: manual_curation
+        coverage: municipal_investment_funds
+        granularity: programme
+        freshness: "2026_snapshot"
+        accessibility: server_rendered_html_slow
+
+- id: cl-minvu-fondos
+  name: MINVU urban / green-space funds (Espacios Públicos / Parques)
+  dataset_url: https://www.minvu.gob.cl/beneficios/ciudad/
+  publisher:
+    id: cl-minvu
+    name: Ministerio de Vivienda y Urbanismo (Chile)
+    url: https://www.minvu.gob.cl/
+  description: >
+    Climate-relevant MINVU urban programmes (Programa Concursable de Espacios Públicos,
+    Parques Urbanos, Pavimentación Participativa, Quiero Mi Barrio). Urban green / rainwater /
+    adaptation; municipalities apply via SEREMI. Espacios Públicos is annual (April/September).
+  coverage:
+    geography: country
+    countries: [CL]
+    spatial_levels: [country, comuna]
+  themes:
+    - climate_finance
+    - urban
+    - green_space
+    - adaptation
+  update_frequency: annual_cycle
+  typical_frequency_years: 1
+  priority: medium
+  releases:
+    - version: "v1"
+      version_number: 1
+      source_url: https://www.minvu.gob.cl/beneficios/ciudad/
+      released_at: null
+      retrieved_at: "2026-06-08"
+      retrieval_method: manual_curation
+      api_endpoint: null
+      path: "reviews/cl-minvu/cl-minvu-fondos/releases/v1"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: reviews/cl-minvu/cl-minvu-fondos/releases/v1/review.md
+      license:
+        id: cl-public-info
+        name: Public information (Ley de Transparencia 20.285); no explicit reuse licence
+        url: https://www.minvu.gob.cl/
+        commercial_use: null
+        note: "Public-info; attribute to MINVU; confirm before bulk redistribution."
+      data_quality:
+        documentation: published
+        methodology: manual_curation
+        coverage: urban_greenspace_funds
+        granularity: programme
+        freshness: "2026_snapshot"
+        accessibility: server_rendered_html
+
+- id: cl-gore-fndr
+  name: GORE / FNDR regional funds (FNDR / FRIL / 8% / FRPD)
+  dataset_url: https://www.subdere.gov.cl/content/glosa-03-provisi%C3%B3n-fondo-nacional-de-desarrollo-regional-fndr
+  publisher:
+    id: cl-gore
+    name: Gobiernos Regionales (Chile)
+    url: https://www.subdere.gov.cl/
+  description: >
+    Regional-tier funding delivered by the 16 Gobiernos Regionales: Fondo Nacional de
+    Desarrollo Regional (investment / Glosa 03), FRIL (minor communal works), the 8%
+    activity subvención (with a Medio Ambiente line), and FRPD. Mostly broad municipal/
+    regional investment; the largest channel of municipality-accessible public funds.
+  coverage:
+    geography: country
+    countries: [CL]
+    spatial_levels: [region, comuna]
+  themes:
+    - climate_finance
+    - municipal_investment
+    - regional
+  update_frequency: annual_cycle
+  typical_frequency_years: 1
+  priority: medium
+  releases:
+    - version: "v1"
+      version_number: 1
+      source_url: https://www.subdere.gov.cl/content/glosa-03-provisi%C3%B3n-fondo-nacional-de-desarrollo-regional-fndr
+      released_at: null
+      retrieved_at: "2026-06-08"
+      retrieval_method: manual_curation
+      api_endpoint: null
+      path: "reviews/cl-gore/cl-gore-fndr/releases/v1"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: reviews/cl-gore/cl-gore-fndr/releases/v1/review.md
+      license:
+        id: cl-public-info
+        name: Public information (Ley de Transparencia 20.285); no explicit reuse licence
+        url: https://www.subdere.gov.cl/
+        commercial_use: null
+        note: "Public-info (GOREs + SUBDERE); attribute; confirm before bulk redistribution. Source from GORE/SUBDERE pages, not fondos.gob.cl. Regional tier; FNDR/FRIL/FRPD are broad (down-weight in scoring)."
+      data_quality:
+        documentation: published
+        methodology: manual_curation
+        coverage: regional_fndr_instruments
+        granularity: instrument
+        freshness: "2026_snapshot"
+        accessibility: per_region_sites
+
+- id: cl-corfo-finance
+  name: CORFO climate finance instruments (Crédito Verde / Expande / garantías / H2)
+  dataset_url: https://www.corfo.cl/sites/cpp/programasyconvocatorias
+  publisher:
+    id: cl-corfo
+    name: Corporación de Fomento de la Producción (CORFO)
+    url: https://www.corfo.cl/
+  description: >
+    CORFO's climate-relevant financing for firms: Crédito Verde (loan), Programa Expande
+    (co-financing), guarantees, the green-hydrogen facility (blended), and Innova R&D.
+    Fills the debt/blended instrument tier and the private-firm actor missing from the
+    grant-heavy inventory. Industry/energy supply, but firm-accessed (not municipal).
+  coverage:
+    geography: country
+    countries: [CL]
+    spatial_levels: [country, region]
+  themes:
+    - climate_finance
+    - energy
+    - industry
+    - innovation
+  update_frequency: rolling
+  typical_frequency_years: 0
+  priority: medium
+  releases:
+    - version: "v1"
+      version_number: 1
+      source_url: https://www.corfo.cl/sites/cpp/programasyconvocatorias
+      released_at: null
+      retrieved_at: "2026-06-08"
+      retrieval_method: manual_curation
+      api_endpoint: null
+      path: "reviews/cl-corfo/cl-corfo-finance/releases/v1"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: reviews/cl-corfo/cl-corfo-finance/releases/v1/review.md
+      license:
+        id: CC-BY-NC-ND-3.0
+        name: Creative Commons Attribution-NonCommercial-NoDerivatives 3.0
+        url: https://creativecommons.org/licenses/by-nc-nd/3.0/deed.es
+        commercial_use: false
+        note: "Explicit CC BY-NC-ND 3.0 on corfo.cl. Attribute, non-commercial, no derivative republication of CORFO text; programme facts captured with attribution. Confirm before commercial/large-scale reuse."
+      data_quality:
+        documentation: published
+        methodology: manual_curation
+        coverage: corfo_climate_instruments
+        granularity: instrument
+        freshness: "2026_snapshot"
+        accessibility: js_rendered_listing

@@ -1,0 +1,434 @@
+# Search output for need 2026-06-cl-finance-opportunities (run 2026-06-08).
+# Verdicts: promote | investigate | deprioritize | reject (see skill
+# references/screening-criteria.md). Rejected entries are kept — they are
+# institutional memory of dead ends.
+#
+# BROAD-CAPTURE strategy (Amanda, 2026-06-08): the dataset casts wide. Under this
+# strategy a verdict reflects how ready the entry is to enter the inventory, NOT
+# whether a given actor can apply — actor/access/tier are row attributes, not
+# grounds to sideline. So entries that fit a non-municipal actor (firms,
+# households, multilateral) are kept as promote/investigate with the actor tagged,
+# rather than deprioritized. Deprioritize/reject is reserved for genuine non-fit
+# (not Chile-relevant, not a funding instrument, or unverifiable).
+#
+# Tier: v1 = national CL public instruments. regional/multilateral entries are
+# kept but tier-tagged so adding those levels later does not restructure this file.
+# Freshness note: Chilean concursable funds are annual-cycle. A program being
+# "closed" for its current cycle is NOT a reject — record the cycle observed and
+# the recurrence, which is exactly the live-status detail the SSG 2023 set lacked.
+
+candidates:
+
+# ---- Backbone discovery source (harvest, not a single program) ----
+
+- id: cl-fondos-gob-portal
+  name: Portal Único de Fondos Concursables (fondos.gob.cl)
+  publisher: Ministerio Secretaría General de Gobierno (SEGEGOB / MSGG)
+  url: https://www.fondos.gob.cl/
+  also:
+    - https://fondos.gob.cl/terminoscondiciones/   # restrictive ToU
+  themes: [climate_finance, aggregator, registry]
+  coverage: national; aggregates 70+ competitive funds from across government
+    with per-program ficha pages (fondos.gob.cl/ficha/<institution>/<slug>/).
+    LIVE NOTICEBOARD ONLY — lists current-cycle funds (Abierto/Cerrado/Por abrir),
+    not a historical archive. Live category counts (2026-06-08) — Medio Ambiente 49,
+    Energías renovables 1, Ciudad/vivienda/infraestructura 2.
+  access: public web portal; NO public API or datos.gob.cl feed found; fichas are
+    HTML, partly JS-rendered. Only retrieval path is scraping — which the ToU forbids.
+  license: RESTRICTIVE — NOT open data (verified, ToU read 2026-06-08); grants only
+    temporary personal NON-COMMERCIAL transient viewing; prohibits copy, modify,
+    commercial use, ANY public display, transfer, and "mirroring on any other
+    server"; requires destroying downloads. §5 disclaims accuracy/completeness/currency.
+  tier: national
+  role: discovery-index-only
+  screening:
+    verdict: reject
+    notes: >
+      REJECT as a cataloged/scraped data SOURCE (date 2026-06-08): the SEGEGOB
+      Terms & Conditions explicitly forbid copying, modifying, redistribution,
+      public display, and mirroring — incompatible with ingesting/storing the data
+      or putting it in a CityCatalyst product. Supersedes my earlier "harvest the
+      fichas" note, which did not survive contact with the ToU.
+      RETAINED VALUE: excellent HUMAN discovery index to find what is live and to
+      navigate to each administering institution. Reopens only if SEGEGOB grants
+      data-use permission or publishes an open feed.
+      PIVOT (Amanda 2026-06-08): source & cite each opportunity from its
+      administering institution's own official page (which carries its own, usually
+      less restrictive, public terms). See cl-fondos-mma-portal below as the first
+      institution-level source to review.
+  added: 2026-06-08
+
+- id: cl-fondos-mma-portal
+  name: Fondos MMA — institutional fund portal (fondos.mma.gob.cl)
+  publisher: Ministerio del Medio Ambiente (MMA)
+  url: https://fondos.mma.gob.cl/
+  themes: [climate_finance, environment, aggregator]
+  coverage: MMA's own fund portal (FPA, FPR, and related environmental lines) —
+    likely covers a large share of the live "Medio Ambiente" climate-relevant set
+  access: institution web portal + bases PDFs; to be profiled in review Step 1–2
+  license: unverified — MMA site terms to be checked (institution pages generally
+    less restrictive than the fondos.gob.cl aggregator; confirm at review)
+  tier: national
+  role: candidate authoritative source (institution-level)
+  screening:
+    verdict: investigate
+    notes: >
+      Surfaced by the pivot away from fondos.gob.cl. MMA runs its own fund portal,
+      so the environment category can likely be sourced and cited here (authoritative
+      origin) instead of the restricted national aggregator. First institution-level
+      source to take through the dataset-review checkpoints. Verify MMA's own terms
+      and retrieval path in Step 1. Added 2026-06-08.
+  added: 2026-06-08
+
+# ---- Promote: national programs with city/municipal relevance + verified 2026 cycle ----
+
+- id: cl-mma-fpr
+  name: Fondo para el Reciclaje (FPR)
+  publisher: Ministerio del Medio Ambiente — Oficina de Economía Circular
+  url: https://www.fondos.gob.cl/ficha/mma/fpr-2026/
+  also:
+    - https://economiacircular.mma.gob.cl/fondo-para-el-reciclaje/
+    - https://fondos.mma.gob.cl/fpr-2026-fondo-para-el-reciclaje/
+  themes: [waste, circular_economy, recycling]
+  gpc_sector: waste
+  coverage: national; eligible applicants are municipalities and municipal
+    associations registered in SUBDERE's Registro Único de Asociaciones Municipales
+  access: fondos.gob.cl / fondos.mma.gob.cl; up to CLP 14,000,000 per project
+  license: public program info
+  tier: national
+  instrument: grant
+  cycle_observed: "12th call (FPR 2026): applications 24 Sep – 30 Oct 2025 — CLOSED
+    as of 2026-06-08; annual, next call expected ~Sep 2026. (Since 2018: 164
+    projects, CLP 3,026M, 109 comunas — confirmed on MMA call page.)"
+  screening:
+    verdict: promote
+    notes: >
+      Strongest city fit found — municipalities/municipal associations apply
+      directly, clear climate-relevant (REP / waste valorization) line, official
+      dated cycle. Backbone example of a clean city-facing entry — and the model
+      for the freshness field the SSG set lacked: the current cycle is already
+      CLOSED, so a city-facing row must show status=closed + next-call estimate,
+      not a generic "recurring". Verified on MMA 12th-call page 2026-06-08.
+  added: 2026-06-08
+
+- id: cl-minvu-espacios-publicos
+  name: Programa Concursable de Espacios Públicos
+  publisher: Ministerio de Vivienda y Urbanismo (MINVU)
+  url: https://www.fondos.gob.cl/ficha/minvu/espacios-p%C3%BAblicos/
+  also:
+    - https://www.minvu.gob.cl/beneficio/ciudad/programa-concursable-de-espacios-publicos/
+  themes: [urban, green_space, adaptation, public_space]
+  gpc_sector: afolu/cross_sector (urban green areas; adaptation co-benefits)
+  coverage: national; municipalities apply (design stage competition; execution
+    auto-funded up to UF 30,000 incl. design)
+  access: annual competition; SEREMI issues call in Q1, disseminates to municipalities
+  license: public program info
+  tier: national
+  instrument: grant
+  cycle_observed: "Annual; call issued by SEREMI in first trimester"
+  screening:
+    verdict: promote
+    notes: >
+      Municipal applicant, funds green areas / rainwater / public-space upgrades
+      with climate-adaptation co-benefits (National Urban Parks Policy names
+      "environment, resilience and climate change" as an axis). Good city fit.
+      Verified via MINVU/fondos pages 2026-06-08.
+  added: 2026-06-08
+
+- id: cl-minenergia-fae
+  name: Fondo de Acceso Energético (FAE)
+  publisher: Ministerio de Energía / Agencia de Sostenibilidad Energética
+  url: https://www.chileatiende.gob.cl/fichas/36666-fondo-de-acceso-a-la-energia-fae
+  also:
+    - https://atencionciudadana.minenergia.cl/tramites/informacion/42
+  themes: [energy, renewables, energy_access]
+  gpc_sector: stationary_energy
+  coverage: national; competitive fund for institutions with a community public
+    role (incl. municipalities) implementing small-scale NCRE in rural / isolated /
+    vulnerable areas
+  access: competitive call via Ministerio de Energía
+  license: public program info
+  tier: national
+  instrument: grant
+  cycle_observed: "Recurring (created 2014); confirm current-year call dates at review"
+  screening:
+    verdict: promote
+    notes: >
+      Municipalities and community-role institutions eligible; explicit renewable-
+      energy / energy-access line. Promote, but the exact 2026 call window was not
+      confirmed in this run — flag application_window as unverified pending a ficha
+      check. Verified program existence/scope 2026-06-08.
+  added: 2026-06-08
+
+# ---- Promote with flag: broad municipal funds (usable, but over-match downstream) ----
+
+- id: cl-subdere-pmu
+  name: Programa de Mejoramiento Urbano y Equipamiento Comunal (PMU)
+  publisher: Subsecretaría de Desarrollo Regional y Administrativo (SUBDERE)
+  url: https://fondos.gob.cl/ficha/subdere/pmu/
+  also:
+    - https://www.subdere.gov.cl/programas/divisi%C3%B3n-municipalidades/programa-mejoramiento-urbano-y-equipamiento-comunal-pmu
+  themes: [municipal_investment, infrastructure, public_space]
+  gpc_sector: cross_sector (general municipal infrastructure)
+  coverage: national; municipalities apply continuously through the year via
+    subdereenlinea.gov.cl; funds construction/repair of community infrastructure
+  access: open/rolling all year, budget-dependent
+  license: public program info
+  tier: national
+  instrument: grant
+  cycle_observed: "Open continuous (rolling), all year"
+  screening:
+    verdict: promote
+    notes: >
+      Genuinely useful to cities and reliably live (rolling). FLAGGED broad: this
+      is exactly the kind of general-purpose fund that over-matched every action
+      in the SSG fundability scoring. Include for the city-facing list; if it ever
+      feeds matching/scoring, down-weight or it inflates. Verified 2026-06-08.
+  added: 2026-06-08
+
+- id: cl-subdere-pmb
+  name: Programa de Mejoramiento de Barrios (PMB)
+  publisher: SUBDERE
+  url: https://fondos.gob.cl/ficha/subdere/pmb/
+  themes: [municipal_investment, sanitation, water]
+  gpc_sector: water/waste (basic sanitation) / cross_sector
+  coverage: national; municipalities apply; sanitary services and neighborhood
+    infrastructure for vulnerable areas
+  access: via SUBDERE; budget-dependent
+  license: public program info
+  tier: national
+  instrument: grant
+  cycle_observed: "Recurring; confirm current cycle at review"
+  screening:
+    verdict: promote
+    notes: >
+      Municipal applicant; sanitation/water relevance. Same broad-fund flag as PMU
+      — usable city reference, over-matches in scoring. Verified ficha exists
+      2026-06-08; exact window unverified.
+  added: 2026-06-08
+
+# ---- Investigate: relevant but named obstacle (eligibility, cycle, or capacity vs funding) ----
+
+- id: cl-mma-fpa
+  name: Fondo de Protección Ambiental (FPA)
+  publisher: Ministerio del Medio Ambiente
+  url: https://fondos.mma.gob.cl/fpa/
+  also:
+    - https://www.chileatiende.gob.cl/fichas/76453-fondo-de-proteccion-ambiental-fpa
+    - https://mma.gob.cl/ministerio-del-medio-ambiente-abre-convocatoria-para-postular-al-fondo-de-proteccion-ambiental-2026/
+  themes: [environment, biodiversity, energy_efficiency, climate_change]
+  gpc_sector: cross_sector
+  coverage: national; first national competitive environmental fund. Eligible =
+    citizen / community organizations (incl. Indigenous communities via CONADI),
+    NOT municipalities directly
+  access: fondos.gob.cl with Clave Única; CLP ~6,000,000 per project (2026 cycle)
+  license: public program info
+  tier: national
+  instrument: grant
+  cycle_observed: "XXIX FPA 2026: launched 26 Aug 2025, extended to 7 Oct 2025
+    (144 projects, CLP 864M awarded). Annual — next call ~Aug 2026."
+  screening:
+    verdict: investigate
+    notes: >
+      Climate-relevant and very live, but the obstacle for a CITY-facing list is
+      the eligible actor: community/citizen orgs, not the municipality itself. Keep
+      and resolve the open question in need.md (do we list funds a city facilitates
+      vs applies to?). If "facilitate" counts, promote. Verified 2026 cycle
+      2026-06-08.
+  added: 2026-06-08
+
+- id: cl-minenergia-casa-solar
+  name: Programa Casa Solar
+  publisher: Ministerio de Energía / Agencia de Sostenibilidad Energética
+  url: https://energia.gob.cl/noticias/nacional/programa-casa-solar
+  themes: [energy, renewables, solar_pv]
+  gpc_sector: stationary_energy
+  coverage: national (rolling in selected comunas — 19 reported open); co-financing
+    up to ~50% of rooftop PV + ~30% aggregate-purchase discount
+  access: household applicants; municipalities act as organizers/facilitators
+  license: public program info
+  tier: national
+  instrument: blended (subsidy + aggregated purchase)
+  cycle_observed: "Open in 19 comunas (rolling new calls)"
+  screening:
+    verdict: investigate
+    notes: >
+      Beneficiaries are households, but municipal role is structural (comuna must
+      be enrolled). Useful for a city wanting to enable residential solar; not a
+      grant the city receives. Same actor-fit question as FPA. Verified 2026-06-08.
+  added: 2026-06-08
+
+- id: cl-minenergia-comuna-energetica
+  name: Programa / Sello Comuna Energética
+  publisher: Ministerio de Energía
+  url: https://energia.gob.cl/noticias/nacional/entregan-sello-comuna-energetica-10-nuevos-municipios-de-chile
+  themes: [energy, planning, capacity_building]
+  gpc_sector: stationary_energy (governance/planning)
+  coverage: national; municipal energy strategy + certification (32 comunas to date)
+  access: ministry program; small budget (~CLP 20M total in the cited version)
+  license: public program info
+  tier: national
+  instrument: technical_assistance
+  screening:
+    verdict: investigate
+    notes: >
+      Municipal-facing and climate-relevant, but it is mostly capacity-building /
+      certification rather than project finance. Belongs on a city reference as an
+      "enabling" entry, not as a funding line. Verified 2026-06-08.
+  added: 2026-06-08
+
+- id: cl-minenergia-parque-solar-comunitario
+  name: Parque Solar Comunitario
+  publisher: Ministerio de Energía / Agencia de Sostenibilidad Energética
+  url: https://energia.gob.cl/noticias/nacional/parque-solar-comunitario-ministerio-de-energia-disenara-proyectos-fotovoltaicos-en-59-comunas-de-todo-chile
+  themes: [energy, renewables, community_solar]
+  gpc_sector: stationary_energy
+  coverage: national; distributed-generation projects of joint ownership developed
+    through municipalities (59 comunas in design phase)
+  access: ministry-designed, executed via municipalities
+  license: public program info
+  tier: national
+  instrument: blended
+  screening:
+    verdict: investigate
+    notes: >
+      Municipal vehicle for community PV; not a competitive fund a city applies to
+      on a schedule — it is a ministry rollout. Track as an opportunity but obstacle
+      is unclear access pathway. Verified 2026-06-08.
+  added: 2026-06-08
+
+- id: cl-minvu-parques-urbanos
+  name: Parques Urbanos / Conservación de Parques Urbanos
+  publisher: MINVU
+  url: https://www.minvu.gob.cl/beneficio/ciudad/parques-urbanos/
+  also:
+    - https://csustentable.minvu.gob.cl/minvu-abre-postulacion-para-nuevo-programa-de-conservacion-de-parques-urbanos/
+  themes: [urban, green_space, adaptation]
+  gpc_sector: afolu/cross_sector
+  coverage: national; SEREMI-prioritized construction + a newer conservation
+    program with open application
+  access: regional prioritization (construction) + competitive conservation line
+  license: public program info
+  tier: national
+  instrument: grant
+  screening:
+    verdict: investigate
+    notes: >
+      Climate-adaptation relevant (urban green/heat). Construction side is
+      prioritized by SEREMI rather than openly competitive, so access pathway for
+      a given city varies — confirm the conservation-program call mechanics at
+      review. Verified program exists 2026-06-08.
+  added: 2026-06-08
+
+# ---- Deprioritize: real but not the city-applicant backbone for v1 ----
+
+- id: cl-corfo-credito-verde
+  name: Crédito Verde (CORFO)
+  publisher: Corfo
+  url: https://www.corfo.cl/sites/Satellite?c=C_NoticiaNacional&cid=1476726069516&d=Touch&pagename=CorfoPortalPublico/C_NoticiaNacional/corfoDetalleNoticiaNacionalWeb
+  themes: [energy, energy_efficiency, circular_economy, renewables]
+  gpc_sector: stationary_energy / industry
+  coverage: national; loan for NCRE generation/storage, energy efficiency,
+    environmental process improvements. US$39M budget; up to 70% of investment,
+    15-yr term; firms with sales up to UF 600k
+  access: loan via Corfo / commercial banks
+  license: public program info
+  tier: national
+  instrument: loan
+  eligible_actor: private firm (sales up to UF 600k)
+  access_pathway: intermediated (commercial banks)
+  cycle_observed: "Active 2026 (US$39M)"
+  screening:
+    verdict: promote
+    notes: >
+      Broad-capture: kept as promote with eligible_actor=private firm. A real,
+      active, climate-relevant instrument (NCRE / EE / circular economy) a city
+      can point local businesses or municipal enterprises to; the score, not the
+      dataset, handles that it's not a direct municipal grant and is a loan.
+      Verified 2026-06-08.
+  added: 2026-06-08
+
+- id: cl-mma-recambio-calefactores
+  name: Programa de Recambio de Calefactores
+  publisher: Ministerio del Medio Ambiente
+  url: https://calefactores.mma.gob.cl/
+  also:
+    - https://www.chileatiende.gob.cl/fichas/8480-programa-de-recambio-de-calefactores
+  themes: [air_quality, residential_energy, climate_cobenefit]
+  gpc_sector: stationary_energy (residential combustion)
+  coverage: PDA-zone comunas; household beneficiaries swap wood heaters for
+    pellet/AC units
+  access: household applicants within intervention polygons; presencial or online
+  license: public program info
+  tier: national
+  instrument: grant (subsidy in kind)
+  eligible_actor: household (within PDA polygons)
+  access_pathway: facilitated-by-city (municipality promotes / enrolls residents)
+  cycle_observed: "2026 calls open per comuna (e.g. Chillán/Chillán Viejo)"
+  screening:
+    verdict: promote
+    notes: >
+      Broad-capture: kept as promote with eligible_actor=household. Air-quality
+      program with direct climate (residential combustion) relevance; the city's
+      role is enabling/promotion. Tag carries the nuance; scoring decides weight.
+      Verified 2026 calls 2026-06-08.
+  added: 2026-06-08
+
+# ---- Regional tier (kept, tagged; out of v1 national scope) ----
+
+- id: cl-gore-fndr-8pct
+  name: FNDR 8% — línea Protección del Medio Ambiente (subvención a actividades)
+  publisher: Gobiernos Regionales (per región) under Ley de Presupuestos glosa 07
+  url: https://www.fondos.gob.cl/ficha/goretarapaca/fndr-medioambiente/
+  themes: [environment, environmental_education]
+  gpc_sector: cross_sector
+  coverage: regional (each GORE runs its own call); up to CLP 30M; eligible =
+    nonprofit orgs (legal status, ≥2 yrs), NOT municipalities; 6-month activities
+  access: fondos.gob.cl per región; annual
+  license: public program info
+  tier: regional
+  instrument: grant
+  cycle_observed: "8% 2026 calls ran early 2026 across multiple GOREs"
+  screening:
+    verdict: investigate
+    notes: >
+      Regional tier, so out of the v1 national backbone, but nationally structured
+      (same budget-law glosa across all GOREs) — a good model for how to add the
+      regional tier later without breaking the schema. Eligible actor = NGOs, and
+      it funds activities not infrastructure. Verified 2026 cycle 2026-06-08.
+  added: 2026-06-08
+
+# ---- Multilateral tier (kept, tagged; later tier, not directly city-accessible) ----
+
+- id: gcf-chile
+  name: Green Climate Fund — Chile portfolio / accreditation
+  publisher: Green Climate Fund (GCF)
+  url: https://www.greenclimate.fund/countries/chile
+  also:
+    - https://www.greenclimate.fund/document/entity-support-chile-through-caf
+  themes: [climate_finance, mitigation, adaptation, multilateral]
+  gpc_sector: cross_sector
+  coverage: national programmes via Accredited Entities. NDA = Ministerio de
+    Hacienda (Sustainable Finance Office). CL direct-access AE = FYNSA (private).
+    City-relevant active programmes incl. FP189 "E-Mobility Programme for
+    Sustainable Cities in LAC" (IDB) and the Global Subnational Climate Fund
+    (FP151/FP152). CAF "Entity Support for Chile" track aims to accredit local
+    institutions to widen access (verify the "six institutions" detail at review).
+  access: NOT directly city-accessible — intermediated by an Accredited Entity.
+    (General GCF accreditation timing seen in search — pre-screening 27 May 2026,
+    window 15 Jul 2026 — is global, not Chile-specific; treat as unverified for CL.)
+  license: public program info
+  tier: multilateral
+  instrument: blended/grant/loan (via AE)
+  eligible_actor: via-accredited-entity
+  access_pathway: intermediated (Accredited Entity; not direct city application)
+  screening:
+    verdict: investigate
+    notes: >
+      Broad-capture: kept (lifted from deprioritize) as investigate — the obstacle
+      is the intermediated access pathway, not relevance. Matters for the
+      multilateral tier and there are city-relevant active programmes (FP189
+      E-Mobility for Sustainable Cities). Resolve the realistic local-access route
+      (CAF entity-support track) at review. Verified on GCF Chile country page
+      2026-06-08 (NDA = Min. Hacienda, FYNSA AE, FP189/FP151/FP152, CAF doc).
+  added: 2026-06-08

@@ -1,0 +1,66 @@
+# Machine-readable search criteria. Parameterizes the screening step.
+# Field-ownership rule: anything a screening check could read lives HERE;
+# intent, context, and lifecycle live in need.md.
+
+need: 2026-06-cl-finance-opportunities
+
+sector: cross-sector (climate mitigation + adaptation finance); all GPC sectors in scope
+themes: [climate_finance, mitigation, adaptation, municipal_investment]
+
+action_taxonomy:
+  framework: GPC sector / subsector (to match SSG inventory's gpc_sector mapping)
+  catalog_ref: null        # no finance dataset cataloged yet
+  mapping: keep source program's own scope; tag GPC sector where determinable
+
+strategy: broad-capture        # decided 2026-06-08 (Amanda): cast wide, do NOT
+  # prematurely filter. Differentiators below (actor, access pathway, tier,
+  # specificity) are captured as ROW ATTRIBUTES for downstream scoring/filtering,
+  # never as discovery kill-filters. Reject is reserved for genuine non-fit
+  # (not Chile-relevant, or not actually a funding instrument).
+
+geography:
+  countries: [CL]
+  required_level: none       # broad capture across all tiers
+  tiers:                     # all in scope; phased only by harvest order, not by inclusion
+    harvest_order: [national public/government, regional/GORE-FNDR, multilateral/global accessible to CL, bilateral, private/blended]
+  attribute_not_filter: tier is recorded per row; no tier is excluded
+
+data_requirements:
+  must_have:                 # quality bar = the fix for the SSG staleness, NOT a scope filter
+    - live, resolvable source_url to the program's official page
+    - verifiable current status (open / recurring-confirmed / closed) as of search date
+    - identifiable funder/administering institution
+  capture_as_attributes:     # recorded for scoring/filtering downstream; never used to exclude
+    - climate_relevance: explicit climate/env line | climate-adjacent (e.g. general municipal infra) | indirect
+    - eligible_actor: municipality | community/citizen org | household | private firm | NGO | via-accredited-entity
+    - access_pathway: direct application | facilitated-by-city | intermediated (e.g. AE)
+    - specificity: sector-specific | broad/cross-sector   # flag broad — matters for scoring, not inclusion
+    - instrument_type: grant | loan | technical_assistance | blended | equity
+    - gpc_sector tag
+    - structured application_window (open/close dates or call cadence) where available
+  metric_form: program records (not numeric dataset); one row per opportunity
+  temporal: current/2026 availability is the point; re-verify each release
+
+constraints:
+  license:
+    preferred: public program information, freely citable
+    acceptable: portal aggregations (Fondos.gob.cl) reusable for screening
+    disqualifying: null
+  access:
+    preferred: official program page or open government portal with stable URL
+    acceptable: portal requiring manual navigation; named obstacle recorded
+    disqualifying: login-walled with no public program description
+
+screening_guidance: >
+  BROAD CAPTURE. Two use cases now: (1) a city-facing reference, and (2) a
+  fundability score/band for actions (methodology TBD — see need.md). Both are
+  better served by a wide, well-attributed inventory than by a pre-filtered one,
+  so do not drop opportunities on actor-fit, tier, or sector grounds — capture
+  them and tag them. The only hard bar is the freshness fix: a working link and
+  a verifiable current status (the SSG set's core weakness). Prefer authoritative
+  live sources (Fondos.gob.cl, MMA, SUBDERE, MINVU, Min. Energía, CORFO, ANID,
+  GORE, GCF/GEF/IDB) over re-citing the 2023 consultancy docs.
+  Critical distinction: broad capture of the DATASET is NOT the same as letting
+  broad funds inflate the SCORE. Flag broad/general-purpose funds (PMU, PMB,
+  FNDR) with specificity=broad so the scoring step can down-weight them; that
+  control lives in the score, not in what we include here.

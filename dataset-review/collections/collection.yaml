@@ -27,3 +27,15 @@ collections:
     name: Brazil datasets
     datasets:
       - id: br-adaptabrasil
+
+  - id: chile-finance
+    name: Chile climate-finance opportunities
+    # Per-source reviews of Chilean climate-relevant funding (need 2026-06-cl-finance-opportunities).
+    # Harmonized into one inventory at reviews/oef/cl-finance-inventory (exploratory).
+    datasets:
+      - id: cl-mma-fondos
+      - id: cl-minenergia-fondos
+      - id: cl-subdere-fondos
+      - id: cl-minvu-fondos
+      - id: cl-gore-fndr
+      - id: cl-corfo-finance

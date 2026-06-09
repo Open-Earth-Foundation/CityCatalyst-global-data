@@ -1,0 +1,56 @@
+action,solution,spm7_option
+Increase,Carpooling,Avoid demand for energy services
+Improve,Annual Cropping,Carbon sequestration in agriculture
+Deploy,Silvopasture,Carbon sequestration in agriculture
+Improve,Cement Production: Clinker substitution,Construction materials substitution
+Restore,Forests: Boreal,"Ecosystem restoration, afforestation, reforestation"
+Restore,Forests: Subtropical,"Ecosystem restoration, afforestation, reforestation"
+Restore,Forests: Temperate,"Ecosystem restoration, afforestation, reforestation"
+Restore,Forests: Tropical,"Ecosystem restoration, afforestation, reforestation"
+Deploy,Alternative Insulation Materials,Efficient buildings
+Use,Heat Pumps,Efficient buildings
+Improve,Windows & Glass,Efficient buildings
+Deploy,LED Lighting,"Efficient lighting, appliances and equipment"
+Mobilize,Electric Cars,Electric vehicles
+Improve,Cement Production: Efficiency upgrades,Energy efficiency
+Increase,Recycling: Glass,Enhanced recycling
+Increase,Recycling: Metals,Enhanced recycling
+Increase,Recycling: Paper and Cardboard,Enhanced recycling
+Increase,Recycling: Plastics,Enhanced recycling
+Mobilize,Hybrid Cars,Fuel efficient vehicles
+Improve,Cement Production: Alternative fuels,Fuel switching
+Deploy,Industrial Green Hydrogen,Fuel switching
+Mobilize,Electric Bicycles: Private electric bicycles,Public transport and bicycling
+Mobilize,Electric Bicycles: Shared electric bicycles,Public transport and bicycling
+Improve,Nonmotorized Transportation,Public transport and bicycling
+Enhance,Public Transit,Public transport and bicycling
+Improve,Nutrient Management,Reduce CH4 and N2O in agriculture
+Improve,Rice Production,Reduce CH4 and N2O in agriculture
+Manage,Coal Mine Methane,"Reduce CH4 from coal, oil and gas"
+Manage,Oil & Gas Methane,"Reduce CH4 from coal, oil and gas"
+Increase,Centralized Composting,Reduce CH4 from waste/wastewater
+Improve,Landfill Management: Biocovers,Reduce CH4 from waste/wastewater
+Improve,Landfill Management: Methane capture,Reduce CH4 from waste/wastewater
+Protect,Coastal Wetlands: Mangrove ecosystems,Reduce conversion of natural ecosystems
+Protect,Coastal Wetlands: Salt marsh ecosystems,Reduce conversion of natural ecosystems
+Protect,Coastal Wetlands: Seagrass ecosystems,Reduce conversion of natural ecosystems
+Protect,Forests: Boreal,Reduce conversion of natural ecosystems
+Protect,Forests: Subtropical,Reduce conversion of natural ecosystems
+Protect,Forests: Temperate,Reduce conversion of natural ecosystems
+Protect,Forests: Tropical,Reduce conversion of natural ecosystems
+Protect,Grasslands & Savannas: Boreal,Reduce conversion of natural ecosystems
+Protect,Grasslands & Savannas: Subtropical,Reduce conversion of natural ecosystems
+Protect,Grasslands & Savannas: Temperate,Reduce conversion of natural ecosystems
+Protect,Grasslands & Savannas: Tropical,Reduce conversion of natural ecosystems
+Protect,Peatlands: Boreal,Reduce conversion of natural ecosystems
+Protect,Peatlands: Subtropical,Reduce conversion of natural ecosystems
+Protect,Peatlands: Temperate,Reduce conversion of natural ecosystems
+Protect,Peatlands: Tropical,Reduce conversion of natural ecosystems
+Protect,Seaweed Ecosystems,Reduce conversion of natural ecosystems
+Deploy,Alternative Refrigerants,Reduce emission of fluorinated gas
+Reduce,Food Loss & Waste,Reduce food loss and food waste
+Improve,Diets,Shift to sustainable healthy diets
+Deploy,Utility-Scale Solar PV,Solar
+Deploy,Offshore Wind Turbines,Wind
+Deploy,Onshore Wind Turbines,Wind
+Deploy,Clean Cooking,

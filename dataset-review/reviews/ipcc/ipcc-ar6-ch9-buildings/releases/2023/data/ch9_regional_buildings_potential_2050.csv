@@ -1,0 +1,13 @@
+region,baseline_2050_total_mtco2,baseline_2050_indirect,baseline_2050_direct,indirect_share,total_potential_pct,confidence,notes
+World,13362,9883,3479,0.74,61,high,"Text-verified p9-57: 8.2 GtCO2 = 61%; sufficiency 10% + efficiency 42% + onsite renewable 9%"
+Developed countries,4154,,,,65,high,"Text-verified p9-58: 2.7 GtCO2 = 65% of baseline (Eurasia merged into developed in Fig 9.17)"
+Developing countries,9208,,,,59,high,"Text-verified p9-58: 5.4 GtCO2 = 59% of baseline; largest share of total potential"
+Asia-Pacific Developed,564,406,158,0.72,46,medium,"Read from Fig 9.16 panel"
+Europe and Eurasia,2024,1172,852,0.58,66,medium,"Read from Fig 9.16 panel"
+North America,1643,1054,589,0.64,70,medium,"Read from Fig 9.16 panel"
+Africa,1156,764,392,0.66,53,low,"Few studies; IPCC flags as low estimate"
+Middle East,1276,835,441,0.65,68,medium,"Read from Fig 9.16 panel"
+Eastern Asia,2443,1960,483,0.80,73,medium,"Read from Fig 9.16 panel; China-dominated"
+Latin America and Caribbean,463,309,154,0.67,53,low,"PROJECT REGION. IPCC flags as low estimate (few studies; Brazil = de Melo & de Martino Jannuzzi 2015). Real potential likely higher."
+South-East Asia and developing Pacific,1788,1600,188,0.90,43,low,"Few studies; low estimate"
+Southern Asia,2008,1785,223,0.89,57,medium,"Read from Fig 9.16 panel; India-dominated"
