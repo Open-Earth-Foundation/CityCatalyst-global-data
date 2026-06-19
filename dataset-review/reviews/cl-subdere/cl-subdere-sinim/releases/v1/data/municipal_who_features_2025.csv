@@ -1,0 +1,346 @@
+comuna_cut,region_cut,comuna,population,subdere_bracket,fcm_dependency_pct_2025,ipp_percapita_mclp_2025,presup_percapita_mclp_2025,fet_royalty_mineria_mclp_2025,professionalization_pct_2025,staff_total_2025,staff_profesional_total_2025,poverty_casen_pct_2025,fiscal_autonomy_tier,capacity_tier
+01101,01,Iquique,196709.0,B1 large urban (>100k),15.59,198.68,466.89,0.0,35.59,399.0,142.0,7.9,high autonomy,low cap
+01107,01,Alto Hospicio,139445.0,B1 large urban (>100k),72.45,55.98,252.0,2026932.0,35.92,142.0,29.0,15.3,mid,low cap
+01401,01,Pozo Almonte,16416.0,B3 small semi-urban (5-20k),46.11,358.77,1061.76,450711.0,28.46,130.0,15.0,15.3,high autonomy,low cap
+01402,01,Camiña,1335.0,B4 rural/remote (<5k),98.75,27.7,3360.08,312023.0,,,8.0,24.0,low autonomy,
+01403,01,Colchane,684.0,B4 rural/remote (<5k),83.03,328.45,2636.8,292233.0,,,,22.3,low autonomy,
+01404,01,Huara,2850.0,B4 rural/remote (<5k),69.28,516.09,2417.61,348412.0,62.5,32.0,10.0,18.1,mid,high cap
+01405,01,Pica,6263.0,B3 small semi-urban (5-20k),46.69,800.48,1868.09,324850.0,,,,10.7,high autonomy,
+02101,02,Antofagasta,397136.0,B1 large urban (>100k),22.97,179.55,430.4,0.0,38.65,665.0,172.0,7.2,high autonomy,mid cap
+02102,02,Mejillones,14014.0,B3 small semi-urban (5-20k),30.15,567.8,935.83,352081.0,43.12,109.0,22.0,7.1,high autonomy,mid cap
+02103,02,Sierra Gorda,1458.0,B4 rural/remote (<5k),30.21,4131.13,7554.79,285998.0,41.82,110.0,40.0,2.1,high autonomy,mid cap
+02104,02,Taltal,11913.0,B3 small semi-urban (5-20k),46.23,331.28,708.66,355055.0,41.75,103.0,16.0,11.5,high autonomy,mid cap
+02201,02,Calama,164641.0,B1 large urban (>100k),39.54,148.02,443.37,0.0,26.62,293.0,48.0,8.1,high autonomy,low cap
+02202,02,Ollagüe,256.0,B4 rural/remote (<5k),70.22,3948.89,14978.82,278267.0,61.11,36.0,9.0,8.7,mid,high cap
+02203,02,San Pedro De Atacama,9782.0,B3 small semi-urban (5-20k),,,,351406.0,49.58,119.0,35.0,4.9,,high cap
+02301,02,Tocopilla,24583.0,B2 medium urban (20-100k),65.64,140.31,737.13,449236.0,,,,10.4,mid,
+02302,02,María Elena,4815.0,B4 rural/remote (<5k),37.94,741.16,1570.99,288667.0,48.84,43.0,7.0,5.6,high autonomy,high cap
+03101,03,Copiapó,167281.0,B1 large urban (>100k),42.59,149.08,359.2,0.0,28.75,327.0,70.0,7.2,high autonomy,low cap
+03102,03,Caldera,18717.0,B3 small semi-urban (5-20k),76.47,170.54,934.59,376278.0,23.94,142.0,15.0,4.1,mid,low cap
+03103,03,Tierra Amarilla,11769.0,B3 small semi-urban (5-20k),44.5,354.14,883.41,334109.0,29.57,115.0,17.0,6.9,high autonomy,low cap
+03201,03,Chañaral,12168.0,B3 small semi-urban (5-20k),63.94,218.04,670.26,363869.0,42.24,116.0,13.0,11.5,mid,mid cap
+03202,03,Diego De Almagro,11339.0,B3 small semi-urban (5-20k),47.66,354.12,781.71,326903.0,34.75,141.0,16.0,5.7,high autonomy,low cap
+03301,03,Vallenar,53705.0,B2 medium urban (20-100k),63.88,116.99,376.87,634398.0,57.5,120.0,33.0,10.7,mid,high cap
+03302,03,Alto Del Carmen,4781.0,B4 rural/remote (<5k),71.76,219.11,1790.72,333588.0,58.82,51.0,10.0,15.1,mid,high cap
+03303,03,Freirina,7558.0,B3 small semi-urban (5-20k),76.7,142.02,833.23,328337.0,42.11,57.0,3.0,13.4,mid,mid cap
+03304,03,Huasco,9343.0,B3 small semi-urban (5-20k),68.51,204.34,776.39,353769.0,51.06,47.0,15.0,11.4,mid,high cap
+04101,04,La Serena,246835.0,B1 large urban (>100k),30.62,143.71,427.67,0.0,40.78,689.0,153.0,5.9,high autonomy,mid cap
+04102,04,Coquimbo,262907.0,B1 large urban (>100k),40.45,175.49,332.99,0.0,35.84,385.0,148.0,7.1,high autonomy,low cap
+04103,04,Andacollo,11562.0,B3 small semi-urban (5-20k),76.68,142.5,699.17,350913.0,35.71,70.0,2.0,10.5,mid,low cap
+04104,04,La Higuera,4335.0,B4 rural/remote (<5k),69.97,387.11,1825.67,335710.0,35.85,53.0,11.0,10.7,mid,low cap
+04105,04,Paiguano,4639.0,B4 rural/remote (<5k),76.85,245.67,1621.81,309724.0,73.33,45.0,8.0,8.3,mid,high cap
+04106,04,Vicuña,27996.0,B2 medium urban (20-100k),75.89,103.2,623.62,495849.0,39.26,163.0,28.0,10.9,mid,mid cap
+04201,04,Illapel,31732.0,B2 medium urban (20-100k),80.55,67.48,407.21,597595.0,29.52,105.0,5.0,8.1,low autonomy,low cap
+04202,04,Canela,9638.0,B3 small semi-urban (5-20k),81.65,117.99,796.51,347304.0,35.82,67.0,15.0,16.3,low autonomy,low cap
+04203,04,Los Vilos,22835.0,B2 medium urban (20-100k),79.45,142.96,919.33,418812.0,41.03,156.0,41.0,8.5,low autonomy,mid cap
+04204,04,Salamanca,27789.0,B2 medium urban (20-100k),63.59,143.07,552.18,452716.0,25.0,76.0,10.0,9.1,mid,low cap
+04301,04,Ovalle,117799.0,B1 large urban (>100k),66.15,87.11,348.38,1217019.0,35.9,195.0,30.0,9.5,mid,low cap
+04302,04,Combarbalá,12931.0,B3 small semi-urban (5-20k),90.01,52.45,583.47,484089.0,40.98,61.0,12.0,11.0,low autonomy,mid cap
+04303,04,Monte Patria,29956.0,B2 medium urban (20-100k),86.19,51.84,460.48,747389.0,34.06,138.0,21.0,12.8,low autonomy,low cap
+04304,04,Punitaqui,12063.0,B3 small semi-urban (5-20k),84.72,76.35,564.43,393269.0,36.59,41.0,7.0,14.5,low autonomy,mid cap
+04305,04,Río Hurtado,4322.0,B4 rural/remote (<5k),85.62,133.87,1134.99,319400.0,54.55,55.0,11.0,7.8,low autonomy,high cap
+05101,05,Valparaíso,280357.0,B1 large urban (>100k),54.58,107.85,434.95,1557721.0,32.79,866.0,229.0,7.4,high autonomy,low cap
+05102,05,Casablanca,29658.0,B2 medium urban (20-100k),23.61,361.44,584.3,376678.0,36.0,125.0,17.0,8.2,high autonomy,low cap
+05103,05,Concón,48112.0,B2 medium urban (20-100k),14.78,342.66,539.95,320317.0,45.33,150.0,31.0,2.7,high autonomy,high cap
+05104,05,Juan Fernández,901.0,B4 rural/remote (<5k),92.0,185.42,2913.68,284544.0,32.35,34.0,1.0,2.5,low autonomy,low cap
+05105,05,Puchuncaví,22443.0,B2 medium urban (20-100k),35.72,423.23,826.08,341492.0,,,,3.3,high autonomy,
+05107,05,Quintero,35544.0,B2 medium urban (20-100k),77.73,135.06,716.48,437006.0,38.81,201.0,60.0,7.7,low autonomy,mid cap
+05109,05,Viña Del Mar,331684.0,B1 large urban (>100k),10.98,291.87,378.34,0.0,36.05,1287.0,273.0,6.5,high autonomy,low cap
+05201,05,Isla De Pascua,4773.0,B4 rural/remote (<5k),99.14,27.32,3206.21,392009.0,31.25,96.0,10.0,5.4,low autonomy,low cap
+05301,05,Los Andes,62524.0,B2 medium urban (20-100k),63.28,105.22,347.61,648326.0,38.24,238.0,53.0,8.1,mid,mid cap
+05302,05,Calle Larga,16594.0,B3 small semi-urban (5-20k),43.84,263.71,909.59,344609.0,34.62,78.0,14.0,7.0,high autonomy,low cap
+05303,05,Rinconada,11837.0,B3 small semi-urban (5-20k),,,,320891.0,,,,8.1,,
+05304,05,San Esteban,20103.0,B2 medium urban (20-100k),68.83,99.83,390.04,386817.0,44.32,88.0,6.0,8.5,mid,high cap
+05401,05,La Ligua,39203.0,B2 medium urban (20-100k),71.14,107.57,440.36,501076.0,,,,8.2,mid,
+05402,05,Cabildo,19983.0,B3 small semi-urban (5-20k),78.63,80.55,445.43,426708.0,,,,8.9,low autonomy,
+05403,05,Papudo,7553.0,B3 small semi-urban (5-20k),36.36,650.88,1378.42,296363.0,40.35,57.0,8.0,7.3,high autonomy,mid cap
+05404,05,Petorca,10127.0,B3 small semi-urban (5-20k),69.46,169.68,847.02,343356.0,32.39,71.0,14.0,4.5,mid,low cap
+05405,05,Zapallar,7971.0,B3 small semi-urban (5-20k),8.22,2684.52,3603.27,0.0,37.01,154.0,37.0,4.3,high autonomy,mid cap
+05501,05,Quillota,95383.0,B2 medium urban (20-100k),57.68,99.01,282.49,861768.0,37.5,336.0,90.0,5.3,high autonomy,mid cap
+05502,05,Calera,50451.0,B2 medium urban (20-100k),66.1,86.93,311.68,667599.0,32.16,199.0,24.0,7.1,mid,low cap
+05503,05,Hijuelas,19279.0,B3 small semi-urban (5-20k),60.29,143.35,431.74,357324.0,40.28,72.0,17.0,9.1,high autonomy,mid cap
+05504,05,La Cruz,24915.0,B2 medium urban (20-100k),59.04,105.44,342.5,403001.0,38.95,95.0,17.0,3.2,high autonomy,mid cap
+05506,05,Nogales,22095.0,B2 medium urban (20-100k),67.56,116.39,445.55,372582.0,33.33,90.0,15.0,5.6,mid,low cap
+05601,05,San Antonio,95520.0,B2 medium urban (20-100k),52.49,127.21,310.71,725074.0,26.95,282.0,55.0,6.6,high autonomy,low cap
+05602,05,Algarrobo,16032.0,B3 small semi-urban (5-20k),20.04,605.61,963.32,322296.0,23.61,216.0,33.0,6.1,high autonomy,low cap
+05603,05,Cartagena,24544.0,B2 medium urban (20-100k),86.17,92.1,763.94,522835.0,34.43,183.0,28.0,7.4,low autonomy,low cap
+05604,05,El Quisco,18896.0,B3 small semi-urban (5-20k),84.95,201.0,1442.79,414296.0,48.78,123.0,31.0,9.0,low autonomy,high cap
+05605,05,El Tabo,16222.0,B3 small semi-urban (5-20k),88.15,193.28,2134.36,408251.0,33.82,136.0,25.0,3.3,low autonomy,low cap
+05606,05,Santo Domingo,13149.0,B3 small semi-urban (5-20k),13.96,1414.59,1897.39,329315.0,39.45,218.0,49.0,6.0,high autonomy,mid cap
+05701,05,San Felipe,79677.0,B2 medium urban (20-100k),67.74,77.92,285.27,893987.0,35.5,200.0,34.0,7.0,mid,low cap
+05702,05,Catemu,13755.0,B3 small semi-urban (5-20k),73.01,122.17,596.36,377060.0,37.18,78.0,16.0,12.0,mid,mid cap
+05703,05,Llaillay,25442.0,B2 medium urban (20-100k),70.74,81.6,349.05,509725.0,27.87,122.0,1.0,9.2,mid,low cap
+05704,05,Panquehue,7266.0,B3 small semi-urban (5-20k),63.92,183.3,724.58,307870.0,50.0,68.0,6.0,9.5,mid,high cap
+05705,05,Putaendo,17057.0,B3 small semi-urban (5-20k),79.73,72.09,431.76,463007.0,,,,10.0,low autonomy,
+05706,05,Santa María,15120.0,B3 small semi-urban (5-20k),64.15,137.86,561.45,366872.0,26.15,65.0,21.0,8.9,mid,low cap
+05801,05,Quilpué,161636.0,B1 large urban (>100k),63.11,76.39,409.11,1555954.0,28.63,489.0,80.0,5.5,mid,low cap
+05802,05,Limache,55481.0,B2 medium urban (20-100k),62.71,97.52,416.57,621896.0,30.97,113.0,22.0,6.9,mid,low cap
+05803,05,Olmué,19775.0,B3 small semi-urban (5-20k),56.47,133.83,501.32,349372.0,34.57,81.0,10.0,7.5,high autonomy,low cap
+05804,05,Villa Alemana,139075.0,B1 large urban (>100k),71.35,58.03,245.44,1588492.0,26.59,331.0,59.0,4.4,mid,low cap
+06101,06,Rancagua,254165.0,B1 large urban (>100k),49.0,114.56,407.47,0.0,,,,6.3,high autonomy,
+06102,06,Codegua,13924.0,B3 small semi-urban (5-20k),63.5,125.05,513.85,343599.0,41.67,96.0,10.0,5.5,mid,mid cap
+06103,06,Coinco,7914.0,B3 small semi-urban (5-20k),81.04,93.89,653.57,332383.0,48.48,66.0,9.0,9.8,low autonomy,high cap
+06104,06,Coltauco,21348.0,B2 medium urban (20-100k),82.25,66.48,463.72,561755.0,42.34,111.0,20.0,10.0,low autonomy,mid cap
+06105,06,Doñihue,21888.0,B2 medium urban (20-100k),72.35,94.5,393.71,448807.0,51.85,54.0,28.0,9.1,mid,high cap
+06106,06,Graneros,35754.0,B2 medium urban (20-100k),75.05,60.62,287.09,623789.0,48.0,75.0,13.0,5.3,mid,high cap
+06107,06,Las Cabras,27510.0,B2 medium urban (20-100k),40.43,199.51,437.9,384937.0,45.38,119.0,19.0,7.6,high autonomy,high cap
+06108,06,Machalí,60791.0,B2 medium urban (20-100k),38.53,140.67,296.7,391204.0,42.77,159.0,36.0,3.0,high autonomy,mid cap
+06109,06,Malloa,13877.0,B3 small semi-urban (5-20k),71.37,121.79,579.91,356284.0,48.35,91.0,15.0,9.8,mid,high cap
+06110,06,Mostazal,27331.0,B2 medium urban (20-100k),19.23,542.99,743.4,382409.0,22.38,210.0,34.0,7.3,high autonomy,low cap
+06111,06,Olivar,13880.0,B3 small semi-urban (5-20k),53.67,164.2,447.58,325039.0,47.3,74.0,13.0,8.0,high autonomy,high cap
+06112,06,Peumo,14076.0,B3 small semi-urban (5-20k),76.98,78.92,449.3,384881.0,35.48,62.0,5.0,7.7,mid,low cap
+06113,06,Pichidegua,20320.0,B2 medium urban (20-100k),72.13,90.84,421.76,450816.0,38.55,83.0,20.0,10.9,mid,mid cap
+06114,06,Quinta De Tilcoco,13558.0,B3 small semi-urban (5-20k),72.24,104.67,480.42,376350.0,42.61,115.0,24.0,9.0,mid,mid cap
+06115,06,Rengo,63204.0,B2 medium urban (20-100k),60.94,104.22,313.53,657896.0,36.63,202.0,19.0,5.4,mid,mid cap
+06116,06,Requínoa,29482.0,B2 medium urban (20-100k),42.49,177.75,357.43,353701.0,39.81,108.0,24.0,3.0,high autonomy,mid cap
+06117,06,San Vicente,49488.0,B2 medium urban (20-100k),66.11,100.34,344.0,666258.0,36.36,242.0,64.0,9.2,mid,mid cap
+06201,06,Pichilemu,19794.0,B3 small semi-urban (5-20k),74.05,234.21,1003.88,375100.0,42.11,152.0,31.0,6.9,mid,mid cap
+06202,06,La Estrella,4587.0,B4 rural/remote (<5k),48.17,714.3,2045.32,290509.0,42.86,56.0,4.0,9.7,high autonomy,mid cap
+06203,06,Litueche,8846.0,B3 small semi-urban (5-20k),61.4,270.76,891.86,302026.0,39.13,69.0,8.0,9.4,mid,mid cap
+06204,06,Marchihue,8709.0,B3 small semi-urban (5-20k),45.0,420.14,1391.63,311752.0,32.89,76.0,7.0,9.2,high autonomy,low cap
+06205,06,Navidad,8881.0,B3 small semi-urban (5-20k),87.41,152.16,1388.31,334199.0,41.18,102.0,22.0,12.3,low autonomy,mid cap
+06206,06,Paredones,7228.0,B3 small semi-urban (5-20k),83.84,130.28,1175.56,331100.0,49.25,67.0,15.0,14.9,low autonomy,high cap
+06301,06,San Fernando,75449.0,B2 medium urban (20-100k),46.98,145.33,360.46,647818.0,37.11,159.0,43.0,6.8,high autonomy,mid cap
+06302,06,Chépica,15560.0,B3 small semi-urban (5-20k),82.31,62.54,511.67,402241.0,43.48,69.0,9.0,8.9,low autonomy,mid cap
+06303,06,Chimbarongo,37249.0,B2 medium urban (20-100k),72.48,83.68,364.37,616187.0,38.41,138.0,31.0,8.5,mid,mid cap
+06304,06,Lolol,7790.0,B3 small semi-urban (5-20k),74.99,127.15,707.21,325134.0,33.33,54.0,5.0,11.5,mid,low cap
+06305,06,Nancagua,18684.0,B3 small semi-urban (5-20k),65.57,117.82,431.58,373703.0,38.36,73.0,13.0,8.9,mid,mid cap
+06306,06,Palmilla,13056.0,B3 small semi-urban (5-20k),58.17,155.69,469.79,333985.0,43.01,93.0,21.0,8.1,high autonomy,mid cap
+06307,06,Peralillo,12492.0,B3 small semi-urban (5-20k),62.87,145.25,587.29,326990.0,42.65,68.0,11.0,7.2,mid,mid cap
+06308,06,Placilla,9437.0,B3 small semi-urban (5-20k),76.1,108.33,574.11,328798.0,45.28,53.0,18.0,9.6,mid,high cap
+06309,06,Pumanque,4559.0,B4 rural/remote (<5k),77.5,201.63,1407.36,296284.0,76.67,30.0,1.0,12.4,low autonomy,high cap
+06310,06,Santa Cruz,40754.0,B2 medium urban (20-100k),49.1,163.96,416.18,463780.0,55.56,108.0,29.0,6.7,high autonomy,high cap
+07101,07,Talca,230184.0,B1 large urban (>100k),46.19,119.53,266.95,0.0,35.14,444.0,101.0,5.7,high autonomy,low cap
+07102,07,Constitución,46888.0,B2 medium urban (20-100k),72.24,104.41,459.2,647111.0,26.75,157.0,22.0,10.8,mid,low cap
+07103,07,Curepto,9498.0,B3 small semi-urban (5-20k),85.08,101.65,814.91,423926.0,43.96,91.0,16.0,14.1,low autonomy,high cap
+07104,07,Empedrado,3986.0,B4 rural/remote (<5k),91.52,84.16,1251.11,368128.0,51.35,37.0,7.0,12.6,low autonomy,high cap
+07105,07,Maule,61008.0,B2 medium urban (20-100k),78.51,48.48,269.93,1138092.0,34.65,101.0,22.0,9.1,low autonomy,low cap
+07106,07,Pelarco,9229.0,B3 small semi-urban (5-20k),27.57,880.43,2563.32,334549.0,35.87,92.0,21.0,11.8,high autonomy,low cap
+07107,07,Pencahue,9159.0,B3 small semi-urban (5-20k),69.91,153.35,663.85,342490.0,31.34,67.0,7.0,11.7,mid,low cap
+07108,07,Río Claro,14270.0,B3 small semi-urban (5-20k),48.87,227.7,644.74,358163.0,39.74,78.0,14.0,9.4,high autonomy,mid cap
+07109,07,San Clemente,47061.0,B2 medium urban (20-100k),71.68,93.13,398.77,737577.0,49.39,164.0,43.0,10.5,mid,high cap
+07110,07,San Rafael,11225.0,B3 small semi-urban (5-20k),72.62,134.42,665.02,346288.0,40.0,45.0,6.0,11.3,mid,mid cap
+07201,07,Cauquenes,42064.0,B2 medium urban (20-100k),78.38,75.43,411.9,829173.0,35.43,223.0,49.0,11.6,low autonomy,low cap
+07202,07,Chanco,9436.0,B3 small semi-urban (5-20k),87.32,76.46,792.2,422515.0,40.63,64.0,7.0,14.3,low autonomy,mid cap
+07203,07,Pelluhue,8562.0,B3 small semi-urban (5-20k),89.88,128.38,1562.0,382854.0,49.56,113.0,25.0,12.8,low autonomy,high cap
+07301,07,Curicó,158659.0,B1 large urban (>100k),47.91,119.27,274.7,0.0,35.89,613.0,102.0,7.3,high autonomy,low cap
+07302,07,Hualañé,10771.0,B3 small semi-urban (5-20k),73.83,130.0,755.38,353923.0,42.5,80.0,12.0,9.2,mid,mid cap
+07303,07,Licantén,6865.0,B3 small semi-urban (5-20k),83.69,179.09,1405.78,320599.0,47.54,61.0,10.0,7.4,low autonomy,high cap
+07304,07,Molina,48477.0,B2 medium urban (20-100k),72.04,83.76,338.74,720331.0,42.68,164.0,35.0,7.9,mid,mid cap
+07305,07,Rauco,11265.0,B3 small semi-urban (5-20k),72.0,119.53,593.76,351241.0,44.64,56.0,9.0,10.5,mid,high cap
+07306,07,Romeral,17216.0,B3 small semi-urban (5-20k),50.89,188.85,495.73,359203.0,50.0,98.0,13.0,7.7,high autonomy,high cap
+07307,07,Sagrada Familia,19416.0,B3 small semi-urban (5-20k),43.89,235.45,560.78,371841.0,37.93,145.0,40.0,8.8,high autonomy,mid cap
+07308,07,Teno,30087.0,B2 medium urban (20-100k),52.89,132.21,344.84,426225.0,44.04,109.0,33.0,7.5,high autonomy,high cap
+07309,07,Vichuquén,4710.0,B4 rural/remote (<5k),47.69,659.98,1793.56,303694.0,51.67,60.0,18.0,8.7,high autonomy,high cap
+07401,07,Linares,95795.0,B2 medium urban (20-100k),69.11,84.62,317.95,1251682.0,37.06,313.0,35.0,8.9,mid,mid cap
+07402,07,Colbún,22568.0,B2 medium urban (20-100k),42.5,298.56,942.8,424324.0,18.87,53.0,10.0,11.8,high autonomy,low cap
+07403,07,Longaví,33288.0,B2 medium urban (20-100k),81.04,68.03,453.43,738684.0,30.08,123.0,21.0,11.6,low autonomy,low cap
+07404,07,Parral,45014.0,B2 medium urban (20-100k),73.5,90.45,460.86,715229.0,39.25,186.0,38.0,9.3,mid,mid cap
+07405,07,Retiro,22308.0,B2 medium urban (20-100k),78.89,81.93,473.09,534059.0,37.04,108.0,23.0,12.2,low autonomy,mid cap
+07406,07,San Javier,49452.0,B2 medium urban (20-100k),76.24,72.2,379.0,852056.0,31.87,182.0,38.0,9.7,mid,low cap
+07407,07,Villa Alegre,17919.0,B3 small semi-urban (5-20k),80.71,74.45,531.52,497831.0,29.76,84.0,12.0,9.8,low autonomy,low cap
+07408,07,Yerbas Buenas,20010.0,B2 medium urban (20-100k),62.76,148.76,605.96,432474.0,30.14,73.0,10.0,11.6,mid,low cap
+08101,08,Concepción,225985.0,B1 large urban (>100k),20.28,178.66,293.46,0.0,47.37,646.0,148.0,5.4,high autonomy,high cap
+08102,08,Coronel,123412.0,B1 large urban (>100k),52.57,129.28,374.23,950475.0,34.38,317.0,68.0,6.3,high autonomy,low cap
+08103,08,Chiguayante,85577.0,B2 medium urban (20-100k),61.49,91.33,295.06,823179.0,40.66,241.0,90.0,5.7,mid,mid cap
+08104,08,Florida,12924.0,B3 small semi-urban (5-20k),85.91,67.55,544.14,436248.0,48.05,77.0,16.0,10.8,low autonomy,high cap
+08105,08,Hualqui,25662.0,B2 medium urban (20-100k),82.38,59.28,376.38,618240.0,52.75,91.0,22.0,10.3,low autonomy,high cap
+08106,08,Lota,39930.0,B2 medium urban (20-100k),,,,839703.0,,,,8.4,,
+08107,08,Penco,48866.0,B2 medium urban (20-100k),66.88,89.93,328.35,612765.0,45.75,212.0,37.0,6.1,mid,high cap
+08108,08,San Pedro De La Paz,150671.0,B1 large urban (>100k),38.14,124.52,245.39,0.0,50.78,256.0,67.0,5.4,high autonomy,high cap
+08109,08,Santa Juana,14934.0,B3 small semi-urban (5-20k),79.89,100.63,597.91,423138.0,57.45,94.0,22.0,12.8,low autonomy,high cap
+08110,08,Talcahuano,145925.0,B1 large urban (>100k),29.22,171.42,309.07,0.0,36.8,462.0,95.0,5.1,high autonomy,mid cap
+08111,08,Tomé,56766.0,B2 medium urban (20-100k),80.46,74.6,454.52,848660.0,43.52,301.0,99.0,8.0,low autonomy,high cap
+08112,08,Hualpén,87346.0,B2 medium urban (20-100k),49.46,113.88,302.27,0.0,41.89,265.0,40.0,3.2,high autonomy,mid cap
+08201,08,Lebu,25057.0,B2 medium urban (20-100k),87.3,41.93,411.57,646078.0,39.66,116.0,33.0,10.5,low autonomy,mid cap
+08202,08,Arauco,37049.0,B2 medium urban (20-100k),66.5,129.94,449.56,497523.0,39.31,173.0,39.0,9.2,mid,mid cap
+08203,08,Cañete,34566.0,B2 medium urban (20-100k),86.48,44.99,385.82,828508.0,44.44,162.0,14.0,13.3,low autonomy,high cap
+08204,08,Contulmo,5898.0,B3 small semi-urban (5-20k),92.27,65.81,997.89,363943.0,42.03,69.0,16.0,12.3,low autonomy,mid cap
+08205,08,Curanilahue,31041.0,B2 medium urban (20-100k),78.65,65.59,534.09,637440.0,46.15,130.0,19.0,8.5,low autonomy,high cap
+08206,08,Los Álamos,21765.0,B2 medium urban (20-100k),83.51,54.66,543.25,577626.0,48.76,121.0,17.0,11.1,low autonomy,high cap
+08207,08,Tirúa,10188.0,B3 small semi-urban (5-20k),90.33,51.17,577.7,468634.0,51.43,70.0,7.0,20.1,low autonomy,high cap
+08301,08,Los Ángeles,218386.0,B1 large urban (>100k),56.31,107.95,288.07,1330408.0,42.07,599.0,135.0,8.5,high autonomy,mid cap
+08302,08,Antuco,4362.0,B4 rural/remote (<5k),90.72,115.18,1504.03,312294.0,40.68,59.0,13.0,14.5,low autonomy,mid cap
+08303,08,Cabrero,31242.0,B2 medium urban (20-100k),76.95,100.94,500.98,510784.0,45.07,142.0,33.0,10.4,mid,high cap
+08304,08,Laja,23691.0,B2 medium urban (20-100k),71.85,114.17,473.97,456671.0,47.06,85.0,22.0,11.3,mid,high cap
+08305,08,Mulchén,28857.0,B2 medium urban (20-100k),66.24,95.9,362.99,556098.0,52.45,143.0,37.0,12.2,mid,high cap
+08306,08,Nacimiento,26124.0,B2 medium urban (20-100k),66.04,120.66,412.51,491383.0,52.85,123.0,20.0,11.0,mid,high cap
+08307,08,Negrete,10723.0,B3 small semi-urban (5-20k),78.11,98.03,537.17,355558.0,46.55,58.0,0.0,9.9,low autonomy,high cap
+08308,08,Quilaco,4402.0,B4 rural/remote (<5k),79.15,166.58,1182.41,309618.0,32.69,52.0,37.0,13.0,low autonomy,low cap
+08309,08,Quilleco,9693.0,B3 small semi-urban (5-20k),75.29,120.78,678.91,392260.0,52.54,59.0,7.0,13.5,mid,high cap
+08310,08,San Rosendo,3574.0,B4 rural/remote (<5k),92.7,73.4,1432.5,329719.0,50.0,36.0,3.0,11.0,low autonomy,high cap
+08311,08,Santa Bárbara,14027.0,B3 small semi-urban (5-20k),74.67,92.86,434.86,423223.0,41.18,68.0,9.0,14.7,mid,mid cap
+08312,08,Tucapel,15692.0,B3 small semi-urban (5-20k),75.47,107.16,561.65,392101.0,58.82,85.0,15.0,11.0,mid,high cap
+08313,08,Yumbel,23027.0,B2 medium urban (20-100k),82.03,93.89,603.83,566151.0,44.34,106.0,9.0,12.6,low autonomy,high cap
+08314,08,Alto Biobío,6014.0,B3 small semi-urban (5-20k),80.76,116.91,738.75,321025.0,42.86,49.0,10.0,22.1,low autonomy,mid cap
+09101,09,Temuco,290433.0,B1 large urban (>100k),45.19,136.29,324.27,0.0,38.13,758.0,192.0,8.6,high autonomy,mid cap
+09102,09,Carahue,24941.0,B2 medium urban (20-100k),90.61,39.25,488.51,756470.0,34.31,102.0,9.0,17.9,low autonomy,low cap
+09103,09,Cunco,19070.0,B3 small semi-urban (5-20k),72.8,127.48,606.47,418614.0,37.63,93.0,20.0,14.8,mid,mid cap
+09104,09,Curarrehue,7729.0,B3 small semi-urban (5-20k),91.15,46.47,585.38,381896.0,51.02,49.0,10.0,15.2,low autonomy,high cap
+09105,09,Freire,26153.0,B2 medium urban (20-100k),77.5,83.16,429.91,585294.0,38.38,99.0,6.0,14.4,low autonomy,mid cap
+09106,09,Galvarino,12709.0,B3 small semi-urban (5-20k),88.78,52.77,558.73,486783.0,36.76,68.0,9.0,16.8,low autonomy,mid cap
+09107,09,Gorbea,14058.0,B3 small semi-urban (5-20k),84.03,71.55,513.18,454381.0,41.86,86.0,15.0,12.8,low autonomy,mid cap
+09108,09,Lautaro,41695.0,B2 medium urban (20-100k),58.25,125.24,370.09,530899.0,41.33,150.0,24.0,8.8,high autonomy,mid cap
+09109,09,Loncoche,25096.0,B2 medium urban (20-100k),77.63,84.79,438.18,533961.0,24.74,194.0,24.0,12.3,low autonomy,low cap
+09110,09,Melipeuco,6759.0,B3 small semi-urban (5-20k),87.31,118.86,1079.4,366898.0,29.82,57.0,9.0,15.7,low autonomy,low cap
+09111,09,Nueva Imperial,33729.0,B2 medium urban (20-100k),84.66,52.97,391.57,807547.0,50.72,138.0,35.0,12.8,low autonomy,high cap
+09112,09,Padre Las Casas,80567.0,B2 medium urban (20-100k),76.89,58.58,326.1,1360172.0,41.44,181.0,22.0,12.7,mid,mid cap
+09113,09,Perquenco,7438.0,B3 small semi-urban (5-20k),83.22,102.79,792.96,340007.0,38.89,54.0,11.0,14.1,low autonomy,mid cap
+09114,09,Pitrufquén,26811.0,B2 medium urban (20-100k),82.07,67.02,435.63,592500.0,46.79,109.0,26.0,10.7,low autonomy,high cap
+09115,09,Pucón,32211.0,B2 medium urban (20-100k),18.53,499.05,699.26,372666.0,38.94,208.0,41.0,8.2,high autonomy,mid cap
+09116,09,Saavedra,12863.0,B3 small semi-urban (5-20k),93.53,36.69,753.21,526959.0,32.58,89.0,10.0,24.3,low autonomy,low cap
+09117,09,Teodoro Schmidt,15633.0,B3 small semi-urban (5-20k),87.91,58.09,530.29,577309.0,38.36,73.0,7.0,19.9,low autonomy,mid cap
+09118,09,Toltén,10032.0,B3 small semi-urban (5-20k),91.78,49.49,662.56,438903.0,23.64,55.0,11.0,16.8,low autonomy,low cap
+09119,09,Vilcún,31515.0,B2 medium urban (20-100k),76.68,77.94,416.24,641622.0,36.0,125.0,16.0,11.7,mid,low cap
+09120,09,Villarrica,67335.0,B2 medium urban (20-100k),40.35,164.46,339.56,529184.0,34.65,228.0,31.0,7.7,high autonomy,low cap
+09121,09,Cholchol,13138.0,B3 small semi-urban (5-20k),89.58,48.07,573.36,501269.0,40.0,70.0,10.0,19.7,low autonomy,mid cap
+09201,09,Angol,52446.0,B2 medium urban (20-100k),76.27,73.15,358.97,876374.0,21.5,200.0,44.0,9.0,mid,low cap
+09202,09,Collipulli,24162.0,B2 medium urban (20-100k),66.05,118.77,435.23,450518.0,42.03,69.0,13.0,13.1,mid,mid cap
+09203,09,Curacautín,18415.0,B3 small semi-urban (5-20k),,,,468003.0,45.33,75.0,9.0,10.9,,high cap
+09204,09,Ercilla,7722.0,B3 small semi-urban (5-20k),87.83,68.18,645.03,386434.0,40.68,59.0,7.0,17.8,low autonomy,mid cap
+09205,09,Lonquimay,10147.0,B3 small semi-urban (5-20k),88.73,65.88,655.32,433996.0,39.66,58.0,12.0,18.4,low autonomy,mid cap
+09206,09,Los Sauces,7334.0,B3 small semi-urban (5-20k),84.11,98.5,782.25,363879.0,41.27,63.0,13.0,17.4,low autonomy,mid cap
+09207,09,Lumaco,9248.0,B3 small semi-urban (5-20k),89.91,52.86,611.39,450328.0,31.15,61.0,9.0,21.5,low autonomy,low cap
+09208,09,Purén,12161.0,B3 small semi-urban (5-20k),88.93,55.03,608.78,467528.0,45.83,120.0,34.0,12.9,low autonomy,high cap
+09209,09,Renaico,10681.0,B3 small semi-urban (5-20k),76.1,108.89,546.81,353155.0,42.86,70.0,11.0,12.5,mid,mid cap
+09210,09,Traiguén,18531.0,B3 small semi-urban (5-20k),81.1,81.17,544.56,489006.0,53.77,106.0,21.0,14.1,low autonomy,high cap
+09211,09,Victoria,34089.0,B2 medium urban (20-100k),76.33,80.47,383.6,628928.0,25.34,146.0,16.0,14.3,mid,low cap
+10101,10,Puerto Montt,274146.0,B1 large urban (>100k),35.49,168.75,301.0,0.0,44.03,829.0,286.0,6.5,high autonomy,high cap
+10102,10,Calbuco,36437.0,B2 medium urban (20-100k),62.34,115.05,353.27,455992.0,38.75,160.0,20.0,8.5,mid,mid cap
+10103,10,Cochamó,4191.0,B4 rural/remote (<5k),77.0,189.44,1099.34,298494.0,34.15,41.0,8.0,10.8,mid,low cap
+10104,10,Fresia,12297.0,B3 small semi-urban (5-20k),78.59,79.45,487.31,383841.0,45.83,72.0,10.0,11.2,low autonomy,high cap
+10105,10,Frutillar,22527.0,B2 medium urban (20-100k),,,,338543.0,36.25,80.0,12.0,5.8,,mid cap
+10106,10,Los Muermos,17138.0,B3 small semi-urban (5-20k),74.72,80.86,384.89,434765.0,32.81,64.0,3.0,11.6,mid,low cap
+10107,10,Llanquihue,18070.0,B3 small semi-urban (5-20k),56.24,130.52,385.51,335718.0,54.12,170.0,8.0,5.9,high autonomy,high cap
+10108,10,Maullín,15054.0,B3 small semi-urban (5-20k),77.39,97.04,623.49,390861.0,30.77,52.0,7.0,12.7,mid,low cap
+10109,10,Puerto Varas,52613.0,B2 medium urban (20-100k),17.69,290.57,451.27,334552.0,36.12,227.0,53.0,2.1,high autonomy,low cap
+10201,10,Castro,46664.0,B2 medium urban (20-100k),72.43,123.9,863.92,476402.0,42.33,189.0,54.0,3.2,mid,mid cap
+10202,10,Ancud,40570.0,B2 medium urban (20-100k),71.45,98.95,781.86,595933.0,37.24,145.0,17.0,5.5,mid,mid cap
+10203,10,Chonchi,16072.0,B3 small semi-urban (5-20k),64.67,152.56,917.23,376804.0,46.27,67.0,9.0,9.3,mid,high cap
+10204,10,Curaco De Vélez,3662.0,B4 rural/remote (<5k),91.74,69.27,1787.34,335199.0,51.85,54.0,2.0,9.5,low autonomy,high cap
+10205,10,Dalcahue,14889.0,B3 small semi-urban (5-20k),73.84,115.41,951.59,406533.0,40.51,79.0,15.0,9.3,mid,mid cap
+10206,10,Puqueldón,4034.0,B4 rural/remote (<5k),83.84,135.62,1648.64,322094.0,41.67,60.0,3.0,17.8,low autonomy,mid cap
+10207,10,Queilén,5675.0,B3 small semi-urban (5-20k),81.4,124.66,1093.83,328218.0,37.84,37.0,6.0,12.3,low autonomy,mid cap
+10208,10,Quellón,28386.0,B2 medium urban (20-100k),69.34,91.62,727.16,471179.0,33.7,92.0,17.0,9.0,mid,low cap
+10209,10,Quemchi,8401.0,B3 small semi-urban (5-20k),78.22,128.77,694.37,346405.0,37.29,59.0,8.0,12.4,low autonomy,mid cap
+10210,10,Quinchao,7663.0,B3 small semi-urban (5-20k),78.33,131.17,1282.6,356409.0,38.67,75.0,4.0,12.4,low autonomy,mid cap
+10301,10,Osorno,165121.0,B1 large urban (>100k),37.69,143.41,291.47,0.0,38.1,546.0,140.0,6.2,high autonomy,mid cap
+10302,10,Puerto Octay,8856.0,B3 small semi-urban (5-20k),60.78,183.66,621.18,305383.0,44.44,63.0,8.0,7.5,high autonomy,high cap
+10303,10,Purranque,19526.0,B3 small semi-urban (5-20k),63.07,122.02,438.33,370614.0,38.78,98.0,16.0,8.6,mid,mid cap
+10304,10,Puyehue,11702.0,B3 small semi-urban (5-20k),59.08,168.78,513.73,327919.0,,,,9.6,high autonomy,
+10305,10,Río Negro,13847.0,B3 small semi-urban (5-20k),73.43,91.73,426.15,372857.0,56.9,58.0,12.0,8.3,mid,high cap
+10306,10,San Juan De La Costa,7766.0,B3 small semi-urban (5-20k),93.13,57.95,1023.95,398517.0,40.0,55.0,15.0,12.9,low autonomy,mid cap
+10307,10,San Pablo,10872.0,B3 small semi-urban (5-20k),71.32,117.75,557.19,340934.0,0.0,0.0,0.0,9.8,mid,low cap
+10401,10,Chaitén,4007.0,B4 rural/remote (<5k),71.16,265.26,1269.75,322986.0,32.69,52.0,4.0,9.0,mid,low cap
+10402,10,Futaleufú,3050.0,B4 rural/remote (<5k),88.02,141.35,1719.2,288285.0,52.94,34.0,6.0,5.6,low autonomy,high cap
+10403,10,Hualaihué,9472.0,B3 small semi-urban (5-20k),77.56,133.69,1047.11,327372.0,50.0,74.0,10.0,10.4,low autonomy,high cap
+10404,10,Palena,1896.0,B4 rural/remote (<5k),90.5,147.7,2279.54,290950.0,42.86,35.0,3.0,9.1,low autonomy,mid cap
+11101,11,Coyhaique,57136.0,B2 medium urban (20-100k),58.43,137.82,443.96,472578.0,51.74,172.0,48.0,2.9,high autonomy,high cap
+11102,11,Lago Verde,762.0,B4 rural/remote (<5k),83.93,472.31,3641.51,283223.0,58.33,24.0,2.0,0.9,low autonomy,high cap
+11201,11,Aysén,22825.0,B2 medium urban (20-100k),61.11,178.73,578.78,392862.0,42.03,138.0,18.0,5.3,mid,mid cap
+11202,11,Cisnes,5132.0,B3 small semi-urban (5-20k),48.66,506.94,1358.5,312874.0,40.91,44.0,8.0,5.0,high autonomy,mid cap
+11203,11,Guaitecas,1587.0,B4 rural/remote (<5k),73.11,524.33,2834.39,284335.0,40.91,44.0,6.0,6.1,mid,mid cap
+11301,11,Cochrane,3378.0,B4 rural/remote (<5k),85.67,134.06,1525.18,296740.0,71.43,14.0,2.0,6.3,low autonomy,high cap
+11302,11,O´Higgins,647.0,B4 rural/remote (<5k),95.31,174.25,7840.59,279689.0,63.16,19.0,0.0,9.2,low autonomy,high cap
+11303,11,Tortel,499.0,B4 rural/remote (<5k),95.39,191.71,5871.56,279403.0,58.33,24.0,4.0,4.6,low autonomy,high cap
+11401,11,Chile Chico,4864.0,B4 rural/remote (<5k),86.48,128.52,1157.23,304556.0,56.25,32.0,2.0,6.2,low autonomy,high cap
+11402,11,Río Ibáñez,2691.0,B4 rural/remote (<5k),86.57,186.4,2303.92,301480.0,54.05,37.0,7.0,7.0,low autonomy,high cap
+12101,12,Punta Arenas,130452.0,B1 large urban (>100k),20.0,186.51,470.36,0.0,42.05,440.0,120.0,3.5,high autonomy,mid cap
+12102,12,Laguna Blanca,190.0,B4 rural/remote (<5k),92.26,730.44,10925.39,276208.0,46.43,28.0,7.0,2.3,low autonomy,high cap
+12103,12,Río Verde,102.0,B4 rural/remote (<5k),66.32,5369.44,19819.08,276162.0,57.14,35.0,4.0,2.8,mid,high cap
+12104,12,San Gregorio,224.0,B4 rural/remote (<5k),79.31,872.96,5303.26,277830.0,44.44,27.0,3.0,8.1,low autonomy,high cap
+12201,12,Cabo De Hornos,1736.0,B4 rural/remote (<5k),91.99,195.81,2865.72,288723.0,41.94,31.0,1.0,1.2,low autonomy,mid cap
+12301,12,Porvenir,6673.0,B3 small semi-urban (5-20k),60.05,256.26,1053.33,324041.0,43.48,69.0,10.0,3.6,high autonomy,mid cap
+12302,12,Primavera,431.0,B4 rural/remote (<5k),86.08,540.1,4430.44,280467.0,52.17,23.0,3.0,1.3,low autonomy,high cap
+12303,12,Timaukel,147.0,B4 rural/remote (<5k),94.53,475.33,10878.69,279927.0,60.0,20.0,5.0,6.4,low autonomy,high cap
+12401,12,Natales,23878.0,B2 medium urban (20-100k),50.0,240.46,836.93,367696.0,36.84,114.0,19.0,3.1,high autonomy,mid cap
+12402,12,Torres Del Paine,197.0,B4 rural/remote (<5k),77.34,578.37,3251.43,277617.0,48.28,29.0,13.0,5.3,mid,high cap
+13101,13,Santiago,425426.0,B1 large urban (>100k),9.7,233.51,399.67,0.0,20.64,1904.0,206.0,3.9,high autonomy,low cap
+13102,13,Cerrillos,83544.0,B2 medium urban (20-100k),22.57,220.22,361.6,0.0,,,40.0,5.2,high autonomy,
+13103,13,Cerro Navia,127032.0,B1 large urban (>100k),85.15,30.32,238.78,2272758.0,33.42,398.0,96.0,6.0,low autonomy,low cap
+13104,13,Conchalí,121298.0,B1 large urban (>100k),58.47,83.44,453.86,1220777.0,30.06,326.0,24.0,6.1,high autonomy,low cap
+13105,13,El Bosque,153976.0,B1 large urban (>100k),79.73,41.57,252.0,2313353.0,36.03,494.0,92.0,6.2,low autonomy,low cap
+13106,13,Estación Central,179909.0,B1 large urban (>100k),34.87,114.45,234.5,0.0,24.29,597.0,129.0,5.0,high autonomy,low cap
+13107,13,Huechuraba,101608.0,B1 large urban (>100k),8.07,400.29,514.89,0.0,47.9,453.0,167.0,4.3,high autonomy,high cap
+13108,13,Independencia,116089.0,B1 large urban (>100k),44.99,91.17,199.23,0.0,35.01,357.0,99.0,5.8,high autonomy,low cap
+13109,13,La Cisterna,102478.0,B1 large urban (>100k),39.52,113.63,258.73,587204.0,29.29,297.0,52.0,4.1,high autonomy,low cap
+13110,13,La Florida,373466.0,B1 large urban (>100k),43.1,128.37,442.2,0.0,38.28,781.0,222.0,3.5,high autonomy,mid cap
+13111,13,La Granja,111670.0,B1 large urban (>100k),80.29,41.93,252.49,1676611.0,36.05,491.0,138.0,6.0,low autonomy,low cap
+13112,13,La Pintana,174601.0,B1 large urban (>100k),81.19,42.48,265.98,2937514.0,30.25,529.0,119.0,9.3,low autonomy,low cap
+13113,13,La Reina,89091.0,B2 medium urban (20-100k),7.41,336.94,547.31,0.0,33.01,415.0,58.0,1.6,high autonomy,low cap
+13114,13,Las Condes,293272.0,B1 large urban (>100k),2.23,676.74,1334.34,0.0,50.22,1157.0,406.0,0.9,high autonomy,high cap
+13115,13,Lo Barnechea,112112.0,B1 large urban (>100k),2.2,918.1,1142.53,0.0,43.49,561.0,244.0,0.9,high autonomy,high cap
+13116,13,Lo Espejo,87079.0,B2 medium urban (20-100k),76.86,50.7,269.42,1426923.0,36.59,276.0,58.0,6.8,mid,mid cap
+13117,13,Lo Prado,91118.0,B2 medium urban (20-100k),83.54,35.87,586.07,1569166.0,31.45,337.0,66.0,5.3,low autonomy,low cap
+13118,13,Macul,123241.0,B1 large urban (>100k),22.01,146.0,427.45,0.0,34.6,367.0,89.0,3.5,high autonomy,low cap
+13119,13,Maipú,501786.0,B1 large urban (>100k),60.97,81.68,308.9,4146779.0,25.96,836.0,156.0,3.3,mid,low cap
+13120,13,Ñuñoa,239365.0,B1 large urban (>100k),8.36,183.4,330.81,0.0,44.39,588.0,167.0,1.5,high autonomy,high cap
+13121,13,Pedro Aguirre Cerda,95643.0,B2 medium urban (20-100k),70.4,62.58,271.05,1281263.0,37.79,299.0,68.0,5.5,mid,mid cap
+13122,13,Peñalolén,235724.0,B1 large urban (>100k),33.32,145.16,494.84,0.0,34.0,547.0,142.0,3.2,high autonomy,low cap
+13123,13,Providencia,141714.0,B1 large urban (>100k),3.2,648.87,1228.61,0.0,44.16,1019.0,289.0,1.3,high autonomy,high cap
+13124,13,Pudahuel,227540.0,B1 large urban (>100k),27.8,210.55,498.39,0.0,39.57,422.0,112.0,4.4,high autonomy,mid cap
+13125,13,Quilicura,205375.0,B1 large urban (>100k),19.54,195.19,277.58,0.0,30.08,472.0,96.0,5.2,high autonomy,low cap
+13126,13,Quinta Normal,128818.0,B1 large urban (>100k),49.6,89.2,359.55,0.0,35.91,362.0,69.0,2.1,high autonomy,low cap
+13127,13,Recoleta,153131.0,B1 large urban (>100k),21.97,152.31,228.61,0.0,33.47,487.0,164.0,5.1,high autonomy,low cap
+13128,13,Renca,143321.0,B1 large urban (>100k),28.59,171.54,517.26,0.0,30.29,383.0,116.0,5.3,high autonomy,low cap
+13129,13,San Joaquín,94590.0,B2 medium urban (20-100k),24.65,193.18,537.74,0.0,38.99,395.0,101.0,4.8,high autonomy,mid cap
+13130,13,San Miguel,149102.0,B1 large urban (>100k),17.19,128.2,332.16,0.0,,,,2.2,high autonomy,
+13131,13,San Ramón,75884.0,B2 medium urban (20-100k),76.9,53.24,295.27,1198509.0,34.43,273.0,46.0,6.9,mid,low cap
+13132,13,Vitacura,85876.0,B2 medium urban (20-100k),2.74,928.52,1477.48,0.0,41.31,656.0,221.0,0.9,high autonomy,mid cap
+13201,13,Puente Alto,564435.0,B1 large urban (>100k),73.98,49.03,214.49,7475869.0,53.16,1061.0,269.0,5.0,mid,high cap
+13202,13,Pirque,28949.0,B2 medium urban (20-100k),23.86,256.8,457.81,312413.0,29.33,150.0,25.0,2.7,high autonomy,low cap
+13203,13,San José De Maipo,17289.0,B3 small semi-urban (5-20k),41.75,198.36,475.26,311580.0,29.66,118.0,18.0,4.7,high autonomy,low cap
+13301,13,Colina,168128.0,B1 large urban (>100k),11.89,259.79,486.07,0.0,31.32,265.0,54.0,5.1,high autonomy,low cap
+13302,13,Lampa,144684.0,B1 large urban (>100k),17.05,206.08,425.61,0.0,35.85,159.0,40.0,4.9,high autonomy,low cap
+13303,13,Tiltil,19534.0,B3 small semi-urban (5-20k),48.13,141.54,537.64,336643.0,28.45,116.0,9.0,6.1,high autonomy,low cap
+13401,13,San Bernardo,304977.0,B1 large urban (>100k),35.64,132.5,382.42,0.0,,,,6.0,high autonomy,
+13402,13,Buin,116687.0,B1 large urban (>100k),31.39,121.32,392.9,569022.0,30.62,258.0,41.0,4.4,high autonomy,low cap
+13403,13,Calera De Tango,25390.0,B2 medium urban (20-100k),30.42,202.42,565.2,316153.0,33.08,133.0,25.0,3.5,high autonomy,low cap
+13404,13,Paine,78495.0,B2 medium urban (20-100k),30.75,151.17,324.84,506438.0,23.7,270.0,40.0,5.9,high autonomy,low cap
+13501,13,Melipilla,135801.0,B1 large urban (>100k),70.63,67.06,486.12,1728421.0,29.55,335.0,62.0,7.6,mid,low cap
+13502,13,Alhué,7696.0,B3 small semi-urban (5-20k),17.83,1490.51,4350.45,310204.0,31.25,64.0,11.0,9.6,high autonomy,low cap
+13503,13,Curacaví,35064.0,B2 medium urban (20-100k),40.0,160.24,352.1,392835.0,63.69,157.0,15.0,6.0,high autonomy,high cap
+13504,13,María Pinto,15350.0,B3 small semi-urban (5-20k),51.49,172.46,801.85,329187.0,67.35,49.0,12.0,7.3,high autonomy,high cap
+13505,13,San Pedro,11092.0,B3 small semi-urban (5-20k),71.36,103.33,495.49,363223.0,52.54,59.0,9.0,14.1,mid,high cap
+13601,13,Talagante,75800.0,B2 medium urban (20-100k),55.33,88.99,276.84,792000.0,24.45,274.0,27.0,6.3,high autonomy,low cap
+13602,13,El Monte,37292.0,B2 medium urban (20-100k),62.05,86.27,279.39,492467.0,56.16,146.0,16.0,7.1,mid,high cap
+13603,13,Isla De Maipo,39062.0,B2 medium urban (20-100k),45.95,125.88,285.23,416544.0,25.69,109.0,27.0,6.4,high autonomy,low cap
+13604,13,Padre Hurtado,81112.0,B2 medium urban (20-100k),69.66,82.91,331.33,485661.0,31.0,200.0,29.0,3.7,mid,low cap
+13605,13,Peñaflor,93931.0,B2 medium urban (20-100k),59.0,79.66,240.68,1080939.0,38.2,356.0,75.0,7.3,high autonomy,mid cap
+14101,14,Valdivia,166958.0,B1 large urban (>100k),56.39,127.4,353.39,727085.0,42.63,638.0,139.0,3.4,high autonomy,mid cap
+14102,14,Corral,5493.0,B3 small semi-urban (5-20k),89.97,71.95,897.25,331318.0,52.38,42.0,12.0,7.6,low autonomy,high cap
+14103,14,Lanco,16861.0,B3 small semi-urban (5-20k),79.82,78.74,465.81,457813.0,40.86,93.0,13.0,3.9,low autonomy,mid cap
+14104,14,Los Lagos,21421.0,B2 medium urban (20-100k),67.23,97.13,377.76,398213.0,32.99,97.0,4.0,6.7,mid,low cap
+14105,14,Máfil,8036.0,B3 small semi-urban (5-20k),76.07,119.55,785.06,327165.0,41.67,60.0,13.0,7.2,mid,mid cap
+14106,14,Mariquina,22901.0,B2 medium urban (20-100k),75.25,91.11,451.26,481068.0,37.04,108.0,12.0,7.9,mid,mid cap
+14107,14,Paillaco,19719.0,B3 small semi-urban (5-20k),68.55,108.47,442.3,393427.0,34.62,104.0,21.0,6.4,mid,low cap
+14108,14,Panguipulli,35049.0,B2 medium urban (20-100k),64.61,160.75,902.43,457515.0,43.93,173.0,44.0,10.2,mid,high cap
+14201,14,La Unión,38724.0,B2 medium urban (20-100k),62.94,118.19,372.24,470090.0,36.3,146.0,27.0,8.7,mid,mid cap
+14202,14,Futrono,15633.0,B3 small semi-urban (5-20k),56.8,189.76,610.94,342327.0,42.5,80.0,3.0,9.3,high autonomy,mid cap
+14203,14,Lago Ranco,10527.0,B3 small semi-urban (5-20k),45.12,391.87,1123.32,331283.0,57.32,82.0,22.0,12.4,high autonomy,high cap
+14204,14,Río Bueno,33314.0,B2 medium urban (20-100k),69.38,100.75,412.11,486372.0,40.71,113.0,30.0,5.7,mid,mid cap
+15101,15,Arica,236109.0,B1 large urban (>100k),57.0,94.54,259.31,1650251.0,,,,9.1,high autonomy,
+15102,15,Camarones,861.0,B4 rural/remote (<5k),77.7,601.83,3973.91,305444.0,61.54,26.0,5.0,12.6,low autonomy,high cap
+15201,15,Putre,1368.0,B4 rural/remote (<5k),91.71,126.27,2018.99,343521.0,50.0,34.0,8.0,7.3,low autonomy,high cap
+15202,15,General Lagos,504.0,B4 rural/remote (<5k),94.98,150.54,3675.24,282875.0,47.06,17.0,3.0,21.2,low autonomy,high cap
+16101,16,Chillán,188835.0,B1 large urban (>100k),49.15,124.27,295.2,0.0,35.16,438.0,131.0,10.5,high autonomy,low cap
+16102,16,Bulnes,23785.0,B2 medium urban (20-100k),77.54,83.24,413.81,509083.0,45.26,95.0,6.0,12.7,low autonomy,high cap
+16103,16,Chillán Viejo,32611.0,B2 medium urban (20-100k),65.7,101.32,400.93,519998.0,54.78,115.0,21.0,8.5,mid,high cap
+16104,16,El Carmen,13122.0,B3 small semi-urban (5-20k),79.99,96.18,646.22,408457.0,43.61,133.0,20.0,14.9,low autonomy,high cap
+16105,16,Pemuco,8913.0,B3 small semi-urban (5-20k),66.85,179.03,635.52,348253.0,53.13,64.0,8.0,19.0,mid,high cap
+16106,16,Pinto,12434.0,B3 small semi-urban (5-20k),65.12,149.29,532.08,353149.0,44.78,67.0,13.0,10.3,mid,high cap
+16107,16,Quillón,19116.0,B3 small semi-urban (5-20k),88.21,88.01,831.89,518377.0,29.29,140.0,35.0,16.0,low autonomy,low cap
+16108,16,San Ignacio,17403.0,B3 small semi-urban (5-20k),86.05,57.64,511.43,556588.0,,,,15.7,low autonomy,
+16109,16,Yungay,18500.0,B3 small semi-urban (5-20k),79.85,98.18,648.81,439713.0,51.69,89.0,16.0,10.8,low autonomy,high cap
+16201,16,Quirihue,11634.0,B3 small semi-urban (5-20k),83.17,84.67,638.01,451996.0,44.12,68.0,7.0,7.8,low autonomy,high cap
+16202,16,Cobquecura,5477.0,B3 small semi-urban (5-20k),86.28,151.95,1394.57,354215.0,,,,19.1,low autonomy,
+16203,16,Coelemu,15859.0,B3 small semi-urban (5-20k),80.73,83.04,517.51,467850.0,42.68,82.0,13.0,13.0,low autonomy,mid cap
+16204,16,Ninhue,5762.0,B3 small semi-urban (5-20k),91.33,68.34,1270.6,381908.0,35.9,39.0,2.0,16.1,low autonomy,low cap
+16205,16,Portezuelo,5188.0,B3 small semi-urban (5-20k),87.51,107.84,1034.72,368680.0,56.25,64.0,6.0,15.1,low autonomy,high cap
+16206,16,Ránquil,6478.0,B3 small semi-urban (5-20k),76.4,157.83,826.06,352066.0,53.7,54.0,14.0,16.8,mid,high cap
+16207,16,Trehuaco,6124.0,B3 small semi-urban (5-20k),89.23,81.64,1006.05,368813.0,22.64,106.0,17.0,17.1,low autonomy,low cap
+16301,16,San Carlos,55629.0,B2 medium urban (20-100k),75.93,82.28,439.78,932985.0,49.51,204.0,8.0,13.7,mid,high cap
+16302,16,Coihueco,29760.0,B2 medium urban (20-100k),81.26,69.36,405.15,633473.0,47.62,105.0,8.0,13.5,low autonomy,high cap
+16303,16,Ñiquén,12783.0,B3 small semi-urban (5-20k),84.04,85.23,755.1,417611.0,74.55,55.0,34.0,13.8,low autonomy,high cap
+16304,16,San Fabián,5241.0,B3 small semi-urban (5-20k),77.22,162.66,833.31,313068.0,58.33,36.0,8.0,15.0,mid,high cap
+16305,16,San Nicolás,15082.0,B3 small semi-urban (5-20k),68.28,140.96,645.79,373853.0,39.06,64.0,13.0,10.8,mid,mid cap

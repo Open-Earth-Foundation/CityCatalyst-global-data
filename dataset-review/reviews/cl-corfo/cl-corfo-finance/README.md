@@ -38,7 +38,7 @@ National (all-Chile and regional CORFO lines). Mostly **ongoing/standing** instr
 
 ## Extraction & refresh
 
-**How this snapshot was produced.** CORFO's main calls list is **JavaScript-rendered** (~125 pages), so a plain fetch returns a shell — enumerate it with a JS-capable fetch (headless browser). v1 was produced from the per-instrument pages + press with the **extraction prompt** below. The committed `data/cl_corfo_programs_v1.csv` is the resulting snapshot. (The same prompt runs across all six Chile finance sources at once in the OEF harness, `reviews/oef/cl-finance-inventory/releases/v1/extract_inventory.ipynb`, if you prefer to refresh them together.)
+**How this snapshot was produced.** CORFO's main calls list is **JavaScript-rendered** (~125 pages), so a plain fetch returns a shell — enumerate it with a JS-capable fetch (headless browser). v1 was produced from the per-instrument pages + press with the **extraction prompt** below. The committed `data/cl_corfo_programs_v1.csv` is the resulting snapshot. (The same prompt runs across all six Chile finance sources at once in the OEF harness, `reviews/oef/cl-city-action-fundability/releases/v1/extract_inventory.ipynb`, if you prefer to refresh them together.)
 
 **Source pages for this dataset:**
 - https://www.corfo.cl/sites/cpp/programasyconvocatorias  (JS-rendered list — needs a JS-capable fetch)

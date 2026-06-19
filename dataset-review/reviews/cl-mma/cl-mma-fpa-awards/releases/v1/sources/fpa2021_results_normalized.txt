@@ -1,0 +1,145 @@
+# year=2021 concurso_n=XXIV schema=producto (folio|proyecto|rut|org|producto|comuna|monto|nota; variable amounts)
+=== CATEGORY: ISC ===
+39669 | Concientizando y educando a nuestra comunidad Primavera a través del reciclaje comunitario | 75963050-5 | Junta de Vecinos Primavera | Punto Verde | Arica | 4.000.000 | 2,78
+39679 | Recuperando nuestro Casco antiguo de Arica a través del reciclaje y la educación ambiental | 65187223-5 | Agrupación de Juntas de Vecinos Casco Antiguo de Arica | Punto Verde | Arica | 4.000.000 | 2,59
+39386 | Invernadero Por una nueva Esperanza | 65825450-2 | Club Adulto Mayor por una Nueva Esperanza | Invernadero y compostaje | Iquique | 4.000.000 | 2,81
+39661 | Ampliación del invernadero e implementación de programa de compostaje comunitario | 65107443-6 | Organización Social Cultural y Deportiva AKATSUKI | Invernadero y compostaje | Calama | 4.000.000 | 2,40
+39032 | Reciclando Tejemos Nuestro Barrio | 72682900-4 | Junta de Vecinos Unión y Progreso Población Rafael Torreblanca | Cambio Climático y Descontaminación Ambiental | Vallenar | 4.000.000 | 2,83
+39129 | Freirina se moviliza por el Reciclaje | 65193729-9 | Agrupación Deportiva Social y Cultural Pedalea Freirina | Punto Verde | Freirina | 4.000.000 | 2,58
+38154 | Punto Verde Tabaqueros de Rio Hurtado | 72297200-7 | Junta de Vecinos Tabaqueros | Punto Verde | Río Hurtado | 4.000.000 | 2,78
+38605 | Módulo de Información Turística Sustentable | 65018365-7 | Salamanca Choapa Profundo Red Comuna de Turismo | Sistema Fotovoltaico OffGrid | Salamanca | 6.000.000 | 2,72
+38839 | Proyecto de punto verde para la Escuadra | 75991580-1 | Junta de Vecinos La Escuadra | Punto Verde | San Felipe | 4.000.000 | 2,77
+38341 | Registro y Conservación Patrimonio Natural Sector Salto del Agua Placilla de Peñuelas | 65575410-5 | Centro Cultural Placilla | Cambio Climático y Descontaminación Ambiental | Valparaíso | 4.000.000 | 2,62
+37049 | Un lugar para reproducción y propagación de Calydorea xiphioides en el Santuario Federico Santa María | 65191498-1 | Ruta Sustentable | Invernadero y compostaje | Valparaíso | 4.000.000 | 2,62
+37744 | Plantines de hierbas aromáticas y medicinales libres de metales en Zona de Sacrificio | 75945900-8 | Junta de Vecinos El Rungue | Invernadero y compostaje | Puchuncaví | 4.000.000 | 2,60
+38783 | Mosaico transforma residuos en ecoartesanías | 65180632-1 | Agrupación de Apoderados y Jóvenes Mosaico | Cambio Climático y Descontaminación Ambiental | Maipú | 4.000.000 | 3,10
+38162 | Cambiando el Switch: Energías Renovables y Eficiencia Energética en la sede Maipú | 75123500-3 | Junta de Vecinos Maipú | Sistema Fotovoltaico OnGrid | Maipú | 4.000.000 | 3,05
+37586 | Conservación y sustentabilidad del patrimonio natural educando a la comunidad para contrarrestar el cambio climático | 65145449-2 | Mi Comuna EcoLógica | Cambio Climático y Descontaminación Ambiental | Las Condes | 4.000.000 | 2,95
+39217 | Reciclando Unidos | 65098849-3 | Comité de adelanto Chacón Zamora | Punto Verde | La Florida | 4.000.000 | 2,90
+38918 | ¡Día a Día en Resiliencia! Aprendamos como se puede mitigar adaptarnos y ser resilientes al Cambio Climático | 65138469-9 | Agrupación Cultural Social y Deportiva Rancagua Limpio | Cambio Climático y Descontaminación Ambiental | Rancagua | 4.000.000 | 2,87
+38814 | Valorando la biodiversidad del Santuario de la Naturaleza dunas y humedales de Putú Huenchullamí | 65069115-6 | Agrupación Defensa y Conservación Maule Mataquito | Cambio Climático y Descontaminación Ambiental | Constitución | 4.000.000 | 2,90
+39012 | Aprendiendo de revalorización de residuos en comunidad | 65150678-6 | Junta de Vecinos Raíces de Rauquén | Cambio Climático y Descontaminación Ambiental | Curicó | 4.000.000 | 2,85
+38862 | En la Plaza de Artesanos aprendemos y usamos energías renovables | 65156614-2 | Agrupación de Desarrollo Rayen Mawida Flor de Montaña | Sistema Fotovoltaico OnGrid | Romeral | 4.000.000 | 2,80
+38874 | Programa de sensibilización ecoartístico Todos somos Naturaleza | 65300150-9 | Centro Cultural y Social Kuraf Werken | Cambio Climático y Descontaminación Ambiental | Talca | 4.000.000 | 2,75
+38479 | Continuando la sustentabilidad local en comunidad Juan Pablo II | 65628040-9 | Junta de vecinos Juan Pablo II | Cambio Climático y Descontaminación Ambiental | Yungay | 4.000.000 | 2,83
+38788 | La tierra del Quillay crece valorizando sus residuos | 73777800-2 | Junta de Vecinos Quilmo Quillay | Cambio Climático y Descontaminación Ambiental | Chillán Viejo | 4.000.000 | 2,65
+38633 | Concientizando al Barrio Ultraestación sobre los Residuos Sólidos Orgánicos Domiciliarios | 73983600-K | Comunidad Un Nuevo Sendero | Invernadero y compostaje | San Carlos | 4.000.000 | 2,65
+38954 | Clasificar y reciclar para tu calidad de vida mejorar | 73550000-7 | Junta de Vecinos Nº9 San Juan | Invernadero y compostaje | Tomé | 4.000.000 | 3,03
+38261 | Ruta de las Vertientes: Acciones para la conservación del patrimonio natural de los cerros de Talcahuano | 65742300-9 | Agrupación de Juntas de Vecinos de la Península de Tumbes | Cambio Climático y Descontaminación Ambiental | Talcahuano | 4.000.000 | 3,01
+38092 | Reforestación Comunitaria Parque Ecológico La Aguada | 65101028-4 | Comité Ambiental Comuna de Gorbea | Cambio Climático y Descontaminación Ambiental | Gorbea | 4.000.000 | 3,10
+39622 | Arboretum medicinal con fines educativos | 65087874-4 | Cooperativa de Reciclaje Valdivianos Sin Basura | Cambio Climático y Descontaminación Ambiental | Valdivia | 4.000.000 | 3,00
+39148 | Ahorremos energía cosechemos futuro | 65174029-0 | Junta de Vecinos Desarrollo y Progreso Unidad Vecinal N°5 Urbana | Cambio Climático y Descontaminación Ambiental | Paillaco | 4.000.000 | 3,00
+38871 | Más claro que el agua: A promover un uso eficiente del agua en los habitantes de Paillaco | 65031526-K | Comité de Agua Potable Rural Sector Lumaco | Cambio Climático y Descontaminación Ambiental | Paillaco | 4.000.000 | 2,98
+38215 | Huerto Comunitario Lancuyén | 65482000-7 | Junta de Vecinos Lancuyén | Invernadero y compostaje | Puerto Montt | 4.000.000 | 2,63
+39205 | Coscorobas de Quenuir | 65114281-4 | Comité de Salud Quenuir | Cambio Climático y Descontaminación Ambiental | Maullín | 4.000.000 | 2,60
+38514 | Jornadas Comunitarias Formativas y Productivas sobre Huertos y Frutales | 65129460-6 | Agrupación de Monitores para Rehabilitación en Salud Mental Amore | Cambio Climático y Descontaminación Ambiental | Osorno | 4.000.000 | 2,55
+39000 | Recicla a Toda Costa | 65005694-9 | Taller Laboral Flor del Mar | Punto Verde | Los Muermos | 4.000.000 | 2,55
+39320 | ¿Qué lleva y trae la marea? Recolección Identificación y Cuantificación de Residuos en la Bahía de Puerto Cisnes | 65124334-3 | Agrupación Social de Turismo Náutico y Conservación Cetáceos | Cambio Climático y Descontaminación Ambiental | Cisnes | 4.000.000 | 3,10
+38878 | Huerto piloto de producción de almácigos y hortalizas con captación de agua lluvia riego y compostera | 65057266-1 | Agrupación de Mujeres Campesinas y Emprendedoras | Invernadero y compostaje | Aysén | 4.000.000 | 2,78
+39134 | Encuentro de limpieza de playas Fiordos del Parque Nacional Laguna San Rafael | 65190823-K | Asociación Gremial Hielo Norte Parque Laguna San Rafael | Cambio Climático y Descontaminación Ambiental | Río Ibáñez | 4.000.000 | 2,75
+38236 | Un Punto Verde para La Junta | 65433990-2 | Asociación Gremial Cámara de Turismo y Comercio La Junta | Punto Verde | Cisnes | 4.000.000 | 2,70
+38436 | REduce REutiliza Población Shuka II REcicla | 65065512-5 | Junta de Vecinos N°33 Nuevos Horizontes | Punto Verde | Natales | 4.000.000 | 2,90
+38975 | Tecnología a favor del Ecosistema. Por el cuidado y resguardo de la Biodiversidad del Humedal Tres Puentes | 65838230-6 | Agrupación Ecológica Patagónica Humedal Tres Puentes | Cambio Climático y Descontaminación Ambiental | Punta Arenas | 4.000.000 | 2,88
+38901 | Vivero de flora nativa para el Museo de Historia Natural Río Seco | 65087736-5 | Asociación de Investigadores Museo de Historia Natural Río Seco | Invernadero y compostaje | Punta Arenas | 4.000.000 | 2,77
+=== CATEGORY: ISEE ===
+39131 | Conciencia Ambiental Sustentable | 65715080-0 | Club Deportivo Escolar y Cultural Instituto del Mar | Cambio Climático y Descontaminación Ambiental | Iquique | 4.000.000 | 2,97
+39220 | Educación y divulgación para la puesta en valor de la biodiversidad del Área Natural Cerro Perales Taltal | 65033288-1 | Centro General de Padres y Apoderados Escuela E-104 Victoriano Quinteros Soto | Cambio Climático y Descontaminación Ambiental | Taltal | 4.000.000 | 2,75
+38909 | Punto Verde San Vicente | 65185263-3 | Centro de Padres y Apoderados Fundación Educacional San Vicente de Paul | Punto Verde | Copiapó | 4.000.000 | 2,65
+39648 | Conociendo valorando y protegiendo nuestros humedales | 65030146-3 | Club Deportivo Nueva Esperanza | Cambio Climático y Descontaminación Ambiental | La Serena | 4.000.000 | 2,92
+38400 | Sembrando inclusión Escuela Especial Sagrado Corazón | 65318750-5 | Centro de Padres y Apoderados Luz y Esperanza | Invernadero y compostaje | San Felipe | 4.000.000 | 2,45
+38991 | Conocer para proteger: Laboratorios al aire libre en el bosque esclerófilo de Marga Marga | 65033279-2 | Centro General de Padres y Apoderados Colegio Robles | Cambio Climático y Descontaminación Ambiental | Villa Alemana | 4.000.000 | 2,33
+39045 | Laboratorio Verde: Una comunidad activa en la valoración y protección de la biodiversidad | 65032485-4 | Centro de Padres y Apoderados Domingo Santa María | Cambio Climático y Descontaminación Ambiental | Renca | 4.000.000 | 3,05
+36734 | Un invernadero para el JMC | 65189269-4 | Centro Cultural Ambiental y Deportivo Nahuel Newen | Invernadero y compostaje | Recoleta | 4.000.000 | 3,05
+39219 | Resiliencia Energética Energías renovables no convencionales en Jardín Infantil | 65170615-7 | Centro de Padres y Apoderados Sala Cuna y Jardín Infantil Pehuén | Sistema Fotovoltaico OnGrid | Maipú | 4.000.000 | 3,00
+38697 | Paneles solares para mi escuela | 65197253-1 | Centro de Padres y Apoderados Centro Educacional Jorge Huneeus Zegers | Sistema Fotovoltaico OffGrid | La Pintana | 6.000.000 | 2,90
+37238 | Pasito a pasito Pasitos de Chacabuco con agüita calentita | 65071729-5 | Centro de Padres Pasitos de Chacabuco | Sistema Solar Térmico | Colina | 4.000.000 | 2,85
+38985 | Aprendo y Uso las Energías Renovables en mi Escuela | 73896800-K | Centro de Padres y Apoderados Escuela Laura Matus Meléndez | Sistema Solar Térmico | Doñihue | 4.000.000 | 2,93
+37922 | Con la unión de mi escuela el sol y la luminaria led con panel solar la educación aporta para detener el cambio climático | 65163826-7 | Organización Medio Ambientalista Eco Clubes LIFAE | Cambio Climático y Descontaminación Ambiental | Las Cabras | 4.000.000 | 2,90
+39111 | Grupo escolar de acción climática del Liceo Industrial de Rengo | 65160825-2 | Centro General de Padres y Apoderados Liceo Industrial de Rengo | Cambio Climático y Descontaminación Ambiental | Rengo | 4.000.000 | 2,82
+38538 | Los invernaderos como un espacio integral de aprendizaje para el cuidado del medioambiente | 65038456-3 | Centro de Padres y Apoderados Colegio Particular Subvencionado Arturo Prat | Invernadero y compostaje | Machalí | 4.000.000 | 2,75
+38495 | Un Punto Verde para mi escuela Las Violetas | 65072920-K | Centro de Padres y Apoderados Escuela Especial F 483 Las Violetas de Linares | Punto Verde | Linares | 4.000.000 | 2,65
+38636 | Aprovechando la energía de Inti: Termosolar para la comunidad educativa del Liceo Técnico Puente Ñuble | 65123549-9 | Comité Agroecológico Puente Ñuble | Sistema Solar Térmico | San Nicolás | 4.000.000 | 2,43
+37954 | Centro de reciclaje y educación ambiental escuela Amanda Labarca Educando para incluir | 65048368-5 | Centro de Padres y Apoderados Escuela Amanda Labarca | Cambio Climático y Descontaminación Ambiental | Laja | 4.000.000 | 2,99
+38226 | Aurora Huerta: sembrando conciencia ambiental en la comunidad de Choroico | 65073545-5 | Centro de Padres y Apoderados Escuela AG 828 Aurora de Chile Choroico | Invernadero y compostaje | Cunco | 4.000.000 | 3,07
+38540 | Educándonos con energías renovables: Energía solar para un futuro mejor | 65878440-4 | Centro General de Padres y Apoderados Escuela Rural Pullinque | Sistema Fotovoltaico OnGrid | Panguipulli | 4.000.000 | 2,89
+37380 | Energizando al Jardín Infantil Piolín con el Sistema Fotovoltaico on-grid | 65015656-0 | Centro General de Padres y Apoderados Jardín Infantil Piolín de Ancud | Sistema Fotovoltaico OnGrid | Ancud | 4.000.000 | 3,00
+39331 | Habilitación de Centro de Educación Ambiental Escuela Granja Notuco | 65321120-1 | Centro de Padres y Apoderados Escuela Rural Notuco | Cambio Climático y Descontaminación Ambiental | Chonchi | 4.000.000 | 2,95
+39068 | Aprendamos a cuidar el agua junto a La Comunidad Escolar de Trosco | 74528600-3 | Centro de Padres y Apoderados Escuela Particular N164 Trosco | Cambio Climático y Descontaminación Ambiental | San Juan de la Costa | 4.000.000 | 2,90
+39267 | Recuperando nuestro Lawen Invernadero Medicinal y Comunitario Escuela rural de Quilquico | 65414960-7 | Centro de Padres y Apoderados Escuela Rural Quilquico | Invernadero y compostaje | Castro | 4.000.000 | 2,90
+38920 | La ruta de la sustentabilidad | 73746100-9 | Centro General de Padres y Apoderados de la Escuela Amanda Labarca | Cambio Climático y Descontaminación Ambiental | Cisnes | 4.000.000 | 3,10
+38372 | Educación y Ciencia en un invernadero Colegio Alianza Austral 2021 | 73746600-0 | Centro de Padres del Colegio Alianza Austral de Coyhaique | Invernadero y compostaje | Coyhaique | 4.000.000 | 2,95
+38320 | Fomentando el trabajo con la tierra y la educación ambiental en la escuela Gabriela Mistral | 65463500-5 | Centro General de Padres y Apoderados de la Escuela Gabriela Mistral de Río Tranquilo | Invernadero y compostaje | Río Ibáñez | 4.000.000 | 2,85
+38853 | Niñas y niños por el futuro de Magallanes desde Tierra del Fuego | 65962680-2 | Centro Gral de Padres y Apoderados Colegio María Auxiliadora | Cambio Climático y Descontaminación Ambiental | Timaukel | 4.000.000 | 2,93
+=== CATEGORY: ISPI ===
+38593 | Instalación e implementación deshidratadores solares en el territorio Ancestral Quechua de Quipisca | 65030101-3 | Comunidad Indígena Quechua de Quipisca | Cambio Climático y Descontaminación Ambiental | Iquique | 4.000.000 | 3,10
+39628 | Chijo solar | 73799600-K | Comunidad Indígena Aymara de Chijo | Sistema Fotovoltaico OffGrid | Colchane | 6.000.000 | 2,21
+38744 | Cucuter FV2021 | 65522330-4 | Comunidad Indígena del Ayllu de Cucuter | Sistema Fotovoltaico OffGrid | San Pedro de Atacama | 6.000.000 | 2,25
+39084 | Laguna Cejar Protegida | 73833600-3 | Comunidad Atacameña de Solor | Cambio Climático y Descontaminación Ambiental | San Pedro de Atacama | 4.000.000 | 2,15
+38333 | Recolección conservación y propagación de semillas de la flora nativa Kolla | 74540900-8 | Comunidad Indígena Colla Sinchi Wayra | Cambio Climático y Descontaminación Ambiental | Copiapó | 4.000.000 | 2,65
+38782 | Equipamiento Invernadero Yacurmana | 65159039-6 | Comunidad Indígena Diaguita Yacurmana | Invernadero y compostaje | Caldera | 4.000.000 | 2,48
+39026 | Escuela Itrofill Monguen Ñi Chillkatuwe Epu | 65725700-1 | Petu Moguelein Mahuidache | Cambio Climático y Descontaminación Ambiental | El Bosque | 4.000.000 | 2,60
+38772 | Acercando las energías renovables a la Comunidad Mapuche Luisa Antili | 72861300-9 | Comunidad Indígena Luisa Antili | Sistema Fotovoltaico OffGrid | Cañete | 6.000.000 | 2,75
+39186 | Invernadero comunitario y sistema de compostaje para la promoción de la salud intercultural de la comunidad El Barco | 65022620-8 | Comunidad Indígena El Barco | Invernadero y compostaje | Alto Biobío | 4.000.000 | 2,69
+39096 | Arborización del Cementerio y protección del patrimonio natural de la comunidad indígena Ayin Mapu | 75960430-K | Comunidad Indígena Ayin Mapu | Cambio Climático y Descontaminación Ambiental | Santa Bárbara | 4.000.000 | 2,60
+38466 | Generando Energía Renovable con residuos | 74096200-0 | Comunidad Mapuche Manuel Collio Paillao | Cambio Climático y Descontaminación Ambiental | Tirúa | 4.000.000 | 2,52
+38271 | Construcción e Implementación de punto verde en la Comunidad José Painepan | 65070835-0 | Comunidad Indígena José Painepan | Punto Verde | Vilcún | 4.000.000 | 3,00
+38539 | Iluminando nuestro espacio comunitario utilizando energía del sol en la Comunidad Indígena Curiqueo | 65715550-0 | Comunidad Indígena Curiqueo | Sistema Fotovoltaico OffGrid | Nueva Imperial | 6.000.000 | 2,93
+38463 | Itrofill Mongen Puralaco Escuela Viva | 65438720-6 | Comunidad Indígena Agustín Millao | Cambio Climático y Descontaminación Ambiental | Toltén | 4.000.000 | 2,87
+38917 | Punta Riel Recicla | 65249010-7 | Comunidad Indígena Ignacio Trecanao de Punta de Riel | Punto Verde | Teodoro Schmidt | 4.000.000 | 2,80
+39378 | Camino a una comunidad sustentable | 65540410-4 | Comunidad Mapuche Antonio Marimán | Sistema Fotovoltaico OffGrid | Temuco | 6.000.000 | 2,70
+37015 | Kumen Mongen 2 | 65034534-7 | Comunidad Indígena Reñico el Avellano | Sistema Fotovoltaico OnGrid | Traiguén | 4.000.000 | 2,70
+38987 | Sistema Demostrativo de Energía Solar para Lago Budi | 65168458-7 | Comunidad Indígena Malalhue Chanko | Sistema Fotovoltaico OffGrid | Teodoro Schmidt | 6.000.000 | 2,68
+37304 | Cuidamos nuestra salud generando Energía | 65865620-1 | Comunidad Indígena Chacaico Red José Calbun | Cambio Climático y Descontaminación Ambiental | Angol | 4.000.000 | 2,65
+39414 | Reciclaje en la comunidad Domingo Caniu | 65776020-K | Comunidad Indígena Domingo Caniu | Punto Verde | Vilcún | 4.000.000 | 2,65
+37613 | Sistema captación aguas lluvias y acumulación Monkul | 65054836-1 | Comunidad Indígena Mateo Nahuelpán | Cambio Climático y Descontaminación Ambiental | Carahue | 4.000.000 | 2,62
+37175 | Puesta en valor y recuperación Humedal Pomhuito | 65104810-9 | Comunidad Indígena Francisco Pinchulaf | Cambio Climático y Descontaminación Ambiental | Teodoro Schmidt | 4.000.000 | 2,58
+38024 | Invernadero Comunitario Comunidad Cacique Tramolao el Lingue | 65069344-2 | Comunidad Indígena Cacique Tramolao el Lingue | Invernadero y compostaje | Purén | 4.000.000 | 2,57
+39039 | Punto Verde Comunidad Pedro Antivil | 72753100-9 | Comunidad Indígena Pedro Antivil | Punto Verde | Teodoro Schmidt | 4.000.000 | 2,57
+39104 | Ta Kuñiutual Ta Iñ Menoko | 65143900-0 | Comunidad Indígena Lorenzo Huenten | Cambio Climático y Descontaminación Ambiental | Saavedra | 4.000.000 | 2,52
+39171 | Invernadero Valentín Calbuin II | 65062795-4 | Comunidad Indígena Valentín Calbuin II | Invernadero y compostaje | Padre Las Casas | 4.000.000 | 2,52
+38476 | Aporto al cambio climático enseñando sobre ERNC | 65117088-5 | Comunidad Indígena Abelino Torres Manqueo | Cambio Climático y Descontaminación Ambiental | Padre Las Casas | 4.000.000 | 2,50
+39556 | Invernaderos Danquilco 2021 | 75638500-3 | Comunidad Indígena Danquilco | Invernadero y compostaje | Padre Las Casas | 4.000.000 | 2,43
+37391 | Iluminando nuestra sede con la energía del sol | 65124180-4 | Comunidad Indígena Ignacio Huina | Sistema Fotovoltaico OffGrid | Padre Las Casas | 6.000.000 | 2,38
+39598 | Invernadero Comunitario Ancapi Ñancucheo | 65141650-7 | Comunidad Indígena Ancapi Nancucheo | Invernadero y compostaje | Ercilla | 4.000.000 | 2,35
+38789 | Tecnología Solar On-Grid para el Desarrollo de Netbilling en la Comunidad Indígena Ñancupil de Hualacura | 65147470-1 | Comunidad Indígena Ñancupil I | Sistema Fotovoltaico OnGrid | Nueva Imperial | 4.000.000 | 2,33
+38695 | Comunidad Indígena Alejo Leviñir Juntos Cuidamos el Medio Ambiente | 74045600-8 | Comunidad Indígena Alejo Leviñir y Otros | Punto Verde | Carahue | 4.000.000 | 2,28
+39553 | Generando Energía limpia para mi comunidad | 65134030-6 | Comunidad Mapuche Levío Melipil Rahue | Sistema Fotovoltaico OffGrid | Galvarino | 6.000.000 | 2,28
+38959 | Reutilización de los desechos vegetales a través del compostaje en la producción comunitaria de flores | 72858300-2 | Comunidad Indígena Curihuinca Romero | Invernadero y compostaje | Freire | 4.000.000 | 2,27
+39048 | Manejo de residuos orgánicos Domiciliarios y derivados de la producción agrícola | 65124920-1 | Asociación Indígena Victoriano Pitripan | Cambio Climático y Descontaminación Ambiental | Futrono | 4.000.000 | 2,90
+38433 | Küme Mongen Buen Vivir | 65166796-8 | Comunidad Indígena Kalfvgen | Invernadero y compostaje | Valdivia | 4.000.000 | 2,45
+38253 | Protección y Valorización de los Bosques de Pantano de la Laguna Trinidad y el Estero Pucopio | 65036530-5 | Comunidad Indígena Rayen Ko-Lafken | Cambio Climático y Descontaminación Ambiental | San Juan de la Costa | 4.000.000 | 2,30
+=== CATEGORY: ISFC ===
+39429 | Mejorando mi entorno con acuicultura | 72189200-K | Corporación de Estudios y Desarrollo Norte Grande | Cambio Climático y Descontaminación Ambiental | Iquique | 4.000.000 | 2,47
+38147 | Cambio Climático en el Océano | 65120481-K | Asociación Medio Ambiental Desierto Azul | Cambio Climático y Descontaminación Ambiental | Antofagasta | 4.000.000 | 2,40
+39070 | Talleres participativos de Educación Ambiental y Energía Solar en organizaciones del pueblo de San Fernando Copiapó | 82521600-6 | Corporación Sociedad de Agricultores del Pueblo de San Fernando | Sistema Fotovoltaico OnGrid | Copiapó | 4.000.000 | 2,79
+37364 | Luz para el Parque Hacienda El Durazno | 65093013-4 | Fundación Llampangui | Sistema Fotovoltaico OffGrid | Canela | 6.000.000 | 2,82
+37933 | Invernadero Ludoteca Minga Concón | 65091062-1 | Fundación Minga Valpo | Invernadero y compostaje | Concón | 4.000.000 | 2,60
+38348 | Lombriorgánica | 65197053-9 | Fundación Bienvenidos | Invernadero y compostaje | Quilpué | 4.000.000 | 2,45
+38562 | Atrapanieves | 65174549-7 | Fundación de Beneficencia Glaciares Chilenos | Cambio Climático y Descontaminación Ambiental | San José de Maipo | 4.000.000 | 2,90
+37785 | Exploradores Costeros Puertecillo Conocer para Proteger | 65176087-9 | Fundación Puertecillo | Cambio Climático y Descontaminación Ambiental | Litueche | 4.000.000 | 3,03
+39133 | Cultiva la basura: Manejo sustentable de residuos orgánicos y propagación de flora nativa | 65679710-K | Organización No Gubernamental de Desarrollo Sur Maule | Cambio Climático y Descontaminación Ambiental | Talca | 4.000.000 | 2,88
+39328 | Revelando y Compartiendo la Riqueza de Nuestra Biodiversidad | 65148855-9 | Asociación Dosel | Cambio Climático y Descontaminación Ambiental | San Fabián | 4.000.000 | 2,70
+38797 | Red de Propagadores Nativos de Florida | 65077857-K | Fundación El Árbol | Cambio Climático y Descontaminación Ambiental | Florida | 4.000.000 | 2,93
+37251 | EDAM sistema fotovoltaico NaveTierra | 65185416-4 | Permacultura Navetierra Puesco | Sistema Fotovoltaico OffGrid | Curarrehue | 6.000.000 | 2,80
+36887 | Guardianes del agua | 65027784-8 | Corporación de adelanto de la comuna de Panguipulli | Cambio Climático y Descontaminación Ambiental | Panguipulli | 4.000.000 | 3,05
+36553 | Ruta de la biodiversidad: Fresia y su patrimonio natural | 65175067-9 | Fundación Sarao Sustentable | Cambio Climático y Descontaminación Ambiental | Fresia | 4.000.000 | 2,95
+36574 | Sembrando educación ambiental terapéutica en salud mental | 65195187-9 | Fundación de Apoyo y Rehabilitación Tierra de Ángeles | Invernadero y compostaje | Punta Arenas | 4.000.000 | 2,79
+=== CATEGORY: CHU ===
+38185 | Humedal Río Lluta Sitio Prioritario | 65079513-K | Tortu Arica ONG | Humedales Urbanos | Arica | 7.000.000 | 2,57
+38869 | Programa Educación Ambiental para la Puesta en Valor Santuario de la Naturaleza Bahía de Tongoy | 65135301-7 | Organización No Gubernamental de Desarrollo Limari Tinkuy | Humedales Urbanos | Coquimbo | 7.000.000 | 2,90
+38738 | Juntos por la Protección del Humedal San Jerónimo | 65422310-6 | Fundación Kennedy para la Conservación de los Humedales | Humedales Urbanos | Algarrobo | 7.000.000 | 2,52
+38402 | Recuperación Humedal Pedro de Valdivia | 65188773-9 | Fundación Plantemos Nativo | Humedales Urbanos | El Monte | 7.000.000 | 2,65
+39013 | Viva el humedal del Cachapoal | 65197281-7 | Organización No Gubernamental de Desarrollo Tejiendo Ecologías | Humedales Urbanos | Olivar | 7.000.000 | 2,63
+37092 | Recuperemos el Guaiquillo | 65177948-0 | ONG Territorio a Escala Humana | Humedales Urbanos | Curicó | 7.000.000 | 3,07
+38668 | La Ruta de la Huala | 65175031-8 | Fundación Nahuelbuta Natural | Humedales Urbanos | Los Álamos | 7.000.000 | 2,85
+38875 | Conservación del agua la flora y la fauna silvestre del Humedal Chivilcan | 65182746-9 | Corporación de Derechos Humanos Umbrales | Humedales Urbanos | Temuco | 7.000.000 | 3,00
+38981 | Observatorio-Escuela de Lideres ambientales por los humedales de Panguipulli | 65178461-1 | Corporación Lleuque | Humedales Urbanos | Panguipulli | 7.000.000 | 2,93
+37397 | Red Escolar de Monitores de Humedales Urbanos de Valdivia | 65168952-K | Organización No Gubernamental de Desarrollo Social Nativa | Humedales Urbanos | Valdivia | 7.000.000 | 2,93
+=== CATEGORY: AVC ===
+38571 | Mejoramiento de la Plaza de Colores | 65956480-7 | Junta de Vecinos de la Población Lickanantay | Áreas Verdes Comunitarias | San Pedro de Atacama | 8.000.000 | 2,40
+37296 | Plaza Sustentable Carrizal Bajo | 75958020-6 | Junta Vecinal N°6 Moisés Núñez de Carrizal Bajo | Áreas Verdes Comunitarias | Huasco | 8.000.000 | 2,47
+39160 | Biodiversidad Urbana Recuperación de Zonas Degradadas Población 17 de Septiembre La Serena | 75588900-8 | Junta de Vecinos 17 de Septiembre | Áreas Verdes Comunitarias | La Serena | 8.000.000 | 2,90
+38079 | Plaza Quebrada de Nogales | 65101696-7 | Junta de Vecinos Quebrada Nogales | Áreas Verdes Comunitarias | Machalí | 8.000.000 | 2,62
+39317 | Creando espacios amigables con el medio ambiente Tomé Alto | 65117124-5 | Comité Ambiental Comunal Tomé | Áreas Verdes Comunitarias | Tomé | 8.000.000 | 2,99
+36568 | Plaza del Encuentro Villas Unidas | 65195465-7 | Consejo Vecinal de Desarrollo Barrio Villas Unidas | Áreas Verdes Comunitarias | Nueva Imperial | 8.000.000 | 2,60
+38007 | Mejoramiento del Parque Vergara Dávila Área Verde para la Comunidad Costera | 65023047-7 | Komunidad Educativa Wenuleufu | Áreas Verdes Comunitarias | Valdivia | 8.000.000 | 2,70

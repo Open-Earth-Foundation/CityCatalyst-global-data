@@ -1,0 +1,126 @@
+# Controlled theme vocabulary for the dataset catalog.
+#
+# STATUS: DRAFT — agent-proposed, needs human adjudication.
+# This file consolidates the ~50 free-form `themes:` tags currently used
+# across dataset-review/catalog/index.yaml into a canonical set. The skill
+# (dataset-themes) reads this file to normalise tags before grouping, so
+# this vocabulary — not the raw tags — decides how datasets bucket.
+#
+# How to read an entry:
+#   id          canonical theme tag (use this in catalog/index.yaml going forward)
+#   label       human-readable name
+#   definition  one line: what belongs here
+#   aliases     legacy/raw tags folded into this canonical id by the normaliser
+#
+# Adjudication notes for the human (Amanda):
+#   - Merges are deliberately lumpy to kill singleton buckets. If a split is
+#     load-bearing (e.g. you genuinely query `renewables` separately from
+#     `energy`), promote the alias back to its own canonical id.
+#   - `qualifiers` at the bottom are NOT themes — they are data
+#     characteristics (method, quality, framing). Keep them out of `themes:`
+#     so they stop creating one-dataset theme groups; move them to a
+#     separate `qualifiers:` field on the dataset if worth keeping at all.
+
+version: 0.1
+status: draft
+
+themes:
+
+  - id: climate_finance
+    label: Climate finance
+    definition: Funding instruments, grants, subsidies, awards, and climate-relevant public budgets/investment.
+    aliases: [climate_instruments, municipal_investment]
+
+  - id: projects
+    label: Projects & portfolios
+    definition: Project- or portfolio-level records and pipelines (development, infrastructure, funded projects).
+    aliases: [development_projects]
+
+  - id: mitigation
+    label: Mitigation
+    definition: Emission-reduction measures, mitigation potentials, abatement cost curves (MACCs).
+    aliases: []
+
+  - id: emissions
+    label: Emissions & inventories
+    definition: GHG emissions accounting and inventories (as measured stocks/flows, not reduction measures).
+    aliases: []
+
+  - id: adaptation
+    label: Adaptation & resilience
+    definition: Climate adaptation, resilience, and vulnerability.
+    aliases: []
+
+  - id: energy
+    label: Energy
+    definition: Energy supply and demand, renewables, energy efficiency, and building energy.
+    aliases: [renewables, energy_efficiency, building_energy]
+
+  - id: transport
+    label: Transport & mobility
+    definition: Transport systems and mobility, including mobility proxies.
+    aliases: [mobility_proxy]
+
+  - id: land_use
+    label: Land use & ecosystems
+    definition: Land use, land cover, AFOLU, biodiversity, green space, and the natural environment.
+    aliases: [land_cover, afolu, biodiversity, green_space, environment]
+
+  - id: socioeconomics
+    label: Socioeconomics
+    definition: Population, income, poverty, employment, housing, and trade indicators.
+    aliases: [poverty, income, employment, housing, trade]
+
+  - id: policy
+    label: Policy & planning
+    definition: Policy instruments, legal signals, planning, and territorial/spatial planning.
+    aliases: [planning, territorial_planning]
+
+  - id: taxonomy
+    label: Climate-action taxonomy
+    definition: Classification schemes and taxonomies for climate actions/instruments.
+    aliases: [climate_action_taxonomy]
+
+  - id: geospatial
+    label: Geospatial & boundaries
+    definition: Administrative boundaries, location codes, geocoding, and spatial units (regional, urban, city context).
+    aliases: [geocoding, boundaries, administrative, regional, urban, city_context]
+
+  - id: water
+    label: Water
+    definition: Water resources and water management.
+    aliases: []
+
+  - id: waste
+    label: Waste
+    definition: Waste generation and management.
+    aliases: []
+
+  - id: weather_climate
+    label: Weather & climate variables
+    definition: Meteorology, climate variables, degree days, and climate hazards.
+    aliases: [meteorology, climate]
+
+  - id: science_assessment
+    label: Scientific assessment
+    definition: Authoritative scientific assessments and the interpretation context they provide.
+    aliases: [interpretation_context]
+
+  - id: infrastructure
+    label: Infrastructure
+    definition: Physical infrastructure (where not better captured by transport/energy/water).
+    aliases: []
+
+  - id: industry
+    label: Industry & innovation
+    definition: Industrial sectors and industrial/clean-tech innovation.
+    aliases: [innovation]
+
+# Non-theme qualifiers — characteristics of a dataset, not subjects. The
+# normaliser strips these from `themes:` (and warns) rather than bucketing on
+# them. Decide per item whether to drop entirely or relocate to a `qualifiers:`
+# field on the dataset.
+qualifiers:
+  - id: remote_sensing      # acquisition method
+  - id: data_quality        # quality framing
+  - id: benchmarking        # analytical framing

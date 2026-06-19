@@ -39,7 +39,7 @@ National, delivered to municipalities. PMU and PMB are **continuous/rolling** (a
 
 ## Extraction & refresh
 
-**How this snapshot was produced.** The SUBDERE programme pages are thin and the detailed amounts live in PDF manuals; the site can also be slow. Rows are produced from the page text with the **extraction prompt** below (PMR/FRC are index-level pending a fuller fetch). The committed `data/cl_subdere_programs_v1.csv` is the resulting snapshot. (The same prompt runs across all six Chile finance sources at once in the OEF harness, `reviews/oef/cl-finance-inventory/releases/v1/extract_inventory.ipynb`, if you prefer to refresh them together.)
+**How this snapshot was produced.** The SUBDERE programme pages are thin and the detailed amounts live in PDF manuals; the site can also be slow. Rows are produced from the page text with the **extraction prompt** below (PMR/FRC are index-level pending a fuller fetch). The committed `data/cl_subdere_programs_v1.csv` is the resulting snapshot. (The same prompt runs across all six Chile finance sources at once in the OEF harness, `reviews/oef/cl-city-action-fundability/releases/v1/extract_inventory.ipynb`, if you prefer to refresh them together.)
 
 **Source pages for this dataset:**
 - https://www.subdere.gov.cl/programas  (PMU, PMB, PMR, FRC)

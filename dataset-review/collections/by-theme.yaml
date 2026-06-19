@@ -1,0 +1,221 @@
+# Datasets grouped by theme. GENERATED — do not edit by hand.
+# Regenerate: python .cursor/skills/dataset-themes/references/group_by_theme.py
+# Source of truth: catalog/index.yaml themes, normalised via themes.yaml.
+# Collection ids are prefixed `theme-` and hyphenated (e.g. theme-climate-finance)
+# to stay distinct from, and consistent with, curated collection.yaml ids.
+
+collections:
+
+  - id: theme-climate-finance
+    name: Climate finance
+    datasets:
+      - id: cl-bip-projects
+      - id: cl-city-action-fundability
+      - id: cl-conaf-bn-awards
+      - id: cl-conaf-fondos
+      - id: cl-corfo-finance
+      - id: cl-gore-fndr
+      - id: cl-indap-awards
+      - id: cl-indap-fondos
+      - id: cl-minenergia-fondos
+      - id: cl-minvu-fondos
+      - id: cl-mma-fondos
+      - id: cl-mma-fpa-awards
+      - id: cl-mma-ndc-macc
+      - id: cl-mop-fondos
+      - id: cl-mtt-fondos
+      - id: cl-ssg-finance
+      - id: cl-ssg-policy-documents
+      - id: cl-ssg-projects
+      - id: cl-subdere-fondos
+      - id: cl-subdere-sinim
+      - id: cl-undp-sgp
+      - id: gcf-projects
+      - id: idb-projects
+      - id: world-bank-projects
+
+  - id: theme-projects
+    name: Projects & portfolios
+    datasets:
+      - id: cl-bip-projects
+      - id: cl-city-action-fundability
+      - id: cl-conaf-bn-awards
+      - id: cl-indap-awards
+      - id: cl-ssg-projects
+      - id: cl-undp-sgp
+      - id: gcf-projects
+      - id: idb-projects
+      - id: world-bank-projects
+
+  - id: theme-mitigation
+    name: Mitigation
+    datasets:
+      - id: c40-high-impact-actions
+      - id: cl-conaf-fondos
+      - id: cl-mma-fpa-awards
+      - id: cl-mma-ndc-macc
+      - id: cl-mtt-fondos
+      - id: cl-ssg-actions
+      - id: cl-ssg-emissions
+      - id: cl-ssg-legal-signals
+      - id: cl-ssg-policy-documents
+      - id: cl-ssg-projects
+      - id: cl-undp-sgp
+      - id: climateview-transition-elements
+      - id: gcf-projects
+      - id: icare-climate-actions
+      - id: ipcc-ar6-ch10-transport
+      - id: ipcc-ar6-ch11-industry
+      - id: ipcc-ar6-ch9-buildings
+      - id: ipcc-ar6-spm7-mitigation-potentials
+      - id: ipcc-climate-actions
+      - id: ipcc-sr15-mitigation-feasibility
+      - id: project-drawdown-solutions
+      - id: unep-egr-sectoral-potentials
+
+  - id: theme-emissions
+    name: Emissions & inventories
+    datasets:
+      - id: c40-city-emissions-benchmark
+      - id: cl-mma-ndc-macc
+      - id: cl-ssg-emissions
+      - id: seeg-emissions
+
+  - id: theme-adaptation
+    name: Adaptation & resilience
+    datasets:
+      - id: br-adaptabrasil
+      - id: c40-high-impact-actions
+      - id: cl-conaf-fondos
+      - id: cl-indap-fondos
+      - id: cl-minvu-fondos
+      - id: cl-mop-fondos
+      - id: gcf-projects
+      - id: icare-climate-actions
+      - id: ipcc-climate-actions
+
+  - id: theme-energy
+    name: Energy
+    datasets:
+      - id: cl-bip-projects
+      - id: cl-corfo-finance
+      - id: cl-minenergia-fondos
+      - id: cl-mtt-fondos
+      - id: cl-ssg-emissions
+      - id: ipcc-ar6-ch9-buildings
+      - id: nasa-power-degree-days
+
+  - id: theme-transport
+    name: Transport & mobility
+    datasets:
+      - id: cl-bip-projects
+      - id: cl-ine-censo
+      - id: cl-mtt-fondos
+      - id: ipcc-ar6-ch10-transport
+      - id: uncece-unlocode
+
+  - id: theme-land-use
+    name: Land use & ecosystems
+    datasets:
+      - id: cl-conaf-bn-awards
+      - id: cl-conaf-fondos
+      - id: cl-indap-awards
+      - id: cl-indap-fondos
+      - id: cl-mapbiomas-lulc
+      - id: cl-minvu-fondos
+      - id: cl-mma-fondos
+      - id: seeg-emissions
+
+  - id: theme-socioeconomics
+    name: Socioeconomics
+    datasets:
+      - id: cl-casen
+      - id: cl-city-action-fundability
+      - id: cl-ine-censo
+      - id: cl-subdere-sinim
+      - id: uncece-unlocode
+
+  - id: theme-policy
+    name: Policy & planning
+    datasets:
+      - id: c40-high-impact-actions
+      - id: cl-city-action-fundability
+      - id: cl-indap-fondos
+      - id: cl-mma-fpa-awards
+      - id: cl-ssg-actions
+      - id: cl-ssg-finance
+      - id: cl-ssg-legal-signals
+      - id: cl-ssg-policy-documents
+      - id: cl-subdere-sinim
+      - id: climateview-transition-elements
+      - id: icare-climate-actions
+      - id: idb-projects
+      - id: world-bank-projects
+
+  - id: theme-taxonomy
+    name: Climate-action taxonomy
+    datasets:
+      - id: c40-high-impact-actions
+      - id: cl-ssg-actions
+      - id: cl-ssg-finance
+      - id: cl-ssg-legal-signals
+      - id: climateview-transition-elements
+      - id: icare-climate-actions
+      - id: ipcc-climate-actions
+      - id: project-drawdown-solutions
+
+  - id: theme-geospatial
+    name: Geospatial & boundaries
+    datasets:
+      - id: cl-gore-fndr
+      - id: cl-minvu-fondos
+      - id: cl-ocha-ab
+      - id: nasa-power-degree-days
+      - id: uncece-unlocode
+
+  - id: theme-water
+    name: Water
+    datasets:
+      - id: cl-bip-projects
+      - id: cl-mop-fondos
+      - id: cl-subdere-fondos
+
+  - id: theme-waste
+    name: Waste
+    datasets:
+      - id: cl-mma-fondos
+      - id: cl-ssg-legal-signals
+      - id: cl-subdere-fondos
+
+  - id: theme-weather-climate
+    name: Weather & climate variables
+    datasets:
+      - id: br-adaptabrasil
+      - id: nasa-power-degree-days
+
+  - id: theme-science-assessment
+    name: Scientific assessment
+    datasets:
+      - id: br-adaptabrasil
+      - id: c40-city-emissions-benchmark
+      - id: cl-mma-ndc-macc
+      - id: ipcc-ar6-ch10-transport
+      - id: ipcc-ar6-ch11-industry
+      - id: ipcc-ar6-ch9-buildings
+      - id: ipcc-ar6-spm7-mitigation-potentials
+      - id: ipcc-climate-actions
+      - id: ipcc-sr15-mitigation-feasibility
+      - id: unep-egr-sectoral-potentials
+
+  - id: theme-infrastructure
+    name: Infrastructure
+    datasets:
+      - id: cl-ine-censo
+      - id: cl-mop-fondos
+      - id: cl-ssg-projects
+
+  - id: theme-industry
+    name: Industry & innovation
+    datasets:
+      - id: cl-corfo-finance
+      - id: ipcc-ar6-ch11-industry

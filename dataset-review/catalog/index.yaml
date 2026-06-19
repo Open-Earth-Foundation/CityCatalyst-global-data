@@ -110,6 +110,65 @@ datasets:
         freshness: null
         accessibility: null
 
+- id: cl-bip-projects
+  name: Chile BIP investment initiatives (climate-relevant subset)
+  dataset_url: https://bidat.gob.cl/directorio/Inversi%C3%B3n%20p%C3%BAblica/evaluacion-social-de-inversiones
+  publisher:
+    id: cl-mdsfam
+    name: Ministerio de Desarrollo Social y Familia (Chile)
+    url: https://www.desarrollosocialyfamilia.gob.cl/
+  description: >
+    Public investment initiatives (proyectos, programas, estudios básicos)
+    registered in Chile's Banco Integrado de Proyectos (BIP), the project
+    registry of the Sistema Nacional de Inversiones (SNI). Sourced directly
+    from the official BIDAT bulk open-data release (RData/CSV) under CC BY 4.0,
+    rather than from third-party PDF extraction. Scoped to climate-relevant
+    initiatives for project-to-mitigation-action matching; supersedes the
+    PDF-derived cl-ssg-projects acquisition path.
+  coverage:
+    geography: country
+    countries: [CL]
+    spatial_levels: [country, region, province, comuna, project]
+  themes:
+    - climate_finance
+    - development_projects
+    - transport
+    - water
+    - energy
+  update_frequency: annual_release
+  priority: medium
+  releases:
+    - version: "v1"
+      version_number: 1
+      source_url: https://bidat.gob.cl/details/ficha/dataset/proyectos-de-inversion-rdata
+      released_at: null
+      retrieved_at: null
+      retrieval_method: bulk_download
+      api_endpoint: null
+      path: "reviews/cl-mdsfam/cl-bip-projects/releases/v1"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: https://sni.gob.cl/datosabiertos/
+      internal_review_url: null
+      license:
+        id: cc-by-4.0
+        name: Creative Commons Attribution 4.0
+        url: https://creativecommons.org/licenses/by/4.0/deed.es
+        commercial_use: true
+        note: >
+          Stated on the BIDAT historical dataset page (published 2024-01-01).
+          Verified explicit CC BY 4.0 for the historical RData resource;
+          confirm the annual CSV resource carries the same before production.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
 - id: uncece-unlocode
   name: UN/LOCODE (UN Code for Trade and Transport Locations)
   dataset_url: https://unece.org/trade/cefact/UNLOCODE-Download
@@ -1061,3 +1120,1273 @@ datasets:
         granularity: instrument
         freshness: "2026_snapshot"
         accessibility: js_rendered_listing
+
+- id: br-adaptabrasil
+  name: AdaptaBrasil (MCTI) — climate risk indicators
+  dataset_url: https://adaptabrasil.mcti.gov.br/
+  publisher:
+    id: br-mcti
+    name: Ministry of Science, Technology and Innovation (MCTI)
+    url: https://adaptabrasil.mcti.gov.br/
+  description: >
+    National platform from Brazil's Ministry of Science, Technology and Innovation (MCTI) that integrates climate change impact risk indices and indicators across strategic sectors including water, food security, energy, health, transport, biodiversity, and geo-hydrological disasters. Indicators are provided at municipality and other administrative resolutions, supporting CCRA-style and adaptation planning use cases. JSON APIs and bulk geometry/tabular downloads are documented by the publisher and mirrored in a community access repo.
+  coverage:
+    geography: country
+    countries: [BR]
+    spatial_levels: [country, municipality]
+  themes:
+    - adaptation
+    - weather_climate
+    - science_assessment
+  update_frequency: manual_refresh
+  priority: medium
+  releases:
+    - version: "v1"
+      version_number: 1
+      source_url: https://adaptabrasil.mcti.gov.br/
+      released_at: null
+      retrieved_at: null
+      retrieval_method: api
+      api_endpoint: null
+      path: "reviews/br-mcti/br-adaptabrasil/releases/v1"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: null
+      license:
+        id: license-verification-pending
+        name: "Terms to be verified"
+        url: null
+        commercial_use: null
+        note: >
+          Confirm reuse terms before production.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
+- id: c40-high-impact-actions
+  name: C40 High Impact Actions
+  dataset_url: https://www.c40knowledgehub.org/
+  publisher:
+    id: c40
+    name: C40 Cities Climate Leadership Group
+    url: https://www.c40.org/
+  description: >
+    Dataset review for C40's High Impact Actions framework and related materials describing city climate action interventions. It provides an action taxonomy that can support city action recommendation and prioritization workflows, bridging policy intent and implementable mitigation and adaptation actions. Strong relevance for HIAP-style scoring and action portfolio design.
+  coverage:
+    geography: global
+    spatial_levels: [city]
+  themes:
+    - mitigation
+    - adaptation
+    - policy
+    - taxonomy
+  update_frequency: manual_refresh
+  priority: medium
+  releases:
+    - version: "2026-04-24"
+      version_number: 1
+      source_url: https://www.c40knowledgehub.org/
+      released_at: null
+      retrieved_at: null
+      retrieval_method: manual_curation
+      api_endpoint: null
+      path: "reviews/c40/c40-high-impact-actions/releases/2026-04-24"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: null
+      license:
+        id: license-verification-pending
+        name: "Terms to be verified"
+        url: null
+        commercial_use: null
+        note: >
+          Confirm reuse terms before production.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
+- id: cl-city-action-fundability
+  name: OEF — Chile city-action fundability (inventory + coverage + model)
+  dataset_url: null
+  publisher:
+    id: oef
+    name: OpenEarth Foundation (OEF)
+    url: https://www.openearth.org/
+  description: >
+    The consolidated OEF product for how a Chilean comuna can pay for a climate action (supersedes the former cl-finance-inventory and cl-action-fundability). It unions the ten vetted Chile climate-finance supply reviews into one inventory of 99 verified funding channels, builds an action financing-availability (coverage) indicator on it, and combines four layers (action catalog, SINIM/Censo municipal capacity, the finance inventory, the projects pipeline) into a per (action x comuna) route/effort bucket plus a 0-1 financial_feasibility score with named candidate funds. It also ships a traceable finance_db fixture (funder/opportunity/project/action + funding link) that makes the three access routes explicit. A coverage and categorisation product, not a funding probability. Research and exploratory, pre-Mage, not production-approved.
+  coverage:
+    geography: country
+    countries: [CL]
+    spatial_levels: [country, comuna, project]
+  themes:
+    - climate_finance
+    - projects
+    - socioeconomics
+    - policy
+  update_frequency: manual_refresh
+  priority: medium
+  releases:
+    - version: "v1"
+      version_number: 1
+      source_url: null
+      released_at: null
+      retrieved_at: "2026-06-19"
+      retrieval_method: manual_curation
+      api_endpoint: null
+      path: "reviews/oef/cl-city-action-fundability/releases/v1"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: reviews/oef/cl-city-action-fundability/methodology.md
+      internal_review_url: reviews/oef/cl-city-action-fundability/releases/v1/review.md
+      license:
+        id: license-verification-pending
+        name: "Terms to be verified"
+        url: null
+        commercial_use: false
+        note: >
+          Output is non-commercial with attribution; it inherits the most restrictive upstream licence (binding constraint is SINIM) until SUBDERE commercial clearance lands. Finance sources add per-source terms (e.g. CORFO CC BY-NC-ND 3.0). Authority lives in each source review; confirm with legal before redistribution.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
+- id: cl-conaf-bn-awards
+  name: CONAF Bosque Nativo fund awards
+  dataset_url: https://concursolbn.conaf.cl/
+  publisher:
+    id: cl-conaf
+    name: Corporación Nacional Forestal (CONAF)
+    url: https://www.conaf.cl/
+  description: >
+    Project-level award records of CONAF's Fondo de Conservación, Recuperación y Manejo Sustentable del Bosque Nativo (Ley 20.283): the "who actually got funded" companion to the supply-side program review cl-conaf-fondos. The release covers ten annual cycles (Primer Concurso 2016–2025) with 9,860 awarded projects exported from the CONAF results portal. It is the first awards / revealed-fundability dataset in the repo, recording outcomes (applications selected for a bonificación) at region level only. The committed data holds de-identified derivatives, as the raw export contains personal data.
+  coverage:
+    geography: country
+    countries: [CL]
+    spatial_levels: [country, region, project]
+  themes:
+    - climate_finance
+    - projects
+    - land_use
+  update_frequency: annual_cycle
+  priority: medium
+  releases:
+    - version: "v1"
+      version_number: 1
+      source_url: https://concursolbn.conaf.cl/
+      released_at: null
+      retrieved_at: "2026-06-01"
+      retrieval_method: manual_download
+      api_endpoint: null
+      path: "reviews/cl-conaf/cl-conaf-bn-awards/releases/v1"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: reviews/cl-conaf/cl-conaf-bn-awards/releases/v1/review.md
+      license:
+        id: license-verification-pending
+        name: "Terms to be verified"
+        url: null
+        commercial_use: null
+        note: >
+          Public-interest government information; programme and award facts are public. No explicit open licence is attached to the portal export, and the raw export contains personal data governed by Chile's data-protection rules, so PII is stripped before commit or redistribution.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
+- id: cl-conaf-fondos
+  name: CONAF native-forest finance (Bosque Nativo funds)
+  dataset_url: https://www.conaf.cl/manejo-de-ecosistemas/bosque-nativo/fondo-de-conservacion-y-manejo-sustentable-del-bosque-nativo/
+  publisher:
+    id: cl-conaf
+    name: Corporación Nacional Forestal (CONAF)
+    url: https://www.conaf.cl/
+  description: >
+    The forestry / nature-based funding CONAF administers under the Ley de Bosque Nativo (Ley 20.283): the Fondo de Conservación, Recuperación y Manejo Sustentable del Bosque Nativo (the bonificación concurso) and the adjacent Fondo de Investigación del Bosque Nativo. This is the supply side (what the fund is), filling the AFOLU / nature-based slice the Chile finance inventory was missing. Native-forest conservation, regeneration, fire-prevention and soil conservation are mitigation and adaptation relevant; the 2026 concurso is a live, dated annual cycle. Hand-curated from the CONAF programme and announcement pages.
+  coverage:
+    geography: country
+    countries: [CL]
+    spatial_levels: [country, region]
+  themes:
+    - climate_finance
+    - land_use
+    - mitigation
+    - adaptation
+  update_frequency: annual_cycle
+  priority: medium
+  releases:
+    - version: "v1"
+      version_number: 1
+      source_url: https://www.conaf.cl/manejo-de-ecosistemas/bosque-nativo/fondo-de-conservacion-y-manejo-sustentable-del-bosque-nativo/
+      released_at: null
+      retrieved_at: "2026-06-16"
+      retrieval_method: manual_curation
+      api_endpoint: null
+      path: "reviews/cl-conaf/cl-conaf-fondos/releases/v1"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: reviews/cl-conaf/cl-conaf-fondos/releases/v1/review.md
+      license:
+        id: license-verification-pending
+        name: "Terms to be verified"
+        url: null
+        commercial_use: null
+        note: >
+          Public government information (verified 2026-06-16): CONAF is a public-interest body administering public funds and programme facts are public. Standard public-info treatment: capture and attribute. No restrictive aggregator terms in play.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
+- id: cl-indap-awards
+  name: INDAP fomento awards / beneficiaries
+  dataset_url: https://www.indap.gob.cl/concursos/todos-los-concursos
+  publisher:
+    id: cl-indap
+    name: Instituto de Desarrollo Agropecuario (INDAP)
+    url: https://www.indap.gob.cl/
+  description: >
+    The "who actually got funded" companion to the supply-side review cl-indap-fondos: the awarded projects and beneficiary nóminas of INDAP's fomento programs (TAS, SIRSD-S, Riego, PDI, PRODESAL, PDTI, PAP and others). This is the awards / revealed-fundability layer for agriculture, the AFOLU analogue of cl-conaf-bn-awards, recording outcomes rather than availability. It draws on INDAP concurso results pages and the Transparencia activa nóminas, resolvable to region and (for some results) comuna. A proof-of-pipeline release harvests a single concurso end-to-end with PII de-identified before commit.
+  coverage:
+    geography: country
+    countries: [CL]
+    spatial_levels: [country, region, comuna, project]
+  themes:
+    - climate_finance
+    - projects
+    - land_use
+  update_frequency: annual_cycle
+  priority: medium
+  releases:
+    - version: "v1"
+      version_number: 1
+      source_url: https://www.indap.gob.cl/concursos/todos-los-concursos
+      released_at: null
+      retrieved_at: "2026-06-18"
+      retrieval_method: manual_download
+      api_endpoint: null
+      path: "reviews/cl-indap/cl-indap-awards/releases/v1"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: reviews/cl-indap/cl-indap-awards/releases/v1/review.md
+      license:
+        id: license-verification-pending
+        name: "Terms to be verified"
+        url: null
+        commercial_use: null
+        note: >
+          Public-interest government information; program and award facts are public. No explicit open licence is attached to either channel, and the nóminas identify individual beneficiaries (often with RUT and amount), so personal identifiers are stripped or aggregated before any commit or redistribution.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
+- id: cl-indap-fondos
+  name: INDAP fomento programs (smallholder agriculture finance)
+  dataset_url: https://www.indap.gob.cl/plataforma-de-servicios
+  publisher:
+    id: cl-indap
+    name: Instituto de Desarrollo Agropecuario (INDAP)
+    url: https://www.indap.gob.cl/
+  description: >
+    INDAP (the rural-development agency of MINAGRI) runs the standing instruments through which Chilean smallholder and family farming is financed: technical-advisory and investment programs (PRODESAL, PDTI, SAT, Alianzas Productivas, PDI, Riego), the climate-explicit Transición a la Agricultura Sostenible (TAS), and credit lines. This entry adds the AFOLU agricultural-finance slice the inventory was missing, hand-curated from INDAP's own program fichas (one row per program) with a recurrence classification per program. The v1 release covers 9 programs and is not yet production-approved.
+  coverage:
+    geography: country
+    countries: [CL]
+    spatial_levels: [country, region, comuna]
+  themes:
+    - climate_finance
+    - land_use
+    - adaptation
+    - policy
+  update_frequency: annual_cycle
+  priority: medium
+  releases:
+    - version: "v1"
+      version_number: 1
+      source_url: https://www.indap.gob.cl/plataforma-de-servicios
+      released_at: null
+      retrieved_at: "2026-06-18"
+      retrieval_method: manual_curation
+      api_endpoint: null
+      path: "reviews/cl-indap/cl-indap-fondos/releases/v1"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: reviews/cl-indap/cl-indap-fondos/releases/v1/review.md
+      license:
+        id: license-verification-pending
+        name: "Terms to be verified"
+        url: null
+        commercial_use: null
+        note: >
+          Public government information (verified 2026-06-18) under the Ley de Transparencia (Ley 20.285); each cycle's rules are Resoluciones Exentas. Standard public-info treatment: capture and attribute to INDAP; obtain legal confirmation before large-scale redistribution and do not label "open licence" downstream.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
+- id: cl-subdere-sinim
+  name: SUBDERE / SINIM — municipal fiscal & institutional capacity indicators
+  dataset_url: https://datos.sinim.gov.cl/datos_municipales.php
+  publisher:
+    id: cl-subdere
+    name: Subsecretaría de Desarrollo Regional y Administrativo (SUBDERE)
+    url: https://datos.sinim.gov.cl/
+  description: >
+    Comuna-level fiscal-autonomy and institutional-capacity indicators from SINIM (run by SUBDERE). A targeted pull of 11 indicators for all 345 comunas across 2024–2025, populating the city / "who" layer of the climate-action fundability work. Indicators cover fiscal autonomy (FCM dependency, own income per capita), technical and management capacity (professionalization, staff counts), and socioeconomic context (CASEN poverty), keyed on CUT code. Research and exploratory: not in a pipeline and not catalog-registered.
+  coverage:
+    geography: country
+    countries: [CL]
+    spatial_levels: [comuna, region]
+  themes:
+    - socioeconomics
+    - climate_finance
+    - policy
+  update_frequency: annual_cycle
+  priority: medium
+  releases:
+    - version: "v1"
+      version_number: 1
+      source_url: https://datos.sinim.gov.cl/datos_municipales.php
+      released_at: null
+      retrieved_at: null
+      retrieval_method: manual_download
+      api_endpoint: null
+      path: "reviews/cl-subdere/cl-subdere-sinim/releases/v1"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: reviews/cl-subdere/cl-subdere-sinim/releases/v1/review.md
+      license:
+        id: license-verification-pending
+        name: "Terms to be verified"
+        url: https://datos.sinim.gov.cl/informacion_municipal.php
+        commercial_use: false
+        note: >
+          Portal terms authorize use "sin fines comerciales" with mandatory attribution; conflicting CC BY / CC0 signals exist on the same source. Non-commercial / internal research is fine but commercial use is unresolved pending a written SUBDERE clearance request. Never surface or export raw SINIM values; always attribute to SINIM, SUBDERE.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
+- id: cl-mma-fpa-awards
+  name: MMA Fondo de Protección Ambiental — Awards (Proyectos Adjudicados)
+  dataset_url: https://fondos.mma.gob.cl/fpa/
+  publisher:
+    id: cl-mma
+    name: Ministerio del Medio Ambiente (Chile)
+    url: https://mma.gob.cl/
+  description: >
+    Project-level award records (proyectos adjudicados) of Chile's Fondo de Protección Ambiental (FPA), the country's first national competitive environmental fund (since 1998), financing citizen, school and indigenous-community environmental projects. Release v1 holds 655 awarded projects (2021–2025) across all 16 regions and 202 comunas, normalised from two schema eras into one de-identified table with a clasificación-to-action crosswalk. It is the "who got funded" companion to the supply-side review cl-mma-fondos. RUT/person-level PII is dropped at build; older years (2016–2020) remain pending.
+  coverage:
+    geography: country
+    countries: [CL]
+    spatial_levels: [country, region, comuna, project]
+  themes:
+    - climate_finance
+    - mitigation
+    - policy
+  update_frequency: annual_cycle
+  priority: medium
+  releases:
+    - version: "v1"
+      version_number: 1
+      source_url: https://fondos.mma.gob.cl/category/fondos-adjudicados/
+      released_at: null
+      retrieved_at: "2026-06-17"
+      retrieval_method: web_extraction
+      api_endpoint: null
+      path: "reviews/cl-mma/cl-mma-fpa-awards/releases/v1"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: reviews/cl-mma/cl-mma-fpa-awards/releases/v1/review.md
+      license:
+        id: cl-public-info
+        name: "Public-interest government information (MMA)"
+        url: null
+        commercial_use: null
+        note: >
+          Public-interest government information; no explicit open licence (e.g. CC BY) is published. Attribute to MMA and confirm reuse terms before large-scale redistribution.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
+- id: cl-mma-ndc-macc
+  name: Chile Beyond-NDC Marginal Abatement Costs
+  dataset_url: https://data.mendeley.com/datasets/jtp6dcyp78
+  publisher:
+    id: cl-mma
+    name: Ministerio del Medio Ambiente (Chile)
+    url: https://mma.gob.cl/
+  description: >
+    Dataset review for a multisector marginal-abatement-cost study, "GHG Mitigation beyond the NDC in Chile: an assessment of alternatives", covering 47 mitigation actions across transport, buildings, industry and mining, IPPU, waste, electricity, forestry and agriculture, each with a marginal abatement cost (USD/tCO2e), mitigation potential and capital cost (2023 vintage). The authored source is GreenLab/Centro Cambio Global at Pontificia Universidad Católica de Chile under the Climate Action Teams initiative. The CC BY Mendeley deposit is a runnable Pyplan/Analytica/SWITCH model (costs are formulas, not a results table), so the dataset was marked NOT PURSUED (2026-06-08); the MMA Fortalecimiento de la NDC report is flagged as the live government cost-layer lead.
+  coverage:
+    geography: country
+    countries: [CL]
+    spatial_levels: [country]
+  themes:
+    - mitigation
+    - climate_finance
+    - emissions
+    - science_assessment
+  update_frequency: manual_refresh
+  priority: medium
+  releases:
+    - version: "2023"
+      version_number: 1
+      source_url: https://data.mendeley.com/datasets/jtp6dcyp78
+      released_at: null
+      retrieved_at: "2026-06-08"
+      retrieval_method: manual_review
+      api_endpoint: null
+      path: "reviews/cl-mma/cl-mma-ndc-macc/releases/2023"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: null
+      license:
+        id: cc-by-4.0
+        name: "Creative Commons Attribution 4.0 (Mendeley model + data)"
+        url: https://creativecommons.org/licenses/by/4.0/
+        commercial_use: true
+        note: >
+          Mendeley model + data are CC BY 4.0 (commercially usable with attribution); the companion discussion-paper report is CC BY-NC-ND 4.0 and must not be reused. Source cost values from the CC BY dataset, not the NC-ND report.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
+- id: cl-mop-fondos
+  name: Ministerio de Obras Públicas (MOP) — Infrastructure & Water Finance
+  dataset_url: https://doh.mop.gob.cl/
+  publisher:
+    id: cl-mop
+    name: Ministerio de Obras Públicas (Chile)
+    url: https://www.mop.gob.cl/
+  description: >
+    A hand-curated inventory of the recurring funding programmes the Chilean Ministry of Public Works (MOP) channels for climate-relevant infrastructure, concentrated in water (rural drinking water and sanitation, basin management) and cross-sector rural infrastructure. It spans the MOP sub-directorates — DOH (Agua Potable Rural / Servicios Sanitarios Rurales), DGA (basin/water-rights administration), DGOP (Infraestructura para el Buen Vivir) and the Dirección General de Concesiones — with one row per programme and a recurrence classification (standing vs time-boxed). Release v1 holds 7 programmes across 5 sub-directorates plus a programme-to-action crosswalk; provenance and structure are verified but per-programme amounts remain unverified.
+  coverage:
+    geography: country
+    countries: [CL]
+    spatial_levels: [country, region, comuna]
+  themes:
+    - climate_finance
+    - water
+    - infrastructure
+    - adaptation
+  update_frequency: annual_cycle
+  priority: medium
+  releases:
+    - version: "v1"
+      version_number: 1
+      source_url: https://doh.mop.gob.cl/
+      released_at: null
+      retrieved_at: "2026-06-18"
+      retrieval_method: manual_curation
+      api_endpoint: null
+      path: "reviews/cl-mop/cl-mop-fondos/releases/v1"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: reviews/cl-mop/cl-mop-fondos/releases/v1/review.md
+      license:
+        id: cl-public-info
+        name: "Public government information (Ley de Transparencia, Ley 20.285)"
+        url: null
+        commercial_use: null
+        note: >
+          Public government information under the Ley de Transparencia; no restrictive aggregator terms. Capture, attribute to the specific sub-directorate, and obtain legal confirmation before large-scale product redistribution; do not label "open licence" downstream.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
+- id: cl-mtt-fondos
+  name: Ministerio de Transportes y Telecomunicaciones (MTT) — Transport Finance for Cities
+  dataset_url: https://dtpr.gob.cl/
+  publisher:
+    id: cl-mtt
+    name: Ministerio de Transportes y Telecomunicaciones (Chile)
+    url: https://mtt.gob.cl/
+  description: >
+    A hand-curated inventory of transport-sector funding programmes offered by Chile's Ministry of Transport and its División de Transporte Público Regional (DTPR) to renew and decarbonise public and shared transport: the national public-transport subsidy (Fondos de Apoyo Regional, reformed 2024) for fleet renewal and zero-emission buses, plus the vehicle-renewal programmes Renueva tu Micro and Renueva tu Colectivo. It fills the transportation GPC sector gap missing from the v1 finance inventory. Release v1 holds 3 programmes (one row each, source_url per row); provenance and the reformed-subsidy zero-emission earmark are verified, while per-call/per-region amounts are unverified.
+  coverage:
+    geography: country
+    countries: [CL]
+    spatial_levels: [country, region]
+  themes:
+    - climate_finance
+    - transport
+    - mitigation
+    - energy
+  update_frequency: annual_cycle
+  priority: medium
+  releases:
+    - version: "v1"
+      version_number: 1
+      source_url: https://dtpr.gob.cl/
+      released_at: null
+      retrieved_at: "2026-06-16"
+      retrieval_method: manual_curation
+      api_endpoint: null
+      path: "reviews/cl-mtt/cl-mtt-fondos/releases/v1"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: reviews/cl-mtt/cl-mtt-fondos/releases/v1/review.md
+      license:
+        id: cl-public-info
+        name: "Public government information (Ley de Transparencia)"
+        url: null
+        commercial_use: null
+        note: >
+          MTT/DTPR pages and ChileAtiende fichas are ordinary public information under the Ley de Transparencia. Capture and attribute the factual programme data; standard public-info treatment.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
+- id: cl-ssg-actions
+  name: Chile SSG Consolidated Climate Actions
+  dataset_url: null
+  publisher:
+    id: cl-ssg
+    name: Sustainability Solutions Group (SSG)
+    url: https://www.ssg.coop/
+  description: >
+    A de-duplicated menu of 196 candidate mitigation actions assembled for the Chile SSG / MEED programme by merging two libraries: an OpenEarth set (OE, 102 rows, drawn from the IPCC, I-Care and C40 taxonomies) and a Sustainability Solutions Group set (SSG, 94 rows). The action content is generic and globally worded, with no spatial or temporal dimension — "Chile" denotes the curation context, not the wording. It is the "what could a city do" demand-side layer that pairs with the cl-ssg-finance fundability scoring; it carries no tCO2e, reduction potential or cost figure. Most descriptive attribute columns belong to only one source, so cross-source work is honest only on name and sector.
+  coverage:
+    geography: country
+    countries: [CL]
+    spatial_levels: [project]
+  themes:
+    - mitigation
+    - taxonomy
+    - policy
+  update_frequency: manual_refresh
+  priority: medium
+  releases:
+    - version: "v1"
+      version_number: 1
+      source_url: null
+      released_at: null
+      retrieved_at: null
+      retrieval_method: manual_curation
+      api_endpoint: null
+      path: "reviews/cl-ssg/cl-ssg-actions/releases/v1"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: null
+      license:
+        id: license-verification-pending
+        name: "Internal working product (terms to be verified)"
+        url: null
+        commercial_use: null
+        note: >
+          No licence statement travels with the file; it is internal working product of the SSG / OpenEarth programme. Upstream content (IPCC, C40, I-Care) keeps its own terms; clear those before redistribution outside the programme.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
+- id: cl-ssg-emissions
+  name: Chile SSG Comuna GHG Inventories (MEED)
+  dataset_url: null
+  publisher:
+    id: cl-ssg
+    name: Sustainability Solutions Group (SSG)
+    url: https://www.ssg.coop/
+  description: >
+    GPC-format greenhouse-gas emission inventories for Chilean comunas, produced by Sustainability Solutions Group for the Chile SSG / MEED programme and structured as inputs to the CityCatalyst HIAP/MEED prioritize endpoint. The expert-testing release bundles per-comuna prioritization request payloads (e.g. Los Ríos region comunas — Valdivia, Corral, Lanco, Panguipulli — for inventory year 2020) carrying GPC-sector activity emissions in t CO2e, alongside a regional MEED 2022 GHG/ENERGY output sample. The inventories supply the city emissions data that feeds action prioritization.
+  coverage:
+    geography: country
+    countries: [CL]
+    spatial_levels: [comuna, region]
+  themes:
+    - emissions
+    - energy
+    - mitigation
+  update_frequency: manual_refresh
+  priority: medium
+  releases:
+    - version: "expert-testing"
+      version_number: 1
+      source_url: null
+      released_at: null
+      retrieved_at: null
+      retrieval_method: manual_curation
+      api_endpoint: null
+      path: "reviews/cl-ssg/cl-ssg-emissions/releases/expert-testing"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: null
+      license:
+        id: license-verification-pending
+        name: "Terms to be verified"
+        url: null
+        commercial_use: null
+        note: >
+          Confirm reuse terms before production.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
+- id: cl-ssg-finance
+  name: Chile Finance Opportunities — SSG Curated Inventory
+  dataset_url: null
+  publisher:
+    id: cl-ssg
+    name: Sustainability Solutions Group (SSG)
+    url: https://www.ssg.coop/
+  description: >
+    A curated, machine-readable inventory of climate-relevant financing opportunities for Chile, prepared for the MEED / SSG finance screening and action-matching workflows. Each opportunity records the actor, instrument, territorial scope, sector coverage and a source link, plus analyst notes and provenance fields used during SSG curation. It supports early screening of which funding instruments might fit a given action/city context before detailed eligibility review, and underpins an action-level fundability score (0–100) built from sector, actor, geography, instrument, timing and constraint fit.
+  coverage:
+    geography: country
+    countries: [CL]
+    spatial_levels: [country, region, project]
+  themes:
+    - climate_finance
+    - policy
+    - taxonomy
+  update_frequency: manual_refresh
+  priority: medium
+  releases:
+    - version: "v1"
+      version_number: 1
+      source_url: null
+      released_at: null
+      retrieved_at: null
+      retrieval_method: manual_curation
+      api_endpoint: null
+      path: "reviews/cl-ssg/cl-ssg-finance/releases/v1"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: reviews/cl-ssg/cl-ssg-finance/releases/v1/review.md
+      license:
+        id: license-verification-pending
+        name: "Terms to be verified"
+        url: null
+        commercial_use: null
+        note: >
+          Confirm reuse terms before production.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
+- id: cl-ssg-legal-signals
+  name: Chile Legal Signals — SSG Municipal Feasibility
+  dataset_url: null
+  publisher:
+    id: cl-ssg
+    name: Sustainability Solutions Group (SSG)
+    url: https://www.ssg.coop/
+  description: >
+    A curated legal-feasibility assessment for municipal climate mitigation actions in Chile, combining legal basis, local governance capacity and financing access into a single score. v1 covered the waste sector measuring municipal viability directly (Legal 40% + Governance 30% + Financing 30%); v2 extends to the IPPU (28 actions) and AFOLU (24 actions) sectors and reframes the unit of measurement to national policy alignment (C1 Instrument 35 + C2 Mandate 20 + C3 Budget 25 + C4 Climate alignment 20). v2 also carries a cross-version merge, legal-classification-v2.csv, placing all 100 OEF-catalogue actions on one legal-feasibility scale (21 enabled, 50 conditional, 29 blocked).
+  coverage:
+    geography: country
+    countries: [CL]
+    spatial_levels: [country, project]
+  themes:
+    - policy
+    - taxonomy
+    - waste
+    - mitigation
+  update_frequency: manual_refresh
+  priority: medium
+  releases:
+    - version: "v2"
+      version_number: 1
+      source_url: null
+      released_at: null
+      retrieved_at: null
+      retrieval_method: manual_review
+      api_endpoint: null
+      path: "reviews/cl-ssg/cl-ssg-legal-signals/releases/v2"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: reviews/cl-ssg/cl-ssg-legal-signals/releases/v2/review.md
+      license:
+        id: license-verification-pending
+        name: "Terms to be verified"
+        url: null
+        commercial_use: null
+        note: >
+          Confirm reuse terms before production.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
+- id: cl-ssg-projects
+  name: Chile SSG Climate Projects (FICHA-IDI / SNI-BIP)
+  dataset_url: null
+  publisher:
+    id: cl-ssg
+    name: Sustainability Solutions Group (SSG)
+    url: https://www.ssg.coop/
+  description: >
+    A corpus of Chilean public-investment project records extracted from FICHA-IDI ("Iniciativa De Inversión") one-pagers emitted by Chile's Sistema Nacional de Inversiones (SNI / BIP — Banco Integrado de Proyectos), normalised to a consistent JSON schema (ficha_idi.schema.v1.0.0.json). Each record captures the project name, GPC-style sector/subsector, location (region/comuna), justification and activity narratives, budget and funding source, beneficiaries, responsible institutions and approval status (RATE). The corpus is broader than climate but the same schema describes climate-action projects (stormwater works, solar lighting, ecosystem restoration), making it suitable for matching projects to mitigation actions.
+  coverage:
+    geography: country
+    countries: [CL]
+    spatial_levels: [country, region, comuna, project]
+  themes:
+    - projects
+    - climate_finance
+    - mitigation
+    - infrastructure
+  update_frequency: manual_refresh
+  priority: medium
+  releases:
+    - version: "v1"
+      version_number: 1
+      source_url: null
+      released_at: null
+      retrieved_at: null
+      retrieval_method: web_extraction
+      api_endpoint: null
+      path: "reviews/cl-ssg/cl-ssg-projects/releases/v1"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: reviews/cl-ssg/cl-ssg-projects/releases/v1/review.md
+      license:
+        id: cl-public-info
+        name: "Public government information (SNI / BIP)"
+        url: null
+        commercial_use: null
+        note: >
+          Confirm reuse terms before production.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
+- id: cl-undp-sgp
+  name: GEF Small Grants Programme — Chile
+  dataset_url: https://sgp.undp.org/component/countrypages/?view=countrypage&country=35&Itemid=271
+  publisher:
+    id: undp
+    name: United Nations Development Programme
+    url: https://www.undp.org
+  description: >
+    Community-scale environmental grants made under the GEF Small Grants Programme (SGP), implemented by UNDP and funded by the Global Environment Facility (GEF), with standard grants up to US$50,000 direct to CBOs, NGOs, and indigenous/community organisations for biodiversity, land-degradation, climate-change, and chemicals-and-waste projects. It is dual-layer: a live supply/enabler funding channel (reactivated under GEF-8 / OP8 2025–2029) and an awards archive of 260 funded Chilean community projects (1994–2012, US$7.0M GEF grant). Provides a multilateral, community-accessible finance tier and revealed-fundability precedent for Chilean cities.
+  coverage:
+    geography: country
+    countries: [CL]
+    spatial_levels: [national, city, sector]
+  themes:
+    - climate_finance
+    - projects
+    - mitigation
+  update_frequency: manual_refresh
+  priority: medium
+  releases:
+    - version: "v1"
+      version_number: 1
+      source_url: https://sgp.undp.org/component/countrypages/?view=countrypage&country=35&Itemid=271
+      released_at: null
+      retrieved_at: "2026-06-17"
+      retrieval_method: web_extraction
+      api_endpoint: null
+      path: "reviews/undp/cl-undp-sgp/releases/v1"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: null
+      license:
+        id: license-verification-pending
+        name: Terms to be verified
+        url: null
+        commercial_use: null
+        note: >
+          SGP/UNDP public-information data attributed to "UNDP GEF Small Grants Programme"; confirm portal terms carry no restrictive aggregator clause and strip grantee personal data before production. Licence evidence tag: to verify at build.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
+- id: ipcc-ar6-ch10-transport
+  name: IPCC AR6 WGIII Chapter 10 — Transport (abatement parameters)
+  dataset_url: https://www.ipcc.ch/report/ar6/wg3/chapter/chapter-10/
+  publisher:
+    id: ipcc
+    name: Intergovernmental Panel on Climate Change
+    url: https://www.ipcc.ch
+  description: >
+    Transport-sector abatement parameters from AR6 WGIII Chapter 10, used as a parameter source for a city action-ranking methodology: mode energy intensities, EV-vs-ICE efficiency, fuel-efficiency improvement rates, and modal-shift intensity ratios that feed the ASIF engine, plus adjustment mechanics and a worked example. It also draws emission factors from the 2006 IPCC Guidelines (Vol. 2 Energy, Mobile Combustion) and the Emission Factor Database. The chapter is a global assessment with regional growth detail; parameters are context-portable and downscaled to a city's GPC transport baseline.
+  coverage:
+    geography: global
+    spatial_levels: [global, sector]
+  themes:
+    - transport
+    - mitigation
+    - science_assessment
+  update_frequency: ipcc_cycle
+  priority: medium
+  releases:
+    - version: "2023"
+      version_number: 1
+      source_url: https://www.ipcc.ch/report/ar6/wg3/chapter/chapter-10/
+      released_at: null
+      retrieved_at: null
+      retrieval_method: manual_curation
+      api_endpoint: null
+      path: "reviews/ipcc/ipcc-ar6-ch10-transport/releases/2023"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: reviews/ipcc/ipcc-ar6-ch10-transport/releases/2023/review.md
+      license:
+        id: cc-by-4.0
+        name: Creative Commons Attribution 4.0
+        url: https://www.ipcc.ch/copyright/
+        commercial_use: true
+        note: >
+          Numeric facts/figure data on the IPCC DDC are CC BY 4.0 and usable commercially with attribution; figures/text reproduce per IPCC copyright policy. Use IPCC-assessed values, not underlying proprietary datasets (ICCT/IEA/BNEF), to keep the build commercial-safe.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
+- id: ipcc-ar6-ch11-industry
+  name: IPCC AR6 WGIII Chapter 11 — Industry (potentials + decomposition)
+  dataset_url: https://www.ipcc.ch/report/ar6/wg3/chapter/chapter-11/
+  publisher:
+    id: ipcc
+    name: Intergovernmental Panel on Climate Change
+    url: https://www.ipcc.ch
+  description: >
+    Industry-sector parameters from AR6 WGIII Chapter 11 used to classify industry mitigation for a city action-ranking methodology. It provides Equation 11.1 (industry's Kaya decomposition with an explicit territorial term) and Table 11.1 (the direct / indirect-electricity / indirect-heat / process split that sets the grid-adjustable share), plus global per-technology potentials from ~75 studies. Potentials are global by technology class with no regional or city breakdown; energy-efficiency contribution is assessed at 10–40% by 2050.
+  coverage:
+    geography: global
+    spatial_levels: [global, sector]
+  themes:
+    - industry
+    - mitigation
+    - science_assessment
+  update_frequency: ipcc_cycle
+  priority: medium
+  releases:
+    - version: "2023"
+      version_number: 1
+      source_url: https://www.ipcc.ch/report/ar6/wg3/chapter/chapter-11/
+      released_at: null
+      retrieved_at: null
+      retrieval_method: manual_curation
+      api_endpoint: null
+      path: "reviews/ipcc/ipcc-ar6-ch11-industry/releases/2023"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: reviews/ipcc/ipcc-ar6-ch11-industry/releases/2023/review.md
+      license:
+        id: cc-by-4.0
+        name: Creative Commons Attribution 4.0
+        url: https://www.ipcc.ch/copyright/
+        commercial_use: true
+        note: >
+          Industry numeric facts usable commercially with attribution (SPM.7-lineage data CC BY 4.0); figures per IPCC copyright policy (rebuild from values). Use IPCC's assessed values, not proprietary sources (IEA, World Steel, industry bodies), for the clean-room build.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
+- id: ipcc-ar6-ch9-buildings
+  name: IPCC AR6 WGIII Chapter 9 — Buildings (regional potentials + decomposition)
+  dataset_url: https://www.ipcc.ch/report/ar6/wg3/chapter/chapter-9/
+  publisher:
+    id: ipcc
+    name: Intergovernmental Panel on Climate Change
+    url: https://www.ipcc.ch
+  description: >
+    Buildings-sector parameters from AR6 WGIII Chapter 9 feeding a city action-ranking methodology: regional mitigation potentials as a percentage of baseline (Figure 9.16, split by measure — sufficiency / efficiency / onsite renewables — and by direct/indirect source, including Latin America & Caribbean), the decomposition equation Eq. 9.1 (CO2 = Pop × Sufficiency × Efficiency × Renewables), and the synthesis method (% of baseline × baseline emissions). Resolution is regional (10-region breakdown) with potentials at 2050; Chapter 9 figures have no downloadable data file, so values were transcribed from figure panels and chapter text.
+  coverage:
+    geography: global
+    spatial_levels: [global, regional, sector]
+  themes:
+    - energy
+    - mitigation
+    - science_assessment
+  update_frequency: ipcc_cycle
+  priority: medium
+  releases:
+    - version: "2023"
+      version_number: 1
+      source_url: https://www.ipcc.ch/report/ar6/wg3/chapter/chapter-9/
+      released_at: null
+      retrieved_at: null
+      retrieval_method: manual_curation
+      api_endpoint: null
+      path: "reviews/ipcc/ipcc-ar6-ch9-buildings/releases/2023"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: reviews/ipcc/ipcc-ar6-ch9-buildings/releases/2023/review.md
+      license:
+        id: cc-by-4.0
+        name: Creative Commons Attribution 4.0
+        url: https://www.ipcc.ch/copyright/
+        commercial_use: true
+        note: >
+          Numeric facts usable in commercial deliverables with attribution (facts not copyrightable; SPM.7-lineage data is CC BY 4.0); figures reproduce per IPCC copyright policy. Chapter 9 figures have no downloadable data file — rebuild visuals from transcribed values.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
+- id: ipcc-ar6-spm7-mitigation-potentials
+  name: IPCC AR6 — mitigation options, costs and potentials 2030 (Figure SPM.7)
+  dataset_url: https://www.ipcc.ch/report/ar6/wg3/figures/summary-for-policymakers/figure-spm-7/
+  publisher:
+    id: ipcc
+    name: Intergovernmental Panel on Climate Change
+    url: https://www.ipcc.ch
+  description: >
+    The data behind AR6 Figure SPM.7: estimated emissions reduction potential and cost of about 31 mitigation options in 2030, assessed by WGIII with a common methodology across all sectors (about 175 underlying sources). Per-option reduction potential (GtCO2e/yr in 2030) is split into cost buckets (<0 to 200 US$/tCO2e) with uncertainty bounds, supporting ordinal ranking of mitigation actions. The release uses the SYR restructured version (Final sheet matches the published SYR figure), preserving the WGIII original within the same file. Potentials are global and not additive; the dataset is frozen (2023) and superseded only by AR7-cycle products.
+  coverage:
+    geography: global
+    spatial_levels: [global, sector]
+  themes:
+    - mitigation
+    - science_assessment
+  update_frequency: ipcc_cycle
+  priority: medium
+  releases:
+    - version: "2023"
+      version_number: 1
+      source_url: https://doi.org/10.48490/3c86-xp02
+      released_at: null
+      retrieved_at: null
+      retrieval_method: manual_download
+      api_endpoint: null
+      path: "reviews/ipcc/ipcc-ar6-spm7-mitigation-potentials/releases/2023"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: reviews/ipcc/ipcc-ar6-spm7-mitigation-potentials/releases/2023/review.md
+      license:
+        id: cc-by-4.0
+        name: Creative Commons Attribution 4.0
+        url: https://www.ipcc.ch/copyright/
+        commercial_use: true
+        note: >
+          CC BY 4.0, stated on the DDC record. Cite both the dataset DOI and the report (SYR SPM, IPCC 2023). Redistribution fine with attribution.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
+- id: ipcc-sr15-mitigation-feasibility
+  name: IPCC SR1.5 — Chapter 4 Supplementary Material (mitigation feasibility)
+  dataset_url: https://www.ipcc.ch/site/assets/uploads/sites/2/2019/05/SR15_Approval_Chapter_4_SM.pdf
+  publisher:
+    id: ipcc
+    name: Intergovernmental Panel on Climate Change
+    url: https://www.ipcc.ch
+  description: >
+    The approval-version supplementary material to Global Warming of 1.5°C (IPCC SR1.5), Chapter 4, the canonical source for multidimensional feasibility assessments of mitigation options across economic, technological, institutional, socio-cultural, environmental, and geophysical dimensions. It includes the SM methodology tables and option-level matrices with A/B/C indicator codings and evidence/agreement annotations. Used as stable, literature-backed feasibility priors for action- and city-level workflows; the assessment is global (not city-specific) and treated as a 2018-vintage evidence base.
+  coverage:
+    geography: global
+    spatial_levels: [global, sector]
+  themes:
+    - mitigation
+    - science_assessment
+  update_frequency: ipcc_cycle
+  priority: medium
+  releases:
+    - version: "2018"
+      version_number: 1
+      source_url: https://www.ipcc.ch/site/assets/uploads/sites/2/2019/05/SR15_Approval_Chapter_4_SM.pdf
+      released_at: null
+      retrieved_at: null
+      retrieval_method: manual_download
+      api_endpoint: null
+      path: "reviews/ipcc/ipcc-sr15-mitigation-feasibility/releases/2018"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: reviews/ipcc/ipcc-sr15-mitigation-feasibility/releases/2018/review.md
+      license:
+        id: license-verification-pending
+        name: Terms to be verified
+        url: https://www.ipcc.ch/copyright/
+        commercial_use: null
+        note: >
+          Copyright and reuse conditions are set by the IPCC and may differ between figures, tables, and full report text. Confirm current terms on ipcc.ch and cite the SR1.5 report and chapter before redistributing or adapting content.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
+- id: project-drawdown-solutions
+  name: Project Drawdown — Drawdown Explorer solutions table
+  dataset_url: https://drawdown.org/explorer
+  publisher:
+    id: project-drawdown
+    name: Project Drawdown
+    url: https://drawdown.org
+  description: >
+    The Drawdown Explorer "Table of Solutions" export: about 156 climate solutions classified into recommendation tiers, with per-solution effectiveness, achievable adoption ranges, GHG impact ranges (Gt CO2-eq/yr), point costs (US$/tCO2e), and qualitative co-benefit tags. This is the 2025 Explorer relaunch, which replaced the older ~90-solution table and is not comparable to it. Only "Highly Recommended" solutions are quantified, the CSV export is un-versioned and mutates in place, and the data is restrictively licensed — research-only, not production-approved.
+  coverage:
+    geography: global
+    spatial_levels: [global, sector]
+  themes:
+    - mitigation
+    - taxonomy
+  update_frequency: manual_refresh
+  priority: medium
+  releases:
+    - version: "2025"
+      version_number: 1
+      source_url: https://drawdown.org/explorer-solutions-table-export.csv
+      released_at: null
+      retrieved_at: "2026-06-05"
+      retrieval_method: web_extraction
+      api_endpoint: null
+      path: "reviews/project-drawdown/project-drawdown-solutions/releases/2025"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: reviews/project-drawdown/project-drawdown-solutions/releases/2025/review.md
+      license:
+        id: proprietary-all-rights-reserved
+        name: Project Drawdown Terms of Use (All Rights Reserved)
+        url: https://drawdown.org/terms-of-use
+        commercial_use: false
+        note: >
+          Not open data ("Copyright © 2014–2026 Project Drawdown. All rights reserved."). Content licensed for internal/personal use only; reproduction, distribution, or storage of any significant portion is prohibited without written permission from info@drawdown.org. No production ingestion or user-facing redistribution.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
+- id: seeg-emissions
+  name: SEEG — Brazilian municipal greenhouse gas emissions
+  dataset_url: https://seeg.eco.br/
+  publisher:
+    id: seeg
+    name: Sistema de Estimativas de Emissões e Remoções de Gases de Efeito Estufa (SEEG)
+    url: https://seeg.eco.br/
+  description: >
+    Municipal-level greenhouse gas emission and removal estimates for Brazil from SEEG, published as wide municipal exports with one row per emission sector/category/gas and annual numeric columns (tonnes of the indicated gas). Columns include emission sector, emitting category and sub-category, product or system, biome, gas, and city. Releases track successive SEEG collection vintages (annual columns extending through 2022, 2023, and 2024). Sample files in this repo are synthetic structure-only extracts; authoritative data is downloaded from seeg.eco.br.
+  coverage:
+    geography: country
+    countries: [BR]
+    spatial_levels: [national, city, sector]
+  themes:
+    - emissions
+    - land_use
+  update_frequency: annual_refresh
+  priority: medium
+  releases:
+    - version: "2024"
+      version_number: 3
+      source_url: https://seeg.eco.br/
+      released_at: null
+      retrieved_at: null
+      retrieval_method: manual_download
+      api_endpoint: null
+      path: "reviews/seeg/seeg-emissions/releases/2024"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: null
+      license:
+        id: license-verification-pending
+        name: Terms to be verified
+        url: https://seeg.eco.br/
+        commercial_use: null
+        note: >
+          Confirm reuse terms before production.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+
+- id: unep-egr-sectoral-potentials
+  name: UNEP-CCC — sectoral GHG mitigation potentials in 2030/2035 (EGR 2024 background report)
+  dataset_url: https://unepccc.org/publications/bridging-the-gap-sectoral-greenhouse-gas-mitigation-potentials-in-2035/
+  publisher:
+    id: unep-ccc
+    name: UNEP Copenhagen Climate Centre
+    url: https://unepccc.org
+  description: >
+    Measure-level mitigation potential data behind "Bridging the gap: Sectoral greenhouse gas mitigation potentials in 2035" (UNEP-CCC & Common Futures, 2024), the background study for Chapter 6 of the UNEP Emissions Gap Report 2024. It assesses techno-economic potentials at costs up to 200 US$/tCO2e for 2030 and 2035 (some sectors also 2040) against a current-policy baseline across energy, AFOLU, buildings, transport, industry, waste, and F-gases — about 50 measure-level rows across 7 sectors with uncertainty ranges for most 2035 values. No machine-readable annex is published; the release hand-transcribes the PDF tables and machine-verifies every value.
+  coverage:
+    geography: global
+    spatial_levels: [global, sector]
+  themes:
+    - mitigation
+    - science_assessment
+  update_frequency: manual_refresh
+  priority: medium
+  releases:
+    - version: "2024"
+      version_number: 1
+      source_url: https://unepccc.org/wp-content/uploads/2024/10/sectoral-greenhouse-gas-emissions-reductions-potentials-in-2035.pdf
+      released_at: null
+      retrieved_at: "2026-06-05"
+      retrieval_method: manual_curation
+      api_endpoint: null
+      path: "reviews/unep-ccc/unep-egr-sectoral-potentials/releases/2024"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: reviews/unep-ccc/unep-egr-sectoral-potentials/releases/2024/review.md
+      license:
+        id: unep-ccc-non-commercial
+        name: UNEP-CCC educational/non-profit reproduction with attribution
+        url: https://unepccc.org/publications/bridging-the-gap-sectoral-greenhouse-gas-mitigation-potentials-in-2035/
+        commercial_use: false
+        note: >
+          Not CC BY. Reproduction permitted in whole or part for educational or non-profit services with acknowledgement, but no use for resale or any commercial purpose, publicity, or advertising without prior written permission from UNEP-CCC (unep-ccc@un.org).
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null

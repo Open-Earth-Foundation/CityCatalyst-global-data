@@ -47,7 +47,7 @@ integration_notes:
   requires_harmonisation: true
   recommended_storage: GeoPackage or GeoJSON; simplify for city-level use if needed
   census_join: match comunas to cl-ine-censo region/comuna; naming may need normalisation
-  unlocode_join: subdiv (ISO 3166-2) maps to regions; point-in-polygon for comuna. Pre-built comuna→locode mapping (locode_mapping.gpkg/csv) in sample; only exact/partial name matches kept.
+  unlocode_join: subdiv (ISO 3166-2) maps to regions; point-in-polygon for comuna. Pre-built comuna→locode mapping (cl_admin_locode.gpkg) in sample; spatial steps keep exact/partial name matches only; exact name fallback fills gaps where UN/LOCODE points are misplaced.
 
 data_quality:
   authority: ocha_humanitarian_standard
