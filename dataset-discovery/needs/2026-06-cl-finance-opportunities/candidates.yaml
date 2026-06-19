@@ -432,3 +432,24 @@ candidates:
       (CAF entity-support track) at review. Verified on GCF Chile country page
       2026-06-08 (NDA = Min. Hacienda, FYNSA AE, FP189/FP151/FP152, CAF doc).
   added: 2026-06-08
+
+# ---- Research / innovation tier (good data, but enabling — not city-implementation finance) ----
+
+- id: cl-anid-projects
+  name: ANID — research & innovation funding (FONDECYT, FONDEF, FONDAP, regional centres)
+  publisher: Agencia Nacional de Investigación y Desarrollo (ANID)
+  url: https://anid.cl/
+  also:
+    - https://github.com/ANID-GITHUB/Historico-de-Proyectos-Adjudicados   # full historical awarded-projects DB (to 31 Dec 2025), open/bulk
+    - https://anid.cl/calendario-concursos-2026/                          # concursos calendar (supply side)
+    - https://anid.cl/datos-y-estadisticas/                               # DataCiencia / Repositorio
+  themes: [research, innovation, science_technology, enabling]
+  coverage: national; research and technology grants (FONDECYT, FONDEF IDeA/IT, FONDAP centres, regional R&D centres, strategic funds e.g. Sequía/Salares). Some climate-relevant lines (climate-science centres, drought, FONDEF tech transfer).
+  access: open competitive concursos; eligible actor = universities and research centres, NOT cities/communities. Awarded-projects data is open and bulk (GitHub repo, updated annually).
+  license: public; the GitHub historical DB is openly downloadable.
+  tier: national
+  screening:
+    verdict: deprioritize
+    notes: >
+      DEPRIORITIZE for the city action / fundability use case (verified 2026-06-19): ANID has EXCELLENT, open, bulk data (a complete historical awarded-projects database on GitHub, plus a concursos calendar), better access than most domestic funders. But it is RESEARCH/INNOVATION finance — the beneficiary is academia and the award is a study, not a built intervention, so it sits in the enabling/knowledge tier and its awards do not map to city mitigation actions (most would be `none`, the same shape as the environmental-education gap). Recorded for memory with the data source; revisit only if a research-to-implementation or capacity line becomes city-relevant. Named as a secondary gap in this need's gaps.md.
+  added: 2026-06-19

@@ -1,0 +1,362 @@
+#!/usr/bin/env python3
+"""Group catalog datasets into generated collections, by theme and by geography.
+
+Single source of truth is `dataset-review/catalog/index.yaml`. This script
+writes two generated companions to the hand-curated `collection.yaml`:
+  - `collections/by-theme.yaml`     — one collection per canonical theme, after
+                                      normalising `themes:` through themes.yaml.
+  - `collections/by-geography.yaml` — one per country, one global, one per region,
+                                      derived from each entry's `coverage` block.
+It reads the catalog but never edits it, and never writes `collection.yaml`.
+
+A coverage health-check (review folders on disk vs catalog) prints to stderr on
+every run.
+
+Usage:
+    python group_by_theme.py                  # (re)generate both by-theme.yaml and by-geography.yaml
+    python group_by_theme.py --check          # CI/pre-commit: exit 1 if the files are stale
+    python group_by_theme.py --no-write       # preview both on stdout, write nothing
+    python group_by_theme.py --report         # also print the markdown by-theme index
+    python group_by_theme.py --coverage-only  # only the coverage report, write nothing
+"""
+from __future__ import annotations
+
+import argparse
+import sys
+from collections import defaultdict
+from pathlib import Path
+
+try:
+    import yaml
+except ImportError:
+    sys.exit("PyYAML required: pip install pyyaml --break-system-packages")
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+REPO_ROOT = SCRIPT_DIR.parents[3]  # .cursor/skills/dataset-themes/references -> repo root
+DEFAULT_CATALOG = REPO_ROOT / "dataset-review" / "catalog" / "index.yaml"
+DEFAULT_REVIEWS = REPO_ROOT / "dataset-review" / "reviews"
+DEFAULT_COLLECTIONS_OUT = REPO_ROOT / "dataset-review" / "collections" / "by-theme.yaml"
+DEFAULT_GEO_OUT = REPO_ROOT / "dataset-review" / "collections" / "by-geography.yaml"
+DEFAULT_THEMES = SCRIPT_DIR / "themes.yaml"
+
+# ISO-3166 alpha-2 -> display name for countries seen in the catalog. Extend as
+# new countries are added; unknown codes fall back to the bare code.
+COUNTRY_NAMES = {
+    "CL": "Chile",
+    "BR": "Brazil",
+}
+
+
+def load_vocab(path: Path):
+    """Return (alias->canonical map, canonical->label, qualifier set)."""
+    doc = yaml.safe_load(path.read_text())
+    alias_to_canon, label, order = {}, {}, []
+    for t in doc.get("themes", []):
+        cid = t["id"]
+        order.append(cid)
+        label[cid] = t.get("label", cid)
+        alias_to_canon[cid] = cid
+        for a in t.get("aliases", []) or []:
+            alias_to_canon[a] = cid
+    qualifiers = {q["id"] for q in doc.get("qualifiers", []) or []}
+    return alias_to_canon, label, qualifiers, order
+
+
+def load_catalog(path: Path):
+    doc = yaml.safe_load(path.read_text())
+    return doc.get("datasets", []) or []
+
+
+# --- Catalog schema accessors -------------------------------------------------
+# Everything the script assumes about WHERE fields live in the catalog is
+# isolated here. If the index structure changes — e.g. themes move out of
+# index.yaml into a separate file, or coverage is reshaped — repoint these three
+# functions and the rest of the script keeps working.
+
+def raw_themes(ds):
+    """The raw theme tags for a dataset (pre-normalisation). Single source of
+    'where do themes come from'; change here if themes leave the index."""
+    return ds.get("themes") or []
+
+
+def coverage(ds):
+    """The coverage block (geography / countries / regions)."""
+    return ds.get("coverage") or {}
+
+
+def release_path(ds):
+    """The review folder a catalog entry points at, from its first release path
+    (e.g. reviews/gee/cl-mapbiomas/releases/x -> reviews/gee/cl-mapbiomas)."""
+    for rel in ds.get("releases") or []:
+        p = rel.get("path")
+        if p:
+            parts = Path(p).parts
+            return "/".join(parts[: parts.index("releases")]) if "releases" in parts else p
+    return None
+
+
+def normalise(raw_themes, alias_to_canon, qualifiers):
+    """Map raw tags -> canonical. Returns (canonical set, stripped quals, unknown)."""
+    canon, stripped, unknown = set(), set(), set()
+    for tag in raw_themes or []:
+        if tag in alias_to_canon:
+            canon.add(alias_to_canon[tag])
+        elif tag in qualifiers:
+            stripped.add(tag)
+        else:
+            unknown.add(tag)
+    return canon, stripped, unknown
+
+
+def build_themes_index(datasets, vocab):
+    alias_to_canon, label, qualifiers, order = vocab
+    by_theme = defaultdict(list)
+    untagged, all_unknown = [], defaultdict(list)
+    for ds in datasets:
+        canon, _stripped, unknown = normalise(raw_themes(ds), alias_to_canon, qualifiers)
+        for u in unknown:
+            all_unknown[u].append(ds["id"])
+        if not canon:
+            untagged.append(ds)
+            continue
+        for c in canon:
+            by_theme[c].append(ds)
+
+    lines = ["# Datasets by theme", "",
+             "_Generated by `dataset-themes`. Source of truth: `catalog/index.yaml` "
+             "normalised through `themes.yaml`. Do not hand-edit; regenerate._", ""]
+    seen_themes = [c for c in order if c in by_theme] + \
+                  sorted(c for c in by_theme if c not in order)
+    for cid in seen_themes:
+        rows = sorted(by_theme[cid], key=lambda d: d["id"])
+        lines.append(f"## {label.get(cid, cid)} (`{cid}`) — {len(rows)}")
+        lines.append("")
+        for d in rows:
+            countries = ",".join((d.get("coverage") or {}).get("countries", []) or [])
+            geo = f" · {countries}" if countries else ""
+            lines.append(f"- `{d['id']}` — {d.get('name', '')}{geo}")
+        lines.append("")
+    if untagged:
+        lines.append(f"## Untagged — {len(untagged)}")
+        lines.append("")
+        lines += [f"- `{d['id']}` — {d.get('name', '')}" for d in sorted(untagged, key=lambda d: d['id'])]
+        lines.append("")
+    if all_unknown:
+        lines.append("## ⚠ Unknown tags (not in themes.yaml — fix the tag or the vocab)")
+        lines.append("")
+        for tag in sorted(all_unknown):
+            lines.append(f"- `{tag}` — used by: {', '.join(sorted(all_unknown[tag]))}")
+        lines.append("")
+    return "\n".join(lines)
+
+
+def build_theme_collections(datasets, vocab):
+    """Emit one collection per canonical theme as collections YAML text.
+
+    Output is `dataset-review/collections/by-theme.yaml`: a generated companion
+    to the hand-curated collection.yaml. Collection ids are prefixed `theme-`
+    and fully hyphenated (canonical underscores become hyphens, e.g.
+    climate_finance -> theme-climate-finance) so they never collide with curated
+    collection ids and stay consistent with collection.yaml's id style."""
+    alias_to_canon, label, qualifiers, order = vocab
+    by_theme = defaultdict(list)
+    untagged = []
+    for ds in datasets:
+        canon, _stripped, _unknown = normalise(raw_themes(ds), alias_to_canon, qualifiers)
+        if not canon:
+            untagged.append(ds["id"])
+        for c in canon:
+            by_theme[c].append(ds["id"])
+
+    seen = [c for c in order if c in by_theme] + \
+           sorted(c for c in by_theme if c not in order)
+    lines = [
+        "# Datasets grouped by theme. GENERATED — do not edit by hand.",
+        "# Regenerate: python .cursor/skills/dataset-themes/references/group_by_theme.py",
+        "# Source of truth: catalog/index.yaml themes, normalised via themes.yaml.",
+        "# Collection ids are prefixed `theme-` and hyphenated (e.g. theme-climate-finance)",
+        "# to stay distinct from, and consistent with, curated collection.yaml ids.",
+        "",
+        "collections:",
+    ]
+    for cid in seen:
+        lines.append("")
+        lines.append(f"  - id: theme-{cid.replace('_', '-')}")
+        lines.append(f"    name: {label.get(cid, cid)}")
+        lines.append("    datasets:")
+        for ds_id in sorted(set(by_theme[cid])):
+            lines.append(f"      - id: {ds_id}")
+    if untagged:
+        lines.append("")
+        lines.append("  # Untagged datasets (no recognised theme) — add themes in index.yaml:")
+        for ds_id in sorted(set(untagged)):
+            lines.append(f"  #   - {ds_id}")
+    return "\n".join(lines) + "\n", len(seen), len(untagged)
+
+
+def _slug(s):
+    return "".join(c if c.isalnum() else "-" for c in s.lower()).strip("-")
+
+
+def build_geo_collections(datasets):
+    """Emit collections grouping datasets by geography: one per country, one
+    `geo-global`, and one per named region. Derived entirely from each entry's
+    `coverage` block in the catalog. Each dataset lands in exactly one geo
+    bucket: by country if countries are listed, else global, else regional."""
+    countries = defaultdict(list)   # ISO2 -> [ids]
+    regions = defaultdict(list)     # region name -> [ids]
+    globals_ = []
+    unplaced = []
+    for ds in datasets:
+        cov = coverage(ds)
+        cs = cov.get("countries") or []
+        geo = cov.get("geography")
+        if cs:
+            for iso in cs:
+                countries[iso].append(ds["id"])
+        elif geo == "global":
+            globals_.append(ds["id"])
+        elif geo == "regional":
+            for r in (cov.get("regions") or ["unspecified-region"]):
+                regions[r].append(ds["id"])
+        else:
+            unplaced.append(ds["id"])
+
+    lines = [
+        "# Datasets grouped by geography. GENERATED — do not edit by hand.",
+        "# Regenerate: python .cursor/skills/dataset-themes/references/group_by_theme.py",
+        "# Source of truth: catalog/index.yaml coverage (countries / geography / regions).",
+        "# Collection ids are prefixed `geo-` to stay distinct from theme- and curated ids.",
+        "",
+        "collections:",
+    ]
+    n = 0
+    # countries first, most-covered then alphabetical
+    for iso in sorted(countries, key=lambda k: (-len(countries[k]), k)):
+        n += 1
+        name = COUNTRY_NAMES.get(iso, iso)
+        lines.append("")
+        lines.append(f"  - id: geo-{_slug(name)}")
+        lines.append(f"    name: {name} datasets")
+        lines.append("    datasets:")
+        lines += [f"      - id: {i}" for i in sorted(set(countries[iso]))]
+    if globals_:
+        n += 1
+        lines.append("")
+        lines.append("  - id: geo-global")
+        lines.append("    name: Global datasets")
+        lines.append("    datasets:")
+        lines += [f"      - id: {i}" for i in sorted(set(globals_))]
+    for r in sorted(regions):
+        n += 1
+        lines.append("")
+        lines.append(f"  - id: geo-{_slug(r)}")
+        lines.append(f"    name: {r} datasets")
+        lines.append("    datasets:")
+        lines += [f"      - id: {i}" for i in sorted(set(regions[r]))]
+    if unplaced:
+        lines.append("")
+        lines.append("  # No geography in coverage — fix in index.yaml:")
+        lines += [f"  #   - {i}" for i in sorted(set(unplaced))]
+    return "\n".join(lines) + "\n", n, len(unplaced)
+
+
+def build_coverage(datasets, reviews_dir: Path):
+    # disk dataset folders: reviews/<publisher>/<dataset>
+    disk = set()
+    if reviews_dir.exists():
+        for pub in sorted(p for p in reviews_dir.iterdir() if p.is_dir()):
+            for dsdir in sorted(p for p in pub.iterdir() if p.is_dir()):
+                disk.add(f"reviews/{pub.name}/{dsdir.name}")
+    cataloged = {}  # folder -> id
+    for d in datasets:
+        f = release_path(d)
+        if f:
+            cataloged[f] = d["id"]
+    uncataloged = sorted(f for f in disk if f not in cataloged)
+    orphans = sorted((f, i) for f, i in cataloged.items() if f not in disk)
+
+    lines = ["# Catalog coverage", "",
+             f"- Catalog datasets: **{len(datasets)}**",
+             f"- Review folders on disk: **{len(disk)}**",
+             f"- On disk but not in catalog: **{len(uncataloged)}**",
+             f"- In catalog but no matching folder: **{len(orphans)}**", ""]
+    if uncataloged:
+        lines.append("## On disk, missing from catalog (candidates to add)")
+        lines.append("")
+        lines += [f"- `{f}`" for f in uncataloged]
+        lines.append("")
+    if orphans:
+        lines.append("## In catalog, no matching folder (stale path or missing review)")
+        lines.append("")
+        lines += [f"- `{i}` -> `{f}`" for f, i in orphans]
+        lines.append("")
+    return "\n".join(lines)
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("--catalog", type=Path, default=DEFAULT_CATALOG)
+    ap.add_argument("--reviews", type=Path, default=DEFAULT_REVIEWS)
+    ap.add_argument("--themes", type=Path, default=DEFAULT_THEMES)
+    ap.add_argument("--collections-out", type=Path, default=DEFAULT_COLLECTIONS_OUT,
+                    help="where to write the generated theme collections")
+    ap.add_argument("--geo-out", type=Path, default=DEFAULT_GEO_OUT,
+                    help="where to write the generated geography collections")
+    ap.add_argument("--no-write", action="store_true",
+                    help="don't write the files; print them to stdout instead")
+    ap.add_argument("--report", action="store_true",
+                    help="also print the markdown datasets-by-theme index")
+    ap.add_argument("--coverage-only", action="store_true",
+                    help="only print the coverage report; write nothing")
+    ap.add_argument("--check", action="store_true",
+                    help="verify the committed facet files match the catalog; "
+                         "write nothing, exit 1 if regeneration would change them")
+    args = ap.parse_args()
+
+    vocab = load_vocab(args.themes)
+    datasets = load_catalog(args.catalog)
+
+    if args.coverage_only:
+        sys.stdout.write(build_coverage(datasets, args.reviews) + "\n")
+        return
+
+    themes_yaml, n_themes, n_untagged = build_theme_collections(datasets, vocab)
+    geo_yaml, n_geo, n_unplaced = build_geo_collections(datasets)
+
+    if args.check:
+        stale = []
+        for path, fresh in ((args.collections_out, themes_yaml), (args.geo_out, geo_yaml)):
+            current = path.read_text() if path.exists() else None
+            if current != fresh:
+                stale.append(path)
+        if stale:
+            sys.stderr.write(
+                "Out of sync with catalog/index.yaml — regenerate with\n"
+                "  python .cursor/skills/dataset-themes/references/group_by_theme.py\n"
+                "Stale file(s):\n" + "".join(f"  - {p}\n" for p in stale))
+            sys.exit(1)
+        sys.stderr.write("Theme & geography collections are in sync with the catalog.\n")
+        return
+    if args.no_write:
+        sys.stdout.write(themes_yaml + "\n" + geo_yaml)
+    else:
+        args.collections_out.parent.mkdir(parents=True, exist_ok=True)
+        args.collections_out.write_text(themes_yaml)
+        args.geo_out.parent.mkdir(parents=True, exist_ok=True)
+        args.geo_out.write_text(geo_yaml)
+        sys.stderr.write(f"Wrote {n_themes} theme collections to {args.collections_out}\n")
+        if n_untagged:
+            sys.stderr.write(f"  ({n_untagged} dataset(s) untagged — listed as comments in the file)\n")
+        sys.stderr.write(f"Wrote {n_geo} geography collections to {args.geo_out}\n")
+        if n_unplaced:
+            sys.stderr.write(f"  ({n_unplaced} dataset(s) with no geography — listed as comments)\n")
+
+    if args.report:
+        sys.stdout.write("\n" + build_themes_index(datasets, vocab) + "\n")
+    # Coverage always printed to stderr as a health check.
+    sys.stderr.write("\n" + build_coverage(datasets, args.reviews) + "\n")
+
+
+if __name__ == "__main__":
+    main()

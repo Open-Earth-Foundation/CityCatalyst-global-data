@@ -18,8 +18,9 @@ version this entry covers and why that version.
 DOI/permalink list. Note alternates and what distinguishes them.
 
 ## Why we use it
-Bulleted, each tied to a use case or need id. Name complementary catalog
-datasets here (e.g. pairs with <sibling> for <axis>).
+Bulleted, each tied to a use case or need id. Name a complementary catalog
+dataset only when the reader would actually source or join it alongside this
+one (pairs with <sibling> for <axis>) — skip decorative "feeds X" mentions.
 
 ## License
 The verified terms, citation requirements, redistribution status.

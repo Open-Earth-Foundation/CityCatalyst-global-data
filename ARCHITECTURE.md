@@ -10,11 +10,11 @@ The system ingests raw emissions and activity data from global and national sour
 
 ```mermaid
 flowchart LR
-    A[External Sources\ne.g. ClimateTRACE\nSEEG, EDGAR] --> B[Stage 1\nfiles S3\nRaw landing zone]
-    B --> C[Stage 2\nraw_data S3 + DB\nCleaned & staged]
-    C --> D[Stage 3\nmodelled DB\nStandardised]
-    D --> E[Stage 4\nreporting DB\nMetabase-ready]
-    E --> F[GlobalAPI\nCity inventories]
+    A["External Sources<br/>e.g. ClimateTRACE<br/>SEEG, EDGAR"] --> B["Stage 1<br/>files S3<br/>Raw landing zone"]
+    B --> C["Stage 2<br/>raw_data S3 + DB<br/>Cleaned & staged"]
+    C --> D["Stage 3<br/>modelled DB<br/>Standardised"]
+    D --> E["Stage 4<br/>reporting DB<br/>Metabase-ready"]
+    E --> F["GlobalAPI<br/>City inventories"]
 ```
 
 ---

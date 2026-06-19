@@ -54,7 +54,7 @@ National (Chile), with regionally-targeted special calls (e.g. Rapa Nui; Alto de
 
 ## Extraction & refresh
 
-**How this snapshot was produced.** This source has **clean, parseable HTML tables**, so it is extracted **deterministically** by the notebook `cl_mma_fondos_extract_clean.ipynb` (a two-tier parser: per-ficha 'Antecedentes Generales' tables + a hub index of every concurso). That notebook is the primary method here; the LLM prompt below is a fallback for pages the parser doesn't cover. The committed `data/cl_mma_fondos_v1.csv` is the resulting snapshot. (The same prompt runs across all six Chile finance sources at once in the OEF harness, `reviews/oef/cl-finance-inventory/releases/v1/extract_inventory.ipynb`, if you prefer to refresh them together.)
+**How this snapshot was produced.** This source has **clean, parseable HTML tables**, so it is extracted **deterministically** by the notebook `cl_mma_fondos_extract_clean.ipynb` (a two-tier parser: per-ficha 'Antecedentes Generales' tables + a hub index of every concurso). That notebook is the primary method here; the LLM prompt below is a fallback for pages the parser doesn't cover. The committed `data/cl_mma_fondos_v1.csv` is the resulting snapshot. (The same prompt runs across all six Chile finance sources at once in the OEF harness, `reviews/oef/cl-city-action-fundability/releases/v1/extract_inventory.ipynb`, if you prefer to refresh them together.)
 
 **Source pages for this dataset:**
 - https://fondos.mma.gob.cl/fpa/  (FPA hub — lists all concursos)

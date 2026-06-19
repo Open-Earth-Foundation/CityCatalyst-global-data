@@ -74,9 +74,11 @@ with evidence. By now this should be nearly mechanical — if it requires
 fresh research, steps 1–3 missed something.
 
 Also check the catalog for *sibling datasets by theme* — complements and
-overlaps (e.g. a feasibility dataset pairing with a potentials dataset).
-Search index.yaml by theme keywords, not just by the publisher you expect;
-adjacent datasets under other publishers are easy to miss.
+overlaps (e.g. a feasibility dataset pairing with a potentials dataset). The
+fastest way is the generated theme view `collections/by-theme.yaml` (and
+`by-geography.yaml` for country/global siblings); fall back to searching
+index.yaml by theme keywords. Look across publishers, not just the one you
+expect — adjacent datasets under other publishers are easy to miss.
 
 ### Step 5 — Write the review entry
 
@@ -90,7 +92,11 @@ year/date — match the publisher's own framing.
 File placement convention inside a release: `data/` is committed to git and
 holds only what helps someone understand the dataset later (cleaned outputs,
 mappings, and the canonical raw when genuinely small — single-digit MB);
-`sample/` is gitignored (see repo .gitignore) and holds large files and
+aggregate charts are rendered **inline in the notebook only** (clean and
+readable) — **never call `fig.savefig(...)`, never write `.png`/image files,
+and never create a `figures/` folder.** The rendered notebook is the single
+home for the visuals; review.md gives the precise aggregates as tables and
+points to the notebook for the charts; `sample/` is gitignored (see repo .gitignore) and holds large files and
 working outputs. Large raws go in `sample/` with re-download instructions
 (URL/DOI + retrieval steps) in the README so the notebook can be re-run
 from a fresh clone. Notebooks sit at the release root.
@@ -163,3 +169,7 @@ active.
   in warnings, not silently dropped. A negative review (not fit) is a valid
   outcome; record it rather than abandoning the entry.
 - Markdown formatting: do NOT hard-wrap prose at a fixed column width. Write each paragraph and each bullet as a single long line and let the editor soft-wrap. (This bullet is one line — follow its example. Code blocks and tables keep their natural structure; existing wrapped files can be left alone or unwrapped when touched.)
+- Engineering style: notebook and pipeline code follows `knowledge-base/topics/engineering-standards/` (block flow, idempotency, parameters, the three validation layers, naming, definition-of-done) and the notebook shape in `references/notebook-template.md`. Defer to those docs rather than restating them. When a review surfaces a better engineering pattern, promote it into the relevant `engineering-standards/` doc so it becomes enforceable rather than tribal, instead of leaving it to live only in a worked example.
+- Open a review folder only when the source is **applicable AND profilable now**. Two gates, both checked at Step 1: (a) *applicable* to our geography/use (not an ODA-only facility for a DAC-graduated country, not a fund that excludes our actor universe, actually covers our region); (b) *profilable now* — there is real content to review (an operational call, or a national portfolio/dataset), not just an eligible-in-principle programme that has no live instance yet. If either gate fails, record the finding in the originating `dataset-discovery` need (`deprioritize`/`reject` for not-applicable; `investigate` + "promote when live" for applicable-but-not-yet-profilable) — **do not** create a `dataset-review/reviews/` folder. A review folder is for a source worth profiling today; everything else lives in discovery so reviews don't fill with dead or empty entries. (If a folder was already opened before a gate was found, delete it and move the finding back to discovery.)
+- Concision / cross-references: keep entries tight. Reference another review, the `oef` inventory, or a need only when it tells the reader something they need to *act* on (a sibling to source alongside, the extraction harness to re-run, a join key) — not as a name-drop ("pairs with X", "feeds Y"). When in doubt, cut it. Every retained path must earn its place; collect the genuinely useful ones in a section-final References block rather than sprinkling them through prose.
+- Prose style: follow `knowledge-base/topics/writing-style.md` for every deliverable (README and review.md). In short — lead each section with plain-language prose before any list; bullets only for genuine lists of parallel items, reasoning goes in prose; impersonal voice; plain language first with load-bearing terms glossed and linked to the glossary; keep file paths and identifiers out of prose and collect them in a References block at the end of the section; mermaid diagrams only when they cut reading load.

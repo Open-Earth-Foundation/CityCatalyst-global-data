@@ -1,0 +1,19 @@
+funder_id,funder_name,level,type,route,city_can_apply,source_dataset
+ministerio-del-medio-ambiente-mma,Ministerio del Medio Ambiente (MMA),national,ministry,Route A — competitive funds (direct application),yes — direct or facilitated,cl-mma/cl-mma-fondos
+ministerio-de-energ-a-agencia-de-sostenibilidad-,"Ministerio de Energía / Agencia de Sostenibilidad Energética (AgenciaSE, fundación de derecho privado)",national,agency / public corp,Route A — competitive funds (direct application),yes — direct or facilitated,cl-minenergia/cl-minenergia-fondos
+subdere-subsecretar-a-de-desarrollo-regional-y-a,SUBDERE (Subsecretaría de Desarrollo Regional y Administrativo),regional,ministry,Route A — competitive funds (direct application),yes — direct or facilitated,cl-subdere/cl-subdere-fondos
+subdere,SUBDERE,national,ministry,Route A — competitive funds (direct application),yes — direct or facilitated,cl-subdere/cl-subdere-fondos
+minvu-ministerio-de-vivienda-y-urbanismo,MINVU (Ministerio de Vivienda y Urbanismo),national,ministry,Route A — competitive funds (direct application),yes — direct or facilitated,cl-minvu/cl-minvu-fondos
+minvu,MINVU,national,ministry,Route A — competitive funds (direct application),yes — direct or facilitated,cl-minvu/cl-minvu-fondos
+gobiernos-regionales-16-subdere-min-interior,Gobiernos Regionales (16) + SUBDERE / Min. Interior,regional,ministry,Route A — competitive funds (direct application),yes — direct or facilitated,cl-gore/cl-gore-fndr
+gobiernos-regionales,Gobiernos Regionales,regional,ministry,Route A — competitive funds (direct application),yes — direct or facilitated,cl-gore/cl-gore-fndr
+corporaci-n-de-fomento-de-la-producci-n-corfo,Corporación de Fomento de la Producción (CORFO),national (agency),agency / public corp,Route A — competitive funds (direct application),yes — direct or facilitated,cl-corfo/cl-corfo-finance
+corporaci-n-nacional-forestal-conaf,Corporación Nacional Forestal (CONAF),national,agency / public corp,Route A — competitive funds (direct application),yes — direct or facilitated,cl-conaf
+ministerio-de-transportes-y-telecomunicaciones-m,Ministerio de Transportes y Telecomunicaciones (MTT) — División de Transporte Público Regional (DTPR),regional,ministry,Route A — competitive funds (direct application),yes — direct or facilitated,cl-mtt
+instituto-de-desarrollo-agropecuario-indap,Instituto de Desarrollo Agropecuario (INDAP),national,ministry,Route A — competitive funds (direct application),yes — direct or facilitated,cl-indap
+ministerio-de-obras-p-blicas-mop,Ministerio de Obras Públicas (MOP),national,ministry,Route A — competitive funds (direct application),yes — direct or facilitated,cl-mop
+conaf,Corporación Nacional Forestal (CONAF),national,agency / public corp,Route A — competitive funds (direct application),yes — direct or facilitated,cl-conaf/cl-conaf-fondos
+green-climate-fund,Green Climate Fund (GCF),multilateral,climate fund,Route C — intermediated (via National Designated Authority + accredited entity),"no — via NDA (Min. Hacienda) + an accredited entity (IDB, CAF, FAO, FYNSA)",gcf/gcf-projects
+inter-american-development-bank,Inter-American Development Bank (IDB),multilateral,MDB,Route C — intermediated (sovereign / accredited entity),no — sovereign lending; city benefits via a national programme,idb/idb-projects
+world-bank,World Bank (IBRD/IDA),multilateral,MDB,Route C — intermediated (sovereign),no — sovereign lending; city benefits as a sub-borrower,world-bank/world-bank-projects
+gef-undp-sgp,GEF Small Grants Programme (UNDP),multilateral,community grant fund,"Route C — intermediated, but community-DIRECT (CBOs/NGOs apply via the National Coordinator)",no for the city directly; community orgs apply (city is enabler),undp/cl-undp-sgp

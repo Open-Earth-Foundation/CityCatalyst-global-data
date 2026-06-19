@@ -1,0 +1,69 @@
+# Datasets grouped by geography. GENERATED — do not edit by hand.
+# Regenerate: python .cursor/skills/dataset-themes/references/group_by_theme.py
+# Source of truth: catalog/index.yaml coverage (countries / geography / regions).
+# Collection ids are prefixed `geo-` to stay distinct from theme- and curated ids.
+
+collections:
+
+  - id: geo-chile
+    name: Chile datasets
+    datasets:
+      - id: cl-bip-projects
+      - id: cl-casen
+      - id: cl-city-action-fundability
+      - id: cl-conaf-bn-awards
+      - id: cl-conaf-fondos
+      - id: cl-corfo-finance
+      - id: cl-gore-fndr
+      - id: cl-indap-awards
+      - id: cl-indap-fondos
+      - id: cl-ine-censo
+      - id: cl-mapbiomas-lulc
+      - id: cl-minenergia-fondos
+      - id: cl-minvu-fondos
+      - id: cl-mma-fondos
+      - id: cl-mma-fpa-awards
+      - id: cl-mma-ndc-macc
+      - id: cl-mop-fondos
+      - id: cl-mtt-fondos
+      - id: cl-ocha-ab
+      - id: cl-ssg-actions
+      - id: cl-ssg-emissions
+      - id: cl-ssg-finance
+      - id: cl-ssg-legal-signals
+      - id: cl-ssg-policy-documents
+      - id: cl-ssg-projects
+      - id: cl-subdere-fondos
+      - id: cl-subdere-sinim
+      - id: cl-undp-sgp
+
+  - id: geo-brazil
+    name: Brazil datasets
+    datasets:
+      - id: br-adaptabrasil
+      - id: seeg-emissions
+
+  - id: geo-global
+    name: Global datasets
+    datasets:
+      - id: c40-city-emissions-benchmark
+      - id: c40-high-impact-actions
+      - id: climateview-transition-elements
+      - id: gcf-projects
+      - id: icare-climate-actions
+      - id: ipcc-ar6-ch10-transport
+      - id: ipcc-ar6-ch11-industry
+      - id: ipcc-ar6-ch9-buildings
+      - id: ipcc-ar6-spm7-mitigation-potentials
+      - id: ipcc-climate-actions
+      - id: ipcc-sr15-mitigation-feasibility
+      - id: nasa-power-degree-days
+      - id: project-drawdown-solutions
+      - id: uncece-unlocode
+      - id: unep-egr-sectoral-potentials
+      - id: world-bank-projects
+
+  - id: geo-latin-america-and-the-caribbean
+    name: Latin America and the Caribbean datasets
+    datasets:
+      - id: idb-projects

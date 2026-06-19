@@ -43,6 +43,7 @@ These checks are fully automatable using Mage test decorators and should be appl
 - No null values in required fields
 - No duplicate records where uniqueness is expected
 - Row count is non-zero and within a plausible range for the dataset
+- No PII columns in the committed output — where the source carried personal data, assert that the identifying columns were dropped at load (see the load-stage rule in the extraction notebook template)
 
 **Additional checks at specific stages:**
 
@@ -68,6 +69,7 @@ The distinction from Layer 2 is important: a plausibility flag means "this warra
 - The same emission factor is applied consistently across all records where it should be identical
 - No negative emissions values in sectors where the methodology does not allow for carbon sequestration
 - Per-capita emissions fall within a broad plausible range for the city's population size and income context
+- Where a source omits units, the inferred unit is confirmed by cross-checking an internal total against a published figure (e.g. each cycle's `monto_total` against the announced fund size pinned the CONAF awards amounts to UTM, not CLP), and the inferred unit is recorded in the dataset notes
 
 **Plausibility checks** (require domain knowledge to define, per dataset):
 

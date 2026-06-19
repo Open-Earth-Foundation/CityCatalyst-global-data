@@ -46,7 +46,7 @@ National, delivered comuna-by-comuna (enrolment or per-comuna calls). These are 
 
 ## Extraction & refresh
 
-**How this snapshot was produced.** There is no single portal — the programmes live across AgenciaSE microsites (mostly server-rendered WordPress). Each page is fetched and turned into rows by the **extraction prompt** below. The committed `data/cl_minenergia_programs_v1.csv` is the resulting snapshot. (The same prompt runs across all six Chile finance sources at once in the OEF harness, `reviews/oef/cl-finance-inventory/releases/v1/extract_inventory.ipynb`, if you prefer to refresh them together.)
+**How this snapshot was produced.** There is no single portal — the programmes live across AgenciaSE microsites (mostly server-rendered WordPress). Each page is fetched and turned into rows by the **extraction prompt** below. The committed `data/cl_minenergia_programs_v1.csv` is the resulting snapshot. (The same prompt runs across all six Chile finance sources at once in the OEF harness, `reviews/oef/cl-city-action-fundability/releases/v1/extract_inventory.ipynb`, if you prefer to refresh them together.)
 
 **Source pages for this dataset:**
 - https://www.comunaenergetica.cl/sobre-comuna-energetica/

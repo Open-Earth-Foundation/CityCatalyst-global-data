@@ -39,7 +39,7 @@ National in structure, **regional in delivery**: 16 Gobiernos Regionales each ru
 
 ## Extraction & refresh
 
-**How this snapshot was produced.** One row per FNDR *instrument* (the same instrument is delivered by all 16 GOREs). Rows are produced from the SUBDERE + representative GORE pages with the **extraction prompt** below; amounts are illustrative (vary by region). The committed `data/cl_gore_fndr_programs_v1.csv` is the resulting snapshot. (The same prompt runs across all six Chile finance sources at once in the OEF harness, `reviews/oef/cl-finance-inventory/releases/v1/extract_inventory.ipynb`, if you prefer to refresh them together.)
+**How this snapshot was produced.** One row per FNDR *instrument* (the same instrument is delivered by all 16 GOREs). Rows are produced from the SUBDERE + representative GORE pages with the **extraction prompt** below; amounts are illustrative (vary by region). The committed `data/cl_gore_fndr_programs_v1.csv` is the resulting snapshot. (The same prompt runs across all six Chile finance sources at once in the OEF harness, `reviews/oef/cl-city-action-fundability/releases/v1/extract_inventory.ipynb`, if you prefer to refresh them together.)
 
 **Source pages for this dataset:**
 - https://www.subdere.gov.cl/content/glosa-03-provision-fondo-nacional-de-desarrollo-regional-fndr

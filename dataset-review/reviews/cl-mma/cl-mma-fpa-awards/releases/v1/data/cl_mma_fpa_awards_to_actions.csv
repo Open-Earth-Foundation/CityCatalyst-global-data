@@ -1,0 +1,17 @@
+src_clasificacion,n_awards,action_id,action_name,action_gpc_ref,mapping_confidence,rationale
+Cambio Climático y Descontaminación Ambiental,147,,,,none,Broad climate/decontamination + environmental-education line (specificity=broad); no action archetype for awareness/education.
+Cambio climático y descontaminación ambiental,27,,,,none,Broad climate/decontamination + environmental-education line (specificity=broad); no action archetype for awareness/education.
+Economía Circular y Gestión de Residuos,28,c40_0037,"Implement residential and business segregated collection of recyclables, organic, and residual waste",{'III.1.1'},high,Circular-economy & recycling projects -> segregated collection of recyclables.
+Economía circular y gestión de residuos,68,c40_0037,"Implement residential and business segregated collection of recyclables, organic, and residual waste",{'III.1.1'},high,Circular-economy & recycling projects -> segregated collection of recyclables.
+Ecotecnias hídricas,39,,,,none,Household water-saving ecotechnologies; no agricultural/domestic water-efficiency action exists in the target list (water gap).
+Eficiencia Hídrica y Energética,22,c40_0016,Retrofit commercial and institutional other non-residential buildings  for energy efficiency,"{'I.2.1','I.2.2'}",medium,Merged water+energy line; maps on the energy-efficiency half (building retrofit); water half unmapped.
+Eficiencia energética,35,c40_0016,Retrofit commercial and institutional other non-residential buildings  for energy efficiency,"{'I.2.1','I.2.2'}",medium,Community/building energy-efficiency works -> building energy-efficiency retrofit.
+Humedales Urbanos,21,ipcc_0060,Protect and Restore Coastal Wetlands,{'V.2'},high,Urban-wetland conservation -> protect & restore (coastal) wetlands.
+Invernadero y compostaje,50,icare_0064,Develop an organic waste management strategy,{'III.2.1'},medium,Community composting -> organic-waste strategy; greenhouse/food aspect secondary.
+Punto Verde,28,c40_0037,"Implement residential and business segregated collection of recyclables, organic, and residual waste",{'III.1.1'},high,Community recycling points -> segregated collection of recyclables.
+Sistema Fotovoltaico OffGrid,28,icare_0012,Expand solar energy generation on municipal facilities and public assets,{'I.4.4'},high,Community/public solar PV -> solar on municipal facilities/public assets.
+Sistema Fotovoltaico OnGrid,15,icare_0012,Expand solar energy generation on municipal facilities and public assets,{'I.4.4'},high,Community/public solar PV -> solar on municipal facilities/public assets.
+Sistema Solar Térmico,6,icare_0016,"Promote solar thermal and heat pump systems for water heating in residential, commercial, and public buildings","{'I.1.1','I.1.2','I.2.1','I.2.2'}",high,Solar thermal water heating -> solar thermal & heat-pump water heating.
+Valoración y Conservación de la Biodiversidad,44,ipcc_0053,"Implement afforestation, reforestation, and forest ecosystem restoration",{'V.2'},medium,Biodiversity conservation/reforestation -> afforestation/restoration; pure-conservation projects only partially fit.
+Valoración y conservación de la biodiversidad,81,ipcc_0053,"Implement afforestation, reforestation, and forest ecosystem restoration",{'V.2'},medium,Biodiversity conservation/reforestation -> afforestation/restoration; pure-conservation projects only partially fit.
+Áreas Verdes Comunitarias,16,c40_0042,Expand urban and peri-urban green spaces,{'V.2'},high,Community green spaces -> expand urban & peri-urban green spaces.

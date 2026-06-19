@@ -1,0 +1,8 @@
+src_objetivo_manejo,n_awards,action_id,action_name,action_gpc_ref,mapping_confidence,rationale
+PRODUCCION MADERERA,7770,ipcc_0054,Adopt sustainable forest management practices,{'V.2'},high,Bonifica planes de manejo para producción maderera sostenible de bosque nativo -> sustainable forest management.
+PRODUCCION MADERERA,7770,ipcc_0071,Increase sustainable use of wood products,{'V.2'},medium,Timber from sustainably-managed native forest -> increase sustainable use of wood products.
+PRODUCCION MADERERA,7770,ipcc_0053,"Implement afforestation, reforestation, and forest ecosystem restoration",{'V.2'},medium,Plans include regeneración/raleos that restore degraded stands -> forest restoration (partial).
+PRODUCCION NO MADERERA,1693,ipcc_0054,Adopt sustainable forest management practices,{'V.2'},high,Non-timber forest products under a management plan -> sustainable forest management.
+PRODUCCION NO MADERERA,1693,ipcc_0053,"Implement afforestation, reforestation, and forest ecosystem restoration",{'V.2'},medium,Management of native stands for NTFP includes restoration elements -> forest restoration (partial).
+BOSQUE PRESERVACION Y FORMACIONES XEROFITICAS DE ALTO VALOR ECOLOGICO,397,ipcc_0052,Reduce Deforestation and Degradation,{'V.2'},high,Preservation of high-ecological-value native forest & xerophytic formations -> reduce deforestation and degradation.
+BOSQUE PRESERVACION Y FORMACIONES XEROFITICAS DE ALTO VALOR ECOLOGICO,397,ipcc_0053,"Implement afforestation, reforestation, and forest ecosystem restoration",{'V.2'},medium,Recovery of high-value formations -> forest ecosystem restoration (partial).
