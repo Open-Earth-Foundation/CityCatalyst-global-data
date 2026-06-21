@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "actor_id": "CL-COMUNA-01101",
+    "comuna": "Iquique",
+    "comuna_cut": "01101",
+    "country_code": "CL",
+    "release": {
+      "version_label": "v1",
+      "released_at": "2026-06-19",
+      "source_dataset": "oef/cl-city-action-fundability"
+    },
+    "methodology": {
+      "status": "working",
+      "city_layer": "profiled",
+      "caveats": [
+        "not a probability of securing funding",
+        "coverage reflects what is catalogued, not real-world award behaviour"
+      ]
+    },
+    "note": "how each action's funding channels resolve — public investment is signalled by BIP precedent, not by an application form, so it stops reading as a gap"
+  },
+  "data": [
+    {
+      "action_id": "icare_0040",
+      "action_name": "Deploy energy-efficient and solar-powered street lighting across all neighborhoods",
+      "sector": "stationary_energy",
+      "channels": {
+        "competitive": {
+          "available": true,
+          "n_sector_specific": 10,
+          "n_broad": 37,
+          "access_tier": "competitive (city or enabled actor applies to a concurso)"
+        },
+        "public_investment": {
+          "available": true,
+          "access_tier": "BIP-SNI-gated — no application form; city formulates an iniciativa, passes the SNI/BIP gate, then draws a feeder fund",
+          "feeder_funds": [
+            "Programa de Mejoramiento Urbano y Equipamiento Comunal (PMU)",
+            "Programa de Mejoramiento de Barrios (PMB)",
+            "Programa de Prevención y Mitigación de Riesgos (PMR)",
+            "Fondo de Recuperación de Ciudades (FRC)",
+            "FNDR — Inversión Regional (Glosa 03 / SNI)",
+            "FRIL — Fondo Regional de Iniciativa Local",
+            "FRPD — Fondo Regional para la Productividad y el Desarrollo"
+          ],
+          "evidence": {
+            "n_precedent_projects": 115,
+            "funded_via": {
+              "F.N.D.R.": 114,
+              "MUNICIPAL": 1,
+              "EMPRESA": 1
+            },
+            "example_comunas": [
+              "ANTUCO",
+              "ANTUCO",
+              "QUINCHAO",
+              "PUERTO OCTAY",
+              "QUILLOTA"
+            ]
+          }
+        },
+        "intermediated": {
+          "available": true,
+          "access_tier": "intermediated — via operator (transport subsidy) or accredited entity (multilateral)",
+          "n_supply": 8,
+          "n_precedent_projects": 0
+        },
+        "is_real_gap": false
+      }
+    },
+    {
+      "action_id": "c40_0023",
+      "action_name": "Adopt zero-emission bus fleets for public transport",
+      "sector": "transportation",
+      "channels": {
+        "competitive": {
+          "available": true,
+          "n_sector_specific": 0,
+          "n_broad": 40,
+          "access_tier": "competitive (city or enabled actor applies to a concurso)"
+        },
+        "public_investment": {
+          "available": true,
+          "access_tier": "BIP-SNI-gated — no application form; city formulates an iniciativa, passes the SNI/BIP gate, then draws a feeder fund",
+          "feeder_funds": [
+            "Programa de Mejoramiento Urbano y Equipamiento Comunal (PMU)",
+            "Programa de Mejoramiento de Barrios (PMB)",
+            "Programa de Prevención y Mitigación de Riesgos (PMR)",
+            "Fondo de Recuperación de Ciudades (FRC)",
+            "FNDR — Inversión Regional (Glosa 03 / SNI)",
+            "FRIL — Fondo Regional de Iniciativa Local",
+            "FRPD — Fondo Regional para la Productividad y el Desarrollo"
+          ],
+          "evidence": {
+            "n_precedent_projects": 14,
+            "funded_via": {
+              "F.N.D.R.": 11,
+              "EMPRESA": 2,
+              "SECTORIAL": 1
+            },
+            "example_comunas": [
+              "METROPOLITANA DE SANTIAGO",
+              "ANTOFAGASTA",
+              "ÑUÑOA",
+              "EL BOSQUE",
+              "BARNECHEA"
+            ]
+          }
+        },
+        "intermediated": {
+          "available": true,
+          "access_tier": "intermediated — via operator (transport subsidy) or accredited entity (multilateral)",
+          "n_supply": 8,
+          "n_precedent_projects": 1
+        },
+        "is_real_gap": false
+      }
+    }
+  ]
+}

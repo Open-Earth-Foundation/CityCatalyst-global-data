@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "actor_id": "CL-COMUNA-01101",
+    "comuna": "Iquique",
+    "comuna_cut": "01101",
+    "country_code": "CL",
+    "release": {
+      "version_label": "v1",
+      "released_at": "2026-06-19",
+      "source_dataset": "oef/cl-city-action-fundability"
+    },
+    "methodology": {
+      "status": "working",
+      "city_layer": "profiled",
+      "caveats": [
+        "not a probability of securing funding",
+        "coverage reflects what is catalogued, not real-world award behaviour"
+      ]
+    },
+    "filter": {
+      "action_id": "icare_0040",
+      "scope": "sector",
+      "note": "scope=comuna restricts to this city; scope=sector shows national precedent"
+    }
+  },
+  "data": [
+    {
+      "project_name": "REPOSICION ALUMBRADO PUBLICO LUMINARIAS LED COPIAPO",
+      "jurisdiction": "COPIAPO",
+      "lifecycle_stage": "PERFIL",
+      "cost_total": 16723.5,
+      "amount_unit": "CLP_millions",
+      "duration_months": null,
+      "funding_channel": "public investment",
+      "match_label": "strong",
+      "funding_sources": [
+        {
+          "source_label": "F.N.D.R.",
+          "source_opportunity_id": "fndr-inversi-n-regional-glosa-03-sni",
+          "amount": null,
+          "amount_unit": "CLP_millions",
+          "paid_amount": null,
+          "cycle": null
+        }
+      ]
+    },
+    {
+      "project_name": "REPOSICION LUMINARIAS LED DIVERSOS SECTORES, RANCAGUA",
+      "jurisdiction": "RANCAGUA",
+      "lifecycle_stage": "PERFIL",
+      "cost_total": 5180.4,
+      "amount_unit": "CLP_millions",
+      "duration_months": null,
+      "funding_channel": "public investment",
+      "match_label": "strong",
+      "funding_sources": [
+        {
+          "source_label": "F.N.D.R.",
+          "source_opportunity_id": "fndr-inversi-n-regional-glosa-03-sni",
+          "amount": null,
+          "amount_unit": "CLP_millions",
+          "paid_amount": null,
+          "cycle": null
+        }
+      ]
+    },
+    {
+      "project_name": "ADQUISICION Y RECAMBIO DE LUMINARIAS LED EN DIFERENTES SECTORES DE LA COMUNA DE ",
+      "jurisdiction": "TEMUCO",
+      "lifecycle_stage": "PERFIL",
+      "cost_total": 1436.4,
+      "amount_unit": "CLP_millions",
+      "duration_months": null,
+      "funding_channel": "public investment",
+      "match_label": "strong",
+      "funding_sources": [
+        {
+          "source_label": "F.N.D.R.",
+          "source_opportunity_id": "fndr-inversi-n-regional-glosa-03-sni",
+          "amount": null,
+          "amount_unit": "CLP_millions",
+          "paid_amount": null,
+          "cycle": null
+        }
+      ]
+    },
+    {
+      "project_name": "REPOSICION LUMINARIAS CON TECNOLOGÍA LED. VILLA ALEMANA",
+      "jurisdiction": "VILLA ALEMANA",
+      "lifecycle_stage": "PERFIL",
+      "cost_total": 1247.7,
+      "amount_unit": "CLP_millions",
+      "duration_months": null,
+      "funding_channel": "public investment",
+      "match_label": "strong",
+      "funding_sources": [
+        {
+          "source_label": "F.N.D.R.",
+          "source_opportunity_id": "fndr-inversi-n-regional-glosa-03-sni",
+          "amount": null,
+          "amount_unit": "CLP_millions",
+          "paid_amount": null,
+          "cycle": null
+        }
+      ]
+    },
+    {
+      "project_name": "REPOSICION LUMINARIAS ALUMBRADO PUBLICO EN CALLES Y PASAJES, SAN PEDRO DE LA PAZ",
+      "jurisdiction": "SAN PEDRO DE LA PAZ",
+      "lifecycle_stage": "EJECUCION",
+      "cost_total": 1150.5,
+      "amount_unit": "CLP_millions",
+      "duration_months": null,
+      "funding_channel": "public investment",
+      "match_label": "strong",
+      "funding_sources": [
+        {
+          "source_label": "F.N.D.R.",
+          "source_opportunity_id": "fndr-inversi-n-regional-glosa-03-sni",
+          "amount": null,
+          "amount_unit": "CLP_millions",
+          "paid_amount": null,
+          "cycle": null
+        }
+      ]
+    }
+  ]
+}

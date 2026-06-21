@@ -1,0 +1,5 @@
+source_field,modelled_field
+fund_name,opportunity_name
+funder_institution,funder_name
+instrument_type,instrument
+program,opportunity_name

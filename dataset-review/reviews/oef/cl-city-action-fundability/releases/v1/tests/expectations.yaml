@@ -1,0 +1,61 @@
+# Post-load expectations for modelled.finance_opportunity (release v1).
+# Run: python ../../../../../../.cursor/skills/dataset-test/references/run_expectations.py expectations.yaml
+# Three tiers: structural (contract) + invariants (true in reality) hard-fail; snapshot is the
+# regression baseline (re-confirm each release). profile drives the validation_report.md.
+table: modelled.finance_opportunity
+partition_by: source_dataset
+
+structural:
+  primary_key: opportunity_id
+  required_not_null:
+    - opportunity_id
+    - source_opportunity_id
+    - opportunity_name
+    - source_dataset
+    - release_id
+    - funder_name          # backfilled from publisher.name where publisher_is_funder (cl-mma)
+    - source_url           # every opportunity must link to a real, reachable page (verify with check_source_urls.py)
+  # source_url gap: cl-indap (9 rows) has no URL — its review is a fund->action mapping with no
+  # source_url column. Fix = capture the real per-program URL in the INDAP extract (refetch), or
+  # record in the review why a given program has no page. Do NOT blanket-backfill to a landing page.
+  # NOT required-not-null: instrument/status/recurrence/eligible_actor/access_pathway/specificity
+  # are null for cl-indap (its source is a fund->action mapping, not a full supply listing).
+  # Open dataset-review task: check the INDAP source for these fields; null is acceptable if absent.
+  unique:
+    - [release_id, country_code, source_opportunity_id]
+  foreign_keys:
+    - {column: release_id, references: "modelled.dataset_release.release_id"}
+
+invariants:                # must hold for ANY release, not just this snapshot
+  # controlled vocabularies (nulls ignored). The merge normalizes source free-text to these
+  # canonical base values, keeping the verbatim in *_verbatim / eligible_actor_detail.
+  # scalar controlled vocabularies (nulls ignored). eligible_actor and city_application are now
+  # JSONB arrays — array value-set checking is a runner enhancement (formalize later), so they are
+  # not listed here yet; the merge already constrains them to the canonical sets.
+  value_sets:
+    funding_channel:   [competitive fund, public investment, intermediated]
+    access_tier:       [competitive, gated, intermediated]
+    instrument:        [grant, subsidy, loan, guarantee, blended, technical_assistance, co_financing]
+    recurrence:        [annual, ongoing, sporadic, one_off, periodic, time_boxed]
+    status:            [open, closed, ongoing, periodic, emerging, in_rollout]
+    climate_relevance: [explicit, climate_adjacent, indirect]
+    amount_currency:   [CLP]
+  ranges:
+    amount: {min: 100000, max: 100000000000}   # a real public fund is roughly 100k to 100B CLP
+  row_rules:
+    - "close_date >= open_date"
+    - "close_date <= DATE '2031-12-31'"
+
+snapshot:                  # this release's observed facts (regenerate from the profile each release)
+  row_count: {equals: 99}
+  distinct_count:
+    source_dataset: 10
+  group_counts:
+    funding_channel: {competitive fund: 89, public investment: 7, intermediated: 3}
+  min_non_null:
+    close_date: 6
+
+profile:                   # descriptive — drives "what we can say about this data"
+  categorical: [funding_channel, access_tier, instrument, status, recurrence, specificity, climate_relevance]
+  numeric: [amount]
+  dates: [open_date, close_date]

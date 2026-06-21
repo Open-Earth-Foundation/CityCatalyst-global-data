@@ -1,0 +1,58 @@
+---
+description: Mage pipeline error-prevention — the runtime gotchas and invariants when editing cc-mage pipelines
+globs: cc-mage/**
+alwaysApply: false
+---
+
+# Mage pipeline rules (error-prevention)
+
+The full standards are prose in `knowledge-base/topics/engineering-standards/`
+(`pipeline-design-patterns.md`, `naming-conventions.md`, `data-quality-and-validation.md`,
+`definition-of-done.md`) and the `.cursor/skills/dataset-pipeline` skill. **Read those for the
+how.** This rule is the short list of things that cause real runtime failures or silent
+corruption — enforce these hardest.
+
+## Hard runtime errors (these break the run)
+
+- **SQL `--` comments must be plain ASCII — no `'`, `"`, or `;`.** Mage tracks quote/statement
+  state *through* comments, so an apostrophe (`dataset's`, `if_exists='replace'`) runs to
+  end-of-input and a `;` cuts the statement early. Write `dataset`, not `dataset's`; reword to
+  drop `;`. No commented-out SQL. Run `python cc-mage/scripts/lint_sql_comments.py <files>`.
+- **No reserved-word column names in the staging frame.** Mage's Postgres export renames them
+  (`status` → `_status`), so the modelled SQL fails with `column s.status does not exist`. Rename
+  in the transformer (`status` → `opportunity_status`) and map back in the `INSERT`; keep the
+  fail-fast guard in the export-to-raw block.
+- **A block reads only S3 (data) + GitHub raw (the catalog/index) + `io_config.yaml` via
+  `get_repo_path()`.** Never `pd.read_csv(Path(__file__)…)` — Mage runs blocks with `exec()`, so
+  `__file__` is undefined. Small maps inline; large maps in S3.
+- **`s.<col>` / `c.<col>` consistency:** every `s.<col>` the modelled SQL reads must be produced
+  by the transformer; every `c.<col>` by the catalog loader. Rename/drop in both together.
+
+## Idempotency & identity (silent corruption if wrong)
+
+- **Staging writes use `if_exists='replace'`.**
+- **Modelled writes: release-scoped `DELETE` then `INSERT`** — never an unscoped
+  `DELETE`/`TRUNCATE` (wipes other releases sharing the table). `ON CONFLICT DO UPDATE` only when
+  a delete can't be scoped.
+- **Deterministic ids:** `release_id = MD5(datasource·dataset·version)`,
+  `row_pk = MD5(natural_key·release_id)`. Never hash `dataset_url` (mutable, nullable).
+- **Identity comes from the catalog (`index.yaml`), not per-dataset pipeline variables.** The
+  catalog entry is always the first step. Don't set `themes` there — that lives in `collections/`.
+
+## Data integrity invariants
+
+- **Every opportunity links to a real, reachable `source_url` (never null).** Verify liveness
+  with `python cc-mage/scripts/check_source_urls.py <csv>`. If a source lacks one, capture the
+  real per-row URL in the extract (refetch) or record in the review why it has none — do **not**
+  backfill to a generic landing page.
+- **Never hand-edit a source data file** — fix in the extraction/cleaning code or refetch.
+- **Never fabricate data** — a field not in the source is `null`; unmodeled columns ride along in
+  `source_extras`. Backfill conditionally (explicit allow-list), never blanket.
+- **Multi-valued fields are JSONB arrays**; amounts are currency-explicit (`amount` +
+  `amount_currency`); vocabulary is country-agnostic (`gated`, not `BIP-SNI-gated`) with the
+  verbatim kept in a detail column or `source_extras.<field>_verbatim`.
+
+## Before declaring done
+
+Run `lint_sql_comments.py` on changed `.sql`, the staging↔SQL column check, and the post-load
+expectations (`expectations.yaml` + the `dataset-test` runner). See `definition-of-done.md`.

@@ -1,0 +1,238 @@
+{
+  "meta": {
+    "actor_id": "CL-COMUNA-01101",
+    "comuna": "Iquique",
+    "comuna_cut": "01101",
+    "country_code": "CL",
+    "release": {
+      "version_label": "v1",
+      "released_at": "2026-06-19",
+      "source_dataset": "oef/cl-city-action-fundability"
+    },
+    "methodology": {
+      "status": "working",
+      "city_layer": "profiled",
+      "caveats": [
+        "not a probability of securing funding",
+        "coverage reflects what is catalogued, not real-world award behaviour"
+      ]
+    }
+  },
+  "data": {
+    "action_id": "icare_0040",
+    "action_name": "Deploy energy-efficient and solar-powered street lighting across all neighborhoods",
+    "sector": "stationary_energy",
+    "financial_feasibility": 0.7,
+    "route": "needs technical assistance",
+    "reason": "Infrastructure action whose preparation demand exceeds this city's capacity (0.74); needs TA.",
+    "inputs": {
+      "action": {
+        "intervention_type": "infrastructure",
+        "capital_intensity": 0.5,
+        "preparation_complexity": 0.8
+      },
+      "city": {
+        "autonomy": 0.84,
+        "capacity": 0.74,
+        "archetype": "self-starter"
+      },
+      "finance": {
+        "fund_access": "competitive",
+        "n_reachable_sector_specific": 10,
+        "n_reachable_broad": 37
+      },
+      "evidence": {
+        "n_existing_projects": 288,
+        "benchmark_duration_median_months": null,
+        "benchmark_match_confidence": "strong"
+      }
+    },
+    "channels": {
+      "competitive": {
+        "available": true,
+        "n_sector_specific": 10,
+        "n_broad": 37,
+        "access_tier": "competitive (city or enabled actor applies to a concurso)"
+      },
+      "public_investment": {
+        "available": true,
+        "access_tier": "BIP-SNI-gated — no application form; city formulates an iniciativa, passes the SNI/BIP gate, then draws a feeder fund",
+        "feeder_funds": [
+          "Programa de Mejoramiento Urbano y Equipamiento Comunal (PMU)",
+          "Programa de Mejoramiento de Barrios (PMB)",
+          "Programa de Prevención y Mitigación de Riesgos (PMR)",
+          "Fondo de Recuperación de Ciudades (FRC)",
+          "FNDR — Inversión Regional (Glosa 03 / SNI)",
+          "FRIL — Fondo Regional de Iniciativa Local",
+          "FRPD — Fondo Regional para la Productividad y el Desarrollo"
+        ],
+        "evidence": {
+          "n_precedent_projects": 115,
+          "funded_via": {
+            "F.N.D.R.": 114,
+            "MUNICIPAL": 1,
+            "EMPRESA": 1
+          },
+          "example_comunas": [
+            "ANTUCO",
+            "ANTUCO",
+            "QUINCHAO",
+            "PUERTO OCTAY",
+            "QUILLOTA"
+          ]
+        }
+      },
+      "intermediated": {
+        "available": true,
+        "access_tier": "intermediated — via operator (transport subsidy) or accredited entity (multilateral)",
+        "n_supply": 8,
+        "n_precedent_projects": 0
+      },
+      "is_real_gap": false
+    },
+    "links": {
+      "opportunities": "/api/v1/cities/CL-COMUNA-01101/climate-finance/opportunities?action_id=icare_0040",
+      "projects": "/api/v1/cities/CL-COMUNA-01101/climate-finance/projects?action_id=icare_0040"
+    },
+    "benchmark": {
+      "n_projects": 115,
+      "duration_median_months": null,
+      "cost_median_mmclp": 89.6,
+      "match_confidence": "strong"
+    },
+    "reachable_opportunities": [
+      {
+        "opportunity_name": "FPA 2026 - Proyectos Sustentables Ciudadanos",
+        "funder_name": "Ministerio del Medio Ambiente (MMA)",
+        "instrument": "grant",
+        "specificity": "sector-specific",
+        "city_application": "direct",
+        "funding_channel": "competitive fund",
+        "status": "closed",
+        "recurrence": "annual",
+        "open_date": "2025-08-26",
+        "close_date": "2025-10-07",
+        "amount_clp": 6000000.0,
+        "source_url": "https://fondos.mma.gob.cl/fpa-2026-proyectos-sustentables-ciudadanos/"
+      },
+      {
+        "opportunity_name": "FPA 2026 - Proyectos Sustentables en Establecimientos Educacionales",
+        "funder_name": "Ministerio del Medio Ambiente (MMA)",
+        "instrument": "grant",
+        "specificity": "sector-specific",
+        "city_application": "direct",
+        "funding_channel": "competitive fund",
+        "status": "closed",
+        "recurrence": "annual",
+        "open_date": "2025-08-26",
+        "close_date": "2025-10-07",
+        "amount_clp": 6000000.0,
+        "source_url": "https://fondos.mma.gob.cl/fpa-2026-proyectos-sustentables-en-establecimientos-educacionales/"
+      },
+      {
+        "opportunity_name": "FPA 2026 - Proyectos Sustentables para Pueblos Indígenas",
+        "funder_name": "Ministerio del Medio Ambiente (MMA)",
+        "instrument": "grant",
+        "specificity": "sector-specific",
+        "city_application": "direct",
+        "funding_channel": "competitive fund",
+        "status": "closed",
+        "recurrence": "annual",
+        "open_date": "2025-08-26",
+        "close_date": "2025-10-07",
+        "amount_clp": 6000000.0,
+        "source_url": "https://fondos.mma.gob.cl/fpa-2026-proyectos-sustentables-para-pueblos-indigenas/"
+      },
+      {
+        "opportunity_name": "Comuna Energética",
+        "funder_name": "Ministerio de Energía / Agencia de Sostenibilidad Energética (AgenciaSE, fundación de derecho privado)",
+        "instrument": "technical_assistance + grant (co-financing)",
+        "specificity": "sector-specific",
+        "city_application": "direct",
+        "funding_channel": "competitive fund",
+        "status": "ongoing",
+        "recurrence": "ongoing (rolling adhesion; periodic concursable windows)",
+        "open_date": null,
+        "close_date": null,
+        "amount_clp": null,
+        "source_url": "https://www.comunaenergetica.cl/sobre-comuna-energetica/"
+      },
+      {
+        "opportunity_name": "Asistencia Técnica para Municipios en Gestión Energética Local",
+        "funder_name": "Ministerio de Energía / Agencia de Sostenibilidad Energética (AgenciaSE, fundación de derecho privado)",
+        "instrument": "technical_assistance",
+        "specificity": "sector-specific",
+        "city_application": "direct",
+        "funding_channel": "competitive fund",
+        "status": "ongoing",
+        "recurrence": "ongoing (programme)",
+        "open_date": null,
+        "close_date": null,
+        "amount_clp": null,
+        "source_url": "https://www.agenciase.org/category/desarrollo-y-vinculacion-territorial/asistencia-tecnica-para-municipios-en-gestion-energetica-local/"
+      }
+    ],
+    "precedent_projects": [
+      {
+        "project_name": "REPOSICION ALUMBRADO PUBLICO LUMINARIAS LED COPIAPO",
+        "jurisdiction": "COPIAPO",
+        "lifecycle_stage": "PERFIL",
+        "cost_total": 16723.5,
+        "amount_unit": "CLP_millions",
+        "duration_months": null,
+        "funding_channel": "public investment",
+        "match_label": "strong",
+        "funding_sources": [
+          {
+            "source_label": "F.N.D.R.",
+            "source_opportunity_id": "fndr-inversi-n-regional-glosa-03-sni",
+            "amount": null,
+            "amount_unit": "CLP_millions",
+            "paid_amount": null,
+            "cycle": null
+          }
+        ]
+      },
+      {
+        "project_name": "REPOSICION LUMINARIAS LED DIVERSOS SECTORES, RANCAGUA",
+        "jurisdiction": "RANCAGUA",
+        "lifecycle_stage": "PERFIL",
+        "cost_total": 5180.4,
+        "amount_unit": "CLP_millions",
+        "duration_months": null,
+        "funding_channel": "public investment",
+        "match_label": "strong",
+        "funding_sources": [
+          {
+            "source_label": "F.N.D.R.",
+            "source_opportunity_id": "fndr-inversi-n-regional-glosa-03-sni",
+            "amount": null,
+            "amount_unit": "CLP_millions",
+            "paid_amount": null,
+            "cycle": null
+          }
+        ]
+      },
+      {
+        "project_name": "ADQUISICION Y RECAMBIO DE LUMINARIAS LED EN DIFERENTES SECTORES DE LA COMUNA DE ",
+        "jurisdiction": "TEMUCO",
+        "lifecycle_stage": "PERFIL",
+        "cost_total": 1436.4,
+        "amount_unit": "CLP_millions",
+        "duration_months": null,
+        "funding_channel": "public investment",
+        "match_label": "strong",
+        "funding_sources": [
+          {
+            "source_label": "F.N.D.R.",
+            "source_opportunity_id": "fndr-inversi-n-regional-glosa-03-sni",
+            "amount": null,
+            "amount_unit": "CLP_millions",
+            "paid_amount": null,
+            "cycle": null
+          }
+        ]
+      }
+    ]
+  }
+}
