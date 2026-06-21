@@ -3,7 +3,7 @@
 Each upstream loader hands in its source's raw rows tagged with `_source_dataset`. The
 cleaning is uniform across sources, so it lives here (once): align heterogeneous columns to
 the audited superset, normalize controlled vocabularies to canonical bases (multi-valued ones
-to JSON arrays), keep verbatim detail, stash unmodeled columns in source_extras, union, dedupe.
+to JSON arrays), drop unmodeled columns, union, dedupe.
 """
 import json
 import re
@@ -23,7 +23,6 @@ SYNONYMS = {
     "provider": "provider",
     "instrument_type": "instrument", "instrument": "instrument",
     "gpc_sectors": "gpc_sectors", "program_gpc_sector": "gpc_sectors",
-    "thematic_lines": "thematic_lines",
     "eligible_actor": "eligible_actor", "eligible_actor_detail": "eligible_actor_detail",
     "access_pathway": "access_pathway",          # consumed for city_application, not a column
     "open_date": "open_date", "close_date": "close_date",
@@ -38,12 +37,16 @@ SYNONYMS = {
     "notes": "notes",
 }
 SUPERSET = list(dict.fromkeys(SYNONYMS.values()))
-# folded into data_quality_flags (incl. detail_level = extraction completeness)
-DQ_COLS = {"amount_suspect", "status_section_conflict", "detail_level"}
-# dropped from the model: program_family, lifecycle, next_call_estimate. Their source columns are
-# not mapped, so they ride along untouched in source_extras (nothing lost).
 
 CLIMATE_SYN = {"explicit_adjacent": "climate_adjacent"}
+
+# recurrence: map source variants to the canonical set. biennial (every 2 years) is a periodic cycle.
+RECURRENCE_SYN = {"biennial_cycle": "periodic", "biennial-cycle": "periodic", "biennial": "periodic"}
+
+# gpc_sectors: the five canonical GPC sectors (+ cross_sector marker). Source vocab uses some
+# non-GPC labels; fold them onto the canonical token. Anything off-list is dropped.
+GPC_CANON = {"stationary_energy", "transportation", "waste", "ippu", "afolu", "cross_sector"}
+GPC_SECTOR_MAP = {"buildings": "stationary_energy", "industry": "ippu", "water": "waste"}
 
 # eligible_actor: ordered keyword -> canonical actor (all matches kept; full text -> detail)
 ELIGIBLE_RULES = [
@@ -126,9 +129,33 @@ def _norm_eligible(raw):
     return actors, detail
 
 
+def _norm_gpc(raw):
+    """gpc_sectors -> JSON array of canonical GPC sectors (+ cross_sector). Off-list dropped."""
+    if raw is None or str(raw).strip() == "":
+        return None
+    try:
+        vals = json.loads(raw) if str(raw).strip().startswith("[") else str(raw).split(",")
+    except ValueError:
+        vals = str(raw).split(",")
+    out = []
+    for v in vals:
+        t = re.sub(r"[\s\-]+", "_", str(v).strip().lower())
+        t = GPC_SECTOR_MAP.get(t, t)
+        if t in GPC_CANON and t not in out:
+            out.append(t)
+    return json.dumps(out) if out else None
+
+
+def _norm_provider(raw):
+    """Drop executor-note parentheticals (ejecuta/ejecutan ...); keep acronyms."""
+    if raw is None or str(raw).strip() == "":
+        return None
+    cleaned = re.sub(r"\s*\((?:ejecuta|ejecutan)[^)]*\)", "", str(raw).strip(), flags=re.IGNORECASE)
+    return re.sub(r"\s{2,}", " ", cleaned).strip() or None
+
+
 def _align_row(r, source_dataset):
     out = {c: None for c in SUPERSET}
-    dq, extras = {}, {}
     for col, val in r.items():
         if col == "_source_dataset" or val is None or str(val).strip() == "":
             continue
@@ -136,28 +163,23 @@ def _align_row(r, source_dataset):
             tgt = SYNONYMS[col]
             if out.get(tgt) in (None, ""):
                 out[tgt] = val
-        elif col in DQ_COLS:
-            dq[col] = val
-        else:
-            extras[col] = val                       # nothing lost: unmodeled cols -> source_extras
+        # unmodeled columns are intentionally dropped (no source_extras catch-all)
     out["source_dataset"] = source_dataset
     out["country_code"] = "CL"
     out["source_opportunity_id"] = f"{source_dataset.split('/')[0]}-{slug(out['opportunity_name'])}"
     # city_application is multi-valued (JSON array); derive from access_pathway, then drop the raw pathway
     out["city_application"] = json.dumps(city_application(out.get("access_pathway"), out.get("eligible_actor")))
-    access_pathway = out.pop("access_pathway", None)
-    if access_pathway:
-        extras["access_pathway_verbatim"] = access_pathway
+    out.pop("access_pathway", None)
     ch, tier = classify_channel_tier(out["opportunity_name"], source_dataset)
     out["funding_channel"] = out["funder_channel"] = ch
     out["access_tier"] = tier
-    # normalise single-value controlled vocabularies to a canonical base; keep the verbatim
-    for field, syn in (("instrument", None), ("recurrence", None), ("opportunity_status", None),
+    # gpc_sectors -> canonical GPC array; provider -> base name (executor notes stripped)
+    out["gpc_sectors"] = _norm_gpc(out.get("gpc_sectors"))
+    out["provider"] = _norm_provider(out.get("provider"))
+    # normalise single-value controlled vocabularies to a canonical base (verbatim not retained)
+    for field, syn in (("instrument", None), ("recurrence", RECURRENCE_SYN), ("opportunity_status", None),
                        ("climate_relevance", CLIMATE_SYN)):
-        canon, verbatim = _norm(out.get(field), syn)
-        out[field] = canon
-        if verbatim:
-            extras[f"{field}_verbatim"] = verbatim
+        out[field], _ = _norm(out.get(field), syn)
     # eligible_actor is multi-valued -> JSON array; full verbose text -> eligible_actor_detail
     actors, ea_verbatim = _norm_eligible(out.get("eligible_actor"))
     out["eligible_actor"] = json.dumps(actors) if actors else None
@@ -165,8 +187,6 @@ def _align_row(r, source_dataset):
         out["eligible_actor_detail"] = ea_verbatim
     if out.get("amount"):
         out["amount_currency"] = "CLP"          # source amounts are CLP; explicit for multi-currency
-    out["data_quality_flags"] = json.dumps(dq) if dq else None
-    out["source_extras"] = json.dumps(extras, ensure_ascii=False) if extras else None
     return out
 
 
