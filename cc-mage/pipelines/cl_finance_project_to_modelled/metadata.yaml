@@ -1,0 +1,412 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_loaders/load_cl_ssg_projects_from_s3.py
+  downstream_blocks:
+  - merge_finance_project
+  - transform_finance_project_action
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: python
+  name: load_cl_ssg_projects_from_s3
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_cl_ssg_projects_from_s3
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_loaders/load_cl_ssg_project_matches_from_s3.py
+  downstream_blocks:
+  - transform_finance_project_action
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: python
+  name: load_cl_ssg_project_matches_from_s3
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_cl_ssg_project_matches_from_s3
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_loaders/load_gcf_projects_from_s3.py
+  downstream_blocks:
+  - merge_finance_project
+  - transform_finance_project_action
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: python
+  name: load_gcf_projects_from_s3
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_gcf_projects_from_s3
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_loaders/load_cl_mma_fpa_awards_from_s3.py
+  downstream_blocks:
+  - merge_finance_project
+  - transform_finance_project_action
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: python
+  name: load_cl_mma_fpa_awards_from_s3
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_cl_mma_fpa_awards_from_s3
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_loaders/load_cl_conaf_bn_awards_from_s3.py
+  downstream_blocks:
+  - merge_finance_project
+  - transform_finance_project_action
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: python
+  name: load_cl_conaf_bn_awards_from_s3
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_cl_conaf_bn_awards_from_s3
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_loaders/load_cl_ocha_ab_locode_from_s3.py
+  downstream_blocks:
+  - merge_finance_project
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: python
+  name: load_cl_ocha_ab_locode_from_s3
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_cl_ocha_ab_locode_from_s3
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    file_source:
+      path: transformers/merge_finance_project.py
+  downstream_blocks:
+  - export_finance_project_to_raw
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: python
+  name: merge_finance_project
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_cl_ssg_projects_from_s3
+  - load_gcf_projects_from_s3
+  - load_cl_mma_fpa_awards_from_s3
+  - load_cl_conaf_bn_awards_from_s3
+  - load_cl_ocha_ab_locode_from_s3
+  uuid: merge_finance_project
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    file_source:
+      path: data_exporters/export_finance_project_to_raw.py
+  downstream_blocks:
+  - load_finance_project_modelled
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: python
+  name: export_finance_project_to_raw
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - merge_finance_project
+  uuid: export_finance_project_to_raw
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    file_source:
+      path: transformers/transform_finance_project_action.py
+  downstream_blocks:
+  - export_finance_project_action_to_raw
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: python
+  name: transform_finance_project_action
+  retry_config: null
+  status: null
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_cl_ssg_projects_from_s3
+  - load_gcf_projects_from_s3
+  - load_cl_mma_fpa_awards_from_s3
+  - load_cl_conaf_bn_awards_from_s3
+  - load_cl_ssg_project_matches_from_s3
+  uuid: transform_finance_project_action
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    file_source:
+      path: data_exporters/export_finance_project_action_to_raw.py
+  downstream_blocks:
+  - load_finance_project_action_modelled
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: python
+  name: export_finance_project_action_to_raw
+  retry_config: null
+  status: null
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - transform_finance_project_action
+  uuid: export_finance_project_action_to_raw
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    database:
+      postgres: default
+    dbt: {}
+    disable_query_preprocessing: true
+    export_write_policy: append
+    file_source:
+      path: data_exporters/load_finance_project_action_modelled.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - drop_finance_project_staging
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: sql
+  name: load_finance_project_action_modelled
+  retry_config: null
+  status: null
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - export_finance_project_action_to_raw
+  - load_finance_project_modelled
+  - export_finance_project_catalog_to_raw
+  uuid: load_finance_project_action_modelled
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_loaders/load_finance_project_catalog.py
+  downstream_blocks:
+  - export_finance_project_catalog_to_raw
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: python
+  name: load_finance_project_catalog
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_finance_project_catalog
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_exporters/export_finance_project_catalog_to_raw.py
+  downstream_blocks:
+  - load_finance_project_action_modelled
+  - load_publisher_datasource_from_catalog
+  - load_finance_project_modelled
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: python
+  name: export_finance_project_catalog_to_raw
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_finance_project_catalog
+  uuid: export_finance_project_catalog_to_raw
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    database:
+      postgres: default
+    dbt: {}
+    disable_query_preprocessing: true
+    export_write_policy: append
+    file_source:
+      path: data_exporters/load_publisher_datasource_from_catalog.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - load_dataset_release_from_catalog
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: sql
+  name: load_publisher_datasource_from_catalog
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - export_finance_project_catalog_to_raw
+  uuid: load_publisher_datasource_from_catalog
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    database:
+      postgres: default
+    dbt: {}
+    disable_query_preprocessing: true
+    export_write_policy: append
+    file_source:
+      path: data_exporters/load_dataset_release_from_catalog.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - load_finance_project_modelled
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: sql
+  name: load_dataset_release_from_catalog
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_publisher_datasource_from_catalog
+  uuid: load_dataset_release_from_catalog
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    database:
+      postgres: default
+    dbt: {}
+    disable_query_preprocessing: true
+    export_write_policy: append
+    file_source:
+      path: data_exporters/load_finance_project_modelled.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - load_finance_project_action_modelled
+  - drop_finance_project_staging
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: sql
+  name: load_finance_project_modelled
+  retry_config: null
+  status: null
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - export_finance_project_to_raw
+  - load_dataset_release_from_catalog
+  - export_finance_project_catalog_to_raw
+  uuid: load_finance_project_modelled
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    database:
+      postgres: default
+    dbt: {}
+    disable_query_preprocessing: true
+    export_write_policy: append
+    file_source:
+      path: data_exporters/drop_finance_project_staging.sql
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: sql
+  name: drop_finance_project_staging
+  retry_config: null
+  status: null
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_finance_project_modelled
+  - load_finance_project_action_modelled
+  uuid: drop_finance_project_staging
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: null
+data_integration: null
+description: Integrate the four Chile project/award reviews (BIP, GCF, FPA, CONAF) into modelled.finance_project.
+  Co-finance folded into funding_sources JSONB; actor_id resolved to city locode via cl-ocha-ab; identity
+  from index.yaml (GitHub) with per-source release_id; release-scoped delete+insert; staging dropped at
+  the end.
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: cl_finance_project_to_modelled
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: cl_finance_project_to_modelled
+variables_dir: /home/src/mage_data/cc-mage
+widgets: []
+variables:
+  source_bucket: test-global-api
+  source_release_version: v1
+  locode_release_version: '2021'

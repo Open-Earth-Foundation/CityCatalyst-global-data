@@ -1,8 +1,8 @@
 # Pipeline: cl_finance_opportunity_to_modelled
 
 Loads the Chile supply inventory into `modelled.finance_opportunity` (table 1 of the
-Chile climate-finance model). Design: `dataset-review/reviews/oef/cl-city-action-fundability/global-api-database-design.md`;
-field audit: `.../global-api-preview/audit_1_finance_opportunity.md`.
+Chile climate-finance model). Design: `dataset-review/reviews/oef/cl-city-action-fundability/releases/v1/implementation.md`;
+field audit: see the implementation doc.
 
 ## Flow
 

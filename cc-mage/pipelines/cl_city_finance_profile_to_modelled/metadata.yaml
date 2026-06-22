@@ -1,0 +1,218 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_loaders/load_cl_subdere_sinim_from_s3.py
+  downstream_blocks:
+  - transform_city_finance_profile
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: python
+  name: load_cl_subdere_sinim_from_s3
+  retry_config: null
+  status: null
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_cl_subdere_sinim_from_s3
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_loaders/load_cl_ocha_ab_locode_from_s3.py
+  downstream_blocks:
+  - transform_city_finance_profile
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: python
+  name: load_cl_ocha_ab_locode_from_s3
+  retry_config: null
+  status: null
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_cl_ocha_ab_locode_from_s3
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    file_source:
+      path: transformers/transform_city_finance_profile.py
+  downstream_blocks:
+  - export_city_finance_profile_to_raw
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: python
+  name: transform_city_finance_profile
+  retry_config: null
+  status: failed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_cl_subdere_sinim_from_s3
+  - load_cl_ocha_ab_locode_from_s3
+  uuid: transform_city_finance_profile
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    file_source:
+      path: data_exporters/export_city_finance_profile_to_raw.py
+  downstream_blocks:
+  - load_city_finance_profile_modelled
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: python
+  name: export_city_finance_profile_to_raw
+  retry_config: null
+  status: null
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - transform_city_finance_profile
+  uuid: export_city_finance_profile_to_raw
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_loaders/load_city_finance_profile_catalog.py
+  downstream_blocks:
+  - export_city_finance_profile_catalog_to_raw
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: python
+  name: load_city_finance_profile_catalog
+  retry_config: null
+  status: null
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_city_finance_profile_catalog
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    file_source:
+      path: data_exporters/export_city_finance_profile_catalog_to_raw.py
+  downstream_blocks:
+  - load_dataset_release_city_finance_profile
+  - load_city_finance_profile_modelled
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: python
+  name: export_city_finance_profile_catalog_to_raw
+  retry_config: null
+  status: null
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_city_finance_profile_catalog
+  uuid: export_city_finance_profile_catalog_to_raw
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    disable_query_preprocessing: true
+    export_write_policy: append
+    file_source:
+      path: data_exporters/load_dataset_release_city_finance_profile.sql
+    use_raw_sql: true
+  downstream_blocks:
+  - load_city_finance_profile_modelled
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: sql
+  name: load_dataset_release_city_finance_profile
+  retry_config: null
+  status: null
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - export_city_finance_profile_catalog_to_raw
+  uuid: load_dataset_release_city_finance_profile
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    disable_query_preprocessing: true
+    export_write_policy: append
+    file_source:
+      path: data_exporters/load_city_finance_profile_modelled.sql
+    use_raw_sql: true
+  downstream_blocks:
+  - drop_city_finance_profile_staging
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: sql
+  name: load_city_finance_profile_modelled
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - export_city_finance_profile_to_raw
+  - load_dataset_release_city_finance_profile
+  - export_city_finance_profile_catalog_to_raw
+  uuid: load_city_finance_profile_modelled
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    disable_query_preprocessing: true
+    export_write_policy: append
+    file_source:
+      path: data_exporters/drop_city_finance_profile_staging.sql
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: sql
+  name: drop_city_finance_profile_staging
+  retry_config: null
+  status: null
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_city_finance_profile_modelled
+  uuid: drop_city_finance_profile_staging
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: null
+data_integration: null
+description: Load the CITY layer (financial autonomy + delivery capacity) into modelled.city_finance_profile
+  from the SUBDERE/SINIM review. autonomy = 1 - fcm_dependency_pct/100; capacity =
+  staff-percentile blend; archetype banded at 0.5; actor_id = city locode via cl-ocha-ab.
+  Identity from index.yaml; release-scoped delete+insert; staging dropped at the end.
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: cl_city_finance_profile_to_modelled
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: cl_city_finance_profile_to_modelled
+variables:
+  locode_release_version: '2021'
+  source_bucket: test-global-api
+  source_release_version: v1
+variables_dir: /home/src/mage_data/cc-mage
+widgets: []

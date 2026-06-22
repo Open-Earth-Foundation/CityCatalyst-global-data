@@ -1,0 +1,70 @@
+# Post-load expectations for modelled.finance_project (release v1).
+# Run: python ../../../../../../.cursor/skills/dataset-test/references/run_expectations.py expectations_finance_project.yaml
+# Three tiers: structural (contract) + invariants (true in reality) hard-fail; snapshot is the
+# regression baseline (re-confirm each release from the live-DB profile). profile drives validation_report.md.
+# Sibling of expectations.yaml (modelled.finance_opportunity). Sources: BIP (cl-ssg), GCF, FPA, CONAF.
+table: modelled.finance_project
+partition_by: source_dataset
+
+structural:
+  primary_key: project_id
+  required_not_null:
+    - project_id
+    - source_project_id
+    - project_name
+    - source_dataset
+    - release_id
+    - country_code
+    - funding_channel
+  # action matches are in modelled.finance_project_action (see expectations_finance_project_action.yaml).
+  # NOT required-not-null (sparse by source, by design, see design section 6):
+  #   actor_id               -> null for region-only (CONAF) and national (GCF); ~comuna-resolved otherwise
+  #   sector                 -> mixed taxonomy; null where source has none
+  #   cost_total             -> BIP-only; amount_committed -> FPA/CONAF awards; amount_paid -> not captured
+  #   evaluation_verdict / duration_months -> sparse by source
+  unique:
+    - [release_id, country_code, source_project_id]
+  foreign_keys:
+    - {column: release_id, references: "modelled.dataset_release.release_id"}
+  # action_id and actor_id are deliberately plain strings (soft links, no FK) per design section 3.2.
+
+invariants:                # must hold for ANY release, not just this snapshot
+  value_sets:              # controlled vocabularies (nulls ignored); the merge normalizes to these
+    funding_channel:  [competitive fund, public investment, intermediated multilateral]
+    lifecycle_stage:  [formulated, appraised, financed, in-execution, completed]
+    amount_unit:      [CLP_millions, UTM, CLP, USD]
+    country_code:     [CL]
+  # No global numeric range on amounts: cost_total/amount_committed mix units (CLP_millions vs UTM vs
+  # CLP vs USD), so a single bound is meaningless. Non-negativity is checked via row_rules instead.
+  ranges:
+    duration_months: {min: 0, max: 600}
+  row_rules:
+    - "cost_total >= 0"
+    - "amount_committed >= 0"
+    - "amount_paid >= 0"
+    - "amount_paid <= amount_committed"          # nulls pass
+
+snapshot:                  # this release's observed facts (regenerate from the live-DB profile; provisional from local merge)
+  row_count: {equals: 11511}
+  distinct_count:
+    source_dataset: 4
+  group_counts:
+    source_dataset:
+      cl-conaf/cl-conaf-bn-awards: 9860
+      cl-ssg/cl-ssg-projects: 988
+      cl-mma/cl-mma-fpa-awards: 655
+      gcf/gcf-projects: 8
+    funding_channel:
+      competitive fund: 10515
+      public investment: 988
+      intermediated multilateral: 8
+  min_non_null:
+    actor_id: 1119
+    cost_total: 838
+    amount_committed: 10515
+    project_name_i18n: 11511
+
+profile:                   # descriptive — drives "what we can say about this data"
+  categorical: [funding_channel, lifecycle_stage, sector, amount_unit, country_code]
+  numeric: [cost_total, amount_committed, amount_paid, duration_months]
+  dates: []

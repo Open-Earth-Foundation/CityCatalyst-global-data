@@ -1,0 +1,43 @@
+# Post-load expectations for modelled.finance_project_action (release v1).
+# Run: python ../../../../../../.cursor/skills/dataset-test/references/run_expectations.py expectations_finance_project_action.yaml
+# The project<->action link table (mirrors finance_opportunity_action). One row per
+# (project, action, mapping_source); a project may carry several matches.
+table: modelled.finance_project_action
+partition_by: mapping_source
+
+structural:
+  primary_key: project_action_id
+  required_not_null:
+    - project_action_id
+    - project_id
+    - action_id
+    - release_id
+  unique:
+    - [project_id, action_id, mapping_source]
+  foreign_keys:
+    - {column: project_id, references: "modelled.finance_project.project_id"}
+    - {column: release_id, references: "modelled.dataset_release.release_id"}
+
+invariants:
+  value_sets:
+    confidence:      [strong, goal_aligned]
+    mapping_source:  [ssg-match, gcf-crosswalk, fpa-crosswalk, conaf-crosswalk]
+
+snapshot:                  # provisional from the local merge (orphan links to absent projects are FK-dropped); re-confirm from the DB
+  row_count: {equals: 28436}
+  group_counts:
+    confidence:
+      strong: 10361
+      goal_aligned: 18075
+    mapping_source:
+      conaf-crosswalk: 27490
+      ssg-match: 501
+      fpa-crosswalk: 442
+      gcf-crosswalk: 3
+  distinct_count:
+    action_id: 41
+
+profile:
+  categorical: [confidence, mapping_source]
+  numeric: []
+  dates: []

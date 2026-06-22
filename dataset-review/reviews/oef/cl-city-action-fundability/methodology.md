@@ -1,156 +1,183 @@
-# Methodology (working) — Chile city-action fundability
+# How Chile city-action fundability works
 
-Status: **working / exploratory** (OEF). Not yet a Mage pipeline; moves to `knowledge-base/topics/` only once it stabilises. This is the hub for the consolidated product (it replaces the former `cl-finance-inventory` and `cl-action-fundability` methodologies). It has two parts: **Part A — supply & coverage** (the finance inventory and a financing-availability indicator) and **Part B — the fundability model** (the four-layer model that consumes Part A).
-
----
-
-# Part A — Supply & coverage (the FINANCE layer)
-
-## A0. What this measures — and what it does NOT (read first)
-
-Part A measures **financing availability / coverage**: *does a climate-relevant public funding channel of the right sector exist, is it currently usable, and can a city access it?* It deliberately does **not** claim **fundability** in the sense of "this action tends to secure financing in practice." A coverage indicator built from listed opportunities largely reflects *what we have catalogued* (availability bias), not real-world funding behaviour — reviewed sectors light up, unreviewed ones look like gaps regardless of reality.
-
-"Fundable" bundles five separable things; Part A covers the first and part of the second: **supply** (does a channel exist — measured), **access/eligibility** (can this actor apply — partial, actor-fit heuristic), **adequacy** (amount vs cost — not measured, amounts mostly absent), **competitiveness** (award odds — not measured), **capacity** (can the city prepare a winning application — not measured). True revealed fundability needs award/disbursement history; that is a future direction. Use Part A as a *where-to-look* + *gap* map, never as a probability of getting funded.
-
-## A1. The harmonized inventory
-
-`data/chile_finance_inventory.csv` unions **ten** vetted source reviews into one row-per-fund table (**99 rows**): cl-mma 55, cl-indap 9, cl-mop 7, cl-minenergia 6, cl-corfo 5, cl-subdere 4, cl-minvu 4, cl-gore 4, cl-mtt 3, cl-conaf 2. Source reviews remain authoritative for provenance, licence and per-source caveats; this inventory is a derived product, rebuilt by `01_finance_inventory.ipynb` after any source release. Key harmonized fields the scoring relies on: `gpc_sectors`, `eligible_actor`, `specificity` (sector-specific | broad), `status`, `recurrence` (annual | ongoing | sporadic | one-off), `climate_relevance_norm`, `detail_level`.
-
-## A2. The coverage indicator — design
-
-Classify each action by **what kind of public funding channel covers it** — a dedicated (sector-specific) channel, only broad/general-purpose channels, or none. Output: a `coverage_level` label per action, not a score or rank. The core constraint (carried from the failed SSG attempt): a broad inventory must not inflate coverage — broad funds can never count as a dedicated match.
-
-Two steps: **match** an action to inventory funds (sector relevance first), then **classify** by best match.
-
-- **Usability** combines `status` with `recurrence` so a between-cycles fund isn't treated as dead: `usable_now` if open/rolling, or `recurrence = annual` (reliably reopens ~Aug–Oct), or `ongoing`; else `not_currently_usable`.
-- **Per-match fit:** **Strong** = sector-specific AND usable_now AND realistic `eligible_actor`. **Moderate** = sector-specific with one gap, OR a usable, accessible broad fund. **Weak** = broad/cross-sector only, or major actor/timing gap. Control: a **broad fund can never be Strong** (capped at Moderate) — the explicit fix for PMU/PMB/FRC and global funds matching everything.
-- **Action `coverage_level`:** `sector-specific` = ≥1 Strong; `broad-only` = no Strong but ≥1 Moderate; `none` = only Weak or no match.
-
-## A3. Run — coverage result
-
-Classified the ClimateView `current_actions` set (102 mitigation actions) against the inventory. Coverage splits **sector-specific 66 / broad-only 36 / none 0**; the broad funds (PMU, PMB, FRC, Quiero Mi Barrio, Pavimentación, FNDR, FRIL, FRPD) are capped at Moderate by construction — the SSG inflation does not recur. Gaps surface honestly: transportation and industry actions are `broad-only` because no dedicated *city* channel exists (the funds that do exist are operator- or firm-facing).
-
-**Known limitation:** coverage is essentially a property of the action's GPC **sector**, not the individual action — every action in a sector gets the same label, because funds are sector-tagged and each action is matched with one uniform implementer ("city"). Acceptable for a coverage/gap map; the reason it must not be read as action-level fundability. The decisive finding from adding CORFO and the operator-facing transport/agriculture funds: the industry/transport "gap" is largely an **actor gap, not a supply gap** — cities don't implement industrial decarbonisation or run bus fleets, firms and operators do. Coverage must be read against *who implements the action*, which is why action-actor inference is the real next step, not more sources.
+A method for estimating, for a given Chilean municipality (*comuna*) and a given climate action, **how realistically the city can pay for and deliver it — and which funds could help**. It produces a 0–1 *financial feasibility* score with a plain-language reason and the named funds and past projects behind it. It is one input into the broader HIAP action-prioritisation tool (the **Feasibility** pillar).
 
 ---
 
-# Part B — The fundability model (ACTION × CITY → FINANCE)
+## In one paragraph
 
-## B0. What this models — and what it does not
+Every climate action needs **money** and **know-how**. Every city has some **of its own money** and some **delivery capacity**. We compare the two: if an action's needs sit within what the city already has, it is *self-deliverable*; if not, we identify the gap (money, capacity, or both) and the **financing route** that closes it, then check **what funds actually exist** for that action's sector and whether the city can apply to them. The result is a score from 0 (very hard for this city to finance) to 1 (the city can do it with its own means), each one carrying the inputs that produced it so it is auditable, never a black box.
 
-For a **specific comuna** and a **specific climate action**: *how hard will it be to fund and deliver, and by what route?* Output: a **categorisation** (route/effort bucket + a 0–1 `financial_feasibility` score + the funds that fit), feeding the MEED+ HIAP **Feasibility** pillar. It is **not** a probability of securing finance, **not** a ranking of comunas, and it **never** lowers an action's impact because a city is weak (a hard action in a weak comuna is *harder / needs an external route*, not *less worth doing*). Objective scope: order *actions within a single comuna* by difficulty — distinguishing difficulty *between* comunas is explicitly not required.
+---
 
-## B1. The four layers
+## What it answers — and what it doesn't
 
-| Layer | Source | Role | Partition we claim | Join key |
-| --- | --- | --- | --- | --- |
-| **ACTION** (what) | actions catalog (102), `cl-ssg-projects` | the thing being funded | **capital intensity** (`investment_cost`) + **formulation demand** (from `primary_intervention` archetype) | `action_id`, GPC sector |
-| **CITY** (who) | `cl-subdere-sinim` + `cl-ine-censo` | can the comuna pay & deliver | continuous **autonomy** & **capacity** scores (2×2 as summary) | CUT (`comuna_cut`) |
-| **FINANCE** (route) | the harmonized inventory (Part A; 99 funds, municipality-eligible subset) | which money the city can reach | usable, city-eligible funds by sector + **access barrier** | GPC sector × eligible-actor |
-| **PROJECTS** (evidence) | ficha / `project_action_matches`; CONAF/FPA/GCF awards | reality check & precedent | descriptive only | CUT + project↔action matches |
+**It answers:** for one city and one action — how hard is this to fund and deliver, by what route, with which funds, and is there precedent? It is designed to *order actions within a single city* by financing difficulty and attach the supporting evidence.
 
-**Forward model = ACTION × CITY → FINANCE.** PROJECTS is the **evidence** layer (calibrates, illustrates, lends precedent) — not a forward input (size-confounded; only ~48% of projects carry a comuna; predicting with it would be circular).
+**It does not:**
 
-## B2. The CITY layer
+- predict whether an action will actually *secure* funding (it is not an award probability),
+- rank cities against each other,
+- lower an action's climate impact because a city is weak (a hard action in a weak city is *harder / needs outside help*, not *less worth doing*),
+- judge whether a fund's amount is *enough* (amounts are sparse and mixed-unit; adequacy is not measured).
 
-Two axes, kept separate (2025 correlation r ≈ 0.22 — they measure different things):
+Read it as a **"how hard, and where to look"** map, not a funding guarantee.
 
-- **Financial autonomy** (0–1, higher = more own-money) — `1 − fcm_dependency_pct/100`, supported by `ipp_percapita_mclp`, `presup_percapita_mclp`.
-- **Delivery capacity** (0–1) — `0.7 × percentile(staff_profesional_total) + 0.3 × percentile(professionalization_pct)`. Continuous, not a fixed cut.
+---
 
-Four **archetypes** summarise the two scores: self-starter (High/High), capable-but-cash-tight (Low-fin/High-cap), funded-but-thin (High-fin/Low-cap), needs-full-support (Low/Low). They split **20 / 44 / 67 / 214** on 2025 data (~62% needs-full-support). **Guardrails (SINIM review):** coarse tiers, never a fine rank; never read fiscal strength from per-capita income alone (rural/mining micro-comunas look rich per-cápita but are weakest); staff counts exclude *honorarios*, so they understate small comunas and nulls ≠ zero.
+## The four things we look at (the four layers)
 
-## B3. The ACTION layer
+| Layer | Plain meaning | Where it comes from |
+|---|---|---|
+| **Action** — *what* is being done | how much **money** it needs and how much **preparation** it takes | the climate-action library (C40 / IPCC / I-Care) |
+| **City** — *who* would do it | how much **own money** and **delivery capacity** the city has | SUBDERE / SINIM municipal indicators |
+| **Finance** — *the money* available | which catalogued **funds** match the action and whether the city can apply | the harmonised Chile finance inventory (10 public + firm-facing sources) |
+| **Precedent** — *the evidence* | how many **comparable projects** have already been funded | BIP/SNI, plus CONAF, FPA and GCF award records |
 
-- **Capital intensity** — `investment_cost` (low/med/high → 0.2/0.5/0.8). Loads onto financial autonomy.
-- **Formulation demand** — from the catalog's `primary_intervention` archetype (backfilled from `primary_channel` for the 33 blanks), covering all 102 with no Chile-specific legal data: regulatory 0.2 · planning/program/financial 0.5 · infrastructure 0.8 (infrastructure + high cost → 0.9). Loads onto delivery capacity.
-- **Self-financeability** — dropped as a separate tag; it emerges (a low-capital action is self-deliverable by construction, and otherwise FINANCE says whether a direct-access route exists).
+The score is a **forward** comparison of the first three (Action × City → Finance). **Precedent** is shown as evidence alongside the score — it calibrates and illustrates, but is not fed back into the number (that would be circular).
 
-Choosing the catalog archetype over MEED legal scores keeps the model **portable to any CityCatalyst city** (the catalog is the global C40/IPCC/ICare set); MEED is Chile-only, used here for validation, not derivation.
+---
 
-## B4. Interaction → route buckets
+## How the score is built — step by step
 
-Each action demand is tested against the axis it loads on; a shortfall sets the route. Low-capital actions are flat across comunas (money isn't the constraint); demanding actions diverge.
+### 1. Size up the action — what it needs
 
-| | Low-capital | High-capital |
-| --- | --- | --- |
+Two needs, each on a 0–1 scale:
+
+- **Capital intensity** — how much money the action needs.
+- **Preparation complexity** — how much technical/administrative work it takes to turn the idea into a fundable project.
+
+*The detail:* capital intensity comes from the action's investment-cost band (low / medium / high → 0.2 / 0.5 / 0.8). Preparation complexity comes from the action's type (a regulation is cheap to prepare → 0.2; planning / programme / financial → 0.5; building infrastructure → 0.8, or 0.9 if it's also high-cost).
+
+### 2. Size up the city — what it has
+
+Two strengths, each on a 0–1 scale, kept separate because they measure different things:
+
+- **Financial autonomy** — how much of its budget the city raises itself rather than relying on central transfers. Higher = more of its own money to spend.
+- **Delivery capacity** — how much professional staff capacity the city has to formulate and run projects.
+
+*The detail:* autonomy = `1 − FCM-dependency%/100` (FCM is the central municipal-transfer fund). Capacity = a blend of two staff measures (`0.7 × percentile(professional staff) + 0.3 × percentile(professionalisation %)`). Both come from the 2025 SINIM data, for all 345 comunas.
+
+We also summarise the two into one **city profile** (a quick label), split at the midpoint of each axis:
+
+| | High capacity | Lower capacity |
+|---|---|---|
+| **High autonomy** | **Self-sufficient** | **Well-resourced** (money, building capacity) |
+| **Lower autonomy** | **Delivery-ready** (capable, cash-tight) | **Support-ready** |
+
+The autonomy and capacity numbers are used *inside* the model to set the route; the API surfaces only this **city profile** category, not the underlying numbers.
+
+### 3. Compare them → a financing route
+
+Test each action need against the city strength it draws on — money-need against autonomy, preparation-need against capacity. Whichever falls short sets the **route**:
+
+| | Low-capital action | High-capital action |
+|---|---|---|
 | **High autonomy** | self-deliverable | own-budget feasible |
-| **Low autonomy** | self-deliverable | needs external co-finance |
+| **Lower autonomy** | self-deliverable | needs external co-finance |
 
-…and high **formulation demand** vs **low capacity** escalates with *"+ technical assistance / pooling"*. **The five buckets (easy → hard):** self-deliverable · own-budget feasible · needs technical assistance · needs external co-finance · needs external finance + TA / pooling. No single capacity/autonomy cut exists — both axes are continuous and the threshold that matters is action-specific. Demand bands are tunable config; within-city ranking was shown invariant to ±0.1 band jitter (median Spearman ≈ 1.0).
+when an action's **preparation** need outstrips the city's **capacity**, the route escalates to *"+ technical assistance"*. The five routes, easiest to hardest:
 
-## B5. FINANCE resolution
+1. **self-deliverable** — low-cost action the city can just do (e.g. a regulation),
+2. **own-budget feasible** — within the city's own budget and capacity,
+3. **needs technical assistance** — the city has the money but not the know-how,
+4. **needs external co-finance** — the city needs outside money,
+5. **needs external finance + TA / pooling** — it needs both outside money and outside expertise.
 
-Resolve the route bucket against the inventory by **sector** (action GPC ↔ fund `gpc_sectors`), **eligible actor** (the municipality-eligible subset — a minority of the 99 funds; many are firm-, operator- or household-facing), **usability** (`status`/`recurrence`), and **access pathway**.
+Low-cost actions look the same for every city (money isn't the constraint); demanding actions are where cities diverge.
 
-**Access pathway feeds back onto capacity:** a direct-application grant (e.g. FPA) is reachable even by a weak comuna; a BIP/SNI-gated fund (FNDR) is not — so the same fund is "accessible" for a self-starter and "needs TA to access" for a weak comuna.
+### 4. Check what money is available
 
-**Caveat — the `fund_access` flag is a weak heuristic.** It is currently a substring match ("direct" in the `access_pathway` text). It is string-fragile, conflates the direct-application *channel* with *non-competitive* (those funds are still competitive grants), and does not detect the **BIP/SNI gate**, which is the real capacity barrier. The fix is to curate an explicit `access_tier` (self-service / direct-application / competitive / BIP-SNI-gated); until then the direct-vs-competitive split is low-confidence.
+For the action's sector, look up the **finance inventory** and ask: are there funds the city can reach? We classify the access into one of three:
 
-## B6. PROJECTS evidence layer
+- **direct** — there is a catalogued fund the city can apply to itself,
+- **competitive** — funding exists, but it is won through a competition (*concurso*),
+- **gap** — no catalogued fund matches this sector yet.
 
-Descriptive only: **calibrate** the capacity read (which comunas actually formulate BIP projects); **existing projects per action** (`project_action_matches`); **funded precedent** (CONAF, FPA and GCF award crosswalks now populate precedent, so it is multi-sector — see B9a). Not a forward input (B1).
+*Why access matters:* the same fund can be "reachable" for a capable city and "needs help to access" for a weaker one — a direct-application grant is open to anyone, while a fund routed through the national investment system (the BIP/SNI gate) demands more capacity to unlock.
 
-## B7. The `financial_feasibility` score & HIAP integration
+### 5. Turn it into a 0–1 score
 
-The route bucket (blended with fund access) maps to a 0–1 score plugged into HIAP's **Feasibility** pillar as a third leg (legal · mitigation · financial):
+The route, combined with how reachable the money is, maps to the feasibility score:
 
-| Bucket | `financial_feasibility` |
-| --- | --- |
-| self-deliverable | 1.00 |
-| own-budget feasible | 0.85 |
-| needs technical assistance | 0.70 |
-| needs co-finance — direct fund | 0.60 |
-| needs co-finance — competitive fund | 0.45 |
-| needs co-finance — no usable fund (gap) | 0.25 |
-| needs finance + TA / pooling | 0.15–0.35 (by fund access) |
-| no data (non-pilot city) | **0.50 neutral** |
+| Situation | Score |
+|---|---|
+| self-deliverable | **1.00** |
+| own-budget feasible | **0.85** |
+| needs technical assistance | **0.70** |
+| needs co-finance — a direct fund exists | **0.60** |
+| needs co-finance — only competitive funding | **0.45** |
+| needs co-finance — no catalogued fund (gap) | **0.25** |
+| needs finance **and** technical assistance | **0.15–0.35** (by fund access) |
+| no city data available | **0.50** (neutral fallback) |
 
-**Integration:** proposed **legal 0.34 / mitigation 0.33 / financial 0.33**. Feasibility is ~0.23 of the HIAP final score, so financial feasibility is ~0.07 of the total — enough to break ties and nudge, not enough to swamp Impact (0.55). Weight changes require methodology-owner (Ayinawu) sign-off. The highest-value use is the **annotation**, not the score: attach the bucket, named funds (+ access type) and precedent to each ranked action.
+Higher = the city can more readily finance and deliver the action. The bands are deliberate, tunable settings — not statistical estimates.
 
-## B8. Output specification
+### 6. Attach the evidence
 
-Per `(action × comuna)`: `comuna_cut`, `comuna`, `autonomy`, `capacity`, `action_id`, `action_name`, `archetype`, `sector`, `capital_demand`, `formulation_demand`, `route`, `fund_access`, `financial_feasibility`, `n_existing_projects`. Delivered as `data/fundability_scored.csv` (345 × 102 = 35,190 rows). Feeds HIAP Feasibility with the reason attached — never Impact or Alignment.
+Finally, count the **comparable projects already on record** for the action (from the precedent layer) and surface the matched funds. These don't change the score — they let a reader see that the route is real ("57 similar projects have been funded") rather than taking the number on faith.
 
-## B9. Results — national run (345 comunas × 102 actions)
+---
 
-- **Route mix:** self-deliverable 14.4% · own-budget 7.7% · needs TA 17.0% · needs co-finance 19.2% · needs finance + TA / pooling 41.7%. So ~22% of all (action, comuna) pairs are doable unaided and ~78% need external support — the expected consequence of most comunas being low-autonomy.
-- **By archetype, `financial_feasibility` orders intuitively:** infrastructure 0.44 < program 0.54 < planning 0.55 < financial 0.60 < regulatory 0.81.
-- **Validity checks:** `financial_feasibility` falls with capital intensity (r ≈ −0.47) and rises with autonomy (r ≈ +0.66); no high-capital action scores "easy" in a weak comuna.
-- **Known edge:** a few of the smallest comunas show 0 unaided actions — the *honorarios*-understatement caveat biting at the extreme.
+## A worked example
 
-## B9a. Coverage matrix — the gap dashboard
+**Valdivia** is *Delivery-ready*: lower financial autonomy (it leans on central transfers) but strong delivery capacity.
 
-A per-action coverage matrix (`data/action_coverage_matrix.csv`, one row per action) records whether the action has a sector-specific municipal route, an award precedent, a BIP precedent, a cost benchmark and fund amounts, plus a `coverage_status`. The empty cells are the backlog. Headline gaps on the current run:
+- *"Introduce energy-efficiency standards for new buildings"* — a low-capital **regulation**. It needs little money and little preparation, both within Valdivia's reach → **self-deliverable, score 1.00**. Reason: *"Low-capital action the city can deliver itself."*
+- *"Retrofit municipal buildings for energy efficiency"* — **high-capital** infrastructure. Valdivia can manage the delivery, but the capital exceeds its own-money headroom → **needs external co-finance**; energy-sector funds exist that the city can apply to → **score 0.60**. Reason: *"Capital need exceeds the city's autonomy; co-finance available via 3 fund(s) the city can apply to directly."*
 
-| Gap | Actions affected |
-| --- | --- |
-| No sector-specific municipal route (only broad cross-sector funds) | 26 / 102 |
-| No BIP precedent | 25 / 102 |
-| No award precedent | 75 / 102 (so **27 / 102 now have one**) |
-| No cost benchmark | 21 / 102 |
+Same city, same staff — the difference is the *action's* demands meeting the *city's* means.
 
-Two structural findings. (1) Award precedent is now **multi-sector**: the CONAF, FPA and GCF award crosswalks lift precedent from the old afolu-only picture to 27 actions spanning afolu, energy/buildings, waste/water and transport. (2) *Any* municipal route still matches every action because broad funds (PMU, PMB) fit anything — which is why the matrix tracks a **sector-specific** route as the honest signal. By sector, industry is the systematic hole (no sector-specific city route, firm-facing CORFO instruments instead), and transportation has no sector-specific *municipal* route because its funds are operator-facing (the MTT actor mismatch), even though every transport action carries a BIP precedent. Fill order: tighten the action-to-fund match to sector + actor + instrument, curate `access_tier`, then fill industry/transport supply and fund amounts.
+---
 
-## B10. What the model can / cannot claim
+## Where the data comes from
 
-**Can:** city archetype (coarse); action difficulty bucket; a 0–1 feasibility leg; named reachable funds + access barrier; funded precedent — each on a real join. **Cannot:** funding probability; comuna ranking; adequacy (amounts mostly missing); award odds (no outcome data); domain capacity from a generic professionalization proxy; real trends from nominal money.
+| Layer | Source review(s) |
+|---|---|
+| Action demands | the OpenEarth / SSG climate-action library (`cl-ssg-actions`, served via `action_pathway`) |
+| City axes | SUBDERE / SINIM municipal fiscal & staffing indicators (`cl-subdere-sinim`), with census/SSG context |
+| Finance | the ten `cl-*` *fondos* supply reviews, harmonised into one fund inventory |
+| Precedent | BIP/SNI projects (`cl-ssg-projects`) plus CONAF, FPA and GCF award records |
+| City identity | comuna → city locode via the `cl-ocha-ab` administrative-boundary lookup |
 
-## B11. Licence inheritance
+Each source review remains authoritative for its own provenance, licence and caveats; this product unions and scores already-reviewed data and re-grants nothing.
 
-Inherits the **most restrictive upstream licence**. Binding constraint: **SINIM** (non-commercial + attribution clear; commercial unresolved pending SUBDERE clearance). Finance sources add per-source terms (e.g. CORFO CC BY-NC-ND). Treat outputs as non-commercial + attribution until clearance lands; defer to each source review before redistributing.
+---
 
-## B12. Open items / next steps
+## A companion view: the coverage / gap map
 
-1. **Curate `access_tier`** in the inventory — replace the "direct" substring heuristic with an explicit tier; detect the BIP/SNI gate (the real capacity barrier; B5 caveat).
-2. **Action-actor inference** — read coverage against *who implements the action* (the industry/transport "gap" is an actor gap, not a supply gap). Biggest lever; gets action-level resolution.
-3. **Revealed fundability** — mine award/adjudication history (what actually got funded, how often, at what size).
-4. **Fill data gaps** — fund **amounts** (unlocks adequacy), more transport/industry supply, IPPU/AFOLU action coverage.
-5. **Resolve the SINIM commercial licence** with SUBDERE.
-6. **HIAP wiring** — fold `financial_feasibility` into the Feasibility pillar (needs Impact/Alignment from CityCatalyst to show real rank shift); weight sign-off by owner.
+Alongside the per-city score there is a national **coverage indicator** — a simpler, city-agnostic answer to *"does a dedicated, currently-usable, city-accessible fund exist for this action's sector?"* It labels each action `sector-specific` (a dedicated municipal fund exists), `broad-only` (only general-purpose funds), or `none`. It is an honest **gap dashboard** (which sectors lack dedicated city funding), not a per-action score — and it carries an **availability bias**: well-reviewed sectors light up, under-reviewed ones look like gaps regardless of reality. Its standout finding: the apparent "gaps" in industry and transport are mostly an **actor gap, not a money gap** — cities don't run bus fleets or decarbonise factories; firms and operators do.
 
-*Done:* harmonized inventory (99 funds, 10 sources); coverage indicator; four-layer model + full national run; multi-sector award precedent via CONAF/FPA/GCF crosswalks; the traceable `finance_db` fixture with explicit access routes; sensitivity validation.
+---
 
-## Inputs
+## What it can and cannot claim
 
-`reviews/cl-ssg/cl-ssg-projects` · `reviews/cl-subdere/cl-subdere-sinim` · `reviews/cl-ine/cl-ine-censo` · the ten `cl-*/cl-*-fondos` supply reviews · CONAF/FPA/GCF award reviews (precedent) · `reviews/cl-ssg/cl-ssg-legal-signals` (validation only). Each remains authoritative for its own provenance, licence and caveats.
+**Can:** a coarse city profile; an action's difficulty route; a 0–1 feasibility score with a plain reason; the named, reachable funds and how to access them; funded precedent — each built on a real data join.
+
+**Cannot:** a probability of getting funded; a ranking of cities; whether a fund's amount is *enough*; award odds (no outcome data is used); deep sector-specific capacity (the staff measure is general); real spending trends (amounts are nominal and sparse).
+
+---
+
+## How it feeds the bigger picture
+
+The score plugs into HIAP's **Feasibility** pillar as a third leg alongside legal and mitigation feasibility (proposed weights legal 0.34 / mitigation 0.33 / financial 0.33). Because Feasibility is only part of the overall HIAP score, financial feasibility is a small share of the total — enough to break ties and nudge prioritisation, never enough to swamp an action's climate impact. The highest-value output is the **annotation** (route + funds + precedent + reason), not the bare number. Weight changes need methodology-owner sign-off.
+
+---
+
+## Status and what's next
+
+**Implemented in production.** The model is built end to end: the inputs live as database tables (`finance_opportunity`, `finance_project`, `city_finance_profile` and their action links), the score is computed at read time by the `city_action_financial_feasibility` function (so it's always current and never stale), and it's served by the `climate-finance` API (the score, a per-action drill-down, the fund catalogue, and the precedent projects). See `releases/v1/implementation.md` for the technical shape.
+
+**Honest limitations / next steps:**
+
+1. **Fund access is a rough flag today.** "direct vs competitive" is a simple text heuristic and does not yet detect the BIP/SNI capacity gate. The fix is a curated *access tier* — the single biggest quality improvement.
+2. **Action-actor inference** — read coverage against *who implements the action*, to resolve the industry/transport "gaps."
+3. **Revealed fundability** — mine real award history (what actually got funded, how often, at what size).
+4. **Fill data gaps** — fund amounts (to unlock adequacy), more transport/industry supply.
+5. **Confirm SINIM terms with SUBDERE *only before any commercial use*** — not a blocker today (see Licence).
+
+---
+
+## Licence
+
+Inherits the **most restrictive upstream licence**; the binding constraint is **SINIM** (non-commercial + attribution clear). **We use SINIM as a derived model input, not a redistribution:** the published outputs are computed scores (`autonomy`, `capacity`, `city_archetype`) — the raw SINIM indicators are consumed in the transform and not stored or served. With attribution to SUBDERE/SINIM maintained, the current **non-commercial** research / tool use is in the clear. The one open question is narrower — a non-commercial term can carry to derivative works, so **commercial use of the product would still warrant a confirmation with SUBDERE**. Some finance sources add their own terms (e.g. CORFO `CC BY-NC-ND`); defer to each source review before redistributing any raw data. *(Not legal advice — confirm with the licence owner.)*

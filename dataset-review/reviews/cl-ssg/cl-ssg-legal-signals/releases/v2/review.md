@@ -64,6 +64,13 @@ What the merge does and what it means:
 
 Caveats to read alongside it: 15 AFOLU rows are `qualitative_backing = pending` (scored from components, narrative not yet written); one transport action (`ipcc_0105`) has no legal assessment in either source, so coverage is 100 of 101; and `legal_verdict_score` should not be pooled across sectors without `responsible_level` in view.
 
+## Data location
+
+The merged legal classification is loaded to S3 at:
+```
+s3://test-global-api/raw_data/cl_ssg/cl_ssg_legal_signals/release/v2/legal-classification-v2.csv
+```
+
 ## Bottom line
 
 The v2 numbers are internally consistent and the methodological reframe from "municipal viability" to "national policy alignment" is sound and well-documented for these two sectors. The one substantive gap before this is treated as a finished dataset is the **15 AFOLU actions that are scored but not qualitatively analysed** — they should be flagged as provisional or completed. Because the scoring construct is different from v1, IPPU/AFOLU scores are **not directly comparable** to the waste/energy/transport scores and should not be pooled into a single cross-sector ranking without a normalisation note.
