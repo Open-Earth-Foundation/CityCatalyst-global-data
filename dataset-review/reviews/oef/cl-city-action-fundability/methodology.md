@@ -1,4 +1,4 @@
-# How Chile city-action fundability works
+# How Chile city action financial feasibility works
 
 A method for estimating, for a given Chilean municipality (*comuna*) and a given climate action, **how realistically the city can pay for and deliver it — and which funds could help**. It produces a 0–1 *financial feasibility* score with a plain-language reason and the named funds and past projects behind it. It is one input into the broader HIAP action-prioritisation tool (the **Feasibility** pillar).
 
@@ -54,9 +54,11 @@ Two needs, each on a 0–1 scale:
 Two strengths, each on a 0–1 scale, kept separate because they measure different things:
 
 - **Financial autonomy** — how much of its budget the city raises itself rather than relying on central transfers. Higher = more of its own money to spend.
-- **Delivery capacity** — how much professional staff capacity the city has to formulate and run projects.
+- **Delivery capacity** — the city's *internal capacity to develop and shepherd a project through to finance*: the professional staff who can write a proposal, formulate an *iniciativa*, pass the SNI/BIP gate, and manage a grant. **This is not the capacity to physically carry out the action itself** (build the plant, run the fleet) — it is the institutional capacity to turn an action into a funded project.
 
-*The detail:* autonomy = `1 − FCM-dependency%/100` (FCM is the central municipal-transfer fund). Capacity = a blend of two staff measures (`0.7 × percentile(professional staff) + 0.3 × percentile(professionalisation %)`). Both come from the 2025 SINIM data, for all 345 comunas.
+These two are not fully independent: capacity is partly what *unlocks* the finance. A fund existing is not the same as a city being able to reach it — many channels (e.g. the public-investment SNI/BIP route) are accessible only to a city with the staff to formulate and pass them. So readiness is, in part, the key to the money rather than a parallel, separate thing — which is why the score combines them rather than reporting two unrelated numbers.
+
+*The detail:* autonomy = `1 − FCM-dependency%/100` (FCM is the central municipal-transfer fund). Capacity = a blend of two staff measures (`0.7 × percentile(professional staff) + 0.3 × percentile(professionalisation %)`). Both come from the 2025 SINIM data, for all 345 comunas, and both land on a 0–1 scale.
 
 We also summarise the two into one **city profile** (a quick label), split at the midpoint of each axis:
 
@@ -112,6 +114,8 @@ The route, combined with how reachable the money is, maps to the feasibility sco
 | no city data available | **0.50** (neutral fallback) |
 
 Higher = the city can more readily finance and deliver the action. The bands are deliberate, tunable settings — not statistical estimates.
+
+*Why a money gap scores lower than a capacity gap* (e.g. *gap* 0.25 vs *needs technical assistance* 0.70): the model isn't saying money matters more in principle — it reflects that **a money gap is harder to close than a know-how gap**. A capacity gap can be bought in (technical assistance is comparatively cheap and available, and the project still moves), whereas a capital gap with no catalogued fund is closer to a hard stop — without funding a capital project doesn't happen, and if no fund exists there's no route to one. So the ordering encodes "how resolvable is the binding constraint," not "which input is more important." Because the bands are tunable, this can be revisited if the team weighs the two differently — and note the *gap* score partly reflects what we have catalogued (an availability bias), so it may read harsher than reality in under-reviewed sectors.
 
 ### 6. Attach the evidence
 
