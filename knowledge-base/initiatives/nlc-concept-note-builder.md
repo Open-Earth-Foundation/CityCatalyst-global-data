@@ -132,7 +132,6 @@ How the four fit together:
 - **One deferred decision:** whether RII feeds only the CNB as read-only context or also the GlobalAPI pipeline as a re-served source — the second use is what makes redistribution permission from LHB (the firm that compiles RII) binding.
 
 ### References
-- Why the GHGI source is still open, and how it feeds cohort selection — the live thread, and the best place to pick up work: `dataset-discovery/needs/2026-07-mn-city-ghgi/need.md`
 - Per-source detail (coverage, license terms, the GPC caveats) — read the review for whichever source becomes relevant: RII → `dataset-review/reviews/mn-rii/rii-city-indicators/README.md` · Sustainability Index → `dataset-review/reviews/mn-mpca-greenstep/mn-greenstep-sustainability-index/README.md` · GreenStep actions → `dataset-review/reviews/mn-mpca-greenstep/mn-greenstep-actions/README.md`
 - For the boundary/join spine, the GNIS-vs-name join rules, and the crosswalk seed: `dataset-review/reviews/mn-mngeo/mn-ctu-boundaries/README.md`
 
