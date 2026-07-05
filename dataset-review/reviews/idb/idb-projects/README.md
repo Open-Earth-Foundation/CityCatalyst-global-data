@@ -1,6 +1,6 @@
 # IDB — projects (idb-projects)
 
-Project-level records from the **Inter-American Development Bank (IDB) open-data datastore**, the IDB slice of the multilateral climate-finance picture. Strong Latin America / Caribbean coverage, one row per operation, with country, sector/subsector, instrument, commitment and approval date. Like the GCF and World Bank project reviews, this is the **awards/projects layer** (what got funded), at the **multilateral level**, accessed **intermediated** (a city benefits via national programmes, it does not apply). See `knowledge-base/topics/data-sources/cl-climate-finance.md` ("Funder levels").
+Project-level records from the **Inter-American Development Bank (IDB) open-data datastore**, the IDB slice of the multilateral climate-finance picture. Strong Latin America / Caribbean coverage, one row per operation, with country, sector/subsector, instrument, commitment and approval date. Like the GCF and World Bank project reviews, this is the **awards/projects layer** (what got funded), at the **multilateral level**, accessed **intermediated** (a city benefits via national programmes, it does not apply). See `knowledge-base/topics/climate-finance/cl-climate-finance.md` ("Funder levels").
 
 ## Access (verified 2026-06)
 

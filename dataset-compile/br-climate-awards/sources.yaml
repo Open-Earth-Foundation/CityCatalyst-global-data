@@ -1,0 +1,115 @@
+# Source registry for br-climate-awards.
+# No external feed exists; this list IS the refresh mechanism.
+# Re-compile = re-fetch these, re-extract, diff against data.csv.
+# NB: in this environment direct code download (curl/requests) is proxy-blocked (403);
+#     PDFs were read via the WebFetch text extractor. Extracted text is saved in raw/ for re-parse.
+
+sources:
+  # ---- Route A: Fundo Amazônia (grants, BNDES/MMA) ----
+  - id: fundoamazonia-projetos-apoiados
+    route: A
+    funder: Fundo Amazônia (BNDES/MMA)
+    kind: project-list-html
+    url: https://www.fundoamazonia.gov.br/pt/projetos-apoiados/
+    last_fetched: 2026-07-05
+    yields: >
+      Full carteira de projetos apoiados — 147 rows (146 unique after dropping 1 site
+      duplicate). Per project: nome, responsável, natureza do executor, valor do projeto,
+      valor do apoio, local (UF), situação (contratado/concluído). Paginated 5 rows/page,
+      ~30 pages (index.html?reloaded&page=N).
+    notes: JS-rendered table but server-paginated, so page=N is fetchable. Values in R$ (não-reembolsável).
+
+  - id: fundoamazonia-informe-carteira-2025-12
+    route: A
+    funder: Fundo Amazônia (BNDES/MMA)
+    kind: portfolio-report-pdf
+    url: https://www.fundoamazonia.gov.br/pt/.galleries/documentos/informe-de-carteira/2025_12_Informe-da-Carteira-Fundo-Amazonia.pdf
+    local_copy: raw/fundo-amazonia-informe-carteira-2025-12.txt
+    last_fetched: 2026-07-05
+    yields: >
+      CONTROL TOTALS (30/12/2025): 144 projetos contratados (75 concluídos, 69 em andamento);
+      valor total contratado R$5.195 mi; desembolsado R$2.150 mi. Breakdowns by natureza do
+      executor (Soc.Civil 85, Estados 31, União 14, Municípios 7, Universidades 6, Intl 1) and
+      by localização (Interestadual 54, PA 21, MT 17, AM 15, AC 11, RO 7, MA 4, TO 4, AP 3, RR 2,
+      Fora da Amazônia Legal 5, Intl 1). Used to reconcile the web carteira.
+    notes: >
+      Monthly informe series is the refresh anchor; newer editions live at
+      https://www.fundoamazonia.gov.br/pt/transparencia/informe-de-carteira/ (2026 editions on amz.bndes.net).
+
+  # ---- Route B: Novo PAC 2025 — Prevenção a Desastres (drenagem + contenção de encostas) ----
+  - id: novopac-2025-drenagem-encostas-release
+    route: B
+    funder: Novo PAC 2025 — Prevenção a Desastres
+    kind: federal-news-release
+    url: https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/2025/09/novo-pac-viabiliza-r-11-7-bilhoes-para-obras-de-drenagem-e-contencao-de-encostas-em-235-municipios-de-26-estados
+    last_fetched: 2026-07-05
+    yields: >
+      CONTROL TOTALS (18/09/2025): R$11.7bn to 235 municípios / 26 estados. Drenagem R$10.3bn / 174
+      municípios; contenção de encostas R$1.4bn / 102 municípios. Named selected highlights:
+      Duque de Caxias/RJ R$554mi, Camaçari/BA R$240mi (drenagem); Santarém/PA R$38mi, São Bernardo
+      do Campo/SP R$78mi, Olinda/PE R$42mi (encostas).
+    notes: Federal release; highest-confidence B rows. Full per-município selected list is elsewhere and gated.
+
+  - id: novopac-2025-relacao-propostas-habilitadas
+    route: B
+    funder: Novo PAC 2025 — Prevenção a Desastres
+    kind: results-xlsx-OPEN (ingested)
+    url: https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/pac/selecoes-novo-pac/relacao-de-propostas/selecao-do-novo-pac-contencao-de-encostas-e-drenagem
+    local_copy: raw/novopac_xlsx/  (drenagemfgts.xlsx, encostasfgts.xlsx, drenagemogu.xlsx, encostasogu.xlsx, drenagemap.xlsx) -> normalized in raw/novopac_selected_rows.tsv
+    last_fetched: 2026-07-05
+    yields: >
+      The official per-município SELECTED list — the full Route B detail (315 proposals). Published OPENLY
+      (no login) by the Ministério das Cidades as five XLSX:
+        - habilitadas p/ financiamento (FGTS): drenagemfgts.xlsx ; encostasfgts.xlsx
+        - habilitadas p/ OGU:                  drenagemogu.xlsx  ; encostasogu.xlsx
+        - drenagem routed to financiamento:    drenagemap.xlsx  (labelled "não habilitadas p/ OGU" but still selected)
+      Per proposal: nº da proposta, proponente/mutuário, UF, município beneficiado, valor (empréstimo FGTS or repasse OGU),
+      and (drenagem FGTS) objeto.
+    notes: >
+      DE-GATED and ingested. NOT the login-walled Casa Civil results page
+      (gov.br/casacivil/pt-br/novopac/selecoes2025/resultados-das-selecoes, which redirects to require_login) —
+      this is the public MCidades acesso-a-informacao copy. Reconciliation (see collection.md): drenagem
+      R$10,302.9mi vs R$10,300mi (0.03%); encostas R$1,432.3mi vs "mais de R$1,4bi"; total R$11,735.2mi vs
+      R$11,700mi (+0.3%); 26 UFs exact; 230 distinct municípios vs 235 (source name-spelling noise). Binary xlsx
+      could not be pulled inside the sandbox (WebFetch extracts text/PDF only; code download proxy-blocked), so the
+      files were downloaded outside and dropped into raw/. Refresh = re-download these 5 + re-run raw/build_data.py.
+
+  - id: novopac-2025-municipal-press
+    route: B
+    funder: Novo PAC 2025 — Prevenção a Desastres
+    kind: municipal-press (unverified)
+    url: https://www.natal.rn.gov.br/news/post2/43371
+    last_fetched: 2026-07-05
+    yields: >
+      Individual selected municípios from local press (not cross-checked to the federal list):
+      Natal/RN R$125mi; Itabuna/BA R$31mi (itabuna.ba.gov.br); Cabedelo/PB R$30mi (convênio, bacia do Renascer).
+    notes: Marked verified=false. Each município publishes its own award; a full scrape would enumerate the 235.
+
+  # ---- Route C: COFIEX (direct external borrowing, CAPAG-gated) ----
+  - id: cofiex-180a-resultado
+    route: C
+    funder: COFIEX (Ministério do Planejamento e Orçamento)
+    kind: meeting-result-pdf
+    url: https://www.gov.br/planejamento/pt-br/assuntos/assuntos-internacionais-e-desenvolvimento/cofiex/reunioes/reunioes-da-comissao-de-financiamentos-externos-cofiex/resultados/resultado-180a-cofiex-1.pdf/@@display-file/file
+    local_copy: raw/cofiex-180a-resultado-2025-06-18.txt
+    last_fetched: 2026-07-05
+    yields: >
+      Full results table of the 180ª Reunião (18/06/2025): 32 line items across sections (federais,
+      empresas públicas, subnacionais, fiscais, ambientais/climáticos, PPP, reestruturação de dívidas,
+      operações em reais, outras). Per row: proponente, projeto, financiador (MDB), empréstimo, contrapartida,
+      recomendação GTEC (aprovado / não aprovado + reason). 22 project approvals (18 subnacionais + 4
+      federais/empresas). EUR/JPY empréstimo values already converted to USD in the source.
+    notes: >
+      CONTROL TOTALS reconciled: 18 subnacionais + 4 federais = 22 aprovados; federal approved sum
+      US$1.12bn (release states exactly). Release: https://www.gov.br/planejamento/pt-br/assuntos/noticias/2025/junho/na-segunda-reuniao-do-ano-cofiex-aprova-22-projetos-somando-us-3-7-bilhoes-em-investimentos-de-estados-e-municipios-e-da-uniao
+      Additional meetings (181ª+, Painel COFIEX) are the refresh/expansion path.
+
+  # ---- Navigation map (not data) ----
+  - id: kb-br-climate-finance
+    route: "-"
+    funder: "(navigation)"
+    kind: knowledge-base-reference
+    url: knowledge-base/topics/climate-finance/br-climate-finance.md
+    last_fetched: 2026-07-05
+    yields: The six-route model, funder levels, and the "Main actors" table that steered which routes to compile first.
+    notes: Reference context that navigates the compile; not the data.

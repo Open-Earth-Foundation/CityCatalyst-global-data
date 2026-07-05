@@ -1,0 +1,45 @@
+{
+  "dataset": "mn-climate-awards",
+  "title": "Minnesota climate-finance awards (compiled)",
+  "status": "compile",
+  "description": "Real awarded climate-finance projects in Minnesota, indexed by reaching-money route (rollup) and the four Concept Note Builder axes (funder, category, region, instrument). Manufactured by compiling public funder award announcements — not an ingested external dataset. Staging lane: not yet vetted through dataset-review. See collection.md for provenance and sources.yaml for the source registry.",
+  "grain": "one row per awarded project (or per publicly published award line)",
+  "primary_key": "id",
+  "scope": {
+    "in_scope": "Routes A (competitive grants) and B (SRF pipeline) — fully. Minnesota, ~2025-2026. Includes the full 2026 Clean Water SRF PPL (Exhibit 4, 333 ranked) and fundable-range IUP with Net SRF loan + subsidy (Exhibit 1, 135 projects), reconciled to published totals. Plus a first energy/buildings slice: Route D (MnCIFA green-bank, 10 closed loans) and program-level aggregates for Route C (EECBG formula) and CERTs seed grants.",
+    "not_yet_in_scope": "Routes E-F (bonding, muni bonds, PACE). Per-project MnCIFA loan amounts (portfolio stats only). Full EECBG per-city allocations and CERTs per-project rows (aggregates only). The ratepayer/tax-credit stack (CIP/ECO utility rebates, IRA elective/direct pay) — mechanisms, in the landscape doc, not enumerable as awards. Per-column SRF subsidy split. Drinking Water SRF. Historical rounds.",
+    "complete_when": "For each in-scope funder, every award line in the target round is present with a source-read amount, and all derived fields are computed by a documented rule rather than hand-assigned."
+  },
+  "field_provenance_legend": {
+    "sourced": "read directly from a primary source document (verifiable against source_url)",
+    "derived": "assigned by the compiler's judgment, NOT stated in the source — treat as lower-trust until a deterministic rule is defined",
+    "derived-by-rule": "computed by an explicit, auditable rule/lookup (not per-row judgment); still not from the award source, but reproducible and correctable in one place",
+    "meta": "bookkeeping about the record itself"
+  },
+  "fields": [
+    {"name": "id", "type": "string", "source": "meta", "notes": "Constructed key: <route>-<funder-slug>-<round>-<seq>."},
+    {"name": "route", "type": "enum(A,B,C,D,E,F)", "source": "derived", "notes": "Rollup index. Derived from funder + instrument via the six-route model in the landscape doc; not stated on the award page."},
+    {"name": "funder", "type": "string", "source": "sourced", "notes": "Administering program, as named by the source."},
+    {"name": "category", "type": "enum(water-quality,drinking-water,flood,wastewater,stormwater,green-infrastructure,redevelopment,energy,buildings)", "source": "derived", "notes": "Assigned from program + project description. energy = solar/geothermal/storage/efficiency; buildings = building-efficiency & efficient housing. Needs a deterministic mapping rule before promotion."},
+    {"name": "region", "type": "enum(MN-metro,MN-greater,MN)", "source": "derived-by-rule", "notes": "MN-metro = recipient in the 7-county Twin Cities metro (Anoka, Carver, Dakota, Hennepin, Ramsey, Scott, Washington) or the Metropolitan Council/MCES; MN-greater = everything else; MN = statewide aggregate. Assigned via the auditable positive-list lookup references/mn-region-lookup.csv (one row per distinct recipient, with county + confidence; straddlers flagged 'review'). Not stated in the award source."},
+    {"name": "instrument", "type": "enum(grant,cost-share-grant,loan-srf,grant+loan,green-bank-loan,block/formula)", "source": "sourced", "notes": "From the program's known instrument type."},
+    {"name": "project_name", "type": "string", "source": "sourced"},
+    {"name": "recipient", "type": "string", "source": "sourced"},
+    {"name": "recipient_type", "type": "enum(city,county,watershed-district,SWCD,conservation-district,other-local-govt)", "source": "sourced", "notes": "Evident from recipient name; light judgment on edge cases."},
+    {"name": "amount_usd", "type": "number|null", "source": "sourced", "notes": "The award/loan amount. For on-IUP rows this is the Net SRF loan (below-market). For on-PPL rows it is null (Exhibit 4 gives estimated cost only). null also where only a round total is public (DNR per-project)."},
+    {"name": "project_total_usd", "type": "number|null", "source": "sourced"},
+    {"name": "cost_share_pct", "type": "number|null", "source": "sourced", "notes": "Program cap (e.g. DNR up to 50%), not necessarily the realized share."},
+    {"name": "fiscal_year", "type": "string", "source": "sourced"},
+    {"name": "award_date", "type": "string (YYYY-MM or YYYY-MM-DD)", "source": "sourced"},
+    {"name": "status", "type": "enum(awarded,funded,recommended,on-PPL,on-IUP,on-IUP-fundable,on-IUP-nonfundable,on-formula)", "source": "sourced", "notes": "Route A: awarded/funded/recommended. Route B pipeline: on-PPL (ranked, Exhibit 4), on-IUP-fundable (fundable range, Exhibit 1), on-IUP-nonfundable (Part C). Route D: funded (closed loan). Route C: on-formula (formula allocation)."},
+    {"name": "verified", "type": "boolean", "source": "meta", "notes": "true = figure read directly from a primary source in this pass (and, for BWSR, cross-checked against published subtotals)."},
+    {"name": "ppl_rank", "type": "number|null", "source": "sourced", "notes": "Route B only. The project's rank on the 2026 Clean Water PPL (priority order). The rank IS the datable funding-order status a concept note targets."},
+    {"name": "priority_points", "type": "number|null", "source": "sourced", "notes": "Route B only. MPCA priority score (Minn. R. 7077) behind the rank."},
+    {"name": "project_ref", "type": "string|null", "source": "sourced", "notes": "Route B only. MPCA project number (2xxxxx), or full project ID (2xxxxx-PSxx) for IUP rows."},
+    {"name": "iup_part", "type": "string|null", "source": "sourced", "notes": "Route B IUP (Exhibit 1) rows only. Fundable-A / Fundable-B = inside the SFY2026 fundable range; Nonfundable-C1/C2/C3 = below cutoff or withdrawn."},
+    {"name": "source_url", "type": "string", "source": "sourced"},
+    {"name": "source_title", "type": "string", "source": "sourced"},
+    {"name": "notes", "type": "string", "source": "meta", "notes": "Free text: location context, caveats, cross-references."}
+  ],
+  "promotion_path": "compile -> dataset-review (lock scope, replace derived fields with deterministic rules, fill amount gaps from primary sources, complete provenance) -> catalog + pipeline -> modelled.* / CA microservice get_projects()."
+}

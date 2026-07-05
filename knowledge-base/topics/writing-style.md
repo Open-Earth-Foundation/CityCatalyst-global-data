@@ -47,7 +47,7 @@ flowchart TB
 
 *Caption: two ways money reaches a city, applying to a fund or formulating a project that passes the public-investment gate. The gate recommends; it does not pay.*
 
-The fuller version is the route map in `cl-climate-finance.md`, where the same two-subgraph pattern carries the whole dataset landscape.
+The fuller version is the route map in `climate-finance/cl-climate-finance.md`, where the same two-subgraph pattern carries the whole dataset landscape.
 
 ## The References block
 

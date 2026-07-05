@@ -1,0 +1,461 @@
+transition,table,option,dimension,indicator,rating,flag,page
+Energy system transition,1,Energy reliability,Economic,Employment and productivity enhancement potential,Medium,,11
+Energy system transition,1,Energy reliability,Economic,Macroeconomic viability,Medium,,11
+Energy system transition,1,Energy reliability,Economic,Microeconomic viability,High,,11
+Energy system transition,1,Energy reliability,Economic,Socioeconomic vulnerability reduction potential,High,,11
+Energy system transition,1,Energy reliability,Environmental/ecological,Adaptive capacity/resilience,High,,13
+Energy system transition,1,Energy reliability,Environmental/ecological,Ecological capacity,,NE,13
+Energy system transition,1,Energy reliability,Geophysical,Hazard risk reduction potential,,NA,13
+Energy system transition,1,Energy reliability,Geophysical,Land use change enhancement potential,,NA,13
+Energy system transition,1,Energy reliability,Geophysical,Physical feasibility,,NA,13
+Energy system transition,1,Energy reliability,Institutional,Institutional capacity and administrative feasibility,Medium,,12
+Energy system transition,1,Energy reliability,Institutional,Legal and regulatory acceptability,Medium,,12
+Energy system transition,1,Energy reliability,Institutional,Political acceptability,High,,12
+Energy system transition,1,Energy reliability,Institutional,Transparency and accountability potential,,NE,12
+Energy system transition,1,Energy reliability,Socio-cultural,Gender equity,,LE,12
+Energy system transition,1,Energy reliability,Socio-cultural,Intergenerational equity,,LE,12
+Energy system transition,1,Energy reliability,Socio-cultural,Social and regional inclusiveness,High,,12
+Energy system transition,1,Energy reliability,Socio-cultural,"Social co-benefits (health, education)",High,,12
+Energy system transition,1,Energy reliability,Socio-cultural,Socio-cultural acceptability,High,,12
+Energy system transition,1,Energy reliability,Technological,Risks mitigation potential,High,,12
+Energy system transition,1,Energy reliability,Technological,Technical resource availability,High,,12
+Energy system transition,1,Resilient power systems,Economic,Employment and productivity enhancement potential,Medium,,11
+Energy system transition,1,Resilient power systems,Economic,Macroeconomic viability,High,,11
+Energy system transition,1,Resilient power systems,Economic,Microeconomic viability,High,,11
+Energy system transition,1,Resilient power systems,Economic,Socioeconomic vulnerability reduction potential,High,,11
+Energy system transition,1,Resilient power systems,Environmental/ecological,Adaptive capacity/resilience,High,,13
+Energy system transition,1,Resilient power systems,Environmental/ecological,Ecological capacity,Medium,,13
+Energy system transition,1,Resilient power systems,Geophysical,Hazard risk reduction potential,High,,13
+Energy system transition,1,Resilient power systems,Geophysical,Land use change enhancement potential,,NA,13
+Energy system transition,1,Resilient power systems,Geophysical,Physical feasibility,,NA,13
+Energy system transition,1,Resilient power systems,Institutional,Institutional capacity and administrative feasibility,Medium,,12
+Energy system transition,1,Resilient power systems,Institutional,Legal and regulatory acceptability,Medium,,12
+Energy system transition,1,Resilient power systems,Institutional,Political acceptability,High,,12
+Energy system transition,1,Resilient power systems,Institutional,Transparency and accountability potential,Medium,,12
+Energy system transition,1,Resilient power systems,Socio-cultural,Gender equity,Medium,,12
+Energy system transition,1,Resilient power systems,Socio-cultural,Intergenerational equity,Medium,,12
+Energy system transition,1,Resilient power systems,Socio-cultural,Social and regional inclusiveness,High,,12
+Energy system transition,1,Resilient power systems,Socio-cultural,"Social co-benefits (health, education)",High,,12
+Energy system transition,1,Resilient power systems,Socio-cultural,Socio-cultural acceptability,High,,12
+Energy system transition,1,Resilient power systems,Technological,Risks mitigation potential,High,,12
+Energy system transition,1,Resilient power systems,Technological,Technical resource availability,High,,12
+Energy system transition,1,Water use efficiency,Economic,Employment and productivity enhancement potential,,NE,11
+Energy system transition,1,Water use efficiency,Economic,Macroeconomic viability,High,,11
+Energy system transition,1,Water use efficiency,Economic,Microeconomic viability,High,,11
+Energy system transition,1,Water use efficiency,Economic,Socioeconomic vulnerability reduction potential,High,,11
+Energy system transition,1,Water use efficiency,Environmental/ecological,Adaptive capacity/resilience,High,,13
+Energy system transition,1,Water use efficiency,Environmental/ecological,Ecological capacity,High,,13
+Energy system transition,1,Water use efficiency,Geophysical,Hazard risk reduction potential,High,,13
+Energy system transition,1,Water use efficiency,Geophysical,Land use change enhancement potential,High,,13
+Energy system transition,1,Water use efficiency,Geophysical,Physical feasibility,Medium,,13
+Energy system transition,1,Water use efficiency,Institutional,Institutional capacity and administrative feasibility,Medium,,12
+Energy system transition,1,Water use efficiency,Institutional,Legal and regulatory acceptability,,LE,12
+Energy system transition,1,Water use efficiency,Institutional,Political acceptability,Medium,,12
+Energy system transition,1,Water use efficiency,Institutional,Transparency and accountability potential,,NE,12
+Energy system transition,1,Water use efficiency,Socio-cultural,Gender equity,,NE,12
+Energy system transition,1,Water use efficiency,Socio-cultural,Intergenerational equity,,NE,12
+Energy system transition,1,Water use efficiency,Socio-cultural,Social and regional inclusiveness,,NE,12
+Energy system transition,1,Water use efficiency,Socio-cultural,"Social co-benefits (health, education)",,LE,12
+Energy system transition,1,Water use efficiency,Socio-cultural,Socio-cultural acceptability,,LE,12
+Energy system transition,1,Water use efficiency,Technological,Risks mitigation potential,High,,12
+Energy system transition,1,Water use efficiency,Technological,Technical resource availability,High,,12
+Land and ecosystem transition,2,Coastal defence and hardening,Economic,Employment and productivity enhancement potential,,NE,14
+Land and ecosystem transition,2,Coastal defence and hardening,Economic,Macroeconomic viability,Low,,14
+Land and ecosystem transition,2,Coastal defence and hardening,Economic,Microeconomic viability,Medium,,13
+Land and ecosystem transition,2,Coastal defence and hardening,Economic,Socioeconomic vulnerability reduction potential,Medium,,14
+Land and ecosystem transition,2,Coastal defence and hardening,Environmental/ecological,Adaptive capacity/resilience,Low,,16
+Land and ecosystem transition,2,Coastal defence and hardening,Environmental/ecological,Ecological capacity,Medium,,16
+Land and ecosystem transition,2,Coastal defence and hardening,Geophysical,Hazard risk reduction potential,Medium,,17
+Land and ecosystem transition,2,Coastal defence and hardening,Geophysical,Land use change enhancement potential,,LE,17
+Land and ecosystem transition,2,Coastal defence and hardening,Geophysical,Physical feasibility,Low,,16
+Land and ecosystem transition,2,Coastal defence and hardening,Institutional,Institutional capacity and administrative feasibility,Medium,,15
+Land and ecosystem transition,2,Coastal defence and hardening,Institutional,Legal and regulatory acceptability,,LE,15
+Land and ecosystem transition,2,Coastal defence and hardening,Institutional,Political acceptability,Medium,,15
+Land and ecosystem transition,2,Coastal defence and hardening,Institutional,Transparency and accountability potential,,LE,15
+Land and ecosystem transition,2,Coastal defence and hardening,Socio-cultural,Gender equity,,LE,16
+Land and ecosystem transition,2,Coastal defence and hardening,Socio-cultural,Intergenerational equity,,LE,16
+Land and ecosystem transition,2,Coastal defence and hardening,Socio-cultural,Social and regional inclusiveness,Medium,,16
+Land and ecosystem transition,2,Coastal defence and hardening,Socio-cultural,"Social co-benefits (health, education)",Medium,,15
+Land and ecosystem transition,2,Coastal defence and hardening,Socio-cultural,Socio-cultural acceptability,Medium,,15
+Land and ecosystem transition,2,Coastal defence and hardening,Technological,Risks mitigation potential,Medium,,14
+Land and ecosystem transition,2,Coastal defence and hardening,Technological,Technical resource availability,Medium,,14
+Land and ecosystem transition,2,Integrated coastal zone management,Economic,Employment and productivity enhancement potential,,LE,14
+Land and ecosystem transition,2,Integrated coastal zone management,Economic,Macroeconomic viability,Low,,14
+Land and ecosystem transition,2,Integrated coastal zone management,Economic,Microeconomic viability,Medium,,13
+Land and ecosystem transition,2,Integrated coastal zone management,Economic,Socioeconomic vulnerability reduction potential,Medium,,14
+Land and ecosystem transition,2,Integrated coastal zone management,Environmental/ecological,Adaptive capacity/resilience,High,,16
+Land and ecosystem transition,2,Integrated coastal zone management,Environmental/ecological,Ecological capacity,High,,16
+Land and ecosystem transition,2,Integrated coastal zone management,Geophysical,Hazard risk reduction potential,High,,17
+Land and ecosystem transition,2,Integrated coastal zone management,Geophysical,Land use change enhancement potential,High,,17
+Land and ecosystem transition,2,Integrated coastal zone management,Geophysical,Physical feasibility,Low,,16
+Land and ecosystem transition,2,Integrated coastal zone management,Institutional,Institutional capacity and administrative feasibility,Low,,15
+Land and ecosystem transition,2,Integrated coastal zone management,Institutional,Legal and regulatory acceptability,Low,,15
+Land and ecosystem transition,2,Integrated coastal zone management,Institutional,Political acceptability,Low,,15
+Land and ecosystem transition,2,Integrated coastal zone management,Institutional,Transparency and accountability potential,Medium,,15
+Land and ecosystem transition,2,Integrated coastal zone management,Socio-cultural,Gender equity,Low,,16
+Land and ecosystem transition,2,Integrated coastal zone management,Socio-cultural,Intergenerational equity,Medium,,16
+Land and ecosystem transition,2,Integrated coastal zone management,Socio-cultural,Social and regional inclusiveness,Low,,16
+Land and ecosystem transition,2,Integrated coastal zone management,Socio-cultural,"Social co-benefits (health, education)",High,,15
+Land and ecosystem transition,2,Integrated coastal zone management,Socio-cultural,Socio-cultural acceptability,Medium,,15
+Land and ecosystem transition,2,Integrated coastal zone management,Technological,Risks mitigation potential,Low,,14
+Land and ecosystem transition,2,Integrated coastal zone management,Technological,Technical resource availability,,LE,14
+Land and ecosystem transition,2,Sustainable aquaculture and fisheries,Economic,Employment and productivity enhancement potential,Medium,,14
+Land and ecosystem transition,2,Sustainable aquaculture and fisheries,Economic,Macroeconomic viability,High,,14
+Land and ecosystem transition,2,Sustainable aquaculture and fisheries,Economic,Microeconomic viability,High,,13
+Land and ecosystem transition,2,Sustainable aquaculture and fisheries,Economic,Socioeconomic vulnerability reduction potential,Low,,14
+Land and ecosystem transition,2,Sustainable aquaculture and fisheries,Environmental/ecological,Adaptive capacity/resilience,High,,16
+Land and ecosystem transition,2,Sustainable aquaculture and fisheries,Environmental/ecological,Ecological capacity,High,,16
+Land and ecosystem transition,2,Sustainable aquaculture and fisheries,Geophysical,Hazard risk reduction potential,High,,17
+Land and ecosystem transition,2,Sustainable aquaculture and fisheries,Geophysical,Land use change enhancement potential,Medium,,17
+Land and ecosystem transition,2,Sustainable aquaculture and fisheries,Geophysical,Physical feasibility,Medium,,16
+Land and ecosystem transition,2,Sustainable aquaculture and fisheries,Institutional,Institutional capacity and administrative feasibility,Low,,15
+Land and ecosystem transition,2,Sustainable aquaculture and fisheries,Institutional,Legal and regulatory acceptability,Low,,15
+Land and ecosystem transition,2,Sustainable aquaculture and fisheries,Institutional,Political acceptability,Medium,,15
+Land and ecosystem transition,2,Sustainable aquaculture and fisheries,Institutional,Transparency and accountability potential,Medium,,15
+Land and ecosystem transition,2,Sustainable aquaculture and fisheries,Socio-cultural,Gender equity,High,,16
+Land and ecosystem transition,2,Sustainable aquaculture and fisheries,Socio-cultural,Intergenerational equity,,NE,16
+Land and ecosystem transition,2,Sustainable aquaculture and fisheries,Socio-cultural,Social and regional inclusiveness,High,,16
+Land and ecosystem transition,2,Sustainable aquaculture and fisheries,Socio-cultural,"Social co-benefits (health, education)",Medium,,15
+Land and ecosystem transition,2,Sustainable aquaculture and fisheries,Socio-cultural,Socio-cultural acceptability,Low,,15
+Land and ecosystem transition,2,Sustainable aquaculture and fisheries,Technological,Risks mitigation potential,Medium,,14
+Land and ecosystem transition,2,Sustainable aquaculture and fisheries,Technological,Technical resource availability,Low,,14
+Land and ecosystem transition,3,Agro-forestry,Economic,Employment and productivity enhancement potential,Low,,18
+Land and ecosystem transition,3,Agro-forestry,Economic,Macroeconomic viability,Medium,,17
+Land and ecosystem transition,3,Agro-forestry,Economic,Microeconomic viability,Medium,,17
+Land and ecosystem transition,3,Agro-forestry,Economic,Socioeconomic vulnerability reduction potential,Medium,,17
+Land and ecosystem transition,3,Agro-forestry,Environmental/ecological,Adaptive capacity/resilience,High,,19
+Land and ecosystem transition,3,Agro-forestry,Environmental/ecological,Ecological capacity,High,,19
+Land and ecosystem transition,3,Agro-forestry,Geophysical,Hazard risk reduction potential,Medium,,19
+Land and ecosystem transition,3,Agro-forestry,Geophysical,Land use change enhancement potential,Low,,19
+Land and ecosystem transition,3,Agro-forestry,Geophysical,Physical feasibility,High,,19
+Land and ecosystem transition,3,Agro-forestry,Institutional,Institutional capacity and administrative feasibility,Medium,,18
+Land and ecosystem transition,3,Agro-forestry,Institutional,Legal and regulatory acceptability,Medium,,18
+Land and ecosystem transition,3,Agro-forestry,Institutional,Political acceptability,Medium,,18
+Land and ecosystem transition,3,Agro-forestry,Institutional,Transparency and accountability potential,Medium,,18
+Land and ecosystem transition,3,Agro-forestry,Socio-cultural,Gender equity,,NA,19
+Land and ecosystem transition,3,Agro-forestry,Socio-cultural,Intergenerational equity,,NE,19
+Land and ecosystem transition,3,Agro-forestry,Socio-cultural,Social and regional inclusiveness,Medium,,18
+Land and ecosystem transition,3,Agro-forestry,Socio-cultural,"Social co-benefits (health, education)",Medium,,18
+Land and ecosystem transition,3,Agro-forestry,Socio-cultural,Socio-cultural acceptability,Low,,18
+Land and ecosystem transition,3,Agro-forestry,Technological,Risks mitigation potential,High,,18
+Land and ecosystem transition,3,Agro-forestry,Technological,Technical resource availability,High,,18
+Land and ecosystem transition,3,Biodiversity management and ecosystem connectivity,Economic,Employment and productivity enhancement potential,High,,18
+Land and ecosystem transition,3,Biodiversity management and ecosystem connectivity,Economic,Macroeconomic viability,,LE,17
+Land and ecosystem transition,3,Biodiversity management and ecosystem connectivity,Economic,Microeconomic viability,Low,,17
+Land and ecosystem transition,3,Biodiversity management and ecosystem connectivity,Economic,Socioeconomic vulnerability reduction potential,High,,17
+Land and ecosystem transition,3,Biodiversity management and ecosystem connectivity,Environmental/ecological,Adaptive capacity/resilience,High,,19
+Land and ecosystem transition,3,Biodiversity management and ecosystem connectivity,Environmental/ecological,Ecological capacity,High,,19
+Land and ecosystem transition,3,Biodiversity management and ecosystem connectivity,Geophysical,Hazard risk reduction potential,High,,19
+Land and ecosystem transition,3,Biodiversity management and ecosystem connectivity,Geophysical,Land use change enhancement potential,High,,19
+Land and ecosystem transition,3,Biodiversity management and ecosystem connectivity,Geophysical,Physical feasibility,,LE,19
+Land and ecosystem transition,3,Biodiversity management and ecosystem connectivity,Institutional,Institutional capacity and administrative feasibility,Low,,18
+Land and ecosystem transition,3,Biodiversity management and ecosystem connectivity,Institutional,Legal and regulatory acceptability,Medium,,18
+Land and ecosystem transition,3,Biodiversity management and ecosystem connectivity,Institutional,Political acceptability,Medium,,18
+Land and ecosystem transition,3,Biodiversity management and ecosystem connectivity,Institutional,Transparency and accountability potential,Medium,,18
+Land and ecosystem transition,3,Biodiversity management and ecosystem connectivity,Socio-cultural,Gender equity,,LE,19
+Land and ecosystem transition,3,Biodiversity management and ecosystem connectivity,Socio-cultural,Intergenerational equity,,NE,19
+Land and ecosystem transition,3,Biodiversity management and ecosystem connectivity,Socio-cultural,Social and regional inclusiveness,Medium,,18
+Land and ecosystem transition,3,Biodiversity management and ecosystem connectivity,Socio-cultural,"Social co-benefits (health, education)",High,,18
+Land and ecosystem transition,3,Biodiversity management and ecosystem connectivity,Socio-cultural,Socio-cultural acceptability,High,,18
+Land and ecosystem transition,3,Biodiversity management and ecosystem connectivity,Technological,Risks mitigation potential,High,,18
+Land and ecosystem transition,3,Biodiversity management and ecosystem connectivity,Technological,Technical resource availability,High,,18
+Land and ecosystem transition,3,Forest-based adaptation,Economic,Employment and productivity enhancement potential,High,,18
+Land and ecosystem transition,3,Forest-based adaptation,Economic,Macroeconomic viability,Medium,,17
+Land and ecosystem transition,3,Forest-based adaptation,Economic,Microeconomic viability,Low,,17
+Land and ecosystem transition,3,Forest-based adaptation,Economic,Socioeconomic vulnerability reduction potential,Medium,,17
+Land and ecosystem transition,3,Forest-based adaptation,Environmental/ecological,Adaptive capacity/resilience,Medium,,19
+Land and ecosystem transition,3,Forest-based adaptation,Environmental/ecological,Ecological capacity,Medium,,19
+Land and ecosystem transition,3,Forest-based adaptation,Geophysical,Hazard risk reduction potential,High,,19
+Land and ecosystem transition,3,Forest-based adaptation,Geophysical,Land use change enhancement potential,High,,19
+Land and ecosystem transition,3,Forest-based adaptation,Geophysical,Physical feasibility,Medium,,19
+Land and ecosystem transition,3,Forest-based adaptation,Institutional,Institutional capacity and administrative feasibility,Medium,,18
+Land and ecosystem transition,3,Forest-based adaptation,Institutional,Legal and regulatory acceptability,High,,18
+Land and ecosystem transition,3,Forest-based adaptation,Institutional,Political acceptability,Medium,,18
+Land and ecosystem transition,3,Forest-based adaptation,Institutional,Transparency and accountability potential,,NE,18
+Land and ecosystem transition,3,Forest-based adaptation,Socio-cultural,Gender equity,High,,19
+Land and ecosystem transition,3,Forest-based adaptation,Socio-cultural,Intergenerational equity,High,,19
+Land and ecosystem transition,3,Forest-based adaptation,Socio-cultural,Social and regional inclusiveness,High,,18
+Land and ecosystem transition,3,Forest-based adaptation,Socio-cultural,"Social co-benefits (health, education)",High,,18
+Land and ecosystem transition,3,Forest-based adaptation,Socio-cultural,Socio-cultural acceptability,Medium,,18
+Land and ecosystem transition,3,Forest-based adaptation,Technological,Risks mitigation potential,High,,18
+Land and ecosystem transition,3,Forest-based adaptation,Technological,Technical resource availability,Medium,,18
+Land and ecosystem transition,4,Efficient livestock systems,Economic,Employment and productivity enhancement potential,Medium,,21
+Land and ecosystem transition,4,Efficient livestock systems,Economic,Macroeconomic viability,Medium,,20
+Land and ecosystem transition,4,Efficient livestock systems,Economic,Microeconomic viability,Medium,,20
+Land and ecosystem transition,4,Efficient livestock systems,Economic,Socioeconomic vulnerability reduction potential,Medium,,20
+Land and ecosystem transition,4,Efficient livestock systems,Environmental/ecological,Adaptive capacity/resilience,High,,23
+Land and ecosystem transition,4,Efficient livestock systems,Environmental/ecological,Ecological capacity,High,,23
+Land and ecosystem transition,4,Efficient livestock systems,Geophysical,Hazard risk reduction potential,,NA,24
+Land and ecosystem transition,4,Efficient livestock systems,Geophysical,Land use change enhancement potential,High,,24
+Land and ecosystem transition,4,Efficient livestock systems,Geophysical,Physical feasibility,Medium,,23
+Land and ecosystem transition,4,Efficient livestock systems,Institutional,Institutional capacity and administrative feasibility,Medium,,21
+Land and ecosystem transition,4,Efficient livestock systems,Institutional,Legal and regulatory acceptability,Low,,21
+Land and ecosystem transition,4,Efficient livestock systems,Institutional,Political acceptability,Low,,21
+Land and ecosystem transition,4,Efficient livestock systems,Institutional,Transparency and accountability potential,Low,,21
+Land and ecosystem transition,4,Efficient livestock systems,Socio-cultural,Gender equity,Low,,22
+Land and ecosystem transition,4,Efficient livestock systems,Socio-cultural,Intergenerational equity,,NE,23
+Land and ecosystem transition,4,Efficient livestock systems,Socio-cultural,Social and regional inclusiveness,Medium,,22
+Land and ecosystem transition,4,Efficient livestock systems,Socio-cultural,"Social co-benefits (health, education)",Medium,,22
+Land and ecosystem transition,4,Efficient livestock systems,Socio-cultural,Socio-cultural acceptability,Medium,,22
+Land and ecosystem transition,4,Efficient livestock systems,Technological,Risks mitigation potential,Medium,,21
+Land and ecosystem transition,4,Efficient livestock systems,Technological,Technical resource availability,Medium,,21
+Land and ecosystem transition,4,Improved cropland management,Economic,Employment and productivity enhancement potential,Medium,,21
+Land and ecosystem transition,4,Improved cropland management,Economic,Macroeconomic viability,High,,20
+Land and ecosystem transition,4,Improved cropland management,Economic,Microeconomic viability,High,,20
+Land and ecosystem transition,4,Improved cropland management,Economic,Socioeconomic vulnerability reduction potential,High,,20
+Land and ecosystem transition,4,Improved cropland management,Environmental/ecological,Adaptive capacity/resilience,High,,23
+Land and ecosystem transition,4,Improved cropland management,Environmental/ecological,Ecological capacity,High,,23
+Land and ecosystem transition,4,Improved cropland management,Geophysical,Hazard risk reduction potential,,NA,24
+Land and ecosystem transition,4,Improved cropland management,Geophysical,Land use change enhancement potential,Medium,,24
+Land and ecosystem transition,4,Improved cropland management,Geophysical,Physical feasibility,Medium,,23
+Land and ecosystem transition,4,Improved cropland management,Institutional,Institutional capacity and administrative feasibility,Medium,,21
+Land and ecosystem transition,4,Improved cropland management,Institutional,Legal and regulatory acceptability,,LE,21
+Land and ecosystem transition,4,Improved cropland management,Institutional,Political acceptability,Medium,,21
+Land and ecosystem transition,4,Improved cropland management,Institutional,Transparency and accountability potential,,LE,21
+Land and ecosystem transition,4,Improved cropland management,Socio-cultural,Gender equity,Medium,,22
+Land and ecosystem transition,4,Improved cropland management,Socio-cultural,Intergenerational equity,,NA,23
+Land and ecosystem transition,4,Improved cropland management,Socio-cultural,Social and regional inclusiveness,Medium,,22
+Land and ecosystem transition,4,Improved cropland management,Socio-cultural,"Social co-benefits (health, education)",High,,22
+Land and ecosystem transition,4,Improved cropland management,Socio-cultural,Socio-cultural acceptability,Medium,,22
+Land and ecosystem transition,4,Improved cropland management,Technological,Risks mitigation potential,High,,21
+Land and ecosystem transition,4,Improved cropland management,Technological,Technical resource availability,Medium,,21
+Land and ecosystem transition,4,Livelihood diversification,Economic,Employment and productivity enhancement potential,High,,21
+Land and ecosystem transition,4,Livelihood diversification,Economic,Macroeconomic viability,Medium,,20
+Land and ecosystem transition,4,Livelihood diversification,Economic,Microeconomic viability,High,,20
+Land and ecosystem transition,4,Livelihood diversification,Economic,Socioeconomic vulnerability reduction potential,Medium,,20
+Land and ecosystem transition,4,Livelihood diversification,Environmental/ecological,Adaptive capacity/resilience,High,,23
+Land and ecosystem transition,4,Livelihood diversification,Environmental/ecological,Ecological capacity,Low,,23
+Land and ecosystem transition,4,Livelihood diversification,Geophysical,Hazard risk reduction potential,Low,,24
+Land and ecosystem transition,4,Livelihood diversification,Geophysical,Land use change enhancement potential,Medium,,24
+Land and ecosystem transition,4,Livelihood diversification,Geophysical,Physical feasibility,Low,,23
+Land and ecosystem transition,4,Livelihood diversification,Institutional,Institutional capacity and administrative feasibility,Medium,,21
+Land and ecosystem transition,4,Livelihood diversification,Institutional,Legal and regulatory acceptability,Low,,21
+Land and ecosystem transition,4,Livelihood diversification,Institutional,Political acceptability,Low,,21
+Land and ecosystem transition,4,Livelihood diversification,Institutional,Transparency and accountability potential,Low,,21
+Land and ecosystem transition,4,Livelihood diversification,Socio-cultural,Gender equity,Medium,,22
+Land and ecosystem transition,4,Livelihood diversification,Socio-cultural,Intergenerational equity,Medium,,23
+Land and ecosystem transition,4,Livelihood diversification,Socio-cultural,Social and regional inclusiveness,High,,22
+Land and ecosystem transition,4,Livelihood diversification,Socio-cultural,"Social co-benefits (health, education)",High,,22
+Land and ecosystem transition,4,Livelihood diversification,Socio-cultural,Socio-cultural acceptability,Medium,,22
+Land and ecosystem transition,4,Livelihood diversification,Technological,Risks mitigation potential,Medium,,21
+Land and ecosystem transition,4,Livelihood diversification,Technological,Technical resource availability,Medium,,21
+Land and ecosystem transition,4,Water use efficiency and water resource management,Economic,Employment and productivity enhancement potential,Medium,,21
+Land and ecosystem transition,4,Water use efficiency and water resource management,Economic,Macroeconomic viability,Low,,20
+Land and ecosystem transition,4,Water use efficiency and water resource management,Economic,Microeconomic viability,Medium,,20
+Land and ecosystem transition,4,Water use efficiency and water resource management,Economic,Socioeconomic vulnerability reduction potential,Medium,,20
+Land and ecosystem transition,4,Water use efficiency and water resource management,Environmental/ecological,Adaptive capacity/resilience,Medium,,23
+Land and ecosystem transition,4,Water use efficiency and water resource management,Environmental/ecological,Ecological capacity,Medium,,23
+Land and ecosystem transition,4,Water use efficiency and water resource management,Geophysical,Hazard risk reduction potential,,LE,24
+Land and ecosystem transition,4,Water use efficiency and water resource management,Geophysical,Land use change enhancement potential,Medium,,24
+Land and ecosystem transition,4,Water use efficiency and water resource management,Geophysical,Physical feasibility,Medium,,23
+Land and ecosystem transition,4,Water use efficiency and water resource management,Institutional,Institutional capacity and administrative feasibility,Medium,,21
+Land and ecosystem transition,4,Water use efficiency and water resource management,Institutional,Legal and regulatory acceptability,,NE,21
+Land and ecosystem transition,4,Water use efficiency and water resource management,Institutional,Political acceptability,Medium,,21
+Land and ecosystem transition,4,Water use efficiency and water resource management,Institutional,Transparency and accountability potential,Medium,,21
+Land and ecosystem transition,4,Water use efficiency and water resource management,Socio-cultural,Gender equity,Low,,22
+Land and ecosystem transition,4,Water use efficiency and water resource management,Socio-cultural,Intergenerational equity,,LE,23
+Land and ecosystem transition,4,Water use efficiency and water resource management,Socio-cultural,Social and regional inclusiveness,Medium,,22
+Land and ecosystem transition,4,Water use efficiency and water resource management,Socio-cultural,"Social co-benefits (health, education)",Medium,,22
+Land and ecosystem transition,4,Water use efficiency and water resource management,Socio-cultural,Socio-cultural acceptability,Medium,,22
+Land and ecosystem transition,4,Water use efficiency and water resource management,Technological,Risks mitigation potential,Medium,,21
+Land and ecosystem transition,4,Water use efficiency and water resource management,Technological,Technical resource availability,High,,21
+Urban and infrastructure transition,5,Green infrastructure and ecosystem services,Economic,Employment and productivity enhancement potential,,NE,24
+Urban and infrastructure transition,5,Green infrastructure and ecosystem services,Economic,Macroeconomic viability,,LE,24
+Urban and infrastructure transition,5,Green infrastructure and ecosystem services,Economic,Microeconomic viability,Medium,,24
+Urban and infrastructure transition,5,Green infrastructure and ecosystem services,Economic,Socioeconomic vulnerability reduction potential,High,,24
+Urban and infrastructure transition,5,Green infrastructure and ecosystem services,Environmental/ecological,Adaptive capacity/resilience,High,,25
+Urban and infrastructure transition,5,Green infrastructure and ecosystem services,Environmental/ecological,Ecological capacity,Medium,,25
+Urban and infrastructure transition,5,Green infrastructure and ecosystem services,Geophysical,Hazard risk reduction potential,High,,25
+Urban and infrastructure transition,5,Green infrastructure and ecosystem services,Geophysical,Land use change enhancement potential,Medium,,25
+Urban and infrastructure transition,5,Green infrastructure and ecosystem services,Geophysical,Physical feasibility,Medium,,25
+Urban and infrastructure transition,5,Green infrastructure and ecosystem services,Institutional,Institutional capacity and administrative feasibility,Low,,25
+Urban and infrastructure transition,5,Green infrastructure and ecosystem services,Institutional,Legal and regulatory acceptability,Low,,25
+Urban and infrastructure transition,5,Green infrastructure and ecosystem services,Institutional,Political acceptability,Low,,25
+Urban and infrastructure transition,5,Green infrastructure and ecosystem services,Institutional,Transparency and accountability potential,,LE,25
+Urban and infrastructure transition,5,Green infrastructure and ecosystem services,Socio-cultural,Gender equity,High,,25
+Urban and infrastructure transition,5,Green infrastructure and ecosystem services,Socio-cultural,Intergenerational equity,High,,25
+Urban and infrastructure transition,5,Green infrastructure and ecosystem services,Socio-cultural,Social and regional inclusiveness,Medium,,25
+Urban and infrastructure transition,5,Green infrastructure and ecosystem services,Socio-cultural,"Social co-benefits (health, education)",High,,25
+Urban and infrastructure transition,5,Green infrastructure and ecosystem services,Socio-cultural,Socio-cultural acceptability,Medium,,25
+Urban and infrastructure transition,5,Green infrastructure and ecosystem services,Technological,Risks mitigation potential,High,,25
+Urban and infrastructure transition,5,Green infrastructure and ecosystem services,Technological,Technical resource availability,High,,25
+Urban and infrastructure transition,5,Sustainable land use and urban planning,Economic,Employment and productivity enhancement potential,High,,24
+Urban and infrastructure transition,5,Sustainable land use and urban planning,Economic,Macroeconomic viability,Medium,,24
+Urban and infrastructure transition,5,Sustainable land use and urban planning,Economic,Microeconomic viability,Medium,,24
+Urban and infrastructure transition,5,Sustainable land use and urban planning,Economic,Socioeconomic vulnerability reduction potential,Medium,,24
+Urban and infrastructure transition,5,Sustainable land use and urban planning,Environmental/ecological,Adaptive capacity/resilience,High,,25
+Urban and infrastructure transition,5,Sustainable land use and urban planning,Environmental/ecological,Ecological capacity,High,,25
+Urban and infrastructure transition,5,Sustainable land use and urban planning,Geophysical,Hazard risk reduction potential,High,,25
+Urban and infrastructure transition,5,Sustainable land use and urban planning,Geophysical,Land use change enhancement potential,High,,25
+Urban and infrastructure transition,5,Sustainable land use and urban planning,Geophysical,Physical feasibility,High,,25
+Urban and infrastructure transition,5,Sustainable land use and urban planning,Institutional,Institutional capacity and administrative feasibility,Medium,,25
+Urban and infrastructure transition,5,Sustainable land use and urban planning,Institutional,Legal and regulatory acceptability,Medium,,25
+Urban and infrastructure transition,5,Sustainable land use and urban planning,Institutional,Political acceptability,Low,,25
+Urban and infrastructure transition,5,Sustainable land use and urban planning,Institutional,Transparency and accountability potential,Medium,,25
+Urban and infrastructure transition,5,Sustainable land use and urban planning,Socio-cultural,Gender equity,,NE,25
+Urban and infrastructure transition,5,Sustainable land use and urban planning,Socio-cultural,Intergenerational equity,Medium,,25
+Urban and infrastructure transition,5,Sustainable land use and urban planning,Socio-cultural,Social and regional inclusiveness,Low,,25
+Urban and infrastructure transition,5,Sustainable land use and urban planning,Socio-cultural,"Social co-benefits (health, education)",High,,25
+Urban and infrastructure transition,5,Sustainable land use and urban planning,Socio-cultural,Socio-cultural acceptability,Medium,,25
+Urban and infrastructure transition,5,Sustainable land use and urban planning,Technological,Risks mitigation potential,High,,25
+Urban and infrastructure transition,5,Sustainable land use and urban planning,Technological,Technical resource availability,Medium,,25
+Urban and infrastructure transition,5,Sustainable water management,Economic,Employment and productivity enhancement potential,,NE,24
+Urban and infrastructure transition,5,Sustainable water management,Economic,Macroeconomic viability,,NE,24
+Urban and infrastructure transition,5,Sustainable water management,Economic,Microeconomic viability,Low,,24
+Urban and infrastructure transition,5,Sustainable water management,Economic,Socioeconomic vulnerability reduction potential,High,,24
+Urban and infrastructure transition,5,Sustainable water management,Environmental/ecological,Adaptive capacity/resilience,High,,25
+Urban and infrastructure transition,5,Sustainable water management,Environmental/ecological,Ecological capacity,Medium,,25
+Urban and infrastructure transition,5,Sustainable water management,Geophysical,Hazard risk reduction potential,High,,25
+Urban and infrastructure transition,5,Sustainable water management,Geophysical,Land use change enhancement potential,High,,25
+Urban and infrastructure transition,5,Sustainable water management,Geophysical,Physical feasibility,Low,,25
+Urban and infrastructure transition,5,Sustainable water management,Institutional,Institutional capacity and administrative feasibility,Low,,25
+Urban and infrastructure transition,5,Sustainable water management,Institutional,Legal and regulatory acceptability,Low,,25
+Urban and infrastructure transition,5,Sustainable water management,Institutional,Political acceptability,Low,,25
+Urban and infrastructure transition,5,Sustainable water management,Institutional,Transparency and accountability potential,,NE,25
+Urban and infrastructure transition,5,Sustainable water management,Socio-cultural,Gender equity,,NE,25
+Urban and infrastructure transition,5,Sustainable water management,Socio-cultural,Intergenerational equity,High,,25
+Urban and infrastructure transition,5,Sustainable water management,Socio-cultural,Social and regional inclusiveness,Medium,,25
+Urban and infrastructure transition,5,Sustainable water management,Socio-cultural,"Social co-benefits (health, education)",High,,25
+Urban and infrastructure transition,5,Sustainable water management,Socio-cultural,Socio-cultural acceptability,Medium,,25
+Urban and infrastructure transition,5,Sustainable water management,Technological,Risks mitigation potential,High,,25
+Urban and infrastructure transition,5,Sustainable water management,Technological,Technical resource availability,High,,25
+Overarching,6,Climate services including EWS,Economic,Employment and productivity enhancement potential,Medium,,26
+Overarching,6,Climate services including EWS,Economic,Macroeconomic viability,,LE,26
+Overarching,6,Climate services including EWS,Economic,Microeconomic viability,Medium,,26
+Overarching,6,Climate services including EWS,Economic,Socioeconomic vulnerability reduction potential,Medium,,26
+Overarching,6,Climate services including EWS,Environmental/ecological,Adaptive capacity/resilience,High,,27
+Overarching,6,Climate services including EWS,Environmental/ecological,Ecological capacity,,NA,27
+Overarching,6,Climate services including EWS,Geophysical,Hazard risk reduction potential,High,,27
+Overarching,6,Climate services including EWS,Geophysical,Land use change enhancement potential,,NA,27
+Overarching,6,Climate services including EWS,Geophysical,Physical feasibility,Medium,,27
+Overarching,6,Climate services including EWS,Institutional,Institutional capacity and administrative feasibility,Low,,26
+Overarching,6,Climate services including EWS,Institutional,Legal and regulatory acceptability,High,,26
+Overarching,6,Climate services including EWS,Institutional,Political acceptability,Medium,,26
+Overarching,6,Climate services including EWS,Institutional,Transparency and accountability potential,Medium,,27
+Overarching,6,Climate services including EWS,Socio-cultural,Gender equity,Low,,27
+Overarching,6,Climate services including EWS,Socio-cultural,Intergenerational equity,,NE,27
+Overarching,6,Climate services including EWS,Socio-cultural,Social and regional inclusiveness,Medium,,27
+Overarching,6,Climate services including EWS,Socio-cultural,"Social co-benefits (health, education)",Medium,,27
+Overarching,6,Climate services including EWS,Socio-cultural,Socio-cultural acceptability,Medium,,27
+Overarching,6,Climate services including EWS,Technological,Risks mitigation potential,Medium,,26
+Overarching,6,Climate services including EWS,Technological,Technical resource availability,Medium,,26
+Overarching,6,Disaster risk management,Economic,Employment and productivity enhancement potential,Medium,,26
+Overarching,6,Disaster risk management,Economic,Macroeconomic viability,Medium,,26
+Overarching,6,Disaster risk management,Economic,Microeconomic viability,High,,26
+Overarching,6,Disaster risk management,Economic,Socioeconomic vulnerability reduction potential,Medium,,26
+Overarching,6,Disaster risk management,Environmental/ecological,Adaptive capacity/resilience,Medium,,27
+Overarching,6,Disaster risk management,Environmental/ecological,Ecological capacity,Medium,,27
+Overarching,6,Disaster risk management,Geophysical,Hazard risk reduction potential,High,,27
+Overarching,6,Disaster risk management,Geophysical,Land use change enhancement potential,,NA,27
+Overarching,6,Disaster risk management,Geophysical,Physical feasibility,Medium,,27
+Overarching,6,Disaster risk management,Institutional,Institutional capacity and administrative feasibility,Low,,26
+Overarching,6,Disaster risk management,Institutional,Legal and regulatory acceptability,High,,26
+Overarching,6,Disaster risk management,Institutional,Political acceptability,Medium,,26
+Overarching,6,Disaster risk management,Institutional,Transparency and accountability potential,Medium,,27
+Overarching,6,Disaster risk management,Socio-cultural,Gender equity,Medium,,27
+Overarching,6,Disaster risk management,Socio-cultural,Intergenerational equity,Medium,,27
+Overarching,6,Disaster risk management,Socio-cultural,Social and regional inclusiveness,Medium,,27
+Overarching,6,Disaster risk management,Socio-cultural,"Social co-benefits (health, education)",Medium,,27
+Overarching,6,Disaster risk management,Socio-cultural,Socio-cultural acceptability,Medium,,27
+Overarching,6,Disaster risk management,Technological,Risks mitigation potential,High,,26
+Overarching,6,Disaster risk management,Technological,Technical resource availability,Medium,,26
+Overarching,6,Risk spreading and sharing,Economic,Employment and productivity enhancement potential,Medium,,26
+Overarching,6,Risk spreading and sharing,Economic,Macroeconomic viability,Medium,,26
+Overarching,6,Risk spreading and sharing,Economic,Microeconomic viability,High,,26
+Overarching,6,Risk spreading and sharing,Economic,Socioeconomic vulnerability reduction potential,High,,26
+Overarching,6,Risk spreading and sharing,Environmental/ecological,Adaptive capacity/resilience,Medium,,27
+Overarching,6,Risk spreading and sharing,Environmental/ecological,Ecological capacity,,NA,27
+Overarching,6,Risk spreading and sharing,Geophysical,Hazard risk reduction potential,Medium,,27
+Overarching,6,Risk spreading and sharing,Geophysical,Land use change enhancement potential,Medium,,27
+Overarching,6,Risk spreading and sharing,Geophysical,Physical feasibility,,NA,27
+Overarching,6,Risk spreading and sharing,Institutional,Institutional capacity and administrative feasibility,High,,26
+Overarching,6,Risk spreading and sharing,Institutional,Legal and regulatory acceptability,High,,26
+Overarching,6,Risk spreading and sharing,Institutional,Political acceptability,Medium,,26
+Overarching,6,Risk spreading and sharing,Institutional,Transparency and accountability potential,Medium,,27
+Overarching,6,Risk spreading and sharing,Socio-cultural,Gender equity,Low,,27
+Overarching,6,Risk spreading and sharing,Socio-cultural,Intergenerational equity,Medium,,27
+Overarching,6,Risk spreading and sharing,Socio-cultural,Social and regional inclusiveness,Low,,27
+Overarching,6,Risk spreading and sharing,Socio-cultural,"Social co-benefits (health, education)",Medium,,27
+Overarching,6,Risk spreading and sharing,Socio-cultural,Socio-cultural acceptability,Medium,,27
+Overarching,6,Risk spreading and sharing,Technological,Risks mitigation potential,High,,26
+Overarching,6,Risk spreading and sharing,Technological,Technical resource availability,High,,26
+Cross-sectoral,7,Human migration and displacement,Economic,Employment and productivity enhancement potential,Medium,,28
+Cross-sectoral,7,Human migration and displacement,Economic,Macroeconomic viability,High,,28
+Cross-sectoral,7,Human migration and displacement,Economic,Microeconomic viability,Medium,,28
+Cross-sectoral,7,Human migration and displacement,Economic,Socioeconomic vulnerability reduction potential,Medium,,28
+Cross-sectoral,7,Human migration and displacement,Environmental/ecological,Adaptive capacity/resilience,Medium,,31
+Cross-sectoral,7,Human migration and displacement,Environmental/ecological,Ecological capacity,Low,,31
+Cross-sectoral,7,Human migration and displacement,Geophysical,Hazard risk reduction potential,Medium,,32
+Cross-sectoral,7,Human migration and displacement,Geophysical,Land use change enhancement potential,,NA,32
+Cross-sectoral,7,Human migration and displacement,Geophysical,Physical feasibility,Medium,,32
+Cross-sectoral,7,Human migration and displacement,Institutional,Institutional capacity and administrative feasibility,Medium,,30
+Cross-sectoral,7,Human migration and displacement,Institutional,Legal and regulatory acceptability,Medium,,29
+Cross-sectoral,7,Human migration and displacement,Institutional,Political acceptability,Medium,,29
+Cross-sectoral,7,Human migration and displacement,Institutional,Transparency and accountability potential,,LE,30
+Cross-sectoral,7,Human migration and displacement,Socio-cultural,Gender equity,Medium,,31
+Cross-sectoral,7,Human migration and displacement,Socio-cultural,Intergenerational equity,High,,31
+Cross-sectoral,7,Human migration and displacement,Socio-cultural,Social and regional inclusiveness,Medium,,31
+Cross-sectoral,7,Human migration and displacement,Socio-cultural,"Social co-benefits (health, education)",Medium,,30
+Cross-sectoral,7,Human migration and displacement,Socio-cultural,Socio-cultural acceptability,Low,,31
+Cross-sectoral,7,Human migration and displacement,Technological,Risks mitigation potential,Medium,,29
+Cross-sectoral,7,Human migration and displacement,Technological,Technical resource availability,Medium,,29
+Cross-sectoral,7,Planned relocation and resettlement,Economic,Employment and productivity enhancement potential,Medium,,28
+Cross-sectoral,7,Planned relocation and resettlement,Economic,Macroeconomic viability,Low,,28
+Cross-sectoral,7,Planned relocation and resettlement,Economic,Microeconomic viability,Medium,,28
+Cross-sectoral,7,Planned relocation and resettlement,Economic,Socioeconomic vulnerability reduction potential,Medium,,28
+Cross-sectoral,7,Planned relocation and resettlement,Environmental/ecological,Adaptive capacity/resilience,Medium,,31
+Cross-sectoral,7,Planned relocation and resettlement,Environmental/ecological,Ecological capacity,Low,,31
+Cross-sectoral,7,Planned relocation and resettlement,Geophysical,Hazard risk reduction potential,Medium,,32
+Cross-sectoral,7,Planned relocation and resettlement,Geophysical,Land use change enhancement potential,,NA,32
+Cross-sectoral,7,Planned relocation and resettlement,Geophysical,Physical feasibility,Low,,32
+Cross-sectoral,7,Planned relocation and resettlement,Institutional,Institutional capacity and administrative feasibility,Low,,30
+Cross-sectoral,7,Planned relocation and resettlement,Institutional,Legal and regulatory acceptability,Low,,29
+Cross-sectoral,7,Planned relocation and resettlement,Institutional,Political acceptability,Low,,29
+Cross-sectoral,7,Planned relocation and resettlement,Institutional,Transparency and accountability potential,,LE,30
+Cross-sectoral,7,Planned relocation and resettlement,Socio-cultural,Gender equity,Medium,,31
+Cross-sectoral,7,Planned relocation and resettlement,Socio-cultural,Intergenerational equity,Low,,31
+Cross-sectoral,7,Planned relocation and resettlement,Socio-cultural,Social and regional inclusiveness,Medium,,31
+Cross-sectoral,7,Planned relocation and resettlement,Socio-cultural,"Social co-benefits (health, education)",Low,,30
+Cross-sectoral,7,Planned relocation and resettlement,Socio-cultural,Socio-cultural acceptability,Low,,31
+Cross-sectoral,7,Planned relocation and resettlement,Technological,Risks mitigation potential,Medium,,29
+Cross-sectoral,7,Planned relocation and resettlement,Technological,Technical resource availability,Low,,29
+Cross-sectoral,7,Population health and health systems,Economic,Employment and productivity enhancement potential,Medium,,28
+Cross-sectoral,7,Population health and health systems,Economic,Macroeconomic viability,Medium,,28
+Cross-sectoral,7,Population health and health systems,Economic,Microeconomic viability,High,,28
+Cross-sectoral,7,Population health and health systems,Economic,Socioeconomic vulnerability reduction potential,High,,28
+Cross-sectoral,7,Population health and health systems,Environmental/ecological,Adaptive capacity/resilience,High,,31
+Cross-sectoral,7,Population health and health systems,Environmental/ecological,Ecological capacity,,NA,31
+Cross-sectoral,7,Population health and health systems,Geophysical,Hazard risk reduction potential,High,,32
+Cross-sectoral,7,Population health and health systems,Geophysical,Land use change enhancement potential,,NA,32
+Cross-sectoral,7,Population health and health systems,Geophysical,Physical feasibility,,NA,32
+Cross-sectoral,7,Population health and health systems,Institutional,Institutional capacity and administrative feasibility,Low,,30
+Cross-sectoral,7,Population health and health systems,Institutional,Legal and regulatory acceptability,Medium,,29
+Cross-sectoral,7,Population health and health systems,Institutional,Political acceptability,Medium,,29
+Cross-sectoral,7,Population health and health systems,Institutional,Transparency and accountability potential,Low,,30
+Cross-sectoral,7,Population health and health systems,Socio-cultural,Gender equity,Low,,31
+Cross-sectoral,7,Population health and health systems,Socio-cultural,Intergenerational equity,,LE,31
+Cross-sectoral,7,Population health and health systems,Socio-cultural,Social and regional inclusiveness,Medium,,31
+Cross-sectoral,7,Population health and health systems,Socio-cultural,"Social co-benefits (health, education)",High,,30
+Cross-sectoral,7,Population health and health systems,Socio-cultural,Socio-cultural acceptability,Medium,,31
+Cross-sectoral,7,Population health and health systems,Technological,Risks mitigation potential,High,,29
+Cross-sectoral,7,Population health and health systems,Technological,Technical resource availability,Low,,29
+Cross-sectoral,7,Social safety nets,Economic,Employment and productivity enhancement potential,Medium,,28
+Cross-sectoral,7,Social safety nets,Economic,Macroeconomic viability,Medium,,28
+Cross-sectoral,7,Social safety nets,Economic,Microeconomic viability,Medium,,28
+Cross-sectoral,7,Social safety nets,Economic,Socioeconomic vulnerability reduction potential,High,,28
+Cross-sectoral,7,Social safety nets,Environmental/ecological,Adaptive capacity/resilience,High,,31
+Cross-sectoral,7,Social safety nets,Environmental/ecological,Ecological capacity,,NA,31
+Cross-sectoral,7,Social safety nets,Geophysical,Hazard risk reduction potential,High,,32
+Cross-sectoral,7,Social safety nets,Geophysical,Land use change enhancement potential,,NA,32
+Cross-sectoral,7,Social safety nets,Geophysical,Physical feasibility,,NA,32
+Cross-sectoral,7,Social safety nets,Institutional,Institutional capacity and administrative feasibility,Medium,,30
+Cross-sectoral,7,Social safety nets,Institutional,Legal and regulatory acceptability,Medium,,29
+Cross-sectoral,7,Social safety nets,Institutional,Political acceptability,Medium,,29
+Cross-sectoral,7,Social safety nets,Institutional,Transparency and accountability potential,Low,,30
+Cross-sectoral,7,Social safety nets,Socio-cultural,Gender equity,Low,,31
+Cross-sectoral,7,Social safety nets,Socio-cultural,Intergenerational equity,,LE,31
+Cross-sectoral,7,Social safety nets,Socio-cultural,Social and regional inclusiveness,Low,,31
+Cross-sectoral,7,Social safety nets,Socio-cultural,"Social co-benefits (health, education)",High,,30
+Cross-sectoral,7,Social safety nets,Socio-cultural,Socio-cultural acceptability,,LE,31
+Cross-sectoral,7,Social safety nets,Technological,Risks mitigation potential,High,,29
+Cross-sectoral,7,Social safety nets,Technological,Technical resource availability,Medium,,29

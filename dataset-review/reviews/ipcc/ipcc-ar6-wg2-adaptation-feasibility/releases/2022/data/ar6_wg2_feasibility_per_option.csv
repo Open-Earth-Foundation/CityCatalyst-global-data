@@ -1,0 +1,24 @@
+transition,table,option,Economic,Technological,Institutional,Socio-cultural,Environmental/ecological,Geophysical
+Cross-sectoral,7,Human migration and displacement,Medium,Medium,Medium,Medium,Low,Medium
+Cross-sectoral,7,Planned relocation and resettlement,Medium,Low,Low,Low,Low,Low
+Cross-sectoral,7,Population health and health systems,High,High,Low,Medium,High,High
+Cross-sectoral,7,Social safety nets,Medium,High,Medium,Low,High,High
+Energy system transition,1,Energy reliability,High,High,Medium,High,High,
+Energy system transition,1,Resilient power systems,High,High,Medium,High,High,High
+Energy system transition,1,Water use efficiency,High,High,Medium,,High,High
+Land and ecosystem transition,2,Coastal defence and hardening,Medium,Medium,Medium,Medium,Low,Low
+Land and ecosystem transition,2,Integrated coastal zone management,Medium,Low,Low,Low,High,High
+Land and ecosystem transition,2,Sustainable aquaculture and fisheries,High,Low,Low,High,High,Medium
+Land and ecosystem transition,3,Agro-forestry,Medium,High,Medium,Medium,High,High
+Land and ecosystem transition,3,Biodiversity management and ecosystem connectivity,High,High,Medium,High,High,High
+Land and ecosystem transition,3,Forest-based adaptation,Medium,High,Medium,High,Medium,High
+Land and ecosystem transition,4,Efficient livestock systems,Medium,Medium,Low,Medium,High,High
+Land and ecosystem transition,4,Improved cropland management,High,High,Medium,Medium,High,Medium
+Land and ecosystem transition,4,Livelihood diversification,High,Medium,Low,Medium,High,Low
+Land and ecosystem transition,4,Water use efficiency and water resource management,Medium,High,Medium,Medium,Medium,Medium
+Overarching,6,Climate services including EWS,Medium,Medium,Medium,Medium,High,High
+Overarching,6,Disaster risk management,Medium,High,Medium,Medium,Medium,High
+Overarching,6,Risk spreading and sharing,High,High,High,Medium,Medium,Medium
+Urban and infrastructure transition,5,Green infrastructure and ecosystem services,High,High,Low,High,High,Medium
+Urban and infrastructure transition,5,Sustainable land use and urban planning,Medium,High,Medium,Medium,High,High
+Urban and infrastructure transition,5,Sustainable water management,High,High,Low,High,High,High

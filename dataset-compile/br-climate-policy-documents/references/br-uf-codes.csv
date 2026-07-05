@@ -1,0 +1,36 @@
+key,territory_code,region,basis,confidence
+BR,BR,BR,national scope,high
+RO,11,Norte,IBGE UF code,high
+AC,12,Norte,IBGE UF code,high
+AM,13,Norte,IBGE UF code,high
+RR,14,Norte,IBGE UF code,high
+PA,15,Norte,IBGE UF code,high
+AP,16,Norte,IBGE UF code,high
+TO,17,Norte,IBGE UF code,high
+MA,21,Nordeste,IBGE UF code,high
+PI,22,Nordeste,IBGE UF code,high
+CE,23,Nordeste,IBGE UF code,high
+RN,24,Nordeste,IBGE UF code,high
+PB,25,Nordeste,IBGE UF code,high
+PE,26,Nordeste,IBGE UF code,high
+AL,27,Nordeste,IBGE UF code,high
+SE,28,Nordeste,IBGE UF code,high
+BA,29,Nordeste,IBGE UF code,high
+MG,31,Sudeste,IBGE UF code,high
+ES,32,Sudeste,IBGE UF code,high
+RJ,33,Sudeste,IBGE UF code,high
+SP,35,Sudeste,IBGE UF code,high
+PR,41,Sul,IBGE UF code,high
+SC,42,Sul,IBGE UF code,high
+RS,43,Sul,IBGE UF code,high
+MS,50,Centro-Oeste,IBGE UF code,high
+MT,51,Centro-Oeste,IBGE UF code,high
+GO,52,Centro-Oeste,IBGE UF code,high
+DF,53,Centro-Oeste,IBGE UF code,high
+mun:sao-paulo,3550308,Sudeste,IBGE municipality code (SP),high
+mun:rio-de-janeiro,3304557,Sudeste,IBGE municipality code (RJ),high
+mun:salvador,2927408,Nordeste,IBGE municipality code (BA),high
+mun:recife,2611606,Nordeste,IBGE municipality code (PE),high
+mun:curitiba,4106902,Sul,IBGE municipality code (PR),high
+mun:belo-horizonte,3106200,Sudeste,IBGE municipality code (MG),high
+mun:porto-alegre,4314902,Sul,IBGE municipality code (RS),high

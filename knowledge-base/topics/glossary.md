@@ -46,7 +46,7 @@ Simple, shared glossary for terms used across CityCatalyst datasets, models, and
 ### award
 - **Definition:** A proposal selected for funding in a given call; an award is not the same as money disbursed.
 - **Domain:** finance, awards
-- **Why it matters:** Awards data reveals what actually gets funded (revealed fundability), distinct from what funding merely exists (supply). See `topics/data-sources/cl-climate-finance.md`.
+- **Why it matters:** Awards data reveals what actually gets funded (revealed fundability), distinct from what funding merely exists (supply). See `topics/climate-finance/cl-climate-finance.md`.
 - **Also called:** adjudicación, proyecto adjudicado
 - **Example:** "CONAF awarded 806 native-forest projects in the 2025 first call."
 
@@ -91,7 +91,7 @@ Simple, shared glossary for terms used across CityCatalyst datasets, models, and
 ### funder_institution
 - **Definition:** The body whose budget pays for a fund; not necessarily the body that operates the website or delivers the program (that is the provider/implementer).
 - **Domain:** finance, actors
-- **Why it matters:** Citation and licence follow the funder vs provider split (e.g. Min. Energía funds, AgenciaSE delivers). See `topics/data-sources/cl-climate-finance.md`.
+- **Why it matters:** Citation and licence follow the funder vs provider split (e.g. Min. Energía funds, AgenciaSE delivers). See `topics/climate-finance/cl-climate-finance.md`.
 - **Also called:** institución, organismo
 - **Example:** "MMA is the funder_institution behind the FPR; municipalities apply."
 

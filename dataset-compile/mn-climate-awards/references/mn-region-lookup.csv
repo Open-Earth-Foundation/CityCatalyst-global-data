@@ -1,0 +1,320 @@
+place,tier,county_or_basis,confidence
+12 Twin Cities metro projects (see committee report Table 1),MN-metro,Twin Cities metro (TBRA),high
+354 ranked projects statewide,MN,statewide aggregate,high
+ALASD,MN-greater,(not in 7-county metro set),default
+Ada,MN-greater,(not in 7-county metro set),default
+Aitkin,MN-greater,(not in 7-county metro set),default
+Akeley,MN-greater,(not in 7-county metro set),default
+Albert Lea,MN-greater,(not in 7-county metro set),default
+Alden,MN-greater,(not in 7-county metro set),default
+Alexandria,MN-greater,(not in 7-county metro set),default
+Alexandria LASD,MN-greater,(not in 7-county metro set),default
+Alpha,MN-greater,(not in 7-county metro set),default
+Amboy,MN-greater,(not in 7-county metro set),default
+Annandale-Maple Lake-Howard,MN-greater,(not in 7-county metro set),default
+Annandale/Maple Lake/Howard Lake,MN-greater,(not in 7-county metro set),default
+Anoka Conservation District,MN-metro,Anoka,high
+Apple Valley,MN-metro,Dakota,high
+Appleton,MN-greater,(not in 7-county metro set),default
+Ash River SD,MN-greater,(not in 7-county metro set),default
+Ashby,MN-greater,(not in 7-county metro set),default
+Atwater,MN-greater,(not in 7-county metro set),default
+Aurora,MN-greater,(not in 7-county metro set),default
+Austin,MN-greater,(not in 7-county metro set),default
+Bagley,MN-greater,(not in 7-county metro set),default
+Balaton,MN-greater,(not in 7-county metro set),default
+Barnesville,MN-greater,(not in 7-county metro set),default
+Barrett,MN-greater,(not in 7-county metro set),default
+Baudette,MN-greater,(not in 7-county metro set),default
+Baxter,MN-greater,(not in 7-county metro set),default
+Beaver Bay,MN-greater,(not in 7-county metro set),default
+Belle Plaine,MN-metro,Scott,high
+Bellechester,MN-greater,(not in 7-county metro set),default
+Belview,MN-greater,(not in 7-county metro set),default
+Bemidji,MN-greater,(not in 7-county metro set),default
+Benson,MN-greater,(not in 7-county metro set),default
+Bertha,MN-greater,(not in 7-county metro set),default
+Big Lake,MN-greater,(not in 7-county metro set),default
+Blackduck,MN-greater,(not in 7-county metro set),default
+Blooming Prairie,MN-greater,(not in 7-county metro set),default
+Bloomington,MN-metro,Hennepin,high
+Blue Earth,MN-greater,(not in 7-county metro set),default
+Borup,MN-greater,(not in 7-county metro set),default
+Bowlus,MN-greater,(not in 7-county metro set),default
+Braham,MN-greater,(not in 7-county metro set),default
+Brainerd,MN-greater,(not in 7-county metro set),default
+Breezy Point,MN-greater,(not in 7-county metro set),default
+Brewster,MN-greater,(not in 7-county metro set),default
+Browerville,MN-greater,(not in 7-county metro set),default
+Butterfield,MN-greater,(not in 7-county metro set),default
+Calumet,MN-greater,(not in 7-county metro set),default
+Campbell,MN-greater,(not in 7-county metro set),default
+Cannon Falls,MN-greater,(not in 7-county metro set),default
+Canton,MN-greater,(not in 7-county metro set),default
+Capitol Region WD,MN-metro,Ramsey,high
+Carnelian-Marine-St. Croix Watershed District,MN-metro,Washington,high
+Cass County,MN-greater,(not in 7-county metro set),default
+Cass Lake,MN-greater,(not in 7-county metro set),default
+Cedar River Watershed District,MN-greater,(not in 7-county metro set),default
+Chisholm,MN-greater,(not in 7-county metro set),default
+Clara City,MN-greater,(not in 7-county metro set),default
+Clarkfield,MN-greater,(not in 7-county metro set),default
+Clarks Grove,MN-greater,(not in 7-county metro set),default
+Clay County,MN-greater,(not in 7-county metro set),default
+Clitherall,MN-greater,(not in 7-county metro set),default
+Coates,MN-greater,(not in 7-county metro set),default
+Cold Spring,MN-greater,(not in 7-county metro set),default
+Cologne,MN-metro,Carver,high
+Comfrey,MN-greater,(not in 7-county metro set),default
+Cook,MN-greater,(not in 7-county metro set),default
+Coon Creek Watershed District,MN-metro,Anoka,high
+Cosmos,MN-greater,(not in 7-county metro set),default
+Cottonwood,MN-greater,(not in 7-county metro set),default
+Credit River,MN-metro,Scott,high
+Crosby,MN-greater,(not in 7-county metro set),default
+Cyrus,MN-greater,(not in 7-county metro set),default
+Dakota County,MN-metro,Dakota,high
+Danube,MN-greater,(not in 7-county metro set),default
+Darwin,MN-greater,(not in 7-county metro set),default
+Dawson,MN-greater,(not in 7-county metro set),default
+Deerwood,MN-greater,(not in 7-county metro set),default
+Delft SD,MN-greater,(not in 7-county metro set),default
+Dennison,MN-greater,(not in 7-county metro set),default
+Dodge Center,MN-greater,(not in 7-county metro set),default
+Dumont,MN-greater,(not in 7-county metro set),default
+Eagle Bend,MN-greater,(not in 7-county metro set),default
+East Koochiching SSD,MN-greater,(not in 7-county metro set),default
+Easton,MN-greater,(not in 7-county metro set),default
+Eden Valley,MN-greater,(not in 7-county metro set),default
+Edgerton,MN-greater,(not in 7-county metro set),default
+Elbow Lake,MN-greater,(not in 7-county metro set),default
+Elmore,MN-greater,(not in 7-county metro set),default
+Ely,MN-greater,(not in 7-county metro set),default
+Elysian,MN-greater,(not in 7-county metro set),default
+Emmons,MN-greater,(not in 7-county metro set),default
+Erskine,MN-greater,(not in 7-county metro set),default
+Evansville,MN-greater,(not in 7-county metro set),default
+Eveleth,MN-greater,(not in 7-county metro set),default
+Fairmont,MN-greater,(not in 7-county metro set),default
+Fergus Falls,MN-greater,(not in 7-county metro set),default
+Fillmore Soil and Water Conservation District,MN-greater,(not in 7-county metro set),default
+Flensburg,MN-greater,(not in 7-county metro set),default
+Florence Township,MN-greater,(not in 7-county metro set),default
+Foley,MN-greater,(not in 7-county metro set),default
+Fosston,MN-greater,(not in 7-county metro set),default
+Foxhome,MN-greater,(not in 7-county metro set),default
+Frazee,MN-greater,(not in 7-county metro set),default
+Fulda,MN-greater,(not in 7-county metro set),default
+Garvin,MN-greater,(not in 7-county metro set),default
+Georgetown,MN-greater,(not in 7-county metro set),default
+Ghent,MN-greater,(not in 7-county metro set),default
+Gibbon,MN-greater,(not in 7-county metro set),default
+Glacial Lakes SSWD,MN-greater,(not in 7-county metro set),default
+Glyndon,MN-greater,(not in 7-county metro set),default
+Goodhue,MN-greater,(not in 7-county metro set),default
+Granada,MN-greater,(not in 7-county metro set),default
+Grand Marais,MN-greater,(not in 7-county metro set),default
+Grand Meadow,MN-greater,(not in 7-county metro set),default
+Greenfield,MN-metro,Hennepin,med
+Grygla,MN-greater,(not in 7-county metro set),default
+Hanley Falls,MN-greater,(not in 7-county metro set),default
+Hardwick,MN-greater,(not in 7-county metro set),default
+Harmony,MN-greater,(not in 7-county metro set),default
+Henning,MN-greater,(not in 7-county metro set),default
+Hibbing,MN-greater,(not in 7-county metro set),default
+Hills,MN-greater,(not in 7-county metro set),default
+Holdingford,MN-greater,(not in 7-county metro set),default
+Holland,MN-greater,(not in 7-county metro set),default
+Hopkins,MN-metro,Hennepin,high
+Houston,MN-greater,(not in 7-county metro set),default
+Howard Lake,MN-greater,(not in 7-county metro set),default
+Iona,MN-greater,(not in 7-county metro set),default
+Jackson,MN-greater,(not in 7-county metro set),default
+Jordan,MN-metro,Scott,high
+Kabetogama Township,MN-greater,(not in 7-county metro set),default
+Kandiyohi,MN-greater,(not in 7-county metro set),default
+Kandiyohi County,MN-greater,(not in 7-county metro set),default
+Kandiyohi County - Glacial Lakes SSWD,MN-greater,(not in 7-county metro set),default
+Kennedy,MN-greater,(not in 7-county metro set),default
+Kerkhoven,MN-greater,(not in 7-county metro set),default
+Kettle River,MN-greater,(not in 7-county metro set),default
+Kiester,MN-greater,(not in 7-county metro set),default
+Lafayette,MN-greater,(not in 7-county metro set),default
+Lake Crystal,MN-greater,(not in 7-county metro set),default
+Lake Henry,MN-greater,(not in 7-county metro set),default
+Lake Lillian,MN-greater,(not in 7-county metro set),default
+Lake View Township,MN-greater,(not in 7-county metro set),default
+Laketown Township,MN-metro,Carver,high
+Lamberton,MN-greater,(not in 7-county metro set),default
+Lanesboro,MN-greater,(not in 7-county metro set),default
+Le Sueur,MN-greater,(not in 7-county metro set),default
+Lewiston,MN-greater,(not in 7-county metro set),default
+Lewisville,MN-greater,(not in 7-county metro set),default
+Litchfield,MN-greater,(not in 7-county metro set),default
+Little Falls,MN-greater,(not in 7-county metro set),default
+Lone Pine Township,MN-greater,(not in 7-county metro set),default
+Long Lake,MN-metro,Hennepin,high
+Luverne,MN-greater,(not in 7-county metro set),default
+MCES Blue Lake Int. System Improvements,MN-metro,Metropolitan Council (MCES) — 7-county,high
+MCES Blue Lake WWTP Improvements,MN-metro,Metropolitan Council (MCES) — 7-county,high
+MCES Coon Rapids Interceptor,MN-metro,Metropolitan Council (MCES) — 7-county,high
+MCES Crow River,MN-metro,Metropolitan Council (MCES) — 7-county,high
+MCES Empire WWTP Solids Improvements,MN-metro,Metropolitan Council (MCES) — 7-county,high
+MCES Forest Lake Interceptor,MN-metro,Metropolitan Council (MCES) — 7-county,high
+MCES Hopkins System Improvements,MN-metro,Metropolitan Council (MCES) — 7-county,high
+MCES L32A Lift Station,MN-metro,Metropolitan Council (MCES) — 7-county,high
+MCES Lk Minnetonka Int. Improvements,MN-metro,Metropolitan Council (MCES) — 7-county,high
+MCES MWWTP Asset Renewal,MN-metro,Metropolitan Council (MCES) — 7-county,high
+MCES St. Bonifacius LS/FM Rehab,MN-metro,Metropolitan Council (MCES) — 7-county,high
+Madison Lake,MN-greater,(not in 7-county metro set),default
+Mahnomen,MN-greater,(not in 7-county metro set),default
+Mankato,MN-greater,(not in 7-county metro set),default
+Marble,MN-greater,(not in 7-county metro set),default
+Marshall,MN-greater,(not in 7-county metro set),default
+May Township,MN-metro,Washington,high
+Mayer,MN-metro,Carver,high
+Mazeppa,MN-greater,(not in 7-county metro set),default
+McGregor,MN-greater,(not in 7-county metro set),default
+McKinley,MN-greater,(not in 7-county metro set),default
+Medford,MN-greater,(not in 7-county metro set),default
+Menahga,MN-greater,(not in 7-county metro set),default
+Metropolitan Council,MN-metro,Metropolitan Council — 7-county,high
+Middle Snake Tamarac Rivers Watershed District,MN-greater,(not in 7-county metro set),default
+Middle-Snake-Tamarac Rivers Watershed District,MN-greater,(not in 7-county metro set),default
+Millerville,MN-greater,(not in 7-county metro set),default
+Minneapolis,MN-metro,Hennepin,high
+Minnehaha Creek WD,MN-metro,Hennepin,high
+Minneota,MN-greater,(not in 7-county metro set),default
+Montevideo,MN-greater,(not in 7-county metro set),default
+Montgomery,MN-greater,(not in 7-county metro set),default
+Montrose,MN-greater,(not in 7-county metro set),default
+Moorhead,MN-greater,(not in 7-county metro set),default
+Moose Lake,MN-greater,(not in 7-county metro set),default
+Mora,MN-greater,(not in 7-county metro set),default
+Morristown,MN-greater,(not in 7-county metro set),default
+Mower County,MN-greater,(not in 7-county metro set),default
+Murdock,MN-greater,(not in 7-county metro set),default
+Nashwauk,MN-greater,(not in 7-county metro set),default
+Nerstrand,MN-greater,(not in 7-county metro set),default
+New Auburn,MN-greater,(not in 7-county metro set),default
+New Germany,MN-metro,Carver,high
+New Prague,MN-metro,Scott/Le Sueur,review
+New Ulm,MN-greater,(not in 7-county metro set),default
+New York Mills,MN-greater,(not in 7-county metro set),default
+Nobles County,MN-greater,(not in 7-county metro set),default
+North St. Paul,MN-metro,Ramsey,high
+Northern Township,MN-greater,(not in 7-county metro set),default
+Norwood Young America,MN-metro,Carver,high
+Okabena,MN-greater,(not in 7-county metro set),default
+Olivia,MN-greater,(not in 7-county metro set),default
+Onamia,MN-greater,(not in 7-county metro set),default
+Oronoco,MN-greater,(not in 7-county metro set),default
+Oronoco Township,MN-greater,(not in 7-county metro set),default
+Ortonville,MN-greater,(not in 7-county metro set),default
+Osakis,MN-greater,(not in 7-county metro set),default
+Oslo,MN-greater,(not in 7-county metro set),default
+Osseo,MN-metro,Hennepin,high
+Otsego West,MN-greater,(not in 7-county metro set),default
+Owatonna,MN-greater,(not in 7-county metro set),default
+Palisade,MN-greater,(not in 7-county metro set),default
+Pease,MN-greater,(not in 7-county metro set),default
+Pelican Rapids,MN-greater,(not in 7-county metro set),default
+Pennington Soil and Water Conservation District,MN-greater,(not in 7-county metro set),default
+Pequot Lakes,MN-greater,(not in 7-county metro set),default
+Pine City,MN-greater,(not in 7-county metro set),default
+Pine Island,MN-greater,(not in 7-county metro set),default
+Pipestone,MN-greater,(not in 7-county metro set),default
+Plummer,MN-greater,(not in 7-county metro set),default
+Porter,MN-greater,(not in 7-county metro set),default
+Preston,MN-greater,(not in 7-county metro set),default
+Prior Lake-Spring Lake Watershed District,MN-metro,Scott,high
+Proctor,MN-greater,(not in 7-county metro set),default
+Ramsey County,MN-metro,Ramsey,high
+Randall,MN-greater,(not in 7-county metro set),default
+Red Lake Falls,MN-greater,(not in 7-county metro set),default
+Red Lake Soil and Water Conservation District,MN-greater,(not in 7-county metro set),default
+Redwood Falls,MN-greater,(not in 7-county metro set),default
+Rice County,MN-greater,(not in 7-county metro set),default
+Richfield,MN-metro,Hennepin,high
+Richmond,MN-greater,(not in 7-county metro set),default
+Rochester,MN-greater,(not in 7-county metro set),default
+Rockford,MN-greater,(not in 7-county metro set),default
+Roscoe,MN-greater,(not in 7-county metro set),default
+Rose Creek,MN-greater,(not in 7-county metro set),default
+Roseau,MN-greater,(not in 7-county metro set),default
+Roseau River Watershed District,MN-greater,(not in 7-county metro set),default
+Round Lake,MN-greater,(not in 7-county metro set),default
+Russell,MN-greater,(not in 7-county metro set),default
+Ruthton,MN-greater,(not in 7-county metro set),default
+Sacred Heart,MN-greater,(not in 7-county metro set),default
+Saint Cloud,MN-greater,(not in 7-county metro set),default
+Saint Leo,MN-greater,(not in 7-county metro set),default
+Saint Louis Park,MN-metro,Hennepin,high
+Saint Michael,MN-greater,(not in 7-county metro set),default
+Saint Paul,MN-metro,Ramsey,high
+Saint Peter,MN-greater,(not in 7-county metro set),default
+Sanborn,MN-greater,(not in 7-county metro set),default
+Sandstone,MN-greater,(not in 7-county metro set),default
+Sartell,MN-greater,(not in 7-county metro set),default
+Scandia,MN-metro,Washington,high
+Scanlon,MN-greater,(not in 7-county metro set),default
+Sebeka,MN-greater,(not in 7-county metro set),default
+Sherburn,MN-greater,(not in 7-county metro set),default
+Sherburne Soil and Water Conservation District,MN-greater,(not in 7-county metro set),default
+Shorewood Park SD,MN-greater,(not in 7-county metro set),default
+Shorewood Park Sanitary District,MN-greater,(not in 7-county metro set),default
+Silver Bay,MN-greater,(not in 7-county metro set),default
+Silver Creek Township,MN-greater,(not in 7-county metro set),default
+Silver Lake,MN-greater,(not in 7-county metro set),default
+Spring Grove,MN-greater,(not in 7-county metro set),default
+Spring Valley,MN-greater,(not in 7-county metro set),default
+Springsteel Island SD,MN-greater,(not in 7-county metro set),default
+Staples,MN-greater,(not in 7-county metro set),default
+Stephen,MN-greater,(not in 7-county metro set),default
+Stewart,MN-greater,(not in 7-county metro set),default
+Tamarack,MN-greater,(not in 7-county metro set),default
+Thief River Falls,MN-greater,(not in 7-county metro set),default
+Tintah,MN-greater,(not in 7-county metro set),default
+Tower/Breitung,MN-greater,(not in 7-county metro set),default
+Tracy,MN-greater,(not in 7-county metro set),default
+Trimont,MN-greater,(not in 7-county metro set),default
+Trosky,MN-greater,(not in 7-county metro set),default
+Twin Valley,MN-greater,(not in 7-county metro set),default
+Utica,MN-greater,(not in 7-county metro set),default
+Vadnais Heights,MN-metro,Ramsey,high
+Vesta,MN-greater,(not in 7-county metro set),default
+Viking,MN-greater,(not in 7-county metro set),default
+WLSSD - Conveyance,MN-greater,(not in 7-county metro set),default
+WLSSD - Treatment Plant Imp,MN-greater,(not in 7-county metro set),default
+WLSSD Treatment Plant Imp,MN-greater,(not in 7-county metro set),default
+Wabasha,MN-greater,(not in 7-county metro set),default
+Wabasso,MN-greater,(not in 7-county metro set),default
+Wadena,MN-greater,(not in 7-county metro set),default
+Wahkon,MN-greater,(not in 7-county metro set),default
+Walker,MN-greater,(not in 7-county metro set),default
+Walnut Grove,MN-greater,(not in 7-county metro set),default
+Waltham,MN-greater,(not in 7-county metro set),default
+Wanamingo,MN-greater,(not in 7-county metro set),default
+Wanda,MN-greater,(not in 7-county metro set),default
+Warroad,MN-greater,(not in 7-county metro set),default
+Waseca,MN-greater,(not in 7-county metro set),default
+Waseca Soil and Water Conservation District,MN-greater,(not in 7-county metro set),default
+Watkins,MN-greater,(not in 7-county metro set),default
+Watonwan Soil and Water Conservation District,MN-greater,(not in 7-county metro set),default
+Wells,MN-greater,(not in 7-county metro set),default
+West Union,MN-greater,(not in 7-county metro set),default
+Western Lake Superior SD,MN-greater,(not in 7-county metro set),default
+Whitewater River - DESCASD,MN-greater,(not in 7-county metro set),default
+Willmar,MN-greater,(not in 7-county metro set),default
+Winona,MN-greater,(not in 7-county metro set),default
+Winthrop,MN-greater,(not in 7-county metro set),default
+Wood Lake,MN-greater,(not in 7-county metro set),default
+Wrenshall,MN-greater,(not in 7-county metro set),default
+Zimmerman,MN-greater,(not in 7-county metro set),default
+Zumbro Township,MN-greater,(not in 7-county metro set),default
+Zumbrota,MN-greater,(not in 7-county metro set),default
+Owatonna (MnCIFA),MN-greater,Steele,high
+Sandstone (MnCIFA),MN-greater,Pine,high
+Minneapolis (MnCIFA nonprofits),MN-metro,Hennepin,high
+Saint Paul - The Heights,MN-metro,Ramsey,high
+MnCIFA statewide/unknown,MN,(statewide or undetermined),default

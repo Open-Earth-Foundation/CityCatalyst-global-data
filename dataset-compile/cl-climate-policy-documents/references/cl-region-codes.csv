@@ -1,0 +1,18 @@
+key,region_name,zona,basis,confidence
+00,Chile,Nacional,national scope,high
+15,Arica y Parinacota,Norte Grande,Chile CUT region code,high
+01,Tarapaca,Norte Grande,Chile CUT region code,high
+02,Antofagasta,Norte Grande,Chile CUT region code,high
+03,Atacama,Norte Chico,Chile CUT region code,high
+04,Coquimbo,Norte Chico,Chile CUT region code,high
+05,Valparaiso,Zona Central,Chile CUT region code,high
+13,Metropolitana de Santiago,Zona Central,Chile CUT region code,high
+06,Libertador General Bernardo O'Higgins,Zona Central,Chile CUT region code,high
+07,Maule,Zona Central,Chile CUT region code,high
+16,Nuble,Zona Sur,Chile CUT region code,high
+08,Biobio,Zona Sur,Chile CUT region code,high
+09,La Araucania,Zona Sur,Chile CUT region code,high
+14,Los Rios,Zona Sur,Chile CUT region code,high
+10,Los Lagos,Zona Sur,Chile CUT region code,high
+11,Aysen del General Carlos Ibanez del Campo,Zona Austral,Chile CUT region code,high
+12,Magallanes y de la Antartica Chilena,Zona Austral,Chile CUT region code,high

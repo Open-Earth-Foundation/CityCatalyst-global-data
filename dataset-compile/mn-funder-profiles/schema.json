@@ -1,0 +1,29 @@
+{
+  "dataset": "mn-funder-profiles",
+  "title": "Minnesota climate-finance funder profiles",
+  "status": "compile",
+  "grain": "one nested profile document per funder/funding-opportunity (not one row per record)",
+  "shape": "Unlike the tabular compiled datasets, each profile is a structured YAML document in profiles/<funder-slug>.yaml. This file describes the profile object shape, not a flat table. Sibling to dataset-compile/mn-climate-awards/ (the examples layer); the two join on funder + route.",
+  "purpose": "The machine-readable model of ONE funder that the Concept Note Builder reasons over: it (1) structures the guided interview, (2) drives matching/recommendations toward the funder's gates, and (3) shapes the output concept note to the funder's required template. It defines the '100' in the 70->100 fundability framing.",
+  "field_provenance_legend": {
+    "stated": "read from the funder's own program docs / NOFO / RFP (authoritative; must be sourced and status-flagged)",
+    "derived": "computed from the awards KB (dataset-compile/mn-climate-awards) — the 'revealed' half: who actually wins, typical sizes, applicant types",
+    "meta": "bookkeeping (links, last_verified, status)"
+  },
+  "profile_object": {
+    "identity": "stated — funder, program, administering agency, route (links to the awards KB), instrument, cycle/deadlines, status, geography, statutory basis, typical round size",
+    "eligibility": "stated — applicant types, plan/threshold requirements, activity eligibility, compliance gates",
+    "match": "stated — required match %, eligible forms, restrictions",
+    "rubric": "stated — scoring criteria with point weights; the gates the 70->100 score is measured against",
+    "required_document": "stated — the required application/concept-note sections (the interview spine AND the output template), submission mechanism, char limits, required attachments",
+    "fit_signals": "MIXED — stated focus/hazard/equity + a `revealed_from_awards` block (derived) with typical award size, winning applicant types, category & region split",
+    "cnb_usage": "meta — how each part feeds the interview, matching, 70->100 coaching, and output template",
+    "provenance": "meta — stated source(s), revealed source, last_verified, program-status flag"
+  },
+  "links": {
+    "awards": "dataset-compile/mn-climate-awards/ — filter funder LIKE '<program>' for the comparable projects; the `route` field is the join key",
+    "landscape": "knowledge-base/topics/climate-finance/us-mn-climate-finance.md — the reference map"
+  },
+  "guardrail": "Per PRD: matching criteria are co-calibrated with NLC, not AI-invented. The rubric here is transcribed from the funder's RFP (stated) or flagged as a draft for NLC to confirm — never invented.",
+  "promotion_path": "compile -> dataset-review (verify stated fields against the live NOFO, confirm rubric with NLC, lock schema) -> the CNB funder-profile service."
+}

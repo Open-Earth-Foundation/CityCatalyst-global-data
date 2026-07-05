@@ -1,0 +1,103 @@
+# Source registry for cl-climate-policy-documents.
+# No external feed exists; this list IS the refresh mechanism.
+# Compiled fresh from public sources to test the method against cl-climate-policy.md,
+# independent of the cl-ssg review data.
+# Note: cambioclimatico.mma.gob.cl index pages and bcn.cl HTML are JS-rendered/gated;
+# direct PDFs, the LeyChile XML export, and MMA WordPress pages fetch fine.
+
+sources:
+  # --- National (tiers: ndc / framework-law / long-term-strategy) ---
+  - id: ndc-2025-unfccc
+    tier: ndc
+    source: Ministerio del Medio Ambiente, via UNFCCC registry
+    kind: portal + pdf
+    url: https://unfccc.int/node/649954
+    last_fetched: 2026-07-05
+    yields: Chile NDC 2025 (2035 NDC); supersedes 2020 update
+    notes: UNFCCC page confirms status Active, submitted 23-Sep-2025.
+
+  - id: lmcc-ley-21455
+    tier: framework-law
+    source: BCN / LeyChile - Ley 21.455
+    kind: law-portal
+    url: https://www.bcn.cl/leychile/navegar?idNorma=1177286
+    last_fetched: 2026-07-05
+    yields: LMCC framework law; defines the ECLP -> sector plans -> PARCC -> PACCC hierarchy
+    notes: BCN HTML JS-gated; verified via LeyChile XML export (idNorma=1177286) + govt PDF. Promulgada 30-May-2022.
+
+  - id: eclp-2021
+    tier: long-term-strategy
+    source: Ministerio del Medio Ambiente
+    kind: portal
+    url: https://cambioclimatico.mma.gob.cl/estrategia-climatica-de-largo-plazo-2050/descripcion-del-instrumento/
+    last_fetched: 2026-07-05
+    yields: ECLP (long-term strategy to 2050); mandated by Art. 5 LMCC
+    notes: MMA description page fetched. Delivered to UNFCCC Nov 2021.
+
+  # --- Sectoral plans (7 mitigation + 11 adaptation) ---
+  - id: sector-plans-mma-index
+    tier: sector-plan-mitigation / sector-plan-adaptation
+    source: MMA + line ministries (Energia, MTT/SECTRA, Mineria, Agricultura/ODEPA, MOP, MINVU, MINSAL, Subpesca)
+    kind: ministry pages + pdfs
+    url: https://mma.gob.cl/cambio-climatico/
+    last_fetched: 2026-07-05
+    yields: >
+      7 mitigation sector plans (LMCC Art. 8 ministries) + 11 adaptation sectors (9 legacy
+      PANCC + Mineria + Zonas Costeras). Several ministries (Energia DS 91/2024, Mineria
+      DS 24/2025, Transporte, MOP-Infraestructura, MINVU-Ciudades DS 40/2024) issued a
+      single COMBINED mitig+adapt decree - split into two rows here, flagged in notes.
+    notes: >
+      cambioclimatico.mma.gob.cl /mitigacion/ and /adaptacion/ index pages JS-rendered
+      (empty on fetch); mma.gob.cl WordPress pages + ministry PDFs fetched. Weakest cells:
+      Salud mitigation (Art. 8 mandated, not published), Turismo adaptation (URL unconfirmed),
+      Zonas Costeras (new ECLP sector, no plan/ministry assigned).
+
+  # --- Regional (PARCC) ---
+  - id: parcc-cgr-control + gore-sources
+    tier: parcc
+    source: Contraloria (CGR audit) + Gobiernos Regionales / CORECC + MMA + Diario Oficial
+    kind: audit + resolutions + pdfs
+    url: https://www.biobiochile.cl/noticias/nacional/chile/2025/02/27/cgr-revela-debil-avance-para-enfrentar-cambio-climatico-en-regiones-solo-4-tienen-el-plan-aprobado.shtml
+    last_fetched: 2026-07-05
+    yields: >
+      16 regions with PARCC status. CONTROL TOTAL (CGR, Oct 2024): 4/16 approved
+      (Atacama, O'Higgins, Los Rios, Los Lagos). Since confirmable: RM (Dec 2024),
+      Antofagasta (Mar 2025), Coquimbo (Aug 2025), Nuble (Feb 2026) -> ~8/16 in-force.
+    notes: >
+      Los Rios PARCC URL shared with Los Lagos in the MMA repository - flagged for a
+      distinct-PDF check (Los Rios verified=false). Coquimbo/Nuble pending final Delegado
+      resolution (verified=false, med).
+    control_total_source: CGR 3er Consolidado (Oct 2024) - 4/16 approved
+
+  # --- Communal (PACCC) ---
+  - id: paccc-sample
+    tier: paccc
+    source: Municipalities + MMA + CR2 policy brief
+    kind: municipal pdfs + pages
+    url: https://www.cr2.cl/la-accion-climatica-a-nivel-local-en-chile-panorama-a-tres-anos-de-la-ley-marco-de-cambio-climatico/
+    last_fetched: 2026-07-05
+    yields: >
+      Sample of confirmable communal plans (Lo Barnechea, Penaflor, Vitacura, El Quisco,
+      San Antonio, Pichilemu, Navidad, Rancagua, Coyhaique) + 2 aggregate region rows
+      (Los Rios 12/12, Nuble 6). CONTROL: ~22/345 communes (~6%) had a PACCC by Mar 2025 (CGR).
+    notes: LMCC Art. 12 required all communes to have a PACCC by 13-Jun-2025; reality is ~6%.
+    control_total_source: CGR (Mar 2025) - ~22/345 communes (~6%)
+
+  # --- Territorial + PRAS ---
+  - id: territorial-classes
+    tier: territorial-plan
+    source: MINVU Centro de Estudios + Ley 21.074 / LGUC
+    kind: instrument-class references
+    url: https://centrodeestudios.minvu.gob.cl/planes-reguladores/
+    last_fetched: 2026-07-05
+    yields: Instrument classes PNOT (national policy), PROT (regional, Ley 21.074), PRI/PRM + PRC (LGUC DFL 458/1975)
+    notes: Rowed as instrument CLASSES, not per-territory documents (mirrors Chile placeholder reality). PNOT is a policy, not a single 'plan'.
+
+  - id: pras-mma
+    tier: environmental-program
+    source: Ministerio del Medio Ambiente - PRAS
+    kind: programme pages
+    url: https://pras.mma.gob.cl/
+    last_fetched: 2026-07-05
+    yields: 3 PRAS territories - Quintero-Puchuncavi (Valparaiso), Huasco (Atacama), Coronel (Biobio)
+    notes: Coronel dedicated subpage slug not confirmed (verified=false, med).

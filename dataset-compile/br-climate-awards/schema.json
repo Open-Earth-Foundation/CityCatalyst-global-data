@@ -1,0 +1,45 @@
+{
+  "dataset": "br-climate-awards",
+  "title": "Brazil climate-finance awards (compiled)",
+  "status": "compile",
+  "description": "Real awarded/selected climate-finance records in Brazil, indexed by reaching-money route (rollup) and per-record facets (funder, category, region, instrument). Manufactured by compiling public funder award/selection lists — not an ingested external dataset. Staging lane: not yet vetted through dataset-review. Sources are Portuguese-language primary documents. See collection.md for provenance and sources.yaml for the source registry. Sibling instance to dataset-compile/mn-climate-awards (Minnesota); same design, Brazilian values.",
+  "grain": "one row per awarded/selected project (or per published award line, or a control-total aggregate row where only totals are public)",
+  "primary_key": "id",
+  "scope": {
+    "in_scope": "Routes A, B, C — narrow start (the 3 most award-rich routes, per knowledge-base/topics/climate-finance/br-climate-finance.md). Route A: the full Fundo Amazônia carteira (146 unique contracted/completed grants, reconciled to the Informe da Carteira 30/12/2025 control totals). Route C: the full COFIEX 180ª Reunião results table (32 line items, 22 project approvals, reconciled to the release's 18-subnacional / 4-federal / US$1.12bn-federal control totals). Route B: the FULL Novo PAC 2025 Prevenção a Desastres selected list (315 proposals across drenagem + contenção de encostas, FGTS + OGU), extracted from the 5 official Ministério das Cidades XLSX and reconciled to the eixo control totals (drenagem R$10.3bn, encostas >R$1.4bn, total R$11.7bn / 26 UFs), plus 3 eixo aggregate rows.",
+    "not_yet_in_scope": "Routes D (GCF/GEF/Adaptation Fund grant portfolios), E (MIDR/Sedec disaster transfers — S2ID/CPDC), F (emendas parlamentares — windfalls, no call). Fundo Clima (BNDES credit + MMA grant) project-level lists. FGTS/CAIXA saneamento & drenagem award-level data beyond the Novo PAC seleção (Transferegov). Additional COFIEX meetings beyond the 180ª. Per-project desembolso for Fundo Amazônia. Award dates for Fundo Amazônia (carteira gives situação, not contract date) and per-proposal dates for Novo PAC. Município-name normalization for Route B (230 distinct vs announced 235, due to inconsistent source spelling).",
+    "complete_when": "For each in-scope route, every published award/selection line is present with a source-read amount in native currency, every derived field is computed by a documented rule, and each route's row sums reconcile to a published control total."
+  },
+  "field_provenance_legend": {
+    "sourced": "read directly from a primary source document (verifiable against source_url)",
+    "derived": "assigned by the compiler's judgment, NOT stated in the source — lower-trust until a deterministic rule is defined",
+    "derived-by-rule": "computed by an explicit, auditable rule/lookup (not per-row judgment); reproducible and correctable in one place",
+    "meta": "bookkeeping about the record itself"
+  },
+  "fields": [
+    {"name": "id", "type": "string", "source": "meta", "notes": "Constructed key: <route>-<funder-slug>-<seq>."},
+    {"name": "route", "type": "enum(A,B,C,D,E,F)", "source": "derived", "notes": "Rollup index = the funding route from br-climate-finance.md. A=programmatic funds/credit lines (apply); B=public investment via federal transfers (formulate); C=direct external borrowing (COFIEX, CAPAG-gated). Derived from funder+instrument, not stated on the award page."},
+    {"name": "funder", "type": "string", "source": "sourced", "notes": "Administering programme/fund as named by the source (Fundo Amazônia; Novo PAC — Prevenção a Desastres; COFIEX — <MDB>)."},
+    {"name": "category", "type": "enum(forest-conservation,sustainable-production,fire-management,territorial-management,monitoring-control,restoration-water,research,sanitation,drainage,slope-containment,drainage-slope-containment,disaster-prevention,climate-adaptation,urban-resilience,urban-development,environment,rural-development,transport,health,education,housing,fiscal,social,other)", "source": "derived", "notes": "Assigned from programme + project name/theme by a keyword rule (raw/build_data.py). Needs a curated deterministic mapping before promotion. Adaptation-relevance is NOT assumed — climate-adaptation/urban-resilience are tagged only where the source names climate/adaptation/resilience."},
+    {"name": "region_macro", "type": "enum(Norte,Nordeste,Centro-Oeste,Sudeste,Sul,Nacional,Interestadual,Internacional)", "source": "derived-by-rule", "notes": "Macrorregião computed from uf via references/br-region-lookup.csv. Multi-UF -> Interestadual; federal/nationwide -> Nacional; abroad -> Internacional. Not stated in the award source; reproducible via the lookup."},
+    {"name": "uf", "type": "string", "source": "sourced", "notes": "UF code(s) as given by the source (comma-separated for multi-state; BR for federal/nationwide; INTL for abroad)."},
+    {"name": "municipio", "type": "string|null", "source": "sourced", "notes": "Município name where the recipient/proponent is a município (extracted from 'Município de X'); else blank."},
+    {"name": "amazonia_legal", "type": "boolean", "source": "derived-by-rule", "notes": "Whether the UF is in the Amazônia Legal, via references/br-region-lookup.csv (true if any UF for interestadual rows)."},
+    {"name": "instrument", "type": "enum(grant,grant+loan,loan-external,loan-domestic,block/transfer)", "source": "sourced", "notes": "From the programme's known instrument. Fundo Amazônia=grant (não-reembolsável); Novo PAC=grant+loan (OGU + FGTS financing); COFIEX=loan-external (MDB loan w/ Union guarantee)."},
+    {"name": "project_name", "type": "string", "source": "sourced"},
+    {"name": "recipient", "type": "string", "source": "sourced", "notes": "Responsável (Route A) / proponente (Route C) / município (Route B) as named by the source."},
+    {"name": "recipient_type", "type": "enum(terceiro-setor,estado,municipio,uniao,universidade,internacional,empresa-publica,outros,aggregate)", "source": "derived", "notes": "From natureza (Route A) / esfera (Route C). Light judgment on edge cases; 'aggregate' = a control-total row, not a single recipient."},
+    {"name": "amount", "type": "number|null", "source": "sourced", "notes": "The award/loan/selection amount in NATIVE currency (see currency). Route A = valor do apoio (não-reembolsável). Route C = valor do empréstimo (EUR/JPY rows already converted to USD in the source). Route B project rows = the announced value; aggregate rows = the published eixo total."},
+    {"name": "currency", "type": "enum(BRL,USD,EUR)", "source": "sourced", "notes": "Native currency of amount. No silent conversion. BRL for Fundo Amazônia & Novo PAC & COFIEX 'operações em reais'; USD for most COFIEX; EUR for the BRDE credit line."},
+    {"name": "project_total", "type": "number|null", "source": "sourced", "notes": "Route A only: valor do projeto (total cost incl. counterpart), in BRL. Blank elsewhere."},
+    {"name": "financier", "type": "string", "source": "sourced", "notes": "The operator/lender: BNDES (Route A); Ministério das Cidades OGU/FGTS (Route B); the MDB — BID/BIRD/CAF/AFD/NDB/FONPLATA (Route C)."},
+    {"name": "fiscal_year", "type": "string|null", "source": "sourced"},
+    {"name": "award_date", "type": "string|null (YYYY-MM or YYYY-MM-DD)", "source": "sourced", "notes": "Route B=2025-09 (announcement); Route C=2025-06-18 (180ª reunião). Route A blank — the carteira publishes situação, not per-project contract date (a to-proper gap)."},
+    {"name": "status", "type": "enum(contratado,concluido,selected,selected-aggregate,cofiex-approved,cofiex-not-approved)", "source": "sourced", "notes": "Route A: contratado/concluido (carteira situação). Route B: selected / selected-aggregate. Route C: cofiex-approved (authorised to prepare, w/ Union guarantee) / cofiex-not-approved (submitted but rejected this meeting — the queue/gate, analogous to a nonfundable pipeline row)."},
+    {"name": "verified", "type": "boolean", "source": "meta", "notes": "true = read from a primary source AND reconciled to a published control total (Route A -> Informe 30/12/2025; Route C -> 180ª release totals; Route B aggregates + federal-release highlights). false = single local-press source, not cross-checked to the federal selected list (3 Route-B municipal rows)."},
+    {"name": "source_url", "type": "string", "source": "sourced"},
+    {"name": "source_title", "type": "string", "source": "sourced"},
+    {"name": "notes", "type": "string", "source": "meta", "notes": "Free text: esfera, caveats, conversion notes, reconciliation reference."}
+  ],
+  "promotion_path": "compile -> dataset-review (lock scope, replace derived route/category with deterministic rules, fill Route B per-município detail + award dates from primary sources, add Routes D/E, complete provenance) -> catalog + pipeline."
+}

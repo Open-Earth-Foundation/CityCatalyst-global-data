@@ -1,6 +1,6 @@
 # World Bank — projects (world-bank-projects)
 
-Project-level records from the **World Bank Projects API**, the World Bank slice of the multilateral climate-finance picture. Global coverage, one row per operation, with country, commitment, sector/theme, instrument and approval date. Like the GCF and IDB project reviews, this is the **awards/projects layer** (what got funded), at the **multilateral level**, accessed **intermediated** (sovereign lending; a city benefits as a sub-borrower, it does not apply). See `knowledge-base/topics/data-sources/cl-climate-finance.md` ("Funder levels").
+Project-level records from the **World Bank Projects API**, the World Bank slice of the multilateral climate-finance picture. Global coverage, one row per operation, with country, commitment, sector/theme, instrument and approval date. Like the GCF and IDB project reviews, this is the **awards/projects layer** (what got funded), at the **multilateral level**, accessed **intermediated** (sovereign lending; a city benefits as a sub-borrower, it does not apply). See `knowledge-base/topics/climate-finance/cl-climate-finance.md` ("Funder levels").
 
 ## Access
 

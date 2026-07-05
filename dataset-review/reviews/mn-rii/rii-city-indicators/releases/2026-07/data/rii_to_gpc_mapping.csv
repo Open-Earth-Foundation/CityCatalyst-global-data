@@ -1,0 +1,14 @@
+src_unit_id,gpc_refno,gpc_sector,gpc_subsector,gpc_scope,gpc_sector_name,mapping_confidence,rationale
+energy/residential/Electricity,I.1.2,I,I.1,2.0,Residential buildings,high,RII residential electricity is Scope 2 grid-supplied energy consumed by homes -> I.1.2.
+energy/residential/Natural Gas,I.1.1,I,I.1,1.0,Residential buildings,high,RII residential fossil-gas is Scope 1 on-site stationary combustion -> I.1.1.
+energy/residential/Other,I.1.1,I,I.1,1.0,Residential buildings,medium,"'Other' = non-utility residential heating fuels (fuel oil/propane/wood): Scope 1 -> I.1.1. Medium: RII energy may fold in purchased district heating (Scope 2, I.1.2); not separable."
+energy/commercial_industrial/Electricity,I.2.2,I,I.2,2.0,Commercial & institutional buildings,medium,Commercial/institutional share of RII's combined commercial+industrial+street-lighting electricity -> I.2.2. Medium: bucket spans I.2/I.3; value not split.
+energy/commercial_industrial/Electricity,I.3.2,I,I.3,2.0,Manufacturing industries & construction,medium,Industrial share of the same combined electricity bucket -> I.3.2. Medium: not separable; value not split.
+energy/commercial_industrial/Natural Gas,I.2.1,I,I.2,1.0,Commercial & institutional buildings,medium,Commercial/institutional share of combined stationary fossil-gas -> I.2.1. Medium: bucket spans I.2/I.3; value not split.
+energy/commercial_industrial/Natural Gas,I.3.1,I,I.3,1.0,Manufacturing industries & construction,medium,Industrial share of combined stationary fossil-gas -> I.3.1. Medium: not separable; value not split.
+energy/commercial_industrial/Other,I.2.1,I,I.2,1.0,Commercial & institutional buildings,medium,Commercial/institutional share of 'Other' non-utility fuels (Scope 1) -> I.2.1. Medium: combined bucket + possible district-energy; value not split.
+energy/commercial_industrial/Other,I.3.1,I,I.3,1.0,Manufacturing industries & construction,medium,Industrial share of 'Other' non-utility fuels (Scope 1) -> I.3.1. Medium: same ambiguity; value not split.
+transport/on_road/all_vehicles,II.1.1,II,II.1,1.0,On-road transportation,high,RII on-road uses the in-boundary (territorial) method = Scope 1 tailpipe within boundary -> II.1.1. EV electricity (II.1.2) negligible/folded.
+waste/msw/Landfilled,III.1.1,III,III.1,1.0,Solid waste disposal,medium,City MSW landfill emissions -> GPC III.1. Medium: RII uses methane-commitment (future emissions of this year's waste) vs GPC first-order-decay; values not GPC-conformant; in-city vs exported disposal not split.
+waste/msw/Incinerated,III.3.1,III,III.3,1.0,Incineration & open burning,medium,City MSW incineration/WTE -> GPC III.3. Medium: RII books WTE in the waste sector; GPC places WTE energy-recovery in Stationary Energy; placement differs.
+waste/msw/Recycled,,,,,,none,Recycling carries zero emissions under the US Community Protocol (all-zero placeholder); no GPC source category applies.

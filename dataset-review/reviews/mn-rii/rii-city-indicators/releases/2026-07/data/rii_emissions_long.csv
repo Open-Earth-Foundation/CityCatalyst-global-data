@@ -1,0 +1,496 @@
+city,indicator,sector,subcategory,tco2e,year,units,src_unit_id
+Arden Hills,energy,residential,Other,177.23572282811176,2024,tonnes_co2e,energy/residential/Other
+Blaine,energy,residential,Other,2284.523895413643,2024,tonnes_co2e,energy/residential/Other
+Circle Pines,energy,residential,Other,0.0,2024,tonnes_co2e,energy/residential/Other
+Crookston,energy,residential,Other,1761.463530120482,2024,tonnes_co2e,energy/residential/Other
+Crystal,energy,residential,Other,206.45412781778853,2024,tonnes_co2e,energy/residential/Other
+Gem Lake,energy,residential,Other,48.5120231372549,2024,tonnes_co2e,energy/residential/Other
+Golden Valley,energy,residential,Other,518.7973906681035,2024,tonnes_co2e,energy/residential/Other
+Lauderdale,energy,residential,Other,74.84915887788779,2024,tonnes_co2e,energy/residential/Other
+Little Canada,energy,residential,Other,507.14174391079507,2024,tonnes_co2e,energy/residential/Other
+Maplewood,energy,residential,Other,1018.2276412870754,2024,tonnes_co2e,energy/residential/Other
+Minnetonka,energy,residential,Other,2019.0459758190327,2024,tonnes_co2e,energy/residential/Other
+Mounds View,energy,residential,Other,571.9871840464177,2024,tonnes_co2e,energy/residential/Other
+New Brighton,energy,residential,Other,682.5736529914122,2024,tonnes_co2e,energy/residential/Other
+North Oaks,energy,residential,Other,154.54628524414716,2024,tonnes_co2e,energy/residential/Other
+North Saint Paul,energy,residential,Other,415.7581552206084,2024,tonnes_co2e,energy/residential/Other
+Northfield,energy,residential,Other,0.0,2024,tonnes_co2e,energy/residential/Other
+Oakdale,energy,residential,Other,1104.0806859817703,2024,tonnes_co2e,energy/residential/Other
+Rochester,energy,residential,Other,4043.8622019787263,2024,tonnes_co2e,energy/residential/Other
+Roseville,energy,residential,Other,1188.3371981363873,2024,tonnes_co2e,energy/residential/Other
+Saint Anthony Village,energy,residential,Other,0.0,2024,tonnes_co2e,energy/residential/Other
+Saint Louis Park,energy,residential,Other,2494.089002169914,2024,tonnes_co2e,energy/residential/Other
+Shoreview,energy,residential,Other,586.0721887241266,2024,tonnes_co2e,energy/residential/Other
+Spring Lake Park,energy,residential,Other,0.0,2024,tonnes_co2e,energy/residential/Other
+Stillwater,energy,residential,Other,429.8270590102041,2024,tonnes_co2e,energy/residential/Other
+Thief River Falls,energy,residential,Other,955.0003964414415,2024,tonnes_co2e,energy/residential/Other
+Vadnais Heights,energy,residential,Other,294.24740003937006,2024,tonnes_co2e,energy/residential/Other
+White Bear Lake,energy,residential,Other,1210.6333142481203,2024,tonnes_co2e,energy/residential/Other
+White Bear Township,energy,residential,Other,699.7494164832536,2024,tonnes_co2e,energy/residential/Other
+Arden Hills,energy,residential,Natural Gas,12560.812874,2024,tonnes_co2e,energy/residential/Natural Gas
+Blaine,energy,residential,Natural Gas,95507.695668,2024,tonnes_co2e,energy/residential/Natural Gas
+Circle Pines,energy,residential,Natural Gas,6707.54022,2024,tonnes_co2e,energy/residential/Natural Gas
+Crookston,energy,residential,Natural Gas,9298.84208,2024,tonnes_co2e,energy/residential/Natural Gas
+Crystal,energy,residential,Natural Gas,30250.235814,2024,tonnes_co2e,energy/residential/Natural Gas
+Gem Lake,energy,residential,Natural Gas,1165.397156,2024,tonnes_co2e,energy/residential/Natural Gas
+Golden Valley,energy,residential,Natural Gas,35282.504992,2024,tonnes_co2e,energy/residential/Natural Gas
+Lauderdale,energy,residential,Natural Gas,2551.480676,2024,tonnes_co2e,energy/residential/Natural Gas
+Little Canada,energy,residential,Natural Gas,10667.658054,2024,tonnes_co2e,energy/residential/Natural Gas
+Maplewood,energy,residential,Natural Gas,48103.352112,2024,tonnes_co2e,energy/residential/Natural Gas
+Minnetonka,energy,residential,Natural Gas,88978.3829,2024,tonnes_co2e,energy/residential/Natural Gas
+Mounds View,energy,residential,Natural Gas,14584.232104,2024,tonnes_co2e,energy/residential/Natural Gas
+New Brighton,energy,residential,Natural Gas,27156.106418,2024,tonnes_co2e,energy/residential/Natural Gas
+North Oaks,energy,residential,Natural Gas,13864.887516,2024,tonnes_co2e,energy/residential/Natural Gas
+North Saint Paul,energy,residential,Natural Gas,15037.54906,2024,tonnes_co2e,energy/residential/Natural Gas
+Northfield,energy,residential,Natural Gas,21356.056308,2024,tonnes_co2e,energy/residential/Natural Gas
+Oakdale,energy,residential,Natural Gas,34597.02011,2024,tonnes_co2e,energy/residential/Natural Gas
+Rochester,energy,residential,Natural Gas,133894.843742,2024,tonnes_co2e,energy/residential/Natural Gas
+Roseville,energy,residential,Natural Gas,41474.890552,2024,tonnes_co2e,energy/residential/Natural Gas
+Saint Anthony Village,energy,residential,Natural Gas,10575.784286,2024,tonnes_co2e,energy/residential/Natural Gas
+Saint Louis Park,energy,residential,Natural Gas,56162.499258,2024,tonnes_co2e,energy/residential/Natural Gas
+Shoreview,energy,residential,Natural Gas,37980.113672,2024,tonnes_co2e,energy/residential/Natural Gas
+Spring Lake Park,energy,residential,Natural Gas,8378.74831,2024,tonnes_co2e,energy/residential/Natural Gas
+Stillwater,energy,residential,Natural Gas,29595.770826,2024,tonnes_co2e,energy/residential/Natural Gas
+Thief River Falls,energy,residential,Natural Gas,12667.486636,2024,tonnes_co2e,energy/residential/Natural Gas
+Vadnais Heights,energy,residential,Natural Gas,18229.375434,2024,tonnes_co2e,energy/residential/Natural Gas
+White Bear Lake,energy,residential,Natural Gas,30798.441844,2024,tonnes_co2e,energy/residential/Natural Gas
+White Bear Township,energy,residential,Natural Gas,17496.416766,2024,tonnes_co2e,energy/residential/Natural Gas
+Arden Hills,energy,residential,Electricity,5831.363978088995,2024,tonnes_co2e,energy/residential/Electricity
+Blaine,energy,residential,Electricity,117554.72054713554,2024,tonnes_co2e,energy/residential/Electricity
+Circle Pines,energy,residential,Electricity,11809.478721763586,2024,tonnes_co2e,energy/residential/Electricity
+Crookston,energy,residential,Electricity,14595.128822781911,2024,tonnes_co2e,energy/residential/Electricity
+Crystal,energy,residential,Electricity,14175.137807291572,2024,tonnes_co2e,energy/residential/Electricity
+Gem Lake,energy,residential,Electricity,654.8892588224621,2024,tonnes_co2e,energy/residential/Electricity
+Golden Valley,energy,residential,Electricity,16517.14341273247,2024,tonnes_co2e,energy/residential/Electricity
+Lauderdale,energy,residential,Electricity,1398.8654059375851,2024,tonnes_co2e,energy/residential/Electricity
+Little Canada,energy,residential,Electricity,6456.392839970969,2024,tonnes_co2e,energy/residential/Electricity
+Maplewood,energy,residential,Electricity,24313.17695905153,2024,tonnes_co2e,energy/residential/Electricity
+Minnetonka,energy,residential,Electricity,43308.62446826181,2024,tonnes_co2e,energy/residential/Electricity
+Mounds View,energy,residential,Electricity,7878.700996876984,2024,tonnes_co2e,energy/residential/Electricity
+New Brighton,energy,residential,Electricity,13926.476982833621,2024,tonnes_co2e,energy/residential/Electricity
+North Oaks,energy,residential,Electricity,5905.649786809398,2024,tonnes_co2e,energy/residential/Electricity
+North Saint Paul,energy,residential,Electricity,14147.5986891046,2024,tonnes_co2e,energy/residential/Electricity
+Northfield,energy,residential,Electricity,10886.750031751792,2024,tonnes_co2e,energy/residential/Electricity
+Oakdale,energy,residential,Electricity,16541.131979406695,2024,tonnes_co2e,energy/residential/Electricity
+Rochester,energy,residential,Electricity,253847.15776784904,2024,tonnes_co2e,energy/residential/Electricity
+Roseville,energy,residential,Electricity,21383.139479415768,2024,tonnes_co2e,energy/residential/Electricity
+Saint Anthony Village,energy,residential,Electricity,5299.68169629638,2024,tonnes_co2e,energy/residential/Electricity
+Saint Louis Park,energy,residential,Electricity,31993.867574734646,2024,tonnes_co2e,energy/residential/Electricity
+Shoreview,energy,residential,Electricity,18078.262783861017,2024,tonnes_co2e,energy/residential/Electricity
+Spring Lake Park,energy,residential,Electricity,4007.277229429375,2024,tonnes_co2e,energy/residential/Electricity
+Stillwater,energy,residential,Electricity,14728.23501264175,2024,tonnes_co2e,energy/residential/Electricity
+Thief River Falls,energy,residential,Electricity,16523.30197995101,2024,tonnes_co2e,energy/residential/Electricity
+Vadnais Heights,energy,residential,Electricity,10686.562789168103,2024,tonnes_co2e,energy/residential/Electricity
+White Bear Lake,energy,residential,Electricity,22819.648936314978,2024,tonnes_co2e,energy/residential/Electricity
+White Bear Township,energy,residential,Electricity,12177.947639027489,2024,tonnes_co2e,energy/residential/Electricity
+Arden Hills,energy,commercial_industrial,Other,0.0,2024,tonnes_co2e,energy/commercial_industrial/Other
+Blaine,energy,commercial_industrial,Other,0.0,2024,tonnes_co2e,energy/commercial_industrial/Other
+Circle Pines,energy,commercial_industrial,Other,0.0,2024,tonnes_co2e,energy/commercial_industrial/Other
+Crookston,energy,commercial_industrial,Other,2899.051485072,2024,tonnes_co2e,energy/commercial_industrial/Other
+Crystal,energy,commercial_industrial,Other,0.0,2024,tonnes_co2e,energy/commercial_industrial/Other
+Gem Lake,energy,commercial_industrial,Other,0.0,2024,tonnes_co2e,energy/commercial_industrial/Other
+Golden Valley,energy,commercial_industrial,Other,0.0,2024,tonnes_co2e,energy/commercial_industrial/Other
+Lauderdale,energy,commercial_industrial,Other,0.0,2024,tonnes_co2e,energy/commercial_industrial/Other
+Little Canada,energy,commercial_industrial,Other,0.0,2024,tonnes_co2e,energy/commercial_industrial/Other
+Maplewood,energy,commercial_industrial,Other,2680.4440656,2024,tonnes_co2e,energy/commercial_industrial/Other
+Minnetonka,energy,commercial_industrial,Other,0.0,2024,tonnes_co2e,energy/commercial_industrial/Other
+Mounds View,energy,commercial_industrial,Other,0.0,2024,tonnes_co2e,energy/commercial_industrial/Other
+New Brighton,energy,commercial_industrial,Other,0.0,2024,tonnes_co2e,energy/commercial_industrial/Other
+North Oaks,energy,commercial_industrial,Other,0.0,2024,tonnes_co2e,energy/commercial_industrial/Other
+North Saint Paul,energy,commercial_industrial,Other,0.0,2024,tonnes_co2e,energy/commercial_industrial/Other
+Northfield,energy,commercial_industrial,Other,0.0,2024,tonnes_co2e,energy/commercial_industrial/Other
+Oakdale,energy,commercial_industrial,Other,0.0,2024,tonnes_co2e,energy/commercial_industrial/Other
+Rochester,energy,commercial_industrial,Other,0.0,2024,tonnes_co2e,energy/commercial_industrial/Other
+Roseville,energy,commercial_industrial,Other,0.0,2024,tonnes_co2e,energy/commercial_industrial/Other
+Saint Anthony Village,energy,commercial_industrial,Other,0.0,2024,tonnes_co2e,energy/commercial_industrial/Other
+Saint Louis Park,energy,commercial_industrial,Other,0.0,2024,tonnes_co2e,energy/commercial_industrial/Other
+Shoreview,energy,commercial_industrial,Other,0.0,2024,tonnes_co2e,energy/commercial_industrial/Other
+Spring Lake Park,energy,commercial_industrial,Other,0.0,2024,tonnes_co2e,energy/commercial_industrial/Other
+Stillwater,energy,commercial_industrial,Other,0.0,2024,tonnes_co2e,energy/commercial_industrial/Other
+Thief River Falls,energy,commercial_industrial,Other,0.0,2024,tonnes_co2e,energy/commercial_industrial/Other
+Vadnais Heights,energy,commercial_industrial,Other,0.0,2024,tonnes_co2e,energy/commercial_industrial/Other
+White Bear Lake,energy,commercial_industrial,Other,0.0,2024,tonnes_co2e,energy/commercial_industrial/Other
+White Bear Township,energy,commercial_industrial,Other,0.0,2024,tonnes_co2e,energy/commercial_industrial/Other
+Arden Hills,energy,commercial_industrial,Natural Gas,26742.052256,2024,tonnes_co2e,energy/commercial_industrial/Natural Gas
+Blaine,energy,commercial_industrial,Natural Gas,67905.015518,2024,tonnes_co2e,energy/commercial_industrial/Natural Gas
+Circle Pines,energy,commercial_industrial,Natural Gas,1238.61538,2024,tonnes_co2e,energy/commercial_industrial/Natural Gas
+Crookston,energy,commercial_industrial,Natural Gas,15798.9803,2024,tonnes_co2e,energy/commercial_industrial/Natural Gas
+Crystal,energy,commercial_industrial,Natural Gas,12554.266416,2024,tonnes_co2e,energy/commercial_industrial/Natural Gas
+Gem Lake,energy,commercial_industrial,Natural Gas,789.494326,2024,tonnes_co2e,energy/commercial_industrial/Natural Gas
+Golden Valley,energy,commercial_industrial,Natural Gas,54564.695522,2024,tonnes_co2e,energy/commercial_industrial/Natural Gas
+Lauderdale,energy,commercial_industrial,Natural Gas,1529.27067,2024,tonnes_co2e,energy/commercial_industrial/Natural Gas
+Little Canada,energy,commercial_industrial,Natural Gas,12775.846204,2024,tonnes_co2e,energy/commercial_industrial/Natural Gas
+Maplewood,energy,commercial_industrial,Natural Gas,46382.23991,2024,tonnes_co2e,energy/commercial_industrial/Natural Gas
+Minnetonka,energy,commercial_industrial,Natural Gas,64159.500256,2024,tonnes_co2e,energy/commercial_industrial/Natural Gas
+Mounds View,energy,commercial_industrial,Natural Gas,10204.274124,2024,tonnes_co2e,energy/commercial_industrial/Natural Gas
+New Brighton,energy,commercial_industrial,Natural Gas,31132.944044,2024,tonnes_co2e,energy/commercial_industrial/Natural Gas
+North Oaks,energy,commercial_industrial,Natural Gas,3136.439404,2024,tonnes_co2e,energy/commercial_industrial/Natural Gas
+North Saint Paul,energy,commercial_industrial,Natural Gas,8765.999752,2024,tonnes_co2e,energy/commercial_industrial/Natural Gas
+Northfield,energy,commercial_industrial,Natural Gas,57918.050828,2024,tonnes_co2e,energy/commercial_industrial/Natural Gas
+Oakdale,energy,commercial_industrial,Natural Gas,21522.068314,2024,tonnes_co2e,energy/commercial_industrial/Natural Gas
+Rochester,energy,commercial_industrial,Natural Gas,264808.3188328,2024,tonnes_co2e,energy/commercial_industrial/Natural Gas
+Roseville,energy,commercial_industrial,Natural Gas,65440.537322,2024,tonnes_co2e,energy/commercial_industrial/Natural Gas
+Saint Anthony Village,energy,commercial_industrial,Natural Gas,11620.037402,2024,tonnes_co2e,energy/commercial_industrial/Natural Gas
+Saint Louis Park,energy,commercial_industrial,Natural Gas,73555.922318,2024,tonnes_co2e,energy/commercial_industrial/Natural Gas
+Shoreview,energy,commercial_industrial,Natural Gas,16101.41496,2024,tonnes_co2e,energy/commercial_industrial/Natural Gas
+Spring Lake Park,energy,commercial_industrial,Natural Gas,8151.308086,2024,tonnes_co2e,energy/commercial_industrial/Natural Gas
+Stillwater,energy,commercial_industrial,Natural Gas,17711.822356,2024,tonnes_co2e,energy/commercial_industrial/Natural Gas
+Thief River Falls,energy,commercial_industrial,Natural Gas,19476.605974,2024,tonnes_co2e,energy/commercial_industrial/Natural Gas
+Vadnais Heights,energy,commercial_industrial,Natural Gas,12725.995272,2024,tonnes_co2e,energy/commercial_industrial/Natural Gas
+White Bear Lake,energy,commercial_industrial,Natural Gas,33344.343938,2024,tonnes_co2e,energy/commercial_industrial/Natural Gas
+White Bear Township,energy,commercial_industrial,Natural Gas,8370.845762,2024,tonnes_co2e,energy/commercial_industrial/Natural Gas
+Arden Hills,energy,commercial_industrial,Electricity,31268.960037950194,2024,tonnes_co2e,energy/commercial_industrial/Electricity
+Blaine,energy,commercial_industrial,Electricity,117105.217822004,2024,tonnes_co2e,energy/commercial_industrial/Electricity
+Circle Pines,energy,commercial_industrial,Electricity,3142.98113716774,2024,tonnes_co2e,energy/commercial_industrial/Electricity
+Crookston,energy,commercial_industrial,Electricity,40320.99141318153,2024,tonnes_co2e,energy/commercial_industrial/Electricity
+Crystal,energy,commercial_industrial,Electricity,8666.602206044181,2024,tonnes_co2e,energy/commercial_industrial/Electricity
+Gem Lake,energy,commercial_industrial,Electricity,612.3348952190873,2024,tonnes_co2e,energy/commercial_industrial/Electricity
+Golden Valley,energy,commercial_industrial,Electricity,47283.80585283952,2024,tonnes_co2e,energy/commercial_industrial/Electricity
+Lauderdale,energy,commercial_industrial,Electricity,1058.744503519913,2024,tonnes_co2e,energy/commercial_industrial/Electricity
+Little Canada,energy,commercial_industrial,Electricity,11678.485165109318,2024,tonnes_co2e,energy/commercial_industrial/Electricity
+Maplewood,energy,commercial_industrial,Electricity,68713.58021138755,2024,tonnes_co2e,energy/commercial_industrial/Electricity
+Minnetonka,energy,commercial_industrial,Electricity,75022.87314298739,2024,tonnes_co2e,energy/commercial_industrial/Electricity
+Mounds View,energy,commercial_industrial,Electricity,14496.391896650186,2024,tonnes_co2e,energy/commercial_industrial/Electricity
+New Brighton,energy,commercial_industrial,Electricity,23425.051040814662,2024,tonnes_co2e,energy/commercial_industrial/Electricity
+North Oaks,energy,commercial_industrial,Electricity,2491.8939444797243,2024,tonnes_co2e,energy/commercial_industrial/Electricity
+North Saint Paul,energy,commercial_industrial,Electricity,11581.923754876168,2024,tonnes_co2e,energy/commercial_industrial/Electricity
+Northfield,energy,commercial_industrial,Electricity,44966.7480790166,2024,tonnes_co2e,energy/commercial_industrial/Electricity
+Oakdale,energy,commercial_industrial,Electricity,23907.166895763403,2024,tonnes_co2e,energy/commercial_industrial/Electricity
+Rochester,energy,commercial_industrial,Electricity,524812.5479633494,2024,tonnes_co2e,energy/commercial_industrial/Electricity
+Roseville,energy,commercial_industrial,Electricity,57340.32652185884,2024,tonnes_co2e,energy/commercial_industrial/Electricity
+Saint Anthony Village,energy,commercial_industrial,Electricity,7775.87308060646,2024,tonnes_co2e,energy/commercial_industrial/Electricity
+Saint Louis Park,energy,commercial_industrial,Electricity,64138.72587049578,2024,tonnes_co2e,energy/commercial_industrial/Electricity
+Shoreview,energy,commercial_industrial,Electricity,30210.310497852217,2024,tonnes_co2e,energy/commercial_industrial/Electricity
+Spring Lake Park,energy,commercial_industrial,Electricity,5657.042715231788,2024,tonnes_co2e,energy/commercial_industrial/Electricity
+Stillwater,energy,commercial_industrial,Electricity,17745.022250127007,2024,tonnes_co2e,energy/commercial_industrial/Electricity
+Thief River Falls,energy,commercial_industrial,Electricity,41285.19603102603,2024,tonnes_co2e,energy/commercial_industrial/Electricity
+Vadnais Heights,energy,commercial_industrial,Electricity,26314.777719314163,2024,tonnes_co2e,energy/commercial_industrial/Electricity
+White Bear Lake,energy,commercial_industrial,Electricity,35781.317218543045,2024,tonnes_co2e,energy/commercial_industrial/Electricity
+White Bear Township,energy,commercial_industrial,Electricity,21826.442606368502,2024,tonnes_co2e,energy/commercial_industrial/Electricity
+Albert Lea,transport,on_road,all_vehicles,41719.07548401672,2024,tonnes_co2e,transport/on_road/all_vehicles
+Andover,transport,on_road,all_vehicles,80370.03873759272,2024,tonnes_co2e,transport/on_road/all_vehicles
+Apple Valley,transport,on_road,all_vehicles,141200.79595627915,2024,tonnes_co2e,transport/on_road/all_vehicles
+Arden Hills,transport,on_road,all_vehicles,157450.18596424887,2024,tonnes_co2e,transport/on_road/all_vehicles
+Arlington,transport,on_road,all_vehicles,3140.562695974948,2024,tonnes_co2e,transport/on_road/all_vehicles
+Austin,transport,on_road,all_vehicles,47928.355978449916,2024,tonnes_co2e,transport/on_road/all_vehicles
+Belle Plaine,transport,on_road,all_vehicles,15168.127004605381,2024,tonnes_co2e,transport/on_road/all_vehicles
+Bemidji,transport,on_road,all_vehicles,45226.369918005024,2024,tonnes_co2e,transport/on_road/all_vehicles
+Big Lake,transport,on_road,all_vehicles,16540.59625463491,2024,tonnes_co2e,transport/on_road/all_vehicles
+Blaine,transport,on_road,all_vehicles,258651.35575596153,2024,tonnes_co2e,transport/on_road/all_vehicles
+Bloomington,transport,on_road,all_vehicles,438790.74016627664,2024,tonnes_co2e,transport/on_road/all_vehicles
+Brainerd,transport,on_road,all_vehicles,36476.65252323743,2024,tonnes_co2e,transport/on_road/all_vehicles
+Brooklyn Center,transport,on_road,all_vehicles,179728.4545903384,2024,tonnes_co2e,transport/on_road/all_vehicles
+Brooklyn Park,transport,on_road,all_vehicles,314263.74120473635,2024,tonnes_co2e,transport/on_road/all_vehicles
+Burnsville,transport,on_road,all_vehicles,249090.84549443758,2024,tonnes_co2e,transport/on_road/all_vehicles
+Circle Pines,transport,on_road,all_vehicles,7088.166332154062,2024,tonnes_co2e,transport/on_road/all_vehicles
+Columbia Heights,transport,on_road,all_vehicles,19445.291328262017,2024,tonnes_co2e,transport/on_road/all_vehicles
+Coon Rapids,transport,on_road,all_vehicles,232069.93093222193,2024,tonnes_co2e,transport/on_road/all_vehicles
+Cottage Grove,transport,on_road,all_vehicles,105241.55733989469,2024,tonnes_co2e,transport/on_road/all_vehicles
+Crookston,transport,on_road,all_vehicles,11561.490678420336,2024,tonnes_co2e,transport/on_road/all_vehicles
+Crystal,transport,on_road,all_vehicles,36109.15424940159,2024,tonnes_co2e,transport/on_road/all_vehicles
+Delano,transport,on_road,all_vehicles,12710.03176093067,2024,tonnes_co2e,transport/on_road/all_vehicles
+Duluth,transport,on_road,all_vehicles,264328.83570670104,2024,tonnes_co2e,transport/on_road/all_vehicles
+Eagan,transport,on_road,all_vehicles,329603.33070136956,2024,tonnes_co2e,transport/on_road/all_vehicles
+Eden Prairie,transport,on_road,all_vehicles,252751.77545680595,2024,tonnes_co2e,transport/on_road/all_vehicles
+Edina,transport,on_road,all_vehicles,223314.1307542466,2024,tonnes_co2e,transport/on_road/all_vehicles
+Elk River,transport,on_road,all_vehicles,119729.09755427353,2024,tonnes_co2e,transport/on_road/all_vehicles
+Elko New Market,transport,on_road,all_vehicles,4978.892925777638,2024,tonnes_co2e,transport/on_road/all_vehicles
+Ely,transport,on_road,all_vehicles,5807.415918145262,2024,tonnes_co2e,transport/on_road/all_vehicles
+Falcon Heights,transport,on_road,all_vehicles,12031.142055537744,2024,tonnes_co2e,transport/on_road/all_vehicles
+Farmington,transport,on_road,all_vehicles,39885.94819976278,2024,tonnes_co2e,transport/on_road/all_vehicles
+Fergus Falls,transport,on_road,all_vehicles,34880.11150967465,2024,tonnes_co2e,transport/on_road/all_vehicles
+Forest Lake,transport,on_road,all_vehicles,87176.750727358,2024,tonnes_co2e,transport/on_road/all_vehicles
+Fridley,transport,on_road,all_vehicles,128216.81209192256,2024,tonnes_co2e,transport/on_road/all_vehicles
+Gem Lake,transport,on_road,all_vehicles,3375.0023896437497,2024,tonnes_co2e,transport/on_road/all_vehicles
+Golden Valley,transport,on_road,all_vehicles,166595.6897936898,2024,tonnes_co2e,transport/on_road/all_vehicles
+Grand Marais,transport,on_road,all_vehicles,3796.2642973426814,2024,tonnes_co2e,transport/on_road/all_vehicles
+Grand Rapids,transport,on_road,all_vehicles,38003.211695506936,2024,tonnes_co2e,transport/on_road/all_vehicles
+Hastings,transport,on_road,all_vehicles,41650.46709352121,2024,tonnes_co2e,transport/on_road/all_vehicles
+Hermantown,transport,on_road,all_vehicles,55986.024372607964,2024,tonnes_co2e,transport/on_road/all_vehicles
+Hopkins,transport,on_road,all_vehicles,42421.341549022036,2024,tonnes_co2e,transport/on_road/all_vehicles
+Hutchinson,transport,on_road,all_vehicles,26305.518093514293,2024,tonnes_co2e,transport/on_road/all_vehicles
+Independence,transport,on_road,all_vehicles,34928.896846290016,2024,tonnes_co2e,transport/on_road/all_vehicles
+Inver Grove Heights,transport,on_road,all_vehicles,163351.94374910704,2024,tonnes_co2e,transport/on_road/all_vehicles
+Isanti,transport,on_road,all_vehicles,13148.792541998151,2024,tonnes_co2e,transport/on_road/all_vehicles
+Jordan,transport,on_road,all_vehicles,12882.983503391977,2024,tonnes_co2e,transport/on_road/all_vehicles
+Kasson,transport,on_road,all_vehicles,10129.106218724935,2024,tonnes_co2e,transport/on_road/all_vehicles
+La Crescent,transport,on_road,all_vehicles,13849.055567523346,2024,tonnes_co2e,transport/on_road/all_vehicles
+La Prairie,transport,on_road,all_vehicles,3434.078571331926,2024,tonnes_co2e,transport/on_road/all_vehicles
+Lake Crystal,transport,on_road,all_vehicles,5964.115403368838,2024,tonnes_co2e,transport/on_road/all_vehicles
+Lake Elmo,transport,on_road,all_vehicles,71268.48346663239,2024,tonnes_co2e,transport/on_road/all_vehicles
+Lakeville,transport,on_road,all_vehicles,253874.03218871765,2024,tonnes_co2e,transport/on_road/all_vehicles
+Lauderdale,transport,on_road,all_vehicles,8317.445986155697,2024,tonnes_co2e,transport/on_road/all_vehicles
+Lexington,transport,on_road,all_vehicles,4368.659271009262,2024,tonnes_co2e,transport/on_road/all_vehicles
+Little Canada,transport,on_road,all_vehicles,112810.72181239084,2024,tonnes_co2e,transport/on_road/all_vehicles
+Mahtomedi,transport,on_road,all_vehicles,11879.425544520522,2024,tonnes_co2e,transport/on_road/all_vehicles
+Mankato,transport,on_road,all_vehicles,112383.64468467854,2024,tonnes_co2e,transport/on_road/all_vehicles
+Maplewood,transport,on_road,all_vehicles,169305.8393720655,2024,tonnes_co2e,transport/on_road/all_vehicles
+Marine on Saint Croix,transport,on_road,all_vehicles,2434.9677423361745,2024,tonnes_co2e,transport/on_road/all_vehicles
+Marshall,transport,on_road,all_vehicles,27104.053079365836,2024,tonnes_co2e,transport/on_road/all_vehicles
+Minneapolis,transport,on_road,all_vehicles,950858.6452370475,2024,tonnes_co2e,transport/on_road/all_vehicles
+Minnetonka,transport,on_road,all_vehicles,280504.62233828736,2024,tonnes_co2e,transport/on_road/all_vehicles
+Moorhead,transport,on_road,all_vehicles,102057.7028858691,2024,tonnes_co2e,transport/on_road/all_vehicles
+Morris,transport,on_road,all_vehicles,9370.6899127522,2024,tonnes_co2e,transport/on_road/all_vehicles
+Mounds View,transport,on_road,all_vehicles,41860.43401327799,2024,tonnes_co2e,transport/on_road/all_vehicles
+Mountain Iron,transport,on_road,all_vehicles,20628.51859253177,2024,tonnes_co2e,transport/on_road/all_vehicles
+New Brighton,transport,on_road,all_vehicles,89674.44057380407,2024,tonnes_co2e,transport/on_road/all_vehicles
+New Germany,transport,on_road,all_vehicles,724.7120545631788,2024,tonnes_co2e,transport/on_road/all_vehicles
+New Hope,transport,on_road,all_vehicles,63201.926361761325,2024,tonnes_co2e,transport/on_road/all_vehicles
+Newport,transport,on_road,all_vehicles,52695.159716828115,2024,tonnes_co2e,transport/on_road/all_vehicles
+Nisswa,transport,on_road,all_vehicles,27990.862346574093,2024,tonnes_co2e,transport/on_road/all_vehicles
+North Mankato,transport,on_road,all_vehicles,28598.423273093144,2024,tonnes_co2e,transport/on_road/all_vehicles
+North Oaks,transport,on_road,all_vehicles,3897.40569604896,2024,tonnes_co2e,transport/on_road/all_vehicles
+North Saint Paul,transport,on_road,all_vehicles,24100.049956775663,2024,tonnes_co2e,transport/on_road/all_vehicles
+Northfield,transport,on_road,all_vehicles,26707.691801754772,2024,tonnes_co2e,transport/on_road/all_vehicles
+Oakdale,transport,on_road,all_vehicles,122456.26838308369,2024,tonnes_co2e,transport/on_road/all_vehicles
+Orono,transport,on_road,all_vehicles,42535.28781506252,2024,tonnes_co2e,transport/on_road/all_vehicles
+Pine City,transport,on_road,all_vehicles,10899.464699273754,2024,tonnes_co2e,transport/on_road/all_vehicles
+Pine River,transport,on_road,all_vehicles,2219.2907299177105,2024,tonnes_co2e,transport/on_road/all_vehicles
+Plymouth,transport,on_road,all_vehicles,297375.06631442625,2024,tonnes_co2e,transport/on_road/all_vehicles
+Prior Lake,transport,on_road,all_vehicles,60333.65625064198,2024,tonnes_co2e,transport/on_road/all_vehicles
+Red Wing,transport,on_road,all_vehicles,51436.942119224615,2024,tonnes_co2e,transport/on_road/all_vehicles
+Richfield,transport,on_road,all_vehicles,181420.86306688018,2024,tonnes_co2e,transport/on_road/all_vehicles
+Robbinsdale,transport,on_road,all_vehicles,43143.71878824908,2024,tonnes_co2e,transport/on_road/all_vehicles
+Rochester,transport,on_road,all_vehicles,336612.0503629247,2024,tonnes_co2e,transport/on_road/all_vehicles
+Rogers,transport,on_road,all_vehicles,142558.15283716234,2024,tonnes_co2e,transport/on_road/all_vehicles
+Rosemount,transport,on_road,all_vehicles,82091.39032959519,2024,tonnes_co2e,transport/on_road/all_vehicles
+Roseville,transport,on_road,all_vehicles,170934.91908826135,2024,tonnes_co2e,transport/on_road/all_vehicles
+Royalton,transport,on_road,all_vehicles,8132.813859405282,2024,tonnes_co2e,transport/on_road/all_vehicles
+Saint Anthony Village,transport,on_road,all_vehicles,13115.56787750714,2024,tonnes_co2e,transport/on_road/all_vehicles
+Saint Cloud,transport,on_road,all_vehicles,221345.70325472843,2024,tonnes_co2e,transport/on_road/all_vehicles
+Saint Louis Park,transport,on_road,all_vehicles,171593.78735737788,2024,tonnes_co2e,transport/on_road/all_vehicles
+Saint Paul,transport,on_road,all_vehicles,777372.693421279,2024,tonnes_co2e,transport/on_road/all_vehicles
+Saint Paul Park,transport,on_road,all_vehicles,9737.743920532213,2024,tonnes_co2e,transport/on_road/all_vehicles
+Sartell,transport,on_road,all_vehicles,35220.886597281555,2024,tonnes_co2e,transport/on_road/all_vehicles
+Sauk Rapids,transport,on_road,all_vehicles,25012.287983222443,2024,tonnes_co2e,transport/on_road/all_vehicles
+Scandia,transport,on_road,all_vehicles,24008.75686411306,2024,tonnes_co2e,transport/on_road/all_vehicles
+Shakopee,transport,on_road,all_vehicles,181972.9061078142,2024,tonnes_co2e,transport/on_road/all_vehicles
+Sherburn,transport,on_road,all_vehicles,2240.521544158543,2024,tonnes_co2e,transport/on_road/all_vehicles
+Shoreview,transport,on_road,all_vehicles,109298.20676751608,2024,tonnes_co2e,transport/on_road/all_vehicles
+Silver Bay,transport,on_road,all_vehicles,5088.478497295195,2024,tonnes_co2e,transport/on_road/all_vehicles
+South Saint Paul,transport,on_road,all_vehicles,62066.12615125663,2024,tonnes_co2e,transport/on_road/all_vehicles
+Spring Lake Park,transport,on_road,all_vehicles,21672.21736408209,2024,tonnes_co2e,transport/on_road/all_vehicles
+Stillwater,transport,on_road,all_vehicles,35042.01036054611,2024,tonnes_co2e,transport/on_road/all_vehicles
+Sunfish Lake,transport,on_road,all_vehicles,23188.50550133114,2024,tonnes_co2e,transport/on_road/all_vehicles
+Thief River Falls,transport,on_road,all_vehicles,16990.05401408753,2024,tonnes_co2e,transport/on_road/all_vehicles
+Two Harbors,transport,on_road,all_vehicles,7903.895947526019,2024,tonnes_co2e,transport/on_road/all_vehicles
+Vadnais Heights,transport,on_road,all_vehicles,106170.4905007114,2024,tonnes_co2e,transport/on_road/all_vehicles
+Victoria,transport,on_road,all_vehicles,31570.318695956426,2024,tonnes_co2e,transport/on_road/all_vehicles
+Warren,transport,on_road,all_vehicles,2383.750087105496,2024,tonnes_co2e,transport/on_road/all_vehicles
+Wayzata,transport,on_road,all_vehicles,46897.12931464111,2024,tonnes_co2e,transport/on_road/all_vehicles
+West Saint Paul,transport,on_road,all_vehicles,40581.11700260767,2024,tonnes_co2e,transport/on_road/all_vehicles
+White Bear Lake,transport,on_road,all_vehicles,88913.97169276021,2024,tonnes_co2e,transport/on_road/all_vehicles
+White Bear Township,transport,on_road,all_vehicles,39736.499827249274,2024,tonnes_co2e,transport/on_road/all_vehicles
+Willmar,transport,on_road,all_vehicles,44380.699411543545,2024,tonnes_co2e,transport/on_road/all_vehicles
+Winona,transport,on_road,all_vehicles,51199.25176861651,2024,tonnes_co2e,transport/on_road/all_vehicles
+Woodbury,transport,on_road,all_vehicles,281962.1184078469,2024,tonnes_co2e,transport/on_road/all_vehicles
+Andover,waste,msw,Incinerated,690.3390857852261,2024,tonnes_co2e,waste/msw/Incinerated
+Apple Valley,waste,msw,Incinerated,912.8942056612686,2024,tonnes_co2e,waste/msw/Incinerated
+Arden Hills,waste,msw,Incinerated,2067.0002682064073,2024,tonnes_co2e,waste/msw/Incinerated
+Blaine,waste,msw,Incinerated,1608.157988738789,2024,tonnes_co2e,waste/msw/Incinerated
+Bloomington,waste,msw,Incinerated,12537.514531185332,2024,tonnes_co2e,waste/msw/Incinerated
+Brooklyn Center,waste,msw,Incinerated,4690.441288432249,2024,tonnes_co2e,waste/msw/Incinerated
+Brooklyn Park,waste,msw,Incinerated,11553.052123528681,2024,tonnes_co2e,waste/msw/Incinerated
+Burnsville,waste,msw,Incinerated,1064.095699776844,2024,tonnes_co2e,waste/msw/Incinerated
+Circle Pines,waste,msw,Incinerated,106.29561515388542,2024,tonnes_co2e,waste/msw/Incinerated
+Columbia Heights,waste,msw,Incinerated,456.82335502476764,2024,tonnes_co2e,waste/msw/Incinerated
+Coon Rapids,waste,msw,Incinerated,1341.2647147461082,2024,tonnes_co2e,waste/msw/Incinerated
+Cottage Grove,waste,msw,Incinerated,6244.191406943092,2024,tonnes_co2e,waste/msw/Incinerated
+Crookston,waste,msw,Incinerated,1248.9619272699174,2024,tonnes_co2e,waste/msw/Incinerated
+Crystal,waste,msw,Incinerated,3147.771520023177,2024,tonnes_co2e,waste/msw/Incinerated
+Eagan,waste,msw,Incinerated,1122.0333263918856,2024,tonnes_co2e,waste/msw/Incinerated
+Eden Prairie,waste,msw,Incinerated,8832.217222278785,2024,tonnes_co2e,waste/msw/Incinerated
+Edina,waste,msw,Incinerated,7467.982969187154,2024,tonnes_co2e,waste/msw/Incinerated
+Falcon Heights,waste,msw,Incinerated,1131.528052659143,2024,tonnes_co2e,waste/msw/Incinerated
+Farmington,waste,msw,Incinerated,394.5816387948078,2024,tonnes_co2e,waste/msw/Incinerated
+Forest Lake,waste,msw,Incinerated,3060.06825850443,2024,tonnes_co2e,waste/msw/Incinerated
+Fridley,waste,msw,Incinerated,634.469822430783,2024,tonnes_co2e,waste/msw/Incinerated
+Gem Lake,waste,msw,Incinerated,109.88858708856036,2024,tonnes_co2e,waste/msw/Incinerated
+Golden Valley,waste,msw,Incinerated,3028.087499817896,2024,tonnes_co2e,waste/msw/Incinerated
+Hastings,waste,msw,Incinerated,3306.1771530513747,2024,tonnes_co2e,waste/msw/Incinerated
+Hopkins,waste,msw,Incinerated,2526.177975449052,2024,tonnes_co2e,waste/msw/Incinerated
+Independence,waste,msw,Incinerated,536.1244321951825,2024,tonnes_co2e,waste/msw/Incinerated
+Inver Grove Heights,waste,msw,Incinerated,592.7552092826562,2024,tonnes_co2e,waste/msw/Incinerated
+Lake Elmo,waste,msw,Incinerated,2076.4902025973033,2024,tonnes_co2e,waste/msw/Incinerated
+Lakeville,waste,msw,Incinerated,1243.0755080229187,2024,tonnes_co2e,waste/msw/Incinerated
+Lauderdale,waste,msw,Incinerated,492.06568425080445,2024,tonnes_co2e,waste/msw/Incinerated
+Lexington,waste,msw,Incinerated,63.980684076486924,2024,tonnes_co2e,waste/msw/Incinerated
+Little Canada,waste,msw,Incinerated,2169.5899823518166,2024,tonnes_co2e,waste/msw/Incinerated
+Mahtomedi,waste,msw,Incinerated,1197.9586260699703,2024,tonnes_co2e,waste/msw/Incinerated
+Maplewood,waste,msw,Incinerated,8520.825921717576,2024,tonnes_co2e,waste/msw/Incinerated
+Marine on Saint Croix,waste,msw,Incinerated,101.902231017405,2024,tonnes_co2e,waste/msw/Incinerated
+Minneapolis,waste,msw,Incinerated,59328.513856497804,2024,tonnes_co2e,waste/msw/Incinerated
+Minnetonka,waste,msw,Incinerated,7655.687861923682,2024,tonnes_co2e,waste/msw/Incinerated
+Mounds View,waste,msw,Incinerated,2633.879400124516,2024,tonnes_co2e,waste/msw/Incinerated
+New Brighton,waste,msw,Incinerated,4955.123742517371,2024,tonnes_co2e,waste/msw/Incinerated
+New Hope,waste,msw,Incinerated,2936.893183738929,2024,tonnes_co2e,waste/msw/Incinerated
+Newport,waste,msw,Incinerated,635.7098507228857,2024,tonnes_co2e,waste/msw/Incinerated
+North Oaks,waste,msw,Incinerated,1162.345516196894,2024,tonnes_co2e,waste/msw/Incinerated
+North Saint Paul,waste,msw,Incinerated,2635.906864830947,2024,tonnes_co2e,waste/msw/Incinerated
+Northfield,waste,msw,Incinerated,350.6384514851607,2024,tonnes_co2e,waste/msw/Incinerated
+Oakdale,waste,msw,Incinerated,4059.939237743933,2024,tonnes_co2e,waste/msw/Incinerated
+Orono,waste,msw,Incinerated,1142.5870812763844,2024,tonnes_co2e,waste/msw/Incinerated
+Plymouth,waste,msw,Incinerated,10910.329851013988,2024,tonnes_co2e,waste/msw/Incinerated
+Richfield,waste,msw,Incinerated,5245.649732960847,2024,tonnes_co2e,waste/msw/Incinerated
+Robbinsdale,waste,msw,Incinerated,2034.3557147421573,2024,tonnes_co2e,waste/msw/Incinerated
+Rochester,waste,msw,Incinerated,35139.43792903668,2024,tonnes_co2e,waste/msw/Incinerated
+Rogers,waste,msw,Incinerated,2206.929711985763,2024,tonnes_co2e,waste/msw/Incinerated
+Rosemount,waste,msw,Incinerated,449.78192716608595,2024,tonnes_co2e,waste/msw/Incinerated
+Roseville,waste,msw,Incinerated,7360.710616697757,2024,tonnes_co2e,waste/msw/Incinerated
+Saint Anthony Village,waste,msw,Incinerated,1357.1459056535057,2024,tonnes_co2e,waste/msw/Incinerated
+Saint Louis Park,waste,msw,Incinerated,6723.1612306886855,2024,tonnes_co2e,waste/msw/Incinerated
+Saint Paul,waste,msw,Incinerated,63535.67523778156,2024,tonnes_co2e,waste/msw/Incinerated
+Saint Paul Park,waste,msw,Incinerated,766.0532373818945,2024,tonnes_co2e,waste/msw/Incinerated
+Scandia,waste,msw,Incinerated,584.8301954042374,2024,tonnes_co2e,waste/msw/Incinerated
+Shoreview,waste,msw,Incinerated,5599.046533279858,2024,tonnes_co2e,waste/msw/Incinerated
+South Saint Paul,waste,msw,Incinerated,334.9594963374503,2024,tonnes_co2e,waste/msw/Incinerated
+Spring Lake Park,waste,msw,Incinerated,1519.7875439406798,2024,tonnes_co2e,waste/msw/Incinerated
+Stillwater,waste,msw,Incinerated,2781.2305969126246,2024,tonnes_co2e,waste/msw/Incinerated
+Sunfish Lake,waste,msw,Incinerated,8.40638194386541,2024,tonnes_co2e,waste/msw/Incinerated
+Thief River Falls,waste,msw,Incinerated,0.0,2024,tonnes_co2e,waste/msw/Incinerated
+Vadnais Heights,waste,msw,Incinerated,2684.768764255934,2024,tonnes_co2e,waste/msw/Incinerated
+Wayzata,waste,msw,Incinerated,625.546661414618,2024,tonnes_co2e,waste/msw/Incinerated
+West Saint Paul,waste,msw,Incinerated,346.45955641479986,2024,tonnes_co2e,waste/msw/Incinerated
+White Bear Lake,waste,msw,Incinerated,4941.336982513641,2024,tonnes_co2e,waste/msw/Incinerated
+White Bear Township,waste,msw,Incinerated,2210.544769421723,2024,tonnes_co2e,waste/msw/Incinerated
+Woodbury,waste,msw,Incinerated,11626.144160691227,2024,tonnes_co2e,waste/msw/Incinerated
+Andover,waste,msw,Landfilled,6262.638104887185,2024,tonnes_co2e,waste/msw/Landfilled
+Apple Valley,waste,msw,Landfilled,10006.465306146483,2024,tonnes_co2e,waste/msw/Landfilled
+Arden Hills,waste,msw,Landfilled,484.6925802711814,2024,tonnes_co2e,waste/msw/Landfilled
+Blaine,waste,msw,Landfilled,14588.934201079845,2024,tonnes_co2e,waste/msw/Landfilled
+Bloomington,waste,msw,Landfilled,9944.179835261732,2024,tonnes_co2e,waste/msw/Landfilled
+Brooklyn Center,waste,msw,Landfilled,3720.242282702049,2024,tonnes_co2e,waste/msw/Landfilled
+Brooklyn Park,waste,msw,Landfilled,9163.34953604716,2024,tonnes_co2e,waste/msw/Landfilled
+Burnsville,waste,msw,Landfilled,11663.823295409935,2024,tonnes_co2e,waste/msw/Landfilled
+Circle Pines,waste,msw,Landfilled,964.2956389872617,2024,tonnes_co2e,waste/msw/Landfilled
+Columbia Heights,waste,msw,Landfilled,4144.223337907,2024,tonnes_co2e,waste/msw/Landfilled
+Coon Rapids,waste,msw,Landfilled,12167.724071070386,2024,tonnes_co2e,waste/msw/Landfilled
+Cottage Grove,waste,msw,Landfilled,1495.2875668020977,2024,tonnes_co2e,waste/msw/Landfilled
+Crookston,waste,msw,Landfilled,1705.993298293493,2024,tonnes_co2e,waste/msw/Landfilled
+Crystal,waste,msw,Landfilled,2496.667580928121,2024,tonnes_co2e,waste/msw/Landfilled
+Eagan,waste,msw,Landfilled,12298.892339608688,2024,tonnes_co2e,waste/msw/Landfilled
+Eden Prairie,waste,msw,Landfilled,7005.308443230372,2024,tonnes_co2e,waste/msw/Landfilled
+Edina,waste,msw,Landfilled,5923.260584667725,2024,tonnes_co2e,waste/msw/Landfilled
+Falcon Heights,waste,msw,Landfilled,265.3329367820955,2024,tonnes_co2e,waste/msw/Landfilled
+Farmington,waste,msw,Landfilled,4325.109585050558,2024,tonnes_co2e,waste/msw/Landfilled
+Forest Lake,waste,msw,Landfilled,732.7901600549259,2024,tonnes_co2e,waste/msw/Landfilled
+Fridley,waste,msw,Landfilled,5755.801704080571,2024,tonnes_co2e,waste/msw/Landfilled
+Gem Lake,waste,msw,Landfilled,25.767864493082918,2024,tonnes_co2e,waste/msw/Landfilled
+Golden Valley,waste,msw,Landfilled,2401.739721234076,2024,tonnes_co2e,waste/msw/Landfilled
+Hastings,waste,msw,Landfilled,791.72550429922,2024,tonnes_co2e,waste/msw/Landfilled
+Hopkins,waste,msw,Landfilled,2003.6481729499367,2024,tonnes_co2e,waste/msw/Landfilled
+Independence,waste,msw,Landfilled,425.22923938118396,2024,tonnes_co2e,waste/msw/Landfilled
+Inver Grove Heights,waste,msw,Landfilled,6497.340436538328,2024,tonnes_co2e,waste/msw/Landfilled
+Lake Elmo,waste,msw,Landfilled,497.2541327092625,2024,tonnes_co2e,waste/msw/Landfilled
+Lakeville,waste,msw,Landfilled,13625.666442850872,2024,tonnes_co2e,waste/msw/Landfilled
+Lauderdale,waste,msw,Landfilled,115.38488399393401,2024,tonnes_co2e,waste/msw/Landfilled
+Lexington,waste,msw,Landfilled,580.4218221519262,2024,tonnes_co2e,waste/msw/Landfilled
+Little Canada,waste,msw,Landfilled,508.74892608944697,2024,tonnes_co2e,waste/msw/Landfilled
+Mahtomedi,waste,msw,Landfilled,286.87343522396844,2024,tonnes_co2e,waste/msw/Landfilled
+Maplewood,waste,msw,Landfilled,1998.0554262929809,2024,tonnes_co2e,waste/msw/Landfilled
+Marine on Saint Croix,waste,msw,Landfilled,24.402381211487654,2024,tonnes_co2e,waste/msw/Landfilled
+Minneapolis,waste,msw,Landfilled,47056.64824398445,2024,tonnes_co2e,waste/msw/Landfilled
+Minnetonka,waste,msw,Landfilled,6072.139471682191,2024,tonnes_co2e,waste/msw/Landfilled
+Mounds View,waste,msw,Landfilled,617.6205306819928,2024,tonnes_co2e,waste/msw/Landfilled
+New Brighton,waste,msw,Landfilled,1161.9310114593109,2024,tonnes_co2e,waste/msw/Landfilled
+New Hope,waste,msw,Landfilled,2329.4085844056976,2024,tonnes_co2e,waste/msw/Landfilled
+Newport,waste,msw,Landfilled,152.23252682846717,2024,tonnes_co2e,waste/msw/Landfilled
+North Oaks,waste,msw,Landfilled,272.5593489646575,2024,tonnes_co2e,waste/msw/Landfilled
+North Saint Paul,waste,msw,Landfilled,618.0959525361088,2024,tonnes_co2e,waste/msw/Landfilled
+Northfield,waste,msw,Landfilled,3843.4371453213935,2024,tonnes_co2e,waste/msw/Landfilled
+Oakdale,waste,msw,Landfilled,972.2278303993405,2024,tonnes_co2e,waste/msw/Landfilled
+Orono,waste,msw,Landfilled,906.2475170335836,2024,tonnes_co2e,waste/msw/Landfilled
+Plymouth,waste,msw,Landfilled,8653.571792929368,2024,tonnes_co2e,waste/msw/Landfilled
+Richfield,waste,msw,Landfilled,4160.608082854493,2024,tonnes_co2e,waste/msw/Landfilled
+Robbinsdale,waste,msw,Landfilled,1613.5573782163206,2024,tonnes_co2e,waste/msw/Landfilled
+Rochester,waste,msw,Landfilled,724.6858317283204,2024,tonnes_co2e,waste/msw/Landfilled
+Rogers,waste,msw,Landfilled,1750.435134905001,2024,tonnes_co2e,waste/msw/Landfilled
+Rosemount,waste,msw,Landfilled,4930.173969347274,2024,tonnes_co2e,waste/msw/Landfilled
+Roseville,waste,msw,Landfilled,1726.0190413678508,2024,tonnes_co2e,waste/msw/Landfilled
+Saint Anthony Village,waste,msw,Landfilled,1076.4257074190357,2024,tonnes_co2e,waste/msw/Landfilled
+Saint Louis Park,waste,msw,Landfilled,5332.502241423691,2024,tonnes_co2e,waste/msw/Landfilled
+Saint Paul,waste,msw,Landfilled,14898.532353357674,2024,tonnes_co2e,waste/msw/Landfilled
+Saint Paul Park,waste,msw,Landfilled,183.44567081847663,2024,tonnes_co2e,waste/msw/Landfilled
+Scandia,waste,msw,Landfilled,140.0484486920161,2024,tonnes_co2e,waste/msw/Landfilled
+Shoreview,waste,msw,Landfilled,1312.9249923265274,2024,tonnes_co2e,waste/msw/Landfilled
+South Saint Paul,waste,msw,Landfilled,3671.576134758242,2024,tonnes_co2e,waste/msw/Landfilled
+Spring Lake Park,waste,msw,Landfilled,356.3762218452943,2024,tonnes_co2e,waste/msw/Landfilled
+Stillwater,waste,msw,Landfilled,666.0173048745439,2024,tonnes_co2e,waste/msw/Landfilled
+Sunfish Lake,waste,msw,Landfilled,92.14448810152453,2024,tonnes_co2e,waste/msw/Landfilled
+Thief River Falls,waste,msw,Landfilled,6032.723597260876,2024,tonnes_co2e,waste/msw/Landfilled
+Vadnais Heights,waste,msw,Landfilled,629.5536192203025,2024,tonnes_co2e,waste/msw/Landfilled
+Wayzata,waste,msw,Landfilled,496.1548384236596,2024,tonnes_co2e,waste/msw/Landfilled
+West Saint Paul,waste,msw,Landfilled,3797.6312148200577,2024,tonnes_co2e,waste/msw/Landfilled
+White Bear Lake,waste,msw,Landfilled,1158.6981428513225,2024,tonnes_co2e,waste/msw/Landfilled
+White Bear Township,waste,msw,Landfilled,518.3524475425886,2024,tonnes_co2e,waste/msw/Landfilled
+Woodbury,waste,msw,Landfilled,2784.0960791176526,2024,tonnes_co2e,waste/msw/Landfilled
+Andover,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Apple Valley,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Arden Hills,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Blaine,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Bloomington,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Brooklyn Center,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Brooklyn Park,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Burnsville,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Circle Pines,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Columbia Heights,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Coon Rapids,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Cottage Grove,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Crookston,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Crystal,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Eagan,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Eden Prairie,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Edina,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Falcon Heights,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Farmington,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Forest Lake,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Fridley,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Gem Lake,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Golden Valley,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Hastings,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Hopkins,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Independence,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Inver Grove Heights,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Lake Elmo,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Lakeville,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Lauderdale,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Lexington,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Little Canada,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Mahtomedi,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Maplewood,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Marine on Saint Croix,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Minneapolis,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Minnetonka,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Mounds View,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+New Brighton,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+New Hope,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Newport,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+North Oaks,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+North Saint Paul,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Northfield,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Oakdale,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Orono,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Plymouth,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Richfield,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Robbinsdale,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Rochester,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Rogers,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Rosemount,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Roseville,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Saint Anthony Village,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Saint Louis Park,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Saint Paul,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Saint Paul Park,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Scandia,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Shoreview,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+South Saint Paul,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Spring Lake Park,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Stillwater,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Sunfish Lake,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Thief River Falls,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Vadnais Heights,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Wayzata,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+West Saint Paul,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+White Bear Lake,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+White Bear Township,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled
+Woodbury,waste,msw,Recycled,0.0,2024,tonnes_co2e,waste/msw/Recycled

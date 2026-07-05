@@ -4,7 +4,7 @@ Project-level records of **Green Climate Fund (GCF)**-funded climate programmes,
 
 ## Where this sits (layer & level)
 
-**Awards/Projects layer, multilateral level, intermediated access** — see `knowledge-base/topics/data-sources/cl-climate-finance.md` ("Funder levels"). GCF is *not* a Supply/opportunity (application) source: a city cannot apply to GCF directly, so there is no open-call catalogue. These are **projects that got funded**, reached only through a national gatekeeper plus an Accredited Entity. So for GCF, "opportunity (application)" and "projects happening" collapse into this one projects layer.
+**Awards/Projects layer, multilateral level, intermediated access** — see `knowledge-base/topics/climate-finance/cl-climate-finance.md` ("Funder levels"). GCF is *not* a Supply/opportunity (application) source: a city cannot apply to GCF directly, so there is no open-call catalogue. These are **projects that got funded**, reached only through a national gatekeeper plus an Accredited Entity. So for GCF, "opportunity (application)" and "projects happening" collapse into this one projects layer.
 
 For Chile the access chain is: **NDA = Ministerio de Hacienda** (Sustainable Finance Office) → an **Accredited Entity** (IDB, CAF, FAO, IFC, or the Chilean direct-access AE **FYNSA**) → GCF Board. Tag every Chile row `access_pathway = intermediated`.
 

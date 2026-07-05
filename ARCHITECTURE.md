@@ -19,6 +19,17 @@ flowchart LR
 
 ---
 
+## Dataset sourcing (upstream of Stage 1)
+
+Before a dataset reaches the Stage 1 landing zone it is *sourced* through the dataset lifecycle, driven by the `.cursor/skills/dataset-*` skills. There are two entry points:
+
+- `dataset-discovery` — find and triage a dataset that already exists externally (one publisher, one file/API).
+- `dataset-compile` — manufacture one that doesn't, by compiling scattered public sources (award lists, registries, PDFs) into a schema'd, provenance-flagged staging dataset in `dataset-compile/<slug>/`.
+
+Both feed `dataset-review` (vet + catalog); an approved dataset then enters the Stage 1–4 flow below. Compiled datasets are *authored* records rather than an external publisher's file, so they live in their own lane — neither knowledge-base reference prose nor a vetted catalog dataset until promoted.
+
+---
+
 ## Data Stages
 
 ### Stage 1 — `files` (S3)
