@@ -135,7 +135,6 @@ CURATED_ADDITIONAL_MATCHES = [
     ("30369479-0", "icare_0040", "strong", "LED public-lighting construction."),
     ("30374524-0", "icare_0040", "strong", "LED neighbourhood-lighting upgrade."),
     ("30389922-0", "icare_0040", "strong", "Public-lighting replacement in streets and passages."),
-    ("30399589-0", "icare_0040", "strong", "Regional public-lighting energy-efficiency programme."),
     ("30404623-0", "icare_0040", "strong", "Partial public-luminaire upgrade."),
     # Only titles that explicitly identify LED/high-efficiency technology support the LED action.
     ("30157122-0", "icare_0137", "strong", "High-efficiency LED luminaire acquisition."),
@@ -215,6 +214,9 @@ def validate(projects: list[dict[str, str]], links: list[dict[str, str]], action
         pairs.append((code, action))
     if len(pairs) != len(set(pairs)):
         raise ValueError("links contain duplicate (codigo_bip, action_id) pairs")
+    rejected = sorted(set(pairs) & set(REJECTED_PRIMARY_PAIRS))
+    if rejected:
+        raise ValueError(f"links contain explicitly rejected project-action pair(s): {rejected}")
 
 
 def build_action_audit(actions: list[dict[str, str]], links: list[dict[str, str]]) -> list[dict[str, str]]:

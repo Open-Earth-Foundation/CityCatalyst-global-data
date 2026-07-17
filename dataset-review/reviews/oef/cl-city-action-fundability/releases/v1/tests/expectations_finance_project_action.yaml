@@ -27,14 +27,14 @@ snapshot:                  # provisional from the local merge (orphan links to a
   # BIP uses a reviewed crosswalk: rank-1 strong baseline, documented semantic
   # exclusions, action-centred similar-project additions, and confidence only
   # where the source establishes the action's full intervention.
-  row_count: {equals: 28183}
+  row_count: {equals: 28182}
   group_counts:
     confidence:
-      strong: 10143
+      strong: 10142
       goal_aligned: 18040
     mapping_source:
       conaf-crosswalk: 27490
-      ssg-match: 248
+      ssg-match: 247
       fpa-crosswalk: 442
       gcf-crosswalk: 3
   distinct_count:
