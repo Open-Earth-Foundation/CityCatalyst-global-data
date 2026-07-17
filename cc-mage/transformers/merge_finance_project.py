@@ -11,8 +11,9 @@ Plus the cl-ocha-ab locode lookup (comuna -> city locode) for actor_id.
 The cleaning is uniform-ish across sources but each source has a genuinely different shape,
 so the per-source shaping lives here (once), keyed on `_source_dataset`: align to the
 finance_project superset, normalize controlled vocab to canonical bases, caps-normalize the
-all-caps source text, assemble the i18n + funding_sources JSONB, resolve the locode, attach
-the action match, union. Off-list / unmodeled is dropped (no source_extras catch-all).
+all-caps source text, assemble the i18n + funding_sources JSONB, resolve the locode, and union.
+Project-action links are handled in the separate finance_project_action branch. Off-list /
+unmodeled is dropped (no source_extras catch-all).
 """
 import json
 import re
@@ -186,7 +187,7 @@ def _bip(r, by_name):
     if fuentes:
         fs.append({"source_label": fuentes, "funder_name": fuentes,
                    "source_opportunity_id": None, "amount": None,
-                   "amount_unit": "CLP_millions", "paid_amount": None,
+                   "amount_unit": "CLP_thousands", "paid_amount": None,
                    "cycle": (r.get("ano_postulacion") or None)})
     return {
         "source_project_id": code,
@@ -200,7 +201,8 @@ def _bip(r, by_name):
         "evaluation_verdict": clean_text(r.get("rate_resultado")),
         "cost_total": numstr(r.get("costo_total_M_CLP")),
         "amount_committed": None, "amount_paid": None,
-        "amount_unit": "CLP_millions" if num(r.get("costo_total_M_CLP")) is not None else None,
+        # BIP's M$ field is expressed in thousands of Chilean pesos, not millions.
+        "amount_unit": "CLP_thousands" if num(r.get("costo_total_M_CLP")) is not None else None,
         "duration_months": numstr(r.get("duracion_meses")),
         "owner_formulator": title_case(r.get("institucion_formuladora")),
         "funding_channel": "public investment",

@@ -32,9 +32,9 @@ invariants:                # must hold for ANY release, not just this snapshot
   value_sets:              # controlled vocabularies (nulls ignored); the merge normalizes to these
     funding_channel:  [competitive fund, public investment, intermediated multilateral]
     lifecycle_stage:  [formulated, appraised, financed, in-execution, completed]
-    amount_unit:      [CLP_millions, UTM, CLP, USD]
+    amount_unit:      [CLP_thousands, UTM, CLP, USD]
     country_code:     [CL]
-  # No global numeric range on amounts: cost_total/amount_committed mix units (CLP_millions vs UTM vs
+  # No global numeric range on amounts: cost_total/amount_committed mix units (CLP_thousands vs UTM vs
   # CLP vs USD), so a single bound is meaningless. Non-negativity is checked via row_rules instead.
   ranges:
     duration_months: {min: 0, max: 600}

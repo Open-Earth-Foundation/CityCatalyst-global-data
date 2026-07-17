@@ -1,6 +1,7 @@
-"""cl-ssg/cl-ssg-projects per-project action matches (codigo_bip -> action_id, label).
-Bare S3 read; the merge picks each project's best strong/goal_aligned match. Not tagged with
-_source_dataset (the merge identifies this frame by its columns: codigo_bip, action_id, label).
+"""cl-ssg/cl-ssg-projects per-project action matches (codigo_bip -> action_id, label, rationale).
+Bare S3 read. Every curated ``strong`` link is a direct similar project; ``goal_aligned`` links
+are related examples and remain separate rows for the consuming application to present separately.
+Not tagged with _source_dataset (the transformer identifies this frame by its columns).
 """
 from os import path
 

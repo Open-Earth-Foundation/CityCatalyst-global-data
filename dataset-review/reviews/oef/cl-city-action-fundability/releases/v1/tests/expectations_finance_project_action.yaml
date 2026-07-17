@@ -24,14 +24,17 @@ invariants:
     mapping_source:  [ssg-match, gcf-crosswalk, fpa-crosswalk, conaf-crosswalk]
 
 snapshot:                  # provisional from the local merge (orphan links to absent projects are FK-dropped); re-confirm from the DB
-  row_count: {equals: 28436}
+  # BIP uses a reviewed crosswalk: rank-1 strong baseline, documented semantic
+  # exclusions, action-centred similar-project additions, and confidence only
+  # where the source establishes the action's full intervention.
+  row_count: {equals: 28183}
   group_counts:
     confidence:
-      strong: 10361
-      goal_aligned: 18075
+      strong: 10143
+      goal_aligned: 18040
     mapping_source:
       conaf-crosswalk: 27490
-      ssg-match: 501
+      ssg-match: 248
       fpa-crosswalk: 442
       gcf-crosswalk: 3
   distinct_count:

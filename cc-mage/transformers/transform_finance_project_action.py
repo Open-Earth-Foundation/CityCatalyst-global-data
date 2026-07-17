@@ -7,7 +7,8 @@ finance_opportunity_action). The modelled SQL derives project_id the same way as
 (MD5(source_project_id-release_id)) and joins finance_project to stay FK-safe.
 
 Matches by source:
-  - BIP (cl-ssg): per-project matches file (codigo_bip, action_id, label); keep strong/goal_aligned.
+  - BIP (cl-ssg): per-project matches file (codigo_bip, action_id, label, rationale). ``strong``
+    means a direct similar project; ``goal_aligned`` means a related example, not a substitute.
   - GCF / FPA / CONAF: small grain crosswalks (fp_id / clasificacion / objetivo_manejo -> actions).
 Confidence maps high->strong, medium->goal_aligned; off-list confidence is dropped (no link row).
 """
@@ -67,6 +68,14 @@ def _frame_source(df):
     return df["_source_dataset"].iloc[0] if df is not None and len(df) else None
 
 
+def _text(value):
+    """Return a stripped text value, converting empty and missing values to None."""
+    if value is None or pd.isna(value):
+        return None
+    value = str(value).strip()
+    return value or None
+
+
 @transformer
 def transform_finance_project_action(*frames, **kwargs):
     proj_frames, matches_df = [], None
@@ -84,12 +93,13 @@ def transform_finance_project_action(*frames, **kwargs):
     if matches_df is not None:
         m = matches_df.where(pd.notna(matches_df), None)
         for _, r in m.iterrows():
-            lab = (r.get("label") or "").strip()
-            code = (r.get("codigo_bip") or "").strip()
-            aid = (r.get("action_id") or "").strip()
+            lab = _text(r.get("label"))
+            code = _text(r.get("codigo_bip"))
+            aid = _text(r.get("action_id"))
             if lab in ("strong", "goal_aligned") and code and aid:
                 rows.append({"source_dataset": BIP, "source_project_id": code, "action_id": aid,
-                             "mapping_source": "ssg-match", "confidence": lab, "rationale": None})
+                             "mapping_source": "ssg-match", "confidence": lab,
+                             "rationale": _text(r.get("rationale"))})
 
     # grain crosswalks (GCF / FPA / CONAF)
     for df in proj_frames:
@@ -112,6 +122,18 @@ def transform_finance_project_action(*frames, **kwargs):
 
     out = pd.DataFrame(rows, columns=OUT_COLS)
     out = out.drop_duplicates(subset=["source_dataset", "source_project_id", "action_id", "mapping_source"]).reset_index(drop=True)
+    # A direct match must explain the shared intervention. This prevents a malformed S3 upload
+    # from silently producing an unexplained "Similar project" card for city users.
+    bip_strong_missing_rationale = out.loc[
+        (out["source_dataset"] == BIP)
+        & (out["confidence"] == "strong")
+        & out["rationale"].isna()
+    ]
+    if len(bip_strong_missing_rationale):
+        raise ValueError(
+            "BIP strong project-action matches require a rationale; "
+            f"missing for {len(bip_strong_missing_rationale)} link(s)."
+        )
     print(f"finance_project_action: {len(out)} project-action links")
     for sd, g in out.groupby("source_dataset"):
         print(f"  {sd}: {len(g)} links, {g['source_project_id'].nunique()} projects, {g['action_id'].nunique()} actions")
