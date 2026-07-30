@@ -1,0 +1,346 @@
+"comuna_code","country_code","region_code","region_name","comuna_name","locode"
+"01101",CL,"01",Región de Tarapacá,Iquique,CL IQQ
+"01107",CL,"01",Región de Tarapacá,Alto Hospicio,CL AHP
+"01401",CL,"01",Región de Tarapacá,Tocopilla,
+"01402",CL,"01",Región de Tarapacá,Camiña,CL CMA
+"01403",CL,"01",Región de Tarapacá,Colchane,CL CNE
+"01404",CL,"01",Región de Tarapacá,Huara,CL HUA
+"01405",CL,"01",Región de Tarapacá,Pica,CL PIC
+"02101",CL,"02",Región de Antofagasta,Antofagasta,CL ANF
+"02102",CL,"02",Región de Antofagasta,Mejillones,CL MJS
+"02103",CL,"02",Región de Antofagasta,Sierra Gorda,CL SIG
+"02104",CL,"02",Región de Antofagasta,Taltal,CL TTC
+"02201",CL,"02",Región de Antofagasta,Calama,CL CJC
+"02202",CL,"02",Región de Antofagasta,Ollagüe,CL OLL
+"02203",CL,"02",Región de Antofagasta,San Pedro de Atacama,CL SPA
+"02301",CL,"02",Región de Antofagasta,Tocopilla,CL TOQ
+"02302",CL,"02",Región de Antofagasta,María Elena,CL MAE
+"03101",CL,"03",Región de Atacama,Copiapó,CL CPO
+"03102",CL,"03",Región de Atacama,Caldera,CL CLD
+"03103",CL,"03",Región de Atacama,Tierra Amarilla,CL TAM
+"03201",CL,"03",Región de Atacama,Chañaral,CL CNR
+"03202",CL,"03",Región de Atacama,Diego de Almagro,CL DDA
+"03301",CL,"03",Región de Atacama,Vallenar,CL VLR
+"03302",CL,"03",Región de Atacama,Alto del Carmen,CL ADC
+"03303",CL,"03",Región de Atacama,Freirina,CL FRN
+"03304",CL,"03",Región de Atacama,Huasco,
+"04101",CL,"04",Región de Coquimbo,La Serena,CL LSC
+"04102",CL,"04",Región de Coquimbo,Coquimbo,CL CQQ
+"04103",CL,"04",Región de Coquimbo,Andacollo,CL AND
+"04104",CL,"04",Región de Coquimbo,La Higuera,
+"04105",CL,"04",Región de Coquimbo,Paihuano,
+"04106",CL,"04",Región de Coquimbo,Vicuña,CL VIC
+"04201",CL,"04",Región de Coquimbo,Illapel,CL ILL
+"04202",CL,"04",Región de Coquimbo,Canela,CL CAN
+"04203",CL,"04",Región de Coquimbo,Los Vilos,CL LOS
+"04204",CL,"04",Región de Coquimbo,Salamanca,CL SAL
+"04301",CL,"04",Región de Coquimbo,Ovalle,CL OVL
+"04302",CL,"04",Región de Coquimbo,Combarbalá,CL CBB
+"04303",CL,"04",Región de Coquimbo,Monte Patria,CL MTP
+"04304",CL,"04",Región de Coquimbo,Punitaqui,CL PUN
+"04305",CL,"04",Región de Coquimbo,Río Hurtado,CL RHU
+"05101",CL,"05",Región de Valparaíso,Valparaíso,CL VAP
+"05102",CL,"05",Región de Valparaíso,Casablanca,CL CAS
+"05103",CL,"05",Región de Valparaíso,Concón,CL CON
+"05104",CL,"05",Región de Valparaíso,Juan Fernández,
+"05105",CL,"05",Región de Valparaíso,Puchuncaví,CL PCI
+"05107",CL,"05",Región de Valparaíso,Quintero,
+"05109",CL,"05",Región de Valparaíso,Viña del Mar,CL KNA
+"05201",CL,"05",Región de Valparaíso,Isla de Pascua,CL IPC
+"05301",CL,"05",Región de Valparaíso,Los Andes,CL LIB
+"05302",CL,"05",Región de Valparaíso,Calle Larga,CL CLL
+"05303",CL,"05",Región de Valparaíso,Rinconada,CL RIN
+"05304",CL,"05",Región de Valparaíso,San Esteban,CL SES
+"05401",CL,"05",Región de Valparaíso,La Ligua,CL LIG
+"05402",CL,"05",Región de Valparaíso,Cabildo,
+"05403",CL,"05",Región de Valparaíso,Papudo,CL PAP
+"05404",CL,"05",Región de Valparaíso,Petorca,CL PET
+"05405",CL,"05",Región de Valparaíso,Zapallar,
+"05501",CL,"05",Región de Valparaíso,Quillota,CL QTA
+"05502",CL,"05",Región de Valparaíso,Calera,CL LCL
+"05503",CL,"05",Región de Valparaíso,Hijuelas,CL HIJ
+"05504",CL,"05",Región de Valparaíso,La Cruz,CL LCZ
+"05506",CL,"05",Región de Valparaíso,Nogales,CL NOG
+"05601",CL,"05",Región de Valparaíso,San Antonio,CL SAI
+"05602",CL,"05",Región de Valparaíso,Algarrobo,CL ALG
+"05603",CL,"05",Región de Valparaíso,Cartagena,CL CGN
+"05604",CL,"05",Región de Valparaíso,El Quisco,CL ELQ
+"05605",CL,"05",Región de Valparaíso,El Tabo,CL ELT
+"05606",CL,"05",Región de Valparaíso,Santo Domingo,CL RSD
+"05701",CL,"05",Región de Valparaíso,San Felipe,CL SFP
+"05702",CL,"05",Región de Valparaíso,Catemu,CL CAT
+"05703",CL,"05",Región de Valparaíso,Llaillay,CL LLA
+"05704",CL,"05",Región de Valparaíso,Panquehue,CL PQH
+"05705",CL,"05",Región de Valparaíso,Putaendo,CL PTO
+"05706",CL,"05",Región de Valparaíso,Santa María,CL SMA
+"05801",CL,"05",Región de Valparaíso,Quilpué,CL QIL
+"05802",CL,"05",Región de Valparaíso,Limache,CL LIM
+"05803",CL,"05",Región de Valparaíso,Olmué,CL OLM
+"05804",CL,"05",Región de Valparaíso,Villa Alemana,CL VIA
+"06101",CL,"06",Región del Libertador Bernardo O'Higgins,Rancagua,CL QRC
+"06102",CL,"06",Región del Libertador Bernardo O'Higgins,Codegua,CL COD
+"06103",CL,"06",Región del Libertador Bernardo O'Higgins,Coinco,CL COO
+"06104",CL,"06",Región del Libertador Bernardo O'Higgins,Coltauco,CL CTC
+"06105",CL,"06",Región del Libertador Bernardo O'Higgins,Doñihue,CL DOH
+"06106",CL,"06",Región del Libertador Bernardo O'Higgins,Graneros,CL GRA
+"06107",CL,"06",Región del Libertador Bernardo O'Higgins,Las Cabras,CL LCB
+"06108",CL,"06",Región del Libertador Bernardo O'Higgins,Machalí,CL MCI
+"06109",CL,"06",Región del Libertador Bernardo O'Higgins,Malloa,CL MAL
+"06110",CL,"06",Región del Libertador Bernardo O'Higgins,Mostazal,CL MOS
+"06111",CL,"06",Región del Libertador Bernardo O'Higgins,Olivar,CL OLI
+"06112",CL,"06",Región del Libertador Bernardo O'Higgins,Peumo,CL PEU
+"06113",CL,"06",Región del Libertador Bernardo O'Higgins,Pichidegua,CL PDH
+"06114",CL,"06",Región del Libertador Bernardo O'Higgins,Quinta de Tilcoco,CL QDT
+"06115",CL,"06",Región del Libertador Bernardo O'Higgins,Rengo,CL RGO
+"06116",CL,"06",Región del Libertador Bernardo O'Higgins,Requínoa,CL REQ
+"06117",CL,"06",Región del Libertador Bernardo O'Higgins,San Vicente,CL SVT
+"06201",CL,"06",Región del Libertador Bernardo O'Higgins,Pichilemu,CL PLM
+"06202",CL,"06",Región del Libertador Bernardo O'Higgins,La Estrella,CL LES
+"06203",CL,"06",Región del Libertador Bernardo O'Higgins,Litueche,
+"06204",CL,"06",Región del Libertador Bernardo O'Higgins,Marchigüe,
+"06205",CL,"06",Región del Libertador Bernardo O'Higgins,Navidad,CL NAV
+"06206",CL,"06",Región del Libertador Bernardo O'Higgins,Paredones,CL PAR
+"06301",CL,"06",Región del Libertador Bernardo O'Higgins,San Fernando,CL SFD
+"06302",CL,"06",Región del Libertador Bernardo O'Higgins,Chépica,CL CHE
+"06303",CL,"06",Región del Libertador Bernardo O'Higgins,Chimbarongo,CL CBG
+"06304",CL,"06",Región del Libertador Bernardo O'Higgins,Lolol,CL LOL
+"06305",CL,"06",Región del Libertador Bernardo O'Higgins,Nancagua,CL NCG
+"06306",CL,"06",Región del Libertador Bernardo O'Higgins,Palmilla,CL PMA
+"06307",CL,"06",Región del Libertador Bernardo O'Higgins,Peralillo,CL PER
+"06308",CL,"06",Región del Libertador Bernardo O'Higgins,Placilla,CL PLA
+"06309",CL,"06",Región del Libertador Bernardo O'Higgins,Pumanque,CL PUM
+"06310",CL,"06",Región del Libertador Bernardo O'Higgins,Santa Cruz,CL SCZ
+"07101",CL,"07",Región del Maule,Talca,CL TLX
+"07102",CL,"07",Región del Maule,Constitución,CL CST
+"07103",CL,"07",Región del Maule,Curepto,CL CRT
+"07104",CL,"07",Región del Maule,Empedrado,CL EMP
+"07105",CL,"07",Región del Maule,Maule,CL MAU
+"07106",CL,"07",Región del Maule,Pelarco,CL PEL
+"07107",CL,"07",Región del Maule,Pencahue,CL PEN
+"07108",CL,"07",Región del Maule,Río Claro,CL RCL
+"07109",CL,"07",Región del Maule,San Clemente,CL SCT
+"07110",CL,"07",Región del Maule,San Rafael,CL SRA
+"07201",CL,"07",Región del Maule,Cauquenes,CL CAU
+"07202",CL,"07",Región del Maule,Chanco,CL CHA
+"07203",CL,"07",Región del Maule,Pelluhue,CL PLH
+"07301",CL,"07",Región del Maule,Curicó,CL CUR
+"07302",CL,"07",Región del Maule,Hualañé,CL HLE
+"07303",CL,"07",Región del Maule,Licantén,CL LIC
+"07304",CL,"07",Región del Maule,Molina,CL MOL
+"07305",CL,"07",Región del Maule,Rauco,CL RAU
+"07306",CL,"07",Región del Maule,Romeral,CL ROM
+"07307",CL,"07",Región del Maule,Sagrada Familia,CL SAF
+"07308",CL,"07",Región del Maule,Teno,CL TEN
+"07309",CL,"07",Región del Maule,Vichuquén,CL VCQ
+"07401",CL,"07",Región del Maule,Linares,CL LIN
+"07402",CL,"07",Región del Maule,Colbún,CL COB
+"07403",CL,"07",Región del Maule,Longaví,CL LON
+"07404",CL,"07",Región del Maule,Parral,CL PRL
+"07405",CL,"07",Región del Maule,Retiro,CL RET
+"07406",CL,"07",Región del Maule,San Javier,CL SJV
+"07407",CL,"07",Región del Maule,Villa Alegre,CL VAG
+"07408",CL,"07",Región del Maule,Yerbas Buenas,CL YBU
+"08101",CL,"08",Región del Bío-Bío,Concepción,CL CCP
+"08102",CL,"08",Región del Bío-Bío,Coronel,CL CNL
+"08103",CL,"08",Región del Bío-Bío,Chiguayante,CL CHI
+"08104",CL,"08",Región del Bío-Bío,Florida,CL FLO
+"08105",CL,"08",Región del Bío-Bío,Hualqui,CL HQI
+"08106",CL,"08",Región del Bío-Bío,Lota,CL LTA
+"08107",CL,"08",Región del Bío-Bío,Penco,CL PEO
+"08108",CL,"08",Región del Bío-Bío,San Pedro de la Paz,CL SPP
+"08109",CL,"08",Región del Bío-Bío,Santa Juana,CL SJU
+"08110",CL,"08",Región del Bío-Bío,Talcahuano,CL TAL
+"08111",CL,"08",Región del Bío-Bío,Tomé,CL TOM
+"08112",CL,"08",Región del Bío-Bío,Hualpén,CL HPN
+"08201",CL,"08",Región del Bío-Bío,Lebu,CL LEB
+"08202",CL,"08",Región del Bío-Bío,Arauco,CL ARA
+"08203",CL,"08",Región del Bío-Bío,Cañete,CL CTE
+"08204",CL,"08",Región del Bío-Bío,Contulmo,CL CTM
+"08205",CL,"08",Región del Bío-Bío,Curanilahue,CL CRN
+"08206",CL,"08",Región del Bío-Bío,Los Alamos,CL LAL
+"08207",CL,"08",Región del Bío-Bío,Tirúa,CL TIR
+"08301",CL,"08",Región del Bío-Bío,Los Angeles,CL LSQ
+"08302",CL,"08",Región del Bío-Bío,Antuco,CL ANT
+"08303",CL,"08",Región del Bío-Bío,Cabrero,CL CAB
+"08304",CL,"08",Región del Bío-Bío,Laja,CL LAJ
+"08305",CL,"08",Región del Bío-Bío,Mulchén,CL MUL
+"08306",CL,"08",Región del Bío-Bío,Nacimiento,CL NAC
+"08307",CL,"08",Región del Bío-Bío,Negrete,CL NEG
+"08308",CL,"08",Región del Bío-Bío,Quilaco,
+"08309",CL,"08",Región del Bío-Bío,Quilleco,CL QLO
+"08310",CL,"08",Región del Bío-Bío,San Rosendo,CL SRO
+"08311",CL,"08",Región del Bío-Bío,Santa Bárbara,CL SBA
+"08312",CL,"08",Región del Bío-Bío,Tucapel,CL TUC
+"08313",CL,"08",Región del Bío-Bío,Yumbel,CL YUM
+"08314",CL,"08",Región del Bío-Bío,Alto Biobío,
+"09101",CL,"09",Región de La Araucanía,Temuco,CL ZCO
+"09102",CL,"09",Región de La Araucanía,Carahue,CL CAR
+"09103",CL,"09",Región de La Araucanía,Cunco,CL CUN
+"09104",CL,"09",Región de La Araucanía,Curarrehue,CL CRE
+"09105",CL,"09",Región de La Araucanía,Freire,CL FRE
+"09106",CL,"09",Región de La Araucanía,Galvarino,CL GAL
+"09107",CL,"09",Región de La Araucanía,Gorbea,CL GOR
+"09108",CL,"09",Región de La Araucanía,Lautaro,CL LAU
+"09109",CL,"09",Región de La Araucanía,Loncoche,CL LNC
+"09110",CL,"09",Región de La Araucanía,Melipeuco,CL MLP
+"09111",CL,"09",Región de La Araucanía,Nueva Imperial,CL NIM
+"09112",CL,"09",Región de La Araucanía,Padre Las Casas,CL PLC
+"09113",CL,"09",Región de La Araucanía,Perquenco,CL PQC
+"09114",CL,"09",Región de La Araucanía,Pitrufquén,CL PIT
+"09115",CL,"09",Región de La Araucanía,Pucón,CL PUC
+"09116",CL,"09",Región de La Araucanía,Saavedra,CL SAA
+"09117",CL,"09",Región de La Araucanía,Teodoro Schmidt,CL TEO
+"09118",CL,"09",Región de La Araucanía,Toltén,CL TOL
+"09119",CL,"09",Región de La Araucanía,Vilcún,CL VCN
+"09120",CL,"09",Región de La Araucanía,Villarrica,CL VIL
+"09121",CL,"09",Región de La Araucanía,Cholchol,CL CHL
+"09201",CL,"09",Región de La Araucanía,Angol,CL ANG
+"09202",CL,"09",Región de La Araucanía,Collipulli,CL CPI
+"09203",CL,"09",Región de La Araucanía,Curacautín,CL CCN
+"09204",CL,"09",Región de La Araucanía,Ercilla,CL ERC
+"09205",CL,"09",Región de La Araucanía,Lonquimay,CL LQY
+"09206",CL,"09",Región de La Araucanía,Los Sauces,CL LSA
+"09207",CL,"09",Región de La Araucanía,Lumaco,CL LUM
+"09208",CL,"09",Región de La Araucanía,Purén,CL PUR
+"09209",CL,"09",Región de La Araucanía,Renaico,CL RNO
+"09210",CL,"09",Región de La Araucanía,Traiguén,CL TRA
+"09211",CL,"09",Región de La Araucanía,Victoria,CL ZIC
+"10101",CL,"10",Región de Los Lagos,Puerto Montt,CL PMC
+"10102",CL,"10",Región de Los Lagos,Calbuco,CL CBC
+"10103",CL,"10",Región de Los Lagos,Cochamó,
+"10104",CL,"10",Región de Los Lagos,Fresia,CL FRS
+"10105",CL,"10",Región de Los Lagos,Frutillar,CL FRT
+"10106",CL,"10",Región de Los Lagos,Los Muermos,CL LMU
+"10107",CL,"10",Región de Los Lagos,Llanquihue,CL LIA
+"10108",CL,"10",Región de Los Lagos,Maullín,CL MLL
+"10109",CL,"10",Región de Los Lagos,Puerto Varas,CL PVS
+"10201",CL,"10",Región de Los Lagos,Castro,CL WCA
+"10202",CL,"10",Región de Los Lagos,Ancud,CL ZUD
+"10203",CL,"10",Región de Los Lagos,Chonchi,CL CHO
+"10204",CL,"10",Región de Los Lagos,Curaco de Vélez,CL CDV
+"10205",CL,"10",Región de Los Lagos,Dalcahue,CL DCH
+"10206",CL,"10",Región de Los Lagos,Puqueldón,CL PQD
+"10207",CL,"10",Región de Los Lagos,Queilén,CL QLN
+"10208",CL,"10",Región de Los Lagos,Quellón,CL PTE
+"10209",CL,"10",Región de Los Lagos,Quemchi,CL QMC
+"10210",CL,"10",Región de Los Lagos,Quinchao,CL QCO
+"10301",CL,"10",Región de Los Lagos,Osorno,CL ZOS
+"10302",CL,"10",Región de Los Lagos,Puerto Octay,CL POC
+"10303",CL,"10",Región de Los Lagos,Purranque,CL PRQ
+"10304",CL,"10",Región de Los Lagos,Puyehue,CL CSA
+"10305",CL,"10",Región de Los Lagos,Río Negro,CL RNE
+"10306",CL,"10",Región de Los Lagos,San Juan de la Costa,CL SJC
+"10307",CL,"10",Región de Los Lagos,San Pablo,CL SPB
+"10401",CL,"10",Región de Los Lagos,Chaitén,CL WCH
+"10402",CL,"10",Región de Los Lagos,Futaleufú,CL FFU
+"10403",CL,"10",Región de Los Lagos,Hualaihué,
+"10404",CL,"10",Región de Los Lagos,Palena,CL PAL
+"11101",CL,"11",Región de Aysén del Gral. Ibañez del Campo,Coyhaique,CL CXQ
+"11102",CL,"11",Región de Aysén del Gral. Ibañez del Campo,Lago Verde,CL LVD
+"11201",CL,"11",Región de Aysén del Gral. Ibañez del Campo,Aysén,CL PSN
+"11202",CL,"11",Región de Aysén del Gral. Ibañez del Campo,Cisnes,
+"11203",CL,"11",Región de Aysén del Gral. Ibañez del Campo,Guaitecas,
+"11301",CL,"11",Región de Aysén del Gral. Ibañez del Campo,Cochrane,CL COC
+"11302",CL,"11",Región de Aysén del Gral. Ibañez del Campo,O'Higgins,CL OHI
+"11303",CL,"11",Región de Aysén del Gral. Ibañez del Campo,Tortel,
+"11401",CL,"11",Región de Aysén del Gral. Ibañez del Campo,Chile Chico,CL CCH
+"11402",CL,"11",Región de Aysén del Gral. Ibañez del Campo,Río Ibáñez,CL RIB
+"12101",CL,"12",Región de Magallanes y Antártica Chilena,Punta Arenas,CL PUQ
+"12102",CL,"12",Región de Magallanes y Antártica Chilena,Laguna Blanca,
+"12103",CL,"12",Región de Magallanes y Antártica Chilena,Río Verde,CL RVE
+"12104",CL,"12",Región de Magallanes y Antártica Chilena,San Gregorio,CL SGR
+"12201",CL,"12",Región de Magallanes y Antártica Chilena,Cabo de Hornos,
+"12301",CL,"12",Región de Magallanes y Antártica Chilena,Porvenir,CL PVR
+"12302",CL,"12",Región de Magallanes y Antártica Chilena,Primavera,CL PRI
+"12303",CL,"12",Región de Magallanes y Antártica Chilena,Timaukel,CL TIM
+"12401",CL,"12",Región de Magallanes y Antártica Chilena,Natales,CL CVJ
+"12402",CL,"12",Región de Magallanes y Antártica Chilena,Torres del Paine,CL TDP
+"13101",CL,"13",Región Metropolitana de Santiago,Santiago,CL SCL
+"13102",CL,"13",Región Metropolitana de Santiago,Cerrillos,CL CER
+"13103",CL,"13",Región Metropolitana de Santiago,Cerro Navia,
+"13104",CL,"13",Región Metropolitana de Santiago,Conchalí,
+"13105",CL,"13",Región Metropolitana de Santiago,El Bosque,
+"13106",CL,"13",Región Metropolitana de Santiago,Estación Central,
+"13107",CL,"13",Región Metropolitana de Santiago,Huechuraba,CL HUE
+"13108",CL,"13",Región Metropolitana de Santiago,Independencia,CL IND
+"13109",CL,"13",Región Metropolitana de Santiago,La Cisterna,CL LCI
+"13110",CL,"13",Región Metropolitana de Santiago,La Florida,CL LFL
+"13111",CL,"13",Región Metropolitana de Santiago,La Granja,
+"13112",CL,"13",Región Metropolitana de Santiago,La Pintana,
+"13113",CL,"13",Región Metropolitana de Santiago,La Reina,CL REI
+"13114",CL,"13",Región Metropolitana de Santiago,Las Condes,
+"13115",CL,"13",Región Metropolitana de Santiago,Lo Barnechea,CL LBA
+"13116",CL,"13",Región Metropolitana de Santiago,Lo Espejo,CL LEJ
+"13117",CL,"13",Región Metropolitana de Santiago,Lo Prado,CL LPR
+"13118",CL,"13",Región Metropolitana de Santiago,Macul,CL MAC
+"13119",CL,"13",Región Metropolitana de Santiago,Maipú,CL MAI
+"13120",CL,"13",Región Metropolitana de Santiago,Ñuñoa,CL NUN
+"13121",CL,"13",Región Metropolitana de Santiago,Pedro Aguirre Cerda,
+"13122",CL,"13",Región Metropolitana de Santiago,Peñalolén,CL PLN
+"13123",CL,"13",Región Metropolitana de Santiago,Providencia,CL PRO
+"13124",CL,"13",Región Metropolitana de Santiago,Pudahuel,CL PUD
+"13125",CL,"13",Región Metropolitana de Santiago,Quilicura,CL QUI
+"13126",CL,"13",Región Metropolitana de Santiago,Quinta Normal,
+"13127",CL,"13",Región Metropolitana de Santiago,Recoleta,CL REC
+"13128",CL,"13",Región Metropolitana de Santiago,Renca,CL REN
+"13129",CL,"13",Región Metropolitana de Santiago,San Joaquín,CL SJQ
+"13130",CL,"13",Región Metropolitana de Santiago,San Miguel,CL SMG
+"13131",CL,"13",Región Metropolitana de Santiago,San Ramón,
+"13132",CL,"13",Región Metropolitana de Santiago,Vitacura,CL VIT
+"13201",CL,"13",Región Metropolitana de Santiago,Puente Alto,CL PTA
+"13202",CL,"13",Región Metropolitana de Santiago,Pirque,CL PIR
+"13203",CL,"13",Región Metropolitana de Santiago,San José de Maipo,CL SJM
+"13301",CL,"13",Región Metropolitana de Santiago,Colina,CL CLN
+"13302",CL,"13",Región Metropolitana de Santiago,Lampa,CL LAM
+"13303",CL,"13",Región Metropolitana de Santiago,Tiltil,CL TIL
+"13401",CL,"13",Región Metropolitana de Santiago,San Bernardo,CL SBD
+"13402",CL,"13",Región Metropolitana de Santiago,Buin,CL BUI
+"13403",CL,"13",Región Metropolitana de Santiago,Calera de Tango,CL CDT
+"13404",CL,"13",Región Metropolitana de Santiago,Paine,CL PNE
+"13501",CL,"13",Región Metropolitana de Santiago,Melipilla,CL MEL
+"13502",CL,"13",Región Metropolitana de Santiago,Alhué,CL ALH
+"13503",CL,"13",Región Metropolitana de Santiago,Curacaví,CL CRV
+"13504",CL,"13",Región Metropolitana de Santiago,María Pinto,CL MPI
+"13505",CL,"13",Región Metropolitana de Santiago,San Pedro,CL SPE
+"13601",CL,"13",Región Metropolitana de Santiago,Talagante,CL TLG
+"13602",CL,"13",Región Metropolitana de Santiago,El Monte,CL ELM
+"13603",CL,"13",Región Metropolitana de Santiago,Isla de Maipo,CL IDM
+"13604",CL,"13",Región Metropolitana de Santiago,Padre Hurtado,CL PHU
+"13605",CL,"13",Región Metropolitana de Santiago,Peñaflor,CL PFL
+"14101",CL,"14",Región de Los Ríos,Valdivia,CL ZAL
+"14102",CL,"14",Región de Los Ríos,Corral,CL CRR
+"14103",CL,"14",Región de Los Ríos,Lanco,CL LAN
+"14104",CL,"14",Región de Los Ríos,Los Lagos,CL LLG
+"14105",CL,"14",Región de Los Ríos,Máfil,CL MAF
+"14106",CL,"14",Región de Los Ríos,Mariquina,CL MRQ
+"14107",CL,"14",Región de Los Ríos,Paillaco,CL PAO
+"14108",CL,"14",Región de Los Ríos,Panguipulli,CL PAN
+"14201",CL,"14",Región de Los Ríos,La Unión,CL LUN
+"14202",CL,"14",Región de Los Ríos,Futrono,CL FUT
+"14203",CL,"14",Región de Los Ríos,Lago Ranco,CL RNC
+"14204",CL,"14",Región de Los Ríos,Río Bueno,CL RBU
+"15101",CL,"15",Región de Arica y Parinacota,Arica,CL ARI
+"15102",CL,"15",Región de Arica y Parinacota,Camarones,CL CAM
+"15201",CL,"15",Región de Arica y Parinacota,Putre,CL PUT
+"15202",CL,"15",Región de Arica y Parinacota,General Lagos,CL GLG
+"16101",CL,"16",Región de Ñuble,Chillán,CL YAI
+"16102",CL,"16",Región de Ñuble,Bulnes,CL BUL
+"16103",CL,"16",Región de Ñuble,Chillán Viejo,CL CHV
+"16104",CL,"16",Región de Ñuble,El Carmen,CL ELC
+"16105",CL,"16",Región de Ñuble,Pemuco,CL PEM
+"16106",CL,"16",Región de Ñuble,Pinto,CL PIN
+"16107",CL,"16",Región de Ñuble,Quillón,CL QIN
+"16108",CL,"16",Región de Ñuble,San Ignacio,CL SIN
+"16109",CL,"16",Región de Ñuble,Yungay,CL YUN
+"16201",CL,"16",Región de Ñuble,Quirihue,CL QRH
+"16202",CL,"16",Región de Ñuble,Cobquecura,CL CBQ
+"16203",CL,"16",Región de Ñuble,Coelemu,CL COE
+"16204",CL,"16",Región de Ñuble,Ninhue,CL NIN
+"16205",CL,"16",Región de Ñuble,Portezuelo,CL POR
+"16206",CL,"16",Región de Ñuble,Ranquil,CL RAN
+"16207",CL,"16",Región de Ñuble,Treguaco,CL TRE
+"16301",CL,"16",Región de Ñuble,San Carlos,CL SCR
+"16302",CL,"16",Región de Ñuble,Coihueco,CL COI
+"16303",CL,"16",Región de Ñuble,Ñiquén,CL NQN
+"16304",CL,"16",Región de Ñuble,San Fabián,CL SFN
+"16305",CL,"16",Región de Ñuble,San Nicolás,CL SNI

@@ -291,6 +291,12 @@ def atomize_document(
     raw_atoms: list[dict] = []
     chunk_logs: list[dict] = []
     for chunk in chunks:
+        print(
+            f"atomizing {doc_id}: chunk {chunk.index + 1}/{len(chunks)} "
+            f"({chunk.end_offset - chunk.start_offset:,} chars)",
+            file=sys.stderr,
+            flush=True,
+        )
         user_prompt = build_user_prompt(doc_meta, chunk, total_chunks=len(chunks))
         payload, usage = call_atomize(system_prompt, user_prompt, model=model)
         chunk_atoms_raw = payload.get("atoms") or []
@@ -315,6 +321,12 @@ def atomize_document(
             ),
             **usage,
         })
+        print(
+            f"completed {doc_id}: chunk {chunk.index + 1}/{len(chunks)} "
+            f"atoms={len(chunk_atoms_raw)}",
+            file=sys.stderr,
+            flush=True,
+        )
 
     atoms, dropped = assign_offsets_and_ids(raw_atoms, document, doc_id)
 

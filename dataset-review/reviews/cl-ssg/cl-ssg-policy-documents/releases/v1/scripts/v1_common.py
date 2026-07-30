@@ -57,6 +57,8 @@ class Document:
         self._section_index: list[tuple[int, str]] = [
             (m.start(), m.group(1).strip("* ")) for m in HEADING_RE.finditer(text)
         ]
+        self._normalised_text: str | None = None
+        self._normalised_offsets: list[int] | None = None
 
     def page_for_offset(self, offset: int) -> int | None:
         current = None
@@ -77,25 +79,41 @@ class Document:
     def find_verbatim(self, needle: str) -> int | None:
         """Return character offset of `needle` in self.text, or None.
         Whitespace-normalised match for robustness against the LLM collapsing whitespace.
+        Also accepts PDF line-wrap hyphens (``perju-\ndicando``) that an LLM
+        reasonably returns as a single word (``perjudicando``).
         """
         idx = self.text.find(needle)
         if idx >= 0:
             return idx
-        norm_needle = re.sub(r"\s+", " ", needle).strip()
+        norm_needle = re.sub(r"-\s+", "", needle)
+        norm_needle = re.sub(r"\s+", " ", norm_needle).strip()
         if not norm_needle:
             return None
-        norm_doc = re.sub(r"\s+", " ", self.text)
-        idx = norm_doc.find(norm_needle)
+        if self._normalised_text is None or self._normalised_offsets is None:
+            norm_chars: list[str] = []
+            offsets: list[int] = []
+            pos = 0
+            while pos < len(self.text):
+                char = self.text[pos]
+                if char == "-" and pos + 1 < len(self.text) and self.text[pos + 1].isspace():
+                    pos += 1
+                    while pos < len(self.text) and self.text[pos].isspace():
+                        pos += 1
+                    continue
+                if char.isspace():
+                    if not norm_chars or norm_chars[-1] != " ":
+                        norm_chars.append(" ")
+                        offsets.append(pos)
+                else:
+                    norm_chars.append(char)
+                    offsets.append(pos)
+                pos += 1
+            self._normalised_text = "".join(norm_chars)
+            self._normalised_offsets = offsets
+        idx = self._normalised_text.find(norm_needle)
         if idx < 0:
             return None
-        # Map back to original offset
-        collapsed = 0
-        for orig_off, ch in enumerate(self.text):
-            if collapsed >= idx:
-                return orig_off
-            if not (ch.isspace() and orig_off > 0 and self.text[orig_off - 1].isspace()):
-                collapsed += 1
-        return 0
+        return self._normalised_offsets[idx]
 
 
 def load_document(markdown_dir: Path, doc_id: str) -> Document:

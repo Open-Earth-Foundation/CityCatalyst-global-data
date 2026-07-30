@@ -46,7 +46,9 @@ That weighting reflects intended implementability. A city action that is explici
 
 ## What is in this release
 
-Based on [`data_requirements_general_policies.csv`](/Users/amandaeames/Documents/gitrepo/CityCatalyst-global-data/dataset-review/reviews/cl-ssg/cl-ssg-policy-documents/releases/2026/data_requirements_general_policies.csv), the manifest currently contains 42 rows:
+The original curated manifest contained 42 rows. It is supplemented by 14 final municipal climate-action plans from `data/registry/policy_documents_test.xlsx`, bringing the operational source registry to 56 records. The added plans are for Santiago, Providencia, Maipú, Renca, Quilicura, Peñalolén, Valparaíso, Concepción, Temuco, Valdivia, Paillaco, Lago Ranco, Panguipulli, and Frutillar; shared regional plans were reused rather than reprocessed.
+
+The original 42-row manifest contains:
 
 - 12 national records
 - 20 regional records
@@ -111,6 +113,10 @@ The manifest includes 16 regional climate action plan rows, corresponding to Chi
 - At least one row uses placeholder text rather than a resolvable source URL.
 
 This means regional coverage is broad, but document readiness is uneven.
+
+### Municipal PACCC update
+
+The 14 added municipal plans provide city-specific action evidence in this release for the listed communes. Rows marked `Not ready (In process)` in the supplied workbook were not added. Antofagasta was also not added despite the workbook note to download it: the municipality's published material confirms that its PACCC remains under development, so there is no final plan to ingest. Valparaíso's municipal PACCC is included, while its regional PARCC remains a placeholder.
 
 ## Notes on PACCCs
 

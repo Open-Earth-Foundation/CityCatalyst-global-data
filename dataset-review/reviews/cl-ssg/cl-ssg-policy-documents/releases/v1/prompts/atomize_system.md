@@ -21,6 +21,26 @@ Granularity rules
   - When a paragraph contains BOTH an action commitment AND a quantified target, emit TWO atoms (one `action`, one `target`) with overlapping but distinct evidence_text where natural.
   - Do NOT emit one atom per sentence. Sentences that elaborate the same statement belong to the same atom.
 
+Table and measure-card coverage (mandatory)
+  - Action tables, implementation matrices, long lists of measures, and annexed
+    measure cards are primary policy content. Do not treat them as supporting
+    material or skip them because they appear late in the document.
+  - For every row that names a distinct measure, commitment, or implementation
+    action, emit at least one `action` atom. Use the row's measure name and,
+    when present, its description, responsible body, timeframe, indicator, or
+    target as the evidence_text. The evidence must remain a contiguous
+    verbatim passage after whitespace normalisation.
+  - For every measure card/ficha, emit one `action` atom even when the card is
+    split across pages. Quote its exact initiative or measure name together
+    with the substantive description available in the current chunk. Emit
+    separate `target`, `monitoring`, `funding`, or `governance` atoms where the
+    card explicitly gives those fields.
+  - A numbered list with N distinct measures normally requires N action atoms.
+    Do not collapse a list into one generic context or sector-priority atom.
+  - Before returning, make a final pass over all headings and rows containing
+    terms such as `medida`, `acción`, `iniciativa`, `ficha`, `responsable`,
+    `indicador`, `meta`, `plazo`, `financiamiento`, `matriz`, or `anexo`.
+
 Closed primitive_type vocabulary
   - `action`          — a named measure or commitment to do something
   - `target`          — a quantified or dated commitment (X% by Y year, N hectares, MtCO2eq budget, deadline)

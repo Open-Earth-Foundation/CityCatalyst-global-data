@@ -1,0 +1,690 @@
+[
+  {
+    "city": "La Pintana",
+    "locode": "CL LPI",
+    "limit": 5,
+    "url": "https://ccglobal.openearth.dev/api/v1/cities/CL%20LPI/action-policy-scores?top_evidence_limit=5",
+    "status": 404,
+    "timing_ms": 807.1,
+    "error": "{\"detail\":\"No policy scores found for this city and release\"}",
+    "contract_errors": [
+      "HTTP 404: {\"detail\":\"No policy scores found for this city and release\"}"
+    ]
+  },
+  {
+    "city": "La Pintana",
+    "locode": "CL LPI",
+    "limit": 20,
+    "url": "https://ccglobal.openearth.dev/api/v1/cities/CL%20LPI/action-policy-scores?top_evidence_limit=20",
+    "status": 404,
+    "timing_ms": 806.7,
+    "error": "{\"detail\":\"No policy scores found for this city and release\"}",
+    "contract_errors": [
+      "HTTP 404: {\"detail\":\"No policy scores found for this city and release\"}"
+    ]
+  },
+  {
+    "city": "Peñalolén",
+    "locode": "CL PLN",
+    "limit": 5,
+    "url": "https://ccglobal.openearth.dev/api/v1/cities/CL%20PLN/action-policy-scores?top_evidence_limit=5",
+    "status": 200,
+    "timing_ms": 1281.1,
+    "contract_errors": [],
+    "meta": {
+      "generated_at_utc": "2026-07-19T19:41:53.110124+00:00",
+      "backend_consumer": "hiap-meed",
+      "upstream_provider": "global-api",
+      "scoring_rubric_version": "v0.2.0",
+      "api_context": {
+        "endpoint": "GET /api/v1/cities/{locode}/action-policy-scores",
+        "locode": "CL PLN",
+        "city_name": "Peñalolén",
+        "release_id": "761236b5-4e6d-5af1-e1a2-b50eb3780fe1",
+        "top_evidence_limit": 5,
+        "src_action_id": null
+      },
+      "total_records": 102,
+      "total_evidence_items": 510,
+      "spatial_document_coverage": {
+        "location_scopes_included": [
+          "national",
+          "regional",
+          "municipal"
+        ],
+        "finest_location_scope": "municipal",
+        "caveat": "Policy support scores use documents at national, regional, municipal level, including municipal plans (e.g. PACCC) for this city. Interpret scores as city-level policy advice where municipal evidence applies."
+      }
+    },
+    "score_count": 102,
+    "evidence_count": 510,
+    "response_file": "output/api-validation-corrected/CL_PLN-limit-5.json"
+  },
+  {
+    "city": "Peñalolén",
+    "locode": "CL PLN",
+    "limit": 20,
+    "url": "https://ccglobal.openearth.dev/api/v1/cities/CL%20PLN/action-policy-scores?top_evidence_limit=20",
+    "status": 200,
+    "timing_ms": 2001.6,
+    "contract_errors": [],
+    "meta": {
+      "generated_at_utc": "2026-07-19T19:41:53.045135+00:00",
+      "backend_consumer": "hiap-meed",
+      "upstream_provider": "global-api",
+      "scoring_rubric_version": "v0.2.0",
+      "api_context": {
+        "endpoint": "GET /api/v1/cities/{locode}/action-policy-scores",
+        "locode": "CL PLN",
+        "city_name": "Peñalolén",
+        "release_id": "761236b5-4e6d-5af1-e1a2-b50eb3780fe1",
+        "top_evidence_limit": 20,
+        "src_action_id": null
+      },
+      "total_records": 102,
+      "total_evidence_items": 1992,
+      "spatial_document_coverage": {
+        "location_scopes_included": [
+          "national",
+          "regional",
+          "municipal"
+        ],
+        "finest_location_scope": "municipal",
+        "caveat": "Policy support scores use documents at national, regional, municipal level, including municipal plans (e.g. PACCC) for this city. Interpret scores as city-level policy advice where municipal evidence applies."
+      }
+    },
+    "score_count": 102,
+    "evidence_count": 1992,
+    "response_file": "output/api-validation-corrected/CL_PLN-limit-20.json"
+  },
+  {
+    "city": "Concepción",
+    "locode": "CL CCP",
+    "limit": 5,
+    "url": "https://ccglobal.openearth.dev/api/v1/cities/CL%20CCP/action-policy-scores?top_evidence_limit=5",
+    "status": 200,
+    "timing_ms": 1421.3,
+    "contract_errors": [],
+    "meta": {
+      "generated_at_utc": "2026-07-19T19:41:53.255665+00:00",
+      "backend_consumer": "hiap-meed",
+      "upstream_provider": "global-api",
+      "scoring_rubric_version": "v0.2.0",
+      "api_context": {
+        "endpoint": "GET /api/v1/cities/{locode}/action-policy-scores",
+        "locode": "CL CCP",
+        "city_name": "Concepción",
+        "release_id": "761236b5-4e6d-5af1-e1a2-b50eb3780fe1",
+        "top_evidence_limit": 5,
+        "src_action_id": null
+      },
+      "total_records": 102,
+      "total_evidence_items": 510,
+      "spatial_document_coverage": {
+        "location_scopes_included": [
+          "national",
+          "regional",
+          "municipal"
+        ],
+        "finest_location_scope": "municipal",
+        "caveat": "Policy support scores use documents at national, regional, municipal level, including municipal plans (e.g. PACCC) for this city. Interpret scores as city-level policy advice where municipal evidence applies."
+      }
+    },
+    "score_count": 102,
+    "evidence_count": 510,
+    "response_file": "output/api-validation-corrected/CL_CCP-limit-5.json"
+  },
+  {
+    "city": "Concepción",
+    "locode": "CL CCP",
+    "limit": 20,
+    "url": "https://ccglobal.openearth.dev/api/v1/cities/CL%20CCP/action-policy-scores?top_evidence_limit=20",
+    "status": 200,
+    "timing_ms": 1795.6,
+    "contract_errors": [],
+    "meta": {
+      "generated_at_utc": "2026-07-19T19:41:52.979697+00:00",
+      "backend_consumer": "hiap-meed",
+      "upstream_provider": "global-api",
+      "scoring_rubric_version": "v0.2.0",
+      "api_context": {
+        "endpoint": "GET /api/v1/cities/{locode}/action-policy-scores",
+        "locode": "CL CCP",
+        "city_name": "Concepción",
+        "release_id": "761236b5-4e6d-5af1-e1a2-b50eb3780fe1",
+        "top_evidence_limit": 20,
+        "src_action_id": null
+      },
+      "total_records": 102,
+      "total_evidence_items": 1905,
+      "spatial_document_coverage": {
+        "location_scopes_included": [
+          "national",
+          "regional",
+          "municipal"
+        ],
+        "finest_location_scope": "municipal",
+        "caveat": "Policy support scores use documents at national, regional, municipal level, including municipal plans (e.g. PACCC) for this city. Interpret scores as city-level policy advice where municipal evidence applies."
+      }
+    },
+    "score_count": 102,
+    "evidence_count": 1905,
+    "response_file": "output/api-validation-corrected/CL_CCP-limit-20.json"
+  },
+  {
+    "city": "Temuco",
+    "locode": "CL ZCO",
+    "limit": 5,
+    "url": "https://ccglobal.openearth.dev/api/v1/cities/CL%20ZCO/action-policy-scores?top_evidence_limit=5",
+    "status": 200,
+    "timing_ms": 1074.9,
+    "contract_errors": [],
+    "meta": {
+      "generated_at_utc": "2026-07-19T19:41:53.674196+00:00",
+      "backend_consumer": "hiap-meed",
+      "upstream_provider": "global-api",
+      "scoring_rubric_version": "v0.2.0",
+      "api_context": {
+        "endpoint": "GET /api/v1/cities/{locode}/action-policy-scores",
+        "locode": "CL ZCO",
+        "city_name": "Temuco",
+        "release_id": "761236b5-4e6d-5af1-e1a2-b50eb3780fe1",
+        "top_evidence_limit": 5,
+        "src_action_id": null
+      },
+      "total_records": 102,
+      "total_evidence_items": 510,
+      "spatial_document_coverage": {
+        "location_scopes_included": [
+          "national",
+          "regional",
+          "municipal"
+        ],
+        "finest_location_scope": "municipal",
+        "caveat": "Policy support scores use documents at national, regional, municipal level, including municipal plans (e.g. PACCC) for this city. Interpret scores as city-level policy advice where municipal evidence applies."
+      }
+    },
+    "score_count": 102,
+    "evidence_count": 510,
+    "response_file": "output/api-validation-corrected/CL_ZCO-limit-5.json"
+  },
+  {
+    "city": "Temuco",
+    "locode": "CL ZCO",
+    "limit": 20,
+    "url": "https://ccglobal.openearth.dev/api/v1/cities/CL%20ZCO/action-policy-scores?top_evidence_limit=20",
+    "status": 200,
+    "timing_ms": 1798.6,
+    "contract_errors": [],
+    "meta": {
+      "generated_at_utc": "2026-07-19T19:41:53.758664+00:00",
+      "backend_consumer": "hiap-meed",
+      "upstream_provider": "global-api",
+      "scoring_rubric_version": "v0.2.0",
+      "api_context": {
+        "endpoint": "GET /api/v1/cities/{locode}/action-policy-scores",
+        "locode": "CL ZCO",
+        "city_name": "Temuco",
+        "release_id": "761236b5-4e6d-5af1-e1a2-b50eb3780fe1",
+        "top_evidence_limit": 20,
+        "src_action_id": null
+      },
+      "total_records": 102,
+      "total_evidence_items": 1870,
+      "spatial_document_coverage": {
+        "location_scopes_included": [
+          "national",
+          "regional",
+          "municipal"
+        ],
+        "finest_location_scope": "municipal",
+        "caveat": "Policy support scores use documents at national, regional, municipal level, including municipal plans (e.g. PACCC) for this city. Interpret scores as city-level policy advice where municipal evidence applies."
+      }
+    },
+    "score_count": 102,
+    "evidence_count": 1870,
+    "response_file": "output/api-validation-corrected/CL_ZCO-limit-20.json"
+  },
+  {
+    "city": "Puerto Montt",
+    "locode": "CL PMC",
+    "limit": 5,
+    "url": "https://ccglobal.openearth.dev/api/v1/cities/CL%20PMC/action-policy-scores?top_evidence_limit=5",
+    "status": 200,
+    "timing_ms": 1335.0,
+    "contract_errors": [],
+    "meta": {
+      "generated_at_utc": "2026-07-19T19:41:54.417953+00:00",
+      "backend_consumer": "hiap-meed",
+      "upstream_provider": "global-api",
+      "scoring_rubric_version": "v0.2.0",
+      "api_context": {
+        "endpoint": "GET /api/v1/cities/{locode}/action-policy-scores",
+        "locode": "CL PMC",
+        "city_name": "Puerto Montt",
+        "release_id": "761236b5-4e6d-5af1-e1a2-b50eb3780fe1",
+        "top_evidence_limit": 5,
+        "src_action_id": null
+      },
+      "total_records": 102,
+      "total_evidence_items": 510,
+      "spatial_document_coverage": {
+        "location_scopes_included": [
+          "national",
+          "regional"
+        ],
+        "finest_location_scope": "regional",
+        "caveat": "Policy support scores use documents at national, regional level only. No municipal-level documents (e.g. PACCC) for this city are included in the current release; interpret scores as regional-level policy advice, not city-specific municipal commitments."
+      }
+    },
+    "score_count": 102,
+    "evidence_count": 510,
+    "response_file": "output/api-validation-corrected/CL_PMC-limit-5.json"
+  },
+  {
+    "city": "Puerto Montt",
+    "locode": "CL PMC",
+    "limit": 20,
+    "url": "https://ccglobal.openearth.dev/api/v1/cities/CL%20PMC/action-policy-scores?top_evidence_limit=20",
+    "status": 200,
+    "timing_ms": 1596.0,
+    "contract_errors": [],
+    "meta": {
+      "generated_at_utc": "2026-07-19T19:41:54.556535+00:00",
+      "backend_consumer": "hiap-meed",
+      "upstream_provider": "global-api",
+      "scoring_rubric_version": "v0.2.0",
+      "api_context": {
+        "endpoint": "GET /api/v1/cities/{locode}/action-policy-scores",
+        "locode": "CL PMC",
+        "city_name": "Puerto Montt",
+        "release_id": "761236b5-4e6d-5af1-e1a2-b50eb3780fe1",
+        "top_evidence_limit": 20,
+        "src_action_id": null
+      },
+      "total_records": 102,
+      "total_evidence_items": 1937,
+      "spatial_document_coverage": {
+        "location_scopes_included": [
+          "national",
+          "regional"
+        ],
+        "finest_location_scope": "regional",
+        "caveat": "Policy support scores use documents at national, regional level only. No municipal-level documents (e.g. PACCC) for this city are included in the current release; interpret scores as regional-level policy advice, not city-specific municipal commitments."
+      }
+    },
+    "score_count": 102,
+    "evidence_count": 1937,
+    "response_file": "output/api-validation-corrected/CL_PMC-limit-20.json"
+  },
+  {
+    "city": "Valdivia",
+    "locode": "CL ZAL",
+    "limit": 5,
+    "url": "https://ccglobal.openearth.dev/api/v1/cities/CL%20ZAL/action-policy-scores?top_evidence_limit=5",
+    "status": 200,
+    "timing_ms": 1163.8,
+    "contract_errors": [],
+    "meta": {
+      "generated_at_utc": "2026-07-19T19:41:54.767307+00:00",
+      "backend_consumer": "hiap-meed",
+      "upstream_provider": "global-api",
+      "scoring_rubric_version": "v0.2.0",
+      "api_context": {
+        "endpoint": "GET /api/v1/cities/{locode}/action-policy-scores",
+        "locode": "CL ZAL",
+        "city_name": "Valdivia",
+        "release_id": "761236b5-4e6d-5af1-e1a2-b50eb3780fe1",
+        "top_evidence_limit": 5,
+        "src_action_id": null
+      },
+      "total_records": 102,
+      "total_evidence_items": 510,
+      "spatial_document_coverage": {
+        "location_scopes_included": [
+          "national",
+          "regional",
+          "municipal"
+        ],
+        "finest_location_scope": "municipal",
+        "caveat": "Policy support scores use documents at national, regional, municipal level, including municipal plans (e.g. PACCC) for this city. Interpret scores as city-level policy advice where municipal evidence applies."
+      }
+    },
+    "score_count": 102,
+    "evidence_count": 510,
+    "response_file": "output/api-validation-corrected/CL_ZAL-limit-5.json"
+  },
+  {
+    "city": "Valdivia",
+    "locode": "CL ZAL",
+    "limit": 20,
+    "url": "https://ccglobal.openearth.dev/api/v1/cities/CL%20ZAL/action-policy-scores?top_evidence_limit=20",
+    "status": 200,
+    "timing_ms": 1633.9,
+    "contract_errors": [],
+    "meta": {
+      "generated_at_utc": "2026-07-19T19:41:54.805724+00:00",
+      "backend_consumer": "hiap-meed",
+      "upstream_provider": "global-api",
+      "scoring_rubric_version": "v0.2.0",
+      "api_context": {
+        "endpoint": "GET /api/v1/cities/{locode}/action-policy-scores",
+        "locode": "CL ZAL",
+        "city_name": "Valdivia",
+        "release_id": "761236b5-4e6d-5af1-e1a2-b50eb3780fe1",
+        "top_evidence_limit": 20,
+        "src_action_id": null
+      },
+      "total_records": 102,
+      "total_evidence_items": 1940,
+      "spatial_document_coverage": {
+        "location_scopes_included": [
+          "national",
+          "regional",
+          "municipal"
+        ],
+        "finest_location_scope": "municipal",
+        "caveat": "Policy support scores use documents at national, regional, municipal level, including municipal plans (e.g. PACCC) for this city. Interpret scores as city-level policy advice where municipal evidence applies."
+      }
+    },
+    "score_count": 102,
+    "evidence_count": 1940,
+    "response_file": "output/api-validation-corrected/CL_ZAL-limit-20.json"
+  },
+  {
+    "city": "Paillaco",
+    "locode": "CL PAO",
+    "limit": 5,
+    "url": "https://ccglobal.openearth.dev/api/v1/cities/CL%20PAO/action-policy-scores?top_evidence_limit=5",
+    "status": 200,
+    "timing_ms": 1125.8,
+    "contract_errors": [],
+    "meta": {
+      "generated_at_utc": "2026-07-19T19:41:54.954322+00:00",
+      "backend_consumer": "hiap-meed",
+      "upstream_provider": "global-api",
+      "scoring_rubric_version": "v0.2.0",
+      "api_context": {
+        "endpoint": "GET /api/v1/cities/{locode}/action-policy-scores",
+        "locode": "CL PAO",
+        "city_name": "Paillaco",
+        "release_id": "761236b5-4e6d-5af1-e1a2-b50eb3780fe1",
+        "top_evidence_limit": 5,
+        "src_action_id": null
+      },
+      "total_records": 102,
+      "total_evidence_items": 510,
+      "spatial_document_coverage": {
+        "location_scopes_included": [
+          "national",
+          "regional",
+          "municipal"
+        ],
+        "finest_location_scope": "municipal",
+        "caveat": "Policy support scores use documents at national, regional, municipal level, including municipal plans (e.g. PACCC) for this city. Interpret scores as city-level policy advice where municipal evidence applies."
+      }
+    },
+    "score_count": 102,
+    "evidence_count": 510,
+    "response_file": "output/api-validation-corrected/CL_PAO-limit-5.json"
+  },
+  {
+    "city": "Paillaco",
+    "locode": "CL PAO",
+    "limit": 20,
+    "url": "https://ccglobal.openearth.dev/api/v1/cities/CL%20PAO/action-policy-scores?top_evidence_limit=20",
+    "status": 200,
+    "timing_ms": 1708.8,
+    "contract_errors": [],
+    "meta": {
+      "generated_at_utc": "2026-07-19T19:41:55.580509+00:00",
+      "backend_consumer": "hiap-meed",
+      "upstream_provider": "global-api",
+      "scoring_rubric_version": "v0.2.0",
+      "api_context": {
+        "endpoint": "GET /api/v1/cities/{locode}/action-policy-scores",
+        "locode": "CL PAO",
+        "city_name": "Paillaco",
+        "release_id": "761236b5-4e6d-5af1-e1a2-b50eb3780fe1",
+        "top_evidence_limit": 20,
+        "src_action_id": null
+      },
+      "total_records": 102,
+      "total_evidence_items": 1979,
+      "spatial_document_coverage": {
+        "location_scopes_included": [
+          "national",
+          "regional",
+          "municipal"
+        ],
+        "finest_location_scope": "municipal",
+        "caveat": "Policy support scores use documents at national, regional, municipal level, including municipal plans (e.g. PACCC) for this city. Interpret scores as city-level policy advice where municipal evidence applies."
+      }
+    },
+    "score_count": 102,
+    "evidence_count": 1979,
+    "response_file": "output/api-validation-corrected/CL_PAO-limit-20.json"
+  },
+  {
+    "city": "Lago Ranco",
+    "locode": "CL RNC",
+    "limit": 5,
+    "url": "https://ccglobal.openearth.dev/api/v1/cities/CL%20RNC/action-policy-scores?top_evidence_limit=5",
+    "status": 200,
+    "timing_ms": 1093.4,
+    "contract_errors": [],
+    "meta": {
+      "generated_at_utc": "2026-07-19T19:41:55.515062+00:00",
+      "backend_consumer": "hiap-meed",
+      "upstream_provider": "global-api",
+      "scoring_rubric_version": "v0.2.0",
+      "api_context": {
+        "endpoint": "GET /api/v1/cities/{locode}/action-policy-scores",
+        "locode": "CL RNC",
+        "city_name": "Lago Ranco",
+        "release_id": "761236b5-4e6d-5af1-e1a2-b50eb3780fe1",
+        "top_evidence_limit": 5,
+        "src_action_id": null
+      },
+      "total_records": 102,
+      "total_evidence_items": 510,
+      "spatial_document_coverage": {
+        "location_scopes_included": [
+          "national",
+          "regional",
+          "municipal"
+        ],
+        "finest_location_scope": "municipal",
+        "caveat": "Policy support scores use documents at national, regional, municipal level, including municipal plans (e.g. PACCC) for this city. Interpret scores as city-level policy advice where municipal evidence applies."
+      }
+    },
+    "score_count": 102,
+    "evidence_count": 510,
+    "response_file": "output/api-validation-corrected/CL_RNC-limit-5.json"
+  },
+  {
+    "city": "Lago Ranco",
+    "locode": "CL RNC",
+    "limit": 20,
+    "url": "https://ccglobal.openearth.dev/api/v1/cities/CL%20RNC/action-policy-scores?top_evidence_limit=20",
+    "status": 200,
+    "timing_ms": 1922.3,
+    "contract_errors": [],
+    "meta": {
+      "generated_at_utc": "2026-07-19T19:41:55.893279+00:00",
+      "backend_consumer": "hiap-meed",
+      "upstream_provider": "global-api",
+      "scoring_rubric_version": "v0.2.0",
+      "api_context": {
+        "endpoint": "GET /api/v1/cities/{locode}/action-policy-scores",
+        "locode": "CL RNC",
+        "city_name": "Lago Ranco",
+        "release_id": "761236b5-4e6d-5af1-e1a2-b50eb3780fe1",
+        "top_evidence_limit": 20,
+        "src_action_id": null
+      },
+      "total_records": 102,
+      "total_evidence_items": 1974,
+      "spatial_document_coverage": {
+        "location_scopes_included": [
+          "national",
+          "regional",
+          "municipal"
+        ],
+        "finest_location_scope": "municipal",
+        "caveat": "Policy support scores use documents at national, regional, municipal level, including municipal plans (e.g. PACCC) for this city. Interpret scores as city-level policy advice where municipal evidence applies."
+      }
+    },
+    "score_count": 102,
+    "evidence_count": 1974,
+    "response_file": "output/api-validation-corrected/CL_RNC-limit-20.json"
+  },
+  {
+    "city": "Panguipulli",
+    "locode": "CL PAN",
+    "limit": 5,
+    "url": "https://ccglobal.openearth.dev/api/v1/cities/CL%20PAN/action-policy-scores?top_evidence_limit=5",
+    "status": 200,
+    "timing_ms": 1165.7,
+    "contract_errors": [],
+    "meta": {
+      "generated_at_utc": "2026-07-19T19:41:55.935031+00:00",
+      "backend_consumer": "hiap-meed",
+      "upstream_provider": "global-api",
+      "scoring_rubric_version": "v0.2.0",
+      "api_context": {
+        "endpoint": "GET /api/v1/cities/{locode}/action-policy-scores",
+        "locode": "CL PAN",
+        "city_name": "Panguipulli",
+        "release_id": "761236b5-4e6d-5af1-e1a2-b50eb3780fe1",
+        "top_evidence_limit": 5,
+        "src_action_id": null
+      },
+      "total_records": 102,
+      "total_evidence_items": 510,
+      "spatial_document_coverage": {
+        "location_scopes_included": [
+          "national",
+          "regional",
+          "municipal"
+        ],
+        "finest_location_scope": "municipal",
+        "caveat": "Policy support scores use documents at national, regional, municipal level, including municipal plans (e.g. PACCC) for this city. Interpret scores as city-level policy advice where municipal evidence applies."
+      }
+    },
+    "score_count": 102,
+    "evidence_count": 510,
+    "response_file": "output/api-validation-corrected/CL_PAN-limit-5.json"
+  },
+  {
+    "city": "Panguipulli",
+    "locode": "CL PAN",
+    "limit": 20,
+    "url": "https://ccglobal.openearth.dev/api/v1/cities/CL%20PAN/action-policy-scores?top_evidence_limit=20",
+    "status": 200,
+    "timing_ms": 1950.4,
+    "contract_errors": [],
+    "meta": {
+      "generated_at_utc": "2026-07-19T19:41:56.069763+00:00",
+      "backend_consumer": "hiap-meed",
+      "upstream_provider": "global-api",
+      "scoring_rubric_version": "v0.2.0",
+      "api_context": {
+        "endpoint": "GET /api/v1/cities/{locode}/action-policy-scores",
+        "locode": "CL PAN",
+        "city_name": "Panguipulli",
+        "release_id": "761236b5-4e6d-5af1-e1a2-b50eb3780fe1",
+        "top_evidence_limit": 20,
+        "src_action_id": null
+      },
+      "total_records": 102,
+      "total_evidence_items": 1970,
+      "spatial_document_coverage": {
+        "location_scopes_included": [
+          "national",
+          "regional",
+          "municipal"
+        ],
+        "finest_location_scope": "municipal",
+        "caveat": "Policy support scores use documents at national, regional, municipal level, including municipal plans (e.g. PACCC) for this city. Interpret scores as city-level policy advice where municipal evidence applies."
+      }
+    },
+    "score_count": 102,
+    "evidence_count": 1970,
+    "response_file": "output/api-validation-corrected/CL_PAN-limit-20.json"
+  },
+  {
+    "city": "Frutillar",
+    "locode": "CL FRT",
+    "limit": 5,
+    "url": "https://ccglobal.openearth.dev/api/v1/cities/CL%20FRT/action-policy-scores?top_evidence_limit=5",
+    "status": 200,
+    "timing_ms": 1236.2,
+    "contract_errors": [],
+    "meta": {
+      "generated_at_utc": "2026-07-19T19:41:56.544361+00:00",
+      "backend_consumer": "hiap-meed",
+      "upstream_provider": "global-api",
+      "scoring_rubric_version": "v0.2.0",
+      "api_context": {
+        "endpoint": "GET /api/v1/cities/{locode}/action-policy-scores",
+        "locode": "CL FRT",
+        "city_name": "Frutillar",
+        "release_id": "761236b5-4e6d-5af1-e1a2-b50eb3780fe1",
+        "top_evidence_limit": 5,
+        "src_action_id": null
+      },
+      "total_records": 102,
+      "total_evidence_items": 510,
+      "spatial_document_coverage": {
+        "location_scopes_included": [
+          "national",
+          "regional",
+          "municipal"
+        ],
+        "finest_location_scope": "municipal",
+        "caveat": "Policy support scores use documents at national, regional, municipal level, including municipal plans (e.g. PACCC) for this city. Interpret scores as city-level policy advice where municipal evidence applies."
+      }
+    },
+    "score_count": 102,
+    "evidence_count": 510,
+    "response_file": "output/api-validation-corrected/CL_FRT-limit-5.json"
+  },
+  {
+    "city": "Frutillar",
+    "locode": "CL FRT",
+    "limit": 20,
+    "url": "https://ccglobal.openearth.dev/api/v1/cities/CL%20FRT/action-policy-scores?top_evidence_limit=20",
+    "status": 200,
+    "timing_ms": 1576.7,
+    "contract_errors": [],
+    "meta": {
+      "generated_at_utc": "2026-07-19T19:41:56.767223+00:00",
+      "backend_consumer": "hiap-meed",
+      "upstream_provider": "global-api",
+      "scoring_rubric_version": "v0.2.0",
+      "api_context": {
+        "endpoint": "GET /api/v1/cities/{locode}/action-policy-scores",
+        "locode": "CL FRT",
+        "city_name": "Frutillar",
+        "release_id": "761236b5-4e6d-5af1-e1a2-b50eb3780fe1",
+        "top_evidence_limit": 20,
+        "src_action_id": null
+      },
+      "total_records": 102,
+      "total_evidence_items": 1977,
+      "spatial_document_coverage": {
+        "location_scopes_included": [
+          "national",
+          "regional",
+          "municipal"
+        ],
+        "finest_location_scope": "municipal",
+        "caveat": "Policy support scores use documents at national, regional, municipal level, including municipal plans (e.g. PACCC) for this city. Interpret scores as city-level policy advice where municipal evidence applies."
+      }
+    },
+    "score_count": 102,
+    "evidence_count": 1977,
+    "response_file": "output/api-validation-corrected/CL_FRT-limit-20.json"
+  }
+]

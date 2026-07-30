@@ -13,7 +13,7 @@ blocks:
   language: python
   name: load_cl_ssg_projects_from_s3
   retry_config: null
-  status: updated
+  status: failed
   timeout: null
   type: data_loader
   upstream_blocks: []
@@ -385,10 +385,10 @@ concurrency_config: {}
 conditionals: []
 created_at: null
 data_integration: null
-description: Integrate the four Chile project/award reviews (BIP, GCF, FPA, CONAF) into modelled.finance_project.
-  Co-finance folded into funding_sources JSONB; actor_id resolved to city locode via cl-ocha-ab; identity
-  from index.yaml (GitHub) with per-source release_id; release-scoped delete+insert; staging dropped at
-  the end.
+description: Integrate the four Chile project/award reviews (BIP, GCF, FPA, CONAF)
+  into modelled.finance_project. Co-finance folded into funding_sources JSONB; actor_id
+  resolved to city locode via cl-ocha-ab; identity from index.yaml (GitHub) with per-source
+  release_id; release-scoped delete+insert; staging dropped at the end.
 executor_config: {}
 executor_count: 1
 executor_type: null
@@ -404,9 +404,9 @@ spark_config: {}
 tags: []
 type: python
 uuid: cl_finance_project_to_modelled
-variables_dir: /home/src/mage_data/cc-mage
-widgets: []
 variables:
+  locode_release_version: '2021'
   source_bucket: test-global-api
   source_release_version: v1
-  locode_release_version: '2021'
+variables_dir: /home/src/mage_data/cc-mage
+widgets: []

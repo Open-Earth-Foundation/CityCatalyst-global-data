@@ -16,6 +16,22 @@ House style for every markdown deliverable in this repo — dataset reviews, dis
 - **Reach for a diagram for relationships, flows, and hierarchies.** When the point is how things connect, follow on from each other, or nest, a small mermaid diagram usually beats the best paragraph, and is preferred over a long descriptive passage. The test is reader load: if following the prose means holding several moving parts in mind at once, draw it. See *Diagrams* below for when one earns its place and the patterns to use.
 - **Real line breaks, never a literal `\n`.** A `\n` typed into markdown prose or a mermaid label renders verbatim as the characters backslash-n, not a new line. For a line break inside a mermaid node label use `<br/>`; in prose use an actual blank line. This usually creeps in when text is pasted from a code string.
 
+## Optimize for review time
+
+A finished document should make its current state and required decision easy to find. The shortest complete explanation is preferred over a chronological account of how the work developed.
+
+- **Give each document one job.** An overview explains the source and major warnings; a methodology defines rules; a release review states supported and unsupported claims. Link to detail instead of repeating it.
+- **Lead with status and decision.** State what is complete, what remains pending, and whether the artifact is safe for production use in the opening paragraph.
+- **Prefer current state over process history.** Keep investigation history only when it explains a material limitation, correction, or decision.
+- **Use one glance table for repeated evidence.** Put counts, coverage, validation results, and status in one compact table rather than repeating them across sections.
+- **Separate facts, judgments, and open questions.** Mark source facts as verified, analytical interpretations as inferred, and unresolved points as unanswered.
+- **State the consequence of every warning.** Explain what the issue prevents the data from supporting or how downstream handling must change.
+- **Avoid duplication across files.** Keep the authoritative rule in one place. Other documents should include only the summary needed for their specific purpose.
+- **Use the shortest complete form.** Replace a paragraph with a sentence or small table when meaning and necessary conditions remain intact.
+- **Do not overuse tables.** Use a table when rows share the same fields. Keep conclusions and reasoning as short prose.
+
+Use a two-minute review test before considering documentation complete: can a reviewer identify the scope, status, key result, main limitation, and next decision in under two minutes?
+
 ## Diagrams
 
 Diagrams are encouraged, not merely tolerated. When the subject is a relationship, a flow, or a hierarchy, a small diagram lets the reader see the structure instead of assembling it from sentences, and a well-placed one can carry a section that prose alone leaves muddy. The bar is not "could this be drawn" but "is this hard to hold in the head as prose" — when the answer is yes, the diagram is the better default.

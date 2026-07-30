@@ -1,0 +1,12 @@
+ActionID,record_id,relationship,match_relevance,explicitness,match_confidence,match_rationale_en
+c40_0046,br-ena-2025:on9,prioritizes,low,inferred,medium,"The objective prioritizes the ocean and coastal zone, but it does not commit to coastal protection infrastructure."
+c40_0046,br-secadp-biodiversidade-2026:m6,prioritizes,low,inferred,medium,"The target covers protected areas and restoration in coastal and marine environments, but the connection to protective coastal infrastructure is indirect."
+c40_0048,br-secadp-riscos-desastres-2026:a3-m8,commits,high,explicit,high,"The policy allocates programme resources to contract drainage and urban rainwater-management works for disaster prevention."
+c40_0048,br-ena-2025:target-2,targets,high,explicit,high,"The national target covers structural disaster-risk prevention for four million people and names urban drainage infrastructure in its indicator."
+c40_0048,br-secadp-cidades-2026:a1-m7,prioritizes,medium,inferred,high,"The action explicitly promotes municipal urban-drainage adaptation solutions, but does not specify a physical network upgrade."
+c40_0049,br-secadp-seguranca-alimentar-2026:a5-m1,funds,medium,inferred,high,"The action co-finances temporary accommodation for climate-affected families, supporting shelter provision without committing to construction, resilient design, or maintenance."
+c40_0049,br-secadp-seguranca-alimentar-2026:m1,targets,medium,inferred,high,"The target and indicator cover temporary accommodation for people displaced by disasters, but the intervention scope is broader social protection rather than shelter construction."
+ipcc_0086,br-ena-2025:guideline-12,prioritizes,high,explicit,high,"The Strategy explicitly adopts ecosystem-based adaptation as a national adaptation guideline."
+ipcc_0086,br-secadp-biodiversidade-2026:m6,targets,high,explicit,high,"The target commits to protected areas, connectivity, climate refuges, watershed protection, and restoration across twelve million hectares."
+ipcc_0086,br-secadp-biodiversidade-2026:a3-m6,commits,high,explicit,high,"The action commits to restoring connectivity areas and potential climate refuges, including recovery plans."
+ipcc_0086,br-secadp-biodiversidade-2026:a4-m6,commits,high,explicit,high,"The action commits to creating conservation units in climate-vulnerable areas that contribute to biodiversity adaptation."
