@@ -108,7 +108,6 @@ Release 2026 is a research release. No production-approved release is registered
 
 ### References
 
-- Methodology and testing brief → `releases/2026/external-testing-pack/methodology-and-testing-brief.md`
 - Release contract → `releases/2026/review.md`
 - Extraction notebook → `releases/2026/policy_extraction.ipynb`
 - Record schema → `releases/2026/schemas/policy_record.schema.json`

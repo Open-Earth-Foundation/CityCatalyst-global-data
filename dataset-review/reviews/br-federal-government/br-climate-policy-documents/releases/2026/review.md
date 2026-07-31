@@ -79,7 +79,6 @@ Official servers returned access-control pages during automated retrieval, so va
 ### References
 
 - Review overview → `../../README.md`
-- Methodology and testing brief → `external-testing-pack/methodology-and-testing-brief.md`
 - Source inventory → `data/policy_documents.csv`
 - Preserved PDFs → `data/raw/`
 - Extraction notebook → `policy_extraction.ipynb`

@@ -1,6 +1,6 @@
 # Scoring rubric
 
-Rubric version: `0.1.0`. Owner: amanda. Last updated: 2026-05-16.
+Rubric version: `0.2.0`. Owner: amanda. Last updated: 2026-07-30.
 
 ## Goal
 
@@ -197,7 +197,7 @@ Applicable documents for Arica include (truncated):
 | chl_eclp_2021                    | national     | framework            | 0.35             |
 | chl_ndc                          | national     | framework            | 0.30             |
 
-Suppose extraction yields, on `chl_parcc_arica`, two `action/commits` findings with `signal_confidence=high, explicitness=explicit` for related afforestation measures, plus one `governance/governs` finding describing the GORE as lead body.
+Suppose extraction yields, on `chl_parcc_arica`, two `action/commits` findings with `signal_confidence=high, explicitness=explicit` for related afforestation measures, plus one `governance/governs` finding describing the GORE as lead body. Assume the matcher graded the PARCC `relevance = high`, so the relevance cap does not bind.
 
 ```
 f1: 0.49 * 1.0 * 1.0 * 1.0 = 0.490
@@ -205,26 +205,29 @@ f2: 0.49 * 1.0 * 1.0 * 1.0 = 0.490
 f3: 0.49 * 1.0 * 0.8 * 1.0 = 0.392
 
 sum_strength = 1.372
-score_raw    = 1 - exp(-1.372 / 2.0) = 1 - 0.504 = 0.496
-score_bucket = medium
+score_raw    = 1 - exp(-1.372 / 4.0) = 1 - 0.710 = 0.290
+score_bucket = weak (just below 0.33)
 ```
 
 If we also pick up a strong `target/targets` finding on the same PARCC with the regional 30% forest cover commitment (strength 0.49), the score climbs:
 
 ```
 sum_strength = 1.862
-score_raw    = 1 - exp(-1.862 / 2.0) = 1 - 0.394 = 0.606
-score_bucket = medium (just below 0.66)
+score_raw    = 1 - exp(-1.862 / 4.0) = 1 - 0.628 = 0.372
+score_bucket = medium
 ```
 
-A PACCC for Arica with a single explicit commitment would land at:
+A PACCC for Arica with a single explicit commitment adds a full-strength finding on top:
 
 ```
-sum_strength contribution = 1.00
-score_raw climbs above 0.66 -> strong
+sum_strength = 1.862 + 1.00 = 2.862
+score_raw    = 1 - exp(-2.862 / 4.0) = 1 - 0.489 = 0.511
+score_bucket = medium (approaching strong)
 ```
 
-This illustrates the intended ordering: local implementation evidence dominates national context, and the bucket boundaries roughly correspond to "credible regional commitment" (medium) vs "explicit local commitment" (strong).
+Reaching `strong` (`score_raw >= 0.66`) requires `sum_strength >= 4.31` — roughly four full-strength explicit commitments, e.g. a PACCC with several explicit commitments plus the regional evidence above — and `best_relevance = high` from at least one applicable document.
+
+This illustrates the intended ordering under `K = 4.0`: local implementation evidence dominates national context, a credible regional evidence base lands at `medium`, and `strong` is reserved for cities whose applicable documents contain several explicit, high-confidence commitments rather than a single mention.
 
 ## Versioning
 
