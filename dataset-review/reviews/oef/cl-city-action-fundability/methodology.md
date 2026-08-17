@@ -154,6 +154,42 @@ Alongside the per-city score there is a national **coverage indicator** — a si
 
 ---
 
+## Action-to-opportunity matching (v2, working)
+
+*Working methodology for the v2 release. It replaces the sector-level matching that produced the v1 draft links, and it is not yet reflected in the production tables.*
+
+The organising principle is that **how specifically a fund matches an action follows from how specific the fund is.** A fund written for a purpose, such as native forest conservation, matches a few actions closely. A fund written for a class of works, such as a municipal capital transfer, matches many actions loosely, and that is what the fund *is* rather than a defect in the matching. Most of the match type is therefore derived from the route rather than assigned by hand.
+
+Three properties of the fund and one of the action drive the derivation. From the fund: how targeted the route is, what the money buys, and whether a municipality can receive it. From the action: what it takes to deliver, which is the question of who owns the thing that changes. If the asset or the practice belongs to a firm, a farmer or a household, the city can enable it but cannot buy it.
+
+The five match types follow, and only two of them are ever assigned by a person.
+
+| Match type | Meaning | Assigned how | Counts as coverage |
+|---|---|---|---|
+| `whole` | The fund's purpose is this action. | Reviewed | Yes, if the city can apply |
+| `part` | The fund finances a material piece of it. | Reviewed | Yes, if the city can apply |
+| `prepares` | The fund buys planning, capacity or access, never the asset. | Pair reviewed, type forced by what the fund buys | No |
+| `general_route` | A general municipal fund covers this class of activity. | Derived from route, money and delivery mode | No |
+| `none` | Nothing matched. | Derived | No |
+
+Coverage needs both halves: a relationship strong enough to finance the action, and a municipality able to receive the money. A reviewed link can name a fund that finances an action while the city has no way to apply, and that link is kept rather than deleted, marked as not city-applicable. Deleting it would hide the most decision-relevant pattern in the data, that for many actions the money exists in Chile and is directed at someone other than the city.
+
+Availability is a third, separate gate. A link is shown by default only when it counts as coverage, the opportunity's status, dates, geography and eligible applicant are all evidenced, and the municipality and applicant checks pass at request time. Records that are unknown, closed, revoked, programme-only or regionally unsplit stay in the data and are suppressed from display, because the relationship holds even while the call does not.
+
+The crosswalk records two axes rather than one. `covers` holds the scope of the relationship, whole or part, and `mapping_confidence` holds how well established it is, as high, medium or none. This splits the house mapping schema's single confidence column in two because scope and certainty are independent here: a fund can certainly finance part of an action, or uncertainly finance all of it. A fund that was reviewed and matched nothing is kept as a row with `covers` and `mapping_confidence` both `none`, which is the record that stops the next reviewer repeating the work. Every reviewed row carries a rationale, its outstanding verification, and the adjudicator and date; derived rows carry no confidence, because their basis is the rule itself.
+
+The absence of a link means only that no relationship has been established from the evidence read so far. It is not proof that future or regional calls can never support the action, and coverage grows by verifying more funds in the compile rather than by widening the match rules.
+
+### References
+
+- curated crosswalk, the only stored judgement → `releases/v2/data/action_opportunity_mapping.csv`
+- action delivery modes → `releases/v2/data/action_delivery_mode.csv`
+- route profile on each fund → `dataset-compile/cl-climate-finance-opportunities/data.csv`
+- resolved links with display gating → `releases/v2/data/finance_opportunity_action.csv`
+- build and validation → `releases/v2/01_opportunity_action_links.ipynb`
+
+---
+
 ## What it can and cannot claim
 
 **Can:** a coarse city profile; an action's difficulty route; a 0–1 feasibility score with a plain reason; the named, reachable funds and how to access them; funded precedent — each built on a real data join.
@@ -171,6 +207,8 @@ The score plugs into HIAP's **Feasibility** pillar as a third leg alongside lega
 ## Status and what's next
 
 **Implemented in production.** The model is built end to end: the inputs live as database tables (`finance_opportunity`, `finance_project`, `city_finance_profile` and their action links), the score is computed at read time by the `city_action_financial_feasibility` function (so it's always current and never stale), and it's served by the `climate-finance` API (the score, a per-action drill-down, the fund catalogue, and the precedent projects). See `releases/v1/implementation.md` for the technical shape.
+
+**Action matching is being rebuilt (v2, research).** The v2 release derives the match from the route rather than asserting it pair by pair (see *Action-to-opportunity matching* above), and separates coverage, city eligibility and current availability into three gates. Of 102 actions, 11 are covered by a fund a city can apply to, 18 have a general municipal route, 48 are funded in the territory but not for the city, and 25 have nothing, none of which needs capital. It is not production-approved and has not been loaded into the modelled tables.
 
 **Honest limitations / next steps:**
 

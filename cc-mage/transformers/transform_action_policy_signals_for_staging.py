@@ -15,6 +15,7 @@ RELATION_ALIASES = {
     "monitoring": "monitors",
     "risk": "identifies",
 }
+ALLOWED_MATCH_TYPES = {"direct", "indirect", "contextual"}
 
 
 def _clean(value: object) -> str:
@@ -49,6 +50,11 @@ def _territory_code(value: object, width: int) -> str:
 def _normalize_relation(value: object) -> str:
     key = _clean(value).lower()
     return RELATION_ALIASES.get(key, key or "unspecified")
+
+
+def _normalize_match_type(value: object) -> str:
+    key = _clean(value).lower()
+    return key if key in ALLOWED_MATCH_TYPES else ""
 
 
 def _lookup_tables(
@@ -142,6 +148,9 @@ def transform_action_policy_signals_for_staging(
                 "doc_relevance": _clean(row.get("doc_relevance")) or "none",
                 "signal_summary": _clean(row.get("relevance_note")),
                 "evidence_text": evidence_text,
+                "match_type": _normalize_match_type(row.get("match_type")),
+                "match_reason": _clean(row.get("subject_match_reason"))
+                or _clean(row.get("match_reason")),
                 "page": page,
             }
         )

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Phase 4: score (city, action) pairs from policy_action_signals + applicability.
 
-Implements releases/v1/design/scoring_rubric.md (rubric_version 0.2.0).
+Implements releases/v1/design/scoring_rubric.md (rubric_version 0.3.0).
 
 v0.2.0 changes from v0.1.0:
   - SATURATION_K raised from 2.0 to 4.0 (less aggressive saturation)
@@ -30,7 +30,7 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-RUBRIC_VERSION = "0.2.0"
+RUBRIC_VERSION = "0.3.0"
 SATURATION_K = 4.0
 TOP_EVIDENCE_N = 5
 
@@ -48,6 +48,8 @@ RELATION_WEIGHT = {
     "restates": 0.30,
 }
 EXPLICITNESS_WEIGHT = {"explicit": 1.00, "inferred": 0.60}
+MATCH_TYPE_WEIGHT = {"direct": 1.00, "indirect": 0.25, "contextual": 0.05}
+DIRECT_STRONG_RELATIONS = {"commits", "targets", "funds", "monitors", "governs"}
 
 BUCKET_STRONG = 0.66
 BUCKET_MEDIUM = 0.33
@@ -125,7 +127,19 @@ def finding_strength(finding: dict, proximity: float) -> float:
     rel = RELATION_WEIGHT.get(finding.get("primitive_relation"), 0.0)
     if conf == 0.0 or rel == 0.0:
         return 0.0
-    return proximity * conf * rel * explicitness_weight(finding)
+    match_weight = MATCH_TYPE_WEIGHT.get(finding.get("match_type"), 0.0)
+    if match_weight == 0.0:
+        return 0.0
+    return proximity * conf * rel * explicitness_weight(finding) * match_weight
+
+
+def is_direct_strong_evidence(finding: dict) -> bool:
+    return (
+        finding.get("match_type") == "direct"
+        and finding.get("signal_confidence") == "high"
+        and (finding.get("explicitness") or "explicit") == "explicit"
+        and finding.get("primitive_relation") in DIRECT_STRONG_RELATIONS
+    )
 
 
 def score_raw(sum_strength: float, k: float = SATURATION_K) -> float:
@@ -188,6 +202,9 @@ def collect_scored_findings(
                 "evidence_text": finding.get("evidence_text"),
                 "primitive_type": finding.get("primitive_type"),
                 "primitive_relation": finding.get("primitive_relation"),
+                "match_type": finding.get("match_type"),
+                "policy_subject": finding.get("policy_subject"),
+                "subject_match_reason": finding.get("subject_match_reason"),
                 "signal_confidence": finding.get("signal_confidence"),
                 "explicitness": finding.get("explicitness") or "explicit",
                 "finding_strength": round(strength, 4),
@@ -226,6 +243,10 @@ def score_city_action(
     best_rel = best_relevance_for(doc_relevance)
     cap = RELEVANCE_CAP.get(best_rel, 1.00)
     raw = min(raw_uncapped, cap)
+    direct_strong_evidence_count = sum(is_direct_strong_evidence(f) for f in scored)
+    direct_evidence_gate_applied = raw >= BUCKET_STRONG and direct_strong_evidence_count == 0
+    if direct_evidence_gate_applied:
+        raw = min(raw, RELEVANCE_CAP["medium"])
     bucket = score_bucket(raw)
     rel_counts = Counter(f["primitive_relation"] for f in scored)
     docs_with_findings = {f["source_document_id"] for f in scored}
@@ -243,6 +264,8 @@ def score_city_action(
         "sum_finding_strength": round(sum_s, 4),
         "best_relevance": best_rel,
         "relevance_cap_applied": round(cap, 2),
+        "direct_strong_evidence_count": direct_strong_evidence_count,
+        "direct_evidence_gate_applied": direct_evidence_gate_applied,
         "doc_relevance_map": dict(sorted(doc_relevance.items())),
         "findings_count": len(scored),
         "applicable_doc_count": len(applicable) if not doc_filter else (1 if doc_filter in applicable else 0),

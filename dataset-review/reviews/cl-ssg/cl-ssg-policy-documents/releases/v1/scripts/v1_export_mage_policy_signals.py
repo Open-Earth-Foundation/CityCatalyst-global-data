@@ -23,6 +23,7 @@ from v1_common import V1
 CSV_FIELDS = [
     "action_id", "location_scope", "region_code", "communal_code",
     "doc_relevance", "primitive_type", "primitive_relation",
+    "match_type", "policy_subject", "subject_match_reason",
     "signal_confidence", "explicitness", "document_type", "document_name",
     "relevance_note", "evidence_text", "page",
 ]
@@ -74,6 +75,11 @@ def main() -> int:
 
     for path in sorted(args.findings_dir.glob("*/*.json")):
         finding_set = json.loads(path.read_text(encoding="utf-8"))
+        # A findings root may also contain pilot summaries or prior exports.
+        # They are not action-document records and should not be reported as
+        # unknown policy documents.
+        if not finding_set.get("source_document_id") or not finding_set.get("action_id"):
+            continue
         doc_id = _clean(finding_set.get("source_document_id"))
         document = documents.get(doc_id)
         if not document:
@@ -108,6 +114,9 @@ def main() -> int:
                 "doc_relevance": doc_relevance,
                 "primitive_type": _clean(finding.get("primitive_type")),
                 "primitive_relation": _clean(finding.get("primitive_relation")),
+                "match_type": _clean(finding.get("match_type")),
+                "policy_subject": _clean(finding.get("policy_subject")),
+                "subject_match_reason": _clean(finding.get("subject_match_reason")),
                 "signal_confidence": _clean(finding.get("signal_confidence")),
                 "explicitness": _clean(finding.get("explicitness")),
                 "document_type": document_type,
@@ -126,6 +135,9 @@ def main() -> int:
                 "commune_code": communal_code or None,
                 "signal_type": _clean(finding.get("primitive_type")) or "unspecified",
                 "signal_relation": _clean(finding.get("primitive_relation")) or "unspecified",
+                "match_type": _clean(finding.get("match_type")) or None,
+                "policy_subject": _clean(finding.get("policy_subject")) or None,
+                "subject_match_reason": _clean(finding.get("subject_match_reason")) or None,
                 "signal_strength": _clean(finding.get("signal_confidence")) or "low",
                 "signal_subject": action_name or "unspecified",
                 "gpc_sector": gpc_reference or None,

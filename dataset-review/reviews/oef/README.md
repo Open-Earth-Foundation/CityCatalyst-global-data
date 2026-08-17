@@ -23,7 +23,7 @@ Each product follows the standard review layout — `README.md` (plus a hub `met
 
 ## Contents
 
-- `cl-city-action-fundability/` — Chile **city-action fundability** (the consolidated product; supersedes the former `cl-finance-inventory` and `cl-action-fundability`). Harmonizes the ten reviewed Chile finance sources into one fund inventory (99 rows) with an action **financing-availability (coverage)** indicator, then combines four layers (action catalog, SINIM/Censo municipal capacity, the inventory, the projects pipeline) into a per (action × comuna) **route/effort label + matched funds** feeding MEED+ HIAP Feasibility — plus a traceable `finance_db` fixture that makes the three access routes explicit. Working methodology; exploratory / pre-Mage.
+- `cl-city-action-fundability/` — Chile **city-action fundability** (the consolidated product; supersedes the former `cl-finance-inventory` and `cl-action-fundability`). Harmonizes the ten reviewed Chile finance sources into one fund inventory with an action **financing-availability** indicator, then combines four layers (action catalog, SINIM/Censo municipal capacity, the inventory, the projects pipeline) into a per (action × comuna) **route/effort label + matched funds** feeding MEED+ HIAP Feasibility. Release v1 (99 funds) is implemented in production; release v2 (100 opportunities) is research, rebuilding the action matching so that match specificity derives from route specificity.
 
 ## Status
 

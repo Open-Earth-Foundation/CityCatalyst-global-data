@@ -26,18 +26,26 @@ The ten supply reviews behind the inventory: `cl-mma`, `cl-minenergia`, `cl-subd
 ```
 cl-city-action-fundability/
 ├── README.md                 (this file)
-├── methodology.md            (the shareable overview: how the fundability score works)
-└── releases/v1/
-    ├── implementation.md            the production design (tables, score function, API) + As-built summary
-    ├── 01_finance_inventory.ipynb   supply layer: harmonize 10 sources → inventory + coverage
-    ├── 02_fundability_model.ipynb   the four-layer model (autonomy/capacity formulas, the score)
-    ├── extract_inventory.ipynb      reproducible extraction harness (one reusable prompt; refresh source rows)
+├── methodology.md            (the shareable overview: how the fundability score works + the v2 matching contract)
+├── releases/v1/                     the release implemented in production
+│   ├── implementation.md            the production design (tables, score function, API) + As-built summary
+│   ├── 01_finance_inventory.ipynb   supply layer: harmonize 10 sources → inventory + coverage
+│   ├── 02_fundability_model.ipynb   the four-layer model (autonomy/capacity formulas, the score)
+│   ├── extract_inventory.ipynb      reproducible extraction harness (one reusable prompt; refresh source rows)
+│   ├── review.md                    release epistemic contract
+│   ├── data/
+│   │   ├── chile_finance_inventory.csv         99 funds, harmonized (now productionised as finance_opportunity)
+│   │   ├── financing_coverage_by_action.csv    102 actions × coverage_level
+│   │   └── action_coverage_matrix.csv          102 actions × gap dashboard
+│   └── tests/                       post-load expectations for the modelled tables
+└── releases/v2/                     research: route-derived action matching, not in production
+    ├── 01_opportunity_action_links.ipynb  build, validation and charts
     ├── review.md                    release epistemic contract
-    ├── data/
-    │   ├── chile_finance_inventory.csv         99 funds, harmonized (now productionised as finance_opportunity)
-    │   ├── financing_coverage_by_action.csv    102 actions × coverage_level
-    │   └── action_coverage_matrix.csv          102 actions × gap dashboard
-    └── tests/                       post-load expectations for the modelled tables
+    └── data/
+        ├── chile_finance_inventory.csv        100 opportunities (99 v1 records + 1 verified local call)
+        ├── action_delivery_mode.csv           input: what each of the 102 actions takes to deliver
+        ├── action_opportunity_mapping.csv     input: 21 hand-judged rows (16 whole/part, 4 preparation, 1 reviewed-no-match)
+        └── finance_opportunity_action.csv     200 links, 180 derived and 20 reviewed
 ```
 
 The exploratory fixtures used to *design* the schema — the SQLite `finance_preview.db`, the `finance_db/` CSVs, the precomputed `fundability_scored.csv`, the preview example JSONs and `build_*` scripts — were removed once the real tables landed (the implementation supersedes them). Refresh of the analysis: re-run `01` after any source release, then `02`.
@@ -55,3 +63,13 @@ Authority lives upstream; this product inherits the **most restrictive upstream 
 - **Endpoints:** `climate-finance/opportunities`, `.../feasibility`, `.../actions/{action_id}`, `.../projects`.
 
 This folder is now the analysis + methodology record behind that implementation. Remaining methodology caveat: the curated `access_tier` that will replace the current "direct" substring heuristic (see `methodology.md` → *Status and what's next*), pending SINIM commercial-licence clearance.
+
+**Release v2 is research and is not in production.** It rebuilds the action matching so that how specifically a fund matches an action follows from how specific the fund is, which makes 180 of its 200 links derived rather than asserted and shrinks the hand-maintained judgement to 21 rows. Coverage, city eligibility and current availability are three separate gates. Because every opportunity currently fails the availability gate, v2 ships zero displayable links on purpose; v1 remains what the modelled tables and the finance API serve. Its headline finding is that no action requiring municipal capital is without a route, and that 48 of 102 actions are funded in Chile but not for the city. Details in `releases/v2/review.md`; the contract in `methodology.md` → *Action-to-opportunity matching*.
+
+## Parsing notes
+
+Three things break naive ingestion of this folder. All three are properties of the inputs rather than of the analysis, so they bite any consumer of the release data.
+
+- **Join on action id, never action name.** The ClimateView action catalogue carries source-side spelling errors and trailing spaces in `action_name` (for example `"Optmize waste management systems "`). Both are preserved as published in the v2 crosswalk and links, with only the surrounding whitespace stripped, so a name join silently drops rows that an id join keeps.
+- **Opportunity ids are derived, not stored upstream.** `source_opportunity_id` is a deterministic slug of the source dataset and programme name (accents stripped, non-alphanumeric runs collapsed to a hyphen). The compile's own `record_id` is a content hash and is not the join key.
+- **Inventory `status` is mixed provenance.** It is normalised where the v2 compile reverified a record and is otherwise the seed's original claim carried forward from v1, so it must not be read as a uniformly current status. `verification_status` on the compile is what distinguishes the two.

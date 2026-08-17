@@ -39,9 +39,9 @@ from pathlib import Path
 import v1_common as ef  # noqa: N812 — keeping `ef` alias for now to minimise diff
 import v1_extract_atoms as atoms_mod
 
-FINDINGS_SCHEMA_VERSION = "2.1.0"
-MATCHER_VERSION = "0.1.0"
-RUBRIC_VERSION = "0.1.0"
+FINDINGS_SCHEMA_VERSION = "2.2.0"
+MATCHER_VERSION = "0.2.0"
+RUBRIC_VERSION = "0.3.0"
 DEFAULT_MODEL = "gpt-4.1-mini"
 ATOM_EVIDENCE_TRUNCATE = 600   # chars of evidence_text per atom in the prompt
 
@@ -58,6 +58,17 @@ ALLOWED_RELATIONS = {
 ALLOWED_CONFIDENCE = {"high", "medium", "low"}
 ALLOWED_RELEVANCE = {"high", "medium", "low", "none"}
 ALLOWED_EXPLICITNESS = {"explicit", "inferred"}
+ALLOWED_MATCH_TYPES = {"direct", "indirect", "contextual"}
+MATCH_TYPE_RANK = {"contextual": 1, "indirect": 2, "direct": 3}
+MAX_RELEVANCE_BY_MATCH_TYPE = {"contextual": "low", "indirect": "medium", "direct": "high"}
+RELEVANCE_RANK = {"none": 0, "low": 1, "medium": 2, "high": 3}
+
+DIRECT_CONTRADICTION_RE = re.compile(
+    r"\b(indirect(?:ly)?|tangential(?:ly)?|not specific(?:ally)?|does not specific(?:ally)?|"
+    r"though not|but (?:does not|is not)|potentially|could (?:include|support|contribute)|"
+    r"broad(?:er|ly)?|thematic(?:ally)?)\b",
+    re.IGNORECASE,
+)
 
 # Model-error auto-correction: when the model conflates primitive_type with
 # primitive_relation and writes e.g. relation="action", remap to the default
@@ -254,12 +265,31 @@ def validate_and_denormalise(
         explicitness = f.get("explicitness")
         if explicitness and explicitness not in ALLOWED_EXPLICITNESS:
             warnings.append(f"{prefix}:invalid_explicitness:{explicitness}")
+        match_type = f.get("match_type")
+        if match_type not in ALLOWED_MATCH_TYPES:
+            errors.append(f"{prefix}:invalid_match_type:{match_type}")
+        policy_subject = (f.get("policy_subject") or "").strip()
+        subject_match_reason = (f.get("subject_match_reason") or "").strip()
+        if not policy_subject:
+            errors.append(f"{prefix}:missing_policy_subject")
+        if not subject_match_reason:
+            errors.append(f"{prefix}:missing_subject_match_reason")
+
+        comparison_text = " ".join((subject_match_reason, f.get("relevance_note") or ""))
+        if match_type == "direct" and (
+            explicitness == "inferred" or DIRECT_CONTRADICTION_RE.search(comparison_text)
+        ):
+            match_type = "indirect"
+            warnings.append(f"{prefix}:direct_match_demoted_to_indirect")
         seen_atom_ids.add(atom_id)
 
         out.append({
             "atom_id": atom_id,
             "primitive_type": atom["primitive_type"],
             "primitive_relation": relation,
+            "match_type": match_type,
+            "policy_subject": policy_subject,
+            "subject_match_reason": subject_match_reason,
             "signal_confidence": conf,
             "explicitness": explicitness or atom.get("explicitness", "explicit"),
             "relevance_note": (f.get("relevance_note") or "").strip(),
@@ -276,6 +306,20 @@ def validate_and_denormalise(
         warnings.append("relevance_none_but_findings_present")
     if relevance in {"high", "medium"} and not out:
         warnings.append(f"relevance_{relevance}_but_no_findings")
+
+    if out:
+        strongest_match = max(
+            (f.get("match_type") for f in out if f.get("match_type") in MATCH_TYPE_RANK),
+            key=lambda value: MATCH_TYPE_RANK[value],
+            default="contextual",
+        )
+        max_relevance = MAX_RELEVANCE_BY_MATCH_TYPE[strongest_match]
+        if RELEVANCE_RANK.get(relevance, 0) > RELEVANCE_RANK[max_relevance]:
+            payload["relevance"] = max_relevance
+            warnings.append(f"relevance_capped_by_match_type:{relevance}->{max_relevance}")
+    elif relevance != "none":
+        payload["relevance"] = "none"
+        warnings.append(f"relevance_without_findings:{relevance}->none")
 
     return out, errors, warnings
 

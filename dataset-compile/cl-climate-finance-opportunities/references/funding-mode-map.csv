@@ -1,0 +1,31 @@
+instrument_type,funds_what,basis
+blended (PPP / concession),asset,Concession finances built infrastructure.
+blended (designed/co-financed PV),asset,
+blended (subsidy + aggregated purchase),equipment,Aggregated purchase of household equipment.
+blended / concessional loan,credit,
+co-financing (grant) + technical accompaniment,practice,Co-finances a firm's own project and accompanies it.
+grant,asset,Default for a plain project grant; overridden per programme where the grant funds practice or preparation.
+grant (activity subsidy),practice,"Subsidises activities, not an asset."
+grant (bonificación),practice,Per-hectare reimbursement for landowner practice.
+grant (budget transfer),asset,
+grant (capital transfer),asset,
+grant (co-financed),asset,
+grant (cofinanciamiento de inversiones),asset,"On-farm investment, but the beneficiary gate still applies."
+grant (cofinanciamiento),asset,
+grant (incentivo),practice,Incentive for sustainable practice.
+grant (public investment / capital transfer),asset,
+grant (public investment),asset,
+grant (research),preparation,"Funds study, not delivery."
+grant + technical_assistance,practice,Grant paired with advisory support to change how a beneficiary operates.
+grant / co-financing (innovation),practice,
+grant / co-financing (productive investment),asset,
+grant/works,asset,
+guarantee (credit risk coverage),credit,
+loan,credit,
+loan (intermediated via banks / leasing),credit,
+subsidy,equipment,Heater replacement subsidy buys a unit.
+subsidy (operation + fleet-renewal subsidy),equipment,
+subsidy (vehicle renewal),equipment,
+technical_assistance,preparation,
+technical_assistance + grant (co-financing),preparation,Planning and access support; capital is not the primary offer.
+technical_assistance + grant (research fund),preparation,

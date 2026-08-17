@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://citycatalyst.openearth.org/schemas/v2/action_findings.schema.json",
-  "title": "Per-action policy findings (v2)",
-  "description": "Structured record of what a single source document says about a single climate action. One record per (action, source_document) pair. v2 of the schema: adds applicability_scope, restatement_of, and early_exit relative to the v1 prototype under dataset-review-tools/.",
+  "title": "Per-action policy findings (v2.2)",
+  "description": "Structured record of what a single source document says about a single climate action. One record per (action, source_document) pair. v2.2 separates policy relation from action-match directness and records the policy subject used in that comparison.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -16,7 +16,7 @@
     "search_run"
   ],
   "properties": {
-    "schema_version": {"const": "2.0.0"},
+    "schema_version": {"const": "2.2.0"},
 
     "action_id": {"type": "string", "description": "Stable identifier for the action (e.g. icare_0001)."},
     "action_name": {"type": "string"},
@@ -49,8 +49,13 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["primitive_type", "primitive_relation", "signal_confidence", "evidence_text", "page", "relevance_note"],
+        "required": ["atom_id", "primitive_type", "primitive_relation", "match_type", "policy_subject", "subject_match_reason", "signal_confidence", "evidence_text", "page", "relevance_note"],
         "properties": {
+          "atom_id": {
+            "type": "string",
+            "minLength": 3,
+            "description": "Stable identifier of the source atom used for this finding."
+          },
           "primitive_type": {
             "enum": [
               "action",
@@ -80,6 +85,20 @@
             ],
             "description": "How the passage relates to the action. commits = explicit commitment to act; targets = quantified/dated target; funds = funding allocation; monitors = MRV indicator or review cycle; governs = lead body or instrument; prioritizes = names the action's theme as priority; identifies = names a risk, gap, or enabling condition; contextualizes = background/framing; restates = restates a higher-level commitment without adding new content; references = points to another instrument."
           },
+          "match_type": {
+            "enum": ["direct", "indirect", "contextual"],
+            "description": "How closely the policy subject matches the catalogue action: direct=same intervention, indirect=concrete enabling measure, contextual=useful framing only."
+          },
+          "policy_subject": {
+            "type": "string",
+            "minLength": 3,
+            "description": "Short noun phrase naming the intervention or subject actually addressed by the policy passage."
+          },
+          "subject_match_reason": {
+            "type": "string",
+            "minLength": 10,
+            "description": "One sentence comparing the policy subject with the catalogue action's object and mechanism."
+          },
           "signal_confidence": {
             "enum": ["high", "medium", "low"],
             "description": "Confidence that this passage genuinely supports the action."
@@ -102,6 +121,11 @@
           "section": {
             "type": "string",
             "description": "Nearest preceding ## section heading, for human navigation."
+          },
+          "sector_tags": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "Sector tags copied from the source atom for downstream filtering."
           },
           "measure_type": {
             "enum": ["mitigation", "adaptation", "transversal", "unknown"],

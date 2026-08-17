@@ -1227,7 +1227,7 @@ datasets:
     name: OpenEarth Foundation (OEF)
     url: https://www.openearth.org/
   description: >
-    The consolidated OEF product for how a Chilean comuna can pay for a climate action (supersedes the former cl-finance-inventory and cl-action-fundability). It unions the ten vetted Chile climate-finance supply reviews into one inventory of 99 verified funding channels, builds an action financing-availability (coverage) indicator on it, and combines four layers (action catalog, SINIM/Censo municipal capacity, the finance inventory, the projects pipeline) into a per (action x comuna) route/effort bucket plus a 0-1 financial_feasibility score with named candidate funds. It also ships a traceable finance_db fixture (funder/opportunity/project/action + funding link) that makes the three access routes explicit. A coverage and categorisation product, not a funding probability. Research and exploratory, pre-Mage, not production-approved.
+    The consolidated OEF product for how a Chilean comuna can pay for a climate action (supersedes the former cl-finance-inventory and cl-action-fundability). It unions the ten vetted Chile climate-finance supply reviews into one inventory of 99 verified funding channels, builds an action financing-availability (coverage) indicator on it, and combines four layers (action catalog, SINIM/Censo municipal capacity, the finance inventory, the projects pipeline) into a per (action x comuna) route/effort bucket plus a 0-1 financial_feasibility score with named candidate funds. A coverage and categorisation product, not a funding probability. The v1 model is implemented in production as modelled tables, a read-time score function and the climate-finance API, loaded by cc-mage pipelines; the release entries here stay production_approved false because the release artefacts themselves have not been through the definition-of-done checklist. Release v2 refreshes the inventory to 100 opportunities and derives action matching from the route rather than a sector join: 180 of its 200 links are computed from what each fund buys, how targeted it is and whether a municipality can receive it, leaving 21 hand-judged rows. Coverage, city eligibility and current availability are three separate gates; all 100 opportunities currently fail the availability gate, so v2 ships zero displayable links by design.
   coverage:
     geography: country
     countries: [CL]
@@ -1248,7 +1248,7 @@ datasets:
       retrieval_method: manual_curation
       api_endpoint: null
       path: "reviews/oef/cl-city-action-fundability/releases/v1"
-      is_latest: true
+      is_latest: false
       production_approved: false
       pipeline_name: null
       pipeline_version: null
@@ -1261,6 +1261,34 @@ datasets:
         commercial_use: false
         note: >
           Output is non-commercial with attribution; it inherits the most restrictive upstream licence (binding constraint is SINIM) until SUBDERE commercial clearance lands. Finance sources add per-source terms (e.g. CORFO CC BY-NC-ND 3.0). Authority lives in each source review; confirm with legal before redistribution.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+    - version: "v2"
+      version_number: 2
+      source_url: null
+      released_at: null
+      retrieved_at: "2026-08-16"
+      retrieval_method: manual_curation
+      api_endpoint: null
+      path: "reviews/oef/cl-city-action-fundability/releases/v2"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: reviews/oef/cl-city-action-fundability/methodology.md
+      internal_review_url: reviews/oef/cl-city-action-fundability/releases/v2/review.md
+      license:
+        id: license-verification-pending
+        name: "Terms to be verified"
+        url: null
+        commercial_use: false
+        note: >
+          Unchanged from v1 and re-checked for this release: output is non-commercial with attribution and inherits the most restrictive upstream licence (binding constraint is SINIM) until SUBDERE commercial clearance lands. Finance sources add per-source terms (e.g. CORFO CC BY-NC-ND 3.0). Authority lives in each source review; confirm with legal before redistribution.
       data_quality:
         documentation: null
         methodology: null

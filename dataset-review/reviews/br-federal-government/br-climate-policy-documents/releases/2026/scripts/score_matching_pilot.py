@@ -10,36 +10,46 @@ from pathlib import Path
 RELEASE_DIR = Path(__file__).resolve().parents[1]
 DECISIONS_PATH = RELEASE_DIR / "data" / "pilot" / "pilot_match_decisions.csv"
 RECORDS_PATH = RELEASE_DIR / "data" / "pilot" / "policy_records_combined.csv"
-ACTIONS_PATH = RELEASE_DIR / "data" / "raw" / "current-bank-adaptation-actions.csv"
+ACTIONS_PATH = RELEASE_DIR / "sample" / "raw" / "current-bank-adaptation-actions.csv"
 DOCUMENTS_PATH = RELEASE_DIR / "data" / "policy_documents.csv"
 MATCHES_PATH = RELEASE_DIR / "data" / "pilot" / "policy_action_matches.csv"
 SCORES_PATH = RELEASE_DIR / "data" / "pilot" / "action_policy_scores.csv"
 
 PILOT = {
-    "c40_0046": {
-        "relevance": "low",
-        "summary": "Brazilian policy prioritizes coastal and marine resilience, protected areas, and restoration, but the reviewed records do not commit to coastal protection infrastructure.",
-        "caveat": "Do not interpret general coastal policy or ecosystem restoration as a seawall or protective-structure commitment.",
-    },
-    "c40_0048": {
+    "ipcc_0096": {
         "relevance": "high",
-        "summary": "Federal policy directly supports urban drainage and rainwater-management works through disaster-prevention resources, a national structural-risk target, and municipal adaptation solutions.",
-        "caveat": "The records establish policy support and programmed resources, not proof that local drainage upgrades have been delivered.",
+        "summary": "Federal policy directly supports resilient farming and aquaculture through quantified targets, dedicated agricultural credit, and expansion of climate-resilient production practices.",
+        "caveat": "The records establish national enabling conditions and targets; they do not demonstrate adoption or outcomes for individual farms or fisheries.",
     },
-    "c40_0049": {
+    "ipcc_0091": {
         "relevance": "medium",
-        "summary": "Policy supports and monitors temporary accommodation for climate-affected and displaced people, but does not specify construction and maintenance of resilient hazard shelters.",
-        "caveat": "Temporary accommodation is a partial functional match; resilient design, location, operations, and maintenance are not established.",
+        "summary": "Policy supports climate-linked social and productive inclusion, income generation, and economic autonomy for vulnerable rural and traditional communities, providing a partial livelihood-diversification match.",
+        "caveat": "The evidence does not explicitly diversify fisheries- or mariculture-dependent households into alternative sectors such as tourism, processing, crafts, or services.",
+    },
+    "icare_0145": {
+        "relevance": "high",
+        "summary": "The health adaptation plan directly strengthens resilient health infrastructure, teams, procedures, and continuity of care for extreme climate events across vulnerable territories.",
+        "caveat": "The records are commitments, targets, and guidance; they do not prove that every health facility has completed the planned upgrades.",
     },
     "c40_0051": {
         "relevance": "none",
         "summary": "No reviewed policy record meaningfully commits to public shade structures or tree shade in heat hotspots.",
         "caveat": "The absence of a match in this corpus does not prove that no Brazilian policy outside the selected documents addresses public shading.",
     },
-    "ipcc_0086": {
+    "ipcc_0099": {
         "relevance": "high",
-        "summary": "The Strategy explicitly adopts ecosystem-based adaptation, supported by a quantified biodiversity target and actions for restoration, connectivity, climate refuges, and conservation units.",
-        "caveat": "The evidence demonstrates policy alignment; it does not establish implementation progress or ecological outcomes.",
+        "summary": "Federal policy sets a quantified target for 200,000 efficient water-capture and storage technologies and commits to systems for productive and household water use, including microbasin conservation structures.",
+        "caveat": "The evidence covers distributed capture and storage systems; it does not establish delivery of every infrastructure type named in the action description.",
+    },
+    "ipcc_0100": {
+        "relevance": "high",
+        "summary": "Policy directly promotes efficient water use through localized irrigation, reuse, low-consumption irrigation, water-efficient aquaculture, and reduced industrial abstraction.",
+        "caveat": "The evidence spans several sectors but does not establish a single integrated demand-management programme or implementation outcomes.",
+    },
+    "c40_0056": {
+        "relevance": "high",
+        "summary": "Federal policy directly supports watershed protection through basin revitalization, source and aquifer protection, restoration, soil conservation, governance, and quantified implementation projects.",
+        "caveat": "The records demonstrate national policy alignment and project targets, not verified improvements in water quality, biodiversity, or ecosystem services.",
     },
 }
 
@@ -67,7 +77,7 @@ def read_csv(path: Path, encoding: str = "utf-8") -> list[dict]:
 
 def write_csv(path: Path, rows: list[dict], fieldnames: list[str]) -> None:
     with path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
@@ -173,7 +183,7 @@ def main() -> None:
         scores.append(
             {
                 "ActionID": action_id,
-                "ActionName": actions[action_id]["ActionName"],
+                "ActionName": actions[action_id]["ActionName"].strip(),
                 "overall_relevance": assessment["relevance"],
                 "alignment_score": f"{score:.1f}",
                 "alignment_grade": grade(score),

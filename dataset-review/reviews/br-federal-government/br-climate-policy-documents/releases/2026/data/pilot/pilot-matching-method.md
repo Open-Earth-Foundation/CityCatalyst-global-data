@@ -1,18 +1,20 @@
-# Five-action matching pilot
+# Seven-action matching pilot
 
 ## Purpose
 
-Test whether extracted policy records provide defensible evidence about five varied adaptation actions. The score measures **policy alignment**, not implementation, funding certainty, or effectiveness.
+Test whether extracted policy records provide defensible evidence about seven varied adaptation actions. The score measures **policy alignment**, not implementation, funding certainty, or effectiveness.
 
 ## Pilot actions
 
 | Action | Why selected |
 |---|---|
-| `c40_0046` Coastal protection infrastructure | Distinguishes coastal context from an intervention commitment. |
-| `c40_0048` Urban drainage upgrades | Tests a direct infrastructure match with resources and a target. |
-| `c40_0049` Climate-hazard shelters | Tests a partial match to temporary accommodation. |
+| `ipcc_0096` Climate resilience in farming and fisheries | Tests direct targets, finance, and sector practices across farming and aquaculture. |
+| `ipcc_0091` Livelihood diversification | Tests a partial match where income and productive-inclusion measures do not fully match fisheries-specific diversification. |
+| `icare_0145` Healthcare system resilience | Tests direct system, infrastructure, workforce, and continuity-of-care evidence for extreme events. |
 | `c40_0051` Public shading | Tests a legitimate no-match result. |
-| `ipcc_0086` Ecosystem-based adaptation | Tests an explicit national approach supported by sector actions. |
+| `ipcc_0099` Water capture and storage | Tests quantified technology deployment and implementation commitments. |
+| `ipcc_0100` Efficient water use and demand | Tests cross-sector irrigation, reuse, aquaculture, and industrial-demand measures. |
+| `c40_0056` Watershed protection and management | Tests restoration, source protection, governance, and implementation evidence. |
 
 ## Evidence decisions
 

@@ -8,7 +8,7 @@ from pathlib import Path
 
 RELEASE_DIR = Path(__file__).resolve().parents[1]
 SAMPLE_DIR = RELEASE_DIR / "sample"
-OUTPUT_PATH = RELEASE_DIR / "data" / "policy_records_combined.csv"
+OUTPUT_PATH = RELEASE_DIR / "data" / "pilot" / "policy_records_combined.csv"
 TRANSLATIONS_PATH = RELEASE_DIR / "data" / "translations" / "policy_record_translations.jsonl"
 
 CANONICAL_FILES = (
@@ -21,6 +21,15 @@ CANONICAL_FILES = (
     "disaster_risk_policy_records.jsonl",
     "health_policy_records.jsonl",
     "food_nutrition_security_policy_records.jsonl",
+    "agriculture_livestock_policy_records.jsonl",
+    "family_farming_policy_records.jsonl",
+    "industry_mining_policy_records.jsonl",
+    "racial_equality_policy_records.jsonl",
+    "ocean_coastal_zone_policy_records.jsonl",
+    "traditional_peoples_communities_policy_records.jsonl",
+    "indigenous_peoples_policy_records.jsonl",
+    "transport_policy_records.jsonl",
+    "tourism_policy_records.jsonl",
     "ndc_adaptation_policy_records.jsonl",
 )
 
@@ -36,6 +45,12 @@ FIELDNAMES = (
     "source_text_en",
     "resources_pt",
     "resources_en",
+    "financing_evidence_pt",
+    "financing_evidence_en",
+    "cost_evidence_pt",
+    "cost_evidence_en",
+    "co_benefit_evidence_pt",
+    "co_benefit_evidence_en",
     "indicators_pt",
     "indicators_en",
     "monitoring_frequency_pt",
@@ -105,6 +120,30 @@ def review_row(record: dict, translations: dict[str, dict]) -> dict:
         "resources_en": array_cell(
             record.get("resources") if source_is_english else generated.get("resources_en")
         ),
+        "financing_evidence_pt": array_cell(
+            [] if source_is_english else record.get("financing_evidence")
+        ),
+        "financing_evidence_en": array_cell(
+            record.get("financing_evidence")
+            if source_is_english
+            else generated.get("financing_evidence_en")
+        ),
+        "cost_evidence_pt": array_cell(
+            [] if source_is_english else record.get("cost_evidence")
+        ),
+        "cost_evidence_en": array_cell(
+            record.get("cost_evidence")
+            if source_is_english
+            else generated.get("cost_evidence_en")
+        ),
+        "co_benefit_evidence_pt": array_cell(
+            [] if source_is_english else record.get("co_benefit_evidence")
+        ),
+        "co_benefit_evidence_en": array_cell(
+            record.get("co_benefit_evidence")
+            if source_is_english
+            else generated.get("co_benefit_evidence_en")
+        ),
         "indicators_pt": array_cell([] if source_is_english else record.get("indicators")),
         "indicators_en": array_cell(
             record.get("indicators") if source_is_english else generated.get("indicators_en")
@@ -149,7 +188,6 @@ def main() -> None:
     for filename in CANONICAL_FILES:
         records.extend(read_jsonl(SAMPLE_DIR / filename))
 
-    assert len(records) == 553, f"Expected 553 canonical records, found {len(records)}"
     record_ids = [record["record_id"] for record in records]
     assert len(record_ids) == len(set(record_ids)), "Canonical record IDs are not unique"
 

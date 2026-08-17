@@ -16,6 +16,9 @@
     "deadline",
     "responsible_institutions",
     "resources",
+    "financing_evidence",
+    "cost_evidence",
+    "co_benefit_evidence",
     "indicators",
     "monitoring_frequency",
     "source_notes",
@@ -30,7 +33,7 @@
   ],
   "properties": {
     "schema_version": {
-      "const": "0.1.0"
+      "const": "0.2.0"
     },
     "record_id": {
       "type": "string",
@@ -85,6 +88,18 @@
     },
     "resources": {
       "$ref": "#/$defs/stringArray"
+    },
+    "financing_evidence": {
+      "$ref": "#/$defs/stringArray",
+      "description": "Verbatim source text that explicitly identifies a resource source, budget programme, fund, credit line, financing mechanism, or use of existing resources. Empty when the source provides no financing information."
+    },
+    "cost_evidence": {
+      "$ref": "#/$defs/stringArray",
+      "description": "Verbatim source text that explicitly states a cost for this record. Financing amounts, programme envelopes, and contextual damage estimates are not treated as action costs."
+    },
+    "co_benefit_evidence": {
+      "$ref": "#/$defs/stringArray",
+      "description": "Verbatim source text that explicitly calls an outcome a co-benefit or benefit. Empty when a co-benefit would require analyst inference."
     },
     "indicators": {
       "$ref": "#/$defs/stringArray"

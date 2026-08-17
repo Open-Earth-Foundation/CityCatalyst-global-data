@@ -1,6 +1,22 @@
 # Scoring rubric
 
-Rubric version: `0.2.0`. Owner: amanda. Last updated: 2026-07-30.
+Rubric version: `0.3.0`. Owner: amanda. Last updated: 2026-08-16.
+
+## Action-match directness (v0.3.0)
+
+Policy-statement strength and action-match directness are separate dimensions. A
+passage may be a firm policy commitment while addressing a different
+intervention from the catalogue action. Each finding therefore carries:
+
+| match_type | definition | weight |
+|------------|------------|--------|
+| `direct` | Same intervention object and mechanism, or a clear synonym | 1.00 |
+| `indirect` | Concrete enabling measure or close implementation dependency | 0.25 |
+| `contextual` | Useful policy framing only | 0.05 |
+
+A shared sector, technology, climate objective, or emissions outcome is not by
+itself a material match. Coincidental similarities are excluded rather than
+retained as low-confidence findings.
 
 ## Goal
 
@@ -37,6 +53,7 @@ finding_strength(f) =
   * confidence_weight(f.signal_confidence)
   * relation_weight(f.primitive_relation)
   * explicitness_weight(f.explicitness)
+  * match_type_weight(f.match_type)
 ```
 
 Multiplicative form is intentional. A low-confidence, low-proximity, restating finding should not stack to a strong score just because there are many of them.
@@ -145,6 +162,23 @@ Final score:
 ```
 score_raw(city, action) = min(score_raw_uncapped, cap(best_relevance))
 ```
+
+In v0.3.0, document relevance is also capped deterministically by its strongest
+finding: direct evidence permits `high`, indirect-only evidence permits at most
+`medium`, contextual-only evidence permits at most `low`, and no findings imply
+`none`.
+
+## Direct-evidence gate (v0.3.0)
+
+A `strong` city-action score requires at least one finding that is all of:
+
+- `match_type = direct`
+- `signal_confidence = high`
+- `explicitness = explicit`
+- relation in `commits | targets | funds | monitors | governs`
+
+Without such a finding, the final score is capped at `0.65` (`medium`) even if
+many indirect or contextual findings accumulate.
 
 Why the cap goes by `best_relevance` across applicable docs, not by individual doc: a city's alignment for an action is the strongest expression of that alignment in any applicable policy. If a PACCC has a `high`-relevance commitment, that's the alignment fact, even if national-level docs only contextualise. Conversely, if every applicable doc only mentions the action tangentially, accumulating those tangents should not invent a strong alignment.
 

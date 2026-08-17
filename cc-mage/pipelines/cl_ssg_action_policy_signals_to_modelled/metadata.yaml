@@ -143,7 +143,7 @@ conditionals: []
 created_at: null
 data_integration: null
 description: Load action_policy_signals.csv and city_locodes.csv from S3, stage to
-  raw_data, and upsert modelled.action_policy_signals for release v1.
+  raw_data, and upsert modelled.action_policy_signals for release v2.
 executor_config: {}
 executor_count: 1
 executor_type: null
@@ -160,7 +160,7 @@ tags: []
 type: python
 uuid: cl_ssg_action_policy_signals_to_modelled
 variables:
-  action_policy_signals_key: raw_data/cl-ssg/cl-ssg-policy-documents/releases/v1/synthesis/action_policy_signals.csv
+  action_policy_signals_key: raw_data/cl-ssg/cl-ssg-policy-documents/releases/v2/synthesis/action_policy_signals.csv
   bucket_name: test-global-api
   city_locodes_key: raw_data/cl-ssg/cl-ssg-policy-documents/releases/v1/local_codes.csv
   dataset_name: Chile SSG Policy Documents
@@ -170,7 +170,7 @@ variables:
   publisher_url: https://ssg.coop/
   released_at: '2026-01-01'
   source_bucket: test-global-api
-  source_url: s3://test-global-api/raw_data/cl-ssg/cl-ssg-policy-documents/releases/v1/synthesis/action_policy_signals.csv
-  version_label: v1
+  source_url: s3://test-global-api/raw_data/cl-ssg/cl-ssg-policy-documents/releases/v2/synthesis/action_policy_signals.csv
+  version_label: v2
 variables_dir: /home/src/mage_data/cc-mage
 widgets: []

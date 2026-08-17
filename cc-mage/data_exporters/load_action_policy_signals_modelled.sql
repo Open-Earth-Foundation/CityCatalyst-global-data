@@ -39,6 +39,8 @@ prepared AS (
         TRIM(s.doc_relevance) AS doc_relevance,
         TRIM(s.signal_summary) AS signal_summary,
         TRIM(s.evidence_text) AS evidence_text,
+        NULLIF(TRIM(s.match_type), '') AS match_type,
+        NULLIF(TRIM(s.match_reason), '') AS match_reason,
         NULLIF(TRIM(s.page::TEXT), '')::INTEGER AS page
     FROM raw_data.action_policy_signals_staging s
 ),
@@ -79,6 +81,8 @@ deduped AS (
         p.doc_relevance,
         p.signal_summary,
         p.evidence_text,
+        p.match_type,
+        p.match_reason,
         p.page,
         rc.release_id
     FROM prepared p
@@ -108,6 +112,8 @@ INSERT INTO modelled.action_policy_signals (
     doc_relevance,
     signal_summary,
     evidence_text,
+    match_type,
+    match_reason,
     page,
     release_id
 )
@@ -126,6 +132,8 @@ SELECT
     doc_relevance,
     signal_summary,
     evidence_text,
+    match_type,
+    match_reason,
     page,
     release_id
 FROM deduped
@@ -143,6 +151,8 @@ ON CONFLICT (policy_signal_id) DO UPDATE SET
     doc_relevance = EXCLUDED.doc_relevance,
     signal_summary = EXCLUDED.signal_summary,
     evidence_text = EXCLUDED.evidence_text,
+    match_type = EXCLUDED.match_type,
+    match_reason = EXCLUDED.match_reason,
     page = EXCLUDED.page,
     release_id = EXCLUDED.release_id,
     updated_at = NOW();

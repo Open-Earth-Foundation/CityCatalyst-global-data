@@ -16,7 +16,7 @@ def load_action_policy_signals_csv_from_s3(*args, **kwargs):
     bucket_name = kwargs.get("bucket_name") or kwargs.get("source_bucket", "test-global-api")
     object_key = kwargs.get(
         "action_policy_signals_key",
-        "raw_data/cl-ssg/cl-ssg-policy-documents/releases/v1/synthesis/action_policy_signals.csv",
+        "raw_data/cl-ssg/cl-ssg-policy-documents/releases/v2/synthesis/action_policy_signals.csv",
     )
 
     df = S3.with_config(ConfigFileLoader(config_path, "default")).load(
