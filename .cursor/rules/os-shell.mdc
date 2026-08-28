@@ -1,0 +1,17 @@
+---
+description: Default to POSIX shell commands. Document Windows fallbacks only when needed.
+alwaysApply: true
+---
+
+# OS / Shell Defaults
+
+OEF runs macOS / Linux. Default every command to **POSIX `bash`/`zsh`**.
+
+- `ls`, `cat`, `grep`, `find`, `sed`, `awk` — preferred.
+- `&&` chain on success; `||` fallback; `;` sequence.
+- Forward-slash paths.
+- Heredocs for multi-line: `cat <<'EOF' > file …`.
+
+For agent-terminal invocations, assume non-interactive shell. No pagers (`--no-pager`, `| cat`).
+
+Windows users run inside WSL2 by default.

@@ -1,0 +1,34 @@
+# Files / dirs Cursor should NOT index for embeddings or context.
+# Keep this short — narrower index = faster, more focused agents.
+
+# Build artifacts / Python
+**/__pycache__/
+**/.pytest_cache/
+**/.venv/
+**/venv/
+**/dist/
+**/build/
+
+# Mage local state — large, machine-specific
+mage_data/
+**/mage_data/
+
+# Docker / OS noise
+.DS_Store
+**/.DS_Store
+
+# Local secrets and env
+.env
+.env.local
+**/credentials*.json
+**/*.pem
+
+# Heavy data / fixtures
+**/*.gpkg
+**/*.parquet
+**/*.csv
+**/*.geojson
+
+# Logs
+**/logs/
+**/*.log

@@ -1,0 +1,84 @@
+---
+description: SQL block conventions — UPSERTs to modelled.*, REPLACE to staging, idempotency.
+globs: cc-mage/**/transformers/**/*.sql,cc-mage/**/data_exporters/**/*.sql
+alwaysApply: false
+---
+
+# SQL Block Conventions
+
+## Write policy by stage
+
+| Target schema | `export_write_policy` | Pattern |
+|---------------|----------------------|---------|
+| `raw_data.*_staging` | `replace` | Truncate + insert per run. Staging is ephemeral. |
+| `modelled.*` | `append` (technically) but **the SQL must do an UPSERT** | Use `INSERT ... ON CONFLICT (...) DO UPDATE`. |
+
+Reason: `modelled.*` writes must be **idempotent** — re-running the pipeline must produce the same final state, not duplicate rows.
+
+## UPSERT template
+
+```sql
+-- Block header (Mage)
+-- @data_exporter
+-- export_write_policy: append
+-- use_raw_sql: true
+
+INSERT INTO modelled.emissions (
+    actor_id,
+    gpc_reference_number,
+    reporting_year,
+    gas,
+    emissions_value,
+    datasource_name,
+    release_id,
+    created_at,
+    updated_at
+)
+SELECT
+    s.locode,
+    s.gpc_ref,
+    s.year,
+    s.gas,
+    s.value,
+    '{{ datasource_name }}'                       AS datasource_name,
+    '{{ release_id }}'::uuid                      AS release_id,
+    NOW(),
+    NOW()
+FROM raw_data.{{ staging_table }} s
+ON CONFLICT (actor_id, gpc_reference_number, reporting_year, gas, datasource_name)
+DO UPDATE SET
+    emissions_value = EXCLUDED.emissions_value,
+    release_id      = EXCLUDED.release_id,
+    updated_at      = NOW();
+```
+
+## Required columns on `modelled.*` writes
+
+- `created_at TIMESTAMPTZ` — `NOW()` on insert.
+- `updated_at TIMESTAMPTZ` — `NOW()` on every write.
+- `release_id UUID` — FK to `dataset_release`. Mandatory for production data; reference tables exempt (see `data-model-design.md` for the canonical list).
+
+If you find a `modelled.*` table missing these columns, that's tech debt — flag it in the PR. See `data-model-design.md` "backlog".
+
+## Identity (DO NOT GET WRONG)
+
+- City join key: `actor_id` / `locode`. **Never** `city_id`. See `identity-keys.mdc`.
+- `datasource_name` is exact-match — use `=`, not `LIKE`.
+
+## Anti-patterns
+
+- `TRUNCATE modelled.<table>` followed by reinsert — destroys provenance for other releases.
+- `DELETE FROM modelled.<table> WHERE datasource_name = '…'` then INSERT — same issue. Use UPSERT.
+- `JOIN city_polygon ON city_polygon.city_id = emissions.actor_id` — wrong key. See `identity-keys.mdc`.
+- Hardcoded UUIDs / dates in SQL — pull from `variables` in `metadata.yaml`.
+- Multiple statements without explicit transactions when they should be atomic.
+
+## Tests
+
+Every SQL exporter to `modelled.*` should be paired with a **post-condition** check:
+
+- Row count > 0 in the target slice (matches what came out of staging).
+- Identity-key uniqueness: `(actor_id, gpc_reference_number, reporting_year, gas, datasource_name)` is unique.
+- Plausibility: emissions values are non-negative; gas codes are in the allowed set.
+
+Implement these in a follow-up `dq_*` pipeline if not feasible inside the same one.
