@@ -1,5 +1,5 @@
 #osmnx==1.9.3
 cython 
 numpy 
-pandas==2.2.3
+pandas==3.0.2
 pypdf
