@@ -1,3 +1,14 @@
+DELETE FROM modelled.action_mitigation_feasibility_chain
+WHERE release_id = MD5(
+    CONCAT_WS(
+        '-',
+        '{{ datasource_name }}',
+        '{{ dataset_name }}',
+        '{{ dataset_url }}',
+        '{{ version_label }}'
+    )
+)::UUID;
+
 WITH release_ctx AS (
     SELECT MD5(
         CONCAT_WS(
@@ -107,20 +118,4 @@ SELECT
     city_indicator_direction,
     city_family_scope,
     interpretation
-FROM deduped
-ON CONFLICT (chain_id) DO UPDATE SET
-    release_id = EXCLUDED.release_id,
-    country_code = EXCLUDED.country_code,
-    src_action_id = EXCLUDED.src_action_id,
-    global_mitigation_option = EXCLUDED.global_mitigation_option,
-    action_mapping_strength = EXCLUDED.action_mapping_strength,
-    option_family = EXCLUDED.option_family,
-    feasibility_dimension = EXCLUDED.feasibility_dimension,
-    global_indicator = EXCLUDED.global_indicator,
-    global_verdict_code = EXCLUDED.global_verdict_code,
-    global_verdict_description = EXCLUDED.global_verdict_description,
-    city_indicator = EXCLUDED.city_indicator,
-    city_indicator_direction = EXCLUDED.city_indicator_direction,
-    city_family_scope = EXCLUDED.city_family_scope,
-    interpretation = EXCLUDED.interpretation,
-    updated_at = NOW();
+FROM deduped;

@@ -1,0 +1,24 @@
+triggers:
+- description: API trigger for parameterized in-place replacement of the IPCC SR1.5 feasibility chain
+  envs: []
+  last_enabled_at: 2026-08-30 13:13:13.416877
+  name: ipcc_sr15_mitigation_feasibility_chain_to_modelled_api
+  pipeline_uuid: ipcc_sr15_mitigation_feasibility_chain_to_modelled
+  schedule_interval: null
+  schedule_type: api
+  settings:
+    allow_blocks_to_fail: false
+    skip_if_previous_running: true
+  sla: null
+  start_time: null
+  status: active
+  token: 214ec9b790c8452e9abc0dc097b59be8
+  variables:
+    bucket_name: test-global-api
+    expected_action_count: 86
+    expected_active_bridge_count: 373
+    expected_row_count: 1895
+    scoring_chain_key: raw_data/ipcc/ipcc-sr15-mitigation-feasibility/releases/2018-v2/data/scoring_chain.csv
+    source_release_label: 2018-v2
+    source_url: s3://test-global-api/raw_data/ipcc/ipcc-sr15-mitigation-feasibility/releases/2018-v2/data/scoring_chain.csv
+    version_label: '2018'

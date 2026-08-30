@@ -2256,12 +2256,42 @@ datasets:
       retrieval_method: manual_download
       api_endpoint: null
       path: "reviews/ipcc/ipcc-sr15-mitigation-feasibility/releases/2018"
-      is_latest: true
+      is_latest: false
       production_approved: false
       pipeline_name: null
       pipeline_version: null
       methodology_url: null
       internal_review_url: reviews/ipcc/ipcc-sr15-mitigation-feasibility/releases/2018/review.md
+      license:
+        id: license-verification-pending
+        name: Terms to be verified
+        url: https://www.ipcc.ch/copyright/
+        commercial_use: null
+        note: >
+          Copyright and reuse conditions are set by the IPCC and may differ between figures, tables, and full report text. Confirm current terms on ipcc.ch and cite the SR1.5 report and chapter before redistributing or adapting content.
+      data_quality:
+        documentation: null
+        methodology: null
+        coverage: null
+        granularity: null
+        freshness: null
+        accessibility: null
+    - version: "2018-v2"
+      version_number: 2
+      source_url: https://www.ipcc.ch/site/assets/uploads/sites/2/2019/05/SR15_Approval_Chapter_4_SM.pdf
+      released_at: null
+      retrieved_at: null
+      retrieval_method: manual_download
+      api_endpoint: null
+      path: "reviews/ipcc/ipcc-sr15-mitigation-feasibility/releases/2018-v2"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: reviews/ipcc/ipcc-sr15-mitigation-feasibility/releases/2018-v2/review.md
+      note: >
+        Scoring-methodology release, not a new IPCC vintage. Same SR1.5 2018 evidence base and identical scoring arithmetic; adopts the CC-718 one-channel rule, retiring six bridge rows and re-issuing one so no city indicator reaches an action score through more than one SR1.5 indicator. Materially re-ranks actions against the 2018 release and leaves the Institutional dimension without city-level discrimination. Not production-approved until the chain table is reloaded in global-api.
       license:
         id: license-verification-pending
         name: Terms to be verified
