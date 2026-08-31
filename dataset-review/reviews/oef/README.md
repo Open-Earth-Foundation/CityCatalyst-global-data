@@ -24,6 +24,8 @@ Each product follows the standard review layout — `README.md` (plus a hub `met
 ## Contents
 
 - `cl-city-action-fundability/` — Chile **city-action fundability** (the consolidated product; supersedes the former `cl-finance-inventory` and `cl-action-fundability`). Harmonizes the ten reviewed Chile finance sources into one fund inventory with an action **financing-availability** indicator, then combines four layers (action catalog, SINIM/Censo municipal capacity, the inventory, the projects pipeline) into a per (action × comuna) **route/effort label + matched funds** feeding MEED+ HIAP Feasibility. Release v1 (99 funds) is implemented in production; release v2 (100 opportunities) is research, rebuilding the action matching so that match specificity derives from route specificity.
+- `cl-municipal-capacity-tier/` — Chile **municipal technical-capacity tier**. A four-tier classification of all 345 comunas from INE census population and two published MEED rules (the VEM population brackets and the Gobernanza Local *Capacidad técnica e institucional* band). Split out of the fundability model so the capacity axis stands on open data: unlike the model that consumes it, this dataset carries no non-commercial term. Research; the T4 band is provisional.
+- `br-action-adaptation-impact/` — Brazil **action adaptation impact** (I Care Brasil workbook, Aug 2026 working draft). Links adaptation actions to the six AdaptaBrasil sectors via an eligibility gate, assigns an AI-assisted effectiveness class per action and risk component, and turns both into a 0–1 impact score. Research only: one of six sectors complete, scoring constants uncalibrated.
 
 ## Status
 

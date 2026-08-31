@@ -1,7 +1,7 @@
 -- Register one publisher_datasource + dataset_release for the city_finance_profile SOURCE dataset
--- (cl-subdere-sinim), driven by raw_data.city_finance_profile_catalog (from index.yaml).
--- Identity is stable slugs only (no dataset_url): dataset_id = MD5(datasource-dataset),
--- release_id = MD5(datasource-dataset-version), both precomputed in the catalog block.
+-- (oef/cl-city-action-fundability v3), driven by raw_data.city_finance_profile_catalog.
+-- Identity is stable slugs only (dataset_url is descriptive, not part of either ID):
+-- dataset_id = MD5(datasource-dataset), release_id = MD5(datasource-dataset-version).
 
 INSERT INTO modelled.publisher_datasource (
     publisher_id, publisher_name, publisher_url,
@@ -9,9 +9,13 @@ INSERT INTO modelled.publisher_datasource (
 )
 SELECT DISTINCT
     c.publisher_id::UUID, c.publisher_name, c.publisher_url,
-    c.dataset_id::UUID, c.datasource_name, c.dataset_name, NULLIF(c.dataset_url, '')
+    c.dataset_id::UUID, c.datasource_name, c.dataset_name,
+    COALESCE(NULLIF(c.dataset_url, ''), c.source_url)
 FROM raw_data.city_finance_profile_catalog c
-ON CONFLICT (publisher_id, dataset_id) DO NOTHING;
+ON CONFLICT (publisher_id, dataset_id) DO UPDATE SET
+    datasource_name = EXCLUDED.datasource_name,
+    dataset_name     = EXCLUDED.dataset_name,
+    dataset_url      = EXCLUDED.dataset_url;
 
 UPDATE modelled.dataset_release dr
 SET is_latest = false

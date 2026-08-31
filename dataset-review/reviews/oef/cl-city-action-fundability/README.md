@@ -7,7 +7,7 @@ It is an OEF model and curation, not a new external source: it unions and scores
 ## What it produces
 
 1. **A finance inventory** — the ten vetted Chile climate-finance supply reviews harmonized into one fund table (99 funds), plus an action **financing-availability (coverage)** label. This is the FINANCE/supply layer.
-2. **A fundability model** — combines four layers (action catalog, SINIM/Censo municipal capacity, the finance inventory, the projects pipeline) into a per `(action × comuna)` route/effort bucket + a 0–1 `financial_feasibility` score + the funds that fit. Not a funding probability, not a comuna ranking.
+2. **A fundability model** — combines four layers (action catalog, SIM/BEP fiscal autonomy + census-derived municipal capacity, the finance inventory, the projects pipeline) into a per `(action × comuna)` route/effort bucket + a 0–1 `financial_feasibility` score + the funds that fit. Not a funding probability, not a comuna ranking.
 3. **The production implementation** — the model landed as real modelled tables, a read-time score function, and the `climate-finance` API in `CityCatalyst/global-api`, loaded by `cc-mage` pipelines (see **Status** below; full object/endpoint list in `releases/v1/implementation.md` → As-built). The earlier traceable `finance_db` CSV fixture that prototyped this has been removed.
 
 ## Inputs (authoritative upstream, not duplicated here)
@@ -15,7 +15,7 @@ It is an OEF model and curation, not a new external source: it unions and scores
 | Layer | Source review(s) | Role |
 | --- | --- | --- |
 | Action (what) | `reviews/cl-ssg/cl-ssg-projects` (actions catalog, 102) | capital intensity; formulation demand; self-financeability |
-| City (who) | `reviews/cl-subdere/cl-subdere-sinim` + `reviews/cl-ine/cl-ine-censo` | fiscal autonomy and delivery capacity (the 2×2) |
+| City (who) | `reviews/cl-subdere/cl-subdere-sim-bep` (autonomy, from v3) + `reviews/oef/cl-municipal-capacity-tier` (capacity, from v3) | fiscal autonomy and delivery capacity (the 2×2) |
 | Finance (route) | the ten `cl-*/cl-*-fondos` supply reviews (harmonized here) | usable, municipality-eligible funds + access pathway |
 | Projects (evidence) | `reviews/cl-ssg/cl-ssg-projects`; CONAF / FPA / GCF awards | calibration, precedent, benchmarks |
 
@@ -46,13 +46,23 @@ cl-city-action-fundability/
         ├── action_delivery_mode.csv           input: what each of the 102 actions takes to deliver
         ├── action_opportunity_mapping.csv     input: 21 hand-judged rows (16 whole/part, 4 preparation, 1 reviewed-no-match)
         └── finance_opportunity_action.csv     200 links, 180 derived and 20 reviewed
+└── releases/v3/                     research: commercially reusable city-profile inputs, not in production
+    ├── 01_city_profile_v3.ipynb      join the two reviewed axes and band the archetype
+    ├── review.md                     release epistemic contract
+    ├── data/
+    │   └── city_finance_profile.csv         345 comunas × capacity, autonomy, archetype + provenance
+    └── sample/                       the three consultant source files (gitignored)
 ```
+
+Neither city axis is defined in this folder. Capacity lives in `reviews/oef/cl-municipal-capacity-tier` and derives from INE Censo 2024 under CC BY-SA 4.0. Autonomy lives in `reviews/cl-subdere/cl-subdere-sim-bep` and is recalculated from SUBDERE's public budget-execution workbook, with CC0 applied by Chile's national open-data default. Release v3 consumes both tables unchanged and asserts an exact 345-CUT join.
 
 The exploratory fixtures used to *design* the schema — the SQLite `finance_preview.db`, the `finance_db/` CSVs, the precomputed `fundability_scored.csv`, the preview example JSONs and `build_*` scripts — were removed once the real tables landed (the implementation supersedes them). Refresh of the analysis: re-run `01` after any source release, then `02`.
 
 ## Provenance & licence
 
-Authority lives upstream; this product inherits the **most restrictive upstream licence** and re-grants nothing. The binding constraint is **SINIM** (non-commercial + attribution clear; commercial unresolved pending SUBDERE clearance). Finance sources add per-source terms (e.g. CORFO `CC BY-NC-ND`). Treat outputs as non-commercial + attribution until the SINIM clearance lands, and check each input review before redistributing.
+Authority lives upstream; this product inherits the **most restrictive upstream licence** and re-grants nothing. The **v3 city-profile inputs permit commercial use**: capacity inherits INE's CC BY-SA 4.0 attribution/share-alike conditions, while SIM/BEP autonomy uses CC0 under Chile's government-wide open-data default (the workbook does not print a resource-specific licence). This clears the city layer, not automatically the whole fundability product: finance sources retain their own terms, including CORFO `CC BY-NC-ND`. Check every upstream review before redistributing a combined output.
+
+The v3 release contains no SINIM-derived city data. In the configured database used for verification, Mage run 170 replaced the retired SINIM-backed rows with the OEF v3 release and confirmed that no retired-source rows remained.
 
 ## Status
 
@@ -62,7 +72,9 @@ Authority lives upstream; this product inherits the **most restrictive upstream 
 - **Pipelines:** `cl_finance_opportunity_to_modelled`, `cl_finance_project_to_modelled`, `cl_city_finance_profile_to_modelled`.
 - **Endpoints:** `climate-finance/opportunities`, `.../feasibility`, `.../actions/{action_id}`, `.../projects`.
 
-This folder is now the analysis + methodology record behind that implementation. Remaining methodology caveat: the curated `access_tier` that will replace the current "direct" substring heuristic (see `methodology.md` → *Status and what's next*), pending SINIM commercial-licence clearance.
+This folder is now the analysis + methodology record behind that implementation. The principal remaining methodology caveat is the curated `access_tier` that will replace the current "direct" substring heuristic (see `methodology.md` → *Status and what's next*).
+
+**Release v3 remains unpromoted research, but its replacement pipeline has been run successfully in the configured environment.** It replaces both city axes without iterating the release number: capacity comes from `cl-municipal-capacity-tier`, and autonomy comes from `cl-subdere-sim-bep`. Their 345 CUT codes join exactly, with no nulls. Relative to the former city-profile output, four comunas change archetype; Padre Hurtado's large source disagreement and Natales' threshold-edge result still require adjudication. The T4 band (0.10 provisional) and T1 evidence gate also remain open. Mage run 170 loaded 341 locode-resolved v3 rows and atomically removed all retired SINIM-backed database rows. No database schema migration is required. Details in `releases/v3/review.md`.
 
 **Release v2 is research and is not in production.** It rebuilds the action matching so that how specifically a fund matches an action follows from how specific the fund is, which makes 180 of its 200 links derived rather than asserted and shrinks the hand-maintained judgement to 21 rows. Coverage, city eligibility and current availability are three separate gates. Because every opportunity currently fails the availability gate, v2 ships zero displayable links on purpose; v1 remains what the modelled tables and the finance API serve. Its headline finding is that no action requiring municipal capital is without a route, and that 48 of 102 actions are funded in Chile but not for the city. Details in `releases/v2/review.md`; the contract in `methodology.md` → *Action-to-opportunity matching*.
 

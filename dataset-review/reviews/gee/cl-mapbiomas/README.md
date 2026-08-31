@@ -35,7 +35,10 @@ Collection 1.0 (2000–2022, 13 classes) remains on the site for comparison; thi
 - Recommended cartographic scale **up to 1:100,000** (not parcel-level)
 - Class legend and methodology **differ between Collection 1 and 2** — do not mix without a crosswalk
 - GEE user toolkit for subnational clip/export was **under maintenance** at last check ([collection maps page](https://chile.mapbiomas.org/en/mapas-de-la-coleccion/))
-- **License / commercial use** — confirm current [terms of use](https://chile.mapbiomas.org/) before production redistribution
+
+## License
+
+[CC BY 4.0](https://chile.mapbiomas.org/uso-de-datos/) — "Los datos de MapBiomas son de uso público, abierto y gratuito, sujetos a citación." Commercial use, redistribution and derivatives permitted; citation required.
 
 ## Links
 

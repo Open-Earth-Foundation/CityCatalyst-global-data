@@ -2,16 +2,14 @@
 
 ## Scope and status
 
-Research / exploratory — not production-approved, not in a pipeline.
+Historical research review — **rejected for production use**, not in a pipeline.
 
-- **Licence:** non-commercial use with attribution is clear; **commercial use unresolved — clearance requested from SUBDERE, proceeding in parallel** under attribution + a no-raw-values design (see README).
-- **What this release is:** the SINIM 2024–2025 pull turned into the city/"who" layer of the fundability work.
-- **Artifacts:**
-  - `data/sinim_municipal_capacity_2024-2025.csv` — 11 indicators × 345 comunas, cleaned.
-  - `data/municipal_who_features_2025.csv` — fiscal/capacity fields joined to INE-census population + coarse tiers.
-  - `sinim_capacity_exploration.ipynb` — distributions, FETRO validation, correlations, projects join.
+- **Licence:** the SINIM portal permits non-commercial use with attribution; this does not meet the commercial production requirement.
+- **Production decision:** do not ingest, publish or use this release in the production product unless SUBDERE grants explicit written commercial-use permission.
+- **Retention:** the raw samples, two derived CSVs and exploratory notebook were removed on 31 August 2026. Only this review and the dataset-level README remain.
+- **Replacement:** fundability v3 uses `cl-subdere-sim-bep` for autonomy and `cl-municipal-capacity-tier` for capacity; it contains no SINIM-derived fields.
 
-Dataset-level facts (provenance, licence, parsing) live in the README and are not repeated here. This document is the contract for what the **capacity layer can and cannot say once matched to actions**; the partitioning method itself is design intent, not yet built.
+Dataset-level facts (provenance, licence, parsing) live in the README and are not repeated here. The claims below are retained as historical review evidence only; they do not authorize downstream or commercial use.
 
 ## What this data supports
 
@@ -42,23 +40,25 @@ Overclaims, written out before they happen:
 
 ## Using it downstream
 
-- **Partition into coarse tiers, not scores** — a **2×2** of financial autonomy (High/Low) × delivery capacity (High/Low): *self-starter / capable-but-cash-tight / funded-but-thin / needs-full-support*. Prefer the 2×2 over the SUBDERE population bracket (the bracket reintroduces the per-capita/size artifacts).
+Do **not** use this release downstream in the production product. The following design notes are historical and have been superseded by the commercially reusable v3 replacements.
+
+- **Partition into coarse tiers, not scores** — a **2×2** of financial autonomy (High/Low) × delivery capacity (High/Low): *self-starter / capable-but-cash-tight / funded-but-thin / needs-full-support*. Prefer the 2×2 over the SUBDERE population bracket (the bracket reintroduces the per-capita/size artifacts). **Superseded for the fundability model (Aug 2026):** its v3 capacity axis knowingly adopts the population bracket, trading this review's preference for freedom from the self-reporting and *honorarios* defects documented above, and accepting more collinearity between the two axes. The preference stated here still stands for any other use of these indicators; see `reviews/oef/cl-city-action-fundability/releases/v3/review.md` for the trade as adjudicated.
 - **Map each action attribute to its axis:** `investment_cost` (capital intensity) → financial autonomy; formulation demand (needs-BIP / specialist team) → delivery capacity. Where the action stresses an axis the comuna is Low on, output a **finance route label**, not a number.
 - **Action-side tags still needed** — formulation demand and self-financeability are not in the action set; derive from `reviews/cl-ssg/cl-ssg-legal-signals` (which already scores per-action technical capacity and financing accessibility), not by hand.
 - **Pair with:** `cl-ine-censo` (population + socioeconomic attributes), `cl-casen` (authoritative poverty), `cl-city-action-fundability` (instrument/actor/access the route resolves against), `cl-ssg-projects` (CUT join — weak, size-confounded revealed-capacity signal, suggestive only).
-- **Feed to MEED+ HIAP Feasibility** with the reason attached ("harder here: ~85% FCM-funded, ~35 staff") — never Impact or Alignment.
-- **Commercial-use design rule (not legal advice):** use SINIM only as an **input to the derived classification**; do **not** surface or export raw SINIM values in any product. This keeps use at the derived/analytical end (lower risk) rather than redistribution (higher risk) — narrowing, not removing, the commercial-licence question (see README → License).
+- **Historical MEED+ HIAP design:** the data was considered for Feasibility only, never Impact or Alignment; it is not used by the current v3 city profile.
+- **Commercial-use rule (not legal advice):** do not use SINIM raw values or classifications derived from this release in the commercial production product without explicit written SUBDERE clearance.
 
 ## Notes on non-obvious fields
 
 - `fcm_dependency_pct` — FCM ÷ own income (incl. FCM); high = dependent = low autonomy. Not "% of total budget".
 - `fet_royalty_mineria_mclp` — a *received* transfer; non-zero = State-flagged fiscally weak; opposite direction to own-income; 2025 only.
-- `fiscal_autonomy_tier` / `capacity_tier` (in `municipal_who_features_2025.csv`) — illustrative terciles, not adjudicated cutoffs; partitioning method still open.
+- `fiscal_autonomy_tier` / `capacity_tier` (formerly in the removed `municipal_who_features_2025.csv`) — illustrative terciles, not adjudicated cutoffs; partitioning method was never promoted.
 - Staff `*_total` and profesional/directivo counts exclude honorarios; nulls (~16) = non-reporting, not zero-staff.
 
 ## Traceability
 
-- **Inputs:** SINIM portal export `datos_municipales_20260616…_Sin-Corrección-Monetaria.xls` + dictionary exports (`sample/`, gitignored; re-download in README); INE population `reviews/cl-ine/cl-ine-censo/releases/2024/data/raw_data_cl_ine_censo.csv`; join check vs `reviews/cl-ssg/cl-ssg-projects/.../projects_profiled.csv`.
-- **Derivation + validation:** `sinim_capacity_exploration.ipynb` (restart-and-run-all passes).
+- **Removed inputs:** SINIM portal export `datos_municipales_20260616…_Sin-Corrección-Monetaria.xls`, dictionary exports and derived CSVs are not retained.
+- **Removed derivation:** `sinim_capacity_exploration.ipynb` was removed because it contained outputs derived from the restricted source.
 - **Indicator methodology:** SINIM variable dictionary (README variable table).
-- **Partitioning/interaction model:** this document (design intent; not yet implemented).
+- **Replacement verification:** Mage run 170 produced 341 OEF v3 rows and zero retired SINIM-source rows in the configured database.

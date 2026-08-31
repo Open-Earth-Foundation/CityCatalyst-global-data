@@ -3,20 +3,20 @@ blocks:
   color: null
   configuration:
     file_source:
-      path: data_loaders/load_cl_subdere_sinim_from_s3.py
+      path: data_loaders/load_cl_city_action_fundability_from_s3.py
   downstream_blocks:
   - transform_city_finance_profile
   executor_config: null
   executor_type: local_python
   has_callback: null
   language: python
-  name: load_cl_subdere_sinim_from_s3
+  name: load_cl_city_action_fundability_from_s3
   retry_config: null
   status: null
   timeout: null
   type: data_loader
   upstream_blocks: []
-  uuid: load_cl_subdere_sinim_from_s3
+  uuid: load_cl_city_action_fundability_from_s3
 - all_upstream_blocks_executed: true
   color: null
   configuration:
@@ -52,7 +52,7 @@ blocks:
   timeout: null
   type: transformer
   upstream_blocks:
-  - load_cl_subdere_sinim_from_s3
+  - load_cl_city_action_fundability_from_s3
   - load_cl_ocha_ab_locode_from_s3
   uuid: transform_city_finance_profile
 - all_upstream_blocks_executed: false
@@ -191,10 +191,10 @@ concurrency_config: {}
 conditionals: []
 created_at: null
 data_integration: null
-description: Load the CITY layer (financial autonomy + delivery capacity) into modelled.city_finance_profile
-  from the SUBDERE/SINIM review. autonomy = 1 - fcm_dependency_pct/100; capacity =
-  staff-percentile blend; archetype banded at 0.5; actor_id = city locode via cl-ocha-ab.
-  Identity from index.yaml; release-scoped delete+insert; staging dropped at the end.
+description: Load the reviewed v3 CITY layer into modelled.city_finance_profile from the
+  OEF city-action-fundability release. The uploaded profile joins SIM/BEP autonomy to the
+  INE-derived capacity tier; Mage validates the axes and archetype, resolves actor_id via
+  cl-ocha-ab, and atomically removes both retired SINIM rows and prior OEF profile rows before insert.
 executor_config: {}
 executor_count: 1
 executor_type: null
@@ -211,8 +211,9 @@ tags: []
 type: python
 uuid: cl_city_finance_profile_to_modelled
 variables:
+  catalog_index_path: /home/src/dataset-review/catalog/index.yaml
   locode_release_version: '2021'
   source_bucket: test-global-api
-  source_release_version: v1
+  source_release_version: v3
 variables_dir: /home/src/mage_data/cc-mage
 widgets: []

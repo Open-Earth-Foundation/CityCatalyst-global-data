@@ -1,14 +1,10 @@
-"""Shape the SUBDERE/SINIM municipal frame into modelled.city_finance_profile staging.
+"""Project the reviewed v3 city profile into modelled staging.
 
-Computes the two CITY axes the score reads (methodology blend, validated against the fixture):
-  autonomy = clip(1 - fcm_dependency_pct_2025/100, 0, 1)            (fillna median)
-  capacity = 0.7*pctrank(staff_profesional_total_2025)
-           + 0.3*pctrank(professionalization_pct_2025)             (fillna median)
-  city_archetype banded from (autonomy, capacity) at 0.5.
-Resolves actor_id = city locode from comuna_cut via the cl-ocha-ab lookup; rows whose comuna has
-no locode are dropped (actor_id is the API key and is NOT NULL). One row per city (~341 of 345).
+The S3 input already contains the reviewed capacity and autonomy axes. This block does not
+recalculate or impute either value: it validates the 345-comuna release, verifies the existing
+0.5 archetype contract, and resolves actor_id from comuna CUT via cl-ocha-ab. The fixed 2021
+lookup has four comunas without a locode, so 341 queryable city rows are emitted.
 """
-import unicodedata
 
 import pandas as pd
 
@@ -17,8 +13,10 @@ if "transformer" not in globals():
 if "test" not in globals():
     from mage_ai.data_preparation.decorators import test
 
-SOURCE = "cl-subdere/cl-subdere-sinim"
-Y = 2025  # the SINIM year the model uses
+SOURCE = "oef/cl-city-action-fundability"
+EXPECTED_INPUT_ROWS = 345
+EXPECTED_OUTPUT_ROWS = 341
+PROFILE_COLUMNS = {"comuna_cut", "autonomy", "capacity", "city_archetype"}
 
 OUT_COLS = ["actor_id", "autonomy", "capacity", "city_archetype",
             "country_code", "source_dataset"]
@@ -56,27 +54,43 @@ def _locode_by_code(locode_df):
 
 @transformer
 def transform_city_finance_profile(*frames, **kwargs):
-    sinim_df, locode_df = None, None
+    profile_df, locode_df = None, None
     for df in frames:
         if df is None or not len(df):
             continue
         cols = set(df.columns)
         if "locode" in cols and "comuna_code" in cols:
             locode_df = df
-        elif f"fcm_dependency_pct_{Y}" in cols:
-            sinim_df = df
-    if sinim_df is None:
-        raise ValueError("SINIM capacity frame not found upstream")
+        elif PROFILE_COLUMNS.issubset(cols):
+            profile_df = df
+    if profile_df is None:
+        raise ValueError("reviewed v3 city-profile frame not found upstream")
+    if locode_df is None:
+        raise ValueError("cl-ocha-ab locode frame not found upstream")
 
-    c = sinim_df.copy()
-    for col in (f"fcm_dependency_pct_{Y}", f"staff_profesional_total_{Y}", f"professionalization_pct_{Y}"):
+    c = profile_df.copy()
+    c["comuna_cut"] = c["comuna_cut"].astype(str).str.strip().str.zfill(5)
+    assert len(c) == EXPECTED_INPUT_ROWS, (
+        f"expected {EXPECTED_INPUT_ROWS} reviewed comunas, got {len(c)}"
+    )
+    assert c["comuna_cut"].is_unique, "comuna_cut not unique in reviewed profile"
+    assert c["comuna_cut"].str.fullmatch(r"\d{5}").all(), "invalid comuna_cut"
+
+    for col in ("autonomy", "capacity"):
         c[col] = pd.to_numeric(c[col], errors="coerce")
+        assert c[col].notna().all(), f"{col} contains null or non-numeric values"
+        assert c[col].between(0, 1).all(), f"{col} outside [0,1]"
 
-    c["autonomy"] = (1 - c[f"fcm_dependency_pct_{Y}"] / 100).clip(0, 1)
-    pr = lambda s: s.rank(pct=True)
-    c["capacity"] = 0.7 * pr(c[f"staff_profesional_total_{Y}"]) + 0.3 * pr(c[f"professionalization_pct_{Y}"])
-    c["autonomy"] = c["autonomy"].fillna(c["autonomy"].median())
-    c["capacity"] = c["capacity"].fillna(c["capacity"].median())
+    if "_source_dataset" in c.columns:
+        source_values = set(c["_source_dataset"].dropna().astype(str).str.strip())
+        assert source_values == {SOURCE}, f"unexpected source identity: {source_values}"
+
+    expected_archetype = [
+        _archetype(a, cap) for a, cap in zip(c["autonomy"], c["capacity"])
+    ]
+    actual_archetype = c["city_archetype"].astype(str).str.strip().tolist()
+    mismatches = sum(actual != expected for actual, expected in zip(actual_archetype, expected_archetype))
+    assert mismatches == 0, f"{mismatches} city_archetype values disagree with the 0.5 bands"
 
     by_code = _locode_by_code(locode_df)
 
@@ -91,7 +105,7 @@ def transform_city_finance_profile(*frames, **kwargs):
             "actor_id": actor_id,
             "autonomy": _numstr(a),
             "capacity": _numstr(cap),
-            "city_archetype": _archetype(a, cap),
+            "city_archetype": str(r["city_archetype"]).strip(),
             "country_code": "CL",
             "source_dataset": SOURCE,
         })
@@ -104,9 +118,13 @@ def transform_city_finance_profile(*frames, **kwargs):
 
 @test
 def test_output(output, *args) -> None:
-    assert output is not None and len(output) > 0, "no city profiles"
+    assert output is not None, "no city profiles"
+    assert len(output) == EXPECTED_OUTPUT_ROWS, (
+        f"expected {EXPECTED_OUTPUT_ROWS} locode-resolved profiles, got {len(output)}"
+    )
     assert output["actor_id"].notna().all(), "actor_id must be non-null (the API key)"
     assert output["actor_id"].is_unique, "actor_id not unique"
+    assert output["source_dataset"].eq(SOURCE).all(), "retired source identity in output"
     for col in ("autonomy", "capacity"):
         v = pd.to_numeric(output[col], errors="coerce").dropna()
         assert ((v >= 0) & (v <= 1)).all(), f"{col} out of [0,1]"

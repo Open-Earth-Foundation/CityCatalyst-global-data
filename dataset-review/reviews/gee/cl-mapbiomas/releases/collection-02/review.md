@@ -23,8 +23,7 @@ Source pages: [Herramientas / GEE](https://chile.mapbiomas.org/en/herramientas/)
 
 ### Source and license
 
-- [ ] Read current [terms of use](https://chile.mapbiomas.org/) and record `license` block in `review.yaml`
-- [ ] Confirm whether CityCatalyst ingestion qualifies as non-commercial / public interest
+- [x] Read current [terms of use](https://chile.mapbiomas.org/uso-de-datos/) and record `license` block in `review.yaml` — CC BY 4.0
 - [ ] Capture citation string from MapBiomas Chile communications materials
 
 ### Technical access

@@ -733,13 +733,14 @@ datasets:
       methodology_url: https://chile.mapbiomas.org/en/metodologia/
       internal_review_url: reviews/gee/cl-mapbiomas/releases/collection-02/review.md
       license:
-        id: mapbiomas-terms-verification-pending
-        name: MapBiomas Chile terms of use (verify)
-        url: https://chile.mapbiomas.org/
-        commercial_use: false
+        id: CC-BY-4.0
+        name: Creative Commons Attribution 4.0 International
+        url: https://chile.mapbiomas.org/uso-de-datos/
+        commercial_use: true
         note: >
-          Publisher states free use for non-commercial or public-interest purposes;
-          confirm current terms before production ingestion or redistribution.
+          "Los datos de MapBiomas son de uso publico, abierto y gratuito, sujetos a
+          citacion. CC BY 4.0". Commercial use, redistribution and derivatives are
+          permitted; attribution/citation is required.
       data_quality:
         documentation: partial
         methodology: published_atbd
@@ -1227,7 +1228,7 @@ datasets:
     name: OpenEarth Foundation (OEF)
     url: https://www.openearth.org/
   description: >
-    The consolidated OEF product for how a Chilean comuna can pay for a climate action (supersedes the former cl-finance-inventory and cl-action-fundability). It unions the ten vetted Chile climate-finance supply reviews into one inventory of 99 verified funding channels, builds an action financing-availability (coverage) indicator on it, and combines four layers (action catalog, SINIM/Censo municipal capacity, the finance inventory, the projects pipeline) into a per (action x comuna) route/effort bucket plus a 0-1 financial_feasibility score with named candidate funds. A coverage and categorisation product, not a funding probability. The v1 model is implemented in production as modelled tables, a read-time score function and the climate-finance API, loaded by cc-mage pipelines; the release entries here stay production_approved false because the release artefacts themselves have not been through the definition-of-done checklist. Release v2 refreshes the inventory to 100 opportunities and derives action matching from the route rather than a sector join: 180 of its 200 links are computed from what each fund buys, how targeted it is and whether a municipality can receive it, leaving 21 hand-judged rows. Coverage, city eligibility and current availability are three separate gates; all 100 opportunities currently fail the availability gate, so v2 ships zero displayable links by design.
+    The consolidated OEF product for how a Chilean comuna can pay for a climate action (supersedes the former cl-finance-inventory and cl-action-fundability). It unions the ten vetted Chile climate-finance supply reviews into one inventory of 99 verified funding channels, builds an action financing-availability (coverage) indicator on it, and combines four layers (action catalog, municipal autonomy and capacity, the finance inventory, the projects pipeline) into a per (action x comuna) route/effort bucket plus a 0-1 financial_feasibility score with named candidate funds. A coverage and categorisation product, not a funding probability. The v1 model is implemented in production as modelled tables, a read-time score function and the climate-finance API, loaded by cc-mage pipelines; the release entries here stay production_approved false until their release-specific definition-of-done checks pass. Release v2 rebuilds action matching. Release v3 replaces the city layer with SIM/BEP autonomy and an INE-census-derived capacity tier, with no SINIM data in the release artifact.
   coverage:
     geography: country
     countries: [CL]
@@ -1276,7 +1277,7 @@ datasets:
       retrieval_method: manual_curation
       api_endpoint: null
       path: "reviews/oef/cl-city-action-fundability/releases/v2"
-      is_latest: true
+      is_latest: false
       production_approved: false
       pipeline_name: null
       pipeline_version: null
@@ -1296,6 +1297,37 @@ datasets:
         granularity: null
         freshness: null
         accessibility: null
+    - version: "v3"
+      version_number: 3
+      source_url: null
+      released_at: null
+      retrieved_at: "2026-08-31"
+      retrieval_method: derived_join
+      api_endpoint: null
+      path: "reviews/oef/cl-city-action-fundability/releases/v3"
+      is_latest: true
+      production_approved: false
+      pipeline_name: cl_city_finance_profile_to_modelled
+      pipeline_version: null
+      methodology_url: reviews/oef/cl-city-action-fundability/methodology.md
+      internal_review_url: reviews/oef/cl-city-action-fundability/releases/v3/review.md
+      license:
+        id: CC-BY-SA-4.0
+        name: Creative Commons Attribution-ShareAlike 4.0 International
+        url: https://creativecommons.org/licenses/by-sa/4.0/
+        commercial_use: true
+        note: >
+          Applies to the v3 city-profile artifact only. Capacity inherits INE's CC BY-SA 4.0
+          attribution/share-alike terms; SIM/BEP autonomy uses CC0 under Chile's government-wide
+          open-data default because no resource-specific contrary terms are displayed. This does
+          not relicense or clear other fundability artifacts that include restricted finance sources.
+      data_quality:
+        documentation: partial
+        methodology: published_atbd
+        coverage: full
+        granularity: fit_for_purpose
+        freshness: current
+        accessibility: downloadable
 
 - id: cl-conaf-bn-awards
   name: CONAF Bosque Nativo fund awards
@@ -1503,7 +1535,7 @@ datasets:
     name: Subsecretaría de Desarrollo Regional y Administrativo (SUBDERE)
     url: https://datos.sinim.gov.cl/
   description: >
-    Comuna-level fiscal-autonomy and institutional-capacity indicators from SINIM (run by SUBDERE). A targeted pull of 11 indicators for all 345 comunas across 2024–2025, populating the city / "who" layer of the climate-action fundability work. Indicators cover fiscal autonomy (FCM dependency, own income per capita), technical and management capacity (professionalization, staff counts), and socioeconomic context (CASEN poverty), keyed on CUT code. Research and exploratory: not in a pipeline and not catalog-registered.
+    Historical review of comuna-level fiscal-autonomy and institutional-capacity indicators from SINIM (SUBDERE). Rejected for commercial production because the portal terms restrict use to non-commercial purposes. Release v1 is retained only as a review record: its raw samples, derived CSVs and exploratory notebook have been removed, no pipeline consumes it, and the fundability v3 city layer uses SIM/BEP plus an INE-census-derived capacity tier instead.
   coverage:
     geography: country
     countries: [CL]
@@ -1535,7 +1567,7 @@ datasets:
         url: https://datos.sinim.gov.cl/informacion_municipal.php
         commercial_use: false
         note: >
-          Portal terms authorize use "sin fines comerciales" with mandatory attribution; conflicting CC BY / CC0 signals exist on the same source. Non-commercial / internal research is fine but commercial use is unresolved pending a written SUBDERE clearance request. Never surface or export raw SINIM values; always attribute to SINIM, SUBDERE.
+          Portal terms authorize use "sin fines comerciales" with mandatory attribution. Conflicting footer/default signals are not accepted as commercial clearance. This release is not production-approved, has no pipeline, and its data artifacts were removed on 2026-08-31. Do not reintroduce it without explicit written commercial-use permission from SUBDERE.
       data_quality:
         documentation: null
         methodology: null

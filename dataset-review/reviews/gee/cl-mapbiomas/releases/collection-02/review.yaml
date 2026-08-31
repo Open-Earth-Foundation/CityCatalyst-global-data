@@ -85,10 +85,15 @@ data_quality:
     - GEE user toolkit maintenance status uncertain
 
 license:
-  status: verify_before_production
+  id: CC-BY-4.0
+  name: Creative Commons Attribution 4.0 International
+  url: https://chile.mapbiomas.org/uso-de-datos/
+  commercial_use: true
+  status: verified
   note: >
-    MapBiomas Chile states data are free for non-commercial or public-interest use;
-    confirm current terms on chile.mapbiomas.org before redistribution or commercial pipelines.
+    MapBiomas Chile publishes its data under CC BY 4.0 - "de uso publico, abierto y
+    gratuito, sujetos a citacion". Commercial use, redistribution and derivative works
+    are permitted; attribution/citation is required.
 
 status:
   production_ready: false

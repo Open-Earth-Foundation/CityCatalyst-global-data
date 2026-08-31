@@ -30,7 +30,7 @@ Read it as a **"how hard, and where to look"** map, not a funding guarantee.
 | Layer | Plain meaning | Where it comes from |
 |---|---|---|
 | **Action** — *what* is being done | how much **money** it needs and how much **preparation** it takes | the climate-action library (C40 / IPCC / I-Care) |
-| **City** — *who* would do it | how much **own money** and **delivery capacity** the city has | SUBDERE / SINIM municipal indicators |
+| **City** — *who* would do it | how much **own money** and **delivery capacity** the city has | SUBDERE SIM/BEP income indicators + INE census-derived capacity tier |
 | **Finance** — *the money* available | which catalogued **funds** match the action and whether the city can apply | the harmonised Chile finance inventory (10 public + firm-facing sources) |
 | **Precedent** — *the evidence* | how many **comparable projects** have already been funded | BIP/SNI, plus CONAF, FPA and GCF award records |
 
@@ -54,11 +54,24 @@ Two needs, each on a 0–1 scale:
 Two strengths, each on a 0–1 scale, kept separate because they measure different things:
 
 - **Financial autonomy** — how much of its budget the city raises itself rather than relying on central transfers. Higher = more of its own money to spend.
-- **Delivery capacity** — the city's *internal capacity to develop and shepherd a project through to finance*: the professional staff who can write a proposal, formulate an *iniciativa*, pass the SNI/BIP gate, and manage a grant. **This is not the capacity to physically carry out the action itself** (build the plant, run the fleet) — it is the institutional capacity to turn an action into a funded project.
+- **Delivery capacity** — the city's *internal capacity to develop and shepherd a project through to finance*: the ability to write a proposal, formulate an *iniciativa*, pass the SNI/BIP gate, and manage a grant. **This is not the capacity to physically carry out the action itself** (build the plant, run the fleet) — it is the institutional capacity to turn an action into a funded project.
 
 These two are not fully independent: capacity is partly what *unlocks* the finance. A fund existing is not the same as a city being able to reach it — many channels (e.g. the public-investment SNI/BIP route) are accessible only to a city with the staff to formulate and pass them. So readiness is, in part, the key to the money rather than a parallel, separate thing — which is why the score combines them rather than reporting two unrelated numbers.
 
-*The detail:* autonomy = `1 − FCM-dependency%/100` (FCM is the central municipal-transfer fund). Capacity = a blend of two staff measures (`0.7 × percentile(professional staff) + 0.3 × percentile(professionalisation %)`). Both come from the 2025 SINIM data, for all 345 comunas, and both land on a 0–1 scale.
+*The detail:* autonomy = `1 − fcm_dependency` (FCM received ÷ permanent own income including FCM), from SUBDERE's 2025 SIM/BEP income workbook on the cash-received (*percibido*) basis, for all 345 comunas. The release recalculates the ratio from the workbook's components rather than copying its displayed percentage.
+
+Capacity is a **four-tier population band**, not a continuous measure. It reads the MEED *Gobernanza Local* sub-criterion *Capacidad técnica e institucional* on the SUBDERE population tramo the *Viabilidad Efectiva Municipal* rule already uses, rescaled to the 0–1 axis:
+
+| Tramo | Population | GL score | capacity |
+|---|---|---|---|
+| T1 — large urban | > 100,000 | 100 | 1.00 |
+| T2 — medium (benchmark anchor) | 20,000 – 100,000 | 50 | 0.50 |
+| T3 — small semi-urban | 5,000 – 20,000 | 25 | 0.25 |
+| T4 — rural and isolated | < 5,000 | < 25 | **0.10 (provisional)** |
+
+The classification is not computed here: it is consumed from its own review, `cl-municipal-capacity-tier`, which derives it from **INE 2024 census** population. The T4 band is a provisional fill for a value the source methodology leaves open, and it is consequential — at 0.10 every action type escalates to technical assistance in all 42 T4 comunas. Like the score bands, these are tunable settings, not estimates.
+
+*Why the change (v3):* capacity used to be a percentile blend of two SINIM staff measures; autonomy also read SINIM transfer dependency. Capacity now uses the reviewed population-tramo tier and autonomy uses the equivalent SIM/BEP budget components. This removes SINIM data from the v3 city profile while preserving the model's two axes and threshold logic. The capacity trade remains real: a noisy direct measure has been swapped for a clean but coarse population proxy. Full derivation and caveats live in the two source reviews and the v3 release.
 
 We also summarise the two into one **city profile** (a quick label), split at the midpoint of each axis:
 
@@ -139,7 +152,7 @@ Same city, same staff — the difference is the *action's* demands meeting the *
 | Layer | Source review(s) |
 |---|---|
 | Action demands | the OpenEarth / SSG climate-action library (`cl-ssg-actions`, served via `action_pathway`) |
-| City axes | SUBDERE / SINIM municipal fiscal & staffing indicators (`cl-subdere-sinim`), with census/SSG context |
+| City axes | autonomy from SUBDERE SIM/BEP (`cl-subdere-sim-bep`); capacity tier from `cl-municipal-capacity-tier`, itself derived from INE census population (`cl-ine-censo`) |
 | Finance | the ten `cl-*` *fondos* supply reviews, harmonised into one fund inventory |
 | Precedent | BIP/SNI projects (`cl-ssg-projects`) plus CONAF, FPA and GCF award records |
 | City identity | comuna → city locode via the `cl-ocha-ab` administrative-boundary lookup |
@@ -208,6 +221,8 @@ The score plugs into HIAP's **Feasibility** pillar as a third leg alongside lega
 
 **Implemented in production.** The model is built end to end: the inputs live as database tables (`finance_opportunity`, `finance_project`, `city_finance_profile` and their action links), the score is computed at read time by the `city_action_financial_feasibility` function (so it's always current and never stale), and it's served by the `climate-finance` API (the score, a per-action drill-down, the fund catalogue, and the precedent projects). See `releases/v1/implementation.md` for the technical shape.
 
+**The city-profile inputs are being replaced (v3, research).** Capacity uses the MEED population-tramo band and autonomy uses SUBDERE SIM/BEP (see `releases/v3/`). The release artefacts join all 345 comunas without nulls. The Mage pipeline now reads the consolidated v3 artifact and performs an atomic hard replacement, but nothing is loaded until the file is uploaded and the pipeline is run. Before promotion, SSG/OEF still need to adjudicate the T4 band, the T1 evidence gate, Padre Hurtado's source disagreement and the Natales threshold edge.
+
 **Action matching is being rebuilt (v2, research).** The v2 release derives the match from the route rather than asserting it pair by pair (see *Action-to-opportunity matching* above), and separates coverage, city eligibility and current availability into three gates. Of 102 actions, 11 are covered by a fund a city can apply to, 18 have a general municipal route, 48 are funded in the territory but not for the city, and 25 have nothing, none of which needs capital. It is not production-approved and has not been loaded into the modelled tables.
 
 **Honest limitations / next steps:**
@@ -216,10 +231,11 @@ The score plugs into HIAP's **Feasibility** pillar as a third leg alongside lega
 2. **Action-actor inference** — read coverage against *who implements the action*, to resolve the industry/transport "gaps."
 3. **Revealed fundability** — mine real award history (what actually got funded, how often, at what size).
 4. **Fill data gaps** — fund amounts (to unlock adequacy), more transport/industry supply.
-5. **Confirm SINIM terms with SUBDERE *only before any commercial use*** — not a blocker today (see Licence).
+5. **Promote the v3 city profile only after its four open data/method decisions are resolved** — the transformer/input replacement and transaction-scoped database cleanup are already implemented and verified; catalog promotion remains pending.
+6. **Decouple fund access from capacity** — the source methodology also proposes evaluating fund access independently of administrative capacity. Held back deliberately: it contradicts the SNI/BIP gate argument in step 4 and overlaps item 1, so it is being handled with the access-tier work rather than alongside the capacity change.
 
 ---
 
 ## Licence
 
-Inherits the **most restrictive upstream licence**; the binding constraint is **SINIM** (non-commercial + attribution clear). **We use SINIM as a derived model input, not a redistribution:** the published outputs are computed scores (`autonomy`, `capacity`, `city_archetype`) — the raw SINIM indicators are consumed in the transform and not stored or served. With attribution to SUBDERE/SINIM maintained, the current **non-commercial** research / tool use is in the clear. The one open question is narrower — a non-commercial term can carry to derivative works, so **commercial use of the product would still warrant a confirmation with SUBDERE**. Some finance sources add their own terms (e.g. CORFO `CC BY-NC-ND`); defer to each source review before redistributing any raw data. *(Not legal advice — confirm with the licence owner.)*
+Inherits the **most restrictive upstream licence** and re-grants nothing. For the **v3 city profile**, commercial use is permitted: the capacity input inherits INE's CC BY-SA 4.0 conditions (credit INE and apply share-alike where required), and the autonomy input uses CC0 under Chile's government-wide open-data default because the public SIM/BEP resource displays no contrary terms. The latter is a default/inferred licence position, not an explicit notice printed in the workbook. Mage run 170 verified replacement in the configured database: 341 OEF v3 rows and zero retired SINIM-source rows. Separately, some finance sources add their own restrictions, including CORFO `CC BY-NC-ND`, so clearing the city layer does **not** make every combined fundability output commercially reusable. *(Not legal advice.)*

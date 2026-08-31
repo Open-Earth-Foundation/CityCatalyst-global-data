@@ -1,10 +1,16 @@
--- raw_data.city_finance_profile_staging -> modelled.city_finance_profile
--- Each row inherits its source release_id from raw_data.city_finance_profile_catalog (from index.yaml),
--- keyed on source_dataset. Idempotent: release-scoped delete then insert.
+-- Atomically replace the CITY layer in modelled.city_finance_profile.
+-- The explicit retired-source delete is required because v3 changes identity from
+-- cl-subdere/cl-subdere-sinim to oef/cl-city-action-fundability. A release-scoped delete of only
+-- the new catalog identity would leave the restricted-source rows behind.
 -- ids: release_id = MD5(datasource-dataset-version), city_profile_id = MD5(actor_id-release_id).
 
+BEGIN;
+
 DELETE FROM modelled.city_finance_profile
-WHERE release_id IN (SELECT DISTINCT release_id::UUID FROM raw_data.city_finance_profile_catalog);
+WHERE source_dataset IN (
+    'cl-subdere/cl-subdere-sinim',
+    'oef/cl-city-action-fundability'
+);
 
 WITH src AS (
     SELECT
@@ -33,3 +39,38 @@ SELECT
     CASE WHEN w.capacity ~ '^-?[0-9]+(\.[0-9]+)?$' THEN w.capacity::NUMERIC END,
     w.city_archetype, w.country_code, w.source_dataset, w.release_id
 FROM with_release w;
+
+DO $$
+DECLARE
+    expected_rows INTEGER;
+    inserted_rows INTEGER;
+    retired_rows INTEGER;
+BEGIN
+    SELECT COUNT(DISTINCT actor_id)
+    INTO expected_rows
+    FROM raw_data.city_finance_profile_staging
+    WHERE source_dataset = 'oef/cl-city-action-fundability';
+
+    SELECT COUNT(*)
+    INTO inserted_rows
+    FROM modelled.city_finance_profile
+    WHERE source_dataset = 'oef/cl-city-action-fundability';
+
+    SELECT COUNT(*)
+    INTO retired_rows
+    FROM modelled.city_finance_profile
+    WHERE source_dataset = 'cl-subdere/cl-subdere-sinim';
+
+    IF expected_rows = 0 THEN
+        RAISE EXCEPTION 'v3 city-profile staging is empty or has the wrong source identity';
+    END IF;
+    IF inserted_rows <> expected_rows THEN
+        RAISE EXCEPTION 'v3 city-profile row mismatch: expected %, inserted %',
+            expected_rows, inserted_rows;
+    END IF;
+    IF retired_rows <> 0 THEN
+        RAISE EXCEPTION 'retired SINIM-backed city-profile rows remain: %', retired_rows;
+    END IF;
+END $$;
+
+COMMIT;

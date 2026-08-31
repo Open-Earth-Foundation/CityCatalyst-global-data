@@ -1,43 +1,61 @@
 # Pipeline: cl_city_finance_profile_to_modelled
 
-Loads the CITY layer into `modelled.city_finance_profile` (design section 5.1) -- the financial
-autonomy and delivery capacity axes the score reads, per city. Source: the SUBDERE/SINIM review
-(cl-subdere-sinim, 345 comunas). Migration: global-api revision `b8e2f5a1c9d4`.
+Loads the reviewed v3 CITY layer into `modelled.city_finance_profile`: SIM/BEP fiscal autonomy plus
+the INE-derived technical-capacity tier, joined for all 345 comunas by the v3 review. The modelled
+table and score-function contract are unchanged. Migration: global-api revision `b8e2f5a1c9d4`.
 
 ## Flow
 
 ```
-load_cl_subdere_sinim_from_s3 (bare S3 read)   \
-load_cl_ocha_ab_locode_from_s3 (locode lookup)  >- transform_city_finance_profile
-        |                                              autonomy = clip(1 - fcm_dependency_pct/100, 0, 1)
-        |                                              capacity = 0.7*pctrank(staff_profesional_total)
-        |                                                       + 0.3*pctrank(professionalization_pct)
-        |                                              city_archetype banded at 0.5; actor_id = locode
+load_cl_city_action_fundability_from_s3 (reviewed v3 CSV) \
+load_cl_ocha_ab_locode_from_s3 (locode lookup)             >- transform_city_finance_profile
+        |                                                         validate axes and 0.5 archetype bands
+        |                                                         preserve reviewed autonomy/capacity
+        |                                                         actor_id = locode
         v
 export_city_finance_profile_to_raw -> raw_data.city_finance_profile_staging (replace)
 
 CATALOG branch: load_city_finance_profile_catalog (index.yaml) -> export -> load_dataset_release_city_finance_profile
 
 both branches:
-load_city_finance_profile_modelled (release-scoped DELETE+INSERT; city_profile_id = MD5(actor_id-release_id))
+load_city_finance_profile_modelled (transactional hard delete + insert; city_profile_id = MD5(actor_id-release_id))
         v
 drop_city_finance_profile_staging
 ```
 
 ## What it produces
 
-~341 city profiles (of 345 comunas; 4 dropped for having no locode -- not queryable by the score
-endpoint). autonomy/capacity in [0,1] (validated to reproduce the methodology fixture exactly).
-archetype split (city-facing, strength-based): Support-ready ~157, Delivery-ready ~99, Self-sufficient ~61, Well-resourced ~24.
+341 city profiles (of 345 comunas; four dropped by the fixed OCHA 2021 locode lookup because they are
+not queryable by the score endpoint). The v3 snapshot after locode resolution is:
+
+- Support-ready: 149
+- Delivery-ready: 105
+- Self-sufficient: 65
+- Well-resourced: 22
 
 ## Notes / decisions
 
-- **autonomy / capacity formulas** are the methodology blend (02_fundability_model.ipynb), computed in
-  the transformer over the full 345-row frame (capacity is a percentile rank, so it needs all rows).
-  Validated against the methodology fixture (max abs diff 0.005, just its 2-dp rounding) before that fixture was removed.
+- **No axis is recomputed in Mage.** The v3 CSV is the reviewed join and the transformer asserts that
+  all 345 rows are complete, numeric, in range, unique by CUT, and correctly banded.
 - **actor_id = city locode** via cl-ocha-ab (CL + comuna_cut, padded to 5 digits). actor_id is the API
   key and NOT NULL, so the 4 comunas without a locode are dropped.
-- **Identity from the catalog** (cl-subdere-sinim), per-source release_id; deterministic
-  city_profile_id = MD5(actor_id-release_id); idempotent release-scoped delete+insert.
+- **Identity from the catalog** (`oef/cl-city-action-fundability`, v3), with deterministic
+  city_profile_id = MD5(actor_id-release_id).
+- **Hard replacement is explicit and atomic.** The modelled SQL deletes both the retired
+  `cl-subdere/cl-subdere-sinim` rows and any prior OEF city-profile rows inside the same transaction,
+  inserts v3, and raises if row counts differ or any retired row remains.
 - SQL blocks set disable_query_preprocessing: true so pipeline variables coexist with raw SQL.
 - This makes the score endpoint flip from neutral-fallback to profiled per city (design section 8, Phase 2).
+
+## S3 input
+
+- Bucket variable: `source_bucket` (default `test-global-api`)
+- Key: `raw_data/oef/cl_city_action_fundability/release/v3/cl_city_action_fundability.csv`
+- Local reviewed file to upload: `dataset-review/reviews/oef/cl-city-action-fundability/releases/v3/data/city_finance_profile.csv`
+
+Upload the local file under the key above; the S3 filename is deliberately the catalog dataset slug.
+The loader requires all 13 reviewed columns and exactly 345 unique five-digit CUT codes.
+
+S3 object lifecycle is outside this pipeline. The hard replacement applies to
+`modelled.city_finance_profile`: the pipeline never reads the retired SINIM object and does not
+delete source objects from S3.

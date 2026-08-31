@@ -3,11 +3,12 @@
 The catalog is the source of truth for each source's identity, so we reference it directly
 (fetched from GitHub raw) instead of carrying per-dataset pipeline variables. Emits one row per
 source with publisher/dataset/release fields + deterministic ids, ready to register
-publisher_datasource + dataset_release and to stamp the right release_id on each finance_project row.
+publisher_datasource + dataset_release and to stamp the right release_id on each city-profile row.
 Mirrors load_finance_source_catalog.py (the finance_opportunity reference).
 """
 import hashlib
 import uuid
+from pathlib import Path
 
 import pandas as pd
 import requests
@@ -23,8 +24,9 @@ CATALOG_INDEX_URL = (
     "CityCatalyst-global-data/develop/dataset-review/catalog/index.yaml"
 )
 
-# the finance_project pipeline's source datasets, by catalog id
-SOURCE_IDS = ["cl-subdere-sinim"]
+# The joined v3 profile is an OEF derived release with two upstream source reviews. A single
+# consolidated identity keeps each modelled row honest: it is not SIM/BEP alone and no longer SINIM.
+SOURCE_IDS = ["cl-city-action-fundability"]
 
 
 def _md5_uuid(*parts):
@@ -35,13 +37,24 @@ def _md5_uuid(*parts):
 @data_loader
 def load_data(*args, **kwargs):
     bucket = kwargs.get("source_bucket", "test-global-api")
-    url = kwargs.get("catalog_index_url", CATALOG_INDEX_URL)
-    try:
-        resp = requests.get(url, timeout=30)
-        resp.raise_for_status()
-    except requests.RequestException as e:
-        raise ValueError(f"Failed to fetch catalog index from {url}: {e}")
-    by_id = {d["id"]: d for d in yaml.safe_load(resp.text)["datasets"]}
+    catalog_path = kwargs.get("catalog_index_path")
+    if catalog_path:
+        path = Path(catalog_path)
+        if not path.is_file():
+            raise ValueError(f"Catalog index not found at {path}")
+        catalog_text = path.read_text(encoding="utf-8")
+        catalog_source = str(path)
+    else:
+        url = kwargs.get("catalog_index_url", CATALOG_INDEX_URL)
+        try:
+            resp = requests.get(url, timeout=30)
+            resp.raise_for_status()
+        except requests.RequestException as e:
+            raise ValueError(f"Failed to fetch catalog index from {url}: {e}")
+        catalog_text = resp.text
+        catalog_source = url
+
+    by_id = {d["id"]: d for d in yaml.safe_load(catalog_text)["datasets"]}
 
     rows = []
     for sid in SOURCE_IDS:
@@ -69,7 +82,7 @@ def load_data(*args, **kwargs):
             "source_url": f"s3://{bucket}/raw_data/{pk}/{dk}/release/{version}/{dk}.csv",
         })
     df = pd.DataFrame(rows)
-    print(f"city_finance_profile source catalog: {len(df)} datasets from index.yaml")
+    print(f"city_finance_profile source catalog: {len(df)} datasets from {catalog_source}")
     return df
 
 
