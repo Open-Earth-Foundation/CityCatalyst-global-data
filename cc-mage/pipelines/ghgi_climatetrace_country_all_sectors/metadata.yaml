@@ -122,6 +122,8 @@ blocks:
   - staging_ct_transport
   - staging_ct_manufactoring
   - staging_ct_fossilfuels
+  - staging_ct_power
+  - staging_ct_agriculture
   uuid: ct_staging_v2025
 - all_upstream_blocks_executed: false
   color: null
@@ -502,14 +504,199 @@ blocks:
   - load_ct_mapping_fossilfuels_db
   - load_ct_fossilfuel_db
   uuid: staging_ct_fossilfuels
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - load_country_power_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_country_power
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_country_power
+- all_upstream_blocks_executed: false
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - staging_ct_power
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_country_power_db
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_country_power
+  uuid: load_country_power_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - load_mapping_power
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_ct_mapping_power
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_ct_mapping_power
+- all_upstream_blocks_executed: false
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - staging_ct_power
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_mapping_power
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_ct_mapping_power
+  uuid: load_mapping_power
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - ct_staging_v2025
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: staging_ct_power
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_mapping_power
+  - load_country_power_db
+  uuid: staging_ct_power
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - load_country_agriculture_db
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_country_agriculture
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_country_agriculture
+- all_upstream_blocks_executed: false
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - staging_ct_agriculture
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_country_agriculture_db
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_country_agriculture
+  uuid: load_country_agriculture_db
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - load_mapping_agriculture
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_ct_mapping_agriculture
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_ct_mapping_agriculture
+- all_upstream_blocks_executed: false
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - staging_ct_agriculture
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_mapping_agriculture
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_ct_mapping_agriculture
+  uuid: load_mapping_agriculture
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks:
+  - ct_staging_v2025
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: staging_ct_agriculture
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_mapping_agriculture
+  - load_country_agriculture_db
+  uuid: staging_ct_agriculture
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
 conditionals: []
 created_at: '2025-11-17 15:21:56.122638+00:00'
 data_integration: null
-description: This pipeline can load data pulled from the files on climatetrace website
-  by country
+description: Load Climate TRACE v2025 country packages to city-level modelled tables.
+  Covers buildings, transportation, manufacturing, fossil fuel operations,
+  power, and agriculture using ct_to_city_mapping.csv (mapping=Y). Waste is
+  excluded. Set variables.country_code to ISO3 (e.g. PHL). Combined gas files
+  live under files/climatetrace/version_2025/country/{ISO3}/{GAS}/.
 executor_config: {}
 executor_count: 1
 executor_type: null
@@ -527,6 +714,6 @@ type: python
 uuid: ghgi_climatetrace_country_all_sectors
 variables:
   bucket_name: test-global-api
-  country_code: AR
+  country_code: PHL
 variables_dir: /home/src/mage_data/cc-mage
 widgets: []
