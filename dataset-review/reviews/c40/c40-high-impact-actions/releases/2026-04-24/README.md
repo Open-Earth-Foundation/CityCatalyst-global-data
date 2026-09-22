@@ -11,3 +11,8 @@
 - The standardized structure supports richer downstream use (e.g., subsector alignment, GPC references, timeline and investment fields).
 - Compared with earlier release formats, this output keeps only maintained fields and drops non-essential descriptive fields.
 - Added fields: `action_role`, `intervention_type`, `outcome_summary`, `intervention_summary`.
+
+## Translation fix (c40_0012, c40_0035, c40_0042)
+- ES/PT rows for these three actions were present but **skipped on load** because `intervention_summary` contained unquoted commas (pandas `on_bad_lines="warn"` dropped the rows).
+- Result in Global API: `name_i18n` / `description_i18n` had empty `es`/`pt`, so the frontend fell back to English.
+- Fix: re-quote ES/PT CSVs (and refresh name/description text) so all 17 actions load in every locale. Re-upload to S3 and re-run `action_pathways_to_modelled`.
