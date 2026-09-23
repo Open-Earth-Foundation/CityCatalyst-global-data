@@ -1,10 +1,13 @@
 """Shared helpers for Climate TRACE country-package loaders."""
-from os import environ, path
+from io import BytesIO
+from os import path
 from tempfile import gettempdir
 
+import boto3
 import pandas as pd
+from botocore.config import Config as BotoConfig
+from botocore.exceptions import ClientError
 from mage_ai.io.config import ConfigFileLoader
-from mage_ai.io.s3 import S3
 from mage_ai.settings.repo import get_repo_path
 
 RAW_COLUMNS = [
@@ -29,6 +32,7 @@ COMBINED_GASES = (
     ('CH4', 'ch4'),
     ('N2O', 'n2o'),
 )
+DEFAULT_FILE_VERSION = '5_10_0'
 
 
 def empty_emissions_frame() -> pd.DataFrame:
@@ -43,117 +47,125 @@ def _country_code(kwargs: dict) -> str:
     return str(kwargs.get('country_code') or 'PHL').strip().upper()
 
 
-def _aws_keys():
-    try:
+def _file_version(kwargs: dict) -> str:
+    raw = kwargs.get('ct_file_version')
+    if raw is None or raw == '':
+        return DEFAULT_FILE_VERSION
+    # YAML 5_10_0 is parsed as int 5100; Mage also stores it that way.
+    if raw in (5100, '5100', 5_10_0):
+        return DEFAULT_FILE_VERSION
+    version = str(raw).strip().lstrip('vV')
+    if version == '5100':
+        return DEFAULT_FILE_VERSION
+    return version or DEFAULT_FILE_VERSION
+
+
+def _clean_secret(value):
+    if value is None:
+        return None
+    text = str(value).strip().strip('"').strip("'")
+    if not text or text.startswith('{{') or 'mage_secret_var' in text:
+        return None
+    return text
+
+
+def _aws_keys(kwargs: dict):
+    key_id = _clean_secret(kwargs.get('aws_access_key_id'))
+    secret = _clean_secret(kwargs.get('aws_secret_access_key'))
+    if not key_id or not secret:
         from mage_ai.data_preparation.shared.secrets import get_secret_value
 
-        key_id = get_secret_value('AWS_ACCESS_KEY_ID')
-        secret = get_secret_value('AWS_SECRET_ACCESS_KEY')
-        if key_id and secret:
-            return key_id, secret
-    except Exception:
-        pass
-    return environ.get('AWS_ACCESS_KEY_ID'), environ.get('AWS_SECRET_ACCESS_KEY')
-
-
-def _configure_duckdb_s3(conn) -> None:
-    conn.execute('INSTALL httpfs; LOAD httpfs;')
-    key_id, secret = _aws_keys()
-    if key_id and secret:
-        conn.execute(
-            f"""
-            CREATE SECRET (
-                TYPE 'S3',
-                KEY_ID '{key_id}',
-                SECRET '{secret}',
-                REGION 'us-east-1'
-            );
-            """
+        key_id = key_id or _clean_secret(get_secret_value('AWS_ACCESS_KEY_ID'))
+        secret = secret or _clean_secret(get_secret_value('AWS_SECRET_ACCESS_KEY'))
+    if not key_id or not secret:
+        raise RuntimeError(
+            'Missing Mage secrets AWS_ACCESS_KEY_ID / AWS_SECRET_ACCESS_KEY.'
         )
-        return
-    conn.execute(
-        """
-        CREATE SECRET (
-            TYPE 'S3',
-            PROVIDER CREDENTIAL_CHAIN,
-            REGION 'us-east-1'
-        );
-        """
-    )
+    print(f'AWS access key id length={len(key_id)} prefix={key_id[:4]}')
+    return key_id, secret
 
 
-def _read_csv_glob(conn, bucket_name: str, object_key: str) -> pd.DataFrame:
-    query = (
-        f"SELECT * FROM read_csv('s3://{bucket_name}/{object_key}', "
-        "union_by_name=true)"
+def _combined_object_key(country_code: str, gas_dir: str, gas_file: str, version: str) -> str:
+    return (
+        f'files/climatetrace/version_2025/country/{country_code}/'
+        f'{gas_dir}/emissions_{gas_file}_v{version}.csv'
     )
-    return conn.execute(query).fetchdf()
 
 
 def _select_raw_columns(df: pd.DataFrame) -> pd.DataFrame:
     if df is None or df.empty:
         return empty_emissions_frame()
-    missing = [col for col in RAW_COLUMNS if col not in df.columns]
-    if missing:
-        for col in missing:
-            df[col] = pd.NA
-    out = df[RAW_COLUMNS].copy()
+    work = df.copy()
+    for col in RAW_COLUMNS:
+        if col not in work.columns:
+            work[col] = pd.NA
+    out = work[RAW_COLUMNS].copy()
     out['start_time'] = pd.to_datetime(out['start_time'], errors='coerce')
     return out
 
 
-def _combined_object_keys(country_code: str):
-    return [
-        f'files/climatetrace/version_2025/country/{country_code}/{gas_dir}/'
-        f'emissions_{gas_file}_v*.csv'
-        for gas_dir, gas_file in COMBINED_GASES
-    ]
-
-
-def _legacy_object_keys(country_code: str, sector: str):
-    folder = sector.replace('-', '_')
-    return [
-        f'files/climatetrace/version_2025/{country_code}/{gas}/{folder}/'
-        f'*_emissions_sources_v*.csv'
-        for gas, _ in COMBINED_GASES
-    ]
-
-
-def _cache_path(bucket_name: str, country_code: str) -> str:
+def _cache_path(bucket_name: str, country_code: str, version: str) -> str:
     return path.join(
         gettempdir(),
-        f'ct_country_{bucket_name}_{country_code}.pkl',
+        f'ct_country_{bucket_name}_{country_code}_{version}.pkl',
     )
 
 
-def load_country_all_emissions(kwargs: dict) -> pd.DataFrame:
-    """Read the combined per-gas country CSVs from S3."""
-    import duckdb
+def _read_s3_csv(bucket_name: str, object_key: str, kwargs: dict) -> pd.DataFrame:
+    """Signed GetObject on an exact key. DuckDB httpfs GETs are often unsigned 403s."""
+    key_id, secret = _aws_keys(kwargs)
+    client = boto3.client(
+        's3',
+        aws_access_key_id=key_id,
+        aws_secret_access_key=secret,
+        region_name='us-east-1',
+        config=BotoConfig(signature_version='s3v4'),
+    )
+    try:
+        body = client.get_object(Bucket=bucket_name, Key=object_key)['Body'].read()
+    except ClientError as exc:
+        error = exc.response.get('Error') or {}
+        raise RuntimeError(
+            f"{object_key}: AWS {error.get('Code')} {error.get('Message')}"
+        ) from exc
+    return pd.read_csv(BytesIO(body))
 
+
+def load_country_all_emissions(kwargs: dict) -> pd.DataFrame:
+    """Read the combined per-gas country CSVs from S3 using exact object keys."""
     bucket_name = kwargs['bucket_name']
     country_code = _country_code(kwargs)
-    cache_file = _cache_path(bucket_name, country_code)
+    version = _file_version(kwargs)
+    cache_file = _cache_path(bucket_name, country_code, version)
     if path.exists(cache_file):
         cached = pd.read_pickle(cache_file)
         if cached is not None and not cached.empty:
             return cached
 
-    conn = duckdb.connect()
     frames = []
-    try:
-        _configure_duckdb_s3(conn)
-        for object_key in _combined_object_keys(country_code):
-            try:
-                frames.append(_read_csv_glob(conn, bucket_name, object_key))
-            except Exception as exc:
-                print(
-                    f'Skipping combined {object_key} for country={country_code}: {exc}'
-                )
-        df = pd.concat(frames, ignore_index=True) if frames else empty_emissions_frame()
-    finally:
-        conn.close()
+    errors = []
+    print(
+        f'CT exact-key GetObject country={country_code} version={version} '
+        f'(combined files, not per-sector folders)'
+    )
+    for gas_dir, gas_file in COMBINED_GASES:
+        object_key = _combined_object_key(country_code, gas_dir, gas_file, version)
+        print(f'GET s3://{bucket_name}/{object_key}')
+        try:
+            frames.append(_read_s3_csv(bucket_name, object_key, kwargs))
+            print(f'Loaded s3://{bucket_name}/{object_key}')
+        except Exception as exc:
+            errors.append(f'{object_key}: {exc}')
+            print(f'Failed s3://{bucket_name}/{object_key}: {exc}')
 
-    df = _select_raw_columns(df)
+    if not frames:
+        raise RuntimeError(
+            'Could not read Climate TRACE country files from S3. '
+            'Use exact object keys (GetObject); glob listing is not allowed. '
+            + ' | '.join(errors)
+        )
+
+    df = _select_raw_columns(pd.concat(frames, ignore_index=True))
     if not df.empty:
         df.to_pickle(cache_file)
     return df
@@ -163,47 +175,17 @@ def load_country_sector_emissions(sector: str, kwargs: dict) -> pd.DataFrame:
     """
     Read Climate TRACE v2025 country source CSVs for one sector from S3.
 
-    Preferred layout (combined all-sector files per gas):
-      s3://{bucket}/files/climatetrace/version_2025/country/{ISO3}/{GAS}/emissions_{gas}_v*.csv
-
-    Fallback (legacy per-sector folders):
-      s3://{bucket}/files/climatetrace/version_2025/{CC}/{GAS}/{sector}/*_emissions_sources_v*.csv
+    Layout:
+      s3://{bucket}/files/climatetrace/version_2025/country/{ISO3}/{GAS}/emissions_{gas}_v{version}.csv
     """
-    import duckdb
-
-    bucket_name = kwargs['bucket_name']
-    country_code = _country_code(kwargs)
     canon_sector = _canonical_sector(sector)
-
     combined = load_country_all_emissions(kwargs)
-    if combined is not None and not combined.empty:
-        sector_match = combined['sector'].map(_canonical_sector) == canon_sector
-        filtered = combined.loc[sector_match].copy()
-        if not filtered.empty:
-            return filtered
-
-    conn = duckdb.connect()
-    frames = []
-    try:
-        _configure_duckdb_s3(conn)
-        for object_key in _legacy_object_keys(country_code, sector):
-            try:
-                frames.append(_read_csv_glob(conn, bucket_name, object_key))
-            except Exception as exc:
-                print(
-                    f'Skipping {object_key} for sector={sector} '
-                    f'country={country_code}: {exc}'
-                )
-        df = pd.concat(frames, ignore_index=True) if frames else empty_emissions_frame()
-    finally:
-        conn.close()
-
-    df = _select_raw_columns(df)
-    if df.empty:
+    if combined is None or combined.empty:
         return empty_emissions_frame()
-    sector_match = df['sector'].map(_canonical_sector) == canon_sector
-    filtered = df.loc[sector_match].copy()
-    return filtered if not filtered.empty else df
+
+    sector_match = combined['sector'].map(_canonical_sector) == canon_sector
+    filtered = combined.loc[sector_match].copy()
+    return filtered if not filtered.empty else empty_emissions_frame()
 
 
 def export_raw_table(df: pd.DataFrame, table_name: str) -> None:
@@ -232,13 +214,9 @@ def load_ct_gpc_mapping(filename: str, kwargs: dict) -> pd.DataFrame:
     if path.exists(local_path):
         return pd.read_csv(local_path)
 
-    config_path = path.join(get_repo_path(), 'io_config.yaml')
     bucket_name = kwargs['bucket_name']
     object_key = f'files/climatetrace/version_2025/mappings/{filename}'
-    return S3.with_config(ConfigFileLoader(config_path, 'default')).load(
-        bucket_name,
-        object_key,
-    )
+    return _read_s3_csv(bucket_name, object_key, kwargs)
 
 
 def load_ct_sector_mapping(sector: str, kwargs: dict) -> pd.DataFrame:
