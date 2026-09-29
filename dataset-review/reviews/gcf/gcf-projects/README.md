@@ -14,9 +14,31 @@ For Chile the access chain is: **NDA = Ministerio de Hacienda** (Sustainable Fin
 - The non-ODA-gated multilateral Chile can actually access (unlike the DAC-gated city facilities), and it carries a genuinely city-facing programme — **FP189 E-Mobility for Sustainable Cities** (electric buses/EV fleets).
 - Global portfolio enables cross-country comparison; the `countries` field makes the Chile slice a filter.
 
-## Access & license
+## Canonical downloads and source gate
 
-Public API (`http://api.gcfund.org/v1/projects`, JSON). Verified from the catalog notebook (2026-06): a single `requests.get` returns the **whole list, about 336 funded projects** (no pagination needed), with fields `ProjectsID, ApprovedRef (FP id), ProjectName, Theme (Mitigation / Adaptation / Cross-cutting), Sector, Countries (nested, ISO3), Entities (the accredited entity), Funding, ResultAreas, TotalGCFFunding, TotalValue, Status, ApprovalDate, DateClosing`. The Chile slice is a client-side filter on the nested `Countries` (ISO3 = CHL). An interactive single fetch can time out on the tool layer, but the plain API call in a notebook returns quickly. Also the **GCF Open Data Library** (`https://data.greenclimate.fund/`) and per-country pages. Public GCF programme info; confirm GCF terms-and-conditions before redistribution.
+**[verified]** The IATI reporting-organisations dashboard lists Green Climate Fund under publisher identifier `gcf`, with 350 activities, one organisation record, two datasets, about 3.8 MB of published data and 134 recipient countries. This establishes that a current GCF IATI publication exists and is the preferred structured source to investigate for a Brazil adaptation release.
+
+**[verified]** IATI is a publication standard and registry, not the licensor of every publisher's records. IATI's licensing guidance says a publisher selects the licence for its files and that the licence is displayed in each file's registry metadata. The same guidance says a file without a licence is not considered open. A general statement that “IATI data is open” therefore does not substitute for GCF's publisher-specific metadata and terms.
+
+**[unanswered]** The current GCF file entries, canonical XML resource URLs and publisher-selected licence could not be retrieved and retained during this review. The old IATI Registry was replaced by IATI Account in December 2025, with read-only publication information moved to the dashboard, and the available dashboard evidence did not expose the GCF file-level licence in a form that could be verified here. No `license_id`, licence URL or GCF attribution statement has been captured.
+
+The earlier projects API remains relevant only to the preserved Chile `v1` research release. Its documented endpoint is `http://api.gcfund.org/v1/projects`, with nested country, entity, funding, result-area, status and date fields. It is not used to manufacture a new distributable release because its publisher terms have not been verified.
+
+### References
+
+- IATI reporting-organisations dashboard → `https://merged.dashboard.iatistandard.org/publishers/` (publisher `gcf`)
+- IATI licensing guidance → `https://reference.iatistandard.org/en/guidance/publishing-data/what-data-to-publish/how-to-license-your-data/`
+- IATI registry migration note → `https://docs.account.iatistandard.org/en/latest/registry/`
+- GCF Open Data Library → `https://data.greenclimate.fund/`
+- legacy GCF Projects API → `http://api.gcfund.org/v1/projects`
+
+## Licence and redistribution decision
+
+**[verified]** No publisher-specific GCF IATI licence has been verified for this review. Consequently, commercial reuse, derivative redistribution and the required attribution wording remain unanswered.
+
+No GCF IATI or website records may be copied into a new committed Brazil output until the current GCF IATI file metadata supplies an explicit commercially reusable licence and its conditions are recorded. The presence of data in IATI does not by itself pass this gate. This is a licence-evidence blocker, not evidence that GCF prohibits reuse.
+
+**[inferred]** OECD Creditor Reporting System (CRS) records are the appropriate alternative investigation route for GCF-to-Brazil provider/recipient flows because they are an official reporting product independent of the GCF website. OECD CRS requires its own source, licence, coverage and granularity review before any derivative is committed; it may describe aid-flow records rather than one row per GCF funded activity, so it is a complement or fallback, not an assumed drop-in replacement.
 
 ## Scope: mitigation only
 
@@ -34,4 +56,11 @@ We cover mitigation actions, so adaptation-only FPs are flagged out of scope (no
 
 ## Status
 
-This review is **self-contained** and is the one with real committed Chile data. `releases/v1/` holds `data/gcf_chile_slice.csv` (the project dataset, 8 entries hand-verified from the GCF Chile country page), `data/gcf_chile_to_actions.csv` (the crosswalk), `gcf_chile_analysis.ipynb`, `review.md` and `review.yaml`. To refresh from the API: a single `requests.get('http://api.gcfund.org/v1/projects')` returns the full ~336-project list, filter `Countries` ISO3 = CHL, then map on **`ResultAreas`** (e.g. "Energy generation and access", "Transport", "Forests and land use") — the same classification-grain approach as the FPA `clasificacion`. Production: **pending validation**. The discovery candidate `gcf-chile` (need `2026-06-cl-international-climate-finance`) is promoted here.
+The preserved Chile `v1` release remains a research artifact and is not production-approved. No Brazil/adaptation release was opened because the GCF IATI licence gate failed on missing verifiable publisher-specific metadata. A later review may open a separate release only after it captures the canonical current GCF activity file, the file-level licence and attribution conditions, and confirms that commercial derivative redistribution is allowed. OECD CRS is the next source to review if that evidence remains unavailable.
+
+### References
+
+- Chile project dataset → `releases/v1/data/gcf_chile_slice.csv`
+- Chile action crosswalk → `releases/v1/data/gcf_chile_to_actions.csv`
+- Chile analysis notebook → `releases/v1/gcf_chile_analysis.ipynb`
+- Chile release review → `releases/v1/review.md`

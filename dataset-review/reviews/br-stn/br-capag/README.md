@@ -126,7 +126,7 @@ References:
 
 - Feasibility methodology draft: https://docs.google.com/document/d/1TyCqsRmjyqFGu3gwL4JEjCWWGPoaf1p377QZPnbkiUk/edit?tab=t.0
 - Brazil climate-finance reference: `knowledge-base/topics/climate-finance/br-climate-finance.md`
-- Brazil awards staging compile: `dataset-compile/br-climate-awards/`
+- Brazil finance evidence map: `knowledge-base/topics/climate-finance/br-climate-finance.md`
 - Catalog theme view: `dataset-review/collections/by-theme.yaml`
 - Catalog geography view: `dataset-review/collections/by-geography.yaml`
 

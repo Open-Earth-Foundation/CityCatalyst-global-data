@@ -1,0 +1,6 @@
+screen_label,action_id,action_name,mapping_confidence,rationale
+water_supply,ipcc_0101,Improve urban water management,medium,Programme/object keyword screen; source has no adaptation taxonomy and proposal matches require adjudication.
+drainage_stormwater,c40_0048,Upgrade urban drainage systems,medium,Exclude paving-only drainage mentions before accepting proposal matches.
+slope_stabilisation,icare_0184,Upgrade Slope stabilization and drainage,medium,"Theme is close to the action, but each proposal match remains unadjudicated."
+ecosystem_restoration,ipcc_0084,Restore/create natural areas,medium,Broad restoration language can include non-adaptation activity; adjudication required.
+disaster_risk,icare_0172,Develop and implement the Municipal Risk Reduction Plan (PMRR) and identify population groups vulnerable to climate risks.,medium,Administrative proposals can fund plans or works; do not attribute amounts until proposal-level review.

@@ -1,25 +1,55 @@
-# World Bank — projects (world-bank-projects)
+# World Bank — Projects & Operations (`world-bank-projects`)
 
-Project-level records from the **World Bank Projects API**, the World Bank slice of the multilateral climate-finance picture. Global coverage, one row per operation, with country, commitment, sector/theme, instrument and approval date. Like the GCF and IDB project reviews, this is the **awards/projects layer** (what got funded), at the **multilateral level**, accessed **intermediated** (sovereign lending; a city benefits as a sub-borrower, it does not apply). See `knowledge-base/topics/climate-finance/cl-climate-finance.md` ("Funder levels").
+Project-level metadata for World Bank lending operations, sourced from the official Projects & Operations API. Release `v3` is a Brazil adaptation-relevance research slice; it does not replace the preserved Chile mitigation-oriented `v2` release and is not production-approved.
+
+## Why this dataset matters
+
+The source offers a long-run view of World Bank operations and their published commitments, instruments, sectors, themes, approval dates, closing dates and lifecycle statuses. For Brazilian adaptation research it can identify comparable projects and routes to project documents. It cannot by itself establish that a whole project or commitment is adaptation finance.
 
 ## Access
 
-Public JSON API: `https://search.worldbank.org/api/v2/projects?format=json&rows=50&os={offset}&qterm={term}`. The `projects` key is a `{project_id: record}` map (convert values to rows); paginate with `os` in steps of `rows`. Climate relevance is filtered at the query with `qterm`: `qterm=climate` returns about 6,200 projects, `qterm=mitigation` about 4,500. Useful fields: `id`, `project_name`, `countryname`/`countrycode`/`countryshortname`, `regionname`, `boardapprovaldate`, `closingdate`, `status`, `totalcommamt`/`curr_total_commitment`, `lendprojectcost`, `sector1`, `theme1`, `lendinginstr`, `url`. License: public World Bank open data (confirm reuse terms before redistribution).
+- Official catalog record: `https://datacatalog.worldbank.org/search/dataset/0037800/world-bank-projects-operations`
+- Official Projects API: `https://search.worldbank.org/api/v2/projects`
+- Brazil request: `https://search.worldbank.org/api/v2/projects?format=json&rows=1000&os=0&countrycode=BR`
+- Access: public, no API key observed.
+- Format: JSON; the `projects` member is a map keyed by project identifier.
+- API stability: public but not version-pinned. The release retains dated raw responses and SHA-256 checksums in its review.
 
-## Scope and Chile filter
+## Licensing and attribution
 
-We cover **mitigation** only, so pull with `qterm=mitigation` (or filter `theme`/`sector` and drop adaptation-only operations). The Chile slice is a filter on `countryname` / `countrycode` (Chile / CL). As with GCF, multi-country operations carry programme totals, not a Chile figure.
+The catalog labels World Bank Projects & Operations **Creative Commons Attribution 4.0 International (CC BY 4.0)**. The World Bank licensing page says users may copy, modify and distribute the data for any purpose, including commercially, provided they give appropriate attribution and indicate changes, including translations. World Bank datasets under CC BY 4.0 also carry the publisher's mandatory mediation/arbitration terms; downstream users should retain a link to `https://datacatalog.worldbank.org/public-licenses` rather than representing the license as bare CC BY 4.0 without those terms.
 
-## Mapping to actions
+Suggested attribution: “World Bank Projects & Operations, World Bank, used under CC BY 4.0 with World Bank mandatory terms; filtered, translated and classified by CityCatalyst. Changes were made.”
 
-Like the FPA awards and the GCF Chile slice, World Bank projects map at a **classification grain**: `theme1` + `sector1` plus the project name (energy, transport, urban, forestry, waste) to the city action list, link-don't-attribute, medium or none where a project is broad or adaptation. This is self-contained in the review notebook (extract → standardise → map), not a shared step. Expect a larger `none` share than the domestic award sets — World Bank sector/theme labels are broad, and a generic "renewable energy" or "climate change" operation has no single action.
+## Coverage and grain
 
-## Extraction and status
+The canonical source covers project-level records from 1947 to the present. The retained Brazil API response retrieved on 2026-09-25 contains 566 records. Release `v3` includes 55 records selected by an explicit-title or multiple-query screen for adaptation relevance. One row is one World Bank project identifier, not a contract, disbursement, project component or city award.
 
-This review is **self-contained**: `releases/v2/wb_chile_projects.ipynb` pulls the World Bank API, keeps the Chile slice, standardises the fields, maps to actions, and writes both `data/wb_chile_projects.csv` (the project dataset) and `data/wb_chile_to_actions.csv` (the crosswalk). It is committed unexecuted (it makes outbound API calls); running it produces the data. The mapper is self-tested independently of the pull. Production: **pending validation** (run the notebook, then add a `catalog/index.yaml` entry). Release detail in `releases/v2/review.md`.
+## Brazil adaptation screen
 
-## Main sources
+The release keeps a project when its title explicitly contains an adaptation/resilience/hazard term, or when it appears in at least two official Brazil Projects API full-text result sets among `adaptation`, `climate resilience`, `disaster risk`, `flood`, `drought`, `landslide` and `early warning`. Full-text matches may come from project-associated documents not exposed in the project row, so non-title matches are candidates for follow-up, not confirmed classifications.
 
-- World Bank Projects API → `https://search.worldbank.org/api/v2/projects`
-- mitigation query → `https://search.worldbank.org/api/v2/projects?format=json&rows=100&os=0&qterm=mitigation`
-- review notebook → `releases/v2/wb_chile_projects.ipynb`
+`total_commitment_amount_usd` is the published project commitment field. It is not copied to `adaptation_finance_amount_usd`; that field remains blank because the API response supplies neither a climate/adaptation percentage nor a component allocation. The project endpoint also supplies no disbursement field.
+
+## Language convention
+
+Column names and controlled release fields are English. The API is overwhelmingly English for this slice. The single Portuguese project title is translated in `project_name`, retained verbatim in `project_name_pt`, and labelled `human_translated_from_portuguese_source`. English source titles have an empty `project_name_pt` and `source_english` status. Borrower and implementing-agency legal names are preserved as source identifiers rather than translated; source encoding defects are not silently repaired.
+
+## Lifecycle interpretation
+
+`board_approval_date` records Board approval where published. `closing_date` is a planned or recorded closing date and is not completion evidence. `Active`, `Closed`, `Pipeline` and `Dropped` are kept distinct. Pipeline operations are proposals, dropped operations were not carried forward, and neither an Active nor Closed status reports disbursement or proves delivery of adaptation components.
+
+## Mapping to adaptation actions
+
+The mapping is intentionally sparse. Explicit early-warning and climate-smart-agriculture titles can support direct links; water-security, flood-prevention and resilient-road titles support only component links. All mappings are medium confidence and pending human adjudication. Every unmatched project has an explicit `none` row. No project amount is allocated to an action.
+
+## Release files
+
+- `releases/v3/build_brazil_adaptation_release.py` — restartable API/evidence build.
+- `releases/v3/world_bank_brazil_adaptation.ipynb` — restartable notebook wrapper with validations.
+- `releases/v3/data/world_bank_brazil_adaptation_projects.csv` — cleaned project table.
+- `releases/v3/data/world_bank_brazil_adaptation_projects_to_actions.csv` — draft action crosswalk.
+- `releases/v3/review.md` — evidence, caveats and validation results.
+- `releases/v3/sample/*.json` — retained official API evidence (locally present; ignored by repository rules).
+
+Release `v2` remains the earlier Chile notebook/review and was not overwritten.
