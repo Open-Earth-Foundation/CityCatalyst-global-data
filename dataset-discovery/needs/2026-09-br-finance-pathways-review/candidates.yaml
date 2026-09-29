@@ -1,0 +1,167 @@
+candidates:
+- id: br-bndes-operacoes-financiamento
+  screening:
+    verdict: promoted
+    notes: 'Reviewed; see catalog entry br-bndes-operacoes-financiamento at dataset-review/reviews/br-bndes/br-bndes-operacoes-financiamento. Reuse: ODbL; retain attribution and share-alike/access obligations.'
+  added: '2026-09-25'
+- id: br-fnmc-projetos
+  screening:
+    verdict: promoted
+    notes: 'Reviewed; see catalog entry br-fnmc-projetos at dataset-review/reviews/br-mma/br-fnmc-projetos. Reuse: CC BY; version unspecified.'
+  added: '2026-09-25'
+- id: br-fnma-instrumentos
+  screening:
+    verdict: promoted
+    notes: 'Reviewed; see catalog entry br-fnma-instrumentos at dataset-review/reviews/br-mma/br-fnma-instrumentos. Reuse: MMA CSV states CC BY but version is unspecified; gov.br CC BY-ND pages were not used as replacement data.'
+  added: '2026-09-25'
+- id: br-sadipem-operacoes-credito
+  screening:
+    verdict: promoted
+    notes: 'Reviewed; see catalog entry br-sadipem-operacoes-credito at dataset-review/reviews/br-stn/br-sadipem-operacoes-credito. Reuse: ODbL plus Tesouro attribution.'
+  added: '2026-09-25'
+- id: br-novopac-drenagem-encostas
+  screening:
+    verdict: promoted
+    notes: 'Reviewed; see catalog entry br-novopac-drenagem-encostas at dataset-review/reviews/br-mcidades/br-novopac-drenagem-encostas. Reuse: gov.br CC BY-ND needs legal review; DOU annex review is documented but complete annexes were unavailable. Record-level data withheld from the public repository pending reuse review.'
+  added: '2026-09-25'
+- id: br-cofiex-meeting-results
+  screening:
+    verdict: promoted
+    notes: 'Reviewed; see catalog entry br-cofiex-meeting-results at dataset-review/reviews/br-mpo/br-cofiex-meeting-results. Reuse: gov.br CC BY-ND needs legal review; DOU resolutions review confirms approvals-only coverage and cannot replace 58 rejections. Record-level data withheld from the public repository pending reuse review.'
+  added: '2026-09-25'
+- id: br-transparencia-transferencias
+  screening:
+    verdict: promoted
+    notes: 'Reviewed; see catalog entry br-transparencia-transferencias at dataset-review/reviews/br-cgu/br-transparencia-transferencias. Reuse: no named dataset licence; federal free-use basis recorded; DOU Sedec acts are the rights-clear authorisation alternative but not payment evidence. Record-level data withheld from the public repository pending reuse review.'
+  added: '2026-09-25'
+- id: br-transferegov-discricionarias-legais
+  screening:
+    verdict: promoted
+    notes: 'Reviewed; see catalog entry br-transferegov-discricionarias-legais at dataset-review/reviews/br-mgi/br-transferegov-discricionarias-legais. Reuse: no operative dataset licence found; DOU acts can replace selections/authorisations but not relational execution history.'
+  added: '2026-09-25'
+- id: idb-projects
+  screening:
+    verdict: promoted
+    notes: 'Reviewed; see catalog entry idb-projects at dataset-review/reviews/idb/idb-projects. Reuse: IDB Projects Dataset CC BY 4.0 with DOI attribution.'
+  added: '2026-09-25'
+- id: world-bank-projects
+  screening:
+    verdict: promoted
+    notes: 'Reviewed; see catalog entry world-bank-projects at dataset-review/reviews/world-bank/world-bank-projects. Reuse: CC BY 4.0 plus World Bank mandatory mediation/arbitration terms.'
+  added: '2026-09-25'
+- id: br-carteira-investimento
+  name: Base de dados da Carteira de Investimento do Ministério das Cidades
+  publisher: Ministério das Cidades
+  url: https://dados.gov.br/dados/conjuntos-dados/base-de-dados-da-carteira-de-investimento-do-ministerio-das-cidades
+  also:
+  - https://dadosabertos.cidades.gov.br/dataset/base-de-dados-da-carteira-de-investimento-do-ministerio-das-cidades
+  themes:
+  - climate_finance
+  - projects
+  - federal_transfers
+  coverage: National investment portfolio consolidating Transferegov, BD Gestores, Canal FGTS, Minha Casa Minha Vida and BNDES instruments; about 160,212 rows.
+  access: Canonical CSV/XLSX download returns 403. Row-level access through the ministry public Power BI model is verified but a full extraction did not complete (first state partition exceeded 13 minutes).
+  license: ODbL (verified in the national catalogue record).
+  screening:
+    verdict: investigate
+    notes: canonical CSV/XLSX blocked by publisher 403; public Power BI model/table/schema and 160,212-row count verified, but the first state partition exceeded 13 minutes and no unreconciled partial output was committed; restartable builder retained. Reopen when the canonical file is retrievable or a complete Power BI extraction is feasible. A restartable Power BI builder was written and is kept locally.
+  added: '2026-09-25'
+- id: br-bndes-operacoes-automaticas
+  name: BNDES automatic (indirect) financing operations
+  publisher: BNDES
+  url: https://dadosabertos.bndes.gov.br/
+  themes:
+  - climate_finance
+  - credit
+  coverage: Operations through accredited agents; the canonical 30-column file is about 1.148 GB.
+  access: Verified; full retrieval is slow and was stopped at 165,564 rows.
+  license: ODbL
+  screening:
+    verdict: investigate
+    notes: canonical 30-column source verified but is about 1.148 GB; a timed retrieval reached 165,564 data rows before cleanup, so full profiling/review remains pending and lower priority than named-project non-automatic operations. Lower priority than named-project non-automatic operations.
+  added: '2026-09-25'
+- id: br-dou-novopac-portarias
+  name: 'Diário Oficial da União: Novo PAC 2025 drainage and slope-containment portarias'
+  publisher: Imprensa Nacional / Ministério das Cidades
+  url: https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/pac/selecoes-novo-pac/investimentos-selecionados
+  also:
+  - https://www.in.gov.br/web/dou/-/portaria-mcid-n-1.074-de-17-de-setembro-de-2025-657752151
+  - https://www.in.gov.br/web/dou/-/portaria-mcid-n-1.083-de-18-de-setembro-de-2025-657673658
+  - https://www.in.gov.br/web/dou/-/portaria-mcid-n-1.087-de-19-de-setembro-de-2025-657754682
+  themes:
+  - climate_finance
+  - federal_transfers
+  - official_acts
+  coverage: Five portarias selecting the Novo PAC 2025 drainage and slope-containment proposals.
+  access: Acts and ministry index verified; complete annexes not retrieved.
+  license: official-act applicability under Lei 9.610 article 8 IV is inferred and requires legal review
+  screening:
+    verdict: investigate
+    notes: The review recorded all five acts and failed annex retrieval; future release must reconcile 315 observations, 287 proposal IDs, R$11.735bn and 3 separate aggregate controls. Candidate rights-clearer replacement for the Novo PAC ministry spreadsheets.
+  added: '2026-09-25'
+- id: br-dou-cofiex-resolucoes
+  name: 'Diário Oficial da União: COFIEX authorising resolutions'
+  publisher: Imprensa Nacional / Ministério do Planejamento e Orçamento
+  url: https://www.gov.br/planejamento/pt-br/assuntos/assuntos-internacionais-e-desenvolvimento/cofiex/resolucoes-cofiex
+  also:
+  - https://www.gov.br/planejamento/pt-br/acesso-a-informacao/institucional/atos-normativos/2026/resolucoes
+  themes:
+  - climate_finance
+  - external_borrowing
+  - official_acts
+  coverage: Resolutions authorising external-financing operations approved by COFIEX; approvals only.
+  access: Listing live and resolutions indexed; complete corpus retrieval did not succeed.
+  license: official-act applicability under Lei 9.610 article 8 IV is inferred and requires legal review; keep meeting results for rejections
+  screening:
+    verdict: investigate
+    notes: The review documented incomplete corpus retrieval, exact benchmark of 80 approvals by meeting, and the structural inability to replace 58 non-approvals; no partial release created.
+  added: '2026-09-25'
+- id: br-dou-sedec-portarias
+  name: 'Diário Oficial da União: Sedec civil-defence transfer portarias'
+  publisher: Imprensa Nacional / MIDR Sedec
+  url: https://www.in.gov.br/web/dou
+  also:
+  - https://inlabs.in.gov.br/acessar.php
+  - https://www.in.gov.br/web/dou/-/portaria-n-944-de-20-de-marco-de-2026-695045491
+  themes:
+  - climate_finance
+  - civil_defence
+  - official_acts
+  coverage: Transfer-authorisation portarias; authorisation-stage companion to the CGU payment rows.
+  access: Complete 2026 corpus needs registered INLABS access.
+  license: official-act applicability under Lei 9.610 article 8 IV is inferred and requires legal review
+  screening:
+    verdict: investigate
+    notes: official INLABS corpus requires registration; one Portaria 944/2026 to CGU payment candidate differs by R$0.52 and is explicitly not treated as a proven key match.
+  added: '2026-09-25'
+- id: br-transferegov-transferencias-especiais
+  name: Transferegov Transferências Especiais (parliamentary amendments)
+  publisher: Ministério da Gestão e da Inovação em Serviços Públicos
+  url: https://api-publica.transferegov.gestao.gov.br/especiais/docs
+  also:
+  - https://www.gov.br/transferegov/pt-br/ferramentas-gestao/api-de-dados-abertos-transferegov.br
+  themes:
+  - climate_finance
+  - federal_transfers
+  coverage: Public API for individual parliamentary amendments executed as special transfers.
+  access: API documented; no records extracted or profiled.
+  license: Operative data licence unanswered.
+  screening:
+    verdict: investigate
+    notes: Provenance, access and schema only. Reopen once the licence is answered and a Brazil extract is profiled.
+  added: '2026-09-25'
+- id: br-fundoamazonia-projetos-apoiados
+  name: Fundo Amazônia supported-projects portfolio
+  publisher: BNDES / Ministério do Meio Ambiente
+  url: https://www.fundoamazonia.gov.br/pt/projetos-apoiados/
+  themes:
+  - climate_finance
+  - projects
+  - adaptation
+  coverage: Portfolio of projects supported by Fundo Amazônia; 146 rows were extracted into the retired br-climate-awards compile.
+  access: Portal pages and the December 2025 portfolio report; no bulk data download.
+  license: No licence on the portal (verified absence); BNDES site terms are inferred to apply.
+  screening:
+    verdict: investigate
+    notes: Matchable projects are covered by the BNDES non-automatic operations review, which carries Fundo Amazônia lines under an ODbL licence. Unmatched portfolio rows were held as restricted and were not carried into a review. Reopen if the portal publishes a licence or bulk data, or if unmatched projects are needed as comparable evidence. The extraction and reconciliation notes are kept locally with this need.
+  added: '2026-09-29'

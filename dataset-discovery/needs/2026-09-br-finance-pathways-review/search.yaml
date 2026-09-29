@@ -1,0 +1,62 @@
+need: 2026-09-br-finance-pathways-review
+
+# Fit criteria for the dataset reviews that feed the Brazil finance-pathway guidance
+# (City Climate Compass, Phase 3). Financing is guidance, not a ranking input: the reviewed
+# datasets supply comparable past projects and show which pathway a city could use.
+# Comparable projects will appear in a commercial product, so reuse rights are a hard constraint.
+# Candidates with licence findings: candidates.yaml in this folder
+
+sector: cross_sector
+themes: [climate_finance, adaptation, project_evidence, reuse_rights]
+
+pathways:            # the pathway families in the Brazil adaptation methodology, section 5.2
+  - domestic climate and environmental grants
+  - domestic climate and infrastructure credit
+  - federal transfers and public investment programmes
+  - direct external public borrowing
+  - intermediated international climate and environmental finance
+  - civil-defence and disaster finance
+
+geography:
+  countries: [Brazil]
+  required_level: municipality   # IBGE 7-digit code, or a name + UF that joins to it; state level acceptable for state recipients
+  acceptable: national           # for international facilities, with any municipal/state coverage recorded separately
+
+data_requirements:
+  must_have:
+    - native_record_id        # proposal / contract / operation / PVL number as the publisher gives it
+    - recipient               # name and type: município, estado, state company, private firm, civil society
+    - recipient_geography     # UF + IBGE code, or joinable name
+    - funder_or_programme     # fund, programme or lender as named
+    - instrument              # grant / domestic loan / external loan / transfer
+    - amount_with_meaning     # currency + which amount: requested, selected, approved, contracted, disbursed
+    - stage_and_date          # the stage the record shows, and the date of that stage
+  nice_to_have:
+    - project_description     # objeto / purpose text, needed to match records to actions
+    - disbursement_or_payment
+    - adaptation_relevance    # stated by the source, not inferred
+    - link_to_other_sources   # ids that join to COFIEX, SADIPEM, Transferegov etc.
+  metric_form: evidence records — one row per project or per financing decision, not aggregates
+  temporal: all available years; recent cycles (2020+) matter most
+
+constraints:
+  license:
+    preferred: named open licence that allows commercial reuse (CC BY, ODC-BY, ODbL, public-domain dedication)
+    acceptable: >
+      a publisher free-use statement (e.g. Decreto 8.777 on federal portals) or an official act
+      (Lei 9.610 art. 8º IV) — record as inferred and flag for legal review
+    disqualifying: >
+      non-commercial terms, all-rights-reserved site terms, or no-derivatives terms on the records
+      we would display — unless legal clears the specific use
+  access:
+    preferred: bulk CSV or API without login
+    acceptable: manual download from a public page
+    disqualifying: login-only or only obtainable by direct request
+
+screening_guidance: >
+  Record three things separately and never merge them: (1) is the data accurate and what stage
+  does each record show; (2) are we allowed to reuse it, for which uses; (3) programme eligibility,
+  which no dataset here establishes. A selection, a Treasury clearance (PVL deferido) or a COFIEX
+  approval is not a signed contract. Keep BRL, USD and EUR apart. Do not count the same project
+  twice across sources — keep native ids so records can be matched. Use "no matching record found
+  in the reviewed sources and period", never "not financed".
