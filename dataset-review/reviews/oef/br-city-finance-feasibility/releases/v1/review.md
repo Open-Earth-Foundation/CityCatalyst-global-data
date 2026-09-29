@@ -30,4 +30,6 @@ Join on `cod_mun` or `locode`, both unique in this table. Carry `credit_screen_r
 
 ## Traceability
 
+The `br-climate-awards` staging compile that notebook 03 reads was retired on 29 September 2026, once its sources graduated into the individual finance reviews used by release v2. v1 is kept as a historical record; notebook 03 no longer reruns from a fresh clone.
+
 Inputs: the pilot export `sample/pilotcities.json` (CityCatalyst, received 2026-07-31); the CAPAG clean extract (br-capag release 2026-06-01); the finance-push table (br-munic release 2020-2021). All derivation is in `01_city_profile_pilot.ipynb`. The Altamira and Cruzeiro do Sul adjudications were made in-session on 2026-07-31 and are asserted in the notebook's validation block.

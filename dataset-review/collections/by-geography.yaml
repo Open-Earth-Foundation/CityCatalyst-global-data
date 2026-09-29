@@ -41,6 +41,15 @@ collections:
     name: Brazil datasets
     datasets:
       - id: br-adaptabrasil
+      - id: br-bndes-operacoes-financiamento
+      - id: br-city-finance-feasibility
+      - id: br-cofiex-meeting-results
+      - id: br-fnma-instrumentos
+      - id: br-fnmc-projetos
+      - id: br-novopac-drenagem-encostas
+      - id: br-sadipem-operacoes-credito
+      - id: br-transferegov-discricionarias-legais
+      - id: br-transparencia-transferencias
       - id: seeg-emissions
 
   - id: geo-global

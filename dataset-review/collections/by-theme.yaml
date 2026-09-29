@@ -9,6 +9,15 @@ collections:
   - id: theme-climate-finance
     name: Climate finance
     datasets:
+      - id: br-bndes-operacoes-financiamento
+      - id: br-city-finance-feasibility
+      - id: br-cofiex-meeting-results
+      - id: br-fnma-instrumentos
+      - id: br-fnmc-projetos
+      - id: br-novopac-drenagem-encostas
+      - id: br-sadipem-operacoes-credito
+      - id: br-transferegov-discricionarias-legais
+      - id: br-transparencia-transferencias
       - id: cl-bip-projects
       - id: cl-city-action-fundability
       - id: cl-conaf-bn-awards
@@ -37,6 +46,14 @@ collections:
   - id: theme-projects
     name: Projects & portfolios
     datasets:
+      - id: br-bndes-operacoes-financiamento
+      - id: br-city-finance-feasibility
+      - id: br-cofiex-meeting-results
+      - id: br-fnma-instrumentos
+      - id: br-fnmc-projetos
+      - id: br-novopac-drenagem-encostas
+      - id: br-sadipem-operacoes-credito
+      - id: br-transferegov-discricionarias-legais
       - id: cl-bip-projects
       - id: cl-city-action-fundability
       - id: cl-conaf-bn-awards
@@ -85,6 +102,13 @@ collections:
     name: Adaptation & resilience
     datasets:
       - id: br-adaptabrasil
+      - id: br-bndes-operacoes-financiamento
+      - id: br-city-finance-feasibility
+      - id: br-cofiex-meeting-results
+      - id: br-fnma-instrumentos
+      - id: br-fnmc-projetos
+      - id: br-novopac-drenagem-encostas
+      - id: br-transparencia-transferencias
       - id: c40-high-impact-actions
       - id: cl-conaf-fondos
       - id: cl-indap-fondos
@@ -210,6 +234,10 @@ collections:
   - id: theme-infrastructure
     name: Infrastructure
     datasets:
+      - id: br-bndes-operacoes-financiamento
+      - id: br-novopac-drenagem-encostas
+      - id: br-sadipem-operacoes-credito
+      - id: br-transferegov-discricionarias-legais
       - id: cl-ine-censo
       - id: cl-mop-fondos
       - id: cl-ssg-projects
