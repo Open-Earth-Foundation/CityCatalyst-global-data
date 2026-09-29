@@ -38,7 +38,7 @@ flowchart TB
 |---|---|---|---|
 | Finance landscape | Map of funders, six routes, instruments (MN, plus CL and BR siblings) | Landed MN, CL; BR drafted | `knowledge-base/topics/climate-finance/` |
 | Funder profiles | Per-funder gates: eligibility, rubric, template | One prototype (BWSR CWF) | `dataset-compile/mn-funder-profiles/` |
-| Comparable awards | Awarded projects by funder, category, region, instrument | Staging; MN 498, BR 496 rows | `dataset-compile/mn-climate-awards/`, `dataset-compile/br-climate-awards/` |
+| Comparable awards | Awarded projects by funder, category, region, instrument | MN staging, 498 rows; BR reviewed, per-source finance datasets | `dataset-compile/mn-climate-awards/`; Brazil: `dataset-review/reviews/oef/br-city-finance-feasibility/` |
 | City context / GHGI | City-scale emissions, plan directories, capacity signals | Three sources reviewed, none promotion-ready | `dataset-review/reviews/mn-rii/`, `.../mn-mpca-greenstep/` |
 
 ## The data model everything rests on
@@ -110,7 +110,7 @@ Main readings from the data:
 
 ### References
 - For what the Minnesota dataset contains, how each figure was verified, and what is still assigned by judgment: `dataset-compile/mn-climate-awards/collection.md` · the rows themselves: `dataset-compile/mn-climate-awards/data.csv`
-- The Brazil sibling, same design and different values, if coverage beyond Minnesota is relevant: `dataset-compile/br-climate-awards/collection.md`
+- The Brazil equivalent, now built from individually reviewed finance datasets rather than a compile, if coverage beyond Minnesota is relevant: "Where Brazilian finance evidence lives" in `knowledge-base/topics/climate-finance/br-climate-finance.md`
 
 ## City context and inventories
 

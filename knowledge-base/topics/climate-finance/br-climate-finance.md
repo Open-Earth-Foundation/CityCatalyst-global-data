@@ -211,7 +211,29 @@ The fifth element is lighter: a **funding link** mapping a project to the funder
 - "Can this city *borrow* — domestically or from the World Bank/IDB?" → **CAPAG**: only A/B unlock Union-guaranteed credit, which gates both BNDES credit and Route C external loans (via COFIEX).
 - "What can the *smallest* cities actually reach?" → FPM, small convênios, emendas, state transfers, **disaster money (Route E)**, and grants via OSCs/consórcios — Routes C and much of A are closed to them.
 - "Which funds does *low capacity* actually help a city reach?" → the **grant-eligibility channel** (vulnerability-targeted: Fundo Clima adaptation line, Fundo Amazônia, international adaptation windows) — the inversion.
-- "How feasible is financing this action for this city?" → the two-channel score in the Brazil Phase 3 working method (`brazil-phase-3/4-feasibility/financial-feasibility.md`).
+- "How feasible is financing this action for this city?" → financing is guidance beside the ranking: the action's cost band is the only financing input that is scored, and credit status, capacity, pathways and comparable projects are shown as context (`dataset-review/reviews/oef/br-city-finance-feasibility/`).
+
+## Where Brazilian finance evidence lives
+
+Each stage of the finance chain is recorded by a different public dataset, and OEF has reviewed each one separately. Read a record with its stage: a request or a selection says finance was sought, a contract says it was committed, and a payment says money arrived. Records from different stages are never added together.
+
+| Stage | What the record shows | Reviewed dataset | Reuse |
+| ----- | ----- | ----- | ----- |
+| Request | A municipal or state credit request cleared by the Treasury | SADIPEM credit operations (`br-stn/br-sadipem-operacoes-credito`) | ODbL |
+| Selection | A proposal selected by a federal programme | Novo PAC drainage and slope selections (`br-mcidades/br-novopac-drenagem-encostas`) | under review; not redistributed |
+| Preparation decision | Authorisation to prepare an external loan | COFIEX meeting results (`br-mpo/br-cofiex-meeting-results`) | under review; not redistributed |
+| Agreement or contract | Finance committed to a named project | BNDES non-automatic operations, including Fundo Clima and Fundo Amazônia lines (`br-bndes/br-bndes-operacoes-financiamento`); FNMA (`br-mma/br-fnma-instrumentos`); FNMC (`br-mma/br-fnmc-projetos`) | ODbL; CC BY |
+| Lender project | A development-bank project in Brazil | IDB (`idb/idb-projects`); World Bank (`world-bank/world-bank-projects`) | CC BY 4.0 |
+| Transfer lifecycle | Proposal, commitment and disbursement of a federal transfer | Transferegov discretionary and legal transfers (`br-mgi/br-transferegov-discricionarias-legais`) | unconfirmed; theme screens only |
+| Payment | A federal civil-defence payment to a municipality | CGU transfer payments (`br-cgu/br-transparencia-transferencias`) | unresolved; not redistributed |
+
+The OEF finance-context catalogue brings these together and links records to adaptation actions as illustrative examples. Sources that were checked but are not yet usable, such as the Ministério das Cidades investment portfolio, the Diário Oficial acts and the Fundo Amazônia portfolio, are kept as candidates with their blockers. A reviewed source's licence decides whether its records can be shown to cities; a reliable record can still be restricted, and an openly licensed one can describe a rejected proposal.
+
+### References
+
+- Reviewed datasets → `dataset-review/reviews/<path in the table>`
+- Finance-context catalogue → `dataset-review/reviews/oef/br-city-finance-feasibility/`
+- Candidates and blockers → `dataset-discovery/needs/2026-09-br-finance-pathways-review/candidates.yaml`
 
 ## The things that most shape Brazilian climate finance
 
@@ -229,7 +251,7 @@ If a reader takes only a handful of facts from this reference, take these:
 
 - `overview.md`: the country-agnostic climate-finance model this page instantiates (sibling pages: `cl-climate-finance.md`, `mn-climate-finance.md`).
 - Originating investigation: `dataset-discovery/needs/2026-06-br-city-finance-fiscal/` — candidate sources, gaps, and open questions.
-- Dataset deep-dives (e.g. CAPAG) currently live in the Brazil Phase 3 project repo (`brazil-phase-3/4-feasibility/datasets/`); promote to `dataset-review/reviews/` when landed.
+- Dataset reviews: CAPAG (`dataset-review/reviews/br-stn/br-capag/`), MUNIC (`dataset-review/reviews/br-ibge/br-munic/`), and the finance evidence datasets in "Where Brazilian finance evidence lives" above.
 - Working method (Brazil Phase 3 project repo): `brazil-phase-3/4-feasibility/financial-feasibility.md` (the two-channel scoring method + Brazil sourcing) and `feasibility-overview.md`; C40-facing framing in `brazil-phase-3/external-shared-docs/A1 — Adaptation Feasibility Methodology (C40 Pre-Read).md`.
 
 ## Sources (verified 2025–2026)
