@@ -1,0 +1,61 @@
+---
+description: Python style for Mage blocks and helper modules.
+globs: cc-mage/**/*.py,**/local_scripts/**/*.py
+alwaysApply: false
+---
+
+# Python Style — Mage
+
+## Imports
+
+- Standard library → third-party → first-party (`cc_mage.utils.…`).
+- Absolute imports inside `cc-mage/`.
+- One import per line for readability when multiple from same module.
+
+## Blocks must declare what they do
+
+Every Mage block file starts with a docstring:
+
+```python
+"""ghgi_ippu_climatetrace / cleaning_ippu_ct
+
+Cleans the raw ClimateTRACE IPPU CSV: filters to Brazil cities,
+renames columns to the canonical schema, groups by (locode, year, gas).
+
+Inputs:  pandas.DataFrame from `load_raw_ippu_ct`
+Outputs: pandas.DataFrame ready for `transformation_ippu_ct`
+"""
+```
+
+## Type hints
+
+Use them for **public** functions in shared modules. Mage block functions decorated with `@data_loader`/`@transformer`/`@data_exporter` — annotate the return type at minimum.
+
+## pandas
+
+- Avoid `inplace=True` (deprecated patterns; harder to read).
+- Chain operations with `.pipe()` for readability when 3+ steps.
+- Always `.copy()` when slicing in a way that the caller might mutate.
+
+## boto3 / S3
+
+- One client per block (don't recreate per row).
+- Use `paginator` for listings.
+- Stream large files — never `read()` a 1GB CSV into memory.
+
+## Logging
+
+- Use `logging` (not `print`) in code that runs in CI / scheduled jobs.
+- `logger = logging.getLogger(__name__)`.
+- Log row counts at INFO before / after each transform.
+
+## Testing
+
+- Mage `@test` decorators — see `data-quality-and-validation.md`. Layer 2 (structural) checks are mandatory; Layer 3 (plausibility) when ranges are knowable.
+- Pytest for shared helpers under `cc-mage/utils/`.
+
+## Anti-patterns
+
+- `assert output is not None` as the only test — useless. Test column presence, schema, row count > 0, identity-key uniqueness.
+- Hardcoded S3 keys / bucket names inside data-loader blocks — pull from `metadata.yaml` `variables`.
+- `pd.read_csv(url)` with no error handling — wrap in try/except + retries.

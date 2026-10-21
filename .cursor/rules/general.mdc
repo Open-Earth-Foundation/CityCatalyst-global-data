@@ -1,0 +1,13 @@
+---
+description: General coding standards — simple, maintainable, data-pipeline-aware code.
+alwaysApply: true
+---
+
+# General Rules
+
+- Keep code simple and easy to maintain.
+- Do not over-engineer. Prefer a Mage block + SQL over a Python framework.
+- Comments / docstrings everywhere code is non-trivial. Especially for data-loaders that depend on a particular source format.
+- Prefer **intent / why** comments over line-by-line narration.
+- Do not introduce backwards-compat shims or extra abstraction layers unless a real second use case justifies them.
+- Reproducibility > cleverness. A pipeline that runs once correctly is more valuable than a clever helper used nowhere else.

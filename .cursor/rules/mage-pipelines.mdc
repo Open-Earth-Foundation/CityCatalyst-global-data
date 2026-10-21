@@ -1,0 +1,71 @@
+---
+description: Mage pipeline conventions — metadata.yaml, naming, variables, DAG shape.
+globs: cc-mage/pipelines/**/*.yaml,cc-mage/pipelines/**/*.yml
+alwaysApply: false
+---
+
+# Mage Pipeline Conventions
+
+## metadata.yaml is the contract
+
+Every pipeline folder must have a `metadata.yaml` with at minimum:
+
+```yaml
+name: ghgi_<sector>_<source>            # follow naming-conventions.md
+type: python                             # almost always
+description: <one sentence>             # MANDATORY — no `null`
+created_at: '<ISO timestamp>'
+
+variables:
+  bucket_name: test-global-api          # dev default; prod overrides via run config
+  release_version: '2026'
+  source_path: 's3://...'
+
+blocks:
+  - uuid: load_raw_<src>
+    type: data_loader
+    upstream_blocks: []
+    downstream_blocks: [cleaning_<src>]
+  # ... etc.
+```
+
+## Naming the pipeline
+
+Use the prefix table from `engineering-standards/naming-conventions.md`:
+
+| Prefix | Domain |
+|--------|--------|
+| `ghgi_` | GHG inventory |
+| `ccra_` | Climate risk assessment |
+| `dq_` | Data quality / validation |
+| `cap_` / `actions_` | City Action Plan |
+
+Pipelines tied to a release version add `_v<year>` (e.g. `ghgi_ippu_climatetrace_v2026`).
+
+## Block naming inside the pipeline
+
+```
+load_<src>            data_loader, S3 → DataFrame
+cleaning_<src>        transformer, type cleaning + column renames
+transformation_<src>  transformer, GPC sector mapping etc.
+<src>_staging         data_exporter, DataFrame → raw_data.<src>_<sector>_staging
+<src>_lookup          standalone SQL lookup (optional)
+locode_transformation SQL transform joining staging + lookup
+update_<src>_<table>  data_exporter, SQL → modelled.<table> (UPSERT)
+```
+
+## Variables
+
+Anything that varies across runs (year, bucket, source URL, release version) lives in `variables:`. Never hardcode in block code.
+
+## DAG shape
+
+The standard DAG is a **single linear chain** with multiple `update_*` exporters fanning out at the end. Avoid:
+
+- Cross-pipeline dependencies (each pipeline is its own unit).
+- Hidden side effects (a transformer that writes to S3 — only data_exporters write).
+- Loops / dynamic blocks unless absolutely necessary.
+
+## After changes
+
+If you change the DAG, update **both** the pipeline diagram in `ARCHITECTURE.md` (if it shows the pipeline) and the README of the related dataset review. Run the `docs-after-change` skill.

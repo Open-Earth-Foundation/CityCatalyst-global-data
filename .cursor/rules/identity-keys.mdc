@@ -1,0 +1,41 @@
+---
+description: Identity / FK rules — locode, actor_id, datasource_name, gpc_reference_number.
+alwaysApply: true
+---
+
+# Identity Keys
+
+This is the #1 source of bugs in queries and Python transforms. Get this right.
+
+| Identifier | Definition | Where it appears |
+|------------|------------|------------------|
+| `actor_id` | UN/LOCODE city code (e.g. `BR SAO`). Same value as `locode`. | `modelled.emissions`, `modelled.emissions_factor` |
+| `locode` | Same as `actor_id`. The city's primary key. | `modelled.city_polygon` |
+| `city_id` | **GeoHash of the city centroid** — NOT a primary key. **Never** use as a join key. | `modelled.city_polygon`, some staging tables |
+| `datasource_name` | Short string key linking emissions back to a publisher. **Exact-match FK** to `publisher_datasource.datasource_name`. | All `modelled.*` tables |
+| `gpc_reference_number` | GPC sector reference, e.g. `II.1.1`. | `modelled.emissions`, `modelled.ghgi_methodology` |
+| `gpcmethod_id` | UUID linking emission → activity_subcategory → ghgi_methodology. | FK across emissions tables |
+
+## Hard rules
+
+- **Joins on city** use `actor_id` or `locode` — never `city_id`.
+- **`datasource_name`** must match an existing row in `publisher_datasource`. Case- and whitespace-sensitive. If the publisher row is missing, add it in the **same PR** as the data ingestion.
+- **`gpc_reference_number`** is a string with embedded dots (`I.1.1`). Don't normalise away the dots.
+- **`gpcmethod_id`** is a UUID generated server-side, not from the source. Do not invent UUIDs in transforms — use the methodology lookup.
+
+## Common mistakes to flag in PR review
+
+- `JOIN city_polygon ON city_polygon.city_id = emissions.actor_id` — wrong; uses geohash instead of LOCODE.
+- `WHERE datasource_name LIKE 'edgar%'` — fragile; `datasource_name` is exact-match. Use `=`.
+- `actor_id` formatted differently across pipelines (e.g. with/without space). Use the canonical form (`'BR SAO'`).
+- Inserting into `modelled.emissions` without first ensuring the matching `publisher_datasource` row exists.
+
+## Looking it up at runtime
+
+```sql
+-- Verify a datasource_name exists
+SELECT 1 FROM publisher_datasource WHERE datasource_name = 'climatetrace_v2025';
+
+-- Look up a city by either key
+SELECT * FROM modelled.city_polygon WHERE locode = 'BR SAO';
+```

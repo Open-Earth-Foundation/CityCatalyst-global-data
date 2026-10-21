@@ -1,0 +1,77 @@
+---
+description: CityCatalyst-global-data — repo layout, data stages, and conventions.
+alwaysApply: true
+---
+
+# CityCatalyst Global Data Architecture
+
+## What this repo is
+
+Production ETL feeding the **CityCatalyst Global API** with emissions and activity data from global / national publishers. Pipelines run in **Mage.ai** (`cc-mage/`); orchestrated locally via Docker on port 6789.
+
+## Top-level layout
+
+```
+CityCatalyst-global-data/
+├── cc-mage/                   # Mage project (DO NOT RENAME — baked into Mage config)
+│   ├── pipelines/<name>/      # one folder per pipeline; metadata.yaml is the contract
+│   ├── data_loaders/          # Python load blocks (S3 → memory)
+│   ├── transformers/          # Python or SQL transform blocks
+│   ├── data_exporters/        # Python or SQL export blocks (memory → DB or S3)
+│   ├── utils/                 # shared helpers
+│   ├── local_scripts/         # exploratory, NOT production
+│   └── io_config.yaml         # connection strings (gitignored values)
+├── dataset-review/
+│   ├── catalog/index.yaml     # registry of all datasets + releases
+│   ├── collections/           # thematic groupings of datasets
+│   └── reviews/<publisher>/   # per-publisher dataset reviews
+├── knowledge-base/            # topic-level domain notes (was `domain-knowledge/`)
+├── engineering-standards/     # team conventions — read these
+├── docs/                      # extra docs (incl. agent-runbook.md)
+├── AGENTS.md                  # agent brief (read first)
+├── ARCHITECTURE.md            # data architecture deep-dive
+└── docker-compose.yml         # local Mage on :6789
+```
+
+## Data stages (4)
+
+1. **`files`** (S3) — raw, untouched files from publishers.
+2. **`raw_data`** (S3 Parquet + `raw_data.<src>_<sector>_staging` Postgres tables) — typed and parsed.
+3. **`modelled`** (Postgres `modelled.*` schema, mirrored to S3) — standardised, primary input to Global API.
+4. **`reporting`** (Postgres + S3) — Metabase-tuned subset.
+
+## Pipeline contract (the standard flow)
+
+```
+data_loader (Python)         reads raw file from S3
+  └── data_exporter (Python) writes to raw_data staging (REPLACE)
+        └── transformer (SQL) staging → mapping/lookup
+              ├── data_exporter (SQL) → modelled.ghgi_methodology         (UPSERT)
+              ├── data_exporter (SQL) → modelled.activity_subcategory     (UPSERT)
+              ├── data_exporter (SQL) → modelled.emissions_factor          (UPSERT)
+              └── data_exporter (SQL) → modelled.emissions                 (UPSERT)
+```
+
+## Naming conventions (must match `engineering-standards/naming-conventions.md`)
+
+- **Pipeline prefixes**: `ghgi_`, `ccra_`, `dq_`, `cap_`, `actions_`. Suffix `_v<year>` for versioned releases.
+- **Staging tables**: `raw_data.<source>_<sector>_staging`.
+- **S3 paths** by stage / publisher / dataset — see `engineering-standards/naming-conventions.md`.
+
+## Key technical constraints (do not break)
+
+- **Do not rename `cc-mage/`** — Mage's project config is hardcoded.
+- **Do not delete release folders** under `dataset-review/reviews/<…>/releases/<v>/` — historical record.
+- **Staging tables are temporary** — never read from `raw_data.*_staging` from another pipeline.
+- **City identity = `actor_id` / `locode`**, never `city_id`. See `identity-keys.mdc`.
+- **`datasource_name` is an exact-string FK** to `publisher_datasource`.
+
+## Where the truth lives
+
+- Architecture & data flow: `ARCHITECTURE.md`.
+- Identity / FK rules: `AGENTS.md` and `.cursor/rules/identity-keys.mdc`.
+- DoD for new pipelines / releases: `engineering-standards/definition-of-done.md`.
+- Catalog conventions: `engineering-standards/documentation-and-metadata.md`.
+- Pipeline patterns: `engineering-standards/pipeline-design-patterns.md`.
+
+If those documents conflict, **`engineering-standards/` wins** and we open a PR to fix the lesser doc.

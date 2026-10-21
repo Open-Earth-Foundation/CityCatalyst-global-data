@@ -1,0 +1,56 @@
+---
+description: Branch naming, commit format, PR text, and base-branch policy for global-data.
+alwaysApply: true
+---
+
+# Git Conventions — global-data
+
+## Base branch
+
+**`develop`**. CI builds/publishes the Mage Docker image on push to `develop`.
+
+## Branch naming
+
+```
+<author>/<scope>-<slug>           # e.g. mfonsecaoef/feat-eurostat-pipeline
+feat/<TICKET>-<slug>              # ticket-driven feature
+fix/<TICKET>-<slug>               # ticket-driven bugfix
+chore/<slug>                      # housekeeping
+agent/<slug>                      # Cursor-agent-driven
+agentic-coder/<slug>              # autonomous agentic-coder run
+```
+
+`<slug>` is kebab-case, ≤ 6 words.
+
+## Commit messages — Conventional Commits
+
+```
+<type>(<scope>): <imperative summary>     # ≤72 chars
+
+<body — explain WHY, wrap at 72>
+
+<footer — Refs: ON-####>
+```
+
+Allowed `<type>`: `feat`, `fix`, `chore`, `docs`, `refactor`, `perf`, `test`, `build`, `ci`, `revert`.
+
+Recommended `<scope>`: `mage`, `pipeline`, `catalog`, `review`, `kb`, `standards`, `docker`, `ci`.
+
+Examples:
+
+```
+feat(pipeline): add ghgi_ippu_climatetrace v2026 release
+fix(catalog): set production_approved=false for stale wb_v1
+chore(docker): bump mage-ai base image
+docs(standards): clarify data-quality layer 2 expectations
+```
+
+## PR titles & bodies
+
+Use the cross-repo `pull-request-standards` skill (mirrored in `.cursor/skills/`).
+
+## Merge policy
+
+- **Pipelines, catalog, knowledge-base, code** — any tech-team member can merge after standard review (≥ 1 approval, CI green).
+- **Agentic + standards foundation** (`AGENTS.md`, `.cursor/rules/`, `.cursor/skills/`, `engineering-standards/`, `docs/agent-runbook.md`) — curated by the **core engineering team**. PRs touching these need core-team sign-off; after approval, anyone in the tech team merges.
+- **Agents** push branches and stop. They never merge their own PRs and don't open PRs unless explicitly told.
