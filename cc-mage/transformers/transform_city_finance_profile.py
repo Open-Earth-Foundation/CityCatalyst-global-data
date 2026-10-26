@@ -1,4 +1,4 @@
-"""Project the reviewed v3 city profile into modelled staging.
+"""Project the reviewed city profile into modelled staging.
 
 The S3 input already contains the reviewed capacity and autonomy axes. This block does not
 recalculate or impute either value: it validates the 345-comuna release, verifies the existing
@@ -64,7 +64,7 @@ def transform_city_finance_profile(*frames, **kwargs):
         elif PROFILE_COLUMNS.issubset(cols):
             profile_df = df
     if profile_df is None:
-        raise ValueError("reviewed v3 city-profile frame not found upstream")
+        raise ValueError("reviewed city-profile frame not found upstream")
     if locode_df is None:
         raise ValueError("cl-ocha-ab locode frame not found upstream")
 

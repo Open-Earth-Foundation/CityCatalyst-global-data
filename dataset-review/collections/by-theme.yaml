@@ -34,6 +34,7 @@ collections:
       - id: cl-mop-fondos
       - id: cl-mtt-fondos
       - id: cl-ssg-finance
+      - id: cl-ssg-municipal-income
       - id: cl-ssg-policy-documents
       - id: cl-ssg-projects
       - id: cl-subdere-fondos
@@ -156,6 +157,7 @@ collections:
       - id: cl-casen
       - id: cl-city-action-fundability
       - id: cl-ine-censo
+      - id: cl-ssg-municipal-income
       - id: cl-subdere-sinim
       - id: uncece-unlocode
 

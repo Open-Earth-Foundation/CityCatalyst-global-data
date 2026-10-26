@@ -1,5 +1,5 @@
 -- Register one publisher_datasource + dataset_release for the city_finance_profile SOURCE dataset
--- (oef/cl-city-action-fundability v3), driven by raw_data.city_finance_profile_catalog.
+-- (the latest oef/cl-city-action-fundability release), driven by raw_data.city_finance_profile_catalog.
 -- Identity is stable slugs only (dataset_url is descriptive, not part of either ID):
 -- dataset_id = MD5(datasource-dataset), release_id = MD5(datasource-dataset-version).
 

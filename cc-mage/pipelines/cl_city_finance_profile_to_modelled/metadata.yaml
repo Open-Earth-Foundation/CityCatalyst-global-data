@@ -191,10 +191,12 @@ concurrency_config: {}
 conditionals: []
 created_at: null
 data_integration: null
-description: Load the reviewed v3 CITY layer into modelled.city_finance_profile from the
-  OEF city-action-fundability release. The uploaded profile joins SIM/BEP autonomy to the
-  INE-derived capacity tier; Mage validates the axes and archetype, resolves actor_id via
-  cl-ocha-ab, and atomically removes both retired SINIM rows and prior OEF profile rows before insert.
+description: Load the reviewed v4 CITY layer into modelled.city_finance_profile from the
+  OEF city-action-fundability release. The uploaded profile joins SIM/BEP IPP and FCM,
+  SSG-supplied other permanent income, and the INE-derived capacity tier; Mage validates
+  the axes and archetype, resolves actor_id via cl-ocha-ab, and atomically removes both
+  retired SINIM rows and prior OEF profile rows before insert. The v4 input is programme-use
+  only and is not cleared for commercial use.
 executor_config: {}
 executor_count: 1
 executor_type: null
@@ -214,6 +216,6 @@ variables:
   catalog_index_path: /home/src/dataset-review/catalog/index.yaml
   locode_release_version: '2021'
   source_bucket: test-global-api
-  source_release_version: v3
+  source_release_version: v4
 variables_dir: /home/src/mage_data/cc-mage
 widgets: []

@@ -24,8 +24,8 @@ CATALOG_INDEX_URL = (
     "CityCatalyst-global-data/develop/dataset-review/catalog/index.yaml"
 )
 
-# The joined v3 profile is an OEF derived release with two upstream source reviews. A single
-# consolidated identity keeps each modelled row honest: it is not SIM/BEP alone and no longer SINIM.
+# The joined profile is an OEF derived release with multiple upstream source reviews. A single
+# consolidated identity keeps each modelled row honest: it is not any one upstream source alone.
 SOURCE_IDS = ["cl-city-action-fundability"]
 
 
