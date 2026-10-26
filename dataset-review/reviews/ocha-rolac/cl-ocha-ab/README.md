@@ -12,6 +12,12 @@
 - **Admin 2:** 56 provinces  
 - **Admin 3:** 345 comunas
 
+The release also carries a 346-row CUT-to-LOCODE crosswalk at
+`releases/2021/data/chile_comunas.csv`. The pipeline-ready spatial artifacts
+contain the 345 OCHA polygons joined to that crosswalk. Antártica (`CL12202`) is
+the sole crosswalk row without an OCHA 2021 polygon and is not fabricated in the
+spatial output.
+
 Formats: Shapefile (SHP), GeoJSON. Sample: GeoPackage. Last valid for humanitarian use: Oct 2021.
 
 ## Current approved release
