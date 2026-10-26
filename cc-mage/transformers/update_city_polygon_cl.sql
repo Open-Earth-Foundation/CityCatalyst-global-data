@@ -23,14 +23,14 @@ INSERT INTO modelled.city_polygon (
     release_id
 )
 SELECT
-    ST_GeoHash(ST_Centroid(ST_GeomFromText(s.wkt_geom)), 20)    AS city_id,
+    ST_GeoHash(ST_Centroid(ST_GeomFromText(s.wkt_geom, 4326)), 20) AS city_id,
     s.city_name,
     s.city_type,
     s.country_code,
     s.region_code,
     s.locode,
     s.osm_id::int,
-    ST_GeomFromText(s.wkt_geom)                                 AS geometry,
+    ST_GeomFromText(s.wkt_geom, 4326)                           AS geometry,
     s.lat,
     s.lon,
     s.bbox_north,
