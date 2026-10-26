@@ -15,7 +15,7 @@ It is an OEF model and curation, not a new external source: it unions and scores
 | Layer | Source review(s) | Role |
 | --- | --- | --- |
 | Action (what) | `reviews/cl-ssg/cl-ssg-projects` (actions catalog, 102) | capital intensity; formulation demand; self-financeability |
-| City (who) | `reviews/cl-subdere/cl-subdere-sim-bep` (autonomy, from v3) + `reviews/oef/cl-municipal-capacity-tier` (capacity, from v3) | fiscal autonomy and delivery capacity (the 2×2) |
+| City (who) | `reviews/cl-subdere/cl-subdere-sim-bep` (autonomy, from v3) + `reviews/cl-ssg/cl-ssg-municipal-income` (other permanent income, v4) + `reviews/oef/cl-municipal-capacity-tier` (capacity, from v3) | fiscal autonomy and delivery capacity (the 2×2) |
 | Finance (route) | the ten `cl-*/cl-*-fondos` supply reviews (harmonized here) | usable, municipality-eligible funds + access pathway |
 | Projects (evidence) | `reviews/cl-ssg/cl-ssg-projects`; CONAF / FPA / GCF awards | calibration, precedent, benchmarks |
 
@@ -52,15 +52,24 @@ cl-city-action-fundability/
     ├── data/
     │   └── city_finance_profile.csv         345 comunas × capacity, autonomy, archetype + provenance
     └── sample/                       the three consultant source files (gitignored)
+└── releases/v4/                     research: SSG's review of the city profile applied, not loaded
+    ├── 01_city_profile_v4.ipynb      add other permanent income to autonomy, label FCM position, compare with v3
+    ├── review.md                     release epistemic contract
+    ├── data/
+    │   ├── income_classification.csv        input: 65 budget codes as IPP / other permanent income / FCM / excluded, with reasons
+    │   └── city_finance_profile.csv         345 comunas × v3 columns + IPP, OI, FCM, FCM position
+    └── tests/                        post-load expectations if v4 is loaded
 ```
 
-Neither city axis is defined in this folder. Capacity lives in `reviews/oef/cl-municipal-capacity-tier` and derives from INE Censo 2024 under CC BY-SA 4.0. Autonomy lives in `reviews/cl-subdere/cl-subdere-sim-bep` and is recalculated from SUBDERE's public budget-execution workbook, with CC0 applied by Chile's national open-data default. Release v3 consumes both tables unchanged and asserts an exact 345-CUT join.
+Neither city axis is defined in this folder. Capacity lives in `reviews/oef/cl-municipal-capacity-tier` and derives from INE Censo 2024 under CC BY-SA 4.0. Autonomy lives in `reviews/cl-subdere/cl-subdere-sim-bep` and is recalculated from SUBDERE's public budget-execution workbook, with CC0 applied by Chile's national open-data default. Release v3 consumes both tables unchanged and asserts an exact 345-CUT join. Release v4 adds other permanent income from `reviews/cl-ssg/cl-ssg-municipal-income`; which budget lines count is the one city-side definition held here (`releases/v4/data/income_classification.csv`).
 
 The exploratory fixtures used to *design* the schema — the SQLite `finance_preview.db`, the `finance_db/` CSVs, the precomputed `fundability_scored.csv`, the preview example JSONs and `build_*` scripts — were removed once the real tables landed (the implementation supersedes them). Refresh of the analysis: re-run `01` after any source release, then `02`.
 
 ## Provenance & licence
 
 Authority lives upstream; this product inherits the **most restrictive upstream licence** and re-grants nothing. The **v3 city-profile inputs permit commercial use**: capacity inherits INE's CC BY-SA 4.0 attribution/share-alike conditions, while SIM/BEP autonomy uses CC0 under Chile's government-wide open-data default (the workbook does not print a resource-specific licence). This clears the city layer, not automatically the whole fundability product: finance sources retain their own terms, including CORFO `CC BY-NC-ND`. Check every upstream review before redistributing a combined output.
+
+**The v4 city profile is not commercially reusable.** Its other-permanent-income input is SSG-supplied working data whose line items most likely come from SINIM. It is usable within the SSG / OpenEarth programme until that source is cleared.
 
 The v3 release contains no SINIM-derived city data. In the configured database used for verification, Mage run 170 replaced the retired SINIM-backed rows with the OEF v3 release and confirmed that no retired-source rows remained.
 
@@ -75,6 +84,8 @@ The v3 release contains no SINIM-derived city data. In the configured database u
 This folder is now the analysis + methodology record behind that implementation. The principal remaining methodology caveat is the curated `access_tier` that will replace the current "direct" substring heuristic (see `methodology.md` → *Status and what's next*).
 
 **Release v3 remains unpromoted research, but its replacement pipeline has been run successfully in the configured environment.** It replaces both city axes without iterating the release number: capacity comes from `cl-municipal-capacity-tier`, and autonomy comes from `cl-subdere-sim-bep`. Their 345 CUT codes join exactly, with no nulls. Relative to the former city-profile output, four comunas change archetype; Padre Hurtado's large source disagreement and Natales' threshold-edge result still require adjudication. The T4 band (0.10 provisional) and T1 evidence gate also remain open. Mage run 170 loaded 341 locode-resolved v3 rows and atomically removed all retired SINIM-backed database rows. No database schema migration is required. Details in `releases/v3/review.md`.
+
+**Release v4 is research and is not loaded.** It applies SSG's review of the city profile (MEED consolidated methodology, annex section 5). Autonomy now counts other permanent income alongside IPP, with education and health transfers still left out, and each comuna is labelled a net contributor to or net recipient of the FCM. Median autonomy rises by 0.013 and only Natales changes archetype, which settles its v3 threshold edge. SSG's proposal to judge fund access without regard to capacity is not adopted. Before v4 can replace v3, its other-income source needs clearing for commercial use and SSG needs to confirm the code-level classification. Details in `releases/v4/review.md`.
 
 **Release v2 is research and is not in production.** It rebuilds the action matching so that how specifically a fund matches an action follows from how specific the fund is, which makes 180 of its 200 links derived rather than asserted and shrinks the hand-maintained judgement to 21 rows. Coverage, city eligibility and current availability are three separate gates. Because every opportunity currently fails the availability gate, v2 ships zero displayable links on purpose; v1 remains what the modelled tables and the finance API serve. Its headline finding is that no action requiring municipal capital is without a route, and that 48 of 102 actions are funded in Chile but not for the city. Details in `releases/v2/review.md`; the contract in `methodology.md` → *Action-to-opportunity matching*.
 

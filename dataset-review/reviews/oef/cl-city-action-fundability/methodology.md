@@ -30,7 +30,7 @@ Read it as a **"how hard, and where to look"** map, not a funding guarantee.
 | Layer | Plain meaning | Where it comes from |
 |---|---|---|
 | **Action** — *what* is being done | how much **money** it needs and how much **preparation** it takes | the climate-action library (C40 / IPCC / I-Care) |
-| **City** — *who* would do it | how much **own money** and **delivery capacity** the city has | SUBDERE SIM/BEP income indicators + INE census-derived capacity tier |
+| **City** — *who* would do it | how much **own money** and **delivery capacity** the city has | SUBDERE SIM/BEP income indicators (plus SSG budget line items from v4) + INE census-derived capacity tier |
 | **Finance** — *the money* available | which catalogued **funds** match the action and whether the city can apply | the harmonised Chile finance inventory (10 public + firm-facing sources) |
 | **Precedent** — *the evidence* | how many **comparable projects** have already been funded | BIP/SNI, plus CONAF, FPA and GCF award records |
 
@@ -58,7 +58,9 @@ Two strengths, each on a 0–1 scale, kept separate because they measure differe
 
 These two are not fully independent: capacity is partly what *unlocks* the finance. A fund existing is not the same as a city being able to reach it — many channels (e.g. the public-investment SNI/BIP route) are accessible only to a city with the staff to formulate and pass them. So readiness is, in part, the key to the money rather than a parallel, separate thing — which is why the score combines them rather than reporting two unrelated numbers.
 
-*The detail:* autonomy = `1 − fcm_dependency` (FCM received ÷ permanent own income including FCM), from SUBDERE's 2025 SIM/BEP income workbook on the cash-received (*percibido*) basis, for all 345 comunas. The release recalculates the ratio from the workbook's components rather than copying its displayed percentage.
+*The detail:* autonomy = own money ÷ (own money + FCM received), on the cash-received (*percibido*) basis, for all 345 comunas. Own money is the city's permanent own income (IPP) plus its **other permanent income** (OI): recurring income that is neither a municipal tax or fee nor the FCM, such as regular SUBDERE and Treasury transfers. IPP and FCM come from SUBDERE's 2025 SIM/BEP income workbook. OI comes from SSG's budget line items, and `releases/v4/data/income_classification.csv` decides which lines count. Transfers tied to education, health and other services the municipality runs for someone else never count.
+
+Each city is also labelled a **net contributor** to the FCM (pays in more than it gets back) or a **net recipient**. It is a label only: every net contributor already sits in the high-autonomy half, so it changes no route.
 
 Capacity is a **four-tier population band**, not a continuous measure. It reads the MEED *Gobernanza Local* sub-criterion *Capacidad técnica e institucional* on the SUBDERE population tramo the *Viabilidad Efectiva Municipal* rule already uses, rescaled to the 0–1 axis:
 
@@ -72,6 +74,8 @@ Capacity is a **four-tier population band**, not a continuous measure. It reads 
 The classification is not computed here: it is consumed from its own review, `cl-municipal-capacity-tier`, which derives it from **INE 2024 census** population. The T4 band is a provisional fill for a value the source methodology leaves open, and it is consequential — at 0.10 every action type escalates to technical assistance in all 42 T4 comunas. Like the score bands, these are tunable settings, not estimates.
 
 *Why the change (v3):* capacity used to be a percentile blend of two SINIM staff measures; autonomy also read SINIM transfer dependency. Capacity now uses the reviewed population-tramo tier and autonomy uses the equivalent SIM/BEP budget components. This removes SINIM data from the v3 city profile while preserving the model's two axes and threshold logic. The capacity trade remains real: a noisy direct measure has been swapped for a clean but coarse population proxy. Full derivation and caveats live in the two source reviews and the v3 release.
+
+*Why the change (v4):* SSG reviewed the city side of the model (MEED consolidated methodology, annex section 5). They made four points. Leave education and health money out of autonomy: SIM/BEP already does. Measure capacity with the MEED Local Governance tramo instead of SINIM staff data: done in v3. Count other permanent income as own money, and read the FCM as a position (contributor or recipient): added in v4. Judge fund access without regard to capacity: not adopted, see *Status and what's next*. The v4 effect is small. Median autonomy rises by 0.013 and one comuna, Natales, changes archetype. The cost is licence: OI comes from SSG's line items, which most likely come from SINIM, so the v4 city profile is not commercially reusable until that source is cleared. Details in `releases/v4/review.md`.
 
 We also summarise the two into one **city profile** (a quick label), split at the midpoint of each axis:
 
@@ -152,7 +156,7 @@ Same city, same staff — the difference is the *action's* demands meeting the *
 | Layer | Source review(s) |
 |---|---|
 | Action demands | the OpenEarth / SSG climate-action library (`cl-ssg-actions`, served via `action_pathway`) |
-| City axes | autonomy from SUBDERE SIM/BEP (`cl-subdere-sim-bep`); capacity tier from `cl-municipal-capacity-tier`, itself derived from INE census population (`cl-ine-censo`) |
+| City axes | autonomy from SUBDERE SIM/BEP (`cl-subdere-sim-bep`), plus other permanent income from SSG's line items (`cl-ssg-municipal-income`, v4 only); capacity tier from `cl-municipal-capacity-tier`, itself derived from INE census population (`cl-ine-censo`) |
 | Finance | the ten `cl-*` *fondos* supply reviews, harmonised into one fund inventory |
 | Precedent | BIP/SNI projects (`cl-ssg-projects`) plus CONAF, FPA and GCF award records |
 | City identity | comuna → city locode via the `cl-ocha-ab` administrative-boundary lookup |
@@ -223,6 +227,8 @@ The score plugs into HIAP's **Feasibility** pillar as a third leg alongside lega
 
 **The city-profile inputs are being replaced (v3, research).** Capacity uses the MEED population-tramo band and autonomy uses SUBDERE SIM/BEP (see `releases/v3/`). The release artefacts join all 345 comunas without nulls. The Mage pipeline now reads the consolidated v3 artifact and performs an atomic hard replacement, but nothing is loaded until the file is uploaded and the pipeline is run. Before promotion, SSG/OEF still need to adjudicate the T4 band, the T1 evidence gate, Padre Hurtado's source disagreement and the Natales threshold edge.
 
+**SSG's review of the city profile is applied (v4, research).** Autonomy now counts other permanent income, and each city carries its FCM position (see `releases/v4/`). Only Natales changes archetype, which also settles its threshold edge. v4 is not loaded. Before it can replace v3, the OI source needs clearing for commercial use and SSG needs to confirm the code-level list of what counts as other permanent income.
+
 **Action matching is being rebuilt (v2, research).** The v2 release derives the match from the route rather than asserting it pair by pair (see *Action-to-opportunity matching* above), and separates coverage, city eligibility and current availability into three gates. Of 102 actions, 11 are covered by a fund a city can apply to, 18 have a general municipal route, 48 are funded in the territory but not for the city, and 25 have nothing, none of which needs capital. It is not production-approved and has not been loaded into the modelled tables.
 
 **Honest limitations / next steps:**
@@ -232,10 +238,13 @@ The score plugs into HIAP's **Feasibility** pillar as a third leg alongside lega
 3. **Revealed fundability** — mine real award history (what actually got funded, how often, at what size).
 4. **Fill data gaps** — fund amounts (to unlock adequacy), more transport/industry supply.
 5. **Promote the v3 city profile only after its four open data/method decisions are resolved** — the transformer/input replacement and transaction-scoped database cleanup are already implemented and verified; catalog promotion remains pending.
-6. **Decouple fund access from capacity** — the source methodology also proposes evaluating fund access independently of administrative capacity. Held back deliberately: it contradicts the SNI/BIP gate argument in step 4 and overlaps item 1, so it is being handled with the access-tier work rather than alongside the capacity change.
+6. **Fund access stays tied to capacity (decided).** SSG's review proposes judging fund access without regard to the city's administrative capacity. Not adopted: it contradicts the SNI/BIP gate argument in step 4, and it would reshape the route and score for every comuna. If it is revisited, it belongs with the access-tier work in item 1.
+7. **Clear the v4 OI source** — other permanent income comes from SSG's line items, most likely a SINIM export. v4 is not commercially reusable until SSG confirms an open source or SUBDERE publishes the line items.
 
 ---
 
 ## Licence
 
-Inherits the **most restrictive upstream licence** and re-grants nothing. For the **v3 city profile**, commercial use is permitted: the capacity input inherits INE's CC BY-SA 4.0 conditions (credit INE and apply share-alike where required), and the autonomy input uses CC0 under Chile's government-wide open-data default because the public SIM/BEP resource displays no contrary terms. The latter is a default/inferred licence position, not an explicit notice printed in the workbook. Mage run 170 verified replacement in the configured database: 341 OEF v3 rows and zero retired SINIM-source rows. Separately, some finance sources add their own restrictions, including CORFO `CC BY-NC-ND`, so clearing the city layer does **not** make every combined fundability output commercially reusable. *(Not legal advice.)*
+Inherits the **most restrictive upstream licence** and re-grants nothing. For the **v3 city profile**, commercial use is permitted: the capacity input inherits INE's CC BY-SA 4.0 conditions (credit INE and apply share-alike where required), and the autonomy input uses CC0 under Chile's government-wide open-data default because the public SIM/BEP resource displays no contrary terms. The latter is a default/inferred licence position, not an explicit notice printed in the workbook. Mage run 170 verified replacement in the configured database: 341 OEF v3 rows and zero retired SINIM-source rows. Separately, some finance sources add their own restrictions, including CORFO `CC BY-NC-ND`, so clearing the city layer does **not** make every combined fundability output commercially reusable.
+
+The **v4 city profile is not commercially reusable.** Its other-permanent-income input is SSG-supplied working data whose line items most likely come from SINIM (*sin fines comerciales*). It can be used within the SSG / OpenEarth programme. *(Not legal advice.)*
