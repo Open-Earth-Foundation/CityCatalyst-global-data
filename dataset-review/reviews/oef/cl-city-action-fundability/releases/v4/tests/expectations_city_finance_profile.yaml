@@ -32,21 +32,18 @@ invariants:
     - "(capacity >= 0.5) = (city_archetype IN ('Self-sufficient','Delivery-ready'))"
 
 snapshot:
-  # The pipeline's locode lookup drops the same four of the 345 reviewed CUT rows as for v3.
-  row_count: {equals: 341}
+  # The reconciled locode lookup resolves all 345 reviewed CUT rows.
+  row_count: {equals: 345}
   distinct_count:
     source_dataset: 1
   group_counts:
     source_dataset:
-      oef/cl-city-action-fundability: 341
-    # v3's loaded counts with the one v4 change applied: Natales moves from
-    # Delivery-ready to Self-sufficient. The four dropped rows were Well-resourced
-    # or Support-ready in v3 and do not change in v4, so they stay dropped.
+      oef/cl-city-action-fundability: 345
     city_archetype:
-      Support-ready: 149
+      Support-ready: 150
       Delivery-ready: 104
       Self-sufficient: 66
-      Well-resourced: 22
+      Well-resourced: 25
 
 profile:
   categorical: [city_archetype, country_code, source_dataset]

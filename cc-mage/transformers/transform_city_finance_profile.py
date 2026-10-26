@@ -2,8 +2,8 @@
 
 The S3 input already contains the reviewed capacity and autonomy axes. This block does not
 recalculate or impute either value: it validates the 345-comuna release, verifies the existing
-0.5 archetype contract, and resolves actor_id from comuna CUT via cl-ocha-ab. The fixed 2021
-lookup has four comunas without a locode, so 341 queryable city rows are emitted.
+0.5 archetype contract, and resolves actor_id from comuna CUT via cl-ocha-ab. The reconciled
+2021 lookup resolves all 345 comunas.
 """
 
 import pandas as pd
@@ -15,7 +15,7 @@ if "test" not in globals():
 
 SOURCE = "oef/cl-city-action-fundability"
 EXPECTED_INPUT_ROWS = 345
-EXPECTED_OUTPUT_ROWS = 341
+EXPECTED_OUTPUT_ROWS = 345
 PROFILE_COLUMNS = {"comuna_cut", "autonomy", "capacity", "city_archetype"}
 
 OUT_COLS = ["actor_id", "autonomy", "capacity", "city_archetype",

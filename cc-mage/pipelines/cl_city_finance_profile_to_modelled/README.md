@@ -27,20 +27,20 @@ drop_city_finance_profile_staging
 
 ## What it produces
 
-341 city profiles (of 345 comunas; four dropped by the fixed OCHA 2021 locode lookup because they are
-not queryable by the score endpoint). The v4 snapshot after locode resolution is:
+345 city profiles. The reconciled OCHA 2021 locode lookup resolves every reviewed comuna. The v4
+snapshot after locode resolution is:
 
-- Support-ready: 149
+- Support-ready: 150
 - Delivery-ready: 104
 - Self-sufficient: 66
-- Well-resourced: 22
+- Well-resourced: 25
 
 ## Notes / decisions
 
 - **No axis is recomputed in Mage.** The v4 CSV is the reviewed join and the transformer asserts that
   all 345 rows are complete, numeric, in range, unique by CUT, and correctly banded.
 - **actor_id = city locode** via cl-ocha-ab (CL + comuna_cut, padded to 5 digits). actor_id is the API
-  key and NOT NULL, so the 4 comunas without a locode are dropped.
+  key and NOT NULL; the reconciled lookup covers all 345 reviewed comunas.
 - **Identity from the catalog** (`oef/cl-city-action-fundability`, v4), with deterministic
   city_profile_id = MD5(actor_id-release_id).
 - **Hard replacement is explicit and atomic.** The modelled SQL deletes both the retired
