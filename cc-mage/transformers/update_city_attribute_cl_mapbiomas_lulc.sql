@@ -1,3 +1,14 @@
+-- Replace this release as a unit. Because locode is part of the conflict key,
+-- an upsert alone would retain rows keyed by superseded locodes.
+DELETE FROM modelled.city_attribute ca
+USING modelled.dataset_release dr
+JOIN modelled.publisher_datasource pd
+    ON dr.dataset_id = pd.dataset_id
+WHERE ca.release_id = dr.release_id
+  AND ca.datasource = '{{ datasource_name }}'
+  AND pd.datasource_name = '{{ datasource_name }}'
+  AND dr.version_label = '{{ version_label }}';
+
 INSERT INTO modelled.city_attribute (
     city_id,
     locode,
