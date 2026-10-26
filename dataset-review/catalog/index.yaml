@@ -1267,7 +1267,7 @@ datasets:
     name: OpenEarth Foundation (OEF)
     url: https://www.openearth.org/
   description: >
-    The consolidated OEF product for how a Chilean comuna can pay for a climate action (supersedes the former cl-finance-inventory and cl-action-fundability). It unions the ten vetted Chile climate-finance supply reviews into one inventory of 99 verified funding channels, builds an action financing-availability (coverage) indicator on it, and combines four layers (action catalog, municipal autonomy and capacity, the finance inventory, the projects pipeline) into a per (action x comuna) route/effort bucket plus a 0-1 financial_feasibility score with named candidate funds. A coverage and categorisation product, not a funding probability. The v1 model is implemented in production as modelled tables, a read-time score function and the climate-finance API, loaded by cc-mage pipelines; the release entries here stay production_approved false until their release-specific definition-of-done checks pass. Release v2 rebuilds action matching. Release v3 replaces the city layer with SIM/BEP autonomy and an INE-census-derived capacity tier, with no SINIM data in the release artifact.
+    The consolidated OEF product for how a Chilean comuna can pay for a climate action (supersedes the former cl-finance-inventory and cl-action-fundability). It unions the ten vetted Chile climate-finance supply reviews into one inventory of 99 verified funding channels, builds an action financing-availability (coverage) indicator on it, and combines four layers (action catalog, municipal autonomy and capacity, the finance inventory, the projects pipeline) into a per (action x comuna) route/effort bucket plus a 0-1 financial_feasibility score with named candidate funds. A coverage and categorisation product, not a funding probability. The v1 model is implemented in production as modelled tables, a read-time score function and the climate-finance API, loaded by cc-mage pipelines; the release entries here stay production_approved false until their release-specific definition-of-done checks pass. Release v2 rebuilds action matching. Release v3 replaces the city layer with SIM/BEP autonomy and an INE-census-derived capacity tier, with no SINIM data in the release artifact. Release v4 adds other permanent income to autonomy and labels each comuna's FCM position; its SSG-supplied line-item input is not cleared for commercial use.
   coverage:
     geography: country
     countries: [CL]
@@ -1344,7 +1344,7 @@ datasets:
       retrieval_method: derived_join
       api_endpoint: null
       path: "reviews/oef/cl-city-action-fundability/releases/v3"
-      is_latest: true
+      is_latest: false
       production_approved: false
       pipeline_name: cl_city_finance_profile_to_modelled
       pipeline_version: null
@@ -1360,6 +1360,37 @@ datasets:
           attribution/share-alike terms; SIM/BEP autonomy uses CC0 under Chile's government-wide
           open-data default because no resource-specific contrary terms are displayed. This does
           not relicense or clear other fundability artifacts that include restricted finance sources.
+      data_quality:
+        documentation: partial
+        methodology: published_atbd
+        coverage: full
+        granularity: fit_for_purpose
+        freshness: current
+        accessibility: downloadable
+    - version: "v4"
+      version_number: 4
+      source_url: null
+      released_at: null
+      retrieved_at: "2026-10-26"
+      retrieval_method: derived_join
+      api_endpoint: null
+      path: "reviews/oef/cl-city-action-fundability/releases/v4"
+      is_latest: true
+      production_approved: false
+      pipeline_name: cl_city_finance_profile_to_modelled
+      pipeline_version: null
+      methodology_url: reviews/oef/cl-city-action-fundability/methodology.md
+      internal_review_url: reviews/oef/cl-city-action-fundability/releases/v4/review.md
+      license:
+        id: license-verification-pending
+        name: "SSG programme working data (upstream terms unresolved)"
+        url: null
+        commercial_use: false
+        note: >
+          Applies to the v4 city-profile artifact. Capacity and the SIM/BEP IPP and FCM
+          components retain the v3 terms, but other permanent income comes from SSG-supplied
+          line items most likely exported from SINIM. Treat v4 as programme-use only and not
+          commercially reusable until SSG confirms an open upstream source or written clearance.
       data_quality:
         documentation: partial
         methodology: published_atbd
@@ -1813,6 +1844,60 @@ datasets:
         granularity: null
         freshness: null
         accessibility: null
+
+- id: cl-ssg-municipal-income
+  name: SSG — Chile municipal income line items
+  dataset_url: null
+  publisher:
+    id: cl-ssg
+    name: Sustainability Solutions Group (SSG)
+    url: https://www.ssg.coop/
+  description: >
+    Comuna-level 2025 municipal income supplied by SSG for the MEED programme,
+    with one column per national municipal budget code. It provides the line-item
+    detail needed to separate other permanent income from IPP, FCM and excluded
+    income in the v4 Chile city finance profile. The upstream source is not stated
+    in the workbook and is most likely SINIM.
+  coverage:
+    geography: country
+    countries: [CL]
+    spatial_levels: [comuna]
+  themes:
+    - socioeconomics
+    - climate_finance
+  update_frequency: manual_refresh
+  priority: medium
+  releases:
+    - version: "2025"
+      version_number: 1
+      source_url: null
+      released_at: null
+      retrieved_at: "2026-10-26"
+      retrieval_method: manual_file_transfer
+      api_endpoint: null
+      path: "reviews/cl-ssg/cl-ssg-municipal-income/releases/2025"
+      is_latest: true
+      production_approved: false
+      pipeline_name: null
+      pipeline_version: null
+      methodology_url: null
+      internal_review_url: reviews/cl-ssg/cl-ssg-municipal-income/releases/2025/review.md
+      license:
+        id: license-verification-pending
+        name: "SSG programme working data (upstream terms unresolved)"
+        url: null
+        commercial_use: false
+        note: >
+          No licence travels with the SSG workbook and its upstream source is most likely
+          SINIM, whose portal terms exclude commercial use. Treat the extracted line items
+          as programme-use only until SSG confirms an open source or written clearance.
+      data_quality:
+        documentation: partial
+        methodology: null
+        coverage: full
+        granularity: fit_for_purpose
+        freshness: current
+        accessibility: internal_file
 
 - id: cl-ssg-actions
   name: Chile SSG Consolidated Climate Actions

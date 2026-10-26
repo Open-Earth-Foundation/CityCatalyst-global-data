@@ -1,8 +1,8 @@
 triggers:
-- description: API trigger for the commercial-use-safe v3 city-profile hard replacement
+- description: API trigger for the programme-use-only v4 city-profile hard replacement
   envs: []
   last_enabled_at: 2026-08-31 12:43:38.235193+00:00
-  name: cl_city_finance_profile_to_modelled_v3_api
+  name: cl_city_finance_profile_to_modelled_v4_api
   pipeline_uuid: cl_city_finance_profile_to_modelled
   schedule_interval: null
   schedule_type: api
@@ -17,4 +17,4 @@ triggers:
     catalog_index_path: /home/src/dataset-review/catalog/index.yaml
     locode_release_version: '2021'
     source_bucket: test-global-api
-    source_release_version: v3
+    source_release_version: v4

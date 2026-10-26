@@ -1,9 +1,10 @@
-"""OEF Chile city-action fundability v3 city profile: bare S3 read.
+"""OEF Chile city-action fundability reviewed city profile: bare S3 read.
 
-The uploaded CSV is the reviewed 345-comuna join of the INE-derived capacity tier and
-SUBDERE SIM/BEP autonomy. Shaping here is intentionally limited to source tagging;
+The uploaded CSV is the reviewed 345-comuna join of fiscal autonomy and the
+INE-derived capacity tier. Shaping here is intentionally limited to source tagging;
 locode resolution and the modelled-table projection live in
-transformers/transform_city_finance_profile.py.
+transformers/transform_city_finance_profile.py. The configured pipeline release
+version determines which reviewed artifact is loaded.
 """
 from os import path
 

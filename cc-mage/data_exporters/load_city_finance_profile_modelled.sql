@@ -1,5 +1,5 @@
 -- Atomically replace the CITY layer in modelled.city_finance_profile.
--- The explicit retired-source delete is required because v3 changes identity from
+-- The explicit retired-source delete is required because the consolidated profile changes identity from
 -- cl-subdere/cl-subdere-sinim to oef/cl-city-action-fundability. A release-scoped delete of only
 -- the new catalog identity would leave the restricted-source rows behind.
 -- ids: release_id = MD5(datasource-dataset-version), city_profile_id = MD5(actor_id-release_id).
@@ -62,10 +62,10 @@ BEGIN
     WHERE source_dataset = 'cl-subdere/cl-subdere-sinim';
 
     IF expected_rows = 0 THEN
-        RAISE EXCEPTION 'v3 city-profile staging is empty or has the wrong source identity';
+        RAISE EXCEPTION 'city-profile staging is empty or has the wrong source identity';
     END IF;
     IF inserted_rows <> expected_rows THEN
-        RAISE EXCEPTION 'v3 city-profile row mismatch: expected %, inserted %',
+        RAISE EXCEPTION 'city-profile row mismatch: expected %, inserted %',
             expected_rows, inserted_rows;
     END IF;
     IF retired_rows <> 0 THEN

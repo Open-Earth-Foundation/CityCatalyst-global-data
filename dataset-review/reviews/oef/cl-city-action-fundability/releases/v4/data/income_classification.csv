@@ -1,0 +1,66 @@
+budget_code,budget_label,income_class,reason
+115.03.01.001.001.000,Patentes municipales - de beneficio municipal,ipp,In SUBDERE's IPP definition (reproduces SIM/BEP IPP)
+115.03.01.002.000.000,Derechos de Aseo,ipp,In SUBDERE's IPP definition (reproduces SIM/BEP IPP)
+115.03.01.003.000.000,Otros derechos,ipp,In SUBDERE's IPP definition (reproduces SIM/BEP IPP)
+115.03.01.004.000.000,Derechos de Explotación,ipp,In SUBDERE's IPP definition (reproduces SIM/BEP IPP)
+115.03.02.001.001.000,Permisos de circulación - de beneficio municipal,ipp,In SUBDERE's IPP definition (reproduces SIM/BEP IPP)
+115.03.02.002.000.000,Licencias de Conducir y similares,ipp,In SUBDERE's IPP definition (reproduces SIM/BEP IPP)
+115.03.03.000.000.000,Participacion en impuesto territorial (art. 37 DL 3.063),ipp,In SUBDERE's IPP definition (reproduces SIM/BEP IPP)
+115.05.03.007.001.000,Patentes Acuícolas Ley Nº 20.033 Art. 8º,ipp,In SUBDERE's IPP definition (reproduces SIM/BEP IPP)
+115.06.00.000.000.000,Rentas de la propiedad,ipp,In SUBDERE's IPP definition (reproduces SIM/BEP IPP)
+115.08.02.001.000.000,Multas - de beneficio municipal,ipp,In SUBDERE's IPP definition (reproduces SIM/BEP IPP)
+115.08.02.003.000.000,Multas Ley de Alcoholes - De Beneficio Municipal,ipp,In SUBDERE's IPP definition (reproduces SIM/BEP IPP)
+115.08.02.005.000.000,Reg. de Multas de Tráns. no Pagadas - De Beneficio Municipal,ipp,In SUBDERE's IPP definition (reproduces SIM/BEP IPP)
+115.08.02.008.000.000,Multas e Intereses,ipp,In SUBDERE's IPP definition (reproduces SIM/BEP IPP)
+115.13.03.005.001.000,Patentes mineras ley nº 19.143,ipp,In SUBDERE's IPP definition (reproduces SIM/BEP IPP)
+115.13.03.005.002.000,Casinos de Juegos Ley Nº 19.995,ipp,In SUBDERE's IPP definition (reproduces SIM/BEP IPP)
+115.03.01.999.000.000,Patentes y tasas por derechos - otras,oi_permanent,Recurring own fee outside SUBDERE IPP
+115.03.02.999.000.000,Permisos y licencias - otros,oi_permanent,Recurring own fee outside SUBDERE IPP
+115.03.99.000.000.000,Otros tributos,oi_permanent,Recurring own tax outside SUBDERE IPP
+115.05.03.002.000.000,Transferencias corrientes - de la Subsecretaría de Desarrollo Regional y Administrativo,oi_permanent,"Recurring SUBDERE current transfer, not tied to a transferred service"
+115.05.03.007.002.000,Aporte Fiscal Ley Nº 20.198 Art. 7º,oi_permanent,Recurring Treasury current transfer
+115.05.03.007.003.000,Aporte extraordinario ley nº 20.362,oi_permanent,Recurring Treasury current transfer
+115.05.03.007.999.000,Otras transferencias corrientes del Tesoro Público,oi_permanent,Recurring Treasury current transfer
+115.13.03.005.003.000,Patentes geotérmicas ley nº 19.657,oi_permanent,"Recurring licence income, same kind as mining patents in IPP"
+115.08.03.000.000.000,Participación del Fondo Común Municipal (art. 38 DL 3.063),fcm,Fondo Común Municipal received
+115.03.01.001.002.000,Patentes municipales - de beneficio Fondo Común Municipal,excluded,"Collected for the FCM, not kept by the municipality"
+115.03.02.001.002.000,Permisos de circulación - de beneficio Fondo Común Municipal,excluded,"Collected for the FCM, not kept by the municipality"
+115.05.01.000.000.000,Transferencias corrientes - del sector privado,excluded,"Private donations, not recurring"
+115.05.03.003.000.000,Transferencias corrientes - de la Subsecretaría de Educación,excluded,"Education transfer, tied to a transferred service"
+115.05.03.004.000.000,Transferencias corrientes - de la Junta Nacional de Jardínes Infantiles,excluded,"Childcare (JUNJI) transfer, tied to a transferred service"
+115.05.03.005.000.000,Transferencias corrientes - del Servicio Nacional de Menores,excluded,"Child protection transfer, tied to a transferred service"
+115.05.03.006.000.000,Transferencias corrientes - del Servicio de Salud,excluded,"Health transfer, tied to a transferred service"
+115.05.03.007.004.000,Bonificación Adicional Ley de Incentivo al Retiro,excluded,"Retirement bonus funding, passed through to staff"
+115.05.03.008.000.000,Transferencias corrientes - de gobierno regional,excluded,Regional government subsidy for named activities
+115.05.03.009.000.000,Transferencias corrientes - de la Dirección de Educación Pública,excluded,"Education transfer, tied to a transferred service"
+115.05.03.099.000.000,Transferencias corrientes - de otras entidades públicas,excluded,"Agreement-based transfer, tied to a specific use"
+115.05.03.100.000.000,Transferencias corrientes - de otras municipalidades,excluded,"Transfer from other municipalities, tied to a specific use"
+115.05.03.101.000.000,Transferencias corrientes - de la Municipalidad a Servicios Incorporados a su Gestión,excluded,Internal transfer to incorporated services
+115.05.04.000.000.000,Transferencias corrientes - de empresas publicas no financ.,excluded,"Public-company transfer, not recurring"
+115.05.05.000.000.000,Transferencias corrientes - de empresas publicas financieras,excluded,"Public-company transfer, not recurring"
+115.05.06.000.000.000,Transferencias corrientes - de gobiernos extranjeros,excluded,"Foreign donation, not recurring"
+115.05.07.000.000.000,Transferencias corrientes - de organismos internacionales,excluded,"International-organisation transfer, not recurring"
+115.07.00.000.000.000,Ingresos de operación,excluded,"Gross sales that pay for the service sold, not spare money (e.g. Maipú's water utility)"
+115.08.01.000.000.000,Recuperaciones y reembolsos por licencias medicas,excluded,"Sick-leave reimbursement, offsets a salary cost"
+115.08.02.002.000.000,Multas - de beneficio fondo común municipal,excluded,Fines collected for the FCM
+115.08.02.004.000.000,Multas Ley de Alcoholes - De Beneficio Servicios de Salud,excluded,Fines collected for the health service
+115.08.02.006.000.000,Reg. de Multas de Tráns. no Pagadas - De Beneficio Otras Municipalidades,excluded,Fines collected for other municipalities
+115.08.02.007.000.000,Multas Juzgado de Policía Local - De Beneficio Otras Municipalidades,excluded,Fines collected for other municipalities
+115.08.02.009.000.000,Registro de Multas de Pasajeros Infractores de Beneficio Otras Municipalidades,excluded,Fines collected for other municipalities
+115.08.04.000.000.000,Fondos de terceros,excluded,"Third-party funds held, not municipal income"
+115.08.99.000.000.000,Otros ingresos corrientes - otros,excluded,"Refunds and recovered overpayments, not recurring"
+115.10.00.000.000.000,Venta de activos no financieros,excluded,"Asset sales, one-off"
+115.11.00.000.000.000,Venta de activos financieros,excluded,"Financial asset sales, one-off"
+115.12.00.000.000.000,Recuperacion de prestamos,excluded,"Loan recoveries, one-off"
+115.13.01.000.000.000,Transferencias de capital - del sector privado,excluded,Capital transfer for a specific project
+115.13.03.002.000.000,Transferencias de capital - de la Subsecretaría de Desarrollo Regional y Administrativo,excluded,"Capital transfer for a specific project (PMU, PMB)"
+115.13.03.004.000.000,Transferencias de capital - de la Subsecretaría de Educación,excluded,Capital transfer for a specific project
+115.13.03.005.999.000,Otras transferencias para gastos de capital del Tesoro Público,excluded,Capital transfer for a specific project
+115.13.03.006.000.000,Transferencias de capital - de la Junta Nacional de Jardines Infantiles,excluded,Capital transfer for a specific project
+115.13.03.007.000.000,Transferencias de capital - de la Dirección de Educación Pública,excluded,Capital transfer for a specific project
+115.13.03.008.000.000,Transferencias de capital - de gobierno regional,excluded,"Capital transfer for a specific project (FNDR, FRIL)"
+115.13.03.099.000.000,Transferencias de capital - de otras entidades públicas,excluded,Capital transfer for a specific project
+115.13.04.000.000.000,Transferencias de capital - de empresas públicas no financieras,excluded,Capital transfer for a specific project
+115.13.06.000.000.000,Transferencias de capital - de gobiernos extranjeros,excluded,"Capital donation, not recurring"
+115.14.00.000.000.000,Endeudamiento,excluded,Borrowing
+115.15.00.000.000.000,Saldo inicial de caja,excluded,Opening cash balance

@@ -31,6 +31,7 @@ collections:
       - id: cl-ssg-emissions
       - id: cl-ssg-finance
       - id: cl-ssg-legal-signals
+      - id: cl-ssg-municipal-income
       - id: cl-ssg-policy-documents
       - id: cl-ssg-projects
       - id: cl-subdere-fondos
