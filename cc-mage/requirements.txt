@@ -1,5 +1,6 @@
 #osmnx==1.9.3
 cython 
+duckdb==1.4.3
 numpy 
 pandas==2.2.3
 pypdf
