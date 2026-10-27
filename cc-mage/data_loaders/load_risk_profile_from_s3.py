@@ -5,6 +5,7 @@ from os import path
 import duckdb
 from mage_ai.io.config import ConfigFileLoader, ConfigKey
 from mage_ai.settings.repo import get_repo_path
+from pandas import DataFrame
 
 if "data_loader" not in globals():
     from mage_ai.data_preparation.decorators import data_loader
@@ -179,10 +180,13 @@ def load_from_s3_bucket(*args, **kwargs):
         f"Staged {row_count} Adapta Brasil risk profile rows from {s3_uri} "
         "using DuckDB PostgreSQL binary COPY."
     )
-    return {"row_count": row_count, "source": s3_uri}
+    return DataFrame([{"row_count": row_count, "source": s3_uri}])
 
 
 @test
 def test_output(output, *args) -> None:
     assert output is not None, "The output is undefined"
-    assert output["row_count"] > 0, "No Adapta Brasil risk profile rows were staged"
+    assert not output.empty, "The output summary is empty"
+    assert output["row_count"].iloc[0] > 0, (
+        "No Adapta Brasil risk profile rows were staged"
+    )
