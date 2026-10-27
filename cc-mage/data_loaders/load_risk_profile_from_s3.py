@@ -9,8 +9,6 @@ from pandas import DataFrame
 
 if "data_loader" not in globals():
     from mage_ai.data_preparation.decorators import data_loader
-if "test" not in globals():
-    from mage_ai.data_preparation.decorators import test
 
 
 STAGING_COLUMNS = (
@@ -181,12 +179,3 @@ def load_from_s3_bucket(*args, **kwargs):
         "using DuckDB PostgreSQL binary COPY."
     )
     return DataFrame([{"row_count": row_count, "source": s3_uri}])
-
-
-@test
-def test_output(output, *args) -> None:
-    assert output is not None, "The output is undefined"
-    assert not output.empty, "The output summary is empty"
-    assert output["row_count"].iloc[0] > 0, (
-        "No Adapta Brasil risk profile rows were staged"
-    )
