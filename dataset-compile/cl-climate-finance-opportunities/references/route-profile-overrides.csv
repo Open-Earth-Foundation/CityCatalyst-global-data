@@ -1,0 +1,6 @@
+program_name,field,value,basis
+Comuna Energética,funds_what,preparation,"Verified programme page describes municipal energy planning, technical and financial support and access to financing instruments, not a capital call."
+Asistencia Técnica para Municipios en Gestión Energética Local,funds_what,preparation,Instrument is advisory support to municipalities.
+Renueva tu Colectivo (Programa de Renovación de Taxis Colectivos),funds_what,equipment,Vehicle renewal subsidy buys a vehicle.
+"Fondo de Conservación, Recuperación y Manejo Sustentable del Bosque Nativo (Ley 20.283)",funds_what,practice,Per-hectare reimbursement for landowner management practice rather than an asset purchase.
+Pavimentación Participativa,themes_norm,"[""transportation""]","Programme name and purpose state paving; the seed's cross_sector tag is not supported by the source."

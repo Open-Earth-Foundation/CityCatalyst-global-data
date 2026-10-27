@@ -1,0 +1,43 @@
+# Machine-readable search criteria. Parameterizes the screening step.
+# Field-ownership rule: anything a screening check could read lives HERE;
+# intent, context, and lifecycle live in need.md.
+
+need: 2026-06-action-reduction-potential
+
+sector: all GPC mitigation sectors
+themes: [mitigation, abatement_potential]
+
+action_taxonomy:
+  framework: ClimateView TEF transition elements
+  catalog_ref: climateview-transition-elements
+  mapping: direct or via crosswalk
+
+geography:
+  countries: [CL, BR]
+  required_level: none      # generic/global per-action estimates acceptable
+  bonus: CL/BR or LATAM context is a ranking factor, not a filter
+
+data_requirements:
+  must_have:
+    - reduction potential per action from a single internally consistent methodology
+    - coverage broad enough to rank across sectors (not one sector only)
+  nice_to_have:
+    - cost-effectiveness ($/tCO2e) for MACC-style ranking
+    - uncertainty ranges or confidence tiers
+  metric_form: any           # tCO2e | % vs baseline | qualitative tiers | $/tCO2e
+  temporal: current estimates; update cadence unimportant
+
+constraints:
+  license:
+    preferred: open license, public data
+    acceptable: paid/commercial worth reviewing — domain is greenfield
+    disqualifying: null
+  access:
+    preferred: API or bulk download
+    acceptable: manual download, publisher contact
+    disqualifying: null
+
+screening_guidance: >
+  Used for ORDINAL ranking only. Wide uncertainty acceptable if rank-stable.
+  Internal consistency across actions outweighs absolute accuracy; avoid
+  candidates requiring cross-source stitching of potentials.

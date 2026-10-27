@@ -1,0 +1,140 @@
+# year=2024 concurso_n=XXVII  schema=linea (8 fields: folio|proyecto|rut|org|linea|comuna|monto|nota)
+=== CATEGORY: PSC ===
+85697 | Timar vive y crece en armonía con el medio ambiente | 65788130-9 | Club De Adulto Mayor Auki Tatas | Valoración y conservación de la biodiversidad | Camarones | $6.000.000 | 2,77
+85679 | Mi Planeta, Mi responsabilidad | 65145008-K | Corporación Educacional Patricia Espinoza Cavieres / Colegio North American College | Economía circular y gestión de residuos | Arica | $6.000.000 | 2,75
+86123 | SolarDES | 65033319-5 | Corporación de Desarrollo Social y Educacional Leonardo Da Vinci | Eficiencia energética | Arica | $6.000.000 | 2,75
+85667 | Recuperación de espacio para la construcción de Invernadero y Educación Ambiental | 65242370-1 | Club Deportivo Cultural Liceo 1 | Cambio climático y descontaminación ambiental | Arica | $6.000.000 | 2,70
+85261 | Miradores de la Niebla: Valorización y Conservación de la Biodiversidad en los Micro ecosistemas de Niebla de Alto Hospicio | 65163507-1 | Asociación Brigada de Voluntarios por la Cultura el Turismo y Patrimonio de Alto Hospicio | Valoración y conservación de la biodiversidad | Alto Hospicio | $6.000.000 | 2,84
+84685 | Iluminando el conocimiento con la energía del sol | 65189117-5 | Centro Social Cultural Deportivo Pedagógico y Medio Ambiente Huellas en el Desierto | Eficiencia energética | Pozo Almonte | $6.000.000 | 2,64
+86348 | Conservación de recursos pesqueros en caleta Chanavaya | 74258700-2 | S.T.I. de Buzos Mariscadores, Pescadores Artesanales y Ayudantes de Caleta Chanavaya | Valoración y conservación de la biodiversidad | Iquique | $6.000.000 | 2,50
+85147 | Educación ambiental y acción climática a través del desarrollo de huertos comunitarios | 65209718-9 | Fundación Verdical | Cambio climático y descontaminación ambiental | Antofagasta | $6.000.000 | 2,73
+85896 | Plumas y cantos en el vecindario: aves urbanas de Antofagasta | 65204735-1 | Fundación Inteligencia Naturalista | Valoración y conservación de la biodiversidad | Antofagasta | $6.000.000 | 2,55
+85914 | Educacion ambiental en energias renovables no convencionales para la comunidad agricola Los Loros | 65780130-5 | Asociación gremial pequeños quinteros agropecuarios Los Loros | Eficiencia energética | Taltal | $6.000.000 | 2,55
+86070 | El aire se defiende: Educación ambiental sobre calidad del aire en la comuna de Calama | 65111307-5 | Agrupación por la defensa del Rio Loa y la madre tierra Patha Hoiri | Cambio climático y descontaminación ambiental | Calama | $6.000.000 | 2,35
+84911 | Taller Reconéctate con lo natural | 65219495-8 | Fundación Esperanza y Protección Animal | Valoración y conservación de la biodiversidad | Iquique | $6.000.000 | 2,48
+85018 | Campaña de limpieza y sensibilización para la conservación del borde costero en caleta Caramucho: Segunda etapa | 65148608-4 | Sindicato de Buzos y Recolectores de Orilla Caramucho N3 | Economía circular y gestión de residuos | Iquique | $6.000.000 | 2,38
+85567 | Cápsula Azul, el Valor de Nuestra Biodiversidad | 65077799-9 | ONG Norte Alegre | Valoración y conservación de la biodiversidad | Iquique | $6.000.000 | 2,37
+85059 | Banco de Semillas - Laboratorio para especies nativas y endémicas de la Región de Coquimbo | 65187306-1 | Fundación Círculo Remolino | Valoración y conservación de la biodiversidad | La Serena | $6.000.000 | 2,96
+85291 | Muestra de técnicas en ecodestrezas para disminuir el consumo de agua en Peñuelas | 65221758-3 | Junta de Vecinos Los Jardines de Peñuelas | Ecotecnias hídricas | Coquimbo | $6.000.000 | 2,78
+84820 | Compostaje y Huertas, una Asociación Virtuosa | 73891000-1 | Junta de Vecinos Libertad N5 | Economía circular y gestión de residuos | Vallenar | $6.000.000 | 2,97
+85341 | Capacitaciones de Manejo de Residuos Sólidos Domiciliarios para Organizaciones y Juntas de Vecinos | 74073400-8 | Junta de Vecinos N°12 Las Colinas de La Comuna de Huasco | Economía circular y gestión de residuos | Huasco | $6.000.000 | 2,88
+84611 | Naturalistas jóvenes: Cuadernos de Campo para la Biodiversidad del Huasco | 65230775-2 | Fundación Guanaco Negro | Valoración y conservación de la biodiversidad | Vallenar | $6.000.000 | 2,86
+86203 | Iniciando la gestión de residuos biodegradables, educación ambiental y comunidad | 73540800-3 | Junta de vecinos Valle del Huasco de Villa el Edén | Economía circular y gestión de residuos | Vallenar | $6.000.000 | 2,80
+85503 | Reciclaje en tú Barrio | 65010850-7 | Junta De Vecinos N°11 Nueva Esperanza | Economía circular y gestión de residuos | Huasco | $6.000.000 | 2,76
+84746 | Eco-Orgánico: Transformando residuos en recursos | 65222561-6 | Casa Escuela Viva CEV | Economía circular y gestión de residuos | El Quisco | $6.000.000 | 2,85
+85395 | Plan de arborización del Barrio Artificio Las Américas | 65208871-6 | Fundación Bosque Esclerófilo | Valoración y conservación de la biodiversidad | Quillota | $6.000.000 | 2,66
+84901 | Reforestación de especies nativas en Parque Pullally | 65136025-0 | Red De Turismo Rural Pullally Las Salinas De Papudo | Valoración y conservación de la biodiversidad | Papudo | $6.000.000 | 2,65
+85955 | Preservando la Fauna Nocturna: protección de los murciélagos de la Región de Valparaíso | 65227103-0 | Asociación Murciélagos de Chile Pinüike | Valoración y conservación de la biodiversidad | La Cruz | $6.000.000 | 2,63
+85198 | Witrapaiñ tukukan: Levantamiento de huerta comunitaria mapuche en el Centro Cultural Antü Newen | 65193212-2 | Centro Cultural Antü Newen | Cambio climático y descontaminación ambiental | Villa Alemana | $6.000.000 | 2,58
+84805 | Un nuevo camino | 75147500-4 | Junta De Vecinos N°11 Jahuelito | Economía circular y gestión de residuos | Santa María | $6.000.000 | 2,57
+85613 | Centro educativo comunitario para la gestión de residuos en la comuna de El Bosque | 65208223-8 | Fundación Cambio Simbiótico | Economía circular y gestión de residuos | Peñaflor | $6.000.000 | 3,00
+86060 | Flora nativa para La Florida | 74294900-1 | Junta de Vecinos Alberto Larraguibel | Valoración y conservación de la biodiversidad | La Florida | $6.000.000 | 3,00
+85884 | Bosqueteros: Plantando bosques para regenerar los ecosistemas | 65206463-9 | Fundación Haz Eco | Valoración y conservación de la biodiversidad | Buin | $6.000.000 | 2,90
+85708 | REGENERA TU PLATABANDA | 65134957-5 | Comité de Desarrollo y Seguridad Vecinal Obispo Eladio Vicuña | Cambio climático y descontaminación ambiental | Macul | $6.000.000 | 2,89
+85419 | Independencia Repara | 65230273-4 | Fundación para el fomento de la Reparación y la Sostenibilidad | Economía circular y gestión de residuos | Independencia | $6.000.000 | 2,82
+85953 | Eco escuela popular para la formación de monitores en San Bernardo | 65121119-0 | Fundación Mingako | Cambio climático y descontaminación ambiental | San Bernardo | $6.000.000 | 2,80
+85161 | Las Rutas del Agua: uso eficiente del agua en Hospital-Champa, Paine | 70025350-3 | Cooperativa de Agua Potable Hospital Champa | Ecotecnias hídricas | Paine | $6.000.000 | 2,63
+85557 | Cactus Vivos: Conservación de las cactáceas en el borde costero de Pichilemu | 65179734-9 | Corporación Parque Punta de Lobos | Valoración y conservación de la biodiversidad | Pichilemu | $6.000.000 | 2,95
+84362 | Todos Unidos en la Búsqueda de la Eficiencia Hídrica para combatir el déficit hídrico | 65163826-7 | Organización medio ambientalista Eco Clubes LIFAE | Ecotecnias hídricas | Las Cabras | $6.000.000 | 2,85
+85632 | Compostaje Domiciliario Valorizando Mis Residuos | 65170047-7 | Fundación Karü Ambiente | Economía circular y gestión de residuos | Rancagua | $6.000.000 | 2,80
+85922 | El Tesoro del Bosque esclerófilo: Educación Ambiental en Escuelas Rurales | 65159122-8 | Fundación Llaftun | Valoración y conservación de la biodiversidad | Chimbarongo | $6.000.000 | 2,73
+85596 | ¡Aguas Arriba! Desafíos y oportunidades en torno al Recurso Hídrico en Pichilemu | 65214853-0 | Comité Ambiental Comunal Pichilemu | Ecotecnias hídricas | Pichilemu | $6.000.000 | 2,29
+86000 | Laboratorio Ambiental Móvil LAM | 65122372-5 | Comité Ambiental Comunal Pelluhue | Valoración y conservación de la biodiversidad | Pelluhue | $6.000.000 | 2,97
+85469 | Fotografía Sustentable para la Protección Ambiental Ciudadana | 65155375-K | Corporación Ciudadanía | Valoración y conservación de la biodiversidad | Talca | $6.000.000 | 2,93
+86358 | Soluciones hídricas para enfrentar la sequía en La Aguada | 65142642-1 | Comité De Agua Potable Rural La Aguada | Ecotecnias hídricas | Empedrado | $6.000.000 | 2,69
+86062 | Integrando Prácticas ambientales y sustentabilidad hídrica comunitaria en el Name | 74137500-1 | Junta de Vecinos Nº8 R Name Sur | Ecotecnias hídricas | Cauquenes | $6.000.000 | 2,50
+86185 | Recolectores de agua lluvia: mejorando la calidad de vida de nuestros vecinos | 72520200-8 | Junta de Vecinos Pellines | Ecotecnias hídricas | Empedrado | $6.000.000 | 2,35
+85530 | El Comercio de San Nicolás valoriza sus Residuos Orgánicos | 65210663-3 | Cámara de Comercio Servicios Industrias y Turismo AG San Nicolás | Economía circular y gestión de residuos | San Nicolás | $6.000.000 | 2,57
+85224 | Cosechas y siembras de agua lluvia para el Portal de la luna | 65210090-2 | Junta De Vecinos Villa Portal de la Luna | Ecotecnias hídricas | San Nicolás | $6.000.000 | 2,56
+84963 | Real Zaragoza un club sustentable y medioambiental | 75905900-K | Club Deportivo Social y Cultural Real Zaragoza | Eficiencia energética | Chillán | $6.000.000 | 2,45
+85720 | El Huemul en Ñuble: Monitoreo Comunitario Participativo | 65148855-9 | Asociación Dosel | Valoración y conservación de la biodiversidad | San Fabián | $6.000.000 | 2,44
+84511 | Calor limpio: Transformando el Ambiente Educativo hacia la Sostenibilidad | 65227976-7 | Centro de Alumnos Liceo Bicentenario Técnico Puente Ñuble | Eficiencia energética | San Nicolás | $6.000.000 | 2,39
+84562 | Salto del Itata, Centro Comunitario de Educación Ambiental | 72657100-7 | Junta de Vecinos Ranchillos | Valoración y conservación de la biodiversidad | Yungay | $6.000.000 | 2,34
+85707 | Co-habitando nuestros ríos: biomonitoreo comunitario de macroinvertebrados | 65203656-2 | Fundación Manzana Verde | Valoración y conservación de la biodiversidad | Concepción | $6.000.000 | 2,98
+84198 | Conectando a las infancias con la biodiversidad nativa de Hualpén | 65215674-6 | Fundación Malvarrosa | Valoración y conservación de la biodiversidad | Hualpén | $6.000.000 | 2,96
+85516 | Compostaje Comunitario, soluciones colectivas al problema de la basura | 65077857-K | Fundación El Árbol | Economía circular y gestión de residuos | Concepción | $6.000.000 | 2,93
+85080 | Alas del Santuario | 53333679-5 | ONG Centro de Rehabilitación de Aves Silvestres y Educación Ambiental | Valoración y conservación de la biodiversidad | San Pedro de la Paz | $6.000.000 | 2,90
+85666 | Descubriendo el tesoro natural del Parque Tumbes | 65742300-9 | Agrupación de Juntas de Vecinos de la Península de Tumbes | Valoración y conservación de la biodiversidad | Talcahuano | $6.000.000 | 2,89
+85247 | HIDROCULTURA | 73064100-1 | Servicio Evangélico para el desarrollo SEPADE | Ecotecnias hídricas | Concepción | $6.000.000 | 2,46
+85500 | Compostando en el campo: Vecinos de El Huape Roy-Roy se suman al reciclaje de orgánicos | 74106800-1 | Junta De Vecinos El Huape Roy Roy | Economía circular y gestión de residuos | La Unión | $6.000.000 | 2,97
+84943 | Barrio San Pablo transitando hacia un Barrio Circular | 65090021-9 | Junta de Vecinos Barrio San Pablo | Economía circular y gestión de residuos | La Unión | $6.000.000 | 2,79
+85468 | Jardín Urbano Demostrativo de Ecotecnias Hídricas | 65207377-8 | Fundación estudio de campo Laboratorio Rural | Ecotecnias hídricas | Valdivia | $6.000.000 | 2,78
+85902 | Reutilización de aguas grises con Humedales Depuradores | 73636700-9 | Comité de Agua Potable Rural Champel San Jorge | Ecotecnias hídricas | La Unión | $6.000.000 | 2,78
+85088 | Saberes y Memorias del Cerro Conun Huenu | 65177671-6 | ONG Verde Urbano | Valoración y conservación de la biodiversidad | Temuco | $6.000.000 | 2,97
+84752 | Reciclando aguas lluvias para el Buen vivir de nuestro Huerto Urbano Kume Domo | 65158306-3 | Huertos Urbanos Kume Domo | Ecotecnias hídricas | Temuco | $6.000.000 | 2,86
+86005 | Huerto Terapéutico Comunitario Villa Cerro Divisadero | 65110972-8 | Comité de Desarrollo Productivo Villa Cerro Divisadero | Economía circular y gestión de residuos | Coyhaique | $6.000.000 | 2,36
+86089 | Mejoramiento y habilitación Sendero Los Arrayanes | 65013925-9 | Asociación gremial de turismo y comercio de Puerto Raúl Marín Balmaceda | Valoración y conservación de la biodiversidad | Cisnes | $6.000.000 | 2,29
+85194 | Junta Vecinal Nro. 17 Separa y Recicla sus Residuos Punto Verde | 65072170-5 | Junta De Vecinos Nro 17 | Economía circular y gestión de residuos | Natales | $6.000.000 | 2,76
+85110 | Iluminando Nuestra Sede con Energía Solar | 71165700-2 | Junta De Vecinos N 07 Chile Nuevo | Eficiencia energética | Natales | $6.000.000 | 2,74
+85367 | La vieja tela: reutilización textil para la economía circular en Futaleufú | 65044312-8 | Asociación de artesanos y artistas de la Patagonia Andina | Economía circular y gestión de residuos | Futaleufú | $6.000.000 | 2,86
+85211 | Espacios Demostrativos Hídricos para We Mültuwün Lemu | 65025748-0 | Consejo de Desarrollo de Salud Misión San Juan | Ecotecnias hídricas | San Juan de la Costa | $6.000.000 | 2,58
+=== CATEGORY: PSEE ===
+85809 | Imágenes para concientizar acerca del cuidado de la biodiversidad de Arica y sus valles | 65199118-8 | Centro General de Padres y Apoderados Liceo Artístico Dr. Juan Noe Crevanni | Valoración y conservación de la biodiversidad | Arica | $6.000.000 | 2,91
+85400 | Compostando para El Futuro Sostenible Colegio Nirvana | 65075314-3 | Centro de Padres y Apoderados Colegio Nirvana | Economía circular y gestión de residuos | Alto Hospicio | $6.000.000 | 2,79
+84531 | Reutilizando florecemos | 65185263-3 | Centro de Padres y Apoderados Fundación Educacional San Vicente de Paul | Ecotecnias hídricas | Copiapó | $6.000.000 | 2,65
+85055 | De la tierra a la tierra; descontaminación ambiental mediante una huerta escolar ecológica | 65117317-5 | Centro General de Padres y Apoderados Caminando Al Futuro | Cambio climático y descontaminación ambiental | Ovalle | $6.000.000 | 2,95
+85592 | Reciclaje de aguas grises en Liceo Mistraliano | 65015615-3 | Centro de Padres y Apoderados Liceo Polivalente de Paihuano | Ecotecnias hídricas | Paihuano | $6.000.000 | 2,90
+85328 | Renacer Sostenible: Transformando el Agua en Oportunidades | 65888230-9 | Centro de Padres y Apoderados Colegio Renacer | Ecotecnias hídricas | Monte Patria | $6.000.000 | 2,74
+84519 | Optimiza tu AGUA Escuela Andalien | 65069388-4 | Centro de Padres Escuela Andalien | Ecotecnias hídricas | Colina | $6.000.000 | 2,95
+85508 | Aprendo y uso mi invernadero | 65165110-7 | Centro General de Padres y Apoderados Colegio Andalue | Cambio climático y descontaminación ambiental | Maipú | $6.000.000 | 2,82
+85576 | Continuamos Aprendiendo y Usando las Energías Renovables en mi Escuela | 73896800-K | Centro de Padres y Apoderados Escuela Laura Matus Meléndez | Eficiencia energética | Doñihue | $6.000.000 | 2,70
+85747 | Reutilizando el agua cuidamos nuestro medioambiente | 65549490-1 | Centro de Padres y Apoderados Jardín Infantil Los Conejitos Saltarines | Ecotecnias hídricas | San Felipe | $6.000.000 | 2,64
+85480 | Ecoriego Escolar | 65126074-4 | Centro General de Padres y Apoderados Colegio Luis Cruz Martínez | Ecotecnias hídricas | Quilpué | $6.000.000 | 2,41
+85811 | Fomentando la Biodiversidad en mi Huerto escolar | 65280220-6 | Centro General de Padres y Apoderados Escuela D-452 Ex 35 | Valoración y conservación de la biodiversidad | Linares | $6.000.000 | 2,94
+84457 | Programa de capacitación en compostaje de residuos orgánicos domiciliarios en Bulnes | 65595280-2 | Centro General de Padres y Apoderados Liceo Manuel Bulnes | Economía circular y gestión de residuos | Bulnes | $6.000.000 | 2,48
+85963 | Reactivación de invernadero escolar | 65149707-8 | Centro General de Padres y Apoderados Escuela Marta Colvin Andrade | Cambio climático y descontaminación ambiental | Coihueco | $6.000.000 | 2,35
+85009 | Educa Verde: Educación para un Mundo Sostenible | 65118063-5 | Centro de Padres y Apoderados Administración y Comercio Tutuquén | Economía circular y gestión de residuos | Curicó | $6.000.000 | 2,91
+85888 | Naturaleza circular: valorización de residuos orgánicos a través del vermicompostaje | 65066664-K | Centro de Padres y Apoderados Escuela San Clemente | Economía circular y gestión de residuos | Talca | $6.000.000 | 2,89
+85644 | Jardín de bienestar, fomentando la diversidad natural y humana | 65044165-6 | Centro de Padres y Apoderados Escuela de Estimulación Temprana Rayito de Sol | Valoración y conservación de la biodiversidad | Mulchén | $6.000.000 | 2,81
+84573 | Reciclando los Residuos Orgánicos | 65095717-2 | Centro General de Padres y Apoderados Escuela D-684 Baldomero Lillo de Lota | Economía circular y gestión de residuos | Lota | $6.000.000 | 2,80
+85030 | ¡Hortencia orgánico! por una gestión de residuos sustentable | 65045373-5 | Centro de Padres y Apoderados Escuela G-600 Las Hortensias | Economía circular y gestión de residuos | Cunco | $6.000.000 | 2,97
+86055 | Sistemas de riego en invernadero de Jardín Infantil los Enanitos para uso eficiente del agua | 65470360-4 | Centro General de Padres y Apoderados Jardín Infantil y Sala Cuna Los Enanitos | Ecotecnias hídricas | Victoria | $6.000.000 | 2,90
+85316 | Ngulem Co: Reciclaje de Aguas Lluvias para Regadío de Invernadero Escolar | 65860450-3 | Centro de Padres y Apoderados Escuela Particular N° 10 Llaima | Ecotecnias hídricas | Melipeuco | $6.000.000 | 2,88
+85750 | Sistema de captación de aguas lluvias para Huerto Agroecológico Escuela Octavio Salinas Coronel | 65029436-K | Centro de Padres y Apoderados de Escuela Octavio Salinas | Ecotecnias hídricas | Coronel | $6.000.000 | 2,79
+85824 | Recircular en la tierra: Fomentar la valorización de residuos orgánicos | 65729150-1 | Centro General de Padres y Apoderados del Colegio Inglés Antuquenu | Economía circular y gestión de residuos | Puerto Montt | $6.000.000 | 2,87
+85005 | Arácnidos, los héroes silenciosos | 65067225-9 | Centro General de Padres y Apoderados del Colegio Nuevos Horizontes | Valoración y conservación de la biodiversidad | Puerto Montt | $6.000.000 | 2,85
+85006 | Cosecha de agua lluvia para disminuir el impacto de la escasez de agua potable en Curiñanco | 65188974-K | Centro General de Padres y Apoderados Escuela G24 Curiñanco | Ecotecnias hídricas | Valdivia | $6.000.000 | 2,83
+85845 | Cosechando agua, sembramos futuro | 65027654-K | Centro de Familias Relmu Wuepul | Ecotecnias hídricas | Paillaco | $6.000.000 | 2,80
+85818 | Senderos educativos: Un recorrido por las áreas verdes de mi escuela | 65643980-7 | Centro De Padres Escuela Carlos Condell | Valoración y conservación de la biodiversidad | Aysén | $6.000.000 | 2,66
+86030 | Semillas de cambio | 65027411-3 | Centro de Padres y Apoderados Escuela Aysén | Economía circular y gestión de residuos | Aysén | $6.000.000 | 2,55
+84734 | Guía del Cuidado de Humedales Urbanos para Niños y Niñas | 65839300-6 | Centro General de Padres Madres y Apoderados del Jardín Continente Blanco | Valoración y conservación de la biodiversidad | Punta Arenas | $6.000.000 | 2,78
+86318 | Aonikenk recicla: Cuidando nuestra casa común | 65676740-5 | Centro General de Padres y Apoderados de Escuela Aonikenk | Economía circular y gestión de residuos | Río Ibáñez | $6.000.000 | 2,54
+85843 | Nuestro punto verde | 65214310-5 | Centro de Padres Escuela El Camino | Economía circular y gestión de residuos | Coyhaique | $6.000.000 | 2,40
+84830 | Invierno Verde | 65112040-3 | Centro General de Padres y Apoderados Liceo Técnico Profesional Ricardo Navarrete Barría | Cambio climático y descontaminación ambiental | Coyhaique | $6.000.000 | 2,32
+85306 | Energía Fotovoltaica para colegio Pequeños Exploradores | 65136165-6 | Centro de Familias Colegio Pequeños Exploradores | Eficiencia energética | Coyhaique | $6.000.000 | 2,28
+=== CATEGORY: PPII ===
+85514 | El Sumaq Kawsay de la Cosmovisión Quechua para el equilibrio del medio ambiente en Arica y Parinacota | 65226648-7 | Asociación Indígena Quechua Kawsaq Llaqta | Economía circular y gestión de residuos | Arica | $6.000.000 | 2,67
+86368 | Reforestación de laderas contra la desertificación y el cambio climático en el Valle de Codpa | 75192000-8 | Comunidad Indígena del Pueblo de Codpa | Valoración y conservación de la biodiversidad | Camarones | $6.000.000 | 2,36
+85866 | Implementar luminarias solares en el pueblo de Ancovinto y su estancia de Willacollo | 65207749-8 | Asociación Indígena Layrjaphura | Cambio climático y descontaminación ambiental | Colchane | $6.000.000 | 2,57
+84824 | Ckepnitur Haimaytier: Vivir la ciencia y el conocimiento | 73127600-5 | Comunidad Atacameña de Toconao | Valoración y conservación de la biodiversidad | San Pedro de Atacama | $6.000.000 | 2,47
+86036 | Restauración ecológica del árbol ancestral El Chañar | 65188904-9 | Comunidad Indígena Diaguita Romualda Ardiles | Valoración y conservación de la biodiversidad | Copiapó | $6.000.000 | 2,30
+85997 | Taiñ gan, Mapuche waria mew | 65217871-5 | Asociación Indígena Petu Mongueleiñ | Ecotecnias hídricas | San Miguel | $6.000.000 | 2,53
+85798 | Luminaria Sustentable para la Comunidad Santos Curinao | 65448420-1 | Comunidad Indígena Santos Curinao Quintrilpe | Eficiencia energética | Vilcún | $6.000.000 | 3,00
+86251 | Nodo Energía Solar para Nuestra Comunidad | 65054836-1 | Comunidad Indígena Mateo Nahuelpán | Eficiencia energética | Carahue | $6.000.000 | 3,00
+86406 | Iluminación Sustentable para Nuestro Camino | 65225929-4 | Comunidad Indígena Folil Nahuel | Eficiencia energética | Temuco | $6.000.000 | 3,00
+85444 | Fomentando la energía solar en mi comunidad | 65037765-6 | Comunidad Mapuche Juan Antinao | Eficiencia energética | Temuco | $6.000.000 | 2,98
+84616 | Kimün de la Pachamama | 65164874-2 | Asociación Multicultural de Mujeres Indígenas de Coquimbo Warmipura Tinkui | Cambio climático y descontaminación ambiental | Coquimbo | $6.000.000 | 2,90
+85984 | Protección y preservación del nativo endémico del territorio Diaguita del Limarí | 65221191-7 | Comunidad Indígena Gasta Vanato Diaguita | Valoración y conservación de la biodiversidad | Combarbalá | $6.000.000 | 2,48
+85445 | Pelonguelen tañi lof (Iluminando mi territorio) | 65025852-5 | Comunidad Aillán Marillán | Eficiencia energética | Temuco | $6.000.000 | 2,98
+85722 | Aportando con ERNC a mi comunidad | 65524440-9 | Comunidad Huenchupal | Eficiencia energética | Nueva Imperial | $6.000.000 | 2,98
+85751 | Lif We Pelom (Energía Limpia y Nueva) | 65025556-9 | Comunidad Mapuche Huento Llancamil | Eficiencia energética | Temuco | $6.000.000 | 2,98
+85752 | Iluminando con energía solar | 65134030-6 | Comunidad Mapuche Levío Melipil Rahue | Eficiencia energética | Galvarino | $6.000.000 | 2,98
+85778 | Iluminación para nuestra sede comunitaria | 65765680-1 | Comunidad Indígena Pedro Lepin | Eficiencia energética | Temuco | $6.000.000 | 2,97
+85219 | Sala Calidez Sustentable: Fortaleciendo Nuestra Energía Natural | 65314030-4 | Comunidad Indígena Miguel Licanqueo | Eficiencia energética | Nueva Imperial | $6.000.000 | 2,96
+85288 | Promover la valorización de los residuos domiciliarios | 75879600-0 | Comunidad indígena Coña Quilaqueo | Economía circular y gestión de residuos | Teodoro Schmidt | $6.000.000 | 2,95
+86217 | Küme Küze (Buena luz) | 72743200-0 | Comunidad Indígena Juan Antonio Paillalef | Eficiencia energética | Padre Las Casas | $6.000.000 | 2,95
+85052 | Experiencia demostrativa y educativa de abastecimiento energético sustentable Juan Acuite Inaipil | 65135220-7 | Comunidad Indígena Juan Acuite Inaipil | Eficiencia energética | Vilcún | $6.000.000 | 2,94
+86285 | Kom liftuiñ taiñ Mapu (Juntos limpiamos nuestro entorno) | 65127800-7 | Comunidad Indígena Juan Caniupal | Economía circular y gestión de residuos | Padre Las Casas | $6.000.000 | 2,94
+85805 | ECO-RESUELVE: Gestión de Residuos en la Comunidad Indígena Juana Carriman viuda de Paillao Purén | 72848200-1 | Comunidad Juana Cariman Vda De Paillao | Economía circular y gestión de residuos | Purén | $6.000.000 | 2,91
+85433 | Liempi Paillahue Sustentable | 73302000-8 | Comunidad Mapuche Antonio Liempi Paillahue | Eficiencia energética | Galvarino | $6.000.000 | 2,85
+86002 | FVTA ANTV NEWEN, con la fuerza del sol innovamos en espacios comunitarios | 65765550-3 | Comunidad Ambrosio Punolef | Eficiencia energética | Villarrica | $6.000.000 | 2,85
+86378 | Sistema FV Autonomo Guadaba Arriba | 65747480-0 | Comunidad Francisco Piutri | Eficiencia energética | Los Sauces | $6.000.000 | 2,81
+85095 | Promover la Educación Ambiental y Reciclaje | 65128220-9 | Comunidad Indígena Juan Huenchuman | Economía circular y gestión de residuos | Teodoro Schmidt | $6.000.000 | 2,80
+85919 | Rescate de los saberes mapuche sobre las aguas del territorio de Lifko | 65189953-2 | Comunidad Indígena Painetru Sahuelhue | Valoración y conservación de la biodiversidad | Melipeuco | $6.000.000 | 2,79
+85698 | Lewfüche: Volver al río. Revalorando la biodiversidad a través de la memoria | 65166796-8 | Comunidad Indígena Kalfvgen | Valoración y conservación de la biodiversidad | Valdivia | $6.000.000 | 2,63
+86090 | Feyta ni kume lawen mapu | 65209109-1 | Comunidad Indígena Francisco Nahuelpan Navarrete | Valoración y conservación de la biodiversidad | Lanco | $6.000.000 | 2,52
+85470 | Revalorización de la flora nativa a través de invernadero comunitario | 65134206-6 | Comunidad Indígena Egidio Huenunir | Valoración y conservación de la biodiversidad | Panguipulli | $6.000.000 | 2,40
+86157 | La Comunidad Indígena Meliwitranmapu separa sus residuos y se capacita para ser una localidad rural sustentable | 65195916-0 | Comunidad Indígena Meliwitranmapu | Economía circular y gestión de residuos | Curaco de Vélez | $6.000.000 | 2,34
+86103 | Comunidad Indígena Pu Zomo cuida la biodiversidad del borde costero de Dalcahue | 65223611-1 | Comunidad Indígena Pu Zomo Pulutauco Mocopulli | Valoración y conservación de la biodiversidad | Dalcahue | $6.000.000 | 2,33
+86170 | Huerto Comunitario para el resguardo de la medicina ancestral del territorio de Forrahue Osorno | 65068840-6 | Comunidad Indígena Forrahue | Cambio climático y descontaminación ambiental | Osorno | $6.000.000 | 2,28
+86069 | Recolección de aguas lluvias para un aprovechamiento óptimo de los recursos hídricos | 65061318-K | Asociación Indígena Ketrawe Mapu | Ecotecnias hídricas | Punta Arenas | $6.000.000 | 2,90

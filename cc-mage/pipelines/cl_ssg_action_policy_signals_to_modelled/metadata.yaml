@@ -1,0 +1,176 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_loaders/load_action_policy_signals_csv_from_s3.py
+  downstream_blocks:
+  - transform_action_policy_signals_for_staging
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: python
+  name: load_action_policy_signals_csv_from_s3
+  retry_config: null
+  status: failed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_action_policy_signals_csv_from_s3
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_loaders/load_city_locodes_csv_from_s3.py
+  downstream_blocks:
+  - transform_action_policy_signals_for_staging
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: python
+  name: load_city_locodes_csv_from_s3
+  retry_config: null
+  status: failed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_city_locodes_csv_from_s3
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    file_source:
+      path: transformers/transform_action_policy_signals_for_staging.py
+  downstream_blocks:
+  - load_action_policy_signals_staging
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: python
+  name: transform_action_policy_signals_for_staging
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_action_policy_signals_csv_from_s3
+  - load_city_locodes_csv_from_s3
+  uuid: transform_action_policy_signals_for_staging
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    file_source:
+      path: data_exporters/load_action_policy_signals_staging.py
+  downstream_blocks:
+  - load_action_policy_signals_modelled
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: python
+  name: load_action_policy_signals_staging
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - transform_action_policy_signals_for_staging
+  uuid: load_action_policy_signals_staging
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    export_write_policy: append
+    use_raw_sql: true
+  downstream_blocks:
+  - load_dataset_release_cl_ssg_policy_documents
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: sql
+  name: load_publisher_datasource_cl_ssg_policy_documents
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks: []
+  uuid: load_publisher_datasource_cl_ssg_policy_documents
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    export_write_policy: append
+    use_raw_sql: true
+  downstream_blocks:
+  - load_action_policy_signals_modelled
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: sql
+  name: load_dataset_release_cl_ssg_policy_documents
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_publisher_datasource_cl_ssg_policy_documents
+  uuid: load_dataset_release_cl_ssg_policy_documents
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    export_write_policy: append
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: sql
+  name: load_action_policy_signals_modelled
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_action_policy_signals_staging
+  - load_dataset_release_cl_ssg_policy_documents
+  uuid: load_action_policy_signals_modelled
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: null
+data_integration: null
+description: Load action_policy_signals.csv and city_locodes.csv from S3, stage to
+  raw_data, and upsert modelled.action_policy_signals for release v2.
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: cl_ssg_action_policy_signals_to_modelled
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: cl_ssg_action_policy_signals_to_modelled
+variables:
+  action_policy_signals_key: raw_data/cl-ssg/cl-ssg-policy-documents/releases/v2/synthesis/action_policy_signals.csv
+  bucket_name: test-global-api
+  city_locodes_key: raw_data/cl-ssg/cl-ssg-policy-documents/releases/v1/local_codes.csv
+  dataset_name: Chile SSG Policy Documents
+  dataset_url: https://github.com/Open-Earth-Foundation/CityCatalyst-global-data/tree/main/dataset-review/reviews/cl-ssg/cl-ssg-policy-documents/releases/v1
+  datasource_name: cl-ssg-policy-documents
+  publisher_name: Sustainability Solutions Group
+  publisher_url: https://ssg.coop/
+  released_at: '2026-01-01'
+  source_bucket: test-global-api
+  source_url: s3://test-global-api/raw_data/cl-ssg/cl-ssg-policy-documents/releases/v2/synthesis/action_policy_signals.csv
+  version_label: v2
+variables_dir: /home/src/mage_data/cc-mage
+widgets: []

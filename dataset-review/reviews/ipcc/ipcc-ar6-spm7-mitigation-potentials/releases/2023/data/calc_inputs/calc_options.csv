@@ -1,0 +1,37 @@
+option,gpc_segment,tier,calc_type,intensity_from_id,ef_from_id,intensity_to_id,abatement_id,uptake,status,ipcc_option
+Electrify LDV,LDV_onroad_petrol,city-adjusted,identity,int_ice_ldv,ef_petrol,int_ev_ldv,,0.30,IPCC: Electric LDV — identity (grid EF + blend),Electric light duty vehicles
+Fuel-efficient LDV,LDV_onroad_petrol,city-adjusted,assessed,,,,abate_ldv_efficiency,0.40,IPCC: Fuel efficient LDV — uptake=fleet turnover,Fuel efficient light duty vehicles
+Electrify HDV,HDV_onroad_diesel,city-adjusted,identity,int_ice_hdv,ef_diesel,int_ev_hdv,,0.10,IPCC: Electric HDV — identity (grid EF),Electric heavy duty vehicles
+Fuel-efficient HDV,HDV_onroad_diesel,city-adjusted,assessed,,,,abate_hdv_efficiency,0.30,IPCC: Fuel efficient HDV — uptake=fleet turnover,Fuel efficient heavy duty vehicles
+Shift to public transport,LDV_onroad_petrol,city-adjusted,modeshift,,,,modal_intensity_ratio,0.50,IPCC: Shift to public transportation — needs city mode share,Shift to public transportation
+Shift to bikes/e-bikes,LDV_onroad_petrol,city-adjusted,modeshift,,,,modal_intensity_ratio_bike,0.50,IPCC: Shift to bikes and e-bikes — needs city bike share,Shift to bikes and e-bikes
+Introduce E10 biofuel,LDV_onroad_petrol,city-adjusted,assessed,,,,abate_biofuel_e10,0.50,IPCC: Biofuels — blend identity,Biofuels
+Buildings SER (combined),buildings,city-adjusted,assessed,,,,abate_buildings_ser_lac,0.50,IPCC: avoid-demand+lighting+new-build+retrofit (Ch.9 SER overlap-corrected; cannot split),"Avoid demand for energy services|Efficient lighting, appliances and equipment|New buildings with high energy performance|Improvement of existing building stock"
+Rooftop solar (onsite RE),buildings_electricity,city-adjusted,assessed,,,,abate_rooftop_solar,0.30,IPCC: Onsite renewable — grid via baseline,Onsite renewable production and use
+Landfill CH4,solid_waste,city-adjusted,assessed,,,,abate_landfill_ch4,0.40,IPCC: CH4 solid waste — MACC not pulled,Reduce CH4 emission from solid waste
+Wastewater CH4,wastewater,city-adjusted,assessed,,,,abate_wastewater_ch4,0.30,IPCC: CH4 wastewater — MACC not pulled,Reduce CH4 emission from wastewater
+Industrial electrification / fuel switch,industry_electricity,city-adjusted,assessed,,,,abate_industry_elec,0.40,IPCC: Fuel switching — grid-adjustable (Ch.11 indirect slice),"Fuel switching (electr, nat. gas, bio-energy, H2)"
+Industry energy efficiency,industry_energy,national-rate,assessed,,,,abate_industry_ee,0.50,IPCC: Energy efficiency — national rate (Ch.11 EE 10-40%),Energy efficiency
+Industry material efficiency / recycling,industry_process,national-rate,assessed,,,,abate_industry_material,0.40,IPCC: Material efficiency + Enhanced recycling — national rate,Material efficiency|Enhanced recycling
+Process / feedstock / cement (IPPU),industry_process,national-rate,assessed,,,,abate_industry_process,0.30,IPCC: Feedstock+CCU+Cement+non-CO2 — national rate; BASIC+,"Feedstock decarbonisation, process change|Carbon capture with utilization and storage|Cementious material substitution|Reduction of non-CO2 emissions"
+Wind energy,,excluded,none,,,,,,EXCLUDED: grid-scale supply (sets the grid EF knob),
+Solar energy (grid-scale),,excluded,none,,,,,,EXCLUDED: grid-scale (rooftop is the city version),
+Nuclear energy,,excluded,none,,,,,,EXCLUDED: grid-scale supply,
+Bioelectricity,,excluded,none,,,,,,EXCLUDED: grid-scale supply,
+Hydropower,,excluded,none,,,,,,EXCLUDED: grid-scale supply,
+Geothermal energy,,excluded,none,,,,,,EXCLUDED: grid-scale supply,
+Carbon capture and storage,,excluded,none,,,,,,EXCLUDED: national infrastructure,
+Bioelectricity with CCS,,excluded,none,,,,,,EXCLUDED: national infrastructure,
+Reduce CH4 from coal mining,,excluded,none,,,,,,EXCLUDED: upstream,
+Reduce CH4 from oil and gas,,excluded,none,,,,,,EXCLUDED: upstream,
+Carbon sequestration in agriculture,,excluded,none,,,,,,EXCLUDED: AFOLU (no city signal),
+Reduce CH4 and N2O in agriculture,,excluded,none,,,,,,EXCLUDED: AFOLU,
+Reduce conversion of natural ecosystems,,excluded,none,,,,,,EXCLUDED: AFOLU,
+"Restoration, afforestation, reforestation",,excluded,none,,,,,,EXCLUDED: AFOLU,
+"Forest management, fire management",,excluded,none,,,,,,EXCLUDED: AFOLU,
+Reduce food loss and food waste,,excluded,none,,,,,,EXCLUDED: AFOLU (global demand-side),
+Shift to sustainable healthy diets,,excluded,none,,,,,,EXCLUDED: AFOLU (global demand-side),
+Shipping efficiency and optimization,,excluded,none,,,,,,EXCLUDED: inter-city/international,
+Aviation energy efficiency,,excluded,none,,,,,,EXCLUDED: inter-city/international,
+Reduce emission of fluorinated gas,,excluded,none,,,,,,EXCLUDED: national/industrial MACC,
+Enhanced use of wood products,,excluded,none,,,,,,EXCLUDED: embodied/materials (category D),

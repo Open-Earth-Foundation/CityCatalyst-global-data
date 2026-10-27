@@ -1,0 +1,51 @@
+# Post-load expectations for a v4 load of modelled.city_finance_profile.
+# Run with the repository dataset-test expectations runner after the Mage load.
+# Same contract as v3; only the autonomy values and the release differ.
+table: modelled.city_finance_profile
+partition_by: city_archetype
+
+structural:
+  primary_key: city_profile_id
+  required_not_null:
+    - city_profile_id
+    - actor_id
+    - release_id
+    - autonomy
+    - capacity
+    - city_archetype
+    - source_dataset
+  unique:
+    - [release_id, actor_id]
+  foreign_keys:
+    - {column: release_id, references: "modelled.dataset_release.release_id"}
+
+invariants:
+  value_sets:
+    city_archetype: [Self-sufficient, Delivery-ready, Well-resourced, Support-ready]
+    country_code: [CL]
+    source_dataset: [oef/cl-city-action-fundability]
+  ranges:
+    autonomy: {min: 0, max: 1}
+    capacity: {min: 0, max: 1}
+  row_rules:
+    - "(autonomy >= 0.5) = (city_archetype IN ('Self-sufficient','Well-resourced'))"
+    - "(capacity >= 0.5) = (city_archetype IN ('Self-sufficient','Delivery-ready'))"
+
+snapshot:
+  # The reconciled locode lookup resolves all 345 reviewed CUT rows.
+  row_count: {equals: 345}
+  distinct_count:
+    source_dataset: 1
+  group_counts:
+    source_dataset:
+      oef/cl-city-action-fundability: 345
+    city_archetype:
+      Support-ready: 150
+      Delivery-ready: 104
+      Self-sufficient: 66
+      Well-resourced: 25
+
+profile:
+  categorical: [city_archetype, country_code, source_dataset]
+  numeric: [autonomy, capacity]
+  dates: []

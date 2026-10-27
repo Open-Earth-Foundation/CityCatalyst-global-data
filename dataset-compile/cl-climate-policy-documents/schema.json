@@ -1,0 +1,42 @@
+{
+  "dataset": "cl-climate-policy-documents",
+  "title": "Chile climate-policy document inventory (compiled)",
+  "status": "compile",
+  "description": "The inventory layer of Chile's climate-policy document universe: one row per policy/planning instrument, indexed by its position in the LMCC policy stack (rollup) and the facet axes a coverage view needs (level, document type, strand, sector, region, status). Chile is the 'inheritance' case — a unitary state whose framework law (Ley 21.455 / LMCC) mandates a nested cascade ECLP -> sectoral plans -> regional PARCC -> communal PACCC — so applicability is a clean scale rule (contrast the Brazil compile's 'enumeration' case). Compiled fresh from public government sources to test the dataset-compile method against the cl-climate-policy.md context map, independent of the cl-ssg review data. Staging lane: not yet vetted through dataset-review. See collection.md for provenance and sources.yaml for the source registry.",
+  "grain": "one row per climate-policy or climate-relevant planning instrument (document)",
+  "primary_key": "id",
+  "scope": {
+    "in_scope": "National tier fully enumerated (NDC 2025, LMCC framework law, ECLP long-term strategy). Sectoral plans: 7 mitigation (LMCC Art. 8 ministries) + 11 adaptation sectors (9 legacy PANCC priority sectors + Mineria + Zonas Costeras per ECLP). PARCC: all 16 regions, each with its approval status. PACCC: a sample of the confirmable communal plans (~22 of 345 exist) plus two region-level coverage rows (Los Rios 12/12, Nuble 6). Territorial-planning instrument classes (PNOT, PROT, PRI/PRM, PRC) and the 3 PRAS environmental programmes (Huasco, Quintero-Puchuncavi, Coronel).",
+    "not_yet_in_scope": "The full 345-commune PACCC enumeration (only the confirmable ones are rowed; two regions captured as aggregate rows). Per-region PROT/PRC document instances (only the instrument classes are rowed, mirroring Chile's placeholder reality). Instrument full text / signal extraction (downstream). Exact commune INE codes in territory_code for communal rows (commune segment left as 000 pending a commune-code lookup).",
+    "complete_when": "Every national + sectoral instrument present with a fetched source_url; all 16 PARCCs tracked to their current approval resolution; the PACCC sample resolved to one row per commune with its own source; territorial instrument classes resolved to per-territory instances where in scope; region_code/territory_code computed by rule for every row; and derived fields (strand, stack_tier) promoted to documented rules."
+  },
+  "field_provenance_legend": {
+    "sourced": "read directly from a primary source (verifiable against source_url)",
+    "derived": "assigned by the compiler's judgment, NOT stated in the source — lower-trust until a deterministic rule is defined",
+    "derived-by-rule": "computed by an explicit, auditable lookup/rule (references/*), reproducible",
+    "meta": "bookkeeping about the record itself"
+  },
+  "fields": [
+    {"name": "id", "type": "string", "source": "meta", "notes": "Constructed key: cl-<tier-abbr>-<slug/region>."},
+    {"name": "stack_tier", "type": "enum(ndc,framework-law,long-term-strategy,sector-plan-mitigation,sector-plan-adaptation,parcc,paccc,territorial-plan,environmental-program)", "source": "derived", "role": "rollup index", "notes": "Position in the LMCC policy stack (per the landscape map). The rollup that determines a document's shape and how it applies (national=all, regional PARCC=its region, communal PACCC=its commune). Lopsided by design: national/sectoral deep and complete, PACCC thin — that lopsidedness is the finding."},
+    {"name": "source_level", "type": "enum(national,regional,intercommunal,communal)", "source": "sourced", "notes": "Territorial scale; drives applicability under the LMCC cascade."},
+    {"name": "document_type", "type": "enum(ndc,framework_law,long_term_strategy,sector_plan,parcc,paccc,territorial_plan,environmental_program)", "source": "sourced"},
+    {"name": "strand", "type": "enum(mitigation,adaptation,cross-cutting,na)", "source": "derived", "notes": "Sectoral plans carry their family (mitigation/adaptation); frameworks/PARCC/PACCC are cross-cutting; territorial classes are na. Several Chilean sector plans are a single combined mitig+adapt decree — split into two rows here and flagged in notes to avoid double-counting the physical document."},
+    {"name": "sector", "type": "string|null", "source": "sourced", "notes": "For sectoral plans, the sector verbatim; for territorial/PRAS, the domain; null for NDC/LMCC/ECLP/PARCC/PACCC."},
+    {"name": "title_es", "type": "string", "source": "sourced", "notes": "Official Spanish title (accents dropped for CSV-safety)."},
+    {"name": "title_en", "type": "string", "source": "derived", "notes": "Working English translation."},
+    {"name": "publisher", "type": "string", "source": "sourced", "notes": "Issuing body (MMA, line ministry, Gobierno Regional/CORECC, municipality)."},
+    {"name": "region_code", "type": "string", "source": "sourced", "notes": "2-digit Chile CUT region code; '00' national scope."},
+    {"name": "region_name", "type": "string", "source": "derived-by-rule", "notes": "Region name via references/cl-region-codes.csv (keyed by region_code)."},
+    {"name": "territory_code", "type": "string", "source": "derived-by-rule", "notes": "level_region_commune: 1_00_00 national; 2_RR_00 regional; 3_RR_000 communal (commune segment 000 pending an INE commune-code lookup). Built from source_level + region_code."},
+    {"name": "law_ref", "type": "string|null", "source": "sourced", "notes": "Enabling law/decree where the instrument is a legal act (Ley 21.455; DS NN/2024 for sector plans; resolution for PARCC/PACCC); null otherwise."},
+    {"name": "publication_year", "type": "string|null", "source": "sourced"},
+    {"name": "status", "type": "enum(in-force,draft,superseded,uncertain)", "source": "sourced", "notes": "in-force = vigente/aprobado; draft = anteproyecto/en elaboracion; superseded = replaced by a newer version; uncertain = existence/status not fully confirmed."},
+    {"name": "access_type", "type": "enum(pdf,portal,law-portal)", "source": "derived"},
+    {"name": "source_url", "type": "string|null", "source": "sourced"},
+    {"name": "verified", "type": "boolean", "source": "meta", "notes": "true = a primary source URL was fetched/confirmed in this pass."},
+    {"name": "confidence", "type": "enum(high,med,low)", "source": "meta"},
+    {"name": "notes", "type": "string", "source": "meta"}
+  ],
+  "promotion_path": "compile -> dataset-review (fetch remaining sector-plan PDFs, track all 16 PARCC approvals, resolve the PACCC sample to per-commune rows, complete provenance) -> catalog + pipeline -> the coverage/applicability layer that turns this inventory into a per-city policy environment via the LMCC cascade."
+}

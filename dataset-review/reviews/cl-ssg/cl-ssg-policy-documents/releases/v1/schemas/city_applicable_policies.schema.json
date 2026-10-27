@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://citycatalyst.openearth.org/schemas/city_applicable_policies.schema.json",
+  "title": "city_applicable_policies row",
+  "description": "One row per (city, source_document) pair where the document applies to the city. Derived deterministically from releases/v1/data/registry/source_documents.json and releases/v1/data/registry/local_codes.csv by scripts/v2_derive_applicability.py. Drives the join between extracted findings and city-level alignment scores. Documented as JSON Schema; on disk the artifact is a CSV with these columns.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "city_code",
+    "region_code",
+    "source_document_id",
+    "source_level",
+    "document_type",
+    "document_status",
+    "applicability_type",
+    "proximity_weight",
+    "proximity_weight_base",
+    "status_multiplier",
+    "applicability_reason"
+  ],
+  "properties": {
+    "city_code": {
+      "type": "string",
+      "pattern": "^[0-9]{5}$",
+      "description": "5-digit commune_code_2018 from local_codes.csv. Stable join key for cities."
+    },
+    "region_code": {
+      "type": "string",
+      "pattern": "^[0-9]{2}$",
+      "description": "2-digit Chile region code, derived from the city. 00 reserved for national scope and never appears on a city row."
+    },
+    "city_name": {
+      "type": "string",
+      "description": "Human-readable commune name from local_codes.csv. Reference only."
+    },
+    "source_document_id": {
+      "type": "string",
+      "description": "FK to source_documents.json[].source_document_id."
+    },
+    "source_level": {
+      "enum": ["national", "regional", "intercommunal", "municipal", "communal"],
+      "description": "Copied from source_documents.json for convenience."
+    },
+    "document_type": {
+      "type": "string",
+      "description": "Copied from source_documents.json for convenience."
+    },
+    "document_status": {
+      "enum": ["final", "draft", "consultation", "portal_only", "flipbook_only", "placeholder"],
+      "description": "Copied from source_documents.json. Placeholder rows are excluded from the derived CSV; the field is included here for downstream filtering on draft/consultation."
+    },
+    "applicability_type": {
+      "enum": [
+        "national_framework",
+        "national_sector",
+        "national_territorial",
+        "regional",
+        "regional_territorial",
+        "intercommunal",
+        "communal",
+        "direct"
+      ],
+      "description": "Why this document applies to this city. Drives the proximity weight."
+    },
+    "proximity_weight_base": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Base weight from the proximity table in scoring_rubric.md, before status penalty."
+    },
+    "status_multiplier": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "1.0 for final, 0.7 for draft/consultation/portal_only/flipbook_only. Documents with status=placeholder are excluded entirely."
+    },
+    "proximity_weight": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Final weight applied at scoring time: proximity_weight_base * status_multiplier."
+    },
+    "applicability_reason": {
+      "type": "string",
+      "description": "Short human-readable explanation. Example: 'national framework applies to all cities' or 'city in region 06'."
+    },
+    "review_priority": {
+      "type": "string",
+      "description": "Copied from source_documents.json. low-priority docs (PRAS env-programs) are excluded by default; set --include-low-priority on the deriver to keep them."
+    },
+    "rubric_version": {
+      "type": "string",
+      "description": "Version of scoring_rubric.md used to set proximity_weight_base. Stored on every row so a downstream consumer can detect rubric drift."
+    }
+  }
+}

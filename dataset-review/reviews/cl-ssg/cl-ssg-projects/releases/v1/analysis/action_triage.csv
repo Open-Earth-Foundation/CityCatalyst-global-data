@@ -1,0 +1,103 @@
+action_id,action_name,bucket,strong_precedents_any_rank,times_as_candidate,best_candidate_label
+icare_0122,Establish eco-parks.,precedent_rank1,37,480,compatible_context
+ipcc_0105,Promote active mobility through road space reallocation,precedent_rank1,212,441,strong
+c40_0036,Upgrade Landfills to Engineered Sanitary Landfills with Gas Capture.,precedent_rank1,62,316,compatible_context
+icare_0053,Support cooperatives of voluntary waste collectors to aggregate into small enterprises and expand into organics management,precedent_rank1,38,296,compatible_context
+icare_0040,Deploy energy-efficient and solar-powered street lighting across all neighborhoods,precedent_rank1,161,288,strong
+c40_0037,"Implement residential and business segregated collection of recyclables, organic, and residual waste",precedent_rank1,22,283,compatible_context
+icare_0012,Expand solar energy generation on municipal facilities and public assets,precedent_rank1,99,251,compatible_context
+icare_0064,Develop an organic waste management strategy ,precedent_rank1,2,232,compatible_context
+icare_0024,Integrate renewables into municipal water systems,precedent_rank1,6,138,compatible_context
+icare_0015,Promote Mini and Micro-Hydropower and Biomass Energy,precedent_rank1,8,134,compatible_context
+icare_0137,Replace Inefficient Lighting with LED Technology in Public Spaces,precedent_rank1,121,124,strong
+ipcc_0053,"Implement afforestation, reforestation, and forest ecosystem restoration",precedent_rank1,24,120,compatible_context
+icare_0008,Enable smart grid integration and distributed energy storage through municipal collaboration and demonstration projects,precedent_rank1,6,107,compatible_context
+ipcc_0068,Pilot Bioenergy with Carbon Capture in Partnership with Utilities/Industry.,precedent_rank1,22,99,compatible_context
+icare_0049,Develop regional hubs for renewable energy production,precedent_rank1,6,91,compatible_context
+c40_0015,Retrofit residential buildings for energy efficiency,precedent_rank1,2,73,compatible_context
+c40_0042,Expand urban and peri-urban green spaces,precedent_rank1,42,68,strong
+c40_0016,Retrofit commercial and institutional other non-residential buildings  for energy efficiency ,precedent_rank1,2,57,compatible_context
+c40_0035,Optmize waste management systems ,precedent_rank1,2,51,compatible_context
+ipcc_0069,Promote sustainable and healthy diets,precedent_rank1,4,51,compatible_context
+icare_0045,"Promote organic, regenerative and agroecological agriculture in rural areas",precedent_rank1,1,43,compatible_context
+icare_0033,Install biodigesters in rural properties,precedent_rank1,6,33,compatible_context
+icare_0006,Develop integrated renewable energy planning and solar–battery microgrids for rural and peri-urban areas,precedent_rank1,1,32,compatible_context
+icare_0025,Promote energy-efficient and climate-resilient housing for low-income and informal settlements,precedent_rank1,3,22,compatible_context
+icare_0016,"Promote solar thermal and heat pump systems for water heating in residential, commercial, and public buildings",precedent_rank1,3,21,compatible_context
+ipcc_0025,"Design for Recovery, Reuse, or Repurposing",precedent_rank1,7,18,compatible_context
+icare_0026,Implement time-of-use electricity tariffs to enhance demand-side flexibility and efficiency,precedent_rank1,5,8,strong
+ipcc_0038,Stimulate solar energy production in industrial facilities,precedent_rank1,2,2,strong
+ipcc_0076,Implement energy audits in industrial plants,precedent_rank1,1,2,strong
+ipcc_0001,Promote compact urban form and transit-oriented development,recount_recoverable,1,392,compatible_context
+c40_0017,Retrofit municipal buildings for energy efficiency,recount_recoverable,2,94,compatible_context
+icare_0010,Promote Net-Zero and Green Building Certifications,recount_recoverable,3,16,compatible_context
+icare_0128,Establish Municipal Programs for Payment for Environmental Services and other ecological financial incentives,recount_recoverable,1,10,compatible_context
+icare_0027,Create financing programs for local renewable energy projects,recount_recoverable,3,6,compatible_context
+ipcc_0041,Support research into carbon-neutral manufacturing technologies,recount_recoverable,1,6,compatible_context
+ipcc_0043,Encourage the Use of Zero-Emission Fuels in Industrial Processes,recount_recoverable,1,3,compatible_context
+ipcc_0034,Promote consumer behavior focused on sufficiency and reduced consumption,recount_recoverable,1,2,compatible_context
+ipcc_0050,Create tax incentives for companies adopting clean technologies,recount_recoverable,1,1,strong
+icare_0121,"Incentive to create bike-sharing programs in urban areas, with a focus on electric bikes.",matcher_miss,0,426,compatible_context
+icare_0139,Implement congestion pricing and restrictions on high-polluting vehicles,matcher_miss,0,391,compatible_context
+icare_0117,Improve public transport systems to promote modal shift,matcher_miss,0,369,goal_aligned
+icare_0110,"Regulate Construction and Demolition Waste Management to improve deconstruction, segregation at source, reutilization and recycling",matcher_miss,0,222,compatible_context
+ipcc_0055,"Implement fire management in forests, grasslands, and savannas",matcher_miss,0,112,compatible_context
+ipcc_0062,Create partnerships to implement biochar plants.,matcher_miss,0,103,compatible_context
+c40_0025,Promote deployment of zero-emission freight fleets (trucks),matcher_miss,0,86,compatible_context
+c40_0029,Electrify municipal vehicle fleets,matcher_miss,0,54,goal_aligned
+c40_0023,Adopt zero-emission bus fleets for public transport,matcher_miss,0,53,goal_aligned
+c40_0034,Enact and enforce material bans in order to restrict single use and non-recyclable materials,matcher_miss,0,42,compatible_context
+ipcc_0064,Reduce methane emissions from enteric fermentation in livestock,matcher_miss,0,29,goal_aligned
+ipcc_0067,Improve manure management and crop nutrient practices,matcher_miss,0,24,goal_aligned
+icare_0111,Strengthen Extended Producer Responsibility (EPR) Systems,matcher_miss,0,22,compatible_context
+c40_0071,Promote the phase out the reliance on fossil fuels for cooking (in favour of high-efficiency electric cookstoves such as induction stoves).,matcher_miss,0,14,compatible_context
+c40_0040,Implement Volume-Based Collection policy,matcher_miss,0,13,compatible_context
+ipcc_0023,Design products with lightweight materials,matcher_miss,0,12,compatible_context
+icare_0002,Promote and expand the use of the Brazilian Energy Labeling Program for Buildings,matcher_miss,0,11,compatible_context
+icare_0009,Deploy cogeneration systems in industries,matcher_miss,0,11,compatible_context
+ipcc_0070,Reduce food loss and waste,matcher_miss,0,9,goal_aligned
+ipcc_0071,Increase sustainable use of wood products,matcher_miss,0,9,goal_aligned
+icare_0023,Upgrade and maintain electrical substations,matcher_miss,0,8,compatible_context
+ipcc_0056,Reduce and prevent degradation and conversion of Grasslands and Savannas,matcher_miss,0,8,goal_aligned
+c40_0010,Introduce energy-efficiency standards for new residential buildings,matcher_miss,0,5,compatible_context
+icare_0028,"Promote passive cooling through natural shading and ventilation in residential, commercial, and public buildings",matcher_miss,0,5,compatible_context
+ipcc_0049,Develop and implement circular economy policies,matcher_miss,0,5,compatible_context
+icare_0031,Capture & Use Biogas at Wastewater Treatment Plants',matcher_miss,0,4,goal_aligned
+icare_0069,Complete ecological and agroclimatic mapping,matcher_miss,0,4,compatible_context
+icare_0079,Implement carbon capture and utilization (CCU),matcher_miss,0,4,compatible_context
+icare_0132,Encourage Local Agroecological Production and Short Supply Chains,matcher_miss,0,4,compatible_context
+ipcc_0040,Promote industry-government collaborations on emissions reduction,matcher_miss,0,4,compatible_context
+ipcc_0074,Promote compact urban form through spatial planning,matcher_miss,0,4,compatible_context
+ipcc_0057,Restore degraded peatlands and prevent further conversion or degradation.,matcher_miss,0,3,goal_aligned
+icare_0131,Prioritize Procurement of Locally Produced Agroecological Products in Public Purchases,matcher_miss,0,2,compatible_context
+icare_0050,Accelerate the adoption of Agroforestry',matcher_miss,0,1,goal_aligned
+icare_0082,Implement carbon capture and storage (CCS),matcher_miss,0,1,compatible_context
+icare_0099,Increase local participation in Agroecological Certification Programmes,matcher_miss,0,1,goal_aligned
+icare_0127,Improve Accelerate Environmental Regularization of Rural Properties,matcher_miss,0,1,goal_aligned
+icare_0035,Enhance industrial energy efficiency processes,genuinely_absent,0,2,wrong_scope
+ipcc_0060,Protect and Restore Coastal Wetlands,genuinely_absent,0,1,unrelated
+c40_0012,Introduce energy-efficiency standards for new institutional buildings,genuinely_absent,0,0,never_a_candidate
+c40_0013,Support Implementation of Industrial Building Efficiency Standards.,genuinely_absent,0,0,never_a_candidate
+c40_0018,Optimize energy efficiency and sustainability standards for existing industrial infrastructure,genuinely_absent,0,0,never_a_candidate
+icare_0001,Improve heat and energy recovery,genuinely_absent,0,0,never_a_candidate
+icare_0034,Improve Fuel Supply Systems for Industrial Heating,genuinely_absent,0,0,never_a_candidate
+icare_0071,Increase efficiency of industrial furnaces and kilns,genuinely_absent,0,0,never_a_candidate
+icare_0072,Improve Heat Recovery and Reuse through Heat Exchanger Networks or Heat Pumps,genuinely_absent,0,0,never_a_candidate
+icare_0074,Adopt industrial energy efficiency technologies,genuinely_absent,0,0,never_a_candidate
+icare_0076,Electrify Industrial Processes (with Renewable Power),genuinely_absent,0,0,never_a_candidate
+icare_0078,Decarbonize industrial feedstocks,genuinely_absent,0,0,never_a_candidate
+icare_0101,Accelerate the adoption of Zero Emission Agricultural Machinery,genuinely_absent,0,0,never_a_candidate
+icare_0104,Adopt hybrid renewable energy systems (solar-wind),genuinely_absent,0,0,never_a_candidate
+icare_0105,Reduce technical losses in energy distribution networks,genuinely_absent,0,0,never_a_candidate
+icare_0120,"Implement energy efficiency criteria and indicators in the procurement of goods, services, or works by the municipal public administration.",genuinely_absent,0,0,never_a_candidate
+ipcc_0024,Improve material utilization efficiency in production,genuinely_absent,0,0,never_a_candidate
+ipcc_0026,Adopt alternative feedstocks in industrial production,genuinely_absent,0,0,never_a_candidate
+ipcc_0028,"Behavioral Changes for Reduced Waste (e.g., Food)",genuinely_absent,0,0,never_a_candidate
+ipcc_0031,Enhanced product service levels per product (e.g. product sharing),genuinely_absent,0,0,never_a_candidate
+ipcc_0033,Improve product maintenance to extend lifespan,genuinely_absent,0,0,never_a_candidate
+ipcc_0037,Adopt net-zero-emissions materials and supply chains,genuinely_absent,0,0,never_a_candidate
+ipcc_0039,Promote the substitution of traditional materials with sustainable alternatives,genuinely_absent,0,0,never_a_candidate
+ipcc_0042,Set carbon emissions reduction targets for industrial sectors,genuinely_absent,0,0,never_a_candidate
+ipcc_0045,Transition to renewable energy for industrial operations,genuinely_absent,0,0,never_a_candidate
+ipcc_0052,Reduce Deforestation and Degradation,genuinely_absent,0,0,never_a_candidate
+ipcc_0054,Adopt sustainable forest management practices,genuinely_absent,0,0,never_a_candidate

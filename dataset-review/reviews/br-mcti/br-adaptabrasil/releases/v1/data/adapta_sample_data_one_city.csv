@@ -1,0 +1,246 @@
+"city_name","timeframe","scenario","sector_name","risk_name","risk_value_numeric","risk_value_string","risk_component_name","risk_component_value_numeric","risk_component_value_string","impact_chain_name_1","impact_chain_1_value_numeric","impact_chain_1_value_string","impact_chain_name_2","impact_chain_2_value_numeric","impact_chain_2_value_string","base_indicator_name","base_indicator_value_numeric","base_indicator_value_string"
+Abadia de Goiás/GO,2020,current,Biodiversity,Biome integrity,0.4,Medium,Exposure,0.72,High,Exposed coverage,0.84,Very high,,,,Area for conservation,0.0,Very low
+Abadia de Goiás/GO,2020,current,Biodiversity,Biome integrity,0.4,Medium,Exposure,0.72,High,Exposed coverage,0.84,Very high,,,,Natural coverage,0.84,Very high
+Abadia de Goiás/GO,2020,current,Biodiversity,Biome integrity,0.4,Medium,Exposure,0.72,High,Exposed coverage,0.84,Very high,,,,Protected area,1.0,Very high
+Abadia de Goiás/GO,2020,current,Biodiversity,Biome integrity,0.4,Medium,Hazard,0.07,Very low,Climate resilience,0.93,Very high,,,,Accumulated precipitation,0.27,Low
+Abadia de Goiás/GO,2020,current,Biodiversity,Biome integrity,0.4,Medium,Hazard,0.07,Very low,Climate resilience,0.93,Very high,,,,Amplitude,0.38,Low
+Abadia de Goiás/GO,2020,current,Biodiversity,Biome integrity,0.4,Medium,Hazard,0.07,Very low,Climate resilience,0.93,Very high,,,,Annual temperature,0.7,High
+Abadia de Goiás/GO,2020,current,Biodiversity,Biome integrity,0.4,Medium,Hazard,0.07,Very low,Climate resilience,0.93,Very high,,,,Seasonality of precipitation,0.49,Medium
+Abadia de Goiás/GO,2020,current,Biodiversity,Biome integrity,0.4,Medium,Vulnerability,0.67,High,Adaptive capacity,0.12,Very low,Instruments for conservation,0.12,Very low,Steering committee and management plan,,Data unavailable
+Abadia de Goiás/GO,2020,current,Biodiversity,Biome integrity,0.4,Medium,Vulnerability,0.67,High,Adaptive capacity,0.12,Very low,Instruments for conservation,0.12,Very low,Technical guidance,0.12,Very low
+Abadia de Goiás/GO,2020,current,Biodiversity,Biome integrity,0.4,Medium,Vulnerability,0.67,High,Sensitivity,0.42,Medium,Density,0.49,Medium,Agricultural establishment,0.47,Medium
+Abadia de Goiás/GO,2020,current,Biodiversity,Biome integrity,0.4,Medium,Vulnerability,0.67,High,Sensitivity,0.42,Medium,Density,0.49,Medium,Population,0.5,Medium
+Abadia de Goiás/GO,2020,current,Biodiversity,Biome integrity,0.4,Medium,Vulnerability,0.67,High,Sensitivity,0.42,Medium,Ground cover,0.06,Very low,Degraded pasture,0.5,Medium
+Abadia de Goiás/GO,2020,current,Biodiversity,Biome integrity,0.4,Medium,Vulnerability,0.67,High,Sensitivity,0.42,Medium,Ground cover,0.06,Very low,Environmental liabilities,0.09,Very low
+Abadia de Goiás/GO,2020,current,Biodiversity,Biome integrity,0.4,Medium,Vulnerability,0.67,High,Sensitivity,0.42,Medium,Ground cover,0.06,Very low,Mining,0.0,Very low
+Abadia de Goiás/GO,2020,current,Biodiversity,Biome integrity,0.4,Medium,Vulnerability,0.67,High,Sensitivity,0.42,Medium,Ground cover,0.06,Very low,Vegetation loss,0.04,Very low
+Abadia de Goiás/GO,2020,current,Biodiversity,Biome integrity,0.4,Medium,Vulnerability,0.67,High,Sensitivity,0.42,Medium,Infrastructure,0.65,High,Hydroelectric,0.71,High
+Abadia de Goiás/GO,2020,current,Biodiversity,Biome integrity,0.4,Medium,Vulnerability,0.67,High,Sensitivity,0.42,Medium,Infrastructure,0.65,High,Road network,0.59,Medium
+Abadia de Goiás/GO,2020,current,Biodiversity,Biome integrity,0.4,Medium,Vulnerability,0.67,High,Sensitivity,0.42,Medium,Land change and use,0.36,Low,Fire,0.17,Very low
+Abadia de Goiás/GO,2020,current,Biodiversity,Biome integrity,0.4,Medium,Vulnerability,0.67,High,Sensitivity,0.42,Medium,Land change and use,0.36,Low,No family farming,0.72,High
+Abadia de Goiás/GO,2020,current,Biodiversity,Biome integrity,0.4,Medium,Vulnerability,0.67,High,Sensitivity,0.42,Medium,Land change and use,0.36,Low,No sustainable agricultural practice,0.56,Medium
+Abadia de Goiás/GO,2020,current,Biodiversity,Biome integrity,0.4,Medium,Vulnerability,0.67,High,Sensitivity,0.42,Medium,Land change and use,0.36,Low,Pesticides,0.05,Very low
+Abadia de Goiás/GO,2020,current,Energy security,Access,0.44,Medium,Exposure,0.49,Medium,,,,,,,Energy-intensive industries,0.53,Medium
+Abadia de Goiás/GO,2020,current,Energy security,Access,0.44,Medium,Exposure,0.49,Medium,,,,,,,Population density,0.5,Medium
+Abadia de Goiás/GO,2020,current,Energy security,Access,0.44,Medium,Vulnerability,0.44,Medium,Adaptive capacity,0.61,High,,,,Distributed electricity generation,0.38,Low
+Abadia de Goiás/GO,2020,current,Energy security,Access,0.44,Medium,Vulnerability,0.44,Medium,Adaptive capacity,0.61,High,,,,Diversification of electricity generation,0.84,Very high
+Abadia de Goiás/GO,2020,current,Energy security,Access,0.44,Medium,Vulnerability,0.44,Medium,Adaptive capacity,0.61,High,,,,Electricity self-producers,0.55,Medium
+Abadia de Goiás/GO,2020,current,Energy security,Access,0.44,Medium,Vulnerability,0.44,Medium,Adaptive capacity,0.61,High,,,,Energy stored in hydroelectric reservoirs,1.0,Very high
+Abadia de Goiás/GO,2020,current,Energy security,Access,0.44,Medium,Vulnerability,0.44,Medium,Adaptive capacity,0.61,High,,,,Income greater than two minimum wages,0.66,High
+Abadia de Goiás/GO,2020,current,Energy security,Access,0.44,Medium,Vulnerability,0.44,Medium,Adaptive capacity,0.61,High,,,,Municipal GDP per capita,0.34,Low
+Abadia de Goiás/GO,2020,current,Energy security,Access,0.44,Medium,Vulnerability,0.44,Medium,Adaptive capacity,0.61,High,,,,Resilient cities,0.3,Low
+Abadia de Goiás/GO,2020,current,Energy security,Access,0.44,Medium,Vulnerability,0.44,Medium,Sensitivity,0.48,Medium,,,,Electrical energy intensity,0.71,High
+Abadia de Goiás/GO,2020,current,Energy security,Access,0.44,Medium,Vulnerability,0.44,Medium,Sensitivity,0.48,Medium,,,,Electricity interruption,0.34,Low
+Abadia de Goiás/GO,2020,current,Energy security,Access,0.44,Medium,Vulnerability,0.44,Medium,Sensitivity,0.48,Medium,,,,Energy poverty,0.12,Very low
+Abadia de Goiás/GO,2020,current,Energy security,Access,0.44,Medium,Vulnerability,0.44,Medium,Sensitivity,0.48,Medium,,,,Residential electrical consumption,0.65,High
+Abadia de Goiás/GO,2020,current,Energy security,Access,0.44,Medium,,,,,,,,,,Cooling Demand,0.11,Very low
+Abadia de Goiás/GO,2020,current,Energy security,Access,0.44,Medium,,,,,,,,,,Hydropower potential,1.0,Very high
+Abadia de Goiás/GO,2020,current,Energy security,Access,0.44,Medium,,,,,,,,,,Solar energy potential,0.69,High
+Abadia de Goiás/GO,2020,current,Energy security,Access,0.44,Medium,,,,,,,,,,Wind energy potential,0.45,Medium
+Abadia de Goiás/GO,2020,current,Energy security,Availability,0.35,Low,,,,,,,,,,Cooling Demand,0.11,Very low
+Abadia de Goiás/GO,2020,current,Energy security,Availability,0.35,Low,,,,,,,,,,Hydropower potential,1.0,Very high
+Abadia de Goiás/GO,2020,current,Energy security,Availability,0.35,Low,,,,,,,,,,Solar energy potential,0.69,High
+Abadia de Goiás/GO,2020,current,Energy security,Availability,0.35,Low,,,,,,,,,,Wind energy potential,0.45,Medium
+Abadia de Goiás/GO,2020,current,Food security,Access and consumption of food,0.31,Low,Exposure,0.41,Medium,Exposed population,0.42,Medium,,,,Population density,0.42,Medium
+Abadia de Goiás/GO,2020,current,Food security,Access and consumption of food,0.31,Low,Exposure,0.41,Medium,Exposed population,0.42,Medium,,,,Total population,0.14,Very low
+Abadia de Goiás/GO,2020,current,Food security,Access and consumption of food,0.31,Low,Hazard,0.18,Very low,,,,,,,Climate hazard,0.18,Very low
+Abadia de Goiás/GO,2020,current,Food security,Access and consumption of food,0.31,Low,Vulnerability,0.47,Medium,Adaptive capacity,0.39,Low,Financial instruments and public policies,0.32,Low,Cistern program service,,Data unavailable
+Abadia de Goiás/GO,2020,current,Food security,Access and consumption of food,0.31,Low,Vulnerability,0.47,Medium,Adaptive capacity,0.39,Low,Financial instruments and public policies,0.32,Low,Federal investment per capita,0.32,Low
+Abadia de Goiás/GO,2020,current,Food security,Access and consumption of food,0.31,Low,Vulnerability,0.47,Medium,Adaptive capacity,0.39,Low,Financial instruments and public policies,0.32,Low,Food Acquisition Program (PAA),,Data unavailable
+Abadia de Goiás/GO,2020,current,Food security,Access and consumption of food,0.31,Low,Vulnerability,0.47,Medium,Adaptive capacity,0.39,Low,Financial instruments and public policies,0.32,Low,Food safety instruments,0.33,Low
+Abadia de Goiás/GO,2020,current,Food security,Access and consumption of food,0.31,Low,Vulnerability,0.47,Medium,Adaptive capacity,0.39,Low,Financial instruments and public policies,0.32,Low,National school feeding program (PNAE),0.5,Medium
+Abadia de Goiás/GO,2020,current,Food security,Access and consumption of food,0.31,Low,Vulnerability,0.47,Medium,Adaptive capacity,0.39,Low,Financial instruments and public policies,0.32,Low,PAA suppliers classified as “traditional peoples and communities”,0.0,Very low
+Abadia de Goiás/GO,2020,current,Food security,Access and consumption of food,0.31,Low,Vulnerability,0.47,Medium,Adaptive capacity,0.39,Low,Socioeconomic capacity,0.43,Medium,Equality in intra-household income distribution,0.4,Medium
+Abadia de Goiás/GO,2020,current,Food security,Access and consumption of food,0.31,Low,Vulnerability,0.47,Medium,Adaptive capacity,0.39,Low,Socioeconomic capacity,0.43,Medium,Households with high per capita income,0.44,Medium
+Abadia de Goiás/GO,2020,current,Food security,Access and consumption of food,0.31,Low,Vulnerability,0.47,Medium,Adaptive capacity,0.39,Low,Socioeconomic capacity,0.43,Medium,Scope of the family allowance program,0.43,Medium
+Abadia de Goiás/GO,2020,current,Food security,Access and consumption of food,0.31,Low,Vulnerability,0.47,Medium,Sensitivity,0.32,Low,Basic infrastructure,0.2,Low,Compromised water quality,0.0,Very low
+Abadia de Goiás/GO,2020,current,Food security,Access and consumption of food,0.31,Low,Vulnerability,0.47,Medium,Sensitivity,0.32,Low,Basic infrastructure,0.2,Low,Direct source water shortage,0.51,Medium
+Abadia de Goiás/GO,2020,current,Food security,Access and consumption of food,0.31,Low,Vulnerability,0.47,Medium,Sensitivity,0.32,Low,Basic infrastructure,0.2,Low,Municipalities without a basic food supply network,0.0,Very low
+Abadia de Goiás/GO,2020,current,Food security,Access and consumption of food,0.31,Low,Vulnerability,0.47,Medium,Sensitivity,0.32,Low,Basic infrastructure,0.2,Low,Ultra-processed food commercial establishments,0.41,Medium
+Abadia de Goiás/GO,2020,current,Food security,Access and consumption of food,0.31,Low,Vulnerability,0.47,Medium,Sensitivity,0.32,Low,Health and food consumption,0.46,Medium,Child malnutrition,0.49,Medium
+Abadia de Goiás/GO,2020,current,Food security,Access and consumption of food,0.31,Low,Vulnerability,0.47,Medium,Sensitivity,0.32,Low,Health and food consumption,0.46,Medium,Food and nutritional insecurity,0.6,High
+Abadia de Goiás/GO,2020,current,Food security,Access and consumption of food,0.31,Low,Vulnerability,0.47,Medium,Sensitivity,0.32,Low,Health and food consumption,0.46,Medium,Occurrence of diseases related to inadequate environmental sanitation,0.43,Medium
+Abadia de Goiás/GO,2020,current,Food security,Access and consumption of food,0.31,Low,Vulnerability,0.47,Medium,Sensitivity,0.32,Low,Health and food consumption,0.46,Medium,Overweight and obesity,0.32,Low
+Abadia de Goiás/GO,2020,current,Food security,Access and consumption of food,0.31,Low,Vulnerability,0.47,Medium,Sensitivity,0.32,Low,Population profile,0.38,Low,Average number of residents per household,0.62,High
+Abadia de Goiás/GO,2020,current,Food security,Access and consumption of food,0.31,Low,Vulnerability,0.47,Medium,Sensitivity,0.32,Low,Population profile,0.38,Low,Economically dependent population,0.34,Low
+Abadia de Goiás/GO,2020,current,Food security,Access and consumption of food,0.31,Low,Vulnerability,0.47,Medium,Sensitivity,0.32,Low,Population profile,0.38,Low,Mothers who are heads of the family,0.38,Low
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Exposure,0.44,Medium,Economic dependence,0.14,Very low,,,,Agriculture in the municipality’s economy,0.14,Very low
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Exposure,0.44,Medium,Exposed areas,0.5,Medium,,,,Area of ​​agricultural establishments with livestock,0.6,High
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Exposure,0.44,Medium,Exposed areas,0.5,Medium,,,,Area planted with agricultural crops,0.41,Medium
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Exposure,0.44,Medium,Land structure,0.38,Low,,,,Density of agricultural establishments,0.47,Medium
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Exposure,0.44,Medium,Land structure,0.38,Low,,,,Establishments with family farming,0.28,Low
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Hazard,0.34,Low,,,,,,,Consecutive dry days,0.62,High
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Hazard,0.34,Low,,,,,,,Standardized precipitation-evapotranspiration index,0.05,Very low
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Vulnerability,0.38,Low,Adaptive capacity,0.63,High,Financial instruments and public policies,0.61,High,Harvest guarantee program,,Data unavailable
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Vulnerability,0.38,Low,Adaptive capacity,0.63,High,Financial instruments and public policies,0.61,High,Investment in agrarian and environmental management policies,0.61,High
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Vulnerability,0.38,Low,Adaptive capacity,0.63,High,Financial instruments and public policies,0.61,High,PRONAF coverage,0.49,Medium
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Vulnerability,0.38,Low,Adaptive capacity,0.63,High,Financial instruments and public policies,0.61,High,PSR coverage,1.0,Very high
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Vulnerability,0.38,Low,Adaptive capacity,0.63,High,Financial instruments and public policies,0.61,High,Proagro coverage plus,,Data unavailable
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Vulnerability,0.38,Low,Adaptive capacity,0.63,High,Financial instruments and public policies,0.61,High,cistern program,,Data unavailable
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Vulnerability,0.38,Low,Adaptive capacity,0.63,High,Food storage,0.71,High,Distance from warehouses,0.77,High
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Vulnerability,0.38,Low,Adaptive capacity,0.63,High,Food storage,0.71,High,Storage capacity,0.64,High
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Vulnerability,0.38,Low,Adaptive capacity,0.63,High,Productive viability,0.6,High,Diversity of revenues,0.72,High
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Vulnerability,0.38,Low,Adaptive capacity,0.63,High,Productive viability,0.6,High,Potential for agricultural expansion in pasture areas,0.6,High
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Vulnerability,0.38,Low,Adaptive capacity,0.63,High,Productive viability,0.6,High,Tractors in agricultural establishments,0.17,Very low
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Vulnerability,0.38,Low,Adaptive capacity,0.63,High,Safety net for production,0.12,Very low,Associativism,0.02,Very low
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Vulnerability,0.38,Low,Adaptive capacity,0.63,High,Safety net for production,0.12,Very low,Land ownership,0.84,Very high
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Vulnerability,0.38,Low,Adaptive capacity,0.63,High,Safety net for production,0.12,Very low,Stability of agrarian conflicts,,Data unavailable
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Vulnerability,0.38,Low,Adaptive capacity,0.63,High,Safety net for production,0.12,Very low,Technical guidance,0.12,Very low
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Vulnerability,0.38,Low,Sensitivity,0.39,Low,Agricultural practices,0.51,Medium,Fire hotspots,0.55,Medium
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Vulnerability,0.38,Low,Sensitivity,0.39,Low,Agricultural practices,0.51,Medium,Homogeneity of agricultural production,0.48,Medium
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Vulnerability,0.38,Low,Sensitivity,0.39,Low,Agricultural practices,0.51,Medium,Irrigation susceptibility,,Data unavailable
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Vulnerability,0.38,Low,Sensitivity,0.39,Low,Agricultural practices,0.51,Medium,Susceptibility of agricultural productivity,0.49,Medium
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Vulnerability,0.38,Low,Sensitivity,0.39,Low,Agricultural practices,0.51,Medium,Susceptibility of livestock productivity,0.42,Medium
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Vulnerability,0.38,Low,Sensitivity,0.39,Low,Biophysical aspects,0.22,Low,Agricultural areas with low agricultural potential,0.0,Very low
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Vulnerability,0.38,Low,Sensitivity,0.39,Low,Biophysical aspects,0.22,Low,Agricultural areas with soil susceptible to erosion,0.22,Low
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Vulnerability,0.38,Low,Sensitivity,0.39,Low,Biophysical aspects,0.22,Low,Agriculture and water availability,0.25,Low
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Vulnerability,0.38,Low,Sensitivity,0.39,Low,Biophysical aspects,0.22,Low,Vegetation cover losses,0.04,Very low
+Abadia de Goiás/GO,2020,current,Food security,Food availability,0.18,Very low,Vulnerability,0.38,Low,Sensitivity,0.39,Low,Biophysical aspects,0.22,Low,Water deficit,0.37,Low
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,"Floods, flash floods, and urban flooding",0.19,Very low,Exposure,0.11,Very low,Housing in a risky environment,0.0,Very low,,,,Households in risk areas,0.0,Very low
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,"Floods, flash floods, and urban flooding",0.19,Very low,Exposure,0.11,Very low,Population density,0.07,Very low,,,,Urban population density,0.07,Very low
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,"Floods, flash floods, and urban flooding",0.19,Very low,Hazard,0.42,Medium,,,,,,,Hazard,0.42,Medium
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,"Floods, flash floods, and urban flooding",0.19,Very low,Vulnerability,0.37,Low,Adaptive capacity,0.48,Medium,Municipal economic capacity,0.41,Medium,Employment and income,0.63,High
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,"Floods, flash floods, and urban flooding",0.19,Very low,Vulnerability,0.37,Low,Adaptive capacity,0.48,Medium,Municipal economic capacity,0.41,Medium,Gross domestic product by urban area,0.61,High
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,"Floods, flash floods, and urban flooding",0.19,Very low,Vulnerability,0.37,Low,Adaptive capacity,0.48,Medium,Municipal economic capacity,0.41,Medium,Investment in adaptation policies,0.34,Low
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,"Floods, flash floods, and urban flooding",0.19,Very low,Vulnerability,0.37,Low,Adaptive capacity,0.48,Medium,Municipal economic capacity,0.41,Medium,Tax management,0.57,Medium
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,"Floods, flash floods, and urban flooding",0.19,Very low,Vulnerability,0.37,Low,Adaptive capacity,0.48,Medium,Risk management,0.22,Low,Actions to reduce risk,1.0,Very high
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,"Floods, flash floods, and urban flooding",0.19,Very low,Vulnerability,0.37,Low,Adaptive capacity,0.48,Medium,Risk management,0.22,Low,Contingency plan,0.0,Very low
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,"Floods, flash floods, and urban flooding",0.19,Very low,Vulnerability,0.37,Low,Adaptive capacity,0.48,Medium,Risk management,0.22,Low,Early warning systems,0.0,Very low
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,"Floods, flash floods, and urban flooding",0.19,Very low,Vulnerability,0.37,Low,Adaptive capacity,0.48,Medium,Risk management,0.22,Low,Institutions for risk management,0.22,Low
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,"Floods, flash floods, and urban flooding",0.19,Very low,Vulnerability,0.37,Low,Adaptive capacity,0.48,Medium,Risk management,0.22,Low,Resilient cities program,0.3,Low
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,"Floods, flash floods, and urban flooding",0.19,Very low,Vulnerability,0.37,Low,Adaptive capacity,0.48,Medium,Risk management,0.22,Low,Urban occupation management in risk areas,0.0,Very low
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,"Floods, flash floods, and urban flooding",0.19,Very low,Vulnerability,0.37,Low,Adaptive capacity,0.48,Medium,Risk management,0.22,Low,Waste management and public cleaning,1.0,Very high
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,"Floods, flash floods, and urban flooding",0.19,Very low,Vulnerability,0.37,Low,Adaptive capacity,0.48,Medium,Urban policy,0.51,Medium,Environmental governance,0.6,High
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,"Floods, flash floods, and urban flooding",0.19,Very low,Vulnerability,0.37,Low,Adaptive capacity,0.48,Medium,Urban policy,0.51,Medium,Healthcare facilities,0.39,Low
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,"Floods, flash floods, and urban flooding",0.19,Very low,Vulnerability,0.37,Low,Adaptive capacity,0.48,Medium,Urban policy,0.51,Medium,Housing governance,0.67,High
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,"Floods, flash floods, and urban flooding",0.19,Very low,Vulnerability,0.37,Low,Adaptive capacity,0.48,Medium,Urban policy,0.51,Medium,Land use and occupation,1.0,Very high
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,"Floods, flash floods, and urban flooding",0.19,Very low,Vulnerability,0.37,Low,Adaptive capacity,0.48,Medium,Urban policy,0.51,Medium,Municipal basic sanitation plan,0.77,High
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,"Floods, flash floods, and urban flooding",0.19,Very low,Vulnerability,0.37,Low,Adaptive capacity,0.48,Medium,Urban policy,0.51,Medium,Transport governance,0.57,Medium
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,"Floods, flash floods, and urban flooding",0.19,Very low,Vulnerability,0.37,Low,Sensitivity,0.28,Low,Infrastructure,0.25,Low,Basic sanitation,0.3,Low
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,"Floods, flash floods, and urban flooding",0.19,Very low,Vulnerability,0.37,Low,Sensitivity,0.28,Low,Infrastructure,0.25,Low,Drainage,1.0,Very high
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,"Floods, flash floods, and urban flooding",0.19,Very low,Vulnerability,0.37,Low,Sensitivity,0.28,Low,Infrastructure,0.25,Low,Inaccessibility to cities,0.05,Very low
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,"Floods, flash floods, and urban flooding",0.19,Very low,Vulnerability,0.37,Low,Sensitivity,0.28,Low,Infrastructure,0.25,Low,Lack of urban mobility,0.2,Low
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,"Floods, flash floods, and urban flooding",0.19,Very low,Vulnerability,0.37,Low,Sensitivity,0.28,Low,Population,0.37,Low,Inappropriate households,0.37,Low
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,"Floods, flash floods, and urban flooding",0.19,Very low,Vulnerability,0.37,Low,Sensitivity,0.28,Low,Population,0.37,Low,Income inequality,0.37,Low
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,"Floods, flash floods, and urban flooding",0.19,Very low,Vulnerability,0.37,Low,Sensitivity,0.28,Low,Population,0.37,Low,Population with special demands,0.52,Medium
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,"Floods, flash floods, and urban flooding",0.19,Very low,Vulnerability,0.37,Low,Sensitivity,0.28,Low,Population,0.37,Low,Young people without secondary education,0.24,Low
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,Landslide,0.12,Very low,Exposure,0.13,Very low,Housing in a risky environment,0.0,Very low,,,,Households in risk areas,0.0,Very low
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,Landslide,0.12,Very low,Exposure,0.13,Very low,Population density,0.07,Very low,,,,Urban population density,0.07,Very low
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,Landslide,0.12,Very low,Hazard,0.29,Low,,,,,,,Hazard,0.29,Low
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,Landslide,0.12,Very low,Vulnerability,0.35,Low,Adaptive capacity,0.52,Medium,Disaster risk management,0.3,Low,Actions to reduce risk,1.0,Very high
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,Landslide,0.12,Very low,Vulnerability,0.35,Low,Adaptive capacity,0.52,Medium,Disaster risk management,0.3,Low,Contingency plan,0.0,Very low
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,Landslide,0.12,Very low,Vulnerability,0.35,Low,Adaptive capacity,0.52,Medium,Disaster risk management,0.3,Low,Early warning systems,0.0,Very low
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,Landslide,0.12,Very low,Vulnerability,0.35,Low,Adaptive capacity,0.52,Medium,Disaster risk management,0.3,Low,Institutions for risk management,0.22,Low
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,Landslide,0.12,Very low,Vulnerability,0.35,Low,Adaptive capacity,0.52,Medium,Disaster risk management,0.3,Low,Resilient cities program,0.3,Low
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,Landslide,0.12,Very low,Vulnerability,0.35,Low,Adaptive capacity,0.52,Medium,Disaster risk management,0.3,Low,Urban occupation management in risk areas,0.75,High
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,Landslide,0.12,Very low,Vulnerability,0.35,Low,Adaptive capacity,0.52,Medium,Disaster risk management,0.3,Low,Waste management and public cleaning,1.0,Very high
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,Landslide,0.12,Very low,Vulnerability,0.35,Low,Adaptive capacity,0.52,Medium,Municipal economic capacity,0.41,Medium,Employment and income,0.63,High
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,Landslide,0.12,Very low,Vulnerability,0.35,Low,Adaptive capacity,0.52,Medium,Municipal economic capacity,0.41,Medium,Gross domestic product by urban area,0.61,High
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,Landslide,0.12,Very low,Vulnerability,0.35,Low,Adaptive capacity,0.52,Medium,Municipal economic capacity,0.41,Medium,Investment in adaptation policies,0.34,Low
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,Landslide,0.12,Very low,Vulnerability,0.35,Low,Adaptive capacity,0.52,Medium,Municipal economic capacity,0.41,Medium,Tax management,0.57,Medium
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,Landslide,0.12,Very low,Vulnerability,0.35,Low,Adaptive capacity,0.52,Medium,Urban policy,0.51,Medium,Environmental governance,0.6,High
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,Landslide,0.12,Very low,Vulnerability,0.35,Low,Adaptive capacity,0.52,Medium,Urban policy,0.51,Medium,Healthcare facilities,0.39,Low
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,Landslide,0.12,Very low,Vulnerability,0.35,Low,Adaptive capacity,0.52,Medium,Urban policy,0.51,Medium,Housing governance,0.67,High
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,Landslide,0.12,Very low,Vulnerability,0.35,Low,Adaptive capacity,0.52,Medium,Urban policy,0.51,Medium,Land use and occupation,1.0,Very high
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,Landslide,0.12,Very low,Vulnerability,0.35,Low,Adaptive capacity,0.52,Medium,Urban policy,0.51,Medium,Municipal basic sanitation plan,0.77,High
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,Landslide,0.12,Very low,Vulnerability,0.35,Low,Adaptive capacity,0.52,Medium,Urban policy,0.51,Medium,Transport governance,0.57,Medium
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,Landslide,0.12,Very low,Vulnerability,0.35,Low,Sensitivity,0.3,Low,Infrastructure,0.25,Low,Basic sanitation,0.3,Low
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,Landslide,0.12,Very low,Vulnerability,0.35,Low,Sensitivity,0.3,Low,Infrastructure,0.25,Low,Drainage,1.0,Very high
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,Landslide,0.12,Very low,Vulnerability,0.35,Low,Sensitivity,0.3,Low,Infrastructure,0.25,Low,Inaccessibility to cities,0.05,Very low
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,Landslide,0.12,Very low,Vulnerability,0.35,Low,Sensitivity,0.3,Low,Infrastructure,0.25,Low,Lack of urban mobility,0.2,Low
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,Landslide,0.12,Very low,Vulnerability,0.35,Low,Sensitivity,0.3,Low,Population,0.37,Low,Inappropriate households,0.37,Low
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,Landslide,0.12,Very low,Vulnerability,0.35,Low,Sensitivity,0.3,Low,Population,0.37,Low,Income inequality,0.37,Low
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,Landslide,0.12,Very low,Vulnerability,0.35,Low,Sensitivity,0.3,Low,Population,0.37,Low,Population with special demands,0.52,Medium
+Abadia de Goiás/GO,2020,current,Geohydrological disasters,Landslide,0.12,Very low,Vulnerability,0.35,Low,Sensitivity,0.3,Low,Population,0.37,Low,Young people without secondary education,0.24,Low
+Abadia de Goiás/GO,2020,current,Health,American cutaneous leishmaniasis,0.51,Medium,Exposure,0.34,Low,Land use and occupation,0.05,Very low,,,,Agricultural coverage,0.79,High
+Abadia de Goiás/GO,2020,current,Health,American cutaneous leishmaniasis,0.51,Medium,Exposure,0.34,Low,Land use and occupation,0.05,Very low,,,,Informal settlements,0.0,Very low
+Abadia de Goiás/GO,2020,current,Health,American cutaneous leishmaniasis,0.51,Medium,Exposure,0.34,Low,Land use and occupation,0.05,Very low,,,,Natural coverage,0.1,Very low
+Abadia de Goiás/GO,2020,current,Health,American cutaneous leishmaniasis,0.51,Medium,Exposure,0.34,Low,Land use and occupation,0.05,Very low,,,,Settlements,0.0,Very low
+Abadia de Goiás/GO,2020,current,Health,American cutaneous leishmaniasis,0.51,Medium,Exposure,0.34,Low,Road network,0.47,Medium,,,,Highway density,0.47,Medium
+Abadia de Goiás/GO,2020,current,Health,American cutaneous leishmaniasis,0.51,Medium,Hazard,0.33,Low,,,,,,,Maximum temperature,0.63,High
+Abadia de Goiás/GO,2020,current,Health,American cutaneous leishmaniasis,0.51,Medium,Hazard,0.33,Low,,,,,,,Precipitation intensity,0.31,Low
+Abadia de Goiás/GO,2020,current,Health,American cutaneous leishmaniasis,0.51,Medium,Hazard,0.33,Low,,,,,,,Relative humidity,0.09,Very low
+Abadia de Goiás/GO,2020,current,Health,American cutaneous leishmaniasis,0.51,Medium,Vulnerability,0.16,Very low,Adaptive capacity,0.8,Very high,Health services,0.8,Very high,Basic care coverage,0.8,Very high
+Abadia de Goiás/GO,2020,current,Health,American cutaneous leishmaniasis,0.51,Medium,Vulnerability,0.16,Very low,Sensitivity,0.15,Very low,Epidemiological profile of American cutaneous leishmaniasis,0.0,Very low,Incidence of American cutaneous leishmaniasis,0.0,Very low
+Abadia de Goiás/GO,2020,current,Health,American cutaneous leishmaniasis,0.51,Medium,Vulnerability,0.16,Very low,Sensitivity,0.15,Very low,Population mobility,0.44,Medium,Recent immigration,0.44,Medium
+Abadia de Goiás/GO,2020,current,Health,American cutaneous leishmaniasis,0.51,Medium,Vulnerability,0.16,Very low,Sensitivity,0.15,Very low,Social susceptibility,0.15,Very low,HDI-M,0.21,Low
+Abadia de Goiás/GO,2020,current,Health,American cutaneous leishmaniasis,0.51,Medium,Vulnerability,0.16,Very low,Sensitivity,0.15,Very low,Social susceptibility,0.15,Very low,Households without access to garbage collection,0.09,Very low
+Abadia de Goiás/GO,2020,current,Health,"Arboviruses dengue, zika and chikungunya",0.76,High,Exposure,0.54,Medium,Land use and occupation,0.0,Very low,,,,Bodies of water,0.08,Very low
+Abadia de Goiás/GO,2020,current,Health,"Arboviruses dengue, zika and chikungunya",0.76,High,Exposure,0.54,Medium,Land use and occupation,0.0,Very low,,,,Deforestation,0.0,Very low
+Abadia de Goiás/GO,2020,current,Health,"Arboviruses dengue, zika and chikungunya",0.76,High,Exposure,0.54,Medium,Land use and occupation,0.0,Very low,,,,Informal settlements,0.0,Very low
+Abadia de Goiás/GO,2020,current,Health,"Arboviruses dengue, zika and chikungunya",0.76,High,Exposure,0.54,Medium,Population density,0.56,Medium,,,,Population density,0.56,Medium
+Abadia de Goiás/GO,2020,current,Health,"Arboviruses dengue, zika and chikungunya",0.76,High,Exposure,0.54,Medium,Road network,0.47,Medium,,,,Highway density,0.47,Medium
+Abadia de Goiás/GO,2020,current,Health,"Arboviruses dengue, zika and chikungunya",0.76,High,Hazard,0.66,High,,,,,,,Heat waves,0.42,Medium
+Abadia de Goiás/GO,2020,current,Health,"Arboviruses dengue, zika and chikungunya",0.76,High,Hazard,0.66,High,,,,,,,Maximum temperature,0.63,High
+Abadia de Goiás/GO,2020,current,Health,"Arboviruses dengue, zika and chikungunya",0.76,High,Hazard,0.66,High,,,,,,,Minimum temperature,0.48,Medium
+Abadia de Goiás/GO,2020,current,Health,"Arboviruses dengue, zika and chikungunya",0.76,High,Hazard,0.66,High,,,,,,,Precipitation intensity,0.31,Low
+Abadia de Goiás/GO,2020,current,Health,"Arboviruses dengue, zika and chikungunya",0.76,High,Hazard,0.66,High,,,,,,,Relative humidity,0.09,Very low
+Abadia de Goiás/GO,2020,current,Health,"Arboviruses dengue, zika and chikungunya",0.76,High,Hazard,0.66,High,,,,,,,Thermal range,0.66,High
+Abadia de Goiás/GO,2020,current,Health,"Arboviruses dengue, zika and chikungunya",0.76,High,Vulnerability,0.34,Low,Adaptive capacity,0.8,Very high,Health services,0.8,Very high,Basic care coverage,0.8,Very high
+Abadia de Goiás/GO,2020,current,Health,"Arboviruses dengue, zika and chikungunya",0.76,High,Vulnerability,0.34,Low,Sensitivity,0.49,Medium,"Epidemiological profile of the arboviruses dengue, zika and chikungunya",0.8,Very high,"Incidence of arboviruses dengue, zika and chikungunya",0.8,Very high
+Abadia de Goiás/GO,2020,current,Health,"Arboviruses dengue, zika and chikungunya",0.76,High,Vulnerability,0.34,Low,Sensitivity,0.49,Medium,Social susceptibility,0.17,Very low,HDI-M,0.28,Low
+Abadia de Goiás/GO,2020,current,Health,"Arboviruses dengue, zika and chikungunya",0.76,High,Vulnerability,0.34,Low,Sensitivity,0.49,Medium,Social susceptibility,0.17,Very low,Households without access to garbage collection,0.07,Very low
+Abadia de Goiás/GO,2020,current,Health,"Arboviruses dengue, zika and chikungunya",0.76,High,Vulnerability,0.34,Low,Sensitivity,0.49,Medium,Social susceptibility,0.17,Very low,Presence of cistern,0.6,High
+Abadia de Goiás/GO,2020,current,Health,"Arboviruses dengue, zika and chikungunya",0.76,High,Vulnerability,0.34,Low,Sensitivity,0.49,Medium,Social susceptibility,0.17,Very low,Water supply,0.01,Very low
+Abadia de Goiás/GO,2020,current,Health,Malaria,0.69,High,Exposure,0.31,Low,Land use and occupation,0.0,Very low,,,,Bodies of water,0.08,Very low
+Abadia de Goiás/GO,2020,current,Health,Malaria,0.69,High,Exposure,0.31,Low,Land use and occupation,0.0,Very low,,,,Deforestation,0.0,Very low
+Abadia de Goiás/GO,2020,current,Health,Malaria,0.69,High,Exposure,0.31,Low,Land use and occupation,0.0,Very low,,,,Mining,0.0,Very low
+Abadia de Goiás/GO,2020,current,Health,Malaria,0.69,High,Exposure,0.31,Low,Land use and occupation,0.0,Very low,,,,Rural population,0.22,Low
+Abadia de Goiás/GO,2020,current,Health,Malaria,0.69,High,Exposure,0.31,Low,Land use and occupation,0.0,Very low,,,,Settlements,0.0,Very low
+Abadia de Goiás/GO,2020,current,Health,Malaria,0.69,High,Exposure,0.31,Low,Road network,0.29,Low,,,,Highway density,0.29,Low
+Abadia de Goiás/GO,2020,current,Health,Malaria,0.69,High,Hazard,0.2,Low,,,,,,,Maximum temperature,0.63,High
+Abadia de Goiás/GO,2020,current,Health,Malaria,0.69,High,Hazard,0.2,Low,,,,,,,Precipitation intensity,0.31,Low
+Abadia de Goiás/GO,2020,current,Health,Malaria,0.69,High,Hazard,0.2,Low,,,,,,,Relative humidity,0.09,Very low
+Abadia de Goiás/GO,2020,current,Health,Malaria,0.69,High,Vulnerability,0.19,Very low,Adaptive capacity,0.4,Medium,Health services,0.4,Medium,Access to diagnosis and treatment,,Data unavailable
+Abadia de Goiás/GO,2020,current,Health,Malaria,0.69,High,Vulnerability,0.19,Very low,Adaptive capacity,0.4,Medium,Health services,0.4,Medium,Basic care coverage,0.4,Medium
+Abadia de Goiás/GO,2020,current,Health,Malaria,0.69,High,Vulnerability,0.19,Very low,Sensitivity,0.06,Very low,Epidemiological profile of malaria,0.0,Very low,Ipa,0.0,Very low
+Abadia de Goiás/GO,2020,current,Health,Malaria,0.69,High,Vulnerability,0.19,Very low,Sensitivity,0.06,Very low,Epidemiological profile of malaria,0.0,Very low,falciparum malaria,0.0,Very low
+Abadia de Goiás/GO,2020,current,Health,Malaria,0.69,High,Vulnerability,0.19,Very low,Sensitivity,0.06,Very low,Population mobility,0.06,Very low,Municipal tourism,0.0,Very low
+Abadia de Goiás/GO,2020,current,Health,Malaria,0.69,High,Vulnerability,0.19,Very low,Sensitivity,0.06,Very low,Population mobility,0.06,Very low,Recent immigration,0.11,Very low
+Abadia de Goiás/GO,2020,current,Health,Malaria,0.69,High,Vulnerability,0.19,Very low,Sensitivity,0.06,Very low,Social susceptibility,0.25,Low,HDI-M,0.17,Very low
+Abadia de Goiás/GO,2020,current,Health,Malaria,0.69,High,Vulnerability,0.19,Very low,Sensitivity,0.06,Very low,Social susceptibility,0.25,Low,No access to adequate sanitation,0.33,Low
+Abadia de Goiás/GO,2020,current,Health,Visceral leishmaniasis,0.57,Medium,Exposure,0.31,Low,Land use and occupation,0.05,Very low,,,,Natural coverage,0.1,Very low
+Abadia de Goiás/GO,2020,current,Health,Visceral leishmaniasis,0.57,Medium,Exposure,0.31,Low,Land use and occupation,0.05,Very low,,,,Settlements,0.0,Very low
+Abadia de Goiás/GO,2020,current,Health,Visceral leishmaniasis,0.57,Medium,Exposure,0.31,Low,Road network,0.47,Medium,,,,Highway density,0.47,Medium
+Abadia de Goiás/GO,2020,current,Health,Visceral leishmaniasis,0.57,Medium,Hazard,0.78,High,,,,,,,Minimum temperature,0.48,Medium
+Abadia de Goiás/GO,2020,current,Health,Visceral leishmaniasis,0.57,Medium,Hazard,0.78,High,,,,,,,Precipitation intensity,0.31,Low
+Abadia de Goiás/GO,2020,current,Health,Visceral leishmaniasis,0.57,Medium,Hazard,0.78,High,,,,,,,Relative humidity,0.09,Very low
+Abadia de Goiás/GO,2020,current,Health,Visceral leishmaniasis,0.57,Medium,Vulnerability,0.06,Very low,Adaptive capacity,0.8,Very high,Health services,0.8,Very high,Basic care coverage,0.8,Very high
+Abadia de Goiás/GO,2020,current,Health,Visceral leishmaniasis,0.57,Medium,Vulnerability,0.06,Very low,Sensitivity,0.07,Very low,Epidemiological profile of visceral leishmaniasis,0.0,Very low,Incidence of visceral leishmaniasis,0.0,Very low
+Abadia de Goiás/GO,2020,current,Health,Visceral leishmaniasis,0.57,Medium,Vulnerability,0.06,Very low,Sensitivity,0.07,Very low,Social susceptibility,0.15,Very low,HDI-M,0.21,Low
+Abadia de Goiás/GO,2020,current,Health,Visceral leishmaniasis,0.57,Medium,Vulnerability,0.06,Very low,Sensitivity,0.07,Very low,Social susceptibility,0.15,Very low,Households without access to garbage collection,0.09,Very low
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Exposure,0.78,High,Exposed population,0.78,High,,,,Population density,0.78,High
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Exposure,0.78,High,Users of exposed water resources,0.08,Very low,,,,Animal husbandry users exposed,0.1,Very low
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Exposure,0.78,High,Users of exposed water resources,0.08,Very low,,,,Exposed industrial users,0.04,Very low
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Exposure,0.78,High,Users of exposed water resources,0.08,Very low,,,,Exposed rural users,0.06,Very low
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Exposure,0.78,High,Users of exposed water resources,0.08,Very low,,,,Irrigation users exposed,0.18,Very low
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Exposure,0.78,High,Users of exposed water resources,0.08,Very low,,,,Mining Users Exposed,0.0,Very low
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Exposure,0.78,High,Users of exposed water resources,0.08,Very low,,,,Thermoelectricity users exposed,,Data unavailable
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Exposure,0.78,High,Users of exposed water resources,0.08,Very low,,,,Urban users exposed,0.16,Very low
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Hazard,0.4,Medium,,,,,,,Water scarcity hazard,0.4,Medium
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Vulnerability,0.46,Medium,Adaptive capacity,0.35,Low,Capacity of productive sectors,0.36,Low,Agricultural participation in GDP,0.06,Very low
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Vulnerability,0.46,Medium,Adaptive capacity,0.35,Low,Capacity of productive sectors,0.36,Low,Industrial participation in GDP,0.51,Medium
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Vulnerability,0.46,Medium,Adaptive capacity,0.35,Low,Family socioeconomic capacity,0.65,High,Income greater than two minimum wages,0.69,High
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Vulnerability,0.46,Medium,Adaptive capacity,0.35,Low,Family socioeconomic capacity,0.65,High,Income not affected by water prices,0.61,High
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Vulnerability,0.46,Medium,Adaptive capacity,0.35,Low,Planning for water resources,0.3,Low,Cisterns program: water for consumption,,Data unavailable
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Vulnerability,0.46,Medium,Adaptive capacity,0.35,Low,Planning for water resources,0.3,Low,Investments in adaptation policies,0.34,Low
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Vulnerability,0.46,Medium,Adaptive capacity,0.35,Low,Planning for water resources,0.3,Low,Investments in water resources,0.01,Very low
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Vulnerability,0.46,Medium,Adaptive capacity,0.35,Low,Planning for water resources,0.3,Low,Resilient cities program,0.3,Low
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Vulnerability,0.46,Medium,Adaptive capacity,0.35,Low,Water resilience,0.32,Low,Artificial reserve,0.03,Very low
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Vulnerability,0.46,Medium,Adaptive capacity,0.35,Low,Water resilience,0.32,Low,Nature reserve,0.36,Low
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Vulnerability,0.46,Medium,Adaptive capacity,0.35,Low,Water resilience,0.32,Low,Underground storage potential,0.32,Low
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Vulnerability,0.46,Medium,Adaptive capacity,0.35,Low,Water resources management,0.56,Medium,Alternatives to water supply,0.27,Low
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Vulnerability,0.46,Medium,Adaptive capacity,0.35,Low,Water resources management,0.56,Medium,Drought-related prevention actions,,Data unavailable
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Vulnerability,0.46,Medium,Adaptive capacity,0.35,Low,Water resources management,0.56,Medium,Level of activity in basin committees,0.56,Medium
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Vulnerability,0.46,Medium,Adaptive capacity,0.35,Low,Water resources management,0.56,Medium,Municipal basic sanitation plan,0.77,High
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Vulnerability,0.46,Medium,Sensitivity,0.27,Low,Anthropogenic pressure and environmental quality,0.6,High,Areas with soils susceptible to erosion,0.27,Low
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Vulnerability,0.46,Medium,Sensitivity,0.27,Low,Anthropogenic pressure and environmental quality,0.6,High,Dam and mining safety,,Data unavailable
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Vulnerability,0.46,Medium,Sensitivity,0.27,Low,Anthropogenic pressure and environmental quality,0.6,High,Degraded and/or deforested areas,0.6,High
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Vulnerability,0.46,Medium,Sensitivity,0.27,Low,Anthropogenic pressure and environmental quality,0.6,High,Ecological flow for ecosystem uses,1.0,Very high
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Vulnerability,0.46,Medium,Sensitivity,0.27,Low,Effects on human health,0.25,Low,Diseases due to inadequate sanitation,0.5,Medium
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Vulnerability,0.46,Medium,Sensitivity,0.27,Low,Effects on human health,0.25,Low,Water quality,0.0,Very low
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Vulnerability,0.46,Medium,Sensitivity,0.27,Low,Insecurity of human supply,0.3,Low,Average per capita water consumption,0.54,Medium
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Vulnerability,0.46,Medium,Sensitivity,0.27,Low,Insecurity of human supply,0.3,Low,Inefficiency in water distribution,0.3,Low
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Vulnerability,0.46,Medium,Sensitivity,0.27,Low,Insecurity of human supply,0.3,Low,Inefficiency in water production,0.3,Low
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Vulnerability,0.46,Medium,Sensitivity,0.27,Low,Water balance of productive sectors,0.38,Low,Water balance for agriculture,0.25,Low
+Abadia de Goiás/GO,2020,current,Water resources,Risk of water stress,0.66,High,Vulnerability,0.46,Medium,Sensitivity,0.27,Low,Water balance of productive sectors,0.38,Low,Water balance for industry,0.5,Medium

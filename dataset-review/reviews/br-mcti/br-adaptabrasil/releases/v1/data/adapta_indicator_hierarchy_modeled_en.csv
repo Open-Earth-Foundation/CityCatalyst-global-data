@@ -1,0 +1,361 @@
+sector_id,sector_name,risk_id,risk_name,risk_component_id,risk_component_name,impact_chain_id_1,impact_chain_name_1,impact_chain_id_2,impact_chain_name_2,impact_chain_id_3,impact_chain_name_3,base_indicator_id,base_indicator_name,base_indicator_level
+1,Water resources,2,Risk of water stress,3,Vulnerability,6,Sensitivity,8,Insecurity of human supply,,,19,Inefficiency in water production,6
+1,Water resources,2,Risk of water stress,3,Vulnerability,6,Sensitivity,8,Insecurity of human supply,,,20,Inefficiency in water distribution,6
+1,Water resources,2,Risk of water stress,3,Vulnerability,6,Sensitivity,8,Insecurity of human supply,,,21,Average per capita water consumption,6
+1,Water resources,2,Risk of water stress,3,Vulnerability,6,Sensitivity,9,Water balance of productive sectors,,,22,Water balance for agriculture,6
+1,Water resources,2,Risk of water stress,3,Vulnerability,6,Sensitivity,9,Water balance of productive sectors,,,23,Water balance for industry,6
+1,Water resources,2,Risk of water stress,3,Vulnerability,6,Sensitivity,10,Effects on human health,,,24,Diseases due to inadequate sanitation,6
+1,Water resources,2,Risk of water stress,3,Vulnerability,6,Sensitivity,10,Effects on human health,,,25,Water quality,6
+1,Water resources,2,Risk of water stress,3,Vulnerability,6,Sensitivity,11,Anthropogenic pressure and environmental quality,,,26,Degraded and/or deforested areas,6
+1,Water resources,2,Risk of water stress,3,Vulnerability,6,Sensitivity,11,Anthropogenic pressure and environmental quality,,,27,Areas with soils susceptible to erosion,6
+1,Water resources,2,Risk of water stress,3,Vulnerability,6,Sensitivity,11,Anthropogenic pressure and environmental quality,,,28,Ecological flow for ecosystem uses,6
+1,Water resources,2,Risk of water stress,3,Vulnerability,6,Sensitivity,11,Anthropogenic pressure and environmental quality,,,29,Dam and mining safety,6
+1,Water resources,2,Risk of water stress,3,Vulnerability,7,Adaptive capacity,12,Water resources management,,,30,Municipal basic sanitation plan,6
+1,Water resources,2,Risk of water stress,3,Vulnerability,7,Adaptive capacity,12,Water resources management,,,31,Level of activity in basin committees,6
+1,Water resources,2,Risk of water stress,3,Vulnerability,7,Adaptive capacity,12,Water resources management,,,32,Drought-related prevention actions,6
+1,Water resources,2,Risk of water stress,3,Vulnerability,7,Adaptive capacity,12,Water resources management,,,33,Alternatives to water supply,6
+1,Water resources,2,Risk of water stress,3,Vulnerability,7,Adaptive capacity,13,Planning for water resources,,,34,Investments in water resources,6
+1,Water resources,2,Risk of water stress,3,Vulnerability,7,Adaptive capacity,13,Planning for water resources,,,35,Investments in adaptation policies,6
+1,Water resources,2,Risk of water stress,3,Vulnerability,7,Adaptive capacity,13,Planning for water resources,,,36,Resilient cities program,6
+1,Water resources,2,Risk of water stress,3,Vulnerability,7,Adaptive capacity,13,Planning for water resources,,,37,Cisterns program: water for consumption,6
+1,Water resources,2,Risk of water stress,3,Vulnerability,7,Adaptive capacity,14,Water resilience,,,38,Nature reserve,6
+1,Water resources,2,Risk of water stress,3,Vulnerability,7,Adaptive capacity,14,Water resilience,,,39,Artificial reserve,6
+1,Water resources,2,Risk of water stress,3,Vulnerability,7,Adaptive capacity,14,Water resilience,,,40,Underground storage potential,6
+1,Water resources,2,Risk of water stress,3,Vulnerability,7,Adaptive capacity,15,Capacity of productive sectors,,,41,Agricultural participation in GDP,6
+1,Water resources,2,Risk of water stress,3,Vulnerability,7,Adaptive capacity,15,Capacity of productive sectors,,,42,Industrial participation in GDP,6
+1,Water resources,2,Risk of water stress,3,Vulnerability,7,Adaptive capacity,16,Family socioeconomic capacity,,,43,Income not affected by water prices,6
+1,Water resources,2,Risk of water stress,3,Vulnerability,7,Adaptive capacity,16,Family socioeconomic capacity,,,44,Income greater than two minimum wages,6
+1,Water resources,2,Risk of water stress,4,Exposure,17,Exposed population,,,,,45,Population density,5
+1,Water resources,2,Risk of water stress,4,Exposure,18,Users of exposed water resources,,,,,46,Urban users exposed,5
+1,Water resources,2,Risk of water stress,4,Exposure,18,Users of exposed water resources,,,,,47,Exposed rural users,5
+1,Water resources,2,Risk of water stress,4,Exposure,18,Users of exposed water resources,,,,,48,Exposed industrial users,5
+1,Water resources,2,Risk of water stress,4,Exposure,18,Users of exposed water resources,,,,,49,Mining Users Exposed,5
+1,Water resources,2,Risk of water stress,4,Exposure,18,Users of exposed water resources,,,,,50,Thermoelectricity users exposed,5
+1,Water resources,2,Risk of water stress,4,Exposure,18,Users of exposed water resources,,,,,51,Animal husbandry users exposed,5
+1,Water resources,2,Risk of water stress,4,Exposure,18,Users of exposed water resources,,,,,52,Irrigation users exposed,5
+1,Water resources,2,Risk of water stress,5,Hazard,,,,,,,5,Water scarcity hazard,3
+10000,Energy security,10001,Access,,,,,,,,,10020,Hydropower potential,4
+10000,Energy security,10001,Access,,,,,,,,,10021,Solar energy potential,4
+10000,Energy security,10001,Access,,,,,,,,,10022,Wind energy potential,4
+10000,Energy security,10001,Access,,,,,,,,,10023,Cooling Demand,4
+10000,Energy security,10001,Access,10002,Vulnerability,10005,Sensitivity,,,,,10007,Energy poverty,5
+10000,Energy security,10001,Access,10002,Vulnerability,10005,Sensitivity,,,,,10008,Electricity interruption,5
+10000,Energy security,10001,Access,10002,Vulnerability,10005,Sensitivity,,,,,10009,Residential electrical consumption,5
+10000,Energy security,10001,Access,10002,Vulnerability,10005,Sensitivity,,,,,10010,Electrical energy intensity,5
+10000,Energy security,10001,Access,10002,Vulnerability,10006,Adaptive capacity,,,,,10011,Electricity self-producers,5
+10000,Energy security,10001,Access,10002,Vulnerability,10006,Adaptive capacity,,,,,10012,Distributed electricity generation,5
+10000,Energy security,10001,Access,10002,Vulnerability,10006,Adaptive capacity,,,,,10013,Energy stored in hydroelectric reservoirs,5
+10000,Energy security,10001,Access,10002,Vulnerability,10006,Adaptive capacity,,,,,10014,Diversification of electricity generation,5
+10000,Energy security,10001,Access,10002,Vulnerability,10006,Adaptive capacity,,,,,10015,Municipal GDP per capita,5
+10000,Energy security,10001,Access,10002,Vulnerability,10006,Adaptive capacity,,,,,10016,Income greater than two minimum wages,5
+10000,Energy security,10001,Access,10002,Vulnerability,10006,Adaptive capacity,,,,,10017,Resilient cities,5
+10000,Energy security,10001,Access,10003,Exposure,,,,,,,10018,Population density,4
+10000,Energy security,10001,Access,10003,Exposure,,,,,,,10019,Energy-intensive industries,4
+10000,Energy security,10024,Availability,,,,,,,,,10025,Hydropower potential,3
+10000,Energy security,10024,Availability,,,,,,,,,10026,Solar energy potential,3
+10000,Energy security,10024,Availability,,,,,,,,,10027,Wind energy potential,3
+10000,Energy security,10024,Availability,,,,,,,,,10028,Cooling Demand,3
+40000,Port infrastructure,40001,Storm,40002,Vulnerability,40005,Sensitivity,,,,,40009,Port type,5
+40000,Port infrastructure,40001,Storm,40002,Vulnerability,40005,Sensitivity,,,,,40010,Type of load,5
+40000,Port infrastructure,40001,Storm,40002,Vulnerability,40005,Sensitivity,,,,,40011,Condition of the sheltered area,5
+40000,Port infrastructure,40001,Storm,40002,Vulnerability,40006,Adaptive capacity,40007,Structural measures,,,40012,Alternative accesses,6
+40000,Port infrastructure,40001,Storm,40002,Vulnerability,40006,Adaptive capacity,40007,Structural measures,,,40013,Existence of VTMS,6
+40000,Port infrastructure,40001,Storm,40002,Vulnerability,40006,Adaptive capacity,40007,Structural measures,,,40014,Drainage system,6
+40000,Port infrastructure,40001,Storm,40002,Vulnerability,40006,Adaptive capacity,40008,Non-structural measures,,,40015,Record of impacts,6
+40000,Port infrastructure,40001,Storm,40002,Vulnerability,40006,Adaptive capacity,40008,Non-structural measures,,,40016,Emergency action plans,6
+40000,Port infrastructure,40001,Storm,40002,Vulnerability,40006,Adaptive capacity,40008,Non-structural measures,,,40017,Crisis Committee,6
+40000,Port infrastructure,40001,Storm,40002,Vulnerability,40006,Adaptive capacity,40008,Non-structural measures,,,40018,Weather monitoring,6
+40000,Port infrastructure,40001,Storm,40002,Vulnerability,40006,Adaptive capacity,40008,Non-structural measures,,,40019,Adaptation meetings,6
+40000,Port infrastructure,40001,Storm,40002,Vulnerability,40006,Adaptive capacity,40008,Non-structural measures,,,40020,Strategic plan,6
+40000,Port infrastructure,40001,Storm,40002,Vulnerability,40006,Adaptive capacity,40008,Non-structural measures,,,40021,Specific planning,6
+40000,Port infrastructure,40001,Storm,40002,Vulnerability,40006,Adaptive capacity,40008,Non-structural measures,,,40022,Engineering design guidelines,6
+40000,Port infrastructure,40001,Storm,40002,Vulnerability,40006,Adaptive capacity,40008,Non-structural measures,,,40023,Budget for adaptation,6
+40000,Port infrastructure,40001,Storm,40002,Vulnerability,40006,Adaptive capacity,40008,Non-structural measures,,,40024,Specific insurance,6
+40000,Port infrastructure,40001,Storm,40003,Exposure,,,,,,,40025,Number of infrastructures,4
+40000,Port infrastructure,40001,Storm,40003,Exposure,,,,,,,40026,Annual cargo movement,4
+40000,Port infrastructure,40001,Storm,40004,Hazard,,,,,,,40027,Precipitation in one day,4
+40000,Port infrastructure,40001,Storm,40004,Hazard,,,,,,,40028,99th percentile of precipitation,4
+40000,Port infrastructure,40029,Gale,40030,Vulnerability,40033,Sensitivity,,,,,40037,Port type,5
+40000,Port infrastructure,40029,Gale,40030,Vulnerability,40033,Sensitivity,,,,,40038,Type of load,5
+40000,Port infrastructure,40029,Gale,40030,Vulnerability,40033,Sensitivity,,,,,40039,Condition of the sheltered area,5
+40000,Port infrastructure,40029,Gale,40030,Vulnerability,40034,Adaptive capacity,40035,Structural measures,,,40040,Alternative accesses,6
+40000,Port infrastructure,40029,Gale,40030,Vulnerability,40034,Adaptive capacity,40035,Structural measures,,,40041,Existence of VTMS,6
+40000,Port infrastructure,40029,Gale,40030,Vulnerability,40034,Adaptive capacity,40036,Non-structural measures,,,40042,Record of impacts,6
+40000,Port infrastructure,40029,Gale,40030,Vulnerability,40034,Adaptive capacity,40036,Non-structural measures,,,40043,Emergency action plans,6
+40000,Port infrastructure,40029,Gale,40030,Vulnerability,40034,Adaptive capacity,40036,Non-structural measures,,,40044,Crisis Committee,6
+40000,Port infrastructure,40029,Gale,40030,Vulnerability,40034,Adaptive capacity,40036,Non-structural measures,,,40045,Weather monitoring,6
+40000,Port infrastructure,40029,Gale,40030,Vulnerability,40034,Adaptive capacity,40036,Non-structural measures,,,40046,Adaptation meetings,6
+40000,Port infrastructure,40029,Gale,40030,Vulnerability,40034,Adaptive capacity,40036,Non-structural measures,,,40047,Strategic plan,6
+40000,Port infrastructure,40029,Gale,40030,Vulnerability,40034,Adaptive capacity,40036,Non-structural measures,,,40048,Specific planning,6
+40000,Port infrastructure,40029,Gale,40030,Vulnerability,40034,Adaptive capacity,40036,Non-structural measures,,,40049,Engineering design guidelines,6
+40000,Port infrastructure,40029,Gale,40030,Vulnerability,40034,Adaptive capacity,40036,Non-structural measures,,,40050,Budget for adaptation,6
+40000,Port infrastructure,40029,Gale,40030,Vulnerability,40034,Adaptive capacity,40036,Non-structural measures,,,40051,Specific insurance,6
+40000,Port infrastructure,40029,Gale,40030,Vulnerability,40034,Adaptive capacity,40036,Non-structural measures,,,40052,Wind gust monitoring,6
+40000,Port infrastructure,40029,Gale,40031,Exposure,,,,,,,40053,Number of infrastructures,4
+40000,Port infrastructure,40029,Gale,40031,Exposure,,,,,,,40054,Annual cargo movement,4
+40000,Port infrastructure,40029,Gale,40032,Hazard,,,,,,,40055,Maximum wind speed,4
+40000,Port infrastructure,40056,Sea level rise,40057,Vulnerability,40060,Sensitivity,,,,,40063,Port type,5
+40000,Port infrastructure,40056,Sea level rise,40057,Vulnerability,40060,Sensitivity,,,,,40064,Condition of the sheltered area,5
+40000,Port infrastructure,40056,Sea level rise,40057,Vulnerability,40061,Adaptive capacity,40062,Non-structural measures,,,40065,Record of impacts,6
+40000,Port infrastructure,40056,Sea level rise,40057,Vulnerability,40061,Adaptive capacity,40062,Non-structural measures,,,40066,Emergency action plans,6
+40000,Port infrastructure,40056,Sea level rise,40057,Vulnerability,40061,Adaptive capacity,40062,Non-structural measures,,,40067,Crisis Committee,6
+40000,Port infrastructure,40056,Sea level rise,40057,Vulnerability,40061,Adaptive capacity,40062,Non-structural measures,,,40068,Weather monitoring,6
+40000,Port infrastructure,40056,Sea level rise,40057,Vulnerability,40061,Adaptive capacity,40062,Non-structural measures,,,40069,Adaptation meetings,6
+40000,Port infrastructure,40056,Sea level rise,40057,Vulnerability,40061,Adaptive capacity,40062,Non-structural measures,,,40070,Strategic plan,6
+40000,Port infrastructure,40056,Sea level rise,40057,Vulnerability,40061,Adaptive capacity,40062,Non-structural measures,,,40071,Specific planning,6
+40000,Port infrastructure,40056,Sea level rise,40057,Vulnerability,40061,Adaptive capacity,40062,Non-structural measures,,,40072,Engineering design guidelines,6
+40000,Port infrastructure,40056,Sea level rise,40057,Vulnerability,40061,Adaptive capacity,40062,Non-structural measures,,,40073,Budget for adaptation,6
+40000,Port infrastructure,40056,Sea level rise,40057,Vulnerability,40061,Adaptive capacity,40062,Non-structural measures,,,40074,Specific insurance,6
+40000,Port infrastructure,40056,Sea level rise,40058,Exposure,,,,,,,40075,Number of infrastructures,4
+40000,Port infrastructure,40056,Sea level rise,40058,Exposure,,,,,,,40076,Annual cargo movement,4
+40000,Port infrastructure,40056,Sea level rise,40059,Hazard,,,,,,,40077,Coastal risk,4
+5000,Food security,5001,Food availability,5002,Vulnerability,5005,Sensitivity,5007,Agricultural practices,,,5016,Susceptibility of agricultural productivity,6
+5000,Food security,5001,Food availability,5002,Vulnerability,5005,Sensitivity,5007,Agricultural practices,,,5017,Susceptibility of livestock productivity,6
+5000,Food security,5001,Food availability,5002,Vulnerability,5005,Sensitivity,5007,Agricultural practices,,,5018,Homogeneity of agricultural production,6
+5000,Food security,5001,Food availability,5002,Vulnerability,5005,Sensitivity,5007,Agricultural practices,,,5019,Irrigation susceptibility,6
+5000,Food security,5001,Food availability,5002,Vulnerability,5005,Sensitivity,5007,Agricultural practices,,,5020,Fire hotspots,6
+5000,Food security,5001,Food availability,5002,Vulnerability,5005,Sensitivity,5008,Biophysical aspects,,,5021,Agriculture and water availability,6
+5000,Food security,5001,Food availability,5002,Vulnerability,5005,Sensitivity,5008,Biophysical aspects,,,5022,Agricultural areas with low agricultural potential,6
+5000,Food security,5001,Food availability,5002,Vulnerability,5005,Sensitivity,5008,Biophysical aspects,,,5023,Agricultural areas with soil susceptible to erosion,6
+5000,Food security,5001,Food availability,5002,Vulnerability,5005,Sensitivity,5008,Biophysical aspects,,,5024,Water deficit,6
+5000,Food security,5001,Food availability,5002,Vulnerability,5005,Sensitivity,5008,Biophysical aspects,,,5025,Vegetation cover losses,6
+5000,Food security,5001,Food availability,5002,Vulnerability,5006,Adaptive capacity,5009,Financial instruments and public policies,,,5026,Investment in agrarian and environmental management policies,6
+5000,Food security,5001,Food availability,5002,Vulnerability,5006,Adaptive capacity,5009,Financial instruments and public policies,,,5027,Harvest guarantee program,6
+5000,Food security,5001,Food availability,5002,Vulnerability,5006,Adaptive capacity,5009,Financial instruments and public policies,,,5028,PRONAF coverage,6
+5000,Food security,5001,Food availability,5002,Vulnerability,5006,Adaptive capacity,5009,Financial instruments and public policies,,,5029,cistern program,6
+5000,Food security,5001,Food availability,5002,Vulnerability,5006,Adaptive capacity,5009,Financial instruments and public policies,,,5030,Proagro coverage plus,6
+5000,Food security,5001,Food availability,5002,Vulnerability,5006,Adaptive capacity,5009,Financial instruments and public policies,,,5031,PSR coverage,6
+5000,Food security,5001,Food availability,5002,Vulnerability,5006,Adaptive capacity,5010,Safety net for production,,,5032,Technical guidance,6
+5000,Food security,5001,Food availability,5002,Vulnerability,5006,Adaptive capacity,5010,Safety net for production,,,5033,Associativism,6
+5000,Food security,5001,Food availability,5002,Vulnerability,5006,Adaptive capacity,5010,Safety net for production,,,5034,Land ownership,6
+5000,Food security,5001,Food availability,5002,Vulnerability,5006,Adaptive capacity,5010,Safety net for production,,,5035,Stability of agrarian conflicts,6
+5000,Food security,5001,Food availability,5002,Vulnerability,5006,Adaptive capacity,5011,Food storage,,,5036,Storage capacity,6
+5000,Food security,5001,Food availability,5002,Vulnerability,5006,Adaptive capacity,5011,Food storage,,,5037,Distance from warehouses,6
+5000,Food security,5001,Food availability,5002,Vulnerability,5006,Adaptive capacity,5012,Productive viability,,,5038,Diversity of revenues,6
+5000,Food security,5001,Food availability,5002,Vulnerability,5006,Adaptive capacity,5012,Productive viability,,,5039,Tractors in agricultural establishments,6
+5000,Food security,5001,Food availability,5002,Vulnerability,5006,Adaptive capacity,5012,Productive viability,,,5040,Potential for agricultural expansion in pasture areas,6
+5000,Food security,5001,Food availability,5003,Exposure,5013,Economic dependence,,,,,5041,Agriculture in the municipality’s economy,5
+5000,Food security,5001,Food availability,5003,Exposure,5014,Exposed areas,,,,,5042,Area planted with agricultural crops,5
+5000,Food security,5001,Food availability,5003,Exposure,5014,Exposed areas,,,,,5043,Area of ​​agricultural establishments with livestock,5
+5000,Food security,5001,Food availability,5003,Exposure,5015,Land structure,,,,,5044,Establishments with family farming,5
+5000,Food security,5001,Food availability,5003,Exposure,5015,Land structure,,,,,5045,Density of agricultural establishments,5
+5000,Food security,5001,Food availability,5004,Hazard,,,,,,,5046,Consecutive dry days,4
+5000,Food security,5001,Food availability,5004,Hazard,,,,,,,5047,Standardized precipitation-evapotranspiration index,4
+5000,Food security,5048,Access and consumption of food,5049,Vulnerability,5052,Sensitivity,5054,Population profile,,,5060,Average number of residents per household,6
+5000,Food security,5048,Access and consumption of food,5049,Vulnerability,5052,Sensitivity,5054,Population profile,,,5061,Mothers who are heads of the family,6
+5000,Food security,5048,Access and consumption of food,5049,Vulnerability,5052,Sensitivity,5054,Population profile,,,5062,Economically dependent population,6
+5000,Food security,5048,Access and consumption of food,5049,Vulnerability,5052,Sensitivity,5055,Basic infrastructure,,,5063,Direct source water shortage,6
+5000,Food security,5048,Access and consumption of food,5049,Vulnerability,5052,Sensitivity,5055,Basic infrastructure,,,5064,Compromised water quality,6
+5000,Food security,5048,Access and consumption of food,5049,Vulnerability,5052,Sensitivity,5055,Basic infrastructure,,,5065,Ultra-processed food commercial establishments,6
+5000,Food security,5048,Access and consumption of food,5049,Vulnerability,5052,Sensitivity,5055,Basic infrastructure,,,5066,Municipalities without a basic food supply network,6
+5000,Food security,5048,Access and consumption of food,5049,Vulnerability,5052,Sensitivity,5056,Health and food consumption,,,5067,Food and nutritional insecurity,6
+5000,Food security,5048,Access and consumption of food,5049,Vulnerability,5052,Sensitivity,5056,Health and food consumption,,,5068,Child malnutrition,6
+5000,Food security,5048,Access and consumption of food,5049,Vulnerability,5052,Sensitivity,5056,Health and food consumption,,,5069,Occurrence of diseases related to inadequate environmental sanitation,6
+5000,Food security,5048,Access and consumption of food,5049,Vulnerability,5052,Sensitivity,5056,Health and food consumption,,,5070,Overweight and obesity,6
+5000,Food security,5048,Access and consumption of food,5049,Vulnerability,5053,Adaptive capacity,5057,Financial instruments and public policies,,,5071,Federal investment per capita,6
+5000,Food security,5048,Access and consumption of food,5049,Vulnerability,5053,Adaptive capacity,5057,Financial instruments and public policies,,,5072,Food safety instruments,6
+5000,Food security,5048,Access and consumption of food,5049,Vulnerability,5053,Adaptive capacity,5057,Financial instruments and public policies,,,5073,National school feeding program (PNAE),6
+5000,Food security,5048,Access and consumption of food,5049,Vulnerability,5053,Adaptive capacity,5057,Financial instruments and public policies,,,5074,Food Acquisition Program (PAA),6
+5000,Food security,5048,Access and consumption of food,5049,Vulnerability,5053,Adaptive capacity,5057,Financial instruments and public policies,,,5075,PAA suppliers classified as “traditional peoples and communities”,6
+5000,Food security,5048,Access and consumption of food,5049,Vulnerability,5053,Adaptive capacity,5057,Financial instruments and public policies,,,5076,Cistern program service,6
+5000,Food security,5048,Access and consumption of food,5049,Vulnerability,5053,Adaptive capacity,5058,Socioeconomic capacity,,,5077,Scope of the family allowance program,6
+5000,Food security,5048,Access and consumption of food,5049,Vulnerability,5053,Adaptive capacity,5058,Socioeconomic capacity,,,5078,Equality in intra-household income distribution,6
+5000,Food security,5048,Access and consumption of food,5049,Vulnerability,5053,Adaptive capacity,5058,Socioeconomic capacity,,,5079,Households with high per capita income,6
+5000,Food security,5048,Access and consumption of food,5050,Exposure,5059,Exposed population,,,,,5080,Population density,5
+5000,Food security,5048,Access and consumption of food,5050,Exposure,5059,Exposed population,,,,,5081,Total population,5
+5000,Food security,5048,Access and consumption of food,5051,Hazard,,,,,,,5051,Climate hazard,3
+50000,Health,50001,Malaria,50002,Vulnerability,50005,Sensitivity,50007,Social susceptibility,,,50013,No access to adequate sanitation,6
+50000,Health,50001,Malaria,50002,Vulnerability,50005,Sensitivity,50007,Social susceptibility,,,50014,HDI-M,6
+50000,Health,50001,Malaria,50002,Vulnerability,50005,Sensitivity,50008,Population mobility,,,50015,Municipal tourism,6
+50000,Health,50001,Malaria,50002,Vulnerability,50005,Sensitivity,50008,Population mobility,,,50016,Recent immigration,6
+50000,Health,50001,Malaria,50002,Vulnerability,50005,Sensitivity,50009,Epidemiological profile of malaria,,,50017,Ipa,6
+50000,Health,50001,Malaria,50002,Vulnerability,50005,Sensitivity,50009,Epidemiological profile of malaria,,,50018,falciparum malaria,6
+50000,Health,50001,Malaria,50002,Vulnerability,50006,Adaptive capacity,50010,Health services,,,50019,Basic care coverage,6
+50000,Health,50001,Malaria,50002,Vulnerability,50006,Adaptive capacity,50010,Health services,,,50020,Access to diagnosis and treatment,6
+50000,Health,50001,Malaria,50003,Exposure,50011,Road network,,,,,50021,Highway density,5
+50000,Health,50001,Malaria,50003,Exposure,50012,Land use and occupation,,,,,50022,Settlements,5
+50000,Health,50001,Malaria,50003,Exposure,50012,Land use and occupation,,,,,50023,Mining,5
+50000,Health,50001,Malaria,50003,Exposure,50012,Land use and occupation,,,,,50024,Deforestation,5
+50000,Health,50001,Malaria,50003,Exposure,50012,Land use and occupation,,,,,50025,Rural population,5
+50000,Health,50001,Malaria,50003,Exposure,50012,Land use and occupation,,,,,50026,Bodies of water,5
+50000,Health,50001,Malaria,50004,Hazard,,,,,,,50027,Maximum temperature,4
+50000,Health,50001,Malaria,50004,Hazard,,,,,,,50028,Precipitation intensity,4
+50000,Health,50001,Malaria,50004,Hazard,,,,,,,50029,Relative humidity,4
+50000,Health,50030,American cutaneous leishmaniasis,50031,Vulnerability,50034,Sensitivity,50036,Social susceptibility,,,50042,Households without access to garbage collection,6
+50000,Health,50030,American cutaneous leishmaniasis,50031,Vulnerability,50034,Sensitivity,50036,Social susceptibility,,,50043,HDI-M,6
+50000,Health,50030,American cutaneous leishmaniasis,50031,Vulnerability,50034,Sensitivity,50037,Population mobility,,,50044,Recent immigration,6
+50000,Health,50030,American cutaneous leishmaniasis,50031,Vulnerability,50034,Sensitivity,50038,Epidemiological profile of American cutaneous leishmaniasis,,,50045,Incidence of American cutaneous leishmaniasis,6
+50000,Health,50030,American cutaneous leishmaniasis,50031,Vulnerability,50035,Adaptive capacity,50039,Health services,,,50046,Basic care coverage,6
+50000,Health,50030,American cutaneous leishmaniasis,50032,Exposure,50040,Road network,,,,,50047,Highway density,5
+50000,Health,50030,American cutaneous leishmaniasis,50032,Exposure,50041,Land use and occupation,,,,,50048,Settlements,5
+50000,Health,50030,American cutaneous leishmaniasis,50032,Exposure,50041,Land use and occupation,,,,,50049,Informal settlements,5
+50000,Health,50030,American cutaneous leishmaniasis,50032,Exposure,50041,Land use and occupation,,,,,50050,Natural coverage,5
+50000,Health,50030,American cutaneous leishmaniasis,50032,Exposure,50041,Land use and occupation,,,,,50051,Agricultural coverage,5
+50000,Health,50030,American cutaneous leishmaniasis,50033,Hazard,,,,,,,50052,Maximum temperature,4
+50000,Health,50030,American cutaneous leishmaniasis,50033,Hazard,,,,,,,50053,Precipitation intensity,4
+50000,Health,50030,American cutaneous leishmaniasis,50033,Hazard,,,,,,,50054,Relative humidity,4
+50000,Health,50055,Visceral leishmaniasis,50056,Vulnerability,50059,Sensitivity,50061,Social susceptibility,,,50066,Households without access to garbage collection,6
+50000,Health,50055,Visceral leishmaniasis,50056,Vulnerability,50059,Sensitivity,50061,Social susceptibility,,,50067,HDI-M,6
+50000,Health,50055,Visceral leishmaniasis,50056,Vulnerability,50059,Sensitivity,50062,Epidemiological profile of visceral leishmaniasis,,,50068,Incidence of visceral leishmaniasis,6
+50000,Health,50055,Visceral leishmaniasis,50056,Vulnerability,50060,Adaptive capacity,50063,Health services,,,50069,Basic care coverage,6
+50000,Health,50055,Visceral leishmaniasis,50057,Exposure,50064,Road network,,,,,50070,Highway density,5
+50000,Health,50055,Visceral leishmaniasis,50057,Exposure,50065,Land use and occupation,,,,,50071,Settlements,5
+50000,Health,50055,Visceral leishmaniasis,50057,Exposure,50065,Land use and occupation,,,,,50072,Natural coverage,5
+50000,Health,50055,Visceral leishmaniasis,50058,Hazard,,,,,,,50073,Minimum temperature,4
+50000,Health,50055,Visceral leishmaniasis,50058,Hazard,,,,,,,50074,Precipitation intensity,4
+50000,Health,50055,Visceral leishmaniasis,50058,Hazard,,,,,,,50075,Relative humidity,4
+50000,Health,50076,"Arboviruses dengue, zika and chikungunya",50077,Vulnerability,50080,Sensitivity,50082,Social susceptibility,,,50088,Households without access to garbage collection,6
+50000,Health,50076,"Arboviruses dengue, zika and chikungunya",50077,Vulnerability,50080,Sensitivity,50082,Social susceptibility,,,50089,Water supply,6
+50000,Health,50076,"Arboviruses dengue, zika and chikungunya",50077,Vulnerability,50080,Sensitivity,50082,Social susceptibility,,,50090,Presence of cistern,6
+50000,Health,50076,"Arboviruses dengue, zika and chikungunya",50077,Vulnerability,50080,Sensitivity,50082,Social susceptibility,,,50091,HDI-M,6
+50000,Health,50076,"Arboviruses dengue, zika and chikungunya",50077,Vulnerability,50080,Sensitivity,50083,"Epidemiological profile of the arboviruses dengue, zika and chikungunya",,,50092,"Incidence of arboviruses dengue, zika and chikungunya",6
+50000,Health,50076,"Arboviruses dengue, zika and chikungunya",50077,Vulnerability,50081,Adaptive capacity,50084,Health services,,,50093,Basic care coverage,6
+50000,Health,50076,"Arboviruses dengue, zika and chikungunya",50078,Exposure,50085,Population density,,,,,50094,Population density,5
+50000,Health,50076,"Arboviruses dengue, zika and chikungunya",50078,Exposure,50086,Road network,,,,,50095,Highway density,5
+50000,Health,50076,"Arboviruses dengue, zika and chikungunya",50078,Exposure,50087,Land use and occupation,,,,,50096,Informal settlements,5
+50000,Health,50076,"Arboviruses dengue, zika and chikungunya",50078,Exposure,50087,Land use and occupation,,,,,50097,Deforestation,5
+50000,Health,50076,"Arboviruses dengue, zika and chikungunya",50078,Exposure,50087,Land use and occupation,,,,,50098,Bodies of water,5
+50000,Health,50076,"Arboviruses dengue, zika and chikungunya",50079,Hazard,,,,,,,50099,Maximum temperature,4
+50000,Health,50076,"Arboviruses dengue, zika and chikungunya",50079,Hazard,,,,,,,50100,Minimum temperature,4
+50000,Health,50076,"Arboviruses dengue, zika and chikungunya",50079,Hazard,,,,,,,50101,Precipitation intensity,4
+50000,Health,50076,"Arboviruses dengue, zika and chikungunya",50079,Hazard,,,,,,,50102,Thermal range,4
+50000,Health,50076,"Arboviruses dengue, zika and chikungunya",50079,Hazard,,,,,,,50103,Heat waves,4
+50000,Health,50076,"Arboviruses dengue, zika and chikungunya",50079,Hazard,,,,,,,50104,Relative humidity,4
+60000,Geohydrological disasters,60001,Landslide,60002,Vulnerability,60005,Adaptive capacity,60007,Municipal economic capacity,,,60014,Investment in adaptation policies,6
+60000,Geohydrological disasters,60001,Landslide,60002,Vulnerability,60005,Adaptive capacity,60007,Municipal economic capacity,,,60015,Tax management,6
+60000,Geohydrological disasters,60001,Landslide,60002,Vulnerability,60005,Adaptive capacity,60007,Municipal economic capacity,,,60016,Employment and income,6
+60000,Geohydrological disasters,60001,Landslide,60002,Vulnerability,60005,Adaptive capacity,60007,Municipal economic capacity,,,60017,Gross domestic product by urban area,6
+60000,Geohydrological disasters,60001,Landslide,60002,Vulnerability,60005,Adaptive capacity,60008,Disaster risk management,,,60018,Resilient cities program,6
+60000,Geohydrological disasters,60001,Landslide,60002,Vulnerability,60005,Adaptive capacity,60008,Disaster risk management,,,60019,Institutions for risk management,6
+60000,Geohydrological disasters,60001,Landslide,60002,Vulnerability,60005,Adaptive capacity,60008,Disaster risk management,,,60020,Waste management and public cleaning,6
+60000,Geohydrological disasters,60001,Landslide,60002,Vulnerability,60005,Adaptive capacity,60008,Disaster risk management,,,60021,Urban occupation management in risk areas,6
+60000,Geohydrological disasters,60001,Landslide,60002,Vulnerability,60005,Adaptive capacity,60008,Disaster risk management,,,60022,Actions to reduce risk,6
+60000,Geohydrological disasters,60001,Landslide,60002,Vulnerability,60005,Adaptive capacity,60008,Disaster risk management,,,60023,Early warning systems,6
+60000,Geohydrological disasters,60001,Landslide,60002,Vulnerability,60005,Adaptive capacity,60008,Disaster risk management,,,60024,Contingency plan,6
+60000,Geohydrological disasters,60001,Landslide,60002,Vulnerability,60005,Adaptive capacity,60009,Urban policy,,,60025,Land use and occupation,6
+60000,Geohydrological disasters,60001,Landslide,60002,Vulnerability,60005,Adaptive capacity,60009,Urban policy,,,60026,Environmental governance,6
+60000,Geohydrological disasters,60001,Landslide,60002,Vulnerability,60005,Adaptive capacity,60009,Urban policy,,,60027,Housing governance,6
+60000,Geohydrological disasters,60001,Landslide,60002,Vulnerability,60005,Adaptive capacity,60009,Urban policy,,,60028,Transport governance,6
+60000,Geohydrological disasters,60001,Landslide,60002,Vulnerability,60005,Adaptive capacity,60009,Urban policy,,,60029,Healthcare facilities,6
+60000,Geohydrological disasters,60001,Landslide,60002,Vulnerability,60005,Adaptive capacity,60009,Urban policy,,,60030,Municipal basic sanitation plan,6
+60000,Geohydrological disasters,60001,Landslide,60002,Vulnerability,60006,Sensitivity,60010,Population,,,60031,Population with special demands,6
+60000,Geohydrological disasters,60001,Landslide,60002,Vulnerability,60006,Sensitivity,60010,Population,,,60032,Young people without secondary education,6
+60000,Geohydrological disasters,60001,Landslide,60002,Vulnerability,60006,Sensitivity,60010,Population,,,60033,Income inequality,6
+60000,Geohydrological disasters,60001,Landslide,60002,Vulnerability,60006,Sensitivity,60010,Population,,,60034,Inappropriate households,6
+60000,Geohydrological disasters,60001,Landslide,60002,Vulnerability,60006,Sensitivity,60011,Infrastructure,,,60035,Lack of urban mobility,6
+60000,Geohydrological disasters,60001,Landslide,60002,Vulnerability,60006,Sensitivity,60011,Infrastructure,,,60036,Inaccessibility to cities,6
+60000,Geohydrological disasters,60001,Landslide,60002,Vulnerability,60006,Sensitivity,60011,Infrastructure,,,60037,Basic sanitation,6
+60000,Geohydrological disasters,60001,Landslide,60002,Vulnerability,60006,Sensitivity,60011,Infrastructure,,,60038,Drainage,6
+60000,Geohydrological disasters,60001,Landslide,60003,Exposure,60012,Housing in a risky environment,,,,,60039,Households in risk areas,5
+60000,Geohydrological disasters,60001,Landslide,60003,Exposure,60013,Population density,,,,,60040,Urban population density,5
+60000,Geohydrological disasters,60001,Landslide,60004,Hazard,,,,,,,60004,Hazard,3
+60000,Geohydrological disasters,60041,"Floods, flash floods, and urban flooding",60042,Vulnerability,60045,Adaptive capacity,60047,Municipal economic capacity,,,60054,Investment in adaptation policies,6
+60000,Geohydrological disasters,60041,"Floods, flash floods, and urban flooding",60042,Vulnerability,60045,Adaptive capacity,60047,Municipal economic capacity,,,60055,Tax management,6
+60000,Geohydrological disasters,60041,"Floods, flash floods, and urban flooding",60042,Vulnerability,60045,Adaptive capacity,60047,Municipal economic capacity,,,60056,Employment and income,6
+60000,Geohydrological disasters,60041,"Floods, flash floods, and urban flooding",60042,Vulnerability,60045,Adaptive capacity,60047,Municipal economic capacity,,,60057,Gross domestic product by urban area,6
+60000,Geohydrological disasters,60041,"Floods, flash floods, and urban flooding",60042,Vulnerability,60045,Adaptive capacity,60048,Risk management,,,60058,Resilient cities program,6
+60000,Geohydrological disasters,60041,"Floods, flash floods, and urban flooding",60042,Vulnerability,60045,Adaptive capacity,60048,Risk management,,,60059,Institutions for risk management,6
+60000,Geohydrological disasters,60041,"Floods, flash floods, and urban flooding",60042,Vulnerability,60045,Adaptive capacity,60048,Risk management,,,60060,Waste management and public cleaning,6
+60000,Geohydrological disasters,60041,"Floods, flash floods, and urban flooding",60042,Vulnerability,60045,Adaptive capacity,60048,Risk management,,,60061,Urban occupation management in risk areas,6
+60000,Geohydrological disasters,60041,"Floods, flash floods, and urban flooding",60042,Vulnerability,60045,Adaptive capacity,60048,Risk management,,,60062,Actions to reduce risk,6
+60000,Geohydrological disasters,60041,"Floods, flash floods, and urban flooding",60042,Vulnerability,60045,Adaptive capacity,60048,Risk management,,,60063,Early warning systems,6
+60000,Geohydrological disasters,60041,"Floods, flash floods, and urban flooding",60042,Vulnerability,60045,Adaptive capacity,60048,Risk management,,,60064,Contingency plan,6
+60000,Geohydrological disasters,60041,"Floods, flash floods, and urban flooding",60042,Vulnerability,60045,Adaptive capacity,60049,Urban policy,,,60065,Land use and occupation,6
+60000,Geohydrological disasters,60041,"Floods, flash floods, and urban flooding",60042,Vulnerability,60045,Adaptive capacity,60049,Urban policy,,,60066,Environmental governance,6
+60000,Geohydrological disasters,60041,"Floods, flash floods, and urban flooding",60042,Vulnerability,60045,Adaptive capacity,60049,Urban policy,,,60067,Housing governance,6
+60000,Geohydrological disasters,60041,"Floods, flash floods, and urban flooding",60042,Vulnerability,60045,Adaptive capacity,60049,Urban policy,,,60068,Transport governance,6
+60000,Geohydrological disasters,60041,"Floods, flash floods, and urban flooding",60042,Vulnerability,60045,Adaptive capacity,60049,Urban policy,,,60069,Healthcare facilities,6
+60000,Geohydrological disasters,60041,"Floods, flash floods, and urban flooding",60042,Vulnerability,60045,Adaptive capacity,60049,Urban policy,,,60070,Municipal basic sanitation plan,6
+60000,Geohydrological disasters,60041,"Floods, flash floods, and urban flooding",60042,Vulnerability,60046,Sensitivity,60050,Population,,,60071,Population with special demands,6
+60000,Geohydrological disasters,60041,"Floods, flash floods, and urban flooding",60042,Vulnerability,60046,Sensitivity,60050,Population,,,60072,Young people without secondary education,6
+60000,Geohydrological disasters,60041,"Floods, flash floods, and urban flooding",60042,Vulnerability,60046,Sensitivity,60050,Population,,,60073,Income inequality,6
+60000,Geohydrological disasters,60041,"Floods, flash floods, and urban flooding",60042,Vulnerability,60046,Sensitivity,60050,Population,,,60074,Inappropriate households,6
+60000,Geohydrological disasters,60041,"Floods, flash floods, and urban flooding",60042,Vulnerability,60046,Sensitivity,60051,Infrastructure,,,60075,Lack of urban mobility,6
+60000,Geohydrological disasters,60041,"Floods, flash floods, and urban flooding",60042,Vulnerability,60046,Sensitivity,60051,Infrastructure,,,60076,Inaccessibility to cities,6
+60000,Geohydrological disasters,60041,"Floods, flash floods, and urban flooding",60042,Vulnerability,60046,Sensitivity,60051,Infrastructure,,,60077,Basic sanitation,6
+60000,Geohydrological disasters,60041,"Floods, flash floods, and urban flooding",60042,Vulnerability,60046,Sensitivity,60051,Infrastructure,,,60078,Drainage,6
+60000,Geohydrological disasters,60041,"Floods, flash floods, and urban flooding",60043,Exposure,60052,Housing in a risky environment,,,,,60079,Households in risk areas,5
+60000,Geohydrological disasters,60041,"Floods, flash floods, and urban flooding",60043,Exposure,60053,Population density,,,,,60080,Urban population density,5
+60000,Geohydrological disasters,60041,"Floods, flash floods, and urban flooding",60044,Hazard,,,,,,,60044,Hazard,3
+70000,Road infrastructure,70001,Urban flooding and riverine flooding,70002,Vulnerability,,,,,,,70005,Vulnerability to flooding,4
+70000,Road infrastructure,70001,Urban flooding and riverine flooding,70002,Vulnerability,,,,,,,70006,ICS,4
+70000,Road infrastructure,70001,Urban flooding and riverine flooding,70002,Vulnerability,,,,,,,70007,Highways,4
+70000,Road infrastructure,70001,Urban flooding and riverine flooding,70002,Vulnerability,,,,,,,70008,Load,4
+70000,Road infrastructure,70001,Urban flooding and riverine flooding,70003,Exposure,,,,,,,70009,OAE,4
+70000,Road infrastructure,70001,Urban flooding and riverine flooding,70003,Exposure,,,,,,,70010,VMDA,4
+70000,Road infrastructure,70001,Urban flooding and riverine flooding,70004,Hazard,,,,,,,70011,Days with rain,4
+70000,Road infrastructure,70001,Urban flooding and riverine flooding,70004,Hazard,,,,,,,70012,Maximum accumulated rainfall,4
+70000,Road infrastructure,70001,Urban flooding and riverine flooding,70004,Hazard,,,,,,,70013,Consecutive days with rain,4
+70000,Road infrastructure,70014,Landslide,70015,Vulnerability,,,,,,,70018,Susceptibility to landslides,4
+70000,Road infrastructure,70014,Landslide,70015,Vulnerability,,,,,,,70019,ICS,4
+70000,Road infrastructure,70014,Landslide,70015,Vulnerability,,,,,,,70020,Highways,4
+70000,Road infrastructure,70014,Landslide,70015,Vulnerability,,,,,,,70021,Load,4
+70000,Road infrastructure,70014,Landslide,70016,Exposure,,,,,,,70022,OAE,4
+70000,Road infrastructure,70014,Landslide,70016,Exposure,,,,,,,70023,VMDA,4
+70000,Road infrastructure,70014,Landslide,70017,Hazard,,,,,,,70024,Days with rain,4
+70000,Road infrastructure,70014,Landslide,70017,Hazard,,,,,,,70025,Maximum accumulated rainfall,4
+70000,Road infrastructure,70014,Landslide,70017,Hazard,,,,,,,70026,Consecutive days with rain,4
+70000,Road infrastructure,70027,Erosion,70028,Vulnerability,,,,,,,70031,Susceptibility to erosion,4
+70000,Road infrastructure,70027,Erosion,70028,Vulnerability,,,,,,,70032,ICS,4
+70000,Road infrastructure,70027,Erosion,70028,Vulnerability,,,,,,,70033,Highways,4
+70000,Road infrastructure,70027,Erosion,70028,Vulnerability,,,,,,,70034,Load,4
+70000,Road infrastructure,70027,Erosion,70029,Exposure,,,,,,,70035,OAE,4
+70000,Road infrastructure,70027,Erosion,70029,Exposure,,,,,,,70036,VMDA,4
+70000,Road infrastructure,70027,Erosion,70030,Hazard,,,,,,,70037,Days with rain,4
+70000,Road infrastructure,70027,Erosion,70030,Hazard,,,,,,,70038,Maximum accumulated rainfall,4
+70000,Road infrastructure,70027,Erosion,70030,Hazard,,,,,,,70039,Simple Precipitation Intensity Index,4
+70000,Road infrastructure,70040,Wildfire,70041,Vulnerability,,,,,,,70044,Fire hotspots,4
+70000,Road infrastructure,70040,Wildfire,70041,Vulnerability,,,,,,,70045,ICS,4
+70000,Road infrastructure,70040,Wildfire,70041,Vulnerability,,,,,,,70046,Highways,4
+70000,Road infrastructure,70040,Wildfire,70041,Vulnerability,,,,,,,70047,Load,4
+70000,Road infrastructure,70040,Wildfire,70042,Exposure,,,,,,,70048,OAE,4
+70000,Road infrastructure,70040,Wildfire,70042,Exposure,,,,,,,70049,VMDA,4
+70000,Road infrastructure,70040,Wildfire,70043,Hazard,,,,,,,70050,Hottest consecutive days,4
+70000,Road infrastructure,70040,Wildfire,70043,Hazard,,,,,,,70051,Duration of heat waves,4
+70000,Road infrastructure,70040,Wildfire,70043,Hazard,,,,,,,70052,Consecutive dry days,4
+70000,Road infrastructure,70053,Temperature,70054,Vulnerability,,,,,,,70057,ICS,4
+70000,Road infrastructure,70053,Temperature,70054,Vulnerability,,,,,,,70058,Highways,4
+70000,Road infrastructure,70053,Temperature,70054,Vulnerability,,,,,,,70059,Load,4
+70000,Road infrastructure,70053,Temperature,70055,Exposure,,,,,,,70060,OAE,4
+70000,Road infrastructure,70053,Temperature,70055,Exposure,,,,,,,70061,VMDA,4
+70000,Road infrastructure,70053,Temperature,70056,Hazard,,,,,,,70062,Duration of heat waves,4
+70000,Road infrastructure,70053,Temperature,70056,Hazard,,,,,,,70063,Hottest consecutive days,4
+80000,Rail infrastructure,80001,Landslide,80002,Vulnerability,,,,,,,80005,Susceptibility to landslides,4
+80000,Rail infrastructure,80001,Landslide,80002,Vulnerability,,,,,,,80006,Gauge,4
+80000,Rail infrastructure,80001,Landslide,80002,Vulnerability,,,,,,,80007,Load,4
+80000,Rail infrastructure,80001,Landslide,80003,Exposure,,,,,,,80008,Vehicles,4
+80000,Rail infrastructure,80001,Landslide,80004,Hazard,,,,,,,80009,Days with rain,4
+80000,Rail infrastructure,80001,Landslide,80004,Hazard,,,,,,,80010,Maximum accumulated rainfall,4
+80000,Rail infrastructure,80001,Landslide,80004,Hazard,,,,,,,80011,Consecutive days with rain,4
+80000,Rail infrastructure,80012,Erosion,80013,Vulnerability,,,,,,,80016,Susceptibility to erosion,4
+80000,Rail infrastructure,80012,Erosion,80013,Vulnerability,,,,,,,80017,Gauge,4
+80000,Rail infrastructure,80012,Erosion,80013,Vulnerability,,,,,,,80018,Load,4
+80000,Rail infrastructure,80012,Erosion,80014,Exposure,,,,,,,80019,Vehicles,4
+80000,Rail infrastructure,80012,Erosion,80015,Hazard,,,,,,,80020,Maximum accumulated rainfall,4
+80000,Rail infrastructure,80012,Erosion,80015,Hazard,,,,,,,80021,Simple Precipitation Intensity Index,4
+80000,Rail infrastructure,80022,Temperature,80023,Vulnerability,,,,,,,80026,Gauge,4
+80000,Rail infrastructure,80022,Temperature,80023,Vulnerability,,,,,,,80027,Load,4
+80000,Rail infrastructure,80022,Temperature,80024,Exposure,,,,,,,80028,Vehicles,4
+80000,Rail infrastructure,80022,Temperature,80025,Hazard,,,,,,,80029,Duration of heat waves,4
+80000,Rail infrastructure,80022,Temperature,80025,Hazard,,,,,,,80030,Hottest consecutive days,4
+90000,Biodiversity,90001,Biome integrity,90002,Vulnerability,90005,Sensitivity,90007,Land change and use,,,90014,Pesticides,6
+90000,Biodiversity,90001,Biome integrity,90002,Vulnerability,90005,Sensitivity,90007,Land change and use,,,90015,No family farming,6
+90000,Biodiversity,90001,Biome integrity,90002,Vulnerability,90005,Sensitivity,90007,Land change and use,,,90016,No sustainable agricultural practice,6
+90000,Biodiversity,90001,Biome integrity,90002,Vulnerability,90005,Sensitivity,90007,Land change and use,,,90017,Fire,6
+90000,Biodiversity,90001,Biome integrity,90002,Vulnerability,90005,Sensitivity,90008,Ground cover,,,90018,Environmental liabilities,6
+90000,Biodiversity,90001,Biome integrity,90002,Vulnerability,90005,Sensitivity,90008,Ground cover,,,90019,Vegetation loss,6
+90000,Biodiversity,90001,Biome integrity,90002,Vulnerability,90005,Sensitivity,90008,Ground cover,,,90020,Degraded pasture,6
+90000,Biodiversity,90001,Biome integrity,90002,Vulnerability,90005,Sensitivity,90008,Ground cover,,,90021,Mining,6
+90000,Biodiversity,90001,Biome integrity,90002,Vulnerability,90005,Sensitivity,90009,Density,,,90022,Population,6
+90000,Biodiversity,90001,Biome integrity,90002,Vulnerability,90005,Sensitivity,90009,Density,,,90023,Agricultural establishment,6
+90000,Biodiversity,90001,Biome integrity,90002,Vulnerability,90005,Sensitivity,90010,Infrastructure,,,90024,Road network,6
+90000,Biodiversity,90001,Biome integrity,90002,Vulnerability,90005,Sensitivity,90010,Infrastructure,,,90025,Hydroelectric,6
+90000,Biodiversity,90001,Biome integrity,90002,Vulnerability,90006,Adaptive capacity,90011,Instruments for conservation,,,90026,Technical guidance,6
+90000,Biodiversity,90001,Biome integrity,90002,Vulnerability,90006,Adaptive capacity,90011,Instruments for conservation,,,90027,Steering committee and management plan,6
+90000,Biodiversity,90001,Biome integrity,90003,Exposure,90012,Exposed coverage,,,,,90028,Natural coverage,5
+90000,Biodiversity,90001,Biome integrity,90003,Exposure,90012,Exposed coverage,,,,,90029,Protected area,5
+90000,Biodiversity,90001,Biome integrity,90003,Exposure,90012,Exposed coverage,,,,,90030,Area for conservation,5
+90000,Biodiversity,90001,Biome integrity,90004,Hazard,90013,Climate resilience,,,,,90031,Accumulated precipitation,5
+90000,Biodiversity,90001,Biome integrity,90004,Hazard,90013,Climate resilience,,,,,90032,Seasonality of precipitation,5
+90000,Biodiversity,90001,Biome integrity,90004,Hazard,90013,Climate resilience,,,,,90033,Annual temperature,5
+90000,Biodiversity,90001,Biome integrity,90004,Hazard,90013,Climate resilience,,,,,90034,Amplitude,5

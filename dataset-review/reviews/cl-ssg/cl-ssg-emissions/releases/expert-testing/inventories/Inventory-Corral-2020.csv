@@ -1,0 +1,75 @@
+Inventory Reference,GPC Reference Number,Subsector name,Notation Key,Total Emissions,Total Emission Units,Activity type,Activity Value,Activity Units,Emission Factor - CO2,Emission Factor - CH4,Emission Factor - N2O,Emission Factor - Unit,CO2 Emissions,CH4 Emissions,N2O Emissions,Data source ID,Data source name
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,I,Stationary Energy,,12544.4879,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,I.1,Residential buildings,,2078.930729,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,I.1.1,Residential buildings,,682.7443027,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,I.1.2,Residential buildings,,1391.491514,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,I.1.3,Residential buildings,,4.694911582,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,I.2,Commercial and institutional buildings and facilities,,1186.89303,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,I.2.1,Commercial and institutional buildings and facilities,,345.5222835,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,I.2.2,Commercial and institutional buildings and facilities,,838.541496,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,I.2.3,Commercial and institutional buildings and facilities,,2.829250585,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,I.3,Manufacturing industries and construction,,9278.664138,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,I.3.1,Manufacturing industries and construction,,9277.215306,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,I.3.2,Manufacturing industries and construction,,1.443960336,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,I.3.3,Manufacturing industries and construction,,0.004871942,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,I.4,Energy industries,,0,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,I.4.1,Energy industries,,0,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,I.4.2,Energy industries,,0,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,I.4.3,Energy industries,,0,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,I.4.4,Energy generation supplied to the grid,,,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,I.5,"Agriculture, forestry and fishing activities",,0,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,I.5.1,"Agriculture, forestry and fishing activities",,0,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,I.5.2,"Agriculture, forestry and fishing activities",,0,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,I.5.3,"Agriculture, forestry and fishing activities",,0,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,I.6,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,I.6.1,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,I.6.2,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,I.6.3,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,I.7,Fugitive emissions from coal mining,,,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,I.7.1,Fugitive emissions from coal mining,,,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,I.8,Fugitive emissions from oil and natural gas,,,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,I.8.1,Fugitive emissions from oil and natural gas,,,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,II,Transportation,,5811.502098,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,II.1,On-road transportation,,3393.870684,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,II.1.1,On-road transportation,,2713.180602,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,II.1.2,On-road transportation,,,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,II.1.3,On-road transportation,,680.6900827,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,II.2,Railways,,0,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,II.2.1,Railways,,0,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,II.2.2,Railways,,,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,II.2.3,Railways,,,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,II.3,Waterborne navigation,,2256.201564,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,II.3.1,Waterborne navigation,,2256.201564,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,II.3.2,Waterborne navigation,,,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,II.3.3,Waterborne navigation,,,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,II.4,Aviation,,161.4298495,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,II.4.1,Aviation,,161.4298495,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,II.4.2,Aviation,,,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,II.4.3,Aviation,,,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,II.5,Off-road transportation,,0,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,II.5.1,Off-road transportation,,0,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,II.5.2,Off-road transportation,,,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,III,Waste,,2967.116692,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,III.1,Solid waste disposal,,2157.011225,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,III.1.1,Solid waste disposal,,0,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,III.1.2,Solid waste disposal,,2157.011225,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,III.1.3,Solid waste disposal,,,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,III.2,Biological treatment of waste,,180.9583781,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,III.2.1,Biological treatment of waste,,180.9583781,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,III.2.2,Biological treatment of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,III.2.3,Biological treatment of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,III.3,Incineration and open burning of waste,,25.0208862,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,III.3.1,Incineration and open burning of waste,,25.0208862,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,III.3.2,Incineration and open burning of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,III.3.3,Incineration and open burning of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,III.4,Wastewater treatment and discharge,,604.1262032,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,III.4.1,Wastewater treatment and discharge,,604.1262032,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,III.4.2,Wastewater treatment and discharge,,,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,III.4.3,Wastewater treatment and discharge,,,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,IV,IPPU,,4905.700651,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,IV.1,Industrial processes,,564.2076856,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,IV.2,Product use,,4341.492966,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,V,AFOLU,,-724318.4219,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,V.1,Livestock,,5458.743115,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,V.2,Land,,-749477.1893,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020
+bf0abfae-7fa6-4c1e-bc41-becfd473cbfd,V.3,Aggregate sources and non-CO2 emission sources on land,,19700.0242,t CO2e,,,,,,,,,,,,SSG Inventory Corral 2020

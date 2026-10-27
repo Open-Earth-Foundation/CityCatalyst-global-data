@@ -1,0 +1,96 @@
+# Source registry for mn-climate-awards.
+# No external feed exists; this list IS the refresh mechanism.
+# Re-compile = re-fetch these, re-extract, diff against data.csv.
+
+sources:
+  - id: bwsr-cwf-fy27-release
+    route: A
+    funder: BWSR Clean Water Fund
+    kind: agency-news-release
+    url: https://bwsr.state.mn.us/node/15841
+    last_fetched: 2026-07-04
+    yields: round total ($6.7M / 18 grants), links the project-level PDF
+    notes: FY27 round, approved June 2026.
+
+  - id: bwsr-cwf-fy27-awards-pdf
+    route: A
+    funder: BWSR Clean Water Fund
+    kind: project-level-pdf
+    url: https://bwsr.state.mn.us/sites/default/files/2026-06/FY27%20CWF%20Projects%20and%20Practices%20Awards.pdf
+    last_fetched: 2026-07-04
+    yields: 18 grantee + amount lines (9 Projects & Practices, 9 Drinking Water)
+    verified: subtotals reconcile ($4,703,729 + $1,881,817)
+
+  - id: dnr-fhm-2025-release
+    route: A
+    funder: MN DNR Flood Hazard Mitigation
+    kind: agency-news-release
+    url: https://www.dnr.state.mn.us/news/2025/10/22/minnesota-dnr-awards-9-million-flood-hazard-mitigation-grants
+    last_fetched: 2026-07-04
+    yields: 8 project names + recipients ($9M round total; no per-project amounts)
+
+  - id: metc-lca-tbra-2025
+    route: A
+    funder: Metropolitan Council Livable Communities (TBRA)
+    kind: committee-report
+    url: https://metrocouncil.org/Council-Meetings/Committees/Metropolitan-Council/2026/01-14-26/BI-2025_318.aspx
+    last_fetched: 2026-07-04
+    yields: round total ($3,536,100 / 12 projects); individual table not yet extracted
+    notes: PLACEHOLDER — TBRA is redevelopment, adjacent to stormwater. Swap for LCDA stormwater awards.
+
+  - id: cwsrf-2026-iup
+    route: B
+    funder: PFA / MPCA Clean Water SRF
+    kind: intended-use-plan-pdf
+    url: https://mn.gov/deed/assets/2026-clean-water-intended-use-plan_tcm1045-719237.pdf
+    local_copy: raw/2026-clean-water-intended-use-plan_tcm.pdf
+    last_fetched: 2026-07-04
+    yields: >
+      Exhibit 4 (2026 Clean Water PPL, priority order) — 333 ranked projects with name,
+      description, rank, priority points, project number, estimated cost. AND Exhibit 1
+      (fundable-range IUP list) — 135 projects with Net SRF loan amount, total project cost,
+      and grant/PF subsidy; reconciled exactly to the IUP's totals-by-part table
+      ($1,528,710,169 TPC / $1,228,950,084 Net SRF). Extracted via `pdftotext -layout`
+      on the local copy. Not pulled: Drinking Water SRF; per-column PSIG/GPR/affordability split.
+    notes: PDF must be present locally in raw/ to re-parse — URL fetch via code is disabled in this environment.
+
+  - id: psig-program
+    route: B
+    funder: PFA Point Source Implementation Grant
+    kind: program-page
+    url: https://mn.gov/deed/pfa/funds-programs/point-source-grants.jsp
+    last_fetched: 2026-07-04
+    yields: program terms (80% of eligible cost, cap $7M->$12M, $32M in 2025 bonding); award list not enumerated
+
+  - id: mncifa-projects
+    route: D
+    funder: MnCIFA (state green bank)
+    kind: program-project-list
+    url: https://mncifa.mn.gov/projects
+    last_fetched: 2026-07-04
+    yields: 10 closed clean-energy/buildings loans (project names + descriptions); portfolio $37M/14 loans, $500k-$5M, avg $2.6M
+    notes: per-project loan amounts not published on the list; would need each project subpage.
+
+  - id: eecbg-doe-awards
+    route: C
+    funder: DOE EECBG (via MN Commerce + regional dev commissions)
+    kind: program-page
+    url: https://www.energy.gov/scep/energy-efficiency-and-conservation-block-grant-program-awards
+    last_fetched: 2026-07-04
+    yields: program aggregate ($196.4M / 294 communities nationally; small MN cities $2k-$20k via West Central Initiative, UMVRDC, MMRDC); per-city MN allocations not enumerated
+
+  - id: certs-seed-grants
+    route: A
+    funder: CERTs / MN Commerce
+    kind: program-page
+    url: https://www.cleanenergyresourceteams.org/certs-seed-grants
+    last_fetched: 2026-07-04
+    yields: program aggregate (2026 round 52 projects/~$380k; since 2006 ~$2.36M/561 projects); city-led LED/solar/efficiency pilots $5k-$10k
+
+  - id: kaxe-2025-bonding-water
+    route: B
+    funder: PFA Water Infrastructure Fund / SRF
+    kind: news-article
+    url: https://www.kaxe.org/local-news/2025-06-27/greater-mn-water-projects-flow-legislatures-bonding-package
+    last_fetched: 2026-07-04
+    yields: Aurora ($5M WIF in $33M project) and Appleton project detail; 2025 water bonding package ($176M) breakdown

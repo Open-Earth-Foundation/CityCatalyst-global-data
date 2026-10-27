@@ -1,0 +1,47 @@
+eligible_actor,applicant_class,municipality_eligible,basis
+Microproductores AFC (persona natural/jurídica); city role = implementer (municipal convenio),producer,implementer,
+"Personas Jurídicas de derecho público o privado, sin fines de lucro, presentes en las regiones Metropolitana, de Valparaíso y de O’Higgins; incluye fundaciones, corporaciones, ONG, universidades y centros de investigación.",community_org,no,Non-profit legal entities in three named regions.
+comités y cooperativas de agua potable rural (community_org),community_org,no,
+comités y cooperativas de agua potable rural (community_org); municipality facilitates/co-formulates,community_org,no,The committee holds the grant; the municipality only helps formulate.
+community/citizen org,community_org,no,
+community/citizen org (rol público comunitario >5 yrs; not municipalities directly),community_org,no,
+"comunidades y territorios rurales/indígenas; otros ejecutores (public_agency, municipal) por convenio",community_org,yes,Works serve rural and indigenous territories; a municipality can be the executor receiving the transfer.
+concesionarios privados (ppp); public_agency,firm,no,
+forest landowner (two lines: pequeños propietarios + otros interesados; municipalities eligible as landowners),producer,yes,A municipality that owns forest land can apply on the same footing as any landowner.
+green-hydrogen project developers / firms,firm,no,
+household,household,no,
+household (municipally facilitated),household,no,
+indigenous community,indigenous_community,no,
+legal persons / firms / institutions (productive investment; varies by region),firm,no,
+municipality,municipality,yes,
+municipality (SEREMI prioritises construction),municipality,yes,
+municipality (alcalde presents; community/SEREMI may originate),municipality,yes,
+municipality (with community),municipality,yes,
+municipality + comités de pavimentación,municipality,yes,
+municipality + community (joint ownership),municipality,yes,
+municipality + municipal associations,municipality,yes,
+municipality / regional,municipality,yes,
+municipality / regional government / public services (projects via SNI-BIP),municipality,yes,
+non-profit organisations (legal status >=2 yrs; NOT municipalities),community_org,no,
+organizaciones de usuarios de agua; investigadores (fondo de investigación hídrica); not a direct city grant,producer,no,
+"otros ejecutores (public_agency, municipal, regional) por convenio",municipality,yes,
+private firm (any size; no annual-sales cap),firm,no,
+private firm / SME,firm,no,
+private firm / entrepreneur,firm,no,
+private firm / growth-stage venture,firm,no,
+public transport bus operator (private firm/person),operator,no,"Bus operator, not a general firm."
+public transport operator (fleet renewal); GORE administers,operator,no,"Administered by the regional government, awarded to operators."
+public_agency; mandante de edificación pública,public_agency,yes,
+"pueblos indígenas (familias, comunidades, organizaciones) con actividad silvoagropecuaria; city role = implementer (municipal convenio)",producer,implementer,
+research/university,research,no,
+research/university + ngo,research,no,
+school sostenedor (often municipal),public_agency,yes,Municipal schools are eligible sostenedores; private ones are too.
+taxi colectivo operator (natural/legal person; vehicle >=4 yrs; vigente in Registro de Transporte Público),operator,no,
+unspecified,unknown,unknown,Seed did not record an applicant; not inferred here.
+usuario/a INDAP (AFC) articulado con un poder comprador,producer,no,
+usuario/a INDAP (AFC) con orientacion comercial,producer,no,
+"usuario/a INDAP (AFC), individual o asociativo",producer,no,
+"usuario/a INDAP (AFC), individual o asociativo; comunidades de aguas",producer,no,
+"usuario/a INDAP (AFC), individual o empresas asociativas campesinas",producer,no,
+usuario/a acreditado de INDAP (AFC) con suelos degradados; operador acreditado formula el plan de manejo,producer,no,
+"usuario/a acreditado de INDAP (Agricultura Familiar Campesina), sin deuda morosa, en territorios del ciclo",producer,no,

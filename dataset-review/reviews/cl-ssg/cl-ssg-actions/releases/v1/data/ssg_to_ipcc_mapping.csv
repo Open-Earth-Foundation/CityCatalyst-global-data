@@ -1,0 +1,95 @@
+ssg_action_id,ssg_action_name,ssg_sector,ipcc_sector,ipcc_option,match_confidence,match_score
+CONS_0103,Shift short-distance freight transportation to cargo bikes,transportation,Transport,Shift to bikes and e-bikes,HIGH,0.9
+CONS_0104,Increase urban density,urban_form,Buildings,Avoid demand for energy services,MEDIUM,0.6
+CONS_0105,Add green roofs to new buildings to reduce the energy required to cool the building.,stationary_energy,Buildings,New buildings with high energy performance,MEDIUM,0.6
+CONS_0106,"Reduce average dwelling size, and increase the number of multi-family dwellings while reducing the number of single family dwellings, for new residential construction",stationary_energy,Buildings,Avoid demand for energy services,MEDIUM,0.6
+CONS_0107,"Remove buildings that cannot be retrofit, refurbished or repurposed",stationary_energy,Buildings,Improvement of existing building stock,MEDIUM,0.6
+CONS_0108,Retrofit non-residential buildings to improve energy efficiency and decrease energy use,stationary_energy,Buildings,Improvement of existing building stock,HIGH,0.9
+CONS_0109,Install faucet aerators,water_use,,No suitable IPCC option,NONE,
+CONS_0110,Improve energy efficiency of appliances and other plug load,stationary_energy,Buildings,"Efficient lighting, appliances and equipment",HIGH,0.9
+CONS_0111,Manage energy distribution more efficiently to reduce overall consumption,stationary_energy,Buildings,Improvement of existing building stock,MEDIUM,0.6
+CONS_0112,Increase pumping efficiency,stationary_energy,Industry,Energy efficiency,MEDIUM,0.6
+CONS_0113,Expand areas using (renewable) district energy,stationary_energy,Buildings,Improvement of existing building stock,LOW,0.35
+CONS_0114,Install concentrated solar energy generation systems,stationary_energy,Energy,Solar energy,HIGH,0.9
+CONS_0115,Decarbonize electricity,stationary_energy,Energy,Solar energy,LOW,0.35
+CONS_0116,Produce electricity from hydrological energy,stationary_energy,Energy,Hydropower,HIGH,0.9
+CONS_0117,"Install solar PV system capacity on rooftops, balconies, within building-cladding, and as shade awnings.",stationary_energy,Buildings,Onsite renewable production and use,HIGH,0.9
+CONS_0118,"Establish, expand, or switch fuel to zero emissions fueled district energy systems",stationary_energy,Buildings,Improvement of existing building stock,LOW,0.35
+CONS_0119,Replace all fossil fuels for domestic water heating with zero emissions fuels and/ or waste heat,stationary_energy,Buildings,Improvement of existing building stock,MEDIUM,0.6
+CONS_0120,Produce non-electricity energy from renewable and alternative sources,stationary_energy,Buildings,Onsite renewable production and use,LOW,0.35
+CONS_0121,"Replace all fossil fuels for space heating with zero emissions fuels, heat exchange, and/ or waste heat",stationary_energy,Buildings,Improvement of existing building stock,MEDIUM,0.6
+CONS_0122,Procure zero emissions electricity,stationary_energy,Energy,Solar energy,LOW,0.35
+CONS_0123,"Install small, modular nuclear reactors",stationary_energy,Energy,Nuclear energy,HIGH,0.9
+CONS_0124,Install nuclear power generators,stationary_energy,Energy,Nuclear energy,HIGH,0.9
+CONS_0125,Use heat exchange to heat and cool public infrastructure,stationary_energy,Buildings,Improvement of existing building stock,MEDIUM,0.6
+CONS_0126,"Use grey, recycled or deep lake water for thermal cooling in buildings",stationary_energy,Buildings,Improvement of existing building stock,MEDIUM,0.6
+CONS_0127,Generate green hydrogen from renewable energy sources,stationary_energy,,No suitable IPCC option,NONE,
+CONS_0128,Implement systems to capture mechanical energy,stationary_energy,,No suitable IPCC option,NONE,
+CONS_0129,Replace diesel generators with zero-emissions alternatives,stationary_energy,Energy,Solar energy,LOW,0.35
+CONS_0130,Switch to green hydrogen fuel,stationary_energy,Industry,"Fuel switching (electr, nat. gas, bio-energy, H2)",MEDIUM,0.6
+CONS_0131,Use flywheel technology to store and dispatch energy,stationary_energy,,No suitable IPCC option,NONE,
+CONS_0132,Install pumped hydro storage,stationary_energy,,No suitable IPCC option,NONE,
+CONS_0133,Store heat underground in sand or in rocks,stationary_energy,,No suitable IPCC option,NONE,
+CONS_0134,Capture excess renewable energy by converting it to hydrogen,stationary_energy,,No suitable IPCC option,NONE,
+CONS_0135,Electrify appliances,stationary_energy,Buildings,Improvement of existing building stock,MEDIUM,0.6
+CONS_0136,Install electric resistance space heating,stationary_energy,Buildings,Improvement of existing building stock,MEDIUM,0.6
+CONS_0137,Shift freight transportation from trucks to rail,transportation,Transport,Shift to public transportation,LOW,0.35
+CONS_0138,Switch to emissions-free energy for heavy duty transportation,transportation,Transport,Electric heavy duty vehicles,HIGH,0.9
+CONS_0139,Switch to emissions-free energy for corporate fleet vehicles,transportation,Transport,Electric light duty vehicles,HIGH,0.9
+CONS_0140,Switch to emissions-free energy for medium and small-scale commercial vehicles (e.g. taxis),transportation,Transport,Electric light duty vehicles,HIGH,0.9
+CONS_0141,Switch to emissions-free energy for personal use vehicles,transportation,Transport,Electric light duty vehicles,HIGH,0.9
+CONS_0142,Switch to emissions-free energy for commercial vehicles,transportation,Transport,Electric light duty vehicles,HIGH,0.9
+CONS_0143,Replace the use of petroleum-based diesel fuel with biodiesel or renewable diesel.,transportation,Transport,Biofuels,HIGH,0.9
+CONS_0144,Eliminate emissions from ports,transportation,Transport,Shipping-efficiency and optimization,MEDIUM,0.6
+CONS_0145,Decarbonize off-road vehicles,transportation,Transport,Electric heavy duty vehicles,MEDIUM,0.6
+CONS_0146,Switch to zero-emissions engines for rail,transportation,Transport,Electric heavy duty vehicles,LOW,0.35
+CONS_0147,Eliminate emissions from aviation,transportation,Transport,Aviation- energy efficiency,MEDIUM,0.6
+CONS_0148,Reduce driving ICE vehicles - both the number of trips and the distances driven,transportation,Transport,Shift to public transportation,MEDIUM,0.6
+CONS_0149,Work/ study from home,transportation,Transport,Shift to public transportation,LOW,0.35
+CONS_0150,Decrease vehicle km traveled,transportation,Transport,Shift to public transportation,MEDIUM,0.6
+CONS_0151,Reduce high-emissions travel,transportation,Transport,Shift to public transportation,MEDIUM,0.6
+CONS_0152,Reduce emission-generating business travel,transportation,Transport,Shift to public transportation,LOW,0.35
+CONS_0153,Decrease fuel use by improving vehicle and driver behaviours,transportation,Transport,Fuel efficient light duty vehicles,MEDIUM,0.6
+CONS_0154,Improve efficiency of marine transportation,transportation,Transport,Shipping-efficiency and optimization,HIGH,0.9
+CONS_0155,Improve fuel efficiency in vehicles or use 'cleaner' fuels,transportation,Transport,Fuel efficient light duty vehicles,MEDIUM,0.6
+CONS_0156,Switch to electric planes for short flights,transportation,Transport,Aviation- energy efficiency,MEDIUM,0.6
+CONS_0157,Switch to wind-powered cargo ships,transportation,Transport,Shipping-efficiency and optimization,MEDIUM,0.6
+CONS_0158,Decrease aviation emissions by using sustainable aviation fuel (SAF).,transportation,Transport,Aviation- energy efficiency,MEDIUM,0.6
+CONS_0159,Switch to emissions-free energy for ferries,transportation,Transport,Shipping-efficiency and optimization,MEDIUM,0.6
+CONS_0160,Reduce generation of waste,waste,Industry,Reduce CH4 emission from solid waste,MEDIUM,0.6
+CONS_0161,Decrease waste sent to an emitting landfill,waste,Industry,Reduce CH4 emission from solid waste,HIGH,0.9
+CONS_0162,Improve waste treatment,waste,Industry,Reduce CH4 emission from solid waste,MEDIUM,0.6
+CONS_0163,Implement systems to produce 'renewable' versions of natural gas,waste,Industry,Reduce CH4 emission from solid waste,MEDIUM,0.6
+CONS_0164,Add low-impact development facilities (LID) or green stormwater infrastructure to reduce the amount of water being processed in the sewer or stormwater system.,waste,,No suitable IPCC option,NONE,
+CONS_0165,Separate stormwater capture from wastewater system,waste,,No suitable IPCC option,NONE,
+CONS_0166,Build small-scale reservoirs on agricultural land to reduce irrigation,afolu,,No suitable IPCC option,NONE,
+CONS_0167,Reduce conventional tillage practices for crops,afolu,AFOLU,Carbon sequatration in agriculture,HIGH,0.9
+CONS_0168,Implement diversified crop rotation on some or all crop lands,afolu,AFOLU,Carbon sequatration in agriculture,MEDIUM,0.6
+CONS_0169,Increase use of precision agriculture technologies in farming.,afolu,AFOLU,Reduce CH4 and N2O emission in agriculture,MEDIUM,0.6
+CONS_0170,Improve efficiency of agricultural irrigation,afolu,,No suitable IPCC option,NONE,
+CONS_0171,Increase use of rotational grazing,afolu,AFOLU,Carbon sequatration in agriculture,MEDIUM,0.6
+CONS_0172,Install anaerobic digesters on individual farms,afolu,AFOLU,Reduce CH4 and N2O emission in agriculture,HIGH,0.9
+CONS_0173,Substituting and adjusting livestock feed,afolu,AFOLU,Reduce CH4 and N2O emission in agriculture,HIGH,0.9
+CONS_0174,Improve energy efficiency in agricultural operations and rural businesses,afolu,Industry,Energy efficiency,MEDIUM,0.6
+CONS_0175,Use gravity-based water distribution,water_use,,No suitable IPCC option,NONE,
+CONS_0176,Improve water treatment and distribution efficiency,water_use,Industry,Energy efficiency,MEDIUM,0.6
+CONS_0177,Decrease water volumes delivered through plumbing fixtures to meet rather than exceed requirements,water_use,,No suitable IPCC option,NONE,
+CONS_0178,Decrease use of treated fresh water through changes in behaviour and processes,water_use,,No suitable IPCC option,NONE,
+CONS_0179,Repair leaks in water distribution networks to reduce loss of treated water,water_use,,No suitable IPCC option,NONE,
+CONS_0180,"Use grey water, rainwater, or untreated water wherever possible",water_use,,No suitable IPCC option,NONE,
+CONS_0181,Increase fresh water storage,water_use,,No suitable IPCC option,NONE,
+CONS_0182,Recycle grey and black (i.e. wastewater or sewage) into drinking water,waste,,No suitable IPCC option,NONE,
+CONS_0183,"Re-introduce animal species such as beavers, that protect and increase natural water sources.",afolu,AFOLU,"Restoration, afforestation, reforestation",MEDIUM,0.6
+CONS_0184,Plant trees beside rivers,afolu,AFOLU,"Restoration, afforestation, reforestation",HIGH,0.9
+CONS_0185,"Increase vegetation (native, resilient trees and plants), and maintain them using practices that increase carbon sequestered in soils and vegetation",afolu,AFOLU,"Restoration, afforestation, reforestation",HIGH,0.9
+CONS_0186,Purchase offsets for emissions that cannot currently be eliminated,cross_sector,,No suitable IPCC option,NONE,
+CONS_0187,Reduce IPPU emissions from cement manufacturing by accepting 'weaker' strengths of concrete where appropriate.,ippu,Industry,Material efficiency,MEDIUM,0.6
+CONS_0188,Reduce IPPU emissions from cement manufacturing,ippu,Industry,Cementious material substitution,MEDIUM,0.6
+CONS_0189,Mandate methane reduction from oil refineries,ippu,Energy,Reduce CH4 emission from oil and gas,HIGH,0.9
+CONS_0190,Use grey water or recycled water rather than fresh water for industrial cooling,water_use,,No suitable IPCC option,NONE,
+CONS_0191,Decarbonize the energy used in concrete and steel manufacturing,stationary_energy,Industry,"Fuel switching (electr, nat. gas, bio-energy, H2)",HIGH,0.9
+CONS_0192,Reduce IPPU emissions from steel production,ippu,Industry,"Feedstock decarbonisation, process change",MEDIUM,0.6
+CONS_0193,Reduce demand for long-distance shipping,scope_3,Transport,Shipping-efficiency and optimization,LOW,0.35
+CONS_0194,Decrease high-carbon intensity foods at high-volume cafeterias,scope_3,AFOLU,Shift to sustainable healthy diets,HIGH,0.9
+CONS_0195,Reduce scope 3 emissions resulting from high emissions procurement practices.,scope_3,Industry,Material efficiency,LOW,0.35
+CONS_0196,Decarbonize ocean shipping,scope_3,Transport,Shipping-efficiency and optimization,MEDIUM,0.6

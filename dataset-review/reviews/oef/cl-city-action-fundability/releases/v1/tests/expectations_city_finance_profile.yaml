@@ -1,0 +1,47 @@
+# Post-load expectations for modelled.city_finance_profile (release v1).
+# Run: python ../../../../../../.cursor/skills/dataset-test/references/run_expectations.py expectations_city_finance_profile.yaml
+# The CITY layer (autonomy / capacity / archetype) the score reads. Source: cl-subdere-sinim.
+table: modelled.city_finance_profile
+partition_by: city_archetype
+
+structural:
+  primary_key: city_profile_id
+  required_not_null:
+    - city_profile_id
+    - actor_id
+    - release_id
+    - autonomy
+    - capacity
+  unique:
+    - [release_id, actor_id]
+  foreign_keys:
+    - {column: release_id, references: "modelled.dataset_release.release_id"}
+
+invariants:
+  value_sets:
+    city_archetype: [Self-sufficient, Delivery-ready, Well-resourced, Support-ready]
+    country_code:   [CL]
+  ranges:
+    autonomy: {min: 0, max: 1}
+    capacity: {min: 0, max: 1}
+  row_rules:
+    # archetype must agree with the 0.5 banding of the two axes (high autonomy -> Self-sufficient/Well-resourced;
+    # high capacity -> Self-sufficient/Delivery-ready)
+    - "city_archetype IS NULL OR (autonomy >= 0.5) = (city_archetype IN ('Self-sufficient','Well-resourced'))"
+    - "city_archetype IS NULL OR (capacity >= 0.5) = (city_archetype IN ('Self-sufficient','Delivery-ready'))"
+
+snapshot:                  # provisional from the local transform; re-confirm from the live-DB profile
+  row_count: {equals: 341}
+  distinct_count:
+    source_dataset: 1
+  group_counts:
+    city_archetype:
+      Support-ready: 157
+      Delivery-ready: 99
+      Self-sufficient: 61
+      Well-resourced: 24
+
+profile:
+  categorical: [city_archetype, country_code]
+  numeric: [autonomy, capacity]
+  dates: []

@@ -1,0 +1,25 @@
+lulc_class,class_level_1_en,class_level_2_en,class_level_3_en
+1,Forest formation,,
+3,Forest formation,Forest,
+59,Forest formation,Forest,Primary Forest
+60,Forest formation,Forest,Secondary Forest
+67,Forest formation,Forest,Dwarf forest
+10,Natural non-forest formation,,
+11,Natural non-forest formation,Wetland,
+12,Natural non-forest formation,Grassland,
+63,Natural non-forest formation,Steppe,
+66,Natural non-forest formation,Shrubland,
+29,Natural non-forest formation,Rocky Outcrop,
+14,Farming and silviculture,,
+9,Farming and silviculture,Silviculture,
+18,Farming and silviculture,Agriculture,
+15,Farming and silviculture,Pasture,
+22,Non-vegetated area,,
+24,Non-vegetated area,Infrastructure,
+23,Non-vegetated area,"Beach, Dune and Sand Spot",
+61,Non-vegetated area,Salt Flat,
+25,Non-vegetated area,Other non-vegetated area,
+26,Water bodies,,
+33,Water bodies,"River, lake or ocean",
+34,Water bodies,Ice and snow,
+27,Not observed,,

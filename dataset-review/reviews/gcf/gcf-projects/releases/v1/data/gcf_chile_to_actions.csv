@@ -1,0 +1,9 @@
+fp_id,title,action_id,action_name,action_gpc_ref,mapping_confidence,rationale
+FP189,E-Mobility Program for Sustainable Cities in LAC,c40_0023,Adopt zero-emission bus fleets for public transport,{'II.1.1'},high,E-mobility for cities funds electric buses/EV fleets -> adopt zero-emission bus fleets.
+FP151,Global Subnational Climate Fund (SnCF) — TA Facility,,,,none,"Subnational Climate Fund TA facility - cross-sector capacity/finance enabler, not a single intervention."
+FP152,Global Subnational Climate Fund (SnCF) — Equity,,,,none,"Subnational Climate Fund equity vehicle - a finance instrument, not an intervention."
+FP254,GCF-IFC Scaling Resilient Water Infrastructure (RWI) Facility,,,,none,Resilient water infrastructure is ADAPTATION - OUT OF SCOPE (we do not cover adaptation actions); not a taxonomy gap.
+FP149,Green Climate Financing Facility for Local Financial Institutions in LATAM,,,,none,"On-lending facility through local financial institutions - a finance lever, not an intervention."
+FP120,"Chile REDD+ results-based payments, results period 2014-2016",ipcc_0052,Reduce Deforestation and Degradation,{'V.2'},high,REDD+ results-based payments for verified reduced deforestation -> reduce deforestation and degradation.
+FP017,"Climate action and solar energy development programme, Tarapaca Region",icare_0012,Expand solar energy generation on municipal facilities and public assets,{'I.4.4'},medium,"Solar + pumped storage (Tarapaca) -> solar generation; utility/grid-scale, so only a partial fit to the municipal-solar action."
+RDN-FAO-2025,Readiness: mobilize public climate finance for Nature-based Solutions (Climate Change Framework Law),,,,none,"Readiness grant - capacity/enabling for NbS finance, not an implemented intervention."

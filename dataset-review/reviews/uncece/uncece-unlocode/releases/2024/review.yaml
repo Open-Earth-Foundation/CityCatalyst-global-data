@@ -1,0 +1,50 @@
+dataset_id: uncece-unlocode
+release: "2024-2"
+reviewed_on: 2026-02-17
+reviewed_by: amanda
+
+publisher:
+  name: UNECE CEFACT
+  product_site: UN/LOCODE
+  url: https://unece.org/trade/cefact
+
+source:
+  main_url: https://unece.org/trade/cefact/UNLOCODE-Download
+  access_type: public_download
+  format: CSV (3 parts)
+  documentation_available: true
+
+coverage:
+  geography: global
+  temporal_reference: 2024-2 release
+  spatial_levels_expected:
+    - country
+    - subdivision
+    - location
+
+themes:
+  - transport
+  - trade
+  - geocoding
+
+key_attributes:
+  - country
+  - locode
+  - name
+  - name_wo_diacritics
+  - coordinates
+  - function
+  - status
+  - subdiv
+
+integration_notes:
+  join_keys:
+    - locode (country + location code, e.g. CL SCL)
+    - country
+  requires_cleaning: true
+  encoding: Latin-1 (ISO-8859-1)
+  recommended_storage: parquet or consolidated CSV
+
+status:
+  production_ready: pending_validation
+  priority: high

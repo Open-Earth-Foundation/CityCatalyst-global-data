@@ -1,0 +1,949 @@
+{
+  "sources": [
+    {
+      "id": "seed-url-8a2218127b9f",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/fpa-2026-proyectos-sustentables-ciudadanos/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-d04bfd286201",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/fpa-2026-proyectos-sustentables-en-establecimientos-educacionales/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-35e6a29bb53f",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/fpa-2026-proyectos-sustentables-para-pueblos-indigenas/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-ae38ffc14010",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/fpa-2026-rapanui/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-cd3fa7bebf21",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/altodelcarmen-hidrico-2025/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-70ffa76f114a",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/altodelcarmen-biodiversidad-2025/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-7f2e66b74f0c",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "call_bases",
+      "url": "https://fondos.mma.gob.cl/fpr-2026-fondo-para-el-reciclaje/",
+      "last_fetched": "2026-08-16",
+      "yields": "Primary evidence for checked seed record(s).",
+      "notes": "Checked in the first verification batch."
+    },
+    {
+      "id": "seed-url-d39ee06331ed",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/fpa-tsej-2025-tocopilla/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-a9307144ada3",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/fpa-tsej-2025-mejillones/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-a735913c8a6a",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/fpa-2025-conservando-fauna-silvestre-crr/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-8c473ffa9c82",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/fpa-2024-pudu-conservacion/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-899290dca581",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/fpa-2024-tsej-h/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-cebe42ba3de0",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/fpa-2024-tsej-qpc/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-8f9fc8656088",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/fpa-2024-tsej-c/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-a0c2ff2849ca",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/fpa-2024-fortalecimiento-centros-rehabilitacion-rescate/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-dcc3a3265b9f",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/fpa-2024-prevencion-incendios-forestales/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-816102511c13",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/fpa-2024-fortalecimiento-para-recicladores-de-base/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-4e9cf67a15bd",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/fpa-2024-lideres-ambientales-comunitarios/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-2217ca8d4cd8",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/fpa-2024-chiloe-reduce-en-tu-establecimiento-educacional/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-0c1d174c2731",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/fpa-2023-concurso-eco-desafios/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-c035d991f48b",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/fpa-2023-emprendimientos-circulares-para-comunidades-chilotas/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-bd533000afb5",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/fpa-2023-proyectos-sustentables-para-pueblos-indigenas/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-c65265b071a8",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/fpa-2023-proyectos-sustentables-en-establecimientos-educacionales/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-190773e4401a",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/fpa-2023-proyectos-sustentables-ciudadanos/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-807ca728bcde",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/emprendimientos-verdes-para-comunidades-indigenas/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-a8b4ada0c2a9",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/fpa-2022-rapa-nui-sustentable/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-1863fe7ab3be",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/areas-verdes-comunitarias/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-a0232a641dc4",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/conservacion-de-humedales-urbanos/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-3a5f0bbc9c70",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/iniciativas-sustentables-para-fundaciones-y-corporaciones/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-a6a84d72c37c",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/iniciativas-sustentables-para-pueblos-indigenas/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-257aab2f3246",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/iniciativas-sustentables-en-establecimientos-educacionales/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-d6b8536b7077",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/iniciativas-sustentables-ciudadanas/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-ea29dbbbef4c",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/iniciativas-sustentables-en-establecimientos-educacionales-2021/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-764d5871a9a1",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/iniciativas-sustentables-fundaciones-y-corporaciones-2021/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-0fc12d96ee8b",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/iniciativas-sustentables-ciudadanas-4/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-457f832a582a",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/conservacion-humedales-urbanos-2021/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-981764b1bd83",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/iniciativas-sustentables-pueblos-indigenas-fpa2021/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-c4501136fc34",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/iniciativas-sustentables-ciudadanas-2021/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-c24ec6d1a127",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/2o-concurso-fpa-rapa-nui-sustentable/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-b5ad7353ba68",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/iniciativas-en-areas-verdes-comunitarias/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-a55a468331c7",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/iniciativas-sustentables-en-establecimientos-educacionales-2020/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-f9370fa4f5bc",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/iniciativas-sustentables-pueblos-indigenas/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-95a393bf5265",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/iniciativas-sustentables-ciudadanas-2020/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-9f008d647e17",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/rapa-nui-sustentable/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-1d04ac4c13b1",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/iniciativas-sustentables-ciudadanas-evaluacion/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-516a5a4b12cd",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/iniciativas-sustentables-ciudadanas-3/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-404dd4ac4a73",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/fpr-2025-fondo-para-el-reciclaje-2025/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-e87f511da7fa",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/fondo-para-el-reciclaje-2024/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-806be7792d20",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/fpr-2023-fondo-para-el-reciclaje/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-3c79e7528792",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/fpr-2022-exequiel-estay-recicladores-de-base/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-a132abb69a04",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/fondo-para-el-reciclaje-2021-exequiel-estay-recicladores-de-base/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-d431027430e9",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/promoviendo-la-economia-circular-en-municipios-a-traves-del-reciclaje/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-960a4698689c",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/fondo-para-el-reciclaje-exequiel-estay-recicladores-de-base/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-bd5442db2b42",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/fondo-para-el-reciclaje-chiloe-2020/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-f2ff8cc750df",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.mma.gob.cl/recambio-de-calefactores/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-c3bffa26dcc0",
+      "source": "Ministerio de Energía / Agencia de Sostenibilidad Energética (AgenciaSE, fundación de derecho privado)",
+      "kind": "programme_page",
+      "url": "https://www.comunaenergetica.cl/sobre-comuna-energetica/",
+      "last_fetched": "2026-08-16",
+      "yields": "Primary evidence for checked seed record(s).",
+      "notes": "Checked in the first verification batch."
+    },
+    {
+      "id": "seed-url-437d55a4ae12",
+      "source": "Ministerio de Energía / Agencia de Sostenibilidad Energética (AgenciaSE, fundación de derecho privado)",
+      "kind": "seed-url-unclassified",
+      "url": "https://www.agenciase.org/category/desarrollo-y-vinculacion-territorial/asistencia-tecnica-para-municipios-en-gestion-energetica-local/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-224dc4d9b7fd",
+      "source": "Ministerio de Energía / Agencia de Sostenibilidad Energética (AgenciaSE, fundación de derecho privado)",
+      "kind": "programme_page",
+      "url": "https://energia.gob.cl/noticias/nacional/parque-solar-comunitario-ministerio-de-energia-disenara-proyectos-fotovoltaicos-en-59-comunas-de-todo-chile",
+      "last_fetched": "2026-08-16",
+      "yields": "Primary evidence for checked seed record(s).",
+      "notes": "Checked in the first verification batch."
+    },
+    {
+      "id": "seed-url-70a0d4c76869",
+      "source": "Ministerio de Energía / Agencia de Sostenibilidad Energética (AgenciaSE, fundación de derecho privado)",
+      "kind": "seed-url-unclassified",
+      "url": "https://www.casasolar.cl/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-e9f4df8af5aa",
+      "source": "Ministerio de Energía / Agencia de Sostenibilidad Energética (AgenciaSE, fundación de derecho privado)",
+      "kind": "seed-url-unclassified",
+      "url": "https://www.chileatiende.gob.cl/fichas/36666-fondo-de-acceso-a-la-energia-fae",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-c23115757387",
+      "source": "Ministerio de Energía / Agencia de Sostenibilidad Energética (AgenciaSE, fundación de derecho privado)",
+      "kind": "seed-url-unclassified",
+      "url": "https://www.mejorescuela.cl/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-c8dfc9168ea7",
+      "source": "SUBDERE (Subsecretaría de Desarrollo Regional y Administrativo)",
+      "kind": "programme_page",
+      "url": "https://www.subdere.gov.cl/programas/divisi%C3%B3n-municipalidades/programa-mejoramiento-urbano-y-equipamiento-comunal-pmu",
+      "last_fetched": "2026-08-16",
+      "yields": "Primary evidence for checked seed record(s).",
+      "notes": "Checked in the first verification batch."
+    },
+    {
+      "id": "seed-url-217cc5edc36a",
+      "source": "SUBDERE",
+      "kind": "programme_page",
+      "url": "https://www.subdere.gov.cl/programas/divisi%C3%B3n-municipalidades/programa-mejoramiento-de-barrios-pmb",
+      "last_fetched": "2026-08-16",
+      "yields": "Primary evidence for checked seed record(s).",
+      "notes": "Checked in the first verification batch."
+    },
+    {
+      "id": "seed-url-37d0635dd5e8",
+      "source": "SUBDERE",
+      "kind": "seed-url-unclassified",
+      "url": "https://www.subdere.gov.cl/programas",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-88914b9398b2",
+      "source": "MINVU (Ministerio de Vivienda y Urbanismo)",
+      "kind": "programme_page",
+      "url": "https://www.minvu.gob.cl/beneficio/ciudad/programa-concursable-de-espacios-publicos/",
+      "last_fetched": "2026-08-16",
+      "yields": "Primary evidence for checked seed record(s).",
+      "notes": "Checked in the first verification batch."
+    },
+    {
+      "id": "seed-url-19a837e31c32",
+      "source": "MINVU",
+      "kind": "programme_page",
+      "url": "https://www.minvu.gob.cl/beneficio/ciudad/parques-urbanos/",
+      "last_fetched": "2026-08-16",
+      "yields": "Primary evidence for checked seed record(s).",
+      "notes": "Checked in the first verification batch."
+    },
+    {
+      "id": "seed-url-eeb8574ec5ca",
+      "source": "MINVU",
+      "kind": "seed-url-unclassified",
+      "url": "https://www.minvu.gob.cl/beneficios/pavimentos_participativos/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-6b71a673a85e",
+      "source": "MINVU",
+      "kind": "seed-url-unclassified",
+      "url": "https://www.minvu.gob.cl/beneficios/recuperacion_de_barrios/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-0abf766f82ba",
+      "source": "Gobiernos Regionales (16) + SUBDERE / Min. Interior",
+      "kind": "programme_page",
+      "url": "https://www.subdere.gov.cl/content/glosa-03-provisi%C3%B3n-fondo-nacional-de-desarrollo-regional-fndr",
+      "last_fetched": "2026-08-16",
+      "yields": "Primary evidence for checked seed record(s).",
+      "notes": "Checked in the first verification batch."
+    },
+    {
+      "id": "seed-url-b71b3e052d3c",
+      "source": "Gobiernos Regionales",
+      "kind": "programme_page",
+      "url": "https://www.gobiernosantiago.cl/fndr/",
+      "last_fetched": "2026-08-16",
+      "yields": "Primary evidence for checked seed record(s).",
+      "notes": "Checked in the first verification batch."
+    },
+    {
+      "id": "seed-url-7466d583985b",
+      "source": "Gobiernos Regionales",
+      "kind": "seed-url-unclassified",
+      "url": "https://www.goremaule.cl/goremauleVII/fndr-8-ano-2026/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-56ff2b407b1a",
+      "source": "Gobiernos Regionales",
+      "kind": "seed-url-unclassified",
+      "url": "https://fondos.gob.cl/ficha/gorearica/frpd2026arica/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-45844bef1165",
+      "source": "Corporación de Fomento de la Producción (CORFO)",
+      "kind": "seed-url-unclassified",
+      "url": "https://www.corfo.cl/sites/cpp/convocatorias/movil/credito_verde",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-d126b0cfdb76",
+      "source": "Corporación de Fomento de la Producción (CORFO)",
+      "kind": "seed-url-unclassified",
+      "url": "https://www.corfo.cl/sites/cpp/programasyconvocatorias",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-45c9578140ca",
+      "source": "Corporación de Fomento de la Producción (CORFO)",
+      "kind": "seed-url-unclassified",
+      "url": "https://corfo.cl/sites/cpp/sala_de_prensa/nacional/19_06_2023_fondo_hidrogeno_verde",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-4308306e83b3",
+      "source": "Corporación Nacional Forestal (CONAF)",
+      "kind": "call_bases",
+      "url": "https://www.conaf.cl/abiertas-postulaciones-al-fondo-de-conservacion-de-la-ley-de-bosque-nativo-20-283/",
+      "last_fetched": "2026-08-16",
+      "yields": "Primary evidence for checked seed record(s).",
+      "notes": "Checked in the first verification batch."
+    },
+    {
+      "id": "seed-url-61af238014a0",
+      "source": "Corporación Nacional Forestal (CONAF)",
+      "kind": "seed-url-unclassified",
+      "url": "https://vrid.udec.cl/concursos/externos/bosque-nativo-conaf-2026/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-d394dfef3890",
+      "source": "Ministerio de Transportes y Telecomunicaciones (MTT) — División de Transporte Público Regional (DTPR)",
+      "kind": "seed-url-unclassified",
+      "url": "https://www.gob.cl/noticias/nueva-ley-subsidio-transporte-publico-buses-electricos-regiones/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-7b293fddcc4d",
+      "source": "Ministerio de Transportes y Telecomunicaciones (MTT)",
+      "kind": "seed-url-unclassified",
+      "url": "https://www.chileatiende.gob.cl/fichas/25058-programa-de-renovacion-de-buses-de-transporte-publico-renueva-tu-micro",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-169c1cbe40d4",
+      "source": "Ministerio de Transportes y Telecomunicaciones (MTT)",
+      "kind": "programme_page",
+      "url": "https://www.chileatiende.gob.cl/fichas/43671-programa-de-renovacion-de-taxis-colectivos-renueva-tu-colectivo",
+      "last_fetched": "2026-08-16",
+      "yields": "Primary evidence for checked seed record(s).",
+      "notes": "Checked in the first verification batch."
+    },
+    {
+      "id": "seed-url-3d5ee341acbd",
+      "source": "Instituto de Desarrollo Agropecuario (INDAP)",
+      "kind": "programme_page",
+      "url": "https://www.indap.gob.cl/plataforma-de-servicios/transicion-la-agricultura-sostenible-tas",
+      "last_fetched": "2026-08-16",
+      "yields": "Primary evidence for checked seed record(s).",
+      "notes": "Checked in the first verification batch."
+    },
+    {
+      "id": "seed-url-3f44ccdad402",
+      "source": "Instituto de Desarrollo Agropecuario (INDAP)",
+      "kind": "seed-url-unclassified",
+      "url": "https://www.indap.gob.cl/plataforma-de-servicios/programa-sistema-de-incentivos-para-la-sustentabilidad-agroambiental-de-los",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-3b403559e6b7",
+      "source": "Instituto de Desarrollo Agropecuario (INDAP)",
+      "kind": "seed-url-unclassified",
+      "url": "https://www.indap.gob.cl/plataforma-de-servicios/programa-obras-menores-de-riego",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-d309b145c5d8",
+      "source": "Instituto de Desarrollo Agropecuario (INDAP)",
+      "kind": "seed-url-unclassified",
+      "url": "https://www.indap.gob.cl/plataforma-de-servicios/programa-de-desarrollo-local-prodesal",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-a2993cf1314c",
+      "source": "Instituto de Desarrollo Agropecuario (INDAP)",
+      "kind": "seed-url-unclassified",
+      "url": "https://www.indap.gob.cl/plataforma-de-servicios/programa-de-desarrollo-territorial-indigena-indap-conadi-pdti",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-b15236611a2c",
+      "source": "Instituto de Desarrollo Agropecuario (INDAP)",
+      "kind": "seed-url-unclassified",
+      "url": "https://www.indap.gob.cl/plataforma-de-servicios/servicio-de-asesoria-tecnica-sat",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-02f1034d7743",
+      "source": "Instituto de Desarrollo Agropecuario (INDAP)",
+      "kind": "seed-url-unclassified",
+      "url": "https://www.indap.gob.cl/plataforma-de-servicios/programa-de-alianzas-productivas-pap",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-f062a447c43f",
+      "source": "Instituto de Desarrollo Agropecuario (INDAP)",
+      "kind": "seed-url-unclassified",
+      "url": "https://www.indap.gob.cl/plataforma-de-servicios/programa-desarrollo-de-inversiones-pdi",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-ac211e2063dc",
+      "source": "Instituto de Desarrollo Agropecuario (INDAP)",
+      "kind": "seed-url-unclassified",
+      "url": "https://www.indap.gob.cl/plataforma-de-servicios/credito-corto-plazo",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-f2a15fdcd5d9",
+      "source": "Ministerio de Obras Públicas (MOP)",
+      "kind": "programme_page",
+      "url": "https://doh.mop.gob.cl/SSR/index.html",
+      "last_fetched": "2026-08-16",
+      "yields": "Primary evidence for checked seed record(s).",
+      "notes": "Checked in the first verification batch."
+    },
+    {
+      "id": "seed-url-8437b75d0984",
+      "source": "Ministerio de Obras Públicas (MOP)",
+      "kind": "seed-url-unclassified",
+      "url": "https://doh.mop.gob.cl/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-c1a60af37fdb",
+      "source": "Ministerio de Obras Públicas (MOP)",
+      "kind": "seed-url-unclassified",
+      "url": "https://dga.mop.gob.cl/legislacion/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-0e464dc67322",
+      "source": "Ministerio de Obras Públicas (MOP)",
+      "kind": "seed-url-unclassified",
+      "url": "https://dgop.mop.gob.cl/programa-infraestructura-para-el-buen-vivir/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-12d2b70ac9f7",
+      "source": "Ministerio de Obras Públicas (MOP)",
+      "kind": "seed-url-unclassified",
+      "url": "https://dgop.mop.gob.cl/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-54da55f35b11",
+      "source": "Ministerio de Obras Públicas (MOP)",
+      "kind": "seed-url-unclassified",
+      "url": "https://www.concesiones.cl/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-f4e94a8e97a0",
+      "source": "Ministerio de Obras Públicas (MOP)",
+      "kind": "seed-url-unclassified",
+      "url": "https://arquitectura.mop.gob.cl/",
+      "last_fetched": null,
+      "yields": "One or more inherited seed claims; not re-fetched in this compile yet.",
+      "notes": "Registry seed only; do not treat the linked claim as reverified."
+    },
+    {
+      "id": "seed-url-9c94291b4f33",
+      "source": "Ministerio del Medio Ambiente (MMA)",
+      "kind": "call_page",
+      "url": "https://fondos.mma.gob.cl/fpa2026_landaeta/",
+      "last_fetched": "2026-08-16",
+      "yields": "Primary evidence for checked seed record(s).",
+      "notes": "Checked in the first verification batch."
+    },
+    {
+      "id": "fpr-2026-bases",
+      "source": "Ministerio del Medio Ambiente",
+      "kind": "call-bases-pdf",
+      "url": "https://fondos.mma.gob.cl/wp-content/uploads/2025/09/Bases_Fondo_para_el_Reciclaje_2026.pdf",
+      "last_fetched": "2026-08-16",
+      "yields": "Applicant types, fixed amount, co-finance, activity lines and eligible cost categories.",
+      "notes": "Terms source; current usability is overridden by the later revocation linked on the call page."
+    },
+    {
+      "id": "sni-transport-current",
+      "source": "Sistema Nacional de Inversiones",
+      "kind": "official-sector-guidance",
+      "url": "https://sni.gob.cl/formulacion-de-iniciativas/transporte/",
+      "last_fetched": "2026-08-16",
+      "yields": "Current transport-sector formulation routes, including cycleway requirements and methodology.",
+      "notes": "Confirms a project-formulation route, not availability of an award or call."
+    },
+    {
+      "id": "dipres-2026-regional-investment-budget",
+      "source": "Dirección de Presupuestos",
+      "kind": "official-budget-pdf",
+      "url": "https://www.dipres.gob.cl/597/articles-397464_doc_pdf.pdf",
+      "last_fetched": "2026-08-16",
+      "yields": "2026 regional investment budget allocations including FNDR by region.",
+      "notes": "Confirms budgeted route scale; does not prove eligibility of a particular action."
+    },
+    {
+      "id": "dtpr-rtc-2026-processes",
+      "source": "División de Transporte Público Regional",
+      "kind": "regional-call-index",
+      "url": "https://dtpr.mtt.gob.cl/WEBRTC/Procesos.aspx?a=2026",
+      "last_fetched": "2026-08-16",
+      "yields": "Region-specific 2026 Renueva tu Colectivo processes and dates.",
+      "notes": "Must be extracted into regional call rows; the national seed row is not a single current call."
+    },
+    {
+      "id": "conaf-fcbn-2026-bases",
+      "source": "Corporación Nacional Forestal",
+      "kind": "call-bases-pdf",
+      "url": "https://concursolbn.conaf.cl/ayuda/2026/Bases_administrativas_2026_completas.pdf",
+      "last_fetched": "2026-08-16",
+      "yields": "2026 call identity, applicant classes, administrative requirements and annual-call structure.",
+      "notes": "The separate official call index records the extended 31 July 2026 deadline."
+    },
+    {
+      "id": "conaf-fcbn-2026-call-index",
+      "source": "Corporación Nacional Forestal",
+      "kind": "official-call-index",
+      "url": "https://concursolbn.conaf.cl/login/bases.php/1000",
+      "last_fetched": "2026-08-16",
+      "yields": "2026 bases links and extension of applications to 31 July 2026.",
+      "notes": "Establishes that the 2026 call is closed on the compile verification date."
+    },
+    {
+      "id": "mop-ssr-law-and-route",
+      "source": "Ministerio de Obras Públicas — Servicios Sanitarios Rurales",
+      "kind": "official-programme-page",
+      "url": "https://ssr.mop.gob.cl/ley-20-998/",
+      "last_fetched": "2026-08-16",
+      "yields": "Operator role, state technical assistance and public infrastructure-investment function.",
+      "notes": "Confirms a public-investment system, not an open municipal grant."
+    },
+    {
+      "id": "mop-2026-investment-programme",
+      "source": "Ministerio de Obras Públicas",
+      "kind": "official-investment-programme-pdf",
+      "url": "https://planeamiento.mop.gob.cl/uploads/sites/12/2024/05/programa_anual_de_inversiones_2026-1.pdf",
+      "last_fetched": "2026-08-16",
+      "yields": "Named 2026 SSR investment projects, BIP identifiers, stages, regions and programmed amounts.",
+      "notes": "Useful as project precedent and route evidence; not an application call catalogue."
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+# Source registry for br-climate-policy-documents.
+# No external feed exists; this list IS the refresh mechanism.
+# Re-compile = re-fetch these, re-extract, diff against data.csv.
+# Note: gov.br HTML landing pages block automated fetching (empty bodies / HTTP 000);
+# direct PDF and legislative-portal links fetch fine. That is why the 23 sectoral
+# plans point at the documentos-oficiais HUB (verified) rather than per-plan PDFs.
+
+sources:
+  # --- National umbrella (tier: ndc / framework-law / national-plan / national-strategy) ---
+  - id: ndc-2024-unfccc
+    tier: ndc
+    source: Governo Federal (MMA + Itamaraty), via UNFCCC registry
+    kind: pdf
+    url: https://unfccc.int/sites/default/files/2024-11/Brazil_Second%20Nationally%20Determined%20Contribution%20(NDC)_November2024.pdf
+    last_fetched: 2026-07-05
+    yields: NDC 2035 targets (net -59 to -67% vs 2005; neutrality 2050)
+    notes: PDF fetched in full. UNFCCC landing (documents/643337) is JS-rendered.
+
+  - id: pnmc-lei-12187
+    tier: framework-law
+    source: Presidencia da Republica / Casa Civil (Planalto)
+    kind: law-portal
+    url: https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l12187.htm
+    last_fetched: 2026-07-05
+    yields: PNMC framework law text (instruments + governance)
+    notes: Full legal text fetched. Art. 4 amended by Lei 15.042/2024 (SBCE).
+
+  - id: plano-clima-sumario
+    tier: national-plan
+    source: Ministerio do Meio Ambiente e Mudanca do Clima (MMA)
+    kind: pdf
+    url: https://www.gov.br/mma/pt-br/centrais-de-conteudo/publicacoes/mudanca-do-clima/sumario-executivo-plano-clima.pdf
+    last_fetched: 2026-07-05
+    yields: Plano Clima 2024-2035 executive summary (three axes)
+    notes: PDF fetched. Full plan launched ~16 Mar 2026.
+
+  - id: enm-mitigacao
+    tier: national-strategy
+    source: MMA
+    kind: pdf
+    url: https://www.gov.br/mma/pt-br/centrais-de-conteudo/publicacoes/mudanca-do-clima/estrategia-nacional-mitigacao.pdf
+    last_fetched: 2026-07-05
+    yields: National Mitigation Strategy (umbrella over 7 sectoral plans)
+    notes: PDF fetched. Released with the 7 plans 18 Jul 2025.
+
+  - id: ena-adaptacao
+    tier: national-strategy
+    source: MMA + MCTI + Casa Civil
+    kind: pdf
+    url: https://www.gov.br/mma/pt-br/centrais-de-conteudo/publicacoes/mudanca-do-clima/estrategia-nacional-de-adaptacao.pdf
+    last_fetched: 2026-07-05
+    yields: National Adaptation Strategy (umbrella over 16 sectoral/thematic plans)
+    notes: PDF fetched. Documents published 13 Feb 2026.
+
+  # --- Sectoral plans (tiers: sector-plan-mitigation x7, sector-plan-adaptation x16) ---
+  - id: plano-clima-documentos-oficiais
+    tier: sector-plan-mitigation / sector-plan-adaptation
+    source: MMA - Plano Clima portal
+    kind: portal-hub
+    url: https://www.gov.br/mma/pt-br/composicao/smc/plano-clima/documentos-oficiais
+    last_fetched: 2026-07-05
+    yields: >
+      Hub listing all Plano Clima official documents; the 7 mitigation + 16 adaptation
+      per-plan PDFs live behind it. Sector/theme names transcribed verbatim from MMA.
+    notes: >
+      gov.br blocks automated fetch, so per-plan PDF deep-links + exact cover titles +
+      lead ministries are NOT source-read (verified=false on all 23 rows). Confirm each
+      in a browser at this hub for promotion.
+    corroborating:
+      - https://www.gov.br/mma/pt-br/noticias/mma-divulga-integra-da-estrategia-nacional-de-mitigacao-e-de-seus-sete-planos-setoriais
+      - https://www.gov.br/mma/pt-br/noticias/governo-do-brasil-publica-documentos-do-plano-clima-adaptacao
+      - https://www.ceivap.org.br/noticias/governo-do-brasil-publica-documentos-do-plano-clima-adaptacao
+
+  # --- State climate policies (tier: state-policy) ---
+  # Each row's source_url is in data.csv; representative primary hosts below.
+  - id: state-pemc-primary-hosts
+    tier: state-policy
+    source: State legislatures / environment agencies (per UF)
+    kind: law-portal + agency-pdf
+    url: multiple (see data.csv source_url per state)
+    last_fetched: 2026-07-05
+    yields: >
+      13 UFs pinned to a verified law reference (AM, SP, SC, RJ, PE, ES, RS, BA, GO,
+      CE, MS, PR, MT) + 3 low-confidence (PB, RO, MG). Control total from ICS: 21 of 27
+      UFs have a state climate law.
+    notes: >
+      High-confidence hosts fetched: IPAAM (AM), ALESP (SP), LexML (SC), SILEP-RJ,
+      CPRH (PE), ALES (ES), estado.rs.gov.br (RS), ba.gov.br (BA), SEMA-CE (CE).
+      Med/low via legisweb / state secretariat pages. 5-8 UFs toward the '21' not yet pinned.
+    control_total_source: https://www.climaesociedade.org  # ICS: 21/27 UFs with a climate law
+
+  # --- Municipal climate plans (tier: municipal-plan) ---
+  - id: municipal-plans-notable
+    tier: municipal-plan
+    source: Prefeituras / C40 / ICLEI
+    kind: portal + pdf
+    url: multiple (see data.csv source_url per city)
+    last_fetched: 2026-07-05
+    yields: >
+      7 notable municipal plans (Sao Paulo, Rio, Salvador, Recife, Curitiba,
+      Belo Horizonte, Porto Alegre).
+    notes: >
+      Sparse layer: NEPAM/Unicamp reports only ~7 municipalities have a climate LAW;
+      dedicated plans ~10-40 of 5,570, concentrated in capitals and growing via
+      C40/ICLEI + federal AdaptaCidades / Mutirao Brasil. Fortaleza and Brasilia/DF
+      seen but low-confidence, not yet rowed.
+    control_total_source: NEPAM/Unicamp (only ~7 municipalities with a specific climate law)
+
+  # --- Municipal carriers: federal mandates (tiers: plano-diretor / saneamento / mobilidade / gestao-riscos) ---
+  - id: estatuto-cidade
+    tier: plano-diretor
+    source: Planalto - Lei 10.257/2001 (Estatuto da Cidade)
+    kind: law-portal
+    url: https://www.planalto.gov.br/ccivil_03/leis/leis_2001/l10257.htm
+    last_fetched: 2026-07-05
+    yields: Plano Diretor mandate (Art. 41 >20k + triggers; Art. 40 10-yr revision; Art. 42-A/42-B risk content)
+    notes: Fetched. Mandate/registry/signal fixed in references/carrier-types.csv.
+
+  - id: marco-saneamento
+    tier: saneamento
+    source: Planalto - Lei 11.445/2007 (updated Lei 14.026/2020)
+    kind: law-portal
+    url: https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/lei/l11445compilado.htm
+    last_fetched: 2026-07-05
+    yields: PMSB mandate (Art. 19 content; Art. 52-53 SINISA)
+    notes: Direct fetch returned empty; confirmed via search. Open URL manually to lock Art. 19/53.
+
+  - id: pnmu-mobilidade
+    tier: mobilidade
+    source: Planalto - Lei 12.587/2012 (PNMU)
+    kind: law-portal
+    url: https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12587.htm
+    last_fetched: 2026-07-05
+    yields: PlanMob mandate (Art. 24 >20k + metro/tourism, 10-yr revision; Art. 6 II / 23 VII climate content)
+    notes: Fetched. Adoption deadlines staggered by Lei 14.748/2023.
+
+  - id: pnpdec-defesa-civil
+    tier: gestao-riscos
+    source: Planalto - Lei 12.608/2012 (PNPDEC) + Decreto 10.692/2021
+    kind: law-portal
+    url: https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12608.htm
+    last_fetched: 2026-07-05
+    yields: Municipal duties (Art. 8); federal landslide/flood cadastro (Art. 6 VI; Decreto 10.692/2021, CENAD/CEMADEN)
+    notes: Fetched. ~1,942-municipality priority list exists as MDR PDFs.
+
+  # --- Municipal carriers: national registries (path to full 5,570-city enumeration) ---
+  - id: ibge-munic
+    tier: plano-diretor / saneamento / mobilidade / gestao-riscos
+    source: IBGE MUNIC (Perfil dos Municipios Brasileiros)
+    kind: registry-microdata
+    url: https://www.ibge.gov.br/estatisticas/sociais/educacao/10586-pesquisa-de-informacoes-basicas-municipais.html
+    last_fetched: 2026-07-05
+    yields: Per-municipality variables for all four carrier types (2015/2018/2020/2023 editions)
+    notes: Most machine-readable backbone for full enumeration; also on basedosdados.org. Survey, not a live cadastre.
+
+  - id: sinisa
+    tier: saneamento
+    source: Ministerio das Cidades - SINISA (successor to SNIS)
+    kind: registry
+    url: https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/sinisa
+    last_fetched: 2026-07-05
+    yields: Municipal sanitation datasets incl. planning-instrument existence
+    notes: Replaces SNIS from 2024 cycle.
+
+  # --- Municipal carriers: per-city instruments ---
+  - id: carrier-city-instruments
+    tier: plano-diretor / saneamento / mobilidade / gestao-riscos
+    source: Prefeituras / camaras / leismunicipais / legisweb
+    kind: municipal-law + decree
+    url: multiple (see data.csv source_url on br-carrier-* rows)
+    last_fetched: 2026-07-05
+    yields: >
+      28 carrier rows (7 anchor cities x 4 carriers). Planos Diretores all 7 confirmed;
+      mobility 5/7, sanitation 3/7, disaster-risk 1/7 pinned to a formal instrument.
+    notes: >
+      Disaster-risk mostly operational contingency plans without a municipal law
+      (law_ref blank, present:partial/false). Porto Alegre's new PDUS (approved Apr 2026)
+      not yet sanctioned - PDDUA/LC 434/1999 remains vigente.

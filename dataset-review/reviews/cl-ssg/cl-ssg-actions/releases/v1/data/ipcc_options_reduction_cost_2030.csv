@@ -1,0 +1,44 @@
+sector,option,cost_lt0,cost_0_20,cost_20_50,cost_50_100,cost_100_200,cost_unallocated,total,smooth,datasource_name,datasource_link
+Energy,Wind energy,2.31,0.77,0.77,,,,3.85,True,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Energy,Solar energy,2.7,0.6,0.6,0.6,,,4.5,True,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Energy,Nuclear energy,0.176,0.176,0.176,0.176,0.176,,0.88,True,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Energy,Bioelectricity,,,,0.43,0.43,,0.86,True,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Energy,Hydropower,,0.106666666666667,0.106666666666667,0.106666666666667,,,0.32,True,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Energy,Geothermal energy,,0.246666666666667,0.246666666666667,0.246666666666667,,,0.74,True,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Energy,Carbon capture and storage,,,,0.27,0.27,,0.54,True,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Energy,Bioelectricity with CCS,,,,0.15,0.15,,0.3,True,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Energy,Reduce CH4 emission from coal mining,0.04,0.41,0.03,0.02,0.0,,0.5,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Energy,Reduce CH4 emission from oil and gas,0.31,0.61,0.07,0.06,0.1,,1.15,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+AFOLU,Carbon sequatration in agriculture,,0.5,0.73,2.21,,,3.44,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+AFOLU,Reduce CH4 and N2O emission in agriculture,,0.35,,0.28,,,0.63,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+AFOLU,Reduce conversion of natural ecosystems,,2.28,0.12,1.63,,,4.03,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+AFOLU,"Restoration, afforestation, reforestation",,0.15,0.57,1.46,0.66,,2.84,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+AFOLU,"Forest management, fire management",,0.38,,0.78,0.22,,1.4,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+AFOLU,Reduce food loss and food waste,,,,,,0.5,0.5,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+AFOLU,Shift to sustainable healthy diets,,,,,,1.7,1.7,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Buildings,Avoid demand for energy services,0.557,,,,,,0.557,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Buildings,"Efficient lighting, appliances and equipment",0.726,,,,,,0.726,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Buildings,New buildings with high energy performance,,0.116666666666667,0.116666666666667,0.116666666666667,0.83,,1.18,True,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Buildings,Onsite renewable production and use,,0.0666666666666667,0.0666666666666667,0.0666666666666667,0.27,,0.47,True,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Buildings,Improvement of existing building stock,,0.067,0.067,0.067,0.067,,0.269,True,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Buildings,Enhanced use of wood products,,,,,,0.38,0.38,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Transport,Fuel efficient light duty vehicles,0.56,,,,,,0.56,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Transport,Electric light duty vehicles,,,,,,0.59,0.59,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Transport,Shift to public transportation,0.53,,,,,,0.53,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Transport,Shift to bikes and e-bikes,0.19,,,,,,0.19,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Transport,Fuel efficient heavy duty vehicles,0.36,,,,,,0.36,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Transport,Electric heavy duty vehicles,,,,,,0.21,0.21,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Transport,Shipping-efficiency and optimization,0.47,,,,,,0.47,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Transport,Aviation- energy efficiency,0.22,,,,,,0.22,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Transport,Biofuels,,0.233333333333333,0.233333333333333,0.233333333333333,,,0.7,True,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Industry,Energy efficiency,,1.14,,,,,1.14,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Industry,Material efficiency,,,0.93,,,,0.93,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Industry,Enhanced recycling,,,0.48,,,,0.48,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Industry,"Fuel switching (electr, nat. gas, bio-energy, H2)",,,1.28,0.667,0.152,,2.099,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Industry,"Feedstock decarbonisation, process change",,,,0.384,,,0.384,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Industry,Carbon capture with utilization and storage,,,,,0.152,,0.152,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Industry,Cementious material substitution,,,0.28,,,,0.28,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Industry,Reduction of non-CO2 emissions,,0.2,,,,,0.2,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Industry,Reduce emission of fluorinated gas,0.26,0.68,0.18,0.09,0.03,,1.24,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Industry,Reduce CH4 emission from solid waste,0.33,0.11,0.06,0.04,0.08,,0.63,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/
+Industry,Reduce CH4 emission from wastewater,0.02,0.03,0.04,0.03,0.07,,0.12,False,IPCC,https://www.ipcc.ch/report/ar6/wg3/

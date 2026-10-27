@@ -107,6 +107,7 @@ celerybeat.pid
 # Environments
 .env
 .venv
+.venv_*
 .importer-creator/
 .DS_Store
 env/
@@ -166,6 +167,7 @@ docker-compose.override.yml
 **/.terraform*
 *.tfstate*
 *.zip
+*.pdf
 
 # vscode
 .vscode/
@@ -181,3 +183,10 @@ scratch*
 your-first-project
 
 my_db.*
+# Sample folders
+dataset-review/**/**/sample/
+
+# Raw source data (not tracked, compiled from public sources)
+dataset-compile/**/raw/
+# discovery working files (scratch from a hunt stays out of git)
+dataset-discovery/needs/*/sample/

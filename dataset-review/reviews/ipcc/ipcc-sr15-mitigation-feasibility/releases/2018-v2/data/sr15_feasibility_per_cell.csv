@@ -1,0 +1,548 @@
+table,option,dimension,indicator,code,numeric,source,page
+4.SM.7,Wind (on-shore & off-shore),economic,cost-effectiveness,B,2,sr15_ch4_sm_4_sm_7,15
+4.SM.7,Solar PV,economic,cost-effectiveness,C,3,sr15_ch4_sm_4_sm_7,15
+4.SM.7,Bioenergy,economic,cost-effectiveness,B,2,sr15_ch4_sm_4_sm_7,15
+4.SM.7,Wind (on-shore & off-shore),economic,distributional_effects,B,2,sr15_ch4_sm_4_sm_7,15
+4.SM.7,Solar PV,economic,distributional_effects,C,3,sr15_ch4_sm_4_sm_7,15
+4.SM.7,Bioenergy,economic,distributional_effects,B,2,sr15_ch4_sm_4_sm_7,15
+4.SM.7,Wind (on-shore & off-shore),economic,employment_productivity,C,3,sr15_ch4_sm_4_sm_7,15
+4.SM.7,Solar PV,economic,employment_productivity,C,3,sr15_ch4_sm_4_sm_7,15
+4.SM.7,Bioenergy,economic,employment_productivity,C,3,sr15_ch4_sm_4_sm_7,15
+4.SM.7,Wind (on-shore & off-shore),technological,maturity,C,3,sr15_ch4_sm_4_sm_7,16
+4.SM.7,Solar PV,technological,maturity,C,3,sr15_ch4_sm_4_sm_7,16
+4.SM.7,Bioenergy,technological,maturity,C,3,sr15_ch4_sm_4_sm_7,16
+4.SM.7,Wind (on-shore & off-shore),technological,simplicity,B,2,sr15_ch4_sm_4_sm_7,16
+4.SM.7,Solar PV,technological,simplicity,C,3,sr15_ch4_sm_4_sm_7,16
+4.SM.7,Bioenergy,technological,simplicity,C,3,sr15_ch4_sm_4_sm_7,16
+4.SM.7,Wind (on-shore & off-shore),technological,absence_of_risk,C,3,sr15_ch4_sm_4_sm_7,16
+4.SM.7,Solar PV,technological,absence_of_risk,C,3,sr15_ch4_sm_4_sm_7,16
+4.SM.7,Bioenergy,technological,absence_of_risk,C,3,sr15_ch4_sm_4_sm_7,16
+4.SM.7,Wind (on-shore & off-shore),institutional,political_acceptability,B,2,sr15_ch4_sm_4_sm_7,16
+4.SM.7,Solar PV,institutional,political_acceptability,B,2,sr15_ch4_sm_4_sm_7,16
+4.SM.7,Bioenergy,institutional,political_acceptability,B,2,sr15_ch4_sm_4_sm_7,16
+4.SM.7,Wind (on-shore & off-shore),institutional,institutional_capacity,B,2,sr15_ch4_sm_4_sm_7,16
+4.SM.7,Solar PV,institutional,institutional_capacity,B,2,sr15_ch4_sm_4_sm_7,16
+4.SM.7,Wind (on-shore & off-shore),institutional,transparency_accountability,C,3,sr15_ch4_sm_4_sm_7,16
+4.SM.7,Solar PV,institutional,transparency_accountability,C,3,sr15_ch4_sm_4_sm_7,16
+4.SM.7,Bioenergy,institutional,transparency_accountability,A,1,sr15_ch4_sm_4_sm_7,16
+4.SM.7,Bioenergy,institutional,institutional_capacity,LE,,sr15_ch4_sm_4_sm_7,16
+4.SM.7,Wind (on-shore & off-shore),socio_cultural,social_co_benefits,C,3,sr15_ch4_sm_4_sm_7,17
+4.SM.7,Solar PV,socio_cultural,social_co_benefits,C,3,sr15_ch4_sm_4_sm_7,17
+4.SM.7,Bioenergy,socio_cultural,social_co_benefits,B,2,sr15_ch4_sm_4_sm_7,17
+4.SM.7,Wind (on-shore & off-shore),socio_cultural,public_acceptance,B,2,sr15_ch4_sm_4_sm_7,17
+4.SM.7,Solar PV,socio_cultural,public_acceptance,C,3,sr15_ch4_sm_4_sm_7,17
+4.SM.7,Bioenergy,socio_cultural,public_acceptance,A,1,sr15_ch4_sm_4_sm_7,17
+4.SM.7,Wind (on-shore & off-shore),socio_cultural,inclusiveness,C,3,sr15_ch4_sm_4_sm_7,17
+4.SM.7,Solar PV,socio_cultural,inclusiveness,B,2,sr15_ch4_sm_4_sm_7,17
+4.SM.7,Bioenergy,socio_cultural,inclusiveness,B,2,sr15_ch4_sm_4_sm_7,17
+4.SM.7,Wind (on-shore & off-shore),socio_cultural,intergenerational_equity,C,3,sr15_ch4_sm_4_sm_7,17
+4.SM.7,Solar PV,socio_cultural,intergenerational_equity,C,3,sr15_ch4_sm_4_sm_7,17
+4.SM.7,Wind (on-shore & off-shore),socio_cultural,human_capabilities,C,3,sr15_ch4_sm_4_sm_7,17
+4.SM.7,Solar PV,socio_cultural,human_capabilities,B,2,sr15_ch4_sm_4_sm_7,17
+4.SM.7,Wind (on-shore & off-shore),environmental,air_pollution,C,3,sr15_ch4_sm_4_sm_7,17
+4.SM.7,Solar PV,environmental,air_pollution,C,3,sr15_ch4_sm_4_sm_7,17
+4.SM.7,Wind (on-shore & off-shore),environmental,toxic_waste,C,3,sr15_ch4_sm_4_sm_7,17
+4.SM.7,Solar PV,environmental,toxic_waste,B,2,sr15_ch4_sm_4_sm_7,17
+4.SM.7,Bioenergy,socio_cultural,intergenerational_equity,NE,,sr15_ch4_sm_4_sm_7,17
+4.SM.7,Bioenergy,socio_cultural,human_capabilities,NE,,sr15_ch4_sm_4_sm_7,17
+4.SM.7,Bioenergy,environmental,air_pollution,LE,,sr15_ch4_sm_4_sm_7,17
+4.SM.7,Bioenergy,environmental,toxic_waste,NE,,sr15_ch4_sm_4_sm_7,17
+4.SM.7,Wind (on-shore & off-shore),environmental,water_use,C,3,sr15_ch4_sm_4_sm_7,18
+4.SM.7,Solar PV,environmental,water_use,C,3,sr15_ch4_sm_4_sm_7,18
+4.SM.7,Bioenergy,environmental,water_use,A,1,sr15_ch4_sm_4_sm_7,18
+4.SM.7,Wind (on-shore & off-shore),environmental,biodiversity,C,3,sr15_ch4_sm_4_sm_7,18
+4.SM.7,Solar PV,environmental,biodiversity,C,3,sr15_ch4_sm_4_sm_7,18
+4.SM.7,Bioenergy,environmental,biodiversity,B,2,sr15_ch4_sm_4_sm_7,18
+4.SM.7,Wind (on-shore & off-shore),geophysical,physical_feasibility,B,2,sr15_ch4_sm_4_sm_7,18
+4.SM.7,Solar PV,geophysical,physical_feasibility,C,3,sr15_ch4_sm_4_sm_7,18
+4.SM.7,Bioenergy,geophysical,physical_feasibility,B,2,sr15_ch4_sm_4_sm_7,18
+4.SM.7,Wind (on-shore & off-shore),geophysical,limited_land_use,B,2,sr15_ch4_sm_4_sm_7,18
+4.SM.7,Solar PV,geophysical,limited_land_use,B,2,sr15_ch4_sm_4_sm_7,18
+4.SM.7,Bioenergy,geophysical,limited_land_use,A,1,sr15_ch4_sm_4_sm_7,18
+4.SM.7,Wind (on-shore & off-shore),geophysical,limited_scarce_resources,B,2,sr15_ch4_sm_4_sm_7,18
+4.SM.7,Solar PV,geophysical,limited_scarce_resources,B,2,sr15_ch4_sm_4_sm_7,18
+4.SM.8,Electricity storage,economic,cost-effectiveness,B,2,sr15_ch4_sm_4_sm_8,20
+4.SM.8,Power sector CCS,economic,cost-effectiveness,B,2,sr15_ch4_sm_4_sm_8,20
+4.SM.8,Nuclear energy,economic,cost-effectiveness,B,2,sr15_ch4_sm_4_sm_8,20
+4.SM.8,Electricity storage,economic,distributional_effects,B,2,sr15_ch4_sm_4_sm_8,20
+4.SM.8,Electricity storage,economic,employment_productivity,B,2,sr15_ch4_sm_4_sm_8,20
+4.SM.8,Power sector CCS,economic,employment_productivity,B,2,sr15_ch4_sm_4_sm_8,20
+4.SM.8,Nuclear energy,economic,employment_productivity,B,2,sr15_ch4_sm_4_sm_8,20
+4.SM.8,Electricity storage,technological,technical_scalability,C,3,sr15_ch4_sm_4_sm_8,20
+4.SM.8,Power sector CCS,technological,technical_scalability,C,3,sr15_ch4_sm_4_sm_8,20
+4.SM.8,Nuclear energy,technological,technical_scalability,C,3,sr15_ch4_sm_4_sm_8,20
+4.SM.8,Electricity storage,technological,maturity,B,2,sr15_ch4_sm_4_sm_8,20
+4.SM.8,Power sector CCS,technological,maturity,B,2,sr15_ch4_sm_4_sm_8,20
+4.SM.8,Nuclear energy,technological,maturity,C,3,sr15_ch4_sm_4_sm_8,20
+4.SM.8,Electricity storage,technological,simplicity,B,2,sr15_ch4_sm_4_sm_8,20
+4.SM.8,Nuclear energy,technological,simplicity,A,1,sr15_ch4_sm_4_sm_8,20
+4.SM.8,Electricity storage,technological,absence_of_risk,C,3,sr15_ch4_sm_4_sm_8,20
+4.SM.8,Power sector CCS,technological,absence_of_risk,B,2,sr15_ch4_sm_4_sm_8,20
+4.SM.8,Nuclear energy,technological,absence_of_risk,B,2,sr15_ch4_sm_4_sm_8,20
+4.SM.8,Power sector CCS,economic,distributional_effects,NE,,sr15_ch4_sm_4_sm_8,20
+4.SM.8,Nuclear energy,economic,distributional_effects,NE,,sr15_ch4_sm_4_sm_8,20
+4.SM.8,Power sector CCS,technological,simplicity,LE,,sr15_ch4_sm_4_sm_8,20
+4.SM.8,Electricity storage,institutional,institutional_capacity,B,2,sr15_ch4_sm_4_sm_8,21
+4.SM.8,Nuclear energy,institutional,institutional_capacity,A,1,sr15_ch4_sm_4_sm_8,21
+4.SM.8,Electricity storage,institutional,transparency_accountability,B,2,sr15_ch4_sm_4_sm_8,21
+4.SM.8,Nuclear energy,institutional,transparency_accountability,A,1,sr15_ch4_sm_4_sm_8,21
+4.SM.8,Electricity storage,socio_cultural,social_co_benefits,A,1,sr15_ch4_sm_4_sm_8,21
+4.SM.8,Nuclear energy,socio_cultural,social_co_benefits,B,2,sr15_ch4_sm_4_sm_8,21
+4.SM.8,Electricity storage,socio_cultural,public_acceptance,B,2,sr15_ch4_sm_4_sm_8,21
+4.SM.8,Power sector CCS,socio_cultural,public_acceptance,A,1,sr15_ch4_sm_4_sm_8,21
+4.SM.8,Nuclear energy,socio_cultural,public_acceptance,A,1,sr15_ch4_sm_4_sm_8,21
+4.SM.8,Electricity storage,socio_cultural,inclusiveness,C,3,sr15_ch4_sm_4_sm_8,21
+4.SM.8,Electricity storage,socio_cultural,intergenerational_equity,C,3,sr15_ch4_sm_4_sm_8,21
+4.SM.8,Power sector CCS,socio_cultural,intergenerational_equity,A,1,sr15_ch4_sm_4_sm_8,21
+4.SM.8,Nuclear energy,socio_cultural,intergenerational_equity,A,1,sr15_ch4_sm_4_sm_8,21
+4.SM.8,Electricity storage,socio_cultural,human_capabilities,B,2,sr15_ch4_sm_4_sm_8,21
+4.SM.8,Power sector CCS,socio_cultural,human_capabilities,A,1,sr15_ch4_sm_4_sm_8,21
+4.SM.8,Nuclear energy,institutional,legal_admin_acceptability,NE,,sr15_ch4_sm_4_sm_8,21
+4.SM.8,Power sector CCS,institutional,institutional_capacity,LE,,sr15_ch4_sm_4_sm_8,21
+4.SM.8,Power sector CCS,institutional,transparency_accountability,NE,,sr15_ch4_sm_4_sm_8,21
+4.SM.8,Power sector CCS,socio_cultural,social_co_benefits,NE,,sr15_ch4_sm_4_sm_8,21
+4.SM.8,Nuclear energy,socio_cultural,inclusiveness,NE,,sr15_ch4_sm_4_sm_8,21
+4.SM.8,Nuclear energy,socio_cultural,human_capabilities,NE,,sr15_ch4_sm_4_sm_8,21
+4.SM.8,Electricity storage,environmental,air_pollution,B,2,sr15_ch4_sm_4_sm_8,22
+4.SM.8,Power sector CCS,environmental,air_pollution,C,3,sr15_ch4_sm_4_sm_8,22
+4.SM.8,Nuclear energy,environmental,air_pollution,C,3,sr15_ch4_sm_4_sm_8,22
+4.SM.8,Electricity storage,environmental,toxic_waste,A,1,sr15_ch4_sm_4_sm_8,22
+4.SM.8,Power sector CCS,environmental,toxic_waste,A,1,sr15_ch4_sm_4_sm_8,22
+4.SM.8,Nuclear energy,environmental,toxic_waste,A,1,sr15_ch4_sm_4_sm_8,22
+4.SM.8,Electricity storage,environmental,water_use,B,2,sr15_ch4_sm_4_sm_8,22
+4.SM.8,Power sector CCS,environmental,water_use,A,1,sr15_ch4_sm_4_sm_8,22
+4.SM.8,Nuclear energy,environmental,water_use,B,2,sr15_ch4_sm_4_sm_8,22
+4.SM.8,Power sector CCS,environmental,biodiversity,C,3,sr15_ch4_sm_4_sm_8,22
+4.SM.8,Nuclear energy,environmental,biodiversity,C,3,sr15_ch4_sm_4_sm_8,22
+4.SM.8,Electricity storage,geophysical,physical_feasibility,C,3,sr15_ch4_sm_4_sm_8,22
+4.SM.8,Power sector CCS,geophysical,physical_feasibility,C,3,sr15_ch4_sm_4_sm_8,22
+4.SM.8,Nuclear energy,geophysical,physical_feasibility,C,3,sr15_ch4_sm_4_sm_8,22
+4.SM.8,Electricity storage,geophysical,limited_land_use,C,3,sr15_ch4_sm_4_sm_8,22
+4.SM.8,Power sector CCS,geophysical,limited_land_use,C,3,sr15_ch4_sm_4_sm_8,22
+4.SM.8,Nuclear energy,geophysical,limited_land_use,C,3,sr15_ch4_sm_4_sm_8,22
+4.SM.8,Electricity storage,geophysical,limited_scarce_resources,A,1,sr15_ch4_sm_4_sm_8,23
+4.SM.8,Power sector CCS,geophysical,limited_scarce_resources,B,2,sr15_ch4_sm_4_sm_8,23
+4.SM.8,Nuclear energy,geophysical,limited_scarce_resources,C,3,sr15_ch4_sm_4_sm_8,23
+4.SM.8,Electricity storage,geophysical,global_spread,C,3,sr15_ch4_sm_4_sm_8,23
+4.SM.8,Power sector CCS,geophysical,global_spread,C,3,sr15_ch4_sm_4_sm_8,23
+4.SM.8,Nuclear energy,geophysical,global_spread,C,3,sr15_ch4_sm_4_sm_8,23
+4.SM.9,Reduced food wastage,economic,cost-effectiveness,C,3,sr15_ch4_sm_4_sm_9,24
+4.SM.9,Sustainable intensification,economic,cost-effectiveness,C,3,sr15_ch4_sm_4_sm_9,24
+4.SM.9,Reduced food wastage,economic,distributional_effects,B,2,sr15_ch4_sm_4_sm_9,24
+4.SM.9,Sustainable intensification,economic,distributional_effects,B,2,sr15_ch4_sm_4_sm_9,24
+4.SM.9,Reduced food wastage,economic,employment_productivity,B,2,sr15_ch4_sm_4_sm_9,24
+4.SM.9,Dietary shifts,economic,employment_productivity,B,2,sr15_ch4_sm_4_sm_9,24
+4.SM.9,Sustainable intensification,economic,employment_productivity,B,2,sr15_ch4_sm_4_sm_9,24
+4.SM.9,Dietary shifts,economic,cost-effectiveness,LE,,sr15_ch4_sm_4_sm_9,24
+4.SM.9,Dietary shifts,economic,distributional_effects,LE,,sr15_ch4_sm_4_sm_9,24
+4.SM.9,Reduced food wastage,technological,technical_scalability,B,2,sr15_ch4_sm_4_sm_9,25
+4.SM.9,Dietary shifts,technological,technical_scalability,B,2,sr15_ch4_sm_4_sm_9,25
+4.SM.9,Sustainable intensification,technological,technical_scalability,C,3,sr15_ch4_sm_4_sm_9,25
+4.SM.9,Sustainable intensification,technological,maturity,C,3,sr15_ch4_sm_4_sm_9,25
+4.SM.9,Sustainable intensification,technological,simplicity,C,3,sr15_ch4_sm_4_sm_9,25
+4.SM.9,Reduced food wastage,technological,absence_of_risk,C,3,sr15_ch4_sm_4_sm_9,25
+4.SM.9,Dietary shifts,technological,absence_of_risk,B,2,sr15_ch4_sm_4_sm_9,25
+4.SM.9,Sustainable intensification,technological,absence_of_risk,C,3,sr15_ch4_sm_4_sm_9,25
+4.SM.9,Reduced food wastage,institutional,political_acceptability,C,3,sr15_ch4_sm_4_sm_9,25
+4.SM.9,Dietary shifts,institutional,political_acceptability,B,2,sr15_ch4_sm_4_sm_9,25
+4.SM.9,Sustainable intensification,institutional,political_acceptability,C,3,sr15_ch4_sm_4_sm_9,25
+4.SM.9,Reduced food wastage,technological,maturity,NE,,sr15_ch4_sm_4_sm_9,25
+4.SM.9,Dietary shifts,technological,maturity,LE,,sr15_ch4_sm_4_sm_9,25
+4.SM.9,Reduced food wastage,technological,simplicity,NE,,sr15_ch4_sm_4_sm_9,25
+4.SM.9,Dietary shifts,technological,simplicity,NE,,sr15_ch4_sm_4_sm_9,25
+4.SM.9,Reduced food wastage,institutional,institutional_capacity,C,3,sr15_ch4_sm_4_sm_9,26
+4.SM.9,Dietary shifts,institutional,institutional_capacity,B,2,sr15_ch4_sm_4_sm_9,26
+4.SM.9,Sustainable intensification,institutional,institutional_capacity,B,2,sr15_ch4_sm_4_sm_9,26
+4.SM.9,Reduced food wastage,institutional,transparency_accountability,C,3,sr15_ch4_sm_4_sm_9,26
+4.SM.9,Sustainable intensification,institutional,transparency_accountability,B,2,sr15_ch4_sm_4_sm_9,26
+4.SM.9,Reduced food wastage,socio_cultural,social_co_benefits,C,3,sr15_ch4_sm_4_sm_9,26
+4.SM.9,Dietary shifts,socio_cultural,social_co_benefits,C,3,sr15_ch4_sm_4_sm_9,26
+4.SM.9,Sustainable intensification,socio_cultural,social_co_benefits,C,3,sr15_ch4_sm_4_sm_9,26
+4.SM.9,Reduced food wastage,socio_cultural,public_acceptance,B,2,sr15_ch4_sm_4_sm_9,26
+4.SM.9,Dietary shifts,socio_cultural,public_acceptance,C,3,sr15_ch4_sm_4_sm_9,26
+4.SM.9,Sustainable intensification,socio_cultural,public_acceptance,C,3,sr15_ch4_sm_4_sm_9,26
+4.SM.9,Reduced food wastage,socio_cultural,inclusiveness,B,2,sr15_ch4_sm_4_sm_9,26
+4.SM.9,Dietary shifts,socio_cultural,inclusiveness,B,2,sr15_ch4_sm_4_sm_9,26
+4.SM.9,Sustainable intensification,socio_cultural,inclusiveness,B,2,sr15_ch4_sm_4_sm_9,26
+4.SM.9,Dietary shifts,institutional,transparency_accountability,NE,,sr15_ch4_sm_4_sm_9,26
+4.SM.9,Reduced food wastage,socio_cultural,intergenerational_equity,B,2,sr15_ch4_sm_4_sm_9,27
+4.SM.9,Dietary shifts,socio_cultural,intergenerational_equity,B,2,sr15_ch4_sm_4_sm_9,27
+4.SM.9,Sustainable intensification,socio_cultural,intergenerational_equity,B,2,sr15_ch4_sm_4_sm_9,27
+4.SM.9,Reduced food wastage,socio_cultural,human_capabilities,C,3,sr15_ch4_sm_4_sm_9,27
+4.SM.9,Reduced food wastage,environmental,air_pollution,C,3,sr15_ch4_sm_4_sm_9,27
+4.SM.9,Dietary shifts,environmental,toxic_waste,B,2,sr15_ch4_sm_4_sm_9,27
+4.SM.9,Reduced food wastage,environmental,water_use,C,3,sr15_ch4_sm_4_sm_9,27
+4.SM.9,Sustainable intensification,environmental,water_use,C,3,sr15_ch4_sm_4_sm_9,27
+4.SM.9,Reduced food wastage,environmental,biodiversity,C,3,sr15_ch4_sm_4_sm_9,27
+4.SM.9,Dietary shifts,environmental,biodiversity,C,3,sr15_ch4_sm_4_sm_9,27
+4.SM.9,Sustainable intensification,environmental,biodiversity,C,3,sr15_ch4_sm_4_sm_9,27
+4.SM.9,Reduced food wastage,geophysical,physical_feasibility,C,3,sr15_ch4_sm_4_sm_9,27
+4.SM.9,Sustainable intensification,geophysical,physical_feasibility,C,3,sr15_ch4_sm_4_sm_9,27
+4.SM.9,Dietary shifts,socio_cultural,human_capabilities,LE,,sr15_ch4_sm_4_sm_9,27
+4.SM.9,Sustainable intensification,socio_cultural,human_capabilities,LE,,sr15_ch4_sm_4_sm_9,27
+4.SM.9,Dietary shifts,environmental,air_pollution,NE,,sr15_ch4_sm_4_sm_9,27
+4.SM.9,Sustainable intensification,environmental,air_pollution,NE,,sr15_ch4_sm_4_sm_9,27
+4.SM.9,Reduced food wastage,environmental,toxic_waste,NE,,sr15_ch4_sm_4_sm_9,27
+4.SM.9,Sustainable intensification,environmental,toxic_waste,NE,,sr15_ch4_sm_4_sm_9,27
+4.SM.9,Dietary shifts,environmental,water_use,LE,,sr15_ch4_sm_4_sm_9,27
+4.SM.9,Dietary shifts,geophysical,physical_feasibility,C,3,sr15_ch4_sm_4_sm_9,28
+4.SM.9,Reduced food wastage,geophysical,limited_land_use,C,3,sr15_ch4_sm_4_sm_9,28
+4.SM.9,Dietary shifts,geophysical,limited_land_use,B,2,sr15_ch4_sm_4_sm_9,28
+4.SM.9,Sustainable intensification,geophysical,limited_land_use,B,2,sr15_ch4_sm_4_sm_9,28
+4.SM.9,Sustainable intensification,geophysical,global_spread,C,3,sr15_ch4_sm_4_sm_9,28
+4.SM.9,Reduced food wastage,geophysical,global_spread,LE,,sr15_ch4_sm_4_sm_9,28
+4.SM.9,Dietary shifts,geophysical,global_spread,LE,,sr15_ch4_sm_4_sm_9,28
+4.SM.10,Land-use & urban planning,economic,cost-effectiveness,C,3,sr15_ch4_sm_4_sm_10,29
+4.SM.10,Electric cars and buses,economic,cost-effectiveness,B,2,sr15_ch4_sm_4_sm_10,29
+4.SM.10,Sharing schemes,economic,cost-effectiveness,C,3,sr15_ch4_sm_4_sm_10,29
+4.SM.10,Land-use & urban planning,economic,distributional_effects,B,2,sr15_ch4_sm_4_sm_10,29
+4.SM.10,Electric cars and buses,economic,distributional_effects,A,1,sr15_ch4_sm_4_sm_10,29
+4.SM.10,Sharing schemes,economic,distributional_effects,C,3,sr15_ch4_sm_4_sm_10,29
+4.SM.10,Land-use & urban planning,economic,employment_productivity,B,2,sr15_ch4_sm_4_sm_10,29
+4.SM.10,Electric cars and buses,economic,employment_productivity,B,2,sr15_ch4_sm_4_sm_10,29
+4.SM.10,Sharing schemes,economic,employment_productivity,B,2,sr15_ch4_sm_4_sm_10,29
+4.SM.10,Land-use & urban planning,technological,technical_scalability,C,3,sr15_ch4_sm_4_sm_10,29
+4.SM.10,Electric cars and buses,technological,technical_scalability,C,3,sr15_ch4_sm_4_sm_10,29
+4.SM.10,Sharing schemes,technological,technical_scalability,C,3,sr15_ch4_sm_4_sm_10,29
+4.SM.10,Land-use & urban planning,technological,maturity,B,2,sr15_ch4_sm_4_sm_10,29
+4.SM.10,Electric cars and buses,technological,maturity,B,2,sr15_ch4_sm_4_sm_10,29
+4.SM.10,Sharing schemes,technological,maturity,B,2,sr15_ch4_sm_4_sm_10,29
+4.SM.10,Land-use & urban planning,technological,simplicity,A,1,sr15_ch4_sm_4_sm_10,29
+4.SM.10,Electric cars and buses,technological,simplicity,B,2,sr15_ch4_sm_4_sm_10,29
+4.SM.10,Sharing schemes,technological,simplicity,B,2,sr15_ch4_sm_4_sm_10,29
+4.SM.10,Electric cars and buses,technological,absence_of_risk,C,3,sr15_ch4_sm_4_sm_10,29
+4.SM.10,Sharing schemes,technological,absence_of_risk,B,2,sr15_ch4_sm_4_sm_10,29
+4.SM.10,Land-use & urban planning,institutional,political_acceptability,B,2,sr15_ch4_sm_4_sm_10,29
+4.SM.10,Electric cars and buses,institutional,political_acceptability,B,2,sr15_ch4_sm_4_sm_10,29
+4.SM.10,Sharing schemes,institutional,political_acceptability,B,2,sr15_ch4_sm_4_sm_10,29
+4.SM.10,Land-use & urban planning,technological,absence_of_risk,LE,,sr15_ch4_sm_4_sm_10,29
+4.SM.10,Land-use & urban planning,institutional,institutional_capacity,B,2,sr15_ch4_sm_4_sm_10,30
+4.SM.10,Electric cars and buses,institutional,institutional_capacity,C,3,sr15_ch4_sm_4_sm_10,30
+4.SM.10,Sharing schemes,institutional,institutional_capacity,A,1,sr15_ch4_sm_4_sm_10,30
+4.SM.10,Land-use & urban planning,institutional,transparency_accountability,C,3,sr15_ch4_sm_4_sm_10,30
+4.SM.10,Electric cars and buses,institutional,transparency_accountability,C,3,sr15_ch4_sm_4_sm_10,30
+4.SM.10,Sharing schemes,institutional,transparency_accountability,C,3,sr15_ch4_sm_4_sm_10,30
+4.SM.10,Land-use & urban planning,socio_cultural,social_co_benefits,C,3,sr15_ch4_sm_4_sm_10,30
+4.SM.10,Electric cars and buses,socio_cultural,social_co_benefits,C,3,sr15_ch4_sm_4_sm_10,30
+4.SM.10,Sharing schemes,socio_cultural,social_co_benefits,C,3,sr15_ch4_sm_4_sm_10,30
+4.SM.10,Land-use & urban planning,socio_cultural,public_acceptance,B,2,sr15_ch4_sm_4_sm_10,30
+4.SM.10,Electric cars and buses,socio_cultural,public_acceptance,B,2,sr15_ch4_sm_4_sm_10,30
+4.SM.10,Sharing schemes,socio_cultural,public_acceptance,B,2,sr15_ch4_sm_4_sm_10,30
+4.SM.10,Land-use & urban planning,socio_cultural,inclusiveness,B,2,sr15_ch4_sm_4_sm_10,30
+4.SM.10,Sharing schemes,socio_cultural,inclusiveness,B,2,sr15_ch4_sm_4_sm_10,30
+4.SM.10,Electric cars and buses,socio_cultural,intergenerational_equity,C,3,sr15_ch4_sm_4_sm_10,30
+4.SM.10,Sharing schemes,socio_cultural,intergenerational_equity,C,3,sr15_ch4_sm_4_sm_10,30
+4.SM.10,Land-use & urban planning,socio_cultural,human_capabilities,B,2,sr15_ch4_sm_4_sm_10,30
+4.SM.10,Electric cars and buses,socio_cultural,human_capabilities,B,2,sr15_ch4_sm_4_sm_10,30
+4.SM.10,Sharing schemes,socio_cultural,human_capabilities,B,2,sr15_ch4_sm_4_sm_10,30
+4.SM.10,Land-use & urban planning,environmental,air_pollution,C,3,sr15_ch4_sm_4_sm_10,30
+4.SM.10,Electric cars and buses,environmental,air_pollution,C,3,sr15_ch4_sm_4_sm_10,30
+4.SM.10,Sharing schemes,environmental,air_pollution,C,3,sr15_ch4_sm_4_sm_10,30
+4.SM.10,Sharing schemes,environmental,toxic_waste,C,3,sr15_ch4_sm_4_sm_10,30
+4.SM.10,Electric cars and buses,socio_cultural,inclusiveness,LE,,sr15_ch4_sm_4_sm_10,30
+4.SM.10,Land-use & urban planning,socio_cultural,intergenerational_equity,LE,,sr15_ch4_sm_4_sm_10,30
+4.SM.10,Land-use & urban planning,environmental,toxic_waste,LE,,sr15_ch4_sm_4_sm_10,30
+4.SM.10,Electric cars and buses,environmental,toxic_waste,LE,,sr15_ch4_sm_4_sm_10,30
+4.SM.10,Land-use & urban planning,environmental,water_use,C,3,sr15_ch4_sm_4_sm_10,31
+4.SM.10,Sharing schemes,environmental,water_use,B,2,sr15_ch4_sm_4_sm_10,31
+4.SM.10,Land-use & urban planning,environmental,biodiversity,C,3,sr15_ch4_sm_4_sm_10,31
+4.SM.10,Sharing schemes,environmental,biodiversity,C,3,sr15_ch4_sm_4_sm_10,31
+4.SM.10,Land-use & urban planning,geophysical,physical_feasibility,C,3,sr15_ch4_sm_4_sm_10,31
+4.SM.10,Electric cars and buses,geophysical,physical_feasibility,C,3,sr15_ch4_sm_4_sm_10,31
+4.SM.10,Sharing schemes,geophysical,physical_feasibility,C,3,sr15_ch4_sm_4_sm_10,31
+4.SM.10,Land-use & urban planning,geophysical,limited_land_use,C,3,sr15_ch4_sm_4_sm_10,31
+4.SM.10,Electric cars and buses,geophysical,limited_land_use,A,1,sr15_ch4_sm_4_sm_10,31
+4.SM.10,Sharing schemes,geophysical,limited_land_use,C,3,sr15_ch4_sm_4_sm_10,31
+4.SM.10,Electric cars and buses,geophysical,limited_scarce_resources,A,1,sr15_ch4_sm_4_sm_10,31
+4.SM.10,Sharing schemes,geophysical,limited_scarce_resources,C,3,sr15_ch4_sm_4_sm_10,31
+4.SM.10,Land-use & urban planning,geophysical,global_spread,C,3,sr15_ch4_sm_4_sm_10,31
+4.SM.10,Electric cars and buses,geophysical,global_spread,C,3,sr15_ch4_sm_4_sm_10,31
+4.SM.10,Sharing schemes,geophysical,global_spread,B,2,sr15_ch4_sm_4_sm_10,31
+4.SM.10,Electric cars and buses,environmental,water_use,LE,,sr15_ch4_sm_4_sm_10,31
+4.SM.10,Electric cars and buses,environmental,biodiversity,LE,,sr15_ch4_sm_4_sm_10,31
+4.SM.10,Land-use & urban planning,geophysical,limited_scarce_resources,LE,,sr15_ch4_sm_4_sm_10,31
+4.SM.11,Public transport,economic,cost-effectiveness,C,3,sr15_ch4_sm_4_sm_11,32
+4.SM.11,Non-motorised transport,economic,cost-effectiveness,C,3,sr15_ch4_sm_4_sm_11,32
+4.SM.11,Aviation & shipping,economic,cost-effectiveness,A,1,sr15_ch4_sm_4_sm_11,32
+4.SM.11,Public transport,economic,distributional_effects,C,3,sr15_ch4_sm_4_sm_11,32
+4.SM.11,Non-motorised transport,economic,distributional_effects,C,3,sr15_ch4_sm_4_sm_11,32
+4.SM.11,Public transport,economic,employment_productivity,C,3,sr15_ch4_sm_4_sm_11,32
+4.SM.11,Non-motorised transport,economic,employment_productivity,B,2,sr15_ch4_sm_4_sm_11,32
+4.SM.11,Aviation & shipping,economic,employment_productivity,B,2,sr15_ch4_sm_4_sm_11,32
+4.SM.11,Public transport,technological,technical_scalability,C,3,sr15_ch4_sm_4_sm_11,32
+4.SM.11,Non-motorised transport,technological,technical_scalability,C,3,sr15_ch4_sm_4_sm_11,32
+4.SM.11,Aviation & shipping,technological,technical_scalability,C,3,sr15_ch4_sm_4_sm_11,32
+4.SM.11,Public transport,technological,maturity,C,3,sr15_ch4_sm_4_sm_11,32
+4.SM.11,Non-motorised transport,technological,maturity,C,3,sr15_ch4_sm_4_sm_11,32
+4.SM.11,Aviation & shipping,technological,maturity,A,1,sr15_ch4_sm_4_sm_11,32
+4.SM.11,Public transport,technological,simplicity,B,2,sr15_ch4_sm_4_sm_11,32
+4.SM.11,Non-motorised transport,technological,simplicity,C,3,sr15_ch4_sm_4_sm_11,32
+4.SM.11,Public transport,technological,absence_of_risk,C,3,sr15_ch4_sm_4_sm_11,32
+4.SM.11,Non-motorised transport,technological,absence_of_risk,C,3,sr15_ch4_sm_4_sm_11,32
+4.SM.11,Aviation & shipping,economic,distributional_effects,LE,,sr15_ch4_sm_4_sm_11,32
+4.SM.11,Aviation & shipping,technological,simplicity,LE,,sr15_ch4_sm_4_sm_11,32
+4.SM.11,Aviation & shipping,technological,absence_of_risk,LE,,sr15_ch4_sm_4_sm_11,32
+4.SM.11,Public transport,institutional,political_acceptability,C,3,sr15_ch4_sm_4_sm_11,33
+4.SM.11,Non-motorised transport,institutional,political_acceptability,C,3,sr15_ch4_sm_4_sm_11,33
+4.SM.11,Aviation & shipping,institutional,political_acceptability,B,2,sr15_ch4_sm_4_sm_11,33
+4.SM.11,Public transport,institutional,institutional_capacity,C,3,sr15_ch4_sm_4_sm_11,33
+4.SM.11,Non-motorised transport,institutional,institutional_capacity,B,2,sr15_ch4_sm_4_sm_11,33
+4.SM.11,Aviation & shipping,institutional,institutional_capacity,A,1,sr15_ch4_sm_4_sm_11,33
+4.SM.11,Non-motorised transport,institutional,transparency_accountability,C,3,sr15_ch4_sm_4_sm_11,33
+4.SM.11,Aviation & shipping,institutional,transparency_accountability,C,3,sr15_ch4_sm_4_sm_11,33
+4.SM.11,Public transport,socio_cultural,social_co_benefits,C,3,sr15_ch4_sm_4_sm_11,33
+4.SM.11,Non-motorised transport,socio_cultural,social_co_benefits,C,3,sr15_ch4_sm_4_sm_11,33
+4.SM.11,Public transport,socio_cultural,public_acceptance,B,2,sr15_ch4_sm_4_sm_11,33
+4.SM.11,Non-motorised transport,socio_cultural,public_acceptance,B,2,sr15_ch4_sm_4_sm_11,33
+4.SM.11,Aviation & shipping,socio_cultural,public_acceptance,B,2,sr15_ch4_sm_4_sm_11,33
+4.SM.11,Public transport,institutional,transparency_accountability,LE,,sr15_ch4_sm_4_sm_11,33
+4.SM.11,Aviation & shipping,socio_cultural,social_co_benefits,LE,,sr15_ch4_sm_4_sm_11,33
+4.SM.11,Public transport,socio_cultural,inclusiveness,C,3,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Non-motorised transport,socio_cultural,inclusiveness,C,3,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Public transport,socio_cultural,intergenerational_equity,C,3,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Non-motorised transport,socio_cultural,intergenerational_equity,C,3,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Public transport,socio_cultural,human_capabilities,C,3,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Non-motorised transport,socio_cultural,human_capabilities,C,3,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Aviation & shipping,socio_cultural,human_capabilities,C,3,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Public transport,environmental,air_pollution,C,3,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Non-motorised transport,environmental,air_pollution,C,3,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Aviation & shipping,environmental,air_pollution,C,3,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Aviation & shipping,environmental,toxic_waste,C,3,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Aviation & shipping,environmental,water_use,B,2,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Public transport,environmental,biodiversity,C,3,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Aviation & shipping,environmental,biodiversity,B,2,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Public transport,geophysical,physical_feasibility,C,3,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Non-motorised transport,geophysical,physical_feasibility,C,3,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Aviation & shipping,geophysical,physical_feasibility,C,3,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Public transport,geophysical,limited_land_use,C,3,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Non-motorised transport,geophysical,limited_land_use,C,3,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Public transport,geophysical,limited_scarce_resources,C,3,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Non-motorised transport,geophysical,limited_scarce_resources,C,3,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Aviation & shipping,geophysical,limited_scarce_resources,B,2,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Public transport,geophysical,global_spread,C,3,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Non-motorised transport,geophysical,global_spread,C,3,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Aviation & shipping,geophysical,global_spread,C,3,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Aviation & shipping,socio_cultural,inclusiveness,LE,,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Aviation & shipping,socio_cultural,intergenerational_equity,LE,,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Public transport,environmental,toxic_waste,LE,,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Non-motorised transport,environmental,toxic_waste,LE,,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Public transport,environmental,water_use,LE,,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Non-motorised transport,environmental,water_use,LE,,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Non-motorised transport,environmental,biodiversity,LE,,sr15_ch4_sm_4_sm_11,34
+4.SM.11,Aviation & shipping,geophysical,limited_land_use,LE,,sr15_ch4_sm_4_sm_11,34
+4.SM.12,Smart grids,economic,cost-effectiveness,B,2,sr15_ch4_sm_4_sm_12,35
+4.SM.12,Efficient appliances,economic,cost-effectiveness,C,3,sr15_ch4_sm_4_sm_12,35
+4.SM.12,Low/zero-energy buildings,economic,cost-effectiveness,C,3,sr15_ch4_sm_4_sm_12,35
+4.SM.12,Smart grids,economic,distributional_effects,B,2,sr15_ch4_sm_4_sm_12,35
+4.SM.12,Efficient appliances,economic,distributional_effects,B,2,sr15_ch4_sm_4_sm_12,35
+4.SM.12,Low/zero-energy buildings,economic,distributional_effects,C,3,sr15_ch4_sm_4_sm_12,35
+4.SM.12,Smart grids,economic,employment_productivity,C,3,sr15_ch4_sm_4_sm_12,35
+4.SM.12,Efficient appliances,economic,employment_productivity,B,2,sr15_ch4_sm_4_sm_12,35
+4.SM.12,Low/zero-energy buildings,economic,employment_productivity,C,3,sr15_ch4_sm_4_sm_12,35
+4.SM.12,Smart grids,technological,technical_scalability,C,3,sr15_ch4_sm_4_sm_12,35
+4.SM.12,Efficient appliances,technological,technical_scalability,C,3,sr15_ch4_sm_4_sm_12,35
+4.SM.12,Low/zero-energy buildings,technological,technical_scalability,C,3,sr15_ch4_sm_4_sm_12,35
+4.SM.12,Smart grids,technological,maturity,B,2,sr15_ch4_sm_4_sm_12,35
+4.SM.12,Efficient appliances,technological,maturity,C,3,sr15_ch4_sm_4_sm_12,35
+4.SM.12,Low/zero-energy buildings,technological,maturity,B,2,sr15_ch4_sm_4_sm_12,35
+4.SM.12,Smart grids,technological,simplicity,A,1,sr15_ch4_sm_4_sm_12,36
+4.SM.12,Efficient appliances,technological,simplicity,C,3,sr15_ch4_sm_4_sm_12,36
+4.SM.12,Smart grids,technological,absence_of_risk,B,2,sr15_ch4_sm_4_sm_12,36
+4.SM.12,Smart grids,institutional,political_acceptability,B,2,sr15_ch4_sm_4_sm_12,36
+4.SM.12,Efficient appliances,institutional,political_acceptability,C,3,sr15_ch4_sm_4_sm_12,36
+4.SM.12,Low/zero-energy buildings,institutional,political_acceptability,C,3,sr15_ch4_sm_4_sm_12,36
+4.SM.12,Smart grids,institutional,institutional_capacity,A,1,sr15_ch4_sm_4_sm_12,36
+4.SM.12,Efficient appliances,institutional,institutional_capacity,B,2,sr15_ch4_sm_4_sm_12,36
+4.SM.12,Low/zero-energy buildings,institutional,institutional_capacity,B,2,sr15_ch4_sm_4_sm_12,36
+4.SM.12,Smart grids,institutional,transparency_accountability,A,1,sr15_ch4_sm_4_sm_12,36
+4.SM.12,Smart grids,socio_cultural,social_co_benefits,C,3,sr15_ch4_sm_4_sm_12,36
+4.SM.12,Efficient appliances,socio_cultural,social_co_benefits,C,3,sr15_ch4_sm_4_sm_12,36
+4.SM.12,Low/zero-energy buildings,socio_cultural,social_co_benefits,B,2,sr15_ch4_sm_4_sm_12,36
+4.SM.12,Low/zero-energy buildings,technological,simplicity,LE,,sr15_ch4_sm_4_sm_12,36
+4.SM.12,Efficient appliances,technological,absence_of_risk,NE,,sr15_ch4_sm_4_sm_12,36
+4.SM.12,Low/zero-energy buildings,technological,absence_of_risk,NE,,sr15_ch4_sm_4_sm_12,36
+4.SM.12,Efficient appliances,institutional,transparency_accountability,LE,,sr15_ch4_sm_4_sm_12,36
+4.SM.12,Low/zero-energy buildings,institutional,transparency_accountability,LE,,sr15_ch4_sm_4_sm_12,36
+4.SM.12,Smart grids,socio_cultural,public_acceptance,B,2,sr15_ch4_sm_4_sm_12,37
+4.SM.12,Efficient appliances,socio_cultural,public_acceptance,C,3,sr15_ch4_sm_4_sm_12,37
+4.SM.12,Smart grids,socio_cultural,inclusiveness,C,3,sr15_ch4_sm_4_sm_12,37
+4.SM.12,Efficient appliances,socio_cultural,inclusiveness,B,2,sr15_ch4_sm_4_sm_12,37
+4.SM.12,Smart grids,socio_cultural,intergenerational_equity,C,3,sr15_ch4_sm_4_sm_12,37
+4.SM.12,Smart grids,socio_cultural,human_capabilities,A,1,sr15_ch4_sm_4_sm_12,37
+4.SM.12,Smart grids,environmental,air_pollution,C,3,sr15_ch4_sm_4_sm_12,37
+4.SM.12,Efficient appliances,environmental,air_pollution,C,3,sr15_ch4_sm_4_sm_12,37
+4.SM.12,Low/zero-energy buildings,environmental,air_pollution,B,2,sr15_ch4_sm_4_sm_12,37
+4.SM.12,Smart grids,environmental,toxic_waste,B,2,sr15_ch4_sm_4_sm_12,37
+4.SM.12,Efficient appliances,environmental,toxic_waste,C,3,sr15_ch4_sm_4_sm_12,37
+4.SM.12,Low/zero-energy buildings,environmental,toxic_waste,C,3,sr15_ch4_sm_4_sm_12,37
+4.SM.12,Smart grids,environmental,water_use,C,3,sr15_ch4_sm_4_sm_12,37
+4.SM.12,Efficient appliances,environmental,water_use,C,3,sr15_ch4_sm_4_sm_12,37
+4.SM.12,Low/zero-energy buildings,environmental,water_use,C,3,sr15_ch4_sm_4_sm_12,37
+4.SM.12,Smart grids,environmental,biodiversity,C,3,sr15_ch4_sm_4_sm_12,37
+4.SM.12,Smart grids,geophysical,physical_feasibility,C,3,sr15_ch4_sm_4_sm_12,37
+4.SM.12,Efficient appliances,geophysical,physical_feasibility,C,3,sr15_ch4_sm_4_sm_12,37
+4.SM.12,Low/zero-energy buildings,geophysical,physical_feasibility,C,3,sr15_ch4_sm_4_sm_12,37
+4.SM.12,Low/zero-energy buildings,socio_cultural,public_acceptance,NE,,sr15_ch4_sm_4_sm_12,37
+4.SM.12,Low/zero-energy buildings,socio_cultural,inclusiveness,NE,,sr15_ch4_sm_4_sm_12,37
+4.SM.12,Low/zero-energy buildings,socio_cultural,human_capabilities,NE,,sr15_ch4_sm_4_sm_12,37
+4.SM.12,Smart grids,geophysical,limited_scarce_resources,B,2,sr15_ch4_sm_4_sm_12,38
+4.SM.12,Smart grids,geophysical,global_spread,B,2,sr15_ch4_sm_4_sm_12,38
+4.SM.12,Efficient appliances,geophysical,limited_scarce_resources,LE,,sr15_ch4_sm_4_sm_12,38
+4.SM.13,Energy efficiency,economic,cost-effectiveness,C,3,sr15_ch4_sm_4_sm_13,39
+4.SM.13,Bio-based & circularity,economic,cost-effectiveness,B,2,sr15_ch4_sm_4_sm_13,39
+4.SM.13,Electrification & hydrogen,economic,cost-effectiveness,A,1,sr15_ch4_sm_4_sm_13,39
+4.SM.13,Industrial CCS,economic,cost-effectiveness,B,2,sr15_ch4_sm_4_sm_13,39
+4.SM.13,Energy efficiency,economic,employment_productivity,B,2,sr15_ch4_sm_4_sm_13,39
+4.SM.13,Bio-based & circularity,economic,employment_productivity,B,2,sr15_ch4_sm_4_sm_13,39
+4.SM.13,Industrial CCS,economic,employment_productivity,B,2,sr15_ch4_sm_4_sm_13,39
+4.SM.13,Energy efficiency,technological,technical_scalability,C,3,sr15_ch4_sm_4_sm_13,39
+4.SM.13,Bio-based & circularity,technological,technical_scalability,C,3,sr15_ch4_sm_4_sm_13,39
+4.SM.13,Electrification & hydrogen,technological,technical_scalability,C,3,sr15_ch4_sm_4_sm_13,39
+4.SM.13,Industrial CCS,technological,technical_scalability,C,3,sr15_ch4_sm_4_sm_13,39
+4.SM.13,Energy efficiency,technological,maturity,C,3,sr15_ch4_sm_4_sm_13,39
+4.SM.13,Bio-based & circularity,technological,maturity,B,2,sr15_ch4_sm_4_sm_13,39
+4.SM.13,Electrification & hydrogen,technological,maturity,A,1,sr15_ch4_sm_4_sm_13,39
+4.SM.13,Industrial CCS,technological,maturity,B,2,sr15_ch4_sm_4_sm_13,39
+4.SM.13,Energy efficiency,technological,simplicity,B,2,sr15_ch4_sm_4_sm_13,39
+4.SM.13,Bio-based & circularity,technological,simplicity,A,1,sr15_ch4_sm_4_sm_13,39
+4.SM.13,Industrial CCS,technological,simplicity,A,1,sr15_ch4_sm_4_sm_13,39
+4.SM.13,Energy efficiency,economic,distributional_effects,LE,,sr15_ch4_sm_4_sm_13,39
+4.SM.13,Bio-based & circularity,economic,distributional_effects,NE,,sr15_ch4_sm_4_sm_13,39
+4.SM.13,Electrification & hydrogen,economic,distributional_effects,LE,,sr15_ch4_sm_4_sm_13,39
+4.SM.13,Industrial CCS,economic,distributional_effects,NE,,sr15_ch4_sm_4_sm_13,39
+4.SM.13,Electrification & hydrogen,economic,employment_productivity,LE,,sr15_ch4_sm_4_sm_13,39
+4.SM.13,Electrification & hydrogen,technological,simplicity,NE,,sr15_ch4_sm_4_sm_13,39
+4.SM.13,Industrial CCS,technological,absence_of_risk,B,2,sr15_ch4_sm_4_sm_13,40
+4.SM.13,Energy efficiency,institutional,political_acceptability,C,3,sr15_ch4_sm_4_sm_13,40
+4.SM.13,Electrification & hydrogen,institutional,political_acceptability,C,3,sr15_ch4_sm_4_sm_13,40
+4.SM.13,Industrial CCS,institutional,political_acceptability,B,2,sr15_ch4_sm_4_sm_13,40
+4.SM.13,Energy efficiency,institutional,legal_admin_acceptability,C,3,sr15_ch4_sm_4_sm_13,40
+4.SM.13,Bio-based & circularity,institutional,legal_admin_acceptability,A,1,sr15_ch4_sm_4_sm_13,40
+4.SM.13,Industrial CCS,institutional,legal_admin_acceptability,B,2,sr15_ch4_sm_4_sm_13,40
+4.SM.13,Energy efficiency,institutional,institutional_capacity,B,2,sr15_ch4_sm_4_sm_13,40
+4.SM.13,Bio-based & circularity,institutional,institutional_capacity,A,1,sr15_ch4_sm_4_sm_13,40
+4.SM.13,Industrial CCS,institutional,institutional_capacity,B,2,sr15_ch4_sm_4_sm_13,40
+4.SM.13,Energy efficiency,socio_cultural,public_acceptance,C,3,sr15_ch4_sm_4_sm_13,40
+4.SM.13,Bio-based & circularity,socio_cultural,public_acceptance,A,1,sr15_ch4_sm_4_sm_13,40
+4.SM.13,Industrial CCS,socio_cultural,public_acceptance,A,1,sr15_ch4_sm_4_sm_13,40
+4.SM.13,Bio-based & circularity,technological,absence_of_risk,LE,,sr15_ch4_sm_4_sm_13,40
+4.SM.13,Electrification & hydrogen,technological,absence_of_risk,NE,,sr15_ch4_sm_4_sm_13,40
+4.SM.13,Bio-based & circularity,institutional,political_acceptability,LE,,sr15_ch4_sm_4_sm_13,40
+4.SM.13,Electrification & hydrogen,institutional,legal_admin_acceptability,NE,,sr15_ch4_sm_4_sm_13,40
+4.SM.13,Electrification & hydrogen,institutional,institutional_capacity,NE,,sr15_ch4_sm_4_sm_13,40
+4.SM.13,Bio-based & circularity,institutional,transparency_accountability,LE,,sr15_ch4_sm_4_sm_13,40
+4.SM.13,Industrial CCS,institutional,transparency_accountability,NE,,sr15_ch4_sm_4_sm_13,40
+4.SM.13,Bio-based & circularity,socio_cultural,social_co_benefits,NE,,sr15_ch4_sm_4_sm_13,40
+4.SM.13,Electrification & hydrogen,socio_cultural,public_acceptance,LE,,sr15_ch4_sm_4_sm_13,40
+4.SM.13,Bio-based & circularity,socio_cultural,inclusiveness,B,2,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Energy efficiency,socio_cultural,human_capabilities,B,2,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Energy efficiency,environmental,air_pollution,C,3,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Industrial CCS,environmental,air_pollution,C,3,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Energy efficiency,environmental,water_use,B,2,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Industrial CCS,environmental,water_use,A,1,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Energy efficiency,geophysical,physical_feasibility,B,2,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Bio-based & circularity,geophysical,physical_feasibility,A,1,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Electrification & hydrogen,geophysical,physical_feasibility,B,2,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Industrial CCS,geophysical,physical_feasibility,A,1,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Bio-based & circularity,geophysical,limited_land_use,A,1,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Industrial CCS,socio_cultural,inclusiveness,NE,,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Bio-based & circularity,socio_cultural,intergenerational_equity,NE,,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Industrial CCS,socio_cultural,intergenerational_equity,NE,,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Bio-based & circularity,socio_cultural,human_capabilities,LE,,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Electrification & hydrogen,socio_cultural,human_capabilities,NE,,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Industrial CCS,socio_cultural,human_capabilities,LE,,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Bio-based & circularity,environmental,air_pollution,NE,,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Electrification & hydrogen,environmental,air_pollution,NE,,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Energy efficiency,environmental,toxic_waste,NE,,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Bio-based & circularity,environmental,toxic_waste,NE,,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Electrification & hydrogen,environmental,toxic_waste,NE,,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Industrial CCS,environmental,toxic_waste,NE,,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Bio-based & circularity,environmental,water_use,NE,,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Electrification & hydrogen,environmental,water_use,NE,,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Energy efficiency,environmental,biodiversity,NE,,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Bio-based & circularity,environmental,biodiversity,NE,,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Electrification & hydrogen,environmental,biodiversity,NE,,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Industrial CCS,environmental,biodiversity,LE,,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Electrification & hydrogen,geophysical,limited_land_use,NE,,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Industrial CCS,geophysical,limited_land_use,NE,,sr15_ch4_sm_4_sm_13,41
+4.SM.13,Energy efficiency,geophysical,global_spread,C,3,sr15_ch4_sm_4_sm_13,42
+4.SM.13,Bio-based & circularity,geophysical,global_spread,C,3,sr15_ch4_sm_4_sm_13,42
+4.SM.13,Electrification & hydrogen,geophysical,global_spread,C,3,sr15_ch4_sm_4_sm_13,42
+4.SM.13,Industrial CCS,geophysical,global_spread,C,3,sr15_ch4_sm_4_sm_13,42
+4.SM.14,BECCS,economic,cost-effectiveness,A,1,sr15_ch4_sm_4_sm_14,43
+4.SM.14,DACCS,economic,cost-effectiveness,A,1,sr15_ch4_sm_4_sm_14,43
+4.SM.14,BECCS,economic,distributional_effects,B,2,sr15_ch4_sm_4_sm_14,43
+4.SM.14,BECCS,technological,maturity,B,2,sr15_ch4_sm_4_sm_14,44
+4.SM.14,DACCS,technological,maturity,A,1,sr15_ch4_sm_4_sm_14,44
+4.SM.14,BECCS,technological,simplicity,A,1,sr15_ch4_sm_4_sm_14,44
+4.SM.14,DACCS,technological,simplicity,A,1,sr15_ch4_sm_4_sm_14,44
+4.SM.14,BECCS,socio_cultural,social_co_benefits,B,2,sr15_ch4_sm_4_sm_14,45
+4.SM.14,BECCS,institutional,transparency_accountability,LE,,sr15_ch4_sm_4_sm_14,45
+4.SM.14,DACCS,institutional,transparency_accountability,LE,,sr15_ch4_sm_4_sm_14,45
+4.SM.14,BECCS,socio_cultural,inclusiveness,LE,,sr15_ch4_sm_4_sm_14,45
+4.SM.14,DACCS,socio_cultural,inclusiveness,NE,,sr15_ch4_sm_4_sm_14,45
+4.SM.14,BECCS,socio_cultural,intergenerational_equity,NE,,sr15_ch4_sm_4_sm_14,45
+4.SM.14,DACCS,socio_cultural,intergenerational_equity,NE,,sr15_ch4_sm_4_sm_14,45
+4.SM.14,BECCS,geophysical,physical_feasibility,B,2,sr15_ch4_sm_4_sm_14,46
+4.SM.14,DACCS,geophysical,physical_feasibility,C,3,sr15_ch4_sm_4_sm_14,46
+4.SM.15,Afforestation & reforestation,economic,cost-effectiveness,C,3,sr15_ch4_sm_4_sm_15,48
+4.SM.15,Soil carbon sequestration & biochar,economic,cost-effectiveness,C,3,sr15_ch4_sm_4_sm_15,48
+4.SM.15,Enhanced weathering,economic,cost-effectiveness,A,1,sr15_ch4_sm_4_sm_15,48
+4.SM.15,Afforestation & reforestation,economic,distributional_effects,B,2,sr15_ch4_sm_4_sm_15,48
+4.SM.15,Soil carbon sequestration & biochar,economic,distributional_effects,C,3,sr15_ch4_sm_4_sm_15,48
+4.SM.15,Afforestation & reforestation,economic,employment_productivity,B,2,sr15_ch4_sm_4_sm_15,48
+4.SM.15,Soil carbon sequestration & biochar,economic,employment_productivity,C,3,sr15_ch4_sm_4_sm_15,48
+4.SM.15,Afforestation & reforestation,technological,technical_scalability,C,3,sr15_ch4_sm_4_sm_15,48
+4.SM.15,Soil carbon sequestration & biochar,technological,technical_scalability,B,2,sr15_ch4_sm_4_sm_15,48
+4.SM.15,Enhanced weathering,technological,technical_scalability,B,2,sr15_ch4_sm_4_sm_15,48
+4.SM.15,Enhanced weathering,economic,distributional_effects,NE,,sr15_ch4_sm_4_sm_15,48
+4.SM.15,Enhanced weathering,economic,employment_productivity,NE,,sr15_ch4_sm_4_sm_15,48
+4.SM.15,Afforestation & reforestation,technological,maturity,C,3,sr15_ch4_sm_4_sm_15,49
+4.SM.15,Soil carbon sequestration & biochar,technological,maturity,C,3,sr15_ch4_sm_4_sm_15,49
+4.SM.15,Enhanced weathering,technological,maturity,A,1,sr15_ch4_sm_4_sm_15,49
+4.SM.15,Afforestation & reforestation,institutional,institutional_capacity,B,2,sr15_ch4_sm_4_sm_15,49
+4.SM.15,Soil carbon sequestration & biochar,institutional,transparency_accountability,B,2,sr15_ch4_sm_4_sm_15,49
+4.SM.15,Afforestation & reforestation,socio_cultural,social_co_benefits,C,3,sr15_ch4_sm_4_sm_15,49
+4.SM.15,Afforestation & reforestation,socio_cultural,public_acceptance,B,2,sr15_ch4_sm_4_sm_15,49
+4.SM.15,Soil carbon sequestration & biochar,socio_cultural,public_acceptance,C,3,sr15_ch4_sm_4_sm_15,49
+4.SM.15,Afforestation & reforestation,socio_cultural,inclusiveness,B,2,sr15_ch4_sm_4_sm_15,49
+4.SM.15,Afforestation & reforestation,technological,simplicity,NE,,sr15_ch4_sm_4_sm_15,49
+4.SM.15,Soil carbon sequestration & biochar,technological,simplicity,NE,,sr15_ch4_sm_4_sm_15,49
+4.SM.15,Enhanced weathering,technological,simplicity,NE,,sr15_ch4_sm_4_sm_15,49
+4.SM.15,Afforestation & reforestation,technological,absence_of_risk,NE,,sr15_ch4_sm_4_sm_15,49
+4.SM.15,Soil carbon sequestration & biochar,technological,absence_of_risk,NE,,sr15_ch4_sm_4_sm_15,49
+4.SM.15,Enhanced weathering,technological,absence_of_risk,NE,,sr15_ch4_sm_4_sm_15,49
+4.SM.15,Afforestation & reforestation,institutional,political_acceptability,NE,,sr15_ch4_sm_4_sm_15,49
+4.SM.15,Soil carbon sequestration & biochar,institutional,political_acceptability,NE,,sr15_ch4_sm_4_sm_15,49
+4.SM.15,Enhanced weathering,institutional,political_acceptability,NE,,sr15_ch4_sm_4_sm_15,49
+4.SM.15,Soil carbon sequestration & biochar,institutional,institutional_capacity,LE,,sr15_ch4_sm_4_sm_15,49
+4.SM.15,Enhanced weathering,institutional,institutional_capacity,LE,,sr15_ch4_sm_4_sm_15,49
+4.SM.15,Afforestation & reforestation,institutional,transparency_accountability,LE,,sr15_ch4_sm_4_sm_15,49
+4.SM.15,Enhanced weathering,institutional,transparency_accountability,NE,,sr15_ch4_sm_4_sm_15,49
+4.SM.15,Soil carbon sequestration & biochar,socio_cultural,social_co_benefits,NE,,sr15_ch4_sm_4_sm_15,49
+4.SM.15,Enhanced weathering,socio_cultural,social_co_benefits,NE,,sr15_ch4_sm_4_sm_15,49
+4.SM.15,Enhanced weathering,socio_cultural,public_acceptance,LE,,sr15_ch4_sm_4_sm_15,49
+4.SM.15,Soil carbon sequestration & biochar,socio_cultural,inclusiveness,NE,,sr15_ch4_sm_4_sm_15,49
+4.SM.15,Enhanced weathering,socio_cultural,inclusiveness,NE,,sr15_ch4_sm_4_sm_15,49
+4.SM.15,Enhanced weathering,environmental,air_pollution,B,2,sr15_ch4_sm_4_sm_15,50
+4.SM.15,Afforestation & reforestation,environmental,water_use,B,2,sr15_ch4_sm_4_sm_15,50
+4.SM.15,Soil carbon sequestration & biochar,environmental,water_use,C,3,sr15_ch4_sm_4_sm_15,50
+4.SM.15,Afforestation & reforestation,environmental,biodiversity,B,2,sr15_ch4_sm_4_sm_15,50
+4.SM.15,Afforestation & reforestation,geophysical,physical_feasibility,B,2,sr15_ch4_sm_4_sm_15,50
+4.SM.15,Soil carbon sequestration & biochar,geophysical,physical_feasibility,B,2,sr15_ch4_sm_4_sm_15,50
+4.SM.15,Enhanced weathering,geophysical,physical_feasibility,C,3,sr15_ch4_sm_4_sm_15,50
+4.SM.15,Afforestation & reforestation,socio_cultural,human_capabilities,LE,,sr15_ch4_sm_4_sm_15,50
+4.SM.15,Soil carbon sequestration & biochar,socio_cultural,human_capabilities,NE,,sr15_ch4_sm_4_sm_15,50
+4.SM.15,Enhanced weathering,socio_cultural,human_capabilities,NE,,sr15_ch4_sm_4_sm_15,50
+4.SM.15,Soil carbon sequestration & biochar,environmental,toxic_waste,NE,,sr15_ch4_sm_4_sm_15,50
+4.SM.15,Enhanced weathering,environmental,toxic_waste,LE,,sr15_ch4_sm_4_sm_15,50
+4.SM.15,Enhanced weathering,environmental,water_use,LE,,sr15_ch4_sm_4_sm_15,50
+4.SM.15,Soil carbon sequestration & biochar,environmental,biodiversity,NE,,sr15_ch4_sm_4_sm_15,50
+4.SM.15,Afforestation & reforestation,geophysical,limited_land_use,A,1,sr15_ch4_sm_4_sm_15,51
+4.SM.15,Soil carbon sequestration & biochar,geophysical,limited_land_use,C,3,sr15_ch4_sm_4_sm_15,51
+4.SM.15,Enhanced weathering,geophysical,limited_land_use,C,3,sr15_ch4_sm_4_sm_15,51
+4.SM.15,Afforestation & reforestation,geophysical,global_spread,B,2,sr15_ch4_sm_4_sm_15,51
+4.SM.15,Soil carbon sequestration & biochar,geophysical,global_spread,B,2,sr15_ch4_sm_4_sm_15,51
+4.SM.15,Enhanced weathering,geophysical,global_spread,C,3,sr15_ch4_sm_4_sm_15,51
+4.SM.15,Afforestation & reforestation,geophysical,limited_scarce_resources,LE,,sr15_ch4_sm_4_sm_15,51
+4.SM.15,Enhanced weathering,geophysical,limited_scarce_resources,LE,,sr15_ch4_sm_4_sm_15,51

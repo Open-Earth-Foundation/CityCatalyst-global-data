@@ -1,0 +1,82 @@
+dataset_id: cl-ssg-policy-documents
+release: "2026"
+reviewed_on: 2026-04-13
+reviewed_by: amanda
+
+publisher:
+  name: Chile SSG policy document inventory (curated)
+  id: cl-ssg
+  country: CL
+  note: >
+    Inventory maintained for Open Earth MEED / SSG Chile work. Upstream documents
+    are published by many distinct government and regional bodies; this entry
+    tracks the curated manifest, not a single publisher API.
+
+source:
+  main_url: https://cambioclimatico.mma.gob.cl/
+  access_type: curated_inventory
+  format: CSV manifest; referenced assets primarily PDF and web pages
+  documentation_available: true
+  retrieval_note: >
+    Each non-placeholder row may be fetched from the URL in the `link` column.
+    Placeholder rows denote document types (one per region or comuna) without a
+    single stable URL in the manifest.
+
+coverage:
+  geography: Chile
+  spatial_levels_expected:
+    - national
+    - regional (admin1 / GORE)
+    - communal
+    - inter-communal
+  temporal_reference: rolling; documents span multiple adoption/update years
+
+themes:
+  - policy
+  - climate_instruments
+  - territorial_planning
+  - mitigation
+  - adaptation
+
+key_attributes:
+  - Territory_code
+  - Policy name
+  - Type of Policy
+  - Governance (ministry, GORE, municipality, etc.)
+  - Scale / Scale level_code
+  - Region_code / Communal_Code
+  - link (source URL or placeholder text)
+
+sample_files:
+  - data_requirements_local_codes.csv: Chile admin codes for join keys
+  - data_requirements_general_policies.csv: full curated document inventory
+  - data_requirements_combined.csv: long join comuna × applicable policy (snake_case, record_source comuna_policy)
+
+integration_notes:
+  combined_csv_builder: python3 build_combined_csv.py (in this release directory) rebuilds sample/data_requirements_combined.csv
+  join_keys:
+    - Territory_code with internal territory / admin coding schemes
+    - Region_code / Communal_Code where populated
+  requires_cleaning: true
+  requires_harmonisation: true
+  recommended_storage: versioned CSV or parquet for manifest; binary store for fetched PDFs if licensed
+  upstream_licensing: verify per host before storing or redistributing full documents
+
+data_quality:
+  authority: curated_research_inventory
+  completeness: partial_urls; placeholders for per-territory instruments
+  update_frequency: manual_refresh
+  known_issues:
+    - duplicate logical rows possible (e.g. same PRAS area with multiple codes)
+    - some links are portals or flipbooks, not direct files
+    - typographical column label "Envirnomental" in source CSV
+
+suitability_use_cases:
+  policy_signal_extraction: high
+  legal_context_indexing: high
+  automated_bulk_download: medium
+  production_pipeline_without_per_source_review: low
+
+status:
+  production_ready: pending_validation
+  priority: medium

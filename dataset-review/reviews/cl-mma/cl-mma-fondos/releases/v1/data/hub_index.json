@@ -1,0 +1,290 @@
+[
+ {
+  "program": "FPA",
+  "name": "FPA 2025 – TSEJ comuna de Tocopilla",
+  "slug": "fpa-tsej-2025-tocopilla",
+  "open_raw": "01/07/2025"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2025 – TSEJ comuna de Mejillones",
+  "slug": "fpa-tsej-2025-mejillones",
+  "open_raw": "01/07/2025"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2025 – Conservando y protegiendo la fauna silvestre (Centros de Rehabilitación o Rescate)",
+  "slug": "fpa-2025-conservando-fauna-silvestre-crr",
+  "open_raw": "08/05/2025"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2024 – Conservación del Pudú en la provincia de Chiloé",
+  "slug": "fpa-2024-pudu-conservacion",
+  "open_raw": "28/08/2024"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2024 – Iniciativas Ciudadanas TSEJ, comuna de Huasco",
+  "slug": "fpa-2024-tsej-h",
+  "open_raw": "19/06/2024"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2024 – Iniciativas Ciudadanas TSEJ, Concón, Quintero y Puchuncaví",
+  "slug": "fpa-2024-tsej-qpc",
+  "open_raw": "19/06/2024"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2024 – Iniciativas Ciudadanas TSEJ, comuna de Coronel",
+  "slug": "fpa-2024-tsej-c",
+  "open_raw": "19/06/2024"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2024 – Fortalecimiento de Centros de Rehabilitación o Rescate de Fauna Silvestre",
+  "slug": "fpa-2024-fortalecimiento-centros-rehabilitacion-rescate",
+  "open_raw": "01/12/2023"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2024 – Educación Ambiental para la Prevención de Incendios Forestales y Protección de la Biodiversidad",
+  "slug": "fpa-2024-prevencion-incendios-forestales",
+  "open_raw": "01/12/2023"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2024 – Fortalecimiento para recicladores de base",
+  "slug": "fpa-2024-fortalecimiento-para-recicladores-de-base",
+  "open_raw": "19/10/2023"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2024 – Programa Modelo para la Formación de Líderes Ambientales Comunitarios",
+  "slug": "fpa-2024-lideres-ambientales-comunitarios",
+  "open_raw": "06/10/2023"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2024 – Chiloé Reduce en tu Establecimiento Educacional",
+  "slug": "fpa-2024-chiloe-reduce-en-tu-establecimiento-educacional",
+  "open_raw": "27/09/2023"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2023 – Concurso EcoDesafíos",
+  "slug": "fpa-2023-concurso-eco-desafios",
+  "open_raw": "14/03/2023"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2023 – Emprendimientos Circulares para Comunidades Chilotas",
+  "slug": "fpa-2023-emprendimientos-circulares-para-comunidades-chilotas",
+  "open_raw": "07/03/2023"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2023 – Proyectos Sustentables para Pueblos Indígenas",
+  "slug": "fpa-2023-proyectos-sustentables-para-pueblos-indigenas",
+  "open_raw": "23/08/2022"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2023 – Proyectos Sustentables en Establecimientos Educacionales",
+  "slug": "fpa-2023-proyectos-sustentables-en-establecimientos-educacionales",
+  "open_raw": "23/08/2022"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2023 – Proyectos Sustentables Ciudadanos",
+  "slug": "fpa-2023-proyectos-sustentables-ciudadanos",
+  "open_raw": "23/08/2022"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2022 – Emprendimientos Verdes para Comunidades Indígenas",
+  "slug": "emprendimientos-verdes-para-comunidades-indigenas",
+  "open_raw": "28/09/2021"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2022 – Rapa Nui Sustentable",
+  "slug": "fpa-2022-rapa-nui-sustentable",
+  "open_raw": "07/09/2021"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2022 – Áreas Verdes Comunitarias",
+  "slug": "areas-verdes-comunitarias",
+  "open_raw": "15/08/2021"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2022 – Conservación de Humedales Urbanos",
+  "slug": "conservacion-de-humedales-urbanos",
+  "open_raw": "05/08/2021"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2022 – Iniciativas Sustentables para Fundaciones y Corporaciones",
+  "slug": "iniciativas-sustentables-para-fundaciones-y-corporaciones",
+  "open_raw": "05/08/2021"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2022 – Iniciativas Sustentables para Pueblos Indígenas",
+  "slug": "iniciativas-sustentables-para-pueblos-indigenas",
+  "open_raw": "05/08/2021"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2022 – Iniciativas Sustentables en Establecimientos Educacionales",
+  "slug": "iniciativas-sustentables-en-establecimientos-educacionales",
+  "open_raw": "05/08/2021"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2022 – Iniciativas Sustentables Ciudadanas",
+  "slug": "iniciativas-sustentables-ciudadanas",
+  "open_raw": "05/08/2021"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2021 – Iniciativas Sustentables en Establecimientos Educacionales",
+  "slug": "iniciativas-sustentables-en-establecimientos-educacionales-2021",
+  "open_raw": "15/12/2020"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2021 – Iniciativas Sustentables Fundaciones y Corporaciones",
+  "slug": "iniciativas-sustentables-fundaciones-y-corporaciones-2021",
+  "open_raw": "15/12/2020"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2021 – Áreas Verdes Comunitarias",
+  "slug": "iniciativas-sustentables-ciudadanas-4",
+  "open_raw": "15/12/2020"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2021 – Conservación de Humedales Urbanos",
+  "slug": "conservacion-humedales-urbanos-2021",
+  "open_raw": "15/12/2020"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2021 – Iniciativas Sustentables para Pueblos Indígenas",
+  "slug": "iniciativas-sustentables-pueblos-indigenas-fpa2021",
+  "open_raw": "25/11/2020"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2021 – Iniciativas Sustentables Ciudadanas",
+  "slug": "iniciativas-sustentables-ciudadanas-2021",
+  "open_raw": "15/12/2020"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2021 – 2º Concurso FPA Rapa Nui Sustentable",
+  "slug": "2o-concurso-fpa-rapa-nui-sustentable",
+  "open_raw": "21/10/2020"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2020 – Iniciativas en Áreas Verdes Comunitarias",
+  "slug": "iniciativas-en-areas-verdes-comunitarias",
+  "open_raw": "09/10/2019"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2020 – Iniciativas Sustentables en Establecimientos Educacionales",
+  "slug": "iniciativas-sustentables-en-establecimientos-educacionales-2020",
+  "open_raw": "09/10/2019"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2020 – Iniciativas Sustentables Pueblos Indígenas",
+  "slug": "iniciativas-sustentables-pueblos-indigenas",
+  "open_raw": "09/10/2019"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2020 – Iniciativas Sustentables Ciudadanas",
+  "slug": "iniciativas-sustentables-ciudadanas-2020",
+  "open_raw": "09/10/2019"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2020 – Conservación Áreas Marinas Protegidas",
+  "slug": "rapa-nui-sustentable",
+  "open_raw": "16/08/2019"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2020 – Educación Ambiental al Aire Libre en la Región Metropolitana",
+  "slug": "iniciativas-sustentables-ciudadanas-evaluacion",
+  "open_raw": "16/08/2019"
+ },
+ {
+  "program": "FPA",
+  "name": "FPA 2020 – Rapa Nui Sustentable",
+  "slug": "iniciativas-sustentables-ciudadanas-3",
+  "open_raw": "02/10/2019"
+ },
+ {
+  "program": "FPR",
+  "name": "FPR 2025 – Fondo para el Reciclaje 2025",
+  "slug": "fpr-2025-fondo-para-el-reciclaje-2025",
+  "open_raw": "16/10/2024"
+ },
+ {
+  "program": "FPR",
+  "name": "FPR 2024 – Fondo para el Reciclaje 2024",
+  "slug": "fondo-para-el-reciclaje-2024",
+  "open_raw": "05/09/2023"
+ },
+ {
+  "program": "FPR",
+  "name": "FPR 2023 – Fondo para el Reciclaje",
+  "slug": "fpr-2023-fondo-para-el-reciclaje",
+  "open_raw": "23/09/2022"
+ },
+ {
+  "program": "FPR",
+  "name": "FPR 2022 Exequiel Estay – Recicladores de Base",
+  "slug": "fpr-2022-exequiel-estay-recicladores-de-base",
+  "open_raw": "17/08/2021"
+ },
+ {
+  "program": "FPR",
+  "name": "FPR 2021 Exequiel Estay – Recicladores de Base",
+  "slug": "fondo-para-el-reciclaje-2021-exequiel-estay-recicladores-de-base",
+  "open_raw": "25/11/2020"
+ },
+ {
+  "program": "FPR",
+  "name": "FPR 2020 – Promoviendo la economía circular en municipios a través del reciclaje",
+  "slug": "promoviendo-la-economia-circular-en-municipios-a-traves-del-reciclaje",
+  "open_raw": "05/06/2020"
+ },
+ {
+  "program": "FPR",
+  "name": "FPR 2020 Exequiel Estay – Recicladores de Base",
+  "slug": "fondo-para-el-reciclaje-exequiel-estay-recicladores-de-base",
+  "open_raw": "05/06/2020"
+ },
+ {
+  "program": "FPR",
+  "name": "FPR 2020 – Fondo para el Reciclaje Chiloé 2020",
+  "slug": "fondo-para-el-reciclaje-chiloe-2020",
+  "open_raw": "02/06/2020"
+ },
+ {
+  "program": "PROG",
+  "name": "Recambio de Calefactores (programa permanente, comunas con PDA)",
+  "slug": "recambio-de-calefactores",
+  "open_raw": null
+ }
+]

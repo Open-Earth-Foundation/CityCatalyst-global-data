@@ -1,0 +1,284 @@
+version: 1
+context_id: c40-city-emissions-benchmark
+release_version: "2024"
+description: >
+  Initial rule set for emissions plausibility and consistency checks. These
+  rules are designed for soft-flag investigation workflows unless marked as
+  hard_fail.
+calibration_source:
+  dataset: c40_city_emissions_benchmark_2024
+  file: dataset-review/reviews/c40/c40-city-emissions-benchmark/releases/2024/data/c40_subsector_per_capita_stats.csv
+  method: p05_p95_and_iqr_review
+rules:
+  - rule_id: yoy_change_i1_residential
+    sector: I.1
+    metric: year_over_year_pct_change
+    normalization: per_capita
+    threshold:
+      operator: abs_gt
+      value: 0.30
+    severity: soft_flag
+    rationale: >
+      Large year-over-year shifts in residential emissions often indicate
+      boundary or methodology changes and should be reviewed.
+    recommended_action: investigate_and_document
+
+  - rule_id: yoy_change_i2_commercial
+    sector: I.2
+    metric: year_over_year_pct_change
+    normalization: per_capita
+    threshold:
+      operator: abs_gt
+      value: 0.30
+    severity: soft_flag
+    rationale: >
+      Commercial emissions can vary with economic activity, but major shifts
+      require traceable explanation.
+    recommended_action: investigate_and_document
+
+  - rule_id: yoy_change_ii1_onroad
+    sector: II.1
+    metric: year_over_year_pct_change
+    normalization: per_capita
+    threshold:
+      operator: abs_gt
+      value: 0.30
+    severity: soft_flag
+    rationale: >
+      On-road transport changes above 30% should be validated against mobility,
+      boundary, or methodology updates.
+    recommended_action: investigate_and_document
+
+  - rule_id: zero_value_i1_residential
+    sector: I.1
+    metric: emissions_value
+    normalization: absolute
+    threshold:
+      operator: eq
+      value: 0
+    severity: soft_flag
+    rationale: >
+      Residential emissions are expected in all cities; zeros are likely data
+      gaps or missing scope coverage.
+    recommended_action: verify_scope_coverage
+
+  - rule_id: zero_value_ii1_onroad
+    sector: II.1
+    metric: emissions_value
+    normalization: absolute
+    threshold:
+      operator: eq
+      value: 0
+    severity: soft_flag
+    rationale: >
+      On-road transport emissions are typically present; a zero value should
+      trigger a completeness review.
+    recommended_action: verify_data_completeness
+
+  - rule_id: negative_value_non_sink_sectors
+    sector: I,II,III,IV
+    metric: emissions_value
+    normalization: absolute
+    threshold:
+      operator: lt
+      value: 0
+    severity: hard_fail
+    rationale: >
+      Negative emissions are not valid in these sectors under standard city
+      inventory assumptions.
+    recommended_action: fail_validation
+
+  - rule_id: i4_power_generation_interpretation
+    sector: I.4
+    metric: per_capita_value
+    normalization: per_capita
+    threshold:
+      operator: gt_context_band
+      value: 1.1300867474
+    severity: soft_flag
+    rationale: >
+      Very high I.4 values may reflect in-boundary generation for broader grids
+      rather than local demand.
+    source_stat: p95_of_i4_1_per_capita_tco2e
+    recommended_action: check_boundary_and_export_context
+
+  - rule_id: calibrated_low_i1_1_per_capita
+    sector: I.1.1
+    metric: per_capita_value
+    normalization: per_capita
+    threshold:
+      operator: lt
+      value: 0.0421852156
+    severity: soft_flag
+    rationale: >
+      I.1.1 per-capita values below the C40 p05 benchmark are unusual and should
+      be checked for scope or coverage gaps.
+    source_stat: p05_of_i1_1_per_capita_tco2e
+    recommended_action: investigate_and_document
+
+  - rule_id: calibrated_high_i1_1_per_capita
+    sector: I.1.1
+    metric: per_capita_value
+    normalization: per_capita
+    threshold:
+      operator: gt
+      value: 1.3930658916
+    severity: soft_flag
+    rationale: >
+      I.1.1 per-capita values above the C40 p95 benchmark should be reviewed for
+      climate, boundary, or methodology context.
+    source_stat: p95_of_i1_1_per_capita_tco2e
+    recommended_action: investigate_and_document
+
+  - rule_id: calibrated_low_i2_1_per_capita
+    sector: I.2.1
+    metric: per_capita_value
+    normalization: per_capita
+    threshold:
+      operator: lt
+      value: 0.0098577701
+    severity: soft_flag
+    rationale: >
+      Very low I.2.1 values may indicate boundary definition issues or missing
+      commercial coverage.
+    source_stat: p05_of_i2_1_per_capita_tco2e
+    recommended_action: investigate_and_document
+
+  - rule_id: calibrated_high_i2_1_per_capita
+    sector: I.2.1
+    metric: per_capita_value
+    normalization: per_capita
+    threshold:
+      operator: gt
+      value: 1.9018456702
+    severity: soft_flag
+    rationale: >
+      High I.2.1 values should be interpreted with business-center context and
+      checked against source methodology notes.
+    source_stat: p95_of_i2_1_per_capita_tco2e
+    recommended_action: investigate_and_document
+
+  - rule_id: calibrated_low_ii1_1_per_capita
+    sector: II.1.1
+    metric: per_capita_value
+    normalization: per_capita
+    threshold:
+      operator: lt
+      value: 0.4578938903
+    severity: soft_flag
+    rationale: >
+      II.1.1 values below the C40 p05 benchmark should be reviewed for potential
+      under-coverage of on-road activity.
+    source_stat: p05_of_ii1_1_per_capita_tco2e
+    recommended_action: investigate_and_document
+
+  - rule_id: calibrated_high_ii1_1_per_capita
+    sector: II.1.1
+    metric: per_capita_value
+    normalization: per_capita
+    threshold:
+      operator: gt
+      value: 3.7842975664
+    severity: soft_flag
+    rationale: >
+      II.1.1 values above the C40 p95 benchmark should be checked for freight
+      pass-through and urban form effects.
+    source_stat: p95_of_ii1_1_per_capita_tco2e
+    recommended_action: investigate_and_document
+
+  - rule_id: calibrated_low_iii1_1_per_capita
+    sector: III.1.1
+    metric: per_capita_value
+    normalization: per_capita
+    threshold:
+      operator: lt
+      value: 0.0005293669
+    severity: soft_flag
+    rationale: >
+      Very low landfill-related values can indicate attribution or reporting
+      gaps and should be verified.
+    source_stat: p05_of_iii1_1_per_capita_tco2e
+    recommended_action: investigate_and_document
+
+  - rule_id: calibrated_high_iii1_1_per_capita
+    sector: III.1.1
+    metric: per_capita_value
+    normalization: per_capita
+    threshold:
+      operator: gt
+      value: 0.4450544866
+    severity: soft_flag
+    rationale: >
+      High III.1.1 values should be reviewed with landfill management and
+      boundary attribution context.
+    source_stat: p95_of_iii1_1_per_capita_tco2e
+    recommended_action: investigate_and_document
+
+  - rule_id: calibrated_low_iii4_1_per_capita
+    sector: III.4.1
+    metric: per_capita_value
+    normalization: per_capita
+    threshold:
+      operator: lt
+      value: 0.0041307121
+    severity: soft_flag
+    rationale: >
+      Very low wastewater per-capita values should be checked for missing N2O or
+      partial system coverage.
+    source_stat: p05_of_iii4_1_per_capita_tco2e
+    recommended_action: investigate_and_document
+
+  - rule_id: calibrated_high_iii4_1_per_capita
+    sector: III.4.1
+    metric: per_capita_value
+    normalization: per_capita
+    threshold:
+      operator: gt
+      value: 0.1449519247
+    severity: soft_flag
+    rationale: >
+      High III.4.1 values should be checked against treatment configuration and
+      industrial effluent context.
+    source_stat: p95_of_iii4_1_per_capita_tco2e
+    recommended_action: investigate_and_document
+
+  - rule_id: calibrated_low_iv_1_per_capita
+    sector: IV.1
+    metric: per_capita_value
+    normalization: per_capita
+    threshold:
+      operator: lt
+      value: 0.0003250701
+    severity: soft_flag
+    rationale: >
+      Very low IV.1 values may be plausible, but should be reviewed when paired
+      with high industrial energy values.
+    source_stat: p05_of_iv_1_per_capita_tco2e
+    recommended_action: investigate_and_document
+
+  - rule_id: calibrated_high_iv_1_per_capita
+    sector: IV.1
+    metric: per_capita_value
+    normalization: per_capita
+    threshold:
+      operator: gt
+      value: 1.3819746025
+    severity: soft_flag
+    rationale: >
+      IV.1 values above the C40 p95 benchmark indicate strong industrial profile
+      and should be reviewed with I.3 consistency.
+    source_stat: p95_of_iv_1_per_capita_tco2e
+    recommended_action: investigate_and_document
+
+  - rule_id: industrial_profile_pairing_i3_iv
+    sector: I.3+IV
+    metric: profile_consistency
+    normalization: none
+    threshold:
+      operator: expected_pairing_violation
+      value: true
+    severity: soft_flag
+    rationale: >
+      Large industrial process emissions without corresponding industrial energy
+      profile (or vice versa) warrants boundary and source-method review.
+    recommended_action: review_industrial_boundary_logic

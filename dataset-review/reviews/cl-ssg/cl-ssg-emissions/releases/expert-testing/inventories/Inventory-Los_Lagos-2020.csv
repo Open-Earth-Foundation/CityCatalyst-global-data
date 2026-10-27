@@ -1,0 +1,75 @@
+Inventory Reference,GPC Reference Number,Subsector name,Notation Key,Total Emissions,Total Emission Units,Activity type,Activity Value,Activity Units,Emission Factor - CO2,Emission Factor - CH4,Emission Factor - N2O,Emission Factor - Unit,CO2 Emissions,CH4 Emissions,N2O Emissions,Data source ID,Data source name
+1058f805-ca24-42cf-951a-058d9d47a115,I,Stationary Energy,,21183.72503,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,I.1,Residential buildings,,8380.905929,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,I.1.1,Residential buildings,,2566.29994,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,I.1.2,Residential buildings,,5795.053399,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,I.1.3,Residential buildings,,19.55259018,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,I.2,Commercial and institutional buildings and facilities,,5362.032081,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,I.2.1,Commercial and institutional buildings and facilities,,1180.097436,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,I.2.2,Commercial and institutional buildings and facilities,,4167.872186,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,I.2.3,Commercial and institutional buildings and facilities,,14.0624583,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,I.3,Manufacturing industries and construction,,7434.597789,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,I.3.1,Manufacturing industries and construction,,7425.577642,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,I.3.2,Manufacturing industries and construction,,8.989815744,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,I.3.3,Manufacturing industries and construction,,0.030331762,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,I.4,Energy industries,,0,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,I.4.1,Energy industries,,0,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,I.4.2,Energy industries,,0,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,I.4.3,Energy industries,,0,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,I.4.4,Energy generation supplied to the grid,,,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,I.5,"Agriculture, forestry and fishing activities",,6.189230412,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,I.5.1,"Agriculture, forestry and fishing activities",,6.189230412,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,I.5.2,"Agriculture, forestry and fishing activities",,0,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,I.5.3,"Agriculture, forestry and fishing activities",,0,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,I.6,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,I.6.1,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,I.6.2,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,I.6.3,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,I.7,Fugitive emissions from coal mining,,,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,I.7.1,Fugitive emissions from coal mining,,,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,I.8,Fugitive emissions from oil and natural gas,,,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,I.8.1,Fugitive emissions from oil and natural gas,,,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,II,Transportation,,25058.2394,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,II.1,On-road transportation,,23985.6011,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,II.1.1,On-road transportation,,19567.38107,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,II.1.2,On-road transportation,,,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,II.1.3,On-road transportation,,4418.220022,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,II.2,Railways,,355.8752274,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,II.2.1,Railways,,355.8752274,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,II.2.2,Railways,,,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,II.2.3,Railways,,,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,II.3,Waterborne navigation,,0,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,II.3.1,Waterborne navigation,,0,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,II.3.2,Waterborne navigation,,,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,II.3.3,Waterborne navigation,,,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,II.4,Aviation,,606.5721552,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,II.4.1,Aviation,,606.5721552,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,II.4.2,Aviation,,,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,II.4.3,Aviation,,,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,II.5,Off-road transportation,,110.1909195,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,II.5.1,Off-road transportation,,110.1909195,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,II.5.2,Off-road transportation,,,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,III,Waste,,10253.95313,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,III.1,Solid waste disposal,,8104.962938,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,III.1.1,Solid waste disposal,,0,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,III.1.2,Solid waste disposal,,8104.962938,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,III.1.3,Solid waste disposal,,,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,III.2,Biological treatment of waste,,679.9505406,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,III.2.1,Biological treatment of waste,,679.9505406,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,III.2.2,Biological treatment of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,III.2.3,Biological treatment of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,III.3,Incineration and open burning of waste,,94.01590175,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,III.3.1,Incineration and open burning of waste,,94.01590175,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,III.3.2,Incineration and open burning of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,III.3.3,Incineration and open burning of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,III.4,Wastewater treatment and discharge,,1375.023749,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,III.4.1,Wastewater treatment and discharge,,1375.023749,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,III.4.2,Wastewater treatment and discharge,,,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,III.4.3,Wastewater treatment and discharge,,,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,IV,IPPU,,9553.357401,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,IV.1,Industrial processes,,801.035603,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,IV.2,Product use,,8752.321798,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,V,AFOLU,,-347337.8741,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,V.1,Livestock,,135240.6543,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,V.2,Land,,-530249.2817,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020
+1058f805-ca24-42cf-951a-058d9d47a115,V.3,Aggregate sources and non-CO2 emission sources on land,,47670.75329,t CO2e,,,,,,,,,,,,SSG Inventory Los Lagos 2020

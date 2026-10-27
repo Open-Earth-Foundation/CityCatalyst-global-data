@@ -1,0 +1,29 @@
+# Source registry for mn-funder-profiles. The RFP is the stated-half source; re-verify annually.
+sources:
+  - id: bwsr-fy27-pp-rfp
+    profile: bwsr-clean-water-fund
+    half: stated
+    funder: BWSR Clean Water Fund — Projects & Practices
+    kind: rfp-pdf
+    url: https://bwsr.state.mn.us/sites/default/files/2026-02/FINAL%20FY27%20RFP%20Projects%20and%20Practices.pdf
+    last_fetched: 2026-07-04
+    yields: eligibility, ≥10% match, 100-point P&P scoring rubric, application question set, required attachments, FY27 timeline
+    notes: parsed via pdftotext; rubric = application questions with point weights (sum to 100).
+
+  - id: bwsr-cwf-program-pages
+    profile: bwsr-clean-water-fund
+    half: stated
+    funder: BWSR Clean Water Fund
+    kind: program-page
+    url: https://bwsr.state.mn.us/cwf_programs
+    last_fetched: 2026-07-04
+    yields: program overview, apply page, reporting profile (context for eligibility/activity scope)
+
+  - id: bwsr-fy27-awards
+    profile: bwsr-clean-water-fund
+    half: derived
+    funder: BWSR Clean Water Fund
+    kind: internal-dataset
+    url: dataset-compile/mn-climate-awards/data.csv
+    last_fetched: 2026-07-04
+    yields: revealed half — 18 FY27 awards (sizes, applicant types, categories, region split); join on funder + route

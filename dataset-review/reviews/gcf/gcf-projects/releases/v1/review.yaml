@@ -1,0 +1,51 @@
+dataset_id: gcf-projects
+release: "v1"
+reviewed_on: 2026-04-09
+reviewed_by: amanda
+
+publisher:
+  name: Green Climate Fund (GCF)
+  product_site: GCF API
+  url: http://api.gcfund.org/v1/projects
+
+source:
+  main_url: http://api.gcfund.org/v1/projects
+  access_type: public_api
+  format: JSON
+  documentation_available: true
+
+coverage:
+  geography: global
+  temporal_reference: rolling API results
+  spatial_levels_expected:
+    - country
+    - project
+
+themes:
+  - climate_finance
+  - development_projects
+  - adaptation
+  - mitigation
+
+key_attributes:
+  - id
+  - name
+  - status
+  - result_areas
+  - countries
+  - gcf_funding
+  - total_project_cost
+  - approval_date
+  - accredited_entity
+
+integration_notes:
+  join_keys:
+    - id
+    - countries
+  requires_cleaning: true
+  requires_harmonisation: true
+  recommended_storage: json-to-parquet normalization with nested field flattening
+
+status:
+  production_ready: pending_validation
+  priority: medium

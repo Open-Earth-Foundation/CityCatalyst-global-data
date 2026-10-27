@@ -1,0 +1,516 @@
+{
+  "meta": {
+    "requestId": "panguipulli-inventory-2020",
+    "generatedAtUtc": "2026-05-22T13:57:00.567529+00:00",
+    "backendConsumer": "hiap-meed",
+    "upstreamProvider": "city_catalyst_frontend",
+    "apiContext": {
+      "endpoint": "POST /v1/prioritize",
+      "locodes": [
+        "CL PAN"
+      ]
+    },
+    "totalRecords": 1
+  },
+  "requestData": {
+    "requestedLanguages": [
+      "en"
+    ],
+    "topN": 20,
+    "createExplanations": false,
+    "cityDataList": [
+      {
+        "locode": "CL PAN",
+        "countryCode": "CL",
+        "populationSize": null,
+        "excludedActionIds": [],
+        "cityStrategicPreferenceSectors": [],
+        "cityStrategicPreferenceTimeframes": [
+          "no_preference"
+        ],
+        "cityStrategicPreferenceCoBenefitKeys": [],
+        "cityEmissionsData": {
+          "inventoryYear": 2020,
+          "gpcData": {
+            "I.1.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Residential buildings",
+                  "totalEmissions": 3730.313921,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.1.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Residential buildings",
+                  "totalEmissions": 10114.58024,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.1.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Residential buildings",
+                  "totalEmissions": 34.12673337,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.2.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Commercial and institutional buildings and facilities",
+                  "totalEmissions": 2108.97303,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.2.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Commercial and institutional buildings and facilities",
+                  "totalEmissions": 5553.398136,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.2.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Commercial and institutional buildings and facilities",
+                  "totalEmissions": 18.73724199,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.3.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Manufacturing industries and construction",
+                  "totalEmissions": 1396.222613,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.3.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Manufacturing industries and construction",
+                  "totalEmissions": 13.1019954,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.3.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Manufacturing industries and construction",
+                  "totalEmissions": 0.044206313,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.4.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Energy industries",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.4.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Energy industries",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.4.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Energy industries",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.5.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Agriculture, forestry and fishing activities",
+                  "totalEmissions": 23.91335793,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.5.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Agriculture, forestry and fishing activities",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.5.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Agriculture, forestry and fishing activities",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.6.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Non-specified sources",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.6.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Non-specified sources",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.6.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Non-specified sources",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "II.1.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "On-road transportation",
+                  "totalEmissions": 32877.87229,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "II.1.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "On-road transportation",
+                  "totalEmissions": 8078.27589,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "II.2.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Railways",
+                  "totalEmissions": 109.9770239,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "II.3.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Waterborne navigation",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "II.4.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Aviation",
+                  "totalEmissions": 1038.321156,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "II.5.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Off-road transportation",
+                  "totalEmissions": 167.9099726,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "III.1.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Solid waste disposal",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "III.1.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Solid waste disposal",
+                  "totalEmissions": 13873.9545,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "III.2.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Biological treatment of waste",
+                  "totalEmissions": 1163.92918,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "III.3.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Incineration and open burning of waste",
+                  "totalEmissions": 160.9350164,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "III.4.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Wastewater treatment and discharge",
+                  "totalEmissions": 2302.438682,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "IV.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Industrial processes",
+                  "totalEmissions": 1295.588019,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "IV.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Product use",
+                  "totalEmissions": 14254.82369,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "V.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Livestock",
+                  "totalEmissions": 101620.6789,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "V.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Land",
+                  "totalEmissions": -795638.532,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "V.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Aggregate sources and non-CO2 emission sources on land",
+                  "totalEmissions": 112176.6427,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Panguipulli 2020",
+                  "notationKey": null
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

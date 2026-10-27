@@ -1,0 +1,163 @@
+# Search output for need 2026-06-action-reduction-potential (run 2026-06-04).
+# Verdicts: promote | investigate | deprioritize | reject (see skill
+# references/screening-criteria.md). Rejected entries are kept — they are
+# institutional memory of dead ends.
+
+candidates:
+
+- id: ipcc-ar6-spm7-mitigation-potentials
+  name: IPCC AR6 mitigation options — costs and potentials 2030 (Figure SPM.7)
+  publisher: IPCC (Data Distribution Centre / NASA SEDAC)
+  url: https://ipcc-browser.ipcc-data.org/browser/dataset?id=6119
+  also:
+    - https://www.ipcc.ch/report/ar6/wg3/figures/summary-for-policymakers/figure-spm-7/
+    - https://doi.org/10.48490/ayfg-tv12
+  themes: [mitigation, abatement_potential, abatement_cost]
+  coverage: global; ~43 mitigation options across all sectors; potentials for
+    2030 broken into cost buckets (<0, 0-20, 20-50, 50-100, 100-200 USD/tCO2e)
+  access: bulk download via IPCC DDC / SEDAC, DOI-versioned
+  license: open (IPCC DDC / SEDAC distribution; confirm exact terms at review)
+  screening:
+    verdict: promote
+    notes: >
+      Strongest fit. Single internally consistent methodology, cross-sector,
+      includes cost dimension and uncertainty ranges. TEF's Mitigation
+      Compendium is explicitly derived from this figure, so mapping to
+      transition elements is near-native (verified on transitionelements.org).
+      Caveats: global aggregate potentials (fine — search accepts generic);
+      ~43 options is coarser than TEF elements, so mapping is one-to-many.
+  added: 2026-06-04
+
+- id: climateview-tef-validated-data
+  name: ClimateView TEF Validated Data Repository / ClimateOS potentials
+  publisher: ClimateView
+  url: https://www.transitionelements.org/
+  themes: [mitigation, abatement_potential, climate_action_taxonomy]
+  coverage: global framework; per-transition-element models and data
+  access: public site has taxonomy + compendium but NO downloadable
+    per-element potential dataset (verified 2026-06-04); quantified
+    potentials appear to live inside ClimateOS (commercial product)
+  license: taxonomy license unverified (see catalog climateview-transition-elements);
+    data layer presumed commercial
+  screening:
+    verdict: investigate
+    notes: >
+      Native TEF mapping by definition — zero crosswalk cost. Search allows
+      reviewing paid options for this greenfield domain. Action: contact
+      publisher about data access/licensing before deeper review.
+  added: 2026-06-04
+
+- id: project-drawdown-solutions
+  name: Project Drawdown — Drawdown Explorer solutions table
+  publisher: Project Drawdown
+  url: https://drawdown.org/explorer
+  themes: [mitigation, abatement_potential]
+  coverage: global; 156 solutions in the 2025 Explorer relaunch (which
+    replaced the ~90-solution 2020-2050 scenario table this entry first
+    described); only 55 quantified at review time, ~43 more "Coming Soon"
+  access: direct CSV export verified 2026-06-05
+    (https://drawdown.org/explorer-solutions-table-export.csv);
+    un-versioned, mutates in place
+  license: NOT open — Terms of Use (2025-06-04) are all-rights-reserved;
+    internal personal use only; reproduction/distribution/storage requires
+    written permission (info@drawdown.org). CC claims refer to pre-2025 site.
+  screening:
+    verdict: deprioritize
+    notes: >
+      Reviewed 2026-06-05 — see reviews/project-drawdown/
+      project-drawdown-solutions. Both open items resolved: export exists,
+      license restrictive. Decisive finding: "GHG Impact" is a
+      no-target-year, no-cost-cap full-deployment envelope, not a 2030
+      potential — rank agreement with SPM.7 is chance-level (Spearman
+      0.31-0.42 vs UNEP's 0.81-0.88), so unusable as ranking source or even
+      cross-check. Confirmed after discussion (review "Takeaways" section):
+      the 2030 horizon is not load-bearing — dated sources rank alike
+      (SPM.7 vs UNEP 2035), but Drawdown's envelope cannot be re-dated to
+      any year; its cost column misleads (mixed regimes, near-zero
+      denominators, top options unpriced); co-benefits come from other
+      catalog datasets. Retained as research reference for option
+      discovery, the Not Recommended anti-recommendation screen, and
+      speed-of-action. Revisit if "Coming Soon" rows get quantified and
+      permission obtained.
+  added: 2026-06-04
+
+- id: unep-egr-sectoral-potentials
+  name: UNEP-CCC sectoral GHG mitigation potentials 2035 (EGR 2024 ch.6)
+  publisher: UNEP / UNEP-CCC
+  url: https://unepccc.org/publications/bridging-the-gap-sectoral-greenhouse-gas-mitigation-potentials-in-2035/
+  themes: [mitigation, abatement_potential, abatement_cost]
+  coverage: global; measure-level potentials for 2030 and 2035 at
+    <200 USD/tCO2e; energy, industry, AFOLU, buildings, transport, waste
+  access: report PDF only — NO machine-readable data annex published
+    (verified 2026-06-05; the "supplementary material" referenced in the
+    industry chapter is unpublished). Tables hand-transcribed and
+    machine-verified in dataset-review.
+  license: NOT open — UNEP-CCC notice allows educational/non-profit
+    reproduction with attribution, but commercial use requires written
+    permission from UNEP-CCC (unep-ccc@un.org)
+  screening:
+    verdict: deprioritize
+    notes: >
+      Reviewed 2026-06-05 — see reviews/unep-ccc/unep-egr-sectoral-potentials.
+      Tables extracted and compared against SPM.7 over a 29-pair crosswalk:
+      ordinally near-identical (Spearman 0.81–0.88), so it does not change
+      the ranking SPM.7 gives. Decision: SPM.7 stays the ranking source
+      (CC BY, cost buckets, adjudicated TEF/action mappings); this dataset
+      is retained as cross-check evidence only. Its two caveats carry into
+      SPM.7 use: land options' high band is baseline-sensitive (sits nearer
+      medium under current baselines), and SPM.7's 2030 demand-side values
+      (EVs, biofuels, diets) are upper bounds. Non-commercial license noted
+      but moot given the decision.
+  added: 2026-06-04
+
+- id: cl-mma-ndc-macc
+  name: Chile NDC mitigation measures — cost-effectiveness / MACC studies
+  publisher: Ministerio del Medio Ambiente (Chile) + sector ministries
+  url: https://cambioclimatico.mma.gob.cl/wp-content/uploads/2023/01/Chile-Fortalecimiento-NDC-nov22.pdf
+  also:
+    - https://energia.gob.cl/cambioclimatico
+  themes: [mitigation, abatement_potential, abatement_cost, policy]
+  coverage: Chile national; per-measure potentials and costs underlying the
+    NDC and Planes Sectoriales de Mitigación
+  access: report PDFs; no machine-readable dataset found
+  license: public government documents
+  screening:
+    verdict: deprioritize
+    notes: >
+      Not the cross-action ranking backbone (single country, PDF-bound), but
+      valuable CL context layer to sanity-check a global ranking. Revisit
+      after a primary source is chosen.
+  added: 2026-06-04
+
+- id: br-plano-clima-mitigacao
+  name: Brazil Plano Clima — Estratégia Nacional de Mitigação + sectoral plans
+  publisher: Ministério do Meio Ambiente e Mudança do Clima (Brazil)
+  url: https://www.gov.br/mma/pt-br/noticias/governo-do-brasil-publica-documentos-do-plano-clima-mitigacao
+  themes: [mitigation, abatement_potential, policy]
+  coverage: Brazil national; eight sectoral mitigation plans; per-measure
+    quantification varies by sector
+  access: report PDFs
+  license: public government documents
+  screening:
+    verdict: deprioritize
+    notes: >
+      Same role as cl-mma-ndc-macc — BR context layer, not the ranking
+      backbone. Note SEEG (already a known publisher) provides the emissions
+      baseline these plans rank against.
+  added: 2026-06-04
+
+- id: c40-action-evidence
+  name: C40 climate action evidence base
+  publisher: C40 Cities
+  url: https://www.c40.org/research/
+  themes: [mitigation, climate_action]
+  coverage: city actions across C40 network
+  access: findings embedded in reports; no public per-action potential dataset found
+  license: n/a
+  screening:
+    verdict: reject
+    notes: >
+      Rejected 2026-06-04 — no machine-usable dataset with consistent
+      per-action potentials publicly available. Revisit only if C40 opens
+      its action database.
+  added: 2026-06-04

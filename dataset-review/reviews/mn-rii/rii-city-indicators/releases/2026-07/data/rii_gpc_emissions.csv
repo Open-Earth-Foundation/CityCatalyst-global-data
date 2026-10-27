@@ -1,0 +1,426 @@
+city,indicator,sector,subcategory,gpc_sector,gpc_code_applied,gpc_scope,tco2e,mapping_confidence,year
+Arden Hills,energy,residential,Other,I,I.1.1,1.0,177.23572282811176,medium,2024
+Blaine,energy,residential,Other,I,I.1.1,1.0,2284.523895413643,medium,2024
+Circle Pines,energy,residential,Other,I,I.1.1,1.0,0.0,medium,2024
+Crookston,energy,residential,Other,I,I.1.1,1.0,1761.463530120482,medium,2024
+Crystal,energy,residential,Other,I,I.1.1,1.0,206.45412781778853,medium,2024
+Gem Lake,energy,residential,Other,I,I.1.1,1.0,48.5120231372549,medium,2024
+Golden Valley,energy,residential,Other,I,I.1.1,1.0,518.7973906681035,medium,2024
+Lauderdale,energy,residential,Other,I,I.1.1,1.0,74.84915887788779,medium,2024
+Little Canada,energy,residential,Other,I,I.1.1,1.0,507.14174391079507,medium,2024
+Maplewood,energy,residential,Other,I,I.1.1,1.0,1018.2276412870754,medium,2024
+Minnetonka,energy,residential,Other,I,I.1.1,1.0,2019.0459758190327,medium,2024
+Mounds View,energy,residential,Other,I,I.1.1,1.0,571.9871840464177,medium,2024
+New Brighton,energy,residential,Other,I,I.1.1,1.0,682.5736529914122,medium,2024
+North Oaks,energy,residential,Other,I,I.1.1,1.0,154.54628524414716,medium,2024
+North Saint Paul,energy,residential,Other,I,I.1.1,1.0,415.7581552206084,medium,2024
+Northfield,energy,residential,Other,I,I.1.1,1.0,0.0,medium,2024
+Oakdale,energy,residential,Other,I,I.1.1,1.0,1104.0806859817703,medium,2024
+Rochester,energy,residential,Other,I,I.1.1,1.0,4043.8622019787263,medium,2024
+Roseville,energy,residential,Other,I,I.1.1,1.0,1188.3371981363873,medium,2024
+Saint Anthony Village,energy,residential,Other,I,I.1.1,1.0,0.0,medium,2024
+Saint Louis Park,energy,residential,Other,I,I.1.1,1.0,2494.089002169914,medium,2024
+Shoreview,energy,residential,Other,I,I.1.1,1.0,586.0721887241266,medium,2024
+Spring Lake Park,energy,residential,Other,I,I.1.1,1.0,0.0,medium,2024
+Stillwater,energy,residential,Other,I,I.1.1,1.0,429.8270590102041,medium,2024
+Thief River Falls,energy,residential,Other,I,I.1.1,1.0,955.0003964414415,medium,2024
+Vadnais Heights,energy,residential,Other,I,I.1.1,1.0,294.24740003937006,medium,2024
+White Bear Lake,energy,residential,Other,I,I.1.1,1.0,1210.6333142481203,medium,2024
+White Bear Township,energy,residential,Other,I,I.1.1,1.0,699.7494164832536,medium,2024
+Arden Hills,energy,residential,Natural Gas,I,I.1.1,1.0,12560.812874,high,2024
+Blaine,energy,residential,Natural Gas,I,I.1.1,1.0,95507.695668,high,2024
+Circle Pines,energy,residential,Natural Gas,I,I.1.1,1.0,6707.54022,high,2024
+Crookston,energy,residential,Natural Gas,I,I.1.1,1.0,9298.84208,high,2024
+Crystal,energy,residential,Natural Gas,I,I.1.1,1.0,30250.235814,high,2024
+Gem Lake,energy,residential,Natural Gas,I,I.1.1,1.0,1165.397156,high,2024
+Golden Valley,energy,residential,Natural Gas,I,I.1.1,1.0,35282.504992,high,2024
+Lauderdale,energy,residential,Natural Gas,I,I.1.1,1.0,2551.480676,high,2024
+Little Canada,energy,residential,Natural Gas,I,I.1.1,1.0,10667.658054,high,2024
+Maplewood,energy,residential,Natural Gas,I,I.1.1,1.0,48103.352112,high,2024
+Minnetonka,energy,residential,Natural Gas,I,I.1.1,1.0,88978.3829,high,2024
+Mounds View,energy,residential,Natural Gas,I,I.1.1,1.0,14584.232104,high,2024
+New Brighton,energy,residential,Natural Gas,I,I.1.1,1.0,27156.106418,high,2024
+North Oaks,energy,residential,Natural Gas,I,I.1.1,1.0,13864.887516,high,2024
+North Saint Paul,energy,residential,Natural Gas,I,I.1.1,1.0,15037.54906,high,2024
+Northfield,energy,residential,Natural Gas,I,I.1.1,1.0,21356.056308,high,2024
+Oakdale,energy,residential,Natural Gas,I,I.1.1,1.0,34597.02011,high,2024
+Rochester,energy,residential,Natural Gas,I,I.1.1,1.0,133894.843742,high,2024
+Roseville,energy,residential,Natural Gas,I,I.1.1,1.0,41474.890552,high,2024
+Saint Anthony Village,energy,residential,Natural Gas,I,I.1.1,1.0,10575.784286,high,2024
+Saint Louis Park,energy,residential,Natural Gas,I,I.1.1,1.0,56162.499258,high,2024
+Shoreview,energy,residential,Natural Gas,I,I.1.1,1.0,37980.113672,high,2024
+Spring Lake Park,energy,residential,Natural Gas,I,I.1.1,1.0,8378.74831,high,2024
+Stillwater,energy,residential,Natural Gas,I,I.1.1,1.0,29595.770826,high,2024
+Thief River Falls,energy,residential,Natural Gas,I,I.1.1,1.0,12667.486636,high,2024
+Vadnais Heights,energy,residential,Natural Gas,I,I.1.1,1.0,18229.375434,high,2024
+White Bear Lake,energy,residential,Natural Gas,I,I.1.1,1.0,30798.441844,high,2024
+White Bear Township,energy,residential,Natural Gas,I,I.1.1,1.0,17496.416766,high,2024
+Arden Hills,energy,residential,Electricity,I,I.1.2,2.0,5831.363978088995,high,2024
+Blaine,energy,residential,Electricity,I,I.1.2,2.0,117554.72054713554,high,2024
+Circle Pines,energy,residential,Electricity,I,I.1.2,2.0,11809.478721763586,high,2024
+Crookston,energy,residential,Electricity,I,I.1.2,2.0,14595.128822781911,high,2024
+Crystal,energy,residential,Electricity,I,I.1.2,2.0,14175.137807291572,high,2024
+Gem Lake,energy,residential,Electricity,I,I.1.2,2.0,654.8892588224621,high,2024
+Golden Valley,energy,residential,Electricity,I,I.1.2,2.0,16517.14341273247,high,2024
+Lauderdale,energy,residential,Electricity,I,I.1.2,2.0,1398.8654059375851,high,2024
+Little Canada,energy,residential,Electricity,I,I.1.2,2.0,6456.392839970969,high,2024
+Maplewood,energy,residential,Electricity,I,I.1.2,2.0,24313.17695905153,high,2024
+Minnetonka,energy,residential,Electricity,I,I.1.2,2.0,43308.62446826181,high,2024
+Mounds View,energy,residential,Electricity,I,I.1.2,2.0,7878.700996876984,high,2024
+New Brighton,energy,residential,Electricity,I,I.1.2,2.0,13926.476982833621,high,2024
+North Oaks,energy,residential,Electricity,I,I.1.2,2.0,5905.649786809398,high,2024
+North Saint Paul,energy,residential,Electricity,I,I.1.2,2.0,14147.5986891046,high,2024
+Northfield,energy,residential,Electricity,I,I.1.2,2.0,10886.750031751792,high,2024
+Oakdale,energy,residential,Electricity,I,I.1.2,2.0,16541.131979406695,high,2024
+Rochester,energy,residential,Electricity,I,I.1.2,2.0,253847.15776784904,high,2024
+Roseville,energy,residential,Electricity,I,I.1.2,2.0,21383.139479415768,high,2024
+Saint Anthony Village,energy,residential,Electricity,I,I.1.2,2.0,5299.68169629638,high,2024
+Saint Louis Park,energy,residential,Electricity,I,I.1.2,2.0,31993.867574734646,high,2024
+Shoreview,energy,residential,Electricity,I,I.1.2,2.0,18078.262783861017,high,2024
+Spring Lake Park,energy,residential,Electricity,I,I.1.2,2.0,4007.277229429375,high,2024
+Stillwater,energy,residential,Electricity,I,I.1.2,2.0,14728.23501264175,high,2024
+Thief River Falls,energy,residential,Electricity,I,I.1.2,2.0,16523.30197995101,high,2024
+Vadnais Heights,energy,residential,Electricity,I,I.1.2,2.0,10686.562789168103,high,2024
+White Bear Lake,energy,residential,Electricity,I,I.1.2,2.0,22819.648936314978,high,2024
+White Bear Township,energy,residential,Electricity,I,I.1.2,2.0,12177.947639027489,high,2024
+Arden Hills,energy,commercial_industrial,Other,I,I.2.1+I.3.1,1.0,0.0,medium,2024
+Blaine,energy,commercial_industrial,Other,I,I.2.1+I.3.1,1.0,0.0,medium,2024
+Circle Pines,energy,commercial_industrial,Other,I,I.2.1+I.3.1,1.0,0.0,medium,2024
+Crookston,energy,commercial_industrial,Other,I,I.2.1+I.3.1,1.0,2899.051485072,medium,2024
+Crystal,energy,commercial_industrial,Other,I,I.2.1+I.3.1,1.0,0.0,medium,2024
+Gem Lake,energy,commercial_industrial,Other,I,I.2.1+I.3.1,1.0,0.0,medium,2024
+Golden Valley,energy,commercial_industrial,Other,I,I.2.1+I.3.1,1.0,0.0,medium,2024
+Lauderdale,energy,commercial_industrial,Other,I,I.2.1+I.3.1,1.0,0.0,medium,2024
+Little Canada,energy,commercial_industrial,Other,I,I.2.1+I.3.1,1.0,0.0,medium,2024
+Maplewood,energy,commercial_industrial,Other,I,I.2.1+I.3.1,1.0,2680.4440656,medium,2024
+Minnetonka,energy,commercial_industrial,Other,I,I.2.1+I.3.1,1.0,0.0,medium,2024
+Mounds View,energy,commercial_industrial,Other,I,I.2.1+I.3.1,1.0,0.0,medium,2024
+New Brighton,energy,commercial_industrial,Other,I,I.2.1+I.3.1,1.0,0.0,medium,2024
+North Oaks,energy,commercial_industrial,Other,I,I.2.1+I.3.1,1.0,0.0,medium,2024
+North Saint Paul,energy,commercial_industrial,Other,I,I.2.1+I.3.1,1.0,0.0,medium,2024
+Northfield,energy,commercial_industrial,Other,I,I.2.1+I.3.1,1.0,0.0,medium,2024
+Oakdale,energy,commercial_industrial,Other,I,I.2.1+I.3.1,1.0,0.0,medium,2024
+Rochester,energy,commercial_industrial,Other,I,I.2.1+I.3.1,1.0,0.0,medium,2024
+Roseville,energy,commercial_industrial,Other,I,I.2.1+I.3.1,1.0,0.0,medium,2024
+Saint Anthony Village,energy,commercial_industrial,Other,I,I.2.1+I.3.1,1.0,0.0,medium,2024
+Saint Louis Park,energy,commercial_industrial,Other,I,I.2.1+I.3.1,1.0,0.0,medium,2024
+Shoreview,energy,commercial_industrial,Other,I,I.2.1+I.3.1,1.0,0.0,medium,2024
+Spring Lake Park,energy,commercial_industrial,Other,I,I.2.1+I.3.1,1.0,0.0,medium,2024
+Stillwater,energy,commercial_industrial,Other,I,I.2.1+I.3.1,1.0,0.0,medium,2024
+Thief River Falls,energy,commercial_industrial,Other,I,I.2.1+I.3.1,1.0,0.0,medium,2024
+Vadnais Heights,energy,commercial_industrial,Other,I,I.2.1+I.3.1,1.0,0.0,medium,2024
+White Bear Lake,energy,commercial_industrial,Other,I,I.2.1+I.3.1,1.0,0.0,medium,2024
+White Bear Township,energy,commercial_industrial,Other,I,I.2.1+I.3.1,1.0,0.0,medium,2024
+Arden Hills,energy,commercial_industrial,Natural Gas,I,I.2.1+I.3.1,1.0,26742.052256,medium,2024
+Blaine,energy,commercial_industrial,Natural Gas,I,I.2.1+I.3.1,1.0,67905.015518,medium,2024
+Circle Pines,energy,commercial_industrial,Natural Gas,I,I.2.1+I.3.1,1.0,1238.61538,medium,2024
+Crookston,energy,commercial_industrial,Natural Gas,I,I.2.1+I.3.1,1.0,15798.9803,medium,2024
+Crystal,energy,commercial_industrial,Natural Gas,I,I.2.1+I.3.1,1.0,12554.266416,medium,2024
+Gem Lake,energy,commercial_industrial,Natural Gas,I,I.2.1+I.3.1,1.0,789.494326,medium,2024
+Golden Valley,energy,commercial_industrial,Natural Gas,I,I.2.1+I.3.1,1.0,54564.695522,medium,2024
+Lauderdale,energy,commercial_industrial,Natural Gas,I,I.2.1+I.3.1,1.0,1529.27067,medium,2024
+Little Canada,energy,commercial_industrial,Natural Gas,I,I.2.1+I.3.1,1.0,12775.846204,medium,2024
+Maplewood,energy,commercial_industrial,Natural Gas,I,I.2.1+I.3.1,1.0,46382.23991,medium,2024
+Minnetonka,energy,commercial_industrial,Natural Gas,I,I.2.1+I.3.1,1.0,64159.500256,medium,2024
+Mounds View,energy,commercial_industrial,Natural Gas,I,I.2.1+I.3.1,1.0,10204.274124,medium,2024
+New Brighton,energy,commercial_industrial,Natural Gas,I,I.2.1+I.3.1,1.0,31132.944044,medium,2024
+North Oaks,energy,commercial_industrial,Natural Gas,I,I.2.1+I.3.1,1.0,3136.439404,medium,2024
+North Saint Paul,energy,commercial_industrial,Natural Gas,I,I.2.1+I.3.1,1.0,8765.999752,medium,2024
+Northfield,energy,commercial_industrial,Natural Gas,I,I.2.1+I.3.1,1.0,57918.050828,medium,2024
+Oakdale,energy,commercial_industrial,Natural Gas,I,I.2.1+I.3.1,1.0,21522.068314,medium,2024
+Rochester,energy,commercial_industrial,Natural Gas,I,I.2.1+I.3.1,1.0,264808.3188328,medium,2024
+Roseville,energy,commercial_industrial,Natural Gas,I,I.2.1+I.3.1,1.0,65440.537322,medium,2024
+Saint Anthony Village,energy,commercial_industrial,Natural Gas,I,I.2.1+I.3.1,1.0,11620.037402,medium,2024
+Saint Louis Park,energy,commercial_industrial,Natural Gas,I,I.2.1+I.3.1,1.0,73555.922318,medium,2024
+Shoreview,energy,commercial_industrial,Natural Gas,I,I.2.1+I.3.1,1.0,16101.41496,medium,2024
+Spring Lake Park,energy,commercial_industrial,Natural Gas,I,I.2.1+I.3.1,1.0,8151.308086,medium,2024
+Stillwater,energy,commercial_industrial,Natural Gas,I,I.2.1+I.3.1,1.0,17711.822356,medium,2024
+Thief River Falls,energy,commercial_industrial,Natural Gas,I,I.2.1+I.3.1,1.0,19476.605974,medium,2024
+Vadnais Heights,energy,commercial_industrial,Natural Gas,I,I.2.1+I.3.1,1.0,12725.995272,medium,2024
+White Bear Lake,energy,commercial_industrial,Natural Gas,I,I.2.1+I.3.1,1.0,33344.343938,medium,2024
+White Bear Township,energy,commercial_industrial,Natural Gas,I,I.2.1+I.3.1,1.0,8370.845762,medium,2024
+Arden Hills,energy,commercial_industrial,Electricity,I,I.2.2+I.3.2,2.0,31268.960037950194,medium,2024
+Blaine,energy,commercial_industrial,Electricity,I,I.2.2+I.3.2,2.0,117105.217822004,medium,2024
+Circle Pines,energy,commercial_industrial,Electricity,I,I.2.2+I.3.2,2.0,3142.98113716774,medium,2024
+Crookston,energy,commercial_industrial,Electricity,I,I.2.2+I.3.2,2.0,40320.99141318153,medium,2024
+Crystal,energy,commercial_industrial,Electricity,I,I.2.2+I.3.2,2.0,8666.602206044181,medium,2024
+Gem Lake,energy,commercial_industrial,Electricity,I,I.2.2+I.3.2,2.0,612.3348952190873,medium,2024
+Golden Valley,energy,commercial_industrial,Electricity,I,I.2.2+I.3.2,2.0,47283.80585283952,medium,2024
+Lauderdale,energy,commercial_industrial,Electricity,I,I.2.2+I.3.2,2.0,1058.744503519913,medium,2024
+Little Canada,energy,commercial_industrial,Electricity,I,I.2.2+I.3.2,2.0,11678.485165109318,medium,2024
+Maplewood,energy,commercial_industrial,Electricity,I,I.2.2+I.3.2,2.0,68713.58021138755,medium,2024
+Minnetonka,energy,commercial_industrial,Electricity,I,I.2.2+I.3.2,2.0,75022.87314298739,medium,2024
+Mounds View,energy,commercial_industrial,Electricity,I,I.2.2+I.3.2,2.0,14496.391896650186,medium,2024
+New Brighton,energy,commercial_industrial,Electricity,I,I.2.2+I.3.2,2.0,23425.051040814662,medium,2024
+North Oaks,energy,commercial_industrial,Electricity,I,I.2.2+I.3.2,2.0,2491.8939444797243,medium,2024
+North Saint Paul,energy,commercial_industrial,Electricity,I,I.2.2+I.3.2,2.0,11581.923754876168,medium,2024
+Northfield,energy,commercial_industrial,Electricity,I,I.2.2+I.3.2,2.0,44966.7480790166,medium,2024
+Oakdale,energy,commercial_industrial,Electricity,I,I.2.2+I.3.2,2.0,23907.166895763403,medium,2024
+Rochester,energy,commercial_industrial,Electricity,I,I.2.2+I.3.2,2.0,524812.5479633494,medium,2024
+Roseville,energy,commercial_industrial,Electricity,I,I.2.2+I.3.2,2.0,57340.32652185884,medium,2024
+Saint Anthony Village,energy,commercial_industrial,Electricity,I,I.2.2+I.3.2,2.0,7775.87308060646,medium,2024
+Saint Louis Park,energy,commercial_industrial,Electricity,I,I.2.2+I.3.2,2.0,64138.72587049578,medium,2024
+Shoreview,energy,commercial_industrial,Electricity,I,I.2.2+I.3.2,2.0,30210.310497852217,medium,2024
+Spring Lake Park,energy,commercial_industrial,Electricity,I,I.2.2+I.3.2,2.0,5657.042715231788,medium,2024
+Stillwater,energy,commercial_industrial,Electricity,I,I.2.2+I.3.2,2.0,17745.022250127007,medium,2024
+Thief River Falls,energy,commercial_industrial,Electricity,I,I.2.2+I.3.2,2.0,41285.19603102603,medium,2024
+Vadnais Heights,energy,commercial_industrial,Electricity,I,I.2.2+I.3.2,2.0,26314.777719314163,medium,2024
+White Bear Lake,energy,commercial_industrial,Electricity,I,I.2.2+I.3.2,2.0,35781.317218543045,medium,2024
+White Bear Township,energy,commercial_industrial,Electricity,I,I.2.2+I.3.2,2.0,21826.442606368502,medium,2024
+Albert Lea,transport,on_road,all_vehicles,II,II.1.1,1.0,41719.07548401672,high,2024
+Andover,transport,on_road,all_vehicles,II,II.1.1,1.0,80370.03873759272,high,2024
+Apple Valley,transport,on_road,all_vehicles,II,II.1.1,1.0,141200.79595627915,high,2024
+Arden Hills,transport,on_road,all_vehicles,II,II.1.1,1.0,157450.18596424887,high,2024
+Arlington,transport,on_road,all_vehicles,II,II.1.1,1.0,3140.562695974948,high,2024
+Austin,transport,on_road,all_vehicles,II,II.1.1,1.0,47928.355978449916,high,2024
+Belle Plaine,transport,on_road,all_vehicles,II,II.1.1,1.0,15168.127004605381,high,2024
+Bemidji,transport,on_road,all_vehicles,II,II.1.1,1.0,45226.369918005024,high,2024
+Big Lake,transport,on_road,all_vehicles,II,II.1.1,1.0,16540.59625463491,high,2024
+Blaine,transport,on_road,all_vehicles,II,II.1.1,1.0,258651.35575596153,high,2024
+Bloomington,transport,on_road,all_vehicles,II,II.1.1,1.0,438790.74016627664,high,2024
+Brainerd,transport,on_road,all_vehicles,II,II.1.1,1.0,36476.65252323743,high,2024
+Brooklyn Center,transport,on_road,all_vehicles,II,II.1.1,1.0,179728.4545903384,high,2024
+Brooklyn Park,transport,on_road,all_vehicles,II,II.1.1,1.0,314263.74120473635,high,2024
+Burnsville,transport,on_road,all_vehicles,II,II.1.1,1.0,249090.84549443758,high,2024
+Circle Pines,transport,on_road,all_vehicles,II,II.1.1,1.0,7088.166332154062,high,2024
+Columbia Heights,transport,on_road,all_vehicles,II,II.1.1,1.0,19445.291328262017,high,2024
+Coon Rapids,transport,on_road,all_vehicles,II,II.1.1,1.0,232069.93093222193,high,2024
+Cottage Grove,transport,on_road,all_vehicles,II,II.1.1,1.0,105241.55733989469,high,2024
+Crookston,transport,on_road,all_vehicles,II,II.1.1,1.0,11561.490678420336,high,2024
+Crystal,transport,on_road,all_vehicles,II,II.1.1,1.0,36109.15424940159,high,2024
+Delano,transport,on_road,all_vehicles,II,II.1.1,1.0,12710.03176093067,high,2024
+Duluth,transport,on_road,all_vehicles,II,II.1.1,1.0,264328.83570670104,high,2024
+Eagan,transport,on_road,all_vehicles,II,II.1.1,1.0,329603.33070136956,high,2024
+Eden Prairie,transport,on_road,all_vehicles,II,II.1.1,1.0,252751.77545680595,high,2024
+Edina,transport,on_road,all_vehicles,II,II.1.1,1.0,223314.1307542466,high,2024
+Elk River,transport,on_road,all_vehicles,II,II.1.1,1.0,119729.09755427353,high,2024
+Elko New Market,transport,on_road,all_vehicles,II,II.1.1,1.0,4978.892925777638,high,2024
+Ely,transport,on_road,all_vehicles,II,II.1.1,1.0,5807.415918145262,high,2024
+Falcon Heights,transport,on_road,all_vehicles,II,II.1.1,1.0,12031.142055537744,high,2024
+Farmington,transport,on_road,all_vehicles,II,II.1.1,1.0,39885.94819976278,high,2024
+Fergus Falls,transport,on_road,all_vehicles,II,II.1.1,1.0,34880.11150967465,high,2024
+Forest Lake,transport,on_road,all_vehicles,II,II.1.1,1.0,87176.750727358,high,2024
+Fridley,transport,on_road,all_vehicles,II,II.1.1,1.0,128216.81209192256,high,2024
+Gem Lake,transport,on_road,all_vehicles,II,II.1.1,1.0,3375.0023896437497,high,2024
+Golden Valley,transport,on_road,all_vehicles,II,II.1.1,1.0,166595.6897936898,high,2024
+Grand Marais,transport,on_road,all_vehicles,II,II.1.1,1.0,3796.2642973426814,high,2024
+Grand Rapids,transport,on_road,all_vehicles,II,II.1.1,1.0,38003.211695506936,high,2024
+Hastings,transport,on_road,all_vehicles,II,II.1.1,1.0,41650.46709352121,high,2024
+Hermantown,transport,on_road,all_vehicles,II,II.1.1,1.0,55986.024372607964,high,2024
+Hopkins,transport,on_road,all_vehicles,II,II.1.1,1.0,42421.341549022036,high,2024
+Hutchinson,transport,on_road,all_vehicles,II,II.1.1,1.0,26305.518093514293,high,2024
+Independence,transport,on_road,all_vehicles,II,II.1.1,1.0,34928.896846290016,high,2024
+Inver Grove Heights,transport,on_road,all_vehicles,II,II.1.1,1.0,163351.94374910704,high,2024
+Isanti,transport,on_road,all_vehicles,II,II.1.1,1.0,13148.792541998151,high,2024
+Jordan,transport,on_road,all_vehicles,II,II.1.1,1.0,12882.983503391977,high,2024
+Kasson,transport,on_road,all_vehicles,II,II.1.1,1.0,10129.106218724935,high,2024
+La Crescent,transport,on_road,all_vehicles,II,II.1.1,1.0,13849.055567523346,high,2024
+La Prairie,transport,on_road,all_vehicles,II,II.1.1,1.0,3434.078571331926,high,2024
+Lake Crystal,transport,on_road,all_vehicles,II,II.1.1,1.0,5964.115403368838,high,2024
+Lake Elmo,transport,on_road,all_vehicles,II,II.1.1,1.0,71268.48346663239,high,2024
+Lakeville,transport,on_road,all_vehicles,II,II.1.1,1.0,253874.03218871765,high,2024
+Lauderdale,transport,on_road,all_vehicles,II,II.1.1,1.0,8317.445986155697,high,2024
+Lexington,transport,on_road,all_vehicles,II,II.1.1,1.0,4368.659271009262,high,2024
+Little Canada,transport,on_road,all_vehicles,II,II.1.1,1.0,112810.72181239084,high,2024
+Mahtomedi,transport,on_road,all_vehicles,II,II.1.1,1.0,11879.425544520522,high,2024
+Mankato,transport,on_road,all_vehicles,II,II.1.1,1.0,112383.64468467854,high,2024
+Maplewood,transport,on_road,all_vehicles,II,II.1.1,1.0,169305.8393720655,high,2024
+Marine on Saint Croix,transport,on_road,all_vehicles,II,II.1.1,1.0,2434.9677423361745,high,2024
+Marshall,transport,on_road,all_vehicles,II,II.1.1,1.0,27104.053079365836,high,2024
+Minneapolis,transport,on_road,all_vehicles,II,II.1.1,1.0,950858.6452370475,high,2024
+Minnetonka,transport,on_road,all_vehicles,II,II.1.1,1.0,280504.62233828736,high,2024
+Moorhead,transport,on_road,all_vehicles,II,II.1.1,1.0,102057.7028858691,high,2024
+Morris,transport,on_road,all_vehicles,II,II.1.1,1.0,9370.6899127522,high,2024
+Mounds View,transport,on_road,all_vehicles,II,II.1.1,1.0,41860.43401327799,high,2024
+Mountain Iron,transport,on_road,all_vehicles,II,II.1.1,1.0,20628.51859253177,high,2024
+New Brighton,transport,on_road,all_vehicles,II,II.1.1,1.0,89674.44057380407,high,2024
+New Germany,transport,on_road,all_vehicles,II,II.1.1,1.0,724.7120545631788,high,2024
+New Hope,transport,on_road,all_vehicles,II,II.1.1,1.0,63201.926361761325,high,2024
+Newport,transport,on_road,all_vehicles,II,II.1.1,1.0,52695.159716828115,high,2024
+Nisswa,transport,on_road,all_vehicles,II,II.1.1,1.0,27990.862346574093,high,2024
+North Mankato,transport,on_road,all_vehicles,II,II.1.1,1.0,28598.423273093144,high,2024
+North Oaks,transport,on_road,all_vehicles,II,II.1.1,1.0,3897.40569604896,high,2024
+North Saint Paul,transport,on_road,all_vehicles,II,II.1.1,1.0,24100.049956775663,high,2024
+Northfield,transport,on_road,all_vehicles,II,II.1.1,1.0,26707.691801754772,high,2024
+Oakdale,transport,on_road,all_vehicles,II,II.1.1,1.0,122456.26838308369,high,2024
+Orono,transport,on_road,all_vehicles,II,II.1.1,1.0,42535.28781506252,high,2024
+Pine City,transport,on_road,all_vehicles,II,II.1.1,1.0,10899.464699273754,high,2024
+Pine River,transport,on_road,all_vehicles,II,II.1.1,1.0,2219.2907299177105,high,2024
+Plymouth,transport,on_road,all_vehicles,II,II.1.1,1.0,297375.06631442625,high,2024
+Prior Lake,transport,on_road,all_vehicles,II,II.1.1,1.0,60333.65625064198,high,2024
+Red Wing,transport,on_road,all_vehicles,II,II.1.1,1.0,51436.942119224615,high,2024
+Richfield,transport,on_road,all_vehicles,II,II.1.1,1.0,181420.86306688018,high,2024
+Robbinsdale,transport,on_road,all_vehicles,II,II.1.1,1.0,43143.71878824908,high,2024
+Rochester,transport,on_road,all_vehicles,II,II.1.1,1.0,336612.0503629247,high,2024
+Rogers,transport,on_road,all_vehicles,II,II.1.1,1.0,142558.15283716234,high,2024
+Rosemount,transport,on_road,all_vehicles,II,II.1.1,1.0,82091.39032959519,high,2024
+Roseville,transport,on_road,all_vehicles,II,II.1.1,1.0,170934.91908826135,high,2024
+Royalton,transport,on_road,all_vehicles,II,II.1.1,1.0,8132.813859405282,high,2024
+Saint Anthony Village,transport,on_road,all_vehicles,II,II.1.1,1.0,13115.56787750714,high,2024
+Saint Cloud,transport,on_road,all_vehicles,II,II.1.1,1.0,221345.70325472843,high,2024
+Saint Louis Park,transport,on_road,all_vehicles,II,II.1.1,1.0,171593.78735737788,high,2024
+Saint Paul,transport,on_road,all_vehicles,II,II.1.1,1.0,777372.693421279,high,2024
+Saint Paul Park,transport,on_road,all_vehicles,II,II.1.1,1.0,9737.743920532213,high,2024
+Sartell,transport,on_road,all_vehicles,II,II.1.1,1.0,35220.886597281555,high,2024
+Sauk Rapids,transport,on_road,all_vehicles,II,II.1.1,1.0,25012.287983222443,high,2024
+Scandia,transport,on_road,all_vehicles,II,II.1.1,1.0,24008.75686411306,high,2024
+Shakopee,transport,on_road,all_vehicles,II,II.1.1,1.0,181972.9061078142,high,2024
+Sherburn,transport,on_road,all_vehicles,II,II.1.1,1.0,2240.521544158543,high,2024
+Shoreview,transport,on_road,all_vehicles,II,II.1.1,1.0,109298.20676751608,high,2024
+Silver Bay,transport,on_road,all_vehicles,II,II.1.1,1.0,5088.478497295195,high,2024
+South Saint Paul,transport,on_road,all_vehicles,II,II.1.1,1.0,62066.12615125663,high,2024
+Spring Lake Park,transport,on_road,all_vehicles,II,II.1.1,1.0,21672.21736408209,high,2024
+Stillwater,transport,on_road,all_vehicles,II,II.1.1,1.0,35042.01036054611,high,2024
+Sunfish Lake,transport,on_road,all_vehicles,II,II.1.1,1.0,23188.50550133114,high,2024
+Thief River Falls,transport,on_road,all_vehicles,II,II.1.1,1.0,16990.05401408753,high,2024
+Two Harbors,transport,on_road,all_vehicles,II,II.1.1,1.0,7903.895947526019,high,2024
+Vadnais Heights,transport,on_road,all_vehicles,II,II.1.1,1.0,106170.4905007114,high,2024
+Victoria,transport,on_road,all_vehicles,II,II.1.1,1.0,31570.318695956426,high,2024
+Warren,transport,on_road,all_vehicles,II,II.1.1,1.0,2383.750087105496,high,2024
+Wayzata,transport,on_road,all_vehicles,II,II.1.1,1.0,46897.12931464111,high,2024
+West Saint Paul,transport,on_road,all_vehicles,II,II.1.1,1.0,40581.11700260767,high,2024
+White Bear Lake,transport,on_road,all_vehicles,II,II.1.1,1.0,88913.97169276021,high,2024
+White Bear Township,transport,on_road,all_vehicles,II,II.1.1,1.0,39736.499827249274,high,2024
+Willmar,transport,on_road,all_vehicles,II,II.1.1,1.0,44380.699411543545,high,2024
+Winona,transport,on_road,all_vehicles,II,II.1.1,1.0,51199.25176861651,high,2024
+Woodbury,transport,on_road,all_vehicles,II,II.1.1,1.0,281962.1184078469,high,2024
+Andover,waste,msw,Incinerated,III,III.3.1,1.0,690.3390857852261,medium,2024
+Apple Valley,waste,msw,Incinerated,III,III.3.1,1.0,912.8942056612686,medium,2024
+Arden Hills,waste,msw,Incinerated,III,III.3.1,1.0,2067.0002682064073,medium,2024
+Blaine,waste,msw,Incinerated,III,III.3.1,1.0,1608.157988738789,medium,2024
+Bloomington,waste,msw,Incinerated,III,III.3.1,1.0,12537.514531185332,medium,2024
+Brooklyn Center,waste,msw,Incinerated,III,III.3.1,1.0,4690.441288432249,medium,2024
+Brooklyn Park,waste,msw,Incinerated,III,III.3.1,1.0,11553.052123528681,medium,2024
+Burnsville,waste,msw,Incinerated,III,III.3.1,1.0,1064.095699776844,medium,2024
+Circle Pines,waste,msw,Incinerated,III,III.3.1,1.0,106.29561515388542,medium,2024
+Columbia Heights,waste,msw,Incinerated,III,III.3.1,1.0,456.82335502476764,medium,2024
+Coon Rapids,waste,msw,Incinerated,III,III.3.1,1.0,1341.2647147461082,medium,2024
+Cottage Grove,waste,msw,Incinerated,III,III.3.1,1.0,6244.191406943092,medium,2024
+Crookston,waste,msw,Incinerated,III,III.3.1,1.0,1248.9619272699174,medium,2024
+Crystal,waste,msw,Incinerated,III,III.3.1,1.0,3147.771520023177,medium,2024
+Eagan,waste,msw,Incinerated,III,III.3.1,1.0,1122.0333263918856,medium,2024
+Eden Prairie,waste,msw,Incinerated,III,III.3.1,1.0,8832.217222278785,medium,2024
+Edina,waste,msw,Incinerated,III,III.3.1,1.0,7467.982969187154,medium,2024
+Falcon Heights,waste,msw,Incinerated,III,III.3.1,1.0,1131.528052659143,medium,2024
+Farmington,waste,msw,Incinerated,III,III.3.1,1.0,394.5816387948078,medium,2024
+Forest Lake,waste,msw,Incinerated,III,III.3.1,1.0,3060.06825850443,medium,2024
+Fridley,waste,msw,Incinerated,III,III.3.1,1.0,634.469822430783,medium,2024
+Gem Lake,waste,msw,Incinerated,III,III.3.1,1.0,109.88858708856036,medium,2024
+Golden Valley,waste,msw,Incinerated,III,III.3.1,1.0,3028.087499817896,medium,2024
+Hastings,waste,msw,Incinerated,III,III.3.1,1.0,3306.1771530513747,medium,2024
+Hopkins,waste,msw,Incinerated,III,III.3.1,1.0,2526.177975449052,medium,2024
+Independence,waste,msw,Incinerated,III,III.3.1,1.0,536.1244321951825,medium,2024
+Inver Grove Heights,waste,msw,Incinerated,III,III.3.1,1.0,592.7552092826562,medium,2024
+Lake Elmo,waste,msw,Incinerated,III,III.3.1,1.0,2076.4902025973033,medium,2024
+Lakeville,waste,msw,Incinerated,III,III.3.1,1.0,1243.0755080229187,medium,2024
+Lauderdale,waste,msw,Incinerated,III,III.3.1,1.0,492.06568425080445,medium,2024
+Lexington,waste,msw,Incinerated,III,III.3.1,1.0,63.980684076486924,medium,2024
+Little Canada,waste,msw,Incinerated,III,III.3.1,1.0,2169.5899823518166,medium,2024
+Mahtomedi,waste,msw,Incinerated,III,III.3.1,1.0,1197.9586260699703,medium,2024
+Maplewood,waste,msw,Incinerated,III,III.3.1,1.0,8520.825921717576,medium,2024
+Marine on Saint Croix,waste,msw,Incinerated,III,III.3.1,1.0,101.902231017405,medium,2024
+Minneapolis,waste,msw,Incinerated,III,III.3.1,1.0,59328.513856497804,medium,2024
+Minnetonka,waste,msw,Incinerated,III,III.3.1,1.0,7655.687861923682,medium,2024
+Mounds View,waste,msw,Incinerated,III,III.3.1,1.0,2633.879400124516,medium,2024
+New Brighton,waste,msw,Incinerated,III,III.3.1,1.0,4955.123742517371,medium,2024
+New Hope,waste,msw,Incinerated,III,III.3.1,1.0,2936.893183738929,medium,2024
+Newport,waste,msw,Incinerated,III,III.3.1,1.0,635.7098507228857,medium,2024
+North Oaks,waste,msw,Incinerated,III,III.3.1,1.0,1162.345516196894,medium,2024
+North Saint Paul,waste,msw,Incinerated,III,III.3.1,1.0,2635.906864830947,medium,2024
+Northfield,waste,msw,Incinerated,III,III.3.1,1.0,350.6384514851607,medium,2024
+Oakdale,waste,msw,Incinerated,III,III.3.1,1.0,4059.939237743933,medium,2024
+Orono,waste,msw,Incinerated,III,III.3.1,1.0,1142.5870812763844,medium,2024
+Plymouth,waste,msw,Incinerated,III,III.3.1,1.0,10910.329851013988,medium,2024
+Richfield,waste,msw,Incinerated,III,III.3.1,1.0,5245.649732960847,medium,2024
+Robbinsdale,waste,msw,Incinerated,III,III.3.1,1.0,2034.3557147421573,medium,2024
+Rochester,waste,msw,Incinerated,III,III.3.1,1.0,35139.43792903668,medium,2024
+Rogers,waste,msw,Incinerated,III,III.3.1,1.0,2206.929711985763,medium,2024
+Rosemount,waste,msw,Incinerated,III,III.3.1,1.0,449.78192716608595,medium,2024
+Roseville,waste,msw,Incinerated,III,III.3.1,1.0,7360.710616697757,medium,2024
+Saint Anthony Village,waste,msw,Incinerated,III,III.3.1,1.0,1357.1459056535057,medium,2024
+Saint Louis Park,waste,msw,Incinerated,III,III.3.1,1.0,6723.1612306886855,medium,2024
+Saint Paul,waste,msw,Incinerated,III,III.3.1,1.0,63535.67523778156,medium,2024
+Saint Paul Park,waste,msw,Incinerated,III,III.3.1,1.0,766.0532373818945,medium,2024
+Scandia,waste,msw,Incinerated,III,III.3.1,1.0,584.8301954042374,medium,2024
+Shoreview,waste,msw,Incinerated,III,III.3.1,1.0,5599.046533279858,medium,2024
+South Saint Paul,waste,msw,Incinerated,III,III.3.1,1.0,334.9594963374503,medium,2024
+Spring Lake Park,waste,msw,Incinerated,III,III.3.1,1.0,1519.7875439406798,medium,2024
+Stillwater,waste,msw,Incinerated,III,III.3.1,1.0,2781.2305969126246,medium,2024
+Sunfish Lake,waste,msw,Incinerated,III,III.3.1,1.0,8.40638194386541,medium,2024
+Thief River Falls,waste,msw,Incinerated,III,III.3.1,1.0,0.0,medium,2024
+Vadnais Heights,waste,msw,Incinerated,III,III.3.1,1.0,2684.768764255934,medium,2024
+Wayzata,waste,msw,Incinerated,III,III.3.1,1.0,625.546661414618,medium,2024
+West Saint Paul,waste,msw,Incinerated,III,III.3.1,1.0,346.45955641479986,medium,2024
+White Bear Lake,waste,msw,Incinerated,III,III.3.1,1.0,4941.336982513641,medium,2024
+White Bear Township,waste,msw,Incinerated,III,III.3.1,1.0,2210.544769421723,medium,2024
+Woodbury,waste,msw,Incinerated,III,III.3.1,1.0,11626.144160691227,medium,2024
+Andover,waste,msw,Landfilled,III,III.1.1,1.0,6262.638104887185,medium,2024
+Apple Valley,waste,msw,Landfilled,III,III.1.1,1.0,10006.465306146483,medium,2024
+Arden Hills,waste,msw,Landfilled,III,III.1.1,1.0,484.6925802711814,medium,2024
+Blaine,waste,msw,Landfilled,III,III.1.1,1.0,14588.934201079845,medium,2024
+Bloomington,waste,msw,Landfilled,III,III.1.1,1.0,9944.179835261732,medium,2024
+Brooklyn Center,waste,msw,Landfilled,III,III.1.1,1.0,3720.242282702049,medium,2024
+Brooklyn Park,waste,msw,Landfilled,III,III.1.1,1.0,9163.34953604716,medium,2024
+Burnsville,waste,msw,Landfilled,III,III.1.1,1.0,11663.823295409935,medium,2024
+Circle Pines,waste,msw,Landfilled,III,III.1.1,1.0,964.2956389872617,medium,2024
+Columbia Heights,waste,msw,Landfilled,III,III.1.1,1.0,4144.223337907,medium,2024
+Coon Rapids,waste,msw,Landfilled,III,III.1.1,1.0,12167.724071070386,medium,2024
+Cottage Grove,waste,msw,Landfilled,III,III.1.1,1.0,1495.2875668020977,medium,2024
+Crookston,waste,msw,Landfilled,III,III.1.1,1.0,1705.993298293493,medium,2024
+Crystal,waste,msw,Landfilled,III,III.1.1,1.0,2496.667580928121,medium,2024
+Eagan,waste,msw,Landfilled,III,III.1.1,1.0,12298.892339608688,medium,2024
+Eden Prairie,waste,msw,Landfilled,III,III.1.1,1.0,7005.308443230372,medium,2024
+Edina,waste,msw,Landfilled,III,III.1.1,1.0,5923.260584667725,medium,2024
+Falcon Heights,waste,msw,Landfilled,III,III.1.1,1.0,265.3329367820955,medium,2024
+Farmington,waste,msw,Landfilled,III,III.1.1,1.0,4325.109585050558,medium,2024
+Forest Lake,waste,msw,Landfilled,III,III.1.1,1.0,732.7901600549259,medium,2024
+Fridley,waste,msw,Landfilled,III,III.1.1,1.0,5755.801704080571,medium,2024
+Gem Lake,waste,msw,Landfilled,III,III.1.1,1.0,25.767864493082918,medium,2024
+Golden Valley,waste,msw,Landfilled,III,III.1.1,1.0,2401.739721234076,medium,2024
+Hastings,waste,msw,Landfilled,III,III.1.1,1.0,791.72550429922,medium,2024
+Hopkins,waste,msw,Landfilled,III,III.1.1,1.0,2003.6481729499367,medium,2024
+Independence,waste,msw,Landfilled,III,III.1.1,1.0,425.22923938118396,medium,2024
+Inver Grove Heights,waste,msw,Landfilled,III,III.1.1,1.0,6497.340436538328,medium,2024
+Lake Elmo,waste,msw,Landfilled,III,III.1.1,1.0,497.2541327092625,medium,2024
+Lakeville,waste,msw,Landfilled,III,III.1.1,1.0,13625.666442850872,medium,2024
+Lauderdale,waste,msw,Landfilled,III,III.1.1,1.0,115.38488399393401,medium,2024
+Lexington,waste,msw,Landfilled,III,III.1.1,1.0,580.4218221519262,medium,2024
+Little Canada,waste,msw,Landfilled,III,III.1.1,1.0,508.74892608944697,medium,2024
+Mahtomedi,waste,msw,Landfilled,III,III.1.1,1.0,286.87343522396844,medium,2024
+Maplewood,waste,msw,Landfilled,III,III.1.1,1.0,1998.0554262929809,medium,2024
+Marine on Saint Croix,waste,msw,Landfilled,III,III.1.1,1.0,24.402381211487654,medium,2024
+Minneapolis,waste,msw,Landfilled,III,III.1.1,1.0,47056.64824398445,medium,2024
+Minnetonka,waste,msw,Landfilled,III,III.1.1,1.0,6072.139471682191,medium,2024
+Mounds View,waste,msw,Landfilled,III,III.1.1,1.0,617.6205306819928,medium,2024
+New Brighton,waste,msw,Landfilled,III,III.1.1,1.0,1161.9310114593109,medium,2024
+New Hope,waste,msw,Landfilled,III,III.1.1,1.0,2329.4085844056976,medium,2024
+Newport,waste,msw,Landfilled,III,III.1.1,1.0,152.23252682846717,medium,2024
+North Oaks,waste,msw,Landfilled,III,III.1.1,1.0,272.5593489646575,medium,2024
+North Saint Paul,waste,msw,Landfilled,III,III.1.1,1.0,618.0959525361088,medium,2024
+Northfield,waste,msw,Landfilled,III,III.1.1,1.0,3843.4371453213935,medium,2024
+Oakdale,waste,msw,Landfilled,III,III.1.1,1.0,972.2278303993405,medium,2024
+Orono,waste,msw,Landfilled,III,III.1.1,1.0,906.2475170335836,medium,2024
+Plymouth,waste,msw,Landfilled,III,III.1.1,1.0,8653.571792929368,medium,2024
+Richfield,waste,msw,Landfilled,III,III.1.1,1.0,4160.608082854493,medium,2024
+Robbinsdale,waste,msw,Landfilled,III,III.1.1,1.0,1613.5573782163206,medium,2024
+Rochester,waste,msw,Landfilled,III,III.1.1,1.0,724.6858317283204,medium,2024
+Rogers,waste,msw,Landfilled,III,III.1.1,1.0,1750.435134905001,medium,2024
+Rosemount,waste,msw,Landfilled,III,III.1.1,1.0,4930.173969347274,medium,2024
+Roseville,waste,msw,Landfilled,III,III.1.1,1.0,1726.0190413678508,medium,2024
+Saint Anthony Village,waste,msw,Landfilled,III,III.1.1,1.0,1076.4257074190357,medium,2024
+Saint Louis Park,waste,msw,Landfilled,III,III.1.1,1.0,5332.502241423691,medium,2024
+Saint Paul,waste,msw,Landfilled,III,III.1.1,1.0,14898.532353357674,medium,2024
+Saint Paul Park,waste,msw,Landfilled,III,III.1.1,1.0,183.44567081847663,medium,2024
+Scandia,waste,msw,Landfilled,III,III.1.1,1.0,140.0484486920161,medium,2024
+Shoreview,waste,msw,Landfilled,III,III.1.1,1.0,1312.9249923265274,medium,2024
+South Saint Paul,waste,msw,Landfilled,III,III.1.1,1.0,3671.576134758242,medium,2024
+Spring Lake Park,waste,msw,Landfilled,III,III.1.1,1.0,356.3762218452943,medium,2024
+Stillwater,waste,msw,Landfilled,III,III.1.1,1.0,666.0173048745439,medium,2024
+Sunfish Lake,waste,msw,Landfilled,III,III.1.1,1.0,92.14448810152453,medium,2024
+Thief River Falls,waste,msw,Landfilled,III,III.1.1,1.0,6032.723597260876,medium,2024
+Vadnais Heights,waste,msw,Landfilled,III,III.1.1,1.0,629.5536192203025,medium,2024
+Wayzata,waste,msw,Landfilled,III,III.1.1,1.0,496.1548384236596,medium,2024
+West Saint Paul,waste,msw,Landfilled,III,III.1.1,1.0,3797.6312148200577,medium,2024
+White Bear Lake,waste,msw,Landfilled,III,III.1.1,1.0,1158.6981428513225,medium,2024
+White Bear Township,waste,msw,Landfilled,III,III.1.1,1.0,518.3524475425886,medium,2024
+Woodbury,waste,msw,Landfilled,III,III.1.1,1.0,2784.0960791176526,medium,2024

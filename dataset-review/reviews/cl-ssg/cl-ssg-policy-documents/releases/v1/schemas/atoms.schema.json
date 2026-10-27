@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://citycatalyst.openearth.org/schemas/v2/atoms.schema.json",
+  "title": "Document atoms (per-document index)",
+  "description": "An atom is one distinct, citable policy statement in a source document, classified by primitive_type and tagged for fast downstream matching. Atomization is action-agnostic: a doc's atoms.jsonl is built once and reused across every action in the catalog. The on-disk artifact is one atom per line of releases/v2/data/atoms/<source_document_id>.jsonl; this schema defines a single atom row.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "atom_id",
+    "source_document_id",
+    "primitive_type",
+    "evidence_text",
+    "page",
+    "atom_summary"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+
+    "atom_id": {
+      "type": "string",
+      "description": "Stable identifier of the form <source_document_id>_a_NNNN where NNNN is zero-padded sequential by document offset. Stable within an extraction run; treat as opaque for joins.",
+      "pattern": "^[a-z0-9_]+_a_[0-9]{4,}$"
+    },
+
+    "source_document_id": {
+      "type": "string",
+      "description": "FK to source_documents.json[].source_document_id."
+    },
+
+    "primitive_type": {
+      "enum": [
+        "action",
+        "target",
+        "funding",
+        "monitoring",
+        "governance",
+        "sector_priority",
+        "sector",
+        "risk",
+        "context"
+      ],
+      "description": "WHAT kind of policy statement this atom is. Closed vocabulary shared with action_findings.schema.json."
+    },
+
+    "evidence_text": {
+      "type": "string",
+      "minLength": 5,
+      "description": "Verbatim substring of source document markdown. Whitespace runs may be collapsed but no other edits permitted."
+    },
+
+    "evidence_offset": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Character offset of evidence_text in the source document markdown. Filled in by the post-extraction verbatim resolver."
+    },
+
+    "page": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Page number from the nearest preceding <!-- page_break: N --> marker. Set by the offset-resolver after verbatim validation, not by the model directly."
+    },
+
+    "page_end": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "End page when the atom spans multiple pages."
+    },
+
+    "section": {
+      "type": "string",
+      "description": "Nearest preceding ## section heading at the atom's offset."
+    },
+
+    "atom_summary": {
+      "type": "string",
+      "minLength": 5,
+      "description": "One-sentence English summary of what the atom says. Used as the per-atom payload sent to the matching stage so the matcher can scan many atoms cheaply without re-reading every evidence_text."
+    },
+
+    "sector_tags": {
+      "type": "array",
+      "description": "Free-form-but-normalised sector or theme tags. Controlled vocabulary seeded by the atomization prompt: energy, transport, buildings, industry, waste, water, agriculture, forestry, biodiversity, ecosystems, urban_planning, coastal, health, disaster_risk, education, gender, indigenous, finance, governance, monitoring.",
+      "items": {"type": "string"}
+    },
+
+    "applicability_scope": {
+      "type": "string",
+      "description": "Which territory the atom applies to when the source document covers a region or intercommunal area. Free text but should resolve to a region or commune name where possible."
+    },
+
+    "measure_type": {
+      "enum": ["mitigation", "adaptation", "transversal", "unknown"],
+      "description": "Whether the atom frames the statement as mitigation, adaptation, both, or unknown."
+    },
+
+    "explicitness": {
+      "enum": ["explicit", "inferred"],
+      "description": "explicit = atom states something directly; inferred = the atom is the model's plausible interpretation of a more diffuse passage."
+    },
+
+    "primitive_relation_hint": {
+      "enum": [
+        "commits",
+        "targets",
+        "funds",
+        "monitors",
+        "governs",
+        "prioritizes",
+        "identifies",
+        "contextualizes",
+        "restates",
+        "references"
+      ],
+      "description": "Optional hint at how this atom usually relates to actions in its sector. Useful for downstream filtering. The matching stage may override this when computing the per-(action, atom) relation."
+    },
+
+    "extraction_metadata": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Per-atom provenance: model, chunk index, run timestamp. Useful for debugging recall regressions.",
+      "properties": {
+        "model": {"type": "string"},
+        "chunk_index": {"type": "integer"},
+        "created_at": {"type": "string", "format": "date-time"},
+        "extractor_version": {"type": "string"}
+      }
+    }
+  }
+}

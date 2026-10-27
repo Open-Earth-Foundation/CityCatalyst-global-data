@@ -1,0 +1,108 @@
+dataset_id: cl-casen
+release: "2022"
+reviewed_on: 2026-05-12
+reviewed_by: amanda
+
+publisher:
+  name: Ministerio de Desarrollo Social y Familia (Chile)
+  id: cl-mdsfam
+  country: CL
+
+source:
+  main_url: https://observatorio.ministeriodesarrollosocial.gob.cl/encuesta-casen-2022
+  access_type: public_download
+  format: published tables (PDF/Excel); microdata (Stata, R, SPSS); comuna/province aggregate bases
+  documentation_available: true
+  retrieval_note: >
+    Encuesta CASEN 2022 portal lists resultados temáticos, metodología, fichas técnicas,
+    and "Bases de datos" including person/household microdata and comuna/provincia aggregate
+    bases. Follow "Nota uso bases de datos" for weights and disclosure rules.
+
+coverage:
+  geography: Chile
+  spatial_resolution:
+    - country
+    - region
+    - province
+    - comuna
+  temporal_reference: survey year 2022 (fieldwork and reference periods per ficha técnica)
+
+themes:
+  - socioeconomics
+  - poverty
+  - income
+  - employment
+  - housing
+  - health
+  - education
+
+key_indicators_used:
+  - poverty_rate_by_income
+  - multidimensional_poverty
+  - household_income_distribution
+  - unemployment_and_labour_market
+  - commute_mode_public_transport_share
+
+indicator_mapping:
+  poverty_rate_by_income:
+    variable: pobreza
+    note: >
+      Household income poverty (Ing Cepal); values 1–2 = poor (extreme + non-extreme).
+      Weighted share by comuna; validate against published "Pobreza por ingresos" / pobreza comunal 2022.
+  median_household_income:
+    variable: ytotcorh
+    alt_variable: ytoth
+    note: >
+      Ingreso total (corregido) del hogar; one row per folio for household medians.
+      Use expr for regional estimates; after merge with provincia_comuna sidecar, use expc for comunal totals.
+  unemployment_rate:
+    variable: activ
+    note: >
+      Var MDSF activ: 1 ocupados, 2 desocupados, 3 inactivos. Typical rate = weighted desocupados / (ocupados + desocupados) by comuna; confirm age universe vs published tables.
+  commute_mode_public_transport_share:
+    variable: o28c
+    note: >
+      Module O: habitual mode to work; value 1 = transporte público. Universe is employed respondents with valid commute routing; weighted share by comuna.
+
+sample_files:
+  - casen_2022.dta: full person microdata (~202k rows, ~959 vars); income, poverty, labour, varstrat, varunit, expr
+  - casen_2022_provincia_comuna.dta: merge keys folio, id_persona plus provincia, comuna, expp, expc (comunal/provincial expansion)
+  - provincia_comuna.csv: INE region/province/comuna codebook for labelling joins
+  - Libro_de_codigos_Casen_2022.xlsx: official variable and value labels
+  - raw_data_cl_casen_2022.csv: produced by comuna_indicators.ipynb; long form like cl-ine-censo raw_data_cl_ine_censo.csv; attribute_type names match hiap-meed cities_api_mock.json keys (median_household_income, poverty_rate, unemployment_rate, public_transport_share)
+
+integration_notes:
+  mage_ingestion: >
+    Mage pipeline `cc-mage/pipelines/cl_casen_city_attribute` loads
+    `raw_data/cl-mdsfam/cl-casen/releases/2022/raw_data_cl_casen_2022.csv` from S3,
+    joins OCHA COD-AB for locode, and upserts `modelled.city_attribute` with datasource `cl-casen`.
+  merge_microdata_geography: >
+    casen_2022.dta has no direct current-residence comuna field in this extract; join
+    casen_2022_provincia_comuna.dta on folio and id_persona to attach comuna and expc/expp.
+  join_keys:
+    - comuna_code (INE codes; verify against CASEN comuna codebook)
+    - region_code
+  requires_cleaning: true
+  requires_harmonisation: true
+  recommended_storage: weighted aggregates at comuna or higher; microdata in restricted pipeline if used
+  complements:
+    - cl-ine-censo
+
+data_quality:
+  authority: official_national_survey
+  completeness: high at national and regional levels; comuna-level subject to sample constraints
+  spatial_coverage: national_sample
+  update_frequency: irregular_survey_rounds
+  known_issues:
+    - comuna estimates require checking sample size and suppression rules
+    - income and poverty concepts updated over time; read notas técnicas when comparing rounds
+    - census year 2024 will not align temporally with CASEN 2022 for cross-sectional pairing
+
+suitability_use_cases:
+  city_context_income_poverty: high
+  city_context_with_census_join: high
+  sub_comuna_spatial: low
+
+status:
+  production_ready: false
+  priority: high

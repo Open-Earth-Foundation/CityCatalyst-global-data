@@ -1,0 +1,53 @@
+# Candidates for the MN city GHGI need. Verdicts: promote | investigate | deprioritize | reject.
+candidates:
+  - id: regional-indicators-initiative
+    name: Regional Indicators Initiative (RII)
+    publisher: ULI Minnesota / LHB (funded via MPCA / GreenStep Cities)
+    url: https://www.regionalindicatorsmn.com/
+    verdict: investigate
+    evidence:
+      - Annual, standardized inventories for ~30 MN cities (Minneapolis, Saint Paul, Rochester, Duluth + inner/outer suburbs).
+      - Measures energy (electricity, gas, district), waste, and travel; computes GHG; normalizable per capita/job/household.
+      - Data viewable/downloadable on site; tied to GreenStep Cities.
+    screening_notes:
+      - Admin level = city (PASS the core must-have).
+      - Methodology is energy/waste/travel, NOT GPC — a crosswalk to GPC sectors is the main adoption cost.
+      - License / redistribution terms not yet confirmed — check before promoting.
+      - Strong breadth (one source, many cities) — the best single candidate.
+    likely_next: promote (pending license + GPC-mapping check)
+
+  - id: greenstep-cities-data
+    name: GreenStep Cities — city data
+    publisher: Minnesota Pollution Control Agency (MPCA)
+    url: https://greenstep.pca.state.mn.us/page/data
+    verdict: investigate
+    evidence:
+      - MPCA program tracking city sustainability best practices; hosts/links city energy & GHG data (uses RII data).
+      - Broad city participation across MN.
+    screening_notes:
+      - Likely overlaps RII (may be the same underlying data) — investigate whether it adds cities or just re-presents RII.
+      - Government publisher → clearer licensing than a nonprofit initiative may have.
+
+  - id: mn-sustainability-index
+    name: Minnesota Sustainability Index — GHG & Climate Mitigation worksheet
+    publisher: Minnesota Pollution Control Agency (GreenStep)
+    url: https://greenstep.pca.state.mn.us/page/minnesota-sustainability-index
+    verdict: promote
+    evidence:
+      - Downloadable structured worksheet; 119 communities, 113 with a community-wide GHG inventory logged WITH a website link, 35 with a formal GHG reduction goal + year.
+      - Now reviewed at dataset-review/reviews/mn-mpca-greenstep/mn-greenstep-sustainability-index/.
+    screening_notes:
+      - This is a DIRECTORY of inventory availability + links, NOT the emissions values. It answers "which MN cities have an inventory and where," which RII does not (RII covers ~30 cities with the actual numbers).
+      - So it COMPLEMENTS RII rather than competing: Index = who/where, RII = the values. Adopt both.
+      - License unverified (MPCA gov data, presumptively public) — same open item as RII.
+
+  - id: city-published-inventories
+    name: City-published inventories (in CAPs / dashboards)
+    publisher: individual cities (Minneapolis Climate Equity Tracker, Rochester, Saint Paul, etc.)
+    url: https://climatetracker.minneapolismn.gov/
+    verdict: deprioritize
+    evidence:
+      - Several large cities publish their own inventories/dashboards inside or alongside their climate plans.
+    screening_notes:
+      - Per-city, inconsistent methodology and vintage — not a single dataset. Useful as the CNB's per-city context (ingested), and as a cross-check on RII, but not a scalable GHGI source.
+      - Track the documents in dataset-compile/mn-city-climate-docs/ instead.

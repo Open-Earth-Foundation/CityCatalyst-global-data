@@ -1,0 +1,25 @@
+{# Matching user-message template.
+
+   Ordering: ATOMS list first (constant per doc, so cache-warm across all
+   actions on a given doc), ACTION last (varies per call).
+#}
+DOCUMENT METADATA
+  source_document_id : {{ source_document_id }}
+  source_name        : {{ source_name }}
+  source_level       : {{ source_level }}
+  region_code        : {{ region_code }}
+  document_type      : {{ document_type }}
+
+ATOMS (one per line; each line is a JSON object; do not invent atom_ids not in this list)
+{{ atoms_block }}
+
+ACTION
+  id                  : {{ action_id }}
+  name                : {{ action_name }}
+  gpc_reference       : {{ action_gpc_reference }}
+  description         : {{ action_description }}
+  intervention_summary: {{ action_intervention_summary }}
+  outcome_summary     : {{ action_outcome_summary }}
+
+TASK
+Return a strict JSON object listing the atoms from the ATOMS block that materially relate to the ACTION above, classified per the system message. Reference atoms by `atom_id` only.

@@ -1,0 +1,20 @@
+parameter_id,value,unit,kind,source,source_detail,review,confidence,notes
+ef_petrol,69.3,gCO2/MJ,ef,2006 IPCC Guidelines Vol.2 Ch.3,Table 3.2.1 motor gasoline,,verified,
+ef_diesel,74.1,gCO2/MJ,ef,2006 IPCC Guidelines Vol.2 Ch.3,Table 3.2.1 gas/diesel oil,,verified,
+int_ice_ldv,2.4,MJ/km,intensity,AR6 WGIII Ch.10,illustrative ICE LDV energy use,ipcc-ar6-ch10-transport,illustrative,replace with national type-approval data
+int_ev_ldv,0.18,kWh/km,intensity,AR6 WGIII Ch.10,illustrative BEV LDV energy use,ipcc-ar6-ch10-transport,illustrative,
+int_ice_hdv,11.6,MJ/km,intensity,AR6 WGIII Ch.10,illustrative ICE HDV,ipcc-ar6-ch10-transport,illustrative,
+int_ev_hdv,1.2,kWh/km,intensity,AR6 WGIII Ch.10,illustrative BEV HDV,ipcc-ar6-ch10-transport,illustrative,
+modal_intensity_ratio,2.7,ratio,ratio,AR6 WGIII Ch.10 §10.1.2,collective transport ~7% of CO2 on ~20% pkm,ipcc-ar6-ch10-transport,verified,system-level proxy until per-mode MJ/pkm extracted
+abate_ldv_efficiency,0.50,fraction,abatement,AR6 WGIII Ch.10 / Ch.12 SM,ICCT 2019 ~50% per-km cut new LDV by 2030,ipcc-ar6-ch10-transport,verified,apply with fleet turnover (city input)
+abate_biofuel_e10,0.069,fraction,abatement,derived from 2006 GL biogenic rule,ethanol energy share displaced at E10,ipcc-ar6-ch10-transport,derived,
+abate_rooftop_solar,0.20,fraction,abatement,illustrative,rooftop technical-potential share of building electricity,,illustrative,replace with local/EIE estimate
+abate_buildings_ser_lac,0.53,fraction,abatement,AR6 WGIII Ch.9 Fig 9.16,Latin America & Caribbean 2050 combined SER,ipcc-ar6-ch9-buildings,figure-read,2050 horizon; IPCC flags as LOW estimate
+abate_landfill_ch4,0.50,fraction,abatement,country MACC (US EPA / GAINS),NOT yet pulled,,low,placeholder pending MACC extraction
+abate_wastewater_ch4,0.40,fraction,abatement,country MACC (US EPA / GAINS),NOT yet pulled,,low,placeholder pending MACC extraction
+abate_industry_elec,0.25,fraction,abatement,AR6 WGIII Ch.11,indirect-electricity slice (Table 11.1),ipcc-ar6-ch11-industry,illustrative,grid-adjustable via electricity baseline
+abate_industry_ee,0.20,fraction,abatement,AR6 WGIII Ch.11,energy efficiency 10-40% by 2050 (mid-low),ipcc-ar6-ch11-industry,illustrative,national rate (no city signal)
+abate_industry_process,0.15,fraction,abatement,AR6 WGIII Ch.11,process/feedstock/cement,ipcc-ar6-ch11-industry,illustrative,national rate; likely BASIC+ / out of municipal scope
+abate_hdv_efficiency,0.35,fraction,abatement,AR6 WGIII Ch.12 SM,ICCT ~35% per-km new HDV by 2035,ipcc-ar6-ch10-transport,verified,apply with fleet turnover
+modal_intensity_ratio_bike,20,ratio,ratio,illustrative,active travel ~zero tailpipe vs car,ipcc-ar6-ch10-transport,illustrative,near-full displacement of shifted km
+abate_industry_material,0.15,fraction,abatement,AR6 WGIII Ch.11,material efficiency + recycling,ipcc-ar6-ch11-industry,illustrative,national rate

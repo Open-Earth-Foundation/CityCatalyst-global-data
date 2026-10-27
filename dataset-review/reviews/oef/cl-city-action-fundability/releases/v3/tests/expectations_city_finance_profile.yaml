@@ -1,0 +1,50 @@
+# Post-load expectations for the v3 replacement of modelled.city_finance_profile.
+# Run with the repository dataset-test expectations runner after the Mage load.
+table: modelled.city_finance_profile
+partition_by: city_archetype
+
+structural:
+  primary_key: city_profile_id
+  required_not_null:
+    - city_profile_id
+    - actor_id
+    - release_id
+    - autonomy
+    - capacity
+    - city_archetype
+    - source_dataset
+  unique:
+    - [release_id, actor_id]
+  foreign_keys:
+    - {column: release_id, references: "modelled.dataset_release.release_id"}
+
+invariants:
+  value_sets:
+    city_archetype: [Self-sufficient, Delivery-ready, Well-resourced, Support-ready]
+    country_code: [CL]
+    source_dataset: [oef/cl-city-action-fundability]
+  ranges:
+    autonomy: {min: 0, max: 1}
+    capacity: {min: 0, max: 1}
+  row_rules:
+    - "(autonomy >= 0.5) = (city_archetype IN ('Self-sufficient','Well-resourced'))"
+    - "(capacity >= 0.5) = (city_archetype IN ('Self-sufficient','Delivery-ready'))"
+
+snapshot:
+  # Fixed cl-ocha-ab 2021 lookup drops four of the 345 reviewed CUT rows.
+  row_count: {equals: 341}
+  distinct_count:
+    source_dataset: 1
+  group_counts:
+    source_dataset:
+      oef/cl-city-action-fundability: 341
+    city_archetype:
+      Support-ready: 149
+      Delivery-ready: 105
+      Self-sufficient: 65
+      Well-resourced: 22
+
+profile:
+  categorical: [city_archetype, country_code, source_dataset]
+  numeric: [autonomy, capacity]
+  dates: []

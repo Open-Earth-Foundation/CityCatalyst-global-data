@@ -1,0 +1,26 @@
+# Machine-checkable criteria for the MN city GHGI search.
+geography:
+  country: United States
+  state: Minnesota
+  min_admin_level: city            # a city total is required; state/metro totals fail
+  target_cities: [Minneapolis, Saint Paul, Rochester, Duluth, Mankato, Bloomington, Richfield, Hopkins, Saint Louis Park, Edina, Coon Rapids, Eagan, Eden Prairie, Minnetonka, Woodbury]
+
+must_have:
+  - city-level greenhouse-gas inventory (annual totals by sector)
+  - documented methodology
+  - public access
+
+graded_constraints:
+  methodology_gpc_mappable: preferred        # RII uses energy/waste/travel, not GPC → mapping cost
+  license_open_redistribution: preferred     # unknown for RII/GreenStep → confirm
+  update_cadence_annual: preferred
+  coverage_breadth_many_cities: preferred    # one source covering many MN cities beats per-city files
+  recent_within_3yr: acceptable
+
+taxonomy_to_map_to:
+  framework: GPC (Global Protocol for Community-Scale GHG)
+  note: candidate methodologies must be mapped to GPC sectors; RII's energy/waste/travel categories need a crosswalk.
+
+consumers:
+  - CNB city context (cohort seeding + selection)
+  - core GHGI pipeline (modelled.emissions → GlobalAPI), if methodology and license allow

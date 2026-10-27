@@ -1,0 +1,330 @@
+# Candidates for need 2026-06-cl-international-climate-finance (run 2026-06-18).
+# Verdicts: promote | investigate | deprioritize | reject (see dataset-discovery/references/screening-criteria.md).
+# Seeded from the 112 international rows in cl-ssg/cl-ssg-finance (the 2023 SSG snapshot) and verified
+# against funder pages where feasible (verified-2026-06-18 noted per entry). Broad-capture, tier-tagged:
+# access pathway is an attribute, not a kill-criterion. Grouped by city/community DIRECTNESS.
+
+candidates:
+
+# =====================================================================
+# TIER 1 — community / city-DIRECT windows (highest direct relevance)
+# =====================================================================
+
+- id: gef-sgp-chile
+  name: GEF Small Grants Programme (UNDP-implemented) / Programa de Pequeñas Donaciones (PPD)
+  publisher: Global Environment Facility / UNDP
+  url: https://sgp.undp.org/
+  also: [https://www.thegef.org/what-we-do/topics/gef-small-grants-program, https://www.thegef.org/projects-operations/country-profiles/chile]
+  themes: [community, grants, biodiversity, climate, multilateral]
+  coverage: 'community-direct grants ≤US$75,000 (typically US$25-50k) to CBOs/NGOs (focus Indigenous peoples, women, youth) for local environmental action; focal areas biodiversity / climate / land degradation. Chile re-included in GEF-8 (programme expanded 124→135 countries).'
+  access: 'apply any time via the SGP National Coordinator (concept → proposal, National Steering Committee). 100% co-financing required (50% in-kind / 50% cash). NOT DAC-gated (GEF recipient eligibility, not ODA-list) — so unlike the city facilities, Chile is eligible. Verified-2026-06-18.'
+  license: public programme info (sgp.undp.org)
+  chile_route: UNDP SGP National Coordinator (to be named when Chile programme is live); GEF Operational Focal Point = Miguel Stutzin (MMA)
+  screening:
+    verdict: investigate   # promote-ready; open a review only once a Chile programme/call is operational
+    notes: >
+      STRONGEST international candidate (the one truly community-direct window, and NOT ODA/DAC-gated so Chile is eligible) — but NOT YET OPERATIONAL: Chile is a GEF-8 REACTIVATION (programme previously closed), and as of 2026-06-18 no Chile National Coordinator or open convocatoria was found (active PPD calls are CR/Peru/Argentina/Honduras/Mexico). Kept in discovery rather than as a dead review folder (a started review was opened then removed, to avoid an empty entry). Trap to remember: the GEF Chile country page's GEF-8 STAR allocation (~US$25.6M) is the NATIONAL envelope, NOT the SGP small-grants budget — don't conflate. PROMOTE TO A REVIEW once a Chile SGP programme/call exists; then it maps to actions at the focal-area grain like the FPA awards.
+  added: 2026-06-18
+
+- id: city-gap-fund
+  name: City Climate Finance Gap Fund
+  publisher: World Bank + European Investment Bank (EIB)
+  url: https://www.citygapfund.org/
+  also: [https://www.worldbank.org/en/programs/gap-fund/overview, https://www.eib.org/en/products/blending/donor-partnerships/trust-funds/city-climate-finance-gap-fund]
+  themes: [cities, technical_assistance, project_preparation, adaptation, mitigation]
+  coverage: developing-world cities; €100M, TA + project-preparation ONLY (not direct investment finance). 95 cities / 36 countries by Sep 2022, incl. LAC (Colombia, Argentina, Brazil, Mexico, Ecuador, Panama). Verified-2026-06-18.
+  access: city applies for technical assistance via WB or EIB delivery; helps make projects finance-ready. Chile-city eligibility NOT confirmed in the 2022 list — verify.
+  license: public programme info (citygapfund.org)
+  url: https://www.citygapfund.org/
+  also: [https://www.citygapfund.org/frequently-asked-questions/, https://www.citygapfund.org/eligibility-criteria/]
+  screening:
+    verdict: deprioritize   # NOT APPLICABLE to Chile — finding kept here, no review folder (verified 2026-06-18)
+    notes: >
+      NOT APPLICABLE to Chile (eligibility gate). The Gap Fund (World Bank + EIB + GIZ; €105M; rolling EoI; in-kind TA up to pre-feasibility, no investment finance; urban climate sectors incl. NbS, mobility, EE, waste/water) only supports cities of OECD-DAC ODA-RECIPIENT countries. Chile GRADUATED from the DAC list (high-income/OECD member, effective 2018 flows), so Chilean cities are ineligible for new support despite the otherwise-ideal city-direct fit. A Municipality of Independencia concept surfaced in search but is unverified (likely pre-graduation or a peer/knowledge activity). No dataset-review opened (would be a dead entry); the full finding lives here. Reopen only if a current Chilean engagement is confirmed. The same DAC/high-income gate excludes Chile from C40 CFF and most ODA-funded city facilities — see the cross-cutting finding in need.md.
+  added: 2026-06-18
+
+- id: c40-cff
+  name: C40 Cities Finance Facility (CFF)
+  publisher: C40 Cities Climate Leadership Group + GIZ
+  url: https://www.c40cff.org/
+  themes: [cities, technical_assistance, project_preparation, transport, energy, waste]
+  coverage: C40-network and partner cities; TA to develop bankable climate-infrastructure projects. Santiago is a C40 member.
+  access: 'city / city-network access; TA, not direct finance. Cycle/eligibility for Chilean cities to verify. SSG: "C40 Cities Climate Leadership Group + GIZ - C40 Cities Finance Facility (CFF)".'
+  license: public programme info
+  screening:
+    verdict: deprioritize
+    notes: >
+      Verified 2026-06-18: CFF has supported 30 cities / 38 projects; LAC = Bogotá, Buenos Aires, Mexico City, Curitiba — NO Chile/Santiago project found. Santiago is a C40 *member* but not a CFF project city. CFF also targets developing-country cities, so the same DAC/high-income gate that excludes Chile from the Gap Fund likely applies. Deprioritized for Chile (no engagement + likely ineligible); no review folder opened to avoid a hollow entry. Reopen if a Chilean CFF project appears.
+  added: 2026-06-18
+
+- id: bloomberg-mayors-challenge
+  name: Bloomberg Philanthropies — Global Mayors Challenge
+  publisher: Bloomberg Philanthropies
+  url: https://www.bloomberg.org/government-innovation/spurring-innovation-in-cities/mayors-challenge/
+  themes: [cities, innovation, grants, philanthropy]
+  coverage: global city competition; grants + technical support for municipal innovation (climate among themes).
+  access: 'city/municipality applies in competition rounds (periodic, not annual). SSG: "Bloomberg Philanthropies Global Mayors Challenge".'
+  license: public programme info
+  screening:
+    verdict: investigate
+    notes: >
+      Rare philanthropy line that is genuinely city-APPLICANT (not via a national entity). Competition cadence is irregular — record as periodic. Climate is one theme among several, so tag specificity=broad. Kept for the city-direct value.
+  added: 2026-06-18
+
+- id: subnational-climate-fund
+  name: Subnational Climate Fund (SCF)
+  publisher: Pegasus Capital Advisors (GCF FP151/FP152 anchor)
+  url: https://www.subnational.fund/
+  themes: [subnational, blended_finance, mitigation, adaptation]
+  coverage: global; blended finance + TA for mid-sized subnational climate-infrastructure projects, anchored by a GCF commitment.
+  access: 'investment vehicle (equity/blended), not a grant a city applies to; intermediated via the fund manager. SSG: "Pegasus Capital Advisors - Subnational Climate Fund (SCF)".'
+  license: public programme info
+  screening:
+    verdict: investigate
+    notes: >
+      Subnational in name and GCF-anchored, but a commercial blended-finance vehicle — access is via the fund manager / project sponsors, not a city application. Tag access_pathway=intermediated, instrument=blended/equity. Lower direct relevance than the TA facilities; kept to record the GCF-subnational link.
+  added: 2026-06-18
+
+# =====================================================================
+# TIER 2 — UN climate funds, intermediated via a Chilean national entity
+# =====================================================================
+
+- id: gcf-chile
+  name: Green Climate Fund — Chile portfolio / accreditation
+  screening:
+    verdict: promoted   # folded into the existing global review → dataset-review/reviews/gcf/gcf-projects/ (Chile = a countries=Chile filter, not a separate dataset)
+    notes: >
+      Promoted, but NOT as a separate dataset — GCF sits in the Awards/Projects layer (multilateral, intermediated), so the Chile content is a `countries = Chile` filter inside the existing `gcf/gcf-projects` review (GCF Projects API). That review now carries the Chile slice (7 FPs + readiness), the access structure (NDA = Min. Hacienda, AE = FYNSA), the mitigation-scope flags (FP254 adaptation out of scope), and the FP→action crosswalk (FP189 e-mobility → zero-emission buses is the city-facing one). Not ODA/DAC-gated, so Chile is eligible. See gcf-projects README + knowledge-base "Funder levels".
+  added: 2026-06-18
+
+- id: adaptation-fund-chile
+  name: Adaptation Fund — Chile (via AGCID, National Implementing Entity)
+  publisher: Adaptation Fund
+  url: https://www.adaptation-fund.org/imp_entity/agencia-de-cooperacion-internacional-de-chile-agcicl/
+  also: [https://www.adaptation-fund.org/adaptation-fund-project-story-water-management-and-agriculture-in-chile/]
+  themes: [adaptation, water, agriculture, resilience, multilateral]
+  coverage: AGCID is the accredited National Implementing Entity. First project US$9.96M (approved 2015) — drought/water/agriculture resilience for smallholders in O'Higgins. Verified-2026-06-18.
+  access: intermediated via AGCID (the NIE); not direct city application. Readiness grants available to the NIE.
+  license: public programme info (adaptation-fund.org)
+  chile_route: AGCID (National Implementing Entity)
+  screening:
+    verdict: deprioritize   # OUT OF SCOPE — adaptation-only (we don't cover adaptation actions)
+    notes: >
+      OUT OF SCOPE (2026-06-18): the Adaptation Fund is, by definition, adaptation-only, and we do not cover adaptation actions — so it cannot map to the (mitigation) action list. Recorded for memory: AGCID is the National Implementing Entity; Chile's two AF projects are O'Higgins smallholder drought/water resilience (US$9.96M, 2015) and the Quilpué/Valparaíso water-security innovation grant (US$230k). Both are water/drought adaptation. No review opened. Reopen only if adaptation actions come into scope.
+  added: 2026-06-18
+
+- id: gef-chile
+  name: GEF Trust Fund — Chile (full-size / medium-size projects)
+  publisher: Global Environment Facility
+  url: https://www.thegef.org/projects-operations/country-profiles/chile
+  themes: [climate, biodiversity, land_degradation, multilateral]
+  coverage: national GEF projects via GEF Agencies (UNDP, UNEP, IDB, World Bank, FAO, CAF). SSG carried multiple GEF rows (Enabling Activities/NC-BUR-BTR, CBIT transparency, Food Systems Integrated Program, focal areas).
+  access: intermediated via a GEF Agency + the national focal point; not a city window (the community window is gef-sgp-chile above).
+  license: public programme info
+  chile_route: GEF Operational Focal Point + GEF Agencies
+  screening:
+    verdict: investigate
+    notes: >
+      The full/medium-size GEF tier (distinct from Small Grants). Mostly national enabling/transparency and sectoral programmes — low direct city fit, but the AFOLU/food-systems and transparency lines are real CL activity. Keep tier-tagged; the city-relevant slice is thin vs SGP.
+  added: 2026-06-18
+
+- id: climate-investment-funds
+  name: Climate Investment Funds (CIF) — incl. Forest Investment Program
+  publisher: CIF (administered by the World Bank / MDBs)
+  url: https://www.cif.org/
+  themes: [forests, clean_technology, afolu, multilateral]
+  coverage: 'MDB-delivered climate finance; SSG rows: "CIF Forest Investment Program" and "Clean Technology Fund program".'
+  access: intermediated via MDBs at sovereign level; not city-direct.
+  license: public programme info
+  screening:
+    verdict: deprioritize
+    notes: >
+      Sovereign/MDB-delivered programmatic finance; no city-applicant route. Record for completeness (SSG had it) but low priority — revisit only if a Chile CIF programme has a subnational window.
+  added: 2026-06-18
+
+# =====================================================================
+# TIER 3 — Multilateral development banks (link to existing project dirs)
+# =====================================================================
+
+- id: world-bank-chile
+  name: World Bank (IBRD/IDA) — Chile climate operations
+  publisher: World Bank Group
+  url: https://www.worldbank.org/en/country/chile
+  themes: [multilateral, sovereign_loans, water, forests, mrv]
+  coverage: 'sovereign lending + trust-funded programmes. SSG/our reviews surfaced: Chile Water Transition Program (US$250M, with MMA/DGA), FCPF Carbon Fund, BioCarbon Fund, MRV/Fondos de Proyectos, Climate Change Fund Management Unit.'
+  access: sovereign — negotiated with the national government; cities benefit as sub-borrowers/beneficiaries. Awards/portfolio side = the existing `world-bank/world-bank-projects` review.
+  license: public programme info / WB open data
+  screening:
+    verdict: investigate
+    notes: >
+      Supply/opportunity side of the World Bank's Chile climate engagement. Per-funder review extends `world-bank/world-bank-projects` (projects = awards side). Most rows are sovereign — tag access_pathway=intermediated, eligible_actor=national govt; the Water Transition Program is the most city/utility-relevant (links to cl-mop APR/SSR).
+  added: 2026-06-18
+
+- id: idb-chile
+  name: Inter-American Development Bank (IDB/BID) — Chile climate
+  publisher: Inter-American Development Bank
+  url: https://www.iadb.org/en/countries/chile/overview
+  themes: [multilateral, sovereign_loans, ndc, transport, water]
+  coverage: NDC Invest, climate technical cooperations, FP189 e-mobility (as GCF Accredited Entity), AquaFund (water/sanitation), 2021-2025 action plan. SSG had multiple BID rows.
+  access: sovereign + AE-intermediated; cities via national programmes. Awards side = `idb/idb-projects`.
+  license: public programme info / IDB open data
+  screening:
+    verdict: investigate
+    notes: >
+      The most city-relevant MDB via FP189 (e-mobility for sustainable cities) and AquaFund. Per-funder review extends `idb/idb-projects`. Tag the AE role (IDB channels GCF money). Transport/water focus aligns with the domestic gaps.
+  added: 2026-06-18
+
+- id: caf-chile
+  name: CAF — Banco de Desarrollo de América Latina y el Caribe (Chile climate)
+  publisher: CAF
+  url: https://www.caf.com/
+  themes: [multilateral, green_finance, technical_assistance]
+  coverage: 'green AT, climate debt instruments, GCF Accredited Entity + "Entity Support for Chile" track to accredit local institutions. SSG had several CAF rows (blended, loans, AT verde).'
+  access: sovereign/AE-intermediated; the entity-support track could widen local access.
+  license: public programme info
+  screening:
+    verdict: investigate
+    notes: >
+      Relevant chiefly as a GCF Accredited Entity and for the entity-support accreditation track (could create local-access routes). Mostly intermediated debt/AT. Keep tier-tagged; resolve the entity-support detail at review (also relevant to gcf-chile).
+  added: 2026-06-18
+
+- id: idb-ifc-fmo-eib-private
+  name: Private-sector MDB arms (IFC, FMO, EIB direct lending)
+  publisher: IFC (World Bank), FMO (Banco Holandés de Desarrollo Empresarial), EIB
+  url: https://www.ifc.org/
+  themes: [private_finance, loans, multilateral]
+  coverage: 'SSG rows: IFC crédito financiero, Banco Holandés (FMO) crédito, EIB (mostly via the Gap Fund). Lending to private firms/projects.'
+  access: private-sector lending — firms/sponsors borrow; not a city instrument.
+  license: public programme info
+  screening:
+    verdict: deprioritize
+    notes: >
+      Private-sector windows of the MDBs — eligible actor is firms, not cities. Record (SSG had them) but out of the city-finance backbone. Reopen only for a specific municipal-enterprise use case.
+  added: 2026-06-18
+
+# =====================================================================
+# TIER 4 — bilaterals & cooperation programmes
+# =====================================================================
+
+- id: euroclima
+  name: EUROCLIMA+ (EU–Latin America climate cooperation)
+  publisher: European Union (DG INTPA); implemented by GIZ, AECID, FIIAPP, Expertise France, CEPAL/ECLAC
+  url: https://www.euroclima.org/chile
+  also: [https://www.cepal.org/en/projects/euroclima]
+  themes: [bilateral, climate_governance, energy, mobility, climate_finance]
+  coverage: 'regional (33 LAC countries). Chile 2025-2026 Action Plan (presented 19 Jun 2025) explicitly includes "support for access to SUBNATIONAL climate financing" + green taxonomy. Decade-long EU-Chile cooperation (renewables, mobility, governance). Verified-2026-06-18.'
+  access: demand-driven via the National Focal Point + implementing agencies; not an open competitive fund.
+  license: public programme info (euroclima.org)
+  chile_route: EUROCLIMA National Focal Point (Chile) + implementing agencies
+  screening:
+    verdict: investigate
+    notes: >
+      Notable because its 2025-26 Chile plan names SUBNATIONAL climate-finance access as a workstream — directly on-point for cities. Access is programmatic/demand-driven, not a city application. Track the subnational-finance component specifically at review.
+  added: 2026-06-18
+
+- id: iki-germany
+  name: IKI — International Climate Initiative (Germany)
+  publisher: German Federal Government (BMWK/AA/BMUV); implemented by GIZ, KfW
+  url: https://www.international-climate-initiative.com/en/
+  themes: [bilateral, mitigation, adaptation, biodiversity]
+  coverage: 'global thematic & country calls; SSG: "IKI (Alemania)" + "Gobierno de Alemania — múltiples proyectos". Funds projects via implementing orgs/consortia.'
+  access: competitive thematic calls to organisations/consortia; not a city window.
+  license: public programme info
+  screening:
+    verdict: investigate
+    notes: >
+      Large, recurring bilateral climate fund active in Chile via GIZ/KfW. City access is only as a project partner of a funded consortium. Keep tier-tagged; the IKI call calendar is the useful artifact if pursued.
+  added: 2026-06-18
+
+- id: bilateral-programmatic-misc
+  name: Bilateral programmatic facilities (UK PACT, Mitigation Action Facility, Climate Support Facility, APEC)
+  publisher: UK BEIS/PACT (admin PwC); UK/DE/EU/DK Mitigation Action Facility (Sec. GIZ & KfW); World Bank CSF; APEC
+  url: https://www.ukpact.co.uk/
+  themes: [bilateral, technical_assistance, mitigation]
+  coverage: SSG rows for UK PACT, Mitigation Action Facility, Climate Support Facility (CSF), APEC project finance. National/sectoral TA and mitigation-action grants via implementing partners.
+  access: programmatic, via national government/implementing partners; not city-applicant.
+  license: public programme info
+  screening:
+    verdict: deprioritize
+    notes: >
+      Bundled here as bilateral programmatic TA with no city-applicant route. Recorded (SSG had each) but low priority; split out only if one opens a subnational window.
+  added: 2026-06-18
+
+- id: fondo-chile
+  name: Fondo Chile (MINREL + AGCID + UNDP) — OUTBOUND South-South cooperation
+  publisher: Ministerio de Relaciones Exteriores + AGCID + PNUD
+  url: https://fondochile.cl/convocatoria-2026/
+  also: [https://www.agcid.gob.cl/fondo-chile-contra-el-hambre-y-la-pobreza/convocatoria-del-fondo]
+  themes: [international_cooperation, south_south]
+  coverage: 2026 call up to US$85,000 / 18 months; eligible = Chilean CSOs, public institutions, universities — for projects implemented in countries of EQUAL OR LOWER relative development than Chile. Verified-2026-06-18.
+  access: open competitive call (5 Jan – 20 Feb 2026), but OUTBOUND.
+  license: public programme info
+  screening:
+    verdict: deprioritize
+    notes: >
+      IMPORTANT reframe vs the prior need's note: Fondo Chile funds Chilean orgs to deliver cooperation ABROAD (South-South), not inbound finance for local Chilean climate action. So despite an open cycle and clean amount, its city-finance relevance is low. Record with the correct framing so it isn't mistaken for a domestic opportunity.
+  added: 2026-06-18
+
+- id: agcid-gateway
+  name: AGCID — Agencia Chilena de Cooperación Internacional para el Desarrollo (national gateway)
+  publisher: AGCID (under MINREL)
+  url: https://www.agcid.gob.cl/
+  themes: [international_cooperation, gateway, adaptation]
+  coverage: not a fund itself — Chile's cooperation agency and the Adaptation Fund National Implementing Entity; co-administers Fondo Chile; channels bilateral cooperation.
+  access: institutional gateway; cities engage as project partners.
+  license: public info
+  screening:
+    verdict: investigate
+    notes: >
+      Recorded as the structural ACCESS NODE, not a fund — AGCID is how several international sources (Adaptation Fund, bilateral cooperation) actually reach Chilean projects. Useful as the `chile_route` value for multiple entries; a review could profile AGCID's inbound (NIE) role specifically.
+  added: 2026-06-18
+
+# =====================================================================
+# TIER 5 — philanthropy (mostly programmatic, non-city-applicant)
+# =====================================================================
+
+- id: philanthropy-misc
+  name: Climate philanthropy active in Chile (Bezos Earth Fund, Global Methane Hub, The Nature Conservancy, IDH)
+  publisher: Bezos Earth Fund; Global Methane Hub (Windward Fund); The Nature Conservancy; IDH (Sustainable Trade Initiative)
+  url: https://www.bezosearthfund.org/
+  themes: [philanthropy, afolu, methane, biodiversity]
+  coverage: 'SSG rows: Bezos Earth Fund (monitoring/data), Global Methane Hub (GMH), TNC Chile programme, IDH Farmfit fund. Grant-making to selected partners/programmes.'
+  access: invitation/partner-based grant-making; not an open city window (Bloomberg Mayors Challenge is the exception, in Tier 1).
+  license: public info
+  screening:
+    verdict: deprioritize
+    notes: >
+      Programmatic philanthropy reaching Chile through chosen partners — no city-applicant route, hard to enumerate as discrete "opportunities". Recorded for memory; revisit only if one launches an open call relevant to cities.
+  added: 2026-06-18
+
+# =====================================================================
+# TIER 6 — private impact finance & carbon markets (out of city-finance scope)
+# =====================================================================
+
+- id: private-impact-finance
+  name: Private / impact finance in Chilean climate-agri (Oikocredit, Doble Impacto, Fis Ameris, Rabofinance, Sembrador, Sudamerik, Banagro, COOPEUMO)
+  publisher: various private / impact investors
+  url: https://www.oikocredit.coop/
+  themes: [private_finance, impact_investing, afolu, loans, equity]
+  coverage: 'SSG rows: loans/equity/blended to firms and agri ventures (AFOLU-heavy). Commercial impact capital.'
+  access: private investment — firms/ventures, not cities or communities.
+  license: n/a (private)
+  screening:
+    verdict: deprioritize
+    notes: >
+      Private impact capital to firms/agri ventures — eligible actor is businesses, not cities; no public programme pages to catalogue as opportunities. Out of the city-finance backbone. Kept as a single grouped record of what SSG listed.
+  added: 2026-06-18
+
+- id: international-carbon-markets
+  name: International carbon markets / results-based finance (regulated carbon credits, BioCarbon, UN-REDD)
+  publisher: various (Art. 6 / voluntary markets; World Bank BioCarbon & FCPF; UN-REDD via UNDP)
+  url: https://unfccc.int/process-and-meetings/the-paris-agreement/article-6
+  themes: [carbon_markets, results_based_finance, afolu]
+  coverage: 'SSG rows: "Bonos de carbono - Mercado regulado internacional", World Bank BioCarbon Fund / FCPF, UN-REDD.'
+  access: market mechanism / results-based payment to project developers and the national REDD+ programme; not a fund a city applies to.
+  license: public framework info
+  screening:
+    verdict: deprioritize
+    notes: >
+      Carbon finance is a payment mechanism, not a grant/loan opportunity with a call — different object than the rest of this need. The forest results-based pieces (FCPF/BioCarbon/UN-REDD) relate to CONAF/AFOLU; record here but they belong with the forestry reviews if pursued.
+  added: 2026-06-18

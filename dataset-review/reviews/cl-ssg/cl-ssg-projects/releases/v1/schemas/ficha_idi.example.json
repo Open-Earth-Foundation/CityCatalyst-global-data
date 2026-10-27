@@ -1,0 +1,129 @@
+{
+  "$schema_version": "1.0.0",
+  "extraction": {
+    "parser_version": "ficha_idi_parser/0.0.0-example",
+    "parsed_at": "2026-05-05T13:00:00Z",
+    "source_pdf": {
+      "filename": "ambiente__38723b__bip_40060934_2024.pdf",
+      "size_bytes": 38723,
+      "n_pages": 3,
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "producer": "iText 2.1.7 by 1T3XT"
+    },
+    "warnings": []
+  },
+  "document": {
+    "report_type": "FICHA-IDI",
+    "template_variant": "PROGRAMA",
+    "template_version": "7.0624",
+    "n_etapas_in_pdf": 1,
+    "fecha_creacion_solicitud": "2024-02-22",
+    "fecha_ultima_modificacion": "2024-02-22"
+  },
+  "etapas": [
+    {
+      "etapa_index": 0,
+
+      "header": {
+        "proceso_presupuestario": 2024,
+        "postula_a": "EJECUCION",
+        "fecha_postulacion_sni": null,
+        "fecha_ingreso_sni": null,
+        "admisibilidad": null
+      },
+
+      "iniciativa": {
+        "tipologia": "PROGRAMA",
+        "codigo_bip": "40060934-0",
+        "nombre": "TRANSFERENCIA PRODUCCIÓN DE BIOINSUMO PARA RECUPERAR SUELOS DEGRADADOS DEL JARDÍN",
+        "descriptor": "SUBTÍTULO 33",
+        "rate": {
+          "resultado": null,
+          "fecha": null,
+          "institucion": null
+        }
+      },
+
+      "clasificacion": {
+        "etapa_actual": "PERFIL",
+        "sector": "RECURSOS NATURALES Y MEDIO AMBIENTE",
+        "subsector": "MEDIO AMBIENTE",
+        "sector_subsector_raw": "RECURSOS NATURALES Y MEDIO AMBIENTE / MEDIO AMBIENTE",
+        "componente_analisis": "REGIONAL",
+        "seia": "NO CORRESPONDE",
+        "area_desarrollo_indigena": false,
+        "situacion_solicitud": "NUEVA"
+      },
+
+      "ubicacion": {
+        "raw": "REGION DE VALPARAISO",
+        "tipo": "REGION",
+        "nombre": "VALPARAISO",
+        "distrito": null,
+        "circunscripcion": null
+      },
+
+      "vinculacion": {
+        "proyecto_relacionado": null
+      },
+
+      "narrative": {
+        "justificacion": "LOS INCENDIOS FORESTALES HAN SIDO UNA PREOCUPACIÓN EN DISTINTAS REGIONES DEL MUNDO, ESPECIALMENTE, POR EL INCREMENTO EN SU OCURRENCIA PRODUCTO DE ACTIVIDADES HUMANAS Y EL CAMBIO CLIMÁTICO. EN LOS ÚLTIMOS 5 AÑOS, LOS INCENDIOS FORESTALES EN LA REGIÓN DE VALPARAÍSO HAN SIDO UNA DE LAS PRINCIPALES AMENAZAS A LA BIODIVERSIDAD LOCAL, A LOS SERVICIOS ECOSISTÉMICOS Y A LA PÉRDIDA DE INFRAESTRUCTURA. ESTOS HAN SIDO UN PROBLEMA RECURRENTE Y DEVASTADOR DEBIDO A FACTORES CLIMÁTICOS COMO ALTAS TEMPERATURAS, VIENTOS FUERTES Y BAJA HUMEDAD, QUE FAVORECEN SU PROPAGACIÓN EN ÁREAS BOSCOSAS Y CON VEGETACIÓN SECA. PARA ABORDAR LA RECUPERACIÓN DE ÁREAS AFECTADAS POR INCENDIOS DONDE LA REGENERACIÓN NATURAL ES LENTA E INSUFICIENTE, SE EMPLEA LA REFORESTACIÓN COMO PRÁCTICA DE RESTAURACIÓN ECOLÓGICA. EN ESTE CONTEXTO, SURGE LA NECESIDAD DE IMPLEMENTAR UNA ESTRATEGIA PARA MEJORAR LOS PROCESOS DE REFORESTACIÓN CON ESPECIES DE PLANTAS NATIVAS EN ZONAS AFECTADAS POR INCENDIOS",
+        "descripcion_etapa": "LA INICIATIVA SE DESARROLLARÁ EN EL JARDÍN BOTÁNICO NACIONAL, UBICADO EN EL SECTOR DE EL SALTO, EN LA COMUNA DE VIÑA DEL MAR, REGIÓN DE VALPARAÍSO. ABARCARÁ EL TERRITORIO QUE FUE AFECTADO POR LOS INCENDIOS FORESTALES OCURRIDOS EN DICIEMBRE DE 2022, QUE CONSUMIERON ALREDEDOR DE 113 HECTÁREAS DEL BOSQUE NATIVO Y PARTE DE LAS COLECCIONES BOTÁNICAS. TENDRÁ UN IMPACTO DIRECTO EN EL JBN Y SU ENTORNO, PERO TAMBIÉN BENEFICIARÁ A OTROS TERRITORIOS DE LA REGIÓN Y DEL PAÍS QUE HAN SUFRIDO INCENDIOS FORESTALES Y QUE REQUIEREN DE SOLUCIONES INNOVADORAS Y SOSTENIBLES PARA RESTAURAR SUS ECOSISTEMAS. LA INICIATIVA OFRECE UNA ALTERNATIVA ECOLÓGICA PARA RECUPERAR LOS SUELOS AFECTADOS POR LOS INCENDIOS, MEJORANDO SU CAPACIDAD PARA SOSTENER LA VIDA VEGETAL Y ANIMAL, ASÍ COMO PARA PROVEER SERVICIOS ECOSISTÉMICOS COMO LA REGULACIÓN HÍDRICA, LA CAPTURA DE CARBONO, LA PREVENCIÓN DE LA EROSIÓN Y LA DESERTIFICACIÓN."
+      },
+
+      "solicitud_financiamiento": {
+        "moneda_presupuesto": { "year": 2024, "factor": 163.432 },
+        "tipo_cambio_clp_per_usd": 850.25,
+        "rows": [
+          {
+            "fuente": "F.N.D.R.",
+            "asignacion_presupuestaria": "CONTRATACIÓN DEL PROGRAMA",
+            "moneda": "M$",
+            "pagado_al_inicio_periodo": 0,
+            "solicitado_periodo_actual": 90000,
+            "solicitado_periodos_siguientes": 0,
+            "costo_total": 90000
+          }
+        ],
+        "totales": {
+          "pagado_al_inicio_periodo": 0,
+          "solicitado_periodo_actual": 90000,
+          "solicitado_periodos_siguientes": 0,
+          "costo_total": 90000
+        }
+      },
+
+      "programacion_inversion": {
+        "aportes_directos": [
+          {
+            "asignacion_presupuestaria": "CONTRATACIÓN DEL PROGRAMA",
+            "duracion_meses": 12,
+            "inicio":  { "mes": "ene", "anio_relativo": 1 },
+            "termino": { "mes": "ene", "anio_relativo": 2 },
+            "monto":   { "M$": 86372, "MUS$": null }
+          }
+        ],
+        "otros_aportes": [],
+        "totales": {
+          "monto_directo_total":          { "M$": 86372, "MUS$": null },
+          "costo_total_etapa_programada": { "M$": 86372, "MUS$": null }
+        }
+      },
+
+      "registro_sni": [],
+      "resultado_analisis": [],
+
+      "conclusiones_analisis": null,
+      "instituciones_participantes": null,
+      "resumen_resultados": null,
+      "historial_presupuesto": null,
+      "funcionario_responsable": null,
+      "observaciones_admisibilidad": null,
+
+      "georreferenciacion_section_present": false,
+
+      "extras": []
+    }
+  ]
+}

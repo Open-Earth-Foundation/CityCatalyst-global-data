@@ -1,0 +1,198 @@
+stable_id,short_label,sector_path,ipcc_ref,gpc_reference_number,mapping_basis
+shift_to_electric_vehicles,T-1A1a-TE-1 - Shift to electric cars,Transport > Mobility > Road > Light Duty Vehicles,1a-12-electric-technologies,"[""II.1.1""]",Sector-path based mapping
+shift_to_hydrogen_vehicles,T-1A1a-TE-2 - Shift to hydrogen cars,Transport > Mobility > Road > Light Duty Vehicles,1a-13-fuel-cell-technologies,"[""II.1.1""]",Sector-path based mapping
+ecodriving_of_cars,T-1A1a-TE-3 - Ecodriving of cars,Transport > Mobility > Road > Light Duty Vehicles,1a-16-eco-driving,"[""II.1.1""]",Sector-path based mapping
+improved_vehicle_technology,T-1A1a-TE-4 - Improved car engine technology,Transport > Mobility > Road > Light Duty Vehicles,1a-15-improved-energy-efficiency-vehicles,"[""II.1.1""]",Sector-path based mapping
+more_efficient_commuting_by_car,T-1A1a-TE-5 - Increase journey sharing,Transport > Mobility > Road > Light Duty Vehicles,1a-05-shared-mobility,"[""II.1.1""]",Sector-path based mapping
+transfer_from_car_to_railway,T-1A1a-TE-6 - Shift from car to railway,Transport > Mobility > Road > Light Duty Vehicles,1a-03-public-transit,"[""II.1.1"", ""II.2.1""]",Mode shift from road to rail
+increased_proportion_of_non_travel_meetings_and_services,T-1A1a-TE-7 - Shift to online meetings and services,Transport > Mobility > Road > Light Duty Vehicles,1a-06-teleworking,"[""II.1.1""]",Sector-path based mapping
+transfer_from_car_to_remote_working,T-1A1a-TE-8 - Shift from car to remote working,Transport > Mobility > Road > Light Duty Vehicles,1a-06-teleworking,"[""II.1.1""]",Sector-path based mapping
+increase_renewable_proportion_in_petrol,T-1A1a-TE-9 - Biofuel for petrol cars,Transport > Mobility > Road > Light Duty Vehicles,1a-11-alternative-fuels-vehicles,"[""II.1.1""]",Sector-path based mapping
+increased_proportion_of_walking_and_cycling,T-1A1a-TE-10 - Shift to walking and cycling,Transport > Mobility > Road > Light Duty Vehicles,1a-02-active-transport-modes,"[""II.1.1""]",Sector-path based mapping
+shift_to_electric_bikes,T-1A1a-TE-11 - Shift to electric bikes,Transport > Mobility > Road > Light Duty Vehicles,1a-02-active-transport-modes,"[""II.1.1""]",Sector-path based mapping
+increased_proportion_of_commuting_by_electric_bus,T-1A1a-TE-12 - Shift to travel by electric bus,Transport > Mobility > Road > Light Duty Vehicles,1a-03-public-transit,"[""II.1.1""]",Sector-path based mapping
+increased_proportion_of_public_transport_by_hydrogen_bus,T-1A1a-TE-13 - Shift to travel by hydrogen bus,Transport > Mobility > Road > Light Duty Vehicles,1a-11-alternative-fuels-vehicles,"[""II.1.1""]",Sector-path based mapping
+increased_proportion_of_public_transport_by_lpg_bus,T-1A1a-TE-14 - Shift to travel by LPG bus,Transport > Mobility > Road > Light Duty Vehicles,1a-11-alternative-fuels-vehicles,"[""II.1.1""]",Sector-path based mapping
+increased_proportion_of_public_transport_by_gas_bus,T-1A1a-TE-15 - Shift to travel by gas bus,Transport > Mobility > Road > Light Duty Vehicles,1a-03-public-transit,"[""II.1.1""]",Sector-path based mapping
+increased_proportion_of_public_transport_by_petrol_bus,T-1A1a-TE-16 - Shift to travel by petrol bus,Transport > Mobility > Road > Light Duty Vehicles,1a-03-public-transit,"[""II.1.1""]",Sector-path based mapping
+increased_proportion_of_public_transport_by_diesel_bus,T-1A1a-TE-17 - Shift to travel by diesel bus,Transport > Mobility > Road > Light Duty Vehicles,1a-03-public-transit,"[""II.1.1""]",Sector-path based mapping
+increased_proportion_of_public_transport_by_trams_and_light_rail,"T-1A1a-TE-18 - Shift to trams, light rail and subway",Transport > Mobility > Road > Light Duty Vehicles,1a-03-public-transit,"[""II.1.1""]",Sector-path based mapping
+shift_to_gas_vehicles,T-1A1a-TE-19 - Shift to gas cars,Transport > Mobility > Road > Light Duty Vehicles,1a-11-alternative-fuels-vehicles,"[""II.1.1""]",Sector-path based mapping
+biofuel_for_gas_vehicles,T-1A1a-TE-20 - Biofuel for gas cars,Transport > Mobility > Road > Light Duty Vehicles,1a-11-alternative-fuels-vehicles,"[""II.1.1""]",Sector-path based mapping
+increase_renewable_proportion_in_diesel,T-1A1a-TE-21 - Biofuel for diesel cars,Transport > Mobility > Road > Light Duty Vehicles,1a-11-alternative-fuels-vehicles,"[""II.1.1""]",Sector-path based mapping
+improved_urban_planning,T-1A1a-TE-22 - Improved urban planning,Transport > Mobility > Road > Light Duty Vehicles,,"[""II.1.1""]",Sector-path based mapping
+biofuel_for_petrol_motorcycles,T-1A1b-TE-1 - Biofuel for petrol motorcycles,Transport > Mobility > Road > 2 3 Wheel Vehicles,1a-11-alternative-fuels-vehicles,"[""II.1.1""]",Sector-path based mapping
+shift_to_electric_motorcycles,T-1A1b-TE-2 - Shift to electric motorcycles,Transport > Mobility > Road > 2 3 Wheel Vehicles,1a-12-electric-technologies,"[""II.1.1""]",Sector-path based mapping
+biofuel_for_diesel_buses,T-1A1c-TE-1 - Biofuel for diesel buses,Transport > Mobility > Road > Buses,1a-11-alternative-fuels-vehicles,"[""II.1.1""]",Sector-path based mapping
+biofuel_for_gas_buses,T-1A1c-TE-2 - Biofuel for gas buses,Transport > Mobility > Road > Buses,1a-11-alternative-fuels-vehicles,"[""II.1.1""]",Sector-path based mapping
+biofuel_for_petrol_buses,T-1A1c-TE-3 - Biofuel for petrol buses,Transport > Mobility > Road > Buses,1a-11-alternative-fuels-vehicles,"[""II.1.1""]",Sector-path based mapping
+improved_vehicle_technology_buses,T-1A1c-TE-4 - Improved bus engine technology,Transport > Mobility > Road > Buses,,"[""II.1.1""]",Sector-path based mapping
+shift_to_electric_buses,T-1A1C-TE-5 - Shift to electric busses,Transport > Mobility > Road > Buses,,"[""II.1.1""]",Sector-path based mapping
+biofuel_for_diesel_rail_passenger,T-1A2-TE-1 - Biofuel for rail passenger transport,Transport > Mobility > Rail,1a-11-alternative-fuels-vehicles,"[""II.2.1""]",Sector-path based mapping
+shift_to_electric_passenger_rail,T-1A2-TE-2 - Shift to travel by electric rail,Transport > Mobility > Rail,1a-12-electric-technologies,"[""II.2.1""]",Sector-path based mapping
+shift_to_hydrogen_passenger_rail,T-1A2-TE-3 - Shift to travel by hydrogen rail,Transport > Mobility > Rail,1a-11-alternative-fuels-vehicles,"[""II.2.1""]",Sector-path based mapping
+biofuels_for_air_transport,T-1A3-TE-1 - Biofuel for air passenger transport,Transport > Mobility > Aviation,1b-02-alternative-fuels-aircraft,"[""II.4.3""]",Sector-path based mapping
+more_efficient_passenger_airplanes,T-1A3-TE-2 - More efficient passenger airplanes,Transport > Mobility > Aviation,1b-01-increased-aircraft-efficiency,"[""II.4.3""]",Sector-path based mapping
+electric_passenger_airplanes,T-1A3-TE-3 - Shift to electric air passenger transport,Transport > Mobility > Aviation,1b-02-alternative-fuels-aircraft,"[""II.4.3""]",Sector-path based mapping
+shift_from_passenger_air_transport_to_railway,T-1A3-TE-4 - Shift from air travel to railway,Transport > Mobility > Aviation,1b-03-modal-shift-aircraft-train,"[""II.4.3"", ""II.2.1""]",Mode shift from aviation to rail
+shift_to_lng_fuel_for_sea_passenger_transportation,T-1A4-TE-1 - Shift to LNG fuel for marine passenger transport,Transport > Mobility > Waterborne,1c-01-alternative-fuels-shipping,"[""II.3.3""]",Sector-path based mapping
+more_efficient_sea_passenger_transportation,T-1A4-TE-2 - More efficient marine passenger transport,Transport > Mobility > Waterborne,1c-03-improved-energy-efficiency-shipping,"[""II.3.3""]",Sector-path based mapping
+biofuel_for_lng_shipping_passenger,T-1A4-TE-3 - Biofuel for LNG marine passenger transport,Transport > Mobility > Waterborne,1c-01-alternative-fuels-shipping,"[""II.3.3""]",Sector-path based mapping
+biofuels_for_sea_passenger_transport,T-1A4-TE-4 - Biofuel for marine passenger transport,Transport > Mobility > Waterborne,1c-01-alternative-fuels-shipping,"[""II.3.3""]",Sector-path based mapping
+electrification_of_domestic_sea_passenger_transport,T-1A4-TE-5 - Shift to electric marine passenger transportion,Transport > Mobility > Waterborne,1c-02-electric-technologies-shipping,"[""II.3.3""]",Sector-path based mapping
+gas_light_trucks,T-1B1a-TE-1 - Shift to gas light trucks,Transport > Freight > Road > Light Duty Trucks,1a-11-alternative-fuels-vehicles,"[""II.1.1""]",Sector-path based mapping
+biofuel_for_light_trucks,T-1B1a-TE-2 - Biofuel for diesel light trucks,Transport > Freight > Road > Light Duty Trucks,1a-11-alternative-fuels-vehicles,"[""II.1.1""]",Sector-path based mapping
+biofuel_for_petrol_light_trucks,T-1B1a-TE-3 - Biofuel for petrol light trucks,Transport > Freight > Road > Light Duty Trucks,1a-11-alternative-fuels-vehicles,"[""II.1.1""]",Sector-path based mapping
+hydrogen_for_light_trucks,T-1B1a-TE-4 - Shift to hydrogen for light trucks,Transport > Freight > Road > Light Duty Trucks,1a-11-alternative-fuels-vehicles,"[""II.1.1""]",Sector-path based mapping
+ecodriving_of_light_trucks,T-1B1a-TE-5 - Ecodriving of light trucks,Transport > Freight > Road > Light Duty Trucks,1a-08-supply-chain-management,"[""II.1.1""]",Sector-path based mapping
+electric_light_trucks,T-1B1a-TE-6 - Shift to electric light trucks,Transport > Freight > Road > Light Duty Trucks,1a-12-electric-technologies,"[""II.1.1""]",Sector-path based mapping
+route_optimisation_light_trucks,T-1B1a-TE-7 - Route optimisation for light trucks,Transport > Freight > Road > Light Duty Trucks,1a-08-supply-chain-management,"[""II.1.1""]",Sector-path based mapping
+improved_vehicle_technology_light_trucks,T-1B1a-TE-8 - Improved light truck engine technology,Transport > Freight > Road > Light Duty Trucks,1a-15-improved-energy-efficiency-vehicles,"[""II.1.1""]",Sector-path based mapping
+improved_load_factor_light_trucks,T-1B1a-TE-9 - Improved load factor for light trucks,Transport > Freight > Road > Light Duty Trucks,1a-08-supply-chain-management,"[""II.1.1""]",Sector-path based mapping
+shift_to_electric_cargo_bikes,T-1B1a-TE-10 - Shift to electric cargo bikes,Transport > Freight > Road > Light Duty Trucks,1a-12-electric-technologies,"[""II.1.1""]",Sector-path based mapping
+gas_heavy_trucks,T-1B1b-TE-1 - Shift to gas heavy trucks,Transport > Freight > Road > Heavy Duty Trucks,1a-11-alternative-fuels-vehicles,"[""II.1.1""]",Sector-path based mapping
+biofuel_for_heavy_trucks,T-1B1b-TE-2 - Biofuel for diesel heavy trucks,Transport > Freight > Road > Heavy Duty Trucks,1a-11-alternative-fuels-vehicles,"[""II.1.1""]",Sector-path based mapping
+biofuel_for_petrol_heavy_trucks,T-1B1b-TE-3 - Biofuel for petrol heavy trucks,Transport > Freight > Road > Heavy Duty Trucks,1a-11-alternative-fuels-vehicles,"[""II.1.1""]",Sector-path based mapping
+hydrogen_for_heavy_trucks,T-1B1b-TE-4 - Shift to hydrogen for heavy trucks,Transport > Freight > Road > Heavy Duty Trucks,1a-11-alternative-fuels-vehicles,"[""II.1.1""]",Sector-path based mapping
+ecodriving_of_heavy_trucks,T-1B1b-TE-5 - Ecodriving of heavy trucks,Transport > Freight > Road > Heavy Duty Trucks,1a-08-supply-chain-management,"[""II.1.1""]",Sector-path based mapping
+shift_to_electric_heavy_trucks,T-1B1b-TE-6 - Shift to electric heavy trucks,Transport > Freight > Road > Heavy Duty Trucks,1a-12-electric-technologies,"[""II.1.1""]",Sector-path based mapping
+improved_vehicle_technology_heavy_trucks,T-1B1b-TE-7 - Improved heavy truck engine technology,Transport > Freight > Road > Heavy Duty Trucks,1a-15-improved-energy-efficiency-vehicles,"[""II.1.1""]",Sector-path based mapping
+improved_load_factor_heavy_trucks,T-1B1b-TE-8 - Improved load factor for heavy trucks,Transport > Freight > Road > Heavy Duty Trucks,1a-08-supply-chain-management,"[""II.1.1""]",Sector-path based mapping
+transfer_from_heavy_truck_to_sea,T-1B1b-TE-9 - Shift from heavy truck to sea,Transport > Freight > Road > Heavy Duty Trucks,,"[""II.1.1"", ""II.3.3""]",Mode shift from road freight to shipping
+transfer_from_heavy_truck_to_electric_railway,T-1B1b-TE-10 - Shift from heavy truck to electric railway,Transport > Freight > Road > Heavy Duty Trucks,1a-12-electric-technologies,"[""II.1.1"", ""II.2.1""]",Mode shift from road freight to rail
+biofuel_for_diesel_rail_freight,T-1B2-TE-1 - Biofuel for rail freight transport,Transport > Freight > Rail,,"[""II.2.1""]",Sector-path based mapping
+shift_to_electric_freight_rail,T-1B2-TE-2 - Shift to electric freight rail transportation,Transport > Freight > Rail,,"[""II.2.1""]",Sector-path based mapping
+shift_to_hydrogen_freight_rail,T-1B2-TE-3 - Shift to hydrogen freight rail transportation,Transport > Freight > Rail,,"[""II.2.1""]",Sector-path based mapping
+biofuels_for_freight_air_transport,T-1B3-TE-1 - Biofuel for kerosene air freight transport,Transport > Freight > Aviation,,"[""II.4.3""]",Sector-path based mapping
+electric_freight_airplanes,T-1B3-TE-2 - Shift to electric freight air transportation,Transport > Freight > Aviation,,"[""II.4.3""]",Sector-path based mapping
+more_efficient_freight_airplanes,T-1B3-TE-3 - More efficient air freight transport,Transport > Freight > Aviation,,"[""II.4.3""]",Sector-path based mapping
+shift_from_freight_air_transport_to_railway,T-1B3-TE-4 - Shift from freight air transport to electric rail freight,Transport > Freight > Aviation,,"[""II.4.3"", ""II.2.1""]",Mode shift from air freight to rail
+shift_to_lng_fuel_for_sea_freight_transportation,T-1B4b-TE-1 - Shift to LNG fuel for marine freight transport,Transport > Freight > Shipping > Navigation,,"[""II.3.3""]",Sector-path based mapping
+more_efficient_sea_freight_transportation,T-1B4b-TE-2 - More efficient marine freight transport,Transport > Freight > Shipping > Navigation,,"[""II.3.3""]",Sector-path based mapping
+biofuel_for_lng_shipping_freight,T-1B4b-TE-3 - Biofuel for LNG marine freight transport,Transport > Freight > Shipping > Navigation,,"[""II.3.3""]",Sector-path based mapping
+biofuels_for_sea_freight_transport,T-1B4b-TE-4 - Biofuel for marine freight transport,Transport > Freight > Shipping > Navigation,,"[""II.3.3""]",Sector-path based mapping
+electrification_of_domestic_sea_freight_transport,T-1B4b-TE-5 - Shift to electric marine freight transportion,Transport > Freight > Shipping > Navigation,,"[""II.3.3""]",Sector-path based mapping
+biofuels_for_cement_and_mineral_industry,T-2A1-TE-1 - Shift to use biofuel in cement and mineral industry,Industry > Minerals > Cement,,"[""IV.1""]",Sector-path based mapping
+electrification_of_production_in_cement_and_concrete_industry,T-2A1-TE-2 - Shift to electricity in cement and mineral industry,Industry > Minerals > Cement,,"[""IV.1""]",Sector-path based mapping
+shift_to_biogas_energy_in_glass_industries,T-2A3-TE-1 - Shift to biogas energy in glass industries,Industry > Minerals > Glass Production,,"[""IV.1""]",Sector-path based mapping
+shift_to_biomass_energy_in_glass_industries,T-2A3-TE-2 - Shift to biomass energy in glass industries,Industry > Minerals > Glass Production,,"[""IV.1""]",Sector-path based mapping
+shift_to_electricity_in_glass_industries,T-2A3-TE-3 - Shift to electricity in glass industries,Industry > Minerals > Glass Production,,"[""IV.1""]",Sector-path based mapping
+shift_to_hydrogen_energy_in_glass_industries,T-2A3-TE-4 - Shift to hydrogen energy in glass industries,Industry > Minerals > Glass Production,,"[""IV.1""]",Sector-path based mapping
+biogas_in_methane_reforming_for_ammonia_production,T-2B1-TE-1 - Biogas in methane reforming for ammonia production,Industry > Chemicals > Ammonia Production,,"[""IV.1""]",Sector-path based mapping
+shift_to_biogas_energy_in_chemical_industries,T-2B9-TE-1 - Shift to biogas energy in chemical industries,Industry > Chemicals > Other,,"[""IV.1""]",Sector-path based mapping
+shift_to_biomass_energy_in_chemical_industries,T-2B9-TE-2 - Shift to biomass energy in chemical industries,Industry > Chemicals > Other,,"[""IV.1""]",Sector-path based mapping
+shift_to_electricity_in_chemical_industries,T-2B9-TE-3 - Shift to electricity in chemical industries,Industry > Chemicals > Other,,"[""IV.1""]",Sector-path based mapping
+shift_to_hydrogen_energy_in_chemical_industries,T-2B9-TE-4 - Shift to hydrogen energy in chemical industries,Industry > Chemicals > Other,,"[""IV.1""]",Sector-path based mapping
+shift_to_biogas_energy_in_iron_and_steel_industries,T-2C1-TE-1 - Shift to biogas energy in iron and steel industries,Industry > Metals > Iron Steel,,"[""IV.1""]",Sector-path based mapping
+shift_to_biomass_energy_in_iron_and_steel_industries,T-2C1-TE-2 - Shift to biomass energy in iron and steel industries,Industry > Metals > Iron Steel,,"[""IV.1""]",Sector-path based mapping
+shift_to_electric_arc_furnaces_in_steel_industries,T-2C1-TE-3 - Shift to electric arc furnaces in steel industries,Industry > Metals > Iron Steel,,"[""IV.1""]",Sector-path based mapping
+shift_to_electricity_in_iron_and_steel_industries,T-2C1-TE-4 - Shift to electricity in iron and steel industries,Industry > Metals > Iron Steel,,"[""IV.1""]",Sector-path based mapping
+shift_to_hydrogen_energy_in_iron_and_steel_industries,T-2C1-TE-5 - Shift to hydrogen energy in iron and steel industries,Industry > Metals > Iron Steel,,"[""IV.1""]",Sector-path based mapping
+shift_to_inert_anodes_in_aluminium_industries,T-2C3-TE-1 - Shift to inert anodes in aluminium industries,Industry > Metals > Aluminium,,"[""IV.1""]",Sector-path based mapping
+shift_to_electricity_in_magnesium_industries,T-2C4-TE-1 - Shift to electricity in magnesium industries,Industry > Metals > Magnesium,,"[""IV.1""]",Sector-path based mapping
+shift_to_biogas_energy_in_magnesium_industries,T-2C4-TE-2 - Shift to biogas energy in magnesium industries,Industry > Metals > Magnesium,,"[""IV.1""]",Sector-path based mapping
+shift_to_biomass_energy_in_magnesium_industries,T-2C4-TE-3 - Shift to biomass energy in magnesium industries,Industry > Metals > Magnesium,,"[""IV.1""]",Sector-path based mapping
+shift_to_biogas_energy_in_lead_industries,T-2C5-TE-1 - Shift to biogas energy in lead industries,Industry > Metals > Lead,,"[""IV.1""]",Sector-path based mapping
+shift_to_biomass_energy_in_lead_industries,T-2C5-TE-2 - Shift to biomass energy in lead industries,Industry > Metals > Lead,,"[""IV.1""]",Sector-path based mapping
+shift_to_electricity_in_lead_industries,T-2C5-TE-3 - Shift to electricity in lead industries,Industry > Metals > Lead,,"[""IV.1""]",Sector-path based mapping
+shift_to_biogas_energy_in_pulp_paper_and_print_industries,"T-2D1b-TE-1 - Shift to biogas energy in pulp, paper and print industries",Industry > Other > Manufacturing > Pulp Paper Print,,"[""I.3.1""]",Sector-path based mapping
+shift_to_biomass_energy_in_pulp_paper_and_print_industries,"T-2D1b-TE-2 - Shift to biomass energy in pulp, paper and print industries",Industry > Other > Manufacturing > Pulp Paper Print,,"[""I.3.1""]",Sector-path based mapping
+shift_to_electricity_in_pulp_paper_and_print_industries,"T-2D1b-TE-3 - Shift to electricity in pulp, paper and print industries",Industry > Other > Manufacturing > Pulp Paper Print,,"[""I.3.1""]",Sector-path based mapping
+shift_to_hydrogen_energy_in_pulp_paper_and_print_industries,"T-2D1b-TE-4 - Shift to hydrogen energy in pulp, paper and print industries",Industry > Other > Manufacturing > Pulp Paper Print,,"[""I.3.1""]",Sector-path based mapping
+mobile_machinery_using_biofuels,T-2D4-TE-1 - Shift to biofuel for mobile machinery,Industry > Other > Mobile Machinery,,"[""II.5.1""]",Sector-path based mapping
+electrification_of_mobile_machinery,T-2D4-TE-2 - Shift to electric mobile machinery,Industry > Other > Mobile Machinery,,"[""II.5.1""]",Sector-path based mapping
+efficient_use_of_mobile_machinery,T-2D4-TE-3 - Efficient use of mobile machinery,Industry > Other > Mobile Machinery,,"[""II.5.1""]",Sector-path based mapping
+shift_to_biomass_energy_in_other_industries,T-2D5-TE-1 - Shift to biomass energy in other industries,Industry > Other > Other,,"[""I.3.1""]",Sector-path based mapping
+shift_to_biogas_energy_in_other_industries,T-2D5-TE-2 - Shift to biogas energy in other industries,Industry > Other > Other,,"[""I.3.1""]",Sector-path based mapping
+shift_to_electricity_in_other_industries,T-2D5-TE-3 - Shift to electricity in other industries,Industry > Other > Other,,"[""I.3.1""]",Sector-path based mapping
+shift_to_sustainable_healthy_diet,T-3A1-TE-1 - Shift to Sustainable Healthy Diets,Afolu > Livestock > Enteric Fermentation,3c-02-shift-sustainable-healthy-diets,"[""V.1""]",Sector-path based mapping
+energy_efficient_other_agriculture_forestry_fishing_electric_appliances,"T-3C6-TE-1 - Energy efficient agriculture, forestry and fishing electrical appliances",Afolu > Aggregate Sources Other > Other,,"[""V.3""]",Sector-path based mapping
+energy_efficient_new_housing,T-4A1-TE-1 - Energy efficient new Housing,Buildings > Residential > Hvac,,"[""I.1.1""]",Sector-path based mapping
+heat_pumps_in_multi_family_residential_buildings,T-4A1a-TE-1 - Shift to heat pumps in multi-family buildings,Buildings > Residential > Hvac > Multi Family Hvac,,"[""I.1.1""]",Sector-path based mapping
+shift_to_district_heating_in_multi_family_buildings,T-4A1a-TE-2 - Shift to district heating in multi-family buildings,Buildings > Residential > Hvac > Multi Family Hvac,,"[""I.1.1""]",Sector-path based mapping
+shift_to_district_cooling_in_multi_family_buildings,T-4A1a-TE-3 - Shift to district cooling in multi-family buildings,Buildings > Residential > Hvac > Multi Family Hvac,,"[""I.1.1""]",Sector-path based mapping
+shift_to_solar_thermal_in_multi_family_buildings,T-4A1a-TE-4 - Shift to solar thermal in multi-family buildings,Buildings > Residential > Hvac > Multi Family Hvac,,"[""I.1.1""]",Sector-path based mapping
+heating_multi_family_residential_buildings_with_renewable_solid_biofuels,T-4A1a-TE-5 - Shift to biofuel heating in multi-family buildings,Buildings > Residential > Hvac > Multi Family Hvac,,"[""I.1.1""]",Sector-path based mapping
+energy_efficient_multi_family_residential_buildings_retrofitting,T-4A1a-TE-6 - Retrofitting multi-family buildings for efficient heating,Buildings > Residential > Hvac > Multi Family Hvac,,"[""I.1.1""]",Sector-path based mapping
+efficient_use_multi_family_residential_buildings_cooling,T-4A1a-TE-7 - Energy efficient use of ACs in multi-family buildings,Buildings > Residential > Hvac > Multi Family Hvac,,"[""I.1.1""]",Sector-path based mapping
+energy_efficient_multi_family_residential_buildings_cooling,T-4A1a-TE-8 - Energy efficient AC in multi-family buildings,Buildings > Residential > Hvac > Multi Family Hvac,,"[""I.1.1""]",Sector-path based mapping
+energy_efficient_multi_family_residential_buildings_retrofitting_cooling,T-4A1a-TE-9 - Retrofitting multi-family buildings for efficient cooling,Buildings > Residential > Hvac > Multi Family Hvac,,"[""I.1.1""]",Sector-path based mapping
+heat_pumps_in_single_family_residential_buildings,T-4A1b-TE-1 - Shift to heat pumps in single-family buildings,Buildings > Residential > Hvac > Single Family Hvac,,"[""I.1.1""]",Sector-path based mapping
+shift_to_district_heating_in_single_family_houses,T-4A1b-TE-2 - Shift to district heating in single-family buildings,Buildings > Residential > Hvac > Single Family Hvac,,"[""I.1.1""]",Sector-path based mapping
+shift_to_district_cooling_in_single_family_buildings,T-4A1b-TE-3 - Shift to district cooling in single-family buildings,Buildings > Residential > Hvac > Single Family Hvac,,"[""I.1.1""]",Sector-path based mapping
+shift_to_solar_thermal_in_single_family_buildings,T-4A1b-TE-4 - Shift to solar thermal in single-family buildings,Buildings > Residential > Hvac > Single Family Hvac,,"[""I.1.1""]",Sector-path based mapping
+heating_single_family_residential_buildings_with_renewable_solid_biofuels,T-4A1b-TE-5 - Shift to biofuel heating in single-family buildings,Buildings > Residential > Hvac > Single Family Hvac,,"[""I.1.1""]",Sector-path based mapping
+energy_efficient_single_family_residential_buildings_retrofitting,T-4A1b-TE-6 - Retrofitting single-family buildings for efficient heating,Buildings > Residential > Hvac > Single Family Hvac,,"[""I.1.1""]",Sector-path based mapping
+efficient_use_single_family_residential_buildings_cooling,T-4A1b-TE-7 - Energy efficient use of ACs in single-family buildings,Buildings > Residential > Hvac > Single Family Hvac,,"[""I.1.1""]",Sector-path based mapping
+energy_efficient_single_family_residential_buildings_cooling,T-4A1b-TE-8 - Energy efficient AC in single-family buildings,Buildings > Residential > Hvac > Single Family Hvac,,"[""I.1.1""]",Sector-path based mapping
+energy_efficient_single_family_residential_buildings_retrofitting_cooling,T-4A1b-TE-9 - Retrofitting single-family buildings for efficient cooling,Buildings > Residential > Hvac > Single Family Hvac,,"[""I.1.1""]",Sector-path based mapping
+shift_to_biogas_heating_of_single_family_residential_buildings,T-4A1b-TE-10 - Shift to biogas heating in single-family buildings,Buildings > Residential > Hvac > Single Family Hvac,,"[""I.1.1""]",Sector-path based mapping
+energy_efficient_other_residential_electric_appliances,T-4A2d-TE-1 - Energy efficient residential electrical appliances,Buildings > Residential > Other Energy Usage > Unregulated,,"[""I.1.1""]",Sector-path based mapping
+shift_to_residential_electric_cooking_stoves,T-4A2d-TE-2 - Shift to residential electric cooking stoves,Buildings > Residential > Other Energy Usage > Unregulated,,"[""I.1.1""]",Sector-path based mapping
+shift_to_district_heating_in_commercial_buildings,T-4B1a-TE-1 - Shift to district heating in commercial buildings,Buildings > Non Residential > Hvac > Commercial Hvac,,"[""I.2.1""]",Sector-path based mapping
+shift_to_district_cooling_in_commercial_buildings,T-4B1a-TE-2 - Shift to district cooling in commerical buildings,Buildings > Non Residential > Hvac > Commercial Hvac,,"[""I.2.1""]",Sector-path based mapping
+heat_pumps_in_non_residential_commercial_buildings,T-4B1a-TE-3 - Shift to heat pumps in commerical buildings,Buildings > Non Residential > Hvac > Commercial Hvac,,"[""I.2.1""]",Sector-path based mapping
+heating_non_residential_commercial_buildings_with_renewable_solid_biofuels,T-4B1a-TE-4 - Shift to biofuel in commercial buildings,Buildings > Non Residential > Hvac > Commercial Hvac,,"[""I.2.1""]",Sector-path based mapping
+shift_to_solar_thermal_in_commercial_buildings,T-4B1a-TE-5 - Shift to solar thermal in commercial buildings,Buildings > Non Residential > Hvac > Commercial Hvac,,"[""I.2.1""]",Sector-path based mapping
+energy_efficient_non_residential_commercial_buildings_retrofitting,T-4B1a-TE-6 - Retrofitting commerical buildings for efficient heating,Buildings > Non Residential > Hvac > Commercial Hvac,,"[""I.2.1""]",Sector-path based mapping
+energy_efficient_non_residential_commercial_buildings_retrofitting_cooling,T-4B1a-TE-7 - Retrofitting commerical buildings for efficient cooling,Buildings > Non Residential > Hvac > Commercial Hvac,,"[""I.2.1""]",Sector-path based mapping
+energy_efficient_new_commercial_buildings,T-4B1a-TE-9 - Energy efficient new Commercial Buildings,Buildings > Non Residential > Hvac > Commercial Hvac,,"[""I.2.1""]",Sector-path based mapping
+shift_to_biogas_heating_of_non_residential_commercial_buildings,T-4B1a-TE-10 - Shift to biogas in commercial buildings,Buildings > Non Residential > Hvac > Commercial Hvac,,"[""I.2.1""]",Sector-path based mapping
+shift_to_district_heating_in_public_buildings,T-4B1b-TE-1 - Shift to district heating in public buildings,Buildings > Non Residential > Hvac > Institutional Hvac,,"[""I.2.1""]",Sector-path based mapping
+shift_to_district_cooling_in_public_buildings,T-4B1b-TE-2 - Shift to district cooling in public buildings,Buildings > Non Residential > Hvac > Institutional Hvac,,"[""I.2.1""]",Sector-path based mapping
+heat_pumps_in_non_residential_public_buildings,T-4B1b-TE-3 - Shift to heat pumps in public buildings,Buildings > Non Residential > Hvac > Institutional Hvac,,"[""I.2.1""]",Sector-path based mapping
+heating_non_residential_public_buildings_with_renewable_solid_biofuels,T-4B1b-TE-4 - Shift to biofuel in public buildings,Buildings > Non Residential > Hvac > Institutional Hvac,,"[""I.2.1""]",Sector-path based mapping
+shift_to_solar_thermal_in_public_buildings,T-4B1b-TE-5 - Shift to solar thermal in public buildings,Buildings > Non Residential > Hvac > Institutional Hvac,,"[""I.2.1""]",Sector-path based mapping
+energy_efficient_non_residential_public_buildings_retrofitting,T-4B1b-TE-6 - Retrofitting public buildings for efficient heating,Buildings > Non Residential > Hvac > Institutional Hvac,,"[""I.2.1""]",Sector-path based mapping
+energy_efficient_non_residential_public_buildings_retrofitting_cooling,T-4B1b-TE-7 - Retrofitting public buildings for efficient cooling,Buildings > Non Residential > Hvac > Institutional Hvac,,"[""I.2.1""]",Sector-path based mapping
+shift_to_district_heating_in_industrial_buildings,T-4B1c-TE-1 - Shift to district heating in industrial buildings,Buildings > Non Residential > Hvac > Other Hvac,,"[""I.2.1""]",Sector-path based mapping
+shift_to_district_cooling_in_industrial_buildings,T-4B1c-TE-2 - Shift to district cooling in industrial buildings,Buildings > Non Residential > Hvac > Other Hvac,,"[""I.2.1""]",Sector-path based mapping
+heat_pumps_in_non_residential_industrial_buildings,T-4B1c-TE-3 - Shift to heat pumps in industrial buildings,Buildings > Non Residential > Hvac > Other Hvac,,"[""I.2.1""]",Sector-path based mapping
+heating_non_residential_industrial_buildings_with_renewable_solid_biofuels,T-4B1c-TE-4 - Shift to biofuel in industrial buildings,Buildings > Non Residential > Hvac > Other Hvac,,"[""I.2.1""]",Sector-path based mapping
+shift_to_solar_thermal_in_industrial_buildings,T-4B1c-TE-5 - Shift to solar thermal in industrial buildings,Buildings > Non Residential > Hvac > Other Hvac,,"[""I.2.1""]",Sector-path based mapping
+energy_efficient_non_residential_industrial_buildings_retrofitting,T-4B1c-TE-6 - Retrofitting industrial buildings for efficient heating,Buildings > Non Residential > Hvac > Other Hvac,,"[""I.2.1""]",Sector-path based mapping
+energy_efficient_non_residential_industrial_buildings_retrofitting_cooling,T-4B1c-TE-7 - Retrofitting industrial buildings for efficient cooling,Buildings > Non Residential > Hvac > Other Hvac,,"[""I.2.1""]",Sector-path based mapping
+energy_efficient_street_lighting,T-4B2a-TE-1 - Energy efficient street lighting,Buildings > Non Residential > Other Energy Usage > Lighting,,"[""I.2.1""]",Sector-path based mapping
+energy_efficient_commercial_lighting,T-4B2a-TE-2 - Energy efficient commercial lighting,Buildings > Non Residential > Other Energy Usage > Lighting,,"[""I.2.1""]",Sector-path based mapping
+shift_to_commercial_electric_cooking_stoves,T-4B2b-TE-1 - Shift to commercial electric cooking stoves,Buildings > Non Residential > Other Energy Usage > Equipment Appliances,,"[""I.2.1""]",Sector-path based mapping
+energy_efficient_other_commercial_electric_appliances,T-4B2c-TE-1 - Energy efficient commercial electrical appliances,Buildings > Non Residential > Other Energy Usage > Other,,"[""I.2.1""]",Sector-path based mapping
+energy_efficient_other_industrial_electric_appliances,T-4B2c-TE-2 - Energy efficient industrial electrical appliances,Buildings > Non Residential > Other Energy Usage > Other,,"[""I.2.1""]",Sector-path based mapping
+energy_efficient_other_institutional_electric_appliances,T-4B2c-TE-3 - Energy efficient public electrical appliances,Buildings > Non Residential > Other Energy Usage > Other,,"[""I.2.1""]",Sector-path based mapping
+low_carbon_construction_of_buildings,T-4C1-TE-1 - Low carbon construction of buildings,Buildings > Building Stocks > Construction,,"[""I.3.1""]",Sector-path based mapping
+low_carbon_construction_of_multi_family_residential_housing,T-4C1-TE-2 - Low carbon construction of multi-family buildings,Buildings > Building Stocks > Construction,,"[""I.3.1""]",Sector-path based mapping
+low_carbon_construction_of_non_residential_commercial_buildings,T-4C1-TE-3 - Low carbon construction of commercial buildings,Buildings > Building Stocks > Construction,,"[""I.3.1""]",Sector-path based mapping
+coal_fired_power_plants,T-5A1-TE-1 - Electricity from coal power plants,Energy > Energy Supply > Electricity,,"[""I.4.1""]",Sector-path based mapping
+gas_fired_power_plants,T-5A1-TE-2 - Electricity from gas power plants,Energy > Energy Supply > Electricity,,"[""I.4.1""]",Sector-path based mapping
+improved_grid_electricity,T-5A1-TE-3 - Improved Grid Electricity,Energy > Energy Supply > Electricity,,"[""I.4.1""]",Sector-path based mapping
+imported_grid_electricity_emission_factor,T-5A1-TE-4 - Update imported electricity grid emission factor,Energy > Energy Supply > Electricity,,"[""I.4.1""]",Sector-path based mapping
+oil_fired_power_plants,T-5A1-TE-5 - Electricity from oil power plants,Energy > Energy Supply > Electricity,,"[""I.4.1""]",Sector-path based mapping
+hydro_reservoir,T-5A1-TE-6 - Electricity from hydro reservoir,Energy > Energy Supply > Electricity,,"[""I.4.1""]",Sector-path based mapping
+solar_parks,T-5A1-TE-7 - Electricity from solar parks,Energy > Energy Supply > Electricity,,"[""I.4.1""]",Sector-path based mapping
+solar_rooftops,T-5A1-TE-8 - Electricity from solar rooftops,Energy > Energy Supply > Electricity,,"[""I.4.1""]",Sector-path based mapping
+wind_offshore,T-5A1-TE-9 - Electricity from wind offshore,Energy > Energy Supply > Electricity,,"[""I.4.1""]",Sector-path based mapping
+wind_onshore,T-5A1-TE-10 - Electricity from wind onshore,Energy > Energy Supply > Electricity,,"[""I.4.1""]",Sector-path based mapping
+biofuel_fired_power_plants,T-5A1-TE-11 - Electricity from biomass power plants,Energy > Energy Supply > Electricity,,"[""I.4.1""]",Sector-path based mapping
+imported_grid_district_heat,T-5A2-TE-1 - District heat from imported grid,Energy > Energy Supply > Heat,,"[""I.4.1""]",Sector-path based mapping
+imported_grid_district_heat_emission_factor,T-5A2-TE-2 - Update imported district heat grid emission factor,Energy > Energy Supply > Heat,,"[""I.4.1""]",Sector-path based mapping
+district_heating_residual_heat,T-5A2-TE-3 - District heating by residual heat,Energy > Energy Supply > Heat,,"[""I.4.1""]",Sector-path based mapping
+district_heating_heat_pumps,T-5A2-TE-4 - District heating by heat pump,Energy > Energy Supply > Heat,,"[""I.4.1""]",Sector-path based mapping
+shift_to_heat_pumps_in_district_heating,T-5A2-TE-5 - Shift to heat pumps in district heating,Energy > Energy Supply > Heat,,"[""I.4.1""]",Sector-path based mapping
+shift_to_residual_heat_in_district_heating,T-5A2-TE-6 - Shift to Residual Heat in district heating,Energy > Energy Supply > Heat,,"[""I.4.1""]",Sector-path based mapping
+chp_coal,T-5A3-TE-1 - CHP from coal,Energy > Energy Supply > Combined Heat Power,,"[""I.4.1""]",Sector-path based mapping
+chp_oil,T-5A3-TE-2 - CHP from oil,Energy > Energy Supply > Combined Heat Power,,"[""I.4.1""]",Sector-path based mapping
+chp_natural_gas,T-5A3-TE-3 - CHP from natural gas,Energy > Energy Supply > Combined Heat Power,,"[""I.4.1""]",Sector-path based mapping
+chp_waste_incineration,T-5A3-TE-4 - CHP from waste incineration,Energy > Energy Supply > Combined Heat Power,,"[""I.4.1""]",Sector-path based mapping
+chp_biofuels,T-5A3-TE-5 - CHP from biomass,Energy > Energy Supply > Combined Heat Power,,"[""I.4.1""]",Sector-path based mapping
+increased_energy_recovery_from_waste,T-5A3-TE-6 - Increased energy recovery from waste,Energy > Energy Supply > Combined Heat Power,,"[""I.4.1"", ""III.3.1"", ""III.3.2"", ""III.3.3""]",Shift from waste burning to CHP energy recovery
+shift_to_biofuel_in_district_heating,T-5A3-TE-7 - Shift to biofuel in district heating,Energy > Energy Supply > Combined Heat Power,,"[""I.4.1""]",Sector-path based mapping
+shift_to_biomass_energy_in_petroleum_refinement,T-5B1-TE-1 - Shift to biomass energy in petroleum refinement,Energy > Energy Transformation > Petroleum Refinement,,"[""I.7.1""]",Sector-path based mapping
+biogas_in_methane_reforming_for_hydrogen_production,T-5B4-TE-1 - Biogas in methane reforming for hydrogen production,Energy > Energy Transformation > Hydrogen Refinement,,"[""I.4.1""]",Sector-path based mapping
+biomass_in_carbon_gasification_for_hydrogen_production,T-5B4-TE-2 - Biomass in carbon gasification for hydrogen production,Energy > Energy Transformation > Hydrogen Refinement,,"[""I.4.1""]",Sector-path based mapping
+shift_to_biogas_energy_in_hydrogen_refinement,T-5B4-TE-3 - Shift to biogas energy in hydrogen refinement,Energy > Energy Transformation > Hydrogen Refinement,,"[""I.4.1""]",Sector-path based mapping
+shift_to_biomass_energy_in_hydrogen_refinement,T-5B4-TE-4 - Shift to biomass energy in hydrogen refinement,Energy > Energy Transformation > Hydrogen Refinement,,"[""I.4.1""]",Sector-path based mapping
+shift_to_electricity_in_hydrogen_refinement,T-5B4-TE-5 - Shift to electricity in hydrogen refinement,Energy > Energy Transformation > Hydrogen Refinement,,"[""I.4.1""]",Sector-path based mapping
+shift_to_electrolysis_of_water_for_hydrogen_production,T-5B4-TE-6 - Shift to electrolysis of water for hydrogen production,Energy > Energy Transformation > Hydrogen Refinement,,"[""I.4.1""]",Sector-path based mapping
+increased_recycling,T-6A1-TE-1 - Shift to recycling of solid waste,Waste > Solids > Solid Waste Disposal,,"[""III.1.1"", ""III.1.2"", ""III.1.3""]",Sector-path based mapping
+shift_to_composting_of_organic_waste,T-6A1-TE-2 - Shift to composting of organic waste,Waste > Solids > Solid Waste Disposal,,"[""III.1.1"", ""III.1.2"", ""III.1.3""]",Sector-path based mapping
+shift_to_exported_composting_of_organic_waste,T-6A1-TE-3 - Shift to exported composting of organic waste,Waste > Solids > Solid Waste Disposal,,"[""III.1.1"", ""III.1.2"", ""III.1.3""]",Sector-path based mapping
+shift_to_landfill_gas_recovery,T-6A1-TE-4 - Shift to landfill gas recovery,Waste > Solids > Solid Waste Disposal,,"[""III.1.1"", ""III.1.2"", ""III.1.3""]",Sector-path based mapping

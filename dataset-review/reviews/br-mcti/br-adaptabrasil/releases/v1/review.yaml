@@ -1,0 +1,83 @@
+dataset_id: br-adaptabrasil
+release: "v1"
+reviewed_on: 2026-04-20
+reviewed_by: amanda
+
+publisher:
+  name: Ministério da Ciência, Tecnologia e Inovação (MCTI) — AdaptaBrasil
+  product_site: AdaptaBrasil MCTI
+  url: https://adaptabrasil.mcti.gov.br/
+
+source:
+  main_url: https://sistema.adaptabrasil.mcti.gov.br/
+  access_type: public_api
+  format: JSON
+  documentation_available: true
+  community_examples_url: https://github.com/AdaptaBrasil/AdaptaBrasilAPIAccess
+
+coverage:
+  geography: country
+  countries: [BR]
+  temporal_reference: indicator-dependent years exposed via hierarchy and API
+  spatial_levels_expected:
+    - country
+    - regiao
+    - estado
+    - mesorregiao
+    - microrregiao
+    - municipio
+
+themes:
+  - climate_risk
+  - adaptation
+  - ccra
+  - water
+  - food_security
+  - energy
+  - health
+  - biodiversity
+  - infrastructure
+  - disasters
+
+key_attributes:
+  - indicator_id
+  - indicator_name
+  - hierarchy_level
+  - strategic_sector
+  - scenario_id
+  - year
+  - geometry_type
+  - value
+  - unit
+  - range_label
+
+api_surface:
+  base_host: sistema.adaptabrasil.mcti.gov.br
+  schema_slug: adaptabrasil
+  documented_endpoints:
+    - path: /api/mapa-dados/{recorte}/{resolucao}/{indicator_id}/{year}/{scenario}/{schema}
+      purpose: map-aligned indicator values for a clip and resolution
+    - path: /api/total/{recorte}/{resolucao}/{indicator_id}/{scenario}/{year}/{schema}
+      purpose: totals / evolution / trend style aggregates
+    - path: /api/geometria/data/{indicator_id}/{recorte}/{scenario}/{year}/{resolucao}/{format}/{schema}
+      purpose: download geometries with data (shapefile, GeoJSON, KMZ, JSON, XLSX, CSV, PNG)
+    - path: /api/info/{clipping}/{resolution}/{resolution_id}/{indicator_id}/{year}/{scenario}/{schema}
+      purpose: factor breakdown for composite indicators (nextlevel / lastlevel)
+  notes:
+    - Hierarchy metadata (all indicators, no values) is available via a separate hierarchy API described in the publisher GitHub README.
+    - Official Python helper script can emit a pipe-delimited CSV of indicator metadata and resolved URLs; prefer running it over static copies because the platform changes.
+
+integration_notes:
+  join_keys:
+    - municipio_id  # confirm alignment with IBGE municipality codes for production joins
+    - estado_id
+  requires_cleaning: true
+  requires_harmonisation: true
+  recommended_storage: >
+    Store raw JSON and geometry exports per indicator/year/scenario; normalize to long tables
+    with explicit clipping, resolution, and scenario dimensions. Decimal values may use comma
+    separators in JSON strings (Brazilian locale); normalize before numeric use.
+
+status:
+  production_ready: pending_validation
+  priority: medium

@@ -1,0 +1,59 @@
+# Template — copy to cc-mage/pipelines/<PIPELINE_NAME>/metadata.yaml and fill the <…>.
+# Standard flow (pipeline-design-patterns.md): per-source load -> [merge] -> export-to-raw ->
+#   export-modelled -> drop-staging, PLUS a catalog branch (load_source_catalog -> register
+#   releases) that feeds export-modelled. Copy the catalog branch + (for many sources) the
+#   per-source loaders and merge from the cl_finance_opportunity_to_modelled reference.
+name: <PIPELINE_NAME>                 # <prefix>_<source>_<description>
+description: >-
+  <One line: what this pipeline does, which dataset, which modelled table.>
+uuid: <PIPELINE_NAME>
+type: python
+blocks:
+- uuid: load_<SOURCE>_staging
+  name: load_<SOURCE>_staging
+  type: data_loader
+  language: python
+  configuration:
+    file_source: { path: data_loaders/load_<SOURCE>_staging.py }
+  upstream_blocks: []
+  downstream_blocks: [export_<SOURCE>_to_raw]
+- uuid: export_<SOURCE>_to_raw
+  name: export_<SOURCE>_to_raw
+  type: data_exporter
+  language: python
+  configuration:
+    file_source: { path: data_exporters/export_<SOURCE>_to_raw.py }
+  upstream_blocks: [load_<SOURCE>_staging]
+  downstream_blocks: [export_<SOURCE>_modelled]
+- uuid: export_<SOURCE>_modelled
+  name: export_<SOURCE>_modelled
+  type: data_exporter
+  language: sql
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    export_write_policy: append      # idempotency comes from release-scoped delete+insert, not the policy
+    use_raw_sql: true
+    file_source: { path: data_exporters/export_<SOURCE>_modelled.sql }
+  upstream_blocks: [export_<SOURCE>_to_raw]
+  downstream_blocks: [drop_<SOURCE>_staging]
+- uuid: drop_<SOURCE>_staging          # final cleanup — drop the throwaway raw_data staging table(s)
+  name: drop_<SOURCE>_staging
+  type: data_exporter
+  language: sql
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    export_write_policy: append
+    use_raw_sql: true
+    file_source: { path: data_exporters/drop_<SOURCE>_staging.sql }
+  upstream_blocks: [export_<SOURCE>_modelled]
+  downstream_blocks: []
+variables:
+  # ONLY release-varying infra values. Publisher/dataset/release identity is NOT here —
+  # the catalog branch reads it from index.yaml (see the cl_finance_opportunity_to_modelled
+  # reference: load_finance_source_catalog.py + load_dataset_release_finance_opportunity.sql,
+  # which you copy in as the catalog branch upstream of export-modelled).
+  source_bucket: test-global-api
+  source_release_version: <v1>
+widgets: []

@@ -1,0 +1,75 @@
+Inventory Reference,GPC Reference Number,Subsector name,Notation Key,Total Emissions,Total Emission Units,Activity type,Activity Value,Activity Units,Emission Factor - CO2,Emission Factor - CH4,Emission Factor - N2O,Emission Factor - Unit,CO2 Emissions,CH4 Emissions,N2O Emissions,Data source ID,Data source name
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,I,Stationary Energy,,152285.9441,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,I.1,Residential buildings,,75588.87069,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,I.1.1,Residential buildings,,20421.27895,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,I.1.2,Residential buildings,,54982.08144,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,I.1.3,Residential buildings,,185.5103019,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,I.2,Commercial and institutional buildings and facilities,,51450.02281,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,I.2.1,Commercial and institutional buildings and facilities,,10637.52091,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,I.2.2,Commercial and institutional buildings and facilities,,40675.263,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,I.2.3,Commercial and institutional buildings and facilities,,137.238899,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,I.3,Manufacturing industries and construction,,24980.88112,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,I.3.1,Manufacturing industries and construction,,24941.36045,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,I.3.2,Manufacturing industries and construction,,39.38776733,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,I.3.3,Manufacturing industries and construction,,0.132894871,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,I.4,Energy industries,,17.09543461,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,I.4.1,Energy industries,,17.09543461,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,I.4.2,Energy industries,,0,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,I.4.3,Energy industries,,0,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,I.4.4,Energy generation supplied to the grid,,,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,I.5,"Agriculture, forestry and fishing activities",,249.0740446,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,I.5.1,"Agriculture, forestry and fishing activities",,249.0740446,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,I.5.2,"Agriculture, forestry and fishing activities",,0,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,I.5.3,"Agriculture, forestry and fishing activities",,0,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,I.6,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,I.6.1,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,I.6.2,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,I.6.3,Non-specified sources,,0,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,I.7,Fugitive emissions from coal mining,,,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,I.7.1,Fugitive emissions from coal mining,,,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,I.8,Fugitive emissions from oil and natural gas,,,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,I.8.1,Fugitive emissions from oil and natural gas,,,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,II,Transportation,,166794.0165,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,II.1,On-road transportation,,160328.1507,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,II.1.1,On-road transportation,,131850.9675,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,II.1.2,On-road transportation,,,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,II.1.3,On-road transportation,,28477.18316,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,II.2,Railways,,123.1149773,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,II.2.1,Railways,,123.1149773,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,II.2.2,Railways,,,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,II.2.3,Railways,,,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,II.3,Waterborne navigation,,1435.764632,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,II.3.1,Waterborne navigation,,1435.764632,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,II.3.2,Waterborne navigation,,,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,II.3.3,Waterborne navigation,,,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,II.4,Aviation,,4781.053704,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,II.4.1,Aviation,,4781.053704,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,II.4.2,Aviation,,,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,II.4.3,Aviation,,,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,II.5,Off-road transportation,,125.9324794,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,II.5.1,Off-road transportation,,125.9324794,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,II.5.2,Off-road transportation,,,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,III,Waste,,80191.84675,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,III.1,Solid waste disposal,,63884.01238,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,III.1.1,Solid waste disposal,,63884.01238,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,III.1.2,Solid waste disposal,,0,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,III.1.3,Solid waste disposal,,,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,III.2,Biological treatment of waste,,5359.428425,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,III.2.1,Biological treatment of waste,,5359.428425,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,III.2.2,Biological treatment of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,III.2.3,Biological treatment of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,III.3,Incineration and open burning of waste,,741.0413936,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,III.3.1,Incineration and open burning of waste,,741.0413936,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,III.3.2,Incineration and open burning of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,III.3.3,Incineration and open burning of waste,,,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,III.4,Wastewater treatment and discharge,,10207.36455,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,III.4.1,Wastewater treatment and discharge,,10207.36455,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,III.4.2,Wastewater treatment and discharge,,,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,III.4.3,Wastewater treatment and discharge,,,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,IV,IPPU,,72648.1951,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,IV.1,Industrial processes,,5384.352357,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,IV.2,Product use,,67263.84274,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,V,AFOLU,,54365.30028,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,V.1,Livestock,,29824.09812,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,V.2,Land,,-5959.048053,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020
+b7516a42-4450-4fe4-a77d-a7baf8b3d2bc,V.3,Aggregate sources and non-CO2 emission sources on land,,30500.25022,t CO2e,,,,,,,,,,,,SSG Inventory Valdivia 2020

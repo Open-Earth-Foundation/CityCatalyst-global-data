@@ -1,0 +1,12 @@
+# Template — copy to cc-mage/pipelines/<PIPELINE_NAME>/triggers.yaml
+# An API trigger exposes an HTTP endpoint that runs the pipeline on demand. Name it
+# <PIPELINE_NAME>_api so the trigger is discoverable from the pipeline name.
+triggers:
+- name: <PIPELINE_NAME>_api
+  schedule_type: api          # time | event | api
+  schedule_interval: null
+  start_time: null
+  status: active              # active = endpoint live; inactive = disabled
+  settings: {}
+  sla: null
+  variables: {}               # optional defaults; the POST body may override (e.g. source_release_version)

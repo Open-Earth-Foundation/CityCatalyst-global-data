@@ -1,0 +1,41 @@
+need: 2026-06-cl-international-climate-finance
+
+sector: cross_sector
+themes: [climate_finance, multilateral, bilateral, philanthropy, adaptation, mitigation, international_cooperation]
+
+action_taxonomy:
+  framework: CityCatalyst city action list
+  catalog_ref: cl-ssg/cl-ssg-projects (actions_profiled.csv, 102 actions)
+
+geography:
+  countries: [Chile]
+  required_level: national   # most international finance resolves to country / national-entity level, not comuna; subnational where a facility is city-direct
+
+data_requirements:
+  must_have:
+    - funder_institution
+    - instrument_type        # grant | loan | guarantee | blended | technical_assistance | equity
+    - access_pathway         # direct | facilitated-by-city | intermediated (national entity / Accredited Entity / NIE)
+    - eligible_actor         # national govt | accredited entity | city/subnational | CBO/NGO | private firm
+    - climate_relevance      # explicit | climate-adjacent | indirect
+  nice_to_have:
+    - amount / ceiling (with currency)
+    - status / cycle window + recurrence
+    - chile_access_route     # the named national gateway (Min. Hacienda NDA, AGCID NIE, FYNSA AE, UNDP National Coordinator, EU focal point)
+    - gpc_sectors
+    - source_link to the funder's own page
+  metric_form: catalogue (one row per fund / window / programme), not quantitative
+  temporal: current programmes + open/known cycles; flag annual vs one-off vs rolling
+
+constraints:
+  license:
+    preferred: public funder pages (open program info)
+    acceptable: NDC Partnership Climate Funds Explorer, AGCID/Min. Hacienda pages
+    disqualifying: aggregators whose ToU forbid copy/redistribution (cf. fondos.gob.cl)
+  access:
+    preferred: funder publishes a programme/portfolio page fetchable without JS
+    acceptable: portal needing manual digging or a national-entity page
+    disqualifying: no public source at all (funder confirmable only by direct contact)
+
+screening_guidance: >
+  Broad-capture, tier-tagged (consistent with 2026-06-cl-finance-opportunities). Access pathway is an ATTRIBUTE not a kill-criterion: intermediated multilateral funds are kept as investigate with the route tagged, never rejected for being non-city-direct. Priority order is by city/community DIRECTNESS: (1) community/city-direct windows (GEF Small Grants, Gap Fund, C40 CFF, Bloomberg Mayors Challenge) → promote/investigate; (2) UN climate funds via a national entity (GCF, Adaptation Fund, GEF Trust Fund) → investigate, record the Chilean gateway; (3) MDB sovereign/programmatic lines (World Bank, IDB, CAF) → investigate, link to the existing gcf/idb/world-bank project dirs as the awards side; (4) bilaterals & philanthropy → investigate/deprioritize; (5) private impact finance & carbon markets → deprioritize (non-city, non-grant). Reject only genuine non-fit (not Chile-relevant, not a funding instrument, unverifiable). A fund being "closed" for its cycle is recurrence detail, not a reject.

@@ -1,0 +1,18 @@
+{# Atomization user-message template.
+   This call is action-agnostic. The document is the only varying input
+   across actions, so the prompt is structured for clarity rather than
+   for prefix caching.
+#}
+DOCUMENT METADATA
+  source_document_id : {{ source_document_id }}
+  source_name        : {{ source_name }}
+  source_level       : {{ source_level }}
+  region_code        : {{ region_code }}
+  document_type      : {{ document_type }}
+  chunk_label        : {{ chunk_label }}
+
+DOCUMENT TEXT (markdown, with <!-- page_break: N --> markers and ## section headings; every evidence_text in your output must be an exact substring of the text between this line and the TASK block below)
+{{ document_markdown }}
+
+TASK
+Return a strict JSON object with an `atoms` array following the schema and rules in the system message. Be exhaustive. Walk the document section by section. Every evidence_text must be a verbatim substring of the DOCUMENT TEXT above.

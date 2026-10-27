@@ -1,0 +1,66 @@
+indicator,bucket,lower_pct,upper_pct,rationale
+primary_forest_share,very_low,0.0,5.0,"<5% canopy too fragmented for landscape-scale NBS. Convention: lower bound inclusive, upper bound exclusive; very_high upper bound (100.0) is inclusive."
+primary_forest_share,low,5.0,15.0,5-15% scattered native forest patches
+primary_forest_share,medium,15.0,35.0,"15-35% substantial native forest, mixed-use landscape"
+primary_forest_share,high,35.0,55.0,35-55% forest-dominant landscape
+primary_forest_share,very_high,55.0,100.0,">=55% intact-forest-landscape threshold (Watson et al. 2018 Nature; Potapov et al. 2017)"
+secondary_forest_share,very_low,0.0,5.0,<5% minimal regenerating cover
+secondary_forest_share,low,5.0,15.0,5-15% scattered regrowth
+secondary_forest_share,medium,15.0,30.0,15-30% substantial secondary cover
+secondary_forest_share,high,30.0,50.0,30-50% secondary-forest-dominant
+secondary_forest_share,very_high,50.0,100.0,">=50% strongly regenerating landscape (Chazdon 2014 Second Growth)"
+silviculture_share,very_low,0.0,2.0,<2% trace plantation presence
+silviculture_share,low,2.0,10.0,2-10% minor plantation industry
+silviculture_share,medium,10.0,25.0,10-25% material plantation economy
+silviculture_share,high,25.0,40.0,25-40% plantation-dominant production landscape
+silviculture_share,very_high,40.0,100.0,">=40% silviculture-driven landscape (CONAF / INFOR plantation thresholds)"
+pasture_share,very_low,0.0,5.0,<5% negligible grazing land
+pasture_share,low,5.0,20.0,5-20% scattered pasture
+pasture_share,medium,20.0,35.0,20-35% mixed pasture in landscape
+pasture_share,high,35.0,50.0,35-50% pasture-significant landscape
+pasture_share,very_high,50.0,100.0,">=50% livestock-dominant landscape (dairy/beef belt)"
+cropland_share,very_low,0.0,1.0,<1% trace cropping
+cropland_share,low,1.0,10.0,1-10% scattered farming
+cropland_share,medium,10.0,25.0,10-25% farming present
+cropland_share,high,25.0,40.0,25-40% farming-significant landscape
+cropland_share,very_high,40.0,100.0,">=40% cropping-dominant agricultural belt"
+urban_built_share,very_low,0.0,0.5,<0.5% essentially rural
+urban_built_share,low,0.5,2.0,0.5-2% small-town presence
+urban_built_share,medium,2.0,10.0,2-10% material urban core
+urban_built_share,high,10.0,25.0,10-25% urbanised landscape
+urban_built_share,very_high,25.0,100.0,">=25% metropolitan / heavily urbanised"
+wetland_share,very_low,0.0,0.5,<0.5% minimal wetland presence
+wetland_share,low,0.5,2.0,0.5-2% scattered wetlands
+wetland_share,medium,2.0,5.0,2-5% wetland-significant landscape
+wetland_share,high,5.0,10.0,5-10% wetland-rich landscape
+wetland_share,very_high,10.0,100.0,">=10% wetland-dominated ecosystem (Ramsar Convention thresholds)"
+grassland_share,very_low,0.0,1.0,<1% trace grassland
+grassland_share,low,1.0,5.0,1-5% scattered grassland
+grassland_share,medium,5.0,15.0,5-15% grassland-present landscape
+grassland_share,high,15.0,30.0,15-30% grassland-significant
+grassland_share,very_high,30.0,100.0,">=30% grassland-dominant biome (Patagonian steppe context)"
+shrubland_share,very_low,0.0,2.0,<2% minimal matorral
+shrubland_share,low,2.0,10.0,2-10% scattered shrubland
+shrubland_share,medium,10.0,25.0,10-25% matorral-significant landscape
+shrubland_share,high,25.0,40.0,25-40% shrubland-dominant
+shrubland_share,very_high,40.0,100.0,">=40% matorral-biome landscape (Mediterranean Chile context)"
+beach_dune_share,very_low,0.0,0.1,<0.1% essentially inland
+beach_dune_share,low,0.1,0.5,0.1-0.5% minor coastal frontage
+beach_dune_share,medium,0.5,1.0,0.5-1% notable coastal presence
+beach_dune_share,high,1.0,2.0,1-2% strong coastal frontage
+beach_dune_share,very_high,2.0,100.0,">=2% extensive coast / dune systems"
+ice_snow_share,very_low,0.0,0.1,<0.1% no cryosphere
+ice_snow_share,low,0.1,0.5,0.1-0.5% trace snow/glacier presence
+ice_snow_share,medium,0.5,2.0,0.5-2% material snow / glacier present
+ice_snow_share,high,2.0,5.0,2-5% material cryosphere
+ice_snow_share,very_high,5.0,100.0,">=5% glacier-dominant high-altitude landscape"
+water_share,very_low,0.0,1.0,<1% essentially no surface water
+water_share,low,1.0,3.0,1-3% scattered surface water
+water_share,medium,3.0,7.0,3-7% lake / river presence
+water_share,high,7.0,15.0,7-15% water-significant landscape
+water_share,very_high,15.0,100.0,">=15% lake-dominated landscape (Siete Lagos context)"
+other_bare_share,very_low,0.0,2.0,<2% minimal bare ground
+other_bare_share,low,2.0,10.0,2-10% scattered bare / rocky
+other_bare_share,medium,10.0,25.0,10-25% material bare-ground area
+other_bare_share,high,25.0,40.0,25-40% bare-ground-significant
+other_bare_share,very_high,40.0,100.0,">=40% bare / rocky dominant (high cordillera, salt flat, mining)"

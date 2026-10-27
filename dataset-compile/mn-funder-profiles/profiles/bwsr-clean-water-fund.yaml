@@ -1,0 +1,133 @@
+# Funder profile — BWSR Clean Water Fund, Projects & Practices (competitive grant)
+# Prototype profile. Each section tags its `source`: stated (from the RFP) / derived (from the awards KB) / meta.
+# Companion examples: dataset-compile/mn-climate-awards/ (filter funder LIKE "BWSR Clean Water Fund"). Join key: route.
+
+identity:
+  source: stated
+  funder: Minnesota Board of Water & Soil Resources (BWSR)
+  program: Clean Water Fund — Projects & Practices (P&P) competitive grant
+  companion_track: Drinking Water Projects & Practices (same RFP, different rubric — see rubric.drinking_water_variant)
+  administering_agency: BWSR
+  route: A                      # competitive discretionary grant — apply to an RFP (join key to awards KB)
+  instrument: grant
+  geography: Minnesota statewide (metro + greater)
+  funding_source: Clean Water Fund (Clean Water, Land & Legacy Amendment — MN Const. Art. XI §15; dedicated sales tax)
+  status: open — FY27 cycle; a stable, Legacy-funded state channel (not exposed to the 2026 federal disruption)
+  cycle:
+    rfp: annual
+    fy27_application_deadline: 2026-06-30 16:30 (via eLINK)
+    fy27_awards_expected: summer 2026
+    fy27_work_plan_due: 2026-08-31
+  typical_round: "~$6.7M / 18 grants (FY27)"
+
+eligibility:
+  source: stated
+  applicant_types:
+    - Soil & Water Conservation Districts (SWCDs)
+    - Watershed Districts
+    - Watershed Management Organizations (WMOs)
+    - Counties (7-county metro: only if they have an adopted county groundwater plan)
+    - Joint Powers Boards
+    - Municipalities (only if they have a local water plan approved by a watershed authority)
+  plan_requirement: >
+    Applicant must have, or align its project with, a current approved local water plan (watershed management
+    plan, comprehensive watershed management plan, county/metro water plan). Plans must be current when the
+    Board approves awards. This is the load-bearing gate for a CITY applicant — a city without its own approved
+    plan applies through / in alignment with the relevant watershed authority.
+  compliance: must be in compliance with prior state/federal grant obligations; not debarred/suspended.
+  activity_scope: >
+    On-the-ground projects/practices that protect or restore water quality in lakes/rivers/streams or protect
+    groundwater/drinking water — e.g. stormwater practices, agricultural conservation, livestock waste management,
+    lakeshore/streambank stabilization, stream restoration, SSTS (septic) upgrades. Detailed eligible/ineligible
+    activity lists are in the RFP (feedlots, in-lake treatment, drainage, financial assistance have specific rules).
+
+match:
+  source: stated
+  requirement: ">= 10% non-state match of Clean Water Funds received/expended (unless BWSR Board specifies otherwise)"
+  eligible_forms: cash, or in-kind (cash value of services/materials) — from landowner, local govt, private, or other non-state source
+  restrictions:
+    - Match used here cannot be counted as match for any other state grant program.
+    - Ineligible activities cannot count toward match, EXCEPT land acquisition/easement costs directly tied to the project and incurred in the grant period.
+
+rubric:
+  source: stated
+  program: Projects & Practices
+  total_points: 100
+  criteria:                          # the gates the 70->100 score is measured against
+    - {name: "Project Abstract", points: 5}
+    - {name: "Prioritization — relationship to an approved local water plan", points: 15}
+    - {name: "Prioritization — alignment with a state Nonpoint Priority Funding Plan priority", points: 2}
+    - {name: "Targeting — methods to identify/inventory/target the actions & their location", points: 20}
+    - {name: "Targeting — complements partners' work (comprehensive watershed approach)", points: 5}
+    - {name: "Measurable Outcomes & Project Impact — water-quality outcomes tied to plan goals", points: 25}
+    - {name: "Secondary benefits (quantified)", points: 5}
+    - {name: "Project Readiness — siting, design, permits/review, landowner agreements", points: 13}
+    - {name: "Readiness — budget detail / eLINK activity categories", points: 5}
+    - {name: "Public Benefit — outreach/communication beyond standard signage", points: 2}
+    - {name: "Public Benefit — benefit to an environmental-justice area (Minn. Stat. 116.065)", points: 3}
+  heaviest_gates: ["Measurable Outcomes & Impact (25)", "Targeting (20)", "Prioritization–Plan (15)", "Readiness (13)"]
+  drinking_water_variant:
+    note: separate rubric, different weights
+    key_weights: {Project Abstract: 5, "Prioritization–Plan": 20, "Targeting (public supplies & private wells)": 25}
+
+required_document:                   # the interview spine AND the output/export target
+  source: stated
+  submission: eLINK online grant application
+  answer_limit: "2,000 characters per question (eLINK's count differs from MS Word)"
+  overview_questions: ["Project Abstract (5 pts)", "Proposed Measurable Outcomes (0 pts)"]
+  numbered_questions_order:
+    - Water Resource & issue
+    - Organizational capacity / current CWF grants held
+    - Prioritization — relationship to plan
+    - Prioritization — plan references/links
+    - Prioritization — state Nonpoint Priority Funding Plan alignment
+    - Targeting — methods & alternatives considered
+    - Targeting — coordination with partners
+    - Measurable Outcomes & Project Impact
+    - Secondary benefits
+    - Project Readiness — siting/design/permits/landowner
+    - Readiness — budget / eLINK activity categories
+    - Public Benefit — outreach
+    - Public Benefit — environmental-justice area
+    - Amendment non-substitution statement
+    - (Stream restoration only) team expertise & early coordination
+    - (Stream restoration only) financial assurance for O&M (~>=20% of cost recommended)
+    - (Feedlot / in-lake only) required attachments
+  required_attachments:
+    - Feedlot worksheet (if livestock-waste activities)
+    - Feasibility study (if in-lake/in-channel treatment)
+    - Drinking-water targeting map (Drinking Water track)
+
+fit_signals:
+  stated:
+    source: stated
+    focus: water quality (lakes/rivers/streams), groundwater & drinking-water protection; stormwater & green infrastructure, ag conservation, streambank/shoreline stabilization, stream restoration, SSTS
+    hazard_fit: "strong for water-quality / stormwater; flood only via water-storage / water-quality co-benefits (flood-first projects fit DNR/FEMA better)"
+    equity: environmental-justice-area benefit is both scored (3 pts) and an explicit application question
+  revealed_from_awards:
+    source: derived                  # computed from dataset-compile/mn-climate-awards, BWSR CWF FY27 rows (n=18)
+    typical_award: "median $289,500 (range $85,000–$1,034,825); round total ~$6.59M across 18 grants"
+    winning_applicant_types: {watershed-district: 6, SWCD: 7, conservation-district: 1, city: 2, county: 2}
+    categories_funded: {water-quality: 9, drinking-water: 9}
+    region_split: {metro: 8, greater: 10}
+    city_grantees_example: ["City of Hibbing ($85,000)", "City of Vadnais Heights ($240,000)"]
+    implication: >
+      Cities CAN win directly, but they are the minority — the median winner is a watershed district or SWCD.
+      A city applicant's fundability hinges on plan alignment (the eligibility gate) and is strengthened by
+      partnering with the local watershed authority. Award sizes are modest (six figures), so this suits a
+      discrete stormwater/water-quality project, not a multi-million capital build (that's Route B / SRF).
+
+cnb_usage:
+  source: meta
+  interview_structure: drive the interview from the numbered application questions, in order (Abstract → Prioritization → Targeting → Outcomes → Readiness → Public Benefit).
+  matching_focus: push the project to satisfy the heaviest gates — a documented Targeting method, Measurable water-quality outcomes tied to plan goals, and Readiness — plus plan alignment and an environmental-justice angle.
+  seventy_to_one_hundred: "the '100' is this rubric. Biggest point gains: Measurable Outcomes (25) + Targeting (20) = 45% of score — coach the note there first, then Prioritization (15) and Readiness (13)."
+  output_template: the eLINK question set (with 2,000-char limits per answer) is the export target for the Word concept note.
+
+provenance:
+  source: meta
+  stated_source: "FY27 Clean Water Fund Projects & Practices RFP (BWSR); BWSR Apply/CWF program pages"
+  revealed_source: "dataset-compile/mn-climate-awards/data.csv (funder LIKE 'BWSR Clean Water Fund', FY27)"
+  last_verified: 2026-07-04
+  status_flag: "stable state channel (Legacy-funded); FY27 cycle open; re-verify RFP each fiscal year"
+  co_calibration: "rubric transcribed from the RFP; confirm weighting emphasis & matching thresholds with NLC before the CNB scores against it (PRD guardrail)."

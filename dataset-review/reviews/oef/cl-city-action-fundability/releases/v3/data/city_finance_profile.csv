@@ -1,0 +1,346 @@
+comuna_cut,comuna,population,tramo,tramo_label,gl_technical_capacity,capacity,autonomy,city_archetype,capacity_basis,autonomy_basis,autonomy_source_vintage,t4_provisional
+01101,Iquique,196709,T1,Grandes urbanas,100,1.0,0.844061,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+01107,Alto Hospicio,139445,T1,Grandes urbanas,100,1.0,0.275503,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+01401,Pozo Almonte,16416,T3,Pequeñas semiurbanas,25,0.25,0.538929,Well-resourced,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+01402,Camiña,1335,T4,Rurales y aisladas,10,0.1,0.012534,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+01403,Colchane,684,T4,Rurales y aisladas,10,0.1,0.169724,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+01404,Huara,2850,T4,Rurales y aisladas,10,0.1,0.307245,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+01405,Pica,6263,T3,Pequeñas semiurbanas,25,0.25,0.533147,Well-resourced,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+02101,Antofagasta,397136,T1,Grandes urbanas,100,1.0,0.795021,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+02102,Mejillones,14014,T3,Pequeñas semiurbanas,25,0.25,0.698525,Well-resourced,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+02103,Sierra Gorda,1458,T4,Rurales y aisladas,10,0.1,0.697941,Well-resourced,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+02104,Taltal,11913,T3,Pequeñas semiurbanas,25,0.25,0.537708,Well-resourced,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+02201,Calama,164641,T1,Grandes urbanas,100,1.0,0.604583,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+02202,Ollagüe,256,T4,Rurales y aisladas,10,0.1,0.297815,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+02203,San Pedro de Atacama,9782,T3,Pequeñas semiurbanas,25,0.25,0.372476,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+02301,Tocopilla,24583,T2,Medianas urbanas,50,0.5,0.343709,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+02302,María Elena,4815,T4,Rurales y aisladas,10,0.1,0.620562,Well-resourced,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+03101,Copiapó,167281,T1,Grandes urbanas,100,1.0,0.574074,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+03102,Caldera,18717,T3,Pequeñas semiurbanas,25,0.25,0.235284,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+03103,Tierra Amarilla,11769,T3,Pequeñas semiurbanas,25,0.25,0.51472,Well-resourced,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+03201,Chañaral,12168,T3,Pequeñas semiurbanas,25,0.25,0.360645,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+03202,Diego de Almagro,11339,T3,Pequeñas semiurbanas,25,0.25,0.523386,Well-resourced,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+03301,Vallenar,53705,T2,Medianas urbanas,50,0.5,0.361194,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+03302,Alto del Carmen,4781,T4,Rurales y aisladas,10,0.1,0.282441,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+03303,Freirina,7558,T3,Pequeñas semiurbanas,25,0.25,0.233007,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+03304,Huasco,9343,T3,Pequeñas semiurbanas,25,0.25,0.315031,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+04101,La Serena,246835,T1,Grandes urbanas,100,1.0,0.693824,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+04102,Coquimbo,262907,T1,Grandes urbanas,100,1.0,0.595522,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+04103,Andacollo,11562,T3,Pequeñas semiurbanas,25,0.25,0.233218,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+04104,La Higuera,4335,T4,Rurales y aisladas,10,0.1,0.300292,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+04105,Paihuano,4639,T4,Rurales y aisladas,10,0.1,0.231515,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+04106,Vicuña,27996,T2,Medianas urbanas,50,0.5,0.241102,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+04201,Illapel,31732,T2,Medianas urbanas,50,0.5,0.194477,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+04202,Canela,9638,T3,Pequeñas semiurbanas,25,0.25,0.183525,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+04203,Los Vilos,22835,T2,Medianas urbanas,50,0.5,0.205469,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+04204,Salamanca,27789,T2,Medianas urbanas,50,0.5,0.364116,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+04301,Ovalle,117799,T1,Grandes urbanas,100,1.0,0.338468,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+04302,Combarbalá,12931,T3,Pequeñas semiurbanas,25,0.25,0.099905,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+04303,Monte Patria,29956,T2,Medianas urbanas,50,0.5,0.138138,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+04304,Punitaqui,12063,T3,Pequeñas semiurbanas,25,0.25,0.152798,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+04305,Río Hurtado,4322,T4,Rurales y aisladas,10,0.1,0.143758,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+05101,Valparaíso,280357,T1,Grandes urbanas,100,1.0,0.454172,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05102,Casablanca,29658,T2,Medianas urbanas,50,0.5,0.763864,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05103,Concón,48112,T2,Medianas urbanas,50,0.5,0.852185,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05104,Juan Fernández,901,T4,Rurales y aisladas,10,0.1,0.079963,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+05105,Puchuncaví,22443,T2,Medianas urbanas,50,0.5,0.642835,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05107,Quintero,35544,T2,Medianas urbanas,50,0.5,0.222659,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05109,Viña del Mar,331684,T1,Grandes urbanas,100,1.0,0.890167,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05201,Isla de Pascua,4773,T4,Rurales y aisladas,10,0.1,0.008621,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+05301,Los Andes,62524,T2,Medianas urbanas,50,0.5,0.367169,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05302,Calle Larga,16594,T3,Pequeñas semiurbanas,25,0.25,0.561557,Well-resourced,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05303,Rinconada,11837,T3,Pequeñas semiurbanas,25,0.25,0.595187,Well-resourced,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05304,San Esteban,20103,T2,Medianas urbanas,50,0.5,0.3117,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05401,La Ligua,39203,T2,Medianas urbanas,50,0.5,0.288648,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05402,Cabildo,19983,T3,Pequeñas semiurbanas,25,0.25,0.213706,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05403,Papudo,7553,T3,Pequeñas semiurbanas,25,0.25,0.636387,Well-resourced,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05404,Petorca,10127,T3,Pequeñas semiurbanas,25,0.25,0.305394,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05405,Zapallar,7971,T3,Pequeñas semiurbanas,25,0.25,0.917771,Well-resourced,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05501,Quillota,95383,T2,Medianas urbanas,50,0.5,0.423231,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05502,Calera,50451,T2,Medianas urbanas,50,0.5,0.338991,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05503,Hijuelas,19279,T3,Pequeñas semiurbanas,25,0.25,0.397093,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05504,La Cruz,24915,T2,Medianas urbanas,50,0.5,0.409593,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05506,Nogales,22095,T2,Medianas urbanas,50,0.5,0.324405,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05601,San Antonio,95520,T2,Medianas urbanas,50,0.5,0.474984,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05602,Algarrobo,16032,T3,Pequeñas semiurbanas,25,0.25,0.779277,Well-resourced,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05603,Cartagena,24544,T2,Medianas urbanas,50,0.5,0.138309,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05604,El Quisco,18896,T3,Pequeñas semiurbanas,25,0.25,0.150528,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05605,El Tabo,16222,T3,Pequeñas semiurbanas,25,0.25,0.118544,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05606,Santo Domingo,13149,T3,Pequeñas semiurbanas,25,0.25,0.860438,Well-resourced,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05701,San Felipe,79677,T2,Medianas urbanas,50,0.5,0.322627,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05702,Catemu,13755,T3,Pequeñas semiurbanas,25,0.25,0.269927,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05703,Llaillay,25442,T2,Medianas urbanas,50,0.5,0.274293,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05704,Panquehue,7266,T3,Pequeñas semiurbanas,25,0.25,0.360806,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05705,Putaendo,17057,T3,Pequeñas semiurbanas,25,0.25,0.202687,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05706,Santa María,15120,T3,Pequeñas semiurbanas,25,0.25,0.348808,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05801,Quilpué,161636,T1,Grandes urbanas,100,1.0,0.368855,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05802,Limache,55481,T2,Medianas urbanas,50,0.5,0.372902,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05803,Olmué,19775,T3,Pequeñas semiurbanas,25,0.25,0.435319,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+05804,Villa Alemana,139075,T1,Grandes urbanas,100,1.0,0.2865,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06101,Rancagua,254165,T1,Grandes urbanas,100,1.0,0.509975,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06102,Codegua,13924,T3,Pequeñas semiurbanas,25,0.25,0.365043,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06103,Coinco,7914,T3,Pequeñas semiurbanas,25,0.25,0.189558,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06104,Coltauco,21348,T2,Medianas urbanas,50,0.5,0.177456,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06105,Doñihue,21888,T2,Medianas urbanas,50,0.5,0.276506,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06106,Graneros,35754,T2,Medianas urbanas,50,0.5,0.249458,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06107,Las Cabras,27510,T2,Medianas urbanas,50,0.5,0.595703,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06108,Machalí,60791,T2,Medianas urbanas,50,0.5,0.614653,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06109,Malloa,13877,T3,Pequeñas semiurbanas,25,0.25,0.286334,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06110,Mostazal,27331,T2,Medianas urbanas,50,0.5,0.807735,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06111,Olivar,13880,T3,Pequeñas semiurbanas,25,0.25,0.463342,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06112,Peumo,14076,T3,Pequeñas semiurbanas,25,0.25,0.230248,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06113,Pichidegua,20320,T2,Medianas urbanas,50,0.5,0.278737,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06114,Quinta de Tilcoco,13558,T3,Pequeñas semiurbanas,25,0.25,0.277582,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06115,Rengo,63204,T2,Medianas urbanas,50,0.5,0.39058,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06116,Requínoa,29482,T2,Medianas urbanas,50,0.5,0.575051,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06117,San Vicente,49488,T2,Medianas urbanas,50,0.5,0.338912,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06201,Pichilemu,19794,T3,Pequeñas semiurbanas,25,0.25,0.260412,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06202,La Estrella,4587,T4,Rurales y aisladas,10,0.1,0.518308,Well-resourced,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+06203,Litueche,8846,T3,Pequeñas semiurbanas,25,0.25,0.385956,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06204,Marchihue,8709,T3,Pequeñas semiurbanas,25,0.25,0.549964,Well-resourced,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06205,Navidad,8881,T3,Pequeñas semiurbanas,25,0.25,0.125949,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06206,Paredones,7228,T3,Pequeñas semiurbanas,25,0.25,0.161593,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06301,San Fernando,75449,T2,Medianas urbanas,50,0.5,0.522658,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06302,Chépica,15560,T3,Pequeñas semiurbanas,25,0.25,0.176905,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06303,Chimbarongo,37249,T2,Medianas urbanas,50,0.5,0.275168,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06304,Lolol,7790,T3,Pequeñas semiurbanas,25,0.25,0.250093,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06305,Nancagua,18684,T3,Pequeñas semiurbanas,25,0.25,0.339413,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06306,Palmilla,13056,T3,Pequeñas semiurbanas,25,0.25,0.418337,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06307,Peralillo,12492,T3,Pequeñas semiurbanas,25,0.25,0.371321,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06308,Placilla,9437,T3,Pequeñas semiurbanas,25,0.25,0.238998,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+06309,Pumanque,4559,T4,Rurales y aisladas,10,0.1,0.224988,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+06310,Santa Cruz,40754,T2,Medianas urbanas,50,0.5,0.508985,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+07101,Talca,230184,T1,Grandes urbanas,100,1.0,0.53814,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+07102,Constitución,46888,T2,Medianas urbanas,50,0.5,0.277643,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+07103,Curepto,9498,T3,Pequeñas semiurbanas,25,0.25,0.149249,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+07104,Empedrado,3986,T4,Rurales y aisladas,10,0.1,0.084808,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+07105,Maule,61008,T2,Medianas urbanas,50,0.5,0.214847,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+07106,Pelarco,9229,T3,Pequeñas semiurbanas,25,0.25,0.730172,Well-resourced,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+07107,Pencahue,9159,T3,Pequeñas semiurbanas,25,0.25,0.326329,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+07108,Río Claro,14270,T3,Pequeñas semiurbanas,25,0.25,0.51126,Well-resourced,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+07109,San Clemente,47061,T2,Medianas urbanas,50,0.5,0.283184,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+07110,San Rafael,11225,T3,Pequeñas semiurbanas,25,0.25,0.273841,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+07201,Cauquenes,42064,T2,Medianas urbanas,50,0.5,0.216183,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+07202,Chanco,9436,T3,Pequeñas semiurbanas,25,0.25,0.126803,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+07203,Pelluhue,8562,T3,Pequeñas semiurbanas,25,0.25,0.101243,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+07301,Curicó,158659,T1,Grandes urbanas,100,1.0,0.52093,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+07302,Hualañé,10771,T3,Pequeñas semiurbanas,25,0.25,0.261683,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+07303,Licantén,6865,T3,Pequeñas semiurbanas,25,0.25,0.16311,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+07304,Molina,48477,T2,Medianas urbanas,50,0.5,0.279622,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+07305,Rauco,11265,T3,Pequeñas semiurbanas,25,0.25,0.280035,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+07306,Romeral,17216,T3,Pequeñas semiurbanas,25,0.25,0.491072,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+07307,Sagrada Familia,19416,T3,Pequeñas semiurbanas,25,0.25,0.561136,Well-resourced,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+07308,Teno,30087,T2,Medianas urbanas,50,0.5,0.47109,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+07309,Vichuquén,4710,T4,Rurales y aisladas,10,0.1,0.523065,Well-resourced,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+07401,Linares,95795,T2,Medianas urbanas,50,0.5,0.308936,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+07402,Colbún,22568,T2,Medianas urbanas,50,0.5,0.575034,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+07403,Longaví,33288,T2,Medianas urbanas,50,0.5,0.189645,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+07404,Parral,45014,T2,Medianas urbanas,50,0.5,0.264953,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+07405,Retiro,22308,T2,Medianas urbanas,50,0.5,0.211082,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+07406,San Javier,49452,T2,Medianas urbanas,50,0.5,0.237622,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+07407,Villa Alegre,17919,T3,Pequeñas semiurbanas,25,0.25,0.192867,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+07408,Yerbas Buenas,20010,T2,Medianas urbanas,50,0.5,0.372359,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+08101,Concepción,225985,T1,Grandes urbanas,100,1.0,0.797236,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+08102,Coronel,123412,T1,Grandes urbanas,100,1.0,0.474452,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+08103,Chiguayante,85577,T2,Medianas urbanas,50,0.5,0.385135,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+08104,Florida,12924,T3,Pequeñas semiurbanas,25,0.25,0.140942,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+08105,Hualqui,25662,T2,Medianas urbanas,50,0.5,0.176157,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+08106,Lota,39930,T2,Medianas urbanas,50,0.5,0.234509,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+08107,Penco,48866,T2,Medianas urbanas,50,0.5,0.331207,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+08108,San Pedro de La paz,150671,T1,Grandes urbanas,100,1.0,0.61864,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+08109,Santa Juana,14934,T3,Pequeñas semiurbanas,25,0.25,0.201089,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+08110,Talcahuano,145925,T1,Grandes urbanas,100,1.0,0.707766,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+08111,Tomé,56766,T2,Medianas urbanas,50,0.5,0.195409,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+08112,Hualpén,87346,T2,Medianas urbanas,50,0.5,0.505367,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+08201,Lebu,25057,T2,Medianas urbanas,50,0.5,0.127021,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+08202,Arauco,37049,T2,Medianas urbanas,50,0.5,0.335036,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+08203,Cañete,34566,T2,Medianas urbanas,50,0.5,0.135205,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+08204,Contulmo,5898,T3,Pequeñas semiurbanas,25,0.25,0.077281,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+08205,Curanilahue,31041,T2,Medianas urbanas,50,0.5,0.213491,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+08206,Los Álamos,21765,T2,Medianas urbanas,50,0.5,0.164886,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+08207,Tirúa,10188,T3,Pequeñas semiurbanas,25,0.25,0.096745,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+08301,Los Ángeles,218386,T1,Grandes urbanas,100,1.0,0.436892,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+08302,Antuco,4362,T4,Rurales y aisladas,10,0.1,0.092787,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+08303,Cabrero,31242,T2,Medianas urbanas,50,0.5,0.230454,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+08304,Laja,23691,T2,Medianas urbanas,50,0.5,0.281456,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+08305,Mulchén,28857,T2,Medianas urbanas,50,0.5,0.337579,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+08306,Nacimiento,26124,T2,Medianas urbanas,50,0.5,0.339571,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+08307,Negrete,10723,T3,Pequeñas semiurbanas,25,0.25,0.218886,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+08308,Quilaco,4402,T4,Rurales y aisladas,10,0.1,0.208473,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+08309,Quilleco,9693,T3,Pequeñas semiurbanas,25,0.25,0.24711,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+08310,San Rosendo,3574,T4,Rurales y aisladas,10,0.1,0.073023,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+08311,Santa Bárbara,14027,T3,Pequeñas semiurbanas,25,0.25,0.253343,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+08312,Tucapel,15692,T3,Pequeñas semiurbanas,25,0.25,0.245281,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+08313,Yumbel,23027,T2,Medianas urbanas,50,0.5,0.175412,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+08314,Alto Biobío,6014,T3,Pequeñas semiurbanas,25,0.25,0.192377,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09101,Temuco,290433,T1,Grandes urbanas,100,1.0,0.548055,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09102,Carahue,24941,T2,Medianas urbanas,50,0.5,0.093914,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09103,Cunco,19070,T3,Pequeñas semiurbanas,25,0.25,0.271984,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09104,Curarrehue,7729,T3,Pequeñas semiurbanas,25,0.25,0.088503,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09105,Freire,26153,T2,Medianas urbanas,50,0.5,0.224982,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09106,Galvarino,12709,T3,Pequeñas semiurbanas,25,0.25,0.112219,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09107,Gorbea,14058,T3,Pequeñas semiurbanas,25,0.25,0.159662,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09108,Lautaro,41695,T2,Medianas urbanas,50,0.5,0.417549,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09109,Loncoche,25096,T2,Medianas urbanas,50,0.5,0.223681,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09110,Melipeuco,6759,T3,Pequeñas semiurbanas,25,0.25,0.12689,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09111,Nueva Imperial,33729,T2,Medianas urbanas,50,0.5,0.15339,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09112,Padre Las Casas,80567,T2,Medianas urbanas,50,0.5,0.231101,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09113,Perquenco,7438,T3,Pequeñas semiurbanas,25,0.25,0.167802,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09114,Pitrufquén,26811,T2,Medianas urbanas,50,0.5,0.179286,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09115,Pucón,32211,T2,Medianas urbanas,50,0.5,0.814677,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09116,Saavedra,12863,T3,Pequeñas semiurbanas,25,0.25,0.064706,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09117,Teodoro Schmidt,15633,T3,Pequeñas semiurbanas,25,0.25,0.120939,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09118,Toltén,10032,T3,Pequeñas semiurbanas,25,0.25,0.082151,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09119,Vilcún,31515,T2,Medianas urbanas,50,0.5,0.233225,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09120,Villarrica,67335,T2,Medianas urbanas,50,0.5,0.59653,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09121,Cholchol,13138,T3,Pequeñas semiurbanas,25,0.25,0.11507,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09201,Angol,52446,T2,Medianas urbanas,50,0.5,0.237285,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09202,Collipulli,24162,T2,Medianas urbanas,50,0.5,0.33953,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09203,Curacautín,18415,T3,Pequeñas semiurbanas,25,0.25,0.187459,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09204,Ercilla,7722,T3,Pequeñas semiurbanas,25,0.25,0.121675,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09205,Lonquimay,10147,T3,Pequeñas semiurbanas,25,0.25,0.112727,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09206,Los Sauces,7334,T3,Pequeñas semiurbanas,25,0.25,0.158889,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09207,Lumaco,9248,T3,Pequeñas semiurbanas,25,0.25,0.098336,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09208,Purén,12161,T3,Pequeñas semiurbanas,25,0.25,0.110679,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09209,Renaico,10681,T3,Pequeñas semiurbanas,25,0.25,0.238951,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09210,Traiguén,18531,T3,Pequeñas semiurbanas,25,0.25,0.188986,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+09211,Victoria,34089,T2,Medianas urbanas,50,0.5,0.236739,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+10101,Puerto Montt,274146,T1,Grandes urbanas,100,1.0,0.645097,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+10102,Calbuco,36437,T2,Medianas urbanas,50,0.5,0.376603,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+10103,Cochamó,4191,T4,Rurales y aisladas,10,0.1,0.230005,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+10104,Fresia,12297,T3,Pequeñas semiurbanas,25,0.25,0.214056,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+10105,Frutillar,22527,T2,Medianas urbanas,50,0.5,0.598136,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+10106,Los Muermos,17138,T3,Pequeñas semiurbanas,25,0.25,0.252776,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+10107,Llanquihue,18070,T3,Pequeñas semiurbanas,25,0.25,0.437594,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+10108,Maullín,15054,T3,Pequeñas semiurbanas,25,0.25,0.226101,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+10109,Puerto Varas,52613,T2,Medianas urbanas,50,0.5,0.823076,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+10201,Castro,46664,T2,Medianas urbanas,50,0.5,0.275651,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+10202,Ancud,40570,T2,Medianas urbanas,50,0.5,0.285462,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+10203,Chonchi,16072,T3,Pequeñas semiurbanas,25,0.25,0.353315,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+10204,Curaco de Vélez,3662,T4,Rurales y aisladas,10,0.1,0.08255,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+10205,Dalcahue,14889,T3,Pequeñas semiurbanas,25,0.25,0.26161,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+10206,Puqueldón,4034,T4,Rurales y aisladas,10,0.1,0.16172,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+10207,Queilén,5675,T3,Pequeñas semiurbanas,25,0.25,0.170833,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+10208,Quellón,28386,T2,Medianas urbanas,50,0.5,0.306616,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+10209,Quemchi,8401,T3,Pequeñas semiurbanas,25,0.25,0.217782,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+10210,Quinchao,7663,T3,Pequeñas semiurbanas,25,0.25,0.216701,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+10301,Osorno,165121,T1,Grandes urbanas,100,1.0,0.623076,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+10302,Puerto Octay,8856,T3,Pequeñas semiurbanas,25,0.25,0.39218,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+10303,Purranque,19526,T3,Pequeñas semiurbanas,25,0.25,0.369311,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+10304,Puyehue,11702,T3,Pequeñas semiurbanas,25,0.25,0.40924,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+10305,Río Negro,13847,T3,Pequeñas semiurbanas,25,0.25,0.277703,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+10306,San Juan de la Costa,7766,T3,Pequeñas semiurbanas,25,0.25,0.068696,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+10307,San Pablo,10872,T3,Pequeñas semiurbanas,25,0.25,0.286759,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+10401,Chaitén,4007,T4,Rurales y aisladas,10,0.1,0.288368,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+10402,Futaleufú,3050,T4,Rurales y aisladas,10,0.1,0.119765,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+10403,Hualaihué,9472,T3,Pequeñas semiurbanas,25,0.25,0.224393,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+10404,Palena,1896,T4,Rurales y aisladas,10,0.1,0.095045,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+11101,Coyhaique,57136,T2,Medianas urbanas,50,0.5,0.415535,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+11102,Lago Verde,762,T4,Rurales y aisladas,10,0.1,0.160724,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+11201,Aysén,22825,T2,Medianas urbanas,50,0.5,0.388945,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+11202,Cisnes,5132,T3,Pequeñas semiurbanas,25,0.25,0.513376,Well-resourced,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+11203,Guaitecas,1587,T4,Rurales y aisladas,10,0.1,0.268922,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+11301,Cochrane,3378,T4,Rurales y aisladas,10,0.1,0.143344,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+11302,O'Higgins,647,T4,Rurales y aisladas,10,0.1,0.046878,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+11303,Tortel,499,T4,Rurales y aisladas,10,0.1,0.046132,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+11401,Chile Chico,4864,T4,Rurales y aisladas,10,0.1,0.135194,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+11402,Río Ibáñez,2691,T4,Rurales y aisladas,10,0.1,0.134308,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+12101,Punta Arenas,130452,T1,Grandes urbanas,100,1.0,0.800029,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+12102,Laguna Blanca,190,T4,Rurales y aisladas,10,0.1,0.077405,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+12103,Río Verde,102,T4,Rurales y aisladas,10,0.1,0.336768,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+12104,San Gregorio,224,T4,Rurales y aisladas,10,0.1,0.206947,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+12201,Cabo de Hornos,1736,T4,Rurales y aisladas,10,0.1,0.080118,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+12301,Porvenir,6673,T3,Pequeñas semiurbanas,25,0.25,0.399498,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+12302,Primavera,431,T4,Rurales y aisladas,10,0.1,0.139245,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+12303,Timaukel,147,T4,Rurales y aisladas,10,0.1,0.054687,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+12401,Natales,23878,T2,Medianas urbanas,50,0.5,0.499992,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+12402,Torres del Paine,197,T4,Rurales y aisladas,10,0.1,0.226643,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+13101,Santiago,425426,T1,Grandes urbanas,100,1.0,0.902955,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13102,Cerrillos,83544,T2,Medianas urbanas,50,0.5,0.774297,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13103,Cerro Navia,127032,T1,Grandes urbanas,100,1.0,0.148494,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13104,Conchalí,121298,T1,Grandes urbanas,100,1.0,0.415256,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13105,El Bosque,153976,T1,Grandes urbanas,100,1.0,0.202739,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13106,Estación Central,179909,T1,Grandes urbanas,100,1.0,0.651324,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13107,Huechuraba,101608,T1,Grandes urbanas,100,1.0,0.919321,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13108,Independencia,116089,T1,Grandes urbanas,100,1.0,0.550094,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13109,La Cisterna,102478,T1,Grandes urbanas,100,1.0,0.604787,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13110,La Florida,373466,T1,Grandes urbanas,100,1.0,0.569016,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13111,La Granja,111670,T1,Grandes urbanas,100,1.0,0.197093,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13112,La Pintana,174601,T1,Grandes urbanas,100,1.0,0.188054,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13113,La Reina,89091,T2,Medianas urbanas,50,0.5,0.925884,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13114,Las Condes,293272,T1,Grandes urbanas,100,1.0,0.97773,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13115,Lo Barnechea,112112,T1,Grandes urbanas,100,1.0,0.978015,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13116,Lo Espejo,87079,T2,Medianas urbanas,50,0.5,0.226048,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13117,Lo Prado,91118,T2,Medianas urbanas,50,0.5,0.164604,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13118,Macul,123241,T1,Grandes urbanas,100,1.0,0.77989,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13119,Maipú,501786,T1,Grandes urbanas,100,1.0,0.390338,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13120,Ñuñoa,239365,T1,Grandes urbanas,100,1.0,0.91638,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13121,Pedro Aguirre Cerda,95643,T2,Medianas urbanas,50,0.5,0.295962,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13122,Peñalolén,235724,T1,Grandes urbanas,100,1.0,0.666778,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13123,Providencia,141714,T1,Grandes urbanas,100,1.0,0.968001,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13124,Pudahuel,227540,T1,Grandes urbanas,100,1.0,0.721933,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13125,Quilicura,205375,T1,Grandes urbanas,100,1.0,0.804569,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13126,Quinta Normal,128818,T1,Grandes urbanas,100,1.0,0.504002,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13127,Recoleta,153131,T1,Grandes urbanas,100,1.0,0.780285,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13128,Renca,143321,T1,Grandes urbanas,100,1.0,0.714058,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13129,San Joaquín,94590,T2,Medianas urbanas,50,0.5,0.753499,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13130,San Miguel,149102,T1,Grandes urbanas,100,1.0,0.828052,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13131,San Ramón,75884,T2,Medianas urbanas,50,0.5,0.230977,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13132,Vitacura,85876,T2,Medianas urbanas,50,0.5,0.972587,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13201,Puente Alto,564435,T1,Grandes urbanas,100,1.0,0.260222,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13202,Pirque,28949,T2,Medianas urbanas,50,0.5,0.76142,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13203,San José de Maipo,17289,T3,Pequeñas semiurbanas,25,0.25,0.582514,Well-resourced,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13301,Colina,168128,T1,Grandes urbanas,100,1.0,0.881115,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13302,Lampa,144684,T1,Grandes urbanas,100,1.0,0.829538,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13303,Tiltil,19534,T3,Pequeñas semiurbanas,25,0.25,0.518716,Well-resourced,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13401,San Bernardo,304977,T1,Grandes urbanas,100,1.0,0.643552,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13402,Buin,116687,T1,Grandes urbanas,100,1.0,0.686099,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13403,Calera de Tango,25390,T2,Medianas urbanas,50,0.5,0.695801,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13404,Paine,78495,T2,Medianas urbanas,50,0.5,0.692482,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13501,Melipilla,135801,T1,Grandes urbanas,100,1.0,0.293714,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13502,Alhué,7696,T3,Pequeñas semiurbanas,25,0.25,0.821702,Well-resourced,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13503,Curacaví,35064,T2,Medianas urbanas,50,0.5,0.59999,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13504,María Pinto,15350,T3,Pequeñas semiurbanas,25,0.25,0.485122,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13505,San Pedro,11092,T3,Pequeñas semiurbanas,25,0.25,0.286425,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13601,Talagante,75800,T2,Medianas urbanas,50,0.5,0.446714,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13602,El Monte,37292,T2,Medianas urbanas,50,0.5,0.379509,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13603,Isla de Maipo,39062,T2,Medianas urbanas,50,0.5,0.54054,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13604,Padre Hurtado,81112,T2,Medianas urbanas,50,0.5,0.559695,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+13605,Peñaflor,93931,T2,Medianas urbanas,50,0.5,0.410016,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+14101,Valdivia,166958,T1,Grandes urbanas,100,1.0,0.436136,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+14102,Corral,5493,T3,Pequeñas semiurbanas,25,0.25,0.100347,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+14103,Lanco,16861,T3,Pequeñas semiurbanas,25,0.25,0.201819,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+14104,Los Lagos,21421,T2,Medianas urbanas,50,0.5,0.322949,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+14105,Máfil,8036,T3,Pequeñas semiurbanas,25,0.25,0.239318,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+14106,Mariquina,22901,T2,Medianas urbanas,50,0.5,0.247492,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+14107,Paillaco,19719,T3,Pequeñas semiurbanas,25,0.25,0.314501,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+14108,Panguipulli,35049,T2,Medianas urbanas,50,0.5,0.353946,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+14201,La Unión,38724,T2,Medianas urbanas,50,0.5,0.370576,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+14202,Futrono,15633,T3,Pequeñas semiurbanas,25,0.25,0.431972,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+14203,Lago Ranco,10527,T3,Pequeñas semiurbanas,25,0.25,0.54882,Well-resourced,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+14204,Río Bueno,33314,T2,Medianas urbanas,50,0.5,0.306242,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+15101,Arica,236109,T1,Grandes urbanas,100,1.0,0.430038,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+15102,Camarones,861,T4,Rurales y aisladas,10,0.1,0.223023,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+15201,Putre,1368,T4,Rurales y aisladas,10,0.1,0.082898,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+15202,General Lagos,504,T4,Rurales y aisladas,10,0.1,0.050206,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,True
+16101,Chillán,188835,T1,Grandes urbanas,100,1.0,0.508518,Self-sufficient,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+16102,Bulnes,23785,T2,Medianas urbanas,50,0.5,0.224571,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+16103,Chillán Viejo,32611,T2,Medianas urbanas,50,0.5,0.343028,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+16104,El Carmen,13122,T3,Pequeñas semiurbanas,25,0.25,0.200135,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+16105,Pemuco,8913,T3,Pequeñas semiurbanas,25,0.25,0.331473,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+16106,Pinto,12434,T3,Pequeñas semiurbanas,25,0.25,0.348784,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+16107,Quillón,19116,T3,Pequeñas semiurbanas,25,0.25,0.117926,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+16108,San Ignacio,17403,T3,Pequeñas semiurbanas,25,0.25,0.13954,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+16109,Yungay,18500,T3,Pequeñas semiurbanas,25,0.25,0.201472,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+16201,Quirihue,11634,T3,Pequeñas semiurbanas,25,0.25,0.168257,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+16202,Cobquecura,5477,T3,Pequeñas semiurbanas,25,0.25,0.137403,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+16203,Coelemu,15859,T3,Pequeñas semiurbanas,25,0.25,0.192715,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+16204,Ninhue,5762,T3,Pequeñas semiurbanas,25,0.25,0.086662,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+16205,Portezuelo,5188,T3,Pequeñas semiurbanas,25,0.25,0.124882,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+16206,Ránquil,6478,T3,Pequeñas semiurbanas,25,0.25,0.235952,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+16207,Trehuaco,6124,T3,Pequeñas semiurbanas,25,0.25,0.107723,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+16301,San Carlos,55629,T2,Medianas urbanas,50,0.5,0.240703,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+16302,Coihueco,29760,T2,Medianas urbanas,50,0.5,0.187426,Delivery-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+16303,Ñiquén,12783,T3,Pequeñas semiurbanas,25,0.25,0.159605,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+16304,San Fabián,5241,T3,Pequeñas semiurbanas,25,0.25,0.22782,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False
+16305,San Nicolás,15082,T3,Pequeñas semiurbanas,25,0.25,0.317248,Support-ready,vem_tramo_ine_censo_2024,sim_bep_fcm_over_ip_percibido,2026-06-14,False

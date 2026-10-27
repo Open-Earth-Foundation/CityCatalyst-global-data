@@ -1,0 +1,4 @@
+parameter,value,unit,source,notes
+grid_ef,253,gCO2/kWh,Ember,Chile ~253; Brazil ~130
+blend_ethanol_share,0.0,fraction,national fuel standard,Chile ~0; Brazil ~0.22 (E27-E30)
+mode_shift_fraction,0.10,fraction,city transport stats,assumed share of car-km shifted to transit

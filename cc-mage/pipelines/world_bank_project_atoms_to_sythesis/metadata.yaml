@@ -1,0 +1,146 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_loaders/load_world_bank_project_atoms_from_s3_staging.py
+  downstream_blocks:
+  - load_world_bank_project_synthesis_to_s3
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_world_bank_project_atoms_from_s3_staging
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_world_bank_project_atoms_from_s3_staging
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_exporters/load_world_bank_project_synthesis_to_s3.py
+  downstream_blocks:
+  - load_world_bank_project_synthesis_raw
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_world_bank_project_synthesis_to_s3
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_world_bank_project_atoms_from_s3_staging
+  uuid: load_world_bank_project_synthesis_to_s3
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_exporters/load_world_bank_project_synthesis_raw.py
+  downstream_blocks:
+  - load_world_bank_project_synthesis_enriched_raw
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_world_bank_project_synthesis_raw
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_world_bank_project_synthesis_to_s3
+  uuid: load_world_bank_project_synthesis_raw
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_exporters/load_world_bank_project_synthesis_enriched_raw.py
+  downstream_blocks:
+  - update_project_summary_world_bank
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_world_bank_project_synthesis_enriched_raw
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_world_bank_project_synthesis_raw
+  uuid: load_world_bank_project_synthesis_enriched_raw
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    dbt: {}
+    disable_query_preprocessing: false
+    export_write_policy: append
+    limit: 1000
+    use_raw_sql: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: update_project_summary_world_bank
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_world_bank_project_synthesis_enriched_raw
+  uuid: update_project_summary_world_bank
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2026-04-13 00:00:00.000000+00:00'
+data_integration: null
+description: Build one synthesis JSON per World Bank project from staged atoms and
+  upload to S3.
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: world_bank_project_atoms_to_sythesis
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: world_bank_project_atoms_to_sythesis
+variables:
+  country_code: null
+  dataset_name: World Bank Projects API
+  dataset_url: https://search.worldbank.org/api/v2/projects
+  datasource_name: world-bank-projects
+  destination_bucket: test-global-api
+  destination_prefix: raw_data/world_bank/world_bank_projects/documents
+  enriched_table_name: world_bank_project_synthesis_enriched_staging
+  openai_max_retries: 2
+  openai_model: gpt-4.1
+  openai_timeout_seconds: 180
+  publisher_name: The World Bank
+  publisher_url: https://www.worldbank.org/
+  released_at: '2026-04-09'
+  skip_if_synthesis_exists: true
+  source_name: world_bank
+  source_project_id: P006634
+  source_url: https://search.worldbank.org/api/v2/projects?format=json&rows=50&os=0&qterm=climate
+  synthesis_filename: project_synthesis.json
+  system_prompt_path: prompts/project-atom-synthesis.txt
+  table_name: world_bank_project_synthesis_staging
+  version_label: v2
+variables_dir: /home/src/mage_data/cc-mage
+widgets: []

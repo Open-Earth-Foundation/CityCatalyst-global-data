@@ -1,0 +1,13 @@
+triggers:
+- description: null
+  envs: []
+  last_enabled_at: 2026-06-21 19:48:44.557611
+  name: cl_finance_project_to_modelled_api
+  pipeline_uuid: cl_finance_project_to_modelled
+  schedule_interval: null
+  schedule_type: api
+  settings: null
+  sla: null
+  start_time: 2026-06-21 19:48:00
+  status: active
+  token: 4c271aef1c0343d7b87337a9f21facf7

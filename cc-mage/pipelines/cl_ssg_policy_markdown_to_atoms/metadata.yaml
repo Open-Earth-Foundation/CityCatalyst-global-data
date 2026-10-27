@@ -1,0 +1,79 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_loaders/load_cl_ssg_policy_markdowns_from_s3.py
+  downstream_blocks:
+  - load_cl_ssg_policy_markdown_atoms_to_s3
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_cl_ssg_policy_markdowns_from_s3
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_cl_ssg_policy_markdowns_from_s3
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: data_exporters/load_cl_ssg_policy_markdown_atoms_to_s3.py
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_cl_ssg_policy_markdown_atoms_to_s3
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - load_cl_ssg_policy_markdowns_from_s3
+  uuid: load_cl_ssg_policy_markdown_atoms_to_s3
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2026-04-13 00:00:00.000000+00:00'
+data_integration: null
+description: Extract atoms from cl-ssg policy markdown documents and upload JSONL
+  to S3.
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: cl_ssg_policy_markdown_to_atoms
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: cl_ssg_policy_markdown_to_atoms
+variables:
+  atoms_file_extension: jsonl
+  batch_size: 4
+  check_legacy_ndjson: true
+  destination_bucket: test-global-api
+  destination_prefix: raw_data/cl-ssg/cl-ssg-policy-documents/releases/2026/markdown
+  openai_max_retries: 2
+  openai_model: gpt-4.1-mini
+  openai_timeout_seconds: 120
+  short_doc_threshold: 40
+  skip_if_atoms_exist: true
+  sleep_seconds: 0.25
+  source_bucket: test-global-api
+  source_name: cl-ssg-policy-documents
+  source_pdf_prefix: raw_data/cl-ssg/cl-ssg-policy-documents/releases/2026
+  source_prefix: raw_data/cl-ssg/cl-ssg-policy-documents/releases/2026/markdown
+  system_prompt_path: prompts/policy-atom-extraction.txt
+variables_dir: /home/src/mage_data/cc-mage
+widgets: []

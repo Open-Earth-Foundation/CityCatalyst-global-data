@@ -1,0 +1,516 @@
+{
+  "meta": {
+    "requestId": "corral-inventory-2020",
+    "generatedAtUtc": "2026-05-22T13:57:00.552681+00:00",
+    "backendConsumer": "hiap-meed",
+    "upstreamProvider": "city_catalyst_frontend",
+    "apiContext": {
+      "endpoint": "POST /v1/prioritize",
+      "locodes": [
+        "CL CRR"
+      ]
+    },
+    "totalRecords": 1
+  },
+  "requestData": {
+    "requestedLanguages": [
+      "en"
+    ],
+    "topN": 20,
+    "createExplanations": false,
+    "cityDataList": [
+      {
+        "locode": "CL CRR",
+        "countryCode": "CL",
+        "populationSize": null,
+        "excludedActionIds": [],
+        "cityStrategicPreferenceSectors": [],
+        "cityStrategicPreferenceTimeframes": [
+          "no_preference"
+        ],
+        "cityStrategicPreferenceCoBenefitKeys": [],
+        "cityEmissionsData": {
+          "inventoryYear": 2020,
+          "gpcData": {
+            "I.1.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Residential buildings",
+                  "totalEmissions": 682.7443027,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.1.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Residential buildings",
+                  "totalEmissions": 1391.491514,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.1.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Residential buildings",
+                  "totalEmissions": 4.694911582,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.2.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Commercial and institutional buildings and facilities",
+                  "totalEmissions": 345.5222835,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.2.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Commercial and institutional buildings and facilities",
+                  "totalEmissions": 838.541496,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.2.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Commercial and institutional buildings and facilities",
+                  "totalEmissions": 2.829250585,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.3.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Manufacturing industries and construction",
+                  "totalEmissions": 9277.215306,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.3.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Manufacturing industries and construction",
+                  "totalEmissions": 1.443960336,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.3.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Manufacturing industries and construction",
+                  "totalEmissions": 0.004871942,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.4.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Energy industries",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.4.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Energy industries",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.4.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Energy industries",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.5.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Agriculture, forestry and fishing activities",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.5.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Agriculture, forestry and fishing activities",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.5.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Agriculture, forestry and fishing activities",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.6.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Non-specified sources",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.6.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Non-specified sources",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "I.6.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Non-specified sources",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "II.1.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "On-road transportation",
+                  "totalEmissions": 2713.180602,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "II.1.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "On-road transportation",
+                  "totalEmissions": 680.6900827,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "II.2.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Railways",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "II.3.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Waterborne navigation",
+                  "totalEmissions": 2256.201564,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "II.4.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Aviation",
+                  "totalEmissions": 161.4298495,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "II.5.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Off-road transportation",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "III.1.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Solid waste disposal",
+                  "totalEmissions": 0.0,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "III.1.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Solid waste disposal",
+                  "totalEmissions": 2157.011225,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "III.2.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Biological treatment of waste",
+                  "totalEmissions": 180.9583781,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "III.3.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Incineration and open burning of waste",
+                  "totalEmissions": 25.0208862,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "III.4.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Wastewater treatment and discharge",
+                  "totalEmissions": 604.1262032,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "IV.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Industrial processes",
+                  "totalEmissions": 564.2076856,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "IV.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Product use",
+                  "totalEmissions": 4341.492966,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "V.1": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Livestock",
+                  "totalEmissions": 5458.743115,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "V.2": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Land",
+                  "totalEmissions": -749477.1893,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            },
+            "V.3": {
+              "notationKey": null,
+              "activities": [
+                {
+                  "activityType": "Aggregate sources and non-CO2 emission sources on land",
+                  "totalEmissions": 19700.0242,
+                  "totalEmissionsUnit": "t CO2e",
+                  "activityValue": null,
+                  "activityUnit": null,
+                  "dataSource": "SSG Inventory Corral 2020",
+                  "notationKey": null
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

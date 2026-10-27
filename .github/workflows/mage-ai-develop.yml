@@ -4,17 +4,17 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - cc-mage/**
+      - cc-mage/requirements.txt
+      - Dockerfile
       - .github/workflows/mage-ai-develop.yml
     branches: ["develop"]
-  pull_request:
-    paths:
-      - cc-mage/**
-      - .github/workflows/mage-ai-develop.yml
 
 jobs:
   pushToGHCR:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
     defaults:
       run:
         working-directory: ./
@@ -32,7 +32,7 @@ jobs:
       - name: Pushing mageai to GHCR
         env:
           VERSION: ${{ github.sha }}
-          IMAGE: ghcr.io/open-earth-foundation/citycatalyst-mage-ai
+          IMAGE: ghcr.io/open-earth-foundation/globalapi-mage-ai
         run: |
           docker build -t $IMAGE:$VERSION .
           docker tag $IMAGE:$VERSION $IMAGE:latest

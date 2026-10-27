@@ -1,0 +1,68 @@
+dataset_id: climateview-transition-elements
+release: "2026"
+reviewed_on: 2026-04-23
+reviewed_by: amanda
+
+publisher:
+  name: ClimateView
+  id: climateview
+  country: SE
+  note: >
+    TEF is presented as an open-source framework developed by ClimateView with
+    collaborators across cities and public agencies.
+
+source:
+  main_url: https://www.transitionelements.org/
+  access_type: website_curated_content
+  format: web pages (human-readable), embedded YAML/model snippets on content pages
+  documentation_available: true
+  retrieval_note: >
+    Public website currently published as a work in progress. The project notes
+    that model files are being prepared for fuller automation/open repository access.
+
+coverage:
+  geography: global_framework
+  temporal_reference: rolling updates; framework and white papers evolve over time
+  spatial_levels_expected:
+    - global
+    - national
+    - city
+
+themes:
+  - mitigation
+  - climate_action_taxonomy
+  - policy
+  - planning
+
+key_attributes:
+  - mitigation_compendium_activity
+  - transition_element
+  - framework_descriptions
+  - whitepaper_links
+  - resource_links
+
+integration_notes:
+  join_keys:
+    - transition_element_id_or_slug (to be confirmed during extraction)
+    - mitigation_activity_id_or_slug (to be confirmed during extraction)
+  requires_cleaning: true
+  requires_harmonisation: true
+  recommended_storage: curated yaml/json extracts versioned per release
+  upstream_licensing: verify explicit reuse terms before redistributing transformed extracts
+
+data_quality:
+  authority: framework_owner_published
+  completeness: unknown_until_full_extraction
+  update_frequency: manual_refresh
+  known_issues:
+    - open-source status is declared but formal license terms are not clearly exposed on landing page
+    - website content and model structure may change as automation matures
+
+suitability_use_cases:
+  mitigation_action_mapping: high
+  legal_signal_linking_support: medium
+  direct_city_emissions_quantification: low
+
+status:
+  production_ready: pending_validation
+  priority: medium
