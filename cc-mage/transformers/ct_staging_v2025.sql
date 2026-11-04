@@ -13,6 +13,12 @@ FROM raw_data.ct_manufactoring_staging
 UNION
 SELECT *
 FROM raw_data.ct_fossilfuels_staging
+UNION
+SELECT *
+FROM raw_data.ct_power_staging
+UNION
+SELECT *
+FROM raw_data.ct_agriculture_staging
 ),
 staging_activity AS (
 SELECT 	*,

@@ -40,10 +40,11 @@ SELECT 	a.sector,
 		activity_subcategoryvalue1,
 		activity_subcategoryname2,
 		activity_subcategoryvalue2
-FROM data_raw a 
-LEFT JOIN raw_data.ct_transportation_mapping b 
-ON a.sector = b.sector 
+FROM data_raw a
+INNER JOIN raw_data.ct_transportation_mapping b
+ON a.sector = b.sector
 AND a.subsector = b.subsector
+WHERE NULLIF(trim(gpc_reference_number), '') IS NOT NULL
 ),
 locode_data AS (
 SELECT 		(MD5(CONCAT_WS('-', methodology_name, gpc_reference_number))::UUID) AS method_id,

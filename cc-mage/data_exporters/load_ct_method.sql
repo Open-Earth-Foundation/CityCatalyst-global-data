@@ -2,7 +2,7 @@ WITH methodology AS (
     SELECT DISTINCT
         method_id,
         methodology_name,
-        null as methodology_description,
+        methodology_name as methodology_description,
         gpc_reference_number
     FROM raw_data.ct_staging_v2025
 )
