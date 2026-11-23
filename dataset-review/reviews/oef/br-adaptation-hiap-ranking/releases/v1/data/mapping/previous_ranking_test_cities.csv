@@ -1,0 +1,106 @@
+city,locode,previous_rank,previous_action_id,previous_action_name,updated_action_id,updated_action_name,relation,confidence,remapped_rank
+Caxias do Sul,BR CXL,1,icare_0176,Develop a Climate Action Plan,icare_0172,Develop and implement an integrated climate action plan and risk reduction plan,replaced,high,1
+Caxias do Sul,BR CXL,2,icare_0169,Establish a Plan for Preparation and Emergency Response Measures in the event of extreme weather events,icare_0169,Develop and implement an extreme weather preparedness and emergency response plan,same,high,2
+Caxias do Sul,BR CXL,3,icare_0181,Restore in Vulnerable Areas,icare_0181,Relocate and resettle populations living in high-risk areas,revised,medium,3
+Caxias do Sul,BR CXL,3,icare_0181,Restore in Vulnerable Areas,ipcc_0084,Restore and create natural areas through ecosystem-based measures,split,medium,3
+Caxias do Sul,BR CXL,4,icare_0162,Strengthen programs for control and conservation of protected areas,icare_0162,Strengthen programs for control and conservation of protected areas,same,high,4
+Caxias do Sul,BR CXL,5,ipcc_0088,Update and enforce climate‑resilient building codes,ipcc_0088,Update and enforce climate‑resilient building codes,same,high,5
+Caxias do Sul,BR CXL,6,icare_0180,Expand urban green-blue networks and corridors,icare_0180,Expand urban green-blue networks and corridors,same,high,6
+Caxias do Sul,BR CXL,7,ipcc_0097,Upgrade food storage and distribution for climate resilience,ipcc_0097,Strengthen climate-resilient food storage and distribution infrastructure,same,high,7
+Caxias do Sul,BR CXL,8,ipcc_0094,Strengthen climate‑resilient health services,ipcc_0094,"Strengthen healthcare capacity, continuity and environmental health surveillance",revised,high,8
+Caxias do Sul,BR CXL,9,icare_0144,Establish a financial support program for extreme weather events,ipcc_0092,Establish climate-responsive social protection and post-disaster financial support programs,replaced,high,9
+Caxias do Sul,BR CXL,10,icare_0165,Develop an Environmental Education Plan,icare_0165,Develop an environmental education and climate awareness plan,same,high,10
+Caxias do Sul,BR CXL,11,icare_0164,Improve Hydrological Monitoring System with Telemetry Stations,icare_0164,Improve Hydrological Monitoring System,same,high,11
+Caxias do Sul,BR CXL,12,icare_0145,Strengthen the healthcare system to respond effectively to extreme events,ipcc_0094,"Strengthen healthcare capacity, continuity and environmental health surveillance",replaced,high,8
+Caxias do Sul,BR CXL,13,icare_0156,Improve Implementation of urban gardens,icare_0156,Implementation and strengthening of urban and peri-urban agriculture,revised,high,12
+Caxias do Sul,BR CXL,14,ipcc_0096,Strengthen climate resilience in farming and fisheries,ipcc_0096,Strengthen climate resilience in agriculture and livestock systems,revised,medium,13
+Caxias do Sul,BR CXL,15,ipcc_0099,Increase Water Capture and Storage,ipcc_0099,Protect and enhance water sources and watersheds,revised,medium,14
+Caxias do Sul,BR CXL,16,ipcc_0098,"Increase resilience by improving access to food, improving livelihoods and promoting dietary shifts and food waste reduction",ipcc_0098,Strengthen sustainable food value chains,revised,medium,15
+Caxias do Sul,BR CXL,17,icare_0171,"Improve the hydrometeorological forecasting, monitoring, and alert system for climate risks",icare_0171,Strengthen and integrate municipal hydrometeorological monitoring and forecasting,same,medium,16
+Caxias do Sul,BR CXL,18,ipcc_0086,Implement ecosystem‑based adaptation measures,ipcc_0084,Restore and create natural areas through ecosystem-based measures,replaced,high,3
+Caxias do Sul,BR CXL,19,ipcc_0092,Expand climate‑responsive social safety nets,ipcc_0092,Establish climate-responsive social protection and post-disaster financial support programs,revised,medium,9
+Caxias do Sul,BR CXL,20,icare_0172,Develop and implement the Municipal Risk Reduction Plan (PMRR) and identify population groups vulnerable to climate risks.,icare_0172,Develop and implement an integrated climate action plan and risk reduction plan,revised,medium,1
+Sobral,BR SOB,1,icare_0176,Develop a Climate Action Plan,icare_0172,Develop and implement an integrated climate action plan and risk reduction plan,replaced,high,1
+Sobral,BR SOB,2,icare_0169,Establish a Plan for Preparation and Emergency Response Measures in the event of extreme weather events,icare_0169,Develop and implement an extreme weather preparedness and emergency response plan,same,high,2
+Sobral,BR SOB,3,icare_0162,Strengthen programs for control and conservation of protected areas,icare_0162,Strengthen programs for control and conservation of protected areas,same,high,3
+Sobral,BR SOB,4,ipcc_0094,Strengthen climate‑resilient health services,ipcc_0094,"Strengthen healthcare capacity, continuity and environmental health surveillance",revised,high,4
+Sobral,BR SOB,5,ipcc_0096,Strengthen climate resilience in farming and fisheries,ipcc_0096,Strengthen climate resilience in agriculture and livestock systems,revised,medium,5
+Sobral,BR SOB,6,ipcc_0097,Upgrade food storage and distribution for climate resilience,ipcc_0097,Strengthen climate-resilient food storage and distribution infrastructure,same,high,6
+Sobral,BR SOB,7,icare_0164,Improve Hydrological Monitoring System with Telemetry Stations,icare_0164,Improve Hydrological Monitoring System,same,high,7
+Sobral,BR SOB,8,ipcc_0092,Expand climate‑responsive social safety nets,ipcc_0092,Establish climate-responsive social protection and post-disaster financial support programs,revised,medium,8
+Sobral,BR SOB,9,icare_0144,Establish a financial support program for extreme weather events,ipcc_0092,Establish climate-responsive social protection and post-disaster financial support programs,replaced,high,8
+Sobral,BR SOB,10,icare_0165,Develop an Environmental Education Plan,icare_0165,Develop an environmental education and climate awareness plan,same,high,9
+Sobral,BR SOB,11,icare_0145,Strengthen the healthcare system to respond effectively to extreme events,ipcc_0094,"Strengthen healthcare capacity, continuity and environmental health surveillance",replaced,high,4
+Sobral,BR SOB,12,icare_0181,Restore in Vulnerable Areas,icare_0181,Relocate and resettle populations living in high-risk areas,revised,medium,10
+Sobral,BR SOB,12,icare_0181,Restore in Vulnerable Areas,ipcc_0084,Restore and create natural areas through ecosystem-based measures,split,medium,10
+Sobral,BR SOB,13,icare_0156,Improve Implementation of urban gardens,icare_0156,Implementation and strengthening of urban and peri-urban agriculture,revised,high,11
+Sobral,BR SOB,14,icare_0180,Expand urban green-blue networks and corridors,icare_0180,Expand urban green-blue networks and corridors,same,high,12
+Sobral,BR SOB,15,ipcc_0098,"Increase resilience by improving access to food, improving livelihoods and promoting dietary shifts and food waste reduction",ipcc_0098,Strengthen sustainable food value chains,revised,medium,13
+Sobral,BR SOB,16,icare_0160,Establish mechanisms for intersectoral coordination and public participation in climate policy,ipcc_0103,"Strengthen cooperative, intersectoral and participatory climate governance",replaced,high,14
+Sobral,BR SOB,17,ipcc_0086,Implement ecosystem‑based adaptation measures,ipcc_0084,Restore and create natural areas through ecosystem-based measures,replaced,high,10
+Sobral,BR SOB,18,ipcc_0088,Update and enforce climate‑resilient building codes,ipcc_0088,Update and enforce climate‑resilient building codes,same,high,15
+Sobral,BR SOB,19,ipcc_0099,Increase Water Capture and Storage,ipcc_0099,Protect and enhance water sources and watersheds,revised,medium,16
+Sobral,BR SOB,20,ipcc_0087,Improve Infrastructure retrofitting,ipcc_0087,Strengthen climate resilience of existing public infrastructure,revised,high,17
+Santa Cruz do Arari,BR SZR,1,icare_0176,Develop a Climate Action Plan,icare_0172,Develop and implement an integrated climate action plan and risk reduction plan,replaced,high,1
+Santa Cruz do Arari,BR SZR,2,ipcc_0094,Strengthen climate‑resilient health services,ipcc_0094,"Strengthen healthcare capacity, continuity and environmental health surveillance",revised,high,2
+Santa Cruz do Arari,BR SZR,3,ipcc_0097,Upgrade food storage and distribution for climate resilience,ipcc_0097,Strengthen climate-resilient food storage and distribution infrastructure,same,high,3
+Santa Cruz do Arari,BR SZR,4,icare_0156,Improve Implementation of urban gardens,icare_0156,Implementation and strengthening of urban and peri-urban agriculture,revised,high,4
+Santa Cruz do Arari,BR SZR,5,ipcc_0096,Strengthen climate resilience in farming and fisheries,ipcc_0096,Strengthen climate resilience in agriculture and livestock systems,revised,medium,5
+Santa Cruz do Arari,BR SZR,6,ipcc_0086,Implement ecosystem‑based adaptation measures,ipcc_0084,Restore and create natural areas through ecosystem-based measures,replaced,high,6
+Santa Cruz do Arari,BR SZR,7,ipcc_0092,Expand climate‑responsive social safety nets,ipcc_0092,Establish climate-responsive social protection and post-disaster financial support programs,revised,medium,7
+Santa Cruz do Arari,BR SZR,8,ipcc_0098,"Increase resilience by improving access to food, improving livelihoods and promoting dietary shifts and food waste reduction",ipcc_0098,Strengthen sustainable food value chains,revised,medium,8
+Santa Cruz do Arari,BR SZR,9,icare_0162,Strengthen programs for control and conservation of protected areas,icare_0162,Strengthen programs for control and conservation of protected areas,same,high,9
+Santa Cruz do Arari,BR SZR,10,icare_0180,Expand urban green-blue networks and corridors,icare_0180,Expand urban green-blue networks and corridors,same,high,10
+Santa Cruz do Arari,BR SZR,11,ipcc_0087,Improve Infrastructure retrofitting,ipcc_0087,Strengthen climate resilience of existing public infrastructure,revised,high,11
+Santa Cruz do Arari,BR SZR,12,icare_0164,Improve Hydrological Monitoring System with Telemetry Stations,icare_0164,Improve Hydrological Monitoring System,same,high,12
+Santa Cruz do Arari,BR SZR,13,icare_0169,Establish a Plan for Preparation and Emergency Response Measures in the event of extreme weather events,icare_0169,Develop and implement an extreme weather preparedness and emergency response plan,same,high,13
+Santa Cruz do Arari,BR SZR,14,icare_0182,Develop an Urban Afforestation Plan,icare_0182,Develop an urban afforestation plan,same,high,14
+Santa Cruz do Arari,BR SZR,15,icare_0145,Strengthen the healthcare system to respond effectively to extreme events,ipcc_0094,"Strengthen healthcare capacity, continuity and environmental health surveillance",replaced,high,2
+Santa Cruz do Arari,BR SZR,16,ipcc_0099,Increase Water Capture and Storage,ipcc_0099,Protect and enhance water sources and watersheds,revised,medium,15
+Santa Cruz do Arari,BR SZR,17,ipcc_0084,Restore/create natural areas,ipcc_0084,Restore and create natural areas through ecosystem-based measures,revised,high,6
+Santa Cruz do Arari,BR SZR,18,icare_0144,Establish a financial support program for extreme weather events,ipcc_0092,Establish climate-responsive social protection and post-disaster financial support programs,replaced,high,7
+Santa Cruz do Arari,BR SZR,19,icare_0165,Develop an Environmental Education Plan,icare_0165,Develop an environmental education and climate awareness plan,same,high,16
+Santa Cruz do Arari,BR SZR,20,icare_0181,Restore in Vulnerable Areas,icare_0181,Relocate and resettle populations living in high-risk areas,revised,medium,17
+Santa Cruz do Arari,BR SZR,20,icare_0181,Restore in Vulnerable Areas,ipcc_0084,Restore and create natural areas through ecosystem-based measures,split,medium,6
+São Luís,BR SLZ,1,icare_0169,Establish a Plan for Preparation and Emergency Response Measures in the event of extreme weather events,icare_0169,Develop and implement an extreme weather preparedness and emergency response plan,same,high,1
+São Luís,BR SLZ,2,icare_0176,Develop a Climate Action Plan,icare_0172,Develop and implement an integrated climate action plan and risk reduction plan,replaced,high,2
+São Luís,BR SLZ,3,icare_0162,Strengthen programs for control and conservation of protected areas,icare_0162,Strengthen programs for control and conservation of protected areas,same,high,3
+São Luís,BR SLZ,4,ipcc_0094,Strengthen climate‑resilient health services,ipcc_0094,"Strengthen healthcare capacity, continuity and environmental health surveillance",revised,high,4
+São Luís,BR SLZ,5,ipcc_0097,Upgrade food storage and distribution for climate resilience,ipcc_0097,Strengthen climate-resilient food storage and distribution infrastructure,same,high,5
+São Luís,BR SLZ,6,icare_0144,Establish a financial support program for extreme weather events,ipcc_0092,Establish climate-responsive social protection and post-disaster financial support programs,replaced,high,6
+São Luís,BR SLZ,7,icare_0165,Develop an Environmental Education Plan,icare_0165,Develop an environmental education and climate awareness plan,same,high,7
+São Luís,BR SLZ,8,icare_0145,Strengthen the healthcare system to respond effectively to extreme events,ipcc_0094,"Strengthen healthcare capacity, continuity and environmental health surveillance",replaced,high,4
+São Luís,BR SLZ,9,icare_0164,Improve Hydrological Monitoring System with Telemetry Stations,icare_0164,Improve Hydrological Monitoring System,same,high,8
+São Luís,BR SLZ,10,icare_0156,Improve Implementation of urban gardens,icare_0156,Implementation and strengthening of urban and peri-urban agriculture,revised,high,9
+São Luís,BR SLZ,11,ipcc_0096,Strengthen climate resilience in farming and fisheries,ipcc_0096,Strengthen climate resilience in agriculture and livestock systems,revised,medium,10
+São Luís,BR SLZ,12,ipcc_0092,Expand climate‑responsive social safety nets,ipcc_0092,Establish climate-responsive social protection and post-disaster financial support programs,revised,medium,6
+São Luís,BR SLZ,13,ipcc_0086,Implement ecosystem‑based adaptation measures,ipcc_0084,Restore and create natural areas through ecosystem-based measures,replaced,high,11
+São Luís,BR SLZ,14,icare_0160,Establish mechanisms for intersectoral coordination and public participation in climate policy,ipcc_0103,"Strengthen cooperative, intersectoral and participatory climate governance",replaced,high,12
+São Luís,BR SLZ,15,icare_0181,Restore in Vulnerable Areas,icare_0181,Relocate and resettle populations living in high-risk areas,revised,medium,13
+São Luís,BR SLZ,15,icare_0181,Restore in Vulnerable Areas,ipcc_0084,Restore and create natural areas through ecosystem-based measures,split,medium,11
+São Luís,BR SLZ,16,icare_0180,Expand urban green-blue networks and corridors,icare_0180,Expand urban green-blue networks and corridors,same,high,14
+São Luís,BR SLZ,17,ipcc_0098,"Increase resilience by improving access to food, improving livelihoods and promoting dietary shifts and food waste reduction",ipcc_0098,Strengthen sustainable food value chains,revised,medium,15
+São Luís,BR SLZ,18,ipcc_0084,Restore/create natural areas,ipcc_0084,Restore and create natural areas through ecosystem-based measures,revised,high,11
+São Luís,BR SLZ,19,ipcc_0088,Update and enforce climate‑resilient building codes,ipcc_0088,Update and enforce climate‑resilient building codes,same,high,16
+São Luís,BR SLZ,20,ipcc_0099,Increase Water Capture and Storage,ipcc_0099,Protect and enhance water sources and watersheds,revised,medium,17
+Itaubal,BR ITL,1,icare_0176,Develop a Climate Action Plan,icare_0172,Develop and implement an integrated climate action plan and risk reduction plan,replaced,high,1
+Itaubal,BR ITL,2,icare_0164,Improve Hydrological Monitoring System with Telemetry Stations,icare_0164,Improve Hydrological Monitoring System,same,high,2
+Itaubal,BR ITL,3,icare_0156,Improve Implementation of urban gardens,icare_0156,Implementation and strengthening of urban and peri-urban agriculture,revised,high,3
+Itaubal,BR ITL,4,icare_0181,Restore in Vulnerable Areas,icare_0181,Relocate and resettle populations living in high-risk areas,revised,medium,4
+Itaubal,BR ITL,4,icare_0181,Restore in Vulnerable Areas,ipcc_0084,Restore and create natural areas through ecosystem-based measures,split,medium,4
+Itaubal,BR ITL,5,icare_0154,Clean and unclog drainage channels and install eco-barriers,c40_0048,Upgrade and maintain urban drainage systems,replaced,high,5
+Itaubal,BR ITL,6,ipcc_0098,"Increase resilience by improving access to food, improving livelihoods and promoting dietary shifts and food waste reduction",ipcc_0098,Strengthen sustainable food value chains,revised,medium,6
+Itaubal,BR ITL,7,icare_0163,Establish a first‑response firefighting brigade,,,no successor,high,
+Itaubal,BR ITL,8,ipcc_0097,Upgrade food storage and distribution for climate resilience,ipcc_0097,Strengthen climate-resilient food storage and distribution infrastructure,same,high,7
+Itaubal,BR ITL,9,ipcc_0094,Strengthen climate‑resilient health services,ipcc_0094,"Strengthen healthcare capacity, continuity and environmental health surveillance",revised,high,8
+Itaubal,BR ITL,10,ipcc_0092,Expand climate‑responsive social safety nets,ipcc_0092,Establish climate-responsive social protection and post-disaster financial support programs,revised,medium,9
+Itaubal,BR ITL,11,icare_0186,Implement integrated coastal zone management,icare_0186,Implement integrated coastal zone management measures,same,high,10
+Itaubal,BR ITL,12,icare_0169,Establish a Plan for Preparation and Emergency Response Measures in the event of extreme weather events,icare_0169,Develop and implement an extreme weather preparedness and emergency response plan,same,high,11
+Itaubal,BR ITL,13,ipcc_0096,Strengthen climate resilience in farming and fisheries,ipcc_0096,Strengthen climate resilience in agriculture and livestock systems,revised,medium,12
+Itaubal,BR ITL,14,ipcc_0099,Increase Water Capture and Storage,ipcc_0099,Protect and enhance water sources and watersheds,revised,medium,13
+Itaubal,BR ITL,15,icare_0182,Develop an Urban Afforestation Plan,icare_0182,Develop an urban afforestation plan,same,high,14
+Itaubal,BR ITL,16,ipcc_0086,Implement ecosystem‑based adaptation measures,ipcc_0084,Restore and create natural areas through ecosystem-based measures,replaced,high,4
+Itaubal,BR ITL,17,ipcc_0084,Restore/create natural areas,ipcc_0084,Restore and create natural areas through ecosystem-based measures,revised,high,4
+Itaubal,BR ITL,18,ipcc_0088,Update and enforce climate‑resilient building codes,ipcc_0088,Update and enforce climate‑resilient building codes,same,high,15
+Itaubal,BR ITL,19,icare_0162,Strengthen programs for control and conservation of protected areas,icare_0162,Strengthen programs for control and conservation of protected areas,same,high,16
+Itaubal,BR ITL,20,icare_0165,Develop an Environmental Education Plan,icare_0165,Develop an environmental education and climate awareness plan,same,high,17

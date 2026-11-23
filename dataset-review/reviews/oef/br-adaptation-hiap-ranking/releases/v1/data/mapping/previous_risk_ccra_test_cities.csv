@@ -1,0 +1,358 @@
+city,locode,scenario,year,keyimpact,hazard,risk_score,normalised_risk_score,hazard_score,exposure_score,vulnerability_score,risk_lower_limit,risk_upper_limit
+Caxias do Sul,BR CXL,current,2024,biodiversity,droughts,0.003337896678654,0.0270386645155329,0.108,0.077664063397,0.397950472540843,0.0023916200470728,0.0568178984742465
+Caxias do Sul,BR CXL,current,2024,biodiversity,heatwaves,0.0051551959814767,0.012949618678994,0.1668,0.077664063397,0.397950472540843,0.0046717713868407,0.16528782190119
+Caxias do Sul,BR CXL,current,2024,energy security,droughts,0.001245618,0.0724515428343302,0.108,0.99,0.01165,5.71661159372e-05,0.0187065507992134
+Caxias do Sul,BR CXL,current,2024,energy security,heatwaves,0.0019237878,0.0398131590796516,0.1668,0.99,0.01165,0.0001711601963389,0.0577824669015089
+Caxias do Sul,BR CXL,current,2024,food security,droughts,0.0189147119765929,0.458632609619644,0.108,0.56076,0.312319391549844,0.0010477275536882,0.04007664421958
+Caxias do Sul,BR CXL,current,2024,food security,floods,0.0446597366114,0.926525011340596,0.255,0.56076,0.312319391549844,0.0013569582658393,0.047658720087459
+Caxias do Sul,BR CXL,current,2024,infrastructure,floods,0.2208008043240282,0.99,0.8136,0.6399659430889685,0.4240654088050313,0.0001140508459319,0.110249132986622
+Caxias do Sul,BR CXL,current,2024,infrastructure,heatwaves,0.0642290589190166,0.395560152611115,0.1668,0.6399659430889685,0.601698113207547,0.0002316275518293,0.162897510722339
+Caxias do Sul,BR CXL,current,2024,infrastructure,landslides,0.3057426425761342,0.99,0.794,0.6399659430889685,0.601698113207547,0.0001388366358231,0.142444137738839
+Caxias do Sul,BR CXL,current,2024,infrastructure,sea-level-rise,0.0,0.0,0.0,0.99,0.601698113207547,0.0,0.650547048914356
+Caxias do Sul,BR CXL,current,2024,public health,diseases,0.0406702981364821,0.599359431398059,0.353,0.99,0.1163770799681866,0.0010136099535303,0.0669556350554312
+Caxias do Sul,BR CXL,current,2024,public health,floods,0.1798708880207932,0.99,0.8136,0.9835819817837964,0.2247705325443787,0.0002784580865246,0.0617437416414203
+Caxias do Sul,BR CXL,current,2024,public health,heatwaves,0.0298622969260496,0.299037399579896,0.1668,0.99,0.1808389465763733,0.0009392675880267,0.0990046694787861
+Caxias do Sul,BR CXL,current,2024,public health,landslides,0.0810953114728129,0.99,0.794,0.9835819817837964,0.10384,0.0003691037199727,0.0363663573482509
+Caxias do Sul,BR CXL,current,2024,water resources,droughts,0.02292665958,0.510528369643004,0.108,0.99,0.2144281666666667,0.0006321696996179,0.044283242062125
+Caxias do Sul,BR CXL,optimistic,2030,biodiversity,droughts,0.0,,0.2158,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,optimistic,2030,biodiversity,heatwaves,0.0,,0.1864,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,optimistic,2030,energy security,droughts,0.0,,0.3236,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,optimistic,2030,energy security,heatwaves,0.0,,0.1864,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,optimistic,2030,food security,droughts,0.0,,0.2158,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,optimistic,2030,food security,floods,0.0,,0.4706,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,optimistic,2030,infrastructure,floods,0.0,,0.8234,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,optimistic,2030,infrastructure,heatwaves,0.0,,0.1864,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,optimistic,2030,infrastructure,landslides,0.0,,0.8038,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,optimistic,2030,public health,diseases,0.0,,0.36525,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,optimistic,2030,public health,floods,0.0,,0.8234,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,optimistic,2030,public health,heatwaves,0.0,,0.1864,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,optimistic,2030,public health,landslides,0.0,,0.8038,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,optimistic,2030,water resources,droughts,0.0,,0.2158,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,optimistic,2050,biodiversity,droughts,0.0,,0.1374,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,optimistic,2050,biodiversity,heatwaves,0.0,,0.2158,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,optimistic,2050,energy security,droughts,0.0,,0.1668,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,optimistic,2050,energy security,heatwaves,0.0,,0.2158,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,optimistic,2050,food security,droughts,0.0,,0.1374,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,optimistic,2050,food security,floods,0.0,,0.4804,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,optimistic,2050,infrastructure,floods,0.0,,0.8234,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,optimistic,2050,infrastructure,heatwaves,0.0,,0.2158,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,optimistic,2050,infrastructure,landslides,0.0,,0.8038,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,optimistic,2050,public health,diseases,0.0,,0.3775,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,optimistic,2050,public health,floods,0.0,,0.8234,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,optimistic,2050,public health,heatwaves,0.0,,0.2158,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,optimistic,2050,public health,landslides,0.0,,0.8038,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,optimistic,2050,water resources,droughts,0.0,,0.1374,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,pessimistic,2030,biodiversity,droughts,0.0,,0.206,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,pessimistic,2030,biodiversity,heatwaves,0.0,,0.2256,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,pessimistic,2030,energy security,droughts,0.0,,0.304,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,pessimistic,2030,energy security,heatwaves,0.0,,0.2256,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,pessimistic,2030,food security,droughts,0.0,,0.206,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,pessimistic,2030,food security,floods,0.0,,0.4804,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,pessimistic,2030,infrastructure,floods,0.0,,0.8234,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,pessimistic,2030,infrastructure,heatwaves,0.0,,0.2256,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,pessimistic,2030,infrastructure,landslides,0.0,,0.8038,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,pessimistic,2030,public health,diseases,0.0,,0.39465,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,pessimistic,2030,public health,floods,0.0,,0.8234,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,pessimistic,2030,public health,heatwaves,0.0,,0.2256,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,pessimistic,2030,public health,landslides,0.0,,0.8038,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,pessimistic,2030,water resources,droughts,0.0,,0.206,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,pessimistic,2050,biodiversity,droughts,0.0,,0.2403,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,pessimistic,2050,biodiversity,heatwaves,0.0,,0.2844,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,pessimistic,2050,energy security,droughts,0.0,,0.3726,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,pessimistic,2050,energy security,heatwaves,0.0,,0.2844,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,pessimistic,2050,food security,droughts,0.0,,0.2403,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,pessimistic,2050,food security,floods,0.0,,0.5049,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,pessimistic,2050,infrastructure,floods,0.0,,0.8234,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,pessimistic,2050,infrastructure,heatwaves,0.0,,0.2844,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,pessimistic,2050,infrastructure,landslides,0.0,,0.8038,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,pessimistic,2050,public health,diseases,0.0,,0.40935,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,pessimistic,2050,public health,floods,0.0,,0.8234,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,pessimistic,2050,public health,heatwaves,0.0,,0.2844,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,pessimistic,2050,public health,landslides,0.0,,0.8038,0.0,0.0,0.0,0.0
+Caxias do Sul,BR CXL,pessimistic,2050,water resources,droughts,0.0,,0.2403,0.0,0.0,0.0,0.0
+Sobral,BR SOB,current,2024,biodiversity,droughts,0.0381513879566185,0.653890663923439,0.5245,0.08103773285,0.897589094345469,0.0023916200470728,0.0568178984742465
+Sobral,BR SOB,current,2024,biodiversity,heatwaves,0.0570415985425743,0.32953488115457,0.7842,0.08103773285,0.897589094345469,0.0046717713868407,0.16528782190119
+Sobral,BR SOB,current,2024,energy security,droughts,0.0502613333333333,0.99,0.5,0.8266666666666665,0.1216,5.71661159372e-05,0.0187065507992134
+Sobral,BR SOB,current,2024,energy security,heatwaves,0.0788298751999999,0.99,0.7842,0.8266666666666665,0.1216,0.0001711601963389,0.0577824669015089
+Sobral,BR SOB,current,2024,food security,droughts,0.0447893297399749,0.99,0.5245,0.54802,0.1558233950740732,0.0010477275536882,0.04007664421958
+Sobral,BR SOB,current,2024,food security,floods,0.020520259173529,0.415600870262499,0.2403,0.54802,0.1558233950740732,0.0013569582658393,0.047658720087459
+Sobral,BR SOB,current,2024,infrastructure,floods,0.3126473144679411,0.99,0.8136,0.99,0.388158023782492,0.0001140508459319,0.110249132986622
+Sobral,BR SOB,current,2024,infrastructure,heatwaves,0.4328118491155919,0.99,0.7842,0.99,0.557490035673738,0.0002316275518293,0.162897510722339
+Sobral,BR SOB,current,2024,infrastructure,landslides,0.2975926409629267,0.99,0.5392,0.99,0.557490035673738,0.0001388366358231,0.142444137738839
+Sobral,BR SOB,current,2024,infrastructure,sea-level-rise,0.0,0.0,0.0,0.99,0.557490035673738,0.0,0.650547048914356
+Sobral,BR SOB,current,2024,public health,diseases,0.0513649245019343,0.75829804182058,0.42405,0.99,0.1223529350858766,0.0010136099535303,0.0669556350554312
+Sobral,BR SOB,current,2024,public health,floods,0.0503778787293233,0.808783140503909,0.8136,0.6077146698268855,0.101889449704142,0.0002784580865246,0.0617437416414203
+Sobral,BR SOB,current,2024,public health,heatwaves,0.1273225682949075,0.99,0.7842,0.99,0.16399981489842,0.0009392675880267,0.0990046694787861
+Sobral,BR SOB,current,2024,public health,landslides,0.035823260985792,0.975214582181581,0.5392,0.6077146698268855,0.109324,0.0003691037199727,0.0363663573482509
+Sobral,BR SOB,current,2024,water resources,droughts,0.1312890399975,0.99,0.5245,0.99,0.2528411666666667,0.0006321696996179,0.044283242062125
+Sobral,BR SOB,optimistic,2030,biodiversity,droughts,0.0,,0.6617,0.0,0.0,0.0,0.0
+Sobral,BR SOB,optimistic,2030,biodiversity,heatwaves,0.0,,0.8234,0.0,0.0,0.0,0.0
+Sobral,BR SOB,optimistic,2030,energy security,droughts,0.0,,0.7156,0.0,0.0,0.0,0.0
+Sobral,BR SOB,optimistic,2030,energy security,heatwaves,0.0,,0.8234,0.0,0.0,0.0,0.0
+Sobral,BR SOB,optimistic,2030,food security,droughts,0.0,,0.6617,0.0,0.0,0.0,0.0
+Sobral,BR SOB,optimistic,2030,food security,floods,0.0,,0.4902,0.0,0.0,0.0,0.0
+Sobral,BR SOB,optimistic,2030,infrastructure,floods,0.0,,0.8234,0.0,0.0,0.0,0.0
+Sobral,BR SOB,optimistic,2030,infrastructure,heatwaves,0.0,,0.8234,0.0,0.0,0.0,0.0
+Sobral,BR SOB,optimistic,2030,infrastructure,landslides,0.0,,0.647,0.0,0.0,0.0,0.0
+Sobral,BR SOB,optimistic,2030,public health,diseases,0.0,,0.45835,0.0,0.0,0.0,0.0
+Sobral,BR SOB,optimistic,2030,public health,floods,0.0,,0.8234,0.0,0.0,0.0,0.0
+Sobral,BR SOB,optimistic,2030,public health,heatwaves,0.0,,0.8234,0.0,0.0,0.0,0.0
+Sobral,BR SOB,optimistic,2030,public health,landslides,0.0,,0.647,0.0,0.0,0.0,0.0
+Sobral,BR SOB,optimistic,2030,water resources,droughts,0.0,,0.6617,0.0,0.0,0.0,0.0
+Sobral,BR SOB,optimistic,2050,biodiversity,droughts,0.0,,0.3285,0.0,0.0,0.0,0.0
+Sobral,BR SOB,optimistic,2050,biodiversity,heatwaves,0.0,,0.8626,0.0,0.0,0.0,0.0
+Sobral,BR SOB,optimistic,2050,energy security,droughts,0.0,,0.0492,0.0,0.0,0.0,0.0
+Sobral,BR SOB,optimistic,2050,energy security,heatwaves,0.0,,0.8626,0.0,0.0,0.0,0.0
+Sobral,BR SOB,optimistic,2050,food security,droughts,0.0,,0.3285,0.0,0.0,0.0,0.0
+Sobral,BR SOB,optimistic,2050,food security,floods,0.0,,0.5882,0.0,0.0,0.0,0.0
+Sobral,BR SOB,optimistic,2050,infrastructure,floods,0.0,,0.8234,0.0,0.0,0.0,0.0
+Sobral,BR SOB,optimistic,2050,infrastructure,heatwaves,0.0,,0.8626,0.0,0.0,0.0,0.0
+Sobral,BR SOB,optimistic,2050,infrastructure,landslides,0.0,,0.7352,0.0,0.0,0.0,0.0
+Sobral,BR SOB,optimistic,2050,public health,diseases,0.0,,0.4755,0.0,0.0,0.0,0.0
+Sobral,BR SOB,optimistic,2050,public health,floods,0.0,,0.8234,0.0,0.0,0.0,0.0
+Sobral,BR SOB,optimistic,2050,public health,heatwaves,0.0,,0.8626,0.0,0.0,0.0,0.0
+Sobral,BR SOB,optimistic,2050,public health,landslides,0.0,,0.7352,0.0,0.0,0.0,0.0
+Sobral,BR SOB,optimistic,2050,water resources,droughts,0.0,,0.3285,0.0,0.0,0.0,0.0
+Sobral,BR SOB,pessimistic,2030,biodiversity,droughts,0.0,,0.4902,0.0,0.0,0.0,0.0
+Sobral,BR SOB,pessimistic,2030,biodiversity,heatwaves,0.0,,0.8626,0.0,0.0,0.0,0.0
+Sobral,BR SOB,pessimistic,2030,energy security,droughts,0.0,,0.3726,0.0,0.0,0.0,0.0
+Sobral,BR SOB,pessimistic,2030,energy security,heatwaves,0.0,,0.8626,0.0,0.0,0.0,0.0
+Sobral,BR SOB,pessimistic,2030,food security,droughts,0.0,,0.4902,0.0,0.0,0.0,0.0
+Sobral,BR SOB,pessimistic,2030,food security,floods,0.0,,0.5392,0.0,0.0,0.0,0.0
+Sobral,BR SOB,pessimistic,2030,infrastructure,floods,0.0,,0.8234,0.0,0.0,0.0,0.0
+Sobral,BR SOB,pessimistic,2030,infrastructure,heatwaves,0.0,,0.8626,0.0,0.0,0.0,0.0
+Sobral,BR SOB,pessimistic,2030,infrastructure,landslides,0.0,,0.7352,0.0,0.0,0.0,0.0
+Sobral,BR SOB,pessimistic,2030,public health,diseases,0.0,,0.45835,0.0,0.0,0.0,0.0
+Sobral,BR SOB,pessimistic,2030,public health,floods,0.0,,0.8234,0.0,0.0,0.0,0.0
+Sobral,BR SOB,pessimistic,2030,public health,heatwaves,0.0,,0.8626,0.0,0.0,0.0,0.0
+Sobral,BR SOB,pessimistic,2030,public health,landslides,0.0,,0.7352,0.0,0.0,0.0,0.0
+Sobral,BR SOB,pessimistic,2030,water resources,droughts,0.0,,0.4902,0.0,0.0,0.0,0.0
+Sobral,BR SOB,pessimistic,2050,biodiversity,droughts,0.0,,0.3089,0.0,0.0,0.0,0.0
+Sobral,BR SOB,pessimistic,2050,biodiversity,heatwaves,0.0,,0.9312,0.0,0.0,0.0,0.0
+Sobral,BR SOB,pessimistic,2050,energy security,droughts,0.0,,0.01,0.0,0.0,0.0,0.0
+Sobral,BR SOB,pessimistic,2050,energy security,heatwaves,0.0,,0.9312,0.0,0.0,0.0,0.0
+Sobral,BR SOB,pessimistic,2050,food security,droughts,0.0,,0.3089,0.0,0.0,0.0,0.0
+Sobral,BR SOB,pessimistic,2050,food security,floods,0.0,,0.6666,0.0,0.0,0.0,0.0
+Sobral,BR SOB,pessimistic,2050,infrastructure,floods,0.0,,0.8234,0.0,0.0,0.0,0.0
+Sobral,BR SOB,pessimistic,2050,infrastructure,heatwaves,0.0,,0.9312,0.0,0.0,0.0,0.0
+Sobral,BR SOB,pessimistic,2050,infrastructure,landslides,0.0,,0.7352,0.0,0.0,0.0,0.0
+Sobral,BR SOB,pessimistic,2050,public health,diseases,0.0,,0.4853,0.0,0.0,0.0,0.0
+Sobral,BR SOB,pessimistic,2050,public health,floods,0.0,,0.8234,0.0,0.0,0.0,0.0
+Sobral,BR SOB,pessimistic,2050,public health,heatwaves,0.0,,0.9312,0.0,0.0,0.0,0.0
+Sobral,BR SOB,pessimistic,2050,public health,landslides,0.0,,0.7352,0.0,0.0,0.0,0.0
+Sobral,BR SOB,pessimistic,2050,water resources,droughts,0.0,,0.3089,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,current,2024,biodiversity,droughts,0.0256175483578719,0.428206248936156,0.0639,0.54604618004,0.734188086894626,0.0023916200470728,0.0568178984742465
+Santa Cruz do Arari,BR SZR,current,2024,biodiversity,heatwaves,0.2750979919119206,0.99,0.6862,0.54604618004,0.734188086894626,0.0046717713868407,0.16528782190119
+Santa Cruz do Arari,BR SZR,current,2024,energy security,droughts,0.0012101186256983,0.0705860986169246,0.0688,0.0323296268965312,0.54405,5.71661159372e-05,0.0187065507992134
+Santa Cruz do Arari,BR SZR,current,2024,energy security,heatwaves,0.0120695261766602,0.212397746685175,0.6862,0.0323296268965312,0.54405,0.0001711601963389,0.0577824669015089
+Santa Cruz do Arari,BR SZR,current,2024,food security,droughts,0.0053052601252219,0.116904886851479,0.0639,0.3375996268965312,0.2459256719813854,0.0010477275536882,0.04007664421958
+Santa Cruz do Arari,BR SZR,current,2024,food security,floods,0.0293076185321336,0.60158973618534,0.353,0.3375996268965312,0.2459256719813854,0.0013569582658393,0.047658720087459
+Santa Cruz do Arari,BR SZR,current,2024,infrastructure,floods,0.000565864552,0.0140203123595178,0.1668,0.01,0.3392473333333333,0.0001140508459319,0.110249132986622
+Santa Cruz do Arari,BR SZR,current,2024,infrastructure,heatwaves,0.003431,0.0292750006214929,0.6862,0.01,0.5,0.0002316275518293,0.162897510722339
+Santa Cruz do Arari,BR SZR,current,2024,infrastructure,landslides,0.002696,0.0276101668558303,0.5392,0.01,0.5,0.0001388366358231,0.142444137738839
+Santa Cruz do Arari,BR SZR,current,2024,infrastructure,sea-level-rise,0.0,0.0,0.0,0.0546592537930625,0.5,0.0,0.650547048914356
+Santa Cruz do Arari,BR SZR,current,2024,public health,diseases,0.0094125932008661,0.134821819919386,0.6421,0.0546592537930625,0.2681902105024228,0.0010136099535303,0.0669556350554312
+Santa Cruz do Arari,BR SZR,current,2024,public health,floods,0.0002158450182343,0.01,0.1668,0.0178853912012972,0.0723515,0.0002784580865246,0.0617437416414203
+Santa Cruz do Arari,BR SZR,current,2024,public health,heatwaves,0.0111129386226977,0.111668859982687,0.6862,0.0546592537930625,0.296288300978179,0.0009392675880267,0.0990046694787861
+Santa Cruz do Arari,BR SZR,current,2024,public health,landslides,0.000898178801021,0.0244036982593603,0.5392,0.0178853912012972,0.0931353333333333,0.0003691037199727,0.0363663573482509
+Santa Cruz do Arari,BR SZR,current,2024,water resources,droughts,0.0006761149750651,0.0109866050845348,0.0639,0.0546592537930625,0.193578,0.0006321696996179,0.044283242062125
+Santa Cruz do Arari,BR SZR,optimistic,2030,biodiversity,droughts,0.0,,0.0345,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,optimistic,2030,biodiversity,heatwaves,0.0,,0.7254,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,optimistic,2030,energy security,droughts,0.0,,0.01,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,optimistic,2030,energy security,heatwaves,0.0,,0.7254,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,optimistic,2030,food security,droughts,0.0,,0.0345,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,optimistic,2030,food security,floods,0.0,,0.6715,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,optimistic,2030,infrastructure,floods,0.0,,0.1864,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,optimistic,2030,infrastructure,heatwaves,0.0,,0.7254,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,optimistic,2030,infrastructure,landslides,0.0,,0.6274,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,optimistic,2030,public health,diseases,0.0,,0.67885,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,optimistic,2030,public health,floods,0.0,,0.1864,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,optimistic,2030,public health,heatwaves,0.0,,0.7254,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,optimistic,2030,public health,landslides,0.0,,0.6274,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,optimistic,2030,water resources,droughts,0.0,,0.0345,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,optimistic,2050,biodiversity,droughts,0.0,,0.0345,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,optimistic,2050,biodiversity,heatwaves,0.0,,0.7646,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,optimistic,2050,energy security,droughts,0.0,,0.01,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,optimistic,2050,energy security,heatwaves,0.0,,0.7646,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,optimistic,2050,food security,droughts,0.0,,0.0345,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,optimistic,2050,food security,floods,0.0,,0.6813,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,optimistic,2050,infrastructure,floods,0.0,,0.1864,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,optimistic,2050,infrastructure,heatwaves,0.0,,0.7646,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,optimistic,2050,infrastructure,landslides,0.0,,0.6372,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,optimistic,2050,public health,diseases,0.0,,0.69845,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,optimistic,2050,public health,floods,0.0,,0.1864,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,optimistic,2050,public health,heatwaves,0.0,,0.7646,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,optimistic,2050,public health,landslides,0.0,,0.6372,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,optimistic,2050,water resources,droughts,0.0,,0.0345,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,pessimistic,2030,biodiversity,droughts,0.0,,0.0296,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,pessimistic,2030,biodiversity,heatwaves,0.0,,0.7646,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,pessimistic,2030,energy security,droughts,0.0,,0.01,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,pessimistic,2030,energy security,heatwaves,0.0,,0.7646,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,pessimistic,2030,food security,droughts,0.0,,0.0296,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,pessimistic,2030,food security,floods,0.0,,0.6862,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,pessimistic,2030,infrastructure,floods,0.0,,0.1864,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,pessimistic,2030,infrastructure,heatwaves,0.0,,0.7646,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,pessimistic,2030,infrastructure,landslides,0.0,,0.6274,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,pessimistic,2030,public health,diseases,0.0,,0.7254,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,pessimistic,2030,public health,floods,0.0,,0.1864,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,pessimistic,2030,public health,heatwaves,0.0,,0.7646,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,pessimistic,2030,public health,landslides,0.0,,0.6274,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,pessimistic,2030,water resources,droughts,0.0,,0.0296,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,pessimistic,2050,biodiversity,droughts,0.0,,0.0345,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,pessimistic,2050,biodiversity,heatwaves,0.0,,0.8234,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,pessimistic,2050,energy security,droughts,0.0,,0.01,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,pessimistic,2050,energy security,heatwaves,0.0,,0.8234,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,pessimistic,2050,food security,droughts,0.0,,0.0345,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,pessimistic,2050,food security,floods,0.0,,0.696,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,pessimistic,2050,infrastructure,floods,0.0,,0.1864,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,pessimistic,2050,infrastructure,heatwaves,0.0,,0.8234,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,pessimistic,2050,infrastructure,landslides,0.0,,0.6372,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,pessimistic,2050,public health,diseases,0.0,,0.74745,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,pessimistic,2050,public health,floods,0.0,,0.1864,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,pessimistic,2050,public health,heatwaves,0.0,,0.8234,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,pessimistic,2050,public health,landslides,0.0,,0.6372,0.0,0.0,0.0,0.0
+Santa Cruz do Arari,BR SZR,pessimistic,2050,water resources,droughts,0.0,,0.0345,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,current,2024,biodiversity,droughts,0.0374698986233399,0.641619761596235,0.2207,0.33374469442,0.5087047753997,0.0023916200470728,0.0568178984742465
+São Luís,BR SLZ,current,2024,biodiversity,heatwaves,0.1131736947091906,0.672025274033267,0.6666,0.33374469442,0.5087047753997,0.0046717713868407,0.16528782190119
+São Luís,BR SLZ,current,2024,energy security,droughts,0.124104816,0.99,0.3334,0.99,0.376,5.71661159372e-05,0.0187065507992134
+São Luís,BR SLZ,current,2024,energy security,heatwaves,0.248135184,0.99,0.6666,0.99,0.376,0.0001711601963389,0.0577824669015089
+São Luís,BR SLZ,current,2024,food security,droughts,0.0356121637992628,0.877898738021229,0.2207,0.74402,0.2168759622898628,0.0010477275536882,0.04007664421958
+São Luís,BR SLZ,current,2024,food security,floods,0.0498441205146909,0.99,0.3089,0.74402,0.2168759622898628,0.0013569582658393,0.047658720087459
+São Luís,BR SLZ,current,2024,infrastructure,floods,0.4038091635204405,0.99,0.8136,0.745141870739505,0.6660797987421383,0.0001140508459319,0.110249132986622
+São Luís,BR SLZ,current,2024,infrastructure,heatwaves,0.470620155680967,0.99,0.6666,0.745141870739505,0.9474716981132076,0.0002316275518293,0.162897510722339
+São Luís,BR SLZ,current,2024,infrastructure,landslides,0.4429449230036584,0.99,0.6274,0.745141870739505,0.9474716981132076,0.0001388366358231,0.142444137738839
+São Luís,BR SLZ,current,2024,infrastructure,sea-level-rise,0.2598989179430264,0.401518092364288,0.413529411764706,0.6633333333333336,0.9474716981132076,0.0,0.650547048914356
+São Luís,BR SLZ,current,2024,public health,diseases,0.1408732271832075,0.99,0.63965,0.99,0.2224594529413695,0.0010136099535303,0.0669556350554312
+São Luís,BR SLZ,current,2024,public health,floods,0.0674900076326378,0.99,0.8136,0.6715,0.1235328668639052,0.0002784580865246,0.0617437416414203
+São Luís,BR SLZ,current,2024,public health,heatwaves,0.1766692070686321,0.99,0.6666,0.99,0.2677073875094056,0.0009392675880267,0.0990046694787861
+São Luís,BR SLZ,current,2024,public health,landslides,0.0469779391767333,0.99,0.6274,0.6715,0.1115073333333333,0.0003691037199727,0.0363663573482509
+São Luís,BR SLZ,current,2024,water resources,droughts,0.0644504460765,0.99,0.2207,0.99,0.2949771666666667,0.0006321696996179,0.044283242062125
+São Luís,BR SLZ,optimistic,2030,biodiversity,droughts,0.0,,0.5392,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,optimistic,2030,biodiversity,heatwaves,0.0,,0.7352,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,optimistic,2030,energy security,droughts,0.0,,0.941,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,optimistic,2030,energy security,heatwaves,0.0,,0.7352,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,optimistic,2030,food security,droughts,0.0,,0.5392,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,optimistic,2030,food security,floods,0.0,,0.6225,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,optimistic,2030,infrastructure,floods,0.0,,0.8234,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,optimistic,2030,infrastructure,heatwaves,0.0,,0.7352,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,optimistic,2030,infrastructure,landslides,0.0,,0.6372,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,optimistic,2030,public health,diseases,0.0,,0.6274,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,optimistic,2030,public health,floods,0.0,,0.8234,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,optimistic,2030,public health,heatwaves,0.0,,0.7352,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,optimistic,2030,public health,landslides,0.0,,0.6372,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,optimistic,2030,water resources,droughts,0.0,,0.5392,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,optimistic,2050,biodiversity,droughts,0.0,,0.0737,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,optimistic,2050,biodiversity,heatwaves,0.0,,0.7744,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,optimistic,2050,energy security,droughts,0.0,,0.01,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,optimistic,2050,energy security,heatwaves,0.0,,0.7744,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,optimistic,2050,food security,droughts,0.0,,0.0737,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,optimistic,2050,food security,floods,0.0,,0.6666,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,optimistic,2050,infrastructure,floods,0.0,,0.8234,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,optimistic,2050,infrastructure,heatwaves,0.0,,0.7744,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,optimistic,2050,infrastructure,landslides,0.0,,0.6372,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,optimistic,2050,public health,diseases,0.0,,0.647,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,optimistic,2050,public health,floods,0.0,,0.8234,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,optimistic,2050,public health,heatwaves,0.0,,0.7744,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,optimistic,2050,public health,landslides,0.0,,0.6372,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,optimistic,2050,water resources,droughts,0.0,,0.0737,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,pessimistic,2030,biodiversity,droughts,0.0,,0.1325,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,pessimistic,2030,biodiversity,heatwaves,0.0,,0.7352,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,pessimistic,2030,energy security,droughts,0.0,,0.1178,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,pessimistic,2030,energy security,heatwaves,0.0,,0.7352,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,pessimistic,2030,food security,droughts,0.0,,0.1325,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,pessimistic,2030,food security,floods,0.0,,0.6421,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,pessimistic,2030,infrastructure,floods,0.0,,0.8234,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,pessimistic,2030,infrastructure,heatwaves,0.0,,0.7352,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,pessimistic,2030,infrastructure,landslides,0.0,,0.6372,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,pessimistic,2030,infrastructure,sea-level-rise,0.0,,0.902323080501727,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,pessimistic,2030,public health,diseases,0.0,,0.696,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,pessimistic,2030,public health,floods,0.0,,0.8234,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,pessimistic,2030,public health,heatwaves,0.0,,0.7352,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,pessimistic,2030,public health,landslides,0.0,,0.6372,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,pessimistic,2030,water resources,droughts,0.0,,0.1325,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,pessimistic,2050,biodiversity,droughts,0.0,,0.108,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,pessimistic,2050,biodiversity,heatwaves,0.0,,0.794,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,pessimistic,2050,energy security,droughts,0.0,,0.01,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,pessimistic,2050,energy security,heatwaves,0.0,,0.794,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,pessimistic,2050,food security,droughts,0.0,,0.108,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,pessimistic,2050,food security,floods,0.0,,0.6764,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,pessimistic,2050,infrastructure,floods,0.0,,0.8234,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,pessimistic,2050,infrastructure,heatwaves,0.0,,0.794,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,pessimistic,2050,infrastructure,landslides,0.0,,0.6372,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,pessimistic,2050,infrastructure,sea-level-rise,0.0,,0.0101490507631471,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,pessimistic,2050,public health,diseases,0.0,,0.71315,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,pessimistic,2050,public health,floods,0.0,,0.8234,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,pessimistic,2050,public health,heatwaves,0.0,,0.794,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,pessimistic,2050,public health,landslides,0.0,,0.6372,0.0,0.0,0.0,0.0
+São Luís,BR SLZ,pessimistic,2050,water resources,droughts,0.0,,0.108,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,current,2024,biodiversity,droughts,0.0098757308950929,0.144758959146431,0.2158,0.08184036363,0.559178231968025,0.0023916200470728,0.0568178984742465
+Itaubal,BR ITL,current,2024,biodiversity,heatwaves,0.0327482531442471,0.181308857577719,0.7156,0.08184036363,0.559178231968025,0.0046717713868407,0.16528782190119
+Itaubal,BR ITL,current,2024,energy security,droughts,0.0029963432855531,0.164449794196511,0.304,0.0240634579753122,0.4096,5.71661159372e-05,0.0187065507992134
+Itaubal,BR ITL,current,2024,energy security,heatwaves,0.0070532343919138,0.127067865621909,0.7156,0.0240634579753122,0.4096,0.0001711601963389,0.0577824669015089
+Itaubal,BR ITL,current,2024,food security,droughts,0.0082160200114104,0.18999286705047,0.2158,0.2337834579753122,0.1628531899460912,0.0010477275536882,0.04007664421958
+Itaubal,BR ITL,current,2024,food security,floods,0.0104546760664194,0.202557757929752,0.2746,0.2337834579753122,0.1628531899460912,0.0013569582658393,0.047658720087459
+Itaubal,BR ITL,current,2024,infrastructure,floods,0.0007666184180792,0.0158066531415255,0.2746,0.01,0.2791764086231878,0.0001140508459319,0.110249132986622
+Itaubal,BR ITL,current,2024,infrastructure,heatwaves,0.0028125771581612,0.0255492385059874,0.7156,0.01,0.3930376129347817,0.0002316275518293,0.162897510722339
+Itaubal,BR ITL,current,2024,infrastructure,landslides,0.0011177989711865,0.0167417241748539,0.2844,0.01,0.3930376129347817,0.0001388366358231,0.142444137738839
+Itaubal,BR ITL,current,2024,infrastructure,sea-level-rise,0.0,0.0,0.0,0.0240634579753122,0.3930376129347817,0.0,0.650547048914356
+Itaubal,BR ITL,current,2024,public health,diseases,0.0070873591732848,0.100265262951226,0.5588,0.0381269159506245,0.3326567712967268,0.0010136099535303,0.0669556350554312
+Itaubal,BR ITL,current,2024,public health,floods,0.0003185684900568,0.0106395186548922,0.2746,0.0118698573998446,0.0977365,0.0002784580865246,0.0617437416414203
+Itaubal,BR ITL,current,2024,public health,heatwaves,0.0056627362024261,0.0572031843327162,0.7156,0.0381269159506245,0.2075507569601203,0.0009392675880267,0.0990046694787861
+Itaubal,BR ITL,current,2024,public health,landslides,0.0004286642412795,0.0116214934473444,0.2844,0.0118698573998446,0.126982,0.0003691037199727,0.0363663573482509
+Itaubal,BR ITL,current,2024,water resources,droughts,0.0032625046217788,0.0690530331605731,0.2158,0.0381269159506245,0.3965226666666667,0.0006321696996179,0.044283242062125
+Itaubal,BR ITL,optimistic,2030,biodiversity,droughts,0.0,,0.1325,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,optimistic,2030,biodiversity,heatwaves,0.0,,0.7548,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,optimistic,2030,energy security,droughts,0.0,,0.1276,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,optimistic,2030,energy security,heatwaves,0.0,,0.7548,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,optimistic,2030,food security,droughts,0.0,,0.1325,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,optimistic,2030,food security,floods,0.0,,0.5686,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,optimistic,2030,infrastructure,floods,0.0,,0.2844,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,optimistic,2030,infrastructure,heatwaves,0.0,,0.7548,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,optimistic,2030,infrastructure,landslides,0.0,,0.3726,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,optimistic,2030,public health,diseases,0.0,,0.5882,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,optimistic,2030,public health,floods,0.0,,0.2844,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,optimistic,2030,public health,heatwaves,0.0,,0.7548,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,optimistic,2030,public health,landslides,0.0,,0.3726,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,optimistic,2030,water resources,droughts,0.0,,0.1325,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,optimistic,2050,biodiversity,droughts,0.0,,0.0737,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,optimistic,2050,biodiversity,heatwaves,0.0,,0.794,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,optimistic,2050,energy security,droughts,0.0,,0.01,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,optimistic,2050,energy security,heatwaves,0.0,,0.794,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,optimistic,2050,food security,droughts,0.0,,0.0737,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,optimistic,2050,food security,floods,0.0,,0.6421,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,optimistic,2050,infrastructure,floods,0.0,,0.2844,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,optimistic,2050,infrastructure,heatwaves,0.0,,0.794,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,optimistic,2050,infrastructure,landslides,0.0,,0.3824,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,optimistic,2050,public health,diseases,0.0,,0.60535,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,optimistic,2050,public health,floods,0.0,,0.2844,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,optimistic,2050,public health,heatwaves,0.0,,0.794,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,optimistic,2050,public health,landslides,0.0,,0.3824,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,optimistic,2050,water resources,droughts,0.0,,0.0737,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,pessimistic,2030,biodiversity,droughts,0.0,,0.0737,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,pessimistic,2030,biodiversity,heatwaves,0.0,,0.794,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,pessimistic,2030,energy security,droughts,0.0,,0.01,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,pessimistic,2030,energy security,heatwaves,0.0,,0.794,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,pessimistic,2030,food security,droughts,0.0,,0.0737,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,pessimistic,2030,food security,floods,0.0,,0.647,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,pessimistic,2030,infrastructure,floods,0.0,,0.2844,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,pessimistic,2030,infrastructure,heatwaves,0.0,,0.794,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,pessimistic,2030,infrastructure,landslides,0.0,,0.3824,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,pessimistic,2030,public health,diseases,0.0,,0.6274,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,pessimistic,2030,public health,floods,0.0,,0.2844,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,pessimistic,2030,public health,heatwaves,0.0,,0.794,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,pessimistic,2030,public health,landslides,0.0,,0.3824,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,pessimistic,2030,water resources,droughts,0.0,,0.0737,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,pessimistic,2050,biodiversity,droughts,0.0,,0.1815,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,pessimistic,2050,biodiversity,heatwaves,0.0,,0.8626,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,pessimistic,2050,energy security,droughts,0.0,,0.2158,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,pessimistic,2050,energy security,heatwaves,0.0,,0.8626,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,pessimistic,2050,food security,droughts,0.0,,0.1815,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,pessimistic,2050,food security,floods,0.0,,0.6568,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,pessimistic,2050,infrastructure,floods,0.0,,0.2844,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,pessimistic,2050,infrastructure,heatwaves,0.0,,0.8626,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,pessimistic,2050,infrastructure,landslides,0.0,,0.4118,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,pessimistic,2050,public health,diseases,0.0,,0.6519,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,pessimistic,2050,public health,floods,0.0,,0.2844,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,pessimistic,2050,public health,heatwaves,0.0,,0.8626,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,pessimistic,2050,public health,landslides,0.0,,0.4118,0.0,0.0,0.0,0.0
+Itaubal,BR ITL,pessimistic,2050,water resources,droughts,0.0,,0.1815,0.0,0.0,0.0,0.0

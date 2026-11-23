@@ -1,0 +1,106 @@
+locode,city_name,region,action_id,action_name,previous_rank,selection_source
+BR ATB,Abaetetuba,Pará,ipcc_0086,Implement ecosystem‑based adaptation measures,17,ranked
+BR ATB,Abaetetuba,Pará,c40_0053,Promote water-saving technologies and practices,,unranked
+BR ATB,Abaetetuba,Pará,icare_0183,Implement Multi-hazard Early Warning Systems (MH-EWS),,unranked
+BR ATM,Altamira,,icare_0169,Establish a Plan for Preparation and Emergency Response Measures in the event of extreme weather events,2,ranked
+BR ATM,Altamira,,icare_0145,Strengthen the healthcare system to respond effectively to extreme events,10,ranked
+BR ATM,Altamira,,icare_0182,Develop an Urban Afforestation Plan,,unranked
+BR ACZ,Aracruz,Espírito Santo,icare_0176,Develop a Climate Action Plan,1,ranked
+BR ACZ,Aracruz,Espírito Santo,icare_0162,Strengthen programs for control and conservation of protected areas,7,ranked
+BR ACZ,Aracruz,Espírito Santo,icare_0172,Develop and implement the Municipal Risk Reduction Plan (PMRR) and identify population groups vulnerable to climate risks.,,unranked
+BR ARC,Arapiraca,Alagoas,icare_0176,Develop a Climate Action Plan,1,ranked
+BR ARC,Arapiraca,Alagoas,icare_0162,Strengthen programs for control and conservation of protected areas,3,ranked
+BR ARC,Arapiraca,Alagoas,icare_0180,Expand urban green-blue networks and corridors,11,ranked
+BR CAJ,Cajazeiras,Paraíba,icare_0176,Develop a Climate Action Plan,1,ranked
+BR CAJ,Cajazeiras,Paraíba,icare_0169,Establish a Plan for Preparation and Emergency Response Measures in the event of extreme weather events,2,ranked
+BR CAJ,Cajazeiras,Paraíba,ipcc_0094,Strengthen climate‑resilient health services,3,ranked
+BR CMA,Cametá,Pará,icare_0169,Establish a Plan for Preparation and Emergency Response Measures in the event of extreme weather events,2,ranked
+BR CMA,Cametá,Pará,c40_0048,Upgrade urban drainage systems,,unranked
+BR CMA,Cametá,Pará,c40_0051,Provide public shading in heat hotspots,,unranked
+BR CGR,Campo Grande,Mato Grosso do Sul,icare_0169,Establish a Plan for Preparation and Emergency Response Measures in the event of extreme weather events,2,ranked
+BR CGR,Campo Grande,Mato Grosso do Sul,ipcc_0083,Plan strategic coastal retreat for vulnerable communities,,unranked
+BR CGR,Campo Grande,Mato Grosso do Sul,ipcc_0089,Spatially redirect development,,unranked
+BR CLO,Campo Largo,Paraná,icare_0165,Develop an Environmental Education Plan,8,ranked
+BR CLO,Campo Largo,Paraná,c40_0048,Upgrade urban drainage systems,,unranked
+BR CLO,Campo Largo,Paraná,icare_0161,,,unranked
+BR CXL,Caxias do Sul,Rio Grande do Sul,icare_0181,Restore in Vulnerable Areas,3,ranked
+BR CXL,Caxias do Sul,Rio Grande do Sul,icare_0144,Establish a financial support program for extreme weather events,9,ranked
+BR CXL,Caxias do Sul,Rio Grande do Sul,icare_0172,Develop and implement the Municipal Risk Reduction Plan (PMRR) and identify population groups vulnerable to climate risks.,20,ranked
+BR CGE,Contagem,Minas Gerais,icare_0162,Strengthen programs for control and conservation of protected areas,3,ranked
+BR CGE,Contagem,Minas Gerais,icare_0156,Improve Implementation of urban gardens,7,ranked
+BR CGE,Contagem,Minas Gerais,icare_0180,Expand urban green-blue networks and corridors,14,ranked
+BR CMG,Corumbá,Mato Grosso do Sul,icare_0169,Establish a Plan for Preparation and Emergency Response Measures in the event of extreme weather events,2,ranked
+BR CMG,Corumbá,Mato Grosso do Sul,ipcc_0099,Increase Water Capture and Storage,18,ranked
+BR CMG,Corumbá,Mato Grosso do Sul,c40_0048,Upgrade urban drainage systems,,unranked
+BR CAT,Crato,Ceará,icare_0162,Strengthen programs for control and conservation of protected areas,6,ranked
+BR CAT,Crato,Ceará,icare_0151,,,unranked
+BR CAT,Crato,Ceará,icare_0182,Develop an Urban Afforestation Plan,,unranked
+BR CZL,Cruzeiro do Sul,Rio Grande do Sul,icare_0181,Restore in Vulnerable Areas,2,ranked
+BR CZL,Cruzeiro do Sul,Rio Grande do Sul,icare_0169,Establish a Plan for Preparation and Emergency Response Measures in the event of extreme weather events,4,ranked
+BR CZL,Cruzeiro do Sul,Rio Grande do Sul,ipcc_0096,Strengthen climate resilience in farming and fisheries,17,ranked
+BR CBA,Cuiabá,Mato Grosso,icare_0169,Establish a Plan for Preparation and Emergency Response Measures in the event of extreme weather events,2,ranked
+BR CBA,Cuiabá,Mato Grosso,c40_0056,Improve Watershed Protection and Management,,unranked
+BR CBA,Cuiabá,Mato Grosso,icare_0182,Develop an Urban Afforestation Plan,,unranked
+BR CCX,Cáceres,Mato Grosso,icare_0165,Develop an Environmental Education Plan,10,ranked
+BR CCX,Cáceres,Mato Grosso,icare_0180,Expand urban green-blue networks and corridors,,unranked
+BR CCX,Cáceres,Mato Grosso,icare_0182,Develop an Urban Afforestation Plan,,unranked
+BR FMO,Formosa,Goiás,icare_0180,Expand urban green-blue networks and corridors,14,ranked
+BR FMO,Formosa,Goiás,icare_0154,Clean and unclog drainage channels and install eco-barriers,,unranked
+BR FMO,Formosa,Goiás,icare_0182,Develop an Urban Afforestation Plan,,unranked
+BR FOR,Fortaleza,Ceará,icare_0169,Establish a Plan for Preparation and Emergency Response Measures in the event of extreme weather events,1,ranked
+BR FOR,Fortaleza,Ceará,icare_0162,Strengthen programs for control and conservation of protected areas,3,ranked
+BR FOR,Fortaleza,Ceará,icare_0180,Expand urban green-blue networks and corridors,14,ranked
+BR GYN,Goiânia,Goiás,icare_0169,Establish a Plan for Preparation and Emergency Response Measures in the event of extreme weather events,2,ranked
+BR GYN,Goiânia,Goiás,icare_0162,Strengthen programs for control and conservation of protected areas,3,ranked
+BR GYN,Goiânia,Goiás,icare_0149,,,unranked
+BR IOS,Ilhéus,Bahia,icare_0176,Develop a Climate Action Plan,1,ranked
+BR IOS,Ilhéus,Bahia,icare_0165,Develop an Environmental Education Plan,5,ranked
+BR IOS,Ilhéus,Bahia,ipcc_0087,Improve Infrastructure retrofitting,20,ranked
+BR IIP,Itapipoca,Ceará,icare_0169,Establish a Plan for Preparation and Emergency Response Measures in the event of extreme weather events,1,ranked
+BR IIP,Itapipoca,Ceará,icare_0162,Strengthen programs for control and conservation of protected areas,3,ranked
+BR IIP,Itapipoca,Ceará,icare_0180,Expand urban green-blue networks and corridors,14,ranked
+BR JPR,Ji-Paraná,Rondônia,icare_0151,,,unranked
+BR JPR,Ji-Paraná,Rondônia,icare_0155,,,unranked
+BR JPR,Ji-Paraná,Rondônia,icare_0182,Develop an Urban Afforestation Plan,,unranked
+BR MGE,Maranguape,Ceará,icare_0169,Establish a Plan for Preparation and Emergency Response Measures in the event of extreme weather events,2,ranked
+BR MGE,Maranguape,Ceará,icare_0156,Improve Implementation of urban gardens,12,ranked
+BR MGE,Maranguape,Ceará,icare_0180,Expand urban green-blue networks and corridors,15,ranked
+BR MOC,Montes Claros,Minas Gerais,ipcc_0099,Increase Water Capture and Storage,16,ranked
+BR MOC,Montes Claros,Minas Gerais,ipcc_0086,Implement ecosystem‑based adaptation measures,17,ranked
+BR MOC,Montes Claros,Minas Gerais,icare_0149,,,unranked
+BR MOS,Mossoró,Rio Grande do Norte,icare_0162,Strengthen programs for control and conservation of protected areas,3,ranked
+BR MOS,Mossoró,Rio Grande do Norte,icare_0165,Develop an Environmental Education Plan,5,ranked
+BR MOS,Mossoró,Rio Grande do Norte,icare_0180,Expand urban green-blue networks and corridors,14,ranked
+BR PIS,Palmeira dos Índios,Alagoas,icare_0176,Develop a Climate Action Plan,1,ranked
+BR PIS,Palmeira dos Índios,Alagoas,icare_0169,Establish a Plan for Preparation and Emergency Response Measures in the event of extreme weather events,2,ranked
+BR PIS,Palmeira dos Índios,Alagoas,icare_0162,Strengthen programs for control and conservation of protected areas,3,ranked
+BR POA,Porto Alegre,Rio Grande do Sul,icare_0181,Restore in Vulnerable Areas,4,ranked
+BR POA,Porto Alegre,Rio Grande do Sul,ipcc_0088,Update and enforce climate‑resilient building codes,5,ranked
+BR POA,Porto Alegre,Rio Grande do Sul,icare_0164,Improve Hydrological Monitoring System with Telemetry Stations,9,ranked
+BR RNV,Ribeirão das Neves,Minas Gerais,icare_0162,Strengthen programs for control and conservation of protected areas,3,ranked
+BR RNV,Ribeirão das Neves,Minas Gerais,icare_0144,Establish a financial support program for extreme weather events,4,ranked
+BR RNV,Ribeirão das Neves,Minas Gerais,icare_0182,Develop an Urban Afforestation Plan,,unranked
+BR RBR,Rio Branco,Acre,icare_0176,Develop a Climate Action Plan,1,ranked
+BR RBR,Rio Branco,Acre,icare_0169,Establish a Plan for Preparation and Emergency Response Measures in the event of extreme weather events,2,ranked
+BR RBR,Rio Branco,Acre,icare_0162,Strengthen programs for control and conservation of protected areas,3,ranked
+BR SOB,Sobral,Ceará,icare_0176,Develop a Climate Action Plan,1,ranked
+BR SOB,Sobral,Ceará,ipcc_0086,Implement ecosystem‑based adaptation measures,17,ranked
+BR SOB,Sobral,Ceará,ipcc_0099,Increase Water Capture and Storage,19,ranked
+BR SOR,Sorocaba,São Paulo,icare_0169,Establish a Plan for Preparation and Emergency Response Measures in the event of extreme weather events,2,ranked
+BR SOR,Sorocaba,São Paulo,icare_0162,Strengthen programs for control and conservation of protected areas,3,ranked
+BR SOR,Sorocaba,São Paulo,icare_0181,Restore in Vulnerable Areas,6,ranked
+BR SCV,São Cristóvão,Sergipe,icare_0162,Strengthen programs for control and conservation of protected areas,3,ranked
+BR SCV,São Cristóvão,Sergipe,icare_0181,Restore in Vulnerable Areas,9,ranked
+BR SCV,São Cristóvão,Sergipe,c40_0056,Improve Watershed Protection and Management,,unranked
+BR SJM,São João de Meriti,Rio de Janeiro,icare_0162,Strengthen programs for control and conservation of protected areas,3,ranked
+BR SJM,São João de Meriti,Rio de Janeiro,icare_0156,Improve Implementation of urban gardens,13,ranked
+BR SJM,São João de Meriti,Rio de Janeiro,ipcc_0086,Implement ecosystem‑based adaptation measures,16,ranked
+BR SLO,São Leopoldo,Rio Grande do Sul,icare_0169,Establish a Plan for Preparation and Emergency Response Measures in the event of extreme weather events,2,ranked
+BR SLO,São Leopoldo,Rio Grande do Sul,icare_0162,Strengthen programs for control and conservation of protected areas,4,ranked
+BR SLO,São Leopoldo,Rio Grande do Sul,icare_0164,Improve Hydrological Monitoring System with Telemetry Stations,10,ranked
+BR TSE,Tangará da Serra,Mato Grosso,icare_0176,Develop a Climate Action Plan,1,ranked
+BR TSE,Tangará da Serra,Mato Grosso,icare_0169,Establish a Plan for Preparation and Emergency Response Measures in the event of extreme weather events,2,ranked
+BR TSE,Tangará da Serra,Mato Grosso,ipcc_0094,Strengthen climate‑resilient health services,3,ranked
+BR VDS,Vitória de Santo Antão,Pernambuco,ipcc_0096,Strengthen climate resilience in farming and fisheries,5,ranked
+BR VDS,Vitória de Santo Antão,Pernambuco,icare_0171,"Improve the hydrometeorological forecasting, monitoring, and alert system for climate risks",19,ranked
+BR VDS,Vitória de Santo Antão,Pernambuco,c40_0051,Provide public shading in heat hotspots,,unranked
