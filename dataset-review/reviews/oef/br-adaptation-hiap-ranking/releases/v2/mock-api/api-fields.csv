@@ -1,0 +1,208 @@
+endpoint,field,type,role,source,description
+city list,city,object,group,,The city the list is for
+city list,city.locode,string,identity,city-finance-profile.csv,"UN/LOCODE, as in the global API"
+city list,city.city,string,identity,city-finance-profile.csv,City name
+city list,city.state,string,identity,city-finance-profile.csv,State code
+city list,city.finance_context,object,group,,Finance context for the city. Not scored; shown once per city
+city list,city.finance_context.credit,object,group,,CAPAG preliminary credit screen (F4)
+city list,city.finance_context.credit.capag,string,context,city-finance-profile.capag,"CAPAG grade from the National Treasury (A+ to D, or n.d.)"
+city list,city.finance_context.credit.credit_screen,string,context,city-finance-profile.credit_screen,Result of the credit screen; a negative screen affects credit channels only
+city list,city.finance_context.credit.fiscal_base_year,integer,context,city-finance-profile.capag_fiscal_base_year,Fiscal year the CAPAG grade is based on
+city list,city.finance_context.credit.release_date,string,context,city-finance-profile.capag_release_date,Date the CAPAG data was released
+city list,city.finance_context.credit.source,string,context,,Publisher and edition of the credit data
+city list,city.finance_context.preparation_capacity,object,group,,Project-preparation capacity from MUNIC (F4)
+city list,city.finance_context.preparation_capacity.score,integer,context,city-finance-profile.preparation_capacity_score,Points from the MUNIC checks (0 to max_score)
+city list,city.finance_context.preparation_capacity.max_score,integer,context,city-finance-profile.preparation_capacity_max,Highest possible score (11)
+city list,city.finance_context.preparation_capacity.national_median,integer,context,city-finance-profile.national_median,National median score
+city list,city.finance_context.preparation_capacity.below_national_median,boolean,context,city-finance-profile.below_national_median,True when the city is below the median: shows the technical assistance tag
+city list,city.finance_context.preparation_capacity.checks,object,group,,The ten MUNIC checks; 0 = no or not answered
+city list,city.finance_context.preparation_capacity.checks.env_body,integer,context,city-finance-profile.env_body,Points for this MUNIC check
+city list,city.finance_context.preparation_capacity.checks.env_council,integer,context,city-finance-profile.env_council,Points for this MUNIC check
+city list,city.finance_context.preparation_capacity.checks.env_council_budget,integer,context,city-finance-profile.env_council_budget,Points for this MUNIC check
+city list,city.finance_context.preparation_capacity.checks.env_fund,integer,context,city-finance-profile.env_fund,Points for this MUNIC check
+city list,city.finance_context.preparation_capacity.checks.env_earmarked_resources,integer,context,city-finance-profile.env_earmarked_resources,Points for this MUNIC check
+city list,city.finance_context.preparation_capacity.checks.climate_legislation,integer,context,city-finance-profile.climate_legislation,Points for this MUNIC check
+city list,city.finance_context.preparation_capacity.checks.climate_training,integer,context,city-finance-profile.climate_training,Points for this MUNIC check
+city list,city.finance_context.preparation_capacity.checks.civil_defence_body,integer,context,city-finance-profile.civil_defence_body,Points for this MUNIC check
+city list,city.finance_context.preparation_capacity.checks.civil_defence_budget,integer,context,city-finance-profile.civil_defence_budget,Points for this MUNIC check
+city list,city.finance_context.preparation_capacity.checks.planning_instruments,integer,context,city-finance-profile.planning_instruments,Points for this MUNIC check
+city list,city.finance_context.preparation_capacity.source,string,context,,Publisher and editions of the MUNIC data
+city list,actions,array,group,,"Actions with a Direct link, in the default order. Supporting actions are not listed"
+city list,actions[].action_id,string,identity,adaptation-action.action_id,Stable action ID; join key for every other table
+city list,actions[].name,string,identity,adaptation-action.action_name_{lang},Short action name
+city list,actions[].description,string,identity,adaptation-action.description_{lang},Full action text (falls back to English)
+city list,actions[].position,integer,order,city-action-order.position,"Place in the default order, 1 = first. Equal scores share a position. Null for an action with a Direct link to no risk scored for the city"
+city list,actions[].scores,object,group,,"The parts of the default order, all 0 to 1"
+city list,actions[].scores.overall,number,order,city-action-order.overall_score,0.55 x impact + 0.225 x feasibility + 0.225 x policy_alignment. Null when position is null
+city list,actions[].scores.impact,number,order,city-action-order.impact_score,"City impact, divided by the city top action (top = 1)"
+city list,actions[].scores.feasibility,number,order,city-action-order.feasibility_score,0.5 x legal + 0.5 x cost
+city list,actions[].scores.legal,number,order,city-action-order.legal_score_scaled,Legal feasibility score rescaled from 1-5 to 0-1
+city list,actions[].scores.cost,number,order,city-action-order.cost_score,"Cost band as a score: low 0.6, medium 0.5, high 0.4"
+city list,actions[].scores.policy_alignment,number,order,city-action-order.alignment_score,Policy alignment score; the whole of alignment
+city list,actions[].impact_risk,object,group,,The city risk cell where the action's impact is highest. Null when position is null
+city list,actions[].impact_risk.sector,string,attribute,city-action-order.impact_sector,AdaptaBrasil sector of that risk cell
+city list,actions[].impact_risk.risk,string,attribute,city-action-order.impact_risk,AdaptaBrasil risk cell
+city list,actions[].timeline,string,attribute,adaptation-action.timeline,"Implementation timeline: <5 years, 5-10 years or >10 years"
+city list,actions[].cost_band,string,attribute,actions-financial-cost.cost_band,"low, medium or high"
+city list,actions[].legal_grade,string,attribute,actions-legal-feasibility.legal_grade,"Legal feasibility grade (cities see the grade, not the 1-5 score)"
+city list,actions[].policy_grade,string,attribute,actions-policy-alignment.grade,"Strong, Medium, Weak or None"
+city list,actions[].risk_sectors,array,attribute,actions-impact (Direct links),AdaptaBrasil sectors the action has a Direct link to
+city list,actions[].co_benefits,object,group,,"Score per co-benefit category, 0 to 2"
+city list,actions[].co_benefits.social_equity,integer,attribute,actions-cobenefits.score,"Co-benefit score for social_equity, 0 to 2"
+city list,actions[].co_benefits.public_health,integer,attribute,actions-cobenefits.score,"Co-benefit score for public_health, 0 to 2"
+city list,actions[].co_benefits.housing,integer,attribute,actions-cobenefits.score,"Co-benefit score for housing, 0 to 2"
+city list,actions[].co_benefits.air_quality,integer,attribute,actions-cobenefits.score,"Co-benefit score for air_quality, 0 to 2"
+city list,actions[].co_benefits.water_quality,integer,attribute,actions-cobenefits.score,"Co-benefit score for water_quality, 0 to 2"
+city list,actions[].co_benefits.biodiversity,integer,attribute,actions-cobenefits.score,"Co-benefit score for biodiversity, 0 to 2"
+city list,actions[].co_benefits.mobility,integer,attribute,actions-cobenefits.score,"Co-benefit score for mobility, 0 to 2"
+city list,actions[].co_benefits.local_economy,integer,attribute,actions-cobenefits.score,"Co-benefit score for local_economy, 0 to 2"
+city list,actions[].counts,object,group,,"How much detail the action endpoint holds, for badges or empty states"
+city list,actions[].counts.policy_documents,integer,context,actions-policy-evidence,Policy documents with graded evidence
+city list,actions[].counts.finance_programmes,integer,context,actions-finance-programs,Federal programmes linked to the action
+city list,actions[].counts.past_projects,integer,context,actions-projects,Past funded projects matched to the action
+city list,actions[].counts.supporting_actions,integer,context,actions-relations,Supporting actions listed as pre- or co-actions of this action
+action detail,action_id,string,identity,adaptation-action.action_id,Stable action ID
+action detail,source,string,identity,adaptation-action.source,"Where the action comes from: c40, icare or ipcc"
+action detail,name,string,identity,adaptation-action.action_name_{lang},Short action name
+action detail,description,string,identity,adaptation-action.description_{lang},Full action text
+action detail,timeline,string,identity,adaptation-action.timeline,"<5 years, 5-10 years or >10 years"
+action detail,hazards,array,identity,adaptation-action.hazards,"Hazards the action relates to, as in the action bank"
+action detail,impact,object,group,,"Impact assessment by I Care, not city-specific"
+action detail,impact.has_direct_link,boolean,context,actions-impact.eligibility,False for supporting actions
+action detail,impact.links,array,group,,Direct and Indirect links to AdaptaBrasil sector components (Out of Scope left out)
+action detail,impact.links[].sector,string,context,actions-impact.sector,AdaptaBrasil sector
+action detail,impact.links[].component,string,context,actions-impact.component,vulnerability or exposure
+action detail,impact.links[].eligibility,string,context,actions-impact.eligibility,direct or indirect; only direct links are scored (I2)
+action detail,impact.links[].effectiveness,string,context,actions-impact.effectiveness,"high, medium or low (Direct links only)"
+action detail,impact.links[].confidence,string,context,actions-impact.confidence,"high, medium or low (Direct links only)"
+action detail,impact.links[].maladaptation_signal,boolean,context,actions-impact.maladaptation,True when a maladaptation risk was flagged
+action detail,impact.links[].component_score,number,context,actions-impact.component_score,Weighted geometric mean of the four factors (I4); Direct links only
+action detail,impact.links[].human_reviewed,boolean,context,actions-impact.human_reviewed,True where an I Care reviewer confirmed or changed the AI value
+action detail,impact.links[].eligibility_rationale,string,context,actions-impact.eligibility_rationale,Why the link is Direct or Indirect
+action detail,impact.links[].effectiveness_rationale,string,context,actions-impact.effectiveness_rationale,"Why the effectiveness grade, with sources"
+action detail,impact.links[].confidence_sources,string,context,actions-impact.confidence_sources,Sources behind the confidence grade
+action detail,impact.links[].maladaptation_rationale,string,context,actions-impact.maladaptation_rationale,Why maladaptation was or was not flagged
+action detail,feasibility,object,group,,Legal feasibility and cost
+action detail,feasibility.legal,object,group,,Legal feasibility by I Care
+action detail,feasibility.legal.grade,string,attribute,actions-legal-feasibility.legal_grade,"Legal feasibility grade (cities see the grade, not the 1-5 score)"
+action detail,feasibility.legal.score,number,context,actions-legal-feasibility.legal_score,Score from 1 to 5
+action detail,feasibility.legal.norms,array,group,,The federal norms behind the score
+action detail,feasibility.legal.norms[].norm_id,string,context,actions-legal-norms.norm_id,Norm ID
+action detail,feasibility.legal.norms[].name,string,context,actions-legal-norms.norm_name,Norm name (Portuguese)
+action detail,feasibility.legal.norms[].code,string,context,actions-legal-norms.norm_code,Official code
+action detail,feasibility.legal.norms[].type,string,context,actions-legal-norms.norm_type,Type of norm
+action detail,feasibility.legal.norms[].description_pt,string,context,actions-legal-norms.norm_description,Official summary (Portuguese)
+action detail,feasibility.legal.norms[].authority,string,context,actions-legal-norms.authority,"Municipal authority: total, partial or none"
+action detail,feasibility.legal.norms[].competence,string,context,actions-legal-norms.competence,"Legal competence: exclusive, supplementary or concurrent/private"
+action detail,feasibility.legal.norms[].validation,string,context,actions-legal-norms.validation,Who checked the norm is in force
+action detail,feasibility.legal.norms[].validation_date,string,context,actions-legal-norms.validation_date,When it was checked
+action detail,feasibility.legal.norms[].link,string,context,actions-legal-norms.norm_link,Official text
+action detail,feasibility.cost,object,group,,Cost band and how it was built
+action detail,feasibility.cost.band,string,attribute,actions-financial-cost.cost_band,"low, medium or high"
+action detail,feasibility.cost.index,number,context,actions-financial-cost.cost_index,Sum of the five components divided by 3
+action detail,feasibility.cost.components,object,group,,The graded components behind the index
+action detail,feasibility.cost.components.technical_complexity,integer,context,actions-financial-cost.technical_complexity,"Technical or institutional complexity, 1 to 3"
+action detail,feasibility.cost.components.resource_intensity,integer,context,actions-financial-cost.resource_intensity,"Resource intensity, 1 to 3"
+action detail,feasibility.cost.components.spatial_scale,integer,context,actions-financial-cost.spatial_scale,"1 local, 2 whole municipality"
+action detail,feasibility.cost.components.maintenance,integer,context,actions-financial-cost.maintenance,"0 occasional, 1 constant"
+action detail,feasibility.cost.components.implementation_time,integer,context,actions-financial-cost.implementation_time,Implementation time grade
+action detail,alignment,object,group,,Alignment is policy alignment only
+action detail,alignment.policy,object,group,,Policy alignment against the federal policy corpus
+action detail,alignment.policy.grade,string,attribute,actions-policy-alignment.grade,Best grade across documents
+action detail,alignment.policy.score,number,context,actions-policy-alignment.score,0 to 1; places the action within its grade band (A3)
+action detail,alignment.policy.document_support,number,context,actions-policy-alignment.document_support,"Documents with Medium or better evidence, weighted by tier"
+action detail,alignment.policy.explanation,string,context,actions-policy-alignment.explanation,One-line reason for the grade
+action detail,alignment.policy.documents,object,group,,"Top 5 policy documents, strongest first. All of them: the policy documents endpoint"
+action detail,alignment.policy.documents.total,integer,context,actions-policy-evidence,Documents with graded evidence for the action
+action detail,alignment.policy.documents.showing,integer,context,,Documents returned here (at most 5)
+action detail,alignment.policy.documents.items,array,group,,One row per document with its best passage
+action detail,alignment.policy.documents.items[].doc_id,string,context,actions-policy-evidence.doc_id,Document ID
+action detail,alignment.policy.documents.items[].title,string,context,actions-policy-evidence.document,Document title (English)
+action detail,alignment.policy.documents.items[].tier,string,context,actions-policy-evidence.tier,Document tier set by I Care
+action detail,alignment.policy.documents.items[].link,string,context,policy-documents.link,Link to the document
+action detail,alignment.policy.documents.items[].grade,string,context,actions-policy-evidence.grade,Grade of the best passage in this document
+action detail,alignment.policy.documents.items[].action_match,string,context,actions-policy-evidence.action_match,"direct, partial or adjacent"
+action detail,alignment.policy.documents.items[].policy_strength,string,context,actions-policy-evidence.policy_strength,How firm the commitment is
+action detail,alignment.policy.documents.items[].pdf_page,integer,context,actions-policy-evidence.pdf_page,PDF page of the passage
+action detail,alignment.policy.documents.items[].text_pt,string,context,actions-policy-evidence.decisive_text_pt,The passage (Portuguese)
+action detail,alignment.policy.documents.items[].reason,string,context,actions-policy-evidence.reason,Why the passage matches the action (English)
+action detail,alignment.policy.documents.items[].adds_to_support,number,context,actions-policy-evidence.adds_to_support,How much the document adds to document support
+action detail,co_benefits,array,group,,"The eight co-benefits, with the reason for each score. Not scored"
+action detail,co_benefits[].key,string,context,actions-cobenefits.co_benefit,"Short key, as in the city list"
+action detail,co_benefits[].name,string,context,actions-cobenefits.co_benefit,Category name
+action detail,co_benefits[].score,integer,context,actions-cobenefits.score,"0 to 2: C40 review where given, else I Care specialist"
+action detail,co_benefits[].justification,string,context,actions-cobenefits.justification,Reason for the score
+action detail,co_benefits[].review_status,string,context,actions-cobenefits.review_status,expert_validated for all rows
+action detail,co_benefits[].reviewer_notes,string,context,actions-cobenefits.reviewer_notes,"What the C40 review changed, if anything"
+action detail,supporting_actions,array,group,,"Supporting actions linked to this action, each marked pre_action or co_action. This is where supporting actions are shown. Not scored"
+action detail,supporting_actions[].action_id,string,context,actions-relations.related_action_id,Supporting action
+action detail,supporting_actions[].name,string,context,adaptation-action.action_name_{lang},Its name
+action detail,supporting_actions[].relation_type,string,context,actions-relations.relation_type,pre_action (comes first) or co_action (goes with it)
+action detail,related_actions,array,group,,Ordered actions listed as this action's pre- or co-actions. Not scored
+action detail,related_actions[].action_id,string,context,actions-relations.related_action_id,Related action
+action detail,related_actions[].name,string,context,adaptation-action.action_name_{lang},Its name
+action detail,related_actions[].relation_type,string,context,actions-relations.relation_type,pre_action (comes first) or co_action (goes with it)
+action detail,finance,object,group,,Finance context. Not scored (F4)
+action detail,finance.programmes,array,group,,"Federal programmes named for this action in the national plans. Candidate links, not agreed"
+action detail,finance.programmes[].programme_id,string,context,finance-programs.programme_id,Programme ID
+action detail,finance.programmes[].programme,string,context,finance-programs.programme,Programme name
+action detail,finance.programmes[].kind,string,context,finance-programs.kind,Kind of programme
+action detail,finance.programmes[].source,string,context,finance-programs.source,Where the money comes from
+action detail,finance.programmes[].channel,string,context,finance-programs.channel,Who passes it on
+action detail,finance.programmes[].instrument,string,context,finance-programs.instrument,"Grant, loan or other; ""not stated"" where the plans don't say"
+action detail,finance.programmes[].recipient,string,context,finance-programs.recipient,Who can receive it
+action detail,finance.programmes[].status,string,context,finance-programs.status,Programme status
+action detail,finance.programmes[].budget,object,group,,"Budget where the plans give one, else null"
+action detail,finance.programmes[].budget.amount,number,context,finance-programs.budget_amount,Budget amount
+action detail,finance.programmes[].budget.unit,string,context,finance-programs.budget_unit,"Unit of the amount, e.g. BRL million"
+action detail,finance.programmes[].budget.period,string,context,finance-programs.budget_period,Period the budget covers
+action detail,finance.programmes[].named_in,object,group,,The plan passage that names the programme for this action
+action detail,finance.programmes[].named_in.doc_id,string,context,actions-finance-programs.doc_id,Document ID
+action detail,finance.programmes[].named_in.title,string,context,policy-documents.title,Document title
+action detail,finance.programmes[].named_in.pdf_page,integer,context,actions-finance-programs.pdf_page,PDF page
+action detail,finance.programmes[].named_in.policy_grade,string,context,actions-finance-programs.best_policy_grade,Policy grade of that passage for this action
+action detail,finance.past_projects,object,group,,"Top 5 past funded projects similar to this action, high matches first then newest. All of them: the past projects endpoint. Matched, not reviewed"
+action detail,finance.past_projects.total,integer,context,actions-projects,Projects matched
+action detail,finance.past_projects.showing,integer,context,,Projects returned here (at most 5)
+action detail,finance.past_projects.items,array,group,,The projects
+action detail,finance.past_projects.items[].project_reference,string,context,actions-projects.project_reference,Reference in the source dataset
+action detail,finance.past_projects.items[].name,string,context,actions-projects.project_name,Project name (English)
+action detail,finance.past_projects.items[].name_pt,string,context,actions-projects.project_name_pt,Project name (Portuguese)
+action detail,finance.past_projects.items[].record_type,string,context,actions-projects.record_type,Kind of record
+action detail,finance.past_projects.items[].recipient,string,context,actions-projects.recipient,Who received the money
+action detail,finance.past_projects.items[].location,string,context,actions-projects.location,Where
+action detail,finance.past_projects.items[].instrument,string,context,actions-projects.finance_instrument,Finance instrument or fund
+action detail,finance.past_projects.items[].approved_amount,number,context,actions-projects.approved_amount,Amount approved
+action detail,finance.past_projects.items[].disbursed_amount,number,context,actions-projects.disbursed_amount,Amount paid out
+action detail,finance.past_projects.items[].currency,string,context,actions-projects.currency,Currency of both amounts
+action detail,finance.past_projects.items[].status,string,context,actions-projects.status,Project status
+action detail,finance.past_projects.items[].decision_date,string,context,actions-projects.decision_date,Approval date
+action detail,finance.past_projects.items[].dataset,string,context,actions-projects.dataset,Source dataset and publisher
+action detail,finance.past_projects.items[].match_strength,string,context,actions-projects.match_strength,How closely the project matches the action
+action detail,finance.past_projects.items[].why_it_matches,string,context,actions-projects.why_it_matches,Reason for the match
+policy documents,[].doc_id,string,context,actions-policy-evidence.doc_id,Document ID
+policy documents,[].title,string,context,actions-policy-evidence.document,Document title (English)
+policy documents,[].tier,string,context,actions-policy-evidence.tier,Document tier set by I Care
+policy documents,[].link,string,context,policy-documents.link,Link to the document
+policy documents,[].grade,string,context,actions-policy-evidence.grade,Grade of the best passage in this document
+policy documents,[].action_match,string,context,actions-policy-evidence.action_match,"direct, partial or adjacent"
+policy documents,[].policy_strength,string,context,actions-policy-evidence.policy_strength,How firm the commitment is
+policy documents,[].pdf_page,integer,context,actions-policy-evidence.pdf_page,PDF page of the passage
+policy documents,[].text_pt,string,context,actions-policy-evidence.decisive_text_pt,The passage (Portuguese)
+policy documents,[].reason,string,context,actions-policy-evidence.reason,Why the passage matches the action (English)
+policy documents,[].adds_to_support,number,context,actions-policy-evidence.adds_to_support,How much the document adds to document support
+past projects,[].project_reference,string,context,actions-projects.project_reference,Reference in the source dataset
+past projects,[].name,string,context,actions-projects.project_name,Project name (English)
+past projects,[].name_pt,string,context,actions-projects.project_name_pt,Project name (Portuguese)
+past projects,[].record_type,string,context,actions-projects.record_type,Kind of record
+past projects,[].recipient,string,context,actions-projects.recipient,Who received the money
+past projects,[].location,string,context,actions-projects.location,Where
+past projects,[].instrument,string,context,actions-projects.finance_instrument,Finance instrument or fund
+past projects,[].approved_amount,number,context,actions-projects.approved_amount,Amount approved
+past projects,[].disbursed_amount,number,context,actions-projects.disbursed_amount,Amount paid out
+past projects,[].currency,string,context,actions-projects.currency,Currency of both amounts
+past projects,[].status,string,context,actions-projects.status,Project status
+past projects,[].decision_date,string,context,actions-projects.decision_date,Approval date
+past projects,[].dataset,string,context,actions-projects.dataset,Source dataset and publisher
+past projects,[].match_strength,string,context,actions-projects.match_strength,How closely the project matches the action
+past projects,[].why_it_matches,string,context,actions-projects.why_it_matches,Reason for the match

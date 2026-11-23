@@ -1,0 +1,146 @@
+locode,city,action_id,position,overall_score,impact_score,impact_raw,impact_sector,impact_risk,feasibility_score,legal_score_scaled,cost_score,alignment_score
+BR CXL,Caxias do Sul,ipcc_0101,1,0.893125,1.0,0.467896,Health,Visceral leishmaniasis,0.525,0.65,0.4,1.0
+BR CXL,Caxias do Sul,new0002,2,0.769899,0.908908,0.425274,Health,Visceral leishmaniasis,0.65,0.8,0.5,0.55
+BR CXL,Caxias do Sul,ipcc_0094,3,0.757532,0.748967,0.350439,Health,Visceral leishmaniasis,0.65,0.8,0.5,0.886
+BR CXL,Caxias do Sul,icare_0181,4,0.715975,0.800637,0.374615,Geohydrological disasters,Landslides,0.675,0.75,0.6,0.55
+BR CXL,Caxias do Sul,new0001,5,0.604573,0.445292,0.20835,Health,Visceral leishmaniasis,0.6125,0.725,0.5,0.986
+BR CXL,Caxias do Sul,icare_0169,6,0.596456,0.419693,0.196373,Geohydrological disasters,Landslides,0.625,0.75,0.5,1.0
+BR CXL,Caxias do Sul,icare_0183,7,0.592911,0.444543,0.208,Geohydrological disasters,Landslides,0.6125,0.725,0.5,0.936
+BR CXL,Caxias do Sul,icare_0162,8,0.58196,0.362654,0.169685,Biodiversity,Biome integrity,0.7,0.9,0.5,1.0
+BR CXL,Caxias do Sul,ipcc_0099,9,0.556745,0.373059,0.174553,Biodiversity,Biome integrity,0.5625,0.725,0.4,1.0
+BR CXL,Caxias do Sul,ipcc_0096,10,0.551528,0.352732,0.165042,Water resources,Risk of water stress,0.625,0.75,0.5,0.964
+BR CXL,Caxias do Sul,ipcc_0084,11,0.543826,0.354684,0.165955,Biodiversity,Biome integrity,0.55,0.7,0.4,1.0
+BR CXL,Caxias do Sul,c40_0049,12,0.51053,0.292509,0.136864,Geohydrological disasters,Landslides,0.725,0.95,0.5,0.829
+BR CXL,Caxias do Sul,icare_0186,13,0.505879,0.318007,0.148794,Biodiversity,Biome integrity,0.6,0.7,0.5,0.871
+BR CXL,Caxias do Sul,ipcc_0098,14,0.502514,0.277321,0.129758,Biodiversity,Biome integrity,0.6625,0.825,0.5,0.893
+BR CXL,Caxias do Sul,icare_0180,15,0.498144,0.272238,0.127379,Geohydrological disasters,Landslides,0.6625,0.825,0.5,0.886
+BR CXL,Caxias do Sul,ipcc_0103,16,0.485287,0.186886,0.087443,Geohydrological disasters,Landslides,0.7,0.8,0.6,1.0
+BR CXL,Caxias do Sul,icare_0184,17,0.484658,0.27615,0.12921,Geohydrological disasters,Landslides,0.65,0.8,0.5,0.829
+BR CXL,Caxias do Sul,ipcc_0085,18,0.483844,0.258103,0.120765,Biodiversity,Biome integrity,0.5625,0.725,0.4,0.957
+BR CXL,Caxias do Sul,c40_0046,19,0.481606,0.272238,0.127379,Geohydrological disasters,Landslides,0.625,0.75,0.5,0.85
+BR CXL,Caxias do Sul,c40_0048,20,0.478794,0.272238,0.127379,Geohydrological disasters,Landslides,0.6125,0.825,0.4,0.85
+BR CXL,Caxias do Sul,icare_0170,21,0.472508,0.27615,0.12921,Geohydrological disasters,Landslides,0.625,0.75,0.5,0.8
+BR CXL,Caxias do Sul,ipcc_0100,22,0.466298,0.378997,0.177331,Water resources,Risk of water stress,0.575,0.75,0.4,0.571
+BR CXL,Caxias do Sul,icare_0156,23,0.418292,0.213371,0.099835,Food security,Food access and consumption,0.7375,0.875,0.6,0.6
+BR CXL,Caxias do Sul,ipcc_0087,24,0.404129,0.264325,0.123677,Geohydrological disasters,Landslides,0.55,0.7,0.4,0.6
+BR CXL,Caxias do Sul,ipcc_0097,25,0.381971,0.121765,0.056973,Food security,Food access and consumption,0.6,0.7,0.5,0.8
+BR CXL,Caxias do Sul,ipcc_0092,26,0.362317,0.176439,0.082555,Geohydrological disasters,Landslides,0.55,0.7,0.4,0.629
+BR CXL,Caxias do Sul,ipcc_0090,27,0.362217,0.080123,0.037489,Food security,Food access and consumption,0.55,0.6,0.5,0.864
+BR CXL,Caxias do Sul,ipcc_0078,28,0.343187,0.127953,0.059869,Biodiversity,Biome integrity,0.6625,0.825,0.5,0.55
+BR CXL,Caxias do Sul,ipcc_0091,29,0.259774,0.073452,0.034368,Food security,Food access and consumption,0.625,0.75,0.5,0.35
+BR ITL,Itaubal,icare_0183,1,0.898413,1.0,0.41,Geohydrological disasters,"Floods, flash floods and waterlogging",0.6125,0.725,0.5,0.936
+BR ITL,Itaubal,icare_0169,2,0.88488,0.9441,0.387081,Geohydrological disasters,"Floods, flash floods and waterlogging",0.625,0.75,0.5,1.0
+BR ITL,Itaubal,c40_0049,3,0.71155,0.658,0.26978,Geohydrological disasters,"Floods, flash floods and waterlogging",0.725,0.95,0.5,0.829
+BR ITL,Itaubal,ipcc_0094,4,0.7075,0.658,0.26978,Geohydrological disasters,"Floods, flash floods and waterlogging",0.65,0.8,0.5,0.886
+BR ITL,Itaubal,ipcc_0099,5,0.693222,0.6212,0.254692,Geohydrological disasters,"Floods, flash floods and waterlogging",0.5625,0.725,0.4,1.0
+BR ITL,Itaubal,new0001,6,0.68594,0.593232,0.243225,Energy security,Access,0.6125,0.725,0.5,0.986
+BR ITL,Itaubal,icare_0180,7,0.685232,0.6124,0.251084,Geohydrological disasters,"Floods, flash floods and waterlogging",0.6625,0.825,0.5,0.886
+BR ITL,Itaubal,icare_0184,8,0.674435,0.6212,0.254692,Geohydrological disasters,"Floods, flash floods and waterlogging",0.65,0.8,0.5,0.829
+BR ITL,Itaubal,c40_0046,9,0.668695,0.6124,0.251084,Geohydrological disasters,"Floods, flash floods and waterlogging",0.625,0.75,0.5,0.85
+BR ITL,Itaubal,c40_0048,10,0.665882,0.6124,0.251084,Geohydrological disasters,"Floods, flash floods and waterlogging",0.6125,0.825,0.4,0.85
+BR ITL,Itaubal,icare_0170,11,0.662285,0.6212,0.254692,Geohydrological disasters,"Floods, flash floods and waterlogging",0.625,0.75,0.5,0.8
+BR ITL,Itaubal,ipcc_0103,12,0.61372,0.4204,0.172364,Geohydrological disasters,"Floods, flash floods and waterlogging",0.7,0.8,0.6,1.0
+BR ITL,Itaubal,ipcc_0087,13,0.58578,0.5946,0.243786,Geohydrological disasters,"Floods, flash floods and waterlogging",0.55,0.7,0.4,0.6
+BR ITL,Itaubal,icare_0181,14,0.533173,0.468269,0.19199,Geohydrological disasters,"Floods, flash floods and waterlogging",0.675,0.75,0.6,0.55
+BR ITL,Itaubal,ipcc_0101,15,0.504347,0.293132,0.120184,Health,Visceral leishmaniasis,0.525,0.65,0.4,1.0
+BR ITL,Itaubal,icare_0162,16,0.49812,0.210218,0.08619,Biodiversity,Biome integrity,0.7,0.9,0.5,1.0
+BR ITL,Itaubal,ipcc_0092,17,0.48357,0.3969,0.162729,Geohydrological disasters,"Floods, flash floods and waterlogging",0.55,0.7,0.4,0.629
+BR ITL,Itaubal,ipcc_0097,18,0.477905,0.296191,0.121438,Food security,Food availability,0.6,0.7,0.5,0.8
+BR ITL,Itaubal,new0002,19,0.46844,0.3608,0.147928,Geohydrological disasters,"Floods, flash floods and waterlogging",0.65,0.8,0.5,0.55
+BR ITL,Itaubal,ipcc_0084,20,0.461828,0.205596,0.084294,Biodiversity,Biome integrity,0.55,0.7,0.4,1.0
+BR ITL,Itaubal,ipcc_0096,21,0.46019,0.186663,0.076532,Food security,Food availability,0.625,0.75,0.5,0.964
+BR ITL,Itaubal,ipcc_0098,22,0.458734,0.197721,0.081066,Food security,Food availability,0.6625,0.825,0.5,0.893
+BR ITL,Itaubal,icare_0156,23,0.430277,0.235163,0.096417,Food security,Food availability,0.7375,0.875,0.6,0.6
+BR ITL,Itaubal,icare_0186,24,0.42804,0.176482,0.072358,Biodiversity,Biome integrity,0.6,0.7,0.5,0.871
+BR ITL,Itaubal,ipcc_0090,25,0.425343,0.194896,0.079908,Food security,Food availability,0.55,0.6,0.5,0.864
+BR ITL,Itaubal,ipcc_0100,26,0.411649,0.279634,0.11465,Food security,Food availability,0.575,0.75,0.4,0.571
+BR ITL,Itaubal,ipcc_0085,27,0.405965,0.116505,0.047767,Biodiversity,Biome integrity,0.5625,0.725,0.4,0.957
+BR ITL,Itaubal,ipcc_0078,28,0.321262,0.08809,0.036117,Biodiversity,Biome integrity,0.6625,0.825,0.5,0.55
+BR ITL,Itaubal,ipcc_0091,29,0.317644,0.17867,0.073255,Food security,Food availability,0.625,0.75,0.5,0.35
+BR SLZ,São Luís,ipcc_0101,1,0.893125,1.0,0.565138,Health,Visceral leishmaniasis,0.525,0.65,0.4,1.0
+BR SLZ,São Luís,new0002,2,0.769899,0.908908,0.513659,Health,Visceral leishmaniasis,0.65,0.8,0.5,0.55
+BR SLZ,São Luís,ipcc_0094,3,0.757532,0.748967,0.42327,Health,Visceral leishmaniasis,0.65,0.8,0.5,0.886
+BR SLZ,São Luís,icare_0162,4,0.646325,0.479681,0.271086,Biodiversity,Biome integrity,0.7,0.9,0.5,1.0
+BR SLZ,São Luís,ipcc_0099,5,0.615401,0.479706,0.2711,Biodiversity,Biome integrity,0.5625,0.725,0.4,1.0
+BR SLZ,São Luís,icare_0181,6,0.615277,0.617548,0.349,Health,"Arboviruses: dengue, Zika and chikungunya",0.675,0.75,0.6,0.55
+BR SLZ,São Luís,ipcc_0084,7,0.606774,0.469135,0.265126,Biodiversity,Biome integrity,0.55,0.7,0.4,1.0
+BR SLZ,São Luís,new0001,8,0.604573,0.445292,0.251651,Health,Visceral leishmaniasis,0.6125,0.725,0.5,0.986
+BR SLZ,São Luís,icare_0156,9,0.603553,0.55021,0.310945,Food security,Food access and consumption,0.7375,0.875,0.6,0.6
+BR SLZ,São Luís,icare_0186,10,0.555879,0.408916,0.231094,Biodiversity,Biome integrity,0.6,0.7,0.5,0.871
+BR SLZ,São Luís,ipcc_0098,11,0.522568,0.313783,0.177331,Biodiversity,Biome integrity,0.6625,0.825,0.5,0.893
+BR SLZ,São Luís,ipcc_0096,12,0.518146,0.292038,0.165042,Biodiversity,Biome integrity,0.625,0.75,0.5,0.964
+BR SLZ,São Luís,ipcc_0085,13,0.502508,0.292038,0.165042,Biodiversity,Biome integrity,0.5625,0.725,0.4,0.957
+BR SLZ,São Luís,ipcc_0103,14,0.492763,0.200478,0.113298,Biodiversity,Biome integrity,0.7,0.8,0.6,1.0
+BR SLZ,São Luís,ipcc_0097,15,0.468008,0.278196,0.157219,Food security,Food access and consumption,0.6,0.7,0.5,0.8
+BR SLZ,São Luís,icare_0169,16,0.462052,0.175322,0.099081,Food security,Food access and consumption,0.625,0.75,0.5,1.0
+BR SLZ,São Luís,icare_0183,17,0.440381,0.167216,0.0945,Geohydrological disasters,"Floods, flash floods and waterlogging",0.6125,0.725,0.5,0.936
+BR SLZ,São Luís,ipcc_0090,18,0.418831,0.183056,0.103452,Food security,Food access and consumption,0.55,0.6,0.5,0.864
+BR SLZ,São Luís,c40_0049,19,0.410165,0.110028,0.062181,Geohydrological disasters,"Floods, flash floods and waterlogging",0.725,0.95,0.5,0.829
+BR SLZ,São Luís,icare_0180,20,0.404734,0.102403,0.057872,Geohydrological disasters,"Floods, flash floods and waterlogging",0.6625,0.825,0.5,0.886
+BR SLZ,São Luís,ipcc_0100,21,0.402305,0.262645,0.148431,Food security,Food access and consumption,0.575,0.75,0.4,0.571
+BR SLZ,São Luís,icare_0184,22,0.389906,0.103874,0.058703,Geohydrological disasters,"Floods, flash floods and waterlogging",0.65,0.8,0.5,0.829
+BR SLZ,São Luís,c40_0046,23,0.388197,0.102403,0.057872,Geohydrological disasters,"Floods, flash floods and waterlogging",0.625,0.75,0.5,0.85
+BR SLZ,São Luís,c40_0048,24,0.385384,0.102403,0.057872,Geohydrological disasters,"Floods, flash floods and waterlogging",0.6125,0.825,0.4,0.85
+BR SLZ,São Luís,icare_0170,25,0.377756,0.103874,0.058703,Geohydrological disasters,"Floods, flash floods and waterlogging",0.625,0.75,0.5,0.8
+BR SLZ,São Luís,ipcc_0078,26,0.377309,0.189994,0.107373,Biodiversity,Biome integrity,0.6625,0.825,0.5,0.55
+BR SLZ,São Luís,ipcc_0092,27,0.361702,0.175322,0.099081,Food security,Food access and consumption,0.55,0.7,0.4,0.629
+BR SLZ,São Luís,ipcc_0087,28,0.313435,0.099426,0.05619,Geohydrological disasters,"Floods, flash floods and waterlogging",0.55,0.7,0.4,0.6
+BR SLZ,São Luís,ipcc_0091,29,0.311673,0.167815,0.094839,Food security,Food access and consumption,0.625,0.75,0.5,0.35
+BR SOB,Sobral,icare_0156,1,0.850938,1.0,0.530293,Food security,Food access and consumption,0.7375,0.875,0.6,0.6
+BR SOB,Sobral,icare_0181,2,0.804881,0.962284,0.510293,Health,Visceral leishmaniasis,0.675,0.75,0.6,0.55
+BR SOB,Sobral,ipcc_0101,3,0.759278,0.756642,0.401242,Health,Visceral leishmaniasis,0.525,0.65,0.4,1.0
+BR SOB,Sobral,ipcc_0097,4,0.744379,0.780689,0.413994,Food security,Food access and consumption,0.6,0.7,0.5,0.8
+BR SOB,Sobral,icare_0162,5,0.736292,0.643258,0.341115,Biodiversity,Biome integrity,0.7,0.9,0.5,1.0
+BR SOB,Sobral,ipcc_0099,6,0.718346,0.666879,0.353641,Biodiversity,Biome integrity,0.5625,0.725,0.4,1.0
+BR SOB,Sobral,new0001,7,0.703618,0.625375,0.331632,Water resources,Risk of water stress,0.6125,0.725,0.5,0.986
+BR SOB,Sobral,ipcc_0084,8,0.694766,0.629121,0.333618,Biodiversity,Biome integrity,0.55,0.7,0.4,1.0
+BR SOB,Sobral,ipcc_0096,9,0.677645,0.582036,0.30865,Water resources,Risk of water stress,0.625,0.75,0.5,0.964
+BR SOB,Sobral,ipcc_0100,10,0.663227,0.737049,0.390852,Food security,Food access and consumption,0.575,0.75,0.4,0.571
+BR SOB,Sobral,ipcc_0094,11,0.657285,0.5667,0.300518,Health,Visceral leishmaniasis,0.65,0.8,0.5,0.886
+BR SOB,Sobral,new0002,12,0.648245,0.687718,0.364692,Health,Visceral leishmaniasis,0.65,0.8,0.5,0.55
+BR SOB,Sobral,icare_0186,13,0.643632,0.568468,0.301455,Biodiversity,Biome integrity,0.6,0.7,0.5,0.871
+BR SOB,Sobral,ipcc_0098,14,0.636617,0.521145,0.27636,Food security,Food access and consumption,0.6625,0.825,0.5,0.893
+BR SOB,Sobral,icare_0169,15,0.636225,0.491999,0.260904,Food security,Food access and consumption,0.625,0.75,0.5,1.0
+BR SOB,Sobral,ipcc_0085,16,0.60389,0.476368,0.252615,Biodiversity,Biome integrity,0.5625,0.725,0.4,0.957
+BR SOB,Sobral,ipcc_0090,17,0.600685,0.513701,0.272412,Food security,Food access and consumption,0.55,0.6,0.5,0.864
+BR SOB,Sobral,ipcc_0103,18,0.562359,0.327017,0.173415,Biodiversity,Biome integrity,0.7,0.8,0.6,1.0
+BR SOB,Sobral,ipcc_0092,19,0.535875,0.491999,0.260904,Food security,Food access and consumption,0.55,0.7,0.4,0.629
+BR SOB,Sobral,ipcc_0091,20,0.478387,0.470932,0.249732,Food security,Food access and consumption,0.625,0.75,0.5,0.35
+BR SOB,Sobral,icare_0183,21,0.471627,0.224027,0.1188,Geohydrological disasters,Landslides,0.6125,0.725,0.5,0.936
+BR SOB,Sobral,c40_0049,22,0.430725,0.14741,0.07817,Geohydrological disasters,Landslides,0.725,0.95,0.5,0.829
+BR SOB,Sobral,icare_0180,23,0.423869,0.137194,0.072753,Geohydrological disasters,Landslides,0.6625,0.825,0.5,0.886
+BR SOB,Sobral,icare_0184,24,0.409316,0.139166,0.073799,Geohydrological disasters,Landslides,0.65,0.8,0.5,0.829
+BR SOB,Sobral,c40_0046,25,0.407332,0.137194,0.072753,Geohydrological disasters,Landslides,0.625,0.75,0.5,0.85
+BR SOB,Sobral,c40_0048,26,0.404519,0.137194,0.072753,Geohydrological disasters,Landslides,0.6125,0.825,0.4,0.85
+BR SOB,Sobral,icare_0170,27,0.397166,0.139166,0.073799,Geohydrological disasters,Landslides,0.625,0.75,0.5,0.8
+BR SOB,Sobral,ipcc_0078,28,0.393347,0.219154,0.116216,Biodiversity,Biome integrity,0.6625,0.825,0.5,0.55
+BR SOB,Sobral,ipcc_0087,29,0.332014,0.133206,0.070638,Geohydrological disasters,Landslides,0.55,0.7,0.4,0.6
+BR SZR,Santa Cruz do Arari,icare_0183,1,0.898413,1.0,0.5369,Geohydrological disasters,"Floods, flash floods and waterlogging",0.6125,0.725,0.5,0.936
+BR SZR,Santa Cruz do Arari,icare_0169,2,0.88488,0.9441,0.506887,Geohydrological disasters,"Floods, flash floods and waterlogging",0.625,0.75,0.5,1.0
+BR SZR,Santa Cruz do Arari,ipcc_0101,3,0.836364,0.896798,0.481491,Health,Malaria,0.525,0.65,0.4,1.0
+BR SZR,Santa Cruz do Arari,new0002,4,0.718309,0.815107,0.437631,Health,Malaria,0.65,0.8,0.5,0.55
+BR SZR,Santa Cruz do Arari,ipcc_0094,5,0.71502,0.671673,0.360621,Health,Malaria,0.65,0.8,0.5,0.886
+BR SZR,Santa Cruz do Arari,c40_0049,6,0.71155,0.658,0.35328,Geohydrological disasters,"Floods, flash floods and waterlogging",0.725,0.95,0.5,0.829
+BR SZR,Santa Cruz do Arari,ipcc_0099,7,0.693222,0.6212,0.333522,Geohydrological disasters,"Floods, flash floods and waterlogging",0.5625,0.725,0.4,1.0
+BR SZR,Santa Cruz do Arari,icare_0180,8,0.685233,0.6124,0.328798,Geohydrological disasters,"Floods, flash floods and waterlogging",0.6625,0.825,0.5,0.886
+BR SZR,Santa Cruz do Arari,icare_0184,9,0.674435,0.6212,0.333522,Geohydrological disasters,"Floods, flash floods and waterlogging",0.65,0.8,0.5,0.829
+BR SZR,Santa Cruz do Arari,c40_0046,10,0.668695,0.6124,0.328798,Geohydrological disasters,"Floods, flash floods and waterlogging",0.625,0.75,0.5,0.85
+BR SZR,Santa Cruz do Arari,c40_0048,11,0.665883,0.6124,0.328798,Geohydrological disasters,"Floods, flash floods and waterlogging",0.6125,0.825,0.4,0.85
+BR SZR,Santa Cruz do Arari,icare_0170,12,0.662285,0.6212,0.333522,Geohydrological disasters,"Floods, flash floods and waterlogging",0.625,0.75,0.5,0.8
+BR SZR,Santa Cruz do Arari,icare_0181,13,0.655403,0.690506,0.370733,Geohydrological disasters,"Floods, flash floods and waterlogging",0.675,0.75,0.6,0.55
+BR SZR,Santa Cruz do Arari,new0001,14,0.642973,0.515111,0.276563,Energy security,Access,0.6125,0.725,0.5,0.986
+BR SZR,Santa Cruz do Arari,ipcc_0103,15,0.61372,0.4204,0.225713,Geohydrological disasters,"Floods, flash floods and waterlogging",0.7,0.8,0.6,1.0
+BR SZR,Santa Cruz do Arari,icare_0162,16,0.587315,0.372392,0.199937,Biodiversity,Biome integrity,0.7,0.9,0.5,1.0
+BR SZR,Santa Cruz do Arari,ipcc_0087,17,0.58578,0.5946,0.319241,Geohydrological disasters,"Floods, flash floods and waterlogging",0.55,0.7,0.4,0.6
+BR SZR,Santa Cruz do Arari,ipcc_0098,18,0.554631,0.372078,0.199769,Biodiversity,Biome integrity,0.6625,0.825,0.5,0.893
+BR SZR,Santa Cruz do Arari,ipcc_0084,19,0.549066,0.364211,0.195545,Biodiversity,Biome integrity,0.55,0.7,0.4,1.0
+BR SZR,Santa Cruz do Arari,ipcc_0096,20,0.547986,0.346293,0.185925,Biodiversity,Biome integrity,0.625,0.75,0.5,0.964
+BR SZR,Santa Cruz do Arari,ipcc_0085,21,0.532349,0.346293,0.185925,Biodiversity,Biome integrity,0.5625,0.725,0.4,0.957
+BR SZR,Santa Cruz do Arari,icare_0186,22,0.521179,0.345826,0.185674,Biodiversity,Biome integrity,0.6,0.7,0.5,0.871
+BR SZR,Santa Cruz do Arari,ipcc_0092,23,0.48357,0.3969,0.213096,Geohydrological disasters,"Floods, flash floods and waterlogging",0.55,0.7,0.4,0.629
+BR SZR,Santa Cruz do Arari,icare_0156,24,0.429819,0.23433,0.125812,Biodiversity,Biome integrity,0.7375,0.875,0.6,0.6
+BR SZR,Santa Cruz do Arari,ipcc_0100,25,0.385381,0.231875,0.124494,Water resources,Risk of water stress,0.575,0.75,0.4,0.571
+BR SZR,Santa Cruz do Arari,ipcc_0097,26,0.37407,0.107401,0.057663,Food security,Food availability,0.6,0.7,0.5,0.8
+BR SZR,Santa Cruz do Arari,ipcc_0090,27,0.357019,0.070671,0.037943,Food security,Food availability,0.55,0.6,0.5,0.864
+BR SZR,Santa Cruz do Arari,ipcc_0078,28,0.326286,0.097224,0.052199,Biodiversity,Biome integrity,0.6625,0.825,0.5,0.55
+BR SZR,Santa Cruz do Arari,ipcc_0091,29,0.255008,0.064787,0.034784,Food security,Food availability,0.625,0.75,0.5,0.35

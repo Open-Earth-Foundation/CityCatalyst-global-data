@@ -1,0 +1,1254 @@
+{
+  "meta": {
+    "endpoint": "GET /api/v1/cities/{locode}/adaptation-actions",
+    "country_code": "BR",
+    "mock": true,
+    "lang": "en",
+    "locode": "BR CXL",
+    "total_records": 29
+  },
+  "data": {
+    "city": {
+      "locode": "BR CXL",
+      "city": "Caxias do Sul",
+      "state": "RS",
+      "finance_context": {
+        "credit": {
+          "capag": "A+",
+          "credit_screen": "credit_screen_pass",
+          "fiscal_base_year": 2025,
+          "release_date": "2026-06-01",
+          "source": "STN CAPAG Municipios (1 Jun 2026)"
+        },
+        "preparation_capacity": {
+          "score": 7,
+          "max_score": 11,
+          "national_median": 5,
+          "below_national_median": false,
+          "checks": {
+            "env_body": 2,
+            "env_council": 1,
+            "env_council_budget": 0,
+            "env_fund": 1,
+            "env_earmarked_resources": 1,
+            "climate_legislation": 0,
+            "climate_training": 0,
+            "civil_defence_body": 1,
+            "civil_defence_budget": 0,
+            "planning_instruments": 1
+          },
+          "source": "IBGE MUNIC 2020 and 2021"
+        }
+      }
+    },
+    "actions": [
+      {
+        "action_id": "ipcc_0101",
+        "name": "Improve climate-resilient water and sanitation infrastructure",
+        "description": "Implement climate-resilient water supply and sanitation systems through inter-basin water transfers, alternative water sources, water reuse, and water quality improvement. Water reuse involves treating and recycling wastewater for non-potable or potable purposes, while water quality improvement makes available water suitable for diverse uses. These approaches increase drought resilience and provide energy-efficient and economical water and sanitation solutions.",
+        "position": 1,
+        "scores": {
+          "overall": 0.8931,
+          "impact": 1,
+          "feasibility": 0.525,
+          "legal": 0.65,
+          "cost": 0.4,
+          "policy_alignment": 1
+        },
+        "impact_risk": {
+          "sector": "Health",
+          "risk": "Visceral leishmaniasis"
+        },
+        "timeline": "5-10 years",
+        "cost_band": "high",
+        "legal_grade": "Feasible, with institutional limitations",
+        "policy_grade": "Strong",
+        "risk_sectors": [
+          "Health",
+          "Water resources"
+        ],
+        "co_benefits": {
+          "social_equity": 0,
+          "public_health": 1,
+          "housing": 1,
+          "air_quality": 0,
+          "water_quality": 2,
+          "biodiversity": 1,
+          "mobility": 0,
+          "local_economy": 1
+        },
+        "counts": {
+          "policy_documents": 25,
+          "finance_programmes": 11,
+          "past_projects": 9,
+          "supporting_actions": 0
+        }
+      },
+      {
+        "action_id": "new0002",
+        "name": "Strengthen selective waste collection to reduce health risks",
+        "description": "Strengthen access to selective waste collection through locally appropriate arrangements that respect applicable legal, institutional, and territorial conditions. Measures may include voluntary drop-off points, support for waste picker cooperatives, adaptable collection schedules, infrastructure improvements, and public awareness. Better waste management reduces pollution, pest and disease-vector proliferation, and associated risks of disease transmission, particularly for vulnerable populations.",
+        "position": 2,
+        "scores": {
+          "overall": 0.7699,
+          "impact": 0.9089,
+          "feasibility": 0.65,
+          "legal": 0.8,
+          "cost": 0.5,
+          "policy_alignment": 0.55
+        },
+        "impact_risk": {
+          "sector": "Health",
+          "risk": "Visceral leishmaniasis"
+        },
+        "timeline": ">10 years",
+        "cost_band": "medium",
+        "legal_grade": "Highly feasible",
+        "policy_grade": "Medium",
+        "risk_sectors": [
+          "Geohydrological disasters",
+          "Health"
+        ],
+        "co_benefits": {
+          "social_equity": 1,
+          "public_health": 1,
+          "housing": 0,
+          "air_quality": 0,
+          "water_quality": 1,
+          "biodiversity": 1,
+          "mobility": 0,
+          "local_economy": 1
+        },
+        "counts": {
+          "policy_documents": 15,
+          "finance_programmes": 0,
+          "past_projects": 0,
+          "supporting_actions": 1
+        }
+      },
+      {
+        "action_id": "ipcc_0094",
+        "name": "Strengthen healthcare capacity, continuity and environmental health surveillance",
+        "description": "Enhance access to climate-resilient healthcare services, including health and nutrition services, clean water, sanitation, culturally appropriate mental health resources, and telemedicine, particularly for vulnerable, remote, and underserved populations. Strengthen healthcare unit infrastructure and basic public health systems to maintain continuity of care and assist people affected by climate-related extreme events such as floods and heatwaves. Develop preparedness and response action plans for the healthcare network to reduce vulnerability to climate-related health risks.",
+        "position": 3,
+        "scores": {
+          "overall": 0.7575,
+          "impact": 0.749,
+          "feasibility": 0.65,
+          "legal": 0.8,
+          "cost": 0.5,
+          "policy_alignment": 0.886
+        },
+        "impact_risk": {
+          "sector": "Health",
+          "risk": "Visceral leishmaniasis"
+        },
+        "timeline": "<5 years",
+        "cost_band": "medium",
+        "legal_grade": "Highly feasible",
+        "policy_grade": "Strong",
+        "risk_sectors": [
+          "Geohydrological disasters",
+          "Health"
+        ],
+        "co_benefits": {
+          "social_equity": 2,
+          "public_health": 2,
+          "housing": 0,
+          "air_quality": 0,
+          "water_quality": 1,
+          "biodiversity": 0,
+          "mobility": 1,
+          "local_economy": 1
+        },
+        "counts": {
+          "policy_documents": 16,
+          "finance_programmes": 8,
+          "past_projects": 0,
+          "supporting_actions": 1
+        }
+      },
+      {
+        "action_id": "icare_0181",
+        "name": "Relocate and resettle populations living in high-risk areas",
+        "description": "Relocate and resettle populations living in areas prone to landslides and flooding through the transfer of households exposed to climate hazards to safer locations. Relocation and resettlement should include eligibility criteria, participation mechanisms, compensation arrangements, and the identification of safe destination areas with sanitation, lighting, transport, and other essential services. Residents should participate in the design, prioritization, and monitoring of relocation and resettlement measures.",
+        "position": 4,
+        "scores": {
+          "overall": 0.716,
+          "impact": 0.8006,
+          "feasibility": 0.675,
+          "legal": 0.75,
+          "cost": 0.6,
+          "policy_alignment": 0.55
+        },
+        "impact_risk": {
+          "sector": "Geohydrological disasters",
+          "risk": "Landslides"
+        },
+        "timeline": "5-10 years",
+        "cost_band": "low",
+        "legal_grade": "Feasible, with institutional limitations",
+        "policy_grade": "Medium",
+        "risk_sectors": [
+          "Geohydrological disasters",
+          "Health"
+        ],
+        "co_benefits": {
+          "social_equity": 1,
+          "public_health": 2,
+          "housing": 1,
+          "air_quality": 0,
+          "water_quality": 1,
+          "biodiversity": 0,
+          "mobility": 1,
+          "local_economy": 0
+        },
+        "counts": {
+          "policy_documents": 24,
+          "finance_programmes": 0,
+          "past_projects": 0,
+          "supporting_actions": 2
+        }
+      },
+      {
+        "action_id": "new0001",
+        "name": "Secure land tenure, essential services and resilient livelihoods for vulnerable rural and traditional communities",
+        "description": "Secure land tenure and strengthen climate-resilient livelihoods for vulnerable rural and traditional communities through integrated territorial support. Measures include land regularization and equitable access to land; climate-resilient basic and productive infrastructure in rural settlements; community-based water management and water storage for irrigation and livestock; decentralized renewable energy for households and productive uses; access to adapted machinery, implements and clearly defined social technologies; and technical, extension and financial assistance. Implementation should prioritize women, youth, Indigenous peoples, quilombola communities and other traditional peoples and communities facing persistent social, climate and land-tenure vulnerability. Support should connect secure tenure and essential services to agroecological practices, soil management, resilient production, processing, storage and market access, while ensuring that each intervention has a clear adaptation pathway and avoids duplicating broader public-infrastructure, health or urban-development actions.",
+        "position": 5,
+        "scores": {
+          "overall": 0.6046,
+          "impact": 0.4453,
+          "feasibility": 0.6125,
+          "legal": 0.725,
+          "cost": 0.5,
+          "policy_alignment": 0.986
+        },
+        "impact_risk": {
+          "sector": "Health",
+          "risk": "Visceral leishmaniasis"
+        },
+        "timeline": "<5 years",
+        "cost_band": "medium",
+        "legal_grade": "Feasible, with institutional limitations",
+        "policy_grade": "Strong",
+        "risk_sectors": [
+          "Biodiversity",
+          "Energy security",
+          "Food security",
+          "Health",
+          "Water resources"
+        ],
+        "co_benefits": {
+          "social_equity": 2,
+          "public_health": 0,
+          "housing": 2,
+          "air_quality": 1,
+          "water_quality": 0,
+          "biodiversity": 1,
+          "mobility": 0,
+          "local_economy": 2
+        },
+        "counts": {
+          "policy_documents": 24,
+          "finance_programmes": 28,
+          "past_projects": 0,
+          "supporting_actions": 1
+        }
+      },
+      {
+        "action_id": "icare_0169",
+        "name": "Develop and implement an extreme weather preparedness and emergency response plan",
+        "description": "Develop and implement a municipal preparedness and emergency response plan for climate-related extreme events such as wildfires, heatwaves, flooding, landslides, draughts, etc) to enable rapid, coordinated action and minimize impacts on the population. The plan should define climate risk scenarios, activation thresholds, roles and responsibilities, command and interdepartmental coordination arrangements, communication and public alert protocols, evacuation routes, emergency shelters, and procedures for reaching vulnerable populations. It should also establish contingency arrangements for essential services, emergency food and water supply, health care, sanitation, electricity, telecommunications, transport and logistics, including supplier mapping, emergency procurement procedures, contingency stocks, distribution points and alternative routes. Measures should include training, simulation exercises, resource and equipment inventories, agreements with local and regional partners, procedures for damage and needs assessment, and protocols for response, recovery and regular plan review after events and exercises. Where relevant, include trained and equipped rural first-response capacity for forest and agricultural fire prevention and response, as well as contingency measures for arboviruses when climate conditions increase transmission risks.",
+        "position": 6,
+        "scores": {
+          "overall": 0.5965,
+          "impact": 0.4197,
+          "feasibility": 0.625,
+          "legal": 0.75,
+          "cost": 0.5,
+          "policy_alignment": 1
+        },
+        "impact_risk": {
+          "sector": "Geohydrological disasters",
+          "risk": "Landslides"
+        },
+        "timeline": "5-10 years",
+        "cost_band": "medium",
+        "legal_grade": "Feasible, with institutional limitations",
+        "policy_grade": "Strong",
+        "risk_sectors": [
+          "Food security",
+          "Geohydrological disasters"
+        ],
+        "co_benefits": {
+          "social_equity": 1,
+          "public_health": 2,
+          "housing": 0,
+          "air_quality": 1,
+          "water_quality": 0,
+          "biodiversity": 0,
+          "mobility": 2,
+          "local_economy": 0
+        },
+        "counts": {
+          "policy_documents": 27,
+          "finance_programmes": 16,
+          "past_projects": 12,
+          "supporting_actions": 2
+        }
+      },
+      {
+        "action_id": "icare_0183",
+        "name": "Implement and strengthen multi-hazard early warning systems",
+        "description": "Implement and strengthen multi-hazard early warning systems that translate climate and weather information into timely warnings and coordinated preparedness and response actions. This includes establishing warning protocols, risk-based thresholds, communication channels, and mechanisms to reach exposed and vulnerable populations through appropriate means such as sirens, SMS and cell broadcast, radio, public-address systems, and other locally appropriate channels. Systems should be linked to relevant monitoring and forecasting information and integrated with municipal emergency preparedness and response procedures.",
+        "position": 7,
+        "scores": {
+          "overall": 0.5929,
+          "impact": 0.4445,
+          "feasibility": 0.6125,
+          "legal": 0.725,
+          "cost": 0.5,
+          "policy_alignment": 0.936
+        },
+        "impact_risk": {
+          "sector": "Geohydrological disasters",
+          "risk": "Landslides"
+        },
+        "timeline": "<5 years",
+        "cost_band": "medium",
+        "legal_grade": "Feasible, with institutional limitations",
+        "policy_grade": "Strong",
+        "risk_sectors": [
+          "Geohydrological disasters"
+        ],
+        "co_benefits": {
+          "social_equity": 1,
+          "public_health": 2,
+          "housing": 0,
+          "air_quality": 0,
+          "water_quality": 0,
+          "biodiversity": 0,
+          "mobility": 2,
+          "local_economy": 0
+        },
+        "counts": {
+          "policy_documents": 23,
+          "finance_programmes": 3,
+          "past_projects": 1,
+          "supporting_actions": 3
+        }
+      },
+      {
+        "action_id": "icare_0162",
+        "name": "Strengthen programs for control and conservation of protected areas",
+        "description": "This action focuses on implementing a series of integrated strategies to enhance environmental conservation and maximize its benefits, such as expanding protected areas, developing management plans for conservation units, and training ecotourism guides to strengthen sustainable tourism.",
+        "position": 8,
+        "scores": {
+          "overall": 0.582,
+          "impact": 0.3627,
+          "feasibility": 0.7,
+          "legal": 0.9,
+          "cost": 0.5,
+          "policy_alignment": 1
+        },
+        "impact_risk": {
+          "sector": "Biodiversity",
+          "risk": "Biome integrity"
+        },
+        "timeline": "<5 years",
+        "cost_band": "medium",
+        "legal_grade": "Highly feasible",
+        "policy_grade": "Strong",
+        "risk_sectors": [
+          "Biodiversity"
+        ],
+        "co_benefits": {
+          "social_equity": 1,
+          "public_health": 0,
+          "housing": 0,
+          "air_quality": 0,
+          "water_quality": 1,
+          "biodiversity": 2,
+          "mobility": 0,
+          "local_economy": 1
+        },
+        "counts": {
+          "policy_documents": 20,
+          "finance_programmes": 3,
+          "past_projects": 2,
+          "supporting_actions": 1
+        }
+      },
+      {
+        "action_id": "ipcc_0099",
+        "name": "Protect and enhance water sources and watersheds",
+        "description": "Protect, restore, and sustainably manage watersheds, water bodies, and water source areas to maintain water availability, water quality, and ecosystem services under changing climate conditions. This includes watershed conservation and restoration, protection of recharge zones, pollution prevention, water body revitalization, and nature-based solutions that enhance infiltration and regulate hydrological flows. It also includes measures to increase water capture, retention, and storage, such as rainwater harvesting, retention ponds, reservoirs, water storage infrastructure, and other solutions that improve water security, reduce climate-related water risks, and strengthen resilience to droughts, floods, and increasing water variability.",
+        "position": 9,
+        "scores": {
+          "overall": 0.5567,
+          "impact": 0.3731,
+          "feasibility": 0.5625,
+          "legal": 0.725,
+          "cost": 0.4,
+          "policy_alignment": 1
+        },
+        "impact_risk": {
+          "sector": "Biodiversity",
+          "risk": "Biome integrity"
+        },
+        "timeline": "5-10 years",
+        "cost_band": "high",
+        "legal_grade": "Feasible, with institutional limitations",
+        "policy_grade": "Strong",
+        "risk_sectors": [
+          "Biodiversity",
+          "Geohydrological disasters",
+          "Water resources"
+        ],
+        "co_benefits": {
+          "social_equity": 1,
+          "public_health": 1,
+          "housing": 0,
+          "air_quality": 0,
+          "water_quality": 2,
+          "biodiversity": 2,
+          "mobility": 0,
+          "local_economy": 1
+        },
+        "counts": {
+          "policy_documents": 29,
+          "finance_programmes": 8,
+          "past_projects": 103,
+          "supporting_actions": 1
+        }
+      },
+      {
+        "action_id": "ipcc_0096",
+        "name": "Strengthen climate resilience in agriculture and livestock systems",
+        "description": "Strengthen climate resilience in agriculture and livestock systems through climate-resilient production practices, water and soil management, technical assistance, extension services, and other measures that address priority climate risks affecting production systems.",
+        "position": 10,
+        "scores": {
+          "overall": 0.5515,
+          "impact": 0.3527,
+          "feasibility": 0.625,
+          "legal": 0.75,
+          "cost": 0.5,
+          "policy_alignment": 0.964
+        },
+        "impact_risk": {
+          "sector": "Water resources",
+          "risk": "Risk of water stress"
+        },
+        "timeline": "5-10 years",
+        "cost_band": "medium",
+        "legal_grade": "Feasible, with institutional limitations",
+        "policy_grade": "Strong",
+        "risk_sectors": [
+          "Biodiversity",
+          "Food security",
+          "Water resources"
+        ],
+        "co_benefits": {
+          "social_equity": 1,
+          "public_health": 1,
+          "housing": 0,
+          "air_quality": 0,
+          "water_quality": 1,
+          "biodiversity": 1,
+          "mobility": 0,
+          "local_economy": 1
+        },
+        "counts": {
+          "policy_documents": 25,
+          "finance_programmes": 16,
+          "past_projects": 11,
+          "supporting_actions": 2
+        }
+      },
+      {
+        "action_id": "ipcc_0084",
+        "name": "Restore and create natural areas through ecosystem-based measures",
+        "description": "Restore, conserve, and sustainably manage marine, coastal, urban, riverine, and wetland ecosystems to protect communities from climate hazards such as storm surges, floods, and heatwaves. Measures include restoring mangroves, vegetated dunes, seagrasses, coral reefs, kelp forests, coastal and marine vegetation, and urban green spaces; creating marine protected areas; applying ridge-to-reef management and agroecology; establishing vegetation corridors; planting salinity-tolerant trees; increasing forest cover; and detecting and managing forest pests. These actions support biodiversity, store carbon, enhance water quality, reduce urban temperatures, mitigate climate change, and provide socio-economic and cultural co-benefits.",
+        "position": 11,
+        "scores": {
+          "overall": 0.5438,
+          "impact": 0.3547,
+          "feasibility": 0.55,
+          "legal": 0.7,
+          "cost": 0.4,
+          "policy_alignment": 1
+        },
+        "impact_risk": {
+          "sector": "Biodiversity",
+          "risk": "Biome integrity"
+        },
+        "timeline": "5-10 years",
+        "cost_band": "high",
+        "legal_grade": "Feasible, with institutional limitations",
+        "policy_grade": "Strong",
+        "risk_sectors": [
+          "Biodiversity"
+        ],
+        "co_benefits": {
+          "social_equity": 1,
+          "public_health": 1,
+          "housing": 0,
+          "air_quality": 1,
+          "water_quality": 2,
+          "biodiversity": 2,
+          "mobility": 0,
+          "local_economy": 1
+        },
+        "counts": {
+          "policy_documents": 29,
+          "finance_programmes": 12,
+          "past_projects": 154,
+          "supporting_actions": 1
+        }
+      },
+      {
+        "action_id": "c40_0049",
+        "name": "Build and maintain shelters for critical climate hazards",
+        "description": "\"Build and maintain shelters for critical climate hazards\" involves building and maintaining shelters in high-risk areas to protect residents during extreme weather events such as floods, cyclones, storms, landslides, extreme heat events or other critical climate hazards. Shelters should meet resilient design standards, including wind- and flood-resistant construction, and be strategically located to maximize accessibility for vulnerable populations. Where possible, shelters can serve multipurpose roles as schools or community centers. Clear funding mechanisms and defined responsibilities for operations and maintenance are essential to ensure long-term reliability and effectiveness.",
+        "position": 12,
+        "scores": {
+          "overall": 0.5105,
+          "impact": 0.2925,
+          "feasibility": 0.725,
+          "legal": 0.95,
+          "cost": 0.5,
+          "policy_alignment": 0.829
+        },
+        "impact_risk": {
+          "sector": "Geohydrological disasters",
+          "risk": "Landslides"
+        },
+        "timeline": "<5 years",
+        "cost_band": "medium",
+        "legal_grade": "Highly feasible",
+        "policy_grade": "Strong",
+        "risk_sectors": [
+          "Geohydrological disasters"
+        ],
+        "co_benefits": {
+          "social_equity": 1,
+          "public_health": 2,
+          "housing": 0,
+          "air_quality": 0,
+          "water_quality": 0,
+          "biodiversity": 0,
+          "mobility": 0,
+          "local_economy": 1
+        },
+        "counts": {
+          "policy_documents": 15,
+          "finance_programmes": 1,
+          "past_projects": 0,
+          "supporting_actions": 1
+        }
+      },
+      {
+        "action_id": "icare_0186",
+        "name": "Implement integrated coastal zone management measures",
+        "description": "Implement measures to promote sustainable development and address climate change impacts in coastal areas, including coastal monitoring, land-use planning, ecosystem restoration, erosion management, and measures to address sea-level rise. These actions support integrated coastal zone management and help reduce the impacts of coastal hazards.",
+        "position": 13,
+        "scores": {
+          "overall": 0.5059,
+          "impact": 0.318,
+          "feasibility": 0.6,
+          "legal": 0.7,
+          "cost": 0.5,
+          "policy_alignment": 0.871
+        },
+        "impact_risk": {
+          "sector": "Biodiversity",
+          "risk": "Biome integrity"
+        },
+        "timeline": "5-10 years",
+        "cost_band": "medium",
+        "legal_grade": "Feasible, with institutional limitations",
+        "policy_grade": "Strong",
+        "risk_sectors": [
+          "Biodiversity"
+        ],
+        "co_benefits": {
+          "social_equity": 0,
+          "public_health": 0,
+          "housing": 0,
+          "air_quality": 0,
+          "water_quality": 1,
+          "biodiversity": 1,
+          "mobility": 0,
+          "local_economy": 1
+        },
+        "counts": {
+          "policy_documents": 14,
+          "finance_programmes": 3,
+          "past_projects": 0,
+          "supporting_actions": 2
+        }
+      },
+      {
+        "action_id": "ipcc_0098",
+        "name": "Strengthen sustainable food value chains",
+        "description": "Strengthen sustainable territorial food value chains from production to consumption by improving agricultural practices, connecting producers to local markets, supporting shorter supply chains, and promoting sustainable consumption. Actions include sustainable agriculture initiatives, appropriate pricing policies, support for disadvantaged groups, healthier and plant-based diets, and reducing overconsumption and food waste. These measures strengthen livelihoods, support local food systems, improve food security under climate change, and help mitigate greenhouse gas emissions.",
+        "position": 14,
+        "scores": {
+          "overall": 0.5025,
+          "impact": 0.2773,
+          "feasibility": 0.6625,
+          "legal": 0.825,
+          "cost": 0.5,
+          "policy_alignment": 0.893
+        },
+        "impact_risk": {
+          "sector": "Biodiversity",
+          "risk": "Biome integrity"
+        },
+        "timeline": "<5 years",
+        "cost_band": "medium",
+        "legal_grade": "Highly feasible",
+        "policy_grade": "Strong",
+        "risk_sectors": [
+          "Biodiversity",
+          "Food security"
+        ],
+        "co_benefits": {
+          "social_equity": 1,
+          "public_health": 1,
+          "housing": 0,
+          "air_quality": 0,
+          "water_quality": 0,
+          "biodiversity": 1,
+          "mobility": 0,
+          "local_economy": 1
+        },
+        "counts": {
+          "policy_documents": 24,
+          "finance_programmes": 7,
+          "past_projects": 0,
+          "supporting_actions": 1
+        }
+      },
+      {
+        "action_id": "icare_0180",
+        "name": "Expand urban green-blue networks and corridors",
+        "description": "Expand and connect urban green spaces and blue-green infrastructure (BGI) in the public realm. BGI combines natural vegetation and water management systems to address urban climate and environmental challenges. Actions include street tree planting, establishing green corridors/greenways, pocket and large parks, and green-blue features (bioswales, rain gardens, permeable surfaces) to manage stormwater, reduce urban heat, enhance biodiversity, and support carbon sequestration. Embedding these measures in urban planning strengthens ecosystem services, resilience, and livability.",
+        "position": 15,
+        "scores": {
+          "overall": 0.4981,
+          "impact": 0.2722,
+          "feasibility": 0.6625,
+          "legal": 0.825,
+          "cost": 0.5,
+          "policy_alignment": 0.886
+        },
+        "impact_risk": {
+          "sector": "Geohydrological disasters",
+          "risk": "Landslides"
+        },
+        "timeline": "5-10 years",
+        "cost_band": "medium",
+        "legal_grade": "Highly feasible",
+        "policy_grade": "Strong",
+        "risk_sectors": [
+          "Geohydrological disasters"
+        ],
+        "co_benefits": {
+          "social_equity": 0,
+          "public_health": 1,
+          "housing": 1,
+          "air_quality": 1,
+          "water_quality": 1,
+          "biodiversity": 2,
+          "mobility": 1,
+          "local_economy": 1
+        },
+        "counts": {
+          "policy_documents": 11,
+          "finance_programmes": 8,
+          "past_projects": 0,
+          "supporting_actions": 3
+        }
+      },
+      {
+        "action_id": "ipcc_0103",
+        "name": "Strengthen cooperative, intersectoral and participatory climate governance",
+        "description": "Strengthen cooperative climate governance through intersectoral coordination, public participation, and structured decision-making that combines institutional leadership with community-driven initiatives. Establish working groups with neighboring municipalities to advance a common climate agenda, and promote inclusive and decentralized governance frameworks for shared resources and transboundary climate challenges. These mechanisms may integrate local, Indigenous, and scientific knowledge, support equitable resource distribution and land rights, and strengthen legal, institutional, and ecosystem-based approaches to climate resilience.",
+        "position": 16,
+        "scores": {
+          "overall": 0.4853,
+          "impact": 0.1869,
+          "feasibility": 0.7,
+          "legal": 0.8,
+          "cost": 0.6,
+          "policy_alignment": 1
+        },
+        "impact_risk": {
+          "sector": "Geohydrological disasters",
+          "risk": "Landslides"
+        },
+        "timeline": "<5 years",
+        "cost_band": "low",
+        "legal_grade": "Highly feasible",
+        "policy_grade": "Strong",
+        "risk_sectors": [
+          "Biodiversity",
+          "Geohydrological disasters"
+        ],
+        "co_benefits": {
+          "social_equity": 2,
+          "public_health": 0,
+          "housing": 0,
+          "air_quality": 0,
+          "water_quality": 0,
+          "biodiversity": 0,
+          "mobility": 0,
+          "local_economy": 0
+        },
+        "counts": {
+          "policy_documents": 31,
+          "finance_programmes": 10,
+          "past_projects": 0,
+          "supporting_actions": 1
+        }
+      },
+      {
+        "action_id": "icare_0184",
+        "name": "Stabilize, inspect and maintain slopes in landslide-prone areas",
+        "description": "Establish a municipal programme to stabilize, periodically inspect, and maintain slopes in landslide-prone hillside areas, including retaining structures, slope drainage systems, and other stabilization works. Measures may include risk-based inspection schedules, technical assessments before and during rainy periods, monitoring of cracks, erosion, drainage blockages, and other signs of instability, maintenance and inspection records, prioritization of corrective and stabilization works, and clear procedures for reporting and responding to identified risks. These actions support early intervention, prevent landslides and erosion, and reduce geohydrological disaster risks.",
+        "position": 17,
+        "scores": {
+          "overall": 0.4847,
+          "impact": 0.2762,
+          "feasibility": 0.65,
+          "legal": 0.8,
+          "cost": 0.5,
+          "policy_alignment": 0.829
+        },
+        "impact_risk": {
+          "sector": "Geohydrological disasters",
+          "risk": "Landslides"
+        },
+        "timeline": "5-10 years",
+        "cost_band": "medium",
+        "legal_grade": "Highly feasible",
+        "policy_grade": "Strong",
+        "risk_sectors": [
+          "Geohydrological disasters"
+        ],
+        "co_benefits": {
+          "social_equity": 1,
+          "public_health": 1,
+          "housing": 1,
+          "air_quality": 0,
+          "water_quality": 1,
+          "biodiversity": 0,
+          "mobility": 1,
+          "local_economy": 1
+        },
+        "counts": {
+          "policy_documents": 12,
+          "finance_programmes": 3,
+          "past_projects": 0,
+          "supporting_actions": 2
+        }
+      },
+      {
+        "action_id": "ipcc_0085",
+        "name": "Reduce pressures on ecosystems to build resilience",
+        "description": "Reduce pollution, eutrophication, and anthropogenic pressures on natural systems, including marine and terrestrial ecosystems. Efforts include managing runoff, protecting sensitive habitats addressing non-climate drivers, promoting sustainable fisheries harvest, and increasing connectivity between natural areas to enhance ecosystem resilience.",
+        "position": 18,
+        "scores": {
+          "overall": 0.4838,
+          "impact": 0.2581,
+          "feasibility": 0.5625,
+          "legal": 0.725,
+          "cost": 0.4,
+          "policy_alignment": 0.957
+        },
+        "impact_risk": {
+          "sector": "Biodiversity",
+          "risk": "Biome integrity"
+        },
+        "timeline": "5-10 years",
+        "cost_band": "high",
+        "legal_grade": "Feasible, with institutional limitations",
+        "policy_grade": "Strong",
+        "risk_sectors": [
+          "Biodiversity"
+        ],
+        "co_benefits": {
+          "social_equity": 0,
+          "public_health": 0,
+          "housing": 0,
+          "air_quality": 0,
+          "water_quality": 2,
+          "biodiversity": 2,
+          "mobility": 0,
+          "local_economy": 0
+        },
+        "counts": {
+          "policy_documents": 22,
+          "finance_programmes": 5,
+          "past_projects": 1,
+          "supporting_actions": 1
+        }
+      },
+      {
+        "action_id": "c40_0046",
+        "name": "Strengthen coastal protection infrastructure",
+        "description": "Strengthen coastal protection infrastructure strategies include the construction of sea walls and protective structures to mitigate the impact of rising sea levels and coastal erosion. This adaptation measure enhances the resilience of coastal areas and protects communities from the impacts of climate change. Crucially, these interventions must be developed through an integrated coastal management framework, prioritizing nature-based solutions where feasible, to avoid negative downstream effects and ensure equitable protection for all vulnerable communities. Examples include beach nourishment and slope protection measures in urbanized coastal areas and coastal communities.",
+        "position": 19,
+        "scores": {
+          "overall": 0.4816,
+          "impact": 0.2722,
+          "feasibility": 0.625,
+          "legal": 0.75,
+          "cost": 0.5,
+          "policy_alignment": 0.85
+        },
+        "impact_risk": {
+          "sector": "Geohydrological disasters",
+          "risk": "Landslides"
+        },
+        "timeline": "5-10 years",
+        "cost_band": "medium",
+        "legal_grade": "Feasible, with institutional limitations",
+        "policy_grade": "Strong",
+        "risk_sectors": [
+          "Geohydrological disasters"
+        ],
+        "co_benefits": {
+          "social_equity": 1,
+          "public_health": 1,
+          "housing": 1,
+          "air_quality": 0,
+          "water_quality": 0,
+          "biodiversity": 1,
+          "mobility": 1,
+          "local_economy": 1
+        },
+        "counts": {
+          "policy_documents": 13,
+          "finance_programmes": 3,
+          "past_projects": 0,
+          "supporting_actions": 1
+        }
+      },
+      {
+        "action_id": "c40_0048",
+        "name": "Upgrade and maintain urban drainage systems",
+        "description": "Upgrade and maintain urban drainage systems through capacity upgrades, network expansion, regular cleaning and unclogging of channels, storm drains, sewers, and retention basins, installation of eco-barriers, and preventive maintenance of stormwater assets to ensure efficient water flow, prevent blockages, reduce flood risks, and improve urban resilience to extreme rainfall events. Use eco-barriers and related cleaning activities to support solid-waste awareness.",
+        "position": 20,
+        "scores": {
+          "overall": 0.4788,
+          "impact": 0.2722,
+          "feasibility": 0.6125,
+          "legal": 0.825,
+          "cost": 0.4,
+          "policy_alignment": 0.85
+        },
+        "impact_risk": {
+          "sector": "Geohydrological disasters",
+          "risk": "Landslides"
+        },
+        "timeline": "5-10 years",
+        "cost_band": "high",
+        "legal_grade": "Highly feasible",
+        "policy_grade": "Strong",
+        "risk_sectors": [
+          "Geohydrological disasters"
+        ],
+        "co_benefits": {
+          "social_equity": 1,
+          "public_health": 2,
+          "housing": 1,
+          "air_quality": 0,
+          "water_quality": 1,
+          "biodiversity": 1,
+          "mobility": 1,
+          "local_economy": 1
+        },
+        "counts": {
+          "policy_documents": 17,
+          "finance_programmes": 2,
+          "past_projects": 36,
+          "supporting_actions": 2
+        }
+      },
+      {
+        "action_id": "icare_0170",
+        "name": "Build safe housing and implement urban rehabilitation projects for populations living in high-risk areas",
+        "description": "The priority of this action is to build safe housing and implement urban rehabilitation projects for populations living in areas prone to landslides and flooding, as the housing deficit is one of the main factors related to these threats. This will be implemented through the construction of new housing units in safe locations and infrastructure upgrades such as slope stabilization and improved drainage systems within vulnerable communities. Residents should participate in the design, prioritization, and monitoring of rehabilitation measures in favelas and vulnerable communities.",
+        "position": 21,
+        "scores": {
+          "overall": 0.4725,
+          "impact": 0.2762,
+          "feasibility": 0.625,
+          "legal": 0.75,
+          "cost": 0.5,
+          "policy_alignment": 0.8
+        },
+        "impact_risk": {
+          "sector": "Geohydrological disasters",
+          "risk": "Landslides"
+        },
+        "timeline": "5-10 years",
+        "cost_band": "medium",
+        "legal_grade": "Feasible, with institutional limitations",
+        "policy_grade": "Strong",
+        "risk_sectors": [
+          "Geohydrological disasters"
+        ],
+        "co_benefits": {
+          "social_equity": 2,
+          "public_health": 2,
+          "housing": 2,
+          "air_quality": 0,
+          "water_quality": 1,
+          "biodiversity": 0,
+          "mobility": 1,
+          "local_economy": 1
+        },
+        "counts": {
+          "policy_documents": 15,
+          "finance_programmes": 1,
+          "past_projects": 1,
+          "supporting_actions": 2
+        }
+      },
+      {
+        "action_id": "ipcc_0100",
+        "name": "Increase water-use efficiency and demand management",
+        "description": "Increase water-use efficiency and manage water demand across households, businesses, agriculture, and livestock systems. Municipal governments can directly improve efficiency in municipal water systems and public facilities, while supporting conservation among households, businesses and producers through regulation, incentives, tax mechanisms, recognition schemes such as green seals, technical guidance and partnerships. Measures may include leak detection and reduction, water-saving technologies and practices, water recycling and reuse, efficient industrial processes, precision and drip irrigation, behavioural change initiatives, demand management programmes, and mechanisms that encourage conservation. These actions aim to reduce water losses, optimise water use across sectors, support equitable access, and strengthen resilience to water scarcity and increasing climate variability.",
+        "position": 22,
+        "scores": {
+          "overall": 0.4663,
+          "impact": 0.379,
+          "feasibility": 0.575,
+          "legal": 0.75,
+          "cost": 0.4,
+          "policy_alignment": 0.571
+        },
+        "impact_risk": {
+          "sector": "Water resources",
+          "risk": "Risk of water stress"
+        },
+        "timeline": "5-10 years",
+        "cost_band": "high",
+        "legal_grade": "Feasible, with institutional limitations",
+        "policy_grade": "Medium",
+        "risk_sectors": [
+          "Food security",
+          "Water resources"
+        ],
+        "co_benefits": {
+          "social_equity": 1,
+          "public_health": 1,
+          "housing": 1,
+          "air_quality": 0,
+          "water_quality": 1,
+          "biodiversity": 1,
+          "mobility": 0,
+          "local_economy": 1
+        },
+        "counts": {
+          "policy_documents": 24,
+          "finance_programmes": 0,
+          "past_projects": 6,
+          "supporting_actions": 0
+        }
+      },
+      {
+        "action_id": "icare_0156",
+        "name": "Implementation and strengthening of urban and peri-urban agriculture",
+        "description": "Identify and assess the feasibility of suitable areas for urban and peri-urban agriculture and support their implementation and strengthening, ensuring alignment with community needs. Actions may include access to water, technical assistance, financial support for family farming households, beneficiary engagement, and implementation targets.",
+        "position": 23,
+        "scores": {
+          "overall": 0.4183,
+          "impact": 0.2134,
+          "feasibility": 0.7375,
+          "legal": 0.875,
+          "cost": 0.6,
+          "policy_alignment": 0.6
+        },
+        "impact_risk": {
+          "sector": "Food security",
+          "risk": "Food access and consumption"
+        },
+        "timeline": "<5 years",
+        "cost_band": "low",
+        "legal_grade": "Highly feasible",
+        "policy_grade": "Medium",
+        "risk_sectors": [
+          "Biodiversity",
+          "Food security"
+        ],
+        "co_benefits": {
+          "social_equity": 1,
+          "public_health": 1,
+          "housing": 0,
+          "air_quality": 0,
+          "water_quality": 0,
+          "biodiversity": 1,
+          "mobility": 0,
+          "local_economy": 1
+        },
+        "counts": {
+          "policy_documents": 16,
+          "finance_programmes": 2,
+          "past_projects": 0,
+          "supporting_actions": 1
+        }
+      },
+      {
+        "action_id": "ipcc_0087",
+        "name": "Strengthen climate resilience of existing public infrastructure",
+        "description": "Strengthen and upgrade public service infrastructure, including roads and energy systems, to improve resilience against climate risks such as floods, droughts, and heatwaves. Efforts include context-appropriate retrofitting measures such as increasing albedo and shading where relevant. Establish periodic inspections, operational requirements, and preventive maintenance tailored to the adapted assets and the climate risks they address.",
+        "position": 24,
+        "scores": {
+          "overall": 0.4041,
+          "impact": 0.2643,
+          "feasibility": 0.55,
+          "legal": 0.7,
+          "cost": 0.4,
+          "policy_alignment": 0.6
+        },
+        "impact_risk": {
+          "sector": "Geohydrological disasters",
+          "risk": "Landslides"
+        },
+        "timeline": "<5 years",
+        "cost_band": "high",
+        "legal_grade": "Feasible, with institutional limitations",
+        "policy_grade": "Medium",
+        "risk_sectors": [
+          "Geohydrological disasters"
+        ],
+        "co_benefits": {
+          "social_equity": 1,
+          "public_health": 1,
+          "housing": 0,
+          "air_quality": 0,
+          "water_quality": 0,
+          "biodiversity": 0,
+          "mobility": 2,
+          "local_economy": 1
+        },
+        "counts": {
+          "policy_documents": 15,
+          "finance_programmes": 3,
+          "past_projects": 0,
+          "supporting_actions": 3
+        }
+      },
+      {
+        "action_id": "ipcc_0097",
+        "name": "Strengthen climate-resilient food storage and distribution infrastructure",
+        "description": "Strengthen food storage and distribution infrastructure to reduce losses and enhance resilience to climate impacts. Invest in facilities such as cool storage units, silos, and warehouses, expand reliable storage capacity for producers and vendors, and upgrade logistics to handle perishable goods efficiently. These measures improve food security, reduce waste, and ensure stable food availability during crises and extreme events. Implementation is primarily led at the federal or state level.",
+        "position": 25,
+        "scores": {
+          "overall": 0.382,
+          "impact": 0.1218,
+          "feasibility": 0.6,
+          "legal": 0.7,
+          "cost": 0.5,
+          "policy_alignment": 0.8
+        },
+        "impact_risk": {
+          "sector": "Food security",
+          "risk": "Food access and consumption"
+        },
+        "timeline": "<5 years",
+        "cost_band": "medium",
+        "legal_grade": "Feasible, with institutional limitations",
+        "policy_grade": "Strong",
+        "risk_sectors": [
+          "Food security"
+        ],
+        "co_benefits": {
+          "social_equity": 1,
+          "public_health": 1,
+          "housing": 0,
+          "air_quality": 0,
+          "water_quality": 0,
+          "biodiversity": 0,
+          "mobility": 0,
+          "local_economy": 1
+        },
+        "counts": {
+          "policy_documents": 17,
+          "finance_programmes": 2,
+          "past_projects": 10,
+          "supporting_actions": 0
+        }
+      },
+      {
+        "action_id": "ipcc_0092",
+        "name": "Establish climate-responsive social protection and post-disaster financial support programs",
+        "description": "Establish a program combining financial assistance after climate-related disasters with adaptive social protection for vulnerable populations. Measures may include support for affected families, cash transfers, school feeding, public work initiatives, unemployment compensation, land reforms, credit and affordable insurance schemes, as well as additional resources for recovery and reconstruction. Recovery measures should emphasize adaptation, building back better, and support for residents to retrofit buildings. The program should integrate climate risk assessment, disaster risk reduction, education, and social equity, with implementation arrangements to be discussed at the federal and, where relevant, state level.",
+        "position": 26,
+        "scores": {
+          "overall": 0.3623,
+          "impact": 0.1764,
+          "feasibility": 0.55,
+          "legal": 0.7,
+          "cost": 0.4,
+          "policy_alignment": 0.629
+        },
+        "impact_risk": {
+          "sector": "Geohydrological disasters",
+          "risk": "Landslides"
+        },
+        "timeline": "5-10 years",
+        "cost_band": "high",
+        "legal_grade": "Feasible, with institutional limitations",
+        "policy_grade": "Medium",
+        "risk_sectors": [
+          "Food security",
+          "Geohydrological disasters"
+        ],
+        "co_benefits": {
+          "social_equity": 2,
+          "public_health": 0,
+          "housing": 1,
+          "air_quality": 0,
+          "water_quality": 0,
+          "biodiversity": 0,
+          "mobility": 0,
+          "local_economy": 1
+        },
+        "counts": {
+          "policy_documents": 19,
+          "finance_programmes": 4,
+          "past_projects": 1,
+          "supporting_actions": 1
+        }
+      },
+      {
+        "action_id": "ipcc_0090",
+        "name": "Create or Expand climate risk insurance for small and medium-sized farmers",
+        "description": "Support climate risk insurance for small and medium-sized farmers, including relevant climate hazards, access conditions, potential subsidy mechanisms, and partnerships with insurance providers.",
+        "position": 27,
+        "scores": {
+          "overall": 0.3622,
+          "impact": 0.0801,
+          "feasibility": 0.55,
+          "legal": 0.6,
+          "cost": 0.5,
+          "policy_alignment": 0.864
+        },
+        "impact_risk": {
+          "sector": "Food security",
+          "risk": "Food access and consumption"
+        },
+        "timeline": "<5 years",
+        "cost_band": "medium",
+        "legal_grade": "Feasible, with institutional limitations",
+        "policy_grade": "Strong",
+        "risk_sectors": [
+          "Food security"
+        ],
+        "co_benefits": {
+          "social_equity": 1,
+          "public_health": 0,
+          "housing": 0,
+          "air_quality": 0,
+          "water_quality": 0,
+          "biodiversity": 0,
+          "mobility": 0,
+          "local_economy": 1
+        },
+        "counts": {
+          "policy_documents": 11,
+          "finance_programmes": 4,
+          "past_projects": 1,
+          "supporting_actions": 1
+        }
+      },
+      {
+        "action_id": "ipcc_0078",
+        "name": "Implement urban cooling and shading measures in streets, public spaces and buildings",
+        "description": "Implement measures to reduce heat exposure absorption and mitigate the urban heat island effect in streets, public spaces and buildings, including shade structures such as shade sails and canopies, reflective coatings, light-colored materials, permeable surfaces, cool pavements, cool roofs, green roofs and walls, and drought-tolerant trees. Municipal governments can use heat-risk assessments to identify the most heat-exposed and vulnerable areas and populations, and pilot or integrate appropriate measures into routine street upgrades, public-space improvements and public building retrofits. Measures may include establishing heat-health protocols and alert thresholds, adapting health facilities and schools, creating cooling spaces, shading bus stops and pedestrian routes, and prioritising urban greening where heat exposure and vulnerability are greatest. These measures improve indoor and outdoor thermal comfort, reduce heat stress and energy demand for cooling, manage stormwater, enhance urban livability and biodiversity, and strengthen resilience to rising temperatures.",
+        "position": 28,
+        "scores": {
+          "overall": 0.3432,
+          "impact": 0.128,
+          "feasibility": 0.6625,
+          "legal": 0.825,
+          "cost": 0.5,
+          "policy_alignment": 0.55
+        },
+        "impact_risk": {
+          "sector": "Biodiversity",
+          "risk": "Biome integrity"
+        },
+        "timeline": "5-10 years",
+        "cost_band": "medium",
+        "legal_grade": "Highly feasible",
+        "policy_grade": "Medium",
+        "risk_sectors": [
+          "Biodiversity"
+        ],
+        "co_benefits": {
+          "social_equity": 1,
+          "public_health": 2,
+          "housing": 1,
+          "air_quality": 1,
+          "water_quality": 1,
+          "biodiversity": 1,
+          "mobility": 1,
+          "local_economy": 1
+        },
+        "counts": {
+          "policy_documents": 14,
+          "finance_programmes": 0,
+          "past_projects": 0,
+          "supporting_actions": 2
+        }
+      },
+      {
+        "action_id": "ipcc_0091",
+        "name": "Support livelihood diversification for fisheries- and mariculture-dependent communities",
+        "description": "Promote alternative income opportunities to reduce the vulnerability of communities dependent on fisheries and mariculture. Municipal governments can facilitate training, microcredit programs, and connections to value chains that enable diversification into eco-tourism, agro-processing, crafts, and service sectors. By supporting infrastructure upgrades, skills development, and access to finance, cities can help stabilize incomes, strengthen local economies, and protect livelihoods from the impacts of shifting marine species distributions and climate variability.",
+        "position": 29,
+        "scores": {
+          "overall": 0.2598,
+          "impact": 0.0735,
+          "feasibility": 0.625,
+          "legal": 0.75,
+          "cost": 0.5,
+          "policy_alignment": 0.35
+        },
+        "impact_risk": {
+          "sector": "Food security",
+          "risk": "Food access and consumption"
+        },
+        "timeline": "<5 years",
+        "cost_band": "medium",
+        "legal_grade": "Feasible, with institutional limitations",
+        "policy_grade": "Weak",
+        "risk_sectors": [
+          "Food security"
+        ],
+        "co_benefits": {
+          "social_equity": 1,
+          "public_health": 0,
+          "housing": 0,
+          "air_quality": 0,
+          "water_quality": 0,
+          "biodiversity": 0,
+          "mobility": 1,
+          "local_economy": 2
+        },
+        "counts": {
+          "policy_documents": 19,
+          "finance_programmes": 0,
+          "past_projects": 2,
+          "supporting_actions": 0
+        }
+      }
+    ]
+  }
+}
