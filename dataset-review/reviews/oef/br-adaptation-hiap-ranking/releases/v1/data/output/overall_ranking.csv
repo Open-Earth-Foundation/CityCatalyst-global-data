@@ -1,0 +1,191 @@
+city,locode,action_id,action_name,impact,feasibility,alignment,overall,rank
+Caxias do Sul,BR CXL,icare_0164,Improve Hydrological Monitoring System,0.0,0.5625,0.85,0.3178125,
+Caxias do Sul,BR CXL,c40_0049,Build and maintain shelters for critical climate hazards,0.2925297921606589,0.725,0.829,0.5105413856883624,12.0
+Caxias do Sul,BR CXL,icare_0183,Implement and strengthen multi-hazard early warning systems,0.4445491503998244,0.5875,0.936,0.5872895327199035,6.0
+Caxias do Sul,BR CXL,c40_0048,Upgrade and maintain urban drainage systems,0.2722296460168368,0.575,0.85,0.4703513053092603,19.0
+Caxias do Sul,BR CXL,ipcc_0078,"Implement urban cooling and shading measures in streets, public spaces and buildings",0.1279457020642347,0.6625,0.55,0.3431826361353291,28.0
+Caxias do Sul,BR CXL,icare_0170,Build safe housing and implement urban rehabilitation projects for populations living in high-risk areas,0.2761737234605717,0.6,0.8,0.46689554790331445,20.0
+Caxias do Sul,BR CXL,icare_0181,Relocate and resettle populations living in high-risk areas,0.8006842893537144,0.6625,0.55,0.713188859144543,4.0
+Caxias do Sul,BR CXL,icare_0184,"Stabilize, inspect and maintain slopes in landslide-prone areas",0.2761737234605717,0.65,0.829,0.4846705479033145,18.0
+Caxias do Sul,BR CXL,ipcc_0087,Strengthen climate resilience of existing public infrastructure,0.26433050631194316,0.5625,0.6,0.4069442784715688,24.0
+Caxias do Sul,BR CXL,ipcc_0101,Improve climate-resilient water and sanitation infrastructure,1.0,0.4625,1.0,0.8790625,1.0
+Caxias do Sul,BR CXL,ipcc_0099,Protect and enhance water sources and watersheds,0.37306351245412167,0.525,1.0,0.548309931849767,9.0
+Caxias do Sul,BR CXL,icare_0185,Strengthen surveillance and early detection of climate-sensitive diseases,0.0,0.6625,0.8,0.32906250000000004,
+Caxias do Sul,BR CXL,ipcc_0094,"Strengthen healthcare capacity, continuity and environmental health surveillance",0.7489843608000774,0.65,0.886,0.7575413984400426,3.0
+Caxias do Sul,BR CXL,c40_0046,Strengthen coastal protection infrastructure,0.2722296460168368,0.5375,0.85,0.4619138053092603,22.0
+Caxias do Sul,BR CXL,ipcc_0097,Strengthen climate-resilient food storage and distribution infrastructure,0.12176917151070857,0.5625,0.8,0.37353554433088976,25.0
+Caxias do Sul,BR CXL,ipcc_0098,Strengthen sustainable food value chains,0.2773407452600093,0.6625,0.893,0.5025249098930051,13.0
+Caxias do Sul,BR CXL,ipcc_0100,Increase water-use efficiency and demand management,0.3790229759004691,0.5625,0.571,0.46350013674525803,21.0
+Caxias do Sul,BR CXL,ipcc_0103,"Strengthen cooperative, intersectoral and participatory climate governance",0.18690989348764825,0.7,1.0,0.4853004414182065,17.0
+Caxias do Sul,BR CXL,icare_0172,Develop and implement an integrated climate action plan and risk reduction plan,0.0,0.6625,0.607,0.2856375,
+Caxias do Sul,BR CXL,ipcc_0104,Plan and support climate-related mobility and livelihood transitions,0.0,0.625,0.35,0.219375,
+Caxias do Sul,BR CXL,icare_0156,Implementation and strengthening of urban and peri-urban agriculture,0.21338052563455012,0.7375,0.6,0.4182967890990026,23.0
+Caxias do Sul,BR CXL,icare_0162,Strengthen programs for control and conservation of protected areas,0.3626628108258083,0.7,1.0,0.5819645459541946,8.0
+Caxias do Sul,BR CXL,icare_0180,Expand urban green-blue networks and corridors,0.2722296460168368,0.6625,0.886,0.49813880530926025,14.0
+Caxias do Sul,BR CXL,icare_0182,Develop an urban afforestation plan,0.0,0.6625,0.8,0.32906250000000004,
+Caxias do Sul,BR CXL,ipcc_0084,Restore and create natural areas through ecosystem-based measures,0.3546871337452946,0.5125,1.0,0.5353904235599121,11.0
+Caxias do Sul,BR CXL,ipcc_0085,Reduce pressures on ecosystems to build resilience,0.25809464516596253,0.575,0.957,0.4866520548412794,16.0
+Caxias do Sul,BR CXL,ipcc_0092,Establish climate-responsive social protection and post-disaster financial support programs,0.17645929617914924,0.5125,0.629,0.3538901128985321,26.0
+Caxias do Sul,BR CXL,ipcc_0090,Create or Expand climate risk insurance for small and medium-sized farmers,0.0801286211019992,0.475,0.864,0.34534574160609954,27.0
+Caxias do Sul,BR CXL,ipcc_0091,Support livelihood diversification for fisheries- and mariculture-dependent communities,0.07345338108091498,0.6,0.35,0.25414935959450324,29.0
+Caxias do Sul,BR CXL,ipcc_0096,Strengthen climate resilience in agriculture and livestock systems,0.35272062308431495,0.6,0.964,0.5458963426963732,10.0
+Caxias do Sul,BR CXL,ipcc_0088,Update and enforce climate‑resilient building codes,0.0,0.6625,0.55,0.2728125,
+Caxias do Sul,BR CXL,ipcc_0089,Map climate-risk areas and redirect development through land-use planning and regulation,0.0,0.6625,0.879,0.3468375,
+Caxias do Sul,BR CXL,icare_0165,Develop an environmental education and climate awareness plan,0.0,0.6625,0.75,0.3178125,
+Caxias do Sul,BR CXL,icare_0169,Develop and implement an extreme weather preparedness and emergency response plan,0.41969330104923336,0.5625,1.0,0.5823938155770784,7.0
+Caxias do Sul,BR CXL,icare_0186,Implement integrated coastal zone management measures,0.3180029492642679,0.5625,0.871,0.49743912209534735,15.0
+Caxias do Sul,BR CXL,icare_0171,Strengthen and integrate municipal hydrometeorological monitoring and forecasting,0.0,0.4875,0.921,0.31691250000000004,
+Caxias do Sul,BR CXL,new0001,"Secure land tenure, essential services and resilient livelihoods for vulnerable rural and traditional communities",0.44534876544460794,0.55,0.986,0.5905418209945343,5.0
+Caxias do Sul,BR CXL,new0002,Strengthen selective waste collection to reduce health risks,0.9089391531770163,0.65,0.55,0.7699165342473591,2.0
+Sobral,BR SOB,icare_0164,Improve Hydrological Monitoring System,0.0,0.5625,0.85,0.3178125,
+Sobral,BR SOB,c40_0049,Build and maintain shelters for critical climate hazards,0.1474133368790739,0.725,0.829,0.4307273352834906,22.0
+Sobral,BR SOB,icare_0183,Implement and strengthen multi-hazard early warning systems,0.22401982780340074,0.5875,0.936,0.4659984052918704,21.0
+Sobral,BR SOB,c40_0048,Upgrade and maintain urban drainage systems,0.1371835675961211,0.575,0.85,0.39607596217786656,25.0
+Sobral,BR SOB,ipcc_0078,"Implement urban cooling and shading measures in streets, public spaces and buildings",0.2191312363286098,0.6625,0.55,0.3933346799807354,26.0
+Sobral,BR SOB,icare_0170,Build safe housing and implement urban rehabilitation projects for populations living in high-risk areas,0.13917109034584202,0.6,0.8,0.39154409969021314,27.0
+Sobral,BR SOB,icare_0181,Relocate and resettle populations living in high-risk areas,0.9622971773572673,0.6625,0.55,0.802075947546497,2.0
+Sobral,BR SOB,icare_0184,"Stabilize, inspect and maintain slopes in landslide-prone areas",0.13917109034584202,0.65,0.829,0.40931909969021313,24.0
+Sobral,BR SOB,ipcc_0087,Strengthen climate resilience of existing public infrastructure,0.13320298656274437,0.5625,0.6,0.33482414260950943,29.0
+Sobral,BR SOB,ipcc_0101,Improve climate-resilient water and sanitation infrastructure,0.7566084741367058,0.4625,1.0,0.7451971607751883,3.0
+Sobral,BR SOB,ipcc_0099,Protect and enhance water sources and watersheds,0.6668568270956462,0.525,1.0,0.7098962549026054,6.0
+Sobral,BR SOB,icare_0185,Strengthen surveillance and early detection of climate-sensitive diseases,0.0,0.6625,0.8,0.32906250000000004,
+Sobral,BR SOB,ipcc_0094,"Strengthen healthcare capacity, continuity and environmental health surveillance",0.5666879143772025,0.65,0.886,0.6572783529074614,11.0
+Sobral,BR SOB,c40_0046,Strengthen coastal protection infrastructure,0.1371835675961211,0.5375,0.85,0.38763846217786657,28.0
+Sobral,BR SOB,ipcc_0097,Strengthen climate-resilient food storage and distribution infrastructure,0.7806787750206642,0.5625,0.8,0.7359358262613653,5.0
+Sobral,BR SOB,ipcc_0098,Strengthen sustainable food value chains,0.5211582616936956,0.6625,0.893,0.6366245439315326,13.0
+Sobral,BR SOB,ipcc_0100,Increase water-use efficiency and demand management,0.7370290818300116,0.5625,0.571,0.6604034950065064,10.0
+Sobral,BR SOB,ipcc_0103,"Strengthen cooperative, intersectoral and participatory climate governance",0.3270442190028367,0.7,1.0,0.5623743204515602,18.0
+Sobral,BR SOB,icare_0172,Develop and implement an integrated climate action plan and risk reduction plan,0.0,0.6625,0.607,0.2856375,
+Sobral,BR SOB,ipcc_0104,Plan and support climate-related mobility and livelihood transitions,0.0,0.625,0.35,0.219375,
+Sobral,BR SOB,icare_0156,Implementation and strengthening of urban and peri-urban agriculture,1.0,0.7375,0.6,0.8509375000000001,1.0
+Sobral,BR SOB,icare_0162,Strengthen programs for control and conservation of protected areas,0.6432442757296968,0.7,1.0,0.7362843516513332,4.0
+Sobral,BR SOB,icare_0180,Expand urban green-blue networks and corridors,0.1371835675961211,0.6625,0.886,0.42386346217786663,23.0
+Sobral,BR SOB,icare_0182,Develop an urban afforestation plan,0.0,0.6625,0.8,0.32906250000000004,
+Sobral,BR SOB,ipcc_0084,Restore and create natural areas through ecosystem-based measures,0.6290980537461773,0.5125,1.0,0.6863164295603975,8.0
+Sobral,BR SOB,ipcc_0085,Reduce pressures on ecosystems to build resilience,0.4763318319309761,0.575,0.957,0.6066825075620369,16.0
+Sobral,BR SOB,ipcc_0092,Establish climate-responsive social protection and post-disaster financial support programs,0.4920190062731788,0.5125,0.629,0.5274479534502483,19.0
+Sobral,BR SOB,ipcc_0090,Create or Expand climate risk insurance for small and medium-sized farmers,0.5137155241341405,0.475,0.864,0.5838185382737773,17.0
+Sobral,BR SOB,ipcc_0091,Support livelihood diversification for fisheries- and mariculture-dependent communities,0.4709196494642477,0.6,0.35,0.4727558072053362,20.0
+Sobral,BR SOB,ipcc_0096,Strengthen climate resilience in agriculture and livestock systems,0.5819908928320289,0.6,0.964,0.671994991057616,9.0
+Sobral,BR SOB,ipcc_0088,Update and enforce climate‑resilient building codes,0.0,0.6625,0.55,0.2728125,
+Sobral,BR SOB,ipcc_0089,Map climate-risk areas and redirect development through land-use planning and regulation,0.0,0.6625,0.879,0.3468375,
+Sobral,BR SOB,icare_0165,Develop an environmental education and climate awareness plan,0.0,0.6625,0.75,0.3178125,
+Sobral,BR SOB,icare_0169,Develop and implement an extreme weather preparedness and emergency response plan,0.4920190062731788,0.5625,1.0,0.6221729534502484,15.0
+Sobral,BR SOB,icare_0186,Implement integrated coastal zone management measures,0.5684352145789285,0.5625,0.871,0.6351768680184108,14.0
+Sobral,BR SOB,icare_0171,Strengthen and integrate municipal hydrometeorological monitoring and forecasting,0.0,0.4875,0.921,0.31691250000000004,
+Sobral,BR SOB,new0001,"Secure land tenure, essential services and resilient livelihoods for vulnerable rural and traditional communities",0.6253899140324348,0.55,0.986,0.6895644527178393,7.0
+Sobral,BR SOB,new0002,Strengthen selective waste collection to reduce health risks,0.6877110657683718,0.65,0.55,0.6482410861726046,12.0
+Santa Cruz do Arari,BR SZR,icare_0164,Improve Hydrological Monitoring System,0.0,0.5625,0.85,0.3178125,
+Santa Cruz do Arari,BR SZR,c40_0049,Build and maintain shelters for critical climate hazards,0.658037006476246,0.725,0.829,0.7115703535619353,6.0
+Santa Cruz do Arari,BR SZR,icare_0183,Implement and strengthen multi-hazard early warning systems,1.0,0.5875,0.936,0.8927875000000001,1.0
+Santa Cruz do Arari,BR SZR,c40_0048,Upgrade and maintain urban drainage systems,0.6123724356957949,0.575,0.85,0.6574298396326872,10.0
+Santa Cruz do Arari,BR SZR,ipcc_0078,"Implement urban cooling and shading measures in streets, public spaces and buildings",0.09721655940667563,0.6625,0.55,0.3262816076736716,28.0
+Santa Cruz do Arari,BR SZR,icare_0170,Build safe housing and implement urban rehabilitation projects for populations living in high-risk areas,0.621244519784107,0.6,0.8,0.6566844858812589,11.0
+Santa Cruz do Arari,BR SZR,icare_0181,Relocate and resettle populations living in high-risk areas,0.6905375010485201,0.6625,0.55,0.652608125576686,12.0
+Santa Cruz do Arari,BR SZR,icare_0184,"Stabilize, inspect and maintain slopes in landslide-prone areas",0.621244519784107,0.65,0.829,0.6744594858812589,9.0
+Santa Cruz do Arari,BR SZR,ipcc_0087,Strengthen climate resilience of existing public infrastructure,0.594603557501361,0.5625,0.6,0.5885944566257486,16.0
+Santa Cruz do Arari,BR SZR,ipcc_0101,Improve climate-resilient water and sanitation infrastructure,0.8967864234688024,0.4625,1.0,0.8222950329078413,3.0
+Santa Cruz do Arari,BR SZR,ipcc_0099,Protect and enhance water sources and watersheds,0.621244519784107,0.525,1.0,0.6848094858812589,8.0
+Santa Cruz do Arari,BR SZR,icare_0185,Strengthen surveillance and early detection of climate-sensitive diseases,0.0,0.6625,0.8,0.32906250000000004,
+Santa Cruz do Arari,BR SZR,ipcc_0094,"Strengthen healthcare capacity, continuity and environmental health surveillance",0.6716790061559685,0.65,0.886,0.7150234533857828,5.0
+Santa Cruz do Arari,BR SZR,c40_0046,Strengthen coastal protection infrastructure,0.6123724356957949,0.5375,0.85,0.6489923396326872,13.0
+Santa Cruz do Arari,BR SZR,ipcc_0097,Strengthen climate-resilient food storage and distribution infrastructure,0.10740278063209847,0.5625,0.8,0.3656340293476542,26.0
+Santa Cruz do Arari,BR SZR,ipcc_0098,Strengthen sustainable food value chains,0.37209915285190587,0.6625,0.893,0.5546420340685483,18.0
+Santa Cruz do Arari,BR SZR,ipcc_0100,Increase water-use efficiency and demand management,0.2318878778642312,0.5625,0.571,0.38257583282532714,25.0
+Santa Cruz do Arari,BR SZR,ipcc_0103,"Strengthen cooperative, intersectoral and participatory climate governance",0.420448207626857,0.7,1.0,0.6137465141947713,15.0
+Santa Cruz do Arari,BR SZR,icare_0172,Develop and implement an integrated climate action plan and risk reduction plan,0.0,0.6625,0.607,0.2856375,
+Santa Cruz do Arari,BR SZR,ipcc_0104,Plan and support climate-related mobility and livelihood transitions,0.0,0.625,0.35,0.219375,
+Santa Cruz do Arari,BR SZR,icare_0156,Implementation and strengthening of urban and peri-urban agriculture,0.23435484251403713,0.7375,0.6,0.4298326633827204,24.0
+Santa Cruz do Arari,BR SZR,icare_0162,Strengthen programs for control and conservation of protected areas,0.3723974033076235,0.7,1.0,0.5873185718191929,17.0
+Santa Cruz do Arari,BR SZR,icare_0180,Expand urban green-blue networks and corridors,0.6123724356957949,0.6625,0.886,0.6852173396326872,7.0
+Santa Cruz do Arari,BR SZR,icare_0182,Develop an urban afforestation plan,0.0,0.6625,0.8,0.32906250000000004,
+Santa Cruz do Arari,BR SZR,ipcc_0084,Restore and create natural areas through ecosystem-based measures,0.3642076431619934,0.5125,1.0,0.5406267037390964,20.0
+Santa Cruz do Arari,BR SZR,ipcc_0085,Reduce pressures on ecosystems to build resilience,0.3462772797117589,0.575,0.957,0.5351525038414674,21.0
+Santa Cruz do Arari,BR SZR,ipcc_0092,Establish climate-responsive social protection and post-disaster financial support programs,0.396939901966842,0.5125,0.629,0.4751544460817631,23.0
+Santa Cruz do Arari,BR SZR,ipcc_0090,Create or Expand climate risk insurance for small and medium-sized farmers,0.070675004254371,0.475,0.864,0.34014625233990403,27.0
+Santa Cruz do Arari,BR SZR,ipcc_0091,Support livelihood diversification for fisheries- and mariculture-dependent communities,0.06478731256068096,0.6,0.35,0.24938302190837452,29.0
+Santa Cruz do Arari,BR SZR,ipcc_0096,Strengthen climate resilience in agriculture and livestock systems,0.3462772797117589,0.6,0.964,0.5423525038414674,19.0
+Santa Cruz do Arari,BR SZR,ipcc_0088,Update and enforce climate‑resilient building codes,0.0,0.6625,0.55,0.2728125,
+Santa Cruz do Arari,BR SZR,ipcc_0089,Map climate-risk areas and redirect development through land-use planning and regulation,0.0,0.6625,0.879,0.3468375,
+Santa Cruz do Arari,BR SZR,icare_0165,Develop an environmental education and climate awareness plan,0.0,0.6625,0.75,0.3178125,
+Santa Cruz do Arari,BR SZR,icare_0169,Develop and implement an extreme weather preparedness and emergency response plan,0.9440875112949018,0.5625,1.0,0.870810631212196,2.0
+Santa Cruz do Arari,BR SZR,icare_0186,Implement integrated coastal zone management measures,0.34581719947674106,0.5625,0.871,0.5127369597122076,22.0
+Santa Cruz do Arari,BR SZR,icare_0171,Strengthen and integrate municipal hydrometeorological monitoring and forecasting,0.0,0.4875,0.921,0.31691250000000004,
+Santa Cruz do Arari,BR SZR,new0001,"Secure land tenure, essential services and resilient livelihoods for vulnerable rural and traditional communities",0.5151422532318596,0.55,0.986,0.6289282392775228,14.0
+Santa Cruz do Arari,BR SZR,new0002,Strengthen selective waste collection to reduce health risks,0.8151242923283784,0.65,0.55,0.7183183607806082,4.0
+São Luís,BR SLZ,icare_0164,Improve Hydrological Monitoring System,0.0,0.5625,0.85,0.3178125,
+São Luís,BR SLZ,c40_0049,Build and maintain shelters for critical climate hazards,0.11003558617552116,0.725,0.829,0.4101695723965366,18.0
+São Luís,BR SLZ,icare_0183,Implement and strengthen multi-hazard early warning systems,0.16721793013550412,0.5875,0.936,0.43475736157452727,17.0
+São Luís,BR SLZ,c40_0048,Upgrade and maintain urban drainage systems,0.10239965116908795,0.575,0.85,0.37694480814299836,24.0
+São Luís,BR SLZ,ipcc_0078,"Implement urban cooling and shading measures in streets, public spaces and buildings",0.18998222213889843,0.6625,0.55,0.37730272217639416,23.0
+São Luís,BR SLZ,icare_0170,Build safe housing and implement urban rehabilitation projects for populations living in high-risk areas,0.10388322270632361,0.6,0.8,0.372135772488478,25.0
+São Luís,BR SLZ,icare_0181,Relocate and resettle populations living in high-risk areas,0.6175847002636264,0.6625,0.55,0.6124840851449945,5.0
+São Luís,BR SLZ,icare_0184,"Stabilize, inspect and maintain slopes in landslide-prone areas",0.10388322270632361,0.65,0.829,0.389910772488478,22.0
+São Luís,BR SLZ,ipcc_0087,Strengthen climate resilience of existing public infrastructure,0.09942837613658477,0.5625,0.6,0.3162481068751216,28.0
+São Luís,BR SLZ,ipcc_0101,Improve climate-resilient water and sanitation infrastructure,1.0,0.4625,1.0,0.8790625,1.0
+São Luís,BR SLZ,ipcc_0099,Protect and enhance water sources and watersheds,0.47971166271859583,0.525,1.0,0.6069664144952277,6.0
+São Luís,BR SLZ,icare_0185,Strengthen surveillance and early detection of climate-sensitive diseases,0.0,0.6625,0.8,0.32906250000000004,
+São Luís,BR SLZ,ipcc_0094,"Strengthen healthcare capacity, continuity and environmental health surveillance",0.7489843608000774,0.65,0.886,0.7575413984400426,3.0
+São Luís,BR SLZ,c40_0046,Strengthen coastal protection infrastructure,0.10239965116908795,0.5375,0.85,0.36850730814299837,26.0
+São Luís,BR SLZ,ipcc_0097,Strengthen climate-resilient food storage and distribution infrastructure,0.2782049067030913,0.5625,0.8,0.45957519868670027,15.0
+São Luís,BR SLZ,ipcc_0098,Strengthen sustainable food value chains,0.31380519020426406,0.6625,0.893,0.5225803546123453,11.0
+São Luís,BR SLZ,ipcc_0100,Increase water-use efficiency and demand management,0.26264977799935185,0.5625,0.571,0.39949487789964355,21.0
+São Luís,BR SLZ,ipcc_0103,"Strengthen cooperative, intersectoral and participatory climate governance",0.20050366235770442,0.7,1.0,0.4927770142967375,14.0
+São Luís,BR SLZ,icare_0172,Develop and implement an integrated climate action plan and risk reduction plan,0.0,0.6625,0.607,0.2856375,
+São Luís,BR SLZ,ipcc_0104,Plan and support climate-related mobility and livelihood transitions,0.0,0.625,0.35,0.219375,
+São Luís,BR SLZ,icare_0156,Implementation and strengthening of urban and peri-urban agriculture,0.5502347894570114,0.7375,0.6,0.6035666342013564,7.0
+São Luís,BR SLZ,icare_0162,Strengthen programs for control and conservation of protected areas,0.4796910287386859,0.7,1.0,0.6463300658062773,4.0
+São Luís,BR SLZ,icare_0180,Expand urban green-blue networks and corridors,0.10239965116908795,0.6625,0.886,0.4047323081429983,19.0
+São Luís,BR SLZ,icare_0182,Develop an urban afforestation plan,0.0,0.6625,0.8,0.32906250000000004,
+São Luís,BR SLZ,ipcc_0084,Restore and create natural areas through ecosystem-based measures,0.4691416682047853,0.5125,1.0,0.5983404175126319,8.0
+São Luís,BR SLZ,ipcc_0085,Reduce pressures on ecosystems to build resilience,0.2920286348155471,0.575,0.957,0.5053157491485509,13.0
+São Luís,BR SLZ,ipcc_0092,Establish climate-responsive social protection and post-disaster financial support programs,0.1753372912344827,0.5125,0.629,0.3532730101789655,27.0
+São Luís,BR SLZ,ipcc_0090,Create or Expand climate risk insurance for small and medium-sized farmers,0.1830691239939054,0.475,0.864,0.4019630181966479,20.0
+São Luís,BR SLZ,ipcc_0091,Support livelihood diversification for fisheries- and mariculture-dependent communities,0.16781826448450024,0.6,0.35,0.30605004546647513,29.0
+São Luís,BR SLZ,ipcc_0096,Strengthen climate resilience in agriculture and livestock systems,0.2920286348155471,0.6,0.964,0.5125157491485509,12.0
+São Luís,BR SLZ,ipcc_0088,Update and enforce climate‑resilient building codes,0.0,0.6625,0.55,0.2728125,
+São Luís,BR SLZ,ipcc_0089,Map climate-risk areas and redirect development through land-use planning and regulation,0.0,0.6625,0.879,0.3468375,
+São Luís,BR SLZ,icare_0165,Develop an environmental education and climate awareness plan,0.0,0.6625,0.75,0.3178125,
+São Luís,BR SLZ,icare_0169,Develop and implement an extreme weather preparedness and emergency response plan,0.1753372912344827,0.5625,1.0,0.44799801017896546,16.0
+São Luís,BR SLZ,icare_0186,Implement integrated coastal zone management measures,0.4089108649019632,0.5625,0.871,0.5474384756960797,10.0
+São Luís,BR SLZ,icare_0171,Strengthen and integrate municipal hydrometeorological monitoring and forecasting,0.0,0.4875,0.921,0.31691250000000004,
+São Luís,BR SLZ,new0001,"Secure land tenure, essential services and resilient livelihoods for vulnerable rural and traditional communities",0.44534876544460794,0.55,0.986,0.5905418209945343,9.0
+São Luís,BR SLZ,new0002,Strengthen selective waste collection to reduce health risks,0.9089391531770163,0.65,0.55,0.7699165342473591,2.0
+Itaubal,BR ITL,icare_0164,Improve Hydrological Monitoring System,0.0,0.5625,0.85,0.3178125,
+Itaubal,BR ITL,c40_0049,Build and maintain shelters for critical climate hazards,0.658037006476246,0.725,0.829,0.7115703535619353,3.0
+Itaubal,BR ITL,icare_0183,Implement and strengthen multi-hazard early warning systems,1.0,0.5875,0.936,0.8927875000000001,1.0
+Itaubal,BR ITL,c40_0048,Upgrade and maintain urban drainage systems,0.612372435695795,0.575,0.85,0.6574298396326873,9.0
+Itaubal,BR ITL,ipcc_0078,"Implement urban cooling and shading measures in streets, public spaces and buildings",0.08808372362241736,0.6625,0.55,0.32125854799232956,28.0
+Itaubal,BR ITL,icare_0170,Build safe housing and implement urban rehabilitation projects for populations living in high-risk areas,0.621244519784107,0.6,0.8,0.6566844858812589,10.0
+Itaubal,BR ITL,icare_0181,Relocate and resettle populations living in high-risk areas,0.4682899855836683,0.6625,0.55,0.5303719920710176,14.0
+Itaubal,BR ITL,icare_0184,"Stabilize, inspect and maintain slopes in landslide-prone areas",0.621244519784107,0.65,0.829,0.6744594858812589,7.0
+Itaubal,BR ITL,ipcc_0087,Strengthen climate resilience of existing public infrastructure,0.594603557501361,0.5625,0.6,0.5885944566257486,13.0
+Itaubal,BR ITL,ipcc_0101,Improve climate-resilient water and sanitation infrastructure,0.29312765899473425,0.4625,1.0,0.49028271244710386,16.0
+Itaubal,BR ITL,ipcc_0099,Protect and enhance water sources and watersheds,0.621244519784107,0.525,1.0,0.6848094858812589,6.0
+Itaubal,BR ITL,icare_0185,Strengthen surveillance and early detection of climate-sensitive diseases,0.0,0.6625,0.8,0.32906250000000004,
+Itaubal,BR ITL,ipcc_0094,"Strengthen healthcare capacity, continuity and environmental health surveillance",0.658037006476246,0.65,0.886,0.7075203535619353,4.0
+Itaubal,BR ITL,c40_0046,Strengthen coastal protection infrastructure,0.612372435695795,0.5375,0.85,0.6489923396326873,11.0
+Itaubal,BR ITL,ipcc_0097,Strengthen climate-resilient food storage and distribution infrastructure,0.29619649447209667,0.5625,0.8,0.46947057195965325,18.0
+Itaubal,BR ITL,ipcc_0098,Strengthen sustainable food value chains,0.19773209560456956,0.6625,0.893,0.45874015258251327,20.0
+Itaubal,BR ITL,ipcc_0100,Increase water-use efficiency and demand management,0.2796354113204359,0.5625,0.571,0.40883697622623977,25.0
+Itaubal,BR ITL,ipcc_0103,"Strengthen cooperative, intersectoral and participatory climate governance",0.420448207626857,0.7,1.0,0.6137465141947713,12.0
+Itaubal,BR ITL,icare_0172,Develop and implement an integrated climate action plan and risk reduction plan,0.0,0.6625,0.607,0.2856375,
+Itaubal,BR ITL,ipcc_0104,Plan and support climate-related mobility and livelihood transitions,0.0,0.625,0.35,0.219375,
+Itaubal,BR ITL,icare_0156,Implementation and strengthening of urban and peri-urban agriculture,0.23517082101992645,0.7375,0.6,0.4302814515609596,23.0
+Itaubal,BR ITL,icare_0162,Strengthen programs for control and conservation of protected areas,0.21021948492907555,0.7,1.0,0.49812071671099156,15.0
+Itaubal,BR ITL,icare_0180,Expand urban green-blue networks and corridors,0.612372435695795,0.6625,0.886,0.6852173396326873,5.0
+Itaubal,BR ITL,icare_0182,Develop an urban afforestation plan,0.0,0.6625,0.8,0.32906250000000004,
+Itaubal,BR ITL,ipcc_0084,Restore and create natural areas through ecosystem-based measures,0.20559634001932198,0.5125,1.0,0.4533904870106271,22.0
+Itaubal,BR ITL,ipcc_0085,Reduce pressures on ecosystems to build resilience,0.11650012191285858,0.575,0.957,0.4087750670520722,26.0
+Itaubal,BR ITL,ipcc_0092,Establish climate-responsive social protection and post-disaster financial support programs,0.39693990196684203,0.5125,0.629,0.47515444608176316,17.0
+Itaubal,BR ITL,ipcc_0090,Create or Expand climate risk insurance for small and medium-sized farmers,0.19490825455117633,0.475,0.864,0.408474540003147,27.0
+Itaubal,BR ITL,ipcc_0091,Support livelihood diversification for fisheries- and mariculture-dependent communities,0.17867111776626263,0.6,0.35,0.31201911477144445,29.0
+Itaubal,BR ITL,ipcc_0096,Strengthen climate resilience in agriculture and livestock systems,0.18667640204244387,0.6,0.964,0.45457202112334416,21.0
+Itaubal,BR ITL,ipcc_0088,Update and enforce climate‑resilient building codes,0.0,0.6625,0.55,0.2728125,
+Itaubal,BR ITL,ipcc_0089,Map climate-risk areas and redirect development through land-use planning and regulation,0.0,0.6625,0.879,0.3468375,
+Itaubal,BR ITL,icare_0165,Develop an environmental education and climate awareness plan,0.0,0.6625,0.75,0.3178125,
+Itaubal,BR ITL,icare_0169,Develop and implement an extreme weather preparedness and emergency response plan,0.944087511294902,0.5625,1.0,0.8708106312121962,2.0
+Itaubal,BR ITL,icare_0186,Implement integrated coastal zone management measures,0.17647750194876546,0.5625,0.871,0.419600126071821,24.0
+Itaubal,BR ITL,icare_0171,Strengthen and integrate municipal hydrometeorological monitoring and forecasting,0.0,0.4875,0.921,0.31691250000000004,
+Itaubal,BR ITL,new0001,"Secure land tenure, essential services and resilient livelihoods for vulnerable rural and traditional communities",0.59326782026535,0.55,0.986,0.6718973011459426,8.0
+Itaubal,BR ITL,new0002,Strengthen selective waste collection to reduce health risks,0.36079421835590897,0.65,0.55,0.46843682009575,19.0

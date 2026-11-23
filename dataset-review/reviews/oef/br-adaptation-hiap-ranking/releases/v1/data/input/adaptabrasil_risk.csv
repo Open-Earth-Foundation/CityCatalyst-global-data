@@ -1,0 +1,61 @@
+city,state,locode,timeframe,sector,risk,overall,hazard,exposure,vulnerability
+Caxias do Sul,RS,BR CXL,,Health,Visceral leishmaniasis,0.84,1.0,0.31,0.59
+Caxias do Sul,RS,BR CXL,,Geohydrological disasters,Landslides,0.8,0.86,0.91,0.26
+Caxias do Sul,RS,BR CXL,,Geohydrological disasters,"Floods, flash floods and waterlogging",0.7,0.82,0.94,0.2
+Caxias do Sul,RS,BR CXL,,Health,American cutaneous leishmaniasis,0.64,0.21,0.4,0.55
+Caxias do Sul,RS,BR CXL,,Health,"Arboviruses: dengue, Zika and chikungunya",0.59,0.12,0.49,0.59
+Caxias do Sul,RS,BR CXL,,Energy security,Access,0.52,0.38,0.65,0.38
+Caxias do Sul,RS,BR CXL,,Water resources,Risk of water stress,0.49,0.1,0.89,0.55
+Caxias do Sul,RS,BR CXL,,Energy security,Availability,0.38,,,
+Caxias do Sul,RS,BR CXL,,Biodiversity,Biome integrity,0.34,0.09,0.45,0.58
+Caxias do Sul,RS,BR CXL,,Health,Malaria,0.33,0.09,0.0,0.79
+Caxias do Sul,RS,BR CXL,,Food security,Food access and consumption,0.17,0.06,1.0,0.34
+Caxias do Sul,RS,BR CXL,,Food security,Food availability,0.06,0.12,0.53,0.28
+Sobral,CE,BR SOB,,Health,Visceral leishmaniasis,0.85,0.4,1.0,0.5
+Sobral,CE,BR SOB,,Geohydrological disasters,Landslides,0.54,0.41,0.82,0.22
+Sobral,CE,BR SOB,,Geohydrological disasters,"Floods, flash floods and waterlogging",0.53,0.82,0.85,0.11
+Sobral,CE,BR SOB,,Health,American cutaneous leishmaniasis,0.77,0.7,0.53,0.33
+Sobral,CE,BR SOB,,Health,"Arboviruses: dengue, Zika and chikungunya",0.67,0.8,0.28,0.28
+Sobral,CE,BR SOB,,Energy security,Access,0.41,0.31,0.57,0.38
+Sobral,CE,BR SOB,,Water resources,Risk of water stress,0.8,0.5,1.0,0.63
+Sobral,CE,BR SOB,,Energy security,Availability,0.31,,,
+Sobral,CE,BR SOB,,Biodiversity,Biome integrity,0.55,0.17,0.54,0.75
+Sobral,CE,BR SOB,,Health,Malaria,0.79,0.67,0.31,0.24
+Sobral,CE,BR SOB,,Food security,Food access and consumption,1.0,0.6,0.79,0.42
+Sobral,CE,BR SOB,,Food security,Food availability,0.6,0.66,0.53,0.53
+Santa Cruz do Arari,PA,BR SZR,,Health,Visceral leishmaniasis,0.18,0.42,0.0,0.74
+Santa Cruz do Arari,PA,BR SZR,,Geohydrological disasters,Landslides,0.54,0.12,0.64,0.91
+Santa Cruz do Arari,PA,BR SZR,,Geohydrological disasters,"Floods, flash floods and waterlogging",0.59,0.16,0.66,0.91
+Santa Cruz do Arari,PA,BR SZR,,Health,American cutaneous leishmaniasis,0.06,0.71,0.0,0.81
+Santa Cruz do Arari,PA,BR SZR,,Health,"Arboviruses: dengue, Zika and chikungunya",0.02,0.6,0.0,0.71
+Santa Cruz do Arari,PA,BR SZR,,Energy security,Access,0.52,0.35,0.34,0.82
+Santa Cruz do Arari,PA,BR SZR,,Water resources,Risk of water stress,0.44,0.3,0.27,0.43
+Santa Cruz do Arari,PA,BR SZR,,Energy security,Availability,0.35,,,
+Santa Cruz do Arari,PA,BR SZR,,Biodiversity,Biome integrity,0.46,0.23,0.29,0.66
+Santa Cruz do Arari,PA,BR SZR,,Health,Malaria,0.51,0.93,0.0,1.0
+Santa Cruz do Arari,PA,BR SZR,,Food security,Food access and consumption,0.02,0.09,0.05,0.39
+Santa Cruz do Arari,PA,BR SZR,,Food security,Food availability,0.09,0.05,0.76,0.65
+São Luís,MA,BR SLZ,,Health,Visceral leishmaniasis,0.73,0.38,0.19,0.82
+São Luís,MA,BR SLZ,,Geohydrological disasters,Landslides,0.63,0.86,0.91,0.13
+São Luís,MA,BR SLZ,,Geohydrological disasters,"Floods, flash floods and waterlogging",0.63,0.82,0.94,0.15
+São Luís,MA,BR SLZ,,Health,American cutaneous leishmaniasis,0.76,0.65,0.29,0.6
+São Luís,MA,BR SLZ,,Health,"Arboviruses: dengue, Zika and chikungunya",0.8,0.58,0.44,0.65
+São Luís,MA,BR SLZ,,Energy security,Access,0.63,0.35,0.7,0.57
+São Luís,MA,BR SLZ,,Water resources,Risk of water stress,0.0,0.0,1.0,0.54
+São Luís,MA,BR SLZ,,Energy security,Availability,0.35,,,
+São Luís,MA,BR SLZ,,Biodiversity,Biome integrity,0.49,0.17,0.56,0.55
+São Luís,MA,BR SLZ,,Health,Malaria,0.83,0.92,0.14,0.72
+São Luís,MA,BR SLZ,,Food security,Food access and consumption,0.55,0.21,1.0,0.29
+São Luís,MA,BR SLZ,,Food security,Food availability,0.21,0.27,0.55,0.44
+Itaubal,AP,BR ITL,,Health,Visceral leishmaniasis,0.67,0.41,0.46,0.19
+Itaubal,AP,BR ITL,,Geohydrological disasters,Landslides,0.28,0.14,0.18,0.99
+Itaubal,AP,BR ITL,,Geohydrological disasters,"Floods, flash floods and waterlogging",0.41,0.27,0.17,1.0
+Itaubal,AP,BR ITL,,Health,American cutaneous leishmaniasis,0.23,0.76,0.01,0.23
+Itaubal,AP,BR ITL,,Health,"Arboviruses: dengue, Zika and chikungunya",0.26,0.71,0.02,0.16
+Itaubal,AP,BR ITL,,Energy security,Access,0.5,0.35,0.34,0.75
+Itaubal,AP,BR ITL,,Water resources,Risk of water stress,0.2,0.2,0.1,0.34
+Itaubal,AP,BR ITL,,Energy security,Availability,0.35,,,
+Itaubal,AP,BR ITL,,Biodiversity,Biome integrity,0.13,0.02,0.71,0.6
+Itaubal,AP,BR ITL,,Health,Malaria,0.5,0.89,0.88,0.0
+Itaubal,AP,BR ITL,,Food security,Food access and consumption,0.02,0.22,0.03,0.47
+Itaubal,AP,BR ITL,,Food security,Food availability,0.22,0.27,0.44,0.56

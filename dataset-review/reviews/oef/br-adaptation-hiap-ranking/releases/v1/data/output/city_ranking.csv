@@ -1,0 +1,146 @@
+city,locode,action_id,action_name,rank,score,sector,risk,potential
+Caxias do Sul,BR CXL,ipcc_0101,Improve climate-resilient water and sanitation infrastructure,1.0,1.0,Health,Visceral leishmaniasis,0.4678897705977534
+Caxias do Sul,BR CXL,new0002,Strengthen selective waste collection to reduce health risks,2.0,0.9089391531770163,Health,Visceral leishmaniasis,0.4252833318673104
+Caxias do Sul,BR CXL,icare_0181,Relocate and resettle populations living in high-risk areas,3.0,0.8006842893537144,Geohydrological disasters,Landslides,0.37463198846693463
+Caxias do Sul,BR CXL,ipcc_0094,"Strengthen healthcare capacity, continuity and environmental health surveillance",4.0,0.7489843608000774,Health,Visceral leishmaniasis,0.35044212075605313
+Caxias do Sul,BR CXL,new0001,"Secure land tenure, essential services and resilient livelihoods for vulnerable rural and traditional communities",5.0,0.44534876544460794,Health,Visceral leishmaniasis,0.2083741316998703
+Caxias do Sul,BR CXL,icare_0183,Implement and strengthen multi-hazard early warning systems,6.0,0.4445491503998244,Geohydrological disasters,Landslides,0.20800000000000002
+Caxias do Sul,BR CXL,icare_0169,Develop and implement an extreme weather preparedness and emergency response plan,7.0,0.41969330104923336,Geohydrological disasters,Landslides,0.19637020234933963
+Caxias do Sul,BR CXL,ipcc_0100,Increase water-use efficiency and demand management,8.0,0.3790229759004691,Water resources,Risk of water stress,0.17734097324534828
+Caxias do Sul,BR CXL,ipcc_0099,Protect and enhance water sources and watersheds,9.0,0.37306351245412167,Biodiversity,Biome integrity,0.1745526012605511
+Caxias do Sul,BR CXL,icare_0162,Strengthen programs for control and conservation of protected areas,10.0,0.3626628108258083,Biodiversity,Biome integrity,0.1696862193616239
+Caxias do Sul,BR CXL,ipcc_0084,Restore and create natural areas through ecosystem-based measures,11.0,0.3546871337452946,Biodiversity,Biome integrity,0.16595448164206056
+Caxias do Sul,BR CXL,ipcc_0096,Strengthen climate resilience in agriculture and livestock systems,12.0,0.35272062308431495,Water resources,Risk of water stress,0.16503437142001676
+Caxias do Sul,BR CXL,icare_0186,Implement integrated coastal zone management measures,13.0,0.3180029492642679,Biodiversity,Biome integrity,0.14879032698066733
+Caxias do Sul,BR CXL,c40_0049,Build and maintain shelters for critical climate hazards,14.0,0.2925297921606589,Geohydrological disasters,Landslides,0.13687169734705917
+Caxias do Sul,BR CXL,ipcc_0098,Strengthen sustainable food value chains,15.0,0.2773407452600093,Biodiversity,Biome integrity,0.12976489767711571
+Caxias do Sul,BR CXL,icare_0170,Build safe housing and implement urban rehabilitation projects for populations living in high-risk areas,16.0,0.2761737234605717,Geohydrological disasters,Landslides,0.12921886011509426
+Caxias do Sul,BR CXL,icare_0184,"Stabilize, inspect and maintain slopes in landslide-prone areas",16.0,0.2761737234605717,Geohydrological disasters,Landslides,0.12921886011509426
+Caxias do Sul,BR CXL,c40_0046,Strengthen coastal protection infrastructure,17.0,0.2722296460168368,Geohydrological disasters,Landslides,0.12737346662472537
+Caxias do Sul,BR CXL,c40_0048,Upgrade and maintain urban drainage systems,17.0,0.2722296460168368,Geohydrological disasters,Landslides,0.12737346662472537
+Caxias do Sul,BR CXL,icare_0180,Expand urban green-blue networks and corridors,17.0,0.2722296460168368,Geohydrological disasters,Landslides,0.12737346662472537
+Caxias do Sul,BR CXL,ipcc_0087,Strengthen climate resilience of existing public infrastructure,18.0,0.26433050631194316,Geohydrological disasters,Landslides,0.12367753996028309
+Caxias do Sul,BR CXL,ipcc_0085,Reduce pressures on ecosystems to build resilience,19.0,0.25809464516596253,Biodiversity,Biome integrity,0.12075984431921077
+Caxias do Sul,BR CXL,icare_0156,Implementation and strengthening of urban and peri-urban agriculture,20.0,0.21338052563455012,Food security,Food access and consumption,0.09983856518917769
+Caxias do Sul,BR CXL,ipcc_0103,"Strengthen cooperative, intersectoral and participatory climate governance",21.0,0.18690989348764825,Geohydrological disasters,Landslides,0.08745322718638626
+Caxias do Sul,BR CXL,ipcc_0092,Establish climate-responsive social protection and post-disaster financial support programs,22.0,0.17645929617914924,Geohydrological disasters,Landslides,0.08256349960910316
+Caxias do Sul,BR CXL,ipcc_0078,"Implement urban cooling and shading measures in streets, public spaces and buildings",23.0,0.1279457020642347,Biodiversity,Biome integrity,0.05986448518780327
+Caxias do Sul,BR CXL,ipcc_0097,Strengthen climate-resilient food storage and distribution infrastructure,24.0,0.12176917151070857,Food security,Food access and consumption,0.05697454972402392
+Caxias do Sul,BR CXL,ipcc_0090,Create or Expand climate risk insurance for small and medium-sized farmers,25.0,0.0801286211019992,Food security,Food access and consumption,0.03749136214572871
+Caxias do Sul,BR CXL,ipcc_0091,Support livelihood diversification for fisheries- and mariculture-dependent communities,26.0,0.07345338108091498,Food security,Food access and consumption,0.03436808562357867
+Itaubal,BR ITL,icare_0183,Implement and strengthen multi-hazard early warning systems,1.0,1.0,Geohydrological disasters,"Floods, flash floods and waterlogging",0.41
+Itaubal,BR ITL,icare_0169,Develop and implement an extreme weather preparedness and emergency response plan,2.0,0.944087511294902,Geohydrological disasters,"Floods, flash floods and waterlogging",0.3870758796309098
+Itaubal,BR ITL,c40_0049,Build and maintain shelters for critical climate hazards,3.0,0.658037006476246,Geohydrological disasters,"Floods, flash floods and waterlogging",0.2697951726552608
+Itaubal,BR ITL,ipcc_0094,"Strengthen healthcare capacity, continuity and environmental health surveillance",3.0,0.658037006476246,Geohydrological disasters,"Floods, flash floods and waterlogging",0.2697951726552608
+Itaubal,BR ITL,icare_0170,Build safe housing and implement urban rehabilitation projects for populations living in high-risk areas,4.0,0.621244519784107,Geohydrological disasters,"Floods, flash floods and waterlogging",0.2547102531114839
+Itaubal,BR ITL,icare_0184,"Stabilize, inspect and maintain slopes in landslide-prone areas",4.0,0.621244519784107,Geohydrological disasters,"Floods, flash floods and waterlogging",0.2547102531114839
+Itaubal,BR ITL,ipcc_0099,Protect and enhance water sources and watersheds,4.0,0.621244519784107,Geohydrological disasters,"Floods, flash floods and waterlogging",0.2547102531114839
+Itaubal,BR ITL,c40_0046,Strengthen coastal protection infrastructure,5.0,0.612372435695795,Geohydrological disasters,"Floods, flash floods and waterlogging",0.2510726986352759
+Itaubal,BR ITL,c40_0048,Upgrade and maintain urban drainage systems,5.0,0.612372435695795,Geohydrological disasters,"Floods, flash floods and waterlogging",0.2510726986352759
+Itaubal,BR ITL,icare_0180,Expand urban green-blue networks and corridors,5.0,0.612372435695795,Geohydrological disasters,"Floods, flash floods and waterlogging",0.2510726986352759
+Itaubal,BR ITL,ipcc_0087,Strengthen climate resilience of existing public infrastructure,6.0,0.594603557501361,Geohydrological disasters,"Floods, flash floods and waterlogging",0.24378745857555797
+Itaubal,BR ITL,new0001,"Secure land tenure, essential services and resilient livelihoods for vulnerable rural and traditional communities",7.0,0.59326782026535,Energy security,Access,0.2432398063087935
+Itaubal,BR ITL,icare_0181,Relocate and resettle populations living in high-risk areas,8.0,0.4682899855836683,Geohydrological disasters,"Floods, flash floods and waterlogging",0.19199889408930398
+Itaubal,BR ITL,ipcc_0103,"Strengthen cooperative, intersectoral and participatory climate governance",9.0,0.420448207626857,Geohydrological disasters,"Floods, flash floods and waterlogging",0.17238376512701134
+Itaubal,BR ITL,ipcc_0092,Establish climate-responsive social protection and post-disaster financial support programs,10.0,0.39693990196684203,Geohydrological disasters,"Floods, flash floods and waterlogging",0.16274535980640523
+Itaubal,BR ITL,new0002,Strengthen selective waste collection to reduce health risks,11.0,0.36079421835590897,Geohydrological disasters,"Floods, flash floods and waterlogging",0.14792562952592267
+Itaubal,BR ITL,ipcc_0097,Strengthen climate-resilient food storage and distribution infrastructure,12.0,0.29619649447209667,Food security,Food availability,0.12144056273355962
+Itaubal,BR ITL,ipcc_0101,Improve climate-resilient water and sanitation infrastructure,13.0,0.29312765899473425,Health,Visceral leishmaniasis,0.12018234018784105
+Itaubal,BR ITL,ipcc_0100,Increase water-use efficiency and demand management,14.0,0.2796354113204359,Food security,Food availability,0.11465051864137872
+Itaubal,BR ITL,icare_0156,Implementation and strengthening of urban and peri-urban agriculture,15.0,0.23517082101992645,Food security,Food availability,0.09642003661816984
+Itaubal,BR ITL,icare_0162,Strengthen programs for control and conservation of protected areas,16.0,0.21021948492907555,Biodiversity,Biome integrity,0.08618998882092097
+Itaubal,BR ITL,ipcc_0084,Restore and create natural areas through ecosystem-based measures,17.0,0.20559634001932198,Biodiversity,Biome integrity,0.08429449940792201
+Itaubal,BR ITL,ipcc_0098,Strengthen sustainable food value chains,18.0,0.19773209560456956,Food security,Food availability,0.08107015919787351
+Itaubal,BR ITL,ipcc_0090,Create or Expand climate risk insurance for small and medium-sized farmers,19.0,0.19490825455117633,Food security,Food availability,0.07991238436598229
+Itaubal,BR ITL,ipcc_0096,Strengthen climate resilience in agriculture and livestock systems,20.0,0.18667640204244387,Food security,Food availability,0.07653732483740198
+Itaubal,BR ITL,ipcc_0091,Support livelihood diversification for fisheries- and mariculture-dependent communities,21.0,0.17867111776626263,Food security,Food availability,0.07325515828416768
+Itaubal,BR ITL,icare_0186,Implement integrated coastal zone management measures,22.0,0.17647750194876546,Biodiversity,Biome integrity,0.07235577579899384
+Itaubal,BR ITL,ipcc_0085,Reduce pressures on ecosystems to build resilience,23.0,0.11650012191285858,Biodiversity,Biome integrity,0.047765049984272015
+Itaubal,BR ITL,ipcc_0078,"Implement urban cooling and shading measures in streets, public spaces and buildings",24.0,0.08808372362241736,Biodiversity,Biome integrity,0.036114326685191114
+Santa Cruz do Arari,BR SZR,icare_0183,Implement and strengthen multi-hazard early warning systems,1.0,1.0,Geohydrological disasters,"Floods, flash floods and waterlogging",0.5369
+Santa Cruz do Arari,BR SZR,icare_0169,Develop and implement an extreme weather preparedness and emergency response plan,2.0,0.9440875112949018,Geohydrological disasters,"Floods, flash floods and waterlogging",0.5068805848142328
+Santa Cruz do Arari,BR SZR,ipcc_0101,Improve climate-resilient water and sanitation infrastructure,3.0,0.8967864234688024,Health,Malaria,0.48148463076040005
+Santa Cruz do Arari,BR SZR,new0002,Strengthen selective waste collection to reduce health risks,4.0,0.8151242923283784,Health,Malaria,0.43764023255110635
+Santa Cruz do Arari,BR SZR,icare_0181,Relocate and resettle populations living in high-risk areas,5.0,0.6905375010485201,Geohydrological disasters,"Floods, flash floods and waterlogging",0.37074958431295046
+Santa Cruz do Arari,BR SZR,ipcc_0094,"Strengthen healthcare capacity, continuity and environmental health surveillance",6.0,0.6716790061559685,Health,Malaria,0.3606244584051395
+Santa Cruz do Arari,BR SZR,c40_0049,Build and maintain shelters for critical climate hazards,7.0,0.658037006476246,Geohydrological disasters,"Floods, flash floods and waterlogging",0.35330006877709647
+Santa Cruz do Arari,BR SZR,icare_0170,Build safe housing and implement urban rehabilitation projects for populations living in high-risk areas,8.0,0.621244519784107,Geohydrological disasters,"Floods, flash floods and waterlogging",0.3335461826720871
+Santa Cruz do Arari,BR SZR,icare_0184,"Stabilize, inspect and maintain slopes in landslide-prone areas",8.0,0.621244519784107,Geohydrological disasters,"Floods, flash floods and waterlogging",0.3335461826720871
+Santa Cruz do Arari,BR SZR,ipcc_0099,Protect and enhance water sources and watersheds,8.0,0.621244519784107,Geohydrological disasters,"Floods, flash floods and waterlogging",0.3335461826720871
+Santa Cruz do Arari,BR SZR,c40_0046,Strengthen coastal protection infrastructure,9.0,0.6123724356957949,Geohydrological disasters,"Floods, flash floods and waterlogging",0.32878276072507234
+Santa Cruz do Arari,BR SZR,c40_0048,Upgrade and maintain urban drainage systems,9.0,0.6123724356957949,Geohydrological disasters,"Floods, flash floods and waterlogging",0.32878276072507234
+Santa Cruz do Arari,BR SZR,icare_0180,Expand urban green-blue networks and corridors,9.0,0.6123724356957949,Geohydrological disasters,"Floods, flash floods and waterlogging",0.32878276072507234
+Santa Cruz do Arari,BR SZR,ipcc_0087,Strengthen climate resilience of existing public infrastructure,10.0,0.594603557501361,Geohydrological disasters,"Floods, flash floods and waterlogging",0.3192426500224807
+Santa Cruz do Arari,BR SZR,new0001,"Secure land tenure, essential services and resilient livelihoods for vulnerable rural and traditional communities",11.0,0.5151422532318596,Energy security,Access,0.27657987576018545
+Santa Cruz do Arari,BR SZR,ipcc_0103,"Strengthen cooperative, intersectoral and participatory climate governance",12.0,0.420448207626857,Geohydrological disasters,"Floods, flash floods and waterlogging",0.22573864267485952
+Santa Cruz do Arari,BR SZR,ipcc_0092,Establish climate-responsive social protection and post-disaster financial support programs,13.0,0.396939901966842,Geohydrological disasters,"Floods, flash floods and waterlogging",0.21311703336599747
+Santa Cruz do Arari,BR SZR,icare_0162,Strengthen programs for control and conservation of protected areas,14.0,0.3723974033076235,Biodiversity,Biome integrity,0.19994016583586308
+Santa Cruz do Arari,BR SZR,ipcc_0098,Strengthen sustainable food value chains,15.0,0.37209915285190587,Biodiversity,Biome integrity,0.19978003516618828
+Santa Cruz do Arari,BR SZR,ipcc_0084,Restore and create natural areas through ecosystem-based measures,16.0,0.3642076431619934,Biodiversity,Biome integrity,0.19554308361367426
+Santa Cruz do Arari,BR SZR,ipcc_0085,Reduce pressures on ecosystems to build resilience,17.0,0.3462772797117589,Biodiversity,Biome integrity,0.18591627147724338
+Santa Cruz do Arari,BR SZR,ipcc_0096,Strengthen climate resilience in agriculture and livestock systems,17.0,0.3462772797117589,Biodiversity,Biome integrity,0.18591627147724338
+Santa Cruz do Arari,BR SZR,icare_0186,Implement integrated coastal zone management measures,18.0,0.34581719947674106,Biodiversity,Biome integrity,0.1856692543990623
+Santa Cruz do Arari,BR SZR,icare_0156,Implementation and strengthening of urban and peri-urban agriculture,19.0,0.23435484251403713,Biodiversity,Biome integrity,0.12582511494578655
+Santa Cruz do Arari,BR SZR,ipcc_0100,Increase water-use efficiency and demand management,20.0,0.2318878778642312,Water resources,Risk of water stress,0.12450060162530574
+Santa Cruz do Arari,BR SZR,ipcc_0097,Strengthen climate-resilient food storage and distribution infrastructure,21.0,0.10740278063209847,Food security,Food availability,0.05766455292137367
+Santa Cruz do Arari,BR SZR,ipcc_0078,"Implement urban cooling and shading measures in streets, public spaces and buildings",22.0,0.09721655940667563,Biodiversity,Biome integrity,0.05219557074544415
+Santa Cruz do Arari,BR SZR,ipcc_0090,Create or Expand climate risk insurance for small and medium-sized farmers,23.0,0.070675004254371,Food security,Food availability,0.03794540978417179
+Santa Cruz do Arari,BR SZR,ipcc_0091,Support livelihood diversification for fisheries- and mariculture-dependent communities,24.0,0.06478731256068096,Food security,Food availability,0.03478430811382961
+Sobral,BR SOB,icare_0156,Implementation and strengthening of urban and peri-urban agriculture,1.0,1.0,Food security,Food access and consumption,0.5303102013999341
+Sobral,BR SOB,icare_0181,Relocate and resettle populations living in high-risk areas,2.0,0.9622971773572673,Health,Visceral leishmaniasis,0.5103160099309205
+Sobral,BR SOB,ipcc_0097,Strengthen climate-resilient food storage and distribution infrastructure,3.0,0.7806787750206642,Food security,Food access and consumption,0.4140019184098623
+Sobral,BR SOB,ipcc_0101,Improve climate-resilient water and sanitation infrastructure,4.0,0.7566084741367058,Health,Visceral leishmaniasis,0.40123719230033333
+Sobral,BR SOB,ipcc_0100,Increase water-use efficiency and demand management,5.0,0.7370290818300116,Food security,Food access and consumption,0.390854040822882
+Sobral,BR SOB,new0002,Strengthen selective waste collection to reduce health risks,6.0,0.6877110657683718,Health,Visceral leishmaniasis,0.3647001937925886
+Sobral,BR SOB,ipcc_0099,Protect and enhance water sources and watersheds,7.0,0.6668568270956462,Biodiversity,Biome integrity,0.3536409782820132
+Sobral,BR SOB,icare_0162,Strengthen programs for control and conservation of protected areas,8.0,0.6432442757296968,Biodiversity,Biome integrity,0.34111900141157026
+Sobral,BR SOB,ipcc_0084,Restore and create natural areas through ecosystem-based measures,9.0,0.6290980537461773,Biodiversity,Biome integrity,0.3336171155824419
+Sobral,BR SOB,new0001,"Secure land tenure, essential services and resilient livelihoods for vulnerable rural and traditional communities",10.0,0.6253899140324348,Water resources,Risk of water stress,0.331650651264028
+Sobral,BR SOB,ipcc_0096,Strengthen climate resilience in agriculture and livestock systems,11.0,0.5819908928320289,Water resources,Risk of water stress,0.3086357075906807
+Sobral,BR SOB,icare_0186,Implement integrated coastal zone management measures,12.0,0.5684352145789285,Biodiversity,Biome integrity,0.30144699312616635
+Sobral,BR SOB,ipcc_0094,"Strengthen healthcare capacity, continuity and environmental health surveillance",13.0,0.5666879143772025,Health,Visceral leishmaniasis,0.3005203820042829
+Sobral,BR SOB,ipcc_0098,Strengthen sustainable food value chains,14.0,0.5211582616936956,Food security,Food access and consumption,0.2763755427200233
+Sobral,BR SOB,ipcc_0090,Create or Expand climate risk insurance for small and medium-sized farmers,15.0,0.5137155241341405,Food security,Food access and consumption,0.2724285830658487
+Sobral,BR SOB,icare_0169,Develop and implement an extreme weather preparedness and emergency response plan,16.0,0.4920190062731788,Food security,Food access and consumption,0.2609226983093249
+Sobral,BR SOB,ipcc_0092,Establish climate-responsive social protection and post-disaster financial support programs,16.0,0.4920190062731788,Food security,Food access and consumption,0.2609226983093249
+Sobral,BR SOB,ipcc_0085,Reduce pressures on ecosystems to build resilience,17.0,0.4763318319309761,Biodiversity,Biome integrity,0.2526036297245155
+Sobral,BR SOB,ipcc_0091,Support livelihood diversification for fisheries- and mariculture-dependent communities,18.0,0.4709196494642477,Food security,Food access and consumption,0.24973349415057158
+Sobral,BR SOB,ipcc_0103,"Strengthen cooperative, intersectoral and participatory climate governance",19.0,0.3270442190028367,Biodiversity,Biome integrity,0.1734348856460785
+Sobral,BR SOB,icare_0183,Implement and strengthen multi-hazard early warning systems,20.0,0.22401982780340074,Geohydrological disasters,Landslides,0.1188
+Sobral,BR SOB,ipcc_0078,"Implement urban cooling and shading measures in streets, public spaces and buildings",21.0,0.2191312363286098,Biodiversity,Biome integrity,0.11620753007044163
+Sobral,BR SOB,c40_0049,Build and maintain shelters for critical climate hazards,22.0,0.1474133368790739,Geohydrological disasters,Landslides,0.07817479636937802
+Sobral,BR SOB,icare_0170,Build safe housing and implement urban rehabilitation projects for populations living in high-risk areas,23.0,0.13917109034584202,Geohydrological disasters,Landslides,0.07380384895035191
+Sobral,BR SOB,icare_0184,"Stabilize, inspect and maintain slopes in landslide-prone areas",23.0,0.13917109034584202,Geohydrological disasters,Landslides,0.07380384895035191
+Sobral,BR SOB,c40_0046,Strengthen coastal protection infrastructure,24.0,0.1371835675961211,Geohydrological disasters,Landslides,0.07274984536066045
+Sobral,BR SOB,c40_0048,Upgrade and maintain urban drainage systems,24.0,0.1371835675961211,Geohydrological disasters,Landslides,0.07274984536066045
+Sobral,BR SOB,icare_0180,Expand urban green-blue networks and corridors,24.0,0.1371835675961211,Geohydrological disasters,Landslides,0.07274984536066045
+Sobral,BR SOB,ipcc_0087,Strengthen climate resilience of existing public infrastructure,25.0,0.13320298656274437,Geohydrological disasters,Landslides,0.07063890263116168
+São Luís,BR SLZ,ipcc_0101,Improve climate-resilient water and sanitation infrastructure,1.0,1.0,Health,Visceral leishmaniasis,0.5651307842611283
+São Luís,BR SLZ,new0002,Strengthen selective waste collection to reduce health risks,2.0,0.9089391531770163,Health,Visceral leishmaniasis,0.513669496480573
+São Luís,BR SLZ,ipcc_0094,"Strengthen healthcare capacity, continuity and environmental health surveillance",3.0,0.7489843608000774,Health,Visceral leishmaniasis,0.4232741192182676
+São Luís,BR SLZ,icare_0181,Relocate and resettle populations living in high-risk areas,4.0,0.6175847002636264,Health,"Arboviruses: dengue, Zika and chikungunya",0.3490161260076571
+São Luís,BR SLZ,icare_0156,Implementation and strengthening of urban and peri-urban agriculture,5.0,0.5502347894570114,Food security,Food access and consumption,0.3109546180935977
+São Luís,BR SLZ,ipcc_0099,Protect and enhance water sources and watersheds,6.0,0.47971166271859583,Biodiversity,Biome integrity,0.2710998281713699
+São Luís,BR SLZ,icare_0162,Strengthen programs for control and conservation of protected areas,7.0,0.4796910287386859,Biodiversity,Biome integrity,0.271088167274121
+São Luís,BR SLZ,ipcc_0084,Restore and create natural areas through ecosystem-based measures,8.0,0.4691416682047853,Biodiversity,Biome integrity,0.26512639888214434
+São Luís,BR SLZ,new0001,"Secure land tenure, essential services and resilient livelihoods for vulnerable rural and traditional communities",9.0,0.44534876544460794,Health,Visceral leishmaniasis,0.25168029708543654
+São Luís,BR SLZ,icare_0186,Implement integrated coastal zone management measures,10.0,0.4089108649019632,Biodiversity,Biome integrity,0.23108811777494276
+São Luís,BR SLZ,ipcc_0098,Strengthen sustainable food value chains,11.0,0.31380519020426406,Biodiversity,Biome integrity,0.17734097324534828
+São Luís,BR SLZ,ipcc_0085,Reduce pressures on ecosystems to build resilience,12.0,0.2920286348155471,Biodiversity,Biome integrity,0.16503437142001676
+São Luís,BR SLZ,ipcc_0096,Strengthen climate resilience in agriculture and livestock systems,12.0,0.2920286348155471,Biodiversity,Biome integrity,0.16503437142001676
+São Luís,BR SLZ,ipcc_0097,Strengthen climate-resilient food storage and distribution infrastructure,13.0,0.2782049067030913,Food security,Food access and consumption,0.157222157110412
+São Luís,BR SLZ,ipcc_0100,Increase water-use efficiency and demand management,14.0,0.26264977799935185,Food security,Food access and consumption,0.14843147502678494
+São Luís,BR SLZ,ipcc_0103,"Strengthen cooperative, intersectoral and participatory climate governance",15.0,0.20050366235770442,Biodiversity,Biome integrity,0.11331079195543796
+São Luís,BR SLZ,ipcc_0078,"Implement urban cooling and shading measures in streets, public spaces and buildings",16.0,0.18998222213889843,Biodiversity,Biome integrity,0.10736480219302756
+São Luís,BR SLZ,ipcc_0090,Create or Expand climate risk insurance for small and medium-sized farmers,17.0,0.1830691239939054,Food security,Food access and consumption,0.1034579976166735
+São Luís,BR SLZ,icare_0169,Develop and implement an extreme weather preparedness and emergency response plan,18.0,0.1753372912344827,Food security,Food access and consumption,0.09908850090556506
+São Luís,BR SLZ,ipcc_0092,Establish climate-responsive social protection and post-disaster financial support programs,18.0,0.1753372912344827,Food security,Food access and consumption,0.09908850090556506
+São Luís,BR SLZ,ipcc_0091,Support livelihood diversification for fisheries- and mariculture-dependent communities,19.0,0.16781826448450024,Food security,Food access and consumption,0.09483926742146707
+São Luís,BR SLZ,icare_0183,Implement and strengthen multi-hazard early warning systems,20.0,0.16721793013550412,Geohydrological disasters,"Floods, flash floods and waterlogging",0.0945
+São Luís,BR SLZ,c40_0049,Build and maintain shelters for critical climate hazards,21.0,0.11003558617552116,Geohydrological disasters,"Floods, flash floods and waterlogging",0.06218449711200524
+São Luís,BR SLZ,icare_0170,Build safe housing and implement urban rehabilitation projects for populations living in high-risk areas,22.0,0.10388322270632361,Geohydrological disasters,"Floods, flash floods and waterlogging",0.05870760711959811
+São Luís,BR SLZ,icare_0184,"Stabilize, inspect and maintain slopes in landslide-prone areas",22.0,0.10388322270632361,Geohydrological disasters,"Floods, flash floods and waterlogging",0.05870760711959811
+São Luís,BR SLZ,c40_0046,Strengthen coastal protection infrastructure,23.0,0.10239965116908795,Geohydrological disasters,"Floods, flash floods and waterlogging",0.05786919517325263
+São Luís,BR SLZ,c40_0048,Upgrade and maintain urban drainage systems,23.0,0.10239965116908795,Geohydrological disasters,"Floods, flash floods and waterlogging",0.05786919517325263
+São Luís,BR SLZ,icare_0180,Expand urban green-blue networks and corridors,23.0,0.10239965116908795,Geohydrological disasters,"Floods, flash floods and waterlogging",0.05786919517325263
+São Luís,BR SLZ,ipcc_0087,Strengthen climate resilience of existing public infrastructure,24.0,0.09942837613658477,Geohydrological disasters,"Floods, flash floods and waterlogging",0.056190036183878606

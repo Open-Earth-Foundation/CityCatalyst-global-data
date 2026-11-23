@@ -1,0 +1,20 @@
+previous_keyimpact,previous_hazard,updated_sector,updated_risk,match,confidence,note
+water resources,droughts,Water resources,Risk of water stress,close,high,Both describe water shortage from drought.
+food security,droughts,Food security,Food availability,partial,medium,Drought hits production; AdaptaBrasil splits food security into availability and access.
+food security,droughts,Food security,Food access and consumption,partial,low,Indirect: drought raises prices and cuts access.
+food security,floods,Food security,Food availability,partial,medium,Floods hit production; AdaptaBrasil does not separate the hazard.
+energy security,droughts,Energy security,Availability,partial,medium,"Drought lowers hydropower generation. AdaptaBrasil Availability has no exposure or vulnerability, so the new model does not use it."
+energy security,heatwaves,Energy security,Access,partial,low,"Heat stresses supply and demand; AdaptaBrasil Access is about households reaching energy, not a heat risk as such."
+biodiversity,droughts,Biodiversity,Biome integrity,partial,medium,"AdaptaBrasil biome integrity covers all climate pressures, not drought alone."
+biodiversity,heatwaves,Biodiversity,Biome integrity,partial,medium,"As above, for heat."
+public health,diseases,Health,Visceral leishmaniasis,close,high,CCRA has one disease risk; AdaptaBrasil splits it into four vector-borne diseases.
+public health,diseases,Health,American cutaneous leishmaniasis,close,high,As above.
+public health,diseases,Health,"Arboviruses: dengue, Zika and chikungunya",close,high,As above.
+public health,diseases,Health,Malaria,close,high,As above.
+public health,landslides,Geohydrological disasters,Landslides,close,high,"AdaptaBrasil landslide risk is about people and settlements, not by impact area."
+infrastructure,landslides,Geohydrological disasters,Landslides,close,medium,Same hazard; AdaptaBrasil does not score infrastructure separately.
+public health,floods,Geohydrological disasters,"Floods, flash floods and waterlogging",close,high,"Same hazard, focused on people."
+infrastructure,floods,Geohydrological disasters,"Floods, flash floods and waterlogging",close,medium,Same hazard; AdaptaBrasil does not score infrastructure separately.
+public health,heatwaves,,,no match,high,AdaptaBrasil health risks cover vector-borne diseases only; there is no heat-health risk.
+infrastructure,heatwaves,,,no match,high,No AdaptaBrasil infrastructure or heat risk.
+infrastructure,sea-level-rise,,,no match,high,No coastal or sea-level risk in AdaptaBrasil's 12 city risks.
